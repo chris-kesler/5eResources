@@ -6,7 +6,7 @@ body {
     padding: 0px;
   }
   h1 {
-    
+    color: black;
   }
   h2 {
     color: white;
@@ -34,11 +34,12 @@ body {
     padding: 10px 20px;
   }
   div {
-    background: red;
+    background: lightgray;
     display: inline-block;
-    width: 100px;
+    width: 150px;
     height: 50px;
     margin: auto;
+    padding: 10px;
   }
   ul {
     margin: 0;
@@ -47,5 +48,5 @@ body {
   }
   li {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 50px;
   }
