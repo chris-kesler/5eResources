@@ -25,7 +25,7 @@ body {
   }
   section {
     background-color: white;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     flex-direction: row;
   }
@@ -49,4 +49,7 @@ body {
   li {
     display: inline-block;
     margin-right: 50px;
+  }
+  table {
+    margin: auto;
   }
