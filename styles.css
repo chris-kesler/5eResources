@@ -25,9 +25,17 @@ body {
   }
   section {
     background-color: white;
-    padding: 10px;
+    padding: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
     display: flex;
     flex-direction: row;
+  }
+  .Overview {
+    flex-direction: column;
+  }
+  .WikiBG {
+    background-image: url(BrassDragon.jpg);
   }
   footer {
     background-color: black;
@@ -51,5 +59,73 @@ body {
     margin-right: 50px;
   }
   table {
-    margin: auto;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .TierInset {
+    border: 10px;
+    border-color: gold;
+    background-image: url(parchment.jpg);
+    opacity: 90%;
+    width: 90%;
+    margin: 5%;
+    background-color: rgb(44, 26, 0);
+    margin-bottom: -5px;
+  }
+
+  .TierContent {
+    background-color: rgb(97, 87, 75);
+    width: 96%;
+    margin: 2%;
+    margin-bottom: -5px;
+    display: flex;
+    height: 1000px;
+    flex-direction: column;
+  }
+
+  .CharacterArt {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .CharacterArt.GenieLance.Tier1{
+    background-image: url(CharacterBuilds/GenieLance/Tier1.jpg);
+  }
+  .CharacterArt.GenieLance.Tier2{
+    background-image: url(CharacterBuilds/GenieLance/Tier2.jpg);
+  }
+  .CharacterArt.GenieLance.Tier3{
+    background-image: url(CharacterBuilds/GenieLance/Tier3.jpg);
+  }
+  .CharacterArt.GenieLance.Tier4{
+    background-position: top;
+    background-image: url(CharacterBuilds/GenieLance/Tier4.jpg);
+  }
+  .CharacterArt.GenieLance.Tier5{
+    background-image: url(CharacterBuilds/GenieLance/Tier5.jpg);
+  }
+  .CharacterArt.GenieLance.Tier6{
+    background-image: url(CharacterBuilds/GenieLance/Tier6.jpg);
+  }
+
+  .CharacterArt.ArtiChron.Tier1{
+    background-position: top;
+    background-image: url(CharacterBuilds/ArtiChron/Tier1.jpg);
+  }
+  .CharacterArt.ArtiChron.Tier2{
+    background-image: url(CharacterBuilds/ArtiChron/Tier2.jpg);
+  }
+  .CharacterArt.ArtiChron.Tier3{
+    background-image: url(CharacterBuilds/ArtiChron/Tier3.jpg);
+  }
+  .CharacterArt.ArtiChron.Tier4{
+    background-image: url(CharacterBuilds/ArtiChron/Tier4.jpg);
+  }
+  .CharacterArt.ArtiChron.Tier5{
+    background-image: url(CharacterBuilds/ArtiChron/Tier5.jpg);
+  }
+  .CharacterArt.ArtiChron.Tier6{
+    background-image: url(CharacterBuilds/ArtiChron/Tier6.jpg);
   }
