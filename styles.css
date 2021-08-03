@@ -65,7 +65,7 @@ body {
   }
 
   .TierInset {
-    border: 10px;
+    border: 100px;
     border-color: gold;
     background-image: url(parchment.jpg);
     opacity: 90%;
@@ -76,6 +76,8 @@ body {
   }
 
   .TierContent {
+    border: 10px;
+    border-color: red;
     background-color: rgb(97, 87, 75);
     width: 96%;
     margin: 2%;
@@ -128,4 +130,11 @@ body {
   }
   .CharacterArt.ArtiChron.Tier6{
     background-image: url(CharacterBuilds/ArtiChron/Tier6.jpg);
+  }
+
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
   }
