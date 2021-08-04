@@ -1,45 +1,169 @@
 body {
-    background: rgb(25, 25, 25);
-    color: white;
+    background: rgb(219,219,224);
+    color: black;
     font-family: sans-serif;
     margin: 0px;
     padding: 0px;
   }
-  h1 {
-    color: black;
-  }
-  h2 {
-    color: white;
-  }
-  button {
-    background: gray;
-    border: none;
-    color: rgb(100, 100, 100);
-  }
+  
   header {
-    background-color: black;
+    background-color: rgb(54,57,63);
     margin: 0px;
-    padding: 20px;
+    padding: 0px;
     flex-direction: row;
-
+    color: whitesmoke;
   }
+  header p {
+    padding: 1%;
+    color: rgb(255,255,255);
+  }
+  header h1 {
+    padding: 1%;
+    color: rgb(255,255,255);
+  }
+  header nav {
+    color: rgb(255,255,255);
+  }
+  header button {
+    width: 20%;
+    background-color: rgb(54,57,63);
+    border-style: dotted;
+    border-color: rgb(54,57,63);
+  }
+  header nav button {
+    width: 10%;
+    height: 50px;
+    background-color: rgb(54,57,63);
+    border-style: dotted;
+    border-color: rgb(54,57,63);
+  }
+  header button:hover {
+    border-color: whitesmoke;
+    border-radius: 10px;
+  }
+  nav table {
+    margin-left: 0%;
+    width: 100%;
+    border-bottom: 10px;
+    border-top: 10px;
+    border-color: aqua;
+    padding: 0px;
+  }
+  table button {
+    margin: 10px;
+    size: 50px;
+    width: 150px;
+    height: 50px;
+    border-radius: 0%;
+  }
+
+  button a {
+    color: whitesmoke;
+  }
+  button.BulletinButton {
+    color: rgb(255,255,255);
+    background-color: rgb(255,255,255);
+    border-color: rgb(255,255,255);
+    border-style: solid;
+  }
+  button.BulletinButton:hover {
+    color: rgb(255,255,255);
+    background-color: rgb(255,255,255);
+    border-color: rgb(54,57,63);
+  }
+  button.BulletinButton a {
+    color: black;
+    font-size: medium;
+    text-decoration: none;
+  }
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgb(0, 0, 0);
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+
+
+
+
   section {
-    background-color: white;
+    background-color: rgb(255,255,255);
+    width: 90%;
+    margin: 5%;
+    margin-top: 2%;
+    border-radius: 7px;
     padding: 5px;
     padding-left: 25px;
     padding-right: 25px;
     display: flex;
     flex-direction: row;
   }
+  p {
+    color: rgb(52,58,64);
+  }
+  h1 {
+    color: rgb(255,255,255);
+  }
+  h2 {
+    color: rgb(52,58,64);
+  }
+
   .Overview {
     flex-direction: column;
   }
   .WikiBG {
     background-image: url(BrassDragon.jpg);
   }
+  .AnchorCenter {
+    margin-left: 50%;
+    margin-top: -25px;
+    width: 0px; /* Or zero, or something very small */
+    height: 0px;
+    overflow: visible;
+    background: rgb(219,219,224); /* A color just for debug */
+  }
+  .AnchorLeft {
+    margin-top: -10px;
+    position: absolute;
+    width: 0px; /* Or zero, or something very small */
+    height: 0px;
+    margin-left: -520px;
+    overflow: visible;
+    background: rgb(219,219,224); /* A color just for debug */
+  }
+  .AnchorRight {
+    margin-top: -10px;
+    position: absolute;
+    width: 0px; /* Or zero, or something very small */
+    height: 0px;
+    margin-left: 160px;
+    overflow: visible;
+    background: rgb(219,219,224); /* A color just for debug */
+  }
+  .PageContent {
+    flex-direction: column;
+    margin-left: -425px;
+    margin-top: 25px;
+    margin-right: 0px;
+    height: auto;
+    width: 850px;
+  }
+  .PageBulletin {
+    flex-direction: column;
+    margin-left: -160px;
+    margin-top: 25px;
+    height: auto;
+    width: 320px;
+    position: relative;
+  }
   footer {
-    background-color: black;
+    background-color: rgb(255,255,255);
     padding: 10px 20px;
+    position: relative;
   }
   div {
     background: lightgray;
@@ -49,14 +173,28 @@ body {
     margin: auto;
     padding: 10px;
   }
+  td {
+    color: whitesmoke;
+  }
+  th {
+    color: whitesmoke;
+  }
   ul {
+    color: black;
     margin: 0;
     padding: 0;
     list-style-type: none;
   }
   li {
+    color: black;
     display: inline-block;
     margin-right: 50px;
+  }
+  ul.BulletinList {
+    display: table-row;
+  }
+  li.BulletinList {
+    display: table-row;
   }
   table {
     width: 96%;
