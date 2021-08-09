@@ -126,9 +126,9 @@ body {
 
 
   .PageFooter {
-    position: absolute;
+    position: relative;
     bottom: 0;
-    width: 96.8%;
+    width: auto;
     height: 2.5rem;            /* Footer height */
   }
 
