@@ -18,7 +18,7 @@ body {
     position: absolute;
     width: 100%;
     height: auto;    
-    background-color: red;
+    background-image: url("_Images/Transparent.png");
     overflow: visible;
   }
 
@@ -60,7 +60,7 @@ body {
 
 
   .PageContent {
-    background-color: orange;
+    background-image: url("_Images/Transparent.png");
     position: relative;
     width: 100%;
     height: auto;
@@ -149,6 +149,13 @@ body {
   }
 
 
+  .PlanesMapBackground {
+    background-image: url("NraanonWiki/Planes/PlanesMapBackground3.jpg");
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-attachment: fixed;
+    position: relative;
+  }
 
 
 
