@@ -12,8 +12,6 @@ body {
   }
 
 
-
-
   .PageContainer {
     position: absolute;
     width: 100%;
@@ -77,7 +75,7 @@ body {
     width: 10px; /* Or zero, or something very small */
     margin-left: 50%; /* -(256 * 1.5) - 12 */
     overflow: visible;
-    background: yellow; /* A color just for debug */
+    background-image: url("_Images/Transparent.png");
   }
 
   .AnchorLeft {
@@ -87,20 +85,28 @@ body {
     width: 350px; /* Or zero, or something very small */
     margin-left: -632px; /* -(256 * 1.5) - 12 */
     overflow: visible;
-    background: green; /* A color just for debug */
+    background-image: url("_Images/Transparent.png");
   }
 
   .PageContentLeftTop {
     flex-direction: column;
+    margin: 5%;
     margin-left: 0px; /* -256 */
     margin-top: 0px;
+    padding: 5px;
+    padding-left: 25px;
+    padding-right: 25px; 
     width: 300px; /* 256*2 -50 for padding -25 for content gap */
   }
 
   .PageContentLeft {
     flex-direction: column;
+    margin: 5%;
     margin-left: 0px; /* -256 */
     margin-top: 25px;
+    padding: 5px;
+    padding-left: 25px;
+    padding-right: 25px; 
     width: 300px; /* 256*2 -50 for padding -25 for content gap */
   } 
 
@@ -112,17 +118,25 @@ body {
     width: 888px; /* Or zero, or something very small */
     margin-left: -257px;
     overflow: visible;
-    background: blue; /* A color just for debug */
+    background-image: url("_Images/Transparent.png");
   }
 
   .PageContentRight {
     flex-direction: column;
+    margin: 5%;
     margin-left: 0px; /* -256*3 /2 */
     margin-top: 25px;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
     height: auto;
     width: 838px; /* 256*3 -50 for padding -17 for scrollbar */
   }
 
+  section {
+    background-color: rgb(255,255,255);
+    border-radius: 10px;
+  }
 
 
   .PageFooter {
@@ -152,11 +166,86 @@ body {
   .PlanesMapBackground {
     background-image: url("NraanonWiki/Planes/PlanesMapBackground3.jpg");
     background-repeat: no-repeat;
-    background-size: 110%;
+    background-size: 105%;
     background-attachment: fixed;
     position: relative;
   }
 
+  .AnchorWikiOverviewTable {
+    width: 0px;
+    margin-left: 600px;
+    margin-top: 20px;
+    position: absolute;
+  }
+
+  .WikiOverviewTable {
+    display: block;
+    width: 240px;
+    margin-right: -50px;
+    overflow: hidden;
+    max-height: 1000px;
+    border: 1px solid rgb(189,188,173);
+  }
+
+  .AnchorWikiContent {
+    width: 575px;
+    min-height: 1000px;
+    height: auto;
+  }
+
+  .WikiContent {
+    color: rgb(58,58,58);
+  }
+
+  
+  .WikiOverviewTable th, .WikiOverviewTable td {
+    width: auto;
+    padding: 10px;
+  }
+
+  .WikiOverviewTable tr th {
+    background-color: rgb(223,222,207);
+    color: rgb(58,58,58);
+    font-size: medium;
+  }
+
+  .WikiOverviewTable tr td {
+    background-color: rgb(251,251,251);
+    color: rgb(58,58,58);
+    font-size: small;
+  }
+
+  .WikiOverviewTable tr:first-child th {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .WikiOverviewTable tr:nth-child(2) th {
+    background-color: rgb(247,247,247);
+    color: rgb(58,58,58);
+    padding: 2px;
+    border-top: 0px;
+    font-size: smaller;
+  }
+
+  .WikiOverviewTable tr:nth-child(3) th {
+    background-color: rgb(189,188,173);
+    color: rgb(58,58,58);
+    font-size: large;
+  }
+
+  .WikiTableImage {
+    width: 100.5%;
+    height: auto; 
+    display: block;
+  }
+
+  .WikiContentImage {
+    width: 200px;
+    float: left;
+    padding: 0px;
+    padding-right: 15px;
+  }
 
 
 
@@ -209,18 +298,6 @@ body {
 
 
 
-  section {
-    background-color: rgb(255,255,255);
-    width: 90%;
-    margin: 5%;
-    margin-top: 2%;
-    border-radius: 7px;
-    padding: 5px;
-    padding-left: 25px;
-    padding-right: 25px;
-    display: flex;
-    flex-direction: row;
-  }
   p {
     color: rgb(52,58,64);
   }
