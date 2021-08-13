@@ -185,6 +185,7 @@ body {
     overflow: hidden;
     max-height: 1000px;
     border: 1px solid rgb(189,188,173);
+    border-collapse: collapse
   }
 
   .AnchorWikiContent {
@@ -197,10 +198,6 @@ body {
     color: rgb(58,58,58);
   }
 
-  .WikiOverviewTable {
-    border-collapse: collapse
-  }
-  
   .WikiOverviewTable th, .WikiOverviewTable td {
     width: auto;
     padding: 10px;
@@ -248,6 +245,7 @@ body {
     width: 100.5%;
     height: auto; 
     display: block;
+    overflow: hidden;
   }
 
   .WikiContentImageLeft {
