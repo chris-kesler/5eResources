@@ -14,4 +14,4 @@ My Character Builds go hand in hand with some Tech Guide articles.  These pages 
 
 Beyond those four categories, I have also advertised myself to a small degree.  I have linked my GitHub account, LinkedIn, and Discord Server so that anyone who wants to reach out for any reason can do so.  
 
-If you have any feedback or comments for me regarding anything related to this or other projects, feel free to contact me.  
+If you have any feedback or comments for me regarding anything related to this or other projects, feel free to contact me in any of the ways mentioned above.  
