@@ -15,7 +15,7 @@
     <div class="PageContainer, PlanesMapBackground"> 
       <div class="PageHeader">
         <div class="PageHeaderNav"></div>
-          <h1>Website Homepage</h1>
+          <h1>Nraanon Wiki:  Primal Elemental Planes</h1>
           <hr>
       </div>
         
@@ -27,19 +27,21 @@
           </div>
 
 
+
           <div class="AnchorRight">
 
             <section class="PageContentRight">
-              <h2><center>
-                This website is intended to serve as a showcase of my HTML, CSS, and Javascript skills.  
-              </center></h2>
-              <p>
-                The content within is mostly related to Dungeons and Dragons 5th Edition, which is a table top roleplaying game that I thoroughly enjoy.  
-                I chose this topic since I found it easy to remain motivated to continue working on this project.  
+              <center><button class="WikiOverviewButton" onclick="location.href='PlanesOverview.html'">Planes Overview</button>
                 <br><br>
-                Feel free to check out "Deities" and "Planes" within the Nraanon Wiki above!  
-                The other three sections of the site are not ready for viewing.  
-              </p>
+              <img src="PlanesMap.jpg" alt="Planes Map" style="width: 840px;">
+            </section> 
+
+            <section class="PageContentRight">
+              <center><h3>Primal Elemental Planes</h3><hr>
+              <button class="WikiPageButton" onclick="location.href='PlaneOfAir/PlaneOfAir.html'">Plane of Air</button>
+              <button class="WikiPageButton" onclick="location.href='PlaneOfWater/PlaneOfWater.html'">Plane of Water</button>
+              <button class="WikiPageButton" onclick="location.href='PlaneOfEarth/PlaneOfEarth.html'">Plane of Earth</button>
+              <button class="WikiPageButton" onclick="location.href='PlaneOfFire/PlaneOfFire.html'">Plane of Fire</button>
             </section>
 
           </div>
@@ -51,14 +53,15 @@
         This is the footer
       </footer>
     </div>
+
   </body>
 </html>
 
 <script type="text/javascript">
   $(function () {
 
-    $(".PageHeaderNav").load("PageHeader.html");
-    $(".ContentLeftTemplate").load("ContentLeft.html");
+    $(".PageHeaderNav").load("/PageHeader.html");
+    $(".ContentLeftTemplate").load("/ContentLeft.html");
 
 });
 </script>
