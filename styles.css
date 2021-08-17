@@ -262,6 +262,38 @@ body {
     padding-left: 15px;
   }
 
+  .WikiOverviewButton {
+    width: 800px;
+    height: 75px;
+    border-radius: 25px;
+    background-color: lightgray;
+    border-style: solid;
+    border-color: rgb(54,57,63);
+    font-size: x-large;
+    font-style: normal;
+  }
+
+  .WikiCategoryButton {
+    width: 250px;
+    height: 65px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: grey;
+    border-style: solid;
+    border-color: rgb(54,57,63);
+    font-size: medium;
+  }
+
+  .WikiPageButton {
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: tan;
+    border-style: solid;
+    border-color: rgb(54,57,63);
+    font-size: small;
+  }
+
 
   nav table {
     margin-left: 0%;
