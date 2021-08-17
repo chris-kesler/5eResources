@@ -172,27 +172,16 @@ body {
     position: relative;
   }
 
-  .AnchorWikiOverviewTable {
-    width: 0px;
-    margin-left: 600px;
-    margin-top: 20px;
-    position: absolute;
-  }
-
   .WikiOverviewTable {
     display: block;
-    width: 240px;
-    margin-right: -50px;
-    overflow: hidden;
+    width: 275px;
+    margin: 10px;
+    margin-right: 0px;
+    overflow: auto;
     max-height: 1000px;
     border: 1px solid rgb(189,188,173);
-    border-collapse: collapse
-  }
-
-  .AnchorWikiContent {
-    width: 575px;
-    min-height: 1000px;
-    height: auto;
+    border-collapse: collapse;
+    float: right;
   }
 
   .WikiContent {
@@ -243,7 +232,7 @@ body {
   }
 
   .WikiTableImage {
-    width: 100.5%;
+    width: 100%;
     height: auto; 
     display: block;
     overflow: hidden;
