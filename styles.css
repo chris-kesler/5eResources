@@ -29,6 +29,7 @@ body {
     padding: 0px;
     flex-direction: row;
     color: whitesmoke;
+    text-align: center;
   }
 
   .HomeButton {
@@ -156,7 +157,7 @@ body {
     margin: 20px;
     margin-bottom: 50px;
     border-radius: 10px;
-    background-color: aquamarine;
+    background-color: rgb(102, 70, 57);
     border-style: solid;
     border-color: rgb(54,57,63);
     font-size: x-large;
