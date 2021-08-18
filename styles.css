@@ -306,6 +306,16 @@ body {
     opacity: 0%;
   }
 
+  .WikiSchoolOfMagicButton {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border: 0px;
+    margin: 3px;
+    padding: 0px;
+    background-color: rgb(189,188,173);
+  }
+
   nav table {
     margin-left: 0%;
     width: 100%;
