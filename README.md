@@ -21,5 +21,7 @@ That being said, I have done my best to exclude art I find to be in poor taste, 
 
 UPDATE:  I have looked into the legality behind using art found online and it turns out that heavy fines and other penalties can be accrued, even for a portfolio project that never becomes an actual website.  While it may be unlikely to occur, I like to make sure that my ass is covered.  For this reason, I will be removing the art that I have used thus far until I can get the express consent of the artists or find suitable public domain replacements.  
 
+In the meantime, I will be using images under the Creative Commons License as substitutes.  Let me be clear, most Creative Commons images have a very tacky feel to them, so please try not to judge this site based on the images therein.  I'm doing my best to make something impressive without breaking laws.  
+
 
 If you have any feedback or comments for me regarding anything related to this or other projects, feel free to contact me in any of the ways mentioned above.  
