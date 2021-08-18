@@ -16,7 +16,7 @@ body {
     position: absolute;
     width: 100%;
     height: auto;    
-    background-image: url("_Images/Transparent.png");
+    background-image: url("/_SiteResources/Images/Transparent.png");
     overflow: visible;
   }
 
@@ -59,7 +59,7 @@ body {
 
 
   .PageContent {
-    background-image: url("_Images/Transparent.png");
+    background-image: url("/_SiteResources/Images/Transparent.png");
     position: relative;
     width: 100%;
     height: auto;
@@ -76,7 +76,7 @@ body {
     width: 10px; /* Or zero, or something very small */
     margin-left: 50%; /* -(256 * 1.5) - 12 */
     overflow: visible;
-    background-image: url("_Images/Transparent.png");
+    background-image: url("/_SiteResources/Images/Transparent.png");
   }
 
   .AnchorLeft {
@@ -86,7 +86,7 @@ body {
     width: 350px; /* Or zero, or something very small */
     margin-left: -632px; /* -(256 * 1.5) - 12 */
     overflow: visible;
-    background-image: url("_Images/Transparent.png");
+    background-image: url("/_SiteResources/Images/Transparent.png");
   }
 
   .PageContentLeftTop {
@@ -119,7 +119,7 @@ body {
     width: 888px; /* Or zero, or something very small */
     margin-left: -257px;
     overflow: visible;
-    background-image: url("_Images/Transparent.png");
+    background-image: url("/_SiteResources/Images/Transparent.png");
   }
 
   .PageContentRight {
@@ -165,7 +165,7 @@ body {
 
 
   .PlanesMapBackground {
-    background-image: url("/_SiteResources/Images/PlanesMapBackground.jpg");
+    background-image: url("/_SiteResources/Images/Procès-verbal_d\'élection_consulaire_\(1294\)Cropped.jpg");
     background-repeat: no-repeat;
     background-size: 105%;
     background-attachment: fixed;
