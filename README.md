@@ -1,6 +1,12 @@
 # KnowOnesWebsiteOfEverything
 A website that serves as a showcase of my HTML and CSS skills.  The content within is related to Dungeons and Dragons 5th Edition, and covers everything from characters builds of mine, to a original wiki that organizes my homebrew world, to a (planned) proxy filtering system with links to official content.  
 
+How to Use
+----------
+I've been developing this website using Visual Studio Code with two very important extensions:  Live Server v5.6.1 by Ritwick Dey and jQuery Code Snippets by Don Jayamanna.  
+The Live Server plugin is required to interact with this website since I don't have it online anywhere yet.  Opening the HTML files with your browser will incorrectly load the web page.  Within VSC, right click on index.html and select "Open with Live Server".  This should grant full functionality.  The video below goes over the Live Server plugin, and is where I learned how to use it.  
+https://youtu.be/gQojMIhELvM?list=PLoYCgNOIyGABDU532eesybur5HPBVfC1G&t=80
+
 The website is broken down into four main categories, which are 5e Resources, Nraanon Wiki, Tech Guides, and Character Builds.  
 
 5e Resources is yet to be developed, but the plan is to create a list with comprehensive filters for 5th Edition content.  Rather than pirating the content itself, only the title  and attributes for filtering purposes will be present, with the game content being replaced with a link to the relevant page on D&D Beyond's website.  The last thing I want to do is undermine D&DB or underuct their profits as I am a massive Wizards of the Coast fan.  
