@@ -4,8 +4,11 @@ A website that serves as a showcase of my HTML and CSS skills.  The content with
 How to Use
 ----------
 I've been developing this website using Visual Studio Code with two very important extensions:  Live Server v5.6.1 by Ritwick Dey and jQuery Code Snippets by Don Jayamanna.  
+
 The Live Server plugin is required to interact with this website since I don't have it online anywhere yet.  Opening the HTML files with your browser will incorrectly load the web page.  Within VSC, right click on index.html and select "Open with Live Server".  This should grant full functionality.  The video below goes over the Live Server plugin, and is where I learned how to use it.  
 https://youtu.be/gQojMIhELvM?list=PLoYCgNOIyGABDU532eesybur5HPBVfC1G&t=80
+
+The jQuery plugin is used to import persistent HTML elements across multiple pages.  This prevents needing to make the same small edit to 80+ every time.  Each html file has a small tidbit of Javascript at the bottom that handles this.  
 
 The website is broken down into four main categories, which are 5e Resources, Nraanon Wiki, Tech Guides, and Character Builds.  
 
