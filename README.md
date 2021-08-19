@@ -10,6 +10,8 @@ https://youtu.be/gQojMIhELvM?list=PLoYCgNOIyGABDU532eesybur5HPBVfC1G&t=80
 
 The jQuery plugin is used to import persistent HTML elements across multiple pages.  This prevents needing to make the same small edit to 80+ every time.  Each html file has a small tidbit of Javascript at the bottom that handles this.  
 
+Site Content
+-------
 The website is broken down into four main categories, which are 5e Resources, Nraanon Wiki, Tech Guides, and Character Builds.  
 
 5e Resources is yet to be developed, but the plan is to create a list with comprehensive filters for 5th Edition content.  Rather than pirating the content itself, only the title  and attributes for filtering purposes will be present, with the game content being replaced with a link to the relevant page on D&D Beyond's website.  The last thing I want to do is undermine D&DB or underuct their profits as I am a massive Wizards of the Coast fan.  
