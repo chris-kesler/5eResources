@@ -8,7 +8,7 @@ I've been developing this website using Visual Studio Code with two very importa
 The Live Server plugin is required to interact with this website since I don't have it online anywhere yet.  Opening the HTML files with your browser will incorrectly load the web page.  Within VSC, right click on index.html and select "Open with Live Server".  This should grant full functionality.  The video below goes over the Live Server plugin, and is where I learned how to use it.  
 https://youtu.be/gQojMIhELvM?list=PLoYCgNOIyGABDU532eesybur5HPBVfC1G&t=80
 
-The jQuery plugin is used to import persistent HTML elements across multiple pages.  This prevents needing to make the same small edit to 80+ every time.  Each html file has a small tidbit of Javascript at the bottom that handles this.  
+The jQuery plugin is used to import persistent HTML elements across multiple pages.  This prevents needing to make the same edit to 80+ files every time a change is made.  Each html file has a small tidbit of Javascript at the bottom that handles this.  
 
 Site Content
 -------
