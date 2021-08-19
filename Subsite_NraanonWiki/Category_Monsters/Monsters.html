@@ -6,26 +6,17 @@
     <meta http-equiv="X-US-Compatible" content="e-edge">
     <title>Nraanon Wiki</title>
     <link rel="icon" href="NraanonDragonToken.png">
-    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="http://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
   </head>
 
 
   <body>
     <div class="PageContainer, PlanesMapBackground"> 
       <div class="PageHeader">
-          <center><button class="HomeButton" onclick="location.href='../../index.html'"><h1>Know One's Website of Everything</h1></button>
-          <br>
-          A website discussing Dungeons and Dragons 5th Edition
-          
-          <hr>
-          <nav><center>
-            <button class="HeaderButton" onclick="location.href='../5eResources/5eResources.html'">5e Resources</button>
-            <button class="HeaderButton" onclick="location.href='../../CharacterBuilds/CharacterBuilds.html'">Character Builds</button>
-            <button class="HeaderButton" onclick="location.href='../../NraanonWiki/NraanonWiki.html'">Nraanon Wiki</button>
-            <button class="HeaderButton" onclick="location.href='../../TechGuides/TechGuides.html'">Tech Guides</button>      
-          </nav>
-          <hr>
-          <h1>Nraanon Wiki</h1>
+        <div class="PageHeaderNav"></div>
+
+          <h1>Nraanon Wiki:  Monsters</h1>
           <hr>
       </div>
         
@@ -33,68 +24,39 @@
       <div class="PageContent">
         <div class="AnchorCenter">
           <div class="AnchorLeft">
-
-            <section class="PageContentLeftTop">
-              <button class="BackButton"  onclick="location.href='../NraanonWiki.html'">
-                Back to Nraanon Wiki
-              </button>
-            </section>
-
-            <section class="PageContentLeftTop">
-              <button class="AboutThisSite" onclick="location.href='../../AboutThisSite.html'">
-                <b>About this Site</b>
-              </button>
-            </section>
-
-            <section class="PageContentLeft">
-              <h3>Search this Site</h3>
-
-            </section>
-
-            <section class="PageContentLeft">
-              <h3>Popular Character Builds</h3>
-    
-              <ul>
-              &bull; <button class="BulletinButton"><a href="../CharacterBuilds/GenieLance/GenieLance.html">The Genie Lance</a></button><br>
-              &bull; <button class="BulletinButton"><a href="../CharacterBuilds/ArtiChron/ArtiChron.html">The ArtiChron</a></button><br>
-              &bull; <button class="BulletinButton"><a href="../CharacterBuilds/Druizard/Druizard.html">The Druizard</a></button><br>
-              </ul>
-              
-              <br>
-            </section>
-
-            <section class="PageContentLeft">
-              <br>
-              <center><img src="../_Images/NraanonDragonToken.png" width="200px"></center>
-    
-              <ul>
-                <img src="../_Images/Icon_LinkedIn.png" alt="LinkedIn" style="vertical-align: middle" width="30px"> <button class="BulletinButton"><a href="https://www.linkedin.com/in/christian-kesler/" target="_blank">My LinkedIn</a></button><br>
-                <img src="../_Images/Icon_GitHub.png" alt="GitHub" style="vertical-align: middle" width="30px"> <button class="BulletinButton"><a href="https://github.com/chris-kesler" target="_blank">My GitHub</a></button><br>
-                <img src="../_Images/Icon_Discord.png" alt="Discord" style="vertical-align: middle" width="30px" data-recalc-dims="1"> <button class="BulletinButton"><a href="https://discord.gg/KY8c76K4" target="_blank">My Discord</a></button><br>
-
-              </ul>
-              
-              <br>
-            </section>
+            <div class="ContentLeftTemplate"></div>
           </div>
+
 
 
           <div class="AnchorRight">
 
             <section class="PageContentRight">
-              <button class="NraanonWikiButton" onclick="location.href='../Overview/Overview.html'">Overview</button>
-            </section> 
-
-            <section class="PageContentRight">            
-              <button class="NraanonWikiButton" onclick="location.href='../Planes/Planes.html'">Planes</button>
-              <button class="NraanonWikiButton" onclick="location.href='../Deities/Deities.html'">Deities</button>
-              <button class="NraanonWikiButton" onclick="location.href='../Magic/Magic.html'">Magic</button>
-              <button class="NraanonWikiButton" onclick="location.href='../Monsters/Monsters.html'">Monsters</button>
-              <button class="NraanonWikiButton" onclick="location.href='../Races/Races.html'">Races</button>
-              <button class="NraanonWikiButton" onclick="location.href='../Nations/Nations.html'">Nations</button>
-              <button class="NraanonWikiButton" onclick="location.href='../Factions/Factions.html'">Factions</button>
-              <button class="NraanonWikiButton" onclick="location.href='../TableRules/TableRules.html'">Table Rules</button>
-            </section>
+              <button class="WikiOverviewButton" onclick="location.href='Monsters_Overview.html'">Monsters Overview</button>
+              <button class="WikiBackButton" onclick="location.href='../NraanonWiki.html'">Back to Nraanon Wiki</button>
+              <center><h2>Types and Subtypes</h2>
+              <hr>
+              
+              <button class="WikiCategoryButton" onclick="location.href='Type_Aberrations/Aberrations.html'"><h3>Aberrations</h3></button>
+              <button class="WikiCategoryButton" onclick="location.href='Type_Beasts/Beasts.html'"><h3>Beasts</h3></button>
+              <br>
+              <button class="WikiCategoryButton" onclick="location.href='Type_Celestials/Celestials.html'"><h3>Celestials</h3></button>
+              <button class="WikiCategoryButton" onclick="location.href='Type_Constructs/Constructs.html'"><h3>Constructs</h3></button>
+              <br>
+              <button class="WikiCategoryButton" onclick="location.href='Type_Dragons/Dragons.html'"><h3>Dragons</h3></button>
+              <button class="WikiCategoryButton" onclick="location.href='Type_Elementals/Elementals.html'"><h3>Elementals</h3></button>
+              <br>
+              <button class="WikiCategoryButton" onclick="location.href='Type_Fey/Fey.html'"><h3>Fey</h3></button>
+              <button class="WikiCategoryButton" onclick="location.href='Type_Fiends/Fiends.html'"><h3>Fiends</h3></button>
+              <br>
+              <button class="WikiCategoryButton" onclick="location.href='Type_Giants/Giants.html'"><h3>Giants</h3></button>
+              <button class="WikiCategoryButton" onclick="location.href='Type_Hybrids/Hybrids.html'"><h3>Hybrids</h3></button>
+              <br>
+              <button class="WikiCategoryButton" onclick="location.href='Type_Necrophages/Necrophages.html'"><h3>Necrophages</h3></button>
+              <button class="WikiCategoryButton" onclick="location.href='Type_Plants/Plants.html'"><h3>Plants</h3></button>
+              <br>
+              
+          </section>
             
           </div>
         </div>
@@ -108,3 +70,12 @@
 
   </body>
 </html>
+
+<script type="text/javascript">
+  $(function () {
+
+    $(".PageHeaderNav").load("/_SiteResources/Pages/Import_PageHeader.html");
+    $(".ContentLeftTemplate").load("/_SiteResources/Pages/Import_ContentLeft.html");
+
+});
+</script>
