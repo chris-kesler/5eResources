@@ -5,7 +5,7 @@ How to Use
 ----------
 I've been developing this website using Visual Studio Code with one very important extension:  Live Server v5.6.1 by Ritwick Dey.
 
-The Live Server plugin is required to interact with this website since locally, but I now have put my website on a hosting server so it may remain online at all times.  Opening the local HTML files with your browser will incorrectly load the web page.  Within VSC, right click on index.html and select "Open with Live Server".  This should grant full functionality.  The video below goes over the Live Server plugin, and is where I learned how to use it.  
+The Live Server plugin is required to interact with this website locally, but I now have put my website on a hosting server so it may remain online at all times.  Opening the local HTML files with your browser will incorrectly load the web page.  Within VSC, right click on index.html and select "Open with Live Server".  This should grant full functionality.  The video below goes over the Live Server plugin, and is where I learned how to use it.  
 https://youtu.be/gQojMIhELvM?list=PLoYCgNOIyGABDU532eesybur5HPBVfC1G&t=80
 
 The jQuery library is used to import persistent HTML elements across multiple pages.  This prevents needing to make the same edit to 80+ files every time a change is made.  Each html file has a small tidbit of Javascript at the bottom that handles this.  
