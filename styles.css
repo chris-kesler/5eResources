@@ -63,7 +63,7 @@ body {
     position: relative;
     width: 100%;
     height: auto;
-    min-height: 120VH;
+    min-height: 135VH;
     padding-bottom: 2.5rem;    /* Footer height */
     overflow: visible;
   }
@@ -110,6 +110,10 @@ body {
     padding-right: 25px; 
     width: 300px; /* 256*2 -50 for padding -25 for content gap */
   } 
+
+  .PortfolioIcon {
+    margin: 5px;
+  }
 
 
   .AnchorRight {
