@@ -258,7 +258,7 @@ body {
   }
 
   .WikiCategoryButton {
-    width: 250px;
+    width: 225px;
     height: 65px;
     margin: 5px;
     border-radius: 10px;
@@ -269,13 +269,14 @@ body {
   }
 
   .WikiPageButton {
-    width: 200px;
+    width: 225px;
     height: 50px;
-    border-radius: 25px;
+    border-radius: 10px;
     background-color: tan;
     border-style: solid;
     border-color: rgb(54,57,63);
     font-size: small;
+    margin: 5px;
   }
 
 
@@ -294,7 +295,7 @@ body {
     float: right;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-right-radius: 20px;
     border-bottom-right-radius: 50px;
   }
 
@@ -325,8 +326,8 @@ body {
     float: right;
     border: 1px solid rgb(189,188,173);
     background-color: rgb(223,222,207);
-    height: 550px;
-    width: 100px;
+    height: auto;
+    width: auto;
     margin-right: 0px;
     border-radius: 5px;
   }
