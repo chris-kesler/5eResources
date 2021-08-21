@@ -127,6 +127,7 @@ body {
   }
 
   .PageContentRight {
+    overflow: hidden;
     flex-direction: column;
     margin: 5%;
     margin-left: 0px; /* -256*3 /2 */
@@ -290,11 +291,11 @@ body {
 
 
   .WikiBackButton {
-    float: left;
-    border-bottom-left-radius: 25px;
-    border-top-left-radius: 25px;
+    float: right;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 50px;
   }
 
   .WikiOverviewButton, .WikiOverviewButton_Placeholder {
@@ -318,6 +319,16 @@ body {
     margin: 3px;
     padding: 0px;
     background-color: rgb(189,188,173);
+  }
+  
+  .WikiButtonTable {
+    float: right;
+    border: 1px solid rgb(189,188,173);
+    background-color: rgb(223,222,207);
+    height: 550px;
+    width: 100px;
+    margin-right: 0px;
+    border-radius: 5px;
   }
 
   nav table {
