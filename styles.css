@@ -332,6 +332,23 @@ body {
     border-radius: 5px;
   }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   nav table {
     margin-left: 0%;
     width: 100%;
@@ -374,6 +391,12 @@ body {
     border-top: 1px solid rgb(0, 0, 0);
     margin: 1em 0;
     padding: 0;
+  }
+
+
+  .EntryDate {
+    float: right;
+    position: fixed;
   }
 
 
