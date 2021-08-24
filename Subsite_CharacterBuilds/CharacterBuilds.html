@@ -6,25 +6,14 @@
     <meta http-equiv="X-US-Compatible" content="e-edge">
     <title>Know One's Website of Everything</title>
     <link rel="icon" href="/_SiteResources/Images/KnowOne.png">
-    <link rel="stylesheet" href="../styles.css">
-  </head>
+    <link rel="stylesheet" href="/styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  </head>
 
 
   <body>
     <div class="PageContainer, PlanesMapBackground"> 
       <div class="PageHeader">
-          <center><button class="HomeButton" onclick="location.href='../index.html'"><h1>Know One's Website of Everything</h1></button>
-          <br>
-          Lorem Ipsum yada yada
-          
-          <hr>
-          <nav><center>
-            <button class="HeaderButton" onclick="location.href='../5eResources/5eResources.html'">5e Resources</button>
-            <button class="HeaderButton" onclick="location.href='../CharacterBuilds/CharacterBuilds.html'">Character Builds</button>
-            <button class="HeaderButton" onclick="location.href='../NraanonWiki/NraanonWiki.html'">Nraanon Wiki</button>
-            <button class="HeaderButton" onclick="location.href='../TechGuides/TechGuides.html'">Tech Guides</button>      
-          </nav>
-          <hr>
+        <div class="PageHeaderNav"></div>
           <h1>Character Builds</h1>
           <hr>
       </div>
@@ -33,76 +22,35 @@
       <div class="PageContent">
         <div class="AnchorCenter">
           <div class="AnchorLeft">
-
-            <section class="PageContentLeftTop">
-              <button class="BackButton"  onclick="location.href='../index.html'">
-                Out to Homepage
-              </button>
-            </section>
-
-            <section class="PageContentLeftTop">
-              <button class="AboutThisSite" onclick="location.href='../AboutThisSite.html'">
-                <b>About this Site</b>
-              </button>
-            </section>
-
-            <section class="PageContentLeft">
-              <h3>Search this Site</h3>
-
-            </section>
-
-            <section class="PageContentLeft">
-              <h3>Popular Character Builds</h3>
-    
-              <ul>
-              &bull; <button class="BulletinButton"><a href="../CharacterBuilds/GenieLance/GenieLance.html">The Genie Lance</a></button><br>
-              &bull; <button class="BulletinButton"><a href="../CharacterBuilds/ArtiChron/ArtiChron.html">The ArtiChron</a></button><br>
-              &bull; <button class="BulletinButton"><a href="../CharacterBuilds/Druizard/Druizard.html">The Druizard</a></button><br>
-              </ul>
-              
-              <br>
-            </section>
-
-            <section class="PageContentLeft">
-              <br>
-              <center><img src="../_Images/NraanonDragonToken.png" width="200px"></center>
-    
-              <ul>
-                <img src="../_Images/Icon_LinkedIn.png" alt="LinkedIn" style="vertical-align: middle" width="30px"> <button class="BulletinButton"><a href="https://www.linkedin.com/in/christian-kesler/" target="_blank">My LinkedIn</a></button><br>
-                <img src="../_Images/Icon_GitHub.png" alt="GitHub" style="vertical-align: middle" width="30px"> <button class="BulletinButton"><a href="https://github.com/chris-kesler" target="_blank">My GitHub</a></button><br>
-                <img src="../_Images/Icon_Discord.png" alt="Discord" style="vertical-align: middle" width="30px" data-recalc-dims="1"> <button class="BulletinButton"><a href="https://discord.gg/KY8c76K4" target="_blank">My Discord</a></button><br>
-
-              </ul>
-              
-              <br>
-            </section>
+            <div class="ContentLeftTemplate"></div>
           </div>
 
 
-          <div class="AnchorRight"> 
+
+          <div class="AnchorRight">
 
             <section class="PageContentRight">
-              <button class="CharacterBuildButton" onclick="location.href='ArtiChron/ArtiChron.html'">The ArtiChron</button>
-              <button class="CharacterBuildButton" onclick="location.href='Druizard/Druizard.html'">The Druizard</button>
-              <button class="CharacterBuildButton" onclick="location.href='GenieLance/GenieLance.html'">The Genie Lance</button>
-              <button class="CharacterBuildButton" onclick="location.href=''">NA</button>
-              <button class="CharacterBuildButton" onclick="location.href=''">NA</button>
-              <button class="CharacterBuildButton" onclick="location.href=''">NA</button>
-              <button class="CharacterBuildButton" onclick="location.href=''">NA</button>
-              <button class="CharacterBuildButton" onclick="location.href=''">NA</button>
-            </section>
+              <button class="WikiBackButton" onclick="location.href='/index.html'">Out to Homepage</button>
+              <h2>Overview</h2>
+              <hr>
 
-            <section class="PageContentRight">                  
-              <button class="CharacterBuildButton" onclick="location.href=''">The Echo Barb</button>
-              <button class="CharacterBuildButton" onclick="location.href=''">The Hex Lance</button>
-              <button class="CharacterBuildButton" onclick="location.href=''">The Gloom Slinger</button>
-              <button class="CharacterBuildButton" onclick="location.href=''">The Bardificer</button>
-              <button class="CharacterBuildButton" onclick="location.href=''">NA</button>
-              <button class="CharacterBuildButton" onclick="location.href=''">NA</button>
-              <button class="CharacterBuildButton" onclick="location.href=''">NA</button>
-              <button class="CharacterBuildButton" onclick="location.href=''">NA</button>
-            </section>
+              <table class="WikiButtonTable">
+                <tr><td>
+                  <button class="WikiCategoryButton" onclick="location.href='Category_Artificer+WarMagicWizard/Artificer+WarMagicWizard.html'"><h3>ArtiWar</h3></button>
+                </td></tr>
+              </table>              
+              <p>
+                This subsite is dedicated to defining character builds for D&D 5e.  
+                Some of these directly tie to entries in Game Journals, and others are simply though experiments.  
+                While these may not be terribly exciting for most readers, these are helpful for certain people.  
+                Having them for my own documentation purposes is also very convenient.  
+              </p>
 
+              <p>
+                If you want to take a look and see what I've been thinking up, read on.  
+              </p>
+
+            </section>
           </div>
         </div>
 
@@ -116,4 +64,11 @@
   </body>
 </html>
 
+<script type="text/javascript">
+  $(function () {
 
+    $(".PageHeaderNav").load("/_SiteResources/Pages/Import_PageHeader.html");
+    $(".ContentLeftTemplate").load("/_SiteResources/Pages/Import_ContentLeft.html");
+
+});
+</script>
