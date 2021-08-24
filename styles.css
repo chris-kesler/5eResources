@@ -397,7 +397,7 @@ body {
     background-color: rgb(223,222,207);
     color: rgb(58,58,58);
     font-size: small;
-    text-align: left;
+    text-align: center;
   }
 
   .TierTable tr td {
@@ -405,6 +405,12 @@ body {
     color: rgb(58,58,58);
     font-size: small;
     text-align: left;
+  }
+
+  .TierTable tr:first-child th {
+    background-color: rgb(189,188,173);
+    color: rgb(58,58,58);
+    font-size: large;
   }
 
 
