@@ -266,20 +266,22 @@ body {
     height: 65px;
     margin: 5px;
     border-radius: 10px;
-    background-color: grey;
+    background-color: rgb(175, 175, 175);
     border-style: solid;
     border-color: rgb(54,57,63);
-    font-size: medium;
+    font-size: large;
+    font-weight: bold;
   }
 
   .WikiPageButton {
     width: 225px;
     height: 50px;
     border-radius: 10px;
-    background-color: tan;
+    background-color: rgb(212, 188, 143);
     border-style: solid;
     border-color: rgb(54,57,63);
-    font-size: small;
+    font-size: medium;
+    font-weight: bold;
     margin: 5px;
   }
 
