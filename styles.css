@@ -34,6 +34,7 @@ body {
 
   .HomeButton {
     width: 40%;
+    min-width: 400px;
     background-color: rgb(54,57,63);
     border-style: dotted;
     border-color: rgb(54,57,63);
@@ -74,23 +75,24 @@ body {
     position: relative;
     height: auto;
     padding: 0%;
-    width: 10px; /* Or zero, or something very small */
-    margin-left: 50%; /* -(256 * 1.5) - 12 */
+    width: 0px; /* Or zero, or something very small */
+    margin-left: 49.4vw; /* -(256 * 1.5) - 12 */
     overflow: visible;
     background-image: url("/_SiteResources/Images/Transparent.png");
   }
 
   .AnchorLeft {
-    position: absolute;
+    position: relative;
     height: auto;
     padding: 0%;
     width: 350px; /* Or zero, or something very small */
-    margin-left: -632px; /* -(256 * 1.5) - 12 */
+    margin-left: -45vw; /* -(256 * 1.5) - 12 */
     overflow: visible;
     background-image: url("/_SiteResources/Images/Transparent.png");
   }
 
   .PageContentLeftTop {
+    box-sizing: border-box;
     flex-direction: column;
     margin: 5%;
     margin-left: 0px; /* -256 */
@@ -98,10 +100,11 @@ body {
     padding: 5px;
     padding-left: 25px;
     padding-right: 25px; 
-    width: 300px; /* 256*2 -50 for padding -25 for content gap */
+    width: 90vw; /* 256*2 -50 for padding -25 for content gap */
   }
 
   .PageContentLeft {
+    box-sizing: border-box;
     flex-direction: column;
     margin: 5%;
     margin-left: 0px; /* -256 */
@@ -109,7 +112,7 @@ body {
     padding: 5px;
     padding-left: 25px;
     padding-right: 25px; 
-    width: 300px; /* 256*2 -50 for padding -25 for content gap */
+    width: 90vw; /* 256*2 -50 for padding -25 for content gap */
   } 
 
   .PortfolioIcon {
@@ -121,13 +124,14 @@ body {
     position: relative;
     height: auto;
     padding: 0%;
-    width: 888px; /* Or zero, or something very small */
-    margin-left: -257px;
+    width: 0px; /* Or zero, or something very small */
+    margin-left: -45vw;
     overflow: visible;
     background-image: url("/_SiteResources/Images/Transparent.png");
   }
 
   .PageContentRight {
+    box-sizing: border-box;
     overflow: hidden;
     flex-direction: column;
     margin: 5%;
@@ -137,7 +141,7 @@ body {
     padding-left: 25px;
     padding-right: 25px;
     height: auto;
-    width: 838px; /* 256*3 -50 for padding -17 for scrollbar */
+    width: 90vw; /* 256*3 -50 for padding -17 for scrollbar */
   }
 
   section {
@@ -175,7 +179,7 @@ body {
 
   .PlanesMapBackground {
     background-image: url("/_SiteResources/Images/Procès-verbal_d\'élection_consulaire_\(1294\)Cropped.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: 105%;
     background-attachment: fixed;
     position: relative;
@@ -263,6 +267,7 @@ body {
 
   .WikiCategoryButton {
     width: 225px;
+    max-width: 35vw;
     height: 65px;
     margin: 5px;
     border-radius: 10px;
@@ -275,6 +280,7 @@ body {
 
   .WikiPageButton {
     width: 225px;
+    max-width: 35vw;
     height: 50px;
     border-radius: 10px;
     background-color: rgb(212, 188, 143);
@@ -508,6 +514,7 @@ body {
     margin-right: 50px;
     height: 60px;
     width: 60px;
+    max-width: 5vw;
     border-radius: 30px;
     background-color: rgb(54,57,63);
     border-color: rgb(54,57,63);
