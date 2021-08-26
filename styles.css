@@ -188,10 +188,10 @@ body {
   .WikiOverviewTable {
     display: block;
     width: 275px;
+    max-width: 35vw;
     margin: 10px;
     margin-right: 0px;
     overflow: auto;
-    max-height: 1000px;
     border: 1px solid rgb(189,188,173);
     border-collapse: collapse;
     float: right;
@@ -353,7 +353,6 @@ body {
     margin-right: 0px;
     margin-left: 0px;
     overflow: auto;
-    max-height: 2000px;
     border: 1px solid rgb(189,188,173);
     border-collapse: collapse;
     float: center;
@@ -510,8 +509,8 @@ body {
   .FooterButton {
     margin-top: 15px;
     margin-bottom: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 35px;
+    margin-right: 35px;
     height: 60px;
     width: 60px;
     max-width: 5vw;
@@ -627,4 +626,6 @@ body {
 
 
   
-  
+  iframe {
+    max-width: 80vw;
+  }
