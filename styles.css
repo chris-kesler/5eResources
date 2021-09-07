@@ -636,9 +636,7 @@ iframe {
 
 
 
-
-
-#FilterInput {
+.FilterInput {
   background-image: url('/css/searchicon.png'); /* Add a search icon to input */
   background-position: 10px 12px; /* Position the search icon */
   background-repeat: no-repeat; /* Do not repeat the icon image */
@@ -649,16 +647,21 @@ iframe {
   margin-bottom: 12px; /* Add some space below the input */
 }
 
+
+
 #FilterTable {
   border-collapse: collapse; /* Collapse borders */
-  width: 95%; /* Full-width */
+  width: auto; /* Full-width */
   border: 1px solid rgb(97, 97, 97); /* Add a grey border */
+  overflow: auto;
+  display: inline-block;
 }
 
 #FilterTable th, #FilterTable td {
   text-align: left; /* Left-align text */
-  padding: 2px; /* Add padding */
+  padding: 5px; /* Add padding */
   color: black;
+  border: 1px solid black;
 }
 
 #FilterTable tr {
@@ -666,12 +669,29 @@ iframe {
   border-bottom: 1px solid rgb(61, 61, 61);
 }
 
-#FilterTable tr.header, #FilterTable tr:hover {
+#FilterTable tr {
   /* Add a grey background color to the table header and on hover */
-  background-color: #575656;
+  background-color: #999999;
+}
+
+#FilterTable tr td:first-child, #FilterTable tr th:first-child  {
+  text-align: center;
 }
 
 
 .FilterTableImage {
   width: 50px;
+}
+
+
+.TableSortButton {
+  width: auto;
+  height: auto;
+  margin: 0px;
+  border-radius: 7px;
+  background-color: rgb(175, 175, 175);
+  border-style: solid;
+  border-color: rgb(54,57,63);
+  font-size: small;
+  font-weight: bold;
 }
