@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-US-Compatible" content="e-edge">
+    <title>KnowOne's Website of Everything</title>
+    <link rel="icon" href="/_SiteResources/Images/KnowOne.png">
+    <link rel="stylesheet" href="/styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  </head>
+
+
+  <body>
+    <div class="PageContainer, PlanesMapBackground"> 
+      <div class="PageHeader">
+        <div class="Import_PageHeader"></div>
+
+          <h1>5e Resources:  Spells</h1>
+          <hr>
+      </div>
+        
+      
+      <div class="PageContent">
+        <div class="AnchorCenter">
+          
+
+
+
+          <div class="AnchorRight">
+
+            <section class="PageContentRight">
+              <button class="WikiBackButton" onclick="location.href='../5eResources.html'">Out to 5e Resources</button>
+              <h2>Filters</h2>
+              <hr>
+
+              <input type="text" id="FilterInput" onkeyup="myFunction()" placeholder="Search for spells..">
+
+              <table id="FilterTable">
+                <tr class="header">
+                  <th onclick="sortTable(0)">School</th>
+                  <th onclick="sortTable(1)">Level</th>
+                  <th onclick="sortTable(2)">Name</th>
+                  <th onclick="sortTable(3)">Casting Time</th>
+                  <th onclick="sortTable(4)">Duration</th>
+                  <th onclick="sortTable(5)">Range/Area</th>
+                  <th onclick="sortTable(6)">Attack/Save</th>
+                  <th onclick="sortTable(7)">Damage/Effect</th>
+                </tr>
+                <!-- Abjuration Cantrips -->
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Abjuration.png" 
+                    alt="Sigil-Abjuration">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Blade-Ward" target="_blank">Blade Ward</a></td>
+                  <td>1 Action</td>
+                  <td>1 Round</td>
+                  <td>Self</td>
+                  <td></td>
+                  <td>Combat(...)</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Abjuration.png" 
+                    alt="Sigil-Abjuration">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Resistance" target="_blank">Resistance (C)</td>
+                  <td>1 Action</td>
+                  <td>1 Minute</td>
+                  <td>Touch</td>
+                  <td></td>
+                  <td>Buff</td>
+                </tr>
+                <!-- Conjuration Cantrips -->
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Conjuration.png" 
+                    alt="Sigil-Conjuration">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Acid-Splash" target="_blank">Acid Splash</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>60 ft</td>
+                  <td>DEX Save</td>
+                  <td>Acid</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Conjuration.png" 
+                    alt="Sigil-Conjuration">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Create-Bonfire" target="_blank">Create Bonfire (C)</td>
+                  <td>1 Action</td>
+                  <td>1 Minute</td>
+                  <td>60 ft(5 ft)</td>
+                  <td>DEX Save</td>
+                  <td>Fire</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Conjuration.png" 
+                    alt="Sigil-Conjuration">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Infestation" target="_blank">Infestation</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>30 ft</td>
+                  <td>CON Save</td>
+                  <td>Poison</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Conjuration.png" 
+                    alt="Sigil-Conjuration">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Mage-Hand" target="_blank">Mage Hand</td>
+                  <td>1 Action</td>
+                  <td>1 Minute</td>
+                  <td>30 ft</td>
+                  <td></td>
+                  <td>Utility</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Conjuration.png" 
+                    alt="Sigil-Conjuration">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Poison-Spray" target="_blank">Poison Spray</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>10 ft</td>
+                  <td>CON Save</td>
+                  <td>Poison</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Conjuration.png" 
+                    alt="Sigil-Conjuration">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Produce-Flame" target="_blank">Produce Flame</td>
+                  <td>1 Action</td>
+                  <td>10 Minutes</td>
+                  <td>Self</td>
+                  <td>Ranged</td>
+                  <td>Fire</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Conjuration.png" 
+                    alt="Sigil-Conjuration">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Sword-Burst" target="_blank">Sword Burst</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>Self (5 ft)</td>
+                  <td>DEX Save</td>
+                  <td>Force</td>
+                </tr>
+                <!-- Divination Cantrips -->
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Divination.png" 
+                    alt="Sigil-Divination">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Guidance" target="_blank">Guidance (C)</td>
+                  <td>1 Action</td>
+                  <td>1 Minute</td>
+                  <td>Touch</td>
+                  <td></td>
+                  <td>Buff</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Divination.png" 
+                    alt="Sigil-Divination">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/True-Strike" target="_blank">True Strike (C)</td>
+                  <td>1 Action</td>
+                  <td>1 Round</td>
+                  <td>30 ft</td>
+                  <td></td>
+                  <td>Foreknowledge</td>
+                </tr>
+                <!-- Enchantment Cantrips -->
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Enchantment.png" 
+                    alt="Sigil-Enchantment">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Encode-Thoughts" target="_blank">Encode Thoughts</td>
+                  <td>1 Action</td>
+                  <td>8 Hours</td>
+                  <td>Self</td>
+                  <td></td>
+                  <td>Creation(...)</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Enchantment.png" 
+                    alt="Sigil-Enchantment">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Friends" target="_blank">Friends (C)</td>
+                  <td>1 Action</td>
+                  <td>1 Minute</td>
+                  <td>Self</td>
+                  <td></td>
+                  <td>Buff(...)</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Enchantment.png" 
+                    alt="Sigil-Enchantment">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Mind-Sliver" target="_blank">Mind Sliver</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>60 ft</td>
+                  <td>INT Save</td>
+                  <td>Psychic</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Enchantment.png" 
+                    alt="Sigil-Enchantment">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Vicious-Mockery" target="_blank">Vicious Mockery</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>60 ft</td>
+                  <td>WIS Save</td>
+                  <td>Psychic</td>
+                </tr>
+                <!-- Evocation Cantrips -->
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Evocation.png" 
+                    alt="Sigil-Evocation">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Booming-Blade" target="_blank">Booming Blade</td>
+                  <td>1 Action</td>
+                  <td>1 Round</td>
+                  <td>Self (5 ft)</td>
+                  <td>Melee</td>
+                  <td>Thunder(...)</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Evocation.png" 
+                    alt="Sigil-Evocation">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Dancing-Lights" target="_blank">Dancing Lights</td>
+                  <td>1 Action</td>
+                  <td>1 Minute</td>
+                  <td>120 ft</td>
+                  <td></td>
+                  <td>Utility</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Evocation.png" 
+                    alt="Sigil-Evocation">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Eldritch-Blast" target="_blank">Eldritch Blast</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>120 ft</td>
+                  <td>Ranged</td>
+                  <td>Force</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Evocation.png" 
+                    alt="Sigil-Evocation">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Fire-Bolt" target="_blank">Fire Bolt</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>120 ft</td>
+                  <td>Ranged</td>
+                  <td>Fire</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Evocation.png" 
+                    alt="Sigil-Evocation">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Frostbite" target="_blank">Frostbite</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>60 ft</td>
+                  <td>CON Save</td>
+                  <td>Cold</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Evocation.png" 
+                    alt="Sigil-Evocation">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Green-Flame-Blade" target="_blank">Green-Flame Blade</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>Self (5 ft)</td>
+                  <td>Melee</td>
+                  <td>Fire(...)</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Evocation.png" 
+                    alt="Sigil-Evocation">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Light" target="_blank">Light</td>
+                  <td>1 Action</td>
+                  <td>1 Hour</td>
+                  <td>Touch (20 ft)</td>
+                  <td>DEX Save</td>
+                  <td>Creation(...)</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Evocation.png" 
+                    alt="Sigil-Evocation">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Lightning-Lure" target="_blank">Lightning Lure</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>Self (15 ft)</td>
+                  <td>STR Save</td>
+                  <td>Lightning</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Evocation.png" 
+                    alt="Sigil-Evocation">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Ray-of-Frost" target="_blank">Ray of Frost</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>60 ft</td>
+                  <td>Ranged</td>
+                  <td>Cold</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Evocation.png" 
+                    alt="Sigil-Evocation">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Sacred-Flame" target="_blank">Sacred Flame</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>60 ft</td>
+                  <td>DEX Save</td>
+                  <td>Radiant</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Evocation.png" 
+                    alt="Sigil-Evocation">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Shocking-Grasp" target="_blank">Shocking Grasp</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>Touch</td>
+                  <td>Melee</td>
+                  <td>Lightning</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Evocation.png" 
+                    alt="Sigil-Evocation">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Thunderclap" target="_blank">Thunderclap</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>5 ft</td>
+                  <td>CON Save</td>
+                  <td>Thunder</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Evocation.png" 
+                    alt="Sigil-Evocation">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Word-of-Radiance" target="_blank">Word of Radiance</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>5 ft</td>
+                  <td>CON Save</td>
+                  <td>Radiant</td>
+                </tr>
+                <!-- Illusion Cantrips -->
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Illusion.png" 
+                    alt="Sigil-Illusion">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Minor-Illusion" target="_blank">Minor Illusion</td>
+                  <td>1 Action</td>
+                  <td>1 Minute</td>
+                  <td>30 ft (5 ft)</td>
+                  <td></td>
+                  <td>Control</td>
+                </tr>
+                <!-- Necromancy Cantrips -->
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Necromancy.png" 
+                    alt="Sigil-Necromancy">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Chill-Touch" target="_blank">Chill Touch</td>
+                  <td>1 Action</td>
+                  <td>1 Round</td>
+                  <td>120 ft</td>
+                  <td>Ranged</td>
+                  <td>Necrotic</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Necromancy.png" 
+                    alt="Sigil-Necromancy">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Sapping-Sting" target="_blank">Sapping Sting</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>30 ft</td>
+                  <td>CON Save</td>
+                  <td>Necrotic</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Necromancy.png" 
+                    alt="Sigil-Necromancy">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Spare-the-Dying" target="_blank">Spare the Dying</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>Touch</td>
+                  <td></td>
+                  <td>Healing</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Necromancy.png" 
+                    alt="Sigil-Necromancy">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Toll-the-Dead" target="_blank">Toll the Dead</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>60 ft</td>
+                  <td>WIS Save</td>
+                  <td>Necrotic</td>
+                </tr>
+                <!-- Transmutation Cantrips -->
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Transmutation.png" 
+                    alt="Sigil-Transmutation">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Control-Flames" target="_blank">Control Flames</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>60 ft (5 ft)</td>
+                  <td></td>
+                  <td>Control</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Transmutation.png" 
+                    alt="Sigil-Transmutation">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Druidcraft" target="_blank">Druidcraft</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>30 ft</td>
+                  <td></td>
+                  <td>Control</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Transmutation.png" 
+                    alt="Sigil-Transmutation">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Gust" target="_blank">Gust</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>30 ft</td>
+                  <td>STR Save</td>
+                  <td>Control</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Transmutation.png" 
+                    alt="Sigil-Transmutation">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Magic-Stone" target="_blank">Magic Stone</td>
+                  <td>1 Bonus Action</td>
+                  <td>1 Minute</td>
+                  <td>Touch</td>
+                  <td>Ranged</td>
+                  <td>Bludgeoning</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Transmutation.png" 
+                    alt="Sigil-Transmutation">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Mending" target="_blank">Mending</td>
+                  <td>1 Minute</td>
+                  <td>Instantaneous</td>
+                  <td>Touch</td>
+                  <td></td>
+                  <td>Utility</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Transmutation.png" 
+                    alt="Sigil-Transmutation">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Message" target="_blank">Message</td>
+                  <td>1 Action</td>
+                  <td>1 Round</td>
+                  <td>120 ft</td>
+                  <td></td>
+                  <td>Communication(...)</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Transmutation.png" 
+                    alt="Sigil-Transmutation">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Mold-Earth" target="_blank">Mold Earth</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>30 ft (5 ft)</td>
+                  <td></td>
+                  <td>Control</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Transmutation.png" 
+                    alt="Sigil-Transmutation">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Prestidigitation" target="_blank">Prestidigitation</td>
+                  <td>1 Action</td>
+                  <td>1 Hour</td>
+                  <td>10 ft</td>
+                  <td></td>
+                  <td>Utility</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Transmutation.png" 
+                    alt="Sigil-Transmutation">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Primal-Savagery" target="_blank">Primal Savagery</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>Self</td>
+                  <td>Melee</td>
+                  <td>Acid</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Transmutation.png" 
+                    alt="Sigil-Transmutation">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Shape-Water" target="_blank">Shape Water</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>30 ft (5 ft)</td>
+                  <td></td>
+                  <td>Control</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Transmutation.png" 
+                    alt="Sigil-Transmutation">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Shillelagh" target="_blank">Shillelagh</td>
+                  <td>1 Bonus Action</td>
+                  <td>1 Minute</td>
+                  <td>Touch</td>
+                  <td>Melee</td>
+                  <td>Bludgeoning</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Transmutation.png" 
+                    alt="Sigil-Transmutation">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Thaumaturgy" target="_blank">Thaumaturgy</td>
+                  <td>1 Action</td>
+                  <td>1 Minute</td>
+                  <td>30 ft</td>
+                  <td></td>
+                  <td>Control</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Transmutation.png" 
+                    alt="Sigil-Transmutation">
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Thorn-Whip" target="_blank">Thorn Whip</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>30 ft</td>
+                  <td>Melee</td>
+                  <td>Piercing</td>
+                </tr>
+              </table>
+
+            </section>
+            
+          </div>
+        </div>
+
+      </div>
+
+      <footer class="Import_PageFooter"></footer>
+    </div>
+  </body>
+</html>
+
+<script type="text/javascript">
+  $(function () {
+
+    $(".Import_PageHeader").load("/_SiteResources/Pages/Import_PageHeader.html");
+    $(".Import_ContentLeft").load("/_SiteResources/Pages/Import_ContentLeft.html");
+    $(".Import_PageFooter").load("/_SiteResources/Pages/Import_PageFooter.html");
+
+});
+</script>
+
+
+
+
+
+
+
+
+<script>
+  function myFunction() {
+    // Declare variables
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("FilterInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("FilterTable");
+    tr = table.getElementsByTagName("tr");
+  
+    // Loop through all table rows, and hide those who don't match the search query
+    for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[2];
+      if (td) {
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
+      }
+    }
+  }
+  </script>
+
+
+
+
+
+
+
+<script>
+  function sortTable(n) {
+    var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+    table = document.getElementById("FilterTable");
+    switching = true;
+    // Set the sorting direction to ascending:
+    dir = "asc";
+    /* Make a loop that will continue until
+    no switching has been done: */
+    while (switching) {
+      // Start by saying: no switching is done:
+      switching = false;
+      rows = table.rows;
+      /* Loop through all table rows (except the
+      first, which contains table headers): */
+      for (i = 1; i < (rows.length - 1); i++) {
+        // Start by saying there should be no switching:
+        shouldSwitch = false;
+        /* Get the two elements you want to compare,
+        one from current row and one from the next: */
+        x = rows[i].getElementsByTagName("TD")[n];
+        y = rows[i + 1].getElementsByTagName("TD")[n];
+        /* Check if the two rows should switch place,
+        based on the direction, asc or desc: */
+        if (dir == "asc") {
+          if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+            // If so, mark as a switch and break the loop:
+            shouldSwitch = true;
+            break;
+          }
+        } else if (dir == "desc") {
+          if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+            // If so, mark as a switch and break the loop:
+            shouldSwitch = true;
+            break;
+          }
+        }
+      }
+      if (shouldSwitch) {
+        /* If a switch has been marked, make the switch
+        and mark that a switch has been done: */
+        rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+        switching = true;
+        // Each time a switch is done, increase this count by 1:
+        switchcount ++;
+      } else {
+        /* If no switching has been done AND the direction is "asc",
+        set the direction to "desc" and run the while loop again. */
+        if (switchcount == 0 && dir == "asc") {
+          dir = "desc";
+          switching = true;
+        }
+      }
+    }
+  }
+  </script>
