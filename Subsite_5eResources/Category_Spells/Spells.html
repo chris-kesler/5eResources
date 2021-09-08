@@ -33,12 +33,12 @@
               <h2>Filters</h2>
               <hr>
 
-              <input type="text" id="FilterInput0" class="FilterInput" onkeyup="myFunction0(0)" placeholder="Search by School. . .">
-              <input type="text" id="FilterInput1" class="FilterInput" onkeyup="myFunction1(1)" placeholder="Search by Level. . .">
-              <input type="text" id="FilterInput2" class="FilterInput" onkeyup="myFunction2(2)" placeholder="Search by Name. . .">
-              <input type="text" id="FilterInput3" class="FilterInput" onkeyup="myFunction3(3)" placeholder="Search by Casting Time. . .">
-              <input type="text" id="FilterInput4" class="FilterInput" onkeyup="myFunction4(3)" placeholder="Search by Duration. . .">
-              <input type="text" id="FilterInput5" class="FilterInput" onkeyup="myFunction5(5)" placeholder="Search by Range/Area. . .">
+              <input type="text" id="FilterInput0" class="FilterInput" onkeyup="myFunction0()" placeholder="Search by School. . .">
+              <input type="text" id="FilterInput1" class="FilterInput" onkeyup="myFunction0(1)" placeholder="Search by Level. . .">
+              <input type="text" id="FilterInput2" class="FilterInput" onkeyup="myFunction0()" placeholder="Search by Name. . .">
+              <input type="text" id="FilterInput3" class="FilterInput" onkeyup="myFunction0(3)" placeholder="Search by Casting Time. . .">
+              <input type="text" id="FilterInput4" class="FilterInput" onkeyup="myFunction0(4)" placeholder="Search by Duration. . .">
+              <input type="text" id="FilterInput5" class="FilterInput" onkeyup="myFunction0(5)" placeholder="Search by Range/Area. . .">
               <input type="text" id="FilterInput6" class="FilterInput" onkeyup="myFunction6(6)" placeholder="Search by Attack/Save. . .">
               <input type="text" id="FilterInput7" class="FilterInput" onkeyup="myFunction7(7)" placeholder="Search by Damage/Effect. . .">
               <input type="text" id="FilterInput8" class="FilterInput" onkeyup="myFunction8(8)" placeholder="Search by Classes. . .">
@@ -746,27 +746,195 @@
 
 
 <script>
-  function myFunction0(n) {
+  // function myFunction0() {
+  //   // Declare variables
+  //   var inputZero, inputTwo, filterZero, filterTwo, table, tr, tdZero, tdTwo, i, txtValueZero, txtValueTwo;
+  //   // tdOne, 
+  //   // tdThree, tdFour, tdFive, tdSix, tdSeven, tdEight, tdNine, tdTen, tdEleven, 
+
+  //   inputZero = document.getElementById("FilterInput0");
+  //   inputTwo = document.getElementById("FilterInput2");
+
+  //   filterZero = inputZero.value.toUpperCase();
+  //   filterTwo = inputTwo.value.toUpperCase();
+
+  //   table = document.getElementById("FilterTable");
+  //   tr = table.getElementsByTagName("tr");
+  
+  //   // Loop through all table rows, and hide those who don't match the search query
+  //   for (i = 0; i < tr.length; i++) {
+  //     tdZero = tr[i].getElementsByTagName("td")[0];
+  //     // tdOne = tr[i].getElementsByTagName("td")[1];
+  //     tdTwo = tr[i].getElementsByTagName("td")[2];
+  //     // tdThree = tr[i].getElementsByTagName("td")[3];
+  //     // tdFour = tr[i].getElementsByTagName("td")[4];
+  //     // tdFive = tr[i].getElementsByTagName("td")[5];
+  //     // tdSix = tr[i].getElementsByTagName("td")[6];
+  //     // tdSeven = tr[i].getElementsByTagName("td")[7];
+  //     // tdEight = tr[i].getElementsByTagName("td")[8];
+  //     // tdNine = tr[i].getElementsByTagName("td")[9];
+  //     // tdTen = tr[i].getElementsByTagName("td")[10];
+  //     // tdEleven = tr[i].getElementsByTagName("td")[11];
+  //     //  && tdEight && tdNine && tdTen && tdEleven
+
+  //     // && tdThree && tdFour && tdFive && tdSix && tdSeven
+  //     if (tdZero && tdTwo) {
+  //       txtValueZero = tdOne.textContent || tdOne.innerText;
+  //       txtValueTwo = tdTwo.textContent || tdTwo.innerText;
+  //       if (txtValueZero.toUpperCase().indexOf(filterZero) > -1) {
+  //         tr[i].style.display = "";
+  //       } else if (txtValueTwo.toUpperCase().indexOf(filterTwo) > -1) {
+  //         tr[i].style.display = "";
+  //       } else {
+  //         tr[i].style.display = "none";
+  //       }
+  //     }
+  //   }
+  // }
+  function myFunction0() {
     // Declare variables
-    var input, filter, table, tr, td, i, txtValue;
-    input = document.getElementById("FilterInput0");
-    filter = input.value.toUpperCase();
+    var inputZero, inputOne, inputTwo, inputThree, inputFour, inputFive, inputSix, inputSeven, inputEight, inputNine, inputTen, inputEleven, filterZero, filterOne, filterTwo, filterThree, filterFour, filterFive, filterSix, filterSeven, filterEight, filterNine, filterTen, filterEleven, table, tr, tdZero, tdOne, tdTwo, tdThree, tdFour, tdFive, tdSix, tdSeven, tdEight, tdNine, tdTen, tdEleven, i, txtValueZero, txtValueOne, txtValueTwo, txtValueThree, txtValueFour, txtValueFive, txtValueSix, txtValueSeven, txtValueEight, txtValueNine, txtValueTen, txtValueEleven;
+
+    inputZero = document.getElementById("FilterInput0");
+    inputOne = document.getElementById("FilterInput1");
+    inputTwo = document.getElementById("FilterInput2");
+    inputThree = document.getElementById("FilterInput3");
+    inputFour = document.getElementById("FilterInput4");
+    inputFive = document.getElementById("FilterInput5");
+    inputSix = document.getElementById("FilterInput6");
+    inputSeven = document.getElementById("FilterInput7");
+
+    filterZero = inputZero.value.toUpperCase();
+    filterOne = inputOne.value.toUpperCase();
+    filterTwo = inputTwo.value.toUpperCase();
+    filterThree = inputThree.value.toUpperCase();
+    filterFour = inputFour.value.toUpperCase();
+    filterFive = inputFive.value.toUpperCase();
+    filterSix = inputSix.value.toUpperCase();
+    filterSeven = inputSeven.value.toUpperCase();
+
     table = document.getElementById("FilterTable");
     tr = table.getElementsByTagName("tr");
   
     // Loop through all table rows, and hide those who don't match the search query
     for (i = 0; i < tr.length; i++) {
-      td = tr[i].getElementsByTagName("td")[n];
-      if (td) {
-        txtValue = td.textContent || td.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-          tr[i].style.display = "";
-        } else {
+      tdZero = tr[i].getElementsByTagName("td")[0];
+      tdOne = tr[i].getElementsByTagName("td")[1];
+      tdTwo = tr[i].getElementsByTagName("td")[2];
+      tdThree = tr[i].getElementsByTagName("td")[3];
+      tdFour = tr[i].getElementsByTagName("td")[4];
+      tdFive = tr[i].getElementsByTagName("td")[5];
+      tdSix = tr[i].getElementsByTagName("td")[6];
+      tdSeven = tr[i].getElementsByTagName("td")[7];
+      // tdEight = tr[i].getElementsByTagName("td")[8];
+      // tdNine = tr[i].getElementsByTagName("td")[9];
+      // tdTen = tr[i].getElementsByTagName("td")[10];
+      // tdEleven = tr[i].getElementsByTagName("td")[11];
+
+      if (tdZero) {
+        txtValueZero = tdZero.textContent || tdZero.innerText;
+        txtValueOne = tdOne.textContent || tdOne.innerText;
+        txtValueTwo = tdTwo.textContent || tdTwo.innerText;
+        txtValueThree = tdThree.textContent || tdThree.innerText;
+        txtValueFour = tdFour.textContent || tdFour.innerText;
+        txtValueFive = tdFive.textContent || tdFive.innerText;
+        txtValueSix = tdSix.textContent || tdSix.innerText;
+        txtValueSeven = tdSeven.textContent || tdSeven.innerText;
+        // txtValueEight = tdEight.textContent || tdEight.innerText;
+        // txtValueNine = tdNine.textContent || tdNine.innerText;
+        // txtValueTen = tdTen.textContent || tdTen.innerText;
+        // txtValueEleven = tdEleven.textContent || tdEleven.innerText;
+        
+        if (txtValueZero.toUpperCase().indexOf(filterZero) == -1) {
           tr[i].style.display = "none";
+        } else if (txtValueOne.toUpperCase().indexOf(filterOne) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueTwo.toUpperCase().indexOf(filterTwo) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueThree.toUpperCase().indexOf(filterThree) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueFour.toUpperCase().indexOf(filterFour) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueFive.toUpperCase().indexOf(filterFive) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueSix.toUpperCase().indexOf(filterSix) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueSeven.toUpperCase().indexOf(filterSeven) == -1) {
+          tr[i].style.display = "none";
+        } else {
+          tr[i].style.display = "";
         }
       }
     }
   }
+  // function myFunction0(n) {
+  //   // Declare variables
+  //   var inputZero, inputOne, inputTwo, input3, input4, input5, input6, input7, input8, input9, inputOneZero, inputOneOne, 
+  //   filterZero, filterOne, filterTwo, filter3, filter4, filter5, filter6, filter7, filter8, filter9, filterOneZero, filterOneOne, 
+  //   table, tr, td, i, txtValueZero, txtValueTwo;
+
+  //   inputZero = document.getElementById("FilterInput0");
+  //   inputOne = document.getElementById("FilterInput1");
+  //   inputTwo = document.getElementById("FilterInput2");
+  //   input3 = document.getElementById("FilterInput3");
+  //   input4 = document.getElementById("FilterInput4");
+  //   input5 = document.getElementById("FilterInput5");
+  //   input6 = document.getElementById("FilterInput6");
+  //   input7 = document.getElementById("FilterInput7");
+  //   input8 = document.getElementById("FilterInput8");
+  //   input9 = document.getElementById("FilterInput9");
+  //   inputOne0 = document.getElementById("FilterInput10");
+  //   inputOneOne = document.getElementById("FilterInput11");
+
+  //   filterZero = inputZero.value.toUpperCase();
+  //   filterOne = inputOne.value.toUpperCase();
+  //   filterTwo = inputTwo.value.toUpperCase();
+  //   filter3 = input3.value.toUpperCase();
+  //   filter4 = input4.value.toUpperCase();
+  //   filter5 = input5.value.toUpperCase();
+  //   filter6 = input6.value.toUpperCase();
+  //   filter7 = input7.value.toUpperCase();
+  //   filter8 = input8.value.toUpperCase();
+  //   filter9 = input9.value.toUpperCase();
+  //   filterOneZero = inputOneZero.value.toUpperCase();
+  //   filterOneOne = inputOneOne.value.toUpperCase();
+
+
+  //   table = document.getElementById("FilterTable");
+  //   tr = table.getElementsByTagName("tr");
+  
+  //   // Loop through all table rows, and hide those who don't match the search query
+  //   for (i = 0; i < tr.length; i++) {
+  //     td = tr[i].getElementsByTagName("td")[n];
+  //     // txtValueZero = td.textContent || td.innerText;
+  //     // // td = tr[i].getElementsByTagName("td")[2];
+  //     // // txtValueTwo = td.textContent || td.innerText;
+      
+  //     if (td) {
+  //       txtValueZero = td.textContent || td.innerText;
+  //       if (txtValueZero.toUpperCase().indexOf(filterZero) > -1) {
+  //         tr[i].style.display = "";
+  //       } else {
+  //         tr[i].style.display = "none";
+  //       }
+  //     }
+      
+  //     // if (txtValueZero.toUpperCase().indexOf(filterZero) > -1) {
+  //     //   tr[i].style.display = "";
+  //     // } else {
+  //     //   tr[i].style.display = "none";
+  //     // }
+
+  //     // if (txtValueTwo.toUpperCase().indexOf(filterTwo) > -1) {
+  //     //   tr[i].style.display = "";
+  //     // } else {
+  //     //   tr[i].style.display = "none";
+  //     // }
+
+  //   }
+  // }
+  
+  
   function myFunction1(n) {
     // Declare variables
     var input, filter, table, tr, td, i, txtValue;
@@ -895,9 +1063,9 @@
   }
   function myFunction7(n) {
     // Declare variables
-    var input, filter, table, tr, td, i, txtValue;
-    input = document.getElementById("FilterInput7");
-    filter = input.value.toUpperCase();
+    var input7, filter7, table, tr, td, i, txtValue7;
+    input7 = document.getElementById("FilterInput7");
+    filter7 = input7.value.toUpperCase();
     table = document.getElementById("FilterTable");
     tr = table.getElementsByTagName("tr");
   
@@ -905,8 +1073,8 @@
     for (i = 0; i < tr.length; i++) {
       td = tr[i].getElementsByTagName("td")[n];
       if (td) {
-        txtValue = td.textContent || td.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        txtValue7 = td.textContent || td.innerText;
+        if (txtValue7.toUpperCase().indexOf(filter7) > -1) {
           tr[i].style.display = "";
         } else {
           tr[i].style.display = "none";
