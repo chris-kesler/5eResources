@@ -652,9 +652,9 @@ iframe {
 
 #FilterTable {
   border-collapse: collapse; /* Collapse borders */
-  width: auto; /* Full-width */
+  width: 80vw; /* Full-width */
   border: 1px solid rgb(97, 97, 97); /* Add a grey border */
-  overflow: auto;
+  overflow: scroll;
   display: inline-block;
 }
 
