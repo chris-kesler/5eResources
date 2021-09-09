@@ -658,9 +658,10 @@ iframe {
   display: inline-block;
 }
 
-#FilterTable th, #FilterTable td {
+#FilterTable th, #FilterTable tr td {
   text-align: left; /* Left-align text */
   padding: 5px; /* Add padding */
+  min-width: 150px;
   color: black;
   border: 1px solid black;
 }
