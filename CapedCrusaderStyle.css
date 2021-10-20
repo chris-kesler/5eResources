@@ -273,6 +273,7 @@ table {
   background-color: rgb(175, 175, 175);
   border-style: hidden;
   font-size: medium;
+  text-align: left;
 }
 .TechClassButton {
   color: rgb(50, 50, 125);
@@ -302,10 +303,11 @@ table {
   position: relative;
   width: 175px;
   height: 50px;
-  background-color: rgb(150, 138, 123);
+  background-color: rgb(54,57,63);
   border-style: solid;
   border-color: rgb(54,57,63);
   font-size: small;
+  color: aqua;
 }
 
 
@@ -342,8 +344,8 @@ table {
 
 .WikiButtonTable {
   float: right;
-  border: 1px solid rgb(189,188,173);
-  background-color: rgb(223,222,207);
+  border: 1px solid rgb(54,57,63);
+  background-color: rgb(54,57,63);
   height: auto;
   width: auto;
   margin-right: 0px;
