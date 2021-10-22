@@ -263,7 +263,7 @@ table {
   padding-left: 15px;
 }
 
-.TechClassButton, .PowerClassButton, .MagicClassButton {
+.TechClassButton, .PowerClassButton, .MagicClassButton, .ClassButton {
   width: 225px;
   max-width: 35vw;
   height: auto;
@@ -283,6 +283,9 @@ table {
 }
 .MagicClassButton {
   color: rgb(125, 125, 50);
+}
+.ClassButton {
+  color: rgb(25, 25, 25);
 }
 
 .WikiPageButton {
@@ -537,17 +540,7 @@ td {
 th {
   color: whitesmoke;
 }
-ul {
-  color: black;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-li {
-  color: black;
-  display: inline-block;
-  margin-right: 50px;
-}
+
 ul.BulletinList {
   display: table-row;
 }
@@ -697,6 +690,11 @@ iframe {
 
 .FilterTableImage {
   width: 50px;
+}
+
+.CastingPageImage {
+  width: 500px;
+  float: right;
 }
 
 

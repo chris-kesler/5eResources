@@ -1,0 +1,366 @@
+{
+    "technology": [
+        {
+            "name_str" : "Afterburner Surge",
+            "page_url" : "afterburner-surge.html",
+
+            "level_int" : 4,
+            "level_str" : "4th",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 0,
+            "range_area_str" : "Self",
+            
+            "components_verbal_bool" : true,
+            "components_somatic_bool" : true,
+            "components_material_bool" : true,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "",
+            
+            "duration_int" : 0,
+            "duration_str" : "Instantaneous",
+            
+            "school_str" : "Rocketry",
+            "school_img" : "/_SiteResources/Images/Sigil-Abjuration.png",
+            
+            "attack_save_int" : 2,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "Buff",
+            
+            "description_str" : "You gain a flying speed of 240 feet until the end of this turn. This flight does not count against your standard movement.",
+            "overchargeable_bool" : true,
+            "overchargeable_str" : "NA",
+
+            "class_str" : "Visionary",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+
+        {
+            "name_str" : "Analyze Weaknesses",
+            "page_url" : "analyze-weaknesses.html",
+
+            "level_int" : 0,
+            "level_str" : "Cantrip",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 60,
+            "range_area_str" : "60 feet",
+            
+            "components_verbal_bool" : false,
+            "components_somatic_bool" : true,
+            "components_material_bool" : true,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "S, M",
+            "components_description_str" : "",
+            
+            "duration_int" : 6,
+            "duration_str" : "1 Round",
+            
+            "school_str" : "Analytics",
+            "school_img" : "/_SiteResources/Images/Sigil-Abjuration.png",
+            
+            "attack_save_int" : 0,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "Debuff",
+            
+            "description_str" : "You analyze a target of your choice within 60 feet. The target takes a penalty equal to your Proficiency bonus on the next saving throw they make before the end of your next turn. After making a saving throw, regardless of whether they succeed or fail, this effect ends.",
+            "overchargeable_bool" : false,
+            "overchargeable_str" : "NA",
+
+            "class_str" : "Visionary",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+
+        {
+            "name_str" : "AR Walkthrough",
+            "page_url" : "ar-walkthrough.html",
+
+            "level_int" : 0,
+            "level_str" : "Cantrip",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 15,
+            "range_area_str" : "15 feet",
+            
+            "components_verbal_bool" : false,
+            "components_somatic_bool" : true,
+            "components_material_bool" : true,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "",
+            
+            "duration_int" : 6,
+            "duration_str" : "1 Round",
+            
+            "school_str" : "Augmented Reality",
+            "school_img" : "/_SiteResources/Images/Sigil-Abjuration.png",
+            
+            "attack_save_int" : 0,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "Buff",
+            
+            "description_str" : "Choose a target within 15 feet of you. The next skill check the target makes before the start of your next turn is made with advantage, and gains a bonus to the result equal to your Intelligence Modifier.",
+
+            "overchargeable_bool" : false,
+            "overchargeable_str" : "NA",
+
+            "class_str" : "Visionary",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+
+        {
+            "name_str" : "Chromabeam",
+            "page_url" : "chromabeam.html",
+
+            "level_int" : 1,
+            "level_str" : "1st",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 120,
+            "range_area_str" : "120 feet",
+            
+            "components_verbal_bool" : false,
+            "components_somatic_bool" : true,
+            "components_material_bool" : true,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "S, M",
+            "components_description_str" : "",
+            
+            "duration_int" : 0,
+            "duration_str" : "Instantaneous",
+            
+            "school_str" : "Optical Engineering",
+            "school_img" : "/_SiteResources/Images/Sigil-Abjuration.png",
+            
+            "attack_save_int" : 2,
+            "attack_save_str" : "Ranged",
+            
+            "damage_effect_str" : "Varies",
+            
+            "description_str" : "Make a ranged Tech attack against one creature within 120 feet of you. On a hit, the target takes 3d10 damage of a type of your choosing when you cast this Technology.",
+            
+            "overchargeable_bool" : true,
+            "overchargeable_str" : "NA",
+
+            "class_str" : "Visionary",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+
+        {
+            "name_str" : "Concussive Punch",
+            "page_url" : "concussive-punch.html",
+
+            "level_int" : 0,
+            "level_str" : "Cantrip",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 5,
+            "range_area_str" : "5 feet",
+            
+            "components_verbal_bool" : false,
+            "components_somatic_bool" : true,
+            "components_material_bool" : true,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "S, M",
+            "components_description_str" : "",
+            
+            "duration_int" : 0,
+            "duration_str" : "Instantaneous",
+            
+            "school_str" : "Mechanical Engineering",
+            "school_img" : "/_SiteResources/Images/Sigil-Abjuration.png",
+            
+            "attack_save_int" : 1,
+            "attack_save_str" : "Melee",
+            
+            "damage_effect_str" : "Concussive",
+            
+            "description_str" : "Make a melee attack against one creature within 5 feet of you. On a hit, that creatures suffers Concussive damage equal to a number of d6s equal to your proficiency bonus -1 and is pushed 10 feet away from you.",
+            
+            "overchargeable_bool" : false,
+            "overchargeable_str" : "NA",
+
+            "class_str" : "Visionary",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+
+        {
+            "name_str" : "Focused Beam",
+            "page_url" : "focused-beam.html",
+
+            "level_int" : 0,
+            "level_str" : "Cantrip",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 120,
+            "range_area_str" : "120 feet",
+            
+            "components_verbal_bool" : false,
+            "components_somatic_bool" : true,
+            "components_material_bool" : true,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "S, M",
+            "components_description_str" : "",
+            
+            "duration_int" : 0,
+            "duration_str" : "Instantaneous",
+            
+            "school_str" : "Optical Engineering",
+            "school_img" : "/_SiteResources/Images/Sigil-Abjuration.png",
+            
+            "attack_save_int" : 2,
+            "attack_save_str" : "Ranged",
+            
+            "damage_effect_str" : "Energy",
+            
+            "description_str" : "Make a ranged Tech attack against a target of your choice within 120 feet. On a hit, the target suffers Energy damage equal to a number of d10s equal to your proficiency bonus -1.",
+            
+            "overchargeable_bool" : false,
+            "overchargeable_str" : "NA",
+
+            "class_str" : "Visionary",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+
+        {
+            "name_str" : "Omnibeam",
+            "page_url" : "omnibeam.html",
+
+            "level_int" : 1,
+            "level_str" : "1st",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 60,
+            "range_area_str" : "60 feet",
+            
+            "components_verbal_bool" : false,
+            "components_somatic_bool" : true,
+            "components_material_bool" : true,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "S, M",
+            "components_description_str" : "",
+            
+            "duration_int" : 0,
+            "duration_str" : "Instantaneous",
+            
+            "school_str" : "Optical Engineering",
+            "school_img" : "/_SiteResources/Images/Sigil-Abjuration.png",
+            
+            "attack_save_int" : 2,
+            "attack_save_str" : "Ranged",
+            
+            "damage_effect_str" : "Varies",
+            
+            "description_str" : "Choose a damage type when you learn this technology.  Make a ranged Tech attack against a target of your choice within 90 feet.  On a hit, the target suffers 1d8 of your chosen damage type.  You can change your chosen damage type as part of a long rest.",
+            "overchargeable_bool" : true,
+            "overchargeable_str" : "NA",
+
+            "class_str" : "Visionary",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+
+        {
+            "name_str" : "Mechbuster",
+            "page_url" : "mechbuster.html",
+            "level_int" : 4,
+            "level_str" : "4th",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 120,
+            "range_area_str" : "120 feet",
+            
+            "components_verbal_bool" : true,
+            "components_somatic_bool" : true,
+            "components_material_bool" : true,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "",
+            
+            "duration_int" : 3600,
+            "duration_str" : "1 Hour",
+            
+            "school_str" : "Mechanical Engineering",
+            "school_img" : "/_SiteResources/Images/Sigil-Abjuration.png",
+            
+            "attack_save_int" : 4,
+            "attack_save_str" : "Dexterity",
+            
+            "damage_effect_str" : "Buff/Debuff",
+            
+            "description_str" : "Choose a creature within 120 feet.  If the creature is willing, you deploy a mechanical suit of armor that augments their abilities.  Their statistics are replaced by the Mechbuster statistics.  When the Mechbuster is reduced to zero hit points, it is destroyed, and the creature takes any remaining damage.  If the creature is unwilling, they must make a Dexterity saving throw or be trapped inside the Mechbuster, which can do nothing other than move at your direction and release the creature inside, after which, the Mechbuster is deactivated and cannot be deployed unless you cast this Technology again.  The trapped creature is rendered restrained and incapacitated until the Mechbuster frees them or the Mechbuster is destroyed.  Once per minute, the creature inside can attempt to break free by making a Str check against your Techcasting DC.  On a success, the Mechbuster is destroyed.",
+            "overchargeable_bool" : true,
+            "overchargeable_str" : "NA",
+
+            "class_str" : "Visionary",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        }
+    ]
+}
