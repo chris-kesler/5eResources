@@ -410,6 +410,139 @@
         },
 
         {
+            "name_str" : "Integrated Propulsion",
+            "page_url" : "integrated-propulsion.html",
+
+            "level_int" : 2,
+            "level_str" : "2nd",
+
+            "casting_time_int" : 2,
+            "casting_time_str" : "1 Bonus Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 0,
+            "range_area_str" : "Self",
+            
+            "components_verbal_bool" : false,
+            "components_somatic_bool" : true,
+            "components_material_bool" : true,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "S, M",
+            "components_description_str" : "",
+            
+            "duration_int" : 0,
+            "duration_str" : "Instantaneous",
+            
+            "school_str" : "Rocketry",
+            "school_img" : "/_SiteResources/Images/noun_missile_3990194.png",
+            
+            "attack_save_int" : 2,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "Buff",
+            
+            "description_str" : "As a bonus action, you can fly up to 30 feet.  This flight does not count against your total movment.",
+            "overchargeable_bool" : false,
+            "overchargeable_str" : "NA",
+
+            "class_str" : "Visionary",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+
+        {
+            "name_str" : "Magnum Punch",
+            "page_url" : "magnum-punch.html",
+            "level_int" : 1,
+            "level_str" : "1st",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 5,
+            "range_area_str" : "5 feet",
+            
+            "components_verbal_bool" : false,
+            "components_somatic_bool" : true,
+            "components_material_bool" : true,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "S, M",
+            "components_description_str" : "",
+            
+            "duration_int" : 0,
+            "duration_str" : "Instantaneous",
+            
+            "school_str" : "Mechanical Engineering",
+            "school_img" : "/_SiteResources/Images/noun_Piston_3924710.png",
+            
+            "attack_save_int" : 1,
+            "attack_save_str" : "Melee",
+            
+            "damage_effect_str" : "Bludgeoning",
+            
+            "description_str" : "Make a melee Tech attack against one creature of your choice within 5 feet of you.  On a hit, the target takes 3d10 Bludgeoning damage and the next melee attack made against the target before the end of your next turn has advantage.",
+            "overchargeable_bool" : true,
+            "overchargeable_str" : "NA",
+
+            "class_str" : "Visionary",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+
+        {
+            "name_str" : "Mechbuster",
+            "page_url" : "mechbuster.html",
+            "level_int" : 4,
+            "level_str" : "4th",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 120,
+            "range_area_str" : "120 feet",
+            
+            "components_verbal_bool" : true,
+            "components_somatic_bool" : true,
+            "components_material_bool" : true,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "",
+            
+            "duration_int" : 3600,
+            "duration_str" : "1 Hour",
+            
+            "school_str" : "Mechanical Engineering",
+            "school_img" : "/_SiteResources/Images/noun_Piston_3924710.png",
+            
+            "attack_save_int" : 4,
+            "attack_save_str" : "Dexterity",
+            
+            "damage_effect_str" : "Buff/Debuff",
+            
+            "description_str" : "Choose a creature within 120 feet.  If the creature is willing, you deploy a mechanical suit of armor that augments their abilities.  Their statistics are replaced by the Mechbuster statistics.  When the Mechbuster is reduced to zero hit points, it is destroyed, and the creature takes any remaining damage.  If the creature is unwilling, they must make a Dexterity saving throw or be trapped inside the Mechbuster, which can do nothing other than move at your direction and release the creature inside, after which, the Mechbuster is deactivated and cannot be deployed unless you cast this Technology again.  The trapped creature is rendered restrained and incapacitated until the Mechbuster frees them or the Mechbuster is destroyed.  Once per minute, the creature inside can attempt to break free by making a Str check against your Techcasting DC.  On a success, the Mechbuster is destroyed.",
+            "overchargeable_bool" : true,
+            "overchargeable_str" : "NA",
+
+            "class_str" : "Visionary",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+
+        {
             "name_str" : "Omnibeam",
             "page_url" : "omnibeam.html",
 
@@ -455,17 +588,198 @@
         },
 
         {
-            "name_str" : "Mechbuster",
-            "page_url" : "mechbuster.html",
-            "level_int" : 4,
-            "level_str" : "4th",
+            "name_str" : "Quickfire Beam",
+            "page_url" : "quickfire-beam.html",
+
+            "level_int" : 0,
+            "level_str" : "Cantrip",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 60,
+            "range_area_str" : "60 feet",
+            
+            "components_verbal_bool" : false,
+            "components_somatic_bool" : true,
+            "components_material_bool" : true,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "S, M",
+            "components_description_str" : "",
+            
+            "duration_int" : 0,
+            "duration_str" : "Instantaneous",
+            
+            "school_str" : "Optical Engineering",
+            "school_img" : "/_SiteResources/Images/noun_laser_232249.png",
+            
+            "attack_save_int" : 2,
+            "attack_save_str" : "Ranged",
+            
+            "damage_effect_str" : "Energy",
+            
+            "description_str" : "Make a ranged Tech attack against a number of targets equal to your proficiency bonus -1 of your choice within 60 feet.  On a hit, a target suffers 1d6 Energy damage.",
+            "overchargeable_bool" : true,
+            "overchargeable_str" : "NA",
+
+            "class_str" : "Visionary",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+
+        {
+            "name_str" : "Repulsing Blast",
+            "page_url" : "repulsing-blast.html",
+
+            "level_int" : 0,
+            "level_str" : "Cantrip",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 30,
+            "range_area_str" : "30 feet",
+            
+            "components_verbal_bool" : false,
+            "components_somatic_bool" : true,
+            "components_material_bool" : true,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "S, M",
+            "components_description_str" : "",
+            
+            "duration_int" : 0,
+            "duration_str" : "Instantaneous",
+            
+            "school_str" : "Optical Engineering",
+            "school_img" : "/_SiteResources/Images/noun_laser_232249.png",
+            
+            "attack_save_int" : 2,
+            "attack_save_str" : "Ranged",
+            
+            "damage_effect_str" : "Concussive",
+            
+            "description_str" : "Make a ranged Tech attack against one creature within 30 feet of you.  On a hit, that creatures suffers Concussive damage equal to a number of d6s equal to your proficiency bonus -1 and is pushed 5 feet away from you.",
+            "overchargeable_bool" : true,
+            "overchargeable_str" : "NA",
+
+            "class_str" : "Visionary",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        
+        {
+            "name_str" : "Rocket Greaves",
+            "page_url" : "rocket-greaves.html",
+
+            "level_int" : 1,
+            "level_str" : "1st",
+
+            "casting_time_int" : 1,
+            "casting_time_str" : "1 Reaction",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 0,
+            "range_area_str" : "Self",
+            
+            "components_verbal_bool" : false,
+            "components_somatic_bool" : true,
+            "components_material_bool" : true,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "S, M",
+            "components_description_str" : "",
+            
+            "duration_int" : 0,
+            "duration_str" : "Instantaneous",
+            
+            "school_str" : "Rocketry",
+            "school_img" : "/_SiteResources/Images/noun_missile_3990194.png",
+            
+            "attack_save_int" : 2,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "Buff",
+            
+            "description_str" : "When you are about to take fall damage, you can cast this Technology to reduce your impact velocity and avoid taking that instance of fall damage.",
+            "overchargeable_bool" : false,
+            "overchargeable_str" : "NA",
+
+            "class_str" : "Visionary",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+
+        {
+            "name_str" : "Taser Snare",
+            "page_url" : "taser-snare.html",
+
+            "level_int" : 1,
+            "level_str" : "1st",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 60,
+            "range_area_str" : "60 feet (10 foot cube)",
+            
+            "components_verbal_bool" : false,
+            "components_somatic_bool" : true,
+            "components_material_bool" : true,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "S, M",
+            "components_description_str" : "",
+            
+            "duration_int" : 0,
+            "duration_str" : "Instantaneous",
+            
+            "school_str" : "Gadgetry",
+            "school_img" : "/_SiteResources/Images/noun_missile_3990194.png",
+            
+            "attack_save_int" : 2,
+            "attack_save_str" : "Constitution",
+            
+            "damage_effect_str" : "Stunned",
+            
+            "description_str" : "When you are about to take fall damage, you can cast this Technology to reduce your impact velocity and avoid taking that instance of fall damage.",
+            "overchargeable_bool" : false,
+            "overchargeable_str" : "NA",
+
+            "class_str" : "Visionary",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+
+        {
+            "name_str" : "Thermite Missile",
+            "page_url" : "thermite-missile.html",
+
+            "level_int" : 3,
+            "level_str" : "3rd",
 
             "casting_time_int" : 3,
             "casting_time_str" : "1 Action",
             "casting_time_asterisk_str" : "",
             
             "range_area_int" : 120,
-            "range_area_str" : "120 feet",
+            "range_area_str" : "120 feet (30 foot radius)",
             
             "components_verbal_bool" : true,
             "components_somatic_bool" : true,
@@ -475,18 +789,18 @@
             "components_vsm_str" : "V, S, M",
             "components_description_str" : "",
             
-            "duration_int" : 3600,
-            "duration_str" : "1 Hour",
+            "duration_int" : 0,
+            "duration_str" : "Instantaneous",
             
-            "school_str" : "Mechanical Engineering",
-            "school_img" : "/_SiteResources/Images/noun_Piston_3924710.png",
+            "school_str" : "Munitions",
+            "school_img" : "/_SiteResources/Images/noun_missile_3990194.png",
             
-            "attack_save_int" : 4,
+            "attack_save_int" : 2,
             "attack_save_str" : "Dexterity",
             
-            "damage_effect_str" : "Buff/Debuff",
+            "damage_effect_str" : "Incinerating",
             
-            "description_str" : "Choose a creature within 120 feet.  If the creature is willing, you deploy a mechanical suit of armor that augments their abilities.  Their statistics are replaced by the Mechbuster statistics.  When the Mechbuster is reduced to zero hit points, it is destroyed, and the creature takes any remaining damage.  If the creature is unwilling, they must make a Dexterity saving throw or be trapped inside the Mechbuster, which can do nothing other than move at your direction and release the creature inside, after which, the Mechbuster is deactivated and cannot be deployed unless you cast this Technology again.  The trapped creature is rendered restrained and incapacitated until the Mechbuster frees them or the Mechbuster is destroyed.  Once per minute, the creature inside can attempt to break free by making a Str check against your Techcasting DC.  On a success, the Mechbuster is destroyed.",
+            "description_str" : "Choose a point within 120 feet of you.  Creatures and Vehicles within 30 feet must make a Dex save, taking 8d8 Incinerating damage on a failed save and half as much on a successful save.  Vehicles that are made of conventional materials take double damage on a failed save, and normal damage on a successful save.  Objects made of conventional materials not being worn or carried within 30 feet of the point are destroyed.  When you overcharge this Technology, you increase the base damage by 2d8 and increase the radius by 5 for each level beyond 3rd.",
             "overchargeable_bool" : true,
             "overchargeable_str" : "NA",
 
