@@ -26,14 +26,14 @@
             "duration_str" : "Instantaneous",
             
             "school_str" : "Rocketry",
-            "school_img" : "/_SiteResources/Images/Sigil-Abjuration.png",
+            "school_img" : "/_SiteResources/Images/noun_missile_3990194.png",
             
             "attack_save_int" : 2,
             "attack_save_str" : "---",
             
             "damage_effect_str" : "Buff",
             
-            "description_str" : "You gain a flying speed of 240 feet until the end of this turn. This flight does not count against your standard movement.",
+            "description_str" : "You gain an additional flying speed of 360 feet until the end of this turn.",
             "overchargeable_bool" : true,
             "overchargeable_str" : "NA",
 
@@ -71,7 +71,7 @@
             "duration_str" : "1 Round",
             
             "school_str" : "Analytics",
-            "school_img" : "/_SiteResources/Images/Sigil-Abjuration.png",
+            "school_img" : "/_SiteResources/Images/noun_database_4341155.png",
             
             "attack_save_int" : 0,
             "attack_save_str" : "---",
@@ -116,8 +116,8 @@
             "duration_str" : "1 Round",
             
             "school_str" : "Augmented Reality",
-            "school_img" : "/_SiteResources/Images/Sigil-Abjuration.png",
-            
+            "school_img" : "/_SiteResources/Images/noun_Hologram_1748886.png",
+
             "attack_save_int" : 0,
             "attack_save_str" : "---",
             
@@ -162,7 +162,7 @@
             "duration_str" : "Instantaneous",
             
             "school_str" : "Optical Engineering",
-            "school_img" : "/_SiteResources/Images/Sigil-Abjuration.png",
+            "school_img" : "/_SiteResources/Images/noun_laser_232249.png",
             
             "attack_save_int" : 2,
             "attack_save_str" : "Ranged",
@@ -208,7 +208,7 @@
             "duration_str" : "Instantaneous",
             
             "school_str" : "Mechanical Engineering",
-            "school_img" : "/_SiteResources/Images/Sigil-Abjuration.png",
+            "school_img" : "/_SiteResources/Images/noun_Piston_3924710.png",
             
             "attack_save_int" : 1,
             "attack_save_str" : "Melee",
@@ -254,8 +254,8 @@
             "duration_str" : "Instantaneous",
             
             "school_str" : "Optical Engineering",
-            "school_img" : "/_SiteResources/Images/Sigil-Abjuration.png",
-            
+            "school_img" : "/_SiteResources/Images/noun_laser_232249.png",
+
             "attack_save_int" : 2,
             "attack_save_str" : "Ranged",
             
@@ -273,13 +273,148 @@
             "backgrounds_str" : "",
             "races_str" : ""
         },
+        
+        {
+            "name_str" : "Hologram Projector",
+            "page_url" : "hologram-projector.html",
+
+            "level_int" : 2,
+            "level_str" : "2nd",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 30,
+            "range_area_str" : "30 feet (10 foot cube)",
+            
+            "components_verbal_bool" : true,
+            "components_somatic_bool" : true,
+            "components_material_bool" : true,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "",
+            
+            "duration_int" : 60,
+            "duration_str" : "1 minute",
+            
+            "school_str" : "Augmented Reality",
+            "school_img" : "/_SiteResources/Images/noun_Hologram_1748886.png",
+
+            "attack_save_int" : 0,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "Deception",
+            
+            "description_str" : "You create a hologram within a ten foot cube whose center is no farther than 30 feet away from you.  Anyone perceiving the hologram whose passive Investigation is less than your Techcasting DC belives it is real.  A creature who inspects the hologram closely discerns its true nature upon a successful Investigation check against your Techcasting DC.  The hologram is intangible and allows physical objects to freely pass through it.",
+            
+            "overchargeable_bool" : true,
+            "overchargeable_str" : "NA",
+
+            "class_str" : "Visionary",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+
+        {
+            "name_str" : "Homing Darts",
+            "page_url" : "homing-darts.html",
+
+            "level_int" : 1,
+            "level_str" : "1st",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 100,
+            "range_area_str" : "100 feet",
+            
+            "components_verbal_bool" : true,
+            "components_somatic_bool" : true,
+            "components_material_bool" : true,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "",
+            
+            "duration_int" : 0,
+            "duration_str" : "Instantaneous",
+            
+            "school_str" : "Rocketry",
+            "school_img" : "/_SiteResources/Images/noun_missile_3990194.png",
+            
+            "attack_save_int" : 2,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "Buff",
+            
+            "description_str" : "Two darts strike any two targets of your choice not behind full cover within 100 feet of you.  They each deal 1d6+1 Piercing damage.  You gain an additional two darts for every level you overcharge this Technology.",
+            "overchargeable_bool" : true,
+            "overchargeable_str" : "NA",
+
+            "class_str" : "Visionary",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+
+        {
+            "name_str" : "Impact Dampeners",
+            "page_url" : "impact-dampeners.html",
+            "level_int" : 1,
+            "level_str" : "1st",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 0,
+            "range_area_str" : "Self",
+            
+            "components_verbal_bool" : false,
+            "components_somatic_bool" : true,
+            "components_material_bool" : true,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "S, M",
+            "components_description_str" : "",
+            
+            "duration_int" : 0,
+            "duration_str" : "Instantaneous",
+            
+            "school_str" : "Mechanical Engineering",
+            "school_img" : "/_SiteResources/Images/noun_Piston_3924710.png",
+            
+            "attack_save_int" : 0,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "Buff",
+            
+            "description_str" : "You gain temporary Hit Points equal to your Intelligence modifier plus your Proficiency bonus.",
+            "overchargeable_bool" : true,
+            "overchargeable_str" : "NA",
+
+            "class_str" : "Visionary",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
 
         {
             "name_str" : "Omnibeam",
             "page_url" : "omnibeam.html",
 
-            "level_int" : 1,
-            "level_str" : "1st",
+            "level_int" : 0,
+            "level_str" : "Cantrip",
 
             "casting_time_int" : 3,
             "casting_time_str" : "1 Action",
@@ -300,14 +435,14 @@
             "duration_str" : "Instantaneous",
             
             "school_str" : "Optical Engineering",
-            "school_img" : "/_SiteResources/Images/Sigil-Abjuration.png",
+            "school_img" : "/_SiteResources/Images/noun_laser_232249.png",
             
             "attack_save_int" : 2,
             "attack_save_str" : "Ranged",
             
             "damage_effect_str" : "Varies",
             
-            "description_str" : "Choose a damage type when you learn this technology.  Make a ranged Tech attack against a target of your choice within 90 feet.  On a hit, the target suffers 1d8 of your chosen damage type.  You can change your chosen damage type as part of a long rest.",
+            "description_str" : "Choose a damage type when you learn this Technology.  Make a ranged Tech attack against a target of your choice within 90 feet.  On a hit, the target suffers damage of your chosen type equal to a number of d8s equal to your proficiency bonus -1.  You can change your chosen damage type as part of a long rest.",
             "overchargeable_bool" : true,
             "overchargeable_str" : "NA",
 
@@ -344,7 +479,7 @@
             "duration_str" : "1 Hour",
             
             "school_str" : "Mechanical Engineering",
-            "school_img" : "/_SiteResources/Images/Sigil-Abjuration.png",
+            "school_img" : "/_SiteResources/Images/noun_Piston_3924710.png",
             
             "attack_save_int" : 4,
             "attack_save_str" : "Dexterity",
