@@ -46,141 +46,6 @@
         },
 
         {
-            "name_str" : "Orbital Dynamics",
-            "page_url" : "orbital-dynamics.html",
-
-            "level_int" : 7,
-            "level_str" : "7th",
-
-            "casting_time_int" : 3,
-            "casting_time_str" : "1 Action",
-            "casting_time_asterisk_str" : "",
-            
-            "range_area_int" : 0,
-            "range_area_str" : "Self",
-            
-            "components_verbal_bool" : true,
-            "components_somatic_bool" : true,
-            "components_material_bool" : true,
-            "components_cost_int" : 0,
-            "components_cost_str" : "NA",
-            "components_vsm_str" : "V, S, M",
-            "components_description_str" : "",
-            
-            "duration_int" : 864000,
-            "duration_str" : "1 Day",
-            
-            "school_str" : "Propulsion",
-            "school_img" : "/_SiteResources/Images/noun_jetpack_3000382.png",
-            
-            "attack_save_int" : 2,
-            "attack_save_str" : "---",
-            
-            "damage_effect_str" : "Buff",
-            
-            "description_str" : "You soar into orbit above the planet you are currently on given that you have clear access to reach such altitude.  You have enough life support to sustain you for the duration.  At any time throughout the duration, you can choose a point on the planet below and descend from orbit to reach that location over the course of ten minutes.  Once you do so, this effect ends.  If the full duration is reached, you descend to the planet at a random location of the GM's choosing.",
-            "overchargeable_bool" : true,
-            "overchargeable_str" : "NA",
-
-            "class_str" : "Visionary",
-            "subclass_str" : "",
-
-            "feats_str" : "",
-            "backgrounds_str" : "",
-            "races_str" : ""
-        },
-
-        {
-            "name_str" : "Interplanetary Travel",
-            "page_url" : "interplanetary-travel.html",
-
-            "level_int" : 8,
-            "level_str" : "8th",
-
-            "casting_time_int" : 3,
-            "casting_time_str" : "1 Hour",
-            "casting_time_asterisk_str" : "",
-            
-            "range_area_int" : 0,
-            "range_area_str" : "Self",
-            
-            "components_verbal_bool" : true,
-            "components_somatic_bool" : true,
-            "components_material_bool" : true,
-            "components_cost_int" : 0,
-            "components_cost_str" : "NA",
-            "components_vsm_str" : "V, S, M",
-            "components_description_str" : "",
-            
-            "duration_int" : 1,
-            "duration_str" : "1 Month",
-            
-            "school_str" : "Propulsion",
-            "school_img" : "/_SiteResources/Images/noun_jetpack_3000382.png",
-            
-            "attack_save_int" : 2,
-            "attack_save_str" : "---",
-            
-            "damage_effect_str" : "Buff",
-            
-            "description_str" : "You soar into orbit above the planet you are currently on given that you have clear access to reach such altitude.  You have enough life support to sustain you for the duration.  At any time throughout the duration, you can choose another planet within the solar system you are in and transition into orbit above that planet over the course of twenty days.  At any time throughout the duration, you can choose a point on the planet below and descend from orbit to reach that location over the course of ten minutes.  Once you do so, this effect ends.  If the full duration is reached, you descend to the planet at a random location of the GM's choosing.",
-            "overchargeable_bool" : true,
-            "overchargeable_str" : "NA",
-
-            "class_str" : "Visionary",
-            "subclass_str" : "",
-
-            "feats_str" : "",
-            "backgrounds_str" : "",
-            "races_str" : ""
-        },
-
-        {
-            "name_str" : "Interstellar Traversal",
-            "page_url" : "interstellar-traversal.html",
-
-            "level_int" : 9,
-            "level_str" : "9th",
-
-            "casting_time_int" : 3,
-            "casting_time_str" : "1 Action",
-            "casting_time_asterisk_str" : "",
-            
-            "range_area_int" : 0,
-            "range_area_str" : "Self",
-            
-            "components_verbal_bool" : true,
-            "components_somatic_bool" : true,
-            "components_material_bool" : true,
-            "components_cost_int" : 0,
-            "components_cost_str" : "NA",
-            "components_vsm_str" : "V, S, M",
-            "components_description_str" : "",
-            
-            "duration_int" : 1,
-            "duration_str" : "1 Year",
-            
-            "school_str" : "Propulsion",
-            "school_img" : "/_SiteResources/Images/noun_jetpack_3000382.png",
-            
-            "attack_save_int" : 2,
-            "attack_save_str" : "---",
-            
-            "damage_effect_str" : "Buff",
-            
-            "description_str" : "You soar into orbit above the planet you are currently on given that you have clear access to reach such altitude.  You have enough life support to sustain you for the duration.  At any time throughout the duration, you can choose another planet within a solar system within the galaxy you are in and transition into orbit above that planet over the course of eight months.  At any time throughout the duration, you can choose a point on the planet below and descend from orbit to reach that location over the course of ten minutes.  Once you do so, this effect ends.  If the full duration is reached, you descend to the planet at a random location of the GM's choosing.",
-            "overchargeable_bool" : true,
-            "overchargeable_str" : "NA",
-
-            "class_str" : "Visionary",
-            "subclass_str" : "",
-
-            "feats_str" : "",
-            "backgrounds_str" : "",
-            "races_str" : ""
-        },
-
-        {
             "name_str" : "Analyze Weaknesses",
             "page_url" : "analyze-weaknesses.html",
 
@@ -214,52 +79,6 @@
             "damage_effect_str" : "Debuff",
             
             "description_str" : "You analyze a target of your choice within 60 feet. The target takes a penalty equal to your Proficiency bonus on the next saving throw they make before the end of your next turn. After making a saving throw, regardless of whether they succeed or fail, this effect ends.",
-            "overchargeable_bool" : false,
-            "overchargeable_str" : "NA",
-
-            "class_str" : "Visionary",
-            "subclass_str" : "",
-
-            "feats_str" : "",
-            "backgrounds_str" : "",
-            "races_str" : ""
-        },
-
-        {
-            "name_str" : "AR Walkthrough",
-            "page_url" : "ar-walkthrough.html",
-
-            "level_int" : 0,
-            "level_str" : "0th (Cantrip)",
-
-            "casting_time_int" : 3,
-            "casting_time_str" : "1 Action",
-            "casting_time_asterisk_str" : "",
-            
-            "range_area_int" : 15,
-            "range_area_str" : "15 feet",
-            
-            "components_verbal_bool" : false,
-            "components_somatic_bool" : true,
-            "components_material_bool" : true,
-            "components_cost_int" : 0,
-            "components_cost_str" : "NA",
-            "components_vsm_str" : "V, S, M",
-            "components_description_str" : "",
-            
-            "duration_int" : 6,
-            "duration_str" : "1 Round",
-            
-            "school_str" : "Virtual Projection",
-            "school_img" : "/_SiteResources/Images/noun_Hologram_1748886.png",
-
-            "attack_save_int" : 0,
-            "attack_save_str" : "---",
-            
-            "damage_effect_str" : "Buff",
-            
-            "description_str" : "Choose a target within 15 feet of you. The next skill check the target makes before the start of your next turn is made with advantage, and gains a bonus to the result equal to your Intelligence Modifier.",
-
             "overchargeable_bool" : false,
             "overchargeable_str" : "NA",
 
@@ -364,51 +183,6 @@
         },
 
         {
-            "name_str" : "Rapid Deceleration",
-            "page_url" : "rapid-deceleration.html",
-
-            "level_int" : 1,
-            "level_str" : "1st",
-
-            "casting_time_int" : 1,
-            "casting_time_str" : "1 Reaction",
-            "casting_time_asterisk_str" : "",
-            
-            "range_area_int" : 0,
-            "range_area_str" : "Self",
-            
-            "components_verbal_bool" : false,
-            "components_somatic_bool" : true,
-            "components_material_bool" : true,
-            "components_cost_int" : 0,
-            "components_cost_str" : "NA",
-            "components_vsm_str" : "S, M",
-            "components_description_str" : "",
-            
-            "duration_int" : 0,
-            "duration_str" : "Instantaneous",
-            
-            "school_str" : "Propulsion",
-            "school_img" : "/_SiteResources/Images/noun_jetpack_3000382.png",
-            
-            "attack_save_int" : 2,
-            "attack_save_str" : "---",
-            
-            "damage_effect_str" : "Buff",
-            
-            "description_str" : "When you are about to take fall damage, you can cast this Technology to reduce your impact velocity and avoid taking that instance of fall damage.",
-            "overchargeable_bool" : false,
-            "overchargeable_str" : "NA",
-
-            "class_str" : "Visionary",
-            "subclass_str" : "",
-
-            "feats_str" : "",
-            "backgrounds_str" : "",
-            "races_str" : ""
-        },
-
-        {
             "name_str" : "Focused Beam",
             "page_url" : "focused-beam.html",
 
@@ -454,6 +228,51 @@
             "races_str" : ""
         },
         
+        {
+            "name_str" : "HALO Infiltration",
+            "page_url" : "halo-infiltration.html",
+
+            "level_int" : 6,
+            "level_str" : "6th",
+
+            "casting_time_int" : 4,
+            "casting_time_str" : "1 Minute",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 30,
+            "range_area_str" : "30 feet",
+            
+            "components_verbal_bool" : true,
+            "components_somatic_bool" : true,
+            "components_material_bool" : true,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "",
+            
+            "duration_int" : 28800,
+            "duration_str" : "8 Hours",
+            
+            "school_str" : "Propulsion",
+            "school_img" : "/_SiteResources/Images/noun_jetpack_3000382.png",
+            
+            "attack_save_int" : 2,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "Buff",
+            
+            "description_str" : "You and up to ten willing targets within range gain an additional flying speed of 360 feet for the duration and stage 2 atmospheric resistance.  (You may treat Space as the Stratosphere, and the Stratosphere as the Troposphere.)",
+            "overchargeable_bool" : false,
+            "overchargeable_str" : "NA",
+
+            "class_str" : "Visionary",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+
         {
             "name_str" : "Hologram Projector",
             "page_url" : "hologram-projector.html",
@@ -590,51 +409,6 @@
         },
 
         {
-            "name_str" : "Propulsion Burst",
-            "page_url" : "propulsion-burst.html",
-
-            "level_int" : 2,
-            "level_str" : "2nd",
-
-            "casting_time_int" : 2,
-            "casting_time_str" : "1 Bonus Action",
-            "casting_time_asterisk_str" : "",
-            
-            "range_area_int" : 0,
-            "range_area_str" : "Self",
-            
-            "components_verbal_bool" : false,
-            "components_somatic_bool" : true,
-            "components_material_bool" : true,
-            "components_cost_int" : 0,
-            "components_cost_str" : "NA",
-            "components_vsm_str" : "S, M",
-            "components_description_str" : "",
-            
-            "duration_int" : 1,
-            "duration_str" : "1 Turn",
-            
-            "school_str" : "Propulsion",
-            "school_img" : "/_SiteResources/Images/noun_jetpack_3000382.png",
-            
-            "attack_save_int" : 2,
-            "attack_save_str" : "---",
-            
-            "damage_effect_str" : "Buff",
-            
-            "description_str" : "You gain an additional flying speed of 60 feet and your movement does not provoke opportunity attacks until the end of this turn.",
-            "overchargeable_bool" : false,
-            "overchargeable_str" : "NA",
-
-            "class_str" : "Visionary",
-            "subclass_str" : "",
-
-            "feats_str" : "",
-            "backgrounds_str" : "",
-            "races_str" : ""
-        },
-
-        {
             "name_str" : "Integrated Thrusters",
             "page_url" : "integrated-thrusters.html",
 
@@ -680,20 +454,20 @@
         },
 
         {
-            "name_str" : "HALO Infiltration",
-            "page_url" : "halo-infiltration.html",
+            "name_str" : "Interactive Tutorial",
+            "page_url" : "interactive-tutorial.html",
 
-            "level_int" : 6,
-            "level_str" : "6th",
+            "level_int" : 0,
+            "level_str" : "0th (Cantrip)",
 
-            "casting_time_int" : 4,
-            "casting_time_str" : "1 Minute",
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Action",
             "casting_time_asterisk_str" : "",
             
-            "range_area_int" : 30,
-            "range_area_str" : "30 feet",
+            "range_area_int" : 15,
+            "range_area_str" : "15 feet",
             
-            "components_verbal_bool" : true,
+            "components_verbal_bool" : false,
             "components_somatic_bool" : true,
             "components_material_bool" : true,
             "components_cost_int" : 0,
@@ -701,18 +475,19 @@
             "components_vsm_str" : "V, S, M",
             "components_description_str" : "",
             
-            "duration_int" : 28800,
-            "duration_str" : "8 Hours",
+            "duration_int" : 6,
+            "duration_str" : "1 Round",
             
-            "school_str" : "Propulsion",
-            "school_img" : "/_SiteResources/Images/noun_jetpack_3000382.png",
-            
-            "attack_save_int" : 2,
+            "school_str" : "Virtual Projection",
+            "school_img" : "/_SiteResources/Images/noun_Hologram_1748886.png",
+
+            "attack_save_int" : 0,
             "attack_save_str" : "---",
             
             "damage_effect_str" : "Buff",
             
-            "description_str" : "You and up to ten willing targets within range gain an additional flying speed of 360 feet for the duration and stage 2 atmospheric resistance.  (You may treat Space as the Stratosphere, and the Stratosphere as the Troposphere.)",
+            "description_str" : "Choose a target within 15 feet of you. The next skill check the target makes before the start of your next turn is made with advantage, and gains a bonus to the result equal to your Intelligence Modifier.",
+
             "overchargeable_bool" : false,
             "overchargeable_str" : "NA",
 
@@ -725,14 +500,14 @@
         },
 
         {
-            "name_str" : "Repeating Jets",
-            "page_url" : "repeating-jets.html",
+            "name_str" : "Interplanetary Travel",
+            "page_url" : "interplanetary-travel.html",
 
-            "level_int" : 5,
-            "level_str" : "5th",
+            "level_int" : 8,
+            "level_str" : "8th",
 
-            "casting_time_int" : 2,
-            "casting_time_str" : "1 Bonus Action",
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Hour",
             "casting_time_asterisk_str" : "",
             
             "range_area_int" : 0,
@@ -746,8 +521,8 @@
             "components_vsm_str" : "V, S, M",
             "components_description_str" : "",
             
-            "duration_int" : 60,
-            "duration_str" : "1 Minute",
+            "duration_int" : 1,
+            "duration_str" : "1 Month",
             
             "school_str" : "Propulsion",
             "school_img" : "/_SiteResources/Images/noun_jetpack_3000382.png",
@@ -757,8 +532,53 @@
             
             "damage_effect_str" : "Buff",
             
-            "description_str" : "You gain an additional flying speed of 60 feet and your movement does not provoke opportunity attacks until the end of this turn.  On subsequent turns throughout the duration, you may use a Bonus Action to gain this benefit again.",
-            "overchargeable_bool" : false,
+            "description_str" : "You soar into orbit above the planet you are currently on given that you have clear access to reach such altitude.  You have enough life support to sustain you for the duration.  At any time throughout the duration, you can choose another planet within the solar system you are in and transition into orbit above that planet over the course of twenty days.  At any time throughout the duration, you can choose a point on the planet below and descend from orbit to reach that location over the course of ten minutes.  Once you do so, this effect ends.  If the full duration is reached, you descend to the planet at a random location of the GM's choosing.",
+            "overchargeable_bool" : true,
+            "overchargeable_str" : "NA",
+
+            "class_str" : "Visionary",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+
+        {
+            "name_str" : "Interstellar Traversal",
+            "page_url" : "interstellar-traversal.html",
+
+            "level_int" : 9,
+            "level_str" : "9th",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 0,
+            "range_area_str" : "Self",
+            
+            "components_verbal_bool" : true,
+            "components_somatic_bool" : true,
+            "components_material_bool" : true,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "",
+            
+            "duration_int" : 1,
+            "duration_str" : "1 Year",
+            
+            "school_str" : "Propulsion",
+            "school_img" : "/_SiteResources/Images/noun_jetpack_3000382.png",
+            
+            "attack_save_int" : 2,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "Buff",
+            
+            "description_str" : "You soar into orbit above the planet you are currently on given that you have clear access to reach such altitude.  You have enough life support to sustain you for the duration.  At any time throughout the duration, you can choose another planet within a solar system within the galaxy you are in and transition into orbit above that planet over the course of eight months.  At any time throughout the duration, you can choose a point on the planet below and descend from orbit to reach that location over the course of ten minutes.  Once you do so, this effect ends.  If the full duration is reached, you descend to the planet at a random location of the GM's choosing.",
+            "overchargeable_bool" : true,
             "overchargeable_str" : "NA",
 
             "class_str" : "Visionary",
@@ -946,6 +766,51 @@
             "backgrounds_str" : "",
             "races_str" : ""
         },
+        
+        {
+            "name_str" : "Orbital Dynamics",
+            "page_url" : "orbital-dynamics.html",
+
+            "level_int" : 7,
+            "level_str" : "7th",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 0,
+            "range_area_str" : "Self",
+            
+            "components_verbal_bool" : true,
+            "components_somatic_bool" : true,
+            "components_material_bool" : true,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "",
+            
+            "duration_int" : 864000,
+            "duration_str" : "1 Day",
+            
+            "school_str" : "Propulsion",
+            "school_img" : "/_SiteResources/Images/noun_jetpack_3000382.png",
+            
+            "attack_save_int" : 2,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "Buff",
+            
+            "description_str" : "You soar into orbit above the planet you are currently on given that you have clear access to reach such altitude.  You have enough life support to sustain you for the duration.  At any time throughout the duration, you can choose a point on the planet below and descend from orbit to reach that location over the course of ten minutes.  Once you do so, this effect ends.  If the full duration is reached, you descend to the planet at a random location of the GM's choosing.",
+            "overchargeable_bool" : true,
+            "overchargeable_str" : "NA",
+
+            "class_str" : "Visionary",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
 
         {
             "name_str" : "Quickfire Beam",
@@ -982,6 +847,96 @@
             
             "description_str" : "Make a ranged Tech attack against a number of targets equal to your proficiency bonus -1 of your choice within 60 feet.  On a hit, a target suffers 1d6 Energy damage.",
             "overchargeable_bool" : true,
+            "overchargeable_str" : "NA",
+
+            "class_str" : "Visionary",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+
+        {
+            "name_str" : "Rapid Deceleration",
+            "page_url" : "rapid-deceleration.html",
+
+            "level_int" : 1,
+            "level_str" : "1st",
+
+            "casting_time_int" : 1,
+            "casting_time_str" : "1 Reaction",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 0,
+            "range_area_str" : "Self",
+            
+            "components_verbal_bool" : false,
+            "components_somatic_bool" : true,
+            "components_material_bool" : true,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "S, M",
+            "components_description_str" : "",
+            
+            "duration_int" : 0,
+            "duration_str" : "Instantaneous",
+            
+            "school_str" : "Propulsion",
+            "school_img" : "/_SiteResources/Images/noun_jetpack_3000382.png",
+            
+            "attack_save_int" : 2,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "Buff",
+            
+            "description_str" : "When you are about to take fall damage, you can cast this Technology to reduce your impact velocity and avoid taking that instance of fall damage.",
+            "overchargeable_bool" : false,
+            "overchargeable_str" : "NA",
+
+            "class_str" : "Visionary",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+
+        {
+            "name_str" : "Repeating Jets",
+            "page_url" : "repeating-jets.html",
+
+            "level_int" : 5,
+            "level_str" : "5th",
+
+            "casting_time_int" : 2,
+            "casting_time_str" : "1 Bonus Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 0,
+            "range_area_str" : "Self",
+            
+            "components_verbal_bool" : true,
+            "components_somatic_bool" : true,
+            "components_material_bool" : true,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "",
+            
+            "duration_int" : 60,
+            "duration_str" : "1 Minute",
+            
+            "school_str" : "Propulsion",
+            "school_img" : "/_SiteResources/Images/noun_jetpack_3000382.png",
+            
+            "attack_save_int" : 2,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "Buff",
+            
+            "description_str" : "You gain an additional flying speed of 60 feet and your movement does not provoke opportunity attacks until the end of this turn.  On subsequent turns throughout the duration, you may use a Bonus Action to gain this benefit again.",
+            "overchargeable_bool" : false,
             "overchargeable_str" : "NA",
 
             "class_str" : "Visionary",
@@ -1037,6 +992,51 @@
             "races_str" : ""
         },
         
+        {
+            "name_str" : "Rocket Burst",
+            "page_url" : "rocket-burst.html",
+
+            "level_int" : 2,
+            "level_str" : "2nd",
+
+            "casting_time_int" : 2,
+            "casting_time_str" : "1 Bonus Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 0,
+            "range_area_str" : "Self",
+            
+            "components_verbal_bool" : false,
+            "components_somatic_bool" : true,
+            "components_material_bool" : true,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "S, M",
+            "components_description_str" : "",
+            
+            "duration_int" : 1,
+            "duration_str" : "1 Turn",
+            
+            "school_str" : "Propulsion",
+            "school_img" : "/_SiteResources/Images/noun_jetpack_3000382.png",
+            
+            "attack_save_int" : 2,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "Buff",
+            
+            "description_str" : "You gain an additional flying speed of 60 feet and your movement does not provoke opportunity attacks until the end of this turn.",
+            "overchargeable_bool" : false,
+            "overchargeable_str" : "NA",
+
+            "class_str" : "Visionary",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+
         {
             "name_str" : "Taser Snare",
             "page_url" : "taser-snare.html",
