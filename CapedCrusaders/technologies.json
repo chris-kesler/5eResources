@@ -26,14 +26,14 @@
             "duration_str" : "Instantaneous",
             
             "school_str" : "Rocketry",
-            "school_img" : "/_SiteResources/Images/noun_missile_3990194.png",
+            "school_img" : "/_SiteResources/Images/noun_jetpack_3000382.png",
             
             "attack_save_int" : 2,
             "attack_save_str" : "---",
             
             "damage_effect_str" : "Buff",
             
-            "description_str" : "You gain an additional flying speed of 360 feet until the end of this turn.",
+            "description_str" : "You gain an additional flying speed of 360 feet and your movement does not provoke opportunity attacks until the end of this turn.",
             "overchargeable_bool" : true,
             "overchargeable_str" : "NA",
 
@@ -50,7 +50,7 @@
             "page_url" : "analyze-weaknesses.html",
 
             "level_int" : 0,
-            "level_str" : "Cantrip",
+            "level_str" : "0th (Cantrip)",
 
             "casting_time_int" : 3,
             "casting_time_str" : "1 Action",
@@ -95,7 +95,7 @@
             "page_url" : "ar-walkthrough.html",
 
             "level_int" : 0,
-            "level_str" : "Cantrip",
+            "level_str" : "0th (Cantrip)",
 
             "casting_time_int" : 3,
             "casting_time_str" : "1 Action",
@@ -115,7 +115,7 @@
             "duration_int" : 6,
             "duration_str" : "1 Round",
             
-            "school_str" : "Augmented Reality",
+            "school_str" : "Virtual Projection",
             "school_img" : "/_SiteResources/Images/noun_Hologram_1748886.png",
 
             "attack_save_int" : 0,
@@ -187,7 +187,7 @@
             "page_url" : "concussive-punch.html",
 
             "level_int" : 0,
-            "level_str" : "Cantrip",
+            "level_str" : "0th (Cantrip)",
 
             "casting_time_int" : 3,
             "casting_time_str" : "1 Action",
@@ -207,7 +207,7 @@
             "duration_int" : 0,
             "duration_str" : "Instantaneous",
             
-            "school_str" : "Mechanical Engineering",
+            "school_str" : "Servomechanics",
             "school_img" : "/_SiteResources/Images/noun_Piston_3924710.png",
             
             "attack_save_int" : 1,
@@ -229,11 +229,56 @@
         },
 
         {
+            "name_str" : "Flight Stabilizers",
+            "page_url" : "flight-stabilizers.html",
+
+            "level_int" : 1,
+            "level_str" : "1st",
+
+            "casting_time_int" : 1,
+            "casting_time_str" : "1 Reaction",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 0,
+            "range_area_str" : "Self",
+            
+            "components_verbal_bool" : false,
+            "components_somatic_bool" : true,
+            "components_material_bool" : true,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "S, M",
+            "components_description_str" : "",
+            
+            "duration_int" : 0,
+            "duration_str" : "Instantaneous",
+            
+            "school_str" : "Rocketry",
+            "school_img" : "/_SiteResources/Images/noun_jetpack_3000382.png",
+            
+            "attack_save_int" : 2,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "Buff",
+            
+            "description_str" : "When you are about to take fall damage, you can cast this Technology to reduce your impact velocity and avoid taking that instance of fall damage.",
+            "overchargeable_bool" : false,
+            "overchargeable_str" : "NA",
+
+            "class_str" : "Visionary",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+
+        {
             "name_str" : "Focused Beam",
             "page_url" : "focused-beam.html",
 
             "level_int" : 0,
-            "level_str" : "Cantrip",
+            "level_str" : "0th (Cantrip)",
 
             "casting_time_int" : 3,
             "casting_time_str" : "1 Action",
@@ -297,9 +342,9 @@
             "components_description_str" : "",
             
             "duration_int" : 60,
-            "duration_str" : "1 minute",
+            "duration_str" : "1 Minute",
             
-            "school_str" : "Augmented Reality",
+            "school_str" : "Virtual Projection",
             "school_img" : "/_SiteResources/Images/noun_Hologram_1748886.png",
 
             "attack_save_int" : 0,
@@ -345,7 +390,7 @@
             "duration_int" : 0,
             "duration_str" : "Instantaneous",
             
-            "school_str" : "Rocketry",
+            "school_str" : "Ballistics",
             "school_img" : "/_SiteResources/Images/noun_missile_3990194.png",
             
             "attack_save_int" : 2,
@@ -389,7 +434,7 @@
             "duration_int" : 0,
             "duration_str" : "Instantaneous",
             
-            "school_str" : "Mechanical Engineering",
+            "school_str" : "Servomechanics",
             "school_img" : "/_SiteResources/Images/noun_Piston_3924710.png",
             
             "attack_save_int" : 0,
@@ -435,14 +480,59 @@
             "duration_str" : "Instantaneous",
             
             "school_str" : "Rocketry",
-            "school_img" : "/_SiteResources/Images/noun_missile_3990194.png",
+            "school_img" : "/_SiteResources/Images/noun_jetpack_3000382.png",
             
             "attack_save_int" : 2,
             "attack_save_str" : "---",
             
             "damage_effect_str" : "Buff",
             
-            "description_str" : "As a bonus action, you can fly up to 30 feet.  This flight does not count against your total movment.",
+            "description_str" : "You gain an additional flying speed of 60 feet and your movement does not provoke opportunity attacks until the end of this turn.",
+            "overchargeable_bool" : false,
+            "overchargeable_str" : "NA",
+
+            "class_str" : "Visionary",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+
+        {
+            "name_str" : "Jet Greaves",
+            "page_url" : "jet-greaves.html",
+
+            "level_int" : 0,
+            "level_str" : "0th (Cantrip)",
+
+            "casting_time_int" : 2,
+            "casting_time_str" : "1 Bonus Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 0,
+            "range_area_str" : "Self",
+            
+            "components_verbal_bool" : false,
+            "components_somatic_bool" : true,
+            "components_material_bool" : true,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "S, M",
+            "components_description_str" : "",
+            
+            "duration_int" : 0,
+            "duration_str" : "Instantaneous",
+            
+            "school_str" : "Rocketry",
+            "school_img" : "/_SiteResources/Images/noun_jetpack_3000382.png",
+            
+            "attack_save_int" : 2,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "Buff",
+            
+            "description_str" : "You gain a long jump distance equal to your Intelligence score multiplied by three, and a vertical jump distance equal to your Intelligence score until the end of this turn.  You can only jump as far as your movement will allow.",
             "overchargeable_bool" : false,
             "overchargeable_str" : "NA",
 
@@ -478,7 +568,7 @@
             "duration_int" : 0,
             "duration_str" : "Instantaneous",
             
-            "school_str" : "Mechanical Engineering",
+            "school_str" : "Servomechanics",
             "school_img" : "/_SiteResources/Images/noun_Piston_3924710.png",
             
             "attack_save_int" : 1,
@@ -522,7 +612,7 @@
             "duration_int" : 3600,
             "duration_str" : "1 Hour",
             
-            "school_str" : "Mechanical Engineering",
+            "school_str" : "Servomechanics",
             "school_img" : "/_SiteResources/Images/noun_Piston_3924710.png",
             
             "attack_save_int" : 4,
@@ -530,7 +620,7 @@
             
             "damage_effect_str" : "Buff/Debuff",
             
-            "description_str" : "Choose a creature within 120 feet.  If the creature is willing, you deploy a mechanical suit of armor that augments their abilities.  Their statistics are replaced by the Mechbuster statistics.  When the Mechbuster is reduced to zero hit points, it is destroyed, and the creature takes any remaining damage.  If the creature is unwilling, they must make a Dexterity saving throw or be trapped inside the Mechbuster, which can do nothing other than move at your direction and release the creature inside, after which, the Mechbuster is deactivated and cannot be deployed unless you cast this Technology again.  The trapped creature is rendered restrained and incapacitated until the Mechbuster frees them or the Mechbuster is destroyed.  Once per minute, the creature inside can attempt to break free by making a Str check against your Techcasting DC.  On a success, the Mechbuster is destroyed.",
+            "description_str" : "Choose a creature within 120 feet.  If the creature is willing, you deploy a mechanical suit of armor that augments their abilities.  Their statistics are replaced by the Mechbuster statistics.  When the Mechbuster is reduced to zero hit points, it is destroyed, and the creature takes any remaining damage.  If the creature is unwilling, they must make a Dexterity saving throw or be trapped inside the Mechbuster, which can do nothing other than move at your direction and release the creature inside, after which, the Mechbuster is deactivated and cannot be deployed unless you cast this Technology again.  The trapped creature is rendered restrained and incapacitated until the Mechbuster frees them or the Mechbuster is destroyed.  Once per minute, the creature inside can attempt to break free by making a Strength check against your Techcasting DC.  On a success, the Mechbuster is destroyed.",
             "overchargeable_bool" : true,
             "overchargeable_str" : "NA",
 
@@ -547,7 +637,7 @@
             "page_url" : "omnibeam.html",
 
             "level_int" : 0,
-            "level_str" : "Cantrip",
+            "level_str" : "0th (Cantrip)",
 
             "casting_time_int" : 3,
             "casting_time_str" : "1 Action",
@@ -592,7 +682,7 @@
             "page_url" : "quickfire-beam.html",
 
             "level_int" : 0,
-            "level_str" : "Cantrip",
+            "level_str" : "0th (Cantrip)",
 
             "casting_time_int" : 3,
             "casting_time_str" : "1 Action",
@@ -637,7 +727,7 @@
             "page_url" : "repulsing-blast.html",
 
             "level_int" : 0,
-            "level_str" : "Cantrip",
+            "level_str" : "0th (Cantrip)",
 
             "casting_time_int" : 3,
             "casting_time_str" : "1 Action",
@@ -678,51 +768,6 @@
         },
         
         {
-            "name_str" : "Rocket Greaves",
-            "page_url" : "rocket-greaves.html",
-
-            "level_int" : 1,
-            "level_str" : "1st",
-
-            "casting_time_int" : 1,
-            "casting_time_str" : "1 Reaction",
-            "casting_time_asterisk_str" : "",
-            
-            "range_area_int" : 0,
-            "range_area_str" : "Self",
-            
-            "components_verbal_bool" : false,
-            "components_somatic_bool" : true,
-            "components_material_bool" : true,
-            "components_cost_int" : 0,
-            "components_cost_str" : "NA",
-            "components_vsm_str" : "S, M",
-            "components_description_str" : "",
-            
-            "duration_int" : 0,
-            "duration_str" : "Instantaneous",
-            
-            "school_str" : "Rocketry",
-            "school_img" : "/_SiteResources/Images/noun_missile_3990194.png",
-            
-            "attack_save_int" : 2,
-            "attack_save_str" : "---",
-            
-            "damage_effect_str" : "Buff",
-            
-            "description_str" : "When you are about to take fall damage, you can cast this Technology to reduce your impact velocity and avoid taking that instance of fall damage.",
-            "overchargeable_bool" : false,
-            "overchargeable_str" : "NA",
-
-            "class_str" : "Visionary",
-            "subclass_str" : "",
-
-            "feats_str" : "",
-            "backgrounds_str" : "",
-            "races_str" : ""
-        },
-
-        {
             "name_str" : "Taser Snare",
             "page_url" : "taser-snare.html",
 
@@ -747,8 +792,8 @@
             "duration_int" : 0,
             "duration_str" : "Instantaneous",
             
-            "school_str" : "Gadgetry",
-            "school_img" : "/_SiteResources/Images/noun_missile_3990194.png",
+            "school_str" : "Electronics",
+            "school_img" : "/_SiteResources/Images/noun_circuit_3204256.png",
             
             "attack_save_int" : 2,
             "attack_save_str" : "Constitution",
@@ -792,7 +837,7 @@
             "duration_int" : 0,
             "duration_str" : "Instantaneous",
             
-            "school_str" : "Munitions",
+            "school_str" : "Ballistics",
             "school_img" : "/_SiteResources/Images/noun_missile_3990194.png",
             
             "attack_save_int" : 2,
@@ -800,7 +845,7 @@
             
             "damage_effect_str" : "Incinerating",
             
-            "description_str" : "Choose a point within 120 feet of you.  Creatures and Vehicles within 30 feet must make a Dex save, taking 8d8 Incinerating damage on a failed save and half as much on a successful save.  Vehicles that are made of conventional materials take double damage on a failed save, and normal damage on a successful save.  Objects made of conventional materials not being worn or carried within 30 feet of the point are destroyed.  When you overcharge this Technology, you increase the base damage by 2d8 and increase the radius by 5 for each level beyond 3rd.",
+            "description_str" : "Choose a point within 120 feet of you.  Creatures and Vehicles within 30 feet must make a Dexterity saving throw, taking 8d8 Incinerating damage on a failed save and half as much on a successful save.  Vehicles that are made of conventional materials take double damage on a failed save, and normal damage on a successful save.  Objects made of conventional materials not being worn or carried within 30 feet of the point are destroyed.  When you overcharge this Technology, you increase the base damage by 2d8 and increase the radius by 5 for each level beyond 3rd.",
             "overchargeable_bool" : true,
             "overchargeable_str" : "NA",
 
