@@ -7,68 +7,15 @@
     <title>KnowOne's Website of Everything</title>
     <link rel="icon" href="/_SiteResources/Images/OwlOfMinerva_ModifiedLogo.png">
     <link rel="stylesheet" href="/CapedCrusaderStyle.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-      $(function readClass() {
-        var classes = [];
-        $.getJSON('classes.json', function(data) {
-          var path = window.location.pathname;
-          var page = path.split("/").pop();
-          $.each(data.class, function(i, f) {
-            if (f.page_url == page) {
-              document.getElementById("class-page-title").innerHTML = "Caped Crusaders: Classes > " + f.name_str;
-              document.getElementById("class-page-image").src = f.class_img;
-              document.getElementById("class-page-description").innerHTML = f.description_str;
-              document.getElementById("class-features-intro").innerHTML = "As a "  + f.name_str + ", you gain the following Class Features.";
-              document.getElementById("hit-dice").innerHTML = "<b>Hit Dice:</b>  1d" + f.hit_die_int + " per " + f.name_str + " level";
-              document.getElementById("hit-points-at-1st-level").innerHTML = "<b>Hit Points at 1st level:</b>  " + f.hit_die_int + " your Constitution modifier";
-              document.getElementById("hit-points-at-higher-levels").innerHTML = "<b>Hit Points at higher levels:</b>  1d" + f.hit_die_int + " (or " + f.hit_die_average_int + ") + your Constiution modifier per " + f.name_str + " level after 1st";
-
-              document.getElementById("proficiencies-armor").innerHTML = "<b>Armor:</b>  " + f.proficiencies_armor;
-              document.getElementById("proficiencies-weapons").innerHTML = "<b>Weapons:</b>  " + f.proficiencies_weapons;
-              document.getElementById("proficiencies-tools").innerHTML = "<b>Tools:</b>  " + f.proficiencies_skills;
-              document.getElementById("proficiencies-saving-throws").innerHTML = "<b>Saving Throws:</b>  " + f.proficiencies_saves;
-              document.getElementById("proficiencies-skills").innerHTML = "<b>Skills:</b>  " + f.proficiencies_skills;
-
-              document.getElementById("equipment-armor").innerHTML = "<b>Armor:</b>  " + f.equipment_armor;
-              document.getElementById("equipment-weapons").innerHTML = "<b>Weapons:</b>  " + f.equipment_weapons;
-              document.getElementById("equipment-tools").innerHTML = "<b>Tools:</b>  " + f.equipment_tools;
-              document.getElementById("equipment-packs").innerHTML = "<b>Packs:</b>  " + f.equipment_packs;
-
-              document.getElementById("starting-wealth").innerHTML = "<td>" + f.name_str + "</td><td>" + f.equipment_variant + "</td>";
-              
-              document.getElementById("class-table-title").innerHTML = "The " + f.name_str + " Table";
-              // var tblRow1 = "<tr><th style='width: 15vw'>Level</th><th style='width: 15vw'>Casting Time</th><th style='width: 15vw'>Range/Area</th><th style='width: 15vw'>Components</th></tr>"
-              // $(tblRow1).appendTo("#TechTable tbody");
-              // var tblRow2 = "<tr>" 
-              //   + "<td>" + f.level_str + "</td>" 
-              //   + "<td>" + f.casting_time_str + "</td>" 
-              //   + "<td>" + f.range_area_str + "</td>" 
-              //   + "<td>" + f.components_vsm_str + "</td>" 
-              //   + "</tr>"
-              // $(tblRow2).appendTo("#TechTable tbody");
-              // var tblRow3 = "<tr><th>Duration</th><th>School</th><th>Attack/Save</th><th>Damage/Effect</th></tr>";
-              // $(tblRow3).appendTo("#TechTable tbody");
-              // var tblRow4 = "<tr>"
-              //   + "<td>" + f.duration_str + "</td>" 
-              //   + "<td>" + f.school_str + "</td>" 
-              //   + "<td>" + f.attack_save_str + "</td>" 
-              //   + "<td>" + f.damage_effect_str + "</td>" 
-              //   + "</tr>"
-              // $(tblRow4).appendTo("#TechTable tbody");
-            }
-          });
-        });
-      });
-    </script>
-  </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  </head>
 
 
   <body>
     <div class="PageContainer, PlanesMapBackground"> 
       <div class="PageHeader">
         <div class="Import_PageHeader"></div>
-          <h1 class="header" id="class-page-title"></h1>
+
+          <h1 class="header">Caped Crusaders:  Subvertist</h1>
           <hr>
       </div>
         
@@ -76,53 +23,68 @@
       <div class="PageContent">
         <div class="AnchorCenter">
           
+
+
           <div class="AnchorRight">
 
             <section class="PageContentRight">
                 <button class="WikiBackButton" onclick="location.href='../classes.html'">Out to Classes</button>
                 <h2>Overview</h2>
                 <hr>
-                <img id="class-page-image" class="class-image-large" alt="Class Image">
-                <p id="class-page-description"></p>
+                <img class="class-image-large"
+                alt="The Subvertist" src="/_SiteResources/Images/noun_vortex_2920177.png">
+                <p>
+                  Capable of moving around the battlefield like no other, the Subvertist is a powerful force multiplier and defensive strategist.
+                </p>
+                
+                <!-- <b>Subclasses:</b><br>
+                <a href="#virtuoso">Virtuoso</a><br>
+                <a href="#magnate">Magnate</a><br>
+                <a href="#glyphologist">Glyphologist</a><br> -->
 
                 <h2>Class Features</h2>
                 <hr>
-                <p id="class-features-intro"></p>
-
-                <h3>Hit Points</h3>
-                <ul>
-                  <li id="hit-dice"></li>
-                  <li id="hit-points-at-1st-level"></li>
-                  <li id="hit-points-at-higher-levels"></li>
-                </ul>
-
-                <h3>Proficiencies</h3>
-                <ul>
-                  <li id="proficiencies-armor"></li>
-                  <li id="proficiencies-weapons"></li>
-                  <li id="proficiencies-tools"></li>
-                  <li id="proficiencies-saving-throws"></li>
-                  <li id="proficiencies-skills"></li>
-                </ul>
-                
-                <h3>Equipment</h3>
-                <ul>
-                  <li id="equipment-armor"></li>
-                  <li id="equipment-weapons"></li>
-                  <li id="equipment-tools"></li>
-                  <li id="equipment-packs"></li>
-                </ul>
-                
-                <h3>Variant Equipment: Starting Wealth</h3>
+                As a Subvertist, you gain the following Class Features.
+                <h3><i>Hit Points</i></h3>
+                <b>Hit Dice:</b>  1d6 per Subvertist level
+                <br>
+                <b>Hit Points at 1st level:</b>  6  your Constitution modifier
+                <br>
+                <b>Hit Points at higher levels:</b>  1d6 (or 4) + your Constiution modifier per Subvertist level after 1st
+                <br>
+                <h3><i>Proficiencies</i></h3>
+                <b>Armor:</b>  None
+                <br>
+                <b>Weapons:</b>  Simple Tech Weapons
+                <br>
+                <b>Tools:</b>  Choose any two
+                <br>
+                <b>Saving Throws:</b>  Intelligence, Wisdom
+                <br>
+                <b>Skills:</b>  Choose any three
+                <br>
+                <h3><i>Equipment</i></h3>
+                <b>Armor:</b>  Forged Plate, Steel
+                <br>
+                <b>Weapons:</b>  Any Simple Tech Weapon
+                <br>
+                <b>Tools:</b>  One tool with which you are proficient
+                <br>
+                <b>Packs:</b>  One Inventor's Pack
+                <br>
+                <h3><i>Variant Equipment: Starting Wealth</i></h3>
                 Rather than acquiring the equipment granted by your class and background, you can elect to purchase your starting gear. 
                 If you do so, you receive no equipment from your class and background, and instead roll for your starting wealth using the criteria below:
                 <br><table class="WealthTable"><tr>
                   <th>Class</th>
                   <th>Wealth</th>
-                </tr><tr id="starting-wealth"></tr></table>
+                </tr><tr>
+                  <td>Subvertist</td>
+                  <td>5d4 x 100 GC</td>
+                </tr></table>
                 <br><br><br><br>          
                                 
-                <h2 id="class-table-title"></h2>
+                <h2>The Subvertist Table</h2>
                 <hr>
                 <table class="ClassTable">
 
@@ -131,8 +93,8 @@
                     <th style="width: 15vw">Proficiency Bonus</th>
                     <th style="width: 30vw">Features</th>
                     <th style="width: 12vw">Technologies Known</th>
-                    <th style="width: 12vw">Tech Points</th>
-                    <th style="width: 17vw">Maximum Tech Level</th>
+                    <th style="width: 12vw">Technology Points</th>
+                    <th style="width: 17vw">Maximum Technology Level</th>
                   </tr>
 
                   <tr>
@@ -156,7 +118,7 @@
                   <tr>
                     <td>3rd</td>
                     <td>+2</td>
-                    <td>----</th>
+                    <td>---</th>
                     <td>12</td>
                     <td>24</td>
                     <td>2nd</td>
@@ -174,7 +136,7 @@
                   <tr>
                     <td>5th</td>
                     <td>+3</td>
-                    <td>----</th>
+                    <td>---</th>
                     <td>20</td>
                     <td>40</td>
                     <td>3rd</td>
@@ -192,7 +154,7 @@
                   <tr>
                     <td>7th</td>
                     <td>+3</td>
-                    <td>----</th>
+                    <td>---</th>
                     <td>28</td>
                     <td>56</td>
                     <td>4th</td>
@@ -210,7 +172,7 @@
                   <tr>
                     <td>9th</td>
                     <td>+4</td>
-                    <td>----</th>
+                    <td>---</th>
                     <td>36</td>
                     <td>72</td>
                     <td>5th</td>
@@ -228,7 +190,7 @@
                   <tr>
                     <td>11th</td>
                     <td>+4</td>
-                    <td>----</th>
+                    <td>---</th>
                     <td>44</td>
                     <td>88</td>
                     <td>6th</td>
@@ -246,7 +208,7 @@
                   <tr>
                     <td>13th</td>
                     <td>+5</td>
-                    <td>----</th>
+                    <td>---</th>
                     <td>52</td>
                     <td>104</td>
                     <td>7th</td>
@@ -264,7 +226,7 @@
                   <tr>
                     <td>15th</td>
                     <td>+5</td>
-                    <td>----</th>
+                    <td>---</th>
                     <td>60</td>
                     <td>120</td>
                     <td>8th</td>
@@ -282,7 +244,7 @@
                   <tr>
                     <td>17th</td>
                     <td>+6</td>
-                    <td>----</th>
+                    <td>---</th>
                     <td>68</td>
                     <td>136</td>
                     <td>9th</td>
@@ -320,25 +282,25 @@
 
                 <h3 id="techcasting-1">Techcasting</h3>
                 <hr>
-                <i><b>Visionary:</b>  1st level</i>
+                <i><b>Subvertist:</b>  1st level</i>
                 <br>
                 You have gained intimate knowledge of technology far beyond your time, and are capable of apply these technologies in a variety of ways.  
                 See the Rules for Techcasting mechanics and Technologies list.  
                 <br><br>
                 <b>Technologies Known</b>
                 <br>
-                You learn 4 Technologies of your choice, and you learn an additional 4 at each higher Visionary level as shown in the Technologies Known column of the Visionary table.  
+                You learn 4 Technologies of your choice, and you learn an additional 4 at each higher Subvertist level as shown in the Technologies Known column of the Subvertist table.  
                 You may not learn a Technology of a level higher than your Max Technology Level, and you may learn a Technology at the same time you learn its prerequisite.  
                 <br><br>
                 <b>Tech Points</b>
-                You have a number of Tech Points equal to your Visionary level x 8, as shown in the Tech Points column of the Visionary table, + your Int modifier.  
+                You have a number of Tech Points equal to your Subvertist level x 8, as shown in the Tech Points column of the Subvertist table, + your Int modifier.  
                 You use these Tech Points to cast Tech Powers.  
                 You regain all expended Tech Points when you finish a long rest.
                 <br><br>
                 <b>Max Tech Level</b>
                 <br>
                 Many Technologies can be overpowered, consuming more Tech Points to create a greater effect. 
-                You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Tech Level column of the Visionary table.
+                You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Tech Level column of the Subvertist table.
                 You may only cast Technologies at 6th, 7th, 8th, and 9th-level once. 
                 You regain the ability to do so after a long rest.
                 <br><br>
@@ -355,7 +317,7 @@
 
                 <h3 id="augmented-armor-1">Augmented Armor</h3>
                 <hr>
-                <i><b>Visionary:</b>  1st level</i>
+                <i><b>Subvertist:</b>  1st level</i>
                 <br>
                 Your inventive pursuits have led to you making armor that serves as a conduit for your technology. 
                 As part of a Long Rest, you can turn a suit of mundane armor you have access to into Augmented Armor, provided you have Inventor's Tools on hand.
@@ -365,7 +327,7 @@
                 <br>
                 <ul>
                   <li>Your Strength score becomes equal to your Intelligence score as long as it is not already higher.  You are also considered proficient with the armor.</li>  
-                  <li>You can use the Augmented Armor as a Techcasting focus for your Visionary spells.</li>
+                  <li>You can use the Augmented Armor as a Techcasting focus for your Subvertist spells.</li>
                   <li>The Augmented Armor attaches to you and can’t be removed against your will.</li>
                   <li>The Augmented Armor expands to cover your entire body, although you can remove or attach the helmet as an action.</li>
                   <li>The Augmented Armor replaces any missing limbs, functioning identically to a limb it replaces.</li>
@@ -376,7 +338,7 @@
 
                 <h3 id="expertise-2">Expertise</h3>
                 <hr>
-                <i><b>Visionary:</b>  2nd level</i>
+                <i><b>Subvertist:</b>  2nd level</i>
                 <br>
                 Choose two of your skill proficiencies and two of your tool proficiencies. 
                 Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiencies.
@@ -384,7 +346,7 @@
                 
                 <h3 id="ability-score-improvement-4">Ability Score Improvement</h3>
                 <hr>
-                <i><b>Visionary:</b>  4th level</i>
+                <i><b>Subvertist:</b>  4th level</i>
                 <br>
                 You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  
                 You can’t increase an ability score above 20 using this feature.
@@ -394,7 +356,7 @@
 
                 <h3 id="advanced-armor-4">Advanced Armor</h3>
                 <hr>
-                <i><b>Visionary:</b>  4th level</i>
+                <i><b>Subvertist:</b>  4th level</i>
                 <br>
                 Your inventive pursuits have led to you making armor that serves as a conduit for your technology. 
                 As part of a Long Rest, you can turn a suit of mundane armor you have access to into Advanced Armor, provided you have Inventor's Tools on hand.
@@ -404,7 +366,7 @@
                 <br>
                 <ul>
                   <li>Your Strength score becomes equal to your Intelligence score as long as it is not already higher.  You are also considered proficient with the armor.</li>  
-                  <li>You can use the Advanced Armor as a Techcasting focus for your Visionary spells.</li>
+                  <li>You can use the Advanced Armor as a Techcasting focus for your Subvertist spells.</li>
                   <li>The Advanced Armor attaches to you and can’t be removed against your will.</li>
                   <li>The Advanced Armor expands to cover your entire body, although you can retract or deploy the helmet as an action.</li>
                   <li>The Advanced Armor replaces any missing limbs, functioning identically to a limb it replaces.</li>
@@ -417,19 +379,19 @@
 
                 <h3 id="reverse-engineering-6">Reverse Engineering</h3>
                 <hr>
-                <i><b>Visionary:</b>  6th level</i>
+                <i><b>Subvertist:</b>  6th level</i>
                 <br>
                 Choose one Technology, Power, or Spell from any class casting list that you have witnessed being cast at least once.  
                 Events witnessed within your backstory do not qualify for this feature.  
-                The chosen Technology, Power, or Spell must not be of a higher level than the Maximum Technology Level for your current Visionary level.  
-                Your selected Technology, Power, or Spell counts as a Visionary Technology for you, and you are able to learn it as normal at the same level you choose it.  
+                The chosen Technology, Power, or Spell must not be of a higher level than the Maximum Technology Level for your current Subvertist level.  
+                Your selected Technology, Power, or Spell counts as a Subvertist Technology for you, and you are able to learn it as normal at the same level you choose it.  
                 If you are starting at higher levels or have not witnessed any Technologies, Powers, or Spells being cast upon gaining this feature, your GM may provide a list of Technologies, Powers, or Spells for you to choose from.  
                 You may gain this feature multiple times.
                 <br><br>
 
                 <h3 id="ability-score-improvement-8">Ability Score Improvement</h3>
                 <hr>
-                <i><b>Visionary:</b>  8th level</i>
+                <i><b>Subvertist:</b>  8th level</i>
                 <br>
                 You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  
                 You can’t increase an ability score above 20 using this feature.
@@ -439,7 +401,7 @@
                 
                 <h3 id="expertise-10">Expertise</h3>
                 <hr>
-                <i><b>Visionary:</b>  10th level</i>
+                <i><b>Subvertist:</b>  10th level</i>
                 <br>
                 Choose two of your skill proficiencies and two of your tool proficiencies. 
                 Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiencies.
@@ -447,19 +409,19 @@
 
                 <h3 id="reverse-engineering-10">Reverse Engineering</h3>
                 <hr>
-                <i><b>Visionary:</b>  10th level</i>
+                <i><b>Subvertist:</b>  10th level</i>
                 <br>
                 Choose one Technology, Power, or Spell from any class casting list that you have witnessed being cast at least once.  
                 Events witnessed within your backstory do not qualify for this feature.  
-                The chosen Technology, Power, or Spell must not be of a higher level than the Maximum Technology Level for your current Visionary level.  
-                Your selected Technology, Power, or Spell counts as a Visionary Technology for you, and you are able to learn it as normal at the same level you choose it.  
+                The chosen Technology, Power, or Spell must not be of a higher level than the Maximum Technology Level for your current Subvertist level.  
+                Your selected Technology, Power, or Spell counts as a Subvertist Technology for you, and you are able to learn it as normal at the same level you choose it.  
                 If you are starting at higher levels or have not witnessed any Technologies, Powers, or Spells being cast upon gaining this feature, your GM may provide a list of Technologies, Powers, or Spells for you to choose from.  
                 You may gain this feature multiple times.
                 <br><br>
 
                 <h3 id="ability-score-improvement-12">Ability Score Improvement</h3>
                 <hr>
-                <i><b>Visionary:</b>  12th level</i>
+                <i><b>Subvertist:</b>  12th level</i>
                 <br>
                 You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  
                 You can’t increase an ability score above 20 using this feature.
@@ -469,7 +431,7 @@
 
                 <h3 id="superior-armor-12">Superior Armor</h3>
                 <hr>
-                <i><b>Visionary:</b>  12th level</i>
+                <i><b>Subvertist:</b>  12th level</i>
                 <br>
                 Your inventive pursuits have led to you making armor that serves as a conduit for your technology. 
                 As part of a Long Rest, you can turn a suit of mundane armor you have access to into Superior Armor, provided you have Inventor's Tools on hand.
@@ -479,7 +441,7 @@
                 <br>
                 <ul>
                   <li>Your Strength score becomes equal to your Intelligence score as long as it is not already higher.  You are also considered proficient with the armor.</li>  
-                  <li>You can use the Superior Armor as a Techcasting focus for your Visionary spells.</li>
+                  <li>You can use the Superior Armor as a Techcasting focus for your Subvertist spells.</li>
                   <li>The Superior Armor attaches to you and can’t be removed against your will.</li>
                   <li>The Superior Armor expands to cover your entire body, although you can retract or deploy the helmet as a bonus action.</li>
                   <li>The Superior Armor replaces any missing limbs, functioning identically to a limb it replaces.</li>
@@ -492,19 +454,19 @@
 
                 <h3 id="reverse-engineering-14">Reverse Engineering</h3>
                 <hr>
-                <i><b>Visionary:</b>  14th level</i>
+                <i><b>Subvertist:</b>  14th level</i>
                 <br>
                 Choose one Technology, Power, or Spell from any class casting list that you have witnessed being cast at least once.  
                 Events witnessed within your backstory do not qualify for this feature.  
-                The chosen Technology, Power, or Spell must not be of a higher level than the Maximum Technology Level for your current Visionary level.  
-                Your selected Technology, Power, or Spell counts as a Visionary Technology for you, and you are able to learn it as normal at the same level you choose it.  
+                The chosen Technology, Power, or Spell must not be of a higher level than the Maximum Technology Level for your current Subvertist level.  
+                Your selected Technology, Power, or Spell counts as a Subvertist Technology for you, and you are able to learn it as normal at the same level you choose it.  
                 If you are starting at higher levels or have not witnessed any Technologies, Powers, or Spells being cast upon gaining this feature, your GM may provide a list of Technologies, Powers, or Spells for you to choose from.  
                 You may gain this feature multiple times.
                 <br><br>
 
                 <h3 id="ability-score-improvement-16">Ability Score Improvement</h3>
                 <hr>
-                <i><b>Visionary:</b>  16th level</i>
+                <i><b>Subvertist:</b>  16th level</i>
                 <br>
                 You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  
                 You can’t increase an ability score above 20 using this feature.
@@ -514,7 +476,7 @@
 
                 <h3 id="expertise-18">Expertise</h3>
                 <hr>
-                <i><b>Visionary:</b>  18th level</i>
+                <i><b>Subvertist:</b>  18th level</i>
                 <br>
                 Choose two of your skill proficiencies and two of your tool proficiencies. 
                 Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiencies.
@@ -522,19 +484,19 @@
 
                 <h3 id="reverse-engineering-18">Reverse Engineering</h3>
                 <hr>
-                <i><b>Visionary:</b>  18th level</i>
+                <i><b>Subvertist:</b>  18th level</i>
                 <br>
                 Choose one Technology, Power, or Spell from any class casting list that you have witnessed being cast at least once.  
                 Events witnessed within your backstory do not qualify for this feature.  
-                The chosen Technology, Power, or Spell must not be of a higher level than the Maximum Technology Level for your current Visionary level.  
-                Your selected Technology, Power, or Spell counts as a Visionary Technology for you, and you are able to learn it as normal at the same level you choose it.  
+                The chosen Technology, Power, or Spell must not be of a higher level than the Maximum Technology Level for your current Subvertist level.  
+                Your selected Technology, Power, or Spell counts as a Subvertist Technology for you, and you are able to learn it as normal at the same level you choose it.  
                 If you are starting at higher levels or have not witnessed any Technologies, Powers, or Spells being cast upon gaining this feature, your GM may provide a list of Technologies, Powers, or Spells for you to choose from.  
                 You may gain this feature multiple times.
                 <br><br>
 
                 <h3 id="ability-score-improvement-19">Ability Score Improvement</h3>
                 <hr>
-                <i><b>Visionary:</b>  19th level</i>
+                <i><b>Subvertist:</b>  19th level</i>
                 <br>
                 You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  
                 You can’t increase an ability score above 20 using this feature.
@@ -544,20 +506,20 @@
 
                 <h3 id="ultimate-armor-20">Ultimate Armor</h3>
                 <hr>
-                <i><b>Visionary:</b>  20th level</i>
+                <i><b>Subvertist:</b>  20th level</i>
                 <br>
                 Your inventive pursuits have led to you making armor that serves as a conduit for your technology. 
                 As part of a Long Rest, you can turn a suit of mundane armor you have access to into Ultimate Armor, provided you have Inventor's Tools on hand.
                 You can don or doff the Ultimate Armor as part of any Action, Bonus Action, or Reaction you take.  
                 In addition, when the Ultimate Armor is doffed by you, you can choose to have it collapse into a small housing unit.  
                 The housing unit takes on a form of your choosing, and can be no smaller a thick wristwatch.  
-                You can use the housing unit as a Tech casting focus for your Visionary spells while you wear it as components of the Ultimate Armor dynamically deploy and retract as needed.  
+                You can use the housing unit as a Tech casting focus for your Subvertist spells while you wear it as components of the Ultimate Armor dynamically deploy and retract as needed.  
                 <br>
                 The Ultimate Armor has the following traits while worn by you:
                 <br>
                 <ul>
                   <li>Your Strength score becomes equal to your Intelligence score as long as it is not already higher.  You are also considered proficient with the armor.</li>  
-                  <li>You can use the Ultimate Armor as a Techcasting focus for your Visionary spells, and you need not supply any components that do not have a cost while doing so.</li>
+                  <li>You can use the Ultimate Armor as a Techcasting focus for your Subvertist spells, and you need not supply any components that do not have a cost while doing so.</li>
                   <li>The Ultimate Armor attaches to you and can’t be removed against your will.</li>
                   <li>The Ultimate Armor expands to cover your entire body, although you can retract or deploy the helmet once per turn.</li>
                   <li>The Ultimate Armor replaces any missing limbs, functioning identically to a limb it replaces.</li>
@@ -577,8 +539,8 @@
                 <p>
                   A true paragon of invention and ingenuity, the Virtuoso has created and incorporated a truly sustainable energy source.  
                   This energy source grants the Virtuoso several at-will Technologies and capabilities, such as flight.  
-                  As a Virtuoso, you can also convert any Technological Armor you might find into your Visionary Armor as normal, retaining the original item's benefits in addition to the Visionary Armor features.  
-                  (Visionary Armor refers to Augmented Armor, Advanced Armor, Superior Armor, and Ultimate Armor simultaneously.)
+                  As a Virtuoso, you can also convert any Technological Armor you might find into your Subvertist Armor as normal, retaining the original item's benefits in addition to the Subvertist Armor features.  
+                  (Subvertist Armor refers to Augmented Armor, Advanced Armor, Superior Armor, and Ultimate Armor simultaneously.)
                 </p>
               </section>
 
@@ -589,10 +551,10 @@
                 alt="The Magnate" src="/_SiteResources/Images/noun_cyborg_506898.png">
                 <p>
                   Some superpowers are far more subtle than most, and the Magnate is a prime example.  
-                  Whether relying on magnetic manipulation, electrokinesis, or cybernetics, you stand out as a Visionary with precise control over your Technology.  
-                  Having a direct connection between your nervous system and your devices grants you an innate control over your Visionary Armor.  
-                  As a Magnate, you can also convert any Metapower Armor you might find into your Visionary Armor as normal, retaining the original item's benefits in addition to the Visionary Armor features.  
-                  (Visionary Armor refers to Augmented Armor, Advanced Armor, Superior Armor, and Ultimate Armor simultaneously.)
+                  Whether relying on magnetic manipulation, electrokinesis, or cybernetics, you stand out as a Subvertist with precise control over your Technology.  
+                  Having a direct connection between your nervous system and your devices grants you an innate control over your Subvertist Armor.  
+                  As a Magnate, you can also convert any Metapower Armor you might find into your Subvertist Armor as normal, retaining the original item's benefits in addition to the Subvertist Armor features.  
+                  (Subvertist Armor refers to Augmented Armor, Advanced Armor, Superior Armor, and Ultimate Armor simultaneously.)
                 </p>
               </section>
 
@@ -605,8 +567,8 @@
                   A scholar of ancient knowledge and mythology, the Glyphologist combines modern science with ancient magical power sources.  
                   Whether it be inscribing runes, compressing motes of power, or integrating powerful artifacts, the Glyphologist binds themselves and their armor together on a supernatural level.  
                   While not a spellcaster, the Glyphologist still benefits from magical boons that manifest in a variety of ways.  
-                  As a Magnate, you can also convert any Eldritch Armor you might find into your Visionary Armor as normal, retaining the original item's benefits in addition to the Visionary Armor features.  
-                  (Visionary Armor refers to Augmented Armor, Advanced Armor, Superior Armor, and Ultimate Armor simultaneously.)
+                  As a Magnate, you can also convert any Eldritch Armor you might find into your Subvertist Armor as normal, retaining the original item's benefits in addition to the Subvertist Armor features.  
+                  (Subvertist Armor refers to Augmented Armor, Advanced Armor, Superior Armor, and Ultimate Armor simultaneously.)
                 </p>
               </section>
 
