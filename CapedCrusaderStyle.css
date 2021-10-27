@@ -685,12 +685,12 @@ iframe {
 }
 
 
-.FilterTableImage {
+.FilterTableImage, .class-image-small {
   width: 50px;
   float: right;
 }
 
-.CastingPageImage {
+.CastingPageImage, .class-image-large, .subclass-image-large {
   width: 400px;
   float: right;
   border: 8px solid rgb(100,100,100);
