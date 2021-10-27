@@ -7,7 +7,7 @@
     <title>KnowOne's Website of Everything</title>
     <link rel="icon" href="/_SiteResources/Images/OwlOfMinerva_ModifiedLogo.png">
     <link rel="stylesheet" href="/CapedCrusaderStyle.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
     <script>
       $(function readClass() {
         var classes = [];
@@ -38,28 +38,42 @@
               document.getElementById("starting-wealth").innerHTML = "<td>" + f.name_str + "</td><td>" + f.equipment_variant + "</td>";
               
               document.getElementById("class-table-title").innerHTML = "The " + f.name_str + " Table";
-              // var tblRow1 = "<tr><th style='width: 15vw'>Level</th><th style='width: 15vw'>Casting Time</th><th style='width: 15vw'>Range/Area</th><th style='width: 15vw'>Components</th></tr>"
-              // $(tblRow1).appendTo("#TechTable tbody");
-              // var tblRow2 = "<tr>" 
-              //   + "<td>" + f.level_str + "</td>" 
-              //   + "<td>" + f.casting_time_str + "</td>" 
-              //   + "<td>" + f.range_area_str + "</td>" 
-              //   + "<td>" + f.components_vsm_str + "</td>" 
-              //   + "</tr>"
-              // $(tblRow2).appendTo("#TechTable tbody");
-              // var tblRow3 = "<tr><th>Duration</th><th>School</th><th>Attack/Save</th><th>Damage/Effect</th></tr>";
-              // $(tblRow3).appendTo("#TechTable tbody");
-              // var tblRow4 = "<tr>"
-              //   + "<td>" + f.duration_str + "</td>" 
-              //   + "<td>" + f.school_str + "</td>" 
-              //   + "<td>" + f.attack_save_str + "</td>" 
-              //   + "<td>" + f.damage_effect_str + "</td>" 
-              //   + "</tr>"
-              // $(tblRow4).appendTo("#TechTable tbody");
+              var prof = 2;
+              for (let i = 0; i < 20; i++) {  
+                var tblRow = "<tr>" 
+                  + "<td>" + (i+1) + "</td>"
+                  + "<td>+" + prof + "</td>"
+                  + "<td>" + f.class_feat_table_links[i] + "</th>"
+                  + "<td>" + (i+1)*f.casting_known_per_level + "</td>"
+                  + "<td>" + (i+1)*f.casting_points_per_level + "</td>"
+                  + "<td>" + Math.round((i+1)/f.casting_max_per_level_denominator) + "</td>"
+                  + "</tr>"
+                $(tblRow).appendTo("#class-table tbody");
+                if ((i+1) == 4 || (i+1) == 8 || (i+1) == 12 || (i+1) == 16) {
+                  prof++;
+                }
+              }
+              for (let i = 0; i < f.class_feat_descriptions.length; i++) {
+                document.getElementById("class-table-features").innerHTML += "<h3 id='" 
+                  + f.class_feat_descriptions[i].name_str + "-" + f.class_feat_descriptions[i].level + "'>" 
+                  + f.class_feat_descriptions[i].name_str + "</h3><hr><i><b>" + f.name_str 
+                  + ":</b>  level " + f.class_feat_descriptions[i].level + "</i><p>" 
+                  + f.class_feat_descriptions[i].description_str + "</p><br>";
+              }
             }
+
           });
         });
       });
+    </script>
+    <script>
+      $(function importContent() {
+    
+        $(".Import_PageHeader").load("/_SiteResources/Pages/Import_PageHeader.html");
+        $(".Import_ContentLeft").load("/_SiteResources/Pages/Import_ContentLeft.html");
+        $(".Import_PageFooter").load("/_SiteResources/Pages/Import_PageFooter.html");
+    
+    });
     </script>
   </head>
 
@@ -88,7 +102,7 @@
                 <h2>Class Features</h2>
                 <hr>
                 <p id="class-features-intro"></p>
-
+                
                 <h3>Hit Points</h3>
                 <ul>
                   <li id="hit-dice"></li>
@@ -124,491 +138,138 @@
                                 
                 <h2 id="class-table-title"></h2>
                 <hr>
-                <table class="ClassTable">
-
-                  <tr>
+                <table id="class-table" class="ClassTable">
+                  <thead>
                     <th style="width: 10vw">Level</th>
                     <th style="width: 15vw">Proficiency Bonus</th>
                     <th style="width: 30vw">Features</th>
                     <th style="width: 12vw">Technologies Known</th>
                     <th style="width: 12vw">Tech Points</th>
                     <th style="width: 17vw">Maximum Tech Level</th>
-                  </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table><br>
 
-                  <tr>
-                    <td>1st</td>
-                    <td>+2</td>
-                    <td><a href="#techcasting-1">Techcasting</a>, <a href="#augmented-armor-1">Augmented Armor</a></th>
-                    <td>4</td>
-                    <td>8</td>
-                    <td>1st</td>
-                  </tr>
+                <div id="class-table-features">
+                  <body></body>
+                </div>
+            </section>
 
-                  <tr>
-                    <td>2nd</td>
-                    <td>+2</td>
-                    <td><a href="#expertise-2">Expertise</a>, Subclass Feature</th>
-                    <td>8</td>
-                    <td>16</td>
-                    <td>1st</td>
-                  </tr>
-                  
-                  <tr>
-                    <td>3rd</td>
-                    <td>+2</td>
-                    <td>----</th>
-                    <td>12</td>
-                    <td>24</td>
-                    <td>2nd</td>
-                  </tr>
-                  
-                  <tr>
-                    <td>4th</td>
-                    <td>+2</td>
-                    <td><a href="#ability-score-improvement-4">Ability Score Improvement</a>, <a href="#advanced-armor-4">Advanced Armor</a></th>
-                    <td>16</td>
-                    <td>32</td>
-                    <td>2nd</td>
-                  </tr>
-                  
-                  <tr>
-                    <td>5th</td>
-                    <td>+3</td>
-                    <td>----</th>
-                    <td>20</td>
-                    <td>40</td>
-                    <td>3rd</td>
-                  </tr>
-                  
-                  <tr>
-                    <td>6th</td>
-                    <td>+3</td>
-                    <td><a href="#reverse-engineering-6">Reverse Engineering</a></th>
-                    <td>24</td>
-                    <td>48</td>
-                    <td>3rd</td>
-                  </tr>
-                  
-                  <tr>
-                    <td>7th</td>
-                    <td>+3</td>
-                    <td>----</th>
-                    <td>28</td>
-                    <td>56</td>
-                    <td>4th</td>
-                  </tr>
-                  
-                  <tr>
-                    <td>8th</td>
-                    <td>+3</td>
-                    <td><a href="#ability-score-improvement-8">Ability Score Improvement</a>, Subclass Feature</th>
-                    <td>32</td>
-                    <td>64</td>
-                    <td>4th</td>
-                  </tr>
-                  
-                  <tr>
-                    <td>9th</td>
-                    <td>+4</td>
-                    <td>----</th>
-                    <td>36</td>
-                    <td>72</td>
-                    <td>5th</td>
-                  </tr>
-                  
-                  <tr>
-                    <td>10th</td>
-                    <td>+4</td>
-                    <td><a href="#expertise-10">Expertise</a>, <a href="#reverse-engineering-10">Reverse Engineering</a></th>
-                    <td>40</td>
-                    <td>80</td>
-                    <td>5th</td>
-                  </tr>
-                  
-                  <tr>
-                    <td>11th</td>
-                    <td>+4</td>
-                    <td>----</th>
-                    <td>44</td>
-                    <td>88</td>
-                    <td>6th</td>
-                  </tr>
-                  
-                  <tr>
-                    <td>12th</td>
-                    <td>+4</td>
-                    <td><a href="#ability-score-improvement-12">Ability Score Improvement</a>, <a href="#superior-armor-12">Superior Armor</a></th>
-                    <td>48</td>
-                    <td>96</td>
-                    <td>6th</td>
-                  </tr>
-                  
-                  <tr>
-                    <td>13th</td>
-                    <td>+5</td>
-                    <td>----</th>
-                    <td>52</td>
-                    <td>104</td>
-                    <td>7th</td>
-                  </tr>
-                  
-                  <tr>
-                    <td>14th</td>
-                    <td>+5</td>
-                    <td><a href="#reverse-engineering-14">Reverse Engineering</a></th>
-                    <td>56</td>
-                    <td>112</td>
-                    <td>7th</td>
-                  </tr>
-                  
-                  <tr>
-                    <td>15th</td>
-                    <td>+5</td>
-                    <td>----</th>
-                    <td>60</td>
-                    <td>120</td>
-                    <td>8th</td>
-                  </tr>
-                  
-                  <tr>
-                    <td>16th</td>
-                    <td>+5</td>
-                    <td><a href="#ability-score-improvement-16">Ability Score Improvement</a>, Subclass Feature</th>
-                    <td>64</td>
-                    <td>128</td>
-                    <td>8th</td>
-                  </tr>
-                  
-                  <tr>
-                    <td>17th</td>
-                    <td>+6</td>
-                    <td>----</th>
-                    <td>68</td>
-                    <td>136</td>
-                    <td>9th</td>
-                  </tr>
-                  
-                  <tr>
-                    <td>18th</td>
-                    <td>+6</td>
-                    <td><a href="#expertise-18">Expertise</a>, <a href="#reverse-engineering-18">Reverse Engineering</a></th>
-                    <td>72</td>
-                    <td>144</td>
-                    <td>9th</td>
-                  </tr>
-                  
-                  <tr>
-                    <td>19th</td>
-                    <td>+6</td>
-                    <td><a href="#ability-score-improvement-19">Ability Score Improvement</a></th>
-                    <td>76</td>
-                    <td>152</td>
-                    <td>9th</td>
-                  </tr>
-                  
-                  <tr>
-                    <td>20th</td>
-                    <td>+6</td>
-                    <td><a href="#ultimate-armor-20">Ultimate Armor</a></th>
-                    <td>80</td>
-                    <td>160</td>
-                    <td>9th</td>
-                  </tr>
+            <section class="PageContentRight">
+              <h2 id="#virtuoso">Subclass:  The Virtuoso</h2>
+              <hr>
+              <img class="subclass-image-large"
+              alt="The Virtuoso" src="/_SiteResources/Images/noun_Science_4037086.png">
+              <p>
+                A paragon of invention and ingenuity, the Virtuoso has created and incorporated a truly sustainable energy source.  
+                This energy source grants the Virtuoso several at-will Technologies and capabilities, such as flight.  
+                The Virtuoso can also adapt other suits of Technological Armor to fit their needs.  
+              </p><br>
 
-                </table>
-                <br>
+              <h3 id="virtuoso-2">Engineerism</h3>
+              <hr>
+              <i><b>Virtuoso:</b>  2nd level</i>
+              <p>
+                You gain one sustained Tech from the sustained Tech list.
+                In addition, you can also convert any Technological Armor you have access to into your Visionary Armor as normal, retaining the original item's benefits in addition to the Visionary Armor features.  
+                You must still meet the level prerequisites for the Armor in order to do so, but ignore all other restrictions as you modify it to accomodate you.  
+                (Visionary Armor refers to Augmented Armor, Advanced Armor, Superior Armor, and Ultimate Armor simultaneously.)
+              </p><br>
 
-                <h3 id="techcasting-1">Techcasting</h3>
-                <hr>
-                <i><b>Visionary:</b>  1st level</i>
-                <br>
-                You have gained intimate knowledge of technology far beyond your time, and are capable of apply these technologies in a variety of ways.  
-                See the Rules for Techcasting mechanics and Technologies list.  
-                <br><br>
-                <b>Technologies Known</b>
-                <br>
-                You learn 4 Technologies of your choice, and you learn an additional 4 at each higher Visionary level as shown in the Technologies Known column of the Visionary table.  
-                You may not learn a Technology of a level higher than your Max Technology Level, and you may learn a Technology at the same time you learn its prerequisite.  
-                <br><br>
-                <b>Tech Points</b>
-                You have a number of Tech Points equal to your Visionary level x 8, as shown in the Tech Points column of the Visionary table, + your Int modifier.  
-                You use these Tech Points to cast Tech Powers.  
-                You regain all expended Tech Points when you finish a long rest.
-                <br><br>
-                <b>Max Tech Level</b>
-                <br>
-                Many Technologies can be overpowered, consuming more Tech Points to create a greater effect. 
-                You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Tech Level column of the Visionary table.
-                You may only cast Technologies at 6th, 7th, 8th, and 9th-level once. 
-                You regain the ability to do so after a long rest.
-                <br><br>
-                <b>Techcasting Ability</b>
-                <br>
-                Your Techcasting ability is Intelligence.
-                You use your Intelligence modifier whenever a Technology refers to your Techcasting ability. 
-                Additionally, you use this ability score modifier when setting the saving throw DC for a Technology you cast and when making an attack roll with one.
-                <br><br>
-                <b>Technology save DC</b> = 8 + your proficiency bonus + your Techcasting ability modifier
-                <br><br>
-                <b>Technology attack modifier</b> = your proficiency bonus + your Techcasting ability modifier
-                <br><br>
+              <h3 id="virtuoso-8">Micronuclear</h3>
+              <hr>
+              <i><b>Virtuoso:</b>  8th level</i>
+              <p>
+                You gain one sustained Tech from the sustained Tech list.
+                You may also swap one previously gained sustained Tech for another that you qualify for.  
+              </p><br>
 
-                <h3 id="augmented-armor-1">Augmented Armor</h3>
-                <hr>
-                <i><b>Visionary:</b>  1st level</i>
-                <br>
-                Your inventive pursuits have led to you making armor that serves as a conduit for your technology. 
-                As part of a Long Rest, you can turn a suit of mundane armor you have access to into Augmented Armor, provided you have Inventor's Tools on hand.
-                You can don or doff the Augmented Armor over the course of 1 minute.  
-                <br>
-                The Augmented Armor has the following traits while worn by you:
-                <br>
-                <ul>
-                  <li>Your Strength score becomes equal to your Intelligence score as long as it is not already higher.  You are also considered proficient with the armor.</li>  
-                  <li>You can use the Augmented Armor as a Techcasting focus for your Visionary spells.</li>
-                  <li>The Augmented Armor attaches to you and can’t be removed against your will.</li>
-                  <li>The Augmented Armor expands to cover your entire body, although you can remove or attach the helmet as an action.</li>
-                  <li>The Augmented Armor replaces any missing limbs, functioning identically to a limb it replaces.</li>
-                </ul>
-                <br>
-                The Augmented Armor continues to be Augmented Armor until you create another set of Augmented Armor, or it is destroyed.  If you die while wearing the Augmented Armor, it is destroyed.
-                <br><br>
+              <h3 id="virtuoso-16">Quantum Induction</h3>
+              <hr>
+              <i><b>Virtuoso:</b>  16th level</i>
+              <p>
+                You gain one sustained Tech from the sustained Tech list.
+                You may also swap one previously gained sustained Tech for another that you qualify for.  
+              </p><br>
+            </section>
 
-                <h3 id="expertise-2">Expertise</h3>
-                <hr>
-                <i><b>Visionary:</b>  2nd level</i>
-                <br>
-                Choose two of your skill proficiencies and two of your tool proficiencies. 
-                Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiencies.
-                <br><br>
-                
-                <h3 id="ability-score-improvement-4">Ability Score Improvement</h3>
-                <hr>
-                <i><b>Visionary:</b>  4th level</i>
-                <br>
-                You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  
-                You can’t increase an ability score above 20 using this feature.
-                You may gain this feature multiple times.
-                Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.
-                <br><br>
+            <section class="PageContentRight">
+              <h2 id="#magnate">Subclass:  The Magnate</h2>
+              <hr>
+              <img class="subclass-image-large"
+              alt="The Magnate" src="/_SiteResources/Images/noun_cyborg_506898.png">
+              <p>
+                Some superpowers are far more subtle than most, and the Magnate is a prime example.  
+                Whether relying on magnetic manipulation, electrokinesis, or cybernetics, you stand out as a Visionary with precise control over your Technology.  
+                Having a direct connection between your nervous system and your devices grants you an innate control over your Visionary Armor.  
+                The Magnate can also adapt other suits of Metapower Armor to fit their needs.  
+              </p><br>
 
-                <h3 id="advanced-armor-4">Advanced Armor</h3>
-                <hr>
-                <i><b>Visionary:</b>  4th level</i>
-                <br>
-                Your inventive pursuits have led to you making armor that serves as a conduit for your technology. 
-                As part of a Long Rest, you can turn a suit of mundane armor you have access to into Advanced Armor, provided you have Inventor's Tools on hand.
-                You can don or doff the Advanced Armor an Action.  
-                <br>
-                The Advanced Armor has the following traits while worn by you:
-                <br>
-                <ul>
-                  <li>Your Strength score becomes equal to your Intelligence score as long as it is not already higher.  You are also considered proficient with the armor.</li>  
-                  <li>You can use the Advanced Armor as a Techcasting focus for your Visionary spells.</li>
-                  <li>The Advanced Armor attaches to you and can’t be removed against your will.</li>
-                  <li>The Advanced Armor expands to cover your entire body, although you can retract or deploy the helmet as an action.</li>
-                  <li>The Advanced Armor replaces any missing limbs, functioning identically to a limb it replaces.</li>
-                  <li>When you make an Intelligence check, you can treat the d20 result as equal to your Intelligence modifier if the result before modifiers is lower.</li>
-                  <li>You can survive in the vacuum of space for a number of minutes equal to your Intelligence modifier.  This ability recharges upon a long rest within a hospitable environment.</li>
-                </ul>
-                <br>
-                The Advanced Armor continues to be Advanced Armor until you create another set of Advanced Armor, or it is destroyed.  If you die while wearing the Advanced Armor, it is destroyed.
-                <br><br>
+              <h3 id="magnate-2">Biomechanical Interface</h3>
+              <hr>
+              <i><b>Magnate:</b>  2nd level</i>
+              <p>
+                You gain one enduring Power from the enduring Power list.
+                In addition, you can also convert any Metapower Armor you have access to into your Visionary Armor as normal, retaining the original item's benefits in addition to the Visionary Armor features.  
+                You must still meet the level prerequisites for the Armor in order to do so, but ignore all other restrictions as you modify it to accomodate you.  
+                (Visionary Armor refers to Augmented Armor, Advanced Armor, Superior Armor, and Ultimate Armor simultaneously.)
+              </p><br>
 
-                <h3 id="reverse-engineering-6">Reverse Engineering</h3>
-                <hr>
-                <i><b>Visionary:</b>  6th level</i>
-                <br>
-                Choose one Technology, Power, or Spell from any class casting list that you have witnessed being cast at least once.  
-                Events witnessed within your backstory do not qualify for this feature.  
-                The chosen Technology, Power, or Spell must not be of a higher level than the Maximum Technology Level for your current Visionary level.  
-                Your selected Technology, Power, or Spell counts as a Visionary Technology for you, and you are able to learn it as normal at the same level you choose it.  
-                If you are starting at higher levels or have not witnessed any Technologies, Powers, or Spells being cast upon gaining this feature, your GM may provide a list of Technologies, Powers, or Spells for you to choose from.  
-                You may gain this feature multiple times.
-                <br><br>
+              <h3 id="magnate-8">Digital Synapses</h3>
+              <hr>
+              <i><b>Magnate:</b>  8th level</i>
+              <p>
+                You gain one enduring Power from the enduring Power list.
+                You may also swap one previously gained enduring Power for another that you qualify for.  
+              </p><br>
 
-                <h3 id="ability-score-improvement-8">Ability Score Improvement</h3>
-                <hr>
-                <i><b>Visionary:</b>  8th level</i>
-                <br>
-                You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  
-                You can’t increase an ability score above 20 using this feature.
-                You may gain this feature multiple times.
-                Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.
-                <br><br>
-                
-                <h3 id="expertise-10">Expertise</h3>
-                <hr>
-                <i><b>Visionary:</b>  10th level</i>
-                <br>
-                Choose two of your skill proficiencies and two of your tool proficiencies. 
-                Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiencies.
-                <br><br>
+              <h3 id="magnate-16">Synthetic Symbiosis</h3>
+              <hr>
+              <i><b>Magnate:</b>  16th level</i>
+              <p>
+                You gain one enduring Power from the enduring Power list.
+                You may also swap one previously gained enduring Power for another that you qualify for.  
+              </p><br>
+            </section>
 
-                <h3 id="reverse-engineering-10">Reverse Engineering</h3>
-                <hr>
-                <i><b>Visionary:</b>  10th level</i>
-                <br>
-                Choose one Technology, Power, or Spell from any class casting list that you have witnessed being cast at least once.  
-                Events witnessed within your backstory do not qualify for this feature.  
-                The chosen Technology, Power, or Spell must not be of a higher level than the Maximum Technology Level for your current Visionary level.  
-                Your selected Technology, Power, or Spell counts as a Visionary Technology for you, and you are able to learn it as normal at the same level you choose it.  
-                If you are starting at higher levels or have not witnessed any Technologies, Powers, or Spells being cast upon gaining this feature, your GM may provide a list of Technologies, Powers, or Spells for you to choose from.  
-                You may gain this feature multiple times.
-                <br><br>
+            <section class="PageContentRight">
+              <h2 id="#glyphologist">Subclass:  The Glyphologist</h2>
+              <hr>
+              <img class="subclass-image-large"
+              alt="The Glyphologist" src="/_SiteResources/Images/noun_Pyramid_1553793.png">
+              <p>
+                A scholar of ancient knowledge and mythology, the Glyphologist combines modern science with ancient magical power sources.  
+                Whether it be inscribing runes, compressing motes of power, or integrating powerful artifacts, the Glyphologist binds themselves and their armor together on a supernatural level.  
+                While not a spellcaster, the Glyphologist still benefits from magical boons that manifest in a variety of ways.  
+                The Glyphologist can also adapt other suits of Magical Armor to fit their needs.  
+              </p><br>
 
-                <h3 id="ability-score-improvement-12">Ability Score Improvement</h3>
-                <hr>
-                <i><b>Visionary:</b>  12th level</i>
-                <br>
-                You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  
-                You can’t increase an ability score above 20 using this feature.
-                You may gain this feature multiple times.
-                Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.
-                <br><br>
+              <h3 id="glyphologist-2">Applied Theology</h3>
+              <hr>
+              <i><b>Glyphologist:</b>  2nd level</i>
+              <p>
+                You gain one enduring Boon from the enduring Boon list.
+                In addition, you can also convert any Magical Armor you have access to into your Visionary Armor as normal, retaining the original item's benefits in addition to the Visionary Armor features.  
+                You must still meet the level prerequisites for the Armor in order to do so, but ignore all other restrictions as you modify it to accomodate you.  
+                (Visionary Armor refers to Augmented Armor, Advanced Armor, Superior Armor, and Ultimate Armor simultaneously.)
+              </p><br>
 
-                <h3 id="superior-armor-12">Superior Armor</h3>
-                <hr>
-                <i><b>Visionary:</b>  12th level</i>
-                <br>
-                Your inventive pursuits have led to you making armor that serves as a conduit for your technology. 
-                As part of a Long Rest, you can turn a suit of mundane armor you have access to into Superior Armor, provided you have Inventor's Tools on hand.
-                You can don or doff the Superior Armor as a Bonus Action.  
-                <br>
-                The Superior Armor has the following traits while worn by you:
-                <br>
-                <ul>
-                  <li>Your Strength score becomes equal to your Intelligence score as long as it is not already higher.  You are also considered proficient with the armor.</li>  
-                  <li>You can use the Superior Armor as a Techcasting focus for your Visionary spells.</li>
-                  <li>The Superior Armor attaches to you and can’t be removed against your will.</li>
-                  <li>The Superior Armor expands to cover your entire body, although you can retract or deploy the helmet as a bonus action.</li>
-                  <li>The Superior Armor replaces any missing limbs, functioning identically to a limb it replaces.</li>
-                  <li>When you make an Intelligence check, you can treat the d20 result as equal to half of your Intelligence score (rounded down) if the result before modifiers is lower.</li>
-                  <li>You can survive in the vacuum of space for a number of hours equal to your Intelligence modifier.  This ability recharges upon a long rest within a hospitable environment.</li>
-                </ul>
-                <br>
-                The Superior Armor continues to be Superior Armor until you create another set of Superior Armor, or it is destroyed.  If you die while wearing the Superior Armor, it is destroyed.
-                <br><br>
+              <h3 id="glyphologist-8">Invocationist</h3>
+              <hr>
+              <i><b>Glyphologist:</b>  8th level</i>
+              <p>
+                You gain one enduring Boon from the enduring Boon list.
+                You may also swap one previously gained enduring Boon for another that you qualify for.  
+              </p><br>
 
-                <h3 id="reverse-engineering-14">Reverse Engineering</h3>
-                <hr>
-                <i><b>Visionary:</b>  14th level</i>
-                <br>
-                Choose one Technology, Power, or Spell from any class casting list that you have witnessed being cast at least once.  
-                Events witnessed within your backstory do not qualify for this feature.  
-                The chosen Technology, Power, or Spell must not be of a higher level than the Maximum Technology Level for your current Visionary level.  
-                Your selected Technology, Power, or Spell counts as a Visionary Technology for you, and you are able to learn it as normal at the same level you choose it.  
-                If you are starting at higher levels or have not witnessed any Technologies, Powers, or Spells being cast upon gaining this feature, your GM may provide a list of Technologies, Powers, or Spells for you to choose from.  
-                You may gain this feature multiple times.
-                <br><br>
-
-                <h3 id="ability-score-improvement-16">Ability Score Improvement</h3>
-                <hr>
-                <i><b>Visionary:</b>  16th level</i>
-                <br>
-                You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  
-                You can’t increase an ability score above 20 using this feature.
-                You may gain this feature multiple times.
-                Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.
-                <br><br>
-
-                <h3 id="expertise-18">Expertise</h3>
-                <hr>
-                <i><b>Visionary:</b>  18th level</i>
-                <br>
-                Choose two of your skill proficiencies and two of your tool proficiencies. 
-                Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiencies.
-                <br><br>
-
-                <h3 id="reverse-engineering-18">Reverse Engineering</h3>
-                <hr>
-                <i><b>Visionary:</b>  18th level</i>
-                <br>
-                Choose one Technology, Power, or Spell from any class casting list that you have witnessed being cast at least once.  
-                Events witnessed within your backstory do not qualify for this feature.  
-                The chosen Technology, Power, or Spell must not be of a higher level than the Maximum Technology Level for your current Visionary level.  
-                Your selected Technology, Power, or Spell counts as a Visionary Technology for you, and you are able to learn it as normal at the same level you choose it.  
-                If you are starting at higher levels or have not witnessed any Technologies, Powers, or Spells being cast upon gaining this feature, your GM may provide a list of Technologies, Powers, or Spells for you to choose from.  
-                You may gain this feature multiple times.
-                <br><br>
-
-                <h3 id="ability-score-improvement-19">Ability Score Improvement</h3>
-                <hr>
-                <i><b>Visionary:</b>  19th level</i>
-                <br>
-                You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  
-                You can’t increase an ability score above 20 using this feature.
-                You may gain this feature multiple times.
-                Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.
-                <br><br>
-
-                <h3 id="ultimate-armor-20">Ultimate Armor</h3>
-                <hr>
-                <i><b>Visionary:</b>  20th level</i>
-                <br>
-                Your inventive pursuits have led to you making armor that serves as a conduit for your technology. 
-                As part of a Long Rest, you can turn a suit of mundane armor you have access to into Ultimate Armor, provided you have Inventor's Tools on hand.
-                You can don or doff the Ultimate Armor as part of any Action, Bonus Action, or Reaction you take.  
-                In addition, when the Ultimate Armor is doffed by you, you can choose to have it collapse into a small housing unit.  
-                The housing unit takes on a form of your choosing, and can be no smaller a thick wristwatch.  
-                You can use the housing unit as a Tech casting focus for your Visionary spells while you wear it as components of the Ultimate Armor dynamically deploy and retract as needed.  
-                <br>
-                The Ultimate Armor has the following traits while worn by you:
-                <br>
-                <ul>
-                  <li>Your Strength score becomes equal to your Intelligence score as long as it is not already higher.  You are also considered proficient with the armor.</li>  
-                  <li>You can use the Ultimate Armor as a Techcasting focus for your Visionary spells, and you need not supply any components that do not have a cost while doing so.</li>
-                  <li>The Ultimate Armor attaches to you and can’t be removed against your will.</li>
-                  <li>The Ultimate Armor expands to cover your entire body, although you can retract or deploy the helmet once per turn.</li>
-                  <li>The Ultimate Armor replaces any missing limbs, functioning identically to a limb it replaces.</li>
-                  <li>When you make an Intelligence check, you can treat the d20 result as equal to your Intelligence score if the result before modifiers is lower.</li>
-                  <li>Choose two of your Technologies that are of 2nd level or lower.  You can cast those Technologies at their lowest level without expending any Tech Points.</li>
-                  <li>You can survive in the vacuum of space for a number of days equal to your Intelligence modifier.  This ability recharges upon a long rest within a hospitable environment.</li>
-                </ul>
-                The Ultimate Armor continues to be Ultimate Armor until you create another set of Ultimate Armor, or it is destroyed.  If you die while wearing the Ultimate Armor, it is destroyed.
-                <br><br>
-              </section>
-
-              <section class="PageContentRight">
-                <h2 id="#virtuoso">Subclass:  The Virtuoso</h2>
-                <hr>
-                <img class="subclass-image-large"
-                alt="The Virtuoso" src="/_SiteResources/Images/noun_Science_4037086.png">
-                <p>
-                  A true paragon of invention and ingenuity, the Virtuoso has created and incorporated a truly sustainable energy source.  
-                  This energy source grants the Virtuoso several at-will Technologies and capabilities, such as flight.  
-                  As a Virtuoso, you can also convert any Technological Armor you might find into your Visionary Armor as normal, retaining the original item's benefits in addition to the Visionary Armor features.  
-                  (Visionary Armor refers to Augmented Armor, Advanced Armor, Superior Armor, and Ultimate Armor simultaneously.)
-                </p>
-              </section>
-
-              <section class="PageContentRight">
-                <h2 id="#magnate">Subclass:  The Magnate</h2>
-                <hr>
-                <img class="subclass-image-large"
-                alt="The Magnate" src="/_SiteResources/Images/noun_cyborg_506898.png">
-                <p>
-                  Some superpowers are far more subtle than most, and the Magnate is a prime example.  
-                  Whether relying on magnetic manipulation, electrokinesis, or cybernetics, you stand out as a Visionary with precise control over your Technology.  
-                  Having a direct connection between your nervous system and your devices grants you an innate control over your Visionary Armor.  
-                  As a Magnate, you can also convert any Metapower Armor you might find into your Visionary Armor as normal, retaining the original item's benefits in addition to the Visionary Armor features.  
-                  (Visionary Armor refers to Augmented Armor, Advanced Armor, Superior Armor, and Ultimate Armor simultaneously.)
-                </p>
-              </section>
-
-              <section class="PageContentRight">
-                <h2 id="#glyphologist">Subclass:  The Glyphologist</h2>
-                <hr>
-                <img class="subclass-image-large"
-                alt="The Glyphologist" src="/_SiteResources/Images/noun_Pyramid_1553793.png">
-                <p>
-                  A scholar of ancient knowledge and mythology, the Glyphologist combines modern science with ancient magical power sources.  
-                  Whether it be inscribing runes, compressing motes of power, or integrating powerful artifacts, the Glyphologist binds themselves and their armor together on a supernatural level.  
-                  While not a spellcaster, the Glyphologist still benefits from magical boons that manifest in a variety of ways.  
-                  As a Magnate, you can also convert any Eldritch Armor you might find into your Visionary Armor as normal, retaining the original item's benefits in addition to the Visionary Armor features.  
-                  (Visionary Armor refers to Augmented Armor, Advanced Armor, Superior Armor, and Ultimate Armor simultaneously.)
-                </p>
-              </section>
+              <h3 id="glyphologist-16">Science of Divinity</h3>
+              <hr>
+              <i><b>Glyphologist:</b>  16th level</i>
+              <p>
+                You gain one enduring Boon from the enduring Boon list.
+                You may also swap one previously gained enduring Boon for another that you qualify for.  
+              </p><br>
+            </section>
 
           </div>
         </div>
@@ -621,12 +282,3 @@
   </body>
 </html>
 
-<script type="text/javascript">
-  $(function () {
-
-    $(".Import_PageHeader").load("/_SiteResources/Pages/Import_PageHeader.html");
-    $(".Import_ContentLeft").load("/_SiteResources/Pages/Import_ContentLeft.html");
-    $(".Import_PageFooter").load("/_SiteResources/Pages/Import_PageFooter.html");
-
-});
-</script>
