@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-US-Compatible" content="e-edge">
+    <title>KnowOne's Website of Everything</title>
+    <link rel="icon" href="/_SiteResources/Images/OwlOfMinerva_ModifiedLogo.png">
+    <link rel="stylesheet" href="/FantasyStyle.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  </head>
+
+
+  <body>
+    <div class="PageContainer, PlanesMapBackground"> 
+      <div class="PageHeader">
+        <div class="Import_PageHeader"></div>
+
+          <h1 class="header">Caped Crusaders:  Spells</h1>
+          <hr>
+      </div>
+        
+      
+      <div class="PageContent">
+        <div class="AnchorCenter">
+          
+
+
+
+          <div class="AnchorRight">
+
+            <section class="PageContentRight">
+              <button class="WikiBackButton" onclick="location.href='../caped-crusaders.html'">Out to Caped Crusaders</button>
+              <h2>Inlcude Filters</h2>
+              <hr>
+
+              <input type="text" id="FilterInputInclude0" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by School. . .">
+              <input type="text" id="FilterInputInclude1" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Level. . .">
+              <input type="text" id="FilterInputInclude2" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Name. . .">
+              <input type="text" id="FilterInputInclude3" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Casting Time. . .">
+              <input type="text" id="FilterInputInclude4" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Duration. . .">
+              <input type="text" id="FilterInputInclude5" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Range/Area. . .">
+              <input type="text" id="FilterInputInclude6" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Attack/Save. . .">
+              <input type="text" id="FilterInputInclude7" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Damage/Effect. . .">
+              <input type="text" id="FilterInputInclude8" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Classes. . .">
+              <input type="text" id="FilterInputInclude9" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Subclasses. . .">
+              <input type="text" id="FilterInputInclude10" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Feats. . .">
+              <input type="text" id="FilterInputInclude11" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Backgrounds. . .">
+              <input type="text" id="FilterInputInclude12" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Races. . .">
+
+              <h2>Exlcude Filters</h2>
+              <hr>
+
+              <input type="text" id="FilterInputExclude0" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by School. . .">
+              <input type="text" id="FilterInputExclude1" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Level. . .">
+              <input type="text" id="FilterInputExclude2" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Name. . .">
+              <input type="text" id="FilterInputExclude3" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Casting Time. . .">
+              <input type="text" id="FilterInputExclude4" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Duration. . .">
+              <input type="text" id="FilterInputExclude5" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Range/Area. . .">
+              <input type="text" id="FilterInputExclude6" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Attack/Save. . .">
+              <input type="text" id="FilterInputExclude7" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Damage/Effect. . .">
+              <input type="text" id="FilterInputExclude8" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Classes. . .">
+              <input type="text" id="FilterInputExclude9" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Subclasses. . .">
+              <input type="text" id="FilterInputExclude10" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Feats. . .">
+              <input type="text" id="FilterInputExclude11" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Backgrounds. . .">
+              <input type="text" id="FilterInputExclude12" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Races. . .">
+
+              <table id="FilterTable">
+                <tr class="header">
+                  <th><button class="TableSortButton" onclick="sortTable(0)">School</button></th>
+                  <th><button class="TableSortButton" onclick="sortTable(1)">Level</button></th>
+                  <th><button class="TableSortButton" onclick="sortTable(2)">Name</button></th>
+                  <th><button class="TableSortButton" onclick="sortTable(3)">Casting Time</button></th>
+                  <th><button class="TableSortButton" onclick="sortTable(4)">Duration</button></th>
+                  <th><button class="TableSortButton" onclick="sortTable(5)">Range/Area</button></th>
+                  <th><button class="TableSortButton" onclick="sortTable(6)">Attack/Save</button></th>
+                  <th><button class="TableSortButton" onclick="sortTable(7)">Damage/Effect</button></th>
+                  <th><button class="TableSortButton" onclick="sortTable(8)">Classes</button></th>
+                  <th><button class="TableSortButton" onclick="sortTable(9)">Subclasses</button></th>
+                  <th><button class="TableSortButton" onclick="sortTable(10)">Feats</button></th>
+                  <th><button class="TableSortButton" onclick="sortTable(11)">Backgrounds</button></th>
+                  <th><button class="TableSortButton" onclick="sortTable(12)">Races</button></th>
+                </tr>
+                <!-- Abjuration Cantrips -->
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Abjuration.png" 
+                    alt="Sigil-Abjuration">
+                    <br>Abjuration
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Blade-Ward" target="_blank">Blade Ward</a></td>
+                  <td>1 Action</td>
+                  <td>1 Round</td>
+                  <td>Self</td>
+                  <td>None</td>
+                  <td>Combat(...)</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a>, <a href="https://www.dndbeyond.com/classes/sorcerer" target="_blank">Sorcerer</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a>, <a href="https://www.dndbeyond.com/classes/wizard" target="_blank">Wizard</a></td>
+                  <td>Arcana Domain, Eldritch Knight, Arcane Trickster</td>
+                  <td>Aberrant Dragonmark, Magic Initiate</td>
+                  <td>None</td>
+                  <td>Aereni High Elf, High Elf, Valenar High Elf, High Half-Elf</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Abjuration.png" 
+                    alt="Sigil-Abjuration">
+                    <br>Abjuration
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Resistance" target="_blank">Resistance</a></td>
+                  <td>1 Action</td>
+                  <td>1 Minute (C)</td>
+                  <td>Touch</td>
+                  <td>None</td>
+                  <td>Buff</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a> <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, <a href="https://www.dndbeyond.com/classes/cleric" target="_blank">Cleric</a>, <a href="https://www.dndbeyond.com/classes/paladin" target="_blank">Paladin</a>, <a href="https://www.dndbeyond.com/classes/paladin#ClassFeatures" target="_blank">(Blessed Warrior)</a>, <a href="https://www.dndbeyond.com/classes/druid" target="_blank">Druid</a>, <a href="https://www.dndbeyond.com/classes/ranger" target="_blank">Ranger</a> <a href="https://www.dndbeyond.com/classes/ranger#ClassFeatures" target="_blank">(Druidic Warrior)</a>, <a href="https://www.dndbeyond.com/classes/artificer" target="_blank">Artificer</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a> <a href="https://www.dndbeyond.com/classes/warlock#ClassFeatures" target="_blank">(Pact of the Tome)</a></td>
+                  <td>College of Lore, Nature Domain, Divine Soul</td>
+                  <td>Artificer Initiate, Magic Initiate, Wood Elf Magic</td>
+                  <td>None</td>
+                  <td>None</td>
+                </tr>
+                <!-- Conjuration Cantrips -->
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Conjuration.png" 
+                    alt="Sigil-Conjuration">
+                    <br>Conjuration
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Acid-Splash" target="_blank">Acid Splash</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>60 ft</td>
+                  <td>DEX Save</td>
+                  <td>Acid</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a> <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, <a href="https://www.dndbeyond.com/classes/sorcerer" target="_blank">Sorcerer</a>, <a href="https://www.dndbeyond.com/classes/wizard" target="_blank">Wizard</a>, <a href="https://www.dndbeyond.com/classes/artificer" target="_blank">Artificer</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a> <a href="https://www.dndbeyond.com/classes/warlock#ClassFeatures" target="_blank">(Pact of the Tome)</a></td>
+                  <td>College of Lore, Arcana Domain, Eldritch Knight, Arcane Trickster</td>
+                  <td>Aberrant Dragonmark, Artificer Initiate, Magic Initiate</td>
+                  <td>Simic Scientist</td>
+                  <td>Aereni High Elf, High Elf, Valenar High Elf, High Half-Elf</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Conjuration.png" 
+                    alt="Sigil-Conjuration">
+                    <br>Conjuration
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Create-Bonfire" target="_blank">Create Bonfire</td>
+                  <td>1 Action</td>
+                  <td>1 Minute (C)</td>
+                  <td>60 ft(5 ft)</td>
+                  <td>DEX Save</td>
+                  <td>Fire</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a> <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, <a href="https://www.dndbeyond.com/classes/druid" target="_blank">Druid</a>, <a href="https://www.dndbeyond.com/classes/ranger" target="_blank">Ranger</a> <a href="https://www.dndbeyond.com/classes/ranger#ClassFeatures" target="_blank">(Druidic Warrior)</a>, <a href="https://www.dndbeyond.com/classes/sorcerer" target="_blank">Sorcerer</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a>, <a href="https://www.dndbeyond.com/classes/wizard" target="_blank">Wizard</a>, <a href="https://www.dndbeyond.com/classes/artificer" target="_blank">Artificer</a></td>
+                  <td>College of Lore, Arcana Domain, Nature Domain, Eldritch Knight, Arcane Trickster</td>
+                  <td>Aberrant Dragonmark, Artificer Initiate, Magic Initiate, Wood Elf Magic</td>
+                  <td>None</td>
+                  <td>Aereni High Elf, High Elf, Valenar High Elf, High Half-Elf</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Conjuration.png" 
+                    alt="Sigil-Conjuration">
+                    <br>Conjuration
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Infestation" target="_blank">Infestation</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>30 ft</td>
+                  <td>CON Save</td>
+                  <td>Poison</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a> <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, <a href="https://www.dndbeyond.com/classes/druid" target="_blank">Druid</a>, <a href="https://www.dndbeyond.com/classes/ranger" target="_blank">Ranger</a> <a href="https://www.dndbeyond.com/classes/ranger#ClassFeatures" target="_blank">(Druidic Warrior)</a>, <a href="https://www.dndbeyond.com/classes/sorcerer" target="_blank">Sorcerer</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a>, <a href="https://www.dndbeyond.com/classes/wizard" target="_blank">Wizard</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a> <a href="https://www.dndbeyond.com/classes/warlock#ClassFeatures" target="_blank">(Pact of the Tome)</a></td>
+                  <td>College of Lore, Arcana Domain, Nature Domain, Eldritch Knight, Arcane Trickster</td>
+                  <td>Aberrant Dragonmark, Magic Initiate, Wood Elf Magic</td>
+                  <td>None</td>
+                  <td>Aereni High Elf, High Elf, Valenar High Elf, High Half-Elf</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Conjuration.png" 
+                    alt="Sigil-Conjuration">
+                    <br>Conjuration
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Mage-Hand" target="_blank">Mage Hand</td>
+                  <td>1 Action</td>
+                  <td>1 Minute</td>
+                  <td>30 ft</td>
+                  <td>None</td>
+                  <td>Utility</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a>, <a href="https://www.dndbeyond.com/classes/sorcerer" target="_blank">Sorcerer</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a>, <a href="https://www.dndbeyond.com/classes/wizard" target="_blank">Wizard</a>, <a href="https://www.dndbeyond.com/classes/artificer" target="_blank">Artificer</a></td>
+                  <td>Arcana Domain, Eldritch Knight, Arcane Trickster, Swarmkeeper</td>
+                  <td>Aberrant Dragonmark, Artificer Initiate, Magic Initiate</td>
+                  <td>Dimir Operative</td>
+                  <td>Aereni High Elf, High Elf, Valenar High Elf, High Half-Elf, Mammon Tiefling, Mephistopheles Tiefling, Githyanki, Githzerai</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Conjuration.png" 
+                    alt="Sigil-Conjuration">
+                    <br>Conjuration
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Poison-Spray" target="_blank">Poison Spray</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>10 ft</td>
+                  <td>CON Save</td>
+                  <td>Poison</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a> <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, <a href="https://www.dndbeyond.com/classes/druid" target="_blank">Druid</a>, <a href="https://www.dndbeyond.com/classes/ranger" target="_blank">Ranger</a> <a href="https://www.dndbeyond.com/classes/ranger#ClassFeatures" target="_blank">(Druidic Warrior)</a>, <a href="https://www.dndbeyond.com/classes/sorcerer" target="_blank">Sorcerer</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a>, <a href="https://www.dndbeyond.com/classes/wizard" target="_blank">Wizard</a>, <a href="https://www.dndbeyond.com/classes/artificer" target="_blank">Artificer</a></td>
+                  <td>College of Lore, Arcana Domain, Nature Domain, Eldritch Knight, Arcane Trickster</td>
+                  <td>Aberrant Dragonmark, Artificer Initiate, Magic Initiate, Wood Elf Magic</td>
+                  <td>None</td>
+                  <td>Aereni High Elf, High Elf, Valenar High Elf, High Half-Elf, Yuan-ti Pureblood</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Conjuration.png" 
+                    alt="Sigil-Conjuration">
+                    <br>Conjuration
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Produce-Flame" target="_blank">Produce Flame</td>
+                  <td>1 Action</td>
+                  <td>10 Minutes</td>
+                  <td>Self</td>
+                  <td>Ranged</td>
+                  <td>Fire</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a> <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, <a href="https://www.dndbeyond.com/classes/druid" target="_blank">Druid</a>, <a href="https://www.dndbeyond.com/classes/ranger" target="_blank">Ranger</a> <a href="https://www.dndbeyond.com/classes/ranger#ClassFeatures" target="_blank">(Druidic Warrior)</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a> <a href="https://www.dndbeyond.com/classes/warlock#ClassFeatures" target="_blank">(Pact of the Tome)</a></td>
+                  <td>College of Lore, Nature Domain</td>
+                  <td>Magic Initiate, Spell Sniper, Wood Elf Magic</td>
+                  <td>Gruul Anarch, Izzet Engineer</td>
+                  <td>Fire Genasi</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Conjuration.png" 
+                    alt="Sigil-Conjuration">
+                    <br>Conjuration
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Sword-Burst" target="_blank">Sword Burst</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>Self (5 ft)</td>
+                  <td>DEX Save</td>
+                  <td>Force</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a> <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, <a href="https://www.dndbeyond.com/classes/sorcerer" target="_blank">Sorcerer</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a>, <a href="https://www.dndbeyond.com/classes/wizard" target="_blank">Wizard</a>, <a href="https://www.dndbeyond.com/classes/artificer" target="_blank">Artificer</a></td>
+                  <td>College of Lore, Arcana Domain, Eldritch Knight, Arcane Trickster</td>
+                  <td>Aberrant Dragonmark, Artificer Initiate, Magic Initiate</td>
+                  <td>None</td>
+                  <td>Aereni High Elf, High Elf, Valenar High Elf, High Half-Elf</td>
+                </tr>
+                <!-- Divination Cantrips -->
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Divination.png" 
+                    alt="Sigil-Divination">
+                    <br>Divination
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Guidance" target="_blank">Guidance</td>
+                  <td>1 Action</td>
+                  <td>1 Minute (C)</td>
+                  <td>Touch</td>
+                  <td>None</td>
+                  <td>Buff</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a> <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, <a href="https://www.dndbeyond.com/classes/cleric" target="_blank">Cleric</a>, <a href="https://www.dndbeyond.com/classes/paladin" target="_blank">Paladin</a>, <a href="https://www.dndbeyond.com/classes/paladin#ClassFeatures" target="_blank">(Blessed Warrior)</a>, <a href="https://www.dndbeyond.com/classes/druid" target="_blank">Druid</a>, <a href="https://www.dndbeyond.com/classes/ranger" target="_blank">Ranger</a> <a href="https://www.dndbeyond.com/classes/ranger#ClassFeatures" target="_blank">(Druidic Warrior)</a>, <a href="https://www.dndbeyond.com/classes/artificer" target="_blank">Artificer</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a> <a href="https://www.dndbeyond.com/classes/warlock#ClassFeatures" target="_blank">(Pact of the Tome)</a></td>
+                  <td>College of Lore, Nature Domain, Circle of Stars, Divine Soul</td>
+                  <td>Artificer Initiate, Magic Initiate, Wood Elf Magic</td>
+                  <td>Orzhov Representative</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Divination.png" 
+                    alt="Sigil-Divination">
+                    <br>Divination
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/True-Strike" target="_blank">True Strike</td>
+                  <td>1 Action</td>
+                  <td>1 Round (C)</td>
+                  <td>30 ft</td>
+                  <td>None</td>
+                  <td>Foreknowledge</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a>, <a href="https://www.dndbeyond.com/classes/sorcerer" target="_blank">Sorcerer</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a>, <a href="https://www.dndbeyond.com/classes/wizard" target="_blank">Wizard</a></td>
+                  <td>Arcana Domain, Eldritch Knight, Arcane Trickster</td>
+                  <td>Aberrant Dragonmark, Magic Initiate</td>
+                  <td>None</td>
+                  <td>Aereni High Elf, High Elf, Valenar High Elf, High Half-Elf</td>
+                </tr>
+                <!-- Enchantment Cantrips -->
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Enchantment.png" 
+                    alt="Sigil-Enchantment">
+                    <br>Enchantment
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Encode-Thoughts" target="_blank">Encode Thoughts</td>
+                  <td>1 Action</td>
+                  <td>8 Hours</td>
+                  <td>Self</td>
+                  <td>None</td>
+                  <td>Creation(...)</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a> <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, <a href="https://www.dndbeyond.com/classes/wizard" target="_blank">Wizard</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a> <a href="https://www.dndbeyond.com/classes/warlock#ClassFeatures" target="_blank">(Pact of the Tome)</a></td>
+                  <td>College of Lore, Arcana Domain, Eldritch Knight, Arcane Trickster</td>
+                  <td>Magic Initiate</td>
+                  <td>Dimir Operative</td>
+                  <td>Aereni High Elf, High Elf, Valenar High Elf, High Half-Elf</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Enchantment.png" 
+                    alt="Sigil-Enchantment">
+                    <br>Enchantment
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Friends" target="_blank">Friends</td>
+                  <td>1 Action</td>
+                  <td>1 Minute (C)</td>
+                  <td>Self</td>
+                  <td>None</td>
+                  <td>Buff(...)</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a>, <a href="https://www.dndbeyond.com/classes/sorcerer" target="_blank">Sorcerer</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a>, <a href="https://www.dndbeyond.com/classes/wizard" target="_blank">Wizard</a></td>
+                  <td>Arcana Domain, Eldritch Knight, Arcane Trickster</td>
+                  <td>Aberrant Dragonmark, Magic Initiate</td>
+                  <td>Azorius Functionary, Orzhov Representative, Selesnya Initiate</td>
+                  <td>Aereni High Elf, High Elf, Valenar High Elf, High Half-Elf, Fierna Tiefling</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Enchantment.png" 
+                    alt="Sigil-Enchantment">
+                    <br>Enchantment
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Mind-Sliver" target="_blank">Mind Sliver</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>60 ft</td>
+                  <td>INT Save</td>
+                  <td>Psychic</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a> <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, <a href="https://www.dndbeyond.com/classes/sorcerer" target="_blank">Sorcerer</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a>, <a href="https://www.dndbeyond.com/classes/wizard" target="_blank">Wizard</a></td>
+                  <td>College of Lore, Arcana Domain, Eldritch Knight, Arcane Trickster</td>
+                  <td>Aberrant Dragonmark, Magic Initiate</td>
+                  <td>None</td>
+                  <td>Aereni High Elf, High Elf, Valenar High Elf, High Half-Elf</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Enchantment.png" 
+                    alt="Sigil-Enchantment">
+                    <br>Enchantment
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Vicious-Mockery" target="_blank">Vicious Mockery</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>60 ft</td>
+                  <td>WIS Save</td>
+                  <td>Psychic</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a> <a href="https://www.dndbeyond.com/classes/warlock#ClassFeatures" target="_blank">(Pact of the Tome)</a></td>
+                  <td>None</td>
+                  <td>Magic Initiate</td>
+                  <td>Rakdos Cultist</td>
+                  <td>Variant Tiefling, Variant Feral Tiefling</td>
+                </tr>
+                <!-- Evocation Cantrips -->
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Evocation.png" 
+                    alt="Sigil-Evocation">
+                    <br>Evocation
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Booming-Blade" target="_blank">Booming Blade</td>
+                  <td>1 Action</td>
+                  <td>1 Round</td>
+                  <td>Self (5 ft)</td>
+                  <td>Melee</td>
+                  <td>Thunder(...)</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a> <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, <a href="https://www.dndbeyond.com/classes/sorcerer" target="_blank">Sorcerer</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a> ,<a href="https://www.dndbeyond.com/classes/wizard" target="_blank">Wizard</a>, <a href="https://www.dndbeyond.com/classes/artificer" target="_blank">Artificer</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a> <a href="https://www.dndbeyond.com/classes/warlock#ClassFeatures" target="_blank">(Pact of the Tome)</a></td>
+                  <td>College of Lore, Arcana Domain, Eldritch Knight, Arcane Trickster</td>
+                  <td>Aberrant Dragonmark, Artificer Initiate, Magic Initiate, Spell Sniper</td>
+                  <td>None</td>
+                  <td>Aereni High Elf, High Elf, Valenar High Elf, High Half-Elf</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Evocation.png" 
+                    alt="Sigil-Evocation">
+                    <br>Evocation
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Dancing-Lights" target="_blank">Dancing Lights</td>
+                  <td>1 Action</td>
+                  <td>1 Minute</td>
+                  <td>120 ft</td>
+                  <td>None</td>
+                  <td>Utility</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a>, <a href="https://www.dndbeyond.com/classes/sorcerer" target="_blank">Sorcerer</a>, <a href="https://www.dndbeyond.com/classes/wizard" target="_blank">Wizard</a>, <a href="https://www.dndbeyond.com/classes/artificer" target="_blank">Artificer</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a> <a href="https://www.dndbeyond.com/classes/warlock#ClassFeatures" target="_blank">(Pact of the Tome)</a></td>
+                  <td>Arcana Domain, Eldritch Knight, Arcane Trickster</td>
+                  <td>Aberrant Dragonmark, Artificer Initiate, Magic Initiate</td>
+                  <td>Golgari Agent</td>
+                  <td>Dark Elf (Drow), Aereni High Elf, High Elf, Valenar High Elf, High Half-Elf, Drow Half-Elf</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Evocation.png" 
+                    alt="Sigil-Evocation">
+                    <br>Evocation
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Eldritch-Blast" target="_blank">Eldritch Blast</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>120 ft</td>
+                  <td>Ranged</td>
+                  <td>Force</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a> <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a></td>
+                  <td>College of Lore</td>
+                  <td>Magic Initiate, Spell Sniper</td>
+                  <td>None</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Evocation.png" 
+                    alt="Sigil-Evocation">
+                    <br>Evocation
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Fire-Bolt" target="_blank">Fire Bolt</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>120 ft</td>
+                  <td>Ranged</td>
+                  <td>Fire</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a> <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, <a href="https://www.dndbeyond.com/classes/sorcerer" target="_blank">Sorcerer</a>, <a href="https://www.dndbeyond.com/classes/wizard" target="_blank">Wizard</a>, <a href="https://www.dndbeyond.com/classes/artificer" target="_blank">Artificer</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a> <a href="https://www.dndbeyond.com/classes/warlock#ClassFeatures" target="_blank">(Pact of the Tome)</a></td>
+                  <td>College of Lore, Arcana Domain, Eldritch Knight, Arcane Trickster</td>
+                  <td>Aberrant Dragonmark, Artificer Initiate, Magic Initiate, Spell Sniper</td>
+                  <td>Boros Legionnaire, Gruul Anarch, Rakdos Cultist</td>
+                  <td>Aereni High Elf, High Elf, Valenar High Elf, High Half-Elf</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Evocation.png" 
+                    alt="Sigil-Evocation">
+                    <br>Evocation
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Frostbite" target="_blank">Frostbite</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>60 ft</td>
+                  <td>CON Save</td>
+                  <td>Cold</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a> <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, <a href="https://www.dndbeyond.com/classes/druid" target="_blank">Druid</a>, <a href="https://www.dndbeyond.com/classes/ranger" target="_blank">Ranger</a> <a href="https://www.dndbeyond.com/classes/ranger#ClassFeatures" target="_blank">(Druidic Warrior)</a>, <a href="https://www.dndbeyond.com/classes/sorcerer" target="_blank">Sorcerer</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a>, <a href="https://www.dndbeyond.com/classes/wizard" target="_blank">Wizard</a>, <a href="https://www.dndbeyond.com/classes/artificer" target="_blank">Artificer</a></td>
+                  <td>College of Lore, Arcana Domain, Nature Domain, Eldritch Knight, Arcane Trickster</td>
+                  <td>Aberrant Dragonmark, Artificer Initiate, Magic Initiate, Wood Elf Magic</td>
+                  <td>None</td>
+                  <td>Aereni High Elf, High Elf, Valenar High Elf, High Half-Elf</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Evocation.png" 
+                    alt="Sigil-Evocation">
+                    <br>Evocation
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Green-Flame-Blade" target="_blank">Green-Flame Blade</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>Self (5 ft)</td>
+                  <td>Melee</td>
+                  <td>Fire(...)</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a> <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, <a href="https://www.dndbeyond.com/classes/sorcerer" target="_blank">Sorcerer</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a>, <a href="https://www.dndbeyond.com/classes/wizard" target="_blank">Wizard</a>, <a href="https://www.dndbeyond.com/classes/artificer" target="_blank">Artificer</a></td>
+                  <td>College of Lore, Arcana Domain, Eldritch Knight, Arcane Trickster</td>
+                  <td>Aberrant Dragonmark, Artificer Initiate, Magic Initiate, Spell Sniper</td>
+                  <td>None</td>
+                  <td>Aereni High Elf, High Elf, Valenar High Elf, High Half-Elf</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Evocation.png" 
+                    alt="Sigil-Evocation">
+                    <br>Evocation
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Light" target="_blank">Light</td>
+                  <td>1 Action</td>
+                  <td>1 Hour</td>
+                  <td>Touch (20 ft)</td>
+                  <td>DEX Save</td>
+                  <td>Creation(...)</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a>, <a href="https://www.dndbeyond.com/classes/cleric" target="_blank">Cleric</a>, <a href="https://www.dndbeyond.com/classes/paladin" target="_blank">Paladin</a>, <a href="https://www.dndbeyond.com/classes/paladin#ClassFeatures" target="_blank">(Blessed Warrior)</a>, <a href="https://www.dndbeyond.com/classes/sorcerer" target="_blank">Sorcerer</a>, <a href="https://www.dndbeyond.com/classes/wizard" target="_blank">Wizard</a>, <a href="https://www.dndbeyond.com/classes/artificer" target="_blank">Artificer</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a> <a href="https://www.dndbeyond.com/classes/warlock#ClassFeatures" target="_blank">(Pact of the Tome)</a></td>
+                  <td>Arcana Domain, Light Domain, Eldritch Knight, Arcane Trickster, Divine Soul, The Celestial</td>
+                  <td>Aberrant Dragonmark, Artificer Initiate, Magic Initiate</td>
+                  <td>None</td>
+                  <td>Pallid Elf, Aereni High Elf, High Elf, Valenar High Elf, High Half-Elf, Aasimar, Variant Aasimar</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Evocation.png" 
+                    alt="Sigil-Evocation">
+                    <br>Evocation
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Lightning-Lure" target="_blank">Lightning Lure</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>Self (15 ft)</td>
+                  <td>STR Save</td>
+                  <td>Lightning</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a> <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, <a href="https://www.dndbeyond.com/classes/sorcerer" target="_blank">Sorcerer</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a> <a href="https://www.dndbeyond.com/classes/wizard" target="_blank">Wizard</a>, <a href="https://www.dndbeyond.com/classes/artificer" target="_blank">Artificer</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a> <a href="https://www.dndbeyond.com/classes/warlock#ClassFeatures" target="_blank">(Pact of the Tome)</a></td>
+                  <td>College of Lore, Arcana Domain, Eldritch Knight, Arcane Trickster</td>
+                  <td>Aberrant Dragonmark, Artificer Initiate, Magic Initiate</td>
+                  <td>None</td>
+                  <td>Aereni High Elf, High Elf, Valenar High Elf, High Half-Elf</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Evocation.png" 
+                    alt="Sigil-Evocation">
+                    <br>Evocation
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Ray-of-Frost" target="_blank">Ray of Frost</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>60 ft</td>
+                  <td>Ranged</td>
+                  <td>Cold</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a> <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, <a href="https://www.dndbeyond.com/classes/sorcerer" target="_blank">Sorcerer</a>, <a href="https://www.dndbeyond.com/classes/wizard" target="_blank">Wizard</a>, <a href="https://www.dndbeyond.com/classes/artificer" target="_blank">Artificer</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a> <a href="https://www.dndbeyond.com/classes/warlock#ClassFeatures" target="_blank">(Pact of the Tome)</a></td>
+                  <td>College of Lore, Arcana Domain, Eldritch Knight, Arcane Trickster</td>
+                  <td>Aberrant Dragonmark, Artificer Initiate, Magic Initiate, Spell Sniper</td>
+                  <td>None</td>
+                  <td>Aereni High Elf, High Elf, Valenar High Elf, High Half-Elf, Levistus Tiefling</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Evocation.png" 
+                    alt="Sigil-Evocation">
+                    <br>Evocation
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Sacred-Flame" target="_blank">Sacred Flame</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>60 ft</td>
+                  <td>DEX Save</td>
+                  <td>Radiant</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a> <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, <a href="https://www.dndbeyond.com/classes/cleric" target="_blank">Cleric</a>, <a href="https://www.dndbeyond.com/classes/paladin" target="_blank">Paladin</a>, <a href="https://www.dndbeyond.com/classes/paladin#ClassFeatures" target="_blank">(Blessed Warrior)</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a> <a href="https://www.dndbeyond.com/classes/warlock#ClassFeatures" target="_blank">(Pact of the Tome)</a></td>
+                  <td>College of Lore, Divine Soul, The Celestial</td>
+                  <td>Magic Initiate</td>
+                  <td>Boros Legionnaire</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Evocation.png" 
+                    alt="Sigil-Evocation">
+                    <br>Evocation
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Shocking-Grasp" target="_blank">Shocking Grasp</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>Touch</td>
+                  <td>Melee</td>
+                  <td>Lightning</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a> <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, <a href="https://www.dndbeyond.com/classes/sorcerer" target="_blank">Sorcerer</a>, <a href="https://www.dndbeyond.com/classes/wizard" target="_blank">Wizard</a>, <a href="https://www.dndbeyond.com/classes/artificer" target="_blank">Artificer</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a> <a href="https://www.dndbeyond.com/classes/warlock#ClassFeatures" target="_blank">(Pact of the Tome)</a></td>
+                  <td>College of Lore, Arcana Domain, Eldritch Knight, Arcane Trickster</td>
+                  <td>Aberrant Dragonmark, Artificer Initiate, Magic Initiate, Spell Sniper</td>
+                  <td>Izzet Engineer</td>
+                  <td>Aereni High Elf, High Elf, Valenar High Elf, High Half-Elf</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Evocation.png" 
+                    alt="Sigil-Evocation">
+                    <br>Evocation
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Thunderclap" target="_blank">Thunderclap</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>5 ft</td>
+                  <td>CON Save</td>
+                  <td>Thunder</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a>, <a href="https://www.dndbeyond.com/classes/druid" target="_blank">Druid</a>, <a href="https://www.dndbeyond.com/classes/ranger" target="_blank">Ranger</a> <a href="https://www.dndbeyond.com/classes/ranger#ClassFeatures" target="_blank">(Druidic Warrior)</a>, <a href="https://www.dndbeyond.com/classes/sorcerer" target="_blank">Sorcerer</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a>, <a href="https://www.dndbeyond.com/classes/wizard" target="_blank">Wizard</a>, <a href="https://www.dndbeyond.com/classes/artificer" target="_blank">Artificer</a></td>
+                  <td>Arcana Domain, Nature Domain, Eldritch Knight, Arcane Trickster</td>
+                  <td>Aberrant Dragonmark, Artificer Initiate, Magic Initiate, Wood Elf Magic</td>
+                  <td>None</td>
+                  <td>Aereni High Elf, High Elf, Valenar High Elf, High Half-Elf</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Evocation.png" 
+                    alt="Sigil-Evocation">
+                    <br>Evocation
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Word-of-Radiance" target="_blank">Word of Radiance</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>5 ft</td>
+                  <td>CON Save</td>
+                  <td>Radiant</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a> <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, <a href="https://www.dndbeyond.com/classes/cleric" target="_blank">Cleric</a>, <a href="https://www.dndbeyond.com/classes/paladin" target="_blank">Paladin</a>, <a href="https://www.dndbeyond.com/classes/paladin#ClassFeatures" target="_blank">(Blessed Warrior)</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a> <a href="https://www.dndbeyond.com/classes/warlock#ClassFeatures" target="_blank">(Pact of the Tome)</a></td>
+                  <td>College of Lore, Divine Soul</td>
+                  <td>Magic Initiate</td>
+                  <td>None</td>
+                  <td>None</td>
+                </tr>
+                <!-- Illusion Cantrips -->
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Illusion.png" 
+                    alt="Sigil-Illusion">
+                    <br>Illusion
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Minor-Illusion" target="_blank">Minor Illusion</td>
+                  <td>1 Action</td>
+                  <td>1 Minute</td>
+                  <td>30 ft (5 ft)</td>
+                  <td>None</td>
+                  <td>Control</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a>, <a href="https://www.dndbeyond.com/classes/sorcerer" target="_blank">Sorcerer</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a>, <a href="https://www.dndbeyond.com/classes/wizard" target="_blank">Wizard</a></td>
+                  <td>Arcana Domain, Eldritch Knight, Arcane Trickster, Way of Shadow, School of Illusion</td>
+                  <td>Aberrant Dragonmark, Magic Initiate</td>
+                  <td>None</td>
+                  <td>Mark of Shadow Elf, Aereni High Elf, High Elf, Valenar High Elf, High Half-Elf, Forest Gnome, Glasya Tiefling</td>
+                </tr>
+                <!-- Necromancy Cantrips -->
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Necromancy.png" 
+                    alt="Sigil-Necromancy">
+                    <br>Necromancy
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Chill-Touch" target="_blank">Chill Touch</td>
+                  <td>1 Action</td>
+                  <td>1 Round</td>
+                  <td>120 ft</td>
+                  <td>Ranged</td>
+                  <td>Necrotic</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a> <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, <a href="https://www.dndbeyond.com/classes/sorcerer" target="_blank">Sorcerer</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a>, <a href="https://www.dndbeyond.com/classes/wizard" target="_blank">Wizard</a></td>
+                  <td>College of Lore, Arcana Domain, Death Domain, Circle of Spores, Eldritch Knight, Arcane Trickster</td>
+                  <td>Aberrant Dragonmark, Magic Initiate, Spell Sniper</td>
+                  <td>None</td>
+                  <td>Aereni High Elf, High Elf, Valenar High Elf, High Half-Elf</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Necromancy.png" 
+                    alt="Sigil-Necromancy">
+                    <br>Necromancy
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Sapping-Sting" target="_blank">Sapping Sting</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>30 ft</td>
+                  <td>CON Save</td>
+                  <td>Necrotic</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a> <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a> <a href="https://www.dndbeyond.com/classes/warlock#ClassFeatures" target="_blank">(Pact of the Tome)</a></td>
+                  <td>College of Lore, Death Domain, Chronurgist, Graviturgist</td>
+                  <td>Magic Initiate</td>
+                  <td>None</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Necromancy.png" 
+                    alt="Sigil-Necromancy">
+                    <br>Necromancy
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Spare-the-Dying" target="_blank">Spare the Dying</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>Touch</td>
+                  <td>None</td>
+                  <td>Healing</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a> <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, <a href="https://www.dndbeyond.com/classes/cleric" target="_blank">Cleric</a>, <a href="https://www.dndbeyond.com/classes/paladin" target="_blank">Paladin</a>, <a href="https://www.dndbeyond.com/classes/paladin#ClassFeatures" target="_blank">(Blessed Warrior)</a>, <a href="https://www.dndbeyond.com/classes/artificer" target="_blank">Artificer</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a> <a href="https://www.dndbeyond.com/classes/warlock#ClassFeatures" target="_blank">(Pact of the Tome)</a></td>
+                  <td>College of Lore, Death Domain, Grave Domain, Divine Soul, The Undying</td>
+                  <td>Artificer Initiate, Magic Initiate</td>
+                  <td>Golgari Agent</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Necromancy.png" 
+                    alt="Sigil-Necromancy">
+                    <br>Necromancy
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Toll-the-Dead" target="_blank">Toll the Dead</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>60 ft</td>
+                  <td>WIS Save</td>
+                  <td>Necrotic</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a> <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, <a href="https://www.dndbeyond.com/classes/cleric" target="_blank">Cleric</a>, <a href="https://www.dndbeyond.com/classes/paladin" target="_blank">Paladin</a>, <a href="https://www.dndbeyond.com/classes/paladin#ClassFeatures" target="_blank">(Blessed Warrior)</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a>, <a href="https://www.dndbeyond.com/classes/wizard" target="_blank">Wizard</a></td>
+                  <td>College of Lore, Arcana Domain, Death Domain, Eldritch Knight, Arcane Trickster, Divine Soul</td>
+                  <td>Magic Initiate</td>
+                  <td>None</td>
+                  <td>Aereni High Elf, High Elf, Valenar High Elf, High Half-Elf</td>
+                </tr>
+                <!-- Transmutation Cantrips -->
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Transmutation.png" 
+                    alt="Sigil-Transmutation">
+                    <br>Transmutation
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Control-Flames" target="_blank">Control Flames</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>60 ft (5 ft)</td>
+                  <td>None</td>
+                  <td>Control</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a> <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, <a href="https://www.dndbeyond.com/classes/druid" target="_blank">Druid</a>, <a href="https://www.dndbeyond.com/classes/ranger" target="_blank">Ranger</a> <a href="https://www.dndbeyond.com/classes/ranger#ClassFeatures" target="_blank">(Druidic Warrior)</a>, <a href="https://www.dndbeyond.com/classes/sorcerer" target="_blank">Sorcerer</a>, <a href="https://www.dndbeyond.com/classes/wizard" target="_blank">Wizard</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a> <a href="https://www.dndbeyond.com/classes/warlock#ClassFeatures" target="_blank">(Pact of the Tome)</a></td>
+                  <td>College of Lore, Arcana Domain, Nature Domain, Eldritch Knight, Arcane Trickster</td>
+                  <td>Aberrant Dragonmark, Magic Initiate, Wood Elf Magic</td>
+                  <td>None</td>
+                  <td>Aereni High Elf, High Elf, Valenar High Elf, High Half-Elf</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Transmutation.png" 
+                    alt="Sigil-Transmutation">
+                    <br>Transmutation
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Druidcraft" target="_blank">Druidcraft</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>30 ft</td>
+                  <td>None</td>
+                  <td>Control</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a> <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, <a href="https://www.dndbeyond.com/classes/druid" target="_blank">Druid</a>, <a href="https://www.dndbeyond.com/classes/ranger" target="_blank">Ranger</a> <a href="https://www.dndbeyond.com/classes/ranger#ClassFeatures" target="_blank">(Druidic Warrior)</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a> <a href="https://www.dndbeyond.com/classes/warlock#ClassFeatures" target="_blank">(Pact of the Tome)</a></td>
+                  <td>College of Lore, Nature Domain, Arcane Archer</td>
+                  <td>Magic Initiate, Wood Elf Magic</td>
+                  <td>Selesnya Initiate, Simic Scientist</td>
+                  <td>Lotusden Halfling</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Transmutation.png" 
+                    alt="Sigil-Transmutation">
+                    <br>Transmutation
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Gust" target="_blank">Gust</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>30 ft</td>
+                  <td>STR Save</td>
+                  <td>Control</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a> <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, <a href="https://www.dndbeyond.com/classes/druid" target="_blank">Druid</a>, <a href="https://www.dndbeyond.com/classes/ranger" target="_blank">Ranger</a> <a href="https://www.dndbeyond.com/classes/ranger#ClassFeatures" target="_blank">(Druidic Warrior)</a>, <a href="https://www.dndbeyond.com/classes/sorcerer" target="_blank">Sorcerer</a>, <a href="https://www.dndbeyond.com/classes/wizard" target="_blank">Wizard</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a> <a href="https://www.dndbeyond.com/classes/warlock#ClassFeatures" target="_blank">(Pact of the Tome)</a></td>
+                  <td>College of Lore, Arcana Domain, Nature Domain, Eldritch Knight, Arcane Trickster</td>
+                  <td>Magic Initiate, Wood Elf Magic</td>
+                  <td>None</td>
+                  <td>Aereni High Elf, High Elf, Valenar High Elf, High Half-Elf, Mark of Storm Half-Elf</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Transmutation.png" 
+                    alt="Sigil-Transmutation">
+                    <br>Transmutation
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Magic-Stone" target="_blank">Magic Stone</td>
+                  <td>1 Bonus Action</td>
+                  <td>1 Minute</td>
+                  <td>Touch</td>
+                  <td>Ranged</td>
+                  <td>Bludgeoning</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a> <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, <a href="https://www.dndbeyond.com/classes/druid" target="_blank">Druid</a>, <a href="https://www.dndbeyond.com/classes/ranger" target="_blank">Ranger</a> <a href="https://www.dndbeyond.com/classes/ranger#ClassFeatures" target="_blank">(Druidic Warrior)</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a>, <a href="https://www.dndbeyond.com/classes/artificer" target="_blank">Artificer</a></td>
+                  <td>College of Lore, Nature Domain</td>
+                  <td>Artificer Initiate, Magic Initiate, Spell Sniper, Wood Elf Magic</td>
+                  <td>None</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Transmutation.png" 
+                    alt="Sigil-Transmutation">
+                    <br>Transmutation
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Mending" target="_blank">Mending</td>
+                  <td>1 Minute</td>
+                  <td>Instantaneous</td>
+                  <td>Touch</td>
+                  <td>None</td>
+                  <td>Utility</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a>, <a href="https://www.dndbeyond.com/classes/cleric" target="_blank">Cleric</a>, <a href="https://www.dndbeyond.com/classes/paladin" target="_blank">Paladin</a>, <a href="https://www.dndbeyond.com/classes/paladin#ClassFeatures" target="_blank">(Blessed Warrior)</a>, <a href="https://www.dndbeyond.com/classes/druid" target="_blank">Druid</a>, <a href="https://www.dndbeyond.com/classes/ranger" target="_blank">Ranger</a> <a href="https://www.dndbeyond.com/classes/ranger#ClassFeatures" target="_blank">(Druidic Warrior)</a>, <a href="https://www.dndbeyond.com/classes/sorcerer" target="_blank">Sorcerer</a>, <a href="https://www.dndbeyond.com/classes/wizard" target="_blank">Wizard</a>, <a href="https://www.dndbeyond.com/classes/artificer" target="_blank">Artificer</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a> <a href="https://www.dndbeyond.com/classes/warlock#ClassFeatures" target="_blank">(Pact of the Tome)</a></td>
+                  <td>Arcana Domain, Nature Domain, Eldritch Knight, Arcane Trickster, Divine Soul</td>
+                  <td>Aberrant Dragonmark, Artificer Initiate, Magic Initiate, Wood Elf Magic</td>
+                  <td>None</td>
+                  <td>Aereni High Elf, High Elf, Valenar High Elf, High Half-Elf, Mark of Making Human</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Transmutation.png" 
+                    alt="Sigil-Transmutation">
+                    <br>Transmutation
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Message" target="_blank">Message</td>
+                  <td>1 Action</td>
+                  <td>1 Round</td>
+                  <td>120 ft</td>
+                  <td>None</td>
+                  <td>Communication(...)</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a>, <a href="https://www.dndbeyond.com/classes/sorcerer" target="_blank">Sorcerer</a>, <a href="https://www.dndbeyond.com/classes/wizard" target="_blank">Wizard</a>, <a href="https://www.dndbeyond.com/classes/artificer" target="_blank">Artificer</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a> <a href="https://www.dndbeyond.com/classes/warlock#ClassFeatures" target="_blank">(Pact of the Tome)</a></td>
+                  <td>Arcana Domain, Eldritch Knight, Arcane Trickster</td>
+                  <td>Aberrant Dragonmark, Artificer Initiate, Magic Initiate</td>
+                  <td>Azorius Functionary</td>
+                  <td>Aereni High Elf, High Elf, Valenar High Elf, High Half-Elf, Mark of Scribing Gnome</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Transmutation.png" 
+                    alt="Sigil-Transmutation">
+                    <br>Transmutation
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Mold-Earth" target="_blank">Mold Earth</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>30 ft (5 ft)</td>
+                  <td>None</td>
+                  <td>Control</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a> <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, <a href="https://www.dndbeyond.com/classes/druid" target="_blank">Druid</a>, <a href="https://www.dndbeyond.com/classes/ranger" target="_blank">Ranger</a> <a href="https://www.dndbeyond.com/classes/ranger#ClassFeatures" target="_blank">(Druidic Warrior)</a>, <a href="https://www.dndbeyond.com/classes/sorcerer" target="_blank">Sorcerer</a>, <a href="https://www.dndbeyond.com/classes/wizard" target="_blank">Wizard</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a> <a href="https://www.dndbeyond.com/classes/warlock#ClassFeatures" target="_blank">(Pact of the Tome)</a></td>
+                  <td>College of Lore, Arcana Domain, Nature Domain, Eldritch Knight, Arcane Trickster</td>
+                  <td>Aberrant Dragonmark, Magic Initiate, Wood Elf Magic</td>
+                  <td>None</td>
+                  <td>Aereni High Elf, High Elf, Valenar High Elf, High Half-Elf</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Transmutation.png" 
+                    alt="Sigil-Transmutation">
+                    <br>Transmutation
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Prestidigitation" target="_blank">Prestidigitation</td>
+                  <td>1 Action</td>
+                  <td>1 Hour</td>
+                  <td>10 ft</td>
+                  <td>None</td>
+                  <td>Utility</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a>, <a href="https://www.dndbeyond.com/classes/sorcerer" target="_blank">Sorcerer</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a>, <a href="https://www.dndbeyond.com/classes/wizard" target="_blank">Wizard</a>, <a href="https://www.dndbeyond.com/classes/artificer" target="_blank">Artificer</a></td>
+                  <td>Arcana Domain, Arcane Archer, Eldritch Knight, Arcane Trickster</td>
+                  <td>Aberrant Dragonmark, Artificer Initiate, Magic Initiate</td>
+                  <td>None</td>
+                  <td>Aereni High Elf, High Elf, Valenar High Elf, High Half-Elf, Mark of Hospitality Halfling</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Transmutation.png" 
+                    alt="Sigil-Transmutation">
+                    <br>Transmutation
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Primal-Savagery" target="_blank">Primal Savagery</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>Self</td>
+                  <td>Melee</td>
+                  <td>Acid</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a> <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, <a href="https://www.dndbeyond.com/classes/druid" target="_blank">Druid</a>, <a href="https://www.dndbeyond.com/classes/ranger" target="_blank">Ranger</a> <a href="https://www.dndbeyond.com/classes/ranger#ClassFeatures" target="_blank">(Druidic Warrior)</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a> <a href="https://www.dndbeyond.com/classes/warlock#ClassFeatures" target="_blank">(Pact of the Tome)</a></td>
+                  <td>College of Lore, Nature Domain</td>
+                  <td>Magic Initiate, Spell Sniper, Wood Elf Magic</td>
+                  <td>None</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Transmutation.png" 
+                    alt="Sigil-Transmutation">
+                    <br>Transmutation
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Shape-Water" target="_blank">Shape Water</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>30 ft (5 ft)</td>
+                  <td>None</td>
+                  <td>Control</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a> <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, <a href="https://www.dndbeyond.com/classes/druid" target="_blank">Druid</a>, <a href="https://www.dndbeyond.com/classes/ranger" target="_blank">Ranger</a> <a href="https://www.dndbeyond.com/classes/ranger#ClassFeatures" target="_blank">(Druidic Warrior)</a>, <a href="https://www.dndbeyond.com/classes/sorcerer" target="_blank">Sorcerer</a>, <a href="https://www.dndbeyond.com/classes/wizard" target="_blank">Wizard</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a> <a href="https://www.dndbeyond.com/classes/warlock#ClassFeatures" target="_blank">(Pact of the Tome)</a></td>
+                  <td>College of Lore, Arcana Domain, Nature Domain, Eldritch Knight, Arcane Trickster</td>
+                  <td>Aberrant Dragonmark, Magic Initiate, Wood Elf Magic</td>
+                  <td>None</td>
+                  <td>Aereni High Elf, High Elf, Valenar High Elf, High Half-Elf, Water Genasi</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Transmutation.png" 
+                    alt="Sigil-Transmutation">
+                    <br>Transmutation
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Shillelagh" target="_blank">Shillelagh</td>
+                  <td>1 Bonus Action</td>
+                  <td>1 Minute</td>
+                  <td>Touch</td>
+                  <td>Melee</td>
+                  <td>Bludgeoning</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a> <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, <a href="https://www.dndbeyond.com/classes/druid" target="_blank">Druid</a>, <a href="https://www.dndbeyond.com/classes/ranger" target="_blank">Ranger</a> <a href="https://www.dndbeyond.com/classes/ranger#ClassFeatures" target="_blank">(Druidic Warrior)</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a> <a href="https://www.dndbeyond.com/classes/warlock#ClassFeatures" target="_blank">(Pact of the Tome)</a></td>
+                  <td>College of Lore, Nature Domain</td>
+                  <td>Magic Initiate, Spell Sniper, Wood Elf Magic</td>
+                  <td>None</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Transmutation.png" 
+                    alt="Sigil-Transmutation">
+                    <br>Transmutation
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Thaumaturgy" target="_blank">Thaumaturgy</td>
+                  <td>1 Action</td>
+                  <td>1 Minute</td>
+                  <td>30 ft</td>
+                  <td>None</td>
+                  <td>Control</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a> <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, <a href="https://www.dndbeyond.com/classes/cleric" target="_blank">Cleric</a>, <a href="https://www.dndbeyond.com/classes/paladin" target="_blank">Paladin</a>, <a href="https://www.dndbeyond.com/classes/paladin#ClassFeatures" target="_blank">(Blessed Warrior)</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a> <a href="https://www.dndbeyond.com/classes/warlock#ClassFeatures" target="_blank">(Pact of the Tome)</a></td>
+                  <td>College of Lore, Divine Soul</td>
+                  <td>Magic Initiate</td>
+                  <td>None</td>
+                  <td>Tiefling, Baalzebul Tiefling, Dispater Tiefling, Zariel Tiefling, Feral Tiefling</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Transmutation.png" 
+                    alt="Sigil-Transmutation">
+                    <br>Transmutation
+                  </td>
+                  <td>Cantrip</td>
+                  <td><a href="https://www.dndbeyond.com/spells/Thorn-Whip" target="_blank">Thorn Whip</td>
+                  <td>1 Action</td>
+                  <td>Instantaneous</td>
+                  <td>30 ft</td>
+                  <td>Melee</td>
+                  <td>Piercing</td>
+                  <td><a href="https://www.dndbeyond.com/classes/bard" target="_blank">Bard</a> <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, <a href="https://www.dndbeyond.com/classes/druid" target="_blank">Druid</a>, <a href="https://www.dndbeyond.com/classes/ranger" target="_blank">Ranger</a> <a href="https://www.dndbeyond.com/classes/ranger#ClassFeatures" target="_blank">(Druidic Warrior)</a>, <a href="https://www.dndbeyond.com/classes/artificer" target="_blank">Artificer</a>, <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a> <a href="https://www.dndbeyond.com/classes/warlock#ClassFeatures" target="_blank">(Pact of the Tome)</a></td>
+                  <td>College of Lore, Nature Domain</td>
+                  <td>Artificer Initiate, Magic Initiate, Spell Sniper, Wood Elf Magic</td>
+                  <td>None</td>
+                  <td>None</td>
+                </tr>
+                <!-- Abjuration 1st Level Spells -->
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Abjuration.png" 
+                    alt="Sigil-Abjuration">
+                    <br>Abjuration
+                  </td>
+                  <td>1st</td>
+                  <td><a href="https://www.dndbeyond.com/spells/absorb-elements" target="_blank">Absorb Elements</td>
+                  <td>1 Reaction*</td>
+                  <td>1 Round</td>
+                  <td>Self</td>
+                  <td>None</td>
+                  <td>Acid(...)</td>
+                  <td>
+                    <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, 
+                    <a href="https://www.dndbeyond.com/classes/druid" target="_blank">Druid</a>, 
+                    <a href="https://www.dndbeyond.com/classes/ranger" target="_blank">Ranger</a>, 
+                    <a href="https://www.dndbeyond.com/classes/sorcerer" target="_blank">Sorcerer</a>, 
+                    <a href="https://www.dndbeyond.com/classes/wizard" target="_blank">Wizard</a>, 
+                    <a href="https://www.dndbeyond.com/classes/artificer" target="_blank">Artificer</a>
+                  </td>
+                  <td>College of Lore, </td>
+                  <td>???</td>
+                  <td>None</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Abjuration.png" 
+                    alt="Sigil-Abjuration">
+                    <br>Abjuration
+                  </td>
+                  <td>1st</td>
+                  <td><a href="https://www.dndbeyond.com/spells/alarm" target="_blank">Alarm</td>
+                  <td>1 Minute (R)</td>
+                  <td>8 Hours</td>
+                  <td>30 ft</td>
+                  <td>None</td>
+                  <td>Detection</td>
+                  <td>
+                    <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, 
+                    <a href="https://www.dndbeyond.com/classes/ranger" target="_blank">Ranger</a>, 
+                    <a href="https://www.dndbeyond.com/classes/wizard" target="_blank">Wizard</a>, 
+                    <a href="https://www.dndbeyond.com/classes/artificer" target="_blank">Artificer</a>
+                  </td>
+                  <td>College of Lore, </td>
+                  <td>???</td>
+                  <td>None</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Abjuration.png" 
+                    alt="Sigil-Abjuration">
+                    <br>Abjuration
+                  </td>
+                  <td>1st</td>
+                  <td><a href="https://www.dndbeyond.com/spells/armor-of-agathys" target="_blank">Armor of Agathys</td>
+                  <td>1 Action</td>
+                  <td>1 Hour</td>
+                  <td>Self</td>
+                  <td>None</td>
+                  <td>Cold</td>
+                  <td>
+                    <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, 
+                    <a href="https://www.dndbeyond.com/classes/bard" target="_blank">Warlock</a> 
+                  </td>
+                  <td>College of Lore, 
+                    <a href="https://www.dndbeyond.com/classes/paladin#OathofConquest" target="_blank">Oath of Conquest</a></td>
+                  <td>???</td>
+                  <td>None</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Abjuration.png" 
+                    alt="Sigil-Abjuration">
+                    <br>Abjuration
+                  </td>
+                  <td>1st</td>
+                  <td><a href="https://www.dndbeyond.com/spells/ceremony" target="_blank">Ceremony</td>
+                  <td>1 Hour</td>
+                  <td>Instantaneous</td>
+                  <td>Touch</td>
+                  <td>None</td>
+                  <td>Buff(...)</td>
+                  <td>
+                    <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, 
+                    <a href="https://www.dndbeyond.com/classes/cleric" target="_blank">Cleric</a>, 
+                    <a href="https://www.dndbeyond.com/classes/paladin" target="_blank">Paladin</a>
+                  </td>
+                  <td>College of Lore, </td>
+                  <td>???</td>
+                  <td>None</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Abjuration.png" 
+                    alt="Sigil-Abjuration">
+                    <br>Abjuration
+                  </td>
+                  <td>1st</td>
+                  <td><a href="https://www.dndbeyond.com/spells/mage-armor" target="_blank">Mage Armor</td>
+                  <td>1 Action</td>
+                  <td>8 Hours</td>
+                  <td>Touch</td>
+                  <td>None</td>
+                  <td>Buff(...)</td>
+                  <td>
+                    <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, 
+                    <a href="https://www.dndbeyond.com/classes/sorcerer" target="_blank">Sorcerer</a>, 
+                    <a href="https://www.dndbeyond.com/classes/wizard" target="_blank">Wizard</a>
+                  </td>
+                  <td>College of Lore, </td>
+                  <td>???</td>
+                  <td>None</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Abjuration.png" 
+                    alt="Sigil-Abjuration">
+                    <br>Abjuration
+                  </td>
+                  <td>1st</td>
+                  <td><a href="https://www.dndbeyond.com/spells/protection-from-evil-and-good" target="_blank">Protection from Evil and Good</td>
+                  <td>1 Action</td>
+                  <td>10 Minutes (C)</td>
+                  <td>Touch</td>
+                  <td>None</td>
+                  <td>Buff(...)</td>
+                  <td>
+                    <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, 
+                    <a href="https://www.dndbeyond.com/classes/cleric" target="_blank">Cleric</a>, 
+                    <a href="https://www.dndbeyond.com/classes/paladin" target="_blank">Paladin</a>, 
+                    <a href="https://www.dndbeyond.com/classes/warlock" target="_blank">Warlock</a>, 
+                    <a href="https://www.dndbeyond.com/classes/wizard" target="_blank">Wizard</a>
+                  </td>
+                  <td>College of Lore, 
+                    <a href="https://www.dndbeyond.com/classes/paladin#OathofDevotion" target="_blank">Oath of Devotion</a></td>
+                  <td>???</td>
+                  <td>None</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Abjuration.png" 
+                    alt="Sigil-Abjuration">
+                    <br>Abjuration
+                  </td>
+                  <td>1st</td>
+                  <td><a href="https://www.dndbeyond.com/spells/sanctuary" target="_blank">Sanctuary</td>
+                  <td>1 Bonus Action</td>
+                  <td>1 Minute</td>
+                  <td>30 ft</td>
+                  <td>WIS Save</td>
+                  <td>Buff(...)</td>
+                  <td>
+                    <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, 
+                    <a href="https://www.dndbeyond.com/classes/cleric" target="_blank">Cleric</a>, 
+                    <a href="https://www.dndbeyond.com/classes/artificer" target="_blank">Artificer</a>
+                  </td>
+                  <td>College of Lore, 
+                    <a href="https://www.dndbeyond.com/classes/cleric#PeaceDomain" target="_blank">Peace Domain</a>, 
+                    <a href="https://www.dndbeyond.com/classes/paladin#OathofDevotion" target="_blank">Oath of Devotion</a>, 
+                    <a href="https://www.dndbeyond.com/classes/paladin#OathofRedemption" target="_blank">Oath of Redemption</a>, 
+                    <a href="https://www.dndbeyond.com/classes/warlock#TheGenie" target="_blank">The Genie</a>
+                  </td>
+                  <td>???</td>
+                  <td>None</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Abjuration.png" 
+                    alt="Sigil-Abjuration">
+                    <br>Abjuration
+                  </td>
+                  <td>1st</td>
+                  <td><a href="https://www.dndbeyond.com/spells/shield" target="_blank">Shield</td>
+                  <td>1 Reaction*</td>
+                  <td>1 Round</td>
+                  <td>Self</td>
+                  <td>None</td>
+                  <td>Warding</td>
+                  <td>
+                    <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, 
+                    <a href="https://www.dndbeyond.com/classes/sorcerer" target="_blank">Sorcerer</a>, 
+                    <a href="https://www.dndbeyond.com/classes/wizard" target="_blank">Wizard</a>
+                  </td>
+                  <td>College of Lore, 
+                    <a href="https://www.dndbeyond.com/classes/warlock#TheHexblade" target="_blank">The Hexblade</a>, 
+                    <a href="https://www.dndbeyond.com/classes/artificer#Artillerist" target="_blank">Artillerist</a>, 
+                    <a href="https://www.dndbeyond.com/classes/artificer#BattleSmith" target="_blank">Battle Smith</a>
+                  </td>
+                  <td>???</td>
+                  <td>None</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Abjuration.png" 
+                    alt="Sigil-Abjuration">
+                    <br>Abjuration
+                  </td>
+                  <td>1st</td>
+                  <td><a href="https://www.dndbeyond.com/spells/shield-of-faith" target="_blank">Shield of Faith</td>
+                  <td>1 Bonus Action</td>
+                  <td>10 Minutes</td>
+                  <td>60 ft</td>
+                  <td>None</td>
+                  <td>Buff(...)</td>
+                  <td>
+                    <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, 
+                    <a href="https://www.dndbeyond.com/classes/cleric" target="_blank">Cleric</a>, 
+                    <a href="https://www.dndbeyond.com/classes/paladin" target="_blank">Paladin</a>
+                  </td>
+                  <td>College of Lore, 
+                    <a href="https://www.dndbeyond.com/classes/cleric#WarDomain" target="_blank">War Domain</a>
+                  </td>
+                  <td>???</td>
+                  <td>None</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <td><img class="FilterTableImage"
+                    src="/_SiteResources/Images/Sigil-Abjuration.png" 
+                    alt="Sigil-Abjuration">
+                    <br>Abjuration
+                  </td>
+                  <td>1st</td>
+                  <td><a href="https://www.dndbeyond.com/spells/snare" target="_blank">Snare</td>
+                  <td>1 Minute</td>
+                  <td>8 Hours</td>
+                  <td>Touch</td>
+                  <td>DEX Save</td>
+                  <td>Restrained</td>
+                  <td>
+                    <a href="https://www.dndbeyond.com/classes/bard#ClassFeatures" target="_blank">(Magical Secrets)</a>, 
+                    <a href="https://www.dndbeyond.com/classes/druid" target="_blank">Druid</a>, 
+                    <a href="https://www.dndbeyond.com/classes/ranger" target="_blank">Ranger</a>, 
+                    <a href="https://www.dndbeyond.com/classes/wizard" target="_blank">Wizard</a>, 
+                    <a href="https://www.dndbeyond.com/classes/artificer" target="_blank">Artificer</a>
+                  </td>
+                  <td>
+                    College of Lore, 
+                  </td>
+                  <td>???</td>
+                  <td>None</td>
+                  <td>None</td>
+                </tr>
+              </table>
+
+            </section>
+            
+          </div>
+        </div>
+
+      </div>
+
+      <footer class="Import_PageFooter"></footer>
+    </div>
+  </body>
+</html>
+
+<script type="text/javascript">
+  $(function () {
+
+    $(".Import_PageHeader").load("/_SiteResources/Pages/Import_PageHeader.html");
+    $(".Import_ContentLeft").load("/_SiteResources/Pages/Import_ContentLeft.html");
+    $(".Import_PageFooter").load("/_SiteResources/Pages/Import_PageFooter.html");
+
+});
+</script>
+
+
+
+
+
+
+
+
+<script>
+  
+  function FilterTableFunction() {
+    // Declare variables
+    var table, tr, i; 
+    var inputIncludeZero, inputIncludeOne, inputIncludeTwo, inputIncludeThree, inputIncludeFour, inputIncludeFive, inputIncludeSix, inputIncludeSeven, inputIncludeEight, inputIncludeNine, inputIncludeTen, inputIncludeEleven, inputIncludeTwelve;  
+    var inputExcludeZero, inputExcludeOne, inputExcludeTwo, inputExcludeThree, inputExcludeFour, inputExcludeFive, inputExcludeSix, inputExcludeSeven, inputExcludeEight, inputExcludeNine, inputExcludeTen, inputExcludeEleven, inputExcludeTwelve;  
+    var filterIncludeZero, filterIncludeOne, filterIncludeTwo, filterIncludeThree, filterIncludeFour, filterIncludeFive, filterIncludeSix, filterIncludeSeven, filterIncludeEight, filterIncludeNine, filterIncludeTen, filterIncludeEleven, filterIncludeTwelve;  
+    var filterExcludeZero, filterExcludeOne, filterExcludeTwo, filterExcludeThree, filterExcludeFour, filterExcludeFive, filterExcludeSix, filterExcludeSeven, filterExcludeEight, filterExcludeNine, filterExcludeTen, filterExcludeEleven, filterExcludeTwelve;  
+    var tdZero, tdOne, tdTwo, tdThree, tdFour, tdFive, tdSix, tdSeven, tdEight, tdNine, tdTen, tdEleven, tdTwelve;  
+    var txtValueZero, txtValueOne, txtValueTwo, txtValueThree, txtValueFour, txtValueFive, txtValueSix, txtValueSeven, txtValueEight, txtValueNine, txtValueTen, txtValueEleven, txtValueTwelve;
+
+    inputIncludeZero = document.getElementById("FilterInputInclude0");
+    inputIncludeOne = document.getElementById("FilterInputInclude1");
+    inputIncludeTwo = document.getElementById("FilterInputInclude2");
+    inputIncludeThree = document.getElementById("FilterInputInclude3");
+    inputIncludeFour = document.getElementById("FilterInputInclude4");
+    inputIncludeFive = document.getElementById("FilterInputInclude5");
+    inputIncludeSix = document.getElementById("FilterInputInclude6");
+    inputIncludeSeven = document.getElementById("FilterInputInclude7");
+    inputIncludeEight = document.getElementById("FilterInputInclude8");
+    inputIncludeNine = document.getElementById("FilterInputInclude9");
+    inputIncludeTen = document.getElementById("FilterInputInclude10");
+    inputIncludeEleven = document.getElementById("FilterInputInclude11");
+    inputIncludeTwelve = document.getElementById("FilterInputInclude12");
+
+    inputExcludeZero = document.getElementById("FilterInputExclude0");
+    inputExcludeOne = document.getElementById("FilterInputExclude1");
+    inputExcludeTwo = document.getElementById("FilterInputExclude2");
+    inputExcludeThree = document.getElementById("FilterInputExclude3");
+    inputExcludeFour = document.getElementById("FilterInputExclude4");
+    inputExcludeFive = document.getElementById("FilterInputExclude5");
+    inputExcludeSix = document.getElementById("FilterInputExclude6");
+    inputExcludeSeven = document.getElementById("FilterInputExclude7");
+    inputExcludeEight = document.getElementById("FilterInputExclude8");
+    inputExcludeNine = document.getElementById("FilterInputExclude9");
+    inputExcludeTen = document.getElementById("FilterInputExclude10");
+    inputExcludeEleven = document.getElementById("FilterInputExclude11");
+    inputExcludeTwelve = document.getElementById("FilterInputExclude12");
+
+
+    filterIncludeZero = inputIncludeZero.value.toUpperCase();
+    filterIncludeOne = inputIncludeOne.value.toUpperCase();
+    filterIncludeTwo = inputIncludeTwo.value.toUpperCase();
+    filterIncludeThree = inputIncludeThree.value.toUpperCase();
+    filterIncludeFour = inputIncludeFour.value.toUpperCase();
+    filterIncludeFive = inputIncludeFive.value.toUpperCase();
+    filterIncludeSix = inputIncludeSix.value.toUpperCase();
+    filterIncludeSeven = inputIncludeSeven.value.toUpperCase();
+    filterIncludeEight = inputIncludeEight.value.toUpperCase();
+    filterIncludeNine = inputIncludeNine.value.toUpperCase();
+    filterIncludeTen = inputIncludeTen.value.toUpperCase();
+    filterIncludeEleven = inputIncludeEleven.value.toUpperCase();
+    filterIncludeTwelve = inputIncludeTwelve.value.toUpperCase();
+
+    filterExcludeZero = inputExcludeZero.value.toUpperCase();
+    filterExcludeOne = inputExcludeOne.value.toUpperCase();
+    filterExcludeTwo = inputExcludeTwo.value.toUpperCase();
+    filterExcludeThree = inputExcludeThree.value.toUpperCase();
+    filterExcludeFour = inputExcludeFour.value.toUpperCase();
+    filterExcludeFive = inputExcludeFive.value.toUpperCase();
+    filterExcludeSix = inputExcludeSix.value.toUpperCase();
+    filterExcludeSeven = inputExcludeSeven.value.toUpperCase();
+    filterExcludeEight = inputExcludeEight.value.toUpperCase();
+    filterExcludeNine = inputExcludeNine.value.toUpperCase();
+    filterExcludeTen = inputExcludeTen.value.toUpperCase();
+    filterExcludeEleven = inputExcludeEleven.value.toUpperCase();
+    filterExcludeTwelve = inputExcludeTwelve.value.toUpperCase();
+
+    table = document.getElementById("FilterTable");
+    tr = table.getElementsByTagName("tr");
+  
+    // Loop through all table rows, and hide those who don't match the search query
+    for (i = 0; i < tr.length; i++) {
+      tdZero = tr[i].getElementsByTagName("td")[0];
+      tdOne = tr[i].getElementsByTagName("td")[1];
+      tdTwo = tr[i].getElementsByTagName("td")[2];
+      tdThree = tr[i].getElementsByTagName("td")[3];
+      tdFour = tr[i].getElementsByTagName("td")[4];
+      tdFive = tr[i].getElementsByTagName("td")[5];
+      tdSix = tr[i].getElementsByTagName("td")[6];
+      tdSeven = tr[i].getElementsByTagName("td")[7];
+      tdEight = tr[i].getElementsByTagName("td")[8];
+      tdNine = tr[i].getElementsByTagName("td")[9];
+      tdTen = tr[i].getElementsByTagName("td")[10];
+      tdEleven = tr[i].getElementsByTagName("td")[11];
+      tdTwelve = tr[i].getElementsByTagName("td")[12];
+
+      if (tdZero) {
+        txtValueZero = tdZero.textContent || tdZero.innerText;
+        txtValueOne = tdOne.textContent || tdOne.innerText;
+        txtValueTwo = tdTwo.textContent || tdTwo.innerText;
+        txtValueThree = tdThree.textContent || tdThree.innerText;
+        txtValueFour = tdFour.textContent || tdFour.innerText;
+        txtValueFive = tdFive.textContent || tdFive.innerText;
+        txtValueSix = tdSix.textContent || tdSix.innerText;
+        txtValueSeven = tdSeven.textContent || tdSeven.innerText;
+        txtValueEight = tdEight.textContent || tdEight.innerText;
+        txtValueNine = tdNine.textContent || tdNine.innerText;
+        txtValueTen = tdTen.textContent || tdTen.innerText;
+        txtValueEleven = tdEleven.textContent || tdEleven.innerText;
+        txtValueTwelve = tdTwelve.textContent || tdTwelve.innerText;
+        
+        if (txtValueZero.toUpperCase().indexOf(filterIncludeZero) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueOne.toUpperCase().indexOf(filterIncludeOne) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueTwo.toUpperCase().indexOf(filterIncludeTwo) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueThree.toUpperCase().indexOf(filterIncludeThree) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueFour.toUpperCase().indexOf(filterIncludeFour) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueFive.toUpperCase().indexOf(filterIncludeFive) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueSix.toUpperCase().indexOf(filterIncludeSix) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueSeven.toUpperCase().indexOf(filterIncludeSeven) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueEight.toUpperCase().indexOf(filterIncludeEight) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueNine.toUpperCase().indexOf(filterIncludeNine) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueTen.toUpperCase().indexOf(filterIncludeTen) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueEleven.toUpperCase().indexOf(filterIncludeEleven) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueTwelve.toUpperCase().indexOf(filterIncludeTwelve) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueZero.toUpperCase().indexOf(filterExcludeZero) > -1 && filterExcludeZero != '') {
+          tr[i].style.display = "none";
+        } else if (txtValueOne.toUpperCase().indexOf(filterExcludeOne) > -1 && filterExcludeOne != '') {
+          tr[i].style.display = "none";
+        } else if (txtValueTwo.toUpperCase().indexOf(filterExcludeTwo) > -1 && filterExcludeTwo != '') {
+          tr[i].style.display = "none";
+        } else if (txtValueThree.toUpperCase().indexOf(filterExcludeThree) > -1 && filterExcludeThree != '') {
+          tr[i].style.display = "none";
+        } else if (txtValueFour.toUpperCase().indexOf(filterExcludeFour) > -1 && filterExcludeFour != '') {
+          tr[i].style.display = "none";
+        } else if (txtValueFive.toUpperCase().indexOf(filterExcludeFive) > -1 && filterExcludeFive != '') {
+          tr[i].style.display = "none";
+        } else if (txtValueSix.toUpperCase().indexOf(filterExcludeSix) > -1 && filterExcludeSix != '') {
+          tr[i].style.display = "none";
+        } else if (txtValueSeven.toUpperCase().indexOf(filterExcludeSeven) > -1 && filterExcludeSeven != '') {
+          tr[i].style.display = "none";
+        } else if (txtValueEight.toUpperCase().indexOf(filterExcludeEight) > -1 && filterExcludeEight != '') {
+          tr[i].style.display = "none";
+        } else if (txtValueNine.toUpperCase().indexOf(filterExcludeNine) > -1 && filterExcludeNine != '') {
+          tr[i].style.display = "none";
+        } else if (txtValueTen.toUpperCase().indexOf(filterExcludeTen) > -1 && filterExcludeTen != '') {
+          tr[i].style.display = "none";
+        } else if (txtValueEleven.toUpperCase().indexOf(filterExcludeEleven) > -1 && filterExcludeEleven != '') {
+          tr[i].style.display = "none";
+        } else if (txtValueTwelve.toUpperCase().indexOf(filterExcludeTwelve) > -1 && filterExcludeTwelve != '') {
+          tr[i].style.display = "none";
+        } else {
+          tr[i].style.display = "";
+        }
+      }
+    }
+  }
+
+</script>
+
+
+
+
+
+
+
+
+<script>
+  function sortTable(n) {
+    var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+    table = document.getElementById("FilterTable");
+    switching = true;
+    // Set the sorting direction to ascending:
+    dir = "asc";
+    /* Make a loop that will continue until
+    no switching has been done: */
+    while (switching) {
+      // Start by saying: no switching is done:
+      switching = false;
+      rows = table.rows;
+      /* Loop through all table rows (except the
+      first, which contains table headers): */
+      for (i = 1; i < (rows.length - 1); i++) {
+        // Start by saying there should be no switching:
+        shouldSwitch = false;
+        /* Get the two elements you want to compare,
+        one from current row and one from the next: */
+        x = rows[i].getElementsByTagName("TD")[n];
+        y = rows[i + 1].getElementsByTagName("TD")[n];
+        /* Check if the two rows should switch place,
+        based on the direction, asc or desc: */
+        if (dir == "asc") {
+          if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+            // If so, mark as a switch and break the loop:
+            shouldSwitch = true;
+            break;
+          }
+        } else if (dir == "desc") {
+          if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+            // If so, mark as a switch and break the loop:
+            shouldSwitch = true;
+            break;
+          }
+        }
+      }
+      if (shouldSwitch) {
+        /* If a switch has been marked, make the switch
+        and mark that a switch has been done: */
+        rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+        switching = true;
+        // Each time a switch is done, increase this count by 1:
+        switchcount ++;
+      } else {
+        /* If no switching has been done AND the direction is "asc",
+        set the direction to "desc" and run the while loop again. */
+        if (switchcount == 0 && dir == "asc") {
+          dir = "desc";
+          switching = true;
+        }
+      }
+    }
+  }
+  </script>
