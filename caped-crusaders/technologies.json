@@ -1070,7 +1070,7 @@
             
             "damage_effect_str" : "Stunned",
             
-            "description_str" : "When you are about to take fall damage, you can cast this Technology to reduce your impact velocity and avoid taking that instance of fall damage.",
+            "description_str" : "Choose a point within 60 of you.  A 10 foot cube centered on that point becomes electrified, stunning any creature who fails a Con save in the area upon casting or who enters the area while the effect persists.",
             "overchargeable_bool" : false,
             "overchargeable_str" : "NA",
 
