@@ -14,7 +14,7 @@ Site Content
 -------
 The website is broken down into four main categories, which are Caped Crusaders, Nraanon Wiki, Tech Guides, and Character Builds.  
 
-Caped Crusaders is yet to be developed, but the plan is to create a list with comprehensive filters for 5th Edition content.  Rather than pirating the content itself, only the title  and attributes for filtering purposes will be present, with the game content being replaced with a link to the relevant page on D&D Beyond's website.  The last thing I want to do is undermine D&DB or underuct their profits as I am a massive Wizards of the Coast fan.  
+Caped Crusaders is my personal variant 5e system that includes character options reflecting Magic, Technology/Techniques, and Superpowers.  The goal is to create a system that is comprehensive and more accommodating of science fiction elements.  
 
 The Nraanon Wiki is a series of entries with descriptions that detail my homebrew world, which is heavily inspired by the standard Forgotten Realms setting.  Many aspects will be recognizable to avid fans of D&D, but there are a great many tweaks and utterly unique elements that distinguish it as its own.  The purpose of this wiki is to serve as an organized reference for lore and information, both for myself as a Dungeon Master and for the Players at my table.
 
