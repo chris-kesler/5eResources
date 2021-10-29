@@ -33,9 +33,10 @@
             
             "damage_effect_str" : "Buff",
             
-            "description_str" : "You gain an additional flying speed of 360 feet and your movement does not provoke opportunity attacks until the end of this turn.",
+            "flavor_str" : "You activate specialized thrusters that surge and provide you with a startling surge of flight speed.",
+            "mechanics_str" : "You gain an additional flying speed of 360 feet and your movement does not provoke opportunity attacks until the end of this turn.",
             "overchargeable_bool" : true,
-            "overchargeable_str" : "NA",
+            "overcharge_str" : "Not Applicable",
 
             "class_str" : "Visionary",
             "subclass_str" : "",
@@ -46,41 +47,134 @@
         },
 
         {
-            "name_str" : "Analyze Weaknesses",
-            "page_url" : "analyze-weaknesses.html",
+            "name_str" : "Afterburner Surge",
+            "page_url" : "afterburner-surge.html",
 
-            "level_int" : 0,
-            "level_str" : "0th (Cantrip)",
+            "level_int" : 4,
+            "level_str" : "4th",
 
             "casting_time_int" : 3,
             "casting_time_str" : "1 Action",
             "casting_time_asterisk_str" : "",
             
-            "range_area_int" : 60,
-            "range_area_str" : "60 feet",
+            "range_area_int" : 0,
+            "range_area_str" : "Self",
             
-            "components_verbal_bool" : false,
+            "components_verbal_bool" : true,
             "components_somatic_bool" : true,
             "components_material_bool" : true,
             "components_cost_int" : 0,
             "components_cost_str" : "NA",
-            "components_vsm_str" : "S, M",
+            "components_vsm_str" : "V, S, M",
             "components_description_str" : "",
             
-            "duration_int" : 6,
-            "duration_str" : "1 Round",
+            "duration_int" : 1,
+            "duration_str" : "1 Turn",
             
-            "school_str" : "Analytics",
-            "school_img" : "/_SiteResources/Images/noun_database_4341155.png",
+            "school_str" : "Propulsion",
+            "school_img" : "/_SiteResources/Images/noun_jetpack_3000382.png",
+            
+            "attack_save_int" : 2,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "You activate specialized thrusters that surge and provide you with a startling surge of flight speed.",
+            "mechanics_str" : "You gain an additional flying speed of 360 feet and your movement does not provoke opportunity attacks until the end of this turn.",
+            "overchargeable_bool" : true,
+            "overcharge_str" : "Not Applicable",
+
+            "class_str" : "Visionary",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+
+        {
+            "name_str" : "Altitude Rebreather",
+            "page_url" : "altitude-rebreather.html",
+
+            "level_int" : 2,
+            "level_str" : "2nd",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 0,
+            "range_area_str" : "Self",
+            
+            "components_verbal_bool" : true,
+            "components_somatic_bool" : true,
+            "components_material_bool" : true,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "",
+            
+            "duration_int" : 3600,
+            "duration_str" : "1 Hour",
+            
+            "school_str" : "Life Support",
+            "school_img" : "/_SiteResources/Images/noun_medical_2980272.png",
             
             "attack_save_int" : 0,
             "attack_save_str" : "---",
             
-            "damage_effect_str" : "Debuff",
+            "damage_effect_str" : "Buff",
             
-            "description_str" : "You analyze a target of your choice within 60 feet. The target takes a penalty equal to your Proficiency bonus on the next saving throw they make before the end of your next turn. After making a saving throw, regardless of whether they succeed or fail, this effect ends.",
+            "flavor_str" : "By combining your filtered exhalations with the existing air, you are able to maintain optimal oxygen intake levels for both your propulsion systems and yourself.  ",
+            "mechanics_str" : "You can breathe normally in the Stratosphere for one hour.  ",
             "overchargeable_bool" : false,
-            "overchargeable_str" : "NA",
+            "overcharge_str" : "Not Applicable",
+
+            "class_str" : "Visionary",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        
+        {
+            "name_str" : "Automated Defibrilator",
+            "page_url" : "automated-defibrilator.html",
+
+            "level_int" : 4,
+            "level_str" : "4th",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 0,
+            "range_area_str" : "Self",
+            
+            "components_verbal_bool" : true,
+            "components_somatic_bool" : true,
+            "components_material_bool" : true,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "",
+            
+            "duration_int" : 28800,
+            "duration_str" : "8 Hour",
+            
+            "school_str" : "Life Support",
+            "school_img" : "/_SiteResources/Images/noun_medical_2980272.png",
+            
+            "attack_save_int" : 0,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "On board systems monitor your heart rate and can automatically provide necessary emergency aid.  ",
+            "mechanics_str" : "The next time you take a second point of exhaustion due to damage, or are killed outright, you instead drop to one hit point and have no exhaustion.  If you had exhaustion upon triggering this effect, it returns after one hour.  ",
+            "overchargeable_bool" : false,
+            "overcharge_str" : "Not Applicable",
 
             "class_str" : "Visionary",
             "subclass_str" : "",
@@ -123,10 +217,11 @@
             
             "damage_effect_str" : "Varies",
             
-            "description_str" : "Make a ranged Tech attack against one creature within 120 feet of you. On a hit, the target takes 3d10 damage of a type of your choosing when you cast this Technology.",
+            "flavor_str" : "By adjusting the wavelength at which photons are accelerated in your integrated laser cannon, you are able to tune your damage type on the fly to suit whatever scenario might present itself. ",
+            "mechanics_str" : "Make a ranged Tech attack against one creature within 120 feet of you. On a hit, the target takes 3d10 damage of a type of your choosing when you cast this Technology.",
             
             "overchargeable_bool" : true,
-            "overchargeable_str" : "NA",
+            "overcharge_str" : "Not Applicable",
 
             "class_str" : "Visionary",
             "subclass_str" : "",
@@ -161,7 +256,7 @@
             "duration_int" : 0,
             "duration_str" : "Instantaneous",
             
-            "school_str" : "Servomechanics",
+            "school_str" : "Hydraulics",
             "school_img" : "/_SiteResources/Images/noun_Piston_3924710.png",
             
             "attack_save_int" : 1,
@@ -169,10 +264,11 @@
             
             "damage_effect_str" : "Concussive",
             
-            "description_str" : "Make a melee attack against one creature within 5 feet of you. On a hit, that creatures suffers Concussive damage equal to a number of d6s equal to your proficiency bonus -1 and is pushed 10 feet away from you.",
+            "flavor_str" : "By activating rapid hydraulics, you are to stack the momentum of your blow with an explosive force that knocks enemies backwards.  ",
+            "mechanics_str" : "Make a melee attack against one creature within 5 feet of you. On a hit, that creatures suffers Concussive damage equal to a number of d6s equal to your proficiency bonus -1 and is pushed 10 feet away from you.",
             
             "overchargeable_bool" : false,
-            "overchargeable_str" : "NA",
+            "overcharge_str" : "Not Applicable",
 
             "class_str" : "Visionary",
             "subclass_str" : "",
@@ -215,10 +311,11 @@
             
             "damage_effect_str" : "Energy",
             
-            "description_str" : "Make a ranged Tech attack against a target of your choice within 120 feet. On a hit, the target suffers Energy damage equal to a number of d10s equal to your proficiency bonus -1.",
+            "flavor_str" : "This built in laser is efficient and easy to thermoregulate.  A reliable staple in the Visionary's arsenal.  ",
+            "mechanics_str" : "Make a ranged Tech attack against a target of your choice within 120 feet. On a hit, the target suffers Energy damage equal to a number of d10s equal to your proficiency bonus -1.",
             
             "overchargeable_bool" : false,
-            "overchargeable_str" : "NA",
+            "overcharge_str" : "Not Applicable",
 
             "class_str" : "Visionary",
             "subclass_str" : "",
@@ -232,8 +329,8 @@
             "name_str" : "HALO Infiltration",
             "page_url" : "halo-infiltration.html",
 
-            "level_int" : 6,
-            "level_str" : "6th",
+            "level_int" : 5,
+            "level_str" : "5th",
 
             "casting_time_int" : 4,
             "casting_time_str" : "1 Minute",
@@ -261,9 +358,10 @@
             
             "damage_effect_str" : "Buff",
             
-            "description_str" : "You and up to ten willing targets within range gain an additional flying speed of 360 feet for the duration and stage 2 atmospheric resistance.  (You may treat Space as the Stratosphere, and the Stratosphere as the Troposphere.)",
+            "flavor_str" : "You deploy components of your own armor that change shape and attach to your allies.  These components form helmets and backpacks with limited life suport and flight capabilities.  ",
+            "mechanics_str" : "You and up to ten willing targets within range gain an additional flying speed of 360 feet for the duration and stage 2 atmospheric resistance.  (You may treat Space as the Stratosphere, and the Stratosphere as the Troposphere.)",
             "overchargeable_bool" : false,
-            "overchargeable_str" : "NA",
+            "overcharge_str" : "Not Applicable",
 
             "class_str" : "Visionary",
             "subclass_str" : "",
@@ -306,10 +404,11 @@
             
             "damage_effect_str" : "Deception",
             
-            "description_str" : "You create a hologram within a ten foot cube whose center is no farther than 30 feet away from you.  Anyone perceiving the hologram whose passive Investigation is less than your Techcasting DC belives it is real.  A creature who inspects the hologram closely discerns its true nature upon a successful Investigation check against your Techcasting DC.  The hologram is intangible and allows physical objects to freely pass through it.",
+            "flavor_str" : "Your built in projectors cross beams of incompatible light, creating three dimensional images at your direction.  ",
+            "mechanics_str" : "You create a hologram within a ten foot cube whose center is no farther than 30 feet away from you.  Anyone perceiving the hologram whose passive Investigation is less than your Techcasting DC belives it is real.  A creature who inspects the hologram closely discerns its true nature upon a successful Investigation check against your Techcasting DC.  The hologram is intangible and allows physical objects to freely pass through it.",
             
             "overchargeable_bool" : true,
-            "overchargeable_str" : "NA",
+            "overcharge_str" : "Not Applicable",
 
             "class_str" : "Visionary",
             "subclass_str" : "",
@@ -352,9 +451,56 @@
             
             "damage_effect_str" : "Buff",
             
-            "description_str" : "Two darts strike any two targets of your choice not behind full cover within 100 feet of you.  They each deal 1d6+1 Piercing damage.  You gain an additional two darts for every level you overcharge this Technology.",
+            "flavor_str" : "On board targeting systems direct micromissiles to deploy and self navigate to the target.  They are too small to hold explosives themselves, but the high velocity and piercing shape are sufficient enough to do reliable damage.  ",
+            "mechanics_str" : "Two darts strike any two targets of your choice not behind full cover within 100 feet of you.  They each deal 1d6+1 Piercing damage.  ",
             "overchargeable_bool" : true,
-            "overchargeable_str" : "NA",
+            "overcharge_str" : "You gain an additional two darts for every level you overcharge this Technology.  ",
+
+            "class_str" : "Visionary",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+
+        {
+            "name_str" : "Hypersonic Travel",
+            "page_url" : "hypersonic-travel.html",
+
+            "level_int" : 6,
+            "level_str" : "6th",
+
+            "casting_time_int" : 60,
+            "casting_time_str" : "1 Minute",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 0,
+            "range_area_str" : "Self",
+            
+            "components_verbal_bool" : true,
+            "components_somatic_bool" : true,
+            "components_material_bool" : true,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "",
+            
+            "duration_int" : 0,
+            "duration_str" : "Instantaneous",
+            
+            "school_str" : "Propulsion",
+            "school_img" : "/_SiteResources/Images/noun_jetpack_3000382.png",
+            
+            "attack_save_int" : 2,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "With the aid of your revolutionary thruster systems, you can access hypersonic systems to escape the atmosphere and re-enter at a point of your choosing.  ",
+            "mechanics_str" : "You jump to a point accessible by sky within the Planetary System instantly.  You must have open access to the sky to cast this Technology.  ",
+            "overchargeable_bool" : true,
+            "overcharge_str" : "Not Applicable",
 
             "class_str" : "Visionary",
             "subclass_str" : "",
@@ -388,7 +534,7 @@
             "duration_int" : 0,
             "duration_str" : "Instantaneous",
             
-            "school_str" : "Servomechanics",
+            "school_str" : "Hydraulics",
             "school_img" : "/_SiteResources/Images/noun_Piston_3924710.png",
             
             "attack_save_int" : 0,
@@ -396,9 +542,10 @@
             
             "damage_effect_str" : "Buff",
             
-            "description_str" : "You gain temporary Hit Points equal to your Intelligence modifier plus your Proficiency bonus.",
+            "flavor_str" : "Adaptive micro-hydraulics permeate your armor, soaking up the impact of inertia.  ",
+            "mechanics_str" : "You gain temporary Hit Points equal to your Intelligence modifier plus your Proficiency bonus.",
             "overchargeable_bool" : true,
-            "overchargeable_str" : "NA",
+            "overcharge_str" : "Not Applicable",
 
             "class_str" : "Visionary",
             "subclass_str" : "",
@@ -441,9 +588,10 @@
             
             "damage_effect_str" : "Buff",
             
-            "description_str" : "A target of your choice gains an additional flying speed of 60 feet for the duration.",
+            "flavor_str" : "Modular greaves deploy, either on yourself or externally to an ally, to provide additional propulsion.  ",
+            "mechanics_str" : "A target of your choice gains an additional flying speed of 60 feet for the duration.",
             "overchargeable_bool" : false,
-            "overchargeable_str" : "NA",
+            "overcharge_str" : "Not Applicable",
 
             "class_str" : "Visionary",
             "subclass_str" : "",
@@ -486,10 +634,11 @@
             
             "damage_effect_str" : "Buff",
             
-            "description_str" : "Choose a target within 15 feet of you. The next skill check the target makes before the start of your next turn is made with advantage, and gains a bonus to the result equal to your Intelligence Modifier.",
+            "flavor_str" : "Utilizing your built in projectors, you generate an augmented reality tutorial that provides reference data and enhanced images to aid in the performance of any task.  ",
+            "mechanics_str" : "Choose a target within 15 feet of you. The next skill check the target makes before the start of your next turn is made with advantage, and gains a bonus to the result equal to your Intelligence Modifier.",
 
             "overchargeable_bool" : false,
-            "overchargeable_str" : "NA",
+            "overcharge_str" : "Not Applicable",
 
             "class_str" : "Visionary",
             "subclass_str" : "",
@@ -506,8 +655,8 @@
             "level_int" : 8,
             "level_str" : "8th",
 
-            "casting_time_int" : 3,
-            "casting_time_str" : "1 Hour",
+            "casting_time_int" : 86400,
+            "casting_time_str" : "1 Day",
             "casting_time_asterisk_str" : "",
             
             "range_area_int" : 0,
@@ -521,8 +670,8 @@
             "components_vsm_str" : "V, S, M",
             "components_description_str" : "",
             
-            "duration_int" : 1,
-            "duration_str" : "1 Month",
+            "duration_int" : 0,
+            "duration_str" : "Instantaneous",
             
             "school_str" : "Propulsion",
             "school_img" : "/_SiteResources/Images/noun_jetpack_3000382.png",
@@ -532,9 +681,10 @@
             
             "damage_effect_str" : "Buff",
             
-            "description_str" : "You soar into orbit above the planet you are currently on given that you have clear access to reach such altitude.  You have enough life support to sustain you for the duration.  At any time throughout the duration, you can choose another planet within the solar system you are in and transition into orbit above that planet over the course of twenty days.  At any time throughout the duration, you can choose a point on the planet below and descend from orbit to reach that location over the course of ten minutes.  Once you do so, this effect ends.  If the full duration is reached, you descend to the planet at a random location of the GM's choosing.",
+            "flavor_str" : "You have unlocked the secrets of sub-light speed space travel.  ",
+            "mechanics_str" : "You jump between Planetary Systems within the Star System instantly.  You must be in space to cast this Technology.  ",
             "overchargeable_bool" : true,
-            "overchargeable_str" : "NA",
+            "overcharge_str" : "Not Applicable",
 
             "class_str" : "Visionary",
             "subclass_str" : "",
@@ -552,7 +702,7 @@
             "level_str" : "9th",
 
             "casting_time_int" : 3,
-            "casting_time_str" : "1 Action",
+            "casting_time_str" : "1 Week",
             "casting_time_asterisk_str" : "",
             
             "range_area_int" : 0,
@@ -566,8 +716,8 @@
             "components_vsm_str" : "V, S, M",
             "components_description_str" : "",
             
-            "duration_int" : 1,
-            "duration_str" : "1 Year",
+            "duration_int" : 0,
+            "duration_str" : "Instantaneous",
             
             "school_str" : "Propulsion",
             "school_img" : "/_SiteResources/Images/noun_jetpack_3000382.png",
@@ -577,9 +727,10 @@
             
             "damage_effect_str" : "Buff",
             
-            "description_str" : "You soar into orbit above the planet you are currently on given that you have clear access to reach such altitude.  You have enough life support to sustain you for the duration.  At any time throughout the duration, you can choose another planet within a solar system within the galaxy you are in and transition into orbit above that planet over the course of eight months.  At any time throughout the duration, you can choose a point on the planet below and descend from orbit to reach that location over the course of ten minutes.  Once you do so, this effect ends.  If the full duration is reached, you descend to the planet at a random location of the GM's choosing.",
+            "flavor_str" : "You have unlocked the secret of light speed space travel.  ",
+            "mechanics_str" : "You jump between Star Systems within the Galactic System instantly.  You must be in space to cast this Technology.  ",
             "overchargeable_bool" : true,
-            "overchargeable_str" : "NA",
+            "overcharge_str" : "Not Applicable",
 
             "class_str" : "Visionary",
             "subclass_str" : "",
@@ -622,9 +773,10 @@
             
             "damage_effect_str" : "Buff",
             
-            "description_str" : "You gain a long jump distance equal to your Intelligence score multiplied by three, and a vertical jump distance equal to your Intelligence score until the end of this turn.  You can only jump as far as your movement will allow.",
+            "flavor_str" : "Your propulsion systems are powerful, but not yet efficient enough to allow for sustained flight.  They are able to contribute to your existing momentum however.  ",
+            "mechanics_str" : "You gain a long jump distance equal to your Intelligence score multiplied by three, and a vertical jump distance equal to your Intelligence score until the end of this turn.  You can only jump as far as your movement will allow.",
             "overchargeable_bool" : false,
-            "overchargeable_str" : "NA",
+            "overcharge_str" : "Not Applicable",
 
             "class_str" : "Visionary",
             "subclass_str" : "",
@@ -658,7 +810,7 @@
             "duration_int" : 0,
             "duration_str" : "Instantaneous",
             
-            "school_str" : "Servomechanics",
+            "school_str" : "Hydraulics",
             "school_img" : "/_SiteResources/Images/noun_Piston_3924710.png",
             
             "attack_save_int" : 1,
@@ -666,9 +818,10 @@
             
             "damage_effect_str" : "Bludgeoning",
             
-            "description_str" : "Make a melee Tech attack against one creature of your choice within 5 feet of you.  On a hit, the target takes 3d10 Bludgeoning damage and the next melee attack made against the target before the end of your next turn has advantage.",
+            "flavor_str" : "Multiple hydraulic pistons drive your fist forward with shattering force.  This impact leaves the target momentarily dazed.  ",
+            "mechanics_str" : "Make a melee Tech attack against one creature of your choice within 5 feet of you.  On a hit, the target takes 3d10 Bludgeoning damage and next melee attacks made against the target before the end of your next turn have advantage.",
             "overchargeable_bool" : true,
-            "overchargeable_str" : "NA",
+            "overcharge_str" : "Not Applicable",
 
             "class_str" : "Visionary",
             "subclass_str" : "",
@@ -702,7 +855,7 @@
             "duration_int" : 3600,
             "duration_str" : "1 Hour",
             
-            "school_str" : "Servomechanics",
+            "school_str" : "Hydraulics",
             "school_img" : "/_SiteResources/Images/noun_Piston_3924710.png",
             
             "attack_save_int" : 4,
@@ -710,9 +863,10 @@
             
             "damage_effect_str" : "Buff/Debuff",
             
-            "description_str" : "Choose a creature within 120 feet.  If the creature is willing, you deploy a mechanical suit of armor that augments their abilities.  Their statistics are replaced by the Mechbuster statistics.  When the Mechbuster is reduced to zero hit points, it is destroyed, and the creature takes any remaining damage.  If the creature is unwilling, they must make a Dexterity saving throw or be trapped inside the Mechbuster, which can do nothing other than move at your direction and release the creature inside, after which, the Mechbuster is deactivated and cannot be deployed unless you cast this Technology again.  The trapped creature is rendered restrained and incapacitated until the Mechbuster frees them or the Mechbuster is destroyed.  Once per minute, the creature inside can attempt to break free by making a Strength check against your Techcasting DC.  On a success, the Mechbuster is destroyed.",
+            "flavor_str" : "You have created a set of massive and powerful armor to fight larger threats.  This armor is designed to go toe to toe with some of the heaviest hitters known, and can be activated for yours or an ally's use.  ",
+            "mechanics_str" : "Choose a creature within 120 feet.  If the creature is willing, you deploy a mechanical suit of armor that augments their abilities.  Their statistics are replaced by the Mechbuster statistics.  When the Mechbuster is reduced to zero hit points, it is destroyed, and the creature takes any remaining damage.  If the creature is unwilling, they must make a Dexterity saving throw or be trapped inside the Mechbuster, which can do nothing other than move at your direction and release the creature inside, after which, the Mechbuster is deactivated and cannot be deployed unless you cast this Technology again.  The trapped creature is rendered restrained and incapacitated until the Mechbuster frees them or the Mechbuster is destroyed.  Once per minute, the creature inside can attempt to break free by making a Strength check against your Techcasting DC.  On a success, the Mechbuster is destroyed.",
             "overchargeable_bool" : true,
-            "overchargeable_str" : "NA",
+            "overcharge_str" : "Not Applicable",
 
             "class_str" : "Visionary",
             "subclass_str" : "",
@@ -755,9 +909,10 @@
             
             "damage_effect_str" : "Varies",
             
-            "description_str" : "Choose a damage type when you learn this Technology.  Make a ranged Tech attack against a target of your choice within 90 feet.  On a hit, the target suffers damage of your chosen type equal to a number of d8s equal to your proficiency bonus -1.  You can change your chosen damage type as part of a long rest.",
+            "flavor_str" : "A built in laser with an adjustable wavelength, this is most useful when you know what kind of threats you are likely to face in the immediate future.  ",
+            "mechanics_str" : "Choose a damage type when you learn this Technology.  Make a ranged Tech attack against a target of your choice within 90 feet.  On a hit, the target suffers damage of your chosen type equal to a number of d8s equal to your proficiency bonus -1.  You can change your chosen damage type as part of a long rest.",
             "overchargeable_bool" : true,
-            "overchargeable_str" : "NA",
+            "overcharge_str" : "Not Applicable",
 
             "class_str" : "Visionary",
             "subclass_str" : "",
@@ -766,13 +921,13 @@
             "backgrounds_str" : "",
             "races_str" : ""
         },
-        
-        {
-            "name_str" : "Orbital Dynamics",
-            "page_url" : "orbital-dynamics.html",
 
-            "level_int" : 7,
-            "level_str" : "7th",
+        {
+            "name_str" : "Oxygen Filter",
+            "page_url" : "oxygen-filter.html",
+
+            "level_int" : 3,
+            "level_str" : "3rd",
 
             "casting_time_int" : 3,
             "casting_time_str" : "1 Action",
@@ -789,8 +944,54 @@
             "components_vsm_str" : "V, S, M",
             "components_description_str" : "",
             
-            "duration_int" : 864000,
-            "duration_str" : "1 Day",
+            "duration_int" : 3600,
+            "duration_str" : "1 Hour",
+            
+            "school_str" : "Life Support",
+            "school_img" : "/_SiteResources/Images/noun_medical_2980272.png",
+            
+            "attack_save_int" : 0,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "By combining your filtered exhalations with the output from synthetic gills, you are able to maintain optimal oxygen intake levels for both your propulsion systems and yourself.  ",
+            "mechanics_str" : "You are able to breathe and move normally underwater for one hour.  ",
+            "overchargeable_bool" : false,
+            "overcharge_str" : "Not Applicable",
+
+            "class_str" : "Visionary",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        
+        {
+            "name_str" : "Interorbital Traversal",
+            "page_url" : "interorbital-traversal.html",
+
+            "level_int" : 7,
+            "level_str" : "7th",
+
+            "casting_time_int" : 3600,
+            "casting_time_str" : "1 Hour",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 0,
+            "range_area_str" : "Self",
+            
+            "components_verbal_bool" : true,
+            "components_somatic_bool" : true,
+            "components_material_bool" : true,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "",
+            
+            "duration_int" : 0,
+            "duration_str" : "Instantaneous",
             
             "school_str" : "Propulsion",
             "school_img" : "/_SiteResources/Images/noun_jetpack_3000382.png",
@@ -800,9 +1001,10 @@
             
             "damage_effect_str" : "Buff",
             
-            "description_str" : "You soar into orbit above the planet you are currently on given that you have clear access to reach such altitude.  You have enough life support to sustain you for the duration.  At any time throughout the duration, you can choose a point on the planet below and descend from orbit to reach that location over the course of ten minutes.  Once you do so, this effect ends.  If the full duration is reached, you descend to the planet at a random location of the GM's choosing.",
+            "flavor_str" : "Your propulsion systems are only pulling further ahead from modern technology, and you can now reach above hypersonic speeds, gaining easy access to other objects orbiting the planet.  ",
+            "mechanics_str" : "You jump between Satellite Systems within the Planetary System instantly.  You must be in space to cast this Technology.  ",
             "overchargeable_bool" : true,
-            "overchargeable_str" : "NA",
+            "overcharge_str" : "Not Applicable",
 
             "class_str" : "Visionary",
             "subclass_str" : "",
@@ -845,9 +1047,10 @@
             
             "damage_effect_str" : "Energy",
             
-            "description_str" : "Make a ranged Tech attack against a number of targets equal to your proficiency bonus -1 of your choice within 60 feet.  On a hit, a target suffers 1d6 Energy damage.",
+            "flavor_str" : "A simple laser that has a nearly instant warmup and cooldown period, allowing for an impressive rate of fire.  ",
+            "mechanics_str" : "Make a ranged Tech attack against a number of targets equal to your proficiency bonus -1 of your choice within 60 feet.  On a hit, a target suffers 1d6 Energy damage.",
             "overchargeable_bool" : true,
-            "overchargeable_str" : "NA",
+            "overcharge_str" : "Not Applicable",
 
             "class_str" : "Visionary",
             "subclass_str" : "",
@@ -890,9 +1093,56 @@
             
             "damage_effect_str" : "Buff",
             
-            "description_str" : "When you are about to take fall damage, you can cast this Technology to reduce your impact velocity and avoid taking that instance of fall damage.",
+            "flavor_str" : "By activating multiple quickfire jets, you are able to effectively manipulate your velocity and avoid fatal impacts.  ",
+            "mechanics_str" : "When you are about to take fall damage, you can cast this Technology to reduce your impact velocity and avoid taking that instance of fall damage.",
             "overchargeable_bool" : false,
-            "overchargeable_str" : "NA",
+            "overcharge_str" : "Not Applicable",
+
+            "class_str" : "Visionary",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+
+        {
+            "name_str" : "Reflective Insulators",
+            "page_url" : "reflective-insulators.html",
+
+            "level_int" : 1,
+            "level_str" : "1st",
+
+            "casting_time_int" : 1,
+            "casting_time_str" : "1 Reaction",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 0,
+            "range_area_str" : "Self",
+            
+            "components_verbal_bool" : false,
+            "components_somatic_bool" : true,
+            "components_material_bool" : true,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "S, M",
+            "components_description_str" : "",
+            
+            "duration_int" : 60,
+            "duration_str" : "1 Round",
+            
+            "school_str" : "Life Support",
+            "school_img" : "/_SiteResources/Images/noun_medical_2980272.png",
+            
+            "attack_save_int" : 2,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Reflective materials line your suit and can momentarily hold a charge, allowing some incoming energy to be redirected at enemies.  ",
+            "mechanics_str" : "When you take Incinerating, Cryogenic, Radiation, or Electric damage, you can cast this Tech to gain resistance to that damage type until the end of your next turn.  While you have this resistance, you can deal additional damage of the type you are resistant to equal to your Techcasting ability modifier on your next attack.  If the damage type is Incinerating or Cryogenic, you can only apply this extra damage to a melee attack.  If the damage type is Radiation or Electric, you can only apply this damage to a ranged attack.  When you deal this extra damage, your resistance ends.  ",
+            "overchargeable_bool" : false,
+            "overcharge_str" : "Not Applicable",
 
             "class_str" : "Visionary",
             "subclass_str" : "",
@@ -935,9 +1185,10 @@
             
             "damage_effect_str" : "Buff",
             
-            "description_str" : "You gain an additional flying speed of 60 feet and your movement does not provoke opportunity attacks until the end of this turn.  On subsequent turns throughout the duration, you may use a Bonus Action to gain this benefit again.",
+            "flavor_str" : "An advanced propulsion system that allows for short powerful bursts of speed.  ",
+            "mechanics_str" : "You gain an additional flying speed of 60 feet and your movement does not provoke opportunity attacks until the end of this turn.  On subsequent turns throughout the duration, you may use a Bonus Action to gain this benefit again.",
             "overchargeable_bool" : false,
-            "overchargeable_str" : "NA",
+            "overcharge_str" : "Not Applicable",
 
             "class_str" : "Visionary",
             "subclass_str" : "",
@@ -980,9 +1231,55 @@
             
             "damage_effect_str" : "Concussive",
             
-            "description_str" : "Make a ranged Tech attack against one creature within 30 feet of you.  On a hit, that creatures suffers Concussive damage equal to a number of d6s equal to your proficiency bonus -1 and is pushed 5 feet away from you.",
+            "flavor_str" : "By weaving several beams together in a spiral pattern, the target ends up experiencing the combined kinetic force rather than the heat of the beams themselves.  ",
+            "mechanics_str" : "Make a ranged Tech attack against one creature within 30 feet of you.  On a hit, that creatures suffers Concussive damage equal to a number of d6s equal to your proficiency bonus -1 and is pushed 5 feet away from you.",
             "overchargeable_bool" : true,
-            "overchargeable_str" : "NA",
+            "overcharge_str" : "Not Applicable",
+
+            "class_str" : "Visionary",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+
+        {
+            "name_str" : "Robotitan",
+            "page_url" : "robotitan.html",
+            "level_int" : 8,
+            "level_str" : "8th",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 120,
+            "range_area_str" : "120 feet",
+            
+            "components_verbal_bool" : true,
+            "components_somatic_bool" : true,
+            "components_material_bool" : true,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "",
+            
+            "duration_int" : 3600,
+            "duration_str" : "1 Hour",
+            
+            "school_str" : "Hydraulics",
+            "school_img" : "/_SiteResources/Images/noun_Piston_3924710.png",
+            
+            "attack_save_int" : 0,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "You have created a set of mighty colossal armor to fight massive threats.  This armor is designed to go toe to toe with all but the largest threats imaginable, and can be activated for yours or an ally's use.  ",
+            "mechanics_str" : "You or a willing creature proficient in Piloting within 120 feet of you is encased in Titan armor.  Their stats are replaced by the Titan statblock, which persists for the duration.  If the Titan is reduced to zero hitpoints, this effect ends and any leftover damage is transferred to the target.  ",
+            "overchargeable_bool" : true,
+            "overcharge_str" : "Not Applicable",
 
             "class_str" : "Visionary",
             "subclass_str" : "",
@@ -1025,9 +1322,10 @@
             
             "damage_effect_str" : "Buff",
             
-            "description_str" : "You gain an additional flying speed of 60 feet and your movement does not provoke opportunity attacks until the end of this turn.",
+            "flavor_str" : "A short powerful burst of propulsive speed.  ",
+            "mechanics_str" : "You gain an additional flying speed of 60 feet and your movement does not provoke opportunity attacks until the end of this turn.",
             "overchargeable_bool" : false,
-            "overchargeable_str" : "NA",
+            "overcharge_str" : "Not Applicable",
 
             "class_str" : "Visionary",
             "subclass_str" : "",
@@ -1070,9 +1368,10 @@
             
             "damage_effect_str" : "Stunned",
             
-            "description_str" : "Choose a point within 60 of you.  A 10 foot cube centered on that point becomes electrified, stunning any creature who fails a Con save in the area upon casting or who enters the area while the effect persists.",
+            "flavor_str" : "You fire four stakes into the target surface, each of which deploy a high voltage coil.  These four coils are unable to discharge between themselves as is, and use any unlucky matter within the area to complete the circuit.  ",
+            "mechanics_str" : "Choose a point within 60 of you.  A 10 foot cube centered on that point becomes electrified, stunning any creature who fails a Con save in the area upon casting or who enters the area while the effect persists.",
             "overchargeable_bool" : false,
-            "overchargeable_str" : "NA",
+            "overcharge_str" : "Not Applicable",
 
             "class_str" : "Visionary",
             "subclass_str" : "",
@@ -1115,9 +1414,56 @@
             
             "damage_effect_str" : "Incinerating",
             
-            "description_str" : "Choose a point within 120 feet of you.  Creatures and Vehicles within 30 feet must make a Dexterity saving throw, taking 8d8 Incinerating damage on a failed save and half as much on a successful save.  Vehicles that are made of conventional materials take double damage on a failed save, and normal damage on a successful save.  Objects made of conventional materials not being worn or carried within 30 feet of the point are destroyed.  When you overcharge this Technology, you increase the base damage by 2d8 and increase the radius by 5 for each level beyond 3rd.",
+            "flavor_str" : "A small but compact missile detonates to spread lit thermite powder outwards.  This thermite burns with intense heat that melts nearly all types of matter.  ",
+            "mechanics_str" : "Choose a point within 120 feet of you.  Creatures and Vehicles within 30 feet must make a Dexterity saving throw, taking 8d8 Incinerating damage on a failed save and half as much on a successful save.  Vehicles that are made of conventional materials take double damage on a failed save, and normal damage on a successful save.  Objects made of conventional materials not being worn or carried within 30 feet of the point are destroyed.  ",
             "overchargeable_bool" : true,
-            "overchargeable_str" : "NA",
+            "overcharge_str" : "  When you overcharge this Technology, you increase the base damage by 2d8 and increase the radius by 5 feet for each level beyond 3rd.  ",
+
+            "class_str" : "Visionary",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+
+        {
+            "name_str" : "Vacuum Compression",
+            "page_url" : "vacuum-compression.html",
+
+            "level_int" : 5,
+            "level_str" : "5th",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 0,
+            "range_area_str" : "Self",
+            
+            "components_verbal_bool" : true,
+            "components_somatic_bool" : true,
+            "components_material_bool" : true,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "",
+            
+            "duration_int" : 3600,
+            "duration_str" : "1 Hour",
+            
+            "school_str" : "Life Support",
+            "school_img" : "/_SiteResources/Images/noun_medical_2980272.png",
+            
+            "attack_save_int" : 0,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Your armor has airtight joints, structural integrity, oxygen reserves, thermal insulation, and radiation shielding that allows for short ventures into the void of space.  ",
+            "mechanics_str" : "You are able to breathe normally in space for one hour.  ",
+            "overchargeable_bool" : false,
+            "overcharge_str" : "Not Applicable",
 
             "class_str" : "Visionary",
             "subclass_str" : "",

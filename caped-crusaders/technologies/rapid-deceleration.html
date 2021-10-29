@@ -18,7 +18,9 @@
             if (f.page_url == page) {
               document.getElementById("casting-page-title").innerHTML = "Caped Crusaders: Technologies > " + f.name_str;
               document.getElementById("casting-table-title").innerHTML = f.name_str;
-              document.getElementById("page-description").innerHTML = f.description_str;
+              document.getElementById("page-description-flavor").innerHTML = "<b>Flavor Description:</b>  <i>" + f.flavor_str + "</i>";
+              document.getElementById("page-description-mechanics").innerHTML = "<b>Standard Mechanics:</b>  " + f.mechanics_str;
+              document.getElementById("page-description-overcharge").innerHTML = "<b>Overcharge Mechanics:</b>  " + f.overcharge_str;
               document.getElementById("casting-page-image").src = f.school_img;
               var tblRow1 = "<tr><th style='width: 15vw'>Level</th><th style='width: 15vw'>Casting Time</th><th style='width: 15vw'>Range/Area</th><th style='width: 15vw'>Components</th></tr>"
               $(tblRow1).appendTo("#TechTable tbody");
@@ -70,8 +72,11 @@
                 <tbody></tbody>
               </table>
               <hr>
-              
-              <p id="page-description">
+              <p id="page-description-flavor">
+              </p>
+              <p id="page-description-mechanics">
+              </p>
+              <p id="page-description-overcharge">
               </p>
               
             </section>
