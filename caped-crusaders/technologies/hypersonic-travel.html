@@ -21,7 +21,7 @@
               document.getElementById("page-description-flavor").innerHTML = "<b>Flavor Description:</b>  <i>" + f.flavor_str + "</i>";
               document.getElementById("page-description-mechanics").innerHTML = "<b>Standard Mechanics:</b>  " + f.mechanics_str;
               document.getElementById("page-description-overcharge").innerHTML = "<b>Overcharge Mechanics:</b>  " + f.overcharge_str;
-              document.getElementById("casting-page-image").src = f.school_img;
+              document.getElementById("casting-page-image").src = f.science_img;
               var tblRow1 = "<tr><th style='width: 15vw'>Level</th><th style='width: 15vw'>Casting Time</th><th style='width: 15vw'>Range/Area</th><th style='width: 15vw'>Components</th></tr>"
               $(tblRow1).appendTo("#TechTable tbody");
               var tblRow2 = "<tr>" 
@@ -31,11 +31,11 @@
                 + "<td>" + f.components_vsm_str + "</td>" 
                 + "</tr>"
               $(tblRow2).appendTo("#TechTable tbody");
-              var tblRow3 = "<tr><th>Duration</th><th>School</th><th>Attack/Save</th><th>Damage/Effect</th></tr>";
+              var tblRow3 = "<tr><th>Duration</th><th>Science</th><th>Attack/Save</th><th>Damage/Effect</th></tr>";
               $(tblRow3).appendTo("#TechTable tbody");
               var tblRow4 = "<tr>"
                 + "<td>" + f.duration_str + "</td>" 
-                + "<td>" + f.school_str + "</td>" 
+                + "<td>" + f.science_str + "</td>" 
                 + "<td>" + f.attack_save_str + "</td>" 
                 + "<td>" + f.damage_effect_str + "</td>" 
                 + "</tr>"

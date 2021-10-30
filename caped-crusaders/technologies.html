@@ -14,7 +14,7 @@
         $.getJSON('technologies.json', function(data) {
           $.each(data.technology, function(i, f) {
             var tblRow = "<tr>" 
-              + "<td>" + "<img class='FilterTableImage' src=" + f.school_img + "><br>" + f.school_str + "</td>" 
+              + "<td>" + "<img class='FilterTableImage' src=" + f.science_img + "><br>" + f.science_str + "</td>" 
               + "<td>" + f.level_str + "</td>" 
               + "<td><a href='technologies/" + f.page_url + "' target='_blank'>" + f.name_str + "</a></td>" 
               + "<td>" + f.casting_time_str + "</td>" 
@@ -59,7 +59,7 @@
               <h2>Include Filters</h2>
               <hr>
 
-              <input type="text" id="FilterInputInclude0" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by School. . .">
+              <input type="text" id="FilterInputInclude0" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Science. . .">
               <input type="text" id="FilterInputInclude1" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Level. . .">
               <input type="text" id="FilterInputInclude2" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Name. . .">
               <input type="text" id="FilterInputInclude3" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Casting Time. . .">
@@ -76,7 +76,7 @@
               <h2>Exclude Filters</h2>
               <hr>
 
-              <input type="text" id="FilterInputExclude0" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by School. . .">
+              <input type="text" id="FilterInputExclude0" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Science. . .">
               <input type="text" id="FilterInputExclude1" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Level. . .">
               <input type="text" id="FilterInputExclude2" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Name. . .">
               <input type="text" id="FilterInputExclude3" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Casting Time. . .">
@@ -92,7 +92,7 @@
                             
               <table id="FilterTable">
                 <thead class="header">
-                  <th><button class="TableSortButton" onclick="sortTable(0)">School</button></th>
+                  <th><button class="TableSortButton" onclick="sortTable(0)">Science</button></th>
                   <th><button class="TableSortButton" onclick="sortTable(1)">Level</button></th>
                   <th><button class="TableSortButton" onclick="sortTable(2)">Name</button></th>
                   <th><button class="TableSortButton" onclick="sortTable(3)">Casting Time</button></th>
