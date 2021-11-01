@@ -44,6 +44,7 @@
                   + "<td>" + (i+1) + "</td>"
                   + "<td>+" + prof + "</td>"
                   + "<td>" + f.class_feat_table_links[i] + "</th>"
+                  + "<td>" + Math.ceil((i+2)/f.sustainables_gained_denominator) + "</td>"
                   + "<td>" + (i+1)*f.consumables_known_per_level + "</td>"
                   + "<td>" + (i+1)*f.consumables_points_per_level + "</td>"
                   + "<td>" + Math.ceil((i+1)/f.consumables_max_per_level_denominator) + "</td>"
@@ -143,9 +144,10 @@
                     <th style="width: 10vw">Level</th>
                     <th style="width: 15vw">Proficiency Bonus</th>
                     <th style="width: 30vw">Features</th>
-                    <th style="width: 12vw">Technologies Known</th>
-                    <th style="width: 12vw">Tech Points</th>
-                    <th style="width: 17vw">Maximum Tech Level</th>
+                    <th style="width: 12vw">Sustainables Gained</th>
+                    <th style="width: 12vw">Consumables Known</th>
+                    <th style="width: 12vw">Consumable Points</th>
+                    <th style="width: 17vw">Maximum Consumable Level</th>
                   </thead>
                   <tbody></tbody>
                 </table><br>

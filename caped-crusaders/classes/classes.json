@@ -24,6 +24,7 @@
             "equipment_packs" : "One Inventor's Pack",
             "equipment_variant" : "5d4 x 100 GC",
 
+            "sustainables_gained_denominator" : 8,
             "consumables_known_per_level" : 4,
             "consumables_points_per_level" : 4,
             "consumables_max_per_level_denominator" : 2,
@@ -143,7 +144,7 @@
             "name_str" : "Soldier",
             "page_url" : "soldier.html",
             "class_img" : "/_SiteResources/Images/noun_Military_516827.png",
-            "mechanics_str" : "Countless hours have gone into training you to be the perfect weapon, capable of waging war on the frontline and organizing your allies simultaneously.  ",
+            "mechanics_str" : "Countless hours have been spent training you to be the perfect weapon, capable of waging war on the frontline and organizing your allies simultaneously.  ",
 
             "class_type" : "Primary Tech Martial",
             "primary_ability" : "Strength",
@@ -169,33 +170,112 @@
             "consumables_max_per_level_denominator" : 8,
 
             "class_feat_table_links" : [
-                "<a href='#Fighting Style-1'>Fighting Style</a>",
+                "<a href='#Fighting Style-1'>Fighting Style</a>, <a href='#Second Wind-1'>Second Wind</a>",
                 "---",
+                "<a href='#Ability Score Improvement-3'>Ability Score Improvement</a>, Subclass Feature",
                 "---",
+                "<a href='#Ability Score Improvement-5'>Ability Score Improvement</a>, <a href='#Tactical Strategy-5'>Tactical Strategy</a>",
                 "---",
+                "<a href='#Ability Score Improvement-7'>Ability Score Improvement</a>, <a href='#Indomitable-7'>Indomitable</a>",
                 "---",
+                "<a href='#Improved Strategy-9'>Improved Strategy</a>, Subclass Feature",
                 "---",
+                "<a href='#Ability Score Improvement-11'>Ability Score Improvement</a>, <a href='#Inspirational Endurance-11'>Inspirational Endurance</a>",
                 "---",
+                "<a href='#Ability Score Improvement-13'>Ability Score Improvement</a>, <a href='#Keen Vigilance-13'>Keen Vigilance</a>",
                 "---",
+                "<a href='#Ability Score Improvement-15'>Ability Score Improvement</a>, <a href='#Unrelenting Strategy-15'>Unrelenting Strategy</a>",
                 "---",
+                "<a href='#Superior Strategy-17'>Superior Strategy</a>, Subclass Feature",
                 "---",
-                "---",
-                "---",
-                "---",
-                "---",
-                "---",
-                "---",
-                "---",
-                "---",
-                "---",
+                "<a href='#Ability Score Improvement-19'>Ability Score Improvement</a>, <a href='#Hero's Resolve-19'>Hero's Resolve</a>",
                 "---"
-
                 ],
             "class_feat_descriptions" : [
                 {
                     "name_str" : "Fighting Style",
                     "level" : 1,
                     "mechanics_str" : "You gain a fighting style of your choice."
+                },
+                {
+                    "name_str" : "Second Wind",
+                    "level" : 1,
+                    "mechanics_str" : "You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your Soldier level. Once you use this feature, you must finish a short or long rest before you can use it again.  "
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 3,
+                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 5,
+                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                },
+                {
+                    "name_str" : "Tactical Strategy",
+                    "level" : 5,
+                    "mechanics_str" : "You learn a number of Strategies equal to your proficiency bonus, and can swap one Strategy for another on each subsequent level up.  You gain a number of Strategy dice equal to your proficiency bonus, which are d8s.  "
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 7,
+                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                },
+                {
+                    "name_str" : "Indomitable",
+                    "level" : 7,
+                    "mechanics_str" : "You can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can’t use this feature again until you finish a long rest.  "
+                },
+                {
+                    "name_str" : "Improved Strategy",
+                    "level" : 9,
+                    "mechanics_str" : "Your Strategy dice becomes d10s.  "
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 11,
+                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                },
+                {
+                    "name_str" : "Inspirational Endurance",
+                    "level" : 11,
+                    "mechanics_str" : "As part of a Short Rest, you can grant up to 10 willing creatures within 100 feet of you throughout the rest a number of hit points equal to your Soldier level + your proficiency bonus.  In addition, you and friendly creatures within 10 feet of you can't be frightened while you are conscious.  "
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 13,
+                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                },
+                {
+                    "name_str" : "Keen Vigilance",
+                    "level" : 13,
+                    "mechanics_str" : "You have advantage on initiative rolls and are immune to the surprised condition.  "
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 15,
+                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                },
+                {
+                    "name_str" : "Unrelenting Strategy",
+                    "level" : 15,
+                    "mechanics_str" : "When you roll initiative and have no Strategy dice remaining, you regain two Strategy dice.  "
+                },
+                {
+                    "name_str" : "Superior Strategy",
+                    "level" : 17,
+                    "mechanics_str" : "Your Strategy dice becomes d12s.  "
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 19,
+                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                },
+                {
+                    "name_str" : "Hero's Resolve",
+                    "level" : 19,
+                    "mechanics_str" : "Your Second Wind feature recharges when you roll initiative.  "
                 }
             ]
         },
