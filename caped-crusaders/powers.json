@@ -1,0 +1,49 @@
+{
+    "power": [
+        {
+            "name_str" : "Eyeblast",
+            "page_url" : "eyeblast.html",
+
+            "level_int" : 1,
+            "level_str" : "1st",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 120,
+            "range_area_str" : "120 feet",
+            
+            "components_verbal_bool" : false,
+            "components_somatic_bool" : true,
+            "components_material_bool" : true,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "S, M",
+            "components_description_str" : "",
+            
+            "duration_int" : 0,
+            "duration_str" : "Instantaneous",
+            
+            "type_str" : "Radiation",
+            "type_img" : "/_SiteResources/Images/noun_sun_59719.png",
+            
+            "attack_save_int" : 0,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "You are able to channel your internal reserves of radiation into quick beams of destructive light that fire from your eyes.  ",
+            "mechanics_str" : "Make a ranged Power attack against a target within range.  On a hit, the target takes 4d10 Incinerating damage.  ",
+            "overchargeable_bool" : false,
+            "overcharge_str" : "For every additional level of overcharge, add 1d10 to the damage roll.  ",
+
+            "class_str" : "Dynamo",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        }
+    ]
+}

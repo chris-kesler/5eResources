@@ -1,0 +1,49 @@
+{
+    "spell": [
+        {
+            "name_str" : "Chill Touch",
+            "page_url" : "chill-touch.html",
+
+            "level_int" : 0,
+            "level_str" : "0th (Cantrip)",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 120,
+            "range_area_str" : "120 feet",
+            
+            "components_verbal_bool" : true,
+            "components_somatic_bool" : true,
+            "components_material_bool" : true,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "",
+            
+            "duration_int" : 0,
+            "duration_str" : "Instantaneous",
+            
+            "school_str" : "Necromancy",
+            "school_img" : "/_SiteResources/Images/Sigil-Necromancy.png",
+            
+            "attack_save_int" : 2,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "You create a ghostly, skeletal hand in the space of a creature within range. Make a ranged spell attack against the creature to assail it with the chill of the grave. On a hit, the target takes 1d8 necrotic damage, and it can't regain hit points until the start of your next turn. Until then, the hand clings to the target.  If you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn.  This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).  ",
+            "overchargeable_bool" : false,
+            "overcharge_str" : "Not Applicable",
+
+            "class_str" : "???",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        }
+    ]
+}

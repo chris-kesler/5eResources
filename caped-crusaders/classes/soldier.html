@@ -44,9 +44,7 @@
                   + "<td>" + (i+1) + "</td>"
                   + "<td>+" + prof + "</td>"
                   + "<td>" + f.class_feat_table_links[i] + "</th>"
-                  + "<td>" + (i+1)*f.consumables_known_per_level + "</td>"
-                  + "<td>" + (i+1)*f.consumables_points_per_level + "</td>"
-                  + "<td>" + Math.ceil((i+1)/f.consumables_max_per_level_denominator) + "</td>"
+                  + "<td>" + Math.ceil((i+2)/f.sustainables_gained_denominator) + "</td>"
                   + "</tr>"
                 $(tblRow).appendTo("#class-table tbody");
                 if ((i+1) == 4 || (i+1) == 8 || (i+1) == 12 || (i+1) == 16) {
@@ -142,10 +140,8 @@
                   <thead>
                     <th style="width: 10vw">Level</th>
                     <th style="width: 15vw">Proficiency Bonus</th>
-                    <th style="width: 30vw">Features</th>
-                    <th style="width: 12vw">Technologies Known</th>
-                    <th style="width: 12vw">Tech Points</th>
-                    <th style="width: 17vw">Maximum Tech Level</th>
+                    <th style="width: 35vw">Features</th>
+                    <th style="width: 25vw">Techniques Known</th>
                   </thead>
                   <tbody></tbody>
                 </table><br>
@@ -156,118 +152,55 @@
             </section>
 
             <section class="PageContentRight">
-              <h2 id="#virtuoso">Subclass:  The Virtuoso</h2>
+              <h2 id="#assassin">Subclass:  The Assassin</h2>
               <hr>
               <img class="subclass-image-large"
-              alt="The Virtuoso" src="/_SiteResources/Images/noun_Science_4037086.png">
+              alt="The Assassin" src="/_SiteResources/Images/noun_ninja weapon_688905.png">
               <p>
-                A paragon of invention and ingenuity, the Virtuoso has created and incorporated a truly sustainable energy source.  
-                This energy source grants the Virtuoso several at-will Technologies and capabilities, such as flight.  
-                The Virtuoso can also adapt other suits of Technological Armor to fit their needs.  
+                Subclass Description
               </p><br>
 
-              <h3 id="virtuoso-2">Engineerism</h3>
+              <h3 id="assassin-2">Subclass Feature</h3>
               <hr>
-              <i><b>Virtuoso:</b>  2nd level</i>
+              <i><b>Assassin:</b>  2nd level</i>
               <p>
-                You gain one sustained Tech from the sustained Tech list.
-                In addition, you can also convert any Technological Armor you have access to into your Visionary Armor as normal, retaining the original item's benefits in addition to the Visionary Armor features.  
-                You must still meet the level prerequisites for the Armor in order to do so, but ignore all other restrictions as you modify it to accomodate you.  
-                (Visionary Armor refers to Augmented Armor, Advanced Armor, Superior Armor, and Ultimate Armor simultaneously.)
+                Sample Text
               </p><br>
 
-              <h3 id="virtuoso-8">Micronuclear</h3>
+              
+            </section>
+
+            <section class="PageContentRight">
+              <h2 id="#patriot">Subclass:  The Patriot</h2>
               <hr>
-              <i><b>Virtuoso:</b>  8th level</i>
+              <img class="subclass-image-large"
+              alt="The Patriot" src="/_SiteResources/Images/noun_Military_1857519.png">
               <p>
-                You gain one sustained Tech from the sustained Tech list.
-                You may also swap one previously gained sustained Tech for another that you qualify for.  
+                Subclass Description
               </p><br>
 
-              <h3 id="virtuoso-16">Quantum Induction</h3>
+              <h3 id="patriot-2">Subclass Feature</h3>
               <hr>
-              <i><b>Virtuoso:</b>  16th level</i>
+              <i><b>Patriot:</b>  2nd level</i>
               <p>
-                You gain one sustained Tech from the sustained Tech list.
-                You may also swap one previously gained sustained Tech for another that you qualify for.  
+                Sample Text
               </p><br>
             </section>
 
             <section class="PageContentRight">
-              <h2 id="#magnate">Subclass:  The Magnate</h2>
+              <h2 id="#warrior">Subclass:  The Warrior</h2>
               <hr>
               <img class="subclass-image-large"
-              alt="The Magnate" src="/_SiteResources/Images/noun_cyborg_506898.png">
+              alt="The Warrior" src="/_SiteResources/Images/noun_skill sword magic_2360244.png">
               <p>
-                Some superpowers are far more subtle than most, and the Magnate is a prime example.  
-                Whether relying on magnetic manipulation, electrokinesis, or cybernetics, you stand out as a Visionary with precise control over your Technology.  
-                Having a direct connection between your nervous system and your devices grants you an innate control over your Visionary Armor.  
-                The Magnate can also adapt other suits of Metapower Armor to fit their needs.  
+                Subclass Description
               </p><br>
 
-              <h3 id="magnate-2">Biomechanical Interface</h3>
+              <h3 id="warrior-2">Subclass Feature</h3>
               <hr>
-              <i><b>Magnate:</b>  2nd level</i>
+              <i><b>Warrior:</b>  2nd level</i>
               <p>
-                You gain one enduring Power from the enduring Power list.
-                In addition, you can also convert any Metapower Armor you have access to into your Visionary Armor as normal, retaining the original item's benefits in addition to the Visionary Armor features.  
-                You must still meet the level prerequisites for the Armor in order to do so, but ignore all other restrictions as you modify it to accomodate you.  
-                (Visionary Armor refers to Augmented Armor, Advanced Armor, Superior Armor, and Ultimate Armor simultaneously.)
-              </p><br>
-
-              <h3 id="magnate-8">Digital Synapses</h3>
-              <hr>
-              <i><b>Magnate:</b>  8th level</i>
-              <p>
-                You gain one enduring Power from the enduring Power list.
-                You may also swap one previously gained enduring Power for another that you qualify for.  
-              </p><br>
-
-              <h3 id="magnate-16">Synthetic Symbiosis</h3>
-              <hr>
-              <i><b>Magnate:</b>  16th level</i>
-              <p>
-                You gain one enduring Power from the enduring Power list.
-                You may also swap one previously gained enduring Power for another that you qualify for.  
-              </p><br>
-            </section>
-
-            <section class="PageContentRight">
-              <h2 id="#glyphologist">Subclass:  The Glyphologist</h2>
-              <hr>
-              <img class="subclass-image-large"
-              alt="The Glyphologist" src="/_SiteResources/Images/noun_Pyramid_1553793.png">
-              <p>
-                A scholar of ancient knowledge and mythology, the Glyphologist combines modern science with ancient magical power sources.  
-                Whether it be inscribing runes, compressing motes of power, or integrating powerful artifacts, the Glyphologist binds themselves and their armor together on a supernatural level.  
-                While not a spellcaster, the Glyphologist still benefits from magical boons that manifest in a variety of ways.  
-                The Glyphologist can also adapt other suits of Magical Armor to fit their needs.  
-              </p><br>
-
-              <h3 id="glyphologist-2">Applied Theology</h3>
-              <hr>
-              <i><b>Glyphologist:</b>  2nd level</i>
-              <p>
-                You gain one enduring Boon from the enduring Boon list.
-                In addition, you can also convert any Magical Armor you have access to into your Visionary Armor as normal, retaining the original item's benefits in addition to the Visionary Armor features.  
-                You must still meet the level prerequisites for the Armor in order to do so, but ignore all other restrictions as you modify it to accomodate you.  
-                (Visionary Armor refers to Augmented Armor, Advanced Armor, Superior Armor, and Ultimate Armor simultaneously.)
-              </p><br>
-
-              <h3 id="glyphologist-8">Invocationist</h3>
-              <hr>
-              <i><b>Glyphologist:</b>  8th level</i>
-              <p>
-                You gain one enduring Boon from the enduring Boon list.
-                You may also swap one previously gained enduring Boon for another that you qualify for.  
-              </p><br>
-
-              <h3 id="glyphologist-16">Science of Divinity</h3>
-              <hr>
-              <i><b>Glyphologist:</b>  16th level</i>
-              <p>
-                You gain one enduring Boon from the enduring Boon list.
-                You may also swap one previously gained enduring Boon for another that you qualify for.  
+                Sample Text
               </p><br>
             </section>
 

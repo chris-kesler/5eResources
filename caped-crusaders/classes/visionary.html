@@ -44,9 +44,9 @@
                   + "<td>" + (i+1) + "</td>"
                   + "<td>+" + prof + "</td>"
                   + "<td>" + f.class_feat_table_links[i] + "</th>"
-                  + "<td>" + (i+1)*f.casting_known_per_level + "</td>"
-                  + "<td>" + (i+1)*f.casting_points_per_level + "</td>"
-                  + "<td>" + Math.round((i+1)/f.casting_max_per_level_denominator) + "</td>"
+                  + "<td>" + (i+1)*f.consumables_known_per_level + "</td>"
+                  + "<td>" + (i+1)*f.consumables_points_per_level + "</td>"
+                  + "<td>" + Math.ceil((i+1)/f.consumables_max_per_level_denominator) + "</td>"
                   + "</tr>"
                 $(tblRow).appendTo("#class-table tbody");
                 if ((i+1) == 4 || (i+1) == 8 || (i+1) == 12 || (i+1) == 16) {
