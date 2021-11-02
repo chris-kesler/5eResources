@@ -26,7 +26,7 @@
 
               document.getElementById("proficiencies-armor").innerHTML = "<b>Armor:</b>  " + f.proficiencies_armor;
               document.getElementById("proficiencies-weapons").innerHTML = "<b>Weapons:</b>  " + f.proficiencies_weapons;
-              document.getElementById("proficiencies-tools").innerHTML = "<b>Tools:</b>  " + f.proficiencies_skills;
+              document.getElementById("proficiencies-tools").innerHTML = "<b>Tools:</b>  " + f.proficiencies_tools;
               document.getElementById("proficiencies-saving-throws").innerHTML = "<b>Saving Throws:</b>  " + f.proficiencies_saves;
               document.getElementById("proficiencies-skills").innerHTML = "<b>Skills:</b>  " + f.proficiencies_skills;
 
@@ -39,15 +39,24 @@
               
               document.getElementById("class-table-title").innerHTML = "The " + f.name_str + " Table";
               var prof = 2;
-              for (let i = 0; i < 20; i++) {  
+              for (let i = 0; i < 20; i++) {
+                if (i <= 1) {
+                  var consumables_known = "---"
+                  var consumable_points = "---"
+                  var consumable_max = "---"
+                } else {
+                  var consumables_known = (i+1)*f.consumables_known_per_level
+                  var consumable_points = (i+1)*f.consumables_points_per_level
+                  var consumable_max = Math.ceil((i+1)/f.consumables_max_per_level_denominator)
+                }
                 var tblRow = "<tr>" 
                   + "<td>" + (i+1) + "</td>"
                   + "<td>+" + prof + "</td>"
                   + "<td>" + f.class_feat_table_links[i] + "</th>"
                   + "<td>" + Math.ceil((i+2)/f.sustainables_gained_denominator) + "</td>"
-                  + "<td>" + (i+1)*f.consumables_known_per_level + "</td>"
-                  + "<td>" + (i+1)*f.consumables_points_per_level + "</td>"
-                  + "<td>" + Math.ceil((i+1)/f.consumables_max_per_level_denominator) + "</td>"
+                  + "<td>" + consumables_known + "</td>"
+                  + "<td>" + consumable_points + "</td>"
+                  + "<td>" + consumable_max + "</td>"
                   + "</tr>"
                 $(tblRow).appendTo("#class-table tbody");
                 if ((i+1) == 4 || (i+1) == 8 || (i+1) == 12 || (i+1) == 16) {
@@ -163,33 +172,21 @@
               <img class="subclass-image-large"
               alt="The Assassin" src="/_SiteResources/Images/noun_ninja weapon_688905.png">
               <p>
-                Subclass Description
+                Blending instinctive skills with expendable gadgets, the Assassin is a capable and unpredictable combatant.
               </p><br>
 
-              <h3 id="assassin-2">Subclass Feature</h3>
+              <h3 id="assassin-3">Techcasting</h3>
               <hr>
-              <i><b>Assassin:</b>  2nd level</i>
+              <i><b>Assassin:</b>  3rd level</i>
               <p>
-                Sample Text
+                You have gained knowledge of advanced technology, and are capable of apply these technologies in a variety of ways.  See the Rules for Techcasting mechanics and Technologies list.  <ul><li><b>Technologies Known:</b>  You learn Technologies of your choice as shown in the Consumables Known column of the class table.  You may not learn a Technology of a level higher than your Max Consumable Level, and you may learn a Technology at the same time you learn its prerequisite.  </li><br><li><b>Tech Points:</b>  You have a number of Tech Points as shown in the Consumable Points column of the class table.  You expend these Tech Points to cast Technologies.  You regain all expended Tech Points when you finish a long rest.  </li><br><li><b>Max Tech Level:</b>  Many Technologies can be overpowered, consuming more Tech Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Technologies at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Techcasting Ability:</b>  Your Techcasting ability is Intelligence.  You use your Intelligence modifier whenever a Technology refers to your Techcasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Technology you cast and when making an attack roll with one.  </li><br><li><b>Technology save DC</b> = 8 + your proficiency bonus + your Techcasting ability modifier</li><br><li><b>Technology attack modifier</b> = your proficiency bonus + your Techcasting ability modifier</li></ul>
               </p><br>
 
-              
-            </section>
-
-            <section class="PageContentRight">
-              <h2 id="#patriot">Subclass:  The Patriot</h2>
+              <h3 id="assassin-9">Tech Weapon Bond</h3>
               <hr>
-              <img class="subclass-image-large"
-              alt="The Patriot" src="/_SiteResources/Images/noun_Military_1857519.png">
+              <i><b>Assassin:</b>  9th level</i>
               <p>
-                Subclass Description
-              </p><br>
-
-              <h3 id="patriot-2">Subclass Feature</h3>
-              <hr>
-              <i><b>Patriot:</b>  2nd level</i>
-              <p>
-                Sample Text
+                When you attune to a Technological Weapon, it does not count against your number of attunement slots. 
               </p><br>
             </section>
 
@@ -199,16 +196,49 @@
               <img class="subclass-image-large"
               alt="The Warrior" src="/_SiteResources/Images/noun_skill sword magic_2360244.png">
               <p>
-                Subclass Description
+                Blessed by a divine being, the Warrior bolsters their innate talents with eldritch valor.
               </p><br>
 
-              <h3 id="warrior-2">Subclass Feature</h3>
+              <h3 id="warrior-3">Spellcasting</h3>
               <hr>
-              <i><b>Warrior:</b>  2nd level</i>
+              <i><b>Warrior:</b>  3rd level</i>
               <p>
-                Sample Text
+                See the Rules for Spellcasting mechanics and Spells list.  <ul><li><b>Spells Known:</b>  You learn Spells of your choice as shown in the Consumables Known column of the class table.  You may not learn a Spell of a level higher than your Max Consumable Level, and you may learn a Spell at the same time you learn its prerequisite.  </li><br><li><b>Spell Points:</b>  You have a number of Spell Points as shown in the Consumable Points column of the class table.  You expend these Spell Points to cast Spells.  You regain all expended Spell Points when you finish a long rest.  </li><br><li><b>Max Spell Level:</b>  Many Spells can be overpowered, consuming more Spell Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Spells at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Spellcasting Ability:</b>  Your Spellcasting ability is Wisdom.  You use your Wisdom modifier whenever a Spell refers to your Spellcasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Spell you cast and when making an attack roll with one.  </li><br><li><b>Spell save DC</b> = 8 + your proficiency bonus + your Spellcasting ability modifier</li><br><li><b>Spell attack modifier</b> = your proficiency bonus + your Spellcasting ability modifier</li></ul>
+              </p><br>
+
+              <h3 id="warrior-9">Magic Weapon Bond</h3>
+              <hr>
+              <i><b>Patriot:</b>  9th level</i>
+              <p>
+                When you attune to a Magical Weapon, it does not count against your number of attunement slots. 
               </p><br>
             </section>
+
+            <section class="PageContentRight">
+              <h2 id="#patriot">Subclass:  The Patriot</h2>
+              <hr>
+              <img class="subclass-image-large"
+              alt="The Patriot" src="/_SiteResources/Images/noun_Military_1857519.png">
+              <p>
+                Becoming enhanced at the hands of experimentation, the Patriot leads by example of self sacrifice.  
+              </p><br>
+
+              <h3 id="patriot-3">Powercasting</h3>
+              <hr>
+              <i><b>Patriot:</b>  3rd level</i>
+              <p>
+                See the Rules for Powercasting mechanics and Superpowers list.  <ul><li><b>Superpowers Known:</b>  You learn Superpowers of your choice as shown in the Consumables Known column of the class table.  You may not learn a Superpower of a level higher than your Max Consumable Level, and you may learn a Superpower at the same time you learn its prerequisite.  </li><br><li><b>Superpower Points:</b>  You have a number of Superpower Points as shown in the Consumable Points column of the class table.  You expend these Superpower Points to cast Superpowers.  You regain all expended Superpower Points when you finish a long rest.  </li><br><li><b>Max Superpower Level:</b>  Many Superpowers can be overpowered, consuming more Superpower Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Superpowers at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Powercasting Ability:</b>  Your Powercasting ability is Charisma.  You use your Charisma modifier whenever a Superpower refers to your Powercasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Superpower you cast and when making an attack roll with one.  </li><br><li><b>Superpower save DC</b> = 8 + your proficiency bonus + your Powercasting ability modifier</li><br><li><b>Superpower attack modifier</b> = your proficiency bonus + your Powercasting ability modifier</li></ul>
+              </p><br>
+              
+              <h3 id="patriot-9">Power Weapon Bond</h3>
+              <hr>
+              <i><b>Patriot:</b>  9th level</i>
+              <p>
+                When you attune to a Superpowered Weapon, it does not count against your number of attunement slots. 
+              </p><br>
+            </section>
+
+            
 
           </div>
         </div>
