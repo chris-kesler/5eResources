@@ -7,7 +7,33 @@
     <title>KnowOne's Website of Everything</title>
     <link rel="icon" href="/_SiteResources/Images/OwlOfMinerva_ModifiedLogo.png">
     <link rel="stylesheet" href="/caped-crusaders-style.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+    <script>
+      $(function readClass() {
+        var classes = [];
+        $.getJSON('classes/classes.json', function(data) {
+          var path = window.location.pathname;
+          var page = path.split("/").pop();
+          $.each(data.class, function(i, f) {
+            document.getElementById(`class-button-${i}`).innerHTML = "<img class='class-image-small' src='" 
+            + f.class_img + "' alt='" + f.name_str + " Image'><h3>" + f.name_str + "</h3><hr>" 
+            + f.description_short_str + "<br><br><i><b>Hit Die:</b>  d" + f.hit_die_int 
+            + "<br><b>Primary Ability:</b>  " + f.primary_ability + "<br><b>Saves:</b>  " 
+            + f.proficiencies_saves;
+          });
+        });
+      });
+    </script>
+    <script>
+      $(function importContent() {
+    
+        $(".Import_PageHeader").load("/_SiteResources/Pages/Import_PageHeader.html");
+        $(".Import_ContentLeft").load("/_SiteResources/Pages/Import_ContentLeft.html");
+        $(".Import_PageFooter").load("/_SiteResources/Pages/Import_PageFooter.html");
+    
+    });
+    </script>
+  </head>
 
 
   <body>
@@ -33,162 +59,42 @@
               <hr>
 
               <table class="WikiButtonTable">
+                <tbody></tbody>
                 <tr><td>
-                  <button class="TechClassButton" onclick="location.href='classes/visionary.html'">
-                    <img class='class-image-small' src="/_SiteResources/Images/noun_robotic hand_2838670.png" alt="">
-                    <h3>Visionary</h3>
-                    <hr>
-                    An armored sentinel wielding technology beyond the cutting edge.
-                    <br><br>
-                    Hit Die:  d6
-                    <br>
-                    Casting Ability:  Intelligence
-                    <br>
-                    Saves:  Intelligence, Wisdom
-                  </button>
+                  <button id="class-button-0" class="TechClassButton" onclick="location.href='classes/visionary.html'"></button>
                 </td>
                 <td>
-                  <button class="TechClassButton" onclick="location.href=''">
-                    <img class='class-image-small' src="" alt="">
-                    <h3>Agent</h3>
-                    <hr>
-                    A sharpshooting expert who surveys and strikes key enemy forces.<br><br>
-                    Hit Die:  d8
-                    <br>
-                    Casting Ability:  Int
-                    <br>
-                    Saves:  
-                  </button>
+                  <button id="class-button-1" class="TechClassButton" onclick="location.href=''"></button>
                 </td>
                 <td>
-                  <button class="TechClassButton" onclick="location.href=''">
-                    <img class='class-image-small' src="" alt="">
-                    <h3>Vigilante</h3>
-                    <hr>
-                    A skilled predator that employs a wide variety of techniques.<br><br>
-                    Hit Die:  d10
-                    <br>
-                    Martial Ability:  Dex
-                    <br>
-                    Saves:  
-                  </button>
+                  <button id="class-button-2" class="TechClassButton" onclick="location.href=''"></button>
                 </td>
                 <td>
-                  <button class="TechClassButton" onclick="location.href='classes/soldier.html'">
-                    <img class='class-image-small' src="/_SiteResources/Images/noun_Military_516827.png" alt="">
-                    <h3>Soldier</h3>
-                    <hr>
-                    A warrior who relies on martial prowess and tactical skill.<br><br>
-                    Hit Die:  d12
-                    <br>
-                    Martial Ability:  Str
-                    <br>
-                    Saves:  
-                  </button>
+                  <button id="class-button-3" class="TechClassButton" onclick="location.href='classes/soldier.html'"></button>
                 </td></tr>
                 <tr><td>
-                  <button class="MagicClassButton" onclick="location.href=''">
-                    <img class='class-image-small' src="" alt="">
-                    <h3>Archmage</h3>
-                    <hr>
-                    A master of magic who has the largest selection of casting options at any time.<br><br>
-                    Hit Die:  d6
-                    <br>
-                    Casting Ability:  Wis
-                    <br>
-                    Saves:  
-                  </button>
+                  <button id="class-button-4" class="MagicClassButton" onclick="location.href=''"></button>
                 </td>
                 <td>
-                  <button class="MagicClassButton" onclick="location.href=''">
-                    <img class='class-image-small' src="" alt="">
-                    <h3>Eldritian</h3>
-                    <hr>
-                    A competent spell caster that augments their own fighting ability.<br><br>
-                    Hit Die:  d8
-                    <br>
-                    Casting Ability:  Wis
-                    <br>
-                    Saves:  
-                  </button>
+                  <button id="class-button-5" class="MagicClassButton" onclick="location.href=''"></button>
                 </td>
                 <td>
-                  <button class="MagicClassButton" onclick="location.href=''">
-                    <img class='class-image-small' src="" alt="">
-                    <h3>Magus</h3>
-                    <hr>
-                    A versatile spell caster that excels at infiltration and deception.<br><br>
-                    Hit Die:  d10
-                    <br>
-                    Martial Ability:  Dex
-                    <br>
-                    Saves:  
-                  </button>
+                  <button id="class-button-6" class="MagicClassButton" onclick="location.href=''"></button>
                 </td>
                 <td>
-                  <button class="MagicClassButton" onclick="location.href=''">
-                    <img class='class-image-small' src="" alt="">
-                    <h3>Annointed</h3>
-                    <hr>
-                    Magically imbued powerhouses who are often mistaken for Dynamos.<br><br>
-                    Hit Die:  d12
-                    <br>
-                    Martial Ability:  Str
-                    <br>
-                    Saves:  
-                  </button>
+                  <button id="class-button-7" class="MagicClassButton" onclick="location.href=''"></button>
                 </td></tr>
                 <tr><td>
-                  <button class="PowerClassButton" onclick="location.href=''">
-                    <img class='class-image-small' src="" alt="">
-                    <h3>Nova</h3>
-                    <hr>
-                    Energy wielders that summon defensive fields and blast enemies alike.<br><br>
-                    Hit Die:  d6
-                    <br>
-                    Casting Ability:  Cha
-                    <br>
-                    Saves:  
-                  </button>
+                  <button id="class-button-8" class="PowerClassButton" onclick="location.href=''"></button>
                 </td>
                 <td>
-                  <button class="PowerClassButton" onclick="location.href=''">
-                    <img class='class-image-small' src="/_SiteResources/Images/noun_vortex_2920177.png" alt="">
-                    <h3>Subvertist</h3>
-                    <hr>
-                    A movement focused master of misdirection who excels in battfield cleanup.<br><br>
-                    Hit Die:  d8
-                    <br>
-                    Casting Ability:  Cha
-                    <br>
-                    Saves:  
-                  </button>
+                  <button id="class-button-9" class="PowerClassButton" onclick="location.href=''"></button>
                 </td>
                 <td>
-                  <button class="PowerClassButton" onclick="location.href=''">
-                    <img class='class-image-small' src="" alt="">
-                    <h3>Metamorph</h3>
-                    <hr>
-                    A versatile shapechanger that can specialize down several paths.<br><br>
-                    Hit Die:  d10
-                    <br>
-                    Martial Ability:  Con
-                    <br>
-                    Saves:  
-                  </button>
+                  <button id="class-button-10" class="PowerClassButton" onclick="location.href=''"></button>
                 </td>
                 <td>
-                  <button class="PowerClassButton" onclick="location.href='classes/dynamo.html'">
-                    <img class='class-image-small' src="/_SiteResources/Images/noun_punch_1961742.png" alt="">
-                    <h3>Dynamo</h3>
-                    <hr>
-                    Utter powerhouses that rely on brute force to destroy and protect.<br><br>
-                    Hit Die:  d12
-                    <br>
-                    Martial Ability:  Str
-                    <br>
-                    Saves:  
-                  </button>
+                  <button id="class-button-11" class="PowerClassButton" onclick="location.href='classes/dynamo.html'"></button>
                 </td></tr>
                 
               </table>    
@@ -229,13 +135,3 @@
     </div>
   </body>
 </html>
-
-<script type="text/javascript">
-  $(function () {
-
-    $(".Import_PageHeader").load("/_SiteResources/Pages/Import_PageHeader.html");
-    $(".Import_ContentLeft").load("/_SiteResources/Pages/Import_ContentLeft.html");
-    $(".Import_PageFooter").load("/_SiteResources/Pages/Import_PageFooter.html");
-
-});
-</script>
