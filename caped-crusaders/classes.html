@@ -15,6 +15,7 @@
           var path = window.location.pathname;
           var page = path.split("/").pop();
           $.each(data.class, function(i, f) {
+            document.getElementById(`class-button-${i}`).setAttribute("onclick", "location.href='classes/" + f.page_url + "'");
             document.getElementById(`class-button-${i}`).innerHTML = "<img class='class-image-small' src='" 
             + f.class_img + "' alt='" + f.name_str + " Image'><h3>" + f.name_str + "</h3><hr>" 
             + f.description_short_str + "<br><br><i><b>Hit Die:</b>  d" + f.hit_die_int 
@@ -61,40 +62,40 @@
               <table class="WikiButtonTable">
                 <tbody></tbody>
                 <tr><td>
-                  <button id="class-button-0" class="TechClassButton" onclick="location.href='classes/visionary.html'"></button>
+                  <button id="class-button-0" class="TechClassButton"></button>
                 </td>
                 <td>
-                  <button id="class-button-1" class="TechClassButton" onclick="location.href=''"></button>
+                  <button id="class-button-1" class="TechClassButton"></button>
                 </td>
                 <td>
-                  <button id="class-button-2" class="TechClassButton" onclick="location.href=''"></button>
+                  <button id="class-button-2" class="TechClassButton"></button>
                 </td>
                 <td>
-                  <button id="class-button-3" class="TechClassButton" onclick="location.href='classes/soldier.html'"></button>
+                  <button id="class-button-3" class="TechClassButton"></button>
                 </td></tr>
                 <tr><td>
-                  <button id="class-button-4" class="MagicClassButton" onclick="location.href=''"></button>
+                  <button id="class-button-4" class="MagicClassButton"></button>
                 </td>
                 <td>
-                  <button id="class-button-5" class="MagicClassButton" onclick="location.href=''"></button>
+                  <button id="class-button-5" class="MagicClassButton"></button>
                 </td>
                 <td>
-                  <button id="class-button-6" class="MagicClassButton" onclick="location.href=''"></button>
+                  <button id="class-button-6" class="MagicClassButton"></button>
                 </td>
                 <td>
-                  <button id="class-button-7" class="MagicClassButton" onclick="location.href=''"></button>
+                  <button id="class-button-7" class="MagicClassButton"></button>
                 </td></tr>
                 <tr><td>
-                  <button id="class-button-8" class="PowerClassButton" onclick="location.href=''"></button>
+                  <button id="class-button-8" class="PowerClassButton"></button>
                 </td>
                 <td>
-                  <button id="class-button-9" class="PowerClassButton" onclick="location.href=''"></button>
+                  <button id="class-button-9" class="PowerClassButton"></button>
                 </td>
                 <td>
-                  <button id="class-button-10" class="PowerClassButton" onclick="location.href=''"></button>
+                  <button id="class-button-10" class="PowerClassButton"></button>
                 </td>
                 <td>
-                  <button id="class-button-11" class="PowerClassButton" onclick="location.href='classes/dynamo.html'"></button>
+                  <button id="class-button-11" class="PowerClassButton"></button>
                 </td></tr>
                 
               </table>    

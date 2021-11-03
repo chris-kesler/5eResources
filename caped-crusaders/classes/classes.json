@@ -1088,7 +1088,7 @@
                 {
                     "name_str" : "Power Resistance",
                     "level" : 11,
-                    "mechanics_str" : "You have advantage on all saves against Superpower based effects.  In addition, when you make a saving throw against a Superpower based effect to avoid damage, you take no damage if you succeed and only half damage if you fail.  "
+                    "mechanics_str" : "When you make a saving throw against a Superpower based effect to avoid damage, you take no damage if you succeed and only half damage if you fail.  "
                 },
                 {
                     "name_str" : "Ability Score Improvement",
@@ -1567,7 +1567,7 @@
             "proficiencies_armor" : "None",
             "proficiencies_weapons" : "Simple Tech Weapons",
             "proficiencies_tools" : "Choose any two",
-            "proficiencies_saves" : "Strength, Con",
+            "proficiencies_saves" : "Strength, Constitution",
             "proficiencies_skills" : "Choose any three",
             
             "equipment_armor" : "Forged Plate, Steel",
@@ -1652,7 +1652,7 @@
                 {
                     "name_str" : "Power Resistance",
                     "level" : 11,
-                    "mechanics_str" : "You have advantage on all saves against Superpower based effects.  In addition, when you make a saving throw against a Superpower based effect to avoid damage, you take no damage if you succeed and only half damage if you fail.  "
+                    "mechanics_str" : "When you make a saving throw against a Superpower based effect to avoid damage, you take no damage if you succeed and only half damage if you fail.  "
                 },
                 {
                     "name_str" : "Ability Score Improvement",
@@ -1691,8 +1691,5 @@
                 }
             ]
         }
-
-
-        
     ]
 }
