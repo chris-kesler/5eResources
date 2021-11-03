@@ -11,12 +11,12 @@
     <script>
       $(function readTech() {
         var powers = [];
-        $.getJSON('powers.json', function(data) {
+        $.getJSON('superpowers.json', function(data) {
           $.each(data.power, function(i, f) {
             var tblRow = "<tr>" 
               + "<td>" + "<img class='FilterTableImage' src=" + f.type_img + "><br>" + f.type_str + "</td>" 
               + "<td>" + f.level_str + "</td>" 
-              + "<td><a href='powers/" + f.page_url + "' target='_blank'>" + f.name_str + "</a></td>" 
+              + "<td><a href='superpowers/" + f.page_url + "' target='_blank'>" + f.name_str + "</a></td>" 
               + "<td>" + f.casting_time_str + "</td>" 
               + "<td>" + f.duration_str + "</td>" 
               + "<td>" + f.range_area_str + "</td>" 
