@@ -11,7 +11,7 @@
     <script>
       $(function readClass() {
         var classes = [];
-        $.getJSON('classes.json', function(data) {
+        $.getJSON('../classes.json', function(data) {
           var path = window.location.pathname;
           var page = path.split("/").pop();
           $.each(data.class, function(i, f) {

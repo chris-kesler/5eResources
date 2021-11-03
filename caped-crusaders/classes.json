@@ -605,7 +605,7 @@
                 "---",
                 "<a href='#Staggering Punch-9'>Staggering Punch</a>, Subclass Feature",
                 "---",
-                "<a href='#Ability Score Improvement-11'>Ability Score Improvement</a>, <a href='#Power Resistance-11'>Power Resistance</a>",
+                "<a href='#Ability Score Improvement-11'>Ability Score Improvement</a>, <a href='#Power Resilience-11'>Power Resilience</a>",
                 "---",
                 "<a href='#Ability Score Improvement-13'>Ability Score Improvement</a>, <a href='#Champion's Might-13'>Champion's Might</a>",
                 "---",
@@ -663,7 +663,7 @@
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
-                    "name_str" : "Power Resistance",
+                    "name_str" : "Power Resilience",
                     "level" : 11,
                     "mechanics_str" : "You have advantage on all saves against Superpower based effects.  In addition, when you make a saving throw against a Superpower based effect to avoid damage, you take no damage if you succeed and only half damage if you fail.  "
                 },
@@ -746,7 +746,7 @@
                 "---",
                 "<a href='#Staggering Punch-9'>Staggering Punch</a>, Subclass Feature",
                 "---",
-                "<a href='#Ability Score Improvement-11'>Ability Score Improvement</a>, <a href='#Power Resistance-11'>Power Resistance</a>",
+                "<a href='#Ability Score Improvement-11'>Ability Score Improvement</a>, <a href='#Power Resilience-11'>Power Resilience</a>",
                 "---",
                 "<a href='#Ability Score Improvement-13'>Ability Score Improvement</a>, <a href='#Champion's Might-13'>Champion's Might</a>",
                 "---",
@@ -804,7 +804,7 @@
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
-                    "name_str" : "Power Resistance",
+                    "name_str" : "Power Resilience",
                     "level" : 11,
                     "mechanics_str" : "You have advantage on all saves against Superpower based effects.  In addition, when you make a saving throw against a Superpower based effect to avoid damage, you take no damage if you succeed and only half damage if you fail.  "
                 },
@@ -887,7 +887,7 @@
                 "---",
                 "<a href='#Staggering Punch-9'>Staggering Punch</a>, Subclass Feature",
                 "---",
-                "<a href='#Ability Score Improvement-11'>Ability Score Improvement</a>, <a href='#Power Resistance-11'>Power Resistance</a>",
+                "<a href='#Ability Score Improvement-11'>Ability Score Improvement</a>, <a href='#Power Resilience-11'>Power Resilience</a>",
                 "---",
                 "<a href='#Ability Score Improvement-13'>Ability Score Improvement</a>, <a href='#Champion's Might-13'>Champion's Might</a>",
                 "---",
@@ -945,7 +945,7 @@
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
-                    "name_str" : "Power Resistance",
+                    "name_str" : "Power Resilience",
                     "level" : 11,
                     "mechanics_str" : "You have advantage on all saves against Superpower based effects.  In addition, when you make a saving throw against a Superpower based effect to avoid damage, you take no damage if you succeed and only half damage if you fail.  "
                 },
@@ -989,8 +989,8 @@
 
         {
             "name_str" : "Annointed",
-            "page_url" : "",
-            "class_img" : "",
+            "page_url" : "annointed.html",
+            "class_img" : "/_SiteResources/Images/noun_spartan helmet_1732614.png",
             "description_short_str" : "Magically imbued powerhouses who are often mistaken for Dynamos.  ",
             "description_long_str" : "Blessed and bolstered by ancient magic, the Annointed perfectly balances destroying their enemies and protecting their allies.  ",
 
@@ -1018,7 +1018,7 @@
             "consumables_max_per_level_denominator" : 8,
 
             "class_feat_table_links" : [
-                "<a href='#Mach Punch-1'>Mach Punch</a>, <a href='#Unarmored Defense-1'>Unarmored Defense</a>",
+                "<a href='#Blessed Strikes-1'>Blessed Strikes</a>, <a href='#Holy Sentinel-1'>Holy Sentinel</a>",
                 "---",
                 "<a href='#Ability Score Improvement-3'>Ability Score Improvement</a>, Subclass Feature",
                 "---",
@@ -1028,7 +1028,7 @@
                 "---",
                 "<a href='#Staggering Punch-9'>Staggering Punch</a>, Subclass Feature",
                 "---",
-                "<a href='#Ability Score Improvement-11'>Ability Score Improvement</a>, <a href='#Power Resistance-11'>Power Resistance</a>",
+                "<a href='#Ability Score Improvement-11'>Ability Score Improvement</a>, <a href='#Power Resilience-11'>Power Resilience</a>",
                 "---",
                 "<a href='#Ability Score Improvement-13'>Ability Score Improvement</a>, <a href='#Champion's Might-13'>Champion's Might</a>",
                 "---",
@@ -1041,14 +1041,14 @@
                 ],
             "class_feat_descriptions" : [
                 {
-                    "name_str" : "Mach Punch",
+                    "name_str" : "Blessed Strikes",
                     "level" : 1,
-                    "mechanics_str" : "Your unarmed strikes deal 1d6 + your Strength Modifier bludgeoning damage, and you can make an unarmed strike as a bonus action.  When you make an unarmed strike with advantage or an ally is within melee range of your target, you can deal additional damage equal to a number of d6s equal to your level.  You can only deal this damage once per turn.  "
+                    "mechanics_str" : "You can add your Proficiency bonus to the damage of your Attacks made with Unarmed Strikes or a Magical Weapon.  "
                 },
                 {
-                    "name_str" : "Unarmored Defense",
+                    "name_str" : "Holy Sentinel",
                     "level" : 1,
-                    "mechanics_str" : "Your Armor Class while unarmored is equal to 8 + your Constitution Modifier + your Strength Modifier.  If you are wearing armor that would include your Dexterity Modifier in your Armor Class calculation, you can substitute your Constitution Modifier instead of your Dexterity Modifier for that calculation.  "
+                    "mechanics_str" : "You gain a +1 to your Armor Class while unarmored or wearing Magical Armor.  "
                 },
                 {
                     "name_str" : "Ability Score Improvement",
@@ -1086,7 +1086,7 @@
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
-                    "name_str" : "Power Resistance",
+                    "name_str" : "Power Resilience",
                     "level" : 11,
                     "mechanics_str" : "When you make a saving throw against a Superpower based effect to avoid damage, you take no damage if you succeed and only half damage if you fail.  "
                 },
@@ -1169,7 +1169,7 @@
                 "---",
                 "<a href='#Staggering Punch-9'>Staggering Punch</a>, Subclass Feature",
                 "---",
-                "<a href='#Ability Score Improvement-11'>Ability Score Improvement</a>, <a href='#Power Resistance-11'>Power Resistance</a>",
+                "<a href='#Ability Score Improvement-11'>Ability Score Improvement</a>, <a href='#Power Resilience-11'>Power Resilience</a>",
                 "---",
                 "<a href='#Ability Score Improvement-13'>Ability Score Improvement</a>, <a href='#Champion's Might-13'>Champion's Might</a>",
                 "---",
@@ -1227,7 +1227,7 @@
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
-                    "name_str" : "Power Resistance",
+                    "name_str" : "Power Resilience",
                     "level" : 11,
                     "mechanics_str" : "You have advantage on all saves against Superpower based effects.  In addition, when you make a saving throw against a Superpower based effect to avoid damage, you take no damage if you succeed and only half damage if you fail.  "
                 },
@@ -1310,7 +1310,7 @@
                 "---",
                 "<a href='#Staggering Punch-9'>Staggering Punch</a>, Subclass Feature",
                 "---",
-                "<a href='#Ability Score Improvement-11'>Ability Score Improvement</a>, <a href='#Power Resistance-11'>Power Resistance</a>",
+                "<a href='#Ability Score Improvement-11'>Ability Score Improvement</a>, <a href='#Power Resilience-11'>Power Resilience</a>",
                 "---",
                 "<a href='#Ability Score Improvement-13'>Ability Score Improvement</a>, <a href='#Champion's Might-13'>Champion's Might</a>",
                 "---",
@@ -1368,7 +1368,7 @@
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
-                    "name_str" : "Power Resistance",
+                    "name_str" : "Power Resilience",
                     "level" : 11,
                     "mechanics_str" : "You have advantage on all saves against Superpower based effects.  In addition, when you make a saving throw against a Superpower based effect to avoid damage, you take no damage if you succeed and only half damage if you fail.  "
                 },
@@ -1451,7 +1451,7 @@
                 "---",
                 "<a href='#Staggering Punch-9'>Staggering Punch</a>, Subclass Feature",
                 "---",
-                "<a href='#Ability Score Improvement-11'>Ability Score Improvement</a>, <a href='#Power Resistance-11'>Power Resistance</a>",
+                "<a href='#Ability Score Improvement-11'>Ability Score Improvement</a>, <a href='#Power Resilience-11'>Power Resilience</a>",
                 "---",
                 "<a href='#Ability Score Improvement-13'>Ability Score Improvement</a>, <a href='#Champion's Might-13'>Champion's Might</a>",
                 "---",
@@ -1509,7 +1509,7 @@
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
-                    "name_str" : "Power Resistance",
+                    "name_str" : "Power Resilience",
                     "level" : 11,
                     "mechanics_str" : "You have advantage on all saves against Superpower based effects.  In addition, when you make a saving throw against a Superpower based effect to avoid damage, you take no damage if you succeed and only half damage if you fail.  "
                 },
@@ -1592,7 +1592,7 @@
                 "---",
                 "<a href='#Staggering Punch-9'>Staggering Punch</a>, Subclass Feature",
                 "---",
-                "<a href='#Ability Score Improvement-11'>Ability Score Improvement</a>, <a href='#Power Resistance-11'>Power Resistance</a>",
+                "<a href='#Ability Score Improvement-11'>Ability Score Improvement</a>, <a href='#Power Resilience-11'>Power Resilience</a>",
                 "---",
                 "<a href='#Ability Score Improvement-13'>Ability Score Improvement</a>, <a href='#Champion's Might-13'>Champion's Might</a>",
                 "---",
@@ -1650,7 +1650,7 @@
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
-                    "name_str" : "Power Resistance",
+                    "name_str" : "Power Resilience",
                     "level" : 11,
                     "mechanics_str" : "When you make a saving throw against a Superpower based effect to avoid damage, you take no damage if you succeed and only half damage if you fail.  "
                 },
