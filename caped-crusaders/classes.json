@@ -25,7 +25,7 @@
             "equipment_packs" : "One Inventor's Pack",
             "equipment_variant" : "5d4 x 100 GC",
 
-            "sustainables_gained_denominator" : 8,
+            "sustainables_known_denominator" : 8,
             "consumables_known_per_level" : 4,
             "consumables_points_per_level" : 4,
             "consumables_max_per_level_denominator" : 2,
@@ -56,7 +56,7 @@
                 {
                     "name_str" : "Techcasting",
                     "level" : 1,
-                    "mechanics_str" : "You have gained intimate knowledge of technology far beyond your time, and are capable of apply these technologies in a variety of ways.  See the Rules for Techcasting mechanics and Technologies list.  <ul><li><b>Technologies Known:</b>  You learn 4 Technologies of your choice, and you learn an additional 4 at each higher Visionary level as shown in the Technologies Known column of the Visionary table.  You may not learn a Technology of a level higher than your Max Technology Level, and you may learn a Technology at the same time you learn its prerequisite.  </li><br><li><b>Tech Points:</b>  You have a number of Tech Points equal to your Visionary level x 8, as shown in the Tech Points column of the Visionary table, + your Int modifier.  You expend these Tech Points to cast Tech Powers.  You regain all expended Tech Points when you finish a long rest.  </li><br><li><b>Max Tech Level:</b>  Many Technologies can be overpowered, consuming more Tech Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Tech Level column of the Visionary table.  You may only cast Technologies at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Techcasting Ability:</b>  Your Techcasting ability is Intelligence.  You use your Intelligence modifier whenever a Technology refers to your Techcasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Technology you cast and when making an attack roll with one.  </li><br><li><b>Technology save DC</b> = 8 + your proficiency bonus + your Techcasting ability modifier</li><br><li><b>Technology attack modifier</b> = your proficiency bonus + your Techcasting ability modifier</li></ul>"
+                    "mechanics_str" : "You have known intimate knowledge of technology far beyond your time, and are capable of apply these technologies in a variety of ways.  See the Rules for Techcasting mechanics and Technologies list.  <ul><li><b>Technologies Known:</b>  You learn 4 Technologies of your choice, and you learn an additional 4 at each higher Visionary level as shown in the Technologies Known column of the Visionary table.  You may not learn a Technology of a level higher than your Max Technology Level, and you may learn a Technology at the same time you learn its prerequisite.  </li><br><li><b>Tech Points:</b>  You have a number of Tech Points equal to your Visionary level x 8, as shown in the Tech Points column of the Visionary table, + your Int modifier.  You expend these Tech Points to cast Tech Powers.  You regain all expended Tech Points when you finish a long rest.  </li><br><li><b>Max Tech Level:</b>  Many Technologies can be overpowered, consuming more Tech Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Tech Level column of the Visionary table.  You may only cast Technologies at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Techcasting Ability:</b>  Your Techcasting ability is Intelligence.  You use your Intelligence modifier whenever a Technology refers to your Techcasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Technology you cast and when making an attack roll with one.  </li><br><li><b>Technology save DC</b> = 8 + your proficiency bonus + your Techcasting ability modifier</li><br><li><b>Technology attack modifier</b> = your proficiency bonus + your Techcasting ability modifier</li></ul>"
                 },
                 {
                     "name_str" : "Augmented Armor",
@@ -166,7 +166,7 @@
             "equipment_packs" : "One Inventor's Pack",
             "equipment_variant" : "5d4 x 100 GC",
 
-            "sustainables_gained_denominator" : 8,
+            "sustainables_known_denominator" : 8,
             "consumables_known_per_level" : 4,
             "consumables_points_per_level" : 4,
             "consumables_max_per_level_denominator" : 2,
@@ -197,7 +197,7 @@
                 {
                     "name_str" : "Techcasting",
                     "level" : 1,
-                    "mechanics_str" : "You have gained intimate knowledge of technology far beyond your time, and are capable of apply these technologies in a variety of ways.  See the Rules for Techcasting mechanics and Technologies list.  <ul><li><b>Technologies Known:</b>  You learn 4 Technologies of your choice, and you learn an additional 4 at each higher Visionary level as shown in the Technologies Known column of the Visionary table.  You may not learn a Technology of a level higher than your Max Technology Level, and you may learn a Technology at the same time you learn its prerequisite.  </li><br><li><b>Tech Points:</b>  You have a number of Tech Points equal to your Visionary level x 8, as shown in the Tech Points column of the Visionary table, + your Int modifier.  You expend these Tech Points to cast Tech Powers.  You regain all expended Tech Points when you finish a long rest.  </li><br><li><b>Max Tech Level:</b>  Many Technologies can be overpowered, consuming more Tech Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Tech Level column of the Visionary table.  You may only cast Technologies at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Techcasting Ability:</b>  Your Techcasting ability is Intelligence.  You use your Intelligence modifier whenever a Technology refers to your Techcasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Technology you cast and when making an attack roll with one.  </li><br><li><b>Technology save DC</b> = 8 + your proficiency bonus + your Techcasting ability modifier</li><br><li><b>Technology attack modifier</b> = your proficiency bonus + your Techcasting ability modifier</li></ul>"
+                    "mechanics_str" : "You have known intimate knowledge of technology far beyond your time, and are capable of apply these technologies in a variety of ways.  See the Rules for Techcasting mechanics and Technologies list.  <ul><li><b>Technologies Known:</b>  You learn 4 Technologies of your choice, and you learn an additional 4 at each higher Visionary level as shown in the Technologies Known column of the Visionary table.  You may not learn a Technology of a level higher than your Max Technology Level, and you may learn a Technology at the same time you learn its prerequisite.  </li><br><li><b>Tech Points:</b>  You have a number of Tech Points equal to your Visionary level x 8, as shown in the Tech Points column of the Visionary table, + your Int modifier.  You expend these Tech Points to cast Tech Powers.  You regain all expended Tech Points when you finish a long rest.  </li><br><li><b>Max Tech Level:</b>  Many Technologies can be overpowered, consuming more Tech Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Tech Level column of the Visionary table.  You may only cast Technologies at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Techcasting Ability:</b>  Your Techcasting ability is Intelligence.  You use your Intelligence modifier whenever a Technology refers to your Techcasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Technology you cast and when making an attack roll with one.  </li><br><li><b>Technology save DC</b> = 8 + your proficiency bonus + your Techcasting ability modifier</li><br><li><b>Technology attack modifier</b> = your proficiency bonus + your Techcasting ability modifier</li></ul>"
                 },
                 {
                     "name_str" : "Augmented Armor",
@@ -307,7 +307,7 @@
             "equipment_packs" : "One Inventor's Pack",
             "equipment_variant" : "5d4 x 100 GC",
 
-            "sustainables_gained_denominator" : 8,
+            "sustainables_known_denominator" : 8,
             "consumables_known_per_level" : 4,
             "consumables_points_per_level" : 4,
             "consumables_max_per_level_denominator" : 2,
@@ -338,7 +338,7 @@
                 {
                     "name_str" : "Techcasting",
                     "level" : 1,
-                    "mechanics_str" : "You have gained intimate knowledge of technology far beyond your time, and are capable of apply these technologies in a variety of ways.  See the Rules for Techcasting mechanics and Technologies list.  <ul><li><b>Technologies Known:</b>  You learn 4 Technologies of your choice, and you learn an additional 4 at each higher Visionary level as shown in the Technologies Known column of the Visionary table.  You may not learn a Technology of a level higher than your Max Technology Level, and you may learn a Technology at the same time you learn its prerequisite.  </li><br><li><b>Tech Points:</b>  You have a number of Tech Points equal to your Visionary level x 8, as shown in the Tech Points column of the Visionary table, + your Int modifier.  You expend these Tech Points to cast Tech Powers.  You regain all expended Tech Points when you finish a long rest.  </li><br><li><b>Max Tech Level:</b>  Many Technologies can be overpowered, consuming more Tech Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Tech Level column of the Visionary table.  You may only cast Technologies at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Techcasting Ability:</b>  Your Techcasting ability is Intelligence.  You use your Intelligence modifier whenever a Technology refers to your Techcasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Technology you cast and when making an attack roll with one.  </li><br><li><b>Technology save DC</b> = 8 + your proficiency bonus + your Techcasting ability modifier</li><br><li><b>Technology attack modifier</b> = your proficiency bonus + your Techcasting ability modifier</li></ul>"
+                    "mechanics_str" : "You have known intimate knowledge of technology far beyond your time, and are capable of apply these technologies in a variety of ways.  See the Rules for Techcasting mechanics and Technologies list.  <ul><li><b>Technologies Known:</b>  You learn 4 Technologies of your choice, and you learn an additional 4 at each higher Visionary level as shown in the Technologies Known column of the Visionary table.  You may not learn a Technology of a level higher than your Max Technology Level, and you may learn a Technology at the same time you learn its prerequisite.  </li><br><li><b>Tech Points:</b>  You have a number of Tech Points equal to your Visionary level x 8, as shown in the Tech Points column of the Visionary table, + your Int modifier.  You expend these Tech Points to cast Tech Powers.  You regain all expended Tech Points when you finish a long rest.  </li><br><li><b>Max Tech Level:</b>  Many Technologies can be overpowered, consuming more Tech Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Tech Level column of the Visionary table.  You may only cast Technologies at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Techcasting Ability:</b>  Your Techcasting ability is Intelligence.  You use your Intelligence modifier whenever a Technology refers to your Techcasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Technology you cast and when making an attack roll with one.  </li><br><li><b>Technology save DC</b> = 8 + your proficiency bonus + your Techcasting ability modifier</li><br><li><b>Technology attack modifier</b> = your proficiency bonus + your Techcasting ability modifier</li></ul>"
                 },
                 {
                     "name_str" : "Augmented Armor",
@@ -448,7 +448,7 @@
             "equipment_packs" : "One Tactician's Pack",
             "equipment_variant" : "5d4 x 100 GC",
 
-            "sustainables_gained_denominator" : 2,
+            "sustainables_known_denominator" : 2,
             "consumables_known_per_level" : 1,
             "consumables_points_per_level" : 1,
             "consumables_max_per_level_denominator" : 8,
@@ -589,7 +589,7 @@
             "equipment_packs" : "One Warrior's Pack",
             "equipment_variant" : "5d4 x 100 GC",
 
-            "sustainables_gained_denominator" : 2,
+            "sustainables_known_denominator" : 2,
             "consumables_known_per_level" : 1,
             "consumables_points_per_level" : 1,
             "consumables_max_per_level_denominator" : 8,
@@ -730,7 +730,7 @@
             "equipment_packs" : "One Warrior's Pack",
             "equipment_variant" : "5d4 x 100 GC",
 
-            "sustainables_gained_denominator" : 2,
+            "sustainables_known_denominator" : 2,
             "consumables_known_per_level" : 1,
             "consumables_points_per_level" : 1,
             "consumables_max_per_level_denominator" : 8,
@@ -871,7 +871,7 @@
             "equipment_packs" : "One Warrior's Pack",
             "equipment_variant" : "5d4 x 100 GC",
 
-            "sustainables_gained_denominator" : 2,
+            "sustainables_known_denominator" : 2,
             "consumables_known_per_level" : 1,
             "consumables_points_per_level" : 1,
             "consumables_max_per_level_denominator" : 8,
@@ -1012,43 +1012,43 @@
             "equipment_packs" : "One Warrior's Pack",
             "equipment_variant" : "5d4 x 100 GC",
 
-            "sustainables_gained_denominator" : 2,
+            "sustainables_known_denominator" : 2,
             "consumables_known_per_level" : 1,
             "consumables_points_per_level" : 1,
             "consumables_max_per_level_denominator" : 8,
 
             "class_feat_table_links" : [
-                "<a href='#Blessed Strikes-1'>Blessed Strikes</a>, <a href='#Holy Sentinel-1'>Holy Sentinel</a>",
+                "<a href='#Magical Boons-1'>Magical Boons</a>, <a href='#Blessed Strikes-1'>Blessed Strikes</a>",
                 "---",
                 "<a href='#Ability Score Improvement-3'>Ability Score Improvement</a>, Subclass Feature",
                 "---",
-                "<a href='#Ability Score Improvement-5'>Ability Score Improvement</a>, <a href='#Immovable Object-5'>Immovable Object</a>",
+                "<a href='#Ability Score Improvement-5'>Ability Score Improvement</a>, <a href='#Divine Endurance-5'>Divine Endurance</a>",
                 "---",
-                "<a href='#Ability Score Improvement-7'>Ability Score Improvement</a>, <a href='#Improved Movement-7'>Improved Movement</a>",
+                "<a href='#Ability Score Improvement-7'>Ability Score Improvement</a>, <a href='#Heroic Valor-7'>Heroic Valor</a>",
                 "---",
-                "<a href='#Staggering Punch-9'>Staggering Punch</a>, Subclass Feature",
+                "<a href='#Smiting Strikes-9'>Smiting Strikes</a>, Subclass Feature",
                 "---",
-                "<a href='#Ability Score Improvement-11'>Ability Score Improvement</a>, <a href='#Power Resilience-11'>Power Resilience</a>",
+                "<a href='#Ability Score Improvement-11'>Ability Score Improvement</a>, <a href='#Spell Resilience-11'>Spell Resilience</a>",
                 "---",
                 "<a href='#Ability Score Improvement-13'>Ability Score Improvement</a>, <a href='#Champion's Might-13'>Champion's Might</a>",
                 "---",
-                "<a href='#Ability Score Improvement-15'>Ability Score Improvement</a>, <a href='#Stalwart-15'>Stalwart</a>",
+                "<a href='#Ability Score Improvement-15'>Ability Score Improvement</a>, <a href='#Sentinel-15'>Sentinel</a>",
                 "---",
-                "<a href='#Shattering Punch-17'>Shattering Punch</a>, Subclass Feature",
+                "<a href='#Deific Strikes-17'>Deific Strikes</a>, Subclass Feature",
                 "---",
                 "<a href='#Ability Score Improvement-19'>Ability Score Improvement</a>, <a href='#Apex Power-19'>Apex Power</a>",
                 "---"
                 ],
             "class_feat_descriptions" : [
                 {
+                    "name_str" : "Magical Boons",
+                    "level" : 1,
+                    "mechanics_str" : "You have a number of Boons as shown in the Sustainables Known column of the class table.  Upon reaching this and subsequent levels, you gain a new Boon that you qualify for if your total number of Boons is less than the Sustainables Known for your level.  You may also swap an existing Boon for another of your choice that you qualify for upon each level up.  "
+                },
+                {
                     "name_str" : "Blessed Strikes",
                     "level" : 1,
                     "mechanics_str" : "You can add your Proficiency bonus to the damage of your Attacks made with Unarmed Strikes or a Magical Weapon.  "
-                },
-                {
-                    "name_str" : "Holy Sentinel",
-                    "level" : 1,
-                    "mechanics_str" : "You gain a +1 to your Armor Class while unarmored or wearing Magical Armor.  "
                 },
                 {
                     "name_str" : "Ability Score Improvement",
@@ -1061,24 +1061,24 @@
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
-                    "name_str" : "Immovable Object",
+                    "name_str" : "Divine Endurance",
                     "level" : 5,
-                    "mechanics_str" : "When you are hit by an attack or forcibly moved against your will, you can use your reaction to halve the attack’s damage against you and avoid being moved.  "
-                },
+                    "mechanics_str" : "As a bonus action, you can gain temporary hit points equal to your level in this class, replacing any temporary hit points you already have.  You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.  "
+                },                
                 {
                     "name_str" : "Ability Score Improvement",
                     "level" : 7,
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
-                    "name_str" : "Improved Movement",
+                    "name_str" : "Heroic Valor",
                     "level" : 7,
-                    "mechanics_str" : "Your movement speeds increase by a number of feet equal to your proficiency bonus multiplied by 5 while you aren't wearing Heavy Armor.  "
+                    "mechanics_str" : "When you have advantage on an Attack using Unarmed Strikes or a Magical Weapon and hit, that target has disadvantage to hit any target other than you until the start of your next turn.  When you take the Attack Action using Unarmed Strikes or a Magical Weapon, you can choose to grant advantage to all Attacks made by you and directed at you until the start of your next turn.  "
                 },
                 {
-                    "name_str" : "Staggering Punch",
+                    "name_str" : "Smiting Strikes",
                     "level" : 9,
-                    "mechanics_str" : "When you deal Mach Punch damage, the target cannot take reactions until the start of your next turn.  "
+                    "mechanics_str" : "When you take the Attack Action using Unarmed Strikes or a Magical Weapon, you can choose to add additional damage to all of your Attacks until the start of your next turn.  This additional damage is equal to your proficiency bonus.  You may use this feature a number of times equal to your proficiency bonus between long rests.  "
                 },
                 {
                     "name_str" : "Ability Score Improvement",
@@ -1086,9 +1086,9 @@
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
-                    "name_str" : "Power Resilience",
+                    "name_str" : "Spell Resilience",
                     "level" : 11,
-                    "mechanics_str" : "When you make a saving throw against a Superpower based effect to avoid damage, you take no damage if you succeed and only half damage if you fail.  "
+                    "mechanics_str" : "When you make a saving throw against a Spell based effect to avoid damage, you take no damage if you succeed and only half damage if you fail.  "
                 },
                 {
                     "name_str" : "Ability Score Improvement",
@@ -1106,14 +1106,14 @@
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
-                    "name_str" : "Stalwart",
+                    "name_str" : "Sentinel",
                     "level" : 15,
                     "mechanics_str" : "No attack roll has advantage against you while you are not incapacitated.  "
                 },
                 {
-                    "name_str" : "Shattering Punch",
+                    "name_str" : "Deific Strikes",
                     "level" : 17,
-                    "mechanics_str" : "When you deal Mach Punch damage, the target must make a Constitution saving throw against your Strength DC.  On a failure, the target is knocked Prone and Stunned until the start of their next turn.  "
+                    "mechanics_str" : "When you deal Smiting Strike damage, the additional damage is instead equal to twice your proficiency bonus.  "
                 },
                 {
                     "name_str" : "Ability Score Improvement",
@@ -1153,7 +1153,7 @@
             "equipment_packs" : "One Inventor's Pack",
             "equipment_variant" : "5d4 x 100 GC",
 
-            "sustainables_gained_denominator" : 2,
+            "sustainables_known_denominator" : 2,
             "consumables_known_per_level" : 1,
             "consumables_points_per_level" : 1,
             "consumables_max_per_level_denominator" : 8,
@@ -1294,7 +1294,7 @@
             "equipment_packs" : "One Inventor's Pack",
             "equipment_variant" : "5d4 x 100 GC",
 
-            "sustainables_gained_denominator" : 2,
+            "sustainables_known_denominator" : 2,
             "consumables_known_per_level" : 1,
             "consumables_points_per_level" : 1,
             "consumables_max_per_level_denominator" : 8,
@@ -1435,7 +1435,7 @@
             "equipment_packs" : "One Inventor's Pack",
             "equipment_variant" : "5d4 x 100 GC",
 
-            "sustainables_gained_denominator" : 2,
+            "sustainables_known_denominator" : 2,
             "consumables_known_per_level" : 1,
             "consumables_points_per_level" : 1,
             "consumables_max_per_level_denominator" : 8,
@@ -1576,7 +1576,7 @@
             "equipment_packs" : "One Inventor's Pack",
             "equipment_variant" : "5d4 x 100 GC",
 
-            "sustainables_gained_denominator" : 2,
+            "sustainables_known_denominator" : 2,
             "consumables_known_per_level" : 1,
             "consumables_points_per_level" : 1,
             "consumables_max_per_level_denominator" : 8,
