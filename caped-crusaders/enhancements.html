@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-US-Compatible" content="e-edge">
+    <title>KnowOne's Website of Everything</title>
+    <link rel="icon" href="/_SiteResources/Images/OwlOfMinerva_ModifiedLogo.png">
+    <link rel="stylesheet" href="/caped-crusaders-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+    <script>
+      $(function readTech() {
+        var enhancements = [];
+        $.getJSON('enhancements.json', function(data) {
+          $.each(data.enhancement, function(i, f) {
+            var tblRow = "<tr>" 
+              + "<td>" + "<img class='FilterTableImage' src=" + f.school_img + "><br>" + f.school_str + "</td>" 
+              + "<td>" + f.level_str + "</td>" 
+              + "<td><a href='enhancements/" + f.page_url + "' target='_blank'>" + f.name_str + "</a></td>" 
+              + "<td>" + f.damage_effect_str + "</td>" 
+              + "<td>" + f.class_str + "</td>" 
+              + "<td>" + f.subclass_str + "</td>" 
+              + "<td>" + f.feats_str + "</td>" 
+              + "<td>" + f.backgrounds_str + "</td>" 
+              + "<td>" + f.races_str + "</td>" 
+              + "</tr>"
+            $(tblRow).appendTo("#FilterTable tbody");
+          });
+        });
+      });
+    </script>
+  </head>
+
+
+  <body>
+    <div class="PageContainer, PlanesMapBackground"> 
+      <div class="PageHeader">
+        <div class="Import_PageHeader"></div>
+
+          <h1 class="header">Caped Crusaders:  Enhancements</h1>
+          <hr>
+      </div>
+        
+      
+      <div class="PageContent">
+        <div class="AnchorCenter">
+          
+
+
+
+          <div class="AnchorRight">
+
+            <section class="PageContentRight">
+              <button class="WikiBackButton" onclick="location.href='../caped-crusaders.html'">Out to Caped Crusaders</button>
+              <h2>Include Filters</h2>
+              <hr>
+
+              <input type="text" id="FilterInputInclude0" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Science. . .">
+              <input type="text" id="FilterInputInclude1" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Level. . .">
+              <input type="text" id="FilterInputInclude2" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Name. . .">
+              <input type="text" id="FilterInputInclude7" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Damage/Effect. . .">
+              <input type="text" id="FilterInputInclude8" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Classes. . .">
+              <input type="text" id="FilterInputInclude9" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Subclasses. . .">
+              <input type="text" id="FilterInputInclude10" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Feats. . .">
+              <input type="text" id="FilterInputInclude11" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Backgrounds. . .">
+              <input type="text" id="FilterInputInclude12" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Races. . .">
+
+              <h2>Exclude Filters</h2>
+              <hr>
+
+              <input type="text" id="FilterInputExclude0" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Science. . .">
+              <input type="text" id="FilterInputExclude1" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Level. . .">
+              <input type="text" id="FilterInputExclude2" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Name. . .">
+              <input type="text" id="FilterInputExclude7" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Damage/Effect. . .">
+              <input type="text" id="FilterInputExclude8" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Classes. . .">
+              <input type="text" id="FilterInputExclude9" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Subclasses. . .">
+              <input type="text" id="FilterInputExclude10" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Feats. . .">
+              <input type="text" id="FilterInputExclude11" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Backgrounds. . .">
+              <input type="text" id="FilterInputExclude12" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Races. . .">
+                            
+              <table id="FilterTable">
+                <thead class="header">
+                  <th><button class="TableSortButton" onclick="sortTable(0)">Science</button></th>
+                  <th><button class="TableSortButton" onclick="sortTable(1)">Level</button></th>
+                  <th><button class="TableSortButton" onclick="sortTable(2)">Name</button></th>
+                  <th><button class="TableSortButton" onclick="sortTable(7)">Damage/Effect</button></th>
+                  <th><button class="TableSortButton" onclick="sortTable(8)">Classes</button></th>
+                  <th><button class="TableSortButton" onclick="sortTable(9)">Subclasses</button></th>
+                  <th><button class="TableSortButton" onclick="sortTable(10)">Feats</button></th>
+                  <th><button class="TableSortButton" onclick="sortTable(11)">Backgrounds</button></th>
+                  <th><button class="TableSortButton" onclick="sortTable(12)">Races</button></th>
+                </thead>
+                <tbody>
+
+                </tbody>
+              </table>
+
+            </section>
+            
+          </div>
+        </div>
+
+      </div>
+
+      <footer class="Import_PageFooter"></footer>
+    </div>
+  </body>
+</html>
+
+<script type="text/javascript">
+  $(function () {
+
+    $(".Import_PageHeader").load("/_SiteResources/Pages/Import_PageHeader.html");
+    $(".Import_ContentLeft").load("/_SiteResources/Pages/Import_ContentLeft.html");
+    $(".Import_PageFooter").load("/_SiteResources/Pages/Import_PageFooter.html");
+
+});
+</script>
+
+
+
+
+
+<script>
+  
+  function FilterTableFunction() {
+    // Declare variables
+    var table, tr, i; 
+    var inputIncludeZero, inputIncludeOne, inputIncludeTwo, inputIncludeThree, inputIncludeFour, inputIncludeFive, inputIncludeSix, inputIncludeSeven, inputIncludeEight, inputIncludeNine, inputIncludeTen, inputIncludeEleven, inputIncludeTwelve;  
+    var inputExcludeZero, inputExcludeOne, inputExcludeTwo, inputExcludeThree, inputExcludeFour, inputExcludeFive, inputExcludeSix, inputExcludeSeven, inputExcludeEight, inputExcludeNine, inputExcludeTen, inputExcludeEleven, inputExcludeTwelve;  
+    var filterIncludeZero, filterIncludeOne, filterIncludeTwo, filterIncludeThree, filterIncludeFour, filterIncludeFive, filterIncludeSix, filterIncludeSeven, filterIncludeEight, filterIncludeNine, filterIncludeTen, filterIncludeEleven, filterIncludeTwelve;  
+    var filterExcludeZero, filterExcludeOne, filterExcludeTwo, filterExcludeThree, filterExcludeFour, filterExcludeFive, filterExcludeSix, filterExcludeSeven, filterExcludeEight, filterExcludeNine, filterExcludeTen, filterExcludeEleven, filterExcludeTwelve;  
+    var tdZero, tdOne, tdTwo, tdThree, tdFour, tdFive, tdSix, tdSeven, tdEight, tdNine, tdTen, tdEleven, tdTwelve;  
+    var txtValueZero, txtValueOne, txtValueTwo, txtValueThree, txtValueFour, txtValueFive, txtValueSix, txtValueSeven, txtValueEight, txtValueNine, txtValueTen, txtValueEleven, txtValueTwelve;
+
+    inputIncludeZero = document.getElementById("FilterInputInclude0");
+    inputIncludeOne = document.getElementById("FilterInputInclude1");
+    inputIncludeTwo = document.getElementById("FilterInputInclude2");
+    inputIncludeThree = document.getElementById("FilterInputInclude3");
+    inputIncludeFour = document.getElementById("FilterInputInclude4");
+    inputIncludeFive = document.getElementById("FilterInputInclude5");
+    inputIncludeSix = document.getElementById("FilterInputInclude6");
+    inputIncludeSeven = document.getElementById("FilterInputInclude7");
+    inputIncludeEight = document.getElementById("FilterInputInclude8");
+    inputIncludeNine = document.getElementById("FilterInputInclude9");
+    inputIncludeTen = document.getElementById("FilterInputInclude10");
+    inputIncludeEleven = document.getElementById("FilterInputInclude11");
+    inputIncludeTwelve = document.getElementById("FilterInputInclude12");
+
+    inputExcludeZero = document.getElementById("FilterInputExclude0");
+    inputExcludeOne = document.getElementById("FilterInputExclude1");
+    inputExcludeTwo = document.getElementById("FilterInputExclude2");
+    inputExcludeThree = document.getElementById("FilterInputExclude3");
+    inputExcludeFour = document.getElementById("FilterInputExclude4");
+    inputExcludeFive = document.getElementById("FilterInputExclude5");
+    inputExcludeSix = document.getElementById("FilterInputExclude6");
+    inputExcludeSeven = document.getElementById("FilterInputExclude7");
+    inputExcludeEight = document.getElementById("FilterInputExclude8");
+    inputExcludeNine = document.getElementById("FilterInputExclude9");
+    inputExcludeTen = document.getElementById("FilterInputExclude10");
+    inputExcludeEleven = document.getElementById("FilterInputExclude11");
+    inputExcludeTwelve = document.getElementById("FilterInputExclude12");
+
+
+    filterIncludeZero = inputIncludeZero.value.toUpperCase();
+    filterIncludeOne = inputIncludeOne.value.toUpperCase();
+    filterIncludeTwo = inputIncludeTwo.value.toUpperCase();
+    filterIncludeThree = inputIncludeThree.value.toUpperCase();
+    filterIncludeFour = inputIncludeFour.value.toUpperCase();
+    filterIncludeFive = inputIncludeFive.value.toUpperCase();
+    filterIncludeSix = inputIncludeSix.value.toUpperCase();
+    filterIncludeSeven = inputIncludeSeven.value.toUpperCase();
+    filterIncludeEight = inputIncludeEight.value.toUpperCase();
+    filterIncludeNine = inputIncludeNine.value.toUpperCase();
+    filterIncludeTen = inputIncludeTen.value.toUpperCase();
+    filterIncludeEleven = inputIncludeEleven.value.toUpperCase();
+    filterIncludeTwelve = inputIncludeTwelve.value.toUpperCase();
+
+    filterExcludeZero = inputExcludeZero.value.toUpperCase();
+    filterExcludeOne = inputExcludeOne.value.toUpperCase();
+    filterExcludeTwo = inputExcludeTwo.value.toUpperCase();
+    filterExcludeThree = inputExcludeThree.value.toUpperCase();
+    filterExcludeFour = inputExcludeFour.value.toUpperCase();
+    filterExcludeFive = inputExcludeFive.value.toUpperCase();
+    filterExcludeSix = inputExcludeSix.value.toUpperCase();
+    filterExcludeSeven = inputExcludeSeven.value.toUpperCase();
+    filterExcludeEight = inputExcludeEight.value.toUpperCase();
+    filterExcludeNine = inputExcludeNine.value.toUpperCase();
+    filterExcludeTen = inputExcludeTen.value.toUpperCase();
+    filterExcludeEleven = inputExcludeEleven.value.toUpperCase();
+    filterExcludeTwelve = inputExcludeTwelve.value.toUpperCase();
+
+    table = document.getElementById("FilterTable");
+    tr = table.getElementsByTagName("tr");
+  
+    // Loop through all table rows, and hide those who don't match the search query
+    for (i = 0; i < tr.length; i++) {
+      tdZero = tr[i].getElementsByTagName("td")[0];
+      tdOne = tr[i].getElementsByTagName("td")[1];
+      tdTwo = tr[i].getElementsByTagName("td")[2];
+      tdThree = tr[i].getElementsByTagName("td")[3];
+      tdFour = tr[i].getElementsByTagName("td")[4];
+      tdFive = tr[i].getElementsByTagName("td")[5];
+      tdSix = tr[i].getElementsByTagName("td")[6];
+      tdSeven = tr[i].getElementsByTagName("td")[7];
+      tdEight = tr[i].getElementsByTagName("td")[8];
+      tdNine = tr[i].getElementsByTagName("td")[9];
+      tdTen = tr[i].getElementsByTagName("td")[10];
+      tdEleven = tr[i].getElementsByTagName("td")[11];
+      tdTwelve = tr[i].getElementsByTagName("td")[12];
+
+      if (tdZero) {
+        txtValueZero = tdZero.textContent || tdZero.innerText;
+        txtValueOne = tdOne.textContent || tdOne.innerText;
+        txtValueTwo = tdTwo.textContent || tdTwo.innerText;
+        txtValueThree = tdThree.textContent || tdThree.innerText;
+        txtValueFour = tdFour.textContent || tdFour.innerText;
+        txtValueFive = tdFive.textContent || tdFive.innerText;
+        txtValueSix = tdSix.textContent || tdSix.innerText;
+        txtValueSeven = tdSeven.textContent || tdSeven.innerText;
+        txtValueEight = tdEight.textContent || tdEight.innerText;
+        txtValueNine = tdNine.textContent || tdNine.innerText;
+        txtValueTen = tdTen.textContent || tdTen.innerText;
+        txtValueEleven = tdEleven.textContent || tdEleven.innerText;
+        txtValueTwelve = tdTwelve.textContent || tdTwelve.innerText;
+        
+        if (txtValueZero.toUpperCase().indexOf(filterIncludeZero) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueOne.toUpperCase().indexOf(filterIncludeOne) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueTwo.toUpperCase().indexOf(filterIncludeTwo) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueThree.toUpperCase().indexOf(filterIncludeThree) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueFour.toUpperCase().indexOf(filterIncludeFour) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueFive.toUpperCase().indexOf(filterIncludeFive) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueSix.toUpperCase().indexOf(filterIncludeSix) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueSeven.toUpperCase().indexOf(filterIncludeSeven) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueEight.toUpperCase().indexOf(filterIncludeEight) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueNine.toUpperCase().indexOf(filterIncludeNine) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueTen.toUpperCase().indexOf(filterIncludeTen) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueEleven.toUpperCase().indexOf(filterIncludeEleven) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueTwelve.toUpperCase().indexOf(filterIncludeTwelve) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueZero.toUpperCase().indexOf(filterExcludeZero) > -1 && filterExcludeZero != '') {
+          tr[i].style.display = "none";
+        } else if (txtValueOne.toUpperCase().indexOf(filterExcludeOne) > -1 && filterExcludeOne != '') {
+          tr[i].style.display = "none";
+        } else if (txtValueTwo.toUpperCase().indexOf(filterExcludeTwo) > -1 && filterExcludeTwo != '') {
+          tr[i].style.display = "none";
+        } else if (txtValueThree.toUpperCase().indexOf(filterExcludeThree) > -1 && filterExcludeThree != '') {
+          tr[i].style.display = "none";
+        } else if (txtValueFour.toUpperCase().indexOf(filterExcludeFour) > -1 && filterExcludeFour != '') {
+          tr[i].style.display = "none";
+        } else if (txtValueFive.toUpperCase().indexOf(filterExcludeFive) > -1 && filterExcludeFive != '') {
+          tr[i].style.display = "none";
+        } else if (txtValueSix.toUpperCase().indexOf(filterExcludeSix) > -1 && filterExcludeSix != '') {
+          tr[i].style.display = "none";
+        } else if (txtValueSeven.toUpperCase().indexOf(filterExcludeSeven) > -1 && filterExcludeSeven != '') {
+          tr[i].style.display = "none";
+        } else if (txtValueEight.toUpperCase().indexOf(filterExcludeEight) > -1 && filterExcludeEight != '') {
+          tr[i].style.display = "none";
+        } else if (txtValueNine.toUpperCase().indexOf(filterExcludeNine) > -1 && filterExcludeNine != '') {
+          tr[i].style.display = "none";
+        } else if (txtValueTen.toUpperCase().indexOf(filterExcludeTen) > -1 && filterExcludeTen != '') {
+          tr[i].style.display = "none";
+        } else if (txtValueEleven.toUpperCase().indexOf(filterExcludeEleven) > -1 && filterExcludeEleven != '') {
+          tr[i].style.display = "none";
+        } else if (txtValueTwelve.toUpperCase().indexOf(filterExcludeTwelve) > -1 && filterExcludeTwelve != '') {
+          tr[i].style.display = "none";
+        } else {
+          tr[i].style.display = "";
+        }
+      }
+    }
+  }
+
+</script>
+
+
+
+
+
+
+
+
+<script>
+  function sortTable(n) {
+    var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+    table = document.getElementById("FilterTable");
+    switching = true;
+    // Set the sorting direction to ascending:
+    dir = "asc";
+    /* Make a loop that will continue until
+    no switching has been done: */
+    while (switching) {
+      // Start by saying: no switching is done:
+      switching = false;
+      rows = table.rows;
+      /* Loop through all table rows (except the
+      first, which contains table headers): */
+      for (i = 1; i < (rows.length - 1); i++) {
+        // Start by saying there should be no switching:
+        shouldSwitch = false;
+        /* Get the two elements you want to compare,
+        one from current row and one from the next: */
+        x = rows[i].getElementsByTagName("TD")[n];
+        y = rows[i + 1].getElementsByTagName("TD")[n];
+        /* Check if the two rows should switch place,
+        based on the direction, asc or desc: */
+        if (dir == "asc") {
+          if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+            // If so, mark as a switch and break the loop:
+            shouldSwitch = true;
+            break;
+          }
+        } else if (dir == "desc") {
+          if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+            // If so, mark as a switch and break the loop:
+            shouldSwitch = true;
+            break;
+          }
+        }
+      }
+      if (shouldSwitch) {
+        /* If a switch has been marked, make the switch
+        and mark that a switch has been done: */
+        rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+        switching = true;
+        // Each time a switch is done, increase this count by 1:
+        switchcount ++;
+      } else {
+        /* If no switching has been done AND the direction is "asc",
+        set the direction to "desc" and run the while loop again. */
+        if (switchcount == 0 && dir == "asc") {
+          dir = "desc";
+          switching = true;
+        }
+      }
+    }
+  }
+  </script>

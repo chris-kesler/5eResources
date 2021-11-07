@@ -1,0 +1,48 @@
+{
+    "enhancement": [
+        {
+            "name_str" : "Unarmored Defense",
+            "page_url" : "unarmored-defense.html",
+
+            "level_int" : 1,
+            "level_str" : "1st",
+            
+            "school_str" : "Resilience",
+            "school_img" : "/_SiteResources/Images/noun_Shield_2043937.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "Your Armor Class while unarmored is equal to 8 + your Constitution Modifier + your Strength Modifier.  If you are wearing armor that would include your Dexterity Modifier in your Armor Class calculation, you can substitute your Constitution Modifier instead of your Dexterity Modifier for that calculation.  ",
+
+            "class_str" : "???",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Meta Kinesis",
+            "page_url" : "meta-kinesis.html",
+
+            "level_int" : 1,
+            "level_str" : "1st",
+            
+            "school_str" : "Mobility",
+            "school_img" : "/_SiteResources/Images/noun_cape_1951475.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "You gain a Superpowered Flying speed of 30 feet.  ",
+
+            "class_str" : "???",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        }
+    ]
+}

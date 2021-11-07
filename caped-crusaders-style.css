@@ -665,7 +665,7 @@ iframe {
 #FilterTable th, #FilterTable tr td {
   text-align: left; /* Left-align text */
   padding: 5px; /* Add padding */
-  min-width: 150px;
+  min-width: 155px;
   color: black;
   border: 1px solid black;
 }
