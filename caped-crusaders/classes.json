@@ -436,14 +436,14 @@
             "hit_die_int" : 12,
             "hit_die_average_int" : 7,
 
-            "proficiencies_armor" : "All Mundane and Tech Weapons",
-            "proficiencies_weapons" : "All Mundane and Tech Weapons",
+            "proficiencies_armor" : "All Mundane and Technological Weapons",
+            "proficiencies_weapons" : "All Mundane and Technological Weapons",
             "proficiencies_tools" : "Choose any one",
             "proficiencies_saves" : "Strength, Dexterity",
             "proficiencies_skills" : "Choose any two, one of which must be either Strength or Dexterity based.",
             
             "equipment_armor" : "Molded Plate, Kevlar",
-            "equipment_weapons" : "Any two Tech or Mundane weapons",
+            "equipment_weapons" : "Any two Technological or Mundane weapons",
             "equipment_tools" : "One tool with which you are proficient",
             "equipment_packs" : "One Tactician's Pack",
             "equipment_variant" : "5d4 x 100 GC",
@@ -454,7 +454,7 @@
             "consumables_max_per_level_denominator" : 8,
 
             "class_feat_table_links" : [
-                "<a href='#Fighting Style-1'>Fighting Style</a>, <a href='#Second Wind-1'>Second Wind</a>",
+                "<a href='#Combat Techniques-1'>Combat Techniques</a>, <a href='#Second Wind-1'>Second Wind</a>",
                 "---",
                 "<a href='#Ability Score Improvement-3'>Ability Score Improvement</a>, Subclass Feature",
                 "---",
@@ -477,9 +477,9 @@
                 ],
             "class_feat_descriptions" : [
                 {
-                    "name_str" : "Fighting Style",
+                    "name_str" : "Combat Techniques",
                     "level" : 1,
-                    "mechanics_str" : "You gain a fighting style of your choice."
+                    "mechanics_str" : "You have a number of Techniques as shown in the Sustainables Known column of the class table.  Upon reaching this and subsequent levels, you gain a new Technique that you qualify for if your total number of Techniques is less than the Sustainables Known for your level.  You may also swap an existing Technique for another of your choice that you qualify for upon each level up.  "
                 },
                 {
                     "name_str" : "Second Wind",
@@ -1000,14 +1000,14 @@
             "hit_die_int" : 12,
             "hit_die_average_int" : 7,
 
-            "proficiencies_armor" : "All Armors",
-            "proficiencies_weapons" : "All Weapons",
+            "proficiencies_armor" : "All Mundane and Magical Armors",
+            "proficiencies_weapons" : "All Mundane and Magical Weapons",
             "proficiencies_tools" : "Choose any one",
             "proficiencies_saves" : "Strength, Wisdom",
             "proficiencies_skills" : "Choose any two, one of which must be Strength or Wisdom based.  ",
             
             "equipment_armor" : "Molded Plate (Bronze) and a Shield (Bronze)",
-            "equipment_weapons" : "Any two Martial Weapons",
+            "equipment_weapons" : "Any two Mundane Martial Weapons",
             "equipment_tools" : "One tool with which you are proficient",
             "equipment_packs" : "One Warrior's Pack",
             "equipment_variant" : "5d4 x 100 GC",
@@ -1564,16 +1564,16 @@
             "hit_die_int" : 12,
             "hit_die_average_int" : 7,
 
-            "proficiencies_armor" : "None",
-            "proficiencies_weapons" : "Simple Tech Weapons",
-            "proficiencies_tools" : "Choose any two",
+            "proficiencies_armor" : "All Mundane and Superpowered Armors",
+            "proficiencies_weapons" : "All Mundane and Superpowered Weapons",
+            "proficiencies_tools" : "Choose any one",
             "proficiencies_saves" : "Strength, Constitution",
-            "proficiencies_skills" : "Choose any three",
+            "proficiencies_skills" : "Choose any two, one of which must be Strength based",
             
-            "equipment_armor" : "Forged Plate, Steel",
-            "equipment_weapons" : "Any Simple Tech Weapon",
+            "equipment_armor" : "Fitted Tunic, Lycra",
+            "equipment_weapons" : "Any Simple Mundane Weapon",
             "equipment_tools" : "One tool with which you are proficient",
-            "equipment_packs" : "One Inventor's Pack",
+            "equipment_packs" : "One Vagabond's Pack",
             "equipment_variant" : "5d4 x 100 GC",
 
             "sustainables_known_denominator" : 2,
@@ -1582,7 +1582,7 @@
             "consumables_max_per_level_denominator" : 8,
 
             "class_feat_table_links" : [
-                "<a href='#Mach Punch-1'>Mach Punch</a>, <a href='#Unarmored Defense-1'>Unarmored Defense</a>",
+                "<a href='#Power Enhancements-1'>Power Enhancements</a>, <a href='#Mach Punch-1'>Mach Punch</a>",
                 "---",
                 "<a href='#Ability Score Improvement-3'>Ability Score Improvement</a>, Subclass Feature",
                 "---",
