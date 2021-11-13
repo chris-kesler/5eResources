@@ -1036,7 +1036,7 @@
                 "---",
                 "<a href='#Deific Strikes-17'>Deific Strikes</a>, Subclass Feature",
                 "---",
-                "<a href='#Ability Score Improvement-19'>Ability Score Improvement</a>, <a href='#Apex Power-19'>Apex Power</a>",
+                "<a href='#Ability Score Improvement-19'>Ability Score Improvement</a>, <a href='#Demigod of War-19'>Demigod of War</a>",
                 "---"
                 ],
             "class_feat_descriptions" : [
@@ -1121,9 +1121,9 @@
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
-                    "name_str" : "Apex Power",
+                    "name_str" : "Demigod of War",
                     "level" : 19,
-                    "mechanics_str" : "Your Strength and Constitution scores and their maximums each increase by four.  "
+                    "mechanics_str" : "Annointed class features that can be used a number of times equal to your proficiency bonus between long rests can now be used a number of times equal to twice your proficiency bonus between long rests.  "
                 }
             ]
         },
