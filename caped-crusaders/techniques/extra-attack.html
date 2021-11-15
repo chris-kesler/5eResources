@@ -20,7 +20,6 @@
               document.getElementById("casting-table-title").innerHTML = f.name_str;
               document.getElementById("page-description-flavor").innerHTML = "<b>Flavor Description:</b>  <i>" + f.flavor_str + "</i>";
               document.getElementById("page-description-mechanics").innerHTML = "<b>Standard Mechanics:</b>  " + f.mechanics_str;
-              document.getElementById("page-description-overcharge").innerHTML = "<b>Overcharge Mechanics:</b>  " + f.overcharge_str;
               document.getElementById("casting-page-image").src = f.school_img;
               var tblRow1 = "<tr><th style='width: 20vw'>Level</th><th style='width: 20vw'>School</th><th style='width: 20vw'>Damage/Effect</th></tr>"
               $(tblRow1).appendTo("#TechTable tbody");
@@ -65,8 +64,6 @@
               <p id="page-description-flavor">
               </p>
               <p id="page-description-mechanics">
-              </p>
-              <p id="page-description-overcharge">
               </p>
               
             </section>
