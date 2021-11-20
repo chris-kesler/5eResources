@@ -26,7 +26,7 @@
 
               document.getElementById("proficiencies-armor").innerHTML = "<b>Armor:</b>  " + f.proficiencies_armor;
               document.getElementById("proficiencies-weapons").innerHTML = "<b>Weapons:</b>  " + f.proficiencies_weapons;
-              document.getElementById("proficiencies-tools").innerHTML = "<b>Tools:</b>  " + f.proficiencies_skills;
+              document.getElementById("proficiencies-tools").innerHTML = "<b>Tools:</b>  " + f.proficiencies_tools;
               document.getElementById("proficiencies-saving-throws").innerHTML = "<b>Saving Throws:</b>  " + f.proficiencies_saves;
               document.getElementById("proficiencies-skills").innerHTML = "<b>Skills:</b>  " + f.proficiencies_skills;
 
@@ -44,6 +44,7 @@
                   + "<td>" + (i+1) + "</td>"
                   + "<td>+" + prof + "</td>"
                   + "<td>" + f.class_feat_table_links[i] + "</th>"
+                  + "<td>" + Math.ceil((i+2)/f.sustainables_known_denominator) + "</td>"
                   + "<td>" + (i+1)*f.consumables_known_per_level + "</td>"
                   + "<td>" + (i+1)*f.consumables_points_per_level + "</td>"
                   + "<td>" + Math.ceil((i+1)/f.consumables_max_per_level_denominator) + "</td>"
@@ -143,9 +144,10 @@
                     <th style="width: 10vw">Level</th>
                     <th style="width: 15vw">Proficiency Bonus</th>
                     <th style="width: 30vw">Features</th>
-                    <th style="width: 12vw">Technologies Known</th>
-                    <th style="width: 12vw">Tech Points</th>
-                    <th style="width: 17vw">Maximum Tech Level</th>
+                    <th style="width: 12vw">Sustainables Gained</th>
+                    <th style="width: 12vw">Consumables Known</th>
+                    <th style="width: 12vw">Consumable Points</th>
+                    <th style="width: 17vw">Maximum Consumable Level</th>
                   </thead>
                   <tbody></tbody>
                 </table><br>

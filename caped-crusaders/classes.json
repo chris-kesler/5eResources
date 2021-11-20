@@ -26,8 +26,8 @@
             "equipment_variant" : "5d4 x 100 GC",
 
             "sustainables_known_denominator" : 8,
-            "consumables_known_per_level" : 4,
-            "consumables_points_per_level" : 4,
+            "consumables_known_per_level" : 2,
+            "consumables_points_per_level" : 2,
             "consumables_max_per_level_denominator" : 2,
 
             "class_feat_table_links" : [
@@ -449,8 +449,8 @@
             "equipment_variant" : "5d4 x 100 GC",
 
             "sustainables_known_denominator" : 2,
-            "consumables_known_per_level" : 1,
-            "consumables_points_per_level" : 1,
+            "consumables_known_per_level" : 0.25,
+            "consumables_points_per_level" : 0.25,
             "consumables_max_per_level_denominator" : 8,
 
             "class_feat_table_links" : [
@@ -499,7 +499,7 @@
                 {
                     "name_str" : "Tactical Strategy",
                     "level" : 5,
-                    "mechanics_str" : "You learn a number of Strategies equal to your proficiency bonus, and can learn additional Strategies to reflect your proficiency or swap one Strategy for another on each subsequent level up.  You gain a number of Strategy dice equal to your proficiency bonus, which are d8s.  The Strategies are as follows:<br><ul><li><b>Focused Agility: </b>When you make a Dexterity or Strength check, you can expend a Strategy Die to gain advantage on the check and add the result to your total. </li><br><li><b>Vigilance: </b>When a target you are aware of moves into your reach, you may use a Reaction to expend a Strategy Die and make an Attack against the target, add the Strategy Die to that damage roll.</li><br><li><b>Coordinated Attack: </b>When you hit a target with an Attack, you can expend a Strategy Die to forgo a subsequent attack and direct an ally to move up to their speed and make one Attack the same target, adding the Strategy Die to your ally's attack roll. </li><br><li><b>Disarming Strike: </b>When you hit a target with an Attack, you can expend a Strategy Die and add the result to the damage roll.  In addition, the target must make a Strength saving throw, dropping one item of your choice that it’s holding at any point within 15 of the target of your choosing upon failure. </li><br><li><b>Distracting Strike: </b>When you hit a target with an Attack, you can expend a Strategy Die and add the result to the damage roll.  In addition, you grant all creatures other than you advantage on all Attacks against the target until the end of your next turn.  </li><br><li><b>Defensive Stance: </b>You may use a Bonus Action to expend a Strategy Die, increasing your AC by the amount rolled until the end of your next turn.  While you benefit from this AC increase, you do not provoke Opportunity Attacks. </li><br><li><b>Feinting Attack: </b>You may use a Bonus Action to expend a Strategy Die, gaining advantage on all Attack rolls against that target until the start of your next turn.  The first time you hit that target while this effect is active, you may add the Strategy Die to that damage roll. </li><br><li><b>Grappling Strike: </b>When you hit a target with an Attack, you can expend a Strategy Die to attempt to Grapple the target and add the Strategy Die to your Strength (Athletics) check.</li><br><li><b>Parry: </b>When an Attack made by a target you are aware of misses you, you may use a Reaction to expend a Strategy Die and reduce the incoming damage by an amount equal to the Strategy Die + your Dexterity Modifier or half of the incoming damage.  </li><br><li><b>Repelling Attack: </b>When you hit a target with an Attack, you can expend a Strategy Die and add the result to the damage roll.  In addition, the target must make a Strength Saving Throw if they are no more than one size category larger than you, being pushed 20 feet away from you upon failure.  </li><br><li><b>Riposte: </b>When an Attack made by a target you are aware of misses you, you may use a Reaction to expend a Strategy Die and make an Attack against the target, add the Strategy Die to that damage roll.</li><br><li><b>Trip Attack: </b>When you hit a target with an Attack, you can expend a Strategy Die and add the result to the damage roll.  In addition, the target must make a Strength Saving Throw if they are no more than one size category larger than you, being knocked prone upon failure.  </li></ul>"
+                    "mechanics_str" : "You learn a number of Strategies equal to your proficiency bonus, and can learn additional Strategies to reflect your proficiency or swap one Strategy for another on each subsequent level up.  You gain a number of Strategy dice equal to your proficiency bonus, which are d8s.  The Strategies are as follows:<br><ul><li><b>Coordinated Attack: </b>When you hit a target with an Attack, you can expend a Strategy Die to forgo a subsequent attack.  You may then direct an Ally to expend their Reaction and move up to their speed towards the same target, making one Attack against the target if they are able to get within range and adding the Strategy Die to their Attack roll. </li><br><li><b>Defensive Stance: </b>You may use a Bonus Action to expend a Strategy Die, increasing your AC by the amount rolled until the end of your next turn.  While you benefit from this AC increase, you do not provoke Opportunity Attacks.  </li><br><li><b>Disarming Strike: </b>When you hit a target with an Attack, you can expend a Strategy Die and add the result to the damage roll.  In addition, the target must make a Strength saving throw, dropping one item of your choice that it’s holding at any point within 15 of the target of your choosing upon failure. </li><br><li><b>Distracting Strike: </b>When you hit a target with an Attack, you can expend a Strategy Die and add the result to the damage roll.  In addition, you grant all creatures other than you advantage on all Attacks against the target until the end of your next turn.  </li><br><li><b>Feinting Attack: </b>You may use a Bonus Action to expend a Strategy Die, gaining advantage on all Attack rolls against that target until the start of your next turn.  The first time you hit that target while this effect is active, you may add the Strategy Die to that damage roll. </li><br><li><b>Focused Agility: </b>When you make a Dexterity or Strength check, you can expend a Strategy Die to gain advantage on the check and add the result to your total.  </li><br><li><b>Grappling Strike: </b>When you hit a target with an Attack, you can expend a Strategy Die to attempt to Grapple the target and add the Strategy Die to your Strength (Athletics) check.</li><br><li><b>Parry: </b>When an Attack made by a target you are aware of misses you, you may use a Reaction to expend a Strategy Die and reduce the incoming damage by an amount equal to the Strategy Die + your Dexterity Modifier or half of the incoming damage.  </li><br><li><b>Repelling Attack: </b>When you hit a target with an Attack, you can expend a Strategy Die and add the result to the damage roll.  In addition, the target must make a Strength Saving Throw if they are no more than one size category larger than you, being pushed 20 feet away from you upon failure.  </li><br><li><b>Riposte: </b>When an Attack made by a target you are aware of misses you, you may use a Reaction to expend a Strategy Die and make an Attack against the target, add the Strategy Die to that damage roll.</li><br><li><b>Trip Attack: </b>When you hit a target with an Attack, you can expend a Strategy Die and add the result to the damage roll.  In addition, the target must make a Strength Saving Throw if they are no more than one size category larger than you, being knocked prone upon failure.  </li><br><li><b>Vigilance: </b>When a target you are aware of moves into your reach, you may use a Reaction to expend a Strategy Die and make an Attack against the target, adding the Strategy Die to that damage roll.</li></ul>"
                 },
                 {
                     "name_str" : "Ability Score Improvement",
@@ -590,8 +590,8 @@
             "equipment_variant" : "5d4 x 100 GC",
 
             "sustainables_known_denominator" : 2,
-            "consumables_known_per_level" : 1,
-            "consumables_points_per_level" : 1,
+            "consumables_known_per_level" : 0.25,
+            "consumables_points_per_level" : 0.25,
             "consumables_max_per_level_denominator" : 8,
 
             "class_feat_table_links" : [
@@ -620,7 +620,7 @@
                 {
                     "name_str" : "Mach Punch",
                     "level" : 1,
-                    "mechanics_str" : "Your unarmed strikes deal 1d6 + your Strength Modifier bludgeoning damage, and you can make an unarmed strike as a bonus action.  When you make an unarmed strike with advantage or an ally is within melee range of your target, you can deal additional damage equal to a number of d6s equal to your level.  You can only deal this damage once per turn.  "
+                    "mechanics_str" : "Your unarmed strikes deal 1d6 + your Strength Modifier bludgeoning damage, and you can make an unarmed strike as a bonus action.  When you make an unarmed strike with advantage or an Ally is within melee range of your target, you can deal additional damage equal to a number of d6s equal to your level.  You can only deal this damage once per turn.  "
                 },
                 {
                     "name_str" : "Unarmored Defense",
@@ -731,8 +731,8 @@
             "equipment_variant" : "5d4 x 100 GC",
 
             "sustainables_known_denominator" : 2,
-            "consumables_known_per_level" : 1,
-            "consumables_points_per_level" : 1,
+            "consumables_known_per_level" : 0.25,
+            "consumables_points_per_level" : 0.25,
             "consumables_max_per_level_denominator" : 8,
 
             "class_feat_table_links" : [
@@ -761,7 +761,7 @@
                 {
                     "name_str" : "Mach Punch",
                     "level" : 1,
-                    "mechanics_str" : "Your unarmed strikes deal 1d6 + your Strength Modifier bludgeoning damage, and you can make an unarmed strike as a bonus action.  When you make an unarmed strike with advantage or an ally is within melee range of your target, you can deal additional damage equal to a number of d6s equal to your level.  You can only deal this damage once per turn.  "
+                    "mechanics_str" : "Your unarmed strikes deal 1d6 + your Strength Modifier bludgeoning damage, and you can make an unarmed strike as a bonus action.  When you make an unarmed strike with advantage or an Ally is within melee range of your target, you can deal additional damage equal to a number of d6s equal to your level.  You can only deal this damage once per turn.  "
                 },
                 {
                     "name_str" : "Unarmored Defense",
@@ -872,8 +872,8 @@
             "equipment_variant" : "5d4 x 100 GC",
 
             "sustainables_known_denominator" : 2,
-            "consumables_known_per_level" : 1,
-            "consumables_points_per_level" : 1,
+            "consumables_known_per_level" : 0.25,
+            "consumables_points_per_level" : 0.25,
             "consumables_max_per_level_denominator" : 8,
 
             "class_feat_table_links" : [
@@ -902,7 +902,7 @@
                 {
                     "name_str" : "Mach Punch",
                     "level" : 1,
-                    "mechanics_str" : "Your unarmed strikes deal 1d6 + your Strength Modifier bludgeoning damage, and you can make an unarmed strike as a bonus action.  When you make an unarmed strike with advantage or an ally is within melee range of your target, you can deal additional damage equal to a number of d6s equal to your level.  You can only deal this damage once per turn.  "
+                    "mechanics_str" : "Your unarmed strikes deal 1d6 + your Strength Modifier bludgeoning damage, and you can make an unarmed strike as a bonus action.  When you make an unarmed strike with advantage or an Ally is within melee range of your target, you can deal additional damage equal to a number of d6s equal to your level.  You can only deal this damage once per turn.  "
                 },
                 {
                     "name_str" : "Unarmored Defense",
@@ -1013,8 +1013,8 @@
             "equipment_variant" : "5d4 x 100 GC",
 
             "sustainables_known_denominator" : 2,
-            "consumables_known_per_level" : 1,
-            "consumables_points_per_level" : 1,
+            "consumables_known_per_level" : 0.25,
+            "consumables_points_per_level" : 0.25,
             "consumables_max_per_level_denominator" : 8,
 
             "class_feat_table_links" : [
@@ -1098,7 +1098,7 @@
                 {
                     "name_str" : "Aura of Protection",
                     "level" : 13,
-                    "mechanics_str" : "You gain an aura that extends a number of feet equal to your proficiency bonus multiplied by five.  When you or an ally who is within the radius of the aura makes a saving throw, they gain an additional bonus to the saving throw equal to your proficiency bonus.  "
+                    "mechanics_str" : "You gain an aura that extends a number of feet equal to your proficiency bonus multiplied by five.  When you or an Ally who is within the radius of the aura makes a saving throw, they gain an additional bonus to the saving throw equal to your proficiency bonus.  "
                 },
                 {
                     "name_str" : "Ability Score Improvement",
@@ -1108,7 +1108,7 @@
                 {
                     "name_str" : "Unyielding Warden",
                     "level" : 15,
-                    "mechanics_str" : "When an ally of yours is hit by an Attack, you may use your reaction to move up to your speed towards the attacker.  If you end within melee range of the target, you may make one attack against that target.  You may only use this reaction a number of times equal to your proficiency bonus between long rests.  "
+                    "mechanics_str" : "When an Ally of yours is hit by an Attack, you may use your reaction to move up to your speed towards the attacker.  If you end within melee range of the target, you may make one attack against that target.  You may only use this reaction a number of times equal to your proficiency bonus between long rests.  "
                 },
                 {
                     "name_str" : "Deific Strikes",
@@ -1154,8 +1154,8 @@
             "equipment_variant" : "5d4 x 100 GC",
 
             "sustainables_known_denominator" : 2,
-            "consumables_known_per_level" : 1,
-            "consumables_points_per_level" : 1,
+            "consumables_known_per_level" : 0.25,
+            "consumables_points_per_level" : 0.25,
             "consumables_max_per_level_denominator" : 8,
 
             "class_feat_table_links" : [
@@ -1184,7 +1184,7 @@
                 {
                     "name_str" : "Mach Punch",
                     "level" : 1,
-                    "mechanics_str" : "Your unarmed strikes deal 1d6 + your Strength Modifier bludgeoning damage, and you can make an unarmed strike as a bonus action.  When you make an unarmed strike with advantage or an ally is within melee range of your target, you can deal additional damage equal to a number of d6s equal to your level.  You can only deal this damage once per turn.  "
+                    "mechanics_str" : "Your unarmed strikes deal 1d6 + your Strength Modifier bludgeoning damage, and you can make an unarmed strike as a bonus action.  When you make an unarmed strike with advantage or an Ally is within melee range of your target, you can deal additional damage equal to a number of d6s equal to your level.  You can only deal this damage once per turn.  "
                 },
                 {
                     "name_str" : "Unarmored Defense",
@@ -1271,8 +1271,8 @@
 
         {
             "name_str" : "Subvertist",
-            "page_url" : "",
-            "class_img" : "",
+            "page_url" : "subvertist.html",
+            "class_img" : "/_SiteResources/Images/noun_vortex_2920177.png",
             "description_short_str" : "A movement focused master of misdirection who excels in battfield cleanup.  ",
             "description_long_str" : "Wielding raw physical power, the Dynamo thrives when dealing damage and drawing fire away from allies.   ",
 
@@ -1280,122 +1280,122 @@
             "primary_ability" : "Charisma",
             
             "hit_die_int" : 8,
-            "hit_die_average_int" : 4,
+            "hit_die_average_int" : 5,
 
             "proficiencies_armor" : "None",
-            "proficiencies_weapons" : "Simple Tech Weapons",
-            "proficiencies_tools" : "Choose any two",
-            "proficiencies_saves" : "---",
-            "proficiencies_skills" : "Choose any three",
+            "proficiencies_weapons" : "None",
+            "proficiencies_tools" : "Choose any three",
+            "proficiencies_saves" : "Charisma, Dexterity",
+            "proficiencies_skills" : "Choose any two, one of which must be Charisma based",
             
-            "equipment_armor" : "Forged Plate, Steel",
-            "equipment_weapons" : "Any Simple Tech Weapon",
-            "equipment_tools" : "One tool with which you are proficient",
-            "equipment_packs" : "One Inventor's Pack",
+            "equipment_armor" : "None",
+            "equipment_weapons" : "Any Simple Mundane Weapon",
+            "equipment_tools" : "Three tools with which you are proficient",
+            "equipment_packs" : "One Speedster's Pack",
             "equipment_variant" : "5d4 x 100 GC",
 
-            "sustainables_known_denominator" : 2,
+            "sustainables_known_denominator" : 6,
             "consumables_known_per_level" : 1,
             "consumables_points_per_level" : 1,
-            "consumables_max_per_level_denominator" : 8,
+            "consumables_max_per_level_denominator" : 4,
 
             "class_feat_table_links" : [
-                "<a href='#Mach Punch-1'>Mach Punch</a>, <a href='#Unarmored Defense-1'>Unarmored Defense</a>",
+                "<a href='#Powercasting-1'>Powercasting</a>, <a href='#Enhanced Movement-1'>Enhanced Movement</a>",
+                "Subclass Feature",
+                "?",
+                "<a href='#Ability Score Improvement-4'>Ability Score Improvement</a>",
                 "---",
-                "<a href='#Ability Score Improvement-3'>Ability Score Improvement</a>, Subclass Feature",
+                "Subclass Feature",
+                "?",
+                "<a href='#Ability Score Improvement-8'>Ability Score Improvement</a>",
                 "---",
-                "<a href='#Ability Score Improvement-5'>Ability Score Improvement</a>, <a href='#Immovable Object-5'>Immovable Object</a>",
+                "<a href='#Ability Score Improvement-10'>Ability Score Improvement</a>",
+                "?",
+                "Subclass Feature",
                 "---",
-                "<a href='#Ability Score Improvement-7'>Ability Score Improvement</a>, <a href='#Improved Movement-7'>Improved Movement</a>",
+                "<a href='#Ability Score Improvement-14'>Ability Score Improvement</a>",
+                "?",
+                "<a href='#Ability Score Improvement-16'>Ability Score Improvement</a>",
                 "---",
-                "<a href='#Staggering Punch-9'>Staggering Punch</a>, Subclass Feature",
-                "---",
-                "<a href='#Ability Score Improvement-11'>Ability Score Improvement</a>, <a href='#Power Resilience-11'>Power Resilience</a>",
-                "---",
-                "<a href='#Ability Score Improvement-13'>Ability Score Improvement</a>, <a href='#Champion's Might-13'>Champion's Might</a>",
-                "---",
-                "<a href='#Ability Score Improvement-15'>Ability Score Improvement</a>, <a href='#Stalwart-15'>Stalwart</a>",
-                "---",
-                "<a href='#Shattering Punch-17'>Shattering Punch</a>, Subclass Feature",
-                "---",
-                "<a href='#Ability Score Improvement-19'>Ability Score Improvement</a>, <a href='#Apex Power-19'>Apex Power</a>",
-                "---"
+                "Subclass Feature",
+                "<a href='#Ability Score Improvement-19'>Ability Score Improvement</a>",
+                "Capstone"
                 ],
             "class_feat_descriptions" : [
                 {
-                    "name_str" : "Mach Punch",
+                    "name_str" : "Powercasting",
                     "level" : 1,
-                    "mechanics_str" : "Your unarmed strikes deal 1d6 + your Strength Modifier bludgeoning damage, and you can make an unarmed strike as a bonus action.  When you make an unarmed strike with advantage or an ally is within melee range of your target, you can deal additional damage equal to a number of d6s equal to your level.  You can only deal this damage once per turn.  "
+                    "mechanics_str" : "You have manifested powers beyond that of ordinary creatures.  See the Rules for Powercasting mechanics and Superpowers list.  <ul><li><b>Superpowers Known:</b>  You learn a number of Superpowers of your choice at first level and at subsequent levels as shown in the Superpowers Known column of the Class table.  You may not learn a Superpower of a level higher than your Max Superpower Level, and you may learn a Superpower at the same time you learn its prerequisite.  </li><br><li><b>Power Points:</b>  You have a number of Power Points equal to your Class level x 8, as shown in the Power Points column of the Class table, + your Int modifier.  You expend these Power Points to cast Power Powers.  You regain all expended Power Points when you finish a long rest.  </li><br><li><b>Max Power Level:</b>  Many Superpowers can be overpowered, consuming more Power Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Power Level column of the Class table.  You may only cast Superpowers at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Powercasting Ability:</b>  Your Powercasting ability is Intelligence.  You use your Intelligence modifier whenever a Superpower refers to your Powercasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Superpower you cast and when making an attack roll with one.  </li><br><li><b>Superpower save DC</b> = 8 + your proficiency bonus + your Powercasting ability modifier</li><br><li><b>Superpower attack modifier</b> = your proficiency bonus + your Powercasting ability modifier</li></ul>"
                 },
                 {
-                    "name_str" : "Unarmored Defense",
+                    "name_str" : "Enhanced Movement",
                     "level" : 1,
-                    "mechanics_str" : "Your Armor Class while unarmored is equal to 8 + your Constitution Modifier + your Strength Modifier.  If you are wearing armor that would include your Dexterity Modifier in your Armor Class calculation, you can substitute your Constitution Modifier instead of your Dexterity Modifier for that calculation.  "
+                    "mechanics_str" : "Your speed increases by an amount equal to your level plus your proficiency bonus, multiplied by five.  "
+                },
+                {
+                    "name_str" : "Expertise",
+                    "level" : 2,
+                    "mechanics_str" : "Choose one of your skill proficiencies and one of your tool proficiencies.  Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiencies.  "
                 },
                 {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 3,
+                    "level" : 4,
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
-                    "name_str" : "Ability Score Improvement",
+                    "name_str" : "Enhanced Movement",
                     "level" : 5,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                    "mechanics_str" : "Your speed is equal to your level multiplied by 10.  "
                 },
                 {
-                    "name_str" : "Immovable Object",
-                    "level" : 5,
-                    "mechanics_str" : "When you are hit by an attack or forcibly moved against your will, you can use your reaction to halve the attack’s damage against you and avoid being moved.  "
-                },
-                {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 7,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
-                },
-                {
-                    "name_str" : "Improved Movement",
-                    "level" : 7,
-                    "mechanics_str" : "Your movement speeds increase by a number of feet equal to your proficiency bonus multiplied by 5 while you aren't wearing Heavy Armor.  "
-                },
-                {
-                    "name_str" : "Staggering Punch",
-                    "level" : 9,
-                    "mechanics_str" : "When you deal Mach Punch damage, the target cannot take reactions until the start of your next turn.  "
+                    "name_str" : "Reverse Engineering",
+                    "level" : 6,
+                    "mechanics_str" : "Choose one Technology, Power, or Spell from any class casting list that you have witnessed being cast at least once.  Events witnessed within your backstory do not qualify for this feature.  The chosen Technology, Power, or Spell must not be of a higher level than the Maximum Technology Level for your current Visionary level.  Your selected Technology, Power, or Spell counts as a Visionary Technology for you, and you are able to learn it as normal at the same level you choose it.  If you are starting at higher levels or have not witnessed any Technologies, Powers, or Spells being cast upon gaining this feature, your GM may provide a list of Technologies, Powers, or Spells for you to choose from.  You may gain this feature multiple times.  "
                 },
                 {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 11,
+                    "level" : 8,
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
-                    "name_str" : "Power Resilience",
-                    "level" : 11,
-                    "mechanics_str" : "You have advantage on all saves against Superpower based effects.  In addition, when you make a saving throw against a Superpower based effect to avoid damage, you take no damage if you succeed and only half damage if you fail.  "
+                    "name_str" : "Expertise",
+                    "level" : 10,
+                    "mechanics_str" : "Choose one of your skill proficiencies and one of your tool proficiencies.  Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiencies.  "
+                },
+                {
+                    "name_str" : "Reverse Engineering",
+                    "level" : 10,
+                    "mechanics_str" : "Choose one Technology, Power, or Spell from any class casting list that you have witnessed being cast at least once.  Events witnessed within your backstory do not qualify for this feature.  The chosen Technology, Power, or Spell must not be of a higher level than the Maximum Technology Level for your current Visionary level.  Your selected Technology, Power, or Spell counts as a Visionary Technology for you, and you are able to learn it as normal at the same level you choose it.  If you are starting at higher levels or have not witnessed any Technologies, Powers, or Spells being cast upon gaining this feature, your GM may provide a list of Technologies, Powers, or Spells for you to choose from.  You may gain this feature multiple times.  "
                 },
                 {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 13,
+                    "level" : 12,
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
-                    "name_str" : "Champion's Might",
-                    "level" : 13,
-                    "mechanics_str" : "If your total for a Strength check or save is less than your Strength score, you may treat the result as equal to your Strength score.  "
+                    "name_str" : "Superior Armor",
+                    "level" : 12,
+                    "mechanics_str" : "Your inventive pursuits have led to you making armor that serves as a conduit for your technology.  As part of a Long Rest, you can turn a suit of mundane armor you have access to into Superior Armor, provided you have Inventor's Tools on hand.  You can don or doff the Superior Armor as a Bonus Action.  The Superior Armor continues to be Superior Armor until you create another set of Superior Armor, or it is destroyed.  If you die while wearing the Superior Armor, it is destroyed.  The Superior Armor has the following traits while worn by you:<ul><li>Your Strength score becomes equal to your Intelligence score as long as it is not already higher.  You are also considered proficient with the armor.  </li>  <li>You can use the Superior Armor as a Techcasting focus for your Visionary spells.  </li><li>The Superior Armor attaches to you and can’t be removed against your will.  </li><li>The Superior Armor expands to cover your entire body, although you can retract or deploy the helmet as a bonus action.  </li><li>The Superior Armor replaces any missing limbs, functioning identically to a limb it replaces.  </li><li>When you make an Intelligence check, you can treat the d20 result as equal to half of your Intelligence score (rounded down) if the result before modifiers is lower.  </li><li>You can survive in the vacuum of space for a number of hours equal to your Intelligence modifier.  This ability recharges upon a long rest within a hospitable environment.  </li></ul>"
+                },
+                {
+                    "name_str" : "Reverse Engineering",
+                    "level" : 14,
+                    "mechanics_str" : "Choose one Technology, Power, or Spell from any class casting list that you have witnessed being cast at least once.  Events witnessed within your backstory do not qualify for this feature.  The chosen Technology, Power, or Spell must not be of a higher level than the Maximum Technology Level for your current Visionary level.  Your selected Technology, Power, or Spell counts as a Visionary Technology for you, and you are able to learn it as normal at the same level you choose it.  If you are starting at higher levels or have not witnessed any Technologies, Powers, or Spells being cast upon gaining this feature, your GM may provide a list of Technologies, Powers, or Spells for you to choose from.  You may gain this feature multiple times.  "
                 },
                 {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 15,
+                    "level" : 16,
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
-                    "name_str" : "Stalwart",
-                    "level" : 15,
-                    "mechanics_str" : "No attack roll has advantage against you while you are not incapacitated.  "
+                    "name_str" : "Expertise",
+                    "level" : 18,
+                    "mechanics_str" : "Choose one of your skill proficiencies and one of your tool proficiencies.  Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiencies.  "
                 },
                 {
-                    "name_str" : "Shattering Punch",
-                    "level" : 17,
-                    "mechanics_str" : "When you deal Mach Punch damage, the target must make a Constitution saving throw against your Strength DC.  On a failure, the target is knocked Prone and Stunned until the start of their next turn.  "
+                    "name_str" : "Reverse Engineering",
+                    "level" : 18,
+                    "mechanics_str" : "Choose one Technology, Power, or Spell from any class casting list that you have witnessed being cast at least once.  Events witnessed within your backstory do not qualify for this feature.  The chosen Technology, Power, or Spell must not be of a higher level than the Maximum Technology Level for your current Visionary level.  Your selected Technology, Power, or Spell counts as a Visionary Technology for you, and you are able to learn it as normal at the same level you choose it.  If you are starting at higher levels or have not witnessed any Technologies, Powers, or Spells being cast upon gaining this feature, your GM may provide a list of Technologies, Powers, or Spells for you to choose from.  You may gain this feature multiple times.  "
                 },
                 {
                     "name_str" : "Ability Score Improvement",
@@ -1403,9 +1403,9 @@
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
-                    "name_str" : "Apex Power",
-                    "level" : 19,
-                    "mechanics_str" : "Your Strength and Constitution scores and their maximums each increase by four.  "
+                    "name_str" : "Ultimate Armor",
+                    "level" : 20,
+                    "mechanics_str" : "Your inventive pursuits have led to you making armor that serves as a conduit for your technology.  As part of a Long Rest, you can turn a suit of mundane armor you have access to into Ultimate Armor, provided you have Inventor's Tools on hand.  You can don or doff the Ultimate Armor as part of any Action, Bonus Action, or Reaction you take.  In addition, when the Ultimate Armor is doffed by you, you can choose to have it collapse into a small housing unit.  The housing unit takes on a form of your choosing, and can be no smaller a thick wristwatch.  You can use the housing unit as a Tech casting focus for your Visionary spells while you wear it as components of the Ultimate Armor dynamically deploy and retract as needed.  The Ultimate Armor continues to be Ultimate Armor until you create another set of Ultimate Armor, or it is destroyed.  If you die while wearing the Ultimate Armor, it is destroyed.  The Ultimate Armor has the following traits while worn by you:<ul><li>Your Strength score becomes equal to your Intelligence score as long as it is not already higher.  You are also considered proficient with the armor.  </li>  <li>You can use the Ultimate Armor as a Techcasting focus for your Visionary spells, and you need not supply any components that do not have a cost while doing so.  </li><li>The Ultimate Armor attaches to you and can’t be removed against your will.  </li><li>The Ultimate Armor expands to cover your entire body, although you can retract or deploy the helmet once per turn.  </li><li>The Ultimate Armor replaces any missing limbs, functioning identically to a limb it replaces.  </li><li>When you make an Intelligence check, you can treat the d20 result as equal to your Intelligence score if the result before modifiers is lower.  </li><li>Choose two of your Technologies that are of 2nd level or lower.  You can cast those Technologies at their lowest level without expending any Tech Points.  </li><li>You can survive in the vacuum of space for a number of days equal to your Intelligence modifier.  This ability recharges upon a long rest within a hospitable environment.  </li></ul>"
                 }
             ]
         },
@@ -1436,8 +1436,8 @@
             "equipment_variant" : "5d4 x 100 GC",
 
             "sustainables_known_denominator" : 2,
-            "consumables_known_per_level" : 1,
-            "consumables_points_per_level" : 1,
+            "consumables_known_per_level" : 0.25,
+            "consumables_points_per_level" : 0.25,
             "consumables_max_per_level_denominator" : 8,
 
             "class_feat_table_links" : [
@@ -1466,7 +1466,7 @@
                 {
                     "name_str" : "Mach Punch",
                     "level" : 1,
-                    "mechanics_str" : "Your unarmed strikes deal 1d6 + your Strength Modifier bludgeoning damage, and you can make an unarmed strike as a bonus action.  When you make an unarmed strike with advantage or an ally is within melee range of your target, you can deal additional damage equal to a number of d6s equal to your level.  You can only deal this damage once per turn.  "
+                    "mechanics_str" : "Your unarmed strikes deal 1d6 + your Strength Modifier bludgeoning damage, and you can make an unarmed strike as a bonus action.  When you make an unarmed strike with advantage or an Ally is within melee range of your target, you can deal additional damage equal to a number of d6s equal to your level.  You can only deal this damage once per turn.  "
                 },
                 {
                     "name_str" : "Unarmored Defense",
@@ -1577,8 +1577,8 @@
             "equipment_variant" : "5d4 x 100 GC",
 
             "sustainables_known_denominator" : 2,
-            "consumables_known_per_level" : 1,
-            "consumables_points_per_level" : 1,
+            "consumables_known_per_level" : 0.25,
+            "consumables_points_per_level" : 0.25,
             "consumables_max_per_level_denominator" : 8,
 
             "class_feat_table_links" : [
@@ -1612,7 +1612,7 @@
                 {
                     "name_str" : "Mach Punch",
                     "level" : 1,
-                    "mechanics_str" : "Your unarmed strikes deal 1d6 + your Strength Modifier bludgeoning damage, and you can make an unarmed strike as a bonus action.  When you make an unarmed strike with advantage or an ally is within melee range of your target, you can deal additional damage equal to a number of d6s equal to your level.  You can only deal this damage once per turn.  "
+                    "mechanics_str" : "Your unarmed strikes deal 1d6 + your Strength Modifier bludgeoning damage, and you can make an unarmed strike as a bonus action.  When you make an unarmed strike with advantage or an Ally is within melee range of your target, you can deal additional damage equal to a number of d6s equal to your level.  You can only deal this damage once per turn.  "
                 },
                 {
                     "name_str" : "Ability Score Improvement",

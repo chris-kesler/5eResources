@@ -45,8 +45,8 @@
                   var consumable_points = "---"
                   var consumable_max = "---"
                 } else {
-                  var consumables_known = (i+1)*f.consumables_known_per_level
-                  var consumable_points = (i+1)*f.consumables_points_per_level
+                  var consumables_known = Math.round((i+1)*f.consumables_known_per_level)
+                  var consumable_points = Math.round((i+1)*f.consumables_points_per_level)
                   var consumable_max = Math.ceil((i+1)/f.consumables_max_per_level_denominator)
                 }
                 var tblRow = "<tr>" 
@@ -172,7 +172,7 @@
               <img class="subclass-image-large"
               alt="The Militant" src="/_SiteResources/Images/noun_Martial Arts_4018735.png">
               <p>
-                Honing their already immense power with training and discipline, the Militant balances their power with resourcefulness.
+                Honing their immense strength with training and discipline, the Militant balances their power with resourcefulness.
               </p><br>
 
               <h3 id="militant-3">Techcasting</h3>
