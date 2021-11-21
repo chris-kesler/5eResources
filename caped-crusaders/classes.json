@@ -454,7 +454,7 @@
             "consumables_max_per_level_denominator" : 8,
 
             "class_feat_table_links" : [
-                "<a href='#Combat Techniques-1'>Combat Techniques</a>, <a href='#Second Wind-1'>Second Wind</a>",
+                "<a href='#Ability Score Improvement-1'>Ability Score Improvement</a>, <a href='#Combat Techniques-1'>Combat Techniques</a>",
                 "---",
                 "<a href='#Ability Score Improvement-3'>Ability Score Improvement</a>, Subclass Feature",
                 "---",
@@ -477,14 +477,14 @@
                 ],
             "class_feat_descriptions" : [
                 {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 1,
+                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                },
+                {
                     "name_str" : "Combat Techniques",
                     "level" : 1,
                     "mechanics_str" : "You have a number of Techniques as shown in the Sustainables Known column of the class table.  Upon reaching this and subsequent levels, you gain a new Technique that you qualify for if your total number of Techniques is less than the Sustainables Known for your level.  You may also swap an existing Technique for another of your choice that you qualify for upon each level up.  "
-                },
-                {
-                    "name_str" : "Second Wind",
-                    "level" : 1,
-                    "mechanics_str" : "You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your Soldier level. Once you use this feature, you must finish a short or long rest before you can use it again.  "
                 },
                 {
                     "name_str" : "Ability Score Improvement",
@@ -990,7 +990,7 @@
         {
             "name_str" : "Annointed",
             "page_url" : "annointed.html",
-            "class_img" : "/_SiteResources/Images/noun_spartan helmet_1732614.png",
+            "class_img" : "/_SiteResources/Images/noun_Spartan_1510278.png",
             "description_short_str" : "Magically imbued powerhouses who are often mistaken for Dynamos.  ",
             "description_long_str" : "Blessed and bolstered by ancient magic, the Annointed perfectly balances destroying their enemies and protecting their allies.  ",
 
@@ -1297,29 +1297,29 @@
             "sustainables_known_denominator" : 6,
             "consumables_known_per_level" : 1,
             "consumables_points_per_level" : 1,
-            "consumables_max_per_level_denominator" : 4,
+            "consumables_max_per_level_denominator" : 3,
 
             "class_feat_table_links" : [
                 "<a href='#Powercasting-1'>Powercasting</a>, <a href='#Enhanced Movement-1'>Enhanced Movement</a>",
-                "Subclass Feature",
-                "?",
-                "<a href='#Ability Score Improvement-4'>Ability Score Improvement</a>",
+                "<a href='#Deflect Projectiles-2'>Deflect Projectiles</a>, Subclass Feature",
+                "<a href='#Ability Score Improvement-3'>Ability Score Improvement</a>, <a href='#Enhanced Reflexes-3'>Enhanced Reflexes</a>",
                 "---",
-                "Subclass Feature",
-                "?",
+                "<a href='#Temporary Incorporation-5'>Temporary Incorporation</a>, <a href='#Evasion-5'>Evasion</a>",
+                "<a href='#Ability Score Improvement-6'>Ability Score Improvement</a>, Subclass Feature",
+                "---",
                 "<a href='#Ability Score Improvement-8'>Ability Score Improvement</a>",
+                "<a href='#Improved Reflexes-9'>Improved Reflexes</a>",
                 "---",
-                "<a href='#Ability Score Improvement-10'>Ability Score Improvement</a>",
+                "<a href='#Unfailing Talent-11'>Unfailing Talent</a>",
+                "<a href='#Ability Score Improvement-12'>Ability Score Improvement</a>, Subclass Feature",
+                "---",
+                "<a href='#Superior Reflexes-14'>Superior Reflexes</a>",
+                "<a href='#Ability Score Improvement-15'>Ability Score Improvement</a>",
+                "---",
                 "?",
-                "Subclass Feature",
+                "<a href='#Ability Score Improvement-18'>Ability Score Improvement</a>, Subclass Feature",
                 "---",
-                "<a href='#Ability Score Improvement-14'>Ability Score Improvement</a>",
-                "?",
-                "<a href='#Ability Score Improvement-16'>Ability Score Improvement</a>",
-                "---",
-                "Subclass Feature",
-                "<a href='#Ability Score Improvement-19'>Ability Score Improvement</a>",
-                "Capstone"
+                "<a href='#Ultimate Reflexes-20'>Ultimate Reflexes</a>"
                 ],
             "class_feat_descriptions" : [
                 {
@@ -1333,19 +1333,34 @@
                     "mechanics_str" : "Your speed increases by an amount equal to your level plus your proficiency bonus, multiplied by five.  "
                 },
                 {
-                    "name_str" : "Expertise",
+                    "name_str" : "Deflect Projectiles",
                     "level" : 2,
-                    "mechanics_str" : "Choose one of your skill proficiencies and one of your tool proficiencies.  Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiencies.  "
+                    "mechanics_str" : "When you are hit by a ranged attack, you may use your reaction to reduce that damage by an amount equal to 1d12 + your Dexterity modifier + your Proficiency bonus + your Subvertist level.  If you reduce that instance's damage to zero, you can catch the projectile, granted you can wield it in one hand and have one hand free.  As part of the same reaction, you can choose to make a Ranged Attack (20/60) with the projectile, which you are considered proficient with.  "
                 },
                 {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 4,
+                    "level" : 3,
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
-                    "name_str" : "Enhanced Movement",
+                    "name_str" : "Enhanced Reflexes",
+                    "level" : 3,
+                    "mechanics_str" : "Your total number of Actions and Reactions is equal to your proficiency bonus.  "
+                },
+                {
+                    "name_str" : "Temporary Incorporation",
                     "level" : 5,
-                    "mechanics_str" : "Your speed is equal to your level multiplied by 10.  "
+                    "mechanics_str" : "You are able to pass through mundane matter as though it were difficult terrain, up to distances equal to your Proficiency bonus * 5, per round.  For example, if your Proficiency bonus is +2, you can move through a 10 foot solid steel wall, but doing so will cost you 20 feet of movement.  You may also push yourself through mundane matter for a greater distance, but you take 1d12 Disintegrating damage for every 5 feet traveled beyond this distance.  If you end your turn within solid matter, you take three points of exhaustion.  <br><br>You may also move across liquids and vertical surfaces as though they were flat terrain, but you fall if you end your turn on such a surface.  "
+                },
+                {
+                    "name_str" : "Evasion",
+                    "level" : 5,
+                    "mechanics_str" : "When you make a Dexterity Saving Throw to avoid taking damage, you suffer only half damage on a failure and no damage on a success.  You also have advantage on Saving Throws against effects you can see.  "
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 6,
+                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
                     "name_str" : "Reverse Engineering",
@@ -1358,24 +1373,24 @@
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
-                    "name_str" : "Expertise",
-                    "level" : 10,
-                    "mechanics_str" : "Choose one of your skill proficiencies and one of your tool proficiencies.  Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiencies.  "
-                },
-                {
-                    "name_str" : "Reverse Engineering",
-                    "level" : 10,
-                    "mechanics_str" : "Choose one Technology, Power, or Spell from any class casting list that you have witnessed being cast at least once.  Events witnessed within your backstory do not qualify for this feature.  The chosen Technology, Power, or Spell must not be of a higher level than the Maximum Technology Level for your current Visionary level.  Your selected Technology, Power, or Spell counts as a Visionary Technology for you, and you are able to learn it as normal at the same level you choose it.  If you are starting at higher levels or have not witnessed any Technologies, Powers, or Spells being cast upon gaining this feature, your GM may provide a list of Technologies, Powers, or Spells for you to choose from.  You may gain this feature multiple times.  "
+                    "name_str" : "Improved Reflexes",
+                    "level" : 9,
+                    "mechanics_str" : "Your total number of Reactions is equal to your proficiency bonus * 2.  "
                 },
                 {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 12,
+                    "level" : 10,
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
-                    "name_str" : "Superior Armor",
-                    "level" : 12,
-                    "mechanics_str" : "Your inventive pursuits have led to you making armor that serves as a conduit for your technology.  As part of a Long Rest, you can turn a suit of mundane armor you have access to into Superior Armor, provided you have Inventor's Tools on hand.  You can don or doff the Superior Armor as a Bonus Action.  The Superior Armor continues to be Superior Armor until you create another set of Superior Armor, or it is destroyed.  If you die while wearing the Superior Armor, it is destroyed.  The Superior Armor has the following traits while worn by you:<ul><li>Your Strength score becomes equal to your Intelligence score as long as it is not already higher.  You are also considered proficient with the armor.  </li>  <li>You can use the Superior Armor as a Techcasting focus for your Visionary spells.  </li><li>The Superior Armor attaches to you and can’t be removed against your will.  </li><li>The Superior Armor expands to cover your entire body, although you can retract or deploy the helmet as a bonus action.  </li><li>The Superior Armor replaces any missing limbs, functioning identically to a limb it replaces.  </li><li>When you make an Intelligence check, you can treat the d20 result as equal to half of your Intelligence score (rounded down) if the result before modifiers is lower.  </li><li>You can survive in the vacuum of space for a number of hours equal to your Intelligence modifier.  This ability recharges upon a long rest within a hospitable environment.  </li></ul>"
+                    "name_str" : "Unfailing Talent",
+                    "level" : 11,
+                    "mechanics_str" : "You can treat the d20 result for any skill check you make with proficiency as a 10 if the result is 9 or lower before modifiers.  "
+                },
+                {
+                    "name_str" : "Superior Reflexes",
+                    "level" : 14,
+                    "mechanics_str" : "Your total number of Actions and Reactions is equal to your proficiency bonus * 2.  "
                 },
                 {
                     "name_str" : "Reverse Engineering",
@@ -1385,6 +1400,11 @@
                 {
                     "name_str" : "Ability Score Improvement",
                     "level" : 16,
+                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 18,
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
@@ -1403,9 +1423,9 @@
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
-                    "name_str" : "Ultimate Armor",
+                    "name_str" : "Ultimate Reflexes",
                     "level" : 20,
-                    "mechanics_str" : "Your inventive pursuits have led to you making armor that serves as a conduit for your technology.  As part of a Long Rest, you can turn a suit of mundane armor you have access to into Ultimate Armor, provided you have Inventor's Tools on hand.  You can don or doff the Ultimate Armor as part of any Action, Bonus Action, or Reaction you take.  In addition, when the Ultimate Armor is doffed by you, you can choose to have it collapse into a small housing unit.  The housing unit takes on a form of your choosing, and can be no smaller a thick wristwatch.  You can use the housing unit as a Tech casting focus for your Visionary spells while you wear it as components of the Ultimate Armor dynamically deploy and retract as needed.  The Ultimate Armor continues to be Ultimate Armor until you create another set of Ultimate Armor, or it is destroyed.  If you die while wearing the Ultimate Armor, it is destroyed.  The Ultimate Armor has the following traits while worn by you:<ul><li>Your Strength score becomes equal to your Intelligence score as long as it is not already higher.  You are also considered proficient with the armor.  </li>  <li>You can use the Ultimate Armor as a Techcasting focus for your Visionary spells, and you need not supply any components that do not have a cost while doing so.  </li><li>The Ultimate Armor attaches to you and can’t be removed against your will.  </li><li>The Ultimate Armor expands to cover your entire body, although you can retract or deploy the helmet once per turn.  </li><li>The Ultimate Armor replaces any missing limbs, functioning identically to a limb it replaces.  </li><li>When you make an Intelligence check, you can treat the d20 result as equal to your Intelligence score if the result before modifiers is lower.  </li><li>Choose two of your Technologies that are of 2nd level or lower.  You can cast those Technologies at their lowest level without expending any Tech Points.  </li><li>You can survive in the vacuum of space for a number of days equal to your Intelligence modifier.  This ability recharges upon a long rest within a hospitable environment.  </li></ul>"
+                    "mechanics_str" : "You have an unlimited number of reactions.  In addition, you may take an additional turn on the first round of combat, at the Initiative order equal to your Initiative minus 10.  "
                 }
             ]
         },
