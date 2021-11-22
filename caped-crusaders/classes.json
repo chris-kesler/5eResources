@@ -1274,7 +1274,7 @@
             "page_url" : "subvertist.html",
             "class_img" : "/_SiteResources/Images/noun_vortex_2920177.png",
             "description_short_str" : "A movement focused master of misdirection who excels in battfield cleanup.  ",
-            "description_long_str" : "Wielding raw physical power, the Dynamo thrives when dealing damage and drawing fire away from allies.   ",
+            "description_long_str" : "With a razor sharp focus on mobility and agility, the Subvertist thrives when protecting civilians and distracting enemies.  ",
 
             "class_type" : "Secondary Power Caster",
             "primary_ability" : "Charisma",
@@ -1291,7 +1291,7 @@
             "equipment_armor" : "None",
             "equipment_weapons" : "Any Simple Mundane Weapon",
             "equipment_tools" : "Three tools with which you are proficient",
-            "equipment_packs" : "One Speedster's Pack",
+            "equipment_packs" : "One Vagabond's Pack",
             "equipment_variant" : "5d4 x 100 GC",
 
             "sustainables_known_denominator" : 6,
@@ -1299,43 +1299,26 @@
             "consumables_points_per_level" : 1,
             "consumables_max_per_level_denominator" : 3,
 
-            "class_feat_table_links" : [
-                "<a href='#Powercasting-1'>Powercasting</a>, <a href='#Enhanced Movement-1'>Enhanced Movement</a>",
-                "<a href='#Deflect Projectiles-2'>Deflect Projectiles</a>, Subclass Feature",
-                "<a href='#Ability Score Improvement-3'>Ability Score Improvement</a>, <a href='#Enhanced Reflexes-3'>Enhanced Reflexes</a>",
-                "---",
-                "<a href='#Temporary Incorporation-5'>Temporary Incorporation</a>, <a href='#Evasion-5'>Evasion</a>",
-                "<a href='#Ability Score Improvement-6'>Ability Score Improvement</a>, Subclass Feature",
-                "---",
-                "<a href='#Ability Score Improvement-8'>Ability Score Improvement</a>",
-                "<a href='#Improved Reflexes-9'>Improved Reflexes</a>",
-                "---",
-                "<a href='#Unfailing Talent-11'>Unfailing Talent</a>",
-                "<a href='#Ability Score Improvement-12'>Ability Score Improvement</a>, Subclass Feature",
-                "---",
-                "<a href='#Superior Reflexes-14'>Superior Reflexes</a>",
-                "<a href='#Ability Score Improvement-15'>Ability Score Improvement</a>",
-                "---",
-                "?",
-                "<a href='#Ability Score Improvement-18'>Ability Score Improvement</a>, Subclass Feature",
-                "---",
-                "<a href='#Ultimate Reflexes-20'>Ultimate Reflexes</a>"
-                ],
-            "class_feat_descriptions" : [
+            "class_feats" : [
                 {
-                    "name_str" : "Powercasting",
+                    "name_str" : "Powercasting Milestone",
                     "level" : 1,
                     "mechanics_str" : "You have manifested powers beyond that of ordinary creatures.  See the Rules for Powercasting mechanics and Superpowers list.  <ul><li><b>Superpowers Known:</b>  You learn a number of Superpowers of your choice at first level and at subsequent levels as shown in the Superpowers Known column of the Class table.  You may not learn a Superpower of a level higher than your Max Superpower Level, and you may learn a Superpower at the same time you learn its prerequisite.  </li><br><li><b>Power Points:</b>  You have a number of Power Points equal to your Class level x 8, as shown in the Power Points column of the Class table, + your Int modifier.  You expend these Power Points to cast Power Powers.  You regain all expended Power Points when you finish a long rest.  </li><br><li><b>Max Power Level:</b>  Many Superpowers can be overpowered, consuming more Power Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Power Level column of the Class table.  You may only cast Superpowers at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Powercasting Ability:</b>  Your Powercasting ability is Intelligence.  You use your Intelligence modifier whenever a Superpower refers to your Powercasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Superpower you cast and when making an attack roll with one.  </li><br><li><b>Superpower save DC</b> = 8 + your proficiency bonus + your Powercasting ability modifier</li><br><li><b>Superpower attack modifier</b> = your proficiency bonus + your Powercasting ability modifier</li></ul>"
                 },
                 {
-                    "name_str" : "Enhanced Movement",
+                    "name_str" : "Deflect Projectiles",
                     "level" : 1,
+                    "mechanics_str" : "When you are hit by a ranged attack, you may use your reaction to reduce that damage by an amount equal to 1d4 + your Dexterity modifier + your Subvertist level.  If you reduce that instance's damage to zero, you can catch the projectile, granted you can wield it in one hand and have one hand free.  As part of the same reaction, you can choose to make a Ranged Attack (20/60) with the projectile, which you are considered proficient with.  <br><br>At higher levels, your Deflect Projectiles die increases to 1d6 at level 4, 1d8 at level 7, 1d10 at level 13, 1d12 at level 16, and 1d20 at level 19.  Beginning at level 10, you can include your Proficiency Bonus in your Deflect Projectiles calculation.  "
+                },
+                {
+                    "name_str" : "Enhanced Movement",
+                    "level" : 2,
                     "mechanics_str" : "Your speed increases by an amount equal to your level plus your proficiency bonus, multiplied by five.  "
                 },
                 {
-                    "name_str" : "Deflect Projectiles",
+                    "name_str" : "Subclass Feature",
                     "level" : 2,
-                    "mechanics_str" : "When you are hit by a ranged attack, you may use your reaction to reduce that damage by an amount equal to 1d12 + your Dexterity modifier + your Proficiency bonus + your Subvertist level.  If you reduce that instance's damage to zero, you can catch the projectile, granted you can wield it in one hand and have one hand free.  As part of the same reaction, you can choose to make a Ranged Attack (20/60) with the projectile, which you are considered proficient with.  "
+                    "mechanics_str" : "You gain a subclass as detailed at the bottom of this page.  Each subclass offers a Sustainable at this level, and an additional Sustainable at levels 6, 13, and 18.  "
                 },
                 {
                     "name_str" : "Ability Score Improvement",
@@ -1346,6 +1329,16 @@
                     "name_str" : "Enhanced Reflexes",
                     "level" : 3,
                     "mechanics_str" : "Your total number of Actions and Reactions is equal to your proficiency bonus.  "
+                },
+                {
+                    "name_str" : "Powercasting Milestone",
+                    "level" : 4,
+                    "mechanics_str" : "You can access a new level of Superpowers to cast.  "
+                },
+                {
+                    "name_str" : "Deflect Projectiles",
+                    "level" : 4,
+                    "mechanics_str" : "You are able to pass through mundane matter as though it were difficult terrain, up to distances equal to your Proficiency bonus * 5, per round.  For example, if your Proficiency bonus is +2, you can move through a 10 foot solid steel wall, but doing so will cost you 20 feet of movement.  You may also push yourself through mundane matter for a greater distance, but you take 1d12 Disintegrating damage for every 5 feet traveled beyond this distance.  If you end your turn within solid matter, you take three points of exhaustion.  <br><br>You may also move across liquids and vertical surfaces as though they were flat terrain, but you fall if you end your turn on such a surface.  "
                 },
                 {
                     "name_str" : "Temporary Incorporation",
@@ -1363,7 +1356,27 @@
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
+                    "name_str" : "Subclass Feature",
+                    "level" : 6,
+                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                },
+                {
+                    "name_str" : "Powercasting Milestone",
+                    "level" : 7,
+                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                },
+                {
+                    "name_str" : "Deflect Projectiles",
+                    "level" : 7,
+                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                },
+                {
                     "name_str" : "Ability Score Improvement",
+                    "level" : 8,
+                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                },
+                {
+                    "name_str" : "?",
                     "level" : 8,
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
@@ -1373,7 +1386,17 @@
                     "mechanics_str" : "Your total number of Reactions is equal to your proficiency bonus * 2.  "
                 },
                 {
-                    "name_str" : "Ability Score Improvement",
+                    "name_str" : "?",
+                    "level" : 9,
+                    "mechanics_str" : "Your total number of Reactions is equal to your proficiency bonus * 2.  "
+                },
+                {
+                    "name_str" : "Powercasting Milestone",
+                    "level" : 10,
+                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                },
+                {
+                    "name_str" : "Deflect Projectiles",
                     "level" : 10,
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
@@ -1383,7 +1406,37 @@
                     "mechanics_str" : "You can treat the d20 result for any skill check you make with proficiency as a 10 if the result is 9 or lower before modifiers.  "
                 },
                 {
+                    "name_str" : "?",
+                    "level" : 11,
+                    "mechanics_str" : "You can treat the d20 result for any skill check you make with proficiency as a 10 if the result is 9 or lower before modifiers.  "
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 12,
+                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                },
+                {
+                    "name_str" : "Subclass Feature",
+                    "level" : 12,
+                    "mechanics_str" : "You can treat the d20 result for any skill check you make with proficiency as a 10 if the result is 9 or lower before modifiers.  "
+                },
+                {
+                    "name_str" : "Powercasting Milestone",
+                    "level" : 13,
+                    "mechanics_str" : "You can treat the d20 result for any skill check you make with proficiency as a 10 if the result is 9 or lower before modifiers.  "
+                },
+                {
+                    "name_str" : "Deflect Projectiles",
+                    "level" : 13,
+                    "mechanics_str" : "You can treat the d20 result for any skill check you make with proficiency as a 10 if the result is 9 or lower before modifiers.  "
+                },
+                {
                     "name_str" : "Superior Reflexes",
+                    "level" : 14,
+                    "mechanics_str" : "Your total number of Actions and Reactions is equal to your proficiency bonus * 2.  "
+                },
+                {
+                    "name_str" : "?",
                     "level" : 14,
                     "mechanics_str" : "Your total number of Actions and Reactions is equal to your proficiency bonus * 2.  "
                 },
@@ -1393,12 +1446,57 @@
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
+                    "name_str" : "?",
+                    "level" : 15,
+                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                },
+                {
+                    "name_str" : "Powercasting Milestone",
+                    "level" : 16,
+                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                },
+                {
+                    "name_str" : "Deflect Projectiles",
+                    "level" : 16,
+                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                },
+                {
+                    "name_str" : "?",
+                    "level" : 17,
+                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                },
+                {
+                    "name_str" : "?",
+                    "level" : 17,
+                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                },
+                {
                     "name_str" : "Ability Score Improvement",
                     "level" : 18,
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
+                    "name_str" : "Subclass Feature",
+                    "level" : 18,
+                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                },
+                {
+                    "name_str" : "Powercasting Milestone",
+                    "level" : 19,
+                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                },
+                {
+                    "name_str" : "Deflect Projectiles",
+                    "level" : 19,
+                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                },
+                {
                     "name_str" : "Ultimate Reflexes",
+                    "level" : 20,
+                    "mechanics_str" : "You have an unlimited number of reactions.  In addition, you may take an additional turn on the first round of combat, at the Initiative order equal to your Initiative minus 10.  "
+                },
+                {
+                    "name_str" : "?",
                     "level" : 20,
                     "mechanics_str" : "You have an unlimited number of reactions.  In addition, you may take an additional turn on the first round of combat, at the Initiative order equal to your Initiative minus 10.  "
                 }

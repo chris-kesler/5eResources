@@ -18,7 +18,7 @@
             if (f.page_url == page) {
               document.getElementById("class-page-title").innerHTML = "Caped Crusaders: Classes > " + f.name_str;
               document.getElementById("class-page-image").src = f.class_img;
-              document.getElementById("class-page-description").innerHTML = f.mechanics_str;
+              document.getElementById("class-page-description").innerHTML = f.description_long_str;
               document.getElementById("class-features-intro").innerHTML = "As a "  + f.name_str + ", you gain the following Class Features.";
               document.getElementById("hit-dice").innerHTML = "<b>Hit Dice:</b>  1d" + f.hit_die_int + " per " + f.name_str + " level";
               document.getElementById("hit-points-at-1st-level").innerHTML = "<b>Hit Points at 1st level:</b>  " + f.hit_die_int + " your Constitution modifier";
@@ -39,27 +39,34 @@
               
               document.getElementById("class-table-title").innerHTML = "The " + f.name_str + " Table";
               var prof = 2;
+              let j = 0;
               for (let i = 0; i < 20; i++) {  
                 var tblRow = "<tr>" 
                   + "<td>" + (i+1) + "</td>"
                   + "<td>+" + prof + "</td>"
-                  + "<td>" + f.class_feat_table_links[i] + "</th>"
+                  + "<td><a href='#" + f.class_feats[j].name_str.replace(/\s+/g, '') + "'>" + f.class_feats[j].name_str 
+                  + "</a>, <a href='#" + f.class_feats[j+1].name_str.replace(/\s+/g, '') + "'>" + f.class_feats[j+1].name_str 
+                  + "</a></th>"
                   + "<td>" + Math.ceil((i+2)/f.sustainables_known_denominator) + "</td>"
                   + "<td>" + (i+1)*f.consumables_known_per_level + "</td>"
                   + "<td>" + (i+1)*f.consumables_points_per_level + "</td>"
                   + "<td>" + Math.ceil((i+1)/f.consumables_max_per_level_denominator) + "</td>"
                   + "</tr>"
+                j = j + 2;
                 $(tblRow).appendTo("#class-table tbody");
                 if ((i+1) == 4 || (i+1) == 8 || (i+1) == 12 || (i+1) == 16) {
                   prof++;
                 }
               }
-              for (let i = 0; i < f.class_feat_descriptions.length; i++) {
-                document.getElementById("class-table-features").innerHTML += "<h3 id='" 
-                  + f.class_feat_descriptions[i].name_str + "-" + f.class_feat_descriptions[i].level + "'>" 
-                  + f.class_feat_descriptions[i].name_str + "</h3><hr><i><b>" + f.name_str 
-                  + ":</b>  level " + f.class_feat_descriptions[i].level + "</i><p>" 
-                  + f.class_feat_descriptions[i].mechanics_str + "</p><br>";
+              for (let i = 0; i < f.class_feats.length; i++) {
+                if (document.getElementById("class-table-features").innerHTML.indexOf(f.class_feats[i].name_str) > 0) {} 
+                else {
+                  document.getElementById("class-table-features").innerHTML += "<h3 id='" 
+                  + f.class_feats[i].name_str.replace(/\s+/g, '') + "'>" 
+                  + f.class_feats[i].name_str + "</h3><hr><i><b>" + f.name_str 
+                  + ":</b>  level " + f.class_feats[i].level + "</i><p>" 
+                  + f.class_feats[i].mechanics_str + "</p><br>";
+                }
               }
             }
 
