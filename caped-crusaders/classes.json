@@ -1303,7 +1303,7 @@
                 {
                     "name_str" : "Powercasting Milestone",
                     "level" : 1,
-                    "mechanics_str" : "You have manifested powers beyond that of ordinary creatures.  See the Rules for Powercasting mechanics and Superpowers list.  <ul><li><b>Superpowers Known:</b>  You learn a number of Superpowers of your choice at first level and at subsequent levels as shown in the Superpowers Known column of the Class table.  You may not learn a Superpower of a level higher than your Max Superpower Level, and you may learn a Superpower at the same time you learn its prerequisite.  </li><br><li><b>Power Points:</b>  You have a number of Power Points equal to your Class level x 8, as shown in the Power Points column of the Class table, + your Int modifier.  You expend these Power Points to cast Power Powers.  You regain all expended Power Points when you finish a long rest.  </li><br><li><b>Max Power Level:</b>  Many Superpowers can be overpowered, consuming more Power Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Power Level column of the Class table.  You may only cast Superpowers at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Powercasting Ability:</b>  Your Powercasting ability is Intelligence.  You use your Intelligence modifier whenever a Superpower refers to your Powercasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Superpower you cast and when making an attack roll with one.  </li><br><li><b>Superpower save DC</b> = 8 + your proficiency bonus + your Powercasting ability modifier</li><br><li><b>Superpower attack modifier</b> = your proficiency bonus + your Powercasting ability modifier</li></ul>"
+                    "mechanics_str" : "You have manifested powers beyond that of ordinary creatures.  See the Rules for Powercasting mechanics and Superpowers list.  <ul><li><b>Superpowers Known:</b>  You learn a number of Superpowers of your choice at first level and at subsequent levels as shown in the Superpowers Known column of the Class table.  You may not learn a Superpower of a level higher than your Max Superpower Level, and you may learn a Superpower at the same time you learn its prerequisite.  </li><br><li><b>Power Points:</b>  You have a number of Power Points equal to your Class level x 8, as shown in the Power Points column of the Class table, + your Int modifier.  You expend these Power Points to cast Power Powers.  You regain all expended Power Points when you finish a long rest.  </li><br><li><b>Max Power Level:</b>  Many Superpowers can be overpowered, consuming more Power Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Power Level column of the Class table.  You may only cast Superpowers at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Powercasting Ability:</b>  Your Powercasting ability is Charisma.  You use your Charisma modifier whenever a Superpower refers to your Powercasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Superpower you cast and when making an attack roll with one.  </li><br><li><b>Superpower save DC</b> = 8 + your proficiency bonus + your Powercasting ability modifier</li><br><li><b>Superpower attack modifier</b> = your proficiency bonus + your Powercasting ability modifier</li></ul>"
                 },
                 {
                     "name_str" : "Deflect Projectiles",
@@ -1318,17 +1318,17 @@
                 {
                     "name_str" : "Subclass Feature",
                     "level" : 2,
-                    "mechanics_str" : "You gain a subclass as detailed at the bottom of this page.  Each subclass offers a Sustainable at this level, and an additional Sustainable at levels 6, 13, and 18.  "
+                    "mechanics_str" : "You gain a subclass as detailed at the bottom of this page.  <br><br>Each subclass offers a Sustainable at this level, and an additional Sustainable at levels 6, 13, and 18.  "
                 },
                 {
                     "name_str" : "Ability Score Improvement",
                     "level" : 3,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  <br><br>You benefit from additional Ability Score Improvements at levels 5, 8, 11, 14, and 17.  "
                 },
                 {
-                    "name_str" : "Enhanced Reflexes",
+                    "name_str" : "Heightened Reflexes",
                     "level" : 3,
-                    "mechanics_str" : "Your total number of Actions and Reactions is equal to your proficiency bonus.  "
+                    "mechanics_str" : "Your total number of Actions and Reactions is equal to your proficiency bonus, but can only affect a specific creature with a Reaction once per round.  You may also use the Acrobatics skill rather than Athletics when Shoving.  "
                 },
                 {
                     "name_str" : "Powercasting Milestone",
@@ -1341,9 +1341,9 @@
                     "mechanics_str" : "You are able to pass through mundane matter as though it were difficult terrain, up to distances equal to your Proficiency bonus * 5, per round.  For example, if your Proficiency bonus is +2, you can move through a 10 foot solid steel wall, but doing so will cost you 20 feet of movement.  You may also push yourself through mundane matter for a greater distance, but you take 1d12 Disintegrating damage for every 5 feet traveled beyond this distance.  If you end your turn within solid matter, you take three points of exhaustion.  <br><br>You may also move across liquids and vertical surfaces as though they were flat terrain, but you fall if you end your turn on such a surface.  "
                 },
                 {
-                    "name_str" : "Temporary Incorporation",
+                    "name_str" : "Ability Score Improvement",
                     "level" : 5,
-                    "mechanics_str" : "You are able to pass through mundane matter as though it were difficult terrain, up to distances equal to your Proficiency bonus * 5, per round.  For example, if your Proficiency bonus is +2, you can move through a 10 foot solid steel wall, but doing so will cost you 20 feet of movement.  You may also push yourself through mundane matter for a greater distance, but you take 1d12 Disintegrating damage for every 5 feet traveled beyond this distance.  If you end your turn within solid matter, you take three points of exhaustion.  <br><br>You may also move across liquids and vertical surfaces as though they were flat terrain, but you fall if you end your turn on such a surface.  "
+                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
                     "name_str" : "Evasion",
@@ -1351,9 +1351,9 @@
                     "mechanics_str" : "When you make a Dexterity Saving Throw to avoid taking damage, you suffer only half damage on a failure and no damage on a success.  You also have advantage on Saving Throws against effects you can see.  "
                 },
                 {
-                    "name_str" : "Ability Score Improvement",
+                    "name_str" : "Temporary Incorporation",
                     "level" : 6,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                    "mechanics_str" : "You are able to pass through mundane matter as though it were difficult terrain, up to distances equal to your Proficiency bonus * 5, per round.  For example, if your Proficiency bonus is +2, you can move through a 10 foot solid steel wall, but doing so will cost you 20 feet of movement.  You may also push yourself through mundane matter for a greater distance, but you take 1d12 Disintegrating damage for every 5 feet traveled beyond this distance.  If you end your turn within solid matter, you take three points of exhaustion.  <br><br>You may also move across liquids and vertical surfaces as though they were flat terrain, but you fall if you end your turn on such a surface.  "
                 },
                 {
                     "name_str" : "Subclass Feature",
@@ -1376,19 +1376,19 @@
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
-                    "name_str" : "?",
+                    "name_str" : "Alert",
                     "level" : 8,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                    "mechanics_str" : "You are considered proficient in Initiative checks.  "
                 },
                 {
                     "name_str" : "Improved Reflexes",
                     "level" : 9,
-                    "mechanics_str" : "Your total number of Reactions is equal to your proficiency bonus * 2.  "
+                    "mechanics_str" : "Your total number of Reactions is equal to your proficiency bonus * 2, but can only affect a specific creature with a Reaction once per round..  "
                 },
                 {
-                    "name_str" : "?",
+                    "name_str" : "Self Reflection",
                     "level" : 9,
-                    "mechanics_str" : "Your total number of Reactions is equal to your proficiency bonus * 2.  "
+                    "mechanics_str" : "You can use an Action to end one effect on you that is causing you to be Charmed or Frightened.  "
                 },
                 {
                     "name_str" : "Powercasting Milestone",
@@ -1398,6 +1398,11 @@
                 {
                     "name_str" : "Deflect Projectiles",
                     "level" : 10,
+                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 11,
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
@@ -1406,14 +1411,9 @@
                     "mechanics_str" : "You can treat the d20 result for any skill check you make with proficiency as a 10 if the result is 9 or lower before modifiers.  "
                 },
                 {
-                    "name_str" : "?",
-                    "level" : 11,
-                    "mechanics_str" : "You can treat the d20 result for any skill check you make with proficiency as a 10 if the result is 9 or lower before modifiers.  "
-                },
-                {
-                    "name_str" : "Ability Score Improvement",
+                    "name_str" : "Misdirection",
                     "level" : 12,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                    "mechanics_str" : "When a creature that you can see is the target of an Attack, you may use your Reaction to move up to half of your speed towards the creature and impose disadvantage on the Attack should you be within 5 feet of them.  Immediately after the Attack is resolved, if you did not use half of your movement speed to reach the target, you can use any remaining movement speed from that pool to position yourself at your discretion.  <br><br>Beginning at level 17, you can choose to grant advantage to the Attack rather than Disadvantage.  Beginning at level 20, the Advantage / Disadvantage you impose with this feature includes three d20s rather than two.  "
                 },
                 {
                     "name_str" : "Subclass Feature",
@@ -1431,24 +1431,24 @@
                     "mechanics_str" : "You can treat the d20 result for any skill check you make with proficiency as a 10 if the result is 9 or lower before modifiers.  "
                 },
                 {
-                    "name_str" : "Superior Reflexes",
-                    "level" : 14,
-                    "mechanics_str" : "Your total number of Actions and Reactions is equal to your proficiency bonus * 2.  "
-                },
-                {
-                    "name_str" : "?",
-                    "level" : 14,
-                    "mechanics_str" : "Your total number of Actions and Reactions is equal to your proficiency bonus * 2.  "
-                },
-                {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 15,
+                    "level" : 14,
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
-                    "name_str" : "?",
+                    "name_str" : "Blindsense",
+                    "level" : 14,
+                    "mechanics_str" : "You gain Blindsense with a radius equal to your Proficiency Bonus * 5.  "
+                },
+                {
+                    "name_str" : "Perceptive",
                     "level" : 15,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                    "mechanics_str" : "In addition, no Attack has advantage against you while you are not incapacitated.  "
+                },
+                {
+                    "name_str" : "Superior Reflexes",
+                    "level" : 15,
+                    "mechanics_str" : "Your total number of Actions and Reactions is equal to your proficiency bonus * 2, but can only affect a specific creature with a Reaction once per round..  "
                 },
                 {
                     "name_str" : "Powercasting Milestone",
@@ -1461,19 +1461,19 @@
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
-                    "name_str" : "?",
-                    "level" : 17,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
-                },
-                {
-                    "name_str" : "?",
-                    "level" : 17,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
-                },
-                {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 18,
+                    "level" : 17,
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                },
+                {
+                    "name_str" : "Misdirection",
+                    "level" : 17,
+                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                },
+                {
+                    "name_str" : "Temporal Refuge",
+                    "level" : 18,
+                    "mechanics_str" : "You are able to benefit from a Short Rest over the course of one minute.  "
                 },
                 {
                     "name_str" : "Subclass Feature",
@@ -1493,10 +1493,10 @@
                 {
                     "name_str" : "Ultimate Reflexes",
                     "level" : 20,
-                    "mechanics_str" : "You have an unlimited number of reactions.  In addition, you may take an additional turn on the first round of combat, at the Initiative order equal to your Initiative minus 10.  "
+                    "mechanics_str" : "You have an unlimited number of reactions, but can only affect a specific creature with a Reaction once per round.  In addition, you may take an additional turn on the first round of combat, at the Initiative order equal to your Initiative minus 10.  "
                 },
                 {
-                    "name_str" : "?",
+                    "name_str" : "Misdirection",
                     "level" : 20,
                     "mechanics_str" : "You have an unlimited number of reactions.  In addition, you may take an additional turn on the first round of combat, at the Initiative order equal to your Initiative minus 10.  "
                 }

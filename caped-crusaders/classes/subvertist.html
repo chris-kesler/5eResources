@@ -61,11 +61,11 @@
               for (let i = 0; i < f.class_feats.length; i++) {
                 if (document.getElementById("class-table-features").innerHTML.indexOf(f.class_feats[i].name_str) > 0) {} 
                 else {
-                  document.getElementById("class-table-features").innerHTML += "<h3 id='" 
+                  document.getElementById("class-table-features").innerHTML += "<hr><h3 id='" 
                   + f.class_feats[i].name_str.replace(/\s+/g, '') + "'>" 
-                  + f.class_feats[i].name_str + "</h3><hr><i><b>" + f.name_str 
+                  + f.class_feats[i].name_str + "</h3><i><b>" + f.name_str 
                   + ":</b>  level " + f.class_feats[i].level + "</i><p>" 
-                  + f.class_feats[i].mechanics_str + "</p><br>";
+                  + f.class_feats[i].mechanics_str + "</p>";
                 }
               }
             }
