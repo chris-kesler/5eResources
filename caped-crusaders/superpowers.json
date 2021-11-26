@@ -44,6 +44,186 @@
             "feats_str" : "",
             "backgrounds_str" : "",
             "races_str" : ""
+        },
+        {
+            "name_str" : "Reflex Surge",
+            "page_url" : "reflex-surge.html",
+
+            "level_int" : 1,
+            "level_str" : "1st",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Bonus Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 0,
+            "range_area_str" : "Self",
+            
+            "components_verbal_bool" : false,
+            "components_somatic_bool" : true,
+            "components_material_bool" : false,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "S",
+            "components_description_str" : "",
+            
+            "duration_int" : 0,
+            "duration_str" : "Instantaneous",
+            
+            "type_str" : "Velocity",
+            "type_img" : "/_SiteResources/Images/noun_speed_1953028.png",
+            
+            "attack_save_int" : 0,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "---",
+            
+            "flavor_str" : "You tap into a wellspring of reactivity to faster perceive and navigate your surroundings.  ",
+            "mechanics_str" : "You benefit from either Disengage or Dash until the end of this turn (your choice).  ",
+            "overchargeable_bool" : false,
+            "overcharge_str" : "When cast at 2nd level, you benefit from Disengage and Dash until the end of this turn, rather than either or.  ",
+
+            "class_str" : "Subvertist",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Impact Negation",
+            "page_url" : "impact-negation.html",
+
+            "level_int" : 1,
+            "level_str" : "1st",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Reaction",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 0,
+            "range_area_str" : "60",
+            
+            "components_verbal_bool" : false,
+            "components_somatic_bool" : true,
+            "components_material_bool" : false,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "S",
+            "components_description_str" : "",
+            
+            "duration_int" : 0,
+            "duration_str" : "Instantaneous",
+            
+            "type_str" : "Velocity",
+            "type_img" : "/_SiteResources/Images/noun_speed_1953028.png",
+            
+            "attack_save_int" : 0,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "---",
+            
+            "flavor_str" : "You harness your power to dampen the fall for multiple targets, potentially yourself.  ",
+            "mechanics_str" : "When you perceive something falling, you can cast this superpower to slow the falling speed of the target and 9 others (possibly including yourself) sufficiently to prevent falling damage for one round.  ",
+            "overchargeable_bool" : false,
+            "overcharge_str" : "For every level of Overcharge, increase the range of the power by 30 and the number of targets by 10.  ",
+
+            "class_str" : "Subvertist",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Blinking Step",
+            "page_url" : "blinking-step.html",
+
+            "level_int" : 2,
+            "level_str" : "2nd",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Bonus Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 0,
+            "range_area_str" : "Self",
+            
+            "components_verbal_bool" : false,
+            "components_somatic_bool" : true,
+            "components_material_bool" : false,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "S",
+            "components_description_str" : "",
+            
+            "duration_int" : 0,
+            "duration_str" : "Instantaneous",
+            
+            "type_str" : "Velocity",
+            "type_img" : "/_SiteResources/Images/noun_speed_1953028.png",
+            
+            "attack_save_int" : 0,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "---",
+            
+            "flavor_str" : "You tap into a wellspring of reactivity instantly move between places.  ",
+            "mechanics_str" : "You teleport up to 30 feet to an unoccupied space you can see.  ",
+            "overchargeable_bool" : false,
+            "overcharge_str" : "For every level of overcharge, add 10 feet to the range of this power.  ",
+
+            "class_str" : "Subvertist",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Rapid Barrage",
+            "page_url" : "rapid-barrage.html",
+
+            "level_int" : 3,
+            "level_str" : "3rd",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 0,
+            "range_area_str" : "Self",
+            
+            "components_verbal_bool" : false,
+            "components_somatic_bool" : true,
+            "components_material_bool" : false,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "S",
+            "components_description_str" : "",
+            
+            "duration_int" : 0,
+            "duration_str" : "Instantaneous",
+            
+            "type_str" : "Velocity",
+            "type_img" : "/_SiteResources/Images/noun_speed_1953028.png",
+            
+            "attack_save_int" : 0,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "---",
+            
+            "flavor_str" : "You hurl a barrage of projectiles, pelleting enemies within the area.  ",
+            "mechanics_str" : "Each creature of your choice within a 60 foot cone must succeed on a Dex save, taking 4d10 bluegeoning, piercing, or slashing damage (your choice) and half as much on a success.  ",
+            "overchargeable_bool" : false,
+            "overcharge_str" : "For every level of overcharge, add 10 feet to the range and 1d10 to the damage of this power.  ",
+
+            "class_str" : "Subvertist",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
         }
     ]
 }

@@ -30,31 +30,9 @@
             "consumables_points_per_level" : 2,
             "consumables_max_per_level_denominator" : 2,
 
-            "class_feat_table_links" : [
-                "<a href='#Techcasting-1'>Techcasting</a>, <a href='#Augmented Armor-1'>Augmented Armor</a>",
-                "<a href='#Expertise-2'>Expertise</a>, Subclass Feature",
-                "---",
-                "<a href='#Ability Score Improvement-4'>Ability Score Improvement</a>, <a href='#Advanced Armor-4'>Advanced Armor</a>",
-                "---",
-                "<a href='#Reverse Engineering-6'>Reverse Engineering</a>",
-                "---",
-                "<a href='#Ability Score Improvement-8'>Ability Score Improvement</a>, Subclass Feature",
-                "---",
-                "<a href='#Expertise-10'>Expertise</a>, <a href='#Reverse Engineering-10'>Reverse Engineering</a>",
-                "---",
-                "<a href='#Ability Score Improvement-12'>Ability Score Improvement</a>, <a href='#Superior Armor-12'>Superior Armor</a>",
-                "---",
-                "<a href='#Reverse Engineering-14'>Reverse Engineering</a>",
-                "---",
-                "<a href='#Ability Score Improvement-16'>Ability Score Improvement</a>, Subclass Feature",
-                "---",
-                "<a href='#Expertise-18'>Expertise</a>, <a href='#Reverse Engineering-18'>Reverse Engineering</a>",
-                "<a href='#Ability Score Improvement-19'>Ability Score Improvement</a>",
-                "<a href='#Ultimate Armor-20'>Ultimate Armor</a>"
-                ],
-            "class_feat_descriptions" : [
+            "class_feats" : [
                 {
-                    "name_str" : "Techcasting",
+                    "name_str" : "Techcasting Milestone",
                     "level" : 1,
                     "mechanics_str" : "You have known intimate knowledge of technology far beyond your time, and are capable of apply these technologies in a variety of ways.  See the Rules for Techcasting mechanics and Technologies list.  <ul><li><b>Technologies Known:</b>  You learn 4 Technologies of your choice, and you learn an additional 4 at each higher Visionary level as shown in the Technologies Known column of the Visionary table.  You may not learn a Technology of a level higher than your Max Technology Level, and you may learn a Technology at the same time you learn its prerequisite.  </li><br><li><b>Tech Points:</b>  You have a number of Tech Points equal to your Visionary level x 8, as shown in the Tech Points column of the Visionary table, + your Int modifier.  You expend these Tech Points to cast Tech Powers.  You regain all expended Tech Points when you finish a long rest.  </li><br><li><b>Max Tech Level:</b>  Many Technologies can be overpowered, consuming more Tech Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Tech Level column of the Visionary table.  You may only cast Technologies at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Techcasting Ability:</b>  Your Techcasting ability is Intelligence.  You use your Intelligence modifier whenever a Technology refers to your Techcasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Technology you cast and when making an attack roll with one.  </li><br><li><b>Technology save DC</b> = 8 + your proficiency bonus + your Techcasting ability modifier</li><br><li><b>Technology attack modifier</b> = your proficiency bonus + your Techcasting ability modifier</li></ul>"
                 },
@@ -66,12 +44,26 @@
                 {
                     "name_str" : "Expertise",
                     "level" : 2,
+                    "mechanics_str" : "Choose one of your skill proficiencies and one of your tool proficiencies.  Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiencies.  <br><br>You gain this feature again at levels 10 and 18."
+                },
+                {
+                    "name_str" : "Subclass Feature",
+                    "level" : 2,
+                    "mechanics_str" : "You gain a subclass as detailed at the bottom of this page.  <br><br>Each subclass offers a Sustainable at this level, and an additional Sustainable at levels 8, and 16.  "
+                },
+                {
+                    "name_str" : "Techcasting Milestone",
+                    "level" : 3
+                },
+                {
+                    "name_str" : "?",
+                    "level" : 3,
                     "mechanics_str" : "Choose one of your skill proficiencies and one of your tool proficiencies.  Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiencies.  "
                 },
                 {
                     "name_str" : "Ability Score Improvement",
                     "level" : 4,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  <br><br>You gain this feature again at levels 8, 12, 16, and 19."
                 },
                 {
                     "name_str" : "Advanced Armor",
@@ -79,29 +71,70 @@
                     "mechanics_str" : "Your inventive pursuits have led to you making armor that serves as a conduit for your technology.  As part of a Long Rest, you can turn a suit of mundane armor you have access to into Advanced Armor, provided you have Inventor's Tools on hand.  You can don or doff the Advanced Armor an Action.  The Advanced Armor continues to be Advanced Armor until you create another set of Advanced Armor, or it is destroyed.  If you die while wearing the Advanced Armor, it is destroyed.  The Advanced Armor has the following traits while worn by you:<ul><li>Your Strength score becomes equal to your Intelligence score as long as it is not already higher.  You are also considered proficient with the armor.  </li>  <li>You can use the Advanced Armor as a Techcasting focus for your Visionary spells.  </li><li>The Advanced Armor attaches to you and can’t be removed against your will.  </li><li>The Advanced Armor expands to cover your entire body, although you can retract or deploy the helmet as an action.  </li><li>The Advanced Armor replaces any missing limbs, functioning identically to a limb it replaces.  </li><li>When you make an Intelligence check, you can treat the d20 result as equal to your Intelligence modifier if the result before modifiers is lower.  </li><li>You can survive in the vacuum of space for a number of minutes equal to your Intelligence modifier.  This ability recharges upon a long rest within a hospitable environment.  </li></ul>"
                 },
                 {
+                    "name_str" : "Techcasting Milestone",
+                    "level" : 5
+                },
+                {
+                    "name_str" : "?",
+                    "level" : 5,
+                    "mechanics_str" : "Your inventive pursuits have led to you making armor that serves as a conduit for your technology.  As part of a Long Rest, you can turn a suit of mundane armor you have access to into Advanced Armor, provided you have Inventor's Tools on hand.  You can don or doff the Advanced Armor an Action.  The Advanced Armor continues to be Advanced Armor until you create another set of Advanced Armor, or it is destroyed.  If you die while wearing the Advanced Armor, it is destroyed.  The Advanced Armor has the following traits while worn by you:<ul><li>Your Strength score becomes equal to your Intelligence score as long as it is not already higher.  You are also considered proficient with the armor.  </li>  <li>You can use the Advanced Armor as a Techcasting focus for your Visionary spells.  </li><li>The Advanced Armor attaches to you and can’t be removed against your will.  </li><li>The Advanced Armor expands to cover your entire body, although you can retract or deploy the helmet as an action.  </li><li>The Advanced Armor replaces any missing limbs, functioning identically to a limb it replaces.  </li><li>When you make an Intelligence check, you can treat the d20 result as equal to your Intelligence modifier if the result before modifiers is lower.  </li><li>You can survive in the vacuum of space for a number of minutes equal to your Intelligence modifier.  This ability recharges upon a long rest within a hospitable environment.  </li></ul>"
+                },
+                {
                     "name_str" : "Reverse Engineering",
+                    "level" : 6,
+                    "mechanics_str" : "Choose one Technology, Power, or Spell from any class casting list that you have witnessed being cast at least once.  Events witnessed within your backstory do not qualify for this feature.  The chosen Technology, Power, or Spell must not be of a higher level than the Maximum Technology Level for your current Visionary level.  Your selected Technology, Power, or Spell counts as a Visionary Technology for you, and you are able to learn it as normal at the same level you choose it.  If you are starting at higher levels or have not witnessed any Technologies, Powers, or Spells being cast upon gaining this feature, your GM may provide a list of Technologies, Powers, or Spells for you to choose from.  <br><br>You may gain this feature multiple times.  You gain this feature again at levels 10, 14, and 18."
+                },
+                {
+                    "name_str" : "?",
                     "level" : 6,
                     "mechanics_str" : "Choose one Technology, Power, or Spell from any class casting list that you have witnessed being cast at least once.  Events witnessed within your backstory do not qualify for this feature.  The chosen Technology, Power, or Spell must not be of a higher level than the Maximum Technology Level for your current Visionary level.  Your selected Technology, Power, or Spell counts as a Visionary Technology for you, and you are able to learn it as normal at the same level you choose it.  If you are starting at higher levels or have not witnessed any Technologies, Powers, or Spells being cast upon gaining this feature, your GM may provide a list of Technologies, Powers, or Spells for you to choose from.  You may gain this feature multiple times.  "
                 },
                 {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 8,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                    "name_str" : "Techcasting Milestone",
+                    "level" : 7
                 },
                 {
-                    "name_str" : "Expertise",
-                    "level" : 10,
-                    "mechanics_str" : "Choose one of your skill proficiencies and one of your tool proficiencies.  Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiencies.  "
-                },
-                {
-                    "name_str" : "Reverse Engineering",
-                    "level" : 10,
+                    "name_str" : "?",
+                    "level" : 7,
                     "mechanics_str" : "Choose one Technology, Power, or Spell from any class casting list that you have witnessed being cast at least once.  Events witnessed within your backstory do not qualify for this feature.  The chosen Technology, Power, or Spell must not be of a higher level than the Maximum Technology Level for your current Visionary level.  Your selected Technology, Power, or Spell counts as a Visionary Technology for you, and you are able to learn it as normal at the same level you choose it.  If you are starting at higher levels or have not witnessed any Technologies, Powers, or Spells being cast upon gaining this feature, your GM may provide a list of Technologies, Powers, or Spells for you to choose from.  You may gain this feature multiple times.  "
                 },
                 {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 12,
+                    "level" : 8
+                },
+                {
+                    "name_str" : "Subclass Feature",
+                    "level" : 8
+                },
+                {
+                    "name_str" : "Techcasting Milestone",
+                    "level" : 9
+                },
+                {
+                    "name_str" : "?",
+                    "level" : 9,
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                },
+                {
+                    "name_str" : "Expertise",
+                    "level" : 10
+                },
+                {
+                    "name_str" : "Reverse Engineering",
+                    "level" : 10
+                },
+                {
+                    "name_str" : "Techcasting Milestone",
+                    "level" : 11
+                },
+                {
+                    "name_str" : "?",
+                    "level" : 11,
+                    "mechanics_str" : "Choose one Technology, Power, or Spell from any class casting list that you have witnessed being cast at least once.  Events witnessed within your backstory do not qualify for this feature.  The chosen Technology, Power, or Spell must not be of a higher level than the Maximum Technology Level for your current Visionary level.  Your selected Technology, Power, or Spell counts as a Visionary Technology for you, and you are able to learn it as normal at the same level you choose it.  If you are starting at higher levels or have not witnessed any Technologies, Powers, or Spells being cast upon gaining this feature, your GM may provide a list of Technologies, Powers, or Spells for you to choose from.  You may gain this feature multiple times.  "
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 12
                 },
                 {
                     "name_str" : "Superior Armor",
@@ -109,34 +142,137 @@
                     "mechanics_str" : "Your inventive pursuits have led to you making armor that serves as a conduit for your technology.  As part of a Long Rest, you can turn a suit of mundane armor you have access to into Superior Armor, provided you have Inventor's Tools on hand.  You can don or doff the Superior Armor as a Bonus Action.  The Superior Armor continues to be Superior Armor until you create another set of Superior Armor, or it is destroyed.  If you die while wearing the Superior Armor, it is destroyed.  The Superior Armor has the following traits while worn by you:<ul><li>Your Strength score becomes equal to your Intelligence score as long as it is not already higher.  You are also considered proficient with the armor.  </li>  <li>You can use the Superior Armor as a Techcasting focus for your Visionary spells.  </li><li>The Superior Armor attaches to you and can’t be removed against your will.  </li><li>The Superior Armor expands to cover your entire body, although you can retract or deploy the helmet as a bonus action.  </li><li>The Superior Armor replaces any missing limbs, functioning identically to a limb it replaces.  </li><li>When you make an Intelligence check, you can treat the d20 result as equal to half of your Intelligence score (rounded down) if the result before modifiers is lower.  </li><li>You can survive in the vacuum of space for a number of hours equal to your Intelligence modifier.  This ability recharges upon a long rest within a hospitable environment.  </li></ul>"
                 },
                 {
+                    "name_str" : "Techcasting Milestone",
+                    "level" : 13
+                },
+                {
+                    "name_str" : "?",
+                    "level" : 13,
+                    "mechanics_str" : "Your inventive pursuits have led to you making armor that serves as a conduit for your technology.  As part of a Long Rest, you can turn a suit of mundane armor you have access to into Superior Armor, provided you have Inventor's Tools on hand.  You can don or doff the Superior Armor as a Bonus Action.  The Superior Armor continues to be Superior Armor until you create another set of Superior Armor, or it is destroyed.  If you die while wearing the Superior Armor, it is destroyed.  The Superior Armor has the following traits while worn by you:<ul><li>Your Strength score becomes equal to your Intelligence score as long as it is not already higher.  You are also considered proficient with the armor.  </li>  <li>You can use the Superior Armor as a Techcasting focus for your Visionary spells.  </li><li>The Superior Armor attaches to you and can’t be removed against your will.  </li><li>The Superior Armor expands to cover your entire body, although you can retract or deploy the helmet as a bonus action.  </li><li>The Superior Armor replaces any missing limbs, functioning identically to a limb it replaces.  </li><li>When you make an Intelligence check, you can treat the d20 result as equal to half of your Intelligence score (rounded down) if the result before modifiers is lower.  </li><li>You can survive in the vacuum of space for a number of hours equal to your Intelligence modifier.  This ability recharges upon a long rest within a hospitable environment.  </li></ul>"
+                },
+                {
                     "name_str" : "Reverse Engineering",
+                    "level" : 14
+                },
+                {
+                    "name_str" : "?",
                     "level" : 14,
                     "mechanics_str" : "Choose one Technology, Power, or Spell from any class casting list that you have witnessed being cast at least once.  Events witnessed within your backstory do not qualify for this feature.  The chosen Technology, Power, or Spell must not be of a higher level than the Maximum Technology Level for your current Visionary level.  Your selected Technology, Power, or Spell counts as a Visionary Technology for you, and you are able to learn it as normal at the same level you choose it.  If you are starting at higher levels or have not witnessed any Technologies, Powers, or Spells being cast upon gaining this feature, your GM may provide a list of Technologies, Powers, or Spells for you to choose from.  You may gain this feature multiple times.  "
                 },
                 {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 16,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                    "name_str" : "Techcasting Milestone",
+                    "level" : 15
                 },
                 {
-                    "name_str" : "Expertise",
-                    "level" : 18,
-                    "mechanics_str" : "Choose one of your skill proficiencies and one of your tool proficiencies.  Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiencies.  "
-                },
-                {
-                    "name_str" : "Reverse Engineering",
-                    "level" : 18,
+                    "name_str" : "?",
+                    "level" : 15,
                     "mechanics_str" : "Choose one Technology, Power, or Spell from any class casting list that you have witnessed being cast at least once.  Events witnessed within your backstory do not qualify for this feature.  The chosen Technology, Power, or Spell must not be of a higher level than the Maximum Technology Level for your current Visionary level.  Your selected Technology, Power, or Spell counts as a Visionary Technology for you, and you are able to learn it as normal at the same level you choose it.  If you are starting at higher levels or have not witnessed any Technologies, Powers, or Spells being cast upon gaining this feature, your GM may provide a list of Technologies, Powers, or Spells for you to choose from.  You may gain this feature multiple times.  "
                 },
                 {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 19,
+                    "level" : 16
+                },
+                {
+                    "name_str" : "Subclass Feature",
+                    "level" : 16
+                },
+                {
+                    "name_str" : "Techcasting Milestone",
+                    "level" : 17
+                },
+                {
+                    "name_str" : "?",
+                    "level" : 17,
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                },
+                {
+                    "name_str" : "Expertise",
+                    "level" : 18
+                },
+                {
+                    "name_str" : "Reverse Engineering",
+                    "level" : 18
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 19
+                },
+                {
+                    "name_str" : "Techcasting Milestone",
+                    "level" : 19
                 },
                 {
                     "name_str" : "Ultimate Armor",
                     "level" : 20,
                     "mechanics_str" : "Your inventive pursuits have led to you making armor that serves as a conduit for your technology.  As part of a Long Rest, you can turn a suit of mundane armor you have access to into Ultimate Armor, provided you have Inventor's Tools on hand.  You can don or doff the Ultimate Armor as part of any Action, Bonus Action, or Reaction you take.  In addition, when the Ultimate Armor is doffed by you, you can choose to have it collapse into a small housing unit.  The housing unit takes on a form of your choosing, and can be no smaller a thick wristwatch.  You can use the housing unit as a Tech casting focus for your Visionary spells while you wear it as components of the Ultimate Armor dynamically deploy and retract as needed.  The Ultimate Armor continues to be Ultimate Armor until you create another set of Ultimate Armor, or it is destroyed.  If you die while wearing the Ultimate Armor, it is destroyed.  The Ultimate Armor has the following traits while worn by you:<ul><li>Your Strength score becomes equal to your Intelligence score as long as it is not already higher.  You are also considered proficient with the armor.  </li>  <li>You can use the Ultimate Armor as a Techcasting focus for your Visionary spells, and you need not supply any components that do not have a cost while doing so.  </li><li>The Ultimate Armor attaches to you and can’t be removed against your will.  </li><li>The Ultimate Armor expands to cover your entire body, although you can retract or deploy the helmet once per turn.  </li><li>The Ultimate Armor replaces any missing limbs, functioning identically to a limb it replaces.  </li><li>When you make an Intelligence check, you can treat the d20 result as equal to your Intelligence score if the result before modifiers is lower.  </li><li>Choose two of your Technologies that are of 2nd level or lower.  You can cast those Technologies at their lowest level without expending any Tech Points.  </li><li>You can survive in the vacuum of space for a number of days equal to your Intelligence modifier.  This ability recharges upon a long rest within a hospitable environment.  </li></ul>"
+                },
+                {
+                    "name_str" : "?",
+                    "level" : 20,
+                    "mechanics_str" : "Your inventive pursuits have led to you making armor that serves as a conduit for your technology.  As part of a Long Rest, you can turn a suit of mundane armor you have access to into Ultimate Armor, provided you have Inventor's Tools on hand.  You can don or doff the Ultimate Armor as part of any Action, Bonus Action, or Reaction you take.  In addition, when the Ultimate Armor is doffed by you, you can choose to have it collapse into a small housing unit.  The housing unit takes on a form of your choosing, and can be no smaller a thick wristwatch.  You can use the housing unit as a Tech casting focus for your Visionary spells while you wear it as components of the Ultimate Armor dynamically deploy and retract as needed.  The Ultimate Armor continues to be Ultimate Armor until you create another set of Ultimate Armor, or it is destroyed.  If you die while wearing the Ultimate Armor, it is destroyed.  The Ultimate Armor has the following traits while worn by you:<ul><li>Your Strength score becomes equal to your Intelligence score as long as it is not already higher.  You are also considered proficient with the armor.  </li>  <li>You can use the Ultimate Armor as a Techcasting focus for your Visionary spells, and you need not supply any components that do not have a cost while doing so.  </li><li>The Ultimate Armor attaches to you and can’t be removed against your will.  </li><li>The Ultimate Armor expands to cover your entire body, although you can retract or deploy the helmet once per turn.  </li><li>The Ultimate Armor replaces any missing limbs, functioning identically to a limb it replaces.  </li><li>When you make an Intelligence check, you can treat the d20 result as equal to your Intelligence score if the result before modifiers is lower.  </li><li>Choose two of your Technologies that are of 2nd level or lower.  You can cast those Technologies at their lowest level without expending any Tech Points.  </li><li>You can survive in the vacuum of space for a number of days equal to your Intelligence modifier.  This ability recharges upon a long rest within a hospitable environment.  </li></ul>"
+                }
+            ],
+
+            "subclass_tech_name" : "Virtuoso",
+            "subclass_tech_img" : "/_SiteResources/Images/noun_Science_4037086.png",
+            "subclass_tech_description" : "A paragon of invention and ingenuity, the Virtuoso has created and incorporated a truly sustainable energy source. This energy source grants the Virtuoso several at-will Technologies and capabilities, such as flight. The Virtuoso can also adapt other suits of Technological Armor to fit their needs.",
+            "subclass_tech_feats" : [
+                {
+                    "name_str" : "Engineerism",
+                    "level" : 2,
+                    "mechanics_str" : "You gain one sustained Tech from the sustained Tech list. In addition, you can also convert any Technological Armor you have access to into your Visionary Armor as normal, retaining the original item's benefits in addition to the Visionary Armor features. You must still meet the level prerequisites for the Armor in order to do so, but ignore all other restrictions as you modify it to accomodate you. (Visionary Armor refers to Augmented Armor, Advanced Armor, Superior Armor, and Ultimate Armor simultaneously.)"
+                },
+                {
+                    "name_str" : "Micronuclear",
+                    "level" : 8,
+                    "mechanics_str" : "You gain one sustained Tech from the sustained Tech list. You may also swap one previously gained sustained Tech for another that you qualify for."
+                },
+                {
+                    "name_str" : "Quantum Induction",
+                    "level" : 16,
+                    "mechanics_str" : "You gain one sustained Tech from the sustained Tech list. You may also swap one previously gained sustained Tech for another that you qualify for."
+                }
+            ],
+
+            "subclass_power_name" : "Magnate",
+            "subclass_power_img" : "/_SiteResources/Images/noun_cyborg_506898.png",
+            "subclass_power_description" : "Some superpowers are far more subtle than most, and the Magnate is a prime example. Whether relying on magnetic manipulation, electrokinesis, or cybernetics, you stand out as a Visionary with precise control over your Technology. Having a direct connection between your nervous system and your devices grants you an innate control over your Visionary Armor. The Magnate can also adapt other suits of Metapower Armor to fit their needs.",
+            "subclass_power_feats" : [
+                {
+                    "name_str" : "Biomechanical Interface",
+                    "level" : 2,
+                    "mechanics_str" : "You gain one enhancing Power from the enhancing Power list. In addition, you can also convert any Metapower Armor you have access to into your Visionary Armor as normal, retaining the original item's benefits in addition to the Visionary Armor features. You must still meet the level prerequisites for the Armor in order to do so, but ignore all other restrictions as you modify it to accomodate you. (Visionary Armor refers to Augmented Armor, Advanced Armor, Superior Armor, and Ultimate Armor simultaneously.)"
+                },
+                {
+                    "name_str" : "Digital Synapses",
+                    "level" : 8,
+                    "mechanics_str" : "You gain one enhancing Power from the enhancing Power list.  You may also swap one previously gained enhancing Power for another that you qualify for."
+                },
+                {
+                    "name_str" : "Synthetic Symbiosis",
+                    "level" : 16,
+                    "mechanics_str" : "You gain one enhancing Power from the enhancing Power list.  You may also swap one previously gained enhancing Power for another that you qualify for."
+                }
+            ],
+            
+            "subclass_magic_name" : "Glyphologist",
+            "subclass_magic_img" : "/_SiteResources/Images/noun_Pyramid_1553793.png",
+            "subclass_magic_description" : "A scholar of ancient knowledge and mythology, the Glyphologist combines modern science with ancient magical power sources. Whether it be inscribing runes, compressing motes of power, or integrating powerful artifacts, the Glyphologist binds themselves and their armor together on a supernatural level. While not a spellcaster, the Glyphologist still benefits from magical boons that manifest in a variety of ways. The Glyphologist can also adapt other suits of Magical Armor to fit their needs.",
+            "subclass_magic_feats" : [
+                {
+                    "name_str" : "Applied Theology",
+                    "level" : 2,
+                    "mechanics_str" : "You gain one enduring Boon from the enduring Boon list. In addition, you can also convert any Magical Armor you have access to into your Visionary Armor as normal, retaining the original item's benefits in addition to the Visionary Armor features. You must still meet the level prerequisites for the Armor in order to do so, but ignore all other restrictions as you modify it to accomodate you. (Visionary Armor refers to Augmented Armor, Advanced Armor, Superior Armor, and Ultimate Armor simultaneously.)"
+                },
+                {
+                    "name_str" : "Invocationist",
+                    "level" : 8,
+                    "mechanics_str" : "You gain one enduring Boon from the enduring Boon list.  You may also swap one previously gained enduring Boon for another that you qualify for."
+                },
+                {
+                    "name_str" : "Science of Divinity",
+                    "level" : 16,
+                    "mechanics_str" : "You gain one enduring Boon from the enduring Boon list.  You may also swap one previously gained enduring Boon for another that you qualify for."
                 }
             ]
         },
