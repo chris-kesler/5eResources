@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="/caped-crusaders-style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
     <script>
+      $(function importContent() {
+        $(".Import_PageHeader").load("/_SiteResources/Pages/Import_PageHeader.html");
+        $(".Import_PageFooter").load("/_SiteResources/Pages/Import_PageFooter.html");
+      });
       $(function readClass() {
         var classes = [];
         $.getJSON('../classes.json', function(data) {
@@ -22,7 +26,7 @@
               document.getElementById("class-features-intro").innerHTML = "As a "  + f.name_str + ", you gain the following Class Features.";
               document.getElementById("hit-dice").innerHTML = "<b>Hit Dice:</b>  1d" + f.hit_die_int + " per " + f.name_str + " level";
               document.getElementById("hit-points-at-1st-level").innerHTML = "<b>Hit Points at 1st level:</b>  " + f.hit_die_int + " your Constitution modifier";
-              document.getElementById("hit-points-at-higher-levels").innerHTML = "<b>Hit Points at higher levels:</b>  1d" + f.hit_die_int + " (or " + f.hit_die_average_int + ") + your Constiution modifier per " + f.name_str + " level after 1st";
+              document.getElementById("hit-points-at-higher-levels").innerHTML = "<b>Hit Points at higher levels:</b>  1d" + f.hit_die_int + " (or " + f.hit_die_average_int + ") + your Constitution modifier per " + f.name_str + " level after 1st";
 
               document.getElementById("proficiencies-armor").innerHTML = "<b>Armor:</b>  " + f.proficiencies_armor;
               document.getElementById("proficiencies-weapons").innerHTML = "<b>Weapons:</b>  " + f.proficiencies_weapons;
@@ -34,9 +38,7 @@
               document.getElementById("equipment-weapons").innerHTML = "<b>Weapons:</b>  " + f.equipment_weapons;
               document.getElementById("equipment-tools").innerHTML = "<b>Tools:</b>  " + f.equipment_tools;
               document.getElementById("equipment-packs").innerHTML = "<b>Packs:</b>  " + f.equipment_packs;
-
               document.getElementById("starting-wealth").innerHTML = "<td>" + f.name_str + "</td><td>" + f.equipment_variant + "</td>";
-              
               document.getElementById("class-table-title").innerHTML = "The " + f.name_str + " Table";
               var prof = 2;
               let j = 0;
@@ -68,20 +70,50 @@
                   + f.class_feats[i].mechanics_str + "</p>";
                 }
               }
+              // Subclasses
+              document.getElementById("subclass-tech-name").innerHTML = "Subclass:  The " + f.subclass_tech_name + ".";
+              document.getElementById("subclass-tech-image").src = f.subclass_tech_img;
+              document.getElementById("subclass-tech-description").innerHTML = f.subclass_tech_description;
+              for (let i = 0; i < f.subclass_tech_feats.length; i++) {
+                if (document.getElementById("subclass-tech-feats").innerHTML.indexOf(f.subclass_tech_feats[i].name_str) > 0) {} 
+                else {
+                  document.getElementById("subclass-tech-feats").innerHTML += "<hr><h3 id='" 
+                  + f.subclass_tech_feats[i].name_str.replace(/\s+/g, '') + "'>" 
+                  + f.subclass_tech_feats[i].name_str + "</h3><i><b>" + f.subclass_tech_name 
+                  + ":</b>  level " + f.subclass_tech_feats[i].level + "</i><p>" 
+                  + f.subclass_tech_feats[i].mechanics_str + "</p>";
+                }
+              }
+              document.getElementById("subclass-power-name").innerHTML = "Subclass:  The " + f.subclass_power_name + ".";
+              document.getElementById("subclass-power-image").src = f.subclass_power_img;
+              document.getElementById("subclass-power-description").innerHTML = f.subclass_power_description;
+              for (let i = 0; i < f.subclass_power_feats.length; i++) {
+                if (document.getElementById("subclass-power-feats").innerHTML.indexOf(f.subclass_power_feats[i].name_str) > 0) {} 
+                else {
+                  document.getElementById("subclass-power-feats").innerHTML += "<hr><h3 id='" 
+                  + f.subclass_power_feats[i].name_str.replace(/\s+/g, '') + "'>" 
+                  + f.subclass_power_feats[i].name_str + "</h3><i><b>" + f.subclass_power_name 
+                  + ":</b>  level " + f.subclass_power_feats[i].level + "</i><p>" 
+                  + f.subclass_power_feats[i].mechanics_str + "</p>";
+                }
+              }
+              document.getElementById("subclass-magic-name").innerHTML = "Subclass:  The " + f.subclass_magic_name + ".";
+              document.getElementById("subclass-magic-image").src = f.subclass_magic_img;
+              document.getElementById("subclass-magic-description").innerHTML = f.subclass_magic_description;
+              for (let i = 0; i < f.subclass_magic_feats.length; i++) {
+                if (document.getElementById("subclass-magic-feats").innerHTML.indexOf(f.subclass_magic_feats[i].name_str) > 0) {} 
+                else {
+                  document.getElementById("subclass-magic-feats").innerHTML += "<hr><h3 id='" 
+                  + f.subclass_magic_feats[i].name_str.replace(/\s+/g, '') + "'>" 
+                  + f.subclass_magic_feats[i].name_str + "</h3><i><b>" + f.subclass_magic_name 
+                  + ":</b>  level " + f.subclass_magic_feats[i].level + "</i><p>" 
+                  + f.subclass_magic_feats[i].mechanics_str + "</p>";
+                }
+              }
             }
-
           });
         });
       });
-    </script>
-    <script>
-      $(function importContent() {
-    
-        $(".Import_PageHeader").load("/_SiteResources/Pages/Import_PageHeader.html");
-        $(".Import_ContentLeft").load("/_SiteResources/Pages/Import_ContentLeft.html");
-        $(".Import_PageFooter").load("/_SiteResources/Pages/Import_PageFooter.html");
-    
-    });
     </script>
   </head>
 
@@ -101,193 +133,95 @@
           <div class="AnchorRight">
 
             <section class="PageContentRight">
-                <button class="WikiBackButton" onclick="location.href='../classes.html'">Out to Classes</button>
-                <h2>Overview</h2>
-                <hr>
-                <img id="class-page-image" class="class-image-large" alt="Class Image">
-                <p id="class-page-description"></p>
+              <button class="WikiBackButton" onclick="location.href='../classes.html'">Out to Classes</button>
+              <h2>Overview</h2>
+              <hr>
+              <img id="class-page-image" class="class-image-large" alt="Class Image">
+              <p id="class-page-description"></p>
 
-                <h2>Class Features</h2>
-                <hr>
-                <p id="class-features-intro"></p>
-                
-                <h3>Hit Points</h3>
-                <ul>
-                  <li id="hit-dice"></li>
-                  <li id="hit-points-at-1st-level"></li>
-                  <li id="hit-points-at-higher-levels"></li>
-                </ul>
+              <h2>Class Features</h2>
+              <hr>
+              <p id="class-features-intro"></p>
+              
+              <h3>Hit Points</h3>
+              <ul>
+                <li id="hit-dice"></li>
+                <li id="hit-points-at-1st-level"></li>
+                <li id="hit-points-at-higher-levels"></li>
+              </ul>
 
-                <h3>Proficiencies</h3>
-                <ul>
-                  <li id="proficiencies-armor"></li>
-                  <li id="proficiencies-weapons"></li>
-                  <li id="proficiencies-tools"></li>
-                  <li id="proficiencies-saving-throws"></li>
-                  <li id="proficiencies-skills"></li>
-                </ul>
-                
-                <h3>Equipment</h3>
-                <ul>
-                  <li id="equipment-armor"></li>
-                  <li id="equipment-weapons"></li>
-                  <li id="equipment-tools"></li>
-                  <li id="equipment-packs"></li>
-                </ul>
-                
-                <h3>Variant Equipment: Starting Wealth</h3>
-                Rather than acquiring the equipment granted by your class and background, you can elect to purchase your starting gear. 
-                If you do so, you receive no equipment from your class and background, and instead roll for your starting wealth using the criteria below:
-                <br><table class="WealthTable"><tr>
-                  <th>Class</th>
-                  <th>Wealth</th>
-                </tr><tr id="starting-wealth"></tr></table>
-                <br><br><br><br>          
-                                
-                <h2 id="class-table-title"></h2>
-                <hr>
-                <table id="class-table" class="ClassTable">
-                  <thead>
-                    <th style="width: 10vw">Level</th>
-                    <th style="width: 15vw">Proficiency Bonus</th>
-                    <th style="width: 30vw">Features</th>
-                    <th style="width: 12vw">Sustainables Gained</th>
-                    <th style="width: 12vw">Consumables Known</th>
-                    <th style="width: 12vw">Consumable Points</th>
-                    <th style="width: 17vw">Maximum Consumable Level</th>
-                  </thead>
-                  <tbody></tbody>
-                </table><br>
+              <h3>Proficiencies</h3>
+              <ul>
+                <li id="proficiencies-armor"></li>
+                <li id="proficiencies-weapons"></li>
+                <li id="proficiencies-tools"></li>
+                <li id="proficiencies-saving-throws"></li>
+                <li id="proficiencies-skills"></li>
+              </ul>
+              
+              <h3>Equipment</h3>
+              <ul>
+                <li id="equipment-armor"></li>
+                <li id="equipment-weapons"></li>
+                <li id="equipment-tools"></li>
+                <li id="equipment-packs"></li>
+              </ul>
+              
+              <h3>Variant Equipment: Starting Wealth</h3>
+              Rather than acquiring the equipment granted by your class and background, you can elect to purchase your starting gear. 
+              If you do so, you receive no equipment from your class and background, and instead roll for your starting wealth using the criteria below:
+              <br><table class="WealthTable"><tr>
+                <th>Class</th>
+                <th>Wealth</th>
+              </tr><tr id="starting-wealth"></tr></table>
+              <br><br><br><br>          
+                              
+              <h2 id="class-table-title"></h2>
+              <hr>
+              <table id="class-table" class="ClassTable">
+                <thead>
+                  <th style="width: 10vw">Level</th>
+                  <th style="width: 15vw">Proficiency Bonus</th>
+                  <th style="width: 30vw">Features</th>
+                  <th style="width: 12vw">Sustainables Gained</th>
+                  <th style="width: 12vw">Consumables Known</th>
+                  <th style="width: 12vw">Consumable Points</th>
+                  <th style="width: 17vw">Maximum Consumable Level</th>
+                </thead>
+                <tbody></tbody>
+              </table><br>
 
-                <div id="class-table-features">
-                  <body></body>
-                </div>
+              <div id="class-table-features">
+                <body></body>
+              </div>
+            </section>
+
+            <section class="PageContentRight">test section</section>
+
+            <section class="PageContentRight">test section</section>
+
+            <section class="PageContentRight">
+              <h2 id="subclass-tech-name"></h2>
+              <hr>
+              <img class="subclass-image-large" alt="Tech Subclass" id="subclass-tech-image">
+              <p id="subclass-tech-description"></p>
+              <div id="subclass-tech-feats"></div>
             </section>
 
             <section class="PageContentRight">
-              <h2 id="#speedster">Subclass:  The Speedster</h2>
+              <h2 id="subclass-power-name">Power test</h2>
               <hr>
-              <img class="subclass-image-large"
-              alt="The Speedster" src="/_SiteResources/Images/noun_sprinter logo_2739704.png">
-              <p>
-                Possessing unrivaled speed, the Speedster erceives and interacts with the battlefield on an entirely different level.
-              </p><br>
-
-              <h3 id="speedster-2">Hyperphysics</h3>
-              <hr>
-              <i><b>Speedster:</b>  2nd level</i>
-              <p>
-                You gain one sustained Tech from the sustained Tech list.
-                You may also swap one previously gained sustained Tech for another that you qualify for.  
-              </p><br>
-
-              <h3 id="speedster-6">Muscle Memory</h3>
-              <hr>
-              <i><b>Speedster:</b>  6th level</i>
-              <p>
-                You gain one sustained Tech from the sustained Tech list.
-                You may also swap one previously gained sustained Tech for another that you qualify for.  
-              </p><br>
-
-              <h3 id="speedster-12">Applied Technique</h3>
-              <hr>
-              <i><b>Speedster:</b>  12th level</i>
-              <p>
-                You gain one sustained Tech from the sustained Tech list.
-                You may also swap one previously gained sustained Tech for another that you qualify for.  
-              </p><br>
-
-              <h3 id="speedster-18">Peak Conditioning</h3>
-              <hr>
-              <i><b>Speedster:</b>  18th level</i>
-              <p>
-                You gain one sustained Tech from the sustained Tech list.
-                You may also swap one previously gained sustained Tech for another that you qualify for.  
-              </p><br>
+              <img class="subclass-image-large" alt="Power Subclass" id="subclass-power-image"></img>
+              <p id="subclass-power-description"></p><br>
+              <div id="subclass-power-feats"></div>
             </section>
 
             <section class="PageContentRight">
-              <h2 id="#egressor">Subclass:  The Egressor</h2>
+              <h2 id="subclass-magic-name">magic test</h2>
               <hr>
-              <img class="subclass-image-large"
-              alt="The Egressor" src="/_SiteResources/Images/noun_effect teleport_2360029.png">
-              <p>
-                Able to transport themselves and others through spacetime, the Egressor possesses unrivalred individual mobility.
-              </p><br>
-
-              <h3 id="egressor-2">Genetic Adaptation</h3>
-              <hr>
-              <i><b>Egressor:</b>  2nd level</i>
-              <p>
-                You gain one enduring Power from the enduring Power list.
-                You may also swap one previously gained enduring Power for another that you qualify for. 
-              </p><br>
-
-              <h3 id="egressor-6">Developed Attributes</h3>
-              <hr>
-              <i><b>Egressor:</b>  6th level</i>
-              <p>
-                You gain one enduring Power from the enduring Power list.
-                You may also swap one previously gained enduring Power for another that you qualify for.  
-              </p><br>
-
-              <h3 id="egressor-12">Accelerated Evolution</h3>
-              <hr>
-              <i><b>Egressor:</b>  12th level</i>
-              <p>
-                You gain one enduring Power from the enduring Power list.
-                You may also swap one previously gained enduring Power for another that you qualify for.  
-              </p><br>
-
-              <h3 id="egressor-18">Dimensional Ascension</h3>
-              <hr>
-              <i><b>Egressor:</b>  18th level</i>
-              <p>
-                You gain one enduring Power from the enduring Power list.
-                You may also swap one previously gained enduring Power for another that you qualify for.  
-              </p><br>
-            </section>
-
-            <section class="PageContentRight">
-              <h2 id="#portalist">Subclass:  The Portalist</h2>
-              <hr>
-              <img class="subclass-image-large"
-              alt="The Portalist" src="/_SiteResources/Images/noun_teleport_4215351.png">
-              <p>
-                The portalist is able to bridge different points in spacetime, allowing for unique ways to manipulate the battlfield.  
-              </p><br>
-
-              <h3 id="portalist-2">Applied Theology</h3>
-              <hr>
-              <i><b>Portalist:</b>  2nd level</i>
-              <p>
-                You gain one enduring Boon from the enduring Boon list.
-                You may also swap one previously gained enduring Boon for another that you qualify for.  
-              </p><br>
-
-              <h3 id="portalist-6">Invocationist</h3>
-              <hr>
-              <i><b>Portalist:</b>  6th level</i>
-              <p>
-                You gain one enduring Boon from the enduring Boon list.
-                You may also swap one previously gained enduring Boon for another that you qualify for.  
-              </p><br>
-
-              <h3 id="portalist-12">Extraplanar Influence</h3>
-              <hr>
-              <i><b>Portalist:</b>  12th level</i>
-              <p>
-                You gain one enduring Boon from the enduring Boon list.
-                You may also swap one previously gained enduring Boon for another that you qualify for.  
-              </p><br>
-
-              <h3 id="portalist-18">Nature of Reality</h3>
-              <hr>
-              <i><b>Portalist:</b>  18th level</i>
-              <p>
-                You gain one enduring Boon from the enduring Boon list.
-                You may also swap one previously gained enduring Boon for another that you qualify for.  
-              </p><br>
+              <img class="subclass-image-large" alt="Magic Subclass" id="subclass-magic-image">
+              <p id="subclass-magic-description"></p><br>
+              <div id="subclass-magic-feats"></div>
             </section>
 
           </div>

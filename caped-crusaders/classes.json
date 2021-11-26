@@ -1313,7 +1313,7 @@
                 {
                     "name_str" : "Enhanced Movement",
                     "level" : 2,
-                    "mechanics_str" : "Your speed increases by an amount equal to your level plus your proficiency bonus, multiplied by five.  "
+                    "mechanics_str" : "Your speed increases by an amount equal to (Class Level + Proficiency Bonus) * 5.  "
                 },
                 {
                     "name_str" : "Subclass Feature",
@@ -1328,7 +1328,7 @@
                 {
                     "name_str" : "Heightened Reflexes",
                     "level" : 3,
-                    "mechanics_str" : "Your total number of Actions and Reactions is equal to your proficiency bonus, but can only affect a specific creature with a Reaction once per round.  You may also use the Acrobatics skill rather than Athletics when Shoving.  "
+                    "mechanics_str" : "Your total number of Actions and Reactions is equal to your proficiency bonus, but can only affect a specific creature with a Reaction once per round.  You may only take the Attack Action once per turn.  You may also use the Acrobatics skill rather than Athletics when Shoving.  "
                 },
                 {
                     "name_str" : "Powercasting Milestone",
@@ -1443,12 +1443,12 @@
                 {
                     "name_str" : "Perceptive",
                     "level" : 15,
-                    "mechanics_str" : "In addition, no Attack has advantage against you while you are not incapacitated.  "
+                    "mechanics_str" : "No Attack has advantage against you while you are not Incapacitated.  "
                 },
                 {
                     "name_str" : "Superior Reflexes",
                     "level" : 15,
-                    "mechanics_str" : "Your total number of Actions and Reactions is equal to your proficiency bonus * 2, but can only affect a specific creature with a Reaction once per round..  "
+                    "mechanics_str" : "Your total number of Actions and Reactions is equal to your proficiency bonus * 2, but can only affect a specific creature with a Reaction once per round.  You may only take the Attack action twice per turn.  "
                 },
                 {
                     "name_str" : "Powercasting Milestone",
@@ -1499,6 +1499,84 @@
                     "name_str" : "Misdirection",
                     "level" : 20,
                     "mechanics_str" : "You have an unlimited number of reactions.  In addition, you may take an additional turn on the first round of combat, at the Initiative order equal to your Initiative minus 10.  "
+                }
+            ],
+
+            "subclass_tech_name" : "Speedster",
+            "subclass_tech_img" : "/_SiteResources/Images/noun_sprinter logo_2739704.png",
+            "subclass_tech_description" : "Possessing unrivaled speed, the Speedster erceives and interacts with the battlefield on an entirely different level.",
+            "subclass_tech_feats" : [
+                {
+                    "name_str" : "Hyperphysics",
+                    "level" : 2,
+                    "mechanics_str" : "You gain one sustained Tech from the sustained Tech list. You may also swap one previously gained sustained Tech for another that you qualify for."
+                },
+                {
+                    "name_str" : "Muscle Memory",
+                    "level" : 6,
+                    "mechanics_str" : "You gain one sustained Tech from the sustained Tech list. You may also swap one previously gained sustained Tech for another that you qualify for."
+                },
+                {
+                    "name_str" : "Applied Technique",
+                    "level" : 12,
+                    "mechanics_str" : "You gain one sustained Tech from the sustained Tech list. You may also swap one previously gained sustained Tech for another that you qualify for."
+                },
+                {
+                    "name_str" : "Peak Conditioning",
+                    "level" : 18,
+                    "mechanics_str" : "You gain one sustained Tech from the sustained Tech list. You may also swap one previously gained sustained Tech for another that you qualify for."
+                }
+            ],
+
+            "subclass_power_name" : "Egressor",
+            "subclass_power_img" : "/_SiteResources/Images/noun_effect teleport_2360029.png",
+            "subclass_power_description" : "Able to transport themselves and others through spacetime, the Egressor possesses unrivalred individual mobility.",
+            "subclass_power_feats" : [
+                {
+                    "name_str" : "Genetic Adaptation",
+                    "level" : 2,
+                    "mechanics_str" : "You gain one enhancing Power from the enhancing Power list.  You may also swap one previously gained enhancing Power for another that you qualify for."
+                },
+                {
+                    "name_str" : "Developed Attributes",
+                    "level" : 6,
+                    "mechanics_str" : "You gain one enhancing Power from the enhancing Power list.  You may also swap one previously gained enhancing Power for another that you qualify for."
+                },
+                {
+                    "name_str" : "Accelerated Evolution",
+                    "level" : 12,
+                    "mechanics_str" : "You gain one enhancing Power from the enhancing Power list.  You may also swap one previously gained enhancing Power for another that you qualify for."
+                },
+                {
+                    "name_str" : "Dimensional Ascension",
+                    "level" : 18,
+                    "mechanics_str" : "You gain one enhancing Power from the enhancing Power list.  You may also swap one previously gained enhancing Power for another that you qualify for."
+                }
+            ],
+            
+            "subclass_magic_name" : "Portalist",
+            "subclass_magic_img" : "/_SiteResources/Images/noun_teleport_4215351.png",
+            "subclass_magic_description" : "The portalist is able to bridge different points in spacetime, allowing for unique ways to manipulate the battlfield.",
+            "subclass_magic_feats" : [
+                {
+                    "name_str" : "Applied Theology",
+                    "level" : 2,
+                    "mechanics_str" : "You gain one enduring Boon from the enduring Boon list.  You may also swap one previously gained enduring Boon for another that you qualify for."
+                },
+                {
+                    "name_str" : "Invocationist",
+                    "level" : 6,
+                    "mechanics_str" : "You gain one enduring Boon from the enduring Boon list.  You may also swap one previously gained enduring Boon for another that you qualify for."
+                },
+                {
+                    "name_str" : "Extraplanar Influence",
+                    "level" : 12,
+                    "mechanics_str" : "You gain one enduring Boon from the enduring Boon list.  You may also swap one previously gained enduring Boon for another that you qualify for."
+                },
+                {
+                    "name_str" : "Nature of Reality",
+                    "level" : 18,
+                    "mechanics_str" : "You gain one enduring Boon from the enduring Boon list.  You may also swap one previously gained enduring Boon for another that you qualify for."
                 }
             ]
         },
