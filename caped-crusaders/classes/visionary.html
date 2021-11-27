@@ -42,17 +42,27 @@
               document.getElementById("class-table-title").innerHTML = "The " + f.name_str + " Table";
               var prof = 2;
               let j = 0;
-              for (let i = 0; i < 20; i++) {  
+              for (let i = 0; i < 20; i++) {
+                var links = "---";
+                for (let k = 0; k < f.class_feats.length; k++) {
+                  if (f.class_feats[k].level == (i+1)) {
+                    if (links.includes("href")) {
+                      links += ", <a href='#" + f.class_feats[k].name_str.replace(/\s+/g, '') + "'>" 
+                      + f.class_feats[k].name_str + "</a>";  
+                    } else {
+                      links = "<a href='#" + f.class_feats[k].name_str.replace(/\s+/g, '') + "'>" 
+                      + f.class_feats[k].name_str + "</a>";
+                    }
+                  } 
+                }
                 var tblRow = "<tr>" 
                   + "<td>" + (i+1) + "</td>"
-                  + "<td>+" + prof + "</td>"
-                  + "<td><a href='#" + f.class_feats[j].name_str.replace(/\s+/g, '') + "'>" + f.class_feats[j].name_str 
-                  + "</a>, <a href='#" + f.class_feats[j+1].name_str.replace(/\s+/g, '') + "'>" + f.class_feats[j+1].name_str 
-                  + "</a></th>"
+                  + "<td>" + prof + "</td>"
+                  + "<td>" + links + "</td>"
                   + "<td>" + Math.ceil((i+2)/f.sustainables_known_denominator) + "</td>"
-                  + "<td>" + (i+1)*f.consumables_known_per_level + "</td>"
-                  + "<td>" + (i+1)*f.consumables_points_per_level + "</td>"
-                  + "<td>" + Math.ceil((i+1)/f.consumables_max_per_level_denominator) + "</td>"
+                  + "<td>" + Math.ceil((i+1)*f.consumables_known_per_level) + "</td>"
+                  + "<td>" + Math.ceil((i+1)*f.consumables_points_per_level) + "</td>"
+                  + "<td>" + Math.min(Math.ceil((i+1)/f.consumables_max_per_level_denominator), 9) + "</td>"
                   + "</tr>"
                 j = j + 2;
                 $(tblRow).appendTo("#class-table tbody");
@@ -208,7 +218,7 @@
               <h2 id="subclass-power-name"></h2>
               <hr>
               <img class="subclass-image-large" alt="Power Subclass" id="subclass-power-image"></img>
-              <p id="subclass-power-description"></p><br>
+              <p id="subclass-power-description"></p>
               <div id="subclass-power-feats"></div>
             </section>
 
@@ -216,7 +226,7 @@
               <h2 id="subclass-magic-name"></h2>
               <hr>
               <img class="subclass-image-large" alt="Magic Subclass" id="subclass-magic-image">
-              <p id="subclass-magic-description"></p><br>
+              <p id="subclass-magic-description"></p>
               <div id="subclass-magic-feats"></div>
             </section>
 

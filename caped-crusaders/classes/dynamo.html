@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="/caped-crusaders-style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
     <script>
+      $(function importContent() {
+        $(".Import_PageHeader").load("/_SiteResources/Pages/Import_PageHeader.html");
+        $(".Import_PageFooter").load("/_SiteResources/Pages/Import_PageFooter.html");
+      });
       $(function readClass() {
         var classes = [];
         $.getJSON('../classes.json', function(data) {
@@ -34,56 +38,92 @@
               document.getElementById("equipment-weapons").innerHTML = "<b>Weapons:</b>  " + f.equipment_weapons;
               document.getElementById("equipment-tools").innerHTML = "<b>Tools:</b>  " + f.equipment_tools;
               document.getElementById("equipment-packs").innerHTML = "<b>Packs:</b>  " + f.equipment_packs;
-
               document.getElementById("starting-wealth").innerHTML = "<td>" + f.name_str + "</td><td>" + f.equipment_variant + "</td>";
-              
               document.getElementById("class-table-title").innerHTML = "The " + f.name_str + " Table";
               var prof = 2;
+              let j = 0;
               for (let i = 0; i < 20; i++) {
-                if (i <= 1) {
-                  var consumables_known = "---"
-                  var consumable_points = "---"
-                  var consumable_max = "---"
-                } else {
-                  var consumables_known = Math.round((i+1)*f.consumables_known_per_level)
-                  var consumable_points = Math.round((i+1)*f.consumables_points_per_level)
-                  var consumable_max = Math.ceil((i+1)/f.consumables_max_per_level_denominator)
+                var links = "---";
+                for (let k = 0; k < f.class_feats.length; k++) {
+                  if (f.class_feats[k].level == (i+1)) {
+                    if (links.includes("href")) {
+                      links += ", <a href='#" + f.class_feats[k].name_str.replace(/\s+/g, '') + "'>" 
+                      + f.class_feats[k].name_str + "</a>";  
+                    } else {
+                      links = "<a href='#" + f.class_feats[k].name_str.replace(/\s+/g, '') + "'>" 
+                      + f.class_feats[k].name_str + "</a>";
+                    }
+                  } 
                 }
                 var tblRow = "<tr>" 
                   + "<td>" + (i+1) + "</td>"
-                  + "<td>+" + prof + "</td>"
-                  + "<td>" + f.class_feat_table_links[i] + "</th>"
+                  + "<td>" + prof + "</td>"
+                  + "<td>" + links + "</td>"
                   + "<td>" + Math.ceil((i+2)/f.sustainables_known_denominator) + "</td>"
-                  + "<td>" + consumables_known + "</td>"
-                  + "<td>" + consumable_points + "</td>"
-                  + "<td>" + consumable_max + "</td>"
+                  + "<td>" + Math.ceil((i+1)*f.consumables_known_per_level) + "</td>"
+                  + "<td>" + Math.ceil((i+1)*f.consumables_points_per_level) + "</td>"
+                  + "<td>" + Math.min(Math.ceil((i+1)/f.consumables_max_per_level_denominator), 9) + "</td>"
                   + "</tr>"
+                j = j + 2;
                 $(tblRow).appendTo("#class-table tbody");
                 if ((i+1) == 4 || (i+1) == 8 || (i+1) == 12 || (i+1) == 16) {
                   prof++;
                 }
               }
-              for (let i = 0; i < f.class_feat_descriptions.length; i++) {
-                document.getElementById("class-table-features").innerHTML += "<h3 id='" 
-                  + f.class_feat_descriptions[i].name_str + "-" + f.class_feat_descriptions[i].level + "'>" 
-                  + f.class_feat_descriptions[i].name_str + "</h3><hr><i><b>" + f.name_str 
-                  + ":</b>  level " + f.class_feat_descriptions[i].level + "</i><p>" 
-                  + f.class_feat_descriptions[i].mechanics_str + "</p><br>";
+              for (let i = 0; i < f.class_feats.length; i++) {
+                if (document.getElementById("class-table-features").innerHTML.indexOf(f.class_feats[i].name_str) > 0) {} 
+                else {
+                  document.getElementById("class-table-features").innerHTML += "<hr><h3 id='" 
+                  + f.class_feats[i].name_str.replace(/\s+/g, '') + "'>" 
+                  + f.class_feats[i].name_str + "</h3><i><b>" + f.name_str 
+                  + ":</b>  level " + f.class_feats[i].level + "</i><p>" 
+                  + f.class_feats[i].mechanics_str + "</p>";
+                }
+              }
+              // Subclasses
+              document.getElementById("subclass-tech-name").innerHTML = "Subclass:  The " + f.subclass_tech_name + ".";
+              document.getElementById("subclass-tech-image").src = f.subclass_tech_img;
+              document.getElementById("subclass-tech-description").innerHTML = f.subclass_tech_description;
+              for (let i = 0; i < f.subclass_tech_feats.length; i++) {
+                if (document.getElementById("subclass-tech-feats").innerHTML.indexOf(f.subclass_tech_feats[i].name_str) > 0) {} 
+                else {
+                  document.getElementById("subclass-tech-feats").innerHTML += "<hr><h3 id='" 
+                  + f.subclass_tech_feats[i].name_str.replace(/\s+/g, '') + "'>" 
+                  + f.subclass_tech_feats[i].name_str + "</h3><i><b>" + f.subclass_tech_name 
+                  + ":</b>  level " + f.subclass_tech_feats[i].level + "</i><p>" 
+                  + f.subclass_tech_feats[i].mechanics_str + "</p>";
+                }
+              }
+              document.getElementById("subclass-power-name").innerHTML = "Subclass:  The " + f.subclass_power_name + ".";
+              document.getElementById("subclass-power-image").src = f.subclass_power_img;
+              document.getElementById("subclass-power-description").innerHTML = f.subclass_power_description;
+              for (let i = 0; i < f.subclass_power_feats.length; i++) {
+                if (document.getElementById("subclass-power-feats").innerHTML.indexOf(f.subclass_power_feats[i].name_str) > 0) {} 
+                else {
+                  document.getElementById("subclass-power-feats").innerHTML += "<hr><h3 id='" 
+                  + f.subclass_power_feats[i].name_str.replace(/\s+/g, '') + "'>" 
+                  + f.subclass_power_feats[i].name_str + "</h3><i><b>" + f.subclass_power_name 
+                  + ":</b>  level " + f.subclass_power_feats[i].level + "</i><p>" 
+                  + f.subclass_power_feats[i].mechanics_str + "</p>";
+                }
+              }
+              document.getElementById("subclass-magic-name").innerHTML = "Subclass:  The " + f.subclass_magic_name + ".";
+              document.getElementById("subclass-magic-image").src = f.subclass_magic_img;
+              document.getElementById("subclass-magic-description").innerHTML = f.subclass_magic_description;
+              for (let i = 0; i < f.subclass_magic_feats.length; i++) {
+                if (document.getElementById("subclass-magic-feats").innerHTML.indexOf(f.subclass_magic_feats[i].name_str) > 0) {} 
+                else {
+                  document.getElementById("subclass-magic-feats").innerHTML += "<hr><h3 id='" 
+                  + f.subclass_magic_feats[i].name_str.replace(/\s+/g, '') + "'>" 
+                  + f.subclass_magic_feats[i].name_str + "</h3><i><b>" + f.subclass_magic_name 
+                  + ":</b>  level " + f.subclass_magic_feats[i].level + "</i><p>" 
+                  + f.subclass_magic_feats[i].mechanics_str + "</p>";
+                }
               }
             }
-
           });
         });
       });
-    </script>
-    <script>
-      $(function importContent() {
-    
-        $(".Import_PageHeader").load("/_SiteResources/Pages/Import_PageHeader.html");
-        $(".Import_ContentLeft").load("/_SiteResources/Pages/Import_ContentLeft.html");
-        $(".Import_PageFooter").load("/_SiteResources/Pages/Import_PageFooter.html");
-    
-    });
     </script>
   </head>
 
@@ -103,163 +143,92 @@
           <div class="AnchorRight">
 
             <section class="PageContentRight">
-                <button class="WikiBackButton" onclick="location.href='../classes.html'">Out to Classes</button>
-                <h2>Overview</h2>
-                <hr>
-                <img id="class-page-image" class="class-image-large" alt="Class Image">
-                <p id="class-page-description"></p>
+              <button class="WikiBackButton" onclick="location.href='../classes.html'">Out to Classes</button>
+              <h2>Overview</h2>
+              <hr>
+              <img id="class-page-image" class="class-image-large" alt="Class Image">
+              <p id="class-page-description"></p>
 
-                <h2>Class Features</h2>
-                <hr>
-                <p id="class-features-intro"></p>
-                
-                <h3>Hit Points</h3>
-                <ul>
-                  <li id="hit-dice"></li>
-                  <li id="hit-points-at-1st-level"></li>
-                  <li id="hit-points-at-higher-levels"></li>
-                </ul>
+              <h2>Class Features</h2>
+              <hr>
+              <p id="class-features-intro"></p>
+              
+              <h3>Hit Points</h3>
+              <ul>
+                <li id="hit-dice"></li>
+                <li id="hit-points-at-1st-level"></li>
+                <li id="hit-points-at-higher-levels"></li>
+              </ul>
 
-                <h3>Proficiencies</h3>
-                <ul>
-                  <li id="proficiencies-armor"></li>
-                  <li id="proficiencies-weapons"></li>
-                  <li id="proficiencies-tools"></li>
-                  <li id="proficiencies-saving-throws"></li>
-                  <li id="proficiencies-skills"></li>
-                </ul>
-                
-                <h3>Equipment</h3>
-                <ul>
-                  <li id="equipment-armor"></li>
-                  <li id="equipment-weapons"></li>
-                  <li id="equipment-tools"></li>
-                  <li id="equipment-packs"></li>
-                </ul>
-                
-                <h3>Variant Equipment: Starting Wealth</h3>
-                Rather than acquiring the equipment granted by your class and background, you can elect to purchase your starting gear. 
-                If you do so, you receive no equipment from your class and background, and instead roll for your starting wealth using the criteria below:
-                <br><table class="WealthTable"><tr>
-                  <th>Class</th>
-                  <th>Wealth</th>
-                </tr><tr id="starting-wealth"></tr></table>
-                <br><br><br><br>          
-                                
-                <h2 id="class-table-title"></h2>
-                <hr>
-                <table id="class-table" class="ClassTable">
-                  <thead>
-                    <th style="width: 10vw">Level</th>
-                    <th style="width: 15vw">Proficiency Bonus</th>
-                    <th style="width: 35vw">Features</th>
-                    <th style="width: 12vw">Sustainables Gained</th>
-                    <th style="width: 12vw">Consumables Known</th>
-                    <th style="width: 12vw">Consumable Points</th>
-                    <th style="width: 17vw">Maximum Consumable Level</th>
-                  </thead>
-                  <tbody></tbody>
-                </table><br>
+              <h3>Proficiencies</h3>
+              <ul>
+                <li id="proficiencies-armor"></li>
+                <li id="proficiencies-weapons"></li>
+                <li id="proficiencies-tools"></li>
+                <li id="proficiencies-saving-throws"></li>
+                <li id="proficiencies-skills"></li>
+              </ul>
+              
+              <h3>Equipment</h3>
+              <ul>
+                <li id="equipment-armor"></li>
+                <li id="equipment-weapons"></li>
+                <li id="equipment-tools"></li>
+                <li id="equipment-packs"></li>
+              </ul>
+              
+              <h3>Variant Equipment: Starting Wealth</h3>
+              Rather than acquiring the equipment granted by your class and background, you can elect to purchase your starting gear. 
+              If you do so, you receive no equipment from your class and background, and instead roll for your starting wealth using the criteria below:
+              <br><table class="WealthTable"><tr>
+                <th>Class</th>
+                <th>Wealth</th>
+              </tr><tr id="starting-wealth"></tr></table>
+              <br><br><br><br>          
+                              
+              <h2 id="class-table-title"></h2>
+              <hr>
+              <table id="class-table" class="ClassTable">
+                <thead>
+                  <th style="width: 10vw">Level</th>
+                  <th style="width: 15vw">Proficiency Bonus</th>
+                  <th style="width: 30vw">Features</th>
+                  <th style="width: 12vw">Sustainables Gained</th>
+                  <th style="width: 12vw">Consumables Known</th>
+                  <th style="width: 12vw">Consumable Points</th>
+                  <th style="width: 17vw">Maximum Consumable Level</th>
+                </thead>
+                <tbody></tbody>
+              </table><br>
 
-                <div id="class-table-features">
-                  <body></body>
-                </div>
+              <div id="class-table-features">
+                <body></body>
+              </div>
             </section>
 
             <section class="PageContentRight">
-              <h2 id="#militant">Subclass:  The Militant</h2>
+              <h2 id="subclass-tech-name"></h2>
               <hr>
-              <img class="subclass-image-large"
-              alt="The Militant" src="/_SiteResources/Images/noun_Martial Arts_4018735.png">
-              <p>
-                Honing their immense strength with training and discipline, the Militant balances their power with resourcefulness.
-              </p><br>
-
-              <h3 id="militant-3">Techcasting</h3>
-              <hr>
-              <i><b>Militant:</b>  3rd level</i>
-              <p>
-                You have gained knowledge of advanced technology, and are capable of apply these technologies in a variety of ways.  See the Rules for Techcasting mechanics and Technologies list.  <ul><li><b>Technologies Known:</b>  You learn Technologies of your choice as shown in the Consumables Known column of the class table.  You may not learn a Technology of a level higher than your Max Consumable Level, and you may learn a Technology at the same time you learn its prerequisite.  </li><br><li><b>Tech Points:</b>  You have a number of Tech Points as shown in the Consumable Points column of the class table.  You expend these Tech Points to cast Technologies.  You regain all expended Tech Points when you finish a long rest.  </li><br><li><b>Max Tech Level:</b>  Many Technologies can be overpowered, consuming more Tech Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Technologies at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Techcasting Ability:</b>  Your Techcasting ability is Intelligence.  You use your Intelligence modifier whenever a Technology refers to your Techcasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Technology you cast and when making an attack roll with one.  </li><br><li><b>Technology save DC</b> = 8 + your proficiency bonus + your Techcasting ability modifier</li><br><li><b>Technology attack modifier</b> = your proficiency bonus + your Techcasting ability modifier</li></ul>
-              </p><br>
-
-              <h3 id="militant-9">Tech Weapon Application</h3>
-              <hr>
-              <i><b>Militant:</b>  9th level</i>
-              <p>
-                Attacks using Strength made with Technological Weapons now qualify for Mach Punch damage.  
-              </p><br>
-
-              <h3 id="militant-17">Tech Resilience</h3>
-              <hr>
-              <i><b>Militant:</b>  17th level</i>
-              <p>
-                You have advantage on all saving throws against Tech based effects.  In addition, any Tech based attack roll (Techcasting, not regular attacks) has disadvantage to hit you.  
-              </p><br>
+              <img class="subclass-image-large" alt="Tech Subclass" id="subclass-tech-image">
+              <p id="subclass-tech-description"></p>
+              <div id="subclass-tech-feats"></div>
             </section>
 
             <section class="PageContentRight">
-              <h2 id="#chosen">Subclass:  The Chosen</h2>
+              <h2 id="subclass-power-name"></h2>
               <hr>
-              <img class="subclass-image-large"
-              alt="The Chosen" src="/_SiteResources/Images/noun_skill thunder fist_2360261.png">
-              <p>
-                Harnessing energy that would devour mere mortals, the Chosen mightily bends magic to their will.  
-              </p><br>
-
-              <h3 id="chosen-3">Spellcasting</h3>
-              <hr>
-              <i><b>Chosen:</b>  3rd level</i>
-              <p>
-                See the Rules for Spellcasting mechanics and Spells list.  <ul><li><b>Spells Known:</b>  You learn Spells of your choice as shown in the Consumables Known column of the class table.  You may not learn a Spell of a level higher than your Max Consumable Level, and you may learn a Spell at the same time you learn its prerequisite.  </li><br><li><b>Spell Points:</b>  You have a number of Spell Points as shown in the Consumable Points column of the class table.  You expend these Spell Points to cast Spells.  You regain all expended Spell Points when you finish a long rest.  </li><br><li><b>Max Spell Level:</b>  Many Spells can be overpowered, consuming more Spell Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Spells at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Spellcasting Ability:</b>  Your Spellcasting ability is Intelligence.  You use your Intelligence modifier whenever a Spell refers to your Spellcasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Spell you cast and when making an attack roll with one.  </li><br><li><b>Spell save DC</b> = 8 + your proficiency bonus + your Spellcasting ability modifier</li><br><li><b>Spell attack modifier</b> = your proficiency bonus + your Spellcasting ability modifier</li></ul>
-              </p><br>
-
-              <h3 id="chosen-9">Magic Weapon Application</h3>
-              <hr>
-              <i><b>Chosen:</b>  9th level</i>
-              <p>
-                Attacks using Strength made with Magical Weapons now qualify for Mach Punch damage.  
-              </p><br>
-
-              <h3 id="chosen-17">Magic Resilience</h3>
-              <hr>
-              <i><b>Chosen:</b>  17th level</i>
-              <p>
-                You have advantage on all saving throws against Magic based effects.  In addition, any Magic based attack roll (Spellcasting, not regular attacks) has disadvantage to hit you.  
-              </p><br>
+              <img class="subclass-image-large" alt="Power Subclass" id="subclass-power-image"></img>
+              <p id="subclass-power-description"></p>
+              <div id="subclass-power-feats"></div>
             </section>
 
             <section class="PageContentRight">
-              <h2 id="#meteor">Subclass:  The Meteor</h2>
+              <h2 id="subclass-magic-name"></h2>
               <hr>
-              <img class="subclass-image-large"
-              alt="The Meteor" src="/_SiteResources/Images/noun_Fist_1236844.png">
-              <p>
-                Wielding power that registers on the stellar scale, the Meteor has the potential to be a force of unbridled destruction.  
-              </p><br>
-
-              <h3 id="meteor-3">Powercasting</h3>
-              <hr>
-              <i><b>Meteor:</b>  3rd level</i>
-              <p>
-                See the Rules for Powercasting mechanics and Superpowers list.  <ul><li><b>Superpowers Known:</b>  You learn Superpowers of your choice as shown in the Consumables Known column of the class table.  You may not learn a Superpower of a level higher than your Max Consumable Level, and you may learn a Superpower at the same time you learn its prerequisite.  </li><br><li><b>Superpower Points:</b>  You have a number of Superpower Points as shown in the Consumable Points column of the class table.  You expend these Superpower Points to cast Superpowers.  You regain all expended Superpower Points when you finish a long rest.  </li><br><li><b>Max Superpower Level:</b>  Many Superpowers can be overpowered, consuming more Superpower Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Superpowers at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Powercasting Ability:</b>  Your Powercasting ability is Intelligence.  You use your Intelligence modifier whenever a Superpower refers to your Powercasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Superpower you cast and when making an attack roll with one.  </li><br><li><b>Superpower save DC</b> = 8 + your proficiency bonus + your Powercasting ability modifier</li><br><li><b>Superpower attack modifier</b> = your proficiency bonus + your Powercasting ability modifier</li></ul>
-              </p><br>
-
-              <h3 id="meteor-9">Power Weapon Application</h3>
-              <hr>
-              <i><b>Meteor:</b>  9th level</i>
-              <p>
-                Attacks using Strength made with Superpowered Weapons now qualify for Mach Punch damage.  
-              </p><br>
-
-              <h3 id="meteor-17">Power Resilience</h3>
-              <hr>
-              <i><b>Meteor:</b>  17th level</i>
-              <p>
-                You have advantage on all saving throws against Superpower based effects.  In addition, any Superpower based attack roll (Powercasting, not regular attacks) has disadvantage to hit you.  
-              </p><br>
+              <img class="subclass-image-large" alt="Magic Subclass" id="subclass-magic-image">
+              <p id="subclass-magic-description"></p>
+              <div id="subclass-magic-feats"></div>
             </section>
-
-            
 
           </div>
         </div>
