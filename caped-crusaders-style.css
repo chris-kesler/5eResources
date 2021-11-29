@@ -264,7 +264,7 @@ table {
 }
 
 .TechClassButton, .PowerClassButton, .MagicClassButton, .ClassButton {
-  width: 230px;
+  width: 240px;
   max-width: 35vw;
   height: auto;
   margin: 5px;

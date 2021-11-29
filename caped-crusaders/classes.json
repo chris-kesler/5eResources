@@ -376,7 +376,7 @@
             "name_str" : "Vigilante",
             "page_url" : "",
             "class_img" : "",
-            "description_short_str" : "A skilled predator that employs a wide variety of techniques.  ",
+            "description_short_str" : "A skilled predator that employs a wide variety of techniques to maintain the upper hand.  ",
             "description_long_str" : "Armed with the most advanced arsenal of devices and weapons of the era, the Visionary is a durable and versatile Primary Techcaster who contributes to combat and excels at utility.  ",
 
             "class_type" : "Secondary Tech Martial",
@@ -517,7 +517,7 @@
             "name_str" : "Soldier",
             "page_url" : "soldier.html",
             "class_img" : "/_SiteResources/Images/noun_Military_516827.png",
-            "description_short_str" : "A warrior who relies on martial prowess and tactical skill.  ",
+            "description_short_str" : "A warrior who relies on martial prowess and tactical skill to lead small units.  ",
             "description_long_str" : "After countless hours of training to be the perfect weapon, the Soldier is capable of waging war on the frontline and organizing allies simultaneously.  ",
 
             "class_type" : "Primary Tech Martial",
@@ -543,29 +543,7 @@
             "consumables_points_per_level" : 0.25,
             "consumables_max_per_level_denominator" : 8,
 
-            "class_feat_table_links" : [
-                "<a href='#Ability Score Improvement-1'>Ability Score Improvement</a>, <a href='#Combat Techniques-1'>Combat Techniques</a>",
-                "---",
-                "<a href='#Ability Score Improvement-3'>Ability Score Improvement</a>, Subclass Feature",
-                "---",
-                "<a href='#Ability Score Improvement-5'>Ability Score Improvement</a>, <a href='#Tactical Strategy-5'>Tactical Strategy</a>",
-                "---",
-                "<a href='#Ability Score Improvement-7'>Ability Score Improvement</a>, <a href='#Indomitable-7'>Indomitable</a>",
-                "---",
-                "<a href='#Improved Strategy-9'>Improved Strategy</a>, Subclass Feature",
-                "---",
-                "<a href='#Ability Score Improvement-11'>Ability Score Improvement</a>, <a href='#Inspirational Endurance-11'>Inspirational Endurance</a>",
-                "---",
-                "<a href='#Ability Score Improvement-13'>Ability Score Improvement</a>, <a href='#Keen Vigilance-13'>Keen Vigilance</a>",
-                "---",
-                "<a href='#Ability Score Improvement-15'>Ability Score Improvement</a>, <a href='#Unrelenting Strategy-15'>Unrelenting Strategy</a>",
-                "---",
-                "<a href='#Superior Strategy-17'>Superior Strategy</a>, Subclass Feature",
-                "---",
-                "<a href='#Ability Score Improvement-19'>Ability Score Improvement</a>, <a href='#Hero's Resolve-19'>Hero's Resolve</a>",
-                "---"
-                ],
-            "class_feat_descriptions" : [
+            "class_feats" : [
                 {
                     "name_str" : "Ability Score Improvement",
                     "level" : 1,
@@ -650,6 +628,69 @@
                     "name_str" : "Hero's Resolve",
                     "level" : 19,
                     "mechanics_str" : "Your Second Wind feature recharges when you roll initiative.  "
+                }
+            ],
+
+            "subclass_tech_name" : "Ronin",
+            "subclass_tech_img" : "/_SiteResources/Images/noun_Martial Arts_4018735.png",
+            "subclass_tech_description" : "HoningBlending instinctive skills with expendable gadgets, the Ronin is a capable and unpredictable combatant.  ",
+            "subclass_tech_feats" : [
+                {
+                    "name_str" : "Techcasting",
+                    "level" : 3,
+                    "mechanics_str" : "See the Rules for Techcasting mechanics and Technologies list.  <ul><li><b>Technologies Known:</b>  You learn Technologies of your choice as shown in the Consumables Known column of the class table.  You may not learn a Technology of a level higher than your Max Consumable Level, and you may learn a Technology at the same time you learn its prerequisite.  </li><br><li><b>Tech Points:</b>  You have a number of Tech Points as shown in the Consumable Points column of the class table.  You expend these Tech Points to cast Technologies.  You regain all expended Tech Points when you finish a long rest.  </li><br><li><b>Max Tech Level:</b>  Many Technologies can be overpowered, consuming more Tech Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Technologies at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Techcasting Ability:</b>  Your Techcasting ability is Intelligence.  You use your Intelligence modifier whenever a Technology refers to your Techcasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Technology you cast and when making an attack roll with one.  </li><br><li><b>Technology save DC</b> = 8 + your proficiency bonus + your Techcasting ability modifier</li><br><li><b>Technology attack modifier</b> = your proficiency bonus + your Techcasting ability modifier</li></ul>"
+                },
+                {
+                    "name_str" : "Tech Weapon Bond",
+                    "level" : 9,
+                    "mechanics_str" : "When you attune to a Technological Weapon, it does not count against your total number of attunement slots.  "
+                },
+                {
+                    "name_str" : "Combat Casting",
+                    "level" : 17,
+                    "mechanics_str" : "You have advantage on all saving throws against Tech based effects. In addition, any Tech based attack roll (Techcasting, not regular attacks) has disadvantage to hit you.  "
+                }
+            ],
+
+            "subclass_power_name" : "Chosen",
+            "subclass_power_img" : "/_SiteResources/Images/noun_skill thunder fist_2360261.png",
+            "subclass_power_description" : "Becoming enhanced at the hands of experimentation, the Patriot leads by example of self sacrifice.  ",
+            "subclass_power_feats" : [
+                {
+                    "name_str" : "Spellcasting",
+                    "level" : 3,
+                    "mechanics_str" : "See the Rules for Spellcasting mechanics and Spells list.  <ul><li><b>Spells Known:</b>  You learn Spells of your choice as shown in the Consumables Known column of the class table.  You may not learn a Spell of a level higher than your Max Consumable Level, and you may learn a Spell at the same time you learn its prerequisite.  </li><br><li><b>Spell Points:</b>  You have a number of Spell Points as shown in the Consumable Points column of the class table.  You expend these Spell Points to cast Spells.  You regain all expended Spell Points when you finish a long rest.  </li><br><li><b>Max Spell Level:</b>  Many Spells can be overpowered, consuming more Spell Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Spells at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Spellcasting Ability:</b>  Your Spellcasting ability is Intelligence.  You use your Intelligence modifier whenever a Spell refers to your Spellcasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Spell you cast and when making an attack roll with one.  </li><br><li><b>Spell save DC</b> = 8 + your proficiency bonus + your Spellcasting ability modifier</li><br><li><b>Spell attack modifier</b> = your proficiency bonus + your Spellcasting ability modifier</li></ul>"
+                },
+                {
+                    "name_str" : "Magic Weapon Bond",
+                    "level" : 9,
+                    "mechanics_str" : "When you attune to a Magical Weapon, it does not count against your total number of attunement slots.  "
+                },
+                {
+                    "name_str" : "Combat Casting",
+                    "level" : 17,
+                    "mechanics_str" : "You have advantage on all saving throws against Magic based effects. In addition, any Magic based attack roll (Spellcasting, not regular attacks) has disadvantage to hit you.  "
+                }
+            ],
+            
+            "subclass_magic_name" : "Meteor",
+            "subclass_magic_img" : "/_SiteResources/Images/noun_Fist_1236844.png",
+            "subclass_magic_description" : "Becoming enhanced at the hands of experimentation, the Patriot leads by example of self sacrifice.  ",
+            "subclass_magic_feats" : [
+                {
+                    "name_str" : "Powercasting",
+                    "level" : 3,
+                    "mechanics_str" : "See the Rules for Powercasting mechanics and Superpowers list.  <ul><li><b>Superpowers Known:</b>  You learn Superpowers of your choice as shown in the Consumables Known column of the class table.  You may not learn a Superpower of a level higher than your Max Consumable Level, and you may learn a Superpower at the same time you learn its prerequisite.  </li><br><li><b>Superpower Points:</b>  You have a number of Superpower Points as shown in the Consumable Points column of the class table.  You expend these Superpower Points to cast Superpowers.  You regain all expended Superpower Points when you finish a long rest.  </li><br><li><b>Max Superpower Level:</b>  Many Superpowers can be overpowered, consuming more Superpower Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Superpowers at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Powercasting Ability:</b>  Your Powercasting ability is Intelligence.  You use your Intelligence modifier whenever a Superpower refers to your Powercasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Superpower you cast and when making an attack roll with one.  </li><br><li><b>Superpower save DC</b> = 8 + your proficiency bonus + your Powercasting ability modifier</li><br><li><b>Superpower attack modifier</b> = your proficiency bonus + your Powercasting ability modifier</li></ul>"
+                },
+                {
+                    "name_str" : "Power Weapon Bond",
+                    "level" : 9,
+                    "mechanics_str" : "When you attune to a Superpowered Weapon, it does not count against your total number of attunement slots.  "
+                },
+                {
+                    "name_str" : "Combat Casting",
+                    "level" : 17,
+                    "mechanics_str" : "When you use your Action to cast a Superpower, you can make half the number Attacks you would make with your Action (rounded down, minimum of one) as a Bonus Action. For example, a Soldier who does not have Extra Attack would make one Attack as a Bonus Action using this feature, while a Soldier with Extra Attack (7) would make three Attacks as a Bonus Action using this feature.  "
                 }
             ]
         },
@@ -1714,27 +1755,27 @@
 
         {
             "name_str" : "Metamorph",
-            "page_url" : "",
-            "class_img" : "",
+            "page_url" : "metamorph.html",
+            "class_img" : "/_SiteResources/Images/noun_DNA_4398736.png",
             "description_short_str" : "A versatile shapechanger that can specialize down several paths.  ",
-            "description_long_str" : "Wielding raw physical power, the Dynamo thrives when dealing damage and drawing fire away from allies.   ",
+            "description_long_str" : "Reshaping themselves to fit the needs of the situation, the Metamorph is a highly adaptive-often considered critical-component of enhanced team groups.   ",
 
             "class_type" : "Secondary Power Martial",
-            "primary_ability" : "Dexterity",
+            "primary_ability" : "Constitution",
             
             "hit_die_int" : 10,
-            "hit_die_average_int" : 4,
+            "hit_die_average_int" : 7,
 
-            "proficiencies_armor" : "None",
-            "proficiencies_weapons" : "Simple Tech Weapons",
-            "proficiencies_tools" : "Choose any two",
-            "proficiencies_saves" : "---",
-            "proficiencies_skills" : "Choose any three",
+            "proficiencies_armor" : "All Mundane and Superpowered Armors",
+            "proficiencies_weapons" : "All Mundane and Superpowered Weapons",
+            "proficiencies_tools" : "Choose any one",
+            "proficiencies_saves" : "Constitution, Charisma",
+            "proficiencies_skills" : "Choose any two, one of which must be Strength based",
             
-            "equipment_armor" : "Forged Plate, Steel",
-            "equipment_weapons" : "Any Simple Tech Weapon",
+            "equipment_armor" : "Fitted Tunic, Lycra",
+            "equipment_weapons" : "Any Simple Mundane Weapon",
             "equipment_tools" : "One tool with which you are proficient",
-            "equipment_packs" : "One Inventor's Pack",
+            "equipment_packs" : "One Vagabond's Pack",
             "equipment_variant" : "5d4 x 100 GC",
 
             "sustainables_known_denominator" : 2,
@@ -1742,38 +1783,16 @@
             "consumables_points_per_level" : 0.25,
             "consumables_max_per_level_denominator" : 8,
 
-            "class_feat_table_links" : [
-                "<a href='#Mach Punch-1'>Mach Punch</a>, <a href='#Unarmored Defense-1'>Unarmored Defense</a>",
-                "---",
-                "<a href='#Ability Score Improvement-3'>Ability Score Improvement</a>, Subclass Feature",
-                "---",
-                "<a href='#Ability Score Improvement-5'>Ability Score Improvement</a>, <a href='#Immovable Object-5'>Immovable Object</a>",
-                "---",
-                "<a href='#Ability Score Improvement-7'>Ability Score Improvement</a>, <a href='#Improved Movement-7'>Improved Movement</a>",
-                "---",
-                "<a href='#Staggering Punch-9'>Staggering Punch</a>, Subclass Feature",
-                "---",
-                "<a href='#Ability Score Improvement-11'>Ability Score Improvement</a>, <a href='#Power Resilience-11'>Power Resilience</a>",
-                "---",
-                "<a href='#Ability Score Improvement-13'>Ability Score Improvement</a>, <a href='#Champion's Might-13'>Champion's Might</a>",
-                "---",
-                "<a href='#Ability Score Improvement-15'>Ability Score Improvement</a>, <a href='#Stalwart-15'>Stalwart</a>",
-                "---",
-                "<a href='#Shattering Punch-17'>Shattering Punch</a>, Subclass Feature",
-                "---",
-                "<a href='#Ability Score Improvement-19'>Ability Score Improvement</a>, <a href='#Apex Power-19'>Apex Power</a>",
-                "---"
-                ],
-            "class_feat_descriptions" : [
+            "class_feats" : [
+                {
+                    "name_str" : "Power Enhancements",
+                    "level" : 1,
+                    "mechanics_str" : "You have a number of Enhancements as shown in the Sustainables Known column of the class table.  Upon reaching this and subsequent levels, you gain a new Enhancement that you qualify for if your total number of Enhancements is less than the Sustainables Known for your level.  You may also swap an existing Enhancement for another of your choice that you qualify for upon each level up.  "
+                },
                 {
                     "name_str" : "Mach Punch",
                     "level" : 1,
                     "mechanics_str" : "Your unarmed strikes deal 1d6 + your Strength Modifier bludgeoning damage, and you can make an unarmed strike as a bonus action.  When you make an unarmed strike with advantage or an Ally is within melee range of your target, you can deal additional damage equal to a number of d6s equal to your level.  You can only deal this damage once per turn.  "
-                },
-                {
-                    "name_str" : "Unarmored Defense",
-                    "level" : 1,
-                    "mechanics_str" : "Your Armor Class while unarmored is equal to 8 + your Constitution Modifier + your Strength Modifier.  If you are wearing armor that would include your Dexterity Modifier in your Armor Class calculation, you can substitute your Constitution Modifier instead of your Dexterity Modifier for that calculation.  "
                 },
                 {
                     "name_str" : "Ability Score Improvement",
@@ -1813,7 +1832,7 @@
                 {
                     "name_str" : "Power Resilience",
                     "level" : 11,
-                    "mechanics_str" : "You have advantage on all saves against Superpower based effects.  In addition, when you make a saving throw against a Superpower based effect to avoid damage, you take no damage if you succeed and only half damage if you fail.  "
+                    "mechanics_str" : "When you make a saving throw against a Superpower based effect to avoid damage, you take no damage if you succeed and only half damage if you fail.  "
                 },
                 {
                     "name_str" : "Ability Score Improvement",
@@ -1849,6 +1868,69 @@
                     "name_str" : "Apex Power",
                     "level" : 19,
                     "mechanics_str" : "Your Strength and Constitution scores and their maximums each increase by four.  "
+                }
+            ],
+
+            "subclass_tech_name" : "Replicatist",
+            "subclass_tech_img" : "/_SiteResources/Images/noun_cloning_3650004.png",
+            "subclass_tech_description" : "By developing their natural shapechanging ability to include (perhaps even specialize in) the adaptation of the nervous system, the Replicatist is able to mimic the appearance and behaviors of other sapiens in a nearly flawless manner.  ",
+            "subclass_tech_feats" : [
+                {
+                    "name_str" : "Techcasting",
+                    "level" : 3,
+                    "mechanics_str" : "See the Rules for Techcasting mechanics and Technologies list.  <ul><li><b>Technologies Known:</b>  You learn Technologies of your choice as shown in the Consumables Known column of the class table.  You may not learn a Technology of a level higher than your Max Consumable Level, and you may learn a Technology at the same time you learn its prerequisite.  </li><br><li><b>Tech Points:</b>  You have a number of Tech Points as shown in the Consumable Points column of the class table.  You expend these Tech Points to cast Technologies.  You regain all expended Tech Points when you finish a long rest.  </li><br><li><b>Max Tech Level:</b>  Many Technologies can be overpowered, consuming more Tech Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Technologies at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Techcasting Ability:</b>  Your Techcasting ability is Intelligence.  You use your Intelligence modifier whenever a Technology refers to your Techcasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Technology you cast and when making an attack roll with one.  </li><br><li><b>Technology save DC</b> = 8 + your proficiency bonus + your Techcasting ability modifier</li><br><li><b>Technology attack modifier</b> = your proficiency bonus + your Techcasting ability modifier</li></ul>"
+                },
+                {
+                    "name_str" : "Tech Weapon Application",
+                    "level" : 9,
+                    "mechanics_str" : "Attacks using Strength made with Technological Weapons now qualify for Mach Punch damage.  "
+                },
+                {
+                    "name_str" : "Tech Resilience",
+                    "level" : 17,
+                    "mechanics_str" : "You have advantage on all saving throws against Tech based effects. In addition, any Tech based attack roll (Techcasting, not regular attacks) has disadvantage to hit you.  "
+                }
+            ],
+
+            "subclass_power_name" : "Archeophenix",
+            "subclass_power_img" : "/_SiteResources/Images/noun_phoenix_2103725.png",
+            "subclass_power_description" : "Whether sent as a savior or cursed with a terrible affliction, the Phoenix can manifest a singular powerful magical form that evokes an awe remiscent of that in the oldest of mythos.  ",
+            "subclass_power_feats" : [
+                {
+                    "name_str" : "Spellcasting",
+                    "level" : 3,
+                    "mechanics_str" : "See the Rules for Spellcasting mechanics and Spells list.  <ul><li><b>Spells Known:</b>  You learn Spells of your choice as shown in the Consumables Known column of the class table.  You may not learn a Spell of a level higher than your Max Consumable Level, and you may learn a Spell at the same time you learn its prerequisite.  </li><br><li><b>Spell Points:</b>  You have a number of Spell Points as shown in the Consumable Points column of the class table.  You expend these Spell Points to cast Spells.  You regain all expended Spell Points when you finish a long rest.  </li><br><li><b>Max Spell Level:</b>  Many Spells can be overpowered, consuming more Spell Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Spells at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Spellcasting Ability:</b>  Your Spellcasting ability is Intelligence.  You use your Intelligence modifier whenever a Spell refers to your Spellcasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Spell you cast and when making an attack roll with one.  </li><br><li><b>Spell save DC</b> = 8 + your proficiency bonus + your Spellcasting ability modifier</li><br><li><b>Spell attack modifier</b> = your proficiency bonus + your Spellcasting ability modifier</li></ul>"
+                },
+                {
+                    "name_str" : "Magic Weapon Application",
+                    "level" : 9,
+                    "mechanics_str" : "Attacks using Strength made with Magical Weapons now qualify for Mach Punch damage.  "
+                },
+                {
+                    "name_str" : "Magic Resilience",
+                    "level" : 17,
+                    "mechanics_str" : "You have advantage on all saving throws against Magic based effects. In addition, any Magic based attack roll (Spellcasting, not regular attacks) has disadvantage to hit you.  "
+                }
+            ],
+            
+            "subclass_magic_name" : "Darwinian",
+            "subclass_magic_img" : "/_SiteResources/Images/noun_Evolution_4274906.png",
+            "subclass_magic_description" : "Possessing a gene that rapidly accelerates the process of evolution through individual and instantaneous mutations, the Darwinian is among the most intimidating and difficult beings to kill.  ",
+            "subclass_magic_feats" : [
+                {
+                    "name_str" : "Powercasting",
+                    "level" : 3,
+                    "mechanics_str" : "See the Rules for Powercasting mechanics and Superpowers list.  <ul><li><b>Superpowers Known:</b>  You learn Superpowers of your choice as shown in the Consumables Known column of the class table.  You may not learn a Superpower of a level higher than your Max Consumable Level, and you may learn a Superpower at the same time you learn its prerequisite.  </li><br><li><b>Superpower Points:</b>  You have a number of Superpower Points as shown in the Consumable Points column of the class table.  You expend these Superpower Points to cast Superpowers.  You regain all expended Superpower Points when you finish a long rest.  </li><br><li><b>Max Superpower Level:</b>  Many Superpowers can be overpowered, consuming more Superpower Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Superpowers at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Powercasting Ability:</b>  Your Powercasting ability is Intelligence.  You use your Intelligence modifier whenever a Superpower refers to your Powercasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Superpower you cast and when making an attack roll with one.  </li><br><li><b>Superpower save DC</b> = 8 + your proficiency bonus + your Powercasting ability modifier</li><br><li><b>Superpower attack modifier</b> = your proficiency bonus + your Powercasting ability modifier</li></ul>"
+                },
+                {
+                    "name_str" : "Power Weapon Application",
+                    "level" : 9,
+                    "mechanics_str" : "Attacks using Strength made with Superpowered Weapons now qualify for Mach Punch damage.  "
+                },
+                {
+                    "name_str" : "Power Resilience",
+                    "level" : 17,
+                    "mechanics_str" : "You have advantage on all saving throws against Superpower based effects. In addition, any Superpower based attack roll (Powercasting, not regular attacks) has disadvantage to hit you.  "
                 }
             ]
         },
