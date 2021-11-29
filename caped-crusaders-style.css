@@ -264,9 +264,9 @@ table {
 }
 
 .TechClassButton, .PowerClassButton, .MagicClassButton, .ClassButton {
-  width: 240px;
+  width: 200px;
   max-width: 35vw;
-  height: auto;
+  height: 275px;
   margin: 5px;
   padding: 10px;
   border-radius: 7px;
@@ -274,6 +274,9 @@ table {
   border-style: hidden;
   font-size: medium;
   text-align: left;
+  top: 0px;
+  display: block;
+  position: relative;
 }
 .TechClassButton {
   color: rgb(50, 50, 125);
@@ -286,6 +289,12 @@ table {
 }
 .ClassButton {
   color: rgb(25, 25, 25);
+}
+span {
+  display: block;
+  position: absolute;
+  top: 15px;
+  margin-right: 10px;
 }
 
 .WikiPageButton {

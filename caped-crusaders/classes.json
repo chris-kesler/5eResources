@@ -8,7 +8,7 @@
             "description_long_str" : "Armed with the most advanced arsenal of devices and weapons of the era, the Visionary is a durable and versatile Primary Techcaster who contributes to combat and excels at utility.  ",
 
             "class_type" : "Primary Tech Caster",
-            "primary_ability" : "Intelligence",
+            "primary_ability" : "Int",
             
             "hit_die_int" : 6,
             "hit_die_average_int" : 4,
@@ -16,7 +16,7 @@
             "proficiencies_armor" : "None",
             "proficiencies_weapons" : "Simple Tech Weapons",
             "proficiencies_tools" : "Inventor's Tools, any two of your choice",
-            "proficiencies_saves" : "Intelligence, Wisdom",
+            "proficiencies_saves" : "Int, Wis",
             "proficiencies_skills" : "Choose any three",
             
             "equipment_armor" : "Forged Plate, Steel",
@@ -239,7 +239,7 @@
             "description_long_str" : "Armed with the most advanced arsenal of devices and weapons of the era, the Visionary is a durable and versatile Primary Techcaster who contributes to combat and excels at utility.  ",
 
             "class_type" : "Secondary Tech Caster",
-            "primary_ability" : "Intelligence",
+            "primary_ability" : "Int",
             
             "hit_die_int" : 8,
             "hit_die_average_int" : 5,
@@ -380,7 +380,7 @@
             "description_long_str" : "Armed with the most advanced arsenal of devices and weapons of the era, the Visionary is a durable and versatile Primary Techcaster who contributes to combat and excels at utility.  ",
 
             "class_type" : "Secondary Tech Martial",
-            "primary_ability" : "Intelligence",
+            "primary_ability" : "Int",
             
             "hit_die_int" : 10,
             "hit_die_average_int" : 6,
@@ -521,7 +521,7 @@
             "description_long_str" : "After countless hours of training to be the perfect weapon, the Soldier is capable of waging war on the frontline and organizing allies simultaneously.  ",
 
             "class_type" : "Primary Tech Martial",
-            "primary_ability" : "Strength",
+            "primary_ability" : "Str",
             
             "hit_die_int" : 12,
             "hit_die_average_int" : 7,
@@ -529,7 +529,7 @@
             "proficiencies_armor" : "All Mundane and Technological Weapons",
             "proficiencies_weapons" : "All Mundane and Technological Weapons",
             "proficiencies_tools" : "Choose any one",
-            "proficiencies_saves" : "Strength, Dexterity",
+            "proficiencies_saves" : "Str, Dex",
             "proficiencies_skills" : "Choose any two, one of which must be either Strength or Dexterity based.  ",
             
             "equipment_armor" : "Molded Plate, Kevlar",
@@ -703,7 +703,7 @@
             "description_long_str" : "Blessed and bolstered by ancient magic, the Annointed perfectly balances destroying their enemies and protecting their allies.  ",
 
             "class_type" : "Primary Magic Caster",
-            "primary_ability" : "Wisdom",
+            "primary_ability" : "Wis",
             
             "hit_die_int" : 6,
             "hit_die_average_int" : 4,
@@ -844,7 +844,7 @@
             "description_long_str" : "Blessed and bolstered by ancient magic, the Annointed perfectly balances destroying their enemies and protecting their allies.  ",
 
             "class_type" : "Secondary Magic Caster",
-            "primary_ability" : "Wisdom",
+            "primary_ability" : "Wis",
             
             "hit_die_int" : 8,
             "hit_die_average_int" : 7,
@@ -985,7 +985,7 @@
             "description_long_str" : "Blessed and bolstered by ancient magic, the Annointed perfectly balances destroying their enemies and protecting their allies.  ",
 
             "class_type" : "Secondary Magic Martial",
-            "primary_ability" : "Dexterity",
+            "primary_ability" : "Dex",
             
             "hit_die_int" : 10,
             "hit_die_average_int" : 7,
@@ -1126,7 +1126,7 @@
             "description_long_str" : "Blessed and bolstered by ancient magic, the Annointed perfectly balances destroying their enemies and protecting their allies.  ",
 
             "class_type" : "Primary Magic Martial",
-            "primary_ability" : "Strength",
+            "primary_ability" : "Str",
             
             "hit_die_int" : 12,
             "hit_die_average_int" : 7,
@@ -1134,7 +1134,7 @@
             "proficiencies_armor" : "All Mundane and Magical Armors",
             "proficiencies_weapons" : "All Mundane and Magical Weapons",
             "proficiencies_tools" : "Choose any one",
-            "proficiencies_saves" : "Strength, Wisdom",
+            "proficiencies_saves" : "Str, Wis",
             "proficiencies_skills" : "Choose any two, one of which must be Strength or Wisdom based.  ",
             
             "equipment_armor" : "Molded Plate (Bronze) and a Shield (Bronze)",
@@ -1308,7 +1308,7 @@
             "description_long_str" : "Wielding raw physical power, the Dynamo thrives when dealing damage and drawing fire away from allies.   ",
 
             "class_type" : "Primary Power Caster",
-            "primary_ability" : "Charisma",
+            "primary_ability" : "Cha",
             
             "hit_die_int" : 6,
             "hit_die_average_int" : 4,
@@ -1449,7 +1449,7 @@
             "description_long_str" : "With a razor sharp focus on mobility and agility, the Subvertist thrives when protecting civilians and distracting enemies.  ",
 
             "class_type" : "Secondary Power Caster",
-            "primary_ability" : "Charisma",
+            "primary_ability" : "Cha",
             
             "hit_die_int" : 8,
             "hit_die_average_int" : 5,
@@ -1457,7 +1457,7 @@
             "proficiencies_armor" : "None",
             "proficiencies_weapons" : "None",
             "proficiencies_tools" : "Choose any three",
-            "proficiencies_saves" : "Charisma, Dexterity",
+            "proficiencies_saves" : "Cha, Dex",
             "proficiencies_skills" : "Choose any two, one of which must be Charisma based",
             
             "equipment_armor" : "None",
@@ -1761,7 +1761,7 @@
             "description_long_str" : "Reshaping themselves to fit the needs of the situation, the Metamorph is a highly adaptive-often considered critical-component of enhanced team groups.   ",
 
             "class_type" : "Secondary Power Martial",
-            "primary_ability" : "Constitution",
+            "primary_ability" : "Con",
             
             "hit_die_int" : 10,
             "hit_die_average_int" : 7,
@@ -1769,7 +1769,7 @@
             "proficiencies_armor" : "All Mundane and Superpowered Armors",
             "proficiencies_weapons" : "All Mundane and Superpowered Weapons",
             "proficiencies_tools" : "Choose any one",
-            "proficiencies_saves" : "Constitution, Charisma",
+            "proficiencies_saves" : "Con, Cha",
             "proficiencies_skills" : "Choose any two, one of which must be Strength based",
             
             "equipment_armor" : "Fitted Tunic, Lycra",
@@ -1943,7 +1943,7 @@
             "description_long_str" : "Wielding raw physical power, the Dynamo thrives when dealing damage and drawing fire away from allies.   ",
 
             "class_type" : "Primary Power Martial",
-            "primary_ability" : "Strength",
+            "primary_ability" : "Str",
             
             "hit_die_int" : 12,
             "hit_die_average_int" : 7,
@@ -1951,7 +1951,7 @@
             "proficiencies_armor" : "All Mundane and Superpowered Armors",
             "proficiencies_weapons" : "All Mundane and Superpowered Weapons",
             "proficiencies_tools" : "Choose any one",
-            "proficiencies_saves" : "Strength, Constitution",
+            "proficiencies_saves" : "Str, Con",
             "proficiencies_skills" : "Choose any two, one of which must be Strength based",
             
             "equipment_armor" : "Fitted Tunic, Lycra",

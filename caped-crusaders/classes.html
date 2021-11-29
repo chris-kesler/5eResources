@@ -16,11 +16,11 @@
           var page = path.split("/").pop();
           $.each(data.class, function(i, f) {
             document.getElementById(`class-button-${i}`).setAttribute("onclick", "location.href='classes/" + f.page_url + "'");
-            document.getElementById(`class-button-${i}`).innerHTML = "<img class='class-image-small' src='" 
+            document.getElementById(`class-button-${i}`).innerHTML = "<span><img class='class-image-small' src='" 
             + f.class_img + "' alt='" + f.name_str + " Image'><h3>" + f.name_str + "</h3><hr>" 
             + f.description_short_str + "<br><br><i><b>Hit Die:</b>  d" + f.hit_die_int 
             + "<br><b>Primary Ability:</b>  " + f.primary_ability + "<br><b>Saves:</b>  " 
-            + f.proficiencies_saves;
+            + f.proficiencies_saves + "</span>";
           });
         });
       });
