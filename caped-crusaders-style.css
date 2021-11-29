@@ -266,7 +266,7 @@ table {
 .TechClassButton, .PowerClassButton, .MagicClassButton, .ClassButton {
   width: 200px;
   max-width: 35vw;
-  height: 275px;
+  height: auto;
   margin: 5px;
   padding: 10px;
   border-radius: 7px;
@@ -277,6 +277,9 @@ table {
   top: 0px;
   display: block;
   position: relative;
+}
+.TechClassButton, .PowerClassButton, .MagicClassButton {
+height: 275px;
 }
 .TechClassButton {
   color: rgb(50, 50, 125);
