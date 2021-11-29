@@ -1529,8 +1529,7 @@
                 },
                 {
                     "name_str" : "Subclass Feature",
-                    "level" : 6,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                    "level" : 6
                 },
                 {
                     "name_str" : "Powercasting Milestone",
@@ -1589,8 +1588,7 @@
                 },
                 {
                     "name_str" : "Subclass Feature",
-                    "level" : 12,
-                    "mechanics_str" : "You can treat the d20 result for any skill check you make with Proficiency as a 10 if the result is 9 or lower before modifiers.  "
+                    "level" : 12
                 },
                 {
                     "name_str" : "Powercasting Milestone",
@@ -1649,8 +1647,7 @@
                 },
                 {
                     "name_str" : "Subclass Feature",
-                    "level" : 18,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                    "level" : 18
                 },
                 {
                     "name_str" : "Powercasting Milestone",
@@ -1778,10 +1775,10 @@
             "equipment_packs" : "One Vagabond's Pack",
             "equipment_variant" : "5d4 x 100 GC",
 
-            "sustainables_known_denominator" : 2,
-            "consumables_known_per_level" : 0.25,
-            "consumables_points_per_level" : 0.25,
-            "consumables_max_per_level_denominator" : 8,
+            "sustainables_known_denominator" : 3,
+            "consumables_known_per_level" : 0.5,
+            "consumables_points_per_level" : 0.5,
+            "consumables_max_per_level_denominator" : 6,
 
             "class_feats" : [
                 {
@@ -1790,84 +1787,110 @@
                     "mechanics_str" : "You have a number of Enhancements as shown in the Sustainables Known column of the class table.  Upon reaching this and subsequent levels, you gain a new Enhancement that you qualify for if your total number of Enhancements is less than the Sustainables Known for your level.  You may also swap an existing Enhancement for another of your choice that you qualify for upon each level up.  "
                 },
                 {
-                    "name_str" : "Mach Punch",
+                    "name_str" : "Power Enhancements",
+                    "level" : 3
+                },
+                {
+                    "name_str" : "Power Enhancements",
+                    "level" : 6
+                },
+                {
+                    "name_str" : "Power Enhancements",
+                    "level" : 9
+                },
+                {
+                    "name_str" : "Power Enhancements",
+                    "level" : 12
+                },
+                {
+                    "name_str" : "Power Enhancements",
+                    "level" : 15
+                },
+                {
+                    "name_str" : "Power Enhancements",
+                    "level" : 18
+                },
+                {
+                    "name_str" : "Manifest Form",
                     "level" : 1,
-                    "mechanics_str" : "Your unarmed strikes deal 1d6 + your Strength Modifier bludgeoning damage, and you can make an unarmed strike as a bonus action.  When you make an unarmed strike with advantage or an Ally is within melee range of your target, you can deal additional damage equal to a number of d6s equal to your level.  You can only deal this damage once per turn.  "
+                    "mechanics_str" : "You are able to alter your form and manifest specific traits in order to gain the upper hand.  You can use this feature a number of times equal to your proficiency bonus between Long Rests.  The Form lasts for a number of hours equal to your Proficiency Bonus, and you revert early if you lose your temp hp or receive temp hp from any other source.  You have the following Form available to you:  <ul><li><b>Armor Class:</b>  10 + Dex/Str + Prof</li><li><b>Temp Hit Points:</b>  Con + Prof + Level</li><li><b>Unarmed Strikes:</b>  Your Unarmed Strikes now deal Bludgeoning, Piercing, or Slashing damage (your choice), are based on Strength or Dexterity (your choice), and deal 1d6 damage</li><li><b>Heightened Senses:</b>  Choose a skill you are Proficient in that is based on Strength or Dexterity.  You gain Expertise in that skill while this Form is active</li>"
+                },
+                
+                {
+                    "name_str" : "Subclass Feature",
+                    "level" : 2,
+                    "mechanics_str" : "You gain a subclass as detailed at the bottom of this page.  <br><br>Each subclass offers a Consumable Milestone at this level, and an additional Consumable Milestone at levels 7, 13, and 19.  "
+                },
+                {
+                    "name_str" : "Subclass Feature",
+                    "level" : 7
+                },
+                {
+                    "name_str" : "Subclass Feature",
+                    "level" : 13
+                },
+                {
+                    "name_str" : "Subclass Feature",
+                    "level" : 19
                 },
                 {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 3,
+                    "level" : 2,
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
                     "name_str" : "Ability Score Improvement",
+                    "level" : 4
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 7
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 10
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 13
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 16
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 19
+                },
+                {
+                    "name_str" : "Healing Factor",
                     "level" : 5,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                    "mechanics_str" : "If you have less than half your hit points remaining, you regain one Hit Point every minute.  "
                 },
                 {
-                    "name_str" : "Immovable Object",
-                    "level" : 5,
-                    "mechanics_str" : "When you are hit by an attack or forcibly moved against your will, you can use your reaction to halve the attack’s damage against you and avoid being moved.  "
+                    "name_str" : "Endurance",
+                    "level" : 8,
+                    "mechanics_str" : "When you are damaged past zero Hit Points, you only take one point of Exhaustion rather than two.  You also have advantage on Constitution saving throws, and age at a tenth of the previous rate.  "
                 },
                 {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 7,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
-                },
-                {
-                    "name_str" : "Improved Movement",
-                    "level" : 7,
-                    "mechanics_str" : "Your movement speeds increase by a number of feet equal to your Proficiency Bonus multiplied by 5 while you aren't wearing Heavy Armor.  "
-                },
-                {
-                    "name_str" : "Staggering Punch",
-                    "level" : 9,
-                    "mechanics_str" : "When you deal Mach Punch damage, the target cannot take reactions until the start of your next turn.  "
-                },
-                {
-                    "name_str" : "Ability Score Improvement",
+                    "name_str" : "Instinctive Aggression",
                     "level" : 11,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                    "mechanics_str" : "When you take damage from a target you can percieve, you may use a Reaction to make one Attack against that target if they are within range.  "
                 },
                 {
-                    "name_str" : "Power Resilience",
-                    "level" : 11,
-                    "mechanics_str" : "When you make a saving throw against a Superpower based effect to avoid damage, you take no damage if you succeed and only half damage if you fail.  "
+                    "name_str" : "Healing Factor",
+                    "level" : 14,
+                    "mechanics_str" : "If you have less than half your hit points remaining, you regain one Hit Point every minute.  "
                 },
                 {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 13,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
-                },
-                {
-                    "name_str" : "Champion's Might",
-                    "level" : 13,
-                    "mechanics_str" : "If your total for a Strength check or save is less than your Strength score, you may treat the result as equal to your Strength score.  "
-                },
-                {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 15,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
-                },
-                {
-                    "name_str" : "Stalwart",
-                    "level" : 15,
-                    "mechanics_str" : "No attack roll has advantage against you while you are not incapacitated.  "
-                },
-                {
-                    "name_str" : "Shattering Punch",
+                    "name_str" : "Healing Factor",
                     "level" : 17,
-                    "mechanics_str" : "When you deal Mach Punch damage, the target must make a Constitution saving throw against your Strength DC.  On a failure, the target is knocked Prone and Stunned until the start of their next turn.  "
+                    "mechanics_str" : "If you have less than half your hit points remaining, you regain one Hit Point every minute.  "
                 },
                 {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 19,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
-                },
-                {
-                    "name_str" : "Apex Power",
-                    "level" : 19,
-                    "mechanics_str" : "Your Strength and Constitution scores and their maximums each increase by four.  "
+                    "name_str" : "Ultimate Manifestation",
+                    "level" : 20,
+                    "mechanics_str" : "If you have less than half your hit points remaining, you regain one Hit Point every minute.  "
                 }
             ],
 
@@ -1983,18 +2006,49 @@
                 },
                 {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 5,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                    "level" : 5
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 7
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 9
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 11
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 13
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 15
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 17
+                },
+                {
+                    "name_str" : "Subclass Feature",
+                    "level" : 3,
+                    "mechanics_str" : "You gain a subclass as detailed at the bottom of this page.  <br><br>Each subclass offers a Consumable Milestone at this level, and an additional Consumable Milestone at levels 7, 13, and 19.  "
+                },
+                {
+                    "name_str" : "Subclass Feature",
+                    "level" : 9
+                },
+                {
+                    "name_str" : "Subclass Feature",
+                    "level" : 17
                 },
                 {
                     "name_str" : "Immovable Object",
                     "level" : 5,
                     "mechanics_str" : "When you are hit by an attack or forcibly moved against your will, you can use your reaction to halve the attack’s damage against you and avoid being moved.  "
-                },
-                {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 7,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
                     "name_str" : "Improved Movement",
@@ -2007,29 +2061,14 @@
                     "mechanics_str" : "When you deal Mach Punch damage, the target cannot take reactions until the start of your next turn.  "
                 },
                 {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 11,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
-                },
-                {
                     "name_str" : "Power Resilience",
                     "level" : 11,
                     "mechanics_str" : "When you make a saving throw against a Superpower based effect to avoid damage, you take no damage if you succeed and only half damage if you fail.  "
                 },
                 {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 13,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
-                },
-                {
                     "name_str" : "Champion's Might",
                     "level" : 13,
                     "mechanics_str" : "If your total for a Strength check or save is less than your Strength score, you may treat the result as equal to your Strength score.  "
-                },
-                {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 15,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
                     "name_str" : "Stalwart",
@@ -2040,11 +2079,6 @@
                     "name_str" : "Shattering Punch",
                     "level" : 17,
                     "mechanics_str" : "When you deal Mach Punch damage, the target must make a Constitution saving throw against your Strength DC.  On a failure, the target is knocked Prone and Stunned until the start of their next turn.  "
-                },
-                {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 19,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
                     "name_str" : "Apex Power",
