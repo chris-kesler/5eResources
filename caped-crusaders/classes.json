@@ -1813,7 +1813,7 @@
                 {
                     "name_str" : "Manifest Form",
                     "level" : 1,
-                    "mechanics_str" : "You are able to alter your form and manifest specific traits in order to gain the upper hand.  You can use this feature a number of times equal to your proficiency bonus between Long Rests.  The Form lasts for a number of hours equal to your Proficiency Bonus, and you revert early if you lose your temp hp or receive temp hp from any other source.  You have the following Form available to you:  <ul><li><b>Armor Class:</b>  10 + Dex/Str + Prof</li><li><b>Temp Hit Points:</b>  Con + Prof + Level</li><li><b>Unarmed Strikes:</b>  Your Unarmed Strikes now deal Bludgeoning, Piercing, or Slashing damage (your choice), are based on Strength or Dexterity (your choice), and deal 1d6 damage</li><li><b>Heightened Senses:</b>  Choose a skill you are Proficient in that is based on Strength or Dexterity.  You gain Expertise in that skill while this Form is active</li>"
+                    "mechanics_str" : "You are able to alter your form and manifest specific traits in order to gain the upper hand.  You can use this feature a number of times equal to your proficiency bonus between Long Rests.  The Form lasts for a number of hours equal to your Proficiency Bonus, and you revert early if you lose your temp hp or receive temp hp from any other source.  You have the following Form available to you:  <ul><li><b>Armor Class:</b>  + Prof</li><li><b>Temp Hit Points:</b>  Con + Prof + Level</li><li><b>Unarmed Strikes:</b>  Your Unarmed Strikes now deal Bludgeoning, Piercing, or Slashing damage (your choice), are based on Strength or Dexterity (your choice), and deal a number of d4s equal to your Proficiency Bonus</li><li><b>Heightened Senses:</b>  Choose a skill you are Proficient in that is based on Strength or Dexterity.  You gain Expertise in that skill while this Form is active</li>"
                 },
                 
                 {
@@ -1865,12 +1865,12 @@
                 {
                     "name_str" : "Healing Factor",
                     "level" : 5,
-                    "mechanics_str" : "If you have less than half your hit points remaining, you regain one Hit Point every minute.  "
+                    "mechanics_str" : "If you have less than half your hit points (rounding down) remaining, you regain one Hit Point every minute.  You can also expend a Hit Die and regain Hit Points equal to the result + your Constitution Modifier as a Bonus Action"
                 },
                 {
-                    "name_str" : "Endurance",
+                    "name_str" : "Accelerated Acclimation",
                     "level" : 8,
-                    "mechanics_str" : "When you are damaged past zero Hit Points, you only take one point of Exhaustion rather than two.  You also have advantage on Constitution saving throws, and age at a tenth of the previous rate.  "
+                    "mechanics_str" : "After each Long Rest, choose a skill, tool, and language.  You are considered proficient in the chosen skill, tool, and language until the end of the next Long Rest.  "
                 },
                 {
                     "name_str" : "Instinctive Aggression",
@@ -1878,19 +1878,19 @@
                     "mechanics_str" : "When you take damage from a target you can percieve, you may use a Reaction to make one Attack against that target if they are within range.  "
                 },
                 {
-                    "name_str" : "Healing Factor",
+                    "name_str" : "Endurance",
                     "level" : 14,
-                    "mechanics_str" : "If you have less than half your hit points remaining, you regain one Hit Point every minute.  "
+                    "mechanics_str" : "When you are damaged past zero Hit Points, you only take one point of Exhaustion rather than two.  You also have advantage on Constitution saving throws, and age at a tenth of the previous rate.  "
                 },
                 {
-                    "name_str" : "Healing Factor",
+                    "name_str" : "Genepyre",
                     "level" : 17,
-                    "mechanics_str" : "If you have less than half your hit points remaining, you regain one Hit Point every minute.  "
+                    "mechanics_str" : "When you are affected by the casting of a Superpower based effect, you may use your reaction to force the caster to make a Casting Ability Saving Throw.  The DC equals 8 + Prof + Con.  On a success, you take half damage (if relevant) and suffer the other effects as normal.  On a failure, the Superpower does not take effect, the target cannot cast that Superpower again until after a long rest, and you gain the ability to cast that Superpower using Con as the spellcasting ability a number of times equal to your proficiency bonus until the end of the next Long Rest.  "
                 },
                 {
                     "name_str" : "Ultimate Manifestation",
                     "level" : 20,
-                    "mechanics_str" : "If you have less than half your hit points remaining, you regain one Hit Point every minute.  "
+                    "mechanics_str" : "When you Manifest form, you may choose to take on any of the following attributes while the form persists:  <ul><li><b>Size:</b>  You may become one size Larger or Smaller</li><li><b>Immunity:</b>  You become Immune to one damage type other than BPS</li><li><b>Environment:</b>  You can breathe normally in any environment, and are resistant to the damage from any environmental effects</li><li><b>Saving Throws:</b>  You gain Proficiency in two Saving Throws of your choice</li>"
                 }
             ],
 
@@ -1900,18 +1900,23 @@
             "subclass_tech_feats" : [
                 {
                     "name_str" : "Techcasting",
-                    "level" : 3,
+                    "level" : 2,
                     "mechanics_str" : "See the Rules for Techcasting mechanics and Technologies list.  <ul><li><b>Technologies Known:</b>  You learn Technologies of your choice as shown in the Consumables Known column of the class table.  You may not learn a Technology of a level higher than your Max Consumable Level, and you may learn a Technology at the same time you learn its prerequisite.  </li><br><li><b>Tech Points:</b>  You have a number of Tech Points as shown in the Consumable Points column of the class table.  You expend these Tech Points to cast Technologies.  You regain all expended Tech Points when you finish a long rest.  </li><br><li><b>Max Tech Level:</b>  Many Technologies can be overpowered, consuming more Tech Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Technologies at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Techcasting Ability:</b>  Your Techcasting ability is Intelligence.  You use your Intelligence modifier whenever a Technology refers to your Techcasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Technology you cast and when making an attack roll with one.  </li><br><li><b>Technology save DC</b> = 8 + your proficiency bonus + your Techcasting ability modifier</li><br><li><b>Technology attack modifier</b> = your proficiency bonus + your Techcasting ability modifier</li></ul>"
                 },
                 {
-                    "name_str" : "Tech Weapon Application",
-                    "level" : 9,
-                    "mechanics_str" : "Attacks using Strength made with Technological Weapons now qualify for Mach Punch damage.  "
+                    "name_str" : "Sapien Form",
+                    "level" : 7,
+                    "mechanics_str" : "When you Manifest Form, you may choose to take on the physical appearance of any sapien creature you choose.  You are able to manifest clothing and other worn items, but not items to be held.  You may take on an appearance derived from your imagination, or imitate a sapien you have seen.  If you imitate a sapien you have seen, your form is indistinuishable from the original.  You have advantage on all Charisma checks made to pass yourself off as this new identity, and may choose Deception or any Intelligence based skill for the Manifest Form's Expertise feature.  "
                 },
                 {
-                    "name_str" : "Tech Resilience",
-                    "level" : 17,
-                    "mechanics_str" : "You have advantage on all saving throws against Tech based effects. In addition, any Tech based attack roll (Techcasting, not regular attacks) has disadvantage to hit you.  "
+                    "name_str" : "Neural Download",
+                    "level" : 13,
+                    "mechanics_str" : "You may use an Action to force a creature you can touch to make an Intelligence Saving Throw, the DC of which is equal to 8 + your Con Mod + your Prof Bonus.  On a success, the creature is unaffected.  On a failure, you learn the information necessary to pass yourself off as this creature flawlessly (no Deception check required), along with any important knowledge the creature might have, such as passwords or the location of a secret base.  You may use this feature once per Long Rest.  "
+                },
+                {
+                    "name_str" : "Doppelganger",
+                    "level" : 19,
+                    "mechanics_str" : "You can modify your appearance as described in Sapien Form feature at will.  You do not gain any of the other benefits unless you use your Manifest Form feature.  "
                 }
             ],
 
@@ -1921,18 +1926,23 @@
             "subclass_power_feats" : [
                 {
                     "name_str" : "Spellcasting",
-                    "level" : 3,
+                    "level" : 2,
                     "mechanics_str" : "See the Rules for Spellcasting mechanics and Spells list.  <ul><li><b>Spells Known:</b>  You learn Spells of your choice as shown in the Consumables Known column of the class table.  You may not learn a Spell of a level higher than your Max Consumable Level, and you may learn a Spell at the same time you learn its prerequisite.  </li><br><li><b>Spell Points:</b>  You have a number of Spell Points as shown in the Consumable Points column of the class table.  You expend these Spell Points to cast Spells.  You regain all expended Spell Points when you finish a long rest.  </li><br><li><b>Max Spell Level:</b>  Many Spells can be overpowered, consuming more Spell Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Spells at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Spellcasting Ability:</b>  Your Spellcasting ability is Intelligence.  You use your Intelligence modifier whenever a Spell refers to your Spellcasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Spell you cast and when making an attack roll with one.  </li><br><li><b>Spell save DC</b> = 8 + your proficiency bonus + your Spellcasting ability modifier</li><br><li><b>Spell attack modifier</b> = your proficiency bonus + your Spellcasting ability modifier</li></ul>"
                 },
                 {
-                    "name_str" : "Magic Weapon Application",
-                    "level" : 9,
-                    "mechanics_str" : "Attacks using Strength made with Magical Weapons now qualify for Mach Punch damage.  "
+                    "name_str" : "Divine Form",
+                    "level" : 7,
+                    "mechanics_str" : "When you Manifest Form, you may choose to take on the form of a magical flying creature such as a Phoenix, Dragon, Demon, or Angel.  When you Manifest Form, you may take on any of these attributes in addition to the normal effects:  <ul><li><b>Radiance:</b>  Your Unarmed Strikes have a range of 20/60, and deal Incinerating damage</li><li><b>Speed:</b>  You gain a Flying Speed equal to your Walking Speed + (Prof Bonus * 5)</li><li><b>Reciprocity:</b>  When you use your Healing Factor Bonus Action, rather than heal yourself, you can instead choose to heal or harm a target within 10 feet of you for an equal amount.  If you choose to harm, the damage takes effect without an Attack roll or Saving Throw, and has no damage type (cannot be resisted or negated, granted the target is capable of taking damage in the first place)</li><li><b>Transcendence:</b>  You may choose any Wisdom based skill for the Manifest Form's Expertise feature</li>"
                 },
                 {
-                    "name_str" : "Magic Resilience",
-                    "level" : 17,
-                    "mechanics_str" : "You have advantage on all saving throws against Magic based effects. In addition, any Magic based attack roll (Spellcasting, not regular attacks) has disadvantage to hit you.  "
+                    "name_str" : "???",
+                    "level" : 13,
+                    "mechanics_str" : "You may use an Action to force a creature you can touch to make an Intelligence Saving Throw, the DC of which is equal to 8 + your Con Mod + your Prof Bonus.  On a success, the creature is unaffected.  On a failure, you learn the information necessary to pass yourself off as this creature flawlessly (no Deception check required), along with any important knowledge the creature might have, such as passwords or the location of a secret base.  You may use this feature once per Long Rest.  "
+                },
+                {
+                    "name_str" : "---",
+                    "level" : 19,
+                    "mechanics_str" : "You can modify your appearance as described in Sapien Form feature at will.  You do not gain any of the other benefits unless you use your Manifest Form feature.  "
                 }
             ],
             
