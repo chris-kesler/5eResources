@@ -698,7 +698,7 @@
         {
             "name_str" : "Archmage",
             "page_url" : "",
-            "class_img" : "",
+            "class_img" : "/_SiteResources/Images/noun_runes_2063263.png.",
             "description_short_str" : "A master of magic who has the largest selection of casting options at any time.  ",
             "description_long_str" : "Blessed and bolstered by ancient magic, the Annointed perfectly balances destroying their enemies and protecting their allies.  ",
 
@@ -708,130 +708,220 @@
             "hit_die_int" : 6,
             "hit_die_average_int" : 4,
 
-            "proficiencies_armor" : "All Armors",
-            "proficiencies_weapons" : "All Weapons",
+            "proficiencies_armor" : "None",
+            "proficiencies_weapons" : "None",
             "proficiencies_tools" : "Choose any one",
-            "proficiencies_saves" : "---",
-            "proficiencies_skills" : "Choose any two, one of which must be Strength or Wisdom based.  ",
+            "proficiencies_saves" : "Wisdom, Charisma",
+            "proficiencies_skills" : "Choose any two, one of which must be Wisdom based.  ",
             
-            "equipment_armor" : "Molded Plate (Bronze) and a Shield (Bronze)",
-            "equipment_weapons" : "Any two Martial Weapons",
+            "equipment_armor" : "Tunic, Cloth",
+            "equipment_weapons" : "None",
             "equipment_tools" : "One tool with which you are proficient",
-            "equipment_packs" : "One Warrior's Pack",
+            "equipment_packs" : "One Scholar's Pack",
             "equipment_variant" : "5d4 x 100 GC",
 
-            "sustainables_known_denominator" : 2,
-            "consumables_known_per_level" : 0.25,
-            "consumables_points_per_level" : 0.25,
-            "consumables_max_per_level_denominator" : 8,
+            "sustainables_known_denominator" : 8,
+            "consumables_known_per_level" : 2,
+            "consumables_points_per_level" : 2,
+            "consumables_max_per_level_denominator" : 2,
 
-            "class_feat_table_links" : [
-                "<a href='#Mach Punch-1'>Mach Punch</a>, <a href='#Unarmored Defense-1'>Unarmored Defense</a>",
-                "---",
-                "<a href='#Ability Score Improvement-3'>Ability Score Improvement</a>, Subclass Feature",
-                "---",
-                "<a href='#Ability Score Improvement-5'>Ability Score Improvement</a>, <a href='#Immovable Object-5'>Immovable Object</a>",
-                "---",
-                "<a href='#Ability Score Improvement-7'>Ability Score Improvement</a>, <a href='#Improved Movement-7'>Improved Movement</a>",
-                "---",
-                "<a href='#Staggering Punch-9'>Staggering Punch</a>, Subclass Feature",
-                "---",
-                "<a href='#Ability Score Improvement-11'>Ability Score Improvement</a>, <a href='#Power Resilience-11'>Power Resilience</a>",
-                "---",
-                "<a href='#Ability Score Improvement-13'>Ability Score Improvement</a>, <a href='#Champion's Might-13'>Champion's Might</a>",
-                "---",
-                "<a href='#Ability Score Improvement-15'>Ability Score Improvement</a>, <a href='#Stalwart-15'>Stalwart</a>",
-                "---",
-                "<a href='#Shattering Punch-17'>Shattering Punch</a>, Subclass Feature",
-                "---",
-                "<a href='#Ability Score Improvement-19'>Ability Score Improvement</a>, <a href='#Apex Power-19'>Apex Power</a>",
-                "---"
-                ],
-            "class_feat_descriptions" : [
+            "class_feats" : [
                 {
-                    "name_str" : "Mach Punch",
+                    "name_str" : "Spellcasting Milestone",
                     "level" : 1,
-                    "mechanics_str" : "Your unarmed strikes deal 1d6 + your Strength Modifier bludgeoning damage, and you can make an unarmed strike as a bonus action.  When you make an unarmed strike with advantage or an Ally is within melee range of your target, you can deal additional damage equal to a number of d6s equal to your level.  You can only deal this damage once per turn.  "
+                    "mechanics_str" : "See the Rules for Spellcasting mechanics and Spells list.  <ul><li><b>Spells Known:</b>  You learn 4 Spells of your choice, and you learn an additional 4 at each higher level as shown in the Spells Known column of the Class table.  You may not learn a Spell of a level higher than your Max Spell Level, and you may learn a Spell at the same time you learn its prerequisite.  </li><br><li><b>Spell Points:</b>  You have a number of Spell Points based on your Class level as shown in the Spell Points column of the Class table.  You expend these Spell Points to cast Spell Powers.  You regain all expended Spell Points when you finish a long rest.  </li><br><li><b>Max Spell Level:</b>  Many Spells can be overpowered, consuming more Spell Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Spell Level column of the Visionary table.  You may only cast Spells at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Spellcasting Ability:</b>  Your Spellcasting ability is Wisdom.  You use your Wisdom modifier whenever a Spell refers to your Spellcasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Spell you cast and when making an attack roll with one.  </li><br><li><b>Spell save DC</b> = 8 + your Proficiency Bonus + your Spellcasting ability modifier</li><br><li><b>Spell attack modifier</b> = your Proficiency Bonus + your Spellcasting ability modifier</li></ul>"
                 },
                 {
-                    "name_str" : "Unarmored Defense",
+                    "name_str" : "Augmented Armor",
                     "level" : 1,
-                    "mechanics_str" : "Your Armor Class while unarmored is equal to 8 + your Constitution Modifier + your Strength Modifier.  If you are wearing armor that would include your Dexterity Modifier in your Armor Class calculation, you can substitute your Constitution Modifier instead of your Dexterity Modifier for that calculation.  "
+                    "mechanics_str" : "Your inventive pursuits have led to you making armor that serves as a conduit for your Spell.  As part of a Long Rest, you can turn a suit of mundane armor you have access to into Augmented Armor, provided you have Inventor's Tools on hand.  You can don or doff the Augmented Armor over the course of 1 minute.  The Augmented Armor continues to be Augmented Armor until you create another set of Augmented Armor, or it is destroyed.  If you die while wearing the Augmented Armor, it is destroyed.  The Augmented Armor has the following traits while worn by you:<ul><li>Your Strength score becomes equal to your Intelligence score as long as it is not already higher.  You are also considered proficient with the armor.  </li>  <li>You can use the Augmented Armor as a Spellcasting focus for your Visionary spells.  </li><li>The Augmented Armor attaches to you and can’t be removed against your will.  </li><li>The Augmented Armor expands to cover your entire body, although you can remove or attach the helmet as an action.  </li><li>The Augmented Armor replaces any missing limbs, functioning identically to a limb it replaces.  </li></ul>"
+                },
+                {
+                    "name_str" : "Expertise",
+                    "level" : 2,
+                    "mechanics_str" : "Choose one of your skill proficiencies or two of your tool proficiencies.  Your Proficiency Bonus is doubled for any ability check you make that uses the chosen skill or tools.  <br><br>You gain this feature again at levels 6, 10, 14, and 18.  "
+                },
+                {
+                    "name_str" : "Subclass Feature",
+                    "level" : 2,
+                    "mechanics_str" : "You gain a subclass as detailed at the bottom of this page.  <br><br>Each subclass offers a Sustainable at this level, and an additional Sustainable at levels 8, and 16.  "
+                },
+                {
+                    "name_str" : "Spellcasting Milestone",
+                    "level" : 3
                 },
                 {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 3,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                    "level" : 4,
+                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  <br><br>You gain this feature again at levels 8, 12, 16, and 19.  "
+                },
+                {
+                    "name_str" : "Advanced Armor",
+                    "level" : 4,
+                    "mechanics_str" : "Your inventive pursuits have led to you making armor that serves as a conduit for your Spell.  As part of a Long Rest, you can turn a suit of mundane armor you have access to into Advanced Armor, provided you have Inventor's Tools on hand.  You can don or doff the Advanced Armor an Action.  The Advanced Armor continues to be Advanced Armor until you create another set of Advanced Armor, or it is destroyed.  If you die while wearing the Advanced Armor, it is destroyed.  The Advanced Armor has the following traits while worn by you:<ul><li>Your Strength score becomes equal to your Intelligence score as long as it is not already higher.  You are also considered proficient with the armor.  </li>  <li>You can use the Advanced Armor as a Spellcasting focus for your Visionary spells.  </li><li>The Advanced Armor attaches to you and can’t be removed against your will.  </li><li>The Advanced Armor expands to cover your entire body, although you can retract or deploy the helmet as an action.  </li><li>The Advanced Armor replaces any missing limbs, functioning identically to a limb it replaces.  </li><li>When you make an Intelligence check, you can treat the d20 result as equal to your Intelligence modifier if the result before modifiers is lower.  </li><li>You can survive in the vacuum of space for a number of minutes equal to your Intelligence modifier.  This ability recharges upon a long rest within a hospitable environment.  </li></ul>"
+                },
+                {
+                    "name_str" : "Spellcasting Milestone",
+                    "level" : 5
+                },
+                {
+                    "name_str" : "Expertise",
+                    "level" : 6
+                },
+                {
+                    "name_str" : "Reverse Engineering",
+                    "level" : 6,
+                    "mechanics_str" : "Choose one Spell, Power, or Spell from any class casting list that you have witnessed being cast at least once.  Events witnessed within your backstory do not qualify for this feature.  The chosen Spell, Power, or Spell must not be of a higher level than the Maximum Spell Level for your current Visionary level.  Your selected Spell, Power, or Spell counts as a Visionary Spell for you, and you are able to learn it as normal at the same level you choose it.  If you are starting at higher levels or have not witnessed any Spells, Powers, or Spells being cast upon gaining this feature, your GM may provide a list of Spells, Powers, or Spells for you to choose from.  <br><br>You gain this feature again at levels 10, 14, and 18.  "
+                },
+                {
+                    "name_str" : "Spellcasting Milestone",
+                    "level" : 7
                 },
                 {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 5,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                    "level" : 8
                 },
                 {
-                    "name_str" : "Immovable Object",
-                    "level" : 5,
-                    "mechanics_str" : "When you are hit by an attack or forcibly moved against your will, you can use your reaction to halve the attack’s damage against you and avoid being moved.  "
+                    "name_str" : "Subclass Feature",
+                    "level" : 8
                 },
                 {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 7,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                    "name_str" : "Spellcasting Milestone",
+                    "level" : 9
                 },
                 {
-                    "name_str" : "Improved Movement",
-                    "level" : 7,
-                    "mechanics_str" : "Your movement speeds increase by a number of feet equal to your Proficiency Bonus multiplied by 5 while you aren't wearing Heavy Armor.  "
+                    "name_str" : "Expertise",
+                    "level" : 10
                 },
                 {
-                    "name_str" : "Staggering Punch",
-                    "level" : 9,
-                    "mechanics_str" : "When you deal Mach Punch damage, the target cannot take reactions until the start of your next turn.  "
+                    "name_str" : "Reverse Engineering",
+                    "level" : 10
                 },
                 {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 11,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
-                },
-                {
-                    "name_str" : "Power Resilience",
-                    "level" : 11,
-                    "mechanics_str" : "You have advantage on all saves against Superpower based effects.  In addition, when you make a saving throw against a Superpower based effect to avoid damage, you take no damage if you succeed and only half damage if you fail.  "
+                    "name_str" : "Spellcasting Milestone",
+                    "level" : 11
                 },
                 {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 13,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                    "level" : 12
                 },
                 {
-                    "name_str" : "Champion's Might",
-                    "level" : 13,
-                    "mechanics_str" : "If your total for a Strength check or save is less than your Strength score, you may treat the result as equal to your Strength score.  "
+                    "name_str" : "Superior Armor",
+                    "level" : 12,
+                    "mechanics_str" : "Your inventive pursuits have led to you making armor that serves as a conduit for your Spell.  As part of a Long Rest, you can turn a suit of mundane armor you have access to into Superior Armor, provided you have Inventor's Tools on hand.  You can don or doff the Superior Armor as a Bonus Action.  The Superior Armor continues to be Superior Armor until you create another set of Superior Armor, or it is destroyed.  If you die while wearing the Superior Armor, it is destroyed.  The Superior Armor has the following traits while worn by you:<ul><li>Your Strength score becomes equal to your Intelligence score as long as it is not already higher.  You are also considered proficient with the armor.  </li>  <li>You can use the Superior Armor as a Spellcasting focus for your Visionary spells.  </li><li>The Superior Armor attaches to you and can’t be removed against your will.  </li><li>The Superior Armor expands to cover your entire body, although you can retract or deploy the helmet as a bonus action.  </li><li>The Superior Armor replaces any missing limbs, functioning identically to a limb it replaces.  </li><li>When you make an Intelligence check, you can treat the d20 result as equal to half of your Intelligence score (rounded down) if the result before modifiers is lower.  </li><li>You can survive in the vacuum of space for a number of hours equal to your Intelligence modifier.  This ability recharges upon a long rest within a hospitable environment.  </li></ul>"
+                },
+                {
+                    "name_str" : "Spellcasting Milestone",
+                    "level" : 13
+                },
+                {
+                    "name_str" : "Expertise",
+                    "level" : 14
+                },
+                {
+                    "name_str" : "Reverse Engineering",
+                    "level" : 14
+                },
+                {
+                    "name_str" : "Spellcasting Milestone",
+                    "level" : 15
                 },
                 {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 15,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                    "level" : 16
                 },
                 {
-                    "name_str" : "Stalwart",
-                    "level" : 15,
-                    "mechanics_str" : "No attack roll has advantage against you while you are not incapacitated.  "
+                    "name_str" : "Subclass Feature",
+                    "level" : 16
                 },
                 {
-                    "name_str" : "Shattering Punch",
-                    "level" : 17,
-                    "mechanics_str" : "When you deal Mach Punch damage, the target must make a Constitution saving throw against your Strength DC.  On a failure, the target is knocked Prone and Stunned until the start of their next turn.  "
+                    "name_str" : "Spellcasting Milestone",
+                    "level" : 17
+                },
+                {
+                    "name_str" : "Expertise",
+                    "level" : 18
+                },
+                {
+                    "name_str" : "Reverse Engineering",
+                    "level" : 18
                 },
                 {
                     "name_str" : "Ability Score Improvement",
+                    "level" : 19
+                },
+                {
+                    "name_str" : "Ultimate Armor",
                     "level" : 19,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                    "mechanics_str" : "Your inventive pursuits have led to you making armor that serves as a conduit for your Spell.  As part of a Long Rest, you can turn a suit of mundane armor you have access to into Ultimate Armor, provided you have Inventor's Tools on hand.  You can don or doff the Ultimate Armor as part of any Action, Bonus Action, or Reaction you take.  In addition, when the Ultimate Armor is doffed by you, you can choose to have it collapse into a small housing unit.  The housing unit takes on a form of your choosing, and can be no smaller a thick wristwatch.  You can use the housing unit as a Tech casting focus for your Visionary spells while you wear it as components of the Ultimate Armor dynamically deploy and retract as needed.  The Ultimate Armor continues to be Ultimate Armor until you create another set of Ultimate Armor, or it is destroyed.  If you die while wearing the Ultimate Armor, it is destroyed.  The Ultimate Armor has the following traits while worn by you:<ul><li>Your Strength score becomes equal to your Intelligence score as long as it is not already higher.  You are also considered proficient with the armor.  </li>  <li>You can use the Ultimate Armor as a Spellcasting focus for your Visionary spells, and you need not supply any components that do not have a cost while doing so.  </li><li>The Ultimate Armor attaches to you and can’t be removed against your will.  </li><li>The Ultimate Armor expands to cover your entire body, although you can retract or deploy the helmet once per turn.  </li><li>The Ultimate Armor replaces any missing limbs, functioning identically to a limb it replaces.  </li><li>When you make an Intelligence check, you can treat the d20 result as equal to your Intelligence score if the result before modifiers is lower.  </li><li>Choose two of your Spells that are of 2nd level or lower.  You can cast those Spells at their lowest level without expending any Tech Points.  </li><li>You can survive in the vacuum of space for a number of days equal to your Intelligence modifier.  This ability recharges upon a long rest within a hospitable environment.  </li></ul>"
                 },
                 {
-                    "name_str" : "Apex Power",
-                    "level" : 19,
-                    "mechanics_str" : "Your Strength and Constitution scores and their maximums each increase by four.  "
+                    "name_str" : "Renewable Energy",
+                    "level" : 20,
+                    "mechanics_str" : "Choose one 1st level and one 2nd level Spell you know.  You can cast both of those Spells at their lowest level without expending Spell Points.  In addition, when you cast a Cantrip as an Action, you can cast that Cantrip a second time as part of the same Action.  "
+                }
+            ],
+
+            "subclass_tech_name" : "Virtuoso",
+            "subclass_tech_img" : "/_SiteResources/Images/noun_Science_4037086.png",
+            "subclass_tech_description" : "A paragon of invention and ingenuity, the Virtuoso has created and incorporated a truly sustainable energy source. This energy source grants the Virtuoso several at-will Spells and capabilities, such as flight. The Virtuoso can also adapt other suits of Technological Armor to fit their needs.  ",
+            "subclass_tech_feats" : [
+                {
+                    "name_str" : "Engineerism",
+                    "level" : 2,
+                    "mechanics_str" : "You gain one sustained Tech from the sustained Tech list. In addition, you can also convert any Technological Armor you have access to into your Visionary Armor as normal, retaining the original item's benefits in addition to the Visionary Armor features. You must still meet the level prerequisites for the Armor in order to do so, but ignore all other restrictions as you modify it to accomodate you. (Visionary Armor refers to Augmented Armor, Advanced Armor, Superior Armor, and Ultimate Armor simultaneously.)"
+                },
+                {
+                    "name_str" : "Micronuclear",
+                    "level" : 8,
+                    "mechanics_str" : "You gain one sustained Tech from the sustained Tech list. You may also swap one previously gained sustained Tech for another that you qualify for.  "
+                },
+                {
+                    "name_str" : "Quantum Induction",
+                    "level" : 16,
+                    "mechanics_str" : "You gain one sustained Tech from the sustained Tech list. You may also swap one previously gained sustained Tech for another that you qualify for.  "
+                }
+            ],
+
+            "subclass_power_name" : "Magnate",
+            "subclass_power_img" : "/_SiteResources/Images/noun_cyborg_506898.png",
+            "subclass_power_description" : "Some superpowers are far more subtle than most, and the Magnate is a prime example. Whether relying on magnetic manipulation, electrokinesis, or cybernetics, you stand out as a Visionary with precise control over your Spell. Having a direct connection between your nervous system and your devices grants you an innate control over your Visionary Armor. The Magnate can also adapt other suits of Metapower Armor to fit their needs.  ",
+            "subclass_power_feats" : [
+                {
+                    "name_str" : "Biomechanical Interface",
+                    "level" : 2,
+                    "mechanics_str" : "You gain one enhancing Power from the enhancing Power list. In addition, you can also convert any Metapower Armor you have access to into your Visionary Armor as normal, retaining the original item's benefits in addition to the Visionary Armor features. You must still meet the level prerequisites for the Armor in order to do so, but ignore all other restrictions as you modify it to accomodate you. (Visionary Armor refers to Augmented Armor, Advanced Armor, Superior Armor, and Ultimate Armor simultaneously.)"
+                },
+                {
+                    "name_str" : "Digital Synapses",
+                    "level" : 8,
+                    "mechanics_str" : "You gain one enhancing Power from the enhancing Power list.  You may also swap one previously gained enhancing Power for another that you qualify for.  "
+                },
+                {
+                    "name_str" : "Synthetic Symbiosis",
+                    "level" : 16,
+                    "mechanics_str" : "You gain one enhancing Power from the enhancing Power list.  You may also swap one previously gained enhancing Power for another that you qualify for.  "
+                }
+            ],
+            
+            "subclass_magic_name" : "Glyphologist",
+            "subclass_magic_img" : "/_SiteResources/Images/noun_Pyramid_1553793.png",
+            "subclass_magic_description" : "A scholar of ancient knowledge and mythology, the Glyphologist combines modern science with ancient magical power sources. Whether it be inscribing runes, compressing motes of power, or integrating powerful artifacts, the Glyphologist binds themselves and their armor together on a supernatural level. While not a spellcaster, the Glyphologist still benefits from magical boons that manifest in a variety of ways. The Glyphologist can also adapt other suits of Magical Armor to fit their needs.  ",
+            "subclass_magic_feats" : [
+                {
+                    "name_str" : "Applied Theology",
+                    "level" : 2,
+                    "mechanics_str" : "You gain one enduring Boon from the enduring Boon list. In addition, you can also convert any Magical Armor you have access to into your Visionary Armor as normal, retaining the original item's benefits in addition to the Visionary Armor features. You must still meet the level prerequisites for the Armor in order to do so, but ignore all other restrictions as you modify it to accomodate you. (Visionary Armor refers to Augmented Armor, Advanced Armor, Superior Armor, and Ultimate Armor simultaneously.)"
+                },
+                {
+                    "name_str" : "Invocationist",
+                    "level" : 8,
+                    "mechanics_str" : "You gain one enduring Boon from the enduring Boon list.  You may also swap one previously gained enduring Boon for another that you qualify for.  "
+                },
+                {
+                    "name_str" : "Science of Divinity",
+                    "level" : 16,
+                    "mechanics_str" : "You gain one enduring Boon from the enduring Boon list.  You may also swap one previously gained enduring Boon for another that you qualify for.  "
                 }
             ]
         },
@@ -839,7 +929,7 @@
         {
             "name_str" : "Eldritian",
             "page_url" : "",
-            "class_img" : "",
+            "class_img" : "/_SiteResources/Images/noun_round shieldknot_2069911.png.",
             "description_short_str" : "A competent spell caster that augments their own fighting ability.  ",
             "description_long_str" : "Blessed and bolstered by ancient magic, the Annointed perfectly balances destroying their enemies and protecting their allies.  ",
 
@@ -1901,12 +1991,12 @@
                 {
                     "name_str" : "Techcasting",
                     "level" : 2,
-                    "mechanics_str" : "See the Rules for Techcasting mechanics and Technologies list.  <ul><li><b>Technologies Known:</b>  You learn Technologies of your choice as shown in the Consumables Known column of the class table.  You may not learn a Technology of a level higher than your Max Consumable Level, and you may learn a Technology at the same time you learn its prerequisite.  </li><br><li><b>Tech Points:</b>  You have a number of Tech Points as shown in the Consumable Points column of the class table.  You expend these Tech Points to cast Technologies.  You regain all expended Tech Points when you finish a long rest.  </li><br><li><b>Max Tech Level:</b>  Many Technologies can be overpowered, consuming more Tech Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Technologies at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Techcasting Ability:</b>  Your Techcasting ability is Intelligence.  You use your Intelligence modifier whenever a Technology refers to your Techcasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Technology you cast and when making an attack roll with one.  </li><br><li><b>Technology save DC</b> = 8 + your proficiency bonus + your Techcasting ability modifier</li><br><li><b>Technology attack modifier</b> = your proficiency bonus + your Techcasting ability modifier</li></ul>"
+                    "mechanics_str" : "See the Rules for Techcasting mechanics and Technologies list.  <ul><li><b>Technologies Known:</b>  You learn Technologies of your choice as shown in the Consumables Known column of the class table.  You may not learn a Technology of a level higher than your Max Consumable Level, and you may learn a Technology at the same time you learn its prerequisite.  </li><br><li><b>Tech Points:</b>  You have a number of Tech Points as shown in the Consumable Points column of the class table.  You expend these Tech Points to cast Technologies.  You regain all expended Tech Points when you finish a long rest.  </li><br><li><b>Max Tech Level:</b>  Many Technologies can be overpowered, consuming more Tech Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Technologies at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Techcasting Ability:</b>  Your Techcasting ability is Charisma.  You use your Charisma modifier whenever a Technology refers to your Techcasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Technology you cast and when making an attack roll with one.  </li><br><li><b>Technology save DC</b> = 8 + your proficiency bonus + your Techcasting ability modifier</li><br><li><b>Technology attack modifier</b> = your proficiency bonus + your Techcasting ability modifier</li></ul>"
                 },
                 {
                     "name_str" : "Sapien Form",
                     "level" : 7,
-                    "mechanics_str" : "When you Manifest Form, you may choose to take on the physical appearance of any sapien creature you choose.  You are able to manifest clothing and other worn items, but not items to be held.  You may take on an appearance derived from your imagination, or imitate a sapien you have seen.  If you imitate a sapien you have seen, your form is indistinuishable from the original.  You have advantage on all Charisma checks made to pass yourself off as this new identity, and may choose Deception or any Intelligence based skill for the Manifest Form's Expertise feature.  "
+                    "mechanics_str" : "When you Manifest Form, you may choose to take on the physical appearance of any sapien creature you choose.  You are able to manifest clothing and other worn items, but not items to be held.  You may take on an appearance derived from your imagination, or imitate a sapien you have seen.  If you imitate a sapien you have seen, your form is indistinuishable from the original.  You have advantage on all Charisma checks made to pass yourself off as this new identity, and may choose any Charisma based skill for the Manifest Form's Expertise feature.  "
                 },
                 {
                     "name_str" : "Neural Download",
@@ -1932,17 +2022,17 @@
                 {
                     "name_str" : "Divine Form",
                     "level" : 7,
-                    "mechanics_str" : "When you Manifest Form, you may choose to take on the form of a magical flying creature such as a Phoenix, Dragon, Demon, or Angel.  When you Manifest Form, you may take on any of these attributes in addition to the normal effects:  <ul><li><b>Radiance:</b>  Your Unarmed Strikes have a range of 20/60, and deal Incinerating damage</li><li><b>Speed:</b>  You gain a Flying Speed equal to your Walking Speed + (Prof Bonus * 5)</li><li><b>Reciprocity:</b>  When you use your Healing Factor Bonus Action, rather than heal yourself, you can instead choose to heal or harm a target within 10 feet of you for an equal amount.  If you choose to harm, the damage takes effect without an Attack roll or Saving Throw, and has no damage type (cannot be resisted or negated, granted the target is capable of taking damage in the first place)</li><li><b>Transcendence:</b>  You may choose any Wisdom based skill for the Manifest Form's Expertise feature</li>"
+                    "mechanics_str" : "When you Manifest Form, you may choose to take on the form of a magical flying creature such as a Phoenix, Dragon, Demon, or Angel.  When you Manifest Form, you may take on any of these attributes in addition to the normal effects:  <ul><li><b>Radiance:</b>  Your Unarmed Strikes have a range of 20/60, and can deal Incinerating, Cryogenic, or Corrosive damage</li><li><b>Speed:</b>  You gain a Flying Speed equal to your Walking Speed + (Prof Bonus * 5)</li><li><b>Reciprocity:</b>  When you use your Healing Factor Bonus Action, rather than heal yourself, you can instead choose to heal or harm a target within 10 feet of you for an equal amount.  If you choose to harm, the damage takes effect without an Attack roll or Saving Throw, and has no damage type (cannot be resisted or negated, granted the target is capable of taking damage in the first place)</li><li><b>Transcendence:</b>  You may choose any Intelligence based skill for the Manifest Form's Expertise feature</li>"
                 },
                 {
-                    "name_str" : "???",
+                    "name_str" : "Word of Power",
                     "level" : 13,
-                    "mechanics_str" : "You may use an Action to force a creature you can touch to make an Intelligence Saving Throw, the DC of which is equal to 8 + your Con Mod + your Prof Bonus.  On a success, the creature is unaffected.  On a failure, you learn the information necessary to pass yourself off as this creature flawlessly (no Deception check required), along with any important knowledge the creature might have, such as passwords or the location of a secret base.  You may use this feature once per Long Rest.  "
+                    "mechanics_str" : "You can understand all languages, and all creatures capable of understanding a language can understand you.  As a Bonus Action, you may force a target within 120 feet of you that can hear you to make a Charisma Saving Throw.  On a success, the creature has disadvantage on Attacks against you until the end of your next turn and is otherwise immune to this feature until the end of your next Long Rest.  On a failure, the creature is Frightened of you for one minute.  "
                 },
                 {
-                    "name_str" : "---",
+                    "name_str" : "Embodied Avatar",
                     "level" : 19,
-                    "mechanics_str" : "You can modify your appearance as described in Sapien Form feature at will.  You do not gain any of the other benefits unless you use your Manifest Form feature.  "
+                    "mechanics_str" : "Your Divine Form Unarmed Strikes now have a range of 40/120 and can deal Psionic damage.  In addition, your Reciprocity feature heals / harms double the standard amount.  "
                 }
             ],
             
@@ -1952,18 +2042,23 @@
             "subclass_magic_feats" : [
                 {
                     "name_str" : "Powercasting",
-                    "level" : 3,
-                    "mechanics_str" : "See the Rules for Powercasting mechanics and Superpowers list.  <ul><li><b>Superpowers Known:</b>  You learn Superpowers of your choice as shown in the Consumables Known column of the class table.  You may not learn a Superpower of a level higher than your Max Consumable Level, and you may learn a Superpower at the same time you learn its prerequisite.  </li><br><li><b>Superpower Points:</b>  You have a number of Superpower Points as shown in the Consumable Points column of the class table.  You expend these Superpower Points to cast Superpowers.  You regain all expended Superpower Points when you finish a long rest.  </li><br><li><b>Max Superpower Level:</b>  Many Superpowers can be overpowered, consuming more Superpower Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Superpowers at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Powercasting Ability:</b>  Your Powercasting ability is Intelligence.  You use your Intelligence modifier whenever a Superpower refers to your Powercasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Superpower you cast and when making an attack roll with one.  </li><br><li><b>Superpower save DC</b> = 8 + your proficiency bonus + your Powercasting ability modifier</li><br><li><b>Superpower attack modifier</b> = your proficiency bonus + your Powercasting ability modifier</li></ul>"
+                    "level" : 2,
+                    "mechanics_str" : "See the Rules for Powercasting mechanics and Superpowers list.  <ul><li><b>Superpowers Known:</b>  You learn Superpowers of your choice as shown in the Consumables Known column of the class table.  You may not learn a Superpower of a level higher than your Max Consumable Level, and you may learn a Superpower at the same time you learn its prerequisite.  </li><br><li><b>Superpower Points:</b>  You have a number of Superpower Points as shown in the Consumable Points column of the class table.  You expend these Superpower Points to cast Superpowers.  You regain all expended Superpower Points when you finish a long rest.  </li><br><li><b>Max Superpower Level:</b>  Many Superpowers can be overpowered, consuming more Superpower Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Superpowers at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Powercasting Ability:</b>  Your Powercasting ability is Wisdom.  You use your Wisdom modifier whenever a Superpower refers to your Powercasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Superpower you cast and when making an attack roll with one.  </li><br><li><b>Superpower save DC</b> = 8 + your proficiency bonus + your Powercasting ability modifier</li><br><li><b>Superpower attack modifier</b> = your proficiency bonus + your Powercasting ability modifier</li></ul>"
                 },
                 {
-                    "name_str" : "Power Weapon Application",
-                    "level" : 9,
-                    "mechanics_str" : "Attacks using Strength made with Superpowered Weapons now qualify for Mach Punch damage.  "
+                    "name_str" : "Beast Form",
+                    "level" : 7,
+                    "mechanics_str" : "When you Manifest Form, you may choose to take on the physical appearance of a sapien animal hybrid such as a Werewolf, Harpy, or other aesthetic combination of your choice.  When you Manifest Form, you may take on any of these attributes in addition to the normal effects:  <ul><li><b>Unarmed Strikes:</b>  Your Unarmed Strikes deal d6s rather than d4s, and are considered Adamantine</li><li><b>Aquatic:</b>  You gain a Swimming Speed equal to your Walking Speed and can breathe normally underwater</li><li><b>Pounce:</b>  You may use a Bonus Action to leap through the air a number of feet equal to Prof * 5</li><li><b>Instinctual:</b>  You may choose any Wisdom based skill for the Manifest Form's Expertise feature</li>"
                 },
                 {
-                    "name_str" : "Power Resilience",
-                    "level" : 17,
-                    "mechanics_str" : "You have advantage on all saving throws against Superpower based effects. In addition, any Superpower based attack roll (Powercasting, not regular attacks) has disadvantage to hit you.  "
+                    "name_str" : "Relentless Healing",
+                    "level" : 13,
+                    "mechanics_str" : "Your Healing Factor remains active while you have less than your maximum Hit Points.  In addition, you are able to regenerate any missing body parts given sufficient time.  Regenerating a hand or foot takes five minutes, while an entire arm or leg takes an hour.  The GM will determine the amount of time needed for regeneration based on the specific injury using these guidelines.  "
+                },
+                {
+                    "name_str" : "Predator",
+                    "level" : 19,
+                    "mechanics_str" : "Your Beast Form Unarmed Strikes deal d8s instead of d6s.  In addition, You may make an Attack as part of your Beast Form's Pounce Bonus Action.  "
                 }
             ]
         },

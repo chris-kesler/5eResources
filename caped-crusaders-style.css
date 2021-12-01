@@ -279,7 +279,7 @@ table {
   position: relative;
 }
 .TechClassButton, .PowerClassButton, .MagicClassButton {
-height: 275px;
+height: 250px;
 }
 .TechClassButton {
   color: rgb(50, 50, 125);
