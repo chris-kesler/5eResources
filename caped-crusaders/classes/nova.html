@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-US-Compatible" content="e-edge">
+    <title>KnowOne's Website of Everything</title>
+    <link rel="icon" href="/_SiteResources/Images/OwlOfMinerva_ModifiedLogo.png">
+    <link rel="stylesheet" href="/caped-crusaders-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+    <script>
+      $(function importContent() {
+        $(".Import_PageHeader").load("/_SiteResources/Pages/Import_PageHeader.html");
+        $(".Import_PageFooter").load("/_SiteResources/Pages/Import_PageFooter.html");
+      });
+      $(function readClass() {
+        var classes = [];
+        $.getJSON('../classes.json', function(data) {
+          var path = window.location.pathname;
+          var page = path.split("/").pop();
+          $.each(data.class, function(i, f) {
+            if (f.page_url == page) {
+              document.getElementById("class-page-title").innerHTML = "Caped Crusaders: Classes > " + f.name_str;
+              document.getElementById("class-page-image").src = f.class_img;
+              document.getElementById("class-page-description").innerHTML = f.description_long_str;
+              document.getElementById("class-features-intro").innerHTML = "As a "  + f.name_str + ", you gain the following Class Features.";
+              document.getElementById("hit-dice").innerHTML = "<b>Hit Dice:</b>  1d" + f.hit_die_int + " per " + f.name_str + " level";
+              document.getElementById("hit-points-at-1st-level").innerHTML = "<b>Hit Points at 1st level:</b>  " + f.hit_die_int + " your Constitution modifier";
+              document.getElementById("hit-points-at-higher-levels").innerHTML = "<b>Hit Points at higher levels:</b>  1d" + f.hit_die_int + " (or " + f.hit_die_average_int + ") + your Constitution modifier per " + f.name_str + " level after 1st";
+
+              document.getElementById("proficiencies-armor").innerHTML = "<b>Armor:</b>  " + f.proficiencies_armor;
+              document.getElementById("proficiencies-weapons").innerHTML = "<b>Weapons:</b>  " + f.proficiencies_weapons;
+              document.getElementById("proficiencies-tools").innerHTML = "<b>Tools:</b>  " + f.proficiencies_tools;
+              document.getElementById("proficiencies-saving-throws").innerHTML = "<b>Saving Throws:</b>  " + f.proficiencies_saves;
+              document.getElementById("proficiencies-skills").innerHTML = "<b>Skills:</b>  " + f.proficiencies_skills;
+
+              document.getElementById("equipment-armor").innerHTML = "<b>Armor:</b>  " + f.equipment_armor;
+              document.getElementById("equipment-weapons").innerHTML = "<b>Weapons:</b>  " + f.equipment_weapons;
+              document.getElementById("equipment-tools").innerHTML = "<b>Tools:</b>  " + f.equipment_tools;
+              document.getElementById("equipment-packs").innerHTML = "<b>Packs:</b>  " + f.equipment_packs;
+              document.getElementById("starting-wealth").innerHTML = "<td>" + f.name_str + "</td><td>" + f.equipment_variant + "</td>";
+              document.getElementById("class-table-title").innerHTML = "The " + f.name_str + " Table";
+              var prof = 2;
+              let j = 0;
+              for (let i = 0; i < 20; i++) {
+                var links = "---";
+                for (let k = 0; k < f.class_feats.length; k++) {
+                  if (f.class_feats[k].level == (i+1)) {
+                    if (links.includes("href")) {
+                      links += ", <a href='#" + f.class_feats[k].name_str.replace(/\s+/g, '') + "'>" 
+                      + f.class_feats[k].name_str + "</a>";  
+                    } else {
+                      links = "<a href='#" + f.class_feats[k].name_str.replace(/\s+/g, '') + "'>" 
+                      + f.class_feats[k].name_str + "</a>";
+                    }
+                  }
+                }
+                var tblRow = "<tr>" 
+                  + "<td>" + (i+1) + "</td>"
+                  + "<td>" + prof + "</td>"
+                  + "<td>" + links + "</td>"
+                  + "<td>" + Math.ceil((i+2)/f.sustainables_known_denominator) + "</td>"
+                  + "<td>" + Math.ceil((i+1)*f.consumables_known_per_level) + "</td>"
+                  + "<td>" + Math.ceil((i+1)*f.consumables_points_per_level) + "</td>"
+                  + "<td>" + Math.min(Math.ceil((i+1)/f.consumables_max_per_level_denominator), 9) + "</td>"
+                  + "</tr>"
+                j = j + 2;
+                $(tblRow).appendTo("#class-table tbody");
+                if ((i+1) == 4 || (i+1) == 8 || (i+1) == 12 || (i+1) == 16) {
+                  prof++;
+                }
+              }
+              for (let i = 0; i < f.class_feats.length; i++) {
+                if (document.getElementById("class-table-features").innerHTML.indexOf(f.class_feats[i].name_str) > 0) {} 
+                else {
+                  document.getElementById("class-table-features").innerHTML += "<hr><h3 id='" 
+                  + f.class_feats[i].name_str.replace(/\s+/g, '') + "'>" 
+                  + f.class_feats[i].name_str + "</h3><i><b>" + f.name_str 
+                  + ":</b>  level " + f.class_feats[i].level + "</i><p>" 
+                  + f.class_feats[i].mechanics_str + "</p>";
+                }
+              }
+              // Subclasses
+              document.getElementById("subclass-tech-name").innerHTML = "Subclass:  The " + f.subclass_tech_name;
+              document.getElementById("subclass-tech-image").src = f.subclass_tech_img;
+              document.getElementById("subclass-tech-description").innerHTML = f.subclass_tech_description;
+              for (let i = 0; i < f.subclass_tech_feats.length; i++) {
+                if (document.getElementById("subclass-tech-feats").innerHTML.indexOf(f.subclass_tech_feats[i].name_str) > 0) {} 
+                else {
+                  document.getElementById("subclass-tech-feats").innerHTML += "<hr><h3 id='" 
+                  + f.subclass_tech_feats[i].name_str.replace(/\s+/g, '') + "'>" 
+                  + f.subclass_tech_feats[i].name_str + "</h3><i><b>" + f.subclass_tech_name 
+                  + ":</b>  level " + f.subclass_tech_feats[i].level + "</i><p>" 
+                  + f.subclass_tech_feats[i].mechanics_str + "</p>";
+                }
+              }
+              document.getElementById("subclass-power-name").innerHTML = "Subclass:  The " + f.subclass_power_name;
+              document.getElementById("subclass-power-image").src = f.subclass_power_img;
+              document.getElementById("subclass-power-description").innerHTML = f.subclass_power_description;
+              for (let i = 0; i < f.subclass_power_feats.length; i++) {
+                if (document.getElementById("subclass-power-feats").innerHTML.indexOf(f.subclass_power_feats[i].name_str) > 0) {} 
+                else {
+                  document.getElementById("subclass-power-feats").innerHTML += "<hr><h3 id='" 
+                  + f.subclass_power_feats[i].name_str.replace(/\s+/g, '') + "'>" 
+                  + f.subclass_power_feats[i].name_str + "</h3><i><b>" + f.subclass_power_name 
+                  + ":</b>  level " + f.subclass_power_feats[i].level + "</i><p>" 
+                  + f.subclass_power_feats[i].mechanics_str + "</p>";
+                }
+              }
+              document.getElementById("subclass-magic-name").innerHTML = "Subclass:  The " + f.subclass_magic_name;
+              document.getElementById("subclass-magic-image").src = f.subclass_magic_img;
+              document.getElementById("subclass-magic-description").innerHTML = f.subclass_magic_description;
+              for (let i = 0; i < f.subclass_magic_feats.length; i++) {
+                if (document.getElementById("subclass-magic-feats").innerHTML.indexOf(f.subclass_magic_feats[i].name_str) > 0) {} 
+                else {
+                  document.getElementById("subclass-magic-feats").innerHTML += "<hr><h3 id='" 
+                  + f.subclass_magic_feats[i].name_str.replace(/\s+/g, '') + "'>" 
+                  + f.subclass_magic_feats[i].name_str + "</h3><i><b>" + f.subclass_magic_name 
+                  + ":</b>  level " + f.subclass_magic_feats[i].level + "</i><p>" 
+                  + f.subclass_magic_feats[i].mechanics_str + "</p>";
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+
+
+  <body>
+    <div class="PageContainer, PlanesMapBackground"> 
+      <div class="PageHeader">
+        <div class="Import_PageHeader"></div>
+          <h1 class="header" id="class-page-title"></h1>
+          <hr>
+      </div>
+        
+
+      <div class="PageContent">
+        <div class="AnchorCenter">
+          
+          <div class="AnchorRight">
+
+            <section class="PageContentRight">
+              <button class="WikiBackButton" onclick="location.href='../classes.html'">Out to Classes</button>
+              <h2>Overview</h2>
+              <hr>
+              <img id="class-page-image" class="class-image-large" alt="Class Image">
+              <p id="class-page-description"></p>
+
+              <h2>Class Features</h2>
+              <hr>
+              <p id="class-features-intro"></p>
+              
+              <h3>Hit Points</h3>
+              <ul>
+                <li id="hit-dice"></li>
+                <li id="hit-points-at-1st-level"></li>
+                <li id="hit-points-at-higher-levels"></li>
+              </ul>
+
+              <h3>Proficiencies</h3>
+              <ul>
+                <li id="proficiencies-armor"></li>
+                <li id="proficiencies-weapons"></li>
+                <li id="proficiencies-tools"></li>
+                <li id="proficiencies-saving-throws"></li>
+                <li id="proficiencies-skills"></li>
+              </ul>
+              
+              <h3>Equipment</h3>
+              <ul>
+                <li id="equipment-armor"></li>
+                <li id="equipment-weapons"></li>
+                <li id="equipment-tools"></li>
+                <li id="equipment-packs"></li>
+              </ul>
+              
+              <h3>Variant Equipment: Starting Wealth</h3>
+              Rather than acquiring the equipment granted by your class and background, you can elect to purchase your starting gear. 
+              If you do so, you receive no equipment from your class and background, and instead roll for your starting wealth using the criteria below:
+              <br><table class="WealthTable"><tr>
+                <th>Class</th>
+                <th>Wealth</th>
+              </tr><tr id="starting-wealth"></tr></table>
+              <br><br><br><br>          
+                              
+              <h2 id="class-table-title"></h2>
+              <hr>
+              <table id="class-table" class="ClassTable">
+                <thead>
+                  <th style="width: 10vw">Level</th>
+                  <th style="width: 15vw">Proficiency Bonus</th>
+                  <th style="width: 30vw">Features</th>
+                  <th style="width: 12vw">Sustainables Gained</th>
+                  <th style="width: 12vw">Consumables Known</th>
+                  <th style="width: 12vw">Consumable Points</th>
+                  <th style="width: 17vw">Maximum Consumable Level</th>
+                </thead>
+                <tbody></tbody>
+              </table><br>
+
+              <div id="class-table-features">
+                <body></body>
+              </div>
+            </section>
+
+            <section class="PageContentRight">
+              <h2 id="subclass-tech-name"></h2>
+              <hr>
+              <img class="subclass-image-large" alt="Tech Subclass" id="subclass-tech-image">
+              <p id="subclass-tech-description"></p>
+              <div id="subclass-tech-feats"></div>
+            </section>
+
+            <section class="PageContentRight">
+              <h2 id="subclass-power-name"></h2>
+              <hr>
+              <img class="subclass-image-large" alt="Power Subclass" id="subclass-power-image"></img>
+              <p id="subclass-power-description"></p>
+              <div id="subclass-power-feats"></div>
+            </section>
+
+            <section class="PageContentRight">
+              <h2 id="subclass-magic-name"></h2>
+              <hr>
+              <img class="subclass-image-large" alt="Magic Subclass" id="subclass-magic-image">
+              <p id="subclass-magic-description"></p>
+              <div id="subclass-magic-feats"></div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+      <footer class="Import_PageFooter"></footer>
+
+    </div>
+
+  </body>
+</html>
+

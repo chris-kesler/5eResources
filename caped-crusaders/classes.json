@@ -860,64 +860,64 @@
                 }
             ],
 
-            "subclass_tech_name" : "Virtuoso",
-            "subclass_tech_img" : "/_SiteResources/Images/noun_Science_4037086.png",
-            "subclass_tech_description" : "A paragon of invention and ingenuity, the Virtuoso has created and incorporated a truly sustainable energy source. This energy source grants the Virtuoso several at-will Spells and capabilities, such as flight. The Virtuoso can also adapt other suits of Technological Armor to fit their needs.  ",
+            "subclass_tech_name" : "Magiteknician",
+            "subclass_tech_img" : "/_SiteResources/Images/noun-aztec-runes-98153.png",
+            "subclass_tech_description" : "Combining arcane power with technological knowledge, the Magiteknician carves out a unique niche where science and magic collide.  ",
             "subclass_tech_feats" : [
                 {
-                    "name_str" : "Engineerism",
+                    "name_str" : "Integrated Tech",
                     "level" : 2,
-                    "mechanics_str" : "You gain one sustained Tech from the sustained Tech list. In addition, you can also convert any Technological Armor you have access to into your Visionary Armor as normal, retaining the original item's benefits in addition to the Visionary Armor features. You must still meet the level prerequisites for the Armor in order to do so, but ignore all other restrictions as you modify it to accomodate you. (Visionary Armor refers to Augmented Armor, Advanced Armor, Superior Armor, and Ultimate Armor simultaneously.)"
+                    "mechanics_str" : "You gain one sustained Tech from the sustained Tech list. You may also swap one previously gained sustained Tech for another that you qualify for.  "
                 },
                 {
-                    "name_str" : "Micronuclear",
+                    "name_str" : "Improved Tech",
                     "level" : 8,
                     "mechanics_str" : "You gain one sustained Tech from the sustained Tech list. You may also swap one previously gained sustained Tech for another that you qualify for.  "
                 },
                 {
-                    "name_str" : "Quantum Induction",
+                    "name_str" : "Superior Tech",
                     "level" : 16,
                     "mechanics_str" : "You gain one sustained Tech from the sustained Tech list. You may also swap one previously gained sustained Tech for another that you qualify for.  "
                 }
             ],
 
-            "subclass_power_name" : "Magnate",
-            "subclass_power_img" : "/_SiteResources/Images/noun_cyborg_506898.png",
-            "subclass_power_description" : "Some superpowers are far more subtle than most, and the Magnate is a prime example. Whether relying on magnetic manipulation, electrokinesis, or cybernetics, you stand out as a Visionary with precise control over your Spell. Having a direct connection between your nervous system and your devices grants you an innate control over your Visionary Armor. The Magnate can also adapt other suits of Metapower Armor to fit their needs.  ",
+            "subclass_power_name" : "Psioneothist",
+            "subclass_power_img" : "/_SiteResources/Images/noun-illuminati-1224008.png",
+            "subclass_power_description" : "With a natural set of superhuman abilities, the Psioneothist exerts a more fine tuned control over their magical abilities.  ",
             "subclass_power_feats" : [
                 {
-                    "name_str" : "Biomechanical Interface",
+                    "name_str" : "Integrated Power",
                     "level" : 2,
-                    "mechanics_str" : "You gain one enhancing Power from the enhancing Power list. In addition, you can also convert any Metapower Armor you have access to into your Visionary Armor as normal, retaining the original item's benefits in addition to the Visionary Armor features. You must still meet the level prerequisites for the Armor in order to do so, but ignore all other restrictions as you modify it to accomodate you. (Visionary Armor refers to Augmented Armor, Advanced Armor, Superior Armor, and Ultimate Armor simultaneously.)"
+                    "mechanics_str" : "You gain one enhancing Power from the enhancing Power list.  You may also swap one previously gained enhancing Power for another that you qualify for.  "
                 },
                 {
-                    "name_str" : "Digital Synapses",
+                    "name_str" : "Improved Power",
                     "level" : 8,
                     "mechanics_str" : "You gain one enhancing Power from the enhancing Power list.  You may also swap one previously gained enhancing Power for another that you qualify for.  "
                 },
                 {
-                    "name_str" : "Synthetic Symbiosis",
+                    "name_str" : "Superior Power",
                     "level" : 16,
                     "mechanics_str" : "You gain one enhancing Power from the enhancing Power list.  You may also swap one previously gained enhancing Power for another that you qualify for.  "
                 }
             ],
             
-            "subclass_magic_name" : "Glyphologist",
-            "subclass_magic_img" : "/_SiteResources/Images/noun_Pyramid_1553793.png",
-            "subclass_magic_description" : "A scholar of ancient knowledge and mythology, the Glyphologist combines modern science with ancient magical power sources. Whether it be inscribing runes, compressing motes of power, or integrating powerful artifacts, the Glyphologist binds themselves and their armor together on a supernatural level. While not a spellcaster, the Glyphologist still benefits from magical boons that manifest in a variety of ways. The Glyphologist can also adapt other suits of Magical Armor to fit their needs.  ",
+            "subclass_magic_name" : "Arcanoblate",
+            "subclass_magic_img" : "/_SiteResources/Images/noun-spellbook-2551263.png",
+            "subclass_magic_description" : "Devoted to the practice and study of magic, philosophy, and religion, the Arcanoblate attains a higher spiritual connection to the nature of magic itself.  ",
             "subclass_magic_feats" : [
                 {
-                    "name_str" : "Applied Theology",
+                    "name_str" : "Integrated Magic",
                     "level" : 2,
-                    "mechanics_str" : "You gain one enduring Boon from the enduring Boon list. In addition, you can also convert any Magical Armor you have access to into your Visionary Armor as normal, retaining the original item's benefits in addition to the Visionary Armor features. You must still meet the level prerequisites for the Armor in order to do so, but ignore all other restrictions as you modify it to accomodate you. (Visionary Armor refers to Augmented Armor, Advanced Armor, Superior Armor, and Ultimate Armor simultaneously.)"
+                    "mechanics_str" : "You gain one enduring Boon from the enduring Boon list.  You may also swap one previously gained enduring Boon for another that you qualify for.  "
                 },
                 {
-                    "name_str" : "Invocationist",
+                    "name_str" : "Improved Magic",
                     "level" : 8,
                     "mechanics_str" : "You gain one enduring Boon from the enduring Boon list.  You may also swap one previously gained enduring Boon for another that you qualify for.  "
                 },
                 {
-                    "name_str" : "Science of Divinity",
+                    "name_str" : "Superior Magic",
                     "level" : 16,
                     "mechanics_str" : "You gain one enduring Boon from the enduring Boon list.  You may also swap one previously gained enduring Boon for another that you qualify for.  "
                 }
@@ -1390,10 +1390,10 @@
 
         {
             "name_str" : "Nova",
-            "page_url" : "",
-            "class_img" : "",
+            "page_url" : "nova.html",
+            "class_img" : "/_SiteResources/Images/noun-atom-3637340.png",
             "description_short_str" : "Energy wielders that summon defensive fields and blast enemies alike.  ",
-            "description_long_str" : "Wielding raw physical power, the Dynamo thrives when dealing damage and drawing fire away from allies.   ",
+            "description_long_str" : "Possessing a massive reservoir of internalized energy, the Nova can unleash destructive beams and construct protective fields to manipulate the battlefield.  ",
 
             "class_type" : "Primary Power Caster",
             "primary_ability" : "Cha",
@@ -1402,15 +1402,15 @@
             "hit_die_average_int" : 4,
 
             "proficiencies_armor" : "None",
-            "proficiencies_weapons" : "Simple Tech Weapons",
+            "proficiencies_weapons" : "Simple Mundane Weapons, Simple Power Weapons",
             "proficiencies_tools" : "Choose any two",
-            "proficiencies_saves" : "---",
-            "proficiencies_skills" : "Choose any three",
+            "proficiencies_saves" : "Wis, Cha",
+            "proficiencies_skills" : "Choose any two, one of which must be Charisma based",
             
-            "equipment_armor" : "Forged Plate, Steel",
-            "equipment_weapons" : "Any Simple Tech Weapon",
+            "equipment_armor" : "None",
+            "equipment_weapons" : "Any Simple Mundane Weapon",
             "equipment_tools" : "One tool with which you are proficient",
-            "equipment_packs" : "One Inventor's Pack",
+            "equipment_packs" : "One Vagabond's Pack",
             "equipment_variant" : "5d4 x 100 GC",
 
             "sustainables_known_denominator" : 2,
@@ -1418,113 +1418,201 @@
             "consumables_points_per_level" : 0.25,
             "consumables_max_per_level_denominator" : 8,
 
-            "class_feat_table_links" : [
-                "<a href='#Mach Punch-1'>Mach Punch</a>, <a href='#Unarmored Defense-1'>Unarmored Defense</a>",
-                "---",
-                "<a href='#Ability Score Improvement-3'>Ability Score Improvement</a>, Subclass Feature",
-                "---",
-                "<a href='#Ability Score Improvement-5'>Ability Score Improvement</a>, <a href='#Immovable Object-5'>Immovable Object</a>",
-                "---",
-                "<a href='#Ability Score Improvement-7'>Ability Score Improvement</a>, <a href='#Improved Movement-7'>Improved Movement</a>",
-                "---",
-                "<a href='#Staggering Punch-9'>Staggering Punch</a>, Subclass Feature",
-                "---",
-                "<a href='#Ability Score Improvement-11'>Ability Score Improvement</a>, <a href='#Power Resilience-11'>Power Resilience</a>",
-                "---",
-                "<a href='#Ability Score Improvement-13'>Ability Score Improvement</a>, <a href='#Champion's Might-13'>Champion's Might</a>",
-                "---",
-                "<a href='#Ability Score Improvement-15'>Ability Score Improvement</a>, <a href='#Stalwart-15'>Stalwart</a>",
-                "---",
-                "<a href='#Shattering Punch-17'>Shattering Punch</a>, Subclass Feature",
-                "---",
-                "<a href='#Ability Score Improvement-19'>Ability Score Improvement</a>, <a href='#Apex Power-19'>Apex Power</a>",
-                "---"
-                ],
-            "class_feat_descriptions" : [
+            "class_feats" : [
                 {
-                    "name_str" : "Mach Punch",
+                    "name_str" : "Powercasting Milestone",
                     "level" : 1,
-                    "mechanics_str" : "Your unarmed strikes deal 1d6 + your Strength Modifier bludgeoning damage, and you can make an unarmed strike as a bonus action.  When you make an unarmed strike with advantage or an Ally is within melee range of your target, you can deal additional damage equal to a number of d6s equal to your level.  You can only deal this damage once per turn.  "
+                    "mechanics_str" : "See the Rules for Powercasting mechanics and Powers list.  <ul><li><b>Powers Known:</b>  Your total number of Powers known at each level is shown in the Powers Known column of the Class table.  You may not learn a Power of a level higher than your Max Power Level, and you may learn a Power at the same time you learn its prerequisite.  </li><br><li><b>Power Points:</b>  You have a number of Power Points based on your Class level as shown in the Power Points column of the Class table.  You expend these Power Points to cast Power Powers.  You regain all expended Power Points when you finish a long rest.  </li><br><li><b>Max Power Level:</b>  Many Powers can be overpowered, consuming more Power Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Power Level column of the Visionary table.  You may only cast Powers at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Powercasting Ability:</b>  Your Powercasting ability is Wisdom.  You use your Wisdom modifier whenever a Power refers to your Powercasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Power you cast and when making an attack roll with one.  </li><br><li><b>Power save DC</b> = 8 + your Proficiency Bonus + your Powercasting ability modifier.  </li><br><li><b>Power attack modifier</b> = your Proficiency Bonus + your Powercasting ability modifier.  </li></ul>"
                 },
                 {
-                    "name_str" : "Unarmored Defense",
+                    "name_str" : "Metapowers",
                     "level" : 1,
-                    "mechanics_str" : "Your Armor Class while unarmored is equal to 8 + your Constitution Modifier + your Strength Modifier.  If you are wearing armor that would include your Dexterity Modifier in your Armor Class calculation, you can substitute your Constitution Modifier instead of your Dexterity Modifier for that calculation.  "
+                    "mechanics_str" : "When you cast a Superpower, you can choose to add one of the following effects for this casting only:  <ul><li><b>Distant:</b>  The Superpower's range is doubled to a minimum of 30 feet.  </li><li><b>Extended:</b>  The Superpower's duration is tripled to a minimum of 1 hour.  </li><li><b>Quickened:</b>  The Superpower's casting time is quartered, to a minimum of 1 Action (Superpowers with a casting time of 1 Action are reduced to 1 Bonus Action)  </li><li><b>Twinned:</b>  A Superpower that only targets one creature also targets a second creature of your choice as normal.  </li></ul>You may only apply a Metapower to your Superpowers a number of times equal to your Proficiency Bonus between Long Rests.  "
+                },
+                {
+                    "name_str" : "Arcane Rejuvination",
+                    "level" : 2,
+                    "mechanics_str" : "Once per Long Rest after completing a Short Rest, you may regain a number of Power Points equal to half your Class level.  "
+                },
+                {
+                    "name_str" : "Subclass Feature",
+                    "level" : 2,
+                    "mechanics_str" : "You gain a subclass as detailed at the bottom of this page.  <br><br>Each subclass offers a Sustainable at this level, and an additional Sustainable at levels 8, and 16.  "
+                },
+                {
+                    "name_str" : "Powercasting Milestone",
+                    "level" : 3
                 },
                 {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 3,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                    "level" : 4,
+                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  <br><br>You gain this feature again at levels 8, 12, 16, and 19.  "
+                },
+                {
+                    "name_str" : "Supernatural Inspiration",
+                    "level" : 4
+                },
+                {
+                    "name_str" : "Powercasting Milestone",
+                    "level" : 5
+                },
+                {
+                    "name_str" : "Summon Familiar",
+                    "level" : 6,
+                    "mechanics_str" : "You gain the service of a Familiar, a bounded magical spirit manifest in physical form.  You may summon your Familiar via a Short Rest.  When the Familiar is reduced to zero hit points, it is destroyed, and can then be summoned again.  The Familiar can take one of three forms, Land, Sea, or Air.  You control the Familiar in and out of combat, as you are spiritually linked and can perceive through yours and the Familiar's senses simultaneously.  The Familiar has the following attributes:  <ul><li><b>Size:</b>  The Familiar is considered Tiny.  </li><li><b>Armor Class:</b>  The Familiar has an Armor Class equal to 10 plus your Proficiency Bonus.  The Familiar uses your stats for Saving Throws and Skill Checks.  </li><li><b>Speed (Land):</b>  The Familiar has a Walking Speed of 40 feet, and a Swimming Speed of 20.  The Familiar gains +2 AC.  </li><li><b>Speed (Sea):</b>  The Familiar has a Walking Speed of 20 feet, and a Swimming Speed of 40.  The Familiar can breathe normally underwater.  </li><li><b>Speed (Air):</b>  The Familiar has a Walking Speed of 20 feet, and Flying Speed of 40.  The Familar can breathe normally at high altitude.  </li><li><b>Hit Points:</b>  The Familiar has a number of Hit Points equal to your Wisdom Modifier.  </li><li><b>Actions:</b>  The Familiar may take any standard Action other than Attack, granted it is capable of doing so.  </li></ul>At level 10, the The Familiar's movement does not provoke Opportunity Attacks.  At level 14, the Familiar may take the Hinder Action, which has a range of Touch, to impose disadvantage on one Saving Throw.  At level 18, the Familiar grants Expertise to any Intelligence based check in addition to Advantage when taking the Help Action.  "
+                },
+                {
+                    "name_str" : "Planar Abjuration",
+                    "level" : 6,
+                    "mechanics_str" : "As an Action, you may force any number of Fiends, Celestials, Aberrations, Undead, and Extraterrestrials within 30 feet of you to make a Charisma Saving Throw against your Powercasting DC.  On a success, they take Incinerating, Cryogenic, or Corrosive damage (your choice for each target) equal to your level.  On a failure, they suffer the damage and have Disadvantage on all Attack rolls, Saving Throws, and Ability Checks for one minute.  <br><br>The range of this feature increases at level 10 (60 feet), level 14 (100 feet), and level 18 (150 feet).  "
+                },
+                {
+                    "name_str" : "Powercasting Milestone",
+                    "level" : 7
                 },
                 {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 5,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                    "level" : 8
                 },
                 {
-                    "name_str" : "Immovable Object",
-                    "level" : 5,
-                    "mechanics_str" : "When you are hit by an attack or forcibly moved against your will, you can use your reaction to halve the attack’s damage against you and avoid being moved.  "
+                    "name_str" : "Subclass Feature",
+                    "level" : 8
                 },
                 {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 7,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                    "name_str" : "Powercasting Milestone",
+                    "level" : 9
                 },
                 {
-                    "name_str" : "Improved Movement",
-                    "level" : 7,
-                    "mechanics_str" : "Your movement speeds increase by a number of feet equal to your Proficiency Bonus multiplied by 5 while you aren't wearing Heavy Armor.  "
+                    "name_str" : "Summon Familiar",
+                    "level" : 10
                 },
                 {
-                    "name_str" : "Staggering Punch",
-                    "level" : 9,
-                    "mechanics_str" : "When you deal Mach Punch damage, the target cannot take reactions until the start of your next turn.  "
+                    "name_str" : "Planar Abjuration",
+                    "level" : 10
                 },
                 {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 11,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
-                },
-                {
-                    "name_str" : "Power Resilience",
-                    "level" : 11,
-                    "mechanics_str" : "You have advantage on all saves against Superpower based effects.  In addition, when you make a saving throw against a Superpower based effect to avoid damage, you take no damage if you succeed and only half damage if you fail.  "
+                    "name_str" : "Powercasting Milestone",
+                    "level" : 11
                 },
                 {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 13,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                    "level" : 12
                 },
                 {
-                    "name_str" : "Champion's Might",
-                    "level" : 13,
-                    "mechanics_str" : "If your total for a Strength check or save is less than your Strength score, you may treat the result as equal to your Strength score.  "
+                    "name_str" : "Supernatural Inspiration",
+                    "level" : 12
+                },
+                {
+                    "name_str" : "Powercasting Milestone",
+                    "level" : 13
+                },
+                {
+                    "name_str" : "Summon Familiar",
+                    "level" : 14
+                },
+                {
+                    "name_str" : "Planar Abjuration",
+                    "level" : 14
+                },
+                {
+                    "name_str" : "Powercasting Milestone",
+                    "level" : 15
                 },
                 {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 15,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                    "level" : 16
                 },
                 {
-                    "name_str" : "Stalwart",
-                    "level" : 15,
-                    "mechanics_str" : "No attack roll has advantage against you while you are not incapacitated.  "
+                    "name_str" : "Subclass Feature",
+                    "level" : 16
                 },
                 {
-                    "name_str" : "Shattering Punch",
-                    "level" : 17,
-                    "mechanics_str" : "When you deal Mach Punch damage, the target must make a Constitution saving throw against your Strength DC.  On a failure, the target is knocked Prone and Stunned until the start of their next turn.  "
+                    "name_str" : "Powercasting Milestone",
+                    "level" : 17
+                },
+                {
+                    "name_str" : "Summon Familiar",
+                    "level" : 18
+                },
+                {
+                    "name_str" : "Planar Abjuration",
+                    "level" : 18
                 },
                 {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 19,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can’t increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                    "level" : 19
                 },
                 {
-                    "name_str" : "Apex Power",
-                    "level" : 19,
-                    "mechanics_str" : "Your Strength and Constitution scores and their maximums each increase by four.  "
+                    "name_str" : "Supernatural Inspiration",
+                    "level" : 19
+                },
+                {
+                    "name_str" : "Partial Omnipotence",
+                    "level" : 20,
+                    "mechanics_str" : "As a Reaction, you may cast any one Archmage Power, requiring no components.  Alternatively, you may choose to entirely negate one Power/Technology/Superpower based effect that already exists or is being cast.  After taking this Reaction, you must wait until six Long Rests have been completed before using it again.  "
+                }
+            ],
+
+            "subclass_tech_name" : "Magiteknician",
+            "subclass_tech_img" : "/_SiteResources/Images/noun-aztec-runes-98153.png",
+            "subclass_tech_description" : "Combining arcane power with technological knowledge, the Magiteknician carves out a unique niche where science and magic collide.  ",
+            "subclass_tech_feats" : [
+                {
+                    "name_str" : "Integrated Tech",
+                    "level" : 2,
+                    "mechanics_str" : "You gain one sustained Tech from the sustained Tech list. You may also swap one previously gained sustained Tech for another that you qualify for.  "
+                },
+                {
+                    "name_str" : "Improved Tech",
+                    "level" : 8,
+                    "mechanics_str" : "You gain one sustained Tech from the sustained Tech list. You may also swap one previously gained sustained Tech for another that you qualify for.  "
+                },
+                {
+                    "name_str" : "Superior Tech",
+                    "level" : 16,
+                    "mechanics_str" : "You gain one sustained Tech from the sustained Tech list. You may also swap one previously gained sustained Tech for another that you qualify for.  "
+                }
+            ],
+
+            "subclass_power_name" : "Psioneothist",
+            "subclass_power_img" : "/_SiteResources/Images/noun-illuminati-1224008.png",
+            "subclass_power_description" : "With a natural set of superhuman abilities, the Psioneothist exerts a more fine tuned control over their magical abilities.  ",
+            "subclass_power_feats" : [
+                {
+                    "name_str" : "Integrated Power",
+                    "level" : 2,
+                    "mechanics_str" : "You gain one enhancing Power from the enhancing Power list.  You may also swap one previously gained enhancing Power for another that you qualify for.  "
+                },
+                {
+                    "name_str" : "Improved Power",
+                    "level" : 8,
+                    "mechanics_str" : "You gain one enhancing Power from the enhancing Power list.  You may also swap one previously gained enhancing Power for another that you qualify for.  "
+                },
+                {
+                    "name_str" : "Superior Power",
+                    "level" : 16,
+                    "mechanics_str" : "You gain one enhancing Power from the enhancing Power list.  You may also swap one previously gained enhancing Power for another that you qualify for.  "
+                }
+            ],
+            
+            "subclass_magic_name" : "Arcanoblate",
+            "subclass_magic_img" : "/_SiteResources/Images/noun-spellbook-2551263.png",
+            "subclass_magic_description" : "Devoted to the practice and study of magic, philosophy, and religion, the Arcanoblate attains a higher spiritual connection to the nature of magic itself.  ",
+            "subclass_magic_feats" : [
+                {
+                    "name_str" : "Integrated Magic",
+                    "level" : 2,
+                    "mechanics_str" : "You gain one enduring Boon from the enduring Boon list.  You may also swap one previously gained enduring Boon for another that you qualify for.  "
+                },
+                {
+                    "name_str" : "Improved Magic",
+                    "level" : 8,
+                    "mechanics_str" : "You gain one enduring Boon from the enduring Boon list.  You may also swap one previously gained enduring Boon for another that you qualify for.  "
+                },
+                {
+                    "name_str" : "Superior Magic",
+                    "level" : 16,
+                    "mechanics_str" : "You gain one enduring Boon from the enduring Boon list.  You may also swap one previously gained enduring Boon for another that you qualify for.  "
                 }
             ]
         },
