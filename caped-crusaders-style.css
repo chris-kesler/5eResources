@@ -395,14 +395,14 @@ span {
 .ClassTable tr th, .WealthTable tr th {
   background-color: rgb(150,150,150);
   color: rgb(25,25,25);
-  font-size: small;
+  font-size: medium;
   text-align: left;
 }
 
 .ClassTable tr td, .WealthTable tr td {
   background-color: rgb(200,200,200);
   color: rgb(25,25,25);
-  font-size: small;
+  font-size: medium;
   text-align: left;
 }
 
