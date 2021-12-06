@@ -4,6 +4,7 @@
             "name_str" : "Visionary",
             "page_url" : "visionary.html",
             "class_img" : "/_SiteResources/Images/noun_robotic hand_2838670.png",
+            "class_img_credit" : "---",
             "description_short_str" : "An armored sentinel wielding technology beyond the cutting edge.  ",
             "description_long_str" : "Armed with the most advanced arsenal of devices and weapons of the era, the Visionary is a durable and versatile Primary Techcaster who contributes to combat and excels at utility.  ",
 
@@ -169,6 +170,7 @@
 
             "subclass_tech_name" : "Virtuoso",
             "subclass_tech_img" : "/_SiteResources/Images/noun_Science_4037086.png",
+            "subclass_tech_img_credit" : "---",
             "subclass_tech_description" : "A paragon of invention and ingenuity, the Virtuoso has created and incorporated a truly sustainable energy source. This energy source grants the Virtuoso several at-will Technologies and capabilities, such as flight. The Virtuoso can also adapt other suits of Technological Armor to fit their needs.  ",
             "subclass_tech_feats" : [
                 {
@@ -190,6 +192,7 @@
 
             "subclass_power_name" : "Magnate",
             "subclass_power_img" : "/_SiteResources/Images/noun_cyborg_506898.png",
+            "subclass_power_img_credit" : "---",
             "subclass_power_description" : "Some superpowers are far more subtle than most, and the Magnate is a prime example. Whether relying on magnetic manipulation, electrokinesis, or cybernetics, you stand out as a Visionary with precise control over your Technology. Having a direct connection between your nervous system and your devices grants you an innate control over your Visionary Armor. The Magnate can also adapt other suits of Metapower Armor to fit their needs.  ",
             "subclass_power_feats" : [
                 {
@@ -211,6 +214,7 @@
             
             "subclass_magic_name" : "Glyphologist",
             "subclass_magic_img" : "/_SiteResources/Images/noun_Pyramid_1553793.png",
+            "subclass_magic_img_credit" : "---",
             "subclass_magic_description" : "A scholar of ancient knowledge and mythology, the Glyphologist combines modern science with ancient magical power sources. Whether it be inscribing runes, compressing motes of power, or integrating powerful artifacts, the Glyphologist binds themselves and their armor together on a supernatural level. While not a spellcaster, the Glyphologist still benefits from magical boons that manifest in a variety of ways. The Glyphologist can also adapt other suits of Magical Armor to fit their needs.  ",
             "subclass_magic_feats" : [
                 {
@@ -235,6 +239,7 @@
             "name_str" : "Agent",
             "page_url" : "",
             "class_img" : "",
+            "class_img_credit" : "---",
             "description_short_str" : "A sharpshooting expert who surveys and strikes key enemy forces.  ",
             "description_long_str" : "Armed with the most advanced arsenal of devices and weapons of the era, the Visionary is a durable and versatile Primary Techcaster who contributes to combat and excels at utility.  ",
 
@@ -375,12 +380,13 @@
         {
             "name_str" : "Prowler",
             "page_url" : "prowler.html",
-            "class_img" : "/_SiteResources/Images/noun-hawk-3575279.png",
+            "class_img" : "/_SiteResources/Images/Prowler.png",
+            "class_img_credit" : "Hawk by Hey Rabbit from NounProject.com",
             "description_short_str" : "A skilled predator that employs a wide variety of techniques to maintain the upper hand.  ",
-            "description_long_str" : "Reshaping themselves to fit the needs of the situation, the Metamorph is a highly adaptive-often considered critical-component of enhanced team groups.   ",
+            "description_long_str" : "Driven by an unwavering vendetta, the Prowler never settles for anything less than perfection in their own performance in order to become a paragon of human capability.  ",
 
-            "class_type" : "Secondary Power Martial",
-            "primary_ability" : "Con",
+            "class_type" : "Secondary Tech Martial",
+            "primary_ability" : "Dex",
             
             "hit_die_int" : 10,
             "hit_die_average_int" : 7,
@@ -435,7 +441,7 @@
                 {
                     "name_str" : "Sneak Attack",
                     "level" : 1,
-                    "mechanics_str" : "When you make an Attack against a target with advantage, while within Dim Light or Darkness, or while an Ally is within 5 feet of the target, you may inflict Sneak Attack upon a hit.  When inflicting Sneak Attack, you deal additional damage equal to a number of d6s equal to your Proficiency Bonus.  Until the start of your next turn, any creature (other than you) who Attacks a target that suffered your Sneak Attack damage gains a bonus to the Attack roll equal to the number of Sneak Attacks the target suffered.  <br><br>At level 14, the bonus granted to other creatures attacking the target of your Sneak Attack also applies to Damage rolls.  "
+                    "mechanics_str" : "When you make an Attack using Dexterity against a target with advantage, while within Dim Light or Darkness, or while an Ally is within 5 feet of the target, you may inflict Sneak Attack upon a hit.  When inflicting Sneak Attack, you deal additional damage equal to a number of d6s equal to your Proficiency Bonus.  Until the start of your next turn, any creature (other than you) who Attacks a target that suffered your Sneak Attack damage gains a bonus to the Attack roll equal to the number of Sneak Attacks the target suffered.  For example, if you deal Sneak Attack to a target twice in one turn, all creatures gain +2 to their Attack rolls against that target.  If on your next turn you deal Sneak Attack to two separate targets, all creatures gain +1 to their Attack rolls against either.  <br><br>At level 14, the bonus granted to other creatures attacking the target of your Sneak Attack also applies to Damage rolls.  "
                 },
                 
                 {
@@ -500,7 +506,7 @@
                 {
                     "name_str" : "Interrogation",
                     "level" : 5,
-                    "mechanics_str" : "You can extract information from a target (granted you have valid methods of conveying information to each other).  You may now always use Intelligence for Intimidation checks.  As a Bonus Action, you may make a contested Intimidation check against a target's Wisdom Saving Throw.  On a success, the target gives you only enough information to save their own skin (which might be everything they know if the threat is sufficient), and is immune to this feature for 24 hours.  On a failure, the target is considered Frightened and Compliant, willingly offering all the information they have that might be remotely useful regarding the topic of inquiry, and you become aware of any Vulnerabilities the target might have.  "
+                    "mechanics_str" : "You can extract information from a target (granted you have valid methods of conveying information to each other).  Select one skill that is Intelligence, Wisdom, or Charisma based.  That skill can always use your subclass casting ability instead of the original ability.  As a Bonus Action, you may make a contested Intimidation, Insight, or Investigation check against a target's Wisdom Saving Throw.  On a success, the target gives you only enough information to save their own skin (which might be everything they know if the threat is sufficient), and is immune to this feature for 24 hours.  On a failure, the target is considered Frightened and Compliant, willingly offering all the information they have that might be remotely useful regarding the topic of inquiry, and you become aware of any Vulnerabilities the target might have.  "
                 },
                 {
                     "name_str" : "Evasion",
@@ -510,7 +516,7 @@
                 {
                     "name_str" : "Precision Strike",
                     "level" : 11,
-                    "mechanics_str" : "When you make an Attack, you may gain a bonus to the Attack roll equal to the modifiers applicable to the Damage roll by forgoing those modifiers on the Damage roll.  For example, if your Attack has an Attack roll of 1d20 + 7 and a Damage roll of 2d4 + 4, you could apply this feature to have an Attack roll of 1d20 + 7 + 4 and a Damage roll of 2d4 (this may seem like an unwise tradeoff, but it does help trigger Sneak Attack more often).  If this feature causes an Attack that hits to deal zero or negative damage, the Attack is considered a miss.  "
+                    "mechanics_str" : "When you make an Attack, you may gain a bonus to the Attack roll equal to the modifiers applicable to the Damage roll by forgoing those modifiers on the Damage roll.  For example, if your Attack has an Attack roll of 1d20 + 7 and a Damage roll of 2d4 + 4, you could apply this feature to have an Attack roll of 1d20 + 7 + 4 and a Damage roll of 2d4 (this may seem like an unwise tradeoff, but it does help activate Sneak Attack more often).  "
                 },
                 {
                     "name_str" : "Sneak Attack",
@@ -528,81 +534,39 @@
                 }
             ],
 
-            "subclass_tech_name" : "Replicatist",
-            "subclass_tech_img" : "/_SiteResources/Images/noun_cloning_3650004.png",
-            "subclass_tech_description" : "By developing their natural shapechanging ability to include (perhaps even specialize in) the adaptation of the nervous system, the Replicatist is able to mimic the appearance and behaviors of other sapiens in a nearly flawless manner.  ",
+            "subclass_tech_name" : "Exemplar",
+            "subclass_tech_img" : "/_SiteResources/Images/Prowler-Exemplar.png",
+            "subclass_tech_img_credit" : "Talons by Zach Bogart from NounProject.com",
+            "subclass_tech_description" : "A being of sheer will, the Exemplar relentlessly applies the most advanced techniques to strike fear into the hearts of average mooks and command respect as a mortal in a world of demigods.  ",
             "subclass_tech_feats" : [
                 {
                     "name_str" : "Techcasting",
                     "level" : 2,
-                    "mechanics_str" : "See the Rules for Techcasting mechanics and Technologies list.  <ul><li><b>Technologies Known:</b>  You learn Technologies of your choice as shown in the Consumables Known column of the class table.  You may not learn a Technology of a level higher than your Max Consumable Level, and you may learn a Technology at the same time you learn its prerequisite.  </li><br><li><b>Tech Points:</b>  You have a number of Tech Points as shown in the Consumable Points column of the class table.  You expend these Tech Points to cast Technologies.  You regain all expended Tech Points when you finish a long rest.  </li><br><li><b>Max Tech Level:</b>  Many Technologies can be overpowered, consuming more Tech Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Technologies at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Techcasting Ability:</b>  Your Techcasting ability is Charisma.  You use your Charisma modifier whenever a Technology refers to your Techcasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Technology you cast and when making an attack roll with one.  </li><br><li><b>Technology save DC</b> = 8 + your proficiency bonus + your Techcasting ability modifier.  </li><br><li><b>Technology attack modifier</b> = your proficiency bonus + your Techcasting ability modifier.  </li></ul>"
-                },
-                {
-                    "name_str" : "Sapien Form",
-                    "level" : 7,
-                    "mechanics_str" : "When you Manifest Form, you may choose to take on the physical appearance of any sapien creature you choose.  You are able to manifest clothing and other worn items, but not items to be held.  You may take on an appearance derived from your imagination, or imitate a sapien you have seen.  If you imitate a sapien you have seen, your form is indistinuishable from the original.  You have advantage on all Charisma checks made to pass yourself off as this new identity, and may choose any Charisma based skill for the Manifest Form's Expertise feature.  "
-                },
-                {
-                    "name_str" : "Neural Download",
-                    "level" : 13,
-                    "mechanics_str" : "You may use an Action to force a creature you can touch to make an Intelligence Saving Throw, the DC of which is equal to 8 + your Con Mod + your Prof Bonus.  On a success, the creature is unaffected.  On a failure, you learn the information necessary to pass yourself off as this creature flawlessly (no Deception check required), along with any important knowledge the creature might have, such as passwords or the location of a secret base.  You may use this feature once per Long Rest.  "
-                },
-                {
-                    "name_str" : "Doppelganger",
-                    "level" : 19,
-                    "mechanics_str" : "You can modify your appearance as described in Sapien Form feature at will.  You do not gain any of the other benefits unless you use your Manifest Form feature.  "
+                    "mechanics_str" : "See the Rules for Techcasting mechanics and Technologies list.  <ul><li><b>Technologies Known:</b>  You learn Technologies of your choice as shown in the Consumables Known column of the class table.  You may not learn a Technology of a level higher than your Max Consumable Level, and you may learn a Technology at the same time you learn its prerequisite.  </li><br><li><b>Tech Points:</b>  You have a number of Tech Points as shown in the Consumable Points column of the class table.  You expend these Tech Points to cast Technologies.  You regain all expended Tech Points when you finish a long rest.  </li><br><li><b>Max Tech Level:</b>  Many Technologies can be overpowered, consuming more Tech Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Technologies at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Techcasting Ability:</b>  Your Techcasting ability is Intelligence.  You use your Intelligence modifier whenever a Technology refers to your Techcasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Technology you cast and when making an attack roll with one.  </li><br><li><b>Technology save DC</b> = 8 + your proficiency bonus + your Techcasting ability modifier.  </li><br><li><b>Technology attack modifier</b> = your proficiency bonus + your Techcasting ability modifier.  </li></ul>"
                 }
             ],
 
-            "subclass_power_name" : "Archeophenix",
-            "subclass_power_img" : "/_SiteResources/Images/noun_phoenix_2103725.png",
-            "subclass_power_description" : "Whether sent as a savior or cursed with a terrible affliction, the Phoenix can manifest a singular powerful magical form that evokes an awe remiscent of that in the oldest of mythos.  ",
+            "subclass_power_name" : "Paladin",
+            "subclass_power_img" : "/_SiteResources/Images/Prowler-Paladin.png",
+            "subclass_power_img_credit" : "Blade by Manaqib S from NounProject.com",
+            "subclass_power_description" : "Having been seen as worthy by an extraplanar entity, the Paladin willingly employs magical abilities as long as they are a benefit to their vendetta.  ",
             "subclass_power_feats" : [
                 {
                     "name_str" : "Spellcasting",
                     "level" : 2,
-                    "mechanics_str" : "See the Rules for Spellcasting mechanics and Spells list.  <ul><li><b>Spells Known:</b>  You learn Spells of your choice as shown in the Consumables Known column of the class table.  You may not learn a Spell of a level higher than your Max Consumable Level, and you may learn a Spell at the same time you learn its prerequisite.  </li><br><li><b>Spell Points:</b>  You have a number of Spell Points as shown in the Consumable Points column of the class table.  You expend these Spell Points to cast Spells.  You regain all expended Spell Points when you finish a long rest.  </li><br><li><b>Max Spell Level:</b>  Many Spells can be overpowered, consuming more Spell Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Spells at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Spellcasting Ability:</b>  Your Spellcasting ability is Intelligence.  You use your Intelligence modifier whenever a Spell refers to your Spellcasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Spell you cast and when making an attack roll with one.  </li><br><li><b>Spell save DC</b> = 8 + your proficiency bonus + your Spellcasting ability modifier.  </li><br><li><b>Spell attack modifier</b> = your proficiency bonus + your Spellcasting ability modifier.  </li></ul>"
-                },
-                {
-                    "name_str" : "Divine Form",
-                    "level" : 7,
-                    "mechanics_str" : "When you Manifest Form, you may choose to take on the form of a magical flying creature such as a Phoenix, Dragon, Demon, or Angel.  When you Manifest Form, you may take on any of these attributes in addition to the normal effects:  <ul><li><b>Radiance:</b>  Your Unarmed Strikes have a range of 20/60, and can deal Incinerating, Cryogenic, or Corrosive damage.  </li><li><b>Speed:</b>  You gain a Flying Speed equal to your Walking Speed + (Prof Bonus * 5).  </li><li><b>Reciprocity:</b>  When you use your Healing Factor Bonus Action, rather than heal yourself, you can instead choose to heal or harm a target within 10 feet of you for an equal amount.  If you choose to harm, the damage takes effect without an Attack roll or Saving Throw, and has no damage type (cannot be resisted or negated, granted the target is capable of taking damage in the first place).  </li><li><b>Transcendence:</b>  You may choose any Intelligence based skill for the Manifest Form's Expertise feature.  </li>"
-                },
-                {
-                    "name_str" : "Word of Power",
-                    "level" : 13,
-                    "mechanics_str" : "You can understand all languages, and all creatures capable of understanding a language can understand you.  As a Bonus Action, you may force a target within 120 feet of you that can hear you to make a Charisma Saving Throw.  On a success, the creature has disadvantage on Attacks against you until the end of your next turn and is otherwise immune to this feature until the end of your next Long Rest.  On a failure, the creature is Frightened of you for one minute.  "
-                },
-                {
-                    "name_str" : "Divine Strikes",
-                    "level" : 19,
-                    "mechanics_str" : "Your Divine Form Unarmed Strikes now have a range of 40/120 and can deal Psionic damage.  In addition, your Reciprocity feature heals / harms double the standard amount.  "
+                    "mechanics_str" : "See the Rules for Spellcasting mechanics and Spells list.  <ul><li><b>Spells Known:</b>  You learn Spells of your choice as shown in the Consumables Known column of the class table.  You may not learn a Spell of a level higher than your Max Consumable Level, and you may learn a Spell at the same time you learn its prerequisite.  </li><br><li><b>Spell Points:</b>  You have a number of Spell Points as shown in the Consumable Points column of the class table.  You expend these Spell Points to cast Spells.  You regain all expended Spell Points when you finish a long rest.  </li><br><li><b>Max Spell Level:</b>  Many Spells can be overpowered, consuming more Spell Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Spells at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Spellcasting Ability:</b>  Your Spellcasting ability is Wisdom.  You use your Wisdom modifier whenever a Spell refers to your Spellcasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Spell you cast and when making an attack roll with one.  </li><br><li><b>Spell save DC</b> = 8 + your proficiency bonus + your Spellcasting ability modifier.  </li><br><li><b>Spell attack modifier</b> = your proficiency bonus + your Spellcasting ability modifier.  </li></ul>"
                 }
             ],
             
-            "subclass_magic_name" : "Darwinian",
-            "subclass_magic_img" : "/_SiteResources/Images/noun_Evolution_4274906.png",
-            "subclass_magic_description" : "Possessing a gene that rapidly accelerates the process of evolution through individual and instantaneous mutations, the Darwinian is among the most intimidating and difficult beings to kill.  ",
+            "subclass_magic_name" : "Monarch",
+            "subclass_magic_img" : "/_SiteResources/Images/Prowler-Monarch.png",
+            "subclass_magic_img_credit" : "Crest by Amethyst Studio from NounProject.com",
+            "subclass_magic_description" : "Coming from a long line of enhanced warriors, the Monarch channels innate powers to better carry out their crusade.  ",
             "subclass_magic_feats" : [
                 {
                     "name_str" : "Powercasting",
                     "level" : 2,
-                    "mechanics_str" : "See the Rules for Powercasting mechanics and Superpowers list.  <ul><li><b>Superpowers Known:</b>  You learn Superpowers of your choice as shown in the Consumables Known column of the class table.  You may not learn a Superpower of a level higher than your Max Consumable Level, and you may learn a Superpower at the same time you learn its prerequisite.  </li><br><li><b>Superpower Points:</b>  You have a number of Superpower Points as shown in the Consumable Points column of the class table.  You expend these Superpower Points to cast Superpowers.  You regain all expended Superpower Points when you finish a long rest.  </li><br><li><b>Max Superpower Level:</b>  Many Superpowers can be overpowered, consuming more Superpower Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Superpowers at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Powercasting Ability:</b>  Your Powercasting ability is Wisdom.  You use your Wisdom modifier whenever a Superpower refers to your Powercasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Superpower you cast and when making an attack roll with one.  </li><br><li><b>Superpower save DC</b> = 8 + your proficiency bonus + your Powercasting ability modifier.  </li><br><li><b>Superpower attack modifier</b> = your proficiency bonus + your Powercasting ability modifier.  </li></ul>"
-                },
-                {
-                    "name_str" : "Beast Form",
-                    "level" : 7,
-                    "mechanics_str" : "When you Manifest Form, you may choose to take on the physical appearance of a sapien animal hybrid such as a Werewolf, Harpy, or other aesthetic combination of your choice.  When you Manifest Form, you may take on any of these attributes in addition to the normal effects:  <ul><li><b>Unarmed Strikes:</b>  Your Unarmed Strikes deal d6s rather than d4s, and are considered Adamantine.  </li><li><b>Aquatic:</b>  You gain a Swimming Speed equal to your Walking Speed and can breathe normally underwater.  </li><li><b>Pounce:</b>  You may use a Bonus Action to leap through the air a number of feet equal to Prof * 5.  </li><li><b>Instinctual:</b>  You may choose any Wisdom based skill for the Manifest Form's Expertise feature.  </li>"
-                },
-                {
-                    "name_str" : "Relentless Healing",
-                    "level" : 13,
-                    "mechanics_str" : "Your Healing Factor remains active while you have less than your maximum Hit Points.  In addition, you are able to regenerate any missing body parts given sufficient time.  Regenerating a hand or foot takes five minutes, while an entire arm or leg takes an hour.  The GM will determine the amount of time needed for regeneration based on the specific injury using these guidelines.  "
-                },
-                {
-                    "name_str" : "Predator",
-                    "level" : 19,
-                    "mechanics_str" : "Your Beast Form Unarmed Strikes deal d8s instead of d6s.  In addition, You may make an Attack as part of your Beast Form's Pounce Bonus Action.  "
+                    "mechanics_str" : "See the Rules for Powercasting mechanics and Superpowers list.  <ul><li><b>Superpowers Known:</b>  You learn Superpowers of your choice as shown in the Consumables Known column of the class table.  You may not learn a Superpower of a level higher than your Max Consumable Level, and you may learn a Superpower at the same time you learn its prerequisite.  </li><br><li><b>Superpower Points:</b>  You have a number of Superpower Points as shown in the Consumable Points column of the class table.  You expend these Superpower Points to cast Superpowers.  You regain all expended Superpower Points when you finish a long rest.  </li><br><li><b>Max Superpower Level:</b>  Many Superpowers can be overpowered, consuming more Superpower Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Superpowers at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Powercasting Ability:</b>  Your Powercasting ability is Charisma.  You use your Charisma modifier whenever a Superpower refers to your Powercasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Superpower you cast and when making an attack roll with one.  </li><br><li><b>Superpower save DC</b> = 8 + your proficiency bonus + your Powercasting ability modifier.  </li><br><li><b>Superpower attack modifier</b> = your proficiency bonus + your Powercasting ability modifier.  </li></ul>"
                 }
             ]
         },
@@ -611,6 +575,7 @@
             "name_str" : "Soldier",
             "page_url" : "soldier.html",
             "class_img" : "/_SiteResources/Images/noun_Military_516827.png",
+            "class_img_credit" : "---",
             "description_short_str" : "A warrior who relies on martial prowess and tactical skill to lead small units.  ",
             "description_long_str" : "After countless hours of training to be the perfect weapon, the Soldier is capable of waging war on the frontline and organizing allies simultaneously.  ",
 
@@ -727,6 +692,7 @@
 
             "subclass_tech_name" : "Ronin",
             "subclass_tech_img" : "/_SiteResources/Images/noun_Martial Arts_4018735.png",
+            "subclass_tech_img_credit" : "---",
             "subclass_tech_description" : "HoningBlending instinctive skills with expendable gadgets, the Ronin is a capable and unpredictable combatant.  ",
             "subclass_tech_feats" : [
                 {
@@ -748,6 +714,7 @@
 
             "subclass_power_name" : "Chosen",
             "subclass_power_img" : "/_SiteResources/Images/noun_skill thunder fist_2360261.png",
+            "subclass_power_img_credit" : "---",
             "subclass_power_description" : "Becoming enhanced at the hands of experimentation, the Patriot leads by example of self sacrifice.  ",
             "subclass_power_feats" : [
                 {
@@ -769,6 +736,7 @@
             
             "subclass_magic_name" : "Meteor",
             "subclass_magic_img" : "/_SiteResources/Images/noun_Fist_1236844.png",
+            "subclass_magic_img_credit" : "---",
             "subclass_magic_description" : "Becoming enhanced at the hands of experimentation, the Patriot leads by example of self sacrifice.  ",
             "subclass_magic_feats" : [
                 {
@@ -793,6 +761,7 @@
             "name_str" : "Archmage",
             "page_url" : "archmage.html",
             "class_img" : "/_SiteResources/Images/noun_runes_2063263.png",
+            "class_img_credit" : "---",
             "description_short_str" : "A master of magic with the largest selection of casting options at any time.  ",
             "description_long_str" : "Having studied the nature of supernatural domains of energy, the Archmage is capable of employing various magical effects and religious rituals.  ",
 
@@ -956,6 +925,7 @@
 
             "subclass_tech_name" : "Magiteknician",
             "subclass_tech_img" : "/_SiteResources/Images/noun-aztec-runes-98153.png",
+            "subclass_tech_img_credit" : "---",
             "subclass_tech_description" : "Combining arcane power with technological knowledge, the Magiteknician carves out a unique niche where science and magic collide.  ",
             "subclass_tech_feats" : [
                 {
@@ -977,6 +947,7 @@
 
             "subclass_power_name" : "Psioneothist",
             "subclass_power_img" : "/_SiteResources/Images/noun-illuminati-1224008.png",
+            "subclass_power_img_credit" : "---",
             "subclass_power_description" : "With a natural set of superhuman abilities, the Psioneothist exerts a more fine tuned control over their magical abilities.  ",
             "subclass_power_feats" : [
                 {
@@ -998,6 +969,7 @@
             
             "subclass_magic_name" : "Arcanoblate",
             "subclass_magic_img" : "/_SiteResources/Images/noun-spellbook-2551263.png",
+            "subclass_magic_img_credit" : "---",
             "subclass_magic_description" : "Devoted to the practice and study of magic, philosophy, and religion, the Arcanoblate attains a higher spiritual connection to the nature of magic itself.  ",
             "subclass_magic_feats" : [
                 {
@@ -1022,6 +994,7 @@
             "name_str" : "Eldritian",
             "page_url" : "",
             "class_img" : "/_SiteResources/Images/noun_round shieldknot_2069911.png.",
+            "class_img_credit" : "---",
             "description_short_str" : "A competent spell caster that augments their own fighting ability.  ",
             "description_long_str" : "Blessed and bolstered by ancient magic, the Annointed perfectly balances destroying their enemies and protecting their allies.  ",
 
@@ -1163,6 +1136,7 @@
             "name_str" : "Magus",
             "page_url" : "",
             "class_img" : "",
+            "class_img_credit" : "---",
             "description_short_str" : "A versatile spell caster that excels at infiltration and deception.  ",
             "description_long_str" : "Blessed and bolstered by ancient magic, the Annointed perfectly balances destroying their enemies and protecting their allies.  ",
 
@@ -1304,6 +1278,7 @@
             "name_str" : "Annointed",
             "page_url" : "annointed.html",
             "class_img" : "/_SiteResources/Images/noun_Spartan_1510278.png",
+            "class_img_credit" : "---",
             "description_short_str" : "Magically imbued powerhouses who are often mistaken for Dynamos.  ",
             "description_long_str" : "Blessed and bolstered by ancient magic, the Annointed perfectly balances destroying their enemies and protecting their allies.  ",
 
@@ -1420,6 +1395,7 @@
 
             "subclass_tech_name" : "Adaptist",
             "subclass_tech_img" : "/_SiteResources/Images/noun_adapt_397976.png",
+            "subclass_tech_img_credit" : "---",
             "subclass_tech_description" : "Subclass Description",
             "subclass_tech_feats" : [
                 {
@@ -1441,6 +1417,7 @@
 
             "subclass_power_name" : "Supreme",
             "subclass_power_img" : "/_SiteResources/Images/noun_supreme_2897408.png",
+            "subclass_power_img_credit" : "---",
             "subclass_power_description" : "Subclass Description",
             "subclass_power_feats" : [
                 {
@@ -1462,6 +1439,7 @@
             
             "subclass_magic_name" : "Infused",
             "subclass_magic_img" : "/_SiteResources/Images/noun_demon_2194608.png",
+            "subclass_magic_img_credit" : "---",
             "subclass_magic_description" : "Subclass Description",
             "subclass_magic_feats" : [
                 {
@@ -1486,6 +1464,7 @@
             "name_str" : "Nova",
             "page_url" : "nova.html",
             "class_img" : "/_SiteResources/Images/noun-atom-3637340.png",
+            "class_img_credit" : "---",
             "description_short_str" : "Energy wielders that summon defensive fields and blast enemies alike.  ",
             "description_long_str" : "Possessing a massive reservoir of internalized energy, the Nova can unleash destructive beams and construct protective fields to manipulate the battlefield.  ",
 
@@ -1632,6 +1611,7 @@
 
             "subclass_tech_name" : "Galvanic",
             "subclass_tech_img" : "/_SiteResources/Images/noun-armor-3782893.png",
+            "subclass_tech_img_credit" : "---",
             "subclass_tech_description" : "By allowing some of their excess energy serve as a power source, the Galvanic is able to augment their abilities with ordinary modern technology that wouldn't be feasible due to power limitations under nearly any other circumstances.  ",
             "subclass_tech_feats" : [
                 {
@@ -1653,6 +1633,7 @@
 
             "subclass_power_name" : "Refractionist",
             "subclass_power_img" : "/_SiteResources/Images/noun-prism-362080.png",
+            "subclass_power_img_credit" : "---",
             "subclass_power_description" : "Possessing deeply rooted reserves of energy, the Refractionist has benefitted from long term physiological mutations to make good use of that energy.  ",
             "subclass_power_feats" : [
                 {
@@ -1674,6 +1655,7 @@
             
             "subclass_magic_name" : "Luminent",
             "subclass_magic_img" : "/_SiteResources/Images/noun-skill-magic-storm-blast-2360186.png",
+            "subclass_magic_img_credit" : "---",
             "subclass_magic_description" : "Having come across extraplanar forces in some manner, the Luminent has taken on powerful otherworldly attributes that draw on their natural power reserves.  ",
             "subclass_magic_feats" : [
                 {
@@ -1698,6 +1680,7 @@
             "name_str" : "Subvertist",
             "page_url" : "subvertist.html",
             "class_img" : "/_SiteResources/Images/noun_vortex_2920177.png",
+            "class_img_credit" : "---",
             "description_short_str" : "A movement focused master of misdirection who excels in battfield cleanup.  ",
             "description_long_str" : "With a razor sharp focus on mobility and agility, the Subvertist thrives when protecting civilians and distracting enemies.  ",
 
@@ -1926,6 +1909,7 @@
 
             "subclass_tech_name" : "Speedster",
             "subclass_tech_img" : "/_SiteResources/Images/noun_sprinter logo_2739704.png",
+            "subclass_tech_img_credit" : "---",
             "subclass_tech_description" : "Possessing unrivaled speed, the Speedster perceives and interacts with the battlefield on an entirely different level.  ",
             "subclass_tech_feats" : [
                 {
@@ -1952,6 +1936,7 @@
 
             "subclass_power_name" : "Egressor",
             "subclass_power_img" : "/_SiteResources/Images/noun_effect teleport_2360029.png",
+            "subclass_power_img_credit" : "---",
             "subclass_power_description" : "Able to transport themselves and others through spacetime, the Egressor possesses unrivalred individual mobility.  ",
             "subclass_power_feats" : [
                 {
@@ -1978,6 +1963,7 @@
             
             "subclass_magic_name" : "Portalist",
             "subclass_magic_img" : "/_SiteResources/Images/noun_teleport_4215351.png",
+            "subclass_magic_img_credit" : "---",
             "subclass_magic_description" : "The portalist is able to bridge different points in spacetime, allowing for unique ways to manipulate the battlfield.  ",
             "subclass_magic_feats" : [
                 {
@@ -2007,6 +1993,7 @@
             "name_str" : "Metamorph",
             "page_url" : "metamorph.html",
             "class_img" : "/_SiteResources/Images/noun_DNA_4398736.png",
+            "class_img_credit" : "---",
             "description_short_str" : "A versatile shapechanger that can specialize down several paths.  ",
             "description_long_str" : "Reshaping themselves to fit the needs of the situation, the Metamorph is a highly adaptive-often considered critical-component of enhanced team groups.   ",
 
@@ -2149,6 +2136,7 @@
 
             "subclass_tech_name" : "Replicatist",
             "subclass_tech_img" : "/_SiteResources/Images/noun_cloning_3650004.png",
+            "subclass_tech_img_credit" : "---",
             "subclass_tech_description" : "By developing their natural shapechanging ability to include (perhaps even specialize in) the adaptation of the nervous system, the Replicatist is able to mimic the appearance and behaviors of other sapiens in a nearly flawless manner.  ",
             "subclass_tech_feats" : [
                 {
@@ -2175,6 +2163,7 @@
 
             "subclass_power_name" : "Archeophenix",
             "subclass_power_img" : "/_SiteResources/Images/noun_phoenix_2103725.png",
+            "subclass_power_img_credit" : "---",
             "subclass_power_description" : "Whether sent as a savior or cursed with a terrible affliction, the Phoenix can manifest a singular powerful magical form that evokes an awe remiscent of that in the oldest of mythos.  ",
             "subclass_power_feats" : [
                 {
@@ -2201,6 +2190,7 @@
             
             "subclass_magic_name" : "Darwinian",
             "subclass_magic_img" : "/_SiteResources/Images/noun_Evolution_4274906.png",
+            "subclass_magic_img_credit" : "---",
             "subclass_magic_description" : "Possessing a gene that rapidly accelerates the process of evolution through individual and instantaneous mutations, the Darwinian is among the most intimidating and difficult beings to kill.  ",
             "subclass_magic_feats" : [
                 {
@@ -2211,7 +2201,7 @@
                 {
                     "name_str" : "Beast Form",
                     "level" : 7,
-                    "mechanics_str" : "When you Manifest Form, you may choose to take on the physical appearance of a sapien animal hybrid such as a Werewolf, Harpy, or other aesthetic combination of your choice.  When you Manifest Form, you may take on any of these attributes in addition to the normal effects:  <ul><li><b>Unarmed Strikes:</b>  Your Unarmed Strikes deal d6s rather than d4s, and are considered Adamantine.  </li><li><b>Aquatic:</b>  You gain a Swimming Speed equal to your Walking Speed and can breathe normally underwater.  </li><li><b>Pounce:</b>  You may use a Bonus Action to leap through the air a number of feet equal to Prof * 5.  </li><li><b>Instinctual:</b>  You may choose any Wisdom based skill for the Manifest Form's Expertise feature.  </li>"
+                    "mechanics_str" : "When you Manifest Form, you may choose to take on the physical appearance of a sapien animal hybrid such as a Werewolf, Harpy, or other aesthetic combination of your choice.  When you Manifest Form, you may take on any of these attributes in addition to the normal effects:  <ul><li><b>Unarmed Strikes:</b>  Your Unarmed Strikes deal d6s rather than d4s, and are considered Adamantine.  </li><li><b>Aquatic:</b>  You gain a Swimming Speed equal to your Walking Speed and can breathe normally underwater.  </li><li><b>Pounce:</b>  You may use a Bonus Action to leap through the air a number of feet equal to Prof * 5.  This punce does not count against your total movement.  </li><li><b>Instinctual:</b>  You may choose any Wisdom based skill for the Manifest Form's Expertise feature.  </li>"
                 },
                 {
                     "name_str" : "Relentless Healing",
@@ -2230,6 +2220,7 @@
             "name_str" : "Dynamo",
             "page_url" : "dynamo.html",
             "class_img" : "/_SiteResources/Images/noun_punch_1961742.png",
+            "class_img_credit" : "---",
             "description_short_str" : "Utter powerhouses that rely on brute force to destroy and protect.  ",
             "description_long_str" : "Wielding raw physical power, the Dynamo thrives when dealing damage and drawing fire away from allies.   ",
 
@@ -2357,6 +2348,7 @@
 
             "subclass_tech_name" : "Militant",
             "subclass_tech_img" : "/_SiteResources/Images/noun_Martial Arts_4018735.png",
+            "subclass_tech_img_credit" : "---",
             "subclass_tech_description" : "Honing their immense strength with training and discipline, the Militant balances their power with resourcefulness.  ",
             "subclass_tech_feats" : [
                 {
@@ -2378,6 +2370,7 @@
 
             "subclass_power_name" : "Chosen",
             "subclass_power_img" : "/_SiteResources/Images/noun_skill thunder fist_2360261.png",
+            "subclass_power_img_credit" : "---",
             "subclass_power_description" : "Harnessing energy that would devour mere mortals, the Chosen mightily bends magic to their will.  ",
             "subclass_power_feats" : [
                 {
@@ -2399,6 +2392,7 @@
             
             "subclass_magic_name" : "Meteor",
             "subclass_magic_img" : "/_SiteResources/Images/noun_Fist_1236844.png",
+            "subclass_magic_img_credit" : "---",
             "subclass_magic_description" : "Wielding power that registers on the stellar scale, the Meteor has the potential to be a force of unbridled destruction.  ",
             "subclass_magic_feats" : [
                 {

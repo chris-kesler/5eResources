@@ -22,6 +22,7 @@
             if (f.page_url == page) {
               document.getElementById("class-page-title").innerHTML = "Caped Crusaders: Classes > " + f.name_str;
               document.getElementById("class-page-image").src = f.class_img;
+              document.getElementById("class-page-image").alt = f.class_img_credit;
               document.getElementById("class-page-description").innerHTML = f.description_long_str;
               document.getElementById("class-features-intro").innerHTML = "As a "  + f.name_str + ", you gain the following Class Features.";
               document.getElementById("hit-dice").innerHTML = "<b>Hit Dice:</b>  1d" + f.hit_die_int + " per " + f.name_str + " level";
@@ -83,6 +84,7 @@
               // Subclasses
               document.getElementById("subclass-tech-name").innerHTML = "Subclass:  The " + f.subclass_tech_name;
               document.getElementById("subclass-tech-image").src = f.subclass_tech_img;
+              document.getElementById("subclass-tech-image").alt = f.subclass_tech_img_credit;
               document.getElementById("subclass-tech-description").innerHTML = f.subclass_tech_description;
               for (let i = 0; i < f.subclass_tech_feats.length; i++) {
                 if (document.getElementById("subclass-tech-feats").innerHTML.indexOf(f.subclass_tech_feats[i].name_str) > 0) {} 
@@ -96,6 +98,7 @@
               }
               document.getElementById("subclass-power-name").innerHTML = "Subclass:  The " + f.subclass_power_name;
               document.getElementById("subclass-power-image").src = f.subclass_power_img;
+              document.getElementById("subclass-power-image").alt = f.subclass_power_img_credit;
               document.getElementById("subclass-power-description").innerHTML = f.subclass_power_description;
               for (let i = 0; i < f.subclass_power_feats.length; i++) {
                 if (document.getElementById("subclass-power-feats").innerHTML.indexOf(f.subclass_power_feats[i].name_str) > 0) {} 
@@ -109,6 +112,7 @@
               }
               document.getElementById("subclass-magic-name").innerHTML = "Subclass:  The " + f.subclass_magic_name;
               document.getElementById("subclass-magic-image").src = f.subclass_magic_img;
+              document.getElementById("subclass-magic-image").alt = f.subclass_magic_img_credit;
               document.getElementById("subclass-magic-description").innerHTML = f.subclass_magic_description;
               for (let i = 0; i < f.subclass_magic_feats.length; i++) {
                 if (document.getElementById("subclass-magic-feats").innerHTML.indexOf(f.subclass_magic_feats[i].name_str) > 0) {} 
