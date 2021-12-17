@@ -26,7 +26,7 @@
             "duration_str" : "1 Turn",
             
             "science_str" : "Propulsion",
-            "science_img" : "/_SiteResources/Images/noun_jetpack_3000382.png",
+            "science_img" : "/_SiteResources/Images/Propulsion.png",
             
             "attack_save_int" : 2,
             "attack_save_str" : "---",
@@ -72,7 +72,7 @@
             "duration_str" : "1 Turn",
             
             "science_str" : "Propulsion",
-            "science_img" : "/_SiteResources/Images/noun_jetpack_3000382.png",
+            "science_img" : "/_SiteResources/Images/Propulsion.png",
             
             "attack_save_int" : 2,
             "attack_save_str" : "---",
@@ -118,7 +118,7 @@
             "duration_str" : "1 Hour",
             
             "science_str" : "Life Support",
-            "science_img" : "/_SiteResources/Images/noun_medical_2980272.png",
+            "science_img" : "/_SiteResources/Images/Life Support.png",
             
             "attack_save_int" : 0,
             "attack_save_str" : "---",
@@ -164,7 +164,7 @@
             "duration_str" : "8 Hour",
             
             "science_str" : "Life Support",
-            "science_img" : "/_SiteResources/Images/noun_medical_2980272.png",
+            "science_img" : "/_SiteResources/Images/Life Support.png",
             
             "attack_save_int" : 0,
             "attack_save_str" : "---",
@@ -210,7 +210,7 @@
             "duration_str" : "Instantaneous",
             
             "science_str" : "Laser Optics",
-            "science_img" : "/_SiteResources/Images/noun_laser_232249.png",
+            "science_img" : "/_SiteResources/Images/Laser Optics.png",
             
             "attack_save_int" : 2,
             "attack_save_str" : "Ranged",
@@ -257,7 +257,7 @@
             "duration_str" : "Instantaneous",
             
             "science_str" : "Engineering",
-            "science_img" : "/_SiteResources/Images/noun_Piston_3924710.png",
+            "science_img" : "/_SiteResources/Images/Engineering.png",
             
             "attack_save_int" : 1,
             "attack_save_str" : "Melee",
@@ -304,7 +304,7 @@
             "duration_str" : "Instantaneous",
             
             "science_str" : "Laser Optics",
-            "science_img" : "/_SiteResources/Images/noun_laser_232249.png",
+            "science_img" : "/_SiteResources/Images/Laser Optics.png",
 
             "attack_save_int" : 2,
             "attack_save_str" : "Ranged",
@@ -351,7 +351,7 @@
             "duration_str" : "8 Hours",
             
             "science_str" : "Propulsion",
-            "science_img" : "/_SiteResources/Images/noun_jetpack_3000382.png",
+            "science_img" : "/_SiteResources/Images/Propulsion.png",
             
             "attack_save_int" : 2,
             "attack_save_str" : "---",
@@ -397,7 +397,7 @@
             "duration_str" : "1 Minute",
             
             "science_str" : "Stereoptics",
-            "science_img" : "/_SiteResources/Images/noun_Hologram_1748886.png",
+            "science_img" : "/_SiteResources/Images/Stereoptics.png",
 
             "attack_save_int" : 0,
             "attack_save_str" : "---",
@@ -444,7 +444,7 @@
             "duration_str" : "Instantaneous",
             
             "science_str" : "Ballistics",
-            "science_img" : "/_SiteResources/Images/noun_missile_3990194.png",
+            "science_img" : "/_SiteResources/Images/Ballistics.png",
             
             "attack_save_int" : 2,
             "attack_save_str" : "---",
@@ -490,7 +490,7 @@
             "duration_str" : "Instantaneous",
             
             "science_str" : "Propulsion",
-            "science_img" : "/_SiteResources/Images/noun_jetpack_3000382.png",
+            "science_img" : "/_SiteResources/Images/Propulsion.png",
             
             "attack_save_int" : 2,
             "attack_save_str" : "---",
@@ -535,7 +535,7 @@
             "duration_str" : "Instantaneous",
             
             "science_str" : "Engineering",
-            "science_img" : "/_SiteResources/Images/noun_Piston_3924710.png",
+            "science_img" : "/_SiteResources/Images/Engineering.png",
             
             "attack_save_int" : 0,
             "attack_save_str" : "---",
@@ -581,7 +581,7 @@
             "duration_str" : "1 Hour",
             
             "science_str" : "Propulsion",
-            "science_img" : "/_SiteResources/Images/noun_jetpack_3000382.png",
+            "science_img" : "/_SiteResources/Images/Propulsion.png",
             
             "attack_save_int" : 2,
             "attack_save_str" : "---",
@@ -627,7 +627,7 @@
             "duration_str" : "1 Round",
             
             "science_str" : "Stereoptics",
-            "science_img" : "/_SiteResources/Images/noun_Hologram_1748886.png",
+            "science_img" : "/_SiteResources/Images/Stereoptics.png",
 
             "attack_save_int" : 0,
             "attack_save_str" : "---",
@@ -674,7 +674,7 @@
             "duration_str" : "Instantaneous",
             
             "science_str" : "Propulsion",
-            "science_img" : "/_SiteResources/Images/noun_jetpack_3000382.png",
+            "science_img" : "/_SiteResources/Images/Propulsion.png",
             
             "attack_save_int" : 2,
             "attack_save_str" : "---",
@@ -720,7 +720,7 @@
             "duration_str" : "Instantaneous",
             
             "science_str" : "Propulsion",
-            "science_img" : "/_SiteResources/Images/noun_jetpack_3000382.png",
+            "science_img" : "/_SiteResources/Images/Propulsion.png",
             
             "attack_save_int" : 2,
             "attack_save_str" : "---",
@@ -766,7 +766,7 @@
             "duration_str" : "1 Turn",
             
             "science_str" : "Propulsion",
-            "science_img" : "/_SiteResources/Images/noun_jetpack_3000382.png",
+            "science_img" : "/_SiteResources/Images/Propulsion.png",
             
             "attack_save_int" : 2,
             "attack_save_str" : "---",
@@ -811,7 +811,7 @@
             "duration_str" : "Instantaneous",
             
             "science_str" : "Engineering",
-            "science_img" : "/_SiteResources/Images/noun_Piston_3924710.png",
+            "science_img" : "/_SiteResources/Images/Engineering.png",
             
             "attack_save_int" : 1,
             "attack_save_str" : "Melee",
@@ -856,7 +856,7 @@
             "duration_str" : "1 Hour",
             
             "science_str" : "Engineering",
-            "science_img" : "/_SiteResources/Images/noun_Piston_3924710.png",
+            "science_img" : "/_SiteResources/Images/Engineering.png",
             
             "attack_save_int" : 4,
             "attack_save_str" : "Dexterity",
@@ -902,7 +902,7 @@
             "duration_str" : "Instantaneous",
             
             "science_str" : "Laser Optics",
-            "science_img" : "/_SiteResources/Images/noun_laser_232249.png",
+            "science_img" : "/_SiteResources/Images/Laser Optics.png",
             
             "attack_save_int" : 4,
             "attack_save_str" : "Dexterity",
@@ -949,7 +949,7 @@
             "duration_str" : "Instantaneous",
             
             "science_str" : "Laser Optics",
-            "science_img" : "/_SiteResources/Images/noun_laser_232249.png",
+            "science_img" : "/_SiteResources/Images/Laser Optics.png",
             
             "attack_save_int" : 2,
             "attack_save_str" : "Ranged",
@@ -995,7 +995,7 @@
             "duration_str" : "1 Hour",
             
             "science_str" : "Life Support",
-            "science_img" : "/_SiteResources/Images/noun_medical_2980272.png",
+            "science_img" : "/_SiteResources/Images/Life Support.png",
             
             "attack_save_int" : 0,
             "attack_save_str" : "---",
@@ -1041,7 +1041,7 @@
             "duration_str" : "Instantaneous",
             
             "science_str" : "Propulsion",
-            "science_img" : "/_SiteResources/Images/noun_jetpack_3000382.png",
+            "science_img" : "/_SiteResources/Images/Propulsion.png",
             
             "attack_save_int" : 2,
             "attack_save_str" : "---",
@@ -1087,7 +1087,7 @@
             "duration_str" : "Instantaneous",
             
             "science_str" : "Laser Optics",
-            "science_img" : "/_SiteResources/Images/noun_laser_232249.png",
+            "science_img" : "/_SiteResources/Images/Laser Optics.png",
             
             "attack_save_int" : 2,
             "attack_save_str" : "Ranged",
@@ -1133,7 +1133,7 @@
             "duration_str" : "Instantaneous",
             
             "science_str" : "Propulsion",
-            "science_img" : "/_SiteResources/Images/noun_jetpack_3000382.png",
+            "science_img" : "/_SiteResources/Images/Propulsion.png",
             
             "attack_save_int" : 2,
             "attack_save_str" : "---",
@@ -1179,7 +1179,7 @@
             "duration_str" : "1 Round",
             
             "science_str" : "Life Support",
-            "science_img" : "/_SiteResources/Images/noun_medical_2980272.png",
+            "science_img" : "/_SiteResources/Images/Life Support.png",
             
             "attack_save_int" : 2,
             "attack_save_str" : "---",
@@ -1225,7 +1225,7 @@
             "duration_str" : "1 Minute",
             
             "science_str" : "Propulsion",
-            "science_img" : "/_SiteResources/Images/noun_jetpack_3000382.png",
+            "science_img" : "/_SiteResources/Images/Propulsion.png",
             
             "attack_save_int" : 2,
             "attack_save_str" : "---",
@@ -1271,7 +1271,7 @@
             "duration_str" : "Instantaneous",
             
             "science_str" : "Laser Optics",
-            "science_img" : "/_SiteResources/Images/noun_laser_232249.png",
+            "science_img" : "/_SiteResources/Images/Laser Optics.png",
             
             "attack_save_int" : 2,
             "attack_save_str" : "Ranged",
@@ -1316,7 +1316,7 @@
             "duration_str" : "1 Hour",
             
             "science_str" : "Engineering",
-            "science_img" : "/_SiteResources/Images/noun_Piston_3924710.png",
+            "science_img" : "/_SiteResources/Images/Engineering.png",
             
             "attack_save_int" : 0,
             "attack_save_str" : "---",
@@ -1362,7 +1362,7 @@
             "duration_str" : "1 Turn",
             
             "science_str" : "Propulsion",
-            "science_img" : "/_SiteResources/Images/noun_jetpack_3000382.png",
+            "science_img" : "/_SiteResources/Images/Propulsion.png",
             
             "attack_save_int" : 2,
             "attack_save_str" : "---",
@@ -1408,7 +1408,7 @@
             "duration_str" : "1 Minute",
             
             "science_str" : "Laser Optics",
-            "science_img" : "/_SiteResources/Images/noun_laser_232249.png",
+            "science_img" : "/_SiteResources/Images/Laser Optics.png",
             
             "attack_save_int" : 4,
             "attack_save_str" : "Dexterity",
@@ -1455,7 +1455,7 @@
             "duration_str" : "Instantaneous",
             
             "science_str" : "Electronics",
-            "science_img" : "/_SiteResources/Images/noun_circuit_3204256.png",
+            "science_img" : "/_SiteResources/Images/Electronics.png",
             
             "attack_save_int" : 2,
             "attack_save_str" : "Constitution",
@@ -1501,7 +1501,7 @@
             "duration_str" : "Instantaneous",
             
             "science_str" : "Ballistics",
-            "science_img" : "/_SiteResources/Images/noun_missile_3990194.png",
+            "science_img" : "/_SiteResources/Images/Ballistics.png",
             
             "attack_save_int" : 2,
             "attack_save_str" : "Dexterity",
@@ -1547,7 +1547,7 @@
             "duration_str" : "1 Hour",
             
             "science_str" : "Life Support",
-            "science_img" : "/_SiteResources/Images/noun_medical_2980272.png",
+            "science_img" : "/_SiteResources/Images/Life Support.png",
             
             "attack_save_int" : 0,
             "attack_save_str" : "---",
