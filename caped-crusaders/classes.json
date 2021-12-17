@@ -3,7 +3,7 @@
         {
             "name_str" : "Visionary",
             "page_url" : "visionary.html",
-            "class_img" : "/_SiteResources/Images/noun_robotic hand_2838670.png",
+            "class_img" : "/_SiteResources/Images/Visionary.png",
             "class_img_credit" : "---",
             "description_short_str" : "An armored sentinel wielding technology beyond the cutting edge.  ",
             "description_long_str" : "Armed with the most advanced arsenal of devices and weapons of the era, the Visionary is a durable and versatile Primary Techcaster who contributes to combat and excels at utility.  ",
@@ -169,7 +169,7 @@
             ],
 
             "subclass_tech_name" : "Virtuoso",
-            "subclass_tech_img" : "/_SiteResources/Images/noun_Science_4037086.png",
+            "subclass_tech_img" : "/_SiteResources/Images/Visionary-Virtuoso.png",
             "subclass_tech_img_credit" : "---",
             "subclass_tech_description" : "A paragon of invention and ingenuity, the Virtuoso has created and incorporated a truly sustainable energy source. This energy source grants the Virtuoso several at-will Technologies and capabilities, such as flight. The Virtuoso can also adapt other suits of Technological Armor to fit their needs.  ",
             "subclass_tech_feats" : [
@@ -191,7 +191,7 @@
             ],
 
             "subclass_power_name" : "Magnate",
-            "subclass_power_img" : "/_SiteResources/Images/noun_cyborg_506898.png",
+            "subclass_power_img" : "/_SiteResources/Images/Visionary-Magnate.png",
             "subclass_power_img_credit" : "---",
             "subclass_power_description" : "Some superpowers are far more subtle than most, and the Magnate is a prime example. Whether relying on magnetic manipulation, electrokinesis, or cybernetics, you stand out as a Visionary with precise control over your Technology. Having a direct connection between your nervous system and your devices grants you an innate control over your Visionary Armor. The Magnate can also adapt other suits of Metapower Armor to fit their needs.  ",
             "subclass_power_feats" : [
@@ -213,7 +213,7 @@
             ],
             
             "subclass_magic_name" : "Glyphologist",
-            "subclass_magic_img" : "/_SiteResources/Images/noun_Pyramid_1553793.png",
+            "subclass_magic_img" : "/_SiteResources/Images/Visionary-Glyphologist.png",
             "subclass_magic_img_credit" : "---",
             "subclass_magic_description" : "A scholar of ancient knowledge and mythology, the Glyphologist combines modern science with ancient magical power sources. Whether it be inscribing runes, compressing motes of power, or integrating powerful artifacts, the Glyphologist binds themselves and their armor together on a supernatural level. While not a spellcaster, the Glyphologist still benefits from magical boons that manifest in a variety of ways. The Glyphologist can also adapt other suits of Magical Armor to fit their needs.  ",
             "subclass_magic_feats" : [
@@ -626,7 +626,7 @@
         {
             "name_str" : "Soldier",
             "page_url" : "soldier.html",
-            "class_img" : "/_SiteResources/Images/noun_Military_516827.png",
+            "class_img" : "/_SiteResources/Images/Soldier.png",
             "class_img_credit" : "---",
             "description_short_str" : "A warrior who relies on martial prowess and tactical skill to lead small units.  ",
             "description_long_str" : "After countless hours of training to be the perfect weapon, the Soldier is capable of waging war on the frontline and organizing allies simultaneously.  ",
@@ -743,9 +743,9 @@
             ],
 
             "subclass_tech_name" : "Ronin",
-            "subclass_tech_img" : "/_SiteResources/Images/noun_Martial Arts_4018735.png",
+            "subclass_tech_img" : "/_SiteResources/Images/Soldier-Ronin.png",
             "subclass_tech_img_credit" : "---",
-            "subclass_tech_description" : "HoningBlending instinctive skills with expendable gadgets, the Ronin is a capable and unpredictable combatant.  ",
+            "subclass_tech_description" : "Blending instinctive skills with expendable gadgets, the Ronin is a capable and unpredictable combatant.  ",
             "subclass_tech_feats" : [
                 {
                     "name_str" : "Techcasting",
@@ -764,33 +764,11 @@
                 }
             ],
 
-            "subclass_power_name" : "Chosen",
-            "subclass_power_img" : "/_SiteResources/Images/noun_skill thunder fist_2360261.png",
+            "subclass_power_name" : "Patriot",
+            "subclass_power_img" : "/_SiteResources/Images/Soldier-Patriot.png",
             "subclass_power_img_credit" : "---",
             "subclass_power_description" : "Becoming enhanced at the hands of experimentation, the Patriot leads by example of self sacrifice.  ",
             "subclass_power_feats" : [
-                {
-                    "name_str" : "Spellcasting",
-                    "level" : 3,
-                    "mechanics_str" : "See the Rules for Spellcasting mechanics and Spells list.  <ul><li><b>Spells Known:</b>  You learn Spells of your choice as shown in the Consumables Known column of the class table.  You may not learn a Spell of a level higher than your Max Consumable Level, and you may learn a Spell at the same time you learn its prerequisite.  </li><br><li><b>Spell Points:</b>  You have a number of Spell Points as shown in the Consumable Points column of the class table.  You expend these Spell Points to cast Spells.  You regain all expended Spell Points when you finish a long rest.  </li><br><li><b>Max Spell Level:</b>  Many Spells can be overpowered, consuming more Spell Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Spells at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Spellcasting Ability:</b>  Your Spellcasting ability is Intelligence.  You use your Intelligence modifier whenever a Spell refers to your Spellcasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Spell you cast and when making an attack roll with one.  </li><br><li><b>Spell save DC</b> = 8 + your proficiency bonus + your Spellcasting ability modifier.  </li><br><li><b>Spell attack modifier</b> = your proficiency bonus + your Spellcasting ability modifier.  </li></ul>"
-                },
-                {
-                    "name_str" : "Magic Weapon Bond",
-                    "level" : 9,
-                    "mechanics_str" : "When you attune to a Magical Weapon, it does not count against your total number of attunement slots.  "
-                },
-                {
-                    "name_str" : "Combat Casting",
-                    "level" : 17,
-                    "mechanics_str" : "You have advantage on all saving throws against Magic based effects. In addition, any Magic based attack roll (Spellcasting, not regular attacks) has disadvantage to hit you.  "
-                }
-            ],
-            
-            "subclass_magic_name" : "Meteor",
-            "subclass_magic_img" : "/_SiteResources/Images/noun_Fist_1236844.png",
-            "subclass_magic_img_credit" : "---",
-            "subclass_magic_description" : "Becoming enhanced at the hands of experimentation, the Patriot leads by example of self sacrifice.  ",
-            "subclass_magic_feats" : [
                 {
                     "name_str" : "Powercasting",
                     "level" : 3,
@@ -806,13 +784,35 @@
                     "level" : 17,
                     "mechanics_str" : "When you use your Action to cast a Superpower, you can make half the number Attacks you would make with your Action (rounded down, minimum of one) as a Bonus Action. For example, a Soldier who does not have Extra Attack would make one Attack as a Bonus Action using this feature, while a Soldier with Extra Attack (7) would make three Attacks as a Bonus Action using this feature.  "
                 }
+            ],
+            
+            "subclass_magic_name" : "Sentinel",
+            "subclass_magic_img" : "/_SiteResources/Images/Soldier-Sentinel.png",
+            "subclass_magic_img_credit" : "---",
+            "subclass_magic_description" : "Becoming enhanced at the hands of experimentation, the Patriot leads by example of self sacrifice.  ",
+            "subclass_magic_feats" : [
+                {
+                    "name_str" : "Spellcasting",
+                    "level" : 3,
+                    "mechanics_str" : "See the Rules for Spellcasting mechanics and Spells list.  <ul><li><b>Spells Known:</b>  You learn Spells of your choice as shown in the Consumables Known column of the class table.  You may not learn a Spell of a level higher than your Max Consumable Level, and you may learn a Spell at the same time you learn its prerequisite.  </li><br><li><b>Spell Points:</b>  You have a number of Spell Points as shown in the Consumable Points column of the class table.  You expend these Spell Points to cast Spells.  You regain all expended Spell Points when you finish a long rest.  </li><br><li><b>Max Spell Level:</b>  Many Spells can be overpowered, consuming more Spell Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Spells at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Spellcasting Ability:</b>  Your Spellcasting ability is Intelligence.  You use your Intelligence modifier whenever a Spell refers to your Spellcasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Spell you cast and when making an attack roll with one.  </li><br><li><b>Spell save DC</b> = 8 + your proficiency bonus + your Spellcasting ability modifier.  </li><br><li><b>Spell attack modifier</b> = your proficiency bonus + your Spellcasting ability modifier.  </li></ul>"
+                },
+                {
+                    "name_str" : "Magic Weapon Bond",
+                    "level" : 9,
+                    "mechanics_str" : "When you attune to a Magical Weapon, it does not count against your total number of attunement slots.  "
+                },
+                {
+                    "name_str" : "Combat Casting",
+                    "level" : 17,
+                    "mechanics_str" : "You have advantage on all saving throws against Magic based effects. In addition, any Magic based attack roll (Spellcasting, not regular attacks) has disadvantage to hit you.  "
+                }
             ]
         },
 
         {
             "name_str" : "Archmage",
             "page_url" : "archmage.html",
-            "class_img" : "/_SiteResources/Images/noun_runes_2063263.png",
+            "class_img" : "/_SiteResources/Images/Archmage.png",
             "class_img_credit" : "---",
             "description_short_str" : "A master of magic with the largest selection of casting options at any time.  ",
             "description_long_str" : "Having studied the nature of supernatural domains of energy, the Archmage is capable of employing various magical effects and religious rituals.  ",
@@ -976,7 +976,7 @@
             ],
 
             "subclass_tech_name" : "Magiteknician",
-            "subclass_tech_img" : "/_SiteResources/Images/noun-aztec-runes-98153.png",
+            "subclass_tech_img" : "/_SiteResources/Images/Archmage-Magiteknician.png",
             "subclass_tech_img_credit" : "---",
             "subclass_tech_description" : "Combining arcane power with technological knowledge, the Magiteknician carves out a unique niche where science and magic collide.  ",
             "subclass_tech_feats" : [
@@ -998,7 +998,7 @@
             ],
 
             "subclass_power_name" : "Psioneothist",
-            "subclass_power_img" : "/_SiteResources/Images/noun-illuminati-1224008.png",
+            "subclass_power_img" : "/_SiteResources/Images/Archmage-Psioneothist.png",
             "subclass_power_img_credit" : "---",
             "subclass_power_description" : "With a natural set of superhuman abilities, the Psioneothist exerts a more fine tuned control over their magical abilities.  ",
             "subclass_power_feats" : [
@@ -1020,7 +1020,7 @@
             ],
             
             "subclass_magic_name" : "Arcanoblate",
-            "subclass_magic_img" : "/_SiteResources/Images/noun-spellbook-2551263.png",
+            "subclass_magic_img" : "/_SiteResources/Images/Archmage-Arcanoblate.png",
             "subclass_magic_img_credit" : "---",
             "subclass_magic_description" : "Devoted to the practice and study of magic, philosophy, and religion, the Arcanoblate attains a higher spiritual connection to the nature of magic itself.  ",
             "subclass_magic_feats" : [
@@ -1329,7 +1329,7 @@
         {
             "name_str" : "Annointed",
             "page_url" : "annointed.html",
-            "class_img" : "/_SiteResources/Images/noun_Spartan_1510278.png",
+            "class_img" : "/_SiteResources/Images/Annointed.png",
             "class_img_credit" : "---",
             "description_short_str" : "Magically imbued powerhouses who are often mistaken for Dynamos.  ",
             "description_long_str" : "Blessed and bolstered by ancient magic, the Annointed perfectly balances destroying their enemies and protecting their allies.  ",
@@ -1446,7 +1446,7 @@
             ],
 
             "subclass_tech_name" : "Adaptist",
-            "subclass_tech_img" : "/_SiteResources/Images/noun_adapt_397976.png",
+            "subclass_tech_img" : "/_SiteResources/Images/Annointed-Adaptist.png",
             "subclass_tech_img_credit" : "---",
             "subclass_tech_description" : "Subclass Description",
             "subclass_tech_feats" : [
@@ -1468,7 +1468,7 @@
             ],
 
             "subclass_power_name" : "Supreme",
-            "subclass_power_img" : "/_SiteResources/Images/noun_supreme_2897408.png",
+            "subclass_power_img" : "/_SiteResources/Images/Annointed-Supreme.png",
             "subclass_power_img_credit" : "---",
             "subclass_power_description" : "Subclass Description",
             "subclass_power_feats" : [
@@ -1490,7 +1490,7 @@
             ],
             
             "subclass_magic_name" : "Infused",
-            "subclass_magic_img" : "/_SiteResources/Images/noun_demon_2194608.png",
+            "subclass_magic_img" : "/_SiteResources/Images/Annointed-Infused.png",
             "subclass_magic_img_credit" : "---",
             "subclass_magic_description" : "Subclass Description",
             "subclass_magic_feats" : [
@@ -1515,7 +1515,7 @@
         {
             "name_str" : "Nova",
             "page_url" : "nova.html",
-            "class_img" : "/_SiteResources/Images/noun-atom-3637340.png",
+            "class_img" : "/_SiteResources/Images/Nova.png",
             "class_img_credit" : "---",
             "description_short_str" : "Energy wielders that summon defensive fields and blast enemies alike.  ",
             "description_long_str" : "Possessing a massive reservoir of internalized energy, the Nova can unleash destructive beams and construct protective fields to manipulate the battlefield.  ",
@@ -1662,7 +1662,7 @@
             ],
 
             "subclass_tech_name" : "Galvanic",
-            "subclass_tech_img" : "/_SiteResources/Images/noun-armor-3782893.png",
+            "subclass_tech_img" : "/_SiteResources/Images/Nova-Galvanic.png",
             "subclass_tech_img_credit" : "---",
             "subclass_tech_description" : "By allowing some of their excess energy serve as a power source, the Galvanic is able to augment their abilities with ordinary modern technology that wouldn't be feasible due to power limitations under nearly any other circumstances.  ",
             "subclass_tech_feats" : [
@@ -1684,7 +1684,7 @@
             ],
 
             "subclass_power_name" : "Refractionist",
-            "subclass_power_img" : "/_SiteResources/Images/noun-prism-362080.png",
+            "subclass_power_img" : "/_SiteResources/Images/Nova-Refractionist.png",
             "subclass_power_img_credit" : "---",
             "subclass_power_description" : "Possessing deeply rooted reserves of energy, the Refractionist has benefitted from long term physiological mutations to make good use of that energy.  ",
             "subclass_power_feats" : [
@@ -1706,7 +1706,7 @@
             ],
             
             "subclass_magic_name" : "Luminent",
-            "subclass_magic_img" : "/_SiteResources/Images/noun-skill-magic-storm-blast-2360186.png",
+            "subclass_magic_img" : "/_SiteResources/Images/Nova-Luminent.png",
             "subclass_magic_img_credit" : "---",
             "subclass_magic_description" : "Having come across extraplanar forces in some manner, the Luminent has taken on powerful otherworldly attributes that draw on their natural power reserves.  ",
             "subclass_magic_feats" : [
@@ -1731,7 +1731,7 @@
         {
             "name_str" : "Subvertist",
             "page_url" : "subvertist.html",
-            "class_img" : "/_SiteResources/Images/noun_vortex_2920177.png",
+            "class_img" : "/_SiteResources/Images/Subvertist.png",
             "class_img_credit" : "---",
             "description_short_str" : "A movement focused master of misdirection who excels in battfield cleanup.  ",
             "description_long_str" : "With a razor sharp focus on mobility and agility, the Subvertist thrives when protecting civilians and distracting enemies.  ",
@@ -1960,7 +1960,7 @@
             ],
 
             "subclass_tech_name" : "Speedster",
-            "subclass_tech_img" : "/_SiteResources/Images/noun_sprinter logo_2739704.png",
+            "subclass_tech_img" : "/_SiteResources/Images/Subvertist-Speedster.png",
             "subclass_tech_img_credit" : "---",
             "subclass_tech_description" : "Possessing unrivaled speed, the Speedster perceives and interacts with the battlefield on an entirely different level.  ",
             "subclass_tech_feats" : [
@@ -1987,7 +1987,7 @@
             ],
 
             "subclass_power_name" : "Egressor",
-            "subclass_power_img" : "/_SiteResources/Images/noun_effect teleport_2360029.png",
+            "subclass_power_img" : "/_SiteResources/Images/Subvertist-Egressor.png",
             "subclass_power_img_credit" : "---",
             "subclass_power_description" : "Able to transport themselves and others through spacetime, the Egressor possesses unrivalred individual mobility.  ",
             "subclass_power_feats" : [
@@ -2014,7 +2014,7 @@
             ],
             
             "subclass_magic_name" : "Portalist",
-            "subclass_magic_img" : "/_SiteResources/Images/noun_teleport_4215351.png",
+            "subclass_magic_img" : "/_SiteResources/Images/Subvertist-Portalist.png",
             "subclass_magic_img_credit" : "---",
             "subclass_magic_description" : "The portalist is able to bridge different points in spacetime, allowing for unique ways to manipulate the battlfield.  ",
             "subclass_magic_feats" : [
@@ -2044,7 +2044,7 @@
         {
             "name_str" : "Metamorph",
             "page_url" : "metamorph.html",
-            "class_img" : "/_SiteResources/Images/noun_DNA_4398736.png",
+            "class_img" : "/_SiteResources/Images/Metamporh.png",
             "class_img_credit" : "---",
             "description_short_str" : "A versatile shapechanger that can specialize down several paths.  ",
             "description_long_str" : "Reshaping themselves to fit the needs of the situation, the Metamorph is a highly adaptive-often considered critical-component of enhanced team groups.   ",
@@ -2187,7 +2187,7 @@
             ],
 
             "subclass_tech_name" : "Replicatist",
-            "subclass_tech_img" : "/_SiteResources/Images/noun_cloning_3650004.png",
+            "subclass_tech_img" : "/_SiteResources/Images/Metamorph-Replicatist.png",
             "subclass_tech_img_credit" : "---",
             "subclass_tech_description" : "By developing their natural shapechanging ability to include (perhaps even specialize in) the adaptation of the nervous system, the Replicatist is able to mimic the appearance and behaviors of other sapiens in a nearly flawless manner.  ",
             "subclass_tech_feats" : [
@@ -2214,7 +2214,7 @@
             ],
 
             "subclass_power_name" : "Archeophenix",
-            "subclass_power_img" : "/_SiteResources/Images/noun_phoenix_2103725.png",
+            "subclass_power_img" : "/_SiteResources/Images/Metamorph-Archeophoenix.png",
             "subclass_power_img_credit" : "---",
             "subclass_power_description" : "Whether sent as a savior or cursed with a terrible affliction, the Phoenix can manifest a singular powerful magical form that evokes an awe remiscent of that in the oldest of mythos.  ",
             "subclass_power_feats" : [
@@ -2241,7 +2241,7 @@
             ],
             
             "subclass_magic_name" : "Darwinian",
-            "subclass_magic_img" : "/_SiteResources/Images/noun_Evolution_4274906.png",
+            "subclass_magic_img" : "/_SiteResources/Images/Metamorph-Darwinian.png",
             "subclass_magic_img_credit" : "---",
             "subclass_magic_description" : "Possessing a gene that rapidly accelerates the process of evolution through individual and instantaneous mutations, the Darwinian is among the most intimidating and difficult beings to kill.  ",
             "subclass_magic_feats" : [
@@ -2271,7 +2271,7 @@
         {
             "name_str" : "Dynamo",
             "page_url" : "dynamo.html",
-            "class_img" : "/_SiteResources/Images/noun_punch_1961742.png",
+            "class_img" : "/_SiteResources/Images/Dynamo.png",
             "class_img_credit" : "---",
             "description_short_str" : "Utter powerhouses that rely on brute force to destroy and protect.  ",
             "description_long_str" : "Wielding raw physical power, the Dynamo thrives when dealing damage and drawing fire away from allies.   ",
@@ -2399,7 +2399,7 @@
             ],
 
             "subclass_tech_name" : "Militant",
-            "subclass_tech_img" : "/_SiteResources/Images/noun_Martial Arts_4018735.png",
+            "subclass_tech_img" : "/_SiteResources/Images/Dynamo-Militant.png",
             "subclass_tech_img_credit" : "---",
             "subclass_tech_description" : "Honing their immense strength with training and discipline, the Militant balances their power with resourcefulness.  ",
             "subclass_tech_feats" : [
@@ -2421,7 +2421,7 @@
             ],
 
             "subclass_power_name" : "Chosen",
-            "subclass_power_img" : "/_SiteResources/Images/noun_skill thunder fist_2360261.png",
+            "subclass_power_img" : "/_SiteResources/Images/Dynamo-Chosen.png",
             "subclass_power_img_credit" : "---",
             "subclass_power_description" : "Harnessing energy that would devour mere mortals, the Chosen mightily bends magic to their will.  ",
             "subclass_power_feats" : [
@@ -2443,7 +2443,7 @@
             ],
             
             "subclass_magic_name" : "Meteor",
-            "subclass_magic_img" : "/_SiteResources/Images/noun_Fist_1236844.png",
+            "subclass_magic_img" : "/_SiteResources/Images/Dynamo-Meteor.png",
             "subclass_magic_img_credit" : "---",
             "subclass_magic_description" : "Wielding power that registers on the stellar scale, the Meteor has the potential to be a force of unbridled destruction.  ",
             "subclass_magic_feats" : [
