@@ -26,7 +26,7 @@
             "duration_str" : "Instantaneous",
             
             "type_str" : "Radiation",
-            "type_img" : "/_SiteResources/Images/noun_sun_59719.png",
+            "type_img" : "/_SiteResources/Images/Radiation.png",
             
             "attack_save_int" : 0,
             "attack_save_str" : "---",
@@ -71,7 +71,7 @@
             "duration_str" : "Instantaneous",
             
             "type_str" : "Velocity",
-            "type_img" : "/_SiteResources/Images/noun_speed_1953028.png",
+            "type_img" : "/_SiteResources/Images/Velocity.png",
             
             "attack_save_int" : 0,
             "attack_save_str" : "---",
@@ -81,7 +81,7 @@
             "flavor_str" : "You tap into a wellspring of reactivity to faster perceive and navigate your surroundings.  ",
             "mechanics_str" : "You benefit from either Disengage or Dash until the end of this turn (your choice).  ",
             "overchargeable_bool" : false,
-            "overcharge_str" : "When cast at 2nd level, you benefit from Disengage and Dash until the end of this turn, rather than either or.  ",
+            "overcharge_str" : "When cast at 2nd level, you benefit from Disengage and Dash until the end of this turn, rather than only one.  ",
 
             "class_str" : "Subvertist",
             "subclass_str" : "",
@@ -116,15 +116,15 @@
             "duration_str" : "Instantaneous",
             
             "type_str" : "Velocity",
-            "type_img" : "/_SiteResources/Images/noun_speed_1953028.png",
+            "type_img" : "/_SiteResources/Images/Velocity.png",
             
             "attack_save_int" : 0,
             "attack_save_str" : "---",
             
             "damage_effect_str" : "---",
             
-            "flavor_str" : "You harness your power to dampen the fall for multiple targets, potentially yourself.  ",
-            "mechanics_str" : "When you perceive something falling, you can cast this superpower to slow the falling speed of the target and 9 others (possibly including yourself) sufficiently to prevent falling damage for one round.  ",
+            "flavor_str" : "You harness your power to dampen the fall for multiple targets, potentially including yourself.  ",
+            "mechanics_str" : "When you perceive something falling, you can cast this Superpower to slow the falling speed of the target and 9 others within range (possibly including yourself) sufficiently to prevent falling damage for one round.  ",
             "overchargeable_bool" : false,
             "overcharge_str" : "For every level of Overcharge, increase the range of the power by 30 and the number of targets by 10.  ",
 
@@ -161,7 +161,7 @@
             "duration_str" : "Instantaneous",
             
             "type_str" : "Velocity",
-            "type_img" : "/_SiteResources/Images/noun_speed_1953028.png",
+            "type_img" : "/_SiteResources/Images/Velocity.png",
             
             "attack_save_int" : 0,
             "attack_save_str" : "---",
@@ -206,7 +206,7 @@
             "duration_str" : "Instantaneous",
             
             "type_str" : "Velocity",
-            "type_img" : "/_SiteResources/Images/noun_speed_1953028.png",
+            "type_img" : "/_SiteResources/Images/Velocity.png",
             
             "attack_save_int" : 0,
             "attack_save_str" : "---",

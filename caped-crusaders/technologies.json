@@ -33,7 +33,7 @@
             
             "damage_effect_str" : "Buff",
             
-            "flavor_str" : "You activate specialized thrusters that surge and provide you with a startling surge of flight speed.",
+            "flavor_str" : "You activate specialized thrusters that provide you with a startling surge of flight speed.",
             "mechanics_str" : "You gain an additional flying speed of 360 feet and your movement does not provoke opportunity attacks until the end of this turn.",
             "overchargeable_bool" : false,
             "overcharge_str" : "Not Applicable",
@@ -79,7 +79,7 @@
             
             "damage_effect_str" : "Buff",
             
-            "flavor_str" : "You activate specialized thrusters that surge and provide you with a startling surge of flight speed.",
+            "flavor_str" : "You activate specialized thrusters that provide you with a startling surge of flight speed.",
             "mechanics_str" : "You gain an additional flying speed of 360 feet and your movement does not provoke opportunity attacks until the end of this turn.",
             "overchargeable_bool" : false,
             "overcharge_str" : "Not Applicable",
