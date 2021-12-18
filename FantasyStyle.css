@@ -119,6 +119,34 @@ button {
   margin: 5px;
 }
 
+.QuasiPlaneButton, .PrimalPlaneButton, .MaterialPlaneButton {
+  padding: 10px;
+  background-color: rgb(175, 175, 175);
+  border-style: solid;
+  font-size: large;
+  text-align: center;
+  display: block;
+  position: relative;
+}
+.QuasiPlaneButton {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  margin: 35px;
+}
+.PrimalPlaneButton {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  margin: 10px;
+}
+.MaterialPlaneButton {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin: 60px;
+}
+
 
 .AnchorRight {
   position: relative;
