@@ -43,6 +43,50 @@
             "feats_str" : "",
             "backgrounds_str" : "",
             "races_str" : ""
+        },
+        {
+            "name_str" : "Expertise",
+            "page_url" : "expertise.html",
+
+            "level_int" : 1,
+            "level_str" : "1st",
+
+            "school_str" : "Reflexes",
+            "school_img" : "/_SiteResources/Images/gun-and-sword.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "Choose one skill with which you are proficient and one tool with which you are proficient.  Your proficiency bonus is doubled for any check that uses the chosen proficiencies.  You also gain proficiency in one new skill and one new tool of your choice.  <br><br>You may take this Technique multiple times.  ",
+
+            "class_str" : "???",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Unfailing Talent",
+            "page_url" : "unfailing-talent.html",
+
+            "level_int" : 6,
+            "level_str" : "6th",
+
+            "school_str" : "Reflexes",
+            "school_img" : "/_SiteResources/Images/gun-and-sword.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "You may treat the d20 result for any skill check that you make as a 10 if the roll before modifiers is 9 or lower and the skill check applies your proficiency bonus.  ",
+
+            "class_str" : "???",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
         }
     ]
 }
