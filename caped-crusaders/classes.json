@@ -5,7 +5,7 @@
             "page_url" : "visionary.html",
             "class_img" : "/_SiteResources/Images/Visionary.png",
             "class_img_credit" : "---",
-            "description_short_str" : "An armored sentinel wielding technology beyond the cutting edge.  ",
+            "description_short_str" : "An armored sentinel wielding unique technology beyond the cutting edge.  ",
             "description_long_str" : "Armed with the most advanced arsenal of devices and weapons of the era, the Visionary is a durable and versatile Primary Techcaster who contributes to combat and excels at utility.  ",
 
             "class_type" : "Primary Tech Caster",
@@ -1230,7 +1230,7 @@
             "page_url" : "psiblade.html",
             "class_img" : "/_SiteResources/Images/Psiblade.png",
             "class_img_credit" : "---",
-            "description_short_str" : "A focused warrior wielding a powerful blade and an attuned spirit.  ",
+            "description_short_str" : "A defense focused warrior wielding a powerful blade and an attuned spirit.  ",
             "description_long_str" : "Honing their gifts to increase their awareness, the Psiblade are among the most dedicated and devout warriors in existence.  ",
 
             "class_type" : "Secondary Magic Martial",
@@ -1335,7 +1335,7 @@
                 {
                     "name_str" : "Stoic Defense",
                     "level" : 1,
-                    "mechanics_str" : "When you are targeted by an Attack, you may use a Reaction to increase your AC by an amount equal to half your Proficiency Bonus rounded up.  If the attack still hits, you may reduce the incoming damage by an amount equal to your proficiency bonus.  If the attack misses, you may deal damage equal to your proficiency bonus to the attacker, either taking an opportunity to make a counter melee attack or deflecting a ranged projectile back at the attacker.  "
+                    "mechanics_str" : "When you are targeted by an Attack, you may use a Reaction to increase your AC by an amount equal to half your Proficiency Bonus rounded up.  If the attack still hits, you may reduce the incoming damage by an amount equal to your proficiency bonus.  If the attack misses, you may deal damage equal to your proficiency bonus to the attacker.  "
                 },
                 {
                     "name_str" : "Spatial Awareness",
@@ -1386,12 +1386,12 @@
                 {
                     "name_str" : "Cybernetic Blade",
                     "level" : 7,
-                    "mechanics_str" : "You are able to modify a weapon, integrating it into your flesh and improving its effectiveness.  Over the course of a Short Rest, you may attune to any one weapon with which you are proficient.  This weapon has the following traits while wielded by you:  <ul><li><b>Enhanced:</b>  If the original item is Mundane, the item now counts as Technological, and gains a bonus equal to half your proficiency bonus rounded down.  If the original item is Technological, only the higher bonus takes effect.  </li><li><b>Integrated:</b>  The weapon can be extended and retracted at any point out of combat or during your turn.  While extended, you must wield it with your hands as normal for a weapon of that type.  While retracted, it is entirely undetectable.  </li><li><b>Damage:</b>  When you bond with the weapon, you may choose Incinerating or Eletrocuting damage to replace the original damage type.  </li><li><b>Attunement:</b>If the original item typically requires attunement, this item does not.  </li></ul>"
+                    "mechanics_str" : "You are able to modify a weapon, integrating it into your flesh and improving its effectiveness.  Over the course of a Short Rest, you may attune to any one weapon with which you are proficient.  This weapon has the following traits while wielded by you:  <ul><li><b>Enhanced:</b>  If the original item is Mundane, the item now counts as Technological, and gains a bonus equal to half your proficiency bonus rounded down.  If the original item is Technological, only the higher bonus takes effect.  </li><li><b>Integrated:</b>  The weapon can be extended and retracted at any point out of combat or during your turn.  While extended, you must wield it as normal for an item of that type, but you cannot be unwillingly disarmed.  While retracted, it is entirely undetectable.  </li><li><b>Damage:</b>  When you bond with the weapon, you may choose Incinerating or Electrocuting damage to replace the original damage type.  </li><li><b>Attunement:</b>  If the original item typically requires attunement, this item does not.  </li></ul>"
                 },
                 {
                     "name_str" : "Cybernetic Shield",
                     "level" : 13,
-                    "mechanics_str" : "You are able to modify a shield, integrating it into your flesh and improving its effectiveness.  Over the course of a Short Rest, you may attune to any one shield with which you are proficient.  This shield has the following traits while wielded by you:  <ul><li><b>Enhanced:</b>  If the original item is Mundane, the item now counts as Technological, and gains a bonus equal to half your proficiency bonus rounded down.  If the original item is Technological, only the higher bonus takes effect.  </li><li><b>Integrated:</b>  The shield can be extended and retracted at any point out of combat or during your turn.  While extended, you must wield it with your hands as normal for a shield of that type.  While retracted, it is entirely undetectable.  </li><li><b>Attunement:</b>If the original item typically requires attunement, this item does not.  </li></ul>"
+                    "mechanics_str" : "You are able to modify a shield, integrating it into your flesh and improving its effectiveness.  Over the course of a Short Rest, you may attune to any one shield with which you are proficient.  This shield has the following traits while wielded by you:  <ul><li><b>Enhanced:</b>  If the original item is Mundane, the item now counts as Technological, and gains a bonus equal to half your proficiency bonus rounded down.  If the original item is Technological, only the higher bonus takes effect.  </li><li><b>Integrated:</b>  The shield can be extended and retracted at any point out of combat or during your turn.  While extended, you must wield it as normal for an item of that type, but you cannot be unwillingly disarmed.  While retracted, it is entirely undetectable.  </li><li><b>Attunement:</b>  If the original item typically requires attunement, this item does not.  </li></ul>"
                 },
                 {
                     "name_str" : "Cybernetic Kinesis",
@@ -1413,12 +1413,12 @@
                 {
                     "name_str" : "Divine Blade",
                     "level" : 7,
-                    "mechanics_str" : "You are able to bond with a weapon, imbuing it with magical power that answers only to you.  Over the course of a Short Rest, you may attune to any one weapon with which you are proficient.  The weapon has the following traits while wielded by you:  <ul><li><b>Enhanced:</b>  If the original item is Mundane, the item now counts as Magical, and gains a bonus equal to half your proficiency bonus rounded down.  If the original item is Magical, only the higher bonus takes effect.  </li><li><b>Bound:</b>  The weapon can be magically summoned into your hand at any point out of combat or during your turn.  </li><li><b>Damage:</b>  When you bond with the weapon, you may choose Incinerating, Eletrocuting, or Cryogenic damage to replace the original damage type.  </li><li><b>Attunement:</b>If the original item typically requires attunement, this item does not.  </li></ul>"
+                    "mechanics_str" : "You are able to bond with a weapon, imbuing it with magical power that answers only to you.  Over the course of a Short Rest, you may attune to any one weapon with which you are proficient.  The weapon has the following traits while wielded by you:  <ul><li><b>Enhanced:</b>  If the original item is Mundane, the item now counts as Magical, and gains a bonus equal to half your proficiency bonus rounded down.  If the original item is Magical, only the higher bonus takes effect.  </li><li><b>Bound:</b>  The weapon can be magically summoned into your hand at any point out of combat or during your turn.  </li><li><b>Damage:</b>  When you bond with the weapon, you may choose Luminous or Cryogenic damage to replace the original damage type.  </li><li><b>Attunement:</b>  If the original item typically requires attunement, this item does not.  </li></ul>"
                 },
                 {
                     "name_str" : "Divine Shield",
                     "level" : 13,
-                    "mechanics_str" : "You are able to modify a shield, integrating it into your flesh and improving its effectiveness.  Over the course of a Short Rest, you may attune to any one shield with which you are proficient.  This shield has the following traits while wielded by you:  <ul><li><b>Enhanced:</b>  If the original item is Mundane, the item now counts as Magical, and gains a bonus equal to half your proficiency bonus rounded down.  If the original item is Magical, only the higher bonus takes effect.  </li><li><b>Bound:</b>  The shield can be magically summoned into your hand at any point out of combat or during your turn.  While summoned, you must wield it with your hands as normal for a shield of that type.  </li><li><b>Attunement:</b>If the original item typically requires attunement, this item does not.  </li></ul>"
+                    "mechanics_str" : "You are able to modify a shield, integrating it into your flesh and improving its effectiveness.  Over the course of a Short Rest, you may attune to any one shield with which you are proficient.  This shield has the following traits while wielded by you:  <ul><li><b>Enhanced:</b>  If the original item is Mundane, the item now counts as Magical, and gains a bonus equal to half your proficiency bonus rounded down.  If the original item is Magical, only the higher bonus takes effect.  </li><li><b>Bound:</b>  The shield can be magically summoned into your hand at any point out of combat or during your turn.  While summoned, you must wield it with your hands as normal for a shield of that type.  </li><li><b>Attunement:</b>  If the original item typically requires attunement, this item does not.  </li></ul>"
                 },
                 {
                     "name_str" : "Divine Kinesis",
@@ -1440,12 +1440,12 @@
                 {
                     "name_str" : "Energy Blade",
                     "level" : 7,
-                    "mechanics_str" : "You are able to bond with a weapon, immolating it at the molecular level so it might be called upon later at will.  Over the course of a Short Rest, you may attune to any one weapon with which you are proficient.  The weapon has the following traits while wielded by you:  <ul><li><b>Enhanced:</b>  If the original item is Mundane, the item now counts as Superpowered, and gains a bonus equal to half your proficiency bonus rounded down.  If the original item is Superpowered, only the higher bonus takes effect.  </li><li><b>Manifested:</b>  The weapon can be manifested into your hand at any point out of combat or during your turn.  </li><li><b>Damage:</b>  When you bond with the weapon, you may choose Kinetic or Radiation damage to replace the original damage type.  </li><li><b>Attunement:</b>If the original item typically requires attunement, this item does not.  </li></ul>"
+                    "mechanics_str" : "You are able to bond with a weapon, immolating it at the molecular level so it might be called upon later at will.  Over the course of a Short Rest, you may attune to any one weapon with which you are proficient.  The weapon has the following traits while wielded by you:  <ul><li><b>Enhanced:</b>  If the original item is Mundane, the item now counts as Superpowered, and gains a bonus equal to half your proficiency bonus rounded down.  If the original item is Superpowered, only the higher bonus takes effect.  </li><li><b>Manifested:</b>  The weapon can be manifested into your hand at any point out of combat or during your turn.  </li><li><b>Damage:</b>  When you bond with the weapon, you may choose Kinetic or Radiation damage to replace the original damage type.  </li><li><b>Attunement:</b>  If the original item typically requires attunement, this item does not.  </li></ul>"
                 },
                 {
                     "name_str" : "Energy Shield",
                     "level" : 13,
-                    "mechanics_str" : "You are able to modify a shield, immolating it at the molecular level so it might be called upon later at will.  Over the course of a Short Rest, you may attune to any one shield with which you are proficient.  This shield has the following traits while wielded by you:  <ul><li><b>Enhanced:</b>  If the original item is Mundane, the item now counts as Superpowered, and gains a bonus equal to half your proficiency bonus rounded down.  If the original item is Superpowered, only the higher bonus takes effect.  </li><li><b>Manifested:</b>  The shield can be manifested into your hand at any point out of combat or during your turn.  While manifested, you must wield it with your hands as normal for a shield of that type.  </li><li><b>Attunement:</b>If the original item typically requires attunement, this item does not.  </li></ul>"
+                    "mechanics_str" : "You are able to modify a shield, immolating it at the molecular level so it might be called upon later at will.  Over the course of a Short Rest, you may attune to any one shield with which you are proficient.  This shield has the following traits while wielded by you:  <ul><li><b>Enhanced:</b>  If the original item is Mundane, the item now counts as Superpowered, and gains a bonus equal to half your proficiency bonus rounded down.  If the original item is Superpowered, only the higher bonus takes effect.  </li><li><b>Manifested:</b>  The shield can be manifested into your hand at any point out of combat or during your turn.  While manifested, you must wield it with your hands as normal for a shield of that type.  </li><li><b>Attunement:</b>  If the original item typically requires attunement, this item does not.  </li></ul>"
                 },
                 {
                     "name_str" : "Energy Kinesis",
@@ -1460,7 +1460,7 @@
             "page_url" : "annointed.html",
             "class_img" : "/_SiteResources/Images/Annointed.png",
             "class_img_credit" : "---",
-            "description_short_str" : "Magically imbued powerhouses who are often mistaken for Dynamos.  ",
+            "description_short_str" : "Magically imbued powerhouses who dominate as champions of the gods.  ",
             "description_long_str" : "Blessed and bolstered by ancient magic, the Annointed perfectly balances destroying their enemies and protecting their allies.  ",
 
             "class_type" : "Primary Magic Martial",
@@ -1646,7 +1646,7 @@
             "page_url" : "nova.html",
             "class_img" : "/_SiteResources/Images/Nova.png",
             "class_img_credit" : "---",
-            "description_short_str" : "Energy wielders that summon defensive fields and blast enemies alike.  ",
+            "description_short_str" : "Energy wielders that can summon defensive fields and unleash devastating blasts.  ",
             "description_long_str" : "Possessing a massive reservoir of internalized energy, the Nova can unleash destructive beams and construct protective fields to manipulate the battlefield.  ",
 
             "class_type" : "Primary Power Caster",
@@ -2402,7 +2402,7 @@
             "page_url" : "dynamo.html",
             "class_img" : "/_SiteResources/Images/Dynamo.png",
             "class_img_credit" : "---",
-            "description_short_str" : "Utter powerhouses that rely on brute force to destroy and protect.  ",
+            "description_short_str" : "Utter powerhouses that rely on brute force to break down and destroy their enemies.  ",
             "description_long_str" : "Wielding raw physical power, the Dynamo thrives when dealing damage and drawing fire away from allies.   ",
 
             "class_type" : "Primary Power Martial",
