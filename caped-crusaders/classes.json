@@ -1228,7 +1228,7 @@
         {
             "name_str" : "Psiblade",
             "page_url" : "psiblade.html",
-            "class_img" : "",
+            "class_img" : "/_SiteResources/Images/Psiblade.png",
             "class_img_credit" : "---",
             "description_short_str" : "A focused warrior wielding a powerful blade and an attuned spirit.  ",
             "description_long_str" : "Honing their gifts to increase their awareness, the Psiblade are among the most dedicated and devout warriors in existence.  ",
@@ -1287,12 +1287,6 @@
                     "level" : 18
                 },
                 {
-                    "name_str" : "Kinesis",
-                    "level" : 1,
-                    "mechanics_str" : "You are able to alter the kinetic energy in the heat of battle to protect your allies and harm your enemies.  When a target within 60 feet of you is hit by an attack, as a Reaction, you may choose to add an additional modifier to the damage roll of that attack.  The modifier is equal to twice your proficiency bonus, and you choose whether it is positive or negative.  If you are the one making the attack, you may choose to use this feature as a Bonus Action instead.  You may use this feature a number of times equal to twice your proficiency bonus between long rests.  "
-                },
-                
-                {
                     "name_str" : "Subclass Feature",
                     "level" : 2,
                     "mechanics_str" : "You gain a subclass as detailed at the bottom of this page.  <br><br>Each subclass offers a Consumable Milestone at this level, and an additional Consumable Milestone at levels 7, 13, and 19.  "
@@ -1339,41 +1333,50 @@
                     "level" : 19
                 },
                 {
-                    "name_str" : "Healing Factor",
+                    "name_str" : "Stoic Defense",
+                    "level" : 1,
+                    "mechanics_str" : "When you are targeted by an Attack, you may use a Reaction to increase your AC by an amount equal to half your Proficiency Bonus rounded up.  If the attack still hits, you may reduce the incoming damage by an amount equal to your proficiency bonus.  If the attack misses, you may deal damage equal to your proficiency bonus to the attacker, either taking an opportunity to make a counter melee attack or deflecting a ranged projectile back at the attacker.  "
+                },
+                {
+                    "name_str" : "Spatial Awareness",
+                    "level" : 3,
+                    "mechanics_str" : "You have a number of Reactions equal to your Proficiency Bonus.  "
+                },
+                {
+                    "name_str" : "Kinetic Surge",
                     "level" : 5,
-                    "mechanics_str" : "If you have less than half your hit points (rounding down) remaining, you regain one Hit Point every minute.  You can also expend a Hit Die and regain Hit Points equal to the result + your Constitution Modifier as a Bonus Action"
+                    "mechanics_str" : "You are able to alter the kinetic energy in the heat of battle to protect your allies and harm your enemies.  When a target within 60 feet of you is hit by an attack, as a Reaction, you may choose to add an additional modifier to the damage roll of that attack.  The modifier is equal to twice your proficiency bonus, and you choose whether it is positive or negative.  If you are the one making the attack, you may choose to use this feature as a Bonus Action instead.  You may use this feature a number of times equal to your proficiency bonus between long rests.  <br><br>At level 17, you may use Kinetic Surge multiple times as part of the same Reaction given each use is affecting the same attack.  "
                 },
                 {
-                    "name_str" : "Accelerated Acclimation",
+                    "name_str" : "Augmented Mobility",
                     "level" : 8,
-                    "mechanics_str" : "After each Long Rest, choose a skill, tool, and language.  You are considered proficient in the chosen skill, tool, and language until the end of the next Long Rest.  "
+                    "mechanics_str" : "You gain a flying speed equal to your movement speed, but fall if aloft at the end of your turn.  In addition, your walking speed is doubled.  "
                 },
                 {
-                    "name_str" : "Instinctive Aggression",
+                    "name_str" : "Serene Mind",
                     "level" : 11,
-                    "mechanics_str" : "When you take damage from a target you can percieve, you may use a Reaction to make one Attack against that target if they are within range.  "
+                    "mechanics_str" : "You are immune to the Frightened, Compliant, and Charmed conditions.  You may also remove one of these effects from a creature as an Action.  "
                 },
                 {
-                    "name_str" : "Endurance",
+                    "name_str" : "Warcaster",
                     "level" : 14,
-                    "mechanics_str" : "When you are damaged past zero Hit Points, you only take one point of Exhaustion rather than two.  You also have advantage on Constitution saving throws, and age at a tenth of the previous rate.  "
+                    "mechanics_str" : "When you cast a Superpower, Technology, or Spell as an Action, you may make one weapon attack as a Bonus Action.  "
                 },
                 {
-                    "name_str" : "Genepyre",
-                    "level" : 17,
-                    "mechanics_str" : "When you are affected by the casting of a Superpower based effect, you may use your reaction to force the caster to make a Casting Ability Saving Throw.  The DC equals 8 + Prof + Con.  On a success, you take half damage (if relevant) and suffer the other effects as normal.  On a failure, the Superpower does not take effect, the target cannot cast that Superpower again until after a long rest, and you gain the ability to cast that Superpower using Con as the spellcasting ability a number of times equal to your proficiency bonus until the end of the next Long Rest.  "
+                    "name_str" : "Kinetic Surge",
+                    "level" : 17
                 },
                 {
-                    "name_str" : "Ultimate Manifestation",
+                    "name_str" : "Psionic Avatar",
                     "level" : 20,
-                    "mechanics_str" : "When you Manifest form, you may choose to take on any of the following attributes while the form persists:  <ul><li><b>Size:</b>  You may become one size Larger or Smaller.  </li><li><b>Immunity:</b>  You become Immune to one damage type other than BPS.  </li><li><b>Environment:</b>  You can breathe normally in any environment, and are resistant to the damage from any environmental effects.  </li><li><b>Saving Throws:</b>  You gain Proficiency in two Saving Throws of your choice.  </li>"
+                    "mechanics_str" : "When you use Stoic Defense and the attack still hits, you gain resistance to the incoming instance of damage.  When you use your Kinetic Surge, you may move up to half of your Augmented Mobility flying speed without provoking Opportunity Attacks.  When you use your Augmented Mobility flying speed, you only fall if you are not in contact with a solid surface, regardless of whether it is a floor, wall, or ceiling.  "
                 }
             ],
 
-            "subclass_tech_name" : "Replicatist",
-            "subclass_tech_img" : "/_SiteResources/Images/Metamorph-Replicatist.png",
+            "subclass_tech_name" : "Augmentist",
+            "subclass_tech_img" : "/_SiteResources/Images/Psiblade-Augmentist.png",
             "subclass_tech_img_credit" : "---",
-            "subclass_tech_description" : "By developing their natural shapechanging ability to include (perhaps even specialize in) the adaptation of the nervous system, the Replicatist is able to mimic the appearance and behaviors of other sapiens in a nearly flawless manner.  ",
+            "subclass_tech_description" : "Choosing to focus on improving themselves so they might not always rely on the gods, the Augmentist employs gadgets and cybernetic modifications to impose a unique battlefield presence.  ",
             "subclass_tech_feats" : [
                 {
                     "name_str" : "Techcasting",
@@ -1381,26 +1384,26 @@
                     "mechanics_str" : "See the Rules for Techcasting mechanics and Technologies list.  <ul><li><b>Technologies Known:</b>  You learn Technologies of your choice as shown in the Consumables Known column of the class table.  You may not learn a Technology of a level higher than your Max Consumable Level, and you may learn a Technology at the same time you learn its prerequisite.  </li><br><li><b>Tech Points:</b>  You have a number of Tech Points as shown in the Consumable Points column of the class table.  You expend these Tech Points to cast Technologies.  You regain all expended Tech Points when you finish a long rest.  </li><br><li><b>Max Tech Level:</b>  Many Technologies can be overpowered, consuming more Tech Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Technologies at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Techcasting Ability:</b>  Your Techcasting ability is Charisma.  You use your Charisma modifier whenever a Technology refers to your Techcasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Technology you cast and when making an attack roll with one.  </li><br><li><b>Technology save DC</b> = 8 + your proficiency bonus + your Techcasting ability modifier.  </li><br><li><b>Technology attack modifier</b> = your proficiency bonus + your Techcasting ability modifier.  </li></ul>"
                 },
                 {
-                    "name_str" : "Energy Blade",
+                    "name_str" : "Cybernetic Blade",
                     "level" : 7,
-                    "mechanics_str" : "Using your gifts, you are able to repurpose several of Gondarin's schematics to suit your own needs.  You gain an Energy Blade, which has the following traits:  <ul><li><b>Damage:</b>  The energy blade deals Incinerating or Electrocuting damage (your choice upon creation).  "
+                    "mechanics_str" : "You are able to modify a weapon, integrating it into your flesh and improving its effectiveness.  Over the course of a Short Rest, you may attune to any one weapon with which you are proficient.  This weapon has the following traits while wielded by you:  <ul><li><b>Enhanced:</b>  If the original item is Mundane, the item now counts as Technological, and gains a bonus equal to half your proficiency bonus rounded down.  If the original item is Technological, only the higher bonus takes effect.  </li><li><b>Integrated:</b>  The weapon can be extended and retracted at any point out of combat or during your turn.  While extended, you must wield it with your hands as normal for a weapon of that type.  While retracted, it is entirely undetectable.  </li><li><b>Damage:</b>  When you bond with the weapon, you may choose Incinerating or Eletrocuting damage to replace the original damage type.  </li><li><b>Attunement:</b>If the original item typically requires attunement, this item does not.  </li></ul>"
                 },
                 {
-                    "name_str" : "Neural Download",
+                    "name_str" : "Cybernetic Shield",
                     "level" : 13,
-                    "mechanics_str" : "You may use an Action to force a creature you can touch to make an Intelligence Saving Throw, the DC of which is equal to 8 + your Con Mod + your Prof Bonus.  On a success, the creature is unaffected.  On a failure, you learn the information necessary to pass yourself off as this creature flawlessly (no Deception check required), along with any important knowledge the creature might have, such as passwords or the location of a secret base.  You may use this feature once per Long Rest.  "
+                    "mechanics_str" : "You are able to modify a shield, integrating it into your flesh and improving its effectiveness.  Over the course of a Short Rest, you may attune to any one shield with which you are proficient.  This shield has the following traits while wielded by you:  <ul><li><b>Enhanced:</b>  If the original item is Mundane, the item now counts as Technological, and gains a bonus equal to half your proficiency bonus rounded down.  If the original item is Technological, only the higher bonus takes effect.  </li><li><b>Integrated:</b>  The shield can be extended and retracted at any point out of combat or during your turn.  While extended, you must wield it with your hands as normal for a shield of that type.  While retracted, it is entirely undetectable.  </li><li><b>Attunement:</b>If the original item typically requires attunement, this item does not.  </li></ul>"
                 },
                 {
-                    "name_str" : "Doppelganger",
+                    "name_str" : "Cybernetic Kinesis",
                     "level" : 19,
-                    "mechanics_str" : "You can modify your appearance as described in Sapien Form feature at will.  You do not gain any of the other benefits unless you use your Manifest Form feature.  "
+                    "mechanics_str" : "Your Kinetic Surge now includes your Techcasting Ability Modifier in the damage calculation.  Your Kinetic Surge can now deal Incinerating or Electrocuting damage instead.  When you roll Initiative and have no uses of Kinetic Surge remaining, you gain two uses.  "
                 }
             ],
 
-            "subclass_power_name" : "Archeophenix",
-            "subclass_power_img" : "/_SiteResources/Images/Metamorph-Archeophoenix.png",
+            "subclass_power_name" : "Guardian",
+            "subclass_power_img" : "/_SiteResources/Images/Psiblade-Guardian.png",
             "subclass_power_img_credit" : "---",
-            "subclass_power_description" : "Whether sent as a savior or cursed with a terrible affliction, the Phoenix can manifest a singular powerful magical form that evokes an awe remiscent of that in the oldest of mythos.  ",
+            "subclass_power_description" : "Embracing their divine gifts, the Guardian rounds out their boons with knowledge of spellcasting and magical weaponry.  ",
             "subclass_power_feats" : [
                 {
                     "name_str" : "Spellcasting",
@@ -1408,26 +1411,26 @@
                     "mechanics_str" : "See the Rules for Spellcasting mechanics and Spells list.  <ul><li><b>Spells Known:</b>  You learn Spells of your choice as shown in the Consumables Known column of the class table.  You may not learn a Spell of a level higher than your Max Consumable Level, and you may learn a Spell at the same time you learn its prerequisite.  </li><br><li><b>Spell Points:</b>  You have a number of Spell Points as shown in the Consumable Points column of the class table.  You expend these Spell Points to cast Spells.  You regain all expended Spell Points when you finish a long rest.  </li><br><li><b>Max Spell Level:</b>  Many Spells can be overpowered, consuming more Spell Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Spells at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Spellcasting Ability:</b>  Your Spellcasting ability is Intelligence.  You use your Intelligence modifier whenever a Spell refers to your Spellcasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Spell you cast and when making an attack roll with one.  </li><br><li><b>Spell save DC</b> = 8 + your proficiency bonus + your Spellcasting ability modifier.  </li><br><li><b>Spell attack modifier</b> = your proficiency bonus + your Spellcasting ability modifier.  </li></ul>"
                 },
                 {
-                    "name_str" : "Divine Form",
+                    "name_str" : "Divine Blade",
                     "level" : 7,
-                    "mechanics_str" : "When you Manifest Form, you may choose to take on the form of a magical flying creature such as a Phoenix, Dragon, Demon, or Angel.  When you Manifest Form, you may take on any of these attributes in addition to the normal effects:  <ul><li><b>Radiance:</b>  Your Unarmed Strikes have a range of 20/60, and can deal Incinerating, Cryogenic, or Corrosive damage.  </li><li><b>Speed:</b>  You gain a Flying Speed equal to your Walking Speed + (Prof Bonus * 5).  </li><li><b>Reciprocity:</b>  When you use your Healing Factor Bonus Action, rather than heal yourself, you can instead choose to heal or harm a target within 10 feet of you for an equal amount.  If you choose to harm, the damage takes effect without an Attack roll or Saving Throw, and has no damage type (cannot be resisted or negated, granted the target is capable of taking damage in the first place).  </li><li><b>Transcendence:</b>  You may choose any Intelligence based skill for the Manifest Form's Expertise feature.  </li>"
+                    "mechanics_str" : "You are able to bond with a weapon, imbuing it with magical power that answers only to you.  Over the course of a Short Rest, you may attune to any one weapon with which you are proficient.  The weapon has the following traits while wielded by you:  <ul><li><b>Enhanced:</b>  If the original item is Mundane, the item now counts as Magical, and gains a bonus equal to half your proficiency bonus rounded down.  If the original item is Magical, only the higher bonus takes effect.  </li><li><b>Bound:</b>  The weapon can be magically summoned into your hand at any point out of combat or during your turn.  </li><li><b>Damage:</b>  When you bond with the weapon, you may choose Incinerating, Eletrocuting, or Cryogenic damage to replace the original damage type.  </li><li><b>Attunement:</b>If the original item typically requires attunement, this item does not.  </li></ul>"
                 },
                 {
-                    "name_str" : "Word of Power",
+                    "name_str" : "Divine Shield",
                     "level" : 13,
-                    "mechanics_str" : "You can understand all languages, and all creatures capable of understanding a language can understand you.  As a Bonus Action, you may force a target within 120 feet of you that can hear you to make a Charisma Saving Throw.  On a success, the creature has disadvantage on Attacks against you until the end of your next turn and is otherwise immune to this feature until the end of your next Long Rest.  On a failure, the creature is Frightened of you for one minute.  "
+                    "mechanics_str" : "You are able to modify a shield, integrating it into your flesh and improving its effectiveness.  Over the course of a Short Rest, you may attune to any one shield with which you are proficient.  This shield has the following traits while wielded by you:  <ul><li><b>Enhanced:</b>  If the original item is Mundane, the item now counts as Magical, and gains a bonus equal to half your proficiency bonus rounded down.  If the original item is Magical, only the higher bonus takes effect.  </li><li><b>Bound:</b>  The shield can be magically summoned into your hand at any point out of combat or during your turn.  While summoned, you must wield it with your hands as normal for a shield of that type.  </li><li><b>Attunement:</b>If the original item typically requires attunement, this item does not.  </li></ul>"
                 },
                 {
-                    "name_str" : "Divine Strikes",
+                    "name_str" : "Divine Kinesis",
                     "level" : 19,
-                    "mechanics_str" : "Your Divine Form Unarmed Strikes now have a range of 40/120 and can deal Psionic damage.  In addition, your Reciprocity feature heals / harms double the standard amount.  "
+                    "mechanics_str" : "Your Kinetic Surge now includes your Spellcasting Ability Modifier in the damage calculation.  Your Kinetic Surge can now deal Luminous or Cryogenic damage instead.  When you roll Initiative and have no uses of Kinetic Surge remaining, you gain two uses.  "
                 }
             ],
             
-            "subclass_magic_name" : "Darwinian",
-            "subclass_magic_img" : "/_SiteResources/Images/Metamorph-Darwinian.png",
+            "subclass_magic_name" : "Specter",
+            "subclass_magic_img" : "/_SiteResources/Images/Psiblade-Specter.png",
             "subclass_magic_img_credit" : "---",
-            "subclass_magic_description" : "Possessing a gene that rapidly accelerates the process of evolution through individual and instantaneous mutations, the Darwinian is among the most intimidating and difficult beings to kill.  ",
+            "subclass_magic_description" : "Harnessing innate abilities that have soaked into their souls, the Specter is able to manipulate matter to better equip themselves for battle.  ",
             "subclass_magic_feats" : [
                 {
                     "name_str" : "Powercasting",
@@ -1435,19 +1438,19 @@
                     "mechanics_str" : "See the Rules for Powercasting mechanics and Superpowers list.  <ul><li><b>Superpowers Known:</b>  You learn Superpowers of your choice as shown in the Consumables Known column of the class table.  You may not learn a Superpower of a level higher than your Max Consumable Level, and you may learn a Superpower at the same time you learn its prerequisite.  </li><br><li><b>Superpower Points:</b>  You have a number of Superpower Points as shown in the Consumable Points column of the class table.  You expend these Superpower Points to cast Superpowers.  You regain all expended Superpower Points when you finish a long rest.  </li><br><li><b>Max Superpower Level:</b>  Many Superpowers can be overpowered, consuming more Superpower Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Superpowers at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Powercasting Ability:</b>  Your Powercasting ability is Wisdom.  You use your Wisdom modifier whenever a Superpower refers to your Powercasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Superpower you cast and when making an attack roll with one.  </li><br><li><b>Superpower save DC</b> = 8 + your proficiency bonus + your Powercasting ability modifier.  </li><br><li><b>Superpower attack modifier</b> = your proficiency bonus + your Powercasting ability modifier.  </li></ul>"
                 },
                 {
-                    "name_str" : "Beast Form",
+                    "name_str" : "Energy Blade",
                     "level" : 7,
-                    "mechanics_str" : "When you Manifest Form, you may choose to take on the physical appearance of a sapien animal hybrid such as a Werewolf, Harpy, or other aesthetic combination of your choice.  When you Manifest Form, you may take on any of these attributes in addition to the normal effects:  <ul><li><b>Unarmed Strikes:</b>  Your Unarmed Strikes deal d6s rather than d4s, and are considered Adamantine.  </li><li><b>Aquatic:</b>  You gain a Swimming Speed equal to your Walking Speed and can breathe normally underwater.  </li><li><b>Pounce:</b>  You may use a Bonus Action to leap through the air a number of feet equal to Prof * 5.  This punce does not count against your total movement.  </li><li><b>Instinctual:</b>  You may choose any Wisdom based skill for the Manifest Form's Expertise feature.  </li>"
+                    "mechanics_str" : "You are able to bond with a weapon, immolating it at the molecular level so it might be called upon later at will.  Over the course of a Short Rest, you may attune to any one weapon with which you are proficient.  The weapon has the following traits while wielded by you:  <ul><li><b>Enhanced:</b>  If the original item is Mundane, the item now counts as Superpowered, and gains a bonus equal to half your proficiency bonus rounded down.  If the original item is Superpowered, only the higher bonus takes effect.  </li><li><b>Manifested:</b>  The weapon can be manifested into your hand at any point out of combat or during your turn.  </li><li><b>Damage:</b>  When you bond with the weapon, you may choose Kinetic or Radiation damage to replace the original damage type.  </li><li><b>Attunement:</b>If the original item typically requires attunement, this item does not.  </li></ul>"
                 },
                 {
-                    "name_str" : "Relentless Healing",
+                    "name_str" : "Energy Shield",
                     "level" : 13,
-                    "mechanics_str" : "Your Healing Factor remains active while you have less than your maximum Hit Points.  In addition, you are able to regenerate any missing body parts given sufficient time.  Regenerating a hand or foot takes five minutes, while an entire arm or leg takes an hour.  The GM will determine the amount of time needed for regeneration based on the specific injury using these guidelines.  "
+                    "mechanics_str" : "You are able to modify a shield, immolating it at the molecular level so it might be called upon later at will.  Over the course of a Short Rest, you may attune to any one shield with which you are proficient.  This shield has the following traits while wielded by you:  <ul><li><b>Enhanced:</b>  If the original item is Mundane, the item now counts as Superpowered, and gains a bonus equal to half your proficiency bonus rounded down.  If the original item is Superpowered, only the higher bonus takes effect.  </li><li><b>Manifested:</b>  The shield can be manifested into your hand at any point out of combat or during your turn.  While manifested, you must wield it with your hands as normal for a shield of that type.  </li><li><b>Attunement:</b>If the original item typically requires attunement, this item does not.  </li></ul>"
                 },
                 {
-                    "name_str" : "Predator",
+                    "name_str" : "Energy Kinesis",
                     "level" : 19,
-                    "mechanics_str" : "Your Beast Form Unarmed Strikes deal d8s instead of d6s.  In addition, You may make an Attack as part of your Beast Form's Pounce Bonus Action.  "
+                    "mechanics_str" : "Your Kinetic Surge now includes your Powercasting Ability Modifier in the damage calculation.  Your Kinetic Surge can now deal Kinetic or Radiation damage instead.  When you roll Initiative and have no uses of Kinetic Surge remaining, you gain two uses.  "
                 }
             ]
         },
