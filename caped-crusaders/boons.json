@@ -23,6 +23,138 @@
             "races_str" : ""
         },
         {
+            "name_str" : "Summon Familiar",
+            "page_url" : "summon-familiar.html",
+
+            "level_int" : 1,
+            "level_str" : "1st",
+
+            "school_str" : "Conjuration",
+            "school_img" : "/_SiteResources/Images/Sigil-Conjuration.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "You gain the service of a Familiar, a bounded magical spirit manifest in physical form.  You may summon your Familiar via a Short Rest.  When the Familiar is reduced to zero hit points, it is destroyed, and can then be summoned again.  The Familiar can take one of three forms, Land, Sea, or Air.  You control the Familiar in and out of combat, as you are spiritually linked and can perceive through yours and the Familiar's senses simultaneously.  The Familiar has the following attributes:  <ul><li><b>Size:</b>  The Familiar is considered Tiny.  </li><li><b>Armor Class:</b>  The Familiar has an Armor Class equal to 10 plus your Proficiency Bonus.  The Familiar uses your stats for Saving Throws and Skill Checks.  </li><li><b>Speed (Land):</b>  The Familiar has a Walking Speed of 40 feet, and a Swimming Speed of 20.  The Familiar gains +2 AC.  </li><li><b>Speed (Sea):</b>  The Familiar has a Walking Speed of 20 feet, and a Swimming Speed of 40.  The Familiar can breathe normally underwater.  </li><li><b>Speed (Air):</b>  The Familiar has a Walking Speed of 20 feet, and Flying Speed of 40.  The Familar can breathe normally at high altitude.  </li><li><b>Hit Points:</b>  The Familiar has a number of Hit Points equal to your Wisdom Modifier.  </li><li><b>Actions:</b>  The Familiar may take any standard Action other than Attack, granted it is capable of doing so.  </li></ul>At level 10, the The Familiar's movement does not provoke Opportunity Attacks.  At level 14, the Familiar may take the Hinder Action, which has a range of Touch, to impose disadvantage on one Saving Throw.  At level 18, the Familiar grants Expertise to any Intelligence based check in addition to Advantage when taking the Help Action.  ",
+
+            "class_str" : "Archmage",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Warcaster",
+            "page_url" : "warcaster.html",
+
+            "level_int" : 4,
+            "level_str" : "4th",
+            
+            "school_str" : "Resilience",
+            "school_img" : "/_SiteResources/Images/Resilience.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "When you cast a Superpower, Technology, or Spell as an Action, you may make one weapon attack as a Bonus Action.  ",
+
+            "class_str" : "Psiblade",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Serene Mind",
+            "page_url" : "serene-mind.html",
+
+            "level_int" : 3,
+            "level_str" : "3rd",
+            
+            "school_str" : "Resilience",
+            "school_img" : "/_SiteResources/Images/Resilience.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "You are immune to the Frightened, Compliant, and Charmed conditions.  You may also remove one of these effects from a creature as an Action.  ",
+
+            "class_str" : "Psiblade",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Channeled Athleticism",
+            "page_url" : "channeled-athleticism.html",
+
+            "level_int" : 2,
+            "level_str" : "2nd",
+            
+            "school_str" : "Resilience",
+            "school_img" : "/_SiteResources/Images/Resilience.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "You gain a flying speed equal to your movement speed, but fall if aloft at the end of your turn.  In addition, your walking speed is doubled.  ",
+
+            "class_str" : "Psiblade",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Arcane Rejuvenation",
+            "page_url" : "arcane-rejuvenation.html",
+
+            "level_int" : 3,
+            "level_str" : "3rd",
+
+            "school_str" : "Evocation",
+            "school_img" : "/_SiteResources/Images/Sigil-Evocation.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "When you roll hit dice to regain hit points during a long rest, you regain a number of spell points equal to the amount healed.  ",
+
+            "class_str" : "Archmage",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Planar Rebuke",
+            "page_url" : "planar-rebuke.html",
+
+            "level_int" : 2,
+            "level_str" : "2nd",
+
+            "school_str" : "Evocation",
+            "school_img" : "/_SiteResources/Images/Sigil-Evocation.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "As an Action, you may force any number of Fiends, Celestials, Aberrations, Undead, and Extraterrestrials within 30 feet of you to make a Charisma Saving Throw against your Spellcasting DC.  On a success, they take Incinerating, Cryogenic, or Corrosive damage (your choice for each target) equal to your level.  On a failure, they suffer the damage and have Disadvantage on all Attack rolls, Saving Throws, and Ability Checks for one minute.  ",
+
+            "class_str" : "Archmage",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
             "name_str" : "Primordial Levitation",
             "page_url" : "primordial-levitation.html",
 

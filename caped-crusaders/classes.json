@@ -38,28 +38,8 @@
                     "mechanics_str" : "You have known intimate knowledge of technology far beyond your time, and are capable of applying these technologies in a variety of ways.  See the Rules for Techcasting mechanics and Technologies list.  <ul><li><b>Technologies Known:</b>  You learn 4 Technologies of your choice, and you learn an additional 4 at each higher Visionary level as shown in the Technologies Known column of the Visionary table.  You may not learn a Technology of a level higher than your Max Technology Level, and you may learn a Technology at the same time you learn its prerequisite.  </li><br><li><b>Tech Points:</b>  You have a number of Tech Points equal to your Visionary level x 8, as shown in the Tech Points column of the Visionary table, + your Int modifier.  You expend these Tech Points to cast Tech Powers.  You regain all expended Tech Points when you finish a long rest.  </li><br><li><b>Max Tech Level:</b>  Many Technologies can be overpowered, consuming more Tech Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Tech Level column of the Visionary table.  You may only cast Technologies at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Techcasting Ability:</b>  Your Techcasting ability is Intelligence.  You use your Intelligence modifier whenever a Technology refers to your Techcasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Technology you cast and when making an attack roll with one.  </li><br><li><b>Technology save DC</b> = 8 + your Proficiency Bonus + your Techcasting ability modifier.  </li><br><li><b>Technology attack modifier</b> = your Proficiency Bonus + your Techcasting ability modifier.  </li></ul>"
                 },
                 {
-                    "name_str" : "Augmented Armor",
-                    "level" : 6,
-                    "mechanics_str" : "Your inventive pursuits have led to you making armor that serves as a conduit for your technology.  As part of a Long Rest, you can turn a suit of mundane armor you have access to into Augmented Armor, provided you have Inventor's Tools on hand.  You can don or doff the Augmented Armor over the course of 1 minute.  The Augmented Armor continues to be Augmented Armor until you create another set of Augmented Armor, or it is destroyed.  If you die while wearing the Augmented Armor, it is destroyed.  The Augmented Armor has the following traits while worn by you:<ul><li>Your Strength score becomes equal to your Intelligence score as long as it is not already higher.  You are also considered proficient with the armor.  </li>  <li>You can use the Augmented Armor as a Techcasting focus for your Visionary spells.  </li><li>The Augmented Armor attaches to you and can't be removed against your will.  </li><li>The Augmented Armor expands to cover your entire body, although you can remove or attach the helmet as an action.  </li><li>The Augmented Armor replaces any missing limbs, functioning identically to a limb it replaces.  </li></ul>"
-                },
-                {
-                    "name_str" : "Subclass Feature",
-                    "level" : 2,
-                    "mechanics_str" : "You gain a subclass as detailed at the bottom of this page.  <br><br>Each subclass offers a Sustainable at this level, and an additional Sustainable at levels 8, and 16.  "
-                },
-                {
                     "name_str" : "Techcasting Milestone",
                     "level" : 3
-                },
-                {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 4,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can't increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  <br><br>You gain this feature again at levels 8, 12, 16, and 19.  "
-                },
-                {
-                    "name_str" : "Advanced Armor",
-                    "level" : 10,
-                    "mechanics_str" : "Your inventive pursuits have led to you making armor that serves as a conduit for your technology.  As part of a Long Rest, you can turn a suit of mundane armor you have access to into Advanced Armor, provided you have Inventor's Tools on hand.  You can don or doff the Advanced Armor an Action.  The Advanced Armor continues to be Advanced Armor until you create another set of Advanced Armor, or it is destroyed.  If you die while wearing the Advanced Armor, it is destroyed.  The Advanced Armor has the following traits while worn by you:<ul><li>Your Strength score becomes equal to your Intelligence score as long as it is not already higher.  You are also considered proficient with the armor.  </li>  <li>You can use the Advanced Armor as a Techcasting focus for your Visionary spells.  </li><li>The Advanced Armor attaches to you and can't be removed against your will.  </li><li>The Advanced Armor expands to cover your entire body, although you can retract or deploy the helmet as an action.  </li><li>The Advanced Armor replaces any missing limbs, functioning identically to a limb it replaces.  </li><li>When you make an Intelligence check, you can treat the d20 result as equal to your Intelligence modifier if the result before modifiers is lower.  </li><li>You can survive in the vacuum of space for a number of minutes equal to your Intelligence modifier.  This ability recharges upon a long rest within a hospitable environment.  </li></ul>"
                 },
                 {
                     "name_str" : "Techcasting Milestone",
@@ -70,29 +50,12 @@
                     "level" : 7
                 },
                 {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 8
-                },
-                {
-                    "name_str" : "Subclass Feature",
-                    "level" : 8
-                },
-                {
                     "name_str" : "Techcasting Milestone",
                     "level" : 9
                 },
                 {
                     "name_str" : "Techcasting Milestone",
                     "level" : 11
-                },
-                {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 12
-                },
-                {
-                    "name_str" : "Superior Armor",
-                    "level" : 14,
-                    "mechanics_str" : "Your inventive pursuits have led to you making armor that serves as a conduit for your technology.  As part of a Long Rest, you can turn a suit of mundane armor you have access to into Superior Armor, provided you have Inventor's Tools on hand.  You can don or doff the Superior Armor as a Bonus Action.  The Superior Armor continues to be Superior Armor until you create another set of Superior Armor, or it is destroyed.  If you die while wearing the Superior Armor, it is destroyed.  The Superior Armor has the following traits while worn by you:<ul><li>Your Strength score becomes equal to your Intelligence score as long as it is not already higher.  You are also considered proficient with the armor.  </li>  <li>You can use the Superior Armor as a Techcasting focus for your Visionary spells.  </li><li>The Superior Armor attaches to you and can't be removed against your will.  </li><li>The Superior Armor expands to cover your entire body, although you can retract or deploy the helmet as a bonus action.  </li><li>The Superior Armor replaces any missing limbs, functioning identically to a limb it replaces.  </li><li>When you make an Intelligence check, you can treat the d20 result as equal to half of your Intelligence score (rounded down) if the result before modifiers is lower.  </li><li>You can survive in the vacuum of space for a number of hours equal to your Intelligence modifier.  This ability recharges upon a long rest within a hospitable environment.  </li></ul>"
                 },
                 {
                     "name_str" : "Techcasting Milestone",
@@ -103,25 +66,57 @@
                     "level" : 15
                 },
                 {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 16
+                    "name_str" : "Techcasting Milestone",
+                    "level" : 17
+                },
+                {
+                    "name_str" : "Augmented Armor",
+                    "level" : 1,
+                    "mechanics_str" : "Your inventive pursuits have led to you making armor that serves as a conduit for your technology.  As part of a Long Rest, you can turn a suit of mundane armor you have access to into Augmented Armor, provided you have Inventor's Tools on hand.  You can don or doff the Augmented Armor over the course of 1 minute.  The Augmented Armor continues to be Augmented Armor until you create another set of Augmented Armor, or it is destroyed.  If you die while wearing the Augmented Armor, it is destroyed.  The Augmented Armor has the following traits while worn by you:<ul><li>Your Strength score becomes equal to your Intelligence score as long as it is not already higher.  You are also considered proficient with the armor.  </li>  <li>You can use the Augmented Armor as a Techcasting focus for your Visionary spells.  </li><li>The Augmented Armor attaches to you and can't be removed against your will.  </li><li>The Augmented Armor expands to cover your entire body, although you can remove or attach the helmet as an action.  </li><li>The Augmented Armor replaces any missing limbs, functioning identically to a limb it replaces.  </li></ul>"
+                },
+                {
+                    "name_str" : "Superior Armor",
+                    "level" : 12,
+                    "mechanics_str" : "Your inventive pursuits have led to you making armor that serves as a conduit for your technology.  As part of a Long Rest, you can turn a suit of mundane armor you have access to into Superior Armor, provided you have Inventor's Tools on hand.  You can don or doff the Superior Armor as a Bonus Action.  The Superior Armor continues to be Superior Armor until you create another set of Superior Armor, or it is destroyed.  If you die while wearing the Superior Armor, it is destroyed.  The Superior Armor has the following traits while worn by you:<ul><li>Your Strength score becomes equal to your Intelligence score as long as it is not already higher.  You are also considered proficient with the armor.  </li>  <li>You can use the Superior Armor as a Techcasting focus for your Visionary spells.  </li><li>The Superior Armor attaches to you and can't be removed against your will.  </li><li>The Superior Armor expands to cover your entire body, although you can retract or deploy the helmet as a bonus action.  </li><li>The Superior Armor replaces any missing limbs, functioning identically to a limb it replaces.  </li><li>When you make an Intelligence check, you can treat the d20 result as equal to half of your Intelligence score (rounded down) if the result before modifiers is lower.  </li><li>You can survive in the vacuum of space for a number of hours equal to your Intelligence modifier.  This ability recharges upon a long rest within a hospitable environment.  </li></ul>"
+                },
+                {
+                    "name_str" : "Ultimate Armor",
+                    "level" : 18,
+                    "mechanics_str" : "Your inventive pursuits have led to you making armor that serves as a conduit for your technology.  As part of a Long Rest, you can turn a suit of mundane armor you have access to into Ultimate Armor, provided you have Inventor's Tools on hand.  You can don or doff the Ultimate Armor as part of any Action, Bonus Action, or Reaction you take.  In addition, when the Ultimate Armor is doffed by you, you can choose to have it collapse into a small housing unit.  The housing unit takes on a form of your choosing, and can be no smaller a thick wristwatch.  You can use the housing unit as a Tech casting focus for your Visionary spells while you wear it as components of the Ultimate Armor dynamically deploy and retract as needed.  The Ultimate Armor continues to be Ultimate Armor until you create another set of Ultimate Armor, or it is destroyed.  If you die while wearing the Ultimate Armor, it is destroyed.  The Ultimate Armor has the following traits while worn by you:<ul><li>Your Strength score becomes equal to your Intelligence score as long as it is not already higher.  You are also considered proficient with the armor.  </li>  <li>You can use the Ultimate Armor as a Techcasting focus for your Visionary spells, and you need not supply any components that do not have a cost while doing so.  </li><li>The Ultimate Armor attaches to you and can't be removed against your will.  </li><li>The Ultimate Armor expands to cover your entire body, although you can retract or deploy the helmet once per turn.  </li><li>The Ultimate Armor replaces any missing limbs, functioning identically to a limb it replaces.  </li><li>When you make an Intelligence check, you can treat the d20 result as equal to your Intelligence score if the result before modifiers is lower.  </li><li>You can survive in the vacuum of space for a number of days equal to your Intelligence modifier.  This ability recharges upon a long rest within a hospitable environment.  </li></ul>"
+                },
+                {
+                    "name_str" : "Subclass Feature",
+                    "level" : 2,
+                    "mechanics_str" : "You gain a subclass as detailed at the bottom of this page.  <br><br>Each subclass offers a Sustainable at this level, and an additional Sustainable at levels 8, and 16.  "
+                },
+                {
+                    "name_str" : "Subclass Feature",
+                    "level" : 8
                 },
                 {
                     "name_str" : "Subclass Feature",
                     "level" : 16
                 },
                 {
-                    "name_str" : "Techcasting Milestone",
-                    "level" : 17
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 4,
+                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can't increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  <br><br>You gain this feature again at levels 8, 12, 16, and 19.  "
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 6
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 10
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 14
                 },
                 {
                     "name_str" : "Ability Score Improvement",
                     "level" : 19
-                },
-                {
-                    "name_str" : "Ultimate Armor",
-                    "level" : 18,
-                    "mechanics_str" : "Your inventive pursuits have led to you making armor that serves as a conduit for your technology.  As part of a Long Rest, you can turn a suit of mundane armor you have access to into Ultimate Armor, provided you have Inventor's Tools on hand.  You can don or doff the Ultimate Armor as part of any Action, Bonus Action, or Reaction you take.  In addition, when the Ultimate Armor is doffed by you, you can choose to have it collapse into a small housing unit.  The housing unit takes on a form of your choosing, and can be no smaller a thick wristwatch.  You can use the housing unit as a Tech casting focus for your Visionary spells while you wear it as components of the Ultimate Armor dynamically deploy and retract as needed.  The Ultimate Armor continues to be Ultimate Armor until you create another set of Ultimate Armor, or it is destroyed.  If you die while wearing the Ultimate Armor, it is destroyed.  The Ultimate Armor has the following traits while worn by you:<ul><li>Your Strength score becomes equal to your Intelligence score as long as it is not already higher.  You are also considered proficient with the armor.  </li>  <li>You can use the Ultimate Armor as a Techcasting focus for your Visionary spells, and you need not supply any components that do not have a cost while doing so.  </li><li>The Ultimate Armor attaches to you and can't be removed against your will.  </li><li>The Ultimate Armor expands to cover your entire body, although you can retract or deploy the helmet once per turn.  </li><li>The Ultimate Armor replaces any missing limbs, functioning identically to a limb it replaces.  </li><li>When you make an Intelligence check, you can treat the d20 result as equal to your Intelligence score if the result before modifiers is lower.  </li><li>Choose two of your Technologies that are of 2nd level or lower.  You can cast those Technologies at their lowest level without expending any Tech Points.  </li><li>You can survive in the vacuum of space for a number of days equal to your Intelligence modifier.  This ability recharges upon a long rest within a hospitable environment.  </li></ul>"
                 },
                 {
                     "name_str" : "Renewable Energy",
@@ -259,9 +254,34 @@
                     "level" : 19
                 },
                 {
-                    "name_str" : "Sneak Attack",
+                    "name_str" : "Scaling Feature",
                     "level" : 1,
-                    "mechanics_str" : "When you make an Attack using Dexterity against a target with advantage, while within Dim Light or Darkness, or while an Ally is within 5 feet of the target, you may inflict Sneak Attack upon a hit.  When inflicting Sneak Attack, you deal additional damage equal to a number of d6s equal to your Proficiency Bonus.  Until the start of your next turn, any creature (other than you) who Attacks a target that suffered your Sneak Attack damage gains a bonus to the Attack roll equal to the number of Sneak Attacks the target suffered.  For example, if you deal Sneak Attack to a target twice in one turn, all creatures gain +2 to their Attack rolls against that target.  If on your next turn you deal Sneak Attack to two separate targets, all creatures gain +1 to their Attack rolls against either.  <br><br>At level 14, the bonus granted to other creatures attacking the target of your Sneak Attack also applies to Damage rolls.  "
+                    "mechanics_str" : "This is a class specific feature that scales.  "
+                },
+                {
+                    "name_str" : "Scaling Feature",
+                    "level" : 9
+                },
+                {
+                    "name_str" : "Scaling Feature",
+                    "level" : 15
+                },
+                {
+                    "name_str" : "Subclass Feature",
+                    "level" : 2,
+                    "mechanics_str" : "You gain a subclass as detailed at the bottom of this page.  <br><br>Each subclass offers a Sustainable at this level, and an additional Sustainable at levels 6, 13, and 18.  "
+                },
+                {
+                    "name_str" : "Subclass Feature",
+                    "level" : 6
+                },
+                {
+                    "name_str" : "Subclass Feature",
+                    "level" : 12
+                },
+                {
+                    "name_str" : "Subclass Feature",
+                    "level" : 18
                 },
                 {
                     "name_str" : "Ability Score Improvement",
@@ -289,35 +309,10 @@
                     "level" : 17
                 },
                 {
-                    "name_str" : "Subclass Feature",
-                    "level" : 2,
-                    "mechanics_str" : "You gain a subclass as detailed at the bottom of this page.  <br><br>Each subclass offers a Sustainable at this level, and an additional Sustainable at levels 6, 13, and 18.  "
-                },
-                {
-                    "name_str" : "Subclass Feature",
-                    "level" : 6
-                },
-                {
-                    "name_str" : "Subclass Feature",
-                    "level" : 12
-                },
-                {
-                    "name_str" : "Subclass Feature",
-                    "level" : 18
-                },
-                {
-                    "name_str" : "Evasion",
-                    "level" : 9,
-                    "mechanics_str" : "You have advantage on Saving Throws against effects you can see, and only take half damage on a failure and no damage on a success against Dexterity based Saving Throw effects.  "
-                },
-                {
-                    "name_str" : "Sneak Attack",
-                    "level" : 15
-                },
-                {
-                    "name_str" : "Dread Knight",
+                    "name_str" : "Capstone",
                     "level" : 20,
-                    "mechanics_str" : "You are considerd proficient in all Saving Throws, and treat any Saving Throw result of 9 or lower as a 10 before modifiers.  As a Bonus Action, you may end any one effect that is causing you to be Charmed, Frightened, or otherwise impaired through nonphysical means.  "
+                    "mechanics_str" : "This is a class specific capstone.  "
+
                 }
             ],
 
@@ -405,8 +400,8 @@
 
         {
             "name_str" : "Agent",
-            "page_url" : "",
-            "class_img" : "",
+            "page_url" : "agent.html",
+            "class_img" : "/_SiteResources/Images/Agent.png",
             "class_img_credit" : "---",
             "description_short_str" : "A sharpshooting expert who surveys and strikes key enemy forces.  ",
             "description_long_str" : "With an eye for detail and the skill to hit the mark, the Agent is a lethal addition to the battlefield at any distance.  ",
@@ -421,12 +416,12 @@
             "proficiencies_weapons" : "Simple Mundane Weapons, Simple Technological Weapons, Martial Mundane Weapons",
             "proficiencies_tools" : "Choose any two",
             "proficiencies_saves" : "Dex, Int",
-            "proficiencies_skills" : "Choose any three",
-            
-            "equipment_armor" : "Fitted Kevlar",
-            "equipment_weapons" : "Any Ranged Weapon",
+            "proficiencies_skills" : "Choose any two, one of which must be Dexterity based",
+                
+            "equipment_armor" : "Fitted Tunic, Kevlar",
+            "equipment_weapons" : "Any Mundane Weapon",
             "equipment_tools" : "One tool with which you are proficient",
-            "equipment_packs" : "One Saboteur's Pack",
+            "equipment_packs" : "One Espionist's Pack",
             "equipment_variant" : "5d4 x 100 GC",
 
             "sustainables_known_denominator" : 3,
@@ -436,38 +431,54 @@
 
             "class_feats" : [
                 {
-                    "name_str" : "Combat Techs",
+                    "name_str" : "Combat Techniques",
                     "level" : 1,
-                    "mechanics_str" : "You have a number of Techs as shown in the Sustainables Known column of the class table.  Upon reaching this and subsequent levels, you gain a new Tech that you qualify for if your total number of Techs is less than the Sustainables Known for your level.  You may also swap an existing Tech for another of your choice that you qualify for upon each level up.  "
+                    "mechanics_str" : "You have a number of Techniques as shown in the Sustainables Known column of the class table.  Upon reaching this and subsequent levels, you gain a new Technique that you qualify for if your total number of Techniques is less than the Sustainables Known for your level.  You may also swap an existing Technique for another of your choice that you qualify for upon each level up.  "
                 },
                 {
-                    "name_str" : "Combat Techs",
+                    "name_str" : "Combat Techniques",
                     "level" : 3
                 },
                 {
-                    "name_str" : "Combat Techs",
+                    "name_str" : "Combat Techniques",
                     "level" : 6
                 },
                 {
-                    "name_str" : "Combat Techs",
+                    "name_str" : "Combat Techniques",
                     "level" : 9
                 },
                 {
-                    "name_str" : "Combat Techs",
+                    "name_str" : "Combat Techniques",
                     "level" : 12
                 },
                 {
-                    "name_str" : "Combat Techs",
+                    "name_str" : "Combat Techniques",
                     "level" : 15
                 },
                 {
-                    "name_str" : "Combat Techs",
+                    "name_str" : "Combat Techniques",
                     "level" : 18
                 },
                 {
-                    "name_str" : "Sneak Attack",
+                    "name_str" : "Scaling Feature",
                     "level" : 1,
-                    "mechanics_str" : "When you make an Attack using Dexterity against a target with advantage, while within Dim Light or Darkness, or while an Ally is within 5 feet of the target, you may inflict Sneak Attack upon a hit.  When inflicting Sneak Attack, you deal additional damage equal to a number of d6s equal to your Proficiency Bonus.  Until the start of your next turn, any creature (other than you) who Attacks a target that suffered your Sneak Attack damage gains a bonus to the Attack roll equal to the number of Sneak Attacks the target suffered.  For example, if you deal Sneak Attack to a target twice in one turn, all creatures gain +2 to their Attack rolls against that target.  If on your next turn you deal Sneak Attack to two separate targets, all creatures gain +1 to their Attack rolls against either.  <br><br>At level 14, the bonus granted to other creatures attacking the target of your Sneak Attack also applies to Damage rolls.  "
+                    "mechanics_str" : "Class based scaling feature.  "
+                },
+                {
+                    "name_str" : "Scaling Feature",
+                    "level" : 5
+                },
+                {
+                    "name_str" : "Scaling Feature",
+                    "level" : 10
+                },
+                {
+                    "name_str" : "Scaling Feature",
+                    "level" : 16
+                },
+                {
+                    "name_str" : "Scaling Feature",
+                    "level" : 20
                 },
                 {
                     "name_str" : "Subclass Feature",
@@ -488,110 +499,109 @@
                 },
                 {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 2,
+                    "level" : 4,
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can't increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 4
+                    "level" : 8
                 },
                 {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 7
+                    "level" : 11
                 },
                 {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 10
-                },
-                {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 13
-                },
-                {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 16
-                },
-                {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 19
-                },
-                {
-                    "name_str" : "Expertise",
-                    "level" : 4,
-                    "mechanics_str" : "Choose one of your skill proficiencies or two of your tool proficiencies.  Your Proficiency Bonus is doubled for any ability check you make that uses the chosen skill or tools.  <br><br>You gain this feature again at levels 10 and 16.  "
-                },
-                {
-                    "name_str" : "Expertise",
-                    "level" : 10
-                },
-                {
-                    "name_str" : "Expertise",
-                    "level" : 16
-                },
-                {
-                    "name_str" : "Interrogation",
-                    "level" : 5,
-                    "mechanics_str" : "You can extract information from a target (granted you have valid methods of conveying information to each other).  Select one skill that is Intelligence, Wisdom, or Charisma based.  That skill can always use your subclass casting ability instead of the original ability.  As a Bonus Action, you may make a contested Intimidation, Insight, or Investigation check against a target's Wisdom Saving Throw.  On a success, the target gives you only enough information to save their own skin (which might be everything they know if the threat is sufficient), and is immune to this feature for 24 hours.  On a failure, the target is considered Frightened and Compliant, willingly offering all the information they have that might be remotely useful regarding the topic of inquiry, and you become aware of any Vulnerabilities the target might have.  "
-                },
-                {
-                    "name_str" : "Evasion",
-                    "level" : 8,
-                    "mechanics_str" : "You have advantage on Saving Throws against effects you can see, and only take half damage on a failure and no damage on a success against Dexterity based Saving Throw effects.  "
-                },
-                {
-                    "name_str" : "Precision Strike",
-                    "level" : 11,
-                    "mechanics_str" : "When you make an Attack, you may gain a bonus to the Attack roll equal to the modifiers applicable to the Damage roll by forgoing those modifiers on the Damage roll.  For example, if your Attack has an Attack roll of 1d20 + 7 and a Damage roll of 2d4 + 4, you could apply this feature to have an Attack roll of 1d20 + 7 + 4 and a Damage roll of 2d4 (this may seem like an unwise tradeoff, but it does help activate Sneak Attack more often).  "
-                },
-                {
-                    "name_str" : "Sneak Attack",
                     "level" : 14
                 },
                 {
-                    "name_str" : "Redirection",
-                    "level" : 17,
-                    "mechanics_str" : "When an Attack would hit you, you may use your Reaction to redirect that Attack at any other creature within range of the attacker other than the attacker themselves.  You may use this feature a number of times equal to your Proficiency Bonus between Long Rests.  "
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 17
                 },
                 {
-                    "name_str" : "Dread Knight",
-                    "level" : 20,
-                    "mechanics_str" : "You are considerd proficient in all Saving Throws, and treat any Saving Throw result of 9 or lower as a 10 before modifiers.  As a Bonus Action, you may end any one effect that is causing you to be Charmed, Frightened, or otherwise impaired through nonphysical means.  "
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 20
                 }
             ],
 
-            "subclass_tech_name" : "Exemplar",
-            "subclass_tech_img" : "/_SiteResources/Images/Prowler-Exemplar.png",
-            "subclass_tech_img_credit" : "Talons by Zach Bogart from NounProject.com",
-            "subclass_tech_description" : "A being of sheer will, the Exemplar relentlessly applies the most advanced techniques to strike fear into the hearts of average mooks and command respect as a mortal in a world of demigods.  ",
+            "subclass_tech_name" : "Replicatist",
+            "subclass_tech_img" : "/_SiteResources/Images/Metamorph-Replicatist.png",
+            "subclass_tech_img_credit" : "---",
+            "subclass_tech_description" : "By developing their natural shapechanging ability to include (perhaps even specialize in) the adaptation of the nervous system, the Replicatist is able to mimic the appearance and behaviors of other sapiens in a nearly flawless manner.  ",
             "subclass_tech_feats" : [
                 {
                     "name_str" : "Techcasting",
                     "level" : 2,
-                    "mechanics_str" : "See the Rules for Techcasting mechanics and Technologies list.  <ul><li><b>Technologies Known:</b>  You learn Technologies of your choice as shown in the Consumables Known column of the class table.  You may not learn a Technology of a level higher than your Max Consumable Level, and you may learn a Technology at the same time you learn its prerequisite.  </li><br><li><b>Tech Points:</b>  You have a number of Tech Points as shown in the Consumable Points column of the class table.  You expend these Tech Points to cast Technologies.  You regain all expended Tech Points when you finish a long rest.  </li><br><li><b>Max Tech Level:</b>  Many Technologies can be overpowered, consuming more Tech Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Technologies at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Techcasting Ability:</b>  Your Techcasting ability is Intelligence.  You use your Intelligence modifier whenever a Technology refers to your Techcasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Technology you cast and when making an attack roll with one.  </li><br><li><b>Technology save DC</b> = 8 + your proficiency bonus + your Techcasting ability modifier.  </li><br><li><b>Technology attack modifier</b> = your proficiency bonus + your Techcasting ability modifier.  </li></ul>"
+                    "mechanics_str" : "See the Rules for Techcasting mechanics and Technologies list.  <ul><li><b>Technologies Known:</b>  You learn Technologies of your choice as shown in the Consumables Known column of the class table.  You may not learn a Technology of a level higher than your Max Consumable Level, and you may learn a Technology at the same time you learn its prerequisite.  </li><br><li><b>Tech Points:</b>  You have a number of Tech Points as shown in the Consumable Points column of the class table.  You expend these Tech Points to cast Technologies.  You regain all expended Tech Points when you finish a long rest.  </li><br><li><b>Max Tech Level:</b>  Many Technologies can be overpowered, consuming more Tech Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Technologies at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Techcasting Ability:</b>  Your Techcasting ability is Charisma.  You use your Charisma modifier whenever a Technology refers to your Techcasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Technology you cast and when making an attack roll with one.  </li><br><li><b>Technology save DC</b> = 8 + your proficiency bonus + your Techcasting ability modifier.  </li><br><li><b>Technology attack modifier</b> = your proficiency bonus + your Techcasting ability modifier.  </li></ul>"
+                },
+                {
+                    "name_str" : "Sapien Form",
+                    "level" : 7,
+                    "mechanics_str" : "When you Manifest Form, you may choose to take on the physical appearance of any sapien creature you choose.  You are able to manifest clothing and other worn items, but not items to be held.  You may take on an appearance derived from your imagination, or imitate a sapien you have seen.  If you imitate a sapien you have seen, your form is indistinuishable from the original.  You have advantage on all Charisma checks made to pass yourself off as this new identity, and may choose any Charisma based skill for the Manifest Form's Expertise feature.  "
+                },
+                {
+                    "name_str" : "Neural Download",
+                    "level" : 13,
+                    "mechanics_str" : "You may use an Action to force a creature you can touch to make an Intelligence Saving Throw, the DC of which is equal to 8 + your Con Mod + your Prof Bonus.  On a success, the creature is unaffected.  On a failure, you learn the information necessary to pass yourself off as this creature flawlessly (no Deception check required), along with any important knowledge the creature might have, such as passwords or the location of a secret base.  You may use this feature once per Long Rest.  "
+                },
+                {
+                    "name_str" : "Doppelganger",
+                    "level" : 19,
+                    "mechanics_str" : "You can modify your appearance as described in Sapien Form feature at will.  You do not gain any of the other benefits unless you use your Manifest Form feature.  "
                 }
             ],
 
-            "subclass_power_name" : "Paladin",
-            "subclass_power_img" : "/_SiteResources/Images/Prowler-Paladin.png",
-            "subclass_power_img_credit" : "Blade by Manaqib S from NounProject.com",
-            "subclass_power_description" : "Having been seen as worthy by an extraplanar entity, the Paladin willingly employs magical abilities as long as they are a benefit to their vendetta.  ",
+            "subclass_power_name" : "Archeophenix",
+            "subclass_power_img" : "/_SiteResources/Images/Metamorph-Archeophoenix.png",
+            "subclass_power_img_credit" : "---",
+            "subclass_power_description" : "Whether sent as a savior or cursed with a terrible affliction, the Phoenix can manifest a singular powerful magical form that evokes an awe remiscent of that in the oldest of mythos.  ",
             "subclass_power_feats" : [
                 {
                     "name_str" : "Spellcasting",
                     "level" : 2,
-                    "mechanics_str" : "See the Rules for Spellcasting mechanics and Spells list.  <ul><li><b>Spells Known:</b>  You learn Spells of your choice as shown in the Consumables Known column of the class table.  You may not learn a Spell of a level higher than your Max Consumable Level, and you may learn a Spell at the same time you learn its prerequisite.  </li><br><li><b>Spell Points:</b>  You have a number of Spell Points as shown in the Consumable Points column of the class table.  You expend these Spell Points to cast Spells.  You regain all expended Spell Points when you finish a long rest.  </li><br><li><b>Max Spell Level:</b>  Many Spells can be overpowered, consuming more Spell Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Spells at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Spellcasting Ability:</b>  Your Spellcasting ability is Wisdom.  You use your Wisdom modifier whenever a Spell refers to your Spellcasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Spell you cast and when making an attack roll with one.  </li><br><li><b>Spell save DC</b> = 8 + your proficiency bonus + your Spellcasting ability modifier.  </li><br><li><b>Spell attack modifier</b> = your proficiency bonus + your Spellcasting ability modifier.  </li></ul>"
+                    "mechanics_str" : "See the Rules for Spellcasting mechanics and Spells list.  <ul><li><b>Spells Known:</b>  You learn Spells of your choice as shown in the Consumables Known column of the class table.  You may not learn a Spell of a level higher than your Max Consumable Level, and you may learn a Spell at the same time you learn its prerequisite.  </li><br><li><b>Spell Points:</b>  You have a number of Spell Points as shown in the Consumable Points column of the class table.  You expend these Spell Points to cast Spells.  You regain all expended Spell Points when you finish a long rest.  </li><br><li><b>Max Spell Level:</b>  Many Spells can be overpowered, consuming more Spell Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Spells at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Spellcasting Ability:</b>  Your Spellcasting ability is Intelligence.  You use your Intelligence modifier whenever a Spell refers to your Spellcasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Spell you cast and when making an attack roll with one.  </li><br><li><b>Spell save DC</b> = 8 + your proficiency bonus + your Spellcasting ability modifier.  </li><br><li><b>Spell attack modifier</b> = your proficiency bonus + your Spellcasting ability modifier.  </li></ul>"
+                },
+                {
+                    "name_str" : "Divine Form",
+                    "level" : 7,
+                    "mechanics_str" : "When you Manifest Form, you may choose to take on the form of a magical flying creature such as a Phoenix, Dragon, Demon, or Angel.  When you Manifest Form, you may take on any of these attributes in addition to the normal effects:  <ul><li><b>Radiance:</b>  Your Unarmed Strikes have a range of 20/60, and can deal Incinerating, Cryogenic, or Corrosive damage.  </li><li><b>Speed:</b>  You gain a Flying Speed equal to your Walking Speed + (Prof Bonus * 5).  </li><li><b>Reciprocity:</b>  When you use your Healing Factor Bonus Action, rather than heal yourself, you can instead choose to heal or harm a target within 10 feet of you for an equal amount.  If you choose to harm, the damage takes effect without an Attack roll or Saving Throw, and has no damage type (cannot be resisted or negated, granted the target is capable of taking damage in the first place).  </li><li><b>Transcendence:</b>  You may choose any Intelligence based skill for the Manifest Form's Expertise feature.  </li>"
+                },
+                {
+                    "name_str" : "Word of Power",
+                    "level" : 13,
+                    "mechanics_str" : "You can understand all languages, and all creatures capable of understanding a language can understand you.  As a Bonus Action, you may force a target within 120 feet of you that can hear you to make a Charisma Saving Throw.  On a success, the creature has disadvantage on Attacks against you until the end of your next turn and is otherwise immune to this feature until the end of your next Long Rest.  On a failure, the creature is Frightened of you for one minute.  "
+                },
+                {
+                    "name_str" : "Divine Strikes",
+                    "level" : 19,
+                    "mechanics_str" : "Your Divine Form Unarmed Strikes now have a range of 40/120 and can deal Psionic damage.  In addition, your Reciprocity feature heals / harms double the standard amount.  "
                 }
             ],
             
-            "subclass_magic_name" : "Monarch",
-            "subclass_magic_img" : "/_SiteResources/Images/Prowler-Monarch.png",
-            "subclass_magic_img_credit" : "Crest by Amethyst Studio from NounProject.com",
-            "subclass_magic_description" : "Coming from a long line of enhanced warriors, the Monarch channels innate powers to better carry out their crusade.  ",
+            "subclass_magic_name" : "Darwinian",
+            "subclass_magic_img" : "/_SiteResources/Images/Metamorph-Darwinian.png",
+            "subclass_magic_img_credit" : "---",
+            "subclass_magic_description" : "Possessing a gene that rapidly accelerates the process of evolution through individual and instantaneous mutations, the Darwinian is among the most intimidating and difficult beings to kill.  ",
             "subclass_magic_feats" : [
                 {
                     "name_str" : "Powercasting",
                     "level" : 2,
-                    "mechanics_str" : "See the Rules for Powercasting mechanics and Superpowers list.  <ul><li><b>Superpowers Known:</b>  You learn Superpowers of your choice as shown in the Consumables Known column of the class table.  You may not learn a Superpower of a level higher than your Max Consumable Level, and you may learn a Superpower at the same time you learn its prerequisite.  </li><br><li><b>Superpower Points:</b>  You have a number of Superpower Points as shown in the Consumable Points column of the class table.  You expend these Superpower Points to cast Superpowers.  You regain all expended Superpower Points when you finish a long rest.  </li><br><li><b>Max Superpower Level:</b>  Many Superpowers can be overpowered, consuming more Superpower Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Superpowers at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Powercasting Ability:</b>  Your Powercasting ability is Charisma.  You use your Charisma modifier whenever a Superpower refers to your Powercasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Superpower you cast and when making an attack roll with one.  </li><br><li><b>Superpower save DC</b> = 8 + your proficiency bonus + your Powercasting ability modifier.  </li><br><li><b>Superpower attack modifier</b> = your proficiency bonus + your Powercasting ability modifier.  </li></ul>"
+                    "mechanics_str" : "See the Rules for Powercasting mechanics and Superpowers list.  <ul><li><b>Superpowers Known:</b>  You learn Superpowers of your choice as shown in the Consumables Known column of the class table.  You may not learn a Superpower of a level higher than your Max Consumable Level, and you may learn a Superpower at the same time you learn its prerequisite.  </li><br><li><b>Superpower Points:</b>  You have a number of Superpower Points as shown in the Consumable Points column of the class table.  You expend these Superpower Points to cast Superpowers.  You regain all expended Superpower Points when you finish a long rest.  </li><br><li><b>Max Superpower Level:</b>  Many Superpowers can be overpowered, consuming more Superpower Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Superpowers at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Powercasting Ability:</b>  Your Powercasting ability is Wisdom.  You use your Wisdom modifier whenever a Superpower refers to your Powercasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Superpower you cast and when making an attack roll with one.  </li><br><li><b>Superpower save DC</b> = 8 + your proficiency bonus + your Powercasting ability modifier.  </li><br><li><b>Superpower attack modifier</b> = your proficiency bonus + your Powercasting ability modifier.  </li></ul>"
+                },
+                {
+                    "name_str" : "Beast Form",
+                    "level" : 7,
+                    "mechanics_str" : "When you Manifest Form, you may choose to take on the physical appearance of a sapien animal hybrid such as a Werewolf, Harpy, or other aesthetic combination of your choice.  When you Manifest Form, you may take on any of these attributes in addition to the normal effects:  <ul><li><b>Unarmed Strikes:</b>  Your Unarmed Strikes deal d6s rather than d4s, and are considered Adamantine.  </li><li><b>Aquatic:</b>  You gain a Swimming Speed equal to your Walking Speed and can breathe normally underwater.  </li><li><b>Pounce:</b>  You may use a Bonus Action to leap through the air a number of feet equal to Prof * 5.  This punce does not count against your total movement.  </li><li><b>Instinctual:</b>  You may choose any Wisdom based skill for the Manifest Form's Expertise feature.  </li>"
+                },
+                {
+                    "name_str" : "Relentless Healing",
+                    "level" : 13,
+                    "mechanics_str" : "Your Healing Factor remains active while you have less than your maximum Hit Points.  In addition, you are able to regenerate any missing body parts given sufficient time.  Regenerating a hand or foot takes five minutes, while an entire arm or leg takes an hour.  The GM will determine the amount of time needed for regeneration based on the specific injury using these guidelines.  "
+                },
+                {
+                    "name_str" : "Predator",
+                    "level" : 19,
+                    "mechanics_str" : "Your Beast Form Unarmed Strikes deal d8s instead of d6s.  In addition, You may make an Attack as part of your Beast Form's Pounce Bonus Action.  "
                 }
             ]
         },
@@ -628,35 +638,7 @@
             "consumables_max_per_level_denominator" : 8,
 
             "class_feats" : [
-                {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 1,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can't increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
-                },
-                {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 5
-                },
-                {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 7
-                },
-                {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 11
-                },
-                {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 13
-                },
-                {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 15
-                },
-                {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 19
-                },
+                
                 {
                     "name_str" : "Combat Techniques",
                     "level" : 1,
@@ -716,18 +698,39 @@
                     "level" : 17
                 },
                 {
-                    "name_str" : "Tactical Strategy",
-                    "level" : 3,
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 5,
+                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can't increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 7
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 11
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 15
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 19
+                },
+                {
+                    "name_str" : "Scaling Feature",
+                    "level" : 1,
                     "mechanics_str" : "You learn a number of Strategies equal to your Proficiency Bonus, and can learn additional Strategies to reflect your Proficiency or swap one Strategy for another on each subsequent level up.  You gain a number of Strategy dice equal to your Proficiency Bonus, which are d8s.  The Strategies are as follows:<br><ul><li><b>Coordinated Attack: </b>When you hit a target with an Attack, you can expend a Strategy Die to forgo a subsequent attack.  You may then direct an Ally to expend their Reaction and move up to their speed towards the same target, making one Attack against the target if they are able to get within range and adding the Strategy Die to their Attack roll. .  </li><br><li><b>Defensive Stance: </b>You may use a Bonus Action to expend a Strategy Die, increasing your AC by the amount rolled until the end of your next turn.  While you benefit from this AC increase, you do not provoke Opportunity Attacks.  </li><br><li><b>Disarming Strike: </b>When you hit a target with an Attack, you can expend a Strategy Die and add the result to the damage roll.  In addition, the target must make a Strength saving throw, dropping one item of your choice that it's holding at any point within 15 of the target of your choosing upon failure. .  </li><br><li><b>Distracting Strike: </b>When you hit a target with an Attack, you can expend a Strategy Die and add the result to the damage roll.  In addition, you grant all creatures other than you advantage on all Attacks against the target until the end of your next turn.  </li><br><li><b>Feinting Attack: </b>You may use a Bonus Action to expend a Strategy Die, gaining advantage on all Attack rolls against that target until the start of your next turn.  The first time you hit that target while this effect is active, you may add the Strategy Die to that damage roll. .  </li><br><li><b>Focused Agility: </b>When you make a Dexterity or Strength check, you can expend a Strategy Die to gain advantage on the check and add the result to your total.  </li><br><li><b>Grappling Strike: </b>When you hit a target with an Attack, you can expend a Strategy Die to attempt to Grapple the target and add the Strategy Die to your Strength (Athletics) check..  </li><br><li><b>Parry: </b>When an Attack made by a target you are aware of misses you, you may use a Reaction to expend a Strategy Die and reduce the incoming damage by an amount equal to the Strategy Die + your Dexterity Modifier or half of the incoming damage.  </li><br><li><b>Repelling Attack: </b>When you hit a target with an Attack, you can expend a Strategy Die and add the result to the damage roll.  In addition, the target must make a Strength Saving Throw if they are no more than one size category larger than you, being pushed 20 feet away from you upon failure.  </li><br><li><b>Riposte: </b>When an Attack made by a target you are aware of misses you, you may use a Reaction to expend a Strategy Die and make an Attack against the target, add the Strategy Die to that damage roll..  </li><br><li><b>Trip Attack: </b>When you hit a target with an Attack, you can expend a Strategy Die and add the result to the damage roll.  In addition, the target must make a Strength Saving Throw if they are no more than one size category larger than you, being knocked prone upon failure.  </li><br><li><b>Vigilance: </b>When a target you are aware of moves into your reach, you may use a Reaction to expend a Strategy Die and make an Attack against the target, adding the Strategy Die to that damage roll..  </li></ul>"
                 },
                 {
-                    "name_str" : "Improved Strategy",
-                    "level" : 9,
+                    "name_str" : "Scaling Feature",
+                    "level" : 13,
                     "mechanics_str" : "Your Strategy dice becomes d10s.  "
                 },
                 {
-                    "name_str" : "Superior Strategy",
-                    "level" : 17,
+                    "name_str" : "Scaling Feature",
+                    "level" : 20,
                     "mechanics_str" : "Your Strategy dice becomes d12s.  "
                 }
             ],
@@ -837,14 +840,49 @@
                     "mechanics_str" : "See the Rules for Spellcasting mechanics and Spells list.  <ul><li><b>Spells Known:</b>  You learn 4 Spells of your choice, and you learn an additional 4 at each higher level as shown in the Spells Known column of the Class table.  You may not learn a Spell of a level higher than your Max Spell Level, and you may learn a Spell at the same time you learn its prerequisite.  </li><br><li><b>Spell Points:</b>  You have a number of Spell Points based on your Class level as shown in the Spell Points column of the Class table.  You expend these Spell Points to cast Spell Powers.  You regain all expended Spell Points when you finish a long rest.  </li><br><li><b>Max Spell Level:</b>  Many Spells can be overpowered, consuming more Spell Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Spell Level column of the Visionary table.  You may only cast Spells at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Spellcasting Ability:</b>  Your Spellcasting ability is Wisdom.  You use your Wisdom modifier whenever a Spell refers to your Spellcasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Spell you cast and when making an attack roll with one.  </li><br><li><b>Spell save DC</b> = 8 + your Proficiency Bonus + your Spellcasting ability modifier.  </li><br><li><b>Spell attack modifier</b> = your Proficiency Bonus + your Spellcasting ability modifier.  </li></ul>"
                 },
                 {
+                    "name_str" : "Spellcasting Milestone",
+                    "level" : 3
+                },
+                {
+                    "name_str" : "Spellcasting Milestone",
+                    "level" : 5
+                },
+                {
+                    "name_str" : "Spellcasting Milestone",
+                    "level" : 7
+                },
+                {
+                    "name_str" : "Spellcasting Milestone",
+                    "level" : 9
+                },
+                {
+                    "name_str" : "Spellcasting Milestone",
+                    "level" : 11
+                },
+                {
+                    "name_str" : "Spellcasting Milestone",
+                    "level" : 13
+                },
+                {
+                    "name_str" : "Spellcasting Milestone",
+                    "level" : 15
+                },
+                {
+                    "name_str" : "Spellcasting Milestone",
+                    "level" : 17
+                },
+                {
                     "name_str" : "Supernatural Inspiration",
                     "level" : 1,
                     "mechanics_str" : "When you see a creature other than yourself within 60 feet of you fail a Skill Check, fail a Saving Throw, or miss with an Attack, you can roll a Supernatural Inspiration die (d6) as a Reaction and add it to the result, potentially changing the outcome.  You may use this feature a number of times equal to your Wisdom Modifier between Long Rests.  If the result after adding the Supernatural Inspiration die is still a failure, it doesn't count against your total number of uses for this feature.  <br><br>Your Supernatural Inspiration die increases at higher levels, becoming a d8 at level 4, a d10 at level 12, and a d12 at level 19.  "
                 },
                 {
-                    "name_str" : "Arcane Rejuvenation",
-                    "level" : 2,
-                    "mechanics_str" : "Once per Long Rest after completing a Short Rest, you may regain a number of Spell Points equal to half your Class level.  "
+                    "name_str" : "Supernatural Inspiration",
+                    "level" : 12
+                },
+                {
+                    "name_str" : "Supernatural Inspiration",
+                    "level" : 18
                 },
                 {
                     "name_str" : "Subclass Feature",
@@ -852,110 +890,31 @@
                     "mechanics_str" : "You gain a subclass as detailed at the bottom of this page.  <br><br>Each subclass offers a Sustainable at this level, and an additional Sustainable at levels 8, and 16.  "
                 },
                 {
-                    "name_str" : "Spellcasting Milestone",
-                    "level" : 3
+                    "name_str" : "Subclass Feature",
+                    "level" : 8
+                },
+                {
+                    "name_str" : "Subclass Feature",
+                    "level" : 16
                 },
                 {
                     "name_str" : "Ability Score Improvement",
                     "level" : 4,
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can't increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  <br><br>You gain this feature again at levels 8, 12, 16, and 19.  "
-                },
-                {
-                    "name_str" : "Supernatural Inspiration",
-                    "level" : 4
-                },
-                {
-                    "name_str" : "Spellcasting Milestone",
-                    "level" : 5
-                },
-                {
-                    "name_str" : "Summon Familiar",
-                    "level" : 6,
-                    "mechanics_str" : "You gain the service of a Familiar, a bounded magical spirit manifest in physical form.  You may summon your Familiar via a Short Rest.  When the Familiar is reduced to zero hit points, it is destroyed, and can then be summoned again.  The Familiar can take one of three forms, Land, Sea, or Air.  You control the Familiar in and out of combat, as you are spiritually linked and can perceive through yours and the Familiar's senses simultaneously.  The Familiar has the following attributes:  <ul><li><b>Size:</b>  The Familiar is considered Tiny.  </li><li><b>Armor Class:</b>  The Familiar has an Armor Class equal to 10 plus your Proficiency Bonus.  The Familiar uses your stats for Saving Throws and Skill Checks.  </li><li><b>Speed (Land):</b>  The Familiar has a Walking Speed of 40 feet, and a Swimming Speed of 20.  The Familiar gains +2 AC.  </li><li><b>Speed (Sea):</b>  The Familiar has a Walking Speed of 20 feet, and a Swimming Speed of 40.  The Familiar can breathe normally underwater.  </li><li><b>Speed (Air):</b>  The Familiar has a Walking Speed of 20 feet, and Flying Speed of 40.  The Familar can breathe normally at high altitude.  </li><li><b>Hit Points:</b>  The Familiar has a number of Hit Points equal to your Wisdom Modifier.  </li><li><b>Actions:</b>  The Familiar may take any standard Action other than Attack, granted it is capable of doing so.  </li></ul>At level 10, the The Familiar's movement does not provoke Opportunity Attacks.  At level 14, the Familiar may take the Hinder Action, which has a range of Touch, to impose disadvantage on one Saving Throw.  At level 18, the Familiar grants Expertise to any Intelligence based check in addition to Advantage when taking the Help Action.  "
-                },
-                {
-                    "name_str" : "Planar Abjuration",
-                    "level" : 6,
-                    "mechanics_str" : "As an Action, you may force any number of Fiends, Celestials, Aberrations, Undead, and Extraterrestrials within 30 feet of you to make a Charisma Saving Throw against your Spellcasting DC.  On a success, they take Incinerating, Cryogenic, or Corrosive damage (your choice for each target) equal to your level.  On a failure, they suffer the damage and have Disadvantage on all Attack rolls, Saving Throws, and Ability Checks for one minute.  <br><br>The range of this feature increases at level 10 (60 feet), level 14 (100 feet), and level 18 (150 feet).  "
-                },
-                {
-                    "name_str" : "Spellcasting Milestone",
-                    "level" : 7
+                },{
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 6
                 },
                 {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 8
-                },
-                {
-                    "name_str" : "Subclass Feature",
-                    "level" : 8
-                },
-                {
-                    "name_str" : "Spellcasting Milestone",
-                    "level" : 9
-                },
-                {
-                    "name_str" : "Summon Familiar",
                     "level" : 10
                 },
                 {
-                    "name_str" : "Planar Abjuration",
-                    "level" : 10
-                },
-                {
-                    "name_str" : "Spellcasting Milestone",
-                    "level" : 11
-                },
-                {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 12
-                },
-                {
-                    "name_str" : "Supernatural Inspiration",
-                    "level" : 12
-                },
-                {
-                    "name_str" : "Spellcasting Milestone",
-                    "level" : 13
-                },
-                {
-                    "name_str" : "Summon Familiar",
                     "level" : 14
                 },
                 {
-                    "name_str" : "Planar Abjuration",
-                    "level" : 14
-                },
-                {
-                    "name_str" : "Spellcasting Milestone",
-                    "level" : 15
-                },
-                {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 16
-                },
-                {
-                    "name_str" : "Subclass Feature",
-                    "level" : 16
-                },
-                {
-                    "name_str" : "Spellcasting Milestone",
-                    "level" : 17
-                },
-                {
-                    "name_str" : "Summon Familiar",
-                    "level" : 18
-                },
-                {
-                    "name_str" : "Planar Abjuration",
-                    "level" : 18
-                },
-                {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 19
-                },
-                {
-                    "name_str" : "Supernatural Inspiration",
                     "level" : 19
                 },
                 {
@@ -1207,33 +1166,42 @@
 
             "class_feats" : [
                 {
-                    "name_str" : "Combat Techniques",
+                    "name_str" : "Magical Boons",
                     "level" : 1,
-                    "mechanics_str" : "You have a number of Techniques as shown in the Sustainables Known column of the class table.  Upon reaching this and subsequent levels, you gain a new Technique that you qualify for if your total number of Techniques is less than the Sustainables Known for your level.  You may also swap an existing Technique for another of your choice that you qualify for upon each level up.  "
+                    "mechanics_str" : "You have a number of Boons as shown in the Sustainables Known column of the class table.  Upon reaching this and subsequent levels, you gain a new Boon that you qualify for if your total number of Boons is less than the Sustainables Known for your level.  You may also swap an existing Boon for another of your choice that you qualify for upon each level up.  "
                 },
                 {
-                    "name_str" : "Combat Techniques",
+                    "name_str" : "Magical Boons",
                     "level" : 3
                 },
                 {
-                    "name_str" : "Combat Techniques",
+                    "name_str" : "Magical Boons",
                     "level" : 6
                 },
                 {
-                    "name_str" : "Combat Techniques",
+                    "name_str" : "Magical Boons",
                     "level" : 9
                 },
                 {
-                    "name_str" : "Combat Techniques",
+                    "name_str" : "Magical Boons",
                     "level" : 12
                 },
                 {
-                    "name_str" : "Combat Techniques",
+                    "name_str" : "Magical Boons",
                     "level" : 15
                 },
                 {
-                    "name_str" : "Combat Techniques",
+                    "name_str" : "Magical Boons",
                     "level" : 18
+                },
+                {
+                    "name_str" : "Stoic Defense",
+                    "level" : 1,
+                    "mechanics_str" : "You have a number of Reactions equal to your Proficiency Bonus.  When you are targeted by an Attack, you may use a Reaction to increase your AC by an amount equal to half your Proficiency Bonus rounded up.  If the attack still hits, you may reduce the incoming damage by an amount equal to your proficiency bonus.  <br><br>At level 10, if the attack misses when you use Stoic Defense (regardless of whether it would have hit without Stoic Defense), you may deal damage equal to your proficiency bonus to the attacker.  "
+                },
+                {
+                    "name_str" : "Stoic Defense",
+                    "level" : 10
                 },
                 {
                     "name_str" : "Subclass Feature",
@@ -1254,71 +1222,42 @@
                 },
                 {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 2,
+                    "level" : 4,
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can't increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 4
+                    "level" : 8
                 },
                 {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 7
+                    "level" : 11
                 },
                 {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 10
+                    "level" : 14
                 },
                 {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 13
+                    "level" : 17
                 },
                 {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 16
-                },
-                {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 19
-                },
-                {
-                    "name_str" : "Stoic Defense",
-                    "level" : 1,
-                    "mechanics_str" : "When you are targeted by an Attack, you may use a Reaction to increase your AC by an amount equal to half your Proficiency Bonus rounded up.  If the attack still hits, you may reduce the incoming damage by an amount equal to your proficiency bonus.  If the attack misses, you may deal damage equal to your proficiency bonus to the attacker.  "
-                },
-                {
-                    "name_str" : "Spatial Awareness",
-                    "level" : 3,
-                    "mechanics_str" : "You have a number of Reactions equal to your Proficiency Bonus.  "
+                    "level" : 20
                 },
                 {
                     "name_str" : "Kinetic Surge",
                     "level" : 5,
-                    "mechanics_str" : "You are able to alter the kinetic energy in the heat of battle to protect your allies and harm your enemies.  When a target within 60 feet of you is hit by an attack, as a Reaction, you may choose to add an additional modifier to the damage roll of that attack.  The modifier is equal to twice your proficiency bonus, and you choose whether it is positive or negative.  If you are the one making the attack, you may choose to use this feature as a Bonus Action instead.  You may use this feature a number of times equal to your proficiency bonus between long rests.  <br><br>At level 17, you may use Kinetic Surge multiple times as part of the same Reaction given each use is affecting the same attack.  "
-                },
-                {
-                    "name_str" : "Augmented Mobility",
-                    "level" : 8,
-                    "mechanics_str" : "You gain a flying speed equal to your movement speed, but fall if aloft at the end of your turn.  In addition, your walking speed is doubled.  "
-                },
-                {
-                    "name_str" : "Serene Mind",
-                    "level" : 11,
-                    "mechanics_str" : "You are immune to the Frightened, Compliant, and Charmed conditions.  You may also remove one of these effects from a creature as an Action.  "
-                },
-                {
-                    "name_str" : "Warcaster",
-                    "level" : 14,
-                    "mechanics_str" : "When you cast a Superpower, Technology, or Spell as an Action, you may make one weapon attack as a Bonus Action.  "
+                    "mechanics_str" : "You are able to alter the kinetic energy in the heat of battle to protect your allies and harm your enemies.  When a target within 60 feet of you is hit by an attack, as a Reaction, you may choose to add an additional modifier to the damage roll of that attack.  The modifier is equal to twice your proficiency bonus, and you choose whether it is positive or negative.  If you are the one making the attack, you may choose to use this feature as a Bonus Action instead.  You may use this feature a number of times equal to your proficiency bonus between long rests.  <br><br>At level 16, you may use Kinetic Surge multiple times as part of the same Reaction given each use is affecting the same attack.  "
                 },
                 {
                     "name_str" : "Kinetic Surge",
-                    "level" : 17
+                    "level" : 16
                 },
                 {
                     "name_str" : "Psionic Avatar",
                     "level" : 20,
-                    "mechanics_str" : "When you use Stoic Defense and the attack still hits, you gain resistance to the incoming instance of damage.  When you use your Kinetic Surge, you may move up to half of your Augmented Mobility flying speed without provoking Opportunity Attacks.  When you use your Augmented Mobility flying speed, you only fall if you are not in contact with a solid surface, regardless of whether it is a floor, wall, or ceiling.  "
+                    "mechanics_str" : "When you use Kinetic Surge to reduce damage, you grant resistance to the remaining damage.  When you use your Kinetic Surge to deal additional damage, you ignore Resistance and Immunities.  "
                 }
             ],
 
@@ -1628,14 +1567,49 @@
                     "mechanics_str" : "See the Rules for Powercasting mechanics and Powers list.  <ul><li><b>Powers Known:</b>  Your total number of Powers known at each level is shown in the Powers Known column of the Class table.  You may not learn a Power of a level higher than your Max Power Level, and you may learn a Power at the same time you learn its prerequisite.  </li><br><li><b>Power Points:</b>  You have a number of Power Points based on your Class level as shown in the Power Points column of the Class table.  You expend these Power Points to cast Power Powers.  You regain all expended Power Points when you finish a long rest.  </li><br><li><b>Max Power Level:</b>  Many Powers can be overpowered, consuming more Power Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Power Level column of the Visionary table.  You may only cast Powers at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Powercasting Ability:</b>  Your Powercasting ability is Wisdom.  You use your Wisdom modifier whenever a Power refers to your Powercasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Power you cast and when making an attack roll with one.  </li><br><li><b>Power save DC</b> = 8 + your Proficiency Bonus + your Powercasting ability modifier.  </li><br><li><b>Power attack modifier</b> = your Proficiency Bonus + your Powercasting ability modifier.  </li></ul>"
                 },
                 {
+                    "name_str" : "Powercasting Milestone",
+                    "level" : 3
+                },
+                {
+                    "name_str" : "Powercasting Milestone",
+                    "level" : 5
+                },
+                {
+                    "name_str" : "Powercasting Milestone",
+                    "level" : 7
+                },
+                {
+                    "name_str" : "Powercasting Milestone",
+                    "level" : 9
+                },
+                {
+                    "name_str" : "Powercasting Milestone",
+                    "level" : 11
+                },
+                {
+                    "name_str" : "Powercasting Milestone",
+                    "level" : 13
+                },
+                {
+                    "name_str" : "Powercasting Milestone",
+                    "level" : 15
+                },
+                {
+                    "name_str" : "Powercasting Milestone",
+                    "level" : 17
+                },
+                {
                     "name_str" : "Metapowers Milestone",
                     "level" : 1,
                     "mechanics_str" : "Choose one of the following Metapowers.  When you cast a Superpower, you may choose to add the chosen effect for this casting only:  <ul><li><b>Distant:</b>  The Superpower's range is doubled to a minimum of 30 feet.  </li><li><b>Careful:</b>  A number of creatures up to your Powercasting Modifier that would be affected by the Superpower are not affected.  </li><li><b>Potent:</b>  You may deal damage equal to your Powercasting Ability Modifier to every creature that is affected by the Superpower upon casting it.  </li><li><b>Focused:</b>  Targets have disadvantage on their Saving Throw against this Superpower until the end of your turn.  </li><li><b>Innate:</b>  No components other than Material components which have an explicit cost are required for this casting of the Superpower.  </li><li><b>Extended:</b>  The Superpower's duration is tripled to a minimum of 1 hour.  </li><li><b>Quickened:</b>  The Superpower's casting time is quartered, to a minimum of 1 Action (Superpowers with a casting time of 1 Action are reduced to 1 Bonus Action)  </li><li><b>Twinned:</b>  A Superpower that only targets one creature also targets a second creature of your choice as normal.  </li></ul>You may only apply a Metapower to your Superpowers a number of times equal to your Proficiency Bonus between Long Rests.  <br><br>You learn an additional Metapower at levels 4, 12, and 19.  On each level up, you may also swap one chosen Metapower for another.  "
                 },
                 {
-                    "name_str" : "Potent Powercasting",
-                    "level" : 2,
-                    "mechanics_str" : "You may add your Proficiency Bonus to the one damage roll per turn for your Superpower cantrips.  "
+                    "name_str" : "Metapowers Milestone",
+                    "level" : 12
+                },
+                {
+                    "name_str" : "Metapowers Milestone",
+                    "level" : 18
                 },
                 {
                     "name_str" : "Subclass Feature",
@@ -1643,8 +1617,12 @@
                     "mechanics_str" : "You gain a subclass as detailed at the bottom of this page.  <br><br>Each subclass offers a Sustainable at this level, and an additional Sustainable at levels 8, and 16.  "
                 },
                 {
-                    "name_str" : "Powercasting Milestone",
-                    "level" : 3
+                    "name_str" : "Subclass Feature",
+                    "level" : 8
+                },
+                {
+                    "name_str" : "Subclass Feature",
+                    "level" : 16
                 },
                 {
                     "name_str" : "Ability Score Improvement",
@@ -1652,84 +1630,19 @@
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can't increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  <br><br>You gain this feature again at levels 8, 12, 16, and 19.  "
                 },
                 {
-                    "name_str" : "Metapowers Milestone",
-                    "level" : 4
-                },
-                {
-                    "name_str" : "Powercasting Milestone",
-                    "level" : 5
-                },
-                {
-                    "name_str" : "Manifest Avatar",
-                    "level" : 6,
-                    "mechanics_str" : "You are able to take on a Superpowered Avatar as a Bonus Action, gaining the following benefits:  <ul><li><b>Resistance:</b>  You are resistant to a damage type of your choice.  </li><li><b>Overcharge:</b>  Every Superpower you cast that deals damage is treated as overcharged by one level higher than the level you cast it at.  </li><li><b>Speed:</b>  Your Flying Speed increases by 20 feet.  </li><li><b>Duration:</b>  The Avatar lasts for three rounds.  </li></ul>You may only activate this feature once between Long Rests.  <br><br>At higher levels, the Avatar's duration increases by three rounds, the number of resistances selected increases by one, and the speed increases by 10 at levels 10, 14, and 18.  "
-                },
-                {
-                    "name_str" : "Powercasting Milestone",
-                    "level" : 7
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 6
                 },
                 {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 8
-                },
-                {
-                    "name_str" : "Subclass Feature",
-                    "level" : 8
-                },
-                {
-                    "name_str" : "Powercasting Milestone",
-                    "level" : 9
-                },
-                {
-                    "name_str" : "Manifest Avatar",
                     "level" : 10
                 },
                 {
-                    "name_str" : "Powercasting Milestone",
-                    "level" : 11
-                },
-                {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 12
-                },
-                {
-                    "name_str" : "Metapowers Milestone",
-                    "level" : 12
-                },
-                {
-                    "name_str" : "Powercasting Milestone",
-                    "level" : 13
-                },
-                {
-                    "name_str" : "Manifest Avatar",
                     "level" : 14
                 },
                 {
-                    "name_str" : "Powercasting Milestone",
-                    "level" : 15
-                },
-                {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 16
-                },
-                {
-                    "name_str" : "Subclass Feature",
-                    "level" : 16
-                },
-                {
-                    "name_str" : "Powercasting Milestone",
-                    "level" : 17
-                },
-                {
-                    "name_str" : "Manifest Avatar",
-                    "level" : 18
-                },
-                {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 19
-                },
-                {
-                    "name_str" : "Metapowers Milestone",
                     "level" : 19
                 },
                 {
@@ -1844,14 +1757,41 @@
                     "mechanics_str" : "You have manifested powers beyond that of ordinary creatures.  See the Rules for Powercasting mechanics and Superpowers list.  <ul><li><b>Superpowers Known:</b>  You learn a number of Superpowers of your choice at first level and at subsequent levels as shown in the Superpowers Known column of the Class table.  You may not learn a Superpower of a level higher than your Max Superpower Level, and you may learn a Superpower at the same time you learn its prerequisite.  </li><br><li><b>Power Points:</b>  You have a number of Power Points equal to your Class level x 8, as shown in the Power Points column of the Class table, + your Int modifier.  You expend these Power Points to cast Power Powers.  You regain all expended Power Points when you finish a long rest.  </li><br><li><b>Max Power Level:</b>  Many Superpowers can be overpowered, consuming more Power Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Power Level column of the Class table.  You may only cast Superpowers at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a long rest.  </li><br><li><b>Powercasting Ability:</b>  Your Powercasting ability is Charisma.  You use your Charisma modifier whenever a Superpower refers to your Powercasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Superpower you cast and when making an attack roll with one.  </li><br><li><b>Superpower save DC</b> = 8 + your Proficiency Bonus + your Powercasting ability modifier.  </li><br><li><b>Superpower attack modifier</b> = your Proficiency Bonus + your Powercasting ability modifier.  </li></ul>"
                 },
                 {
-                    "name_str" : "Deflect Projectiles",
-                    "level" : 1,
-                    "mechanics_str" : "When you are hit by a ranged attack, you may use your reaction to reduce that damage by an amount equal to 1d4 + your Dexterity modifier + your Subvertist level.  If you reduce that instance's damage to zero, you can catch the projectile, granted you can wield it in one hand and have one hand free.  As part of the same reaction, you can choose to make a Ranged Attack (20/60) with the projectile, which you are considered proficient with.  <br><br>At higher levels, your Deflect Projectiles die increases to 1d6 at level 4, 1d8 at level 7, 1d10 at level 13, 1d12 at level 16, and 1d20 at level 19.  Beginning at level 10, you can include your Proficiency Bonus in your Deflect Projectiles calculation.  "
+                    "name_str" : "Powercasting Milestone",
+                    "level" : 4
+                },
+                {
+                    "name_str" : "Powercasting Milestone",
+                    "level" : 7
+                },
+                {
+                    "name_str" : "Powercasting Milestone",
+                    "level" : 10
+                },
+                {
+                    "name_str" : "Powercasting Milestone",
+                    "level" : 13
+                },
+                {
+                    "name_str" : "Powercasting Milestone",
+                    "level" : 16
+                },
+                {
+                    "name_str" : "Powercasting Milestone",
+                    "level" : 19
                 },
                 {
                     "name_str" : "Enhanced Movement",
-                    "level" : 2,
-                    "mechanics_str" : "Your speed increases by an amount equal to (Class Level + Proficiency Bonus) * 5.  "
+                    "level" : 1,
+                    "mechanics_str" : "Your speed increases by an amount equal to (Class Level + Proficiency Bonus) * 5.  Your total number of Actions and Reactions is equal to your Proficiency Bonus, but can only affect a specific creature with a Reaction once per round.  You may only take the Attack Action once per turn.  You may also use the Acrobatics skill rather than Athletics when Shoving.  <br><br>At level 9, you are able to pass through mundane matter as though it were difficult terrain, up to distances equal to your Proficiency Bonus * 5, per round.  For example, if your Proficiency Bonus is +2, you can move through a 10 foot solid steel wall, but doing so will cost you 20 feet of movement.  You may also push yourself through mundane matter for a greater distance, but you take 1d12 Disintegrating damage for every 5 feet traveled beyond this distance.  If you end your turn within solid matter, you take three points of exhaustion.  You may also move across liquids and vertical surfaces as though they were flat terrain, but you fall if you end your turn on such a surface.  <br><br>At level 15, when a creature that you can see is the target of an Attack, you may use your Reaction to move up to half of your speed towards the creature and impose advantage or disadvantage on the Attack should you be able to get within 5 feet of them.  Immediately after the Attack is resolved, if you did not use half of your movement speed to reach the target, you can use any remaining movement speed from that pool to position yourself at your discretion.  "
+                },
+                {
+                    "name_str" : "Enhanced Movement",
+                    "level" : 9
+                },
+                {
+                    "name_str" : "Enhanced Movement",
+                    "level" : 15
                 },
                 {
                     "name_str" : "Subclass Feature",
@@ -1859,181 +1799,46 @@
                     "mechanics_str" : "You gain a subclass as detailed at the bottom of this page.  <br><br>Each subclass offers a Sustainable at this level, and an additional Sustainable at levels 6, 13, and 18.  "
                 },
                 {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 3,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can't increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  <br><br>You benefit from additional Ability Score Improvements at levels 5, 8, 11, 14, and 17.  "
-                },
-                {
-                    "name_str" : "Heightened Reflexes",
-                    "level" : 3,
-                    "mechanics_str" : "Your total number of Actions and Reactions is equal to your Proficiency Bonus, but can only affect a specific creature with a Reaction once per round.  You may only take the Attack Action once per turn.  You may also use the Acrobatics skill rather than Athletics when Shoving.  "
-                },
-                {
-                    "name_str" : "Powercasting Milestone",
-                    "level" : 4,
-                    "mechanics_str" : "You can access a new level of Superpowers to cast.  "
-                },
-                {
-                    "name_str" : "Deflect Projectiles",
-                    "level" : 4,
-                    "mechanics_str" : "You are able to pass through mundane matter as though it were difficult terrain, up to distances equal to your Proficiency Bonus * 5, per round.  For example, if your Proficiency Bonus is +2, you can move through a 10 foot solid steel wall, but doing so will cost you 20 feet of movement.  You may also push yourself through mundane matter for a greater distance, but you take 1d12 Disintegrating damage for every 5 feet traveled beyond this distance.  If you end your turn within solid matter, you take three points of exhaustion.  <br><br>You may also move across liquids and vertical surfaces as though they were flat terrain, but you fall if you end your turn on such a surface.  "
-                },
-                {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 5,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can't increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
-                },
-                {
-                    "name_str" : "Evasion",
-                    "level" : 5,
-                    "mechanics_str" : "When you make a Dexterity Saving Throw to avoid taking damage, you suffer only half damage on a failure and no damage on a success.  You also have advantage on Saving Throws against effects you can see.  "
-                },
-                {
-                    "name_str" : "Temporary Incorporation",
-                    "level" : 6,
-                    "mechanics_str" : "You are able to pass through mundane matter as though it were difficult terrain, up to distances equal to your Proficiency Bonus * 5, per round.  For example, if your Proficiency Bonus is +2, you can move through a 10 foot solid steel wall, but doing so will cost you 20 feet of movement.  You may also push yourself through mundane matter for a greater distance, but you take 1d12 Disintegrating damage for every 5 feet traveled beyond this distance.  If you end your turn within solid matter, you take three points of exhaustion.  <br><br>You may also move across liquids and vertical surfaces as though they were flat terrain, but you fall if you end your turn on such a surface.  "
-                },
-                {
                     "name_str" : "Subclass Feature",
                     "level" : 6
-                },
-                {
-                    "name_str" : "Powercasting Milestone",
-                    "level" : 7,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can't increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
-                },
-                {
-                    "name_str" : "Deflect Projectiles",
-                    "level" : 7,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can't increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
-                },
-                {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 8,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can't increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
-                },
-                {
-                    "name_str" : "Alert",
-                    "level" : 8,
-                    "mechanics_str" : "You are considered proficient in Initiative checks.  "
-                },
-                {
-                    "name_str" : "Improved Reflexes",
-                    "level" : 9,
-                    "mechanics_str" : "Your total number of Reactions is equal to your Proficiency Bonus * 2, but can only affect a specific creature with a Reaction once per round..  "
-                },
-                {
-                    "name_str" : "Self Reflection",
-                    "level" : 9,
-                    "mechanics_str" : "You can use an Action to end one effect on you that is causing you to be Charmed or Frightened.  "
-                },
-                {
-                    "name_str" : "Powercasting Milestone",
-                    "level" : 10,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can't increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
-                },
-                {
-                    "name_str" : "Deflect Projectiles",
-                    "level" : 10,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can't increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
-                },
-                {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 11,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can't increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
-                },
-                {
-                    "name_str" : "Unfailing Talent",
-                    "level" : 11,
-                    "mechanics_str" : "You can treat the d20 result for any skill check you make with Proficiency as a 10 if the result is 9 or lower before modifiers.  "
-                },
-                {
-                    "name_str" : "Misdirection",
-                    "level" : 12,
-                    "mechanics_str" : "When a creature that you can see is the target of an Attack, you may use your Reaction to move up to half of your speed towards the creature and impose disadvantage on the Attack should you be within 5 feet of them.  Immediately after the Attack is resolved, if you did not use half of your movement speed to reach the target, you can use any remaining movement speed from that pool to position yourself at your discretion.  <br><br>Beginning at level 17, you can choose to grant advantage to the Attack rather than Disadvantage.  Beginning at level 20, the Advantage / Disadvantage you impose with this feature includes three d20s rather than two.  "
                 },
                 {
                     "name_str" : "Subclass Feature",
                     "level" : 12
                 },
                 {
-                    "name_str" : "Powercasting Milestone",
-                    "level" : 13,
-                    "mechanics_str" : "You can treat the d20 result for any skill check you make with Proficiency as a 10 if the result is 9 or lower before modifiers.  "
-                },
-                {
-                    "name_str" : "Deflect Projectiles",
-                    "level" : 13,
-                    "mechanics_str" : "You can treat the d20 result for any skill check you make with Proficiency as a 10 if the result is 9 or lower before modifiers.  "
-                },
-                {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 14,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can't increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
-                },
-                {
-                    "name_str" : "Blindsense",
-                    "level" : 14,
-                    "mechanics_str" : "You gain Blindsense with a radius equal to your Proficiency Bonus * 5.  "
-                },
-                {
-                    "name_str" : "Perceptive",
-                    "level" : 15,
-                    "mechanics_str" : "No Attack has advantage against you while you are not Incapacitated.  "
-                },
-                {
-                    "name_str" : "Superior Reflexes",
-                    "level" : 15,
-                    "mechanics_str" : "Your total number of Actions and Reactions is equal to your Proficiency Bonus * 2, but can only affect a specific creature with a Reaction once per round.  You may only take the Attack action twice per turn.  "
-                },
-                {
-                    "name_str" : "Powercasting Milestone",
-                    "level" : 16,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can't increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
-                },
-                {
-                    "name_str" : "Deflect Projectiles",
-                    "level" : 16,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can't increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
-                },
-                {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 17,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can't increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
-                },
-                {
-                    "name_str" : "Misdirection",
-                    "level" : 17,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can't increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
-                },
-                {
-                    "name_str" : "Temporal Refuge",
-                    "level" : 18,
-                    "mechanics_str" : "You are able to benefit from a Short Rest over the course of one minute.  "
-                },
-                {
                     "name_str" : "Subclass Feature",
                     "level" : 18
                 },
                 {
-                    "name_str" : "Powercasting Milestone",
-                    "level" : 19,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can't increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 3,
+                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can't increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  <br><br>You benefit from additional Ability Score Improvements at levels 5, 8, 11, 14, and 17.  "
                 },
                 {
-                    "name_str" : "Deflect Projectiles",
-                    "level" : 19,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can't increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 5
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 8
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 11
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 14
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 17
                 },
                 {
                     "name_str" : "Ultimate Reflexes",
                     "level" : 20,
                     "mechanics_str" : "You have an unlimited number of reactions, but can only affect a specific creature with a Reaction once per round.  In addition, you may take an additional turn on the first round of combat, at the Initiative order equal to your Initiative minus 10.  "
-                },
-                {
-                    "name_str" : "Misdirection",
-                    "level" : 20,
-                    "mechanics_str" : "You have an unlimited number of reactions.  In addition, you may take an additional turn on the first round of combat, at the Initiative order equal to your Initiative minus 10.  "
                 }
             ],
 
@@ -2183,9 +1988,24 @@
                 {
                     "name_str" : "Manifest Form",
                     "level" : 1,
-                    "mechanics_str" : "You are able to alter your form and manifest specific traits in order to gain the upper hand.  You can use this feature a number of times equal to your proficiency bonus between Long Rests.  The Form lasts for a number of hours equal to your Proficiency Bonus, and you revert early if you lose your temp hp or receive temp hp from any other source.  You have the following Form available to you:  <ul><li><b>Armor Class:</b>  + Prof.  </li><li><b>Temp Hit Points:</b>  Con + Prof + Level.  </li><li><b>Unarmed Strikes:</b>  Your Unarmed Strikes now deal Bludgeoning, Piercing, or Slashing damage (your choice), are based on Strength or Dexterity (your choice), and deal a number of d4s equal to your Proficiency Bonus.  </li><li><b>Heightened Senses:</b>  Choose a skill you are Proficient in that is based on Strength or Dexterity.  You gain Expertise in that skill while this Form is active.  </li>"
+                    "mechanics_str" : "You are able to alter your form and manifest specific traits in order to gain the upper hand.  You can use this feature a number of times equal to your proficiency bonus between Long Rests.  The Form lasts for a number of hours equal to your Proficiency Bonus, and you revert early if you lose your temp hp or receive temp hp from any other source.  You have the following Form available to you:  <ul><li><b>Armor Class:</b>  + Prof.  </li><li><b>Temp Hit Points:</b>  Con + Prof + Level.  </li><li><b>Unarmed Strikes:</b>  Your Unarmed Strikes now deal Bludgeoning, Piercing, or Slashing damage (your choice), are based on Strength or Dexterity (your choice), and deal a number of d4s equal to your Proficiency Bonus.  </li><li><b>Heightened Senses:</b>  Choose a skill you are Proficient in that is based on Strength or Dexterity.  You gain Expertise in that skill while this Form is active.  </li><br><br>At level 20, when you Manifest form, you may choose to take on any of the following attributes while the form persists:  <ul><li><b>Size:</b>  You may become one size Larger or Smaller.  </li><li><b>Immunity:</b>  You become Immune to one damage type other than BPS.  </li><li><b>Environment:</b>  You can breathe normally in any environment, and are resistant to the damage from any environmental effects.  </li><li><b>Saving Throws:</b>  You gain Proficiency in two Saving Throws of your choice.  </li>"
                 },
-                
+                {
+                    "name_str" : "Manifest Form",
+                    "level" : 5
+                },
+                {
+                    "name_str" : "Manifest Form",
+                    "level" : 10
+                },
+                {
+                    "name_str" : "Manifest Form",
+                    "level" : 16
+                },
+                {
+                    "name_str" : "Manifest Form",
+                    "level" : 20
+                },
                 {
                     "name_str" : "Subclass Feature",
                     "level" : 2,
@@ -2205,62 +2025,28 @@
                 },
                 {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 2,
+                    "level" : 4,
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can't increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 4
+                    "level" : 8
                 },
                 {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 7
+                    "level" : 11
                 },
                 {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 10
+                    "level" : 14
                 },
                 {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 13
+                    "level" : 17
                 },
                 {
                     "name_str" : "Ability Score Improvement",
-                    "level" : 16
-                },
-                {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 19
-                },
-                {
-                    "name_str" : "Healing Factor",
-                    "level" : 5,
-                    "mechanics_str" : "If you have less than half your hit points (rounding down) remaining, you regain one Hit Point every minute.  You can also expend a Hit Die and regain Hit Points equal to the result + your Constitution Modifier as a Bonus Action"
-                },
-                {
-                    "name_str" : "Accelerated Acclimation",
-                    "level" : 8,
-                    "mechanics_str" : "After each Long Rest, choose a skill, tool, and language.  You are considered proficient in the chosen skill, tool, and language until the end of the next Long Rest.  "
-                },
-                {
-                    "name_str" : "Instinctive Aggression",
-                    "level" : 11,
-                    "mechanics_str" : "When you take damage from a target you can percieve, you may use a Reaction to make one Attack against that target if they are within range.  "
-                },
-                {
-                    "name_str" : "Endurance",
-                    "level" : 14,
-                    "mechanics_str" : "When you are damaged past zero Hit Points, you only take one point of Exhaustion rather than two.  You also have advantage on Constitution saving throws, and age at a tenth of the previous rate.  "
-                },
-                {
-                    "name_str" : "Genepyre",
-                    "level" : 17,
-                    "mechanics_str" : "When you are affected by the casting of a Superpower based effect, you may use your reaction to force the caster to make a Casting Ability Saving Throw.  The DC equals 8 + Prof + Con.  On a success, you take half damage (if relevant) and suffer the other effects as normal.  On a failure, the Superpower does not take effect, the target cannot cast that Superpower again until after a long rest, and you gain the ability to cast that Superpower using Con as the spellcasting ability a number of times equal to your proficiency bonus until the end of the next Long Rest.  "
-                },
-                {
-                    "name_str" : "Ultimate Manifestation",
-                    "level" : 20,
-                    "mechanics_str" : "When you Manifest form, you may choose to take on any of the following attributes while the form persists:  <ul><li><b>Size:</b>  You may become one size Larger or Smaller.  </li><li><b>Immunity:</b>  You become Immune to one damage type other than BPS.  </li><li><b>Environment:</b>  You can breathe normally in any environment, and are resistant to the damage from any environmental effects.  </li><li><b>Saving Throws:</b>  You gain Proficiency in two Saving Throws of your choice.  </li>"
+                    "level" : 20
                 }
             ],
 

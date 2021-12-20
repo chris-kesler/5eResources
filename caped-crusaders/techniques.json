@@ -243,6 +243,72 @@
             "races_str" : ""
         },
         {
+            "name_str" : "Evasion",
+            "page_url" : "evasion.html",
+
+            "level_int" : 3,
+            "level_str" : "3rd",
+
+            "school_str" : "Reflexes",
+            "school_img" : "/_SiteResources/Images/gun-and-sword.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "You have advantage on Saving Throws against effects you can see, and only take half damage on a failure and no damage on a success against Dexterity based Saving Throw effects.  ",
+
+            "class_str" : "Prowler",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Sneak Attack",
+            "page_url" : "sneak-attack.html",
+
+            "level_int" : 2,
+            "level_str" : "2nd",
+
+            "school_str" : "Reflexes",
+            "school_img" : "/_SiteResources/Images/gun-and-sword.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "When you make an Attack using Dexterity against a target with advantage, while within Dim Light or Darkness, or while an Ally is within 5 feet of the target, you may inflict Sneak Attack upon a hit.  When inflicting Sneak Attack, you deal additional damage equal to a number of d6s equal to your Proficiency Bonus.  Until the start of your next turn, any creature (other than you) who Attacks a target that suffered your Sneak Attack damage gains a bonus to the Attack roll equal to the number of Sneak Attacks the target suffered.  For example, if you deal Sneak Attack to a target twice in one turn, all creatures gain +2 to their Attack rolls against that target.  If on your next turn you deal Sneak Attack to two separate targets, all creatures gain +1 to their Attack rolls against either.  ",
+
+            "class_str" : "Prowler",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Dread Knight",
+            "page_url" : "dread-knight.html",
+
+            "level_int" : 4,
+            "level_str" : "4th",
+
+            "school_str" : "Reflexes",
+            "school_img" : "/_SiteResources/Images/gun-and-sword.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "You are considerd proficient in all Saving Throws, and treat any Saving Throw result of 9 or lower as a 10 before modifiers.  As a Bonus Action, you may end any one effect that is causing you to be Charmed, Frightened, or otherwise impaired through nonphysical means.  ",
+
+            "class_str" : "Prowler",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
             "name_str" : "Unrelenting Strategy",
             "page_url" : "unrelenting-strategy.html",
 

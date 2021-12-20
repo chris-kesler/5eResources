@@ -23,6 +23,336 @@
             "races_str" : ""
         },
         {
+            "name_str" : "Potent Powercasting",
+            "page_url" : "potent-powercasting.html",
+
+            "level_int" : 1,
+            "level_str" : "1st",
+            
+            "school_str" : "Resilience",
+            "school_img" : "/_SiteResources/Images/Resilience.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "You may add your Proficiency Bonus to one damage roll per turn for your Superpowers.  ",
+
+            "class_str" : "???",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Manifest Avatar",
+            "page_url" : "manifest-avatar.html",
+
+            "level_int" : 2,
+            "level_str" : "2nd",
+            
+            "school_str" : "Resilience",
+            "school_img" : "/_SiteResources/Images/Resilience.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "You are able to take on a Superpowered Avatar as a Bonus Action, gaining the following benefits:  <ul><li><b>Resistance:</b>  You are resistant to a damage type of your choice.  </li><li><b>Overcharge:</b>  Every Superpower you cast that deals damage is treated as overcharged by one level higher than the level you cast it at.  </li><li><b>Speed:</b>  Your Flying Speed increases by 20 feet.  </li><li><b>Duration:</b>  The Avatar lasts for three rounds.  </li></ul>You may only activate this feature once between Long Rests.  ",
+
+            "class_str" : "???",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Temporal Refuge",
+            "page_url" : "temporal-refuge.html",
+
+            "level_int" : 3,
+            "level_str" : "3rd",
+            
+            "school_str" : "Resilience",
+            "school_img" : "/_SiteResources/Images/Resilience.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "You are able to benefit from a Short Rest as an Action once per Long Rest.  ",
+
+            "class_str" : "Subvertist",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Awareness",
+            "page_url" : "awareness.html",
+
+            "level_int" : 2,
+            "level_str" : "2nd",
+            
+            "school_str" : "Resilience",
+            "school_img" : "/_SiteResources/Images/Resilience.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "No Attack has advantage against you while you are not Incapacitated.  ",
+
+            "class_str" : "Subvertist",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Endurance",
+            "page_url" : "endurance.html",
+
+            "level_int" : 5,
+            "level_str" : "5th",
+            
+            "school_str" : "Resilience",
+            "school_img" : "/_SiteResources/Images/Resilience.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "When you are damaged past zero Hit Points, you only take one point of Exhaustion rather than two.  You also have advantage on Constitution saving throws, and age at a tenth of the previous rate.  ",
+
+            "class_str" : "Metamorph",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Healing Factor",
+            "page_url" : "healing-factor.html",
+
+            "level_int" : 1,
+            "level_str" : "1st",
+            
+            "school_str" : "Resilience",
+            "school_img" : "/_SiteResources/Images/Resilience.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "If you have less than half your hit points (rounding down) remaining, you regain one Hit Point every minute.  You can also expend a Hit Die and regain Hit Points equal to the result + your Constitution Modifier as a Bonus Action.  ",
+
+            "class_str" : "Metamorph",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Genepyre",
+            "page_url" : "genepyre.html",
+
+            "level_int" : 5,
+            "level_str" : "5th",
+            
+            "school_str" : "Resilience",
+            "school_img" : "/_SiteResources/Images/Resilience.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "When you are affected by the casting of a Superpower based effect, you may use your reaction to force the caster to make a Casting Ability Saving Throw.  The DC equals 8 + Prof + Con.  On a success, you take half damage (if relevant) and suffer the other effects as normal.  On a failure, the Superpower does not take effect, the target cannot cast that Superpower again until after a long rest, and you gain the ability to cast that Superpower using Con as the Powercasting ability using a pool of Power Points equal to your Proficiency Bonus.  ",
+
+            "class_str" : "Metamorph",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Instinctive Aggression",
+            "page_url" : "instinctive-aggression.html",
+
+            "level_int" : 4,
+            "level_str" : "4th",
+            
+            "school_str" : "Resilience",
+            "school_img" : "/_SiteResources/Images/Resilience.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "When you take damage from a target you can percieve, you may use a Reaction to make one Attack against that target if they are within range.  ",
+
+            "class_str" : "Metamorph",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Accelerated Acclimation",
+            "page_url" : "accelerated-acclimation.html",
+
+            "level_int" : 3,
+            "level_str" : "3rd",
+            
+            "school_str" : "Resilience",
+            "school_img" : "/_SiteResources/Images/Resilience.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "After each Long Rest, choose a skill, tool, and language.  You are considered proficient in the chosen skill, tool, and language until the end of the next Long Rest.  ",
+
+            "class_str" : "Metamorph",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Intercept Projectiles",
+            "page_url" : "intercept-projectiles.html",
+
+            "level_int" : 1,
+            "level_str" : "1st",
+            
+            "school_str" : "Resilience",
+            "school_img" : "/_SiteResources/Images/Resilience.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "When you are hit by a ranged attack, you may use your reaction to reduce that damage by an amount equal to 1d4 + your Dexterity modifier + your Subvertist level.  If you reduce that instance's damage to zero, you can catch the projectile, granted you can wield it in one hand and have one hand free.  As part of the same reaction, you can choose to make a Ranged Attack (20/60) with the projectile, which you are considered proficient with.  <br><br>At higher levels, your Deflect Projectiles die increases to 1d6 at level 4, 1d8 at level 7, 1d10 at level 13, 1d12 at level 16, and 1d20 at level 19.  Beginning at level 10, you can include your Proficiency Bonus in your Deflect Projectiles calculation.  ",
+
+            "class_str" : "Subvertist",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Vigilant",
+            "page_url" : "vigilant.html",
+
+            "level_int" : 2,
+            "level_str" : "2nd",
+            
+            "school_str" : "Resilience",
+            "school_img" : "/_SiteResources/Images/Resilience.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "You are considered proficient in Initiative checks.  ",
+
+            "class_str" : "Subvertist",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Evasion",
+            "page_url" : "evasion.html",
+
+            "level_int" : 2,
+            "level_str" : "2nd",
+            
+            "school_str" : "Resilience",
+            "school_img" : "/_SiteResources/Images/Resilience.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "When you make a Dexterity Saving Throw to avoid taking damage, you suffer only half damage on a failure and no damage on a success.  You also have advantage on Saving Throws against effects you can see.  ",
+
+            "class_str" : "Subvertist",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Volatile Soul",
+            "page_url" : "volatile-soul.html",
+
+            "level_int" : 2,
+            "level_str" : "2nd",
+            
+            "school_str" : "Resilience",
+            "school_img" : "/_SiteResources/Images/Resilience.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "You can use an Action to end one effect on you that is causing you to be Charmed or Frightened.  ",
+
+            "class_str" : "Subvertist",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Unfailing Talent",
+            "page_url" : "unfailing-talent.html",
+
+            "level_int" : 3,
+            "level_str" : "3rd",
+            
+            "school_str" : "Resilience",
+            "school_img" : "/_SiteResources/Images/Resilience.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "You can treat the d20 result for any skill check you make with Proficiency as a 10 if the result is 9 or lower before modifiers.  ",
+
+            "class_str" : "Subvertist",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Blindsense",
+            "page_url" : "blindsense.html",
+
+            "level_int" : 2,
+            "level_str" : "2nd",
+            
+            "school_str" : "Resilience",
+            "school_img" : "/_SiteResources/Images/Resilience.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "You gain Blindsense with a radius equal to your Proficiency Bonus * 5.  ",
+
+            "class_str" : "Subvertist",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
             "name_str" : "Meta Kinesis",
             "page_url" : "meta-kinesis.html",
 
