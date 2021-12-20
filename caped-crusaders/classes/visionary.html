@@ -22,6 +22,7 @@
             if (f.page_url == page) {
               document.getElementById("class-page-title").innerHTML = "Caped Crusaders: Classes > " + f.name_str;
               document.getElementById("class-page-image").src = f.class_img;
+              document.getElementById("class-page-image").alt = f.class_img_credit;
               document.getElementById("class-page-description").innerHTML = f.description_long_str;
               document.getElementById("class-features-intro").innerHTML = "As a "  + f.name_str + ", you gain the following Class Features.";
               document.getElementById("hit-dice").innerHTML = "<b>Hit Dice:</b>  1d" + f.hit_die_int + " per " + f.name_str + " level";
@@ -53,17 +54,23 @@
                       links = "<a href='#" + f.class_feats[k].name_str.replace(/\s+/g, '') + "'>" 
                       + f.class_feats[k].name_str + "</a>";
                     }
-                  }
+                  } 
                 }
-                var tblRow = "<tr>" 
-                  + "<td>" + (i+1) + "</td>"
-                  + "<td>" + prof + "</td>"
-                  + "<td>" + links + "</td>"
-                  + "<td>" + Math.ceil((i+2)/f.sustainables_known_denominator) + "</td>"
-                  + "<td>" + Math.ceil((i+1)*f.consumables_known_per_level) + "</td>"
-                  + "<td>" + Math.ceil((i+1)*f.consumables_points_per_level) + "</td>"
-                  + "<td>" + Math.min(Math.ceil((i+1)/f.consumables_max_per_level_denominator), 9) + "</td>"
-                  + "</tr>"
+                if ( (i+2)/f.sustainables_known_denominator < 0.35 ) {
+                  var sustainables = "---";
+                } else {
+                  var sustainables = Math.ceil((i+2)/f.sustainables_known_denominator);
+                }
+                if ( (i+1)/f.consumables_max_per_level_denominator < 0.3 ) {
+                  var consumables_known = "---";
+                  var consumables_points = "---";
+                  var consumables_max = "---";
+                } else {
+                  var consumables_known = Math.ceil((i+1)*f.consumables_known_per_level);
+                  var consumables_points = Math.ceil((i+1)*f.consumables_points_per_level);
+                  var consumables_max = Math.min(Math.ceil((i+1)/f.consumables_max_per_level_denominator), 9)
+                }
+                var tblRow = "<tr>" + "<td>" + (i+1) + "</td>" + "<td>" + prof + "</td>" + "<td>" + links + "</td>" + "<td>" + sustainables + "</td>" + "<td>" + consumables_known + "</td>" + "<td>" + consumables_points + "</td>" + "<td>" + consumables_max + "</td>" + "</tr>"
                 j = j + 2;
                 $(tblRow).appendTo("#class-table tbody");
                 if ((i+1) == 4 || (i+1) == 8 || (i+1) == 12 || (i+1) == 16) {
@@ -83,6 +90,7 @@
               // Subclasses
               document.getElementById("subclass-tech-name").innerHTML = "Subclass:  The " + f.subclass_tech_name;
               document.getElementById("subclass-tech-image").src = f.subclass_tech_img;
+              document.getElementById("subclass-tech-image").alt = f.subclass_tech_img_credit;
               document.getElementById("subclass-tech-description").innerHTML = f.subclass_tech_description;
               for (let i = 0; i < f.subclass_tech_feats.length; i++) {
                 if (document.getElementById("subclass-tech-feats").innerHTML.indexOf(f.subclass_tech_feats[i].name_str) > 0) {} 
@@ -96,6 +104,7 @@
               }
               document.getElementById("subclass-power-name").innerHTML = "Subclass:  The " + f.subclass_power_name;
               document.getElementById("subclass-power-image").src = f.subclass_power_img;
+              document.getElementById("subclass-power-image").alt = f.subclass_power_img_credit;
               document.getElementById("subclass-power-description").innerHTML = f.subclass_power_description;
               for (let i = 0; i < f.subclass_power_feats.length; i++) {
                 if (document.getElementById("subclass-power-feats").innerHTML.indexOf(f.subclass_power_feats[i].name_str) > 0) {} 
@@ -109,6 +118,7 @@
               }
               document.getElementById("subclass-magic-name").innerHTML = "Subclass:  The " + f.subclass_magic_name;
               document.getElementById("subclass-magic-image").src = f.subclass_magic_img;
+              document.getElementById("subclass-magic-image").alt = f.subclass_magic_img_credit;
               document.getElementById("subclass-magic-description").innerHTML = f.subclass_magic_description;
               for (let i = 0; i < f.subclass_magic_feats.length; i++) {
                 if (document.getElementById("subclass-magic-feats").innerHTML.indexOf(f.subclass_magic_feats[i].name_str) > 0) {} 

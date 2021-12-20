@@ -56,15 +56,21 @@
                     }
                   } 
                 }
-                var tblRow = "<tr>" 
-                  + "<td>" + (i+1) + "</td>"
-                  + "<td>" + prof + "</td>"
-                  + "<td>" + links + "</td>"
-                  + "<td>" + Math.ceil((i+2)/f.sustainables_known_denominator) + "</td>"
-                  + "<td>" + Math.ceil((i+1)*f.consumables_known_per_level) + "</td>"
-                  + "<td>" + Math.ceil((i+1)*f.consumables_points_per_level) + "</td>"
-                  + "<td>" + Math.min(Math.ceil((i+1)/f.consumables_max_per_level_denominator), 9) + "</td>"
-                  + "</tr>"
+                if ( (i+2)/f.sustainables_known_denominator < 0.35 ) {
+                  var sustainables = "---";
+                } else {
+                  var sustainables = Math.ceil((i+2)/f.sustainables_known_denominator);
+                }
+                if ( (i+1)/f.consumables_max_per_level_denominator < 0.3 ) {
+                  var consumables_known = "---";
+                  var consumables_points = "---";
+                  var consumables_max = "---";
+                } else {
+                  var consumables_known = Math.ceil((i+1)*f.consumables_known_per_level);
+                  var consumables_points = Math.ceil((i+1)*f.consumables_points_per_level);
+                  var consumables_max = Math.min(Math.ceil((i+1)/f.consumables_max_per_level_denominator), 9)
+                }
+                var tblRow = "<tr>" + "<td>" + (i+1) + "</td>" + "<td>" + prof + "</td>" + "<td>" + links + "</td>" + "<td>" + sustainables + "</td>" + "<td>" + consumables_known + "</td>" + "<td>" + consumables_points + "</td>" + "<td>" + consumables_max + "</td>" + "</tr>"
                 j = j + 2;
                 $(tblRow).appendTo("#class-table tbody");
                 if ((i+1) == 4 || (i+1) == 8 || (i+1) == 12 || (i+1) == 16) {

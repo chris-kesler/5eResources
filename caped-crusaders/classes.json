@@ -39,13 +39,8 @@
                 },
                 {
                     "name_str" : "Augmented Armor",
-                    "level" : 1,
+                    "level" : 6,
                     "mechanics_str" : "Your inventive pursuits have led to you making armor that serves as a conduit for your technology.  As part of a Long Rest, you can turn a suit of mundane armor you have access to into Augmented Armor, provided you have Inventor's Tools on hand.  You can don or doff the Augmented Armor over the course of 1 minute.  The Augmented Armor continues to be Augmented Armor until you create another set of Augmented Armor, or it is destroyed.  If you die while wearing the Augmented Armor, it is destroyed.  The Augmented Armor has the following traits while worn by you:<ul><li>Your Strength score becomes equal to your Intelligence score as long as it is not already higher.  You are also considered proficient with the armor.  </li>  <li>You can use the Augmented Armor as a Techcasting focus for your Visionary spells.  </li><li>The Augmented Armor attaches to you and can't be removed against your will.  </li><li>The Augmented Armor expands to cover your entire body, although you can remove or attach the helmet as an action.  </li><li>The Augmented Armor replaces any missing limbs, functioning identically to a limb it replaces.  </li></ul>"
-                },
-                {
-                    "name_str" : "Expertise",
-                    "level" : 2,
-                    "mechanics_str" : "Choose one of your skill proficiencies or two of your tool proficiencies.  Your Proficiency Bonus is doubled for any ability check you make that uses the chosen skill or tools.  <br><br>You gain this feature again at levels 6, 10, 14, and 18.  "
                 },
                 {
                     "name_str" : "Subclass Feature",
@@ -63,21 +58,12 @@
                 },
                 {
                     "name_str" : "Advanced Armor",
-                    "level" : 4,
+                    "level" : 10,
                     "mechanics_str" : "Your inventive pursuits have led to you making armor that serves as a conduit for your technology.  As part of a Long Rest, you can turn a suit of mundane armor you have access to into Advanced Armor, provided you have Inventor's Tools on hand.  You can don or doff the Advanced Armor an Action.  The Advanced Armor continues to be Advanced Armor until you create another set of Advanced Armor, or it is destroyed.  If you die while wearing the Advanced Armor, it is destroyed.  The Advanced Armor has the following traits while worn by you:<ul><li>Your Strength score becomes equal to your Intelligence score as long as it is not already higher.  You are also considered proficient with the armor.  </li>  <li>You can use the Advanced Armor as a Techcasting focus for your Visionary spells.  </li><li>The Advanced Armor attaches to you and can't be removed against your will.  </li><li>The Advanced Armor expands to cover your entire body, although you can retract or deploy the helmet as an action.  </li><li>The Advanced Armor replaces any missing limbs, functioning identically to a limb it replaces.  </li><li>When you make an Intelligence check, you can treat the d20 result as equal to your Intelligence modifier if the result before modifiers is lower.  </li><li>You can survive in the vacuum of space for a number of minutes equal to your Intelligence modifier.  This ability recharges upon a long rest within a hospitable environment.  </li></ul>"
                 },
                 {
                     "name_str" : "Techcasting Milestone",
                     "level" : 5
-                },
-                {
-                    "name_str" : "Expertise",
-                    "level" : 6
-                },
-                {
-                    "name_str" : "Reverse Engineering",
-                    "level" : 6,
-                    "mechanics_str" : "Choose one Technology, Power, or Spell from any class casting list that you have witnessed being cast at least once.  Events witnessed within your backstory do not qualify for this feature.  The chosen Technology, Power, or Spell must not be of a higher level than the Maximum Technology Level for your current Visionary level.  Your selected Technology, Power, or Spell counts as a Visionary Technology for you, and you are able to learn it as normal at the same level you choose it.  If you are starting at higher levels or have not witnessed any Technologies, Powers, or Spells being cast upon gaining this feature, your GM may provide a list of Technologies, Powers, or Spells for you to choose from.  <br><br>You gain this feature again at levels 10, 14, and 18.  "
                 },
                 {
                     "name_str" : "Techcasting Milestone",
@@ -96,14 +82,6 @@
                     "level" : 9
                 },
                 {
-                    "name_str" : "Expertise",
-                    "level" : 10
-                },
-                {
-                    "name_str" : "Reverse Engineering",
-                    "level" : 10
-                },
-                {
                     "name_str" : "Techcasting Milestone",
                     "level" : 11
                 },
@@ -113,20 +91,12 @@
                 },
                 {
                     "name_str" : "Superior Armor",
-                    "level" : 12,
+                    "level" : 14,
                     "mechanics_str" : "Your inventive pursuits have led to you making armor that serves as a conduit for your technology.  As part of a Long Rest, you can turn a suit of mundane armor you have access to into Superior Armor, provided you have Inventor's Tools on hand.  You can don or doff the Superior Armor as a Bonus Action.  The Superior Armor continues to be Superior Armor until you create another set of Superior Armor, or it is destroyed.  If you die while wearing the Superior Armor, it is destroyed.  The Superior Armor has the following traits while worn by you:<ul><li>Your Strength score becomes equal to your Intelligence score as long as it is not already higher.  You are also considered proficient with the armor.  </li>  <li>You can use the Superior Armor as a Techcasting focus for your Visionary spells.  </li><li>The Superior Armor attaches to you and can't be removed against your will.  </li><li>The Superior Armor expands to cover your entire body, although you can retract or deploy the helmet as a bonus action.  </li><li>The Superior Armor replaces any missing limbs, functioning identically to a limb it replaces.  </li><li>When you make an Intelligence check, you can treat the d20 result as equal to half of your Intelligence score (rounded down) if the result before modifiers is lower.  </li><li>You can survive in the vacuum of space for a number of hours equal to your Intelligence modifier.  This ability recharges upon a long rest within a hospitable environment.  </li></ul>"
                 },
                 {
                     "name_str" : "Techcasting Milestone",
                     "level" : 13
-                },
-                {
-                    "name_str" : "Expertise",
-                    "level" : 14
-                },
-                {
-                    "name_str" : "Reverse Engineering",
-                    "level" : 14
                 },
                 {
                     "name_str" : "Techcasting Milestone",
@@ -145,20 +115,12 @@
                     "level" : 17
                 },
                 {
-                    "name_str" : "Expertise",
-                    "level" : 18
-                },
-                {
-                    "name_str" : "Reverse Engineering",
-                    "level" : 18
-                },
-                {
                     "name_str" : "Ability Score Improvement",
                     "level" : 19
                 },
                 {
                     "name_str" : "Ultimate Armor",
-                    "level" : 19,
+                    "level" : 18,
                     "mechanics_str" : "Your inventive pursuits have led to you making armor that serves as a conduit for your technology.  As part of a Long Rest, you can turn a suit of mundane armor you have access to into Ultimate Armor, provided you have Inventor's Tools on hand.  You can don or doff the Ultimate Armor as part of any Action, Bonus Action, or Reaction you take.  In addition, when the Ultimate Armor is doffed by you, you can choose to have it collapse into a small housing unit.  The housing unit takes on a form of your choosing, and can be no smaller a thick wristwatch.  You can use the housing unit as a Tech casting focus for your Visionary spells while you wear it as components of the Ultimate Armor dynamically deploy and retract as needed.  The Ultimate Armor continues to be Ultimate Armor until you create another set of Ultimate Armor, or it is destroyed.  If you die while wearing the Ultimate Armor, it is destroyed.  The Ultimate Armor has the following traits while worn by you:<ul><li>Your Strength score becomes equal to your Intelligence score as long as it is not already higher.  You are also considered proficient with the armor.  </li>  <li>You can use the Ultimate Armor as a Techcasting focus for your Visionary spells, and you need not supply any components that do not have a cost while doing so.  </li><li>The Ultimate Armor attaches to you and can't be removed against your will.  </li><li>The Ultimate Armor expands to cover your entire body, although you can retract or deploy the helmet once per turn.  </li><li>The Ultimate Armor replaces any missing limbs, functioning identically to a limb it replaces.  </li><li>When you make an Intelligence check, you can treat the d20 result as equal to your Intelligence score if the result before modifiers is lower.  </li><li>Choose two of your Technologies that are of 2nd level or lower.  You can cast those Technologies at their lowest level without expending any Tech Points.  </li><li>You can survive in the vacuum of space for a number of days equal to your Intelligence modifier.  This ability recharges upon a long rest within a hospitable environment.  </li></ul>"
                 },
                 {
@@ -343,43 +305,14 @@
                     "name_str" : "Subclass Feature",
                     "level" : 18
                 },
-                
-                {
-                    "name_str" : "Expertise",
-                    "level" : 2,
-                    "mechanics_str" : "Choose one of your skill proficiencies or two of your tool proficiencies.  Your Proficiency Bonus is doubled for any ability check you make that uses the chosen skill or tools.  <br><br>You gain this feature again at levels 10 and 16.  "
-                },
-                {
-                    "name_str" : "Expertise",
-                    "level" : 9
-                },
-                {
-                    "name_str" : "Expertise",
-                    "level" : 15
-                },
-                {
-                    "name_str" : "Interrogation",
-                    "level" : 6,
-                    "mechanics_str" : "You can extract information from a target (granted you have valid methods of conveying information to each other).  Select one skill that is Dexterity, Wisdom, or Charisma based.  That skill can always use your Intelligence instead of the original ability.  As a Bonus Action, you may make a contested Intimidation, Insight, or Investigation check against a target's Charisma Saving Throw.  On a success, the target gives you only enough information to save their own skin (which might be everything they know if the threat is sufficient), and is immune to this feature for 24 hours.  On a failure, the target is considered Frightened and Compliant, willingly offering all the information they have that might be remotely useful regarding the topic of inquiry, and you become aware of any Vulnerabilities the target might have.  "
-                },
                 {
                     "name_str" : "Evasion",
                     "level" : 9,
                     "mechanics_str" : "You have advantage on Saving Throws against effects you can see, and only take half damage on a failure and no damage on a success against Dexterity based Saving Throw effects.  "
                 },
                 {
-                    "name_str" : "Precision Strike",
-                    "level" : 12,
-                    "mechanics_str" : "When you make an Attack, you may gain a bonus to the Attack roll equal to the modifiers applicable to the Damage roll by forgoing those modifiers on the Damage roll.  For example, if your Attack has an Attack roll of 1d20 + 7 and a Damage roll of 2d4 + 4, you could apply this feature to have an Attack roll of 1d20 + 7 + 4 and a Damage roll of 2d4 (this may seem like an unwise tradeoff, but it does help activate Sneak Attack more often).  "
-                },
-                {
                     "name_str" : "Sneak Attack",
                     "level" : 15
-                },
-                {
-                    "name_str" : "Redirection",
-                    "level" : 18,
-                    "mechanics_str" : "When an Attack would hit you, you may use your Reaction to redirect that Attack at any other creature within range of the attacker other than the attacker themselves.  You may use this feature a number of times equal to your Proficiency Bonus between Long Rests.  "
                 },
                 {
                     "name_str" : "Dread Knight",
@@ -536,7 +469,6 @@
                     "level" : 1,
                     "mechanics_str" : "When you make an Attack using Dexterity against a target with advantage, while within Dim Light or Darkness, or while an Ally is within 5 feet of the target, you may inflict Sneak Attack upon a hit.  When inflicting Sneak Attack, you deal additional damage equal to a number of d6s equal to your Proficiency Bonus.  Until the start of your next turn, any creature (other than you) who Attacks a target that suffered your Sneak Attack damage gains a bonus to the Attack roll equal to the number of Sneak Attacks the target suffered.  For example, if you deal Sneak Attack to a target twice in one turn, all creatures gain +2 to their Attack rolls against that target.  If on your next turn you deal Sneak Attack to two separate targets, all creatures gain +1 to their Attack rolls against either.  <br><br>At level 14, the bonus granted to other creatures attacking the target of your Sneak Attack also applies to Damage rolls.  "
                 },
-                
                 {
                     "name_str" : "Subclass Feature",
                     "level" : 2,
@@ -702,34 +634,91 @@
                     "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can't increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
                 },
                 {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 5
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 7
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 11
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 13
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 15
+                },
+                {
+                    "name_str" : "Ability Score Improvement",
+                    "level" : 19
+                },
+                {
                     "name_str" : "Combat Techniques",
                     "level" : 1,
                     "mechanics_str" : "You have a number of Techniques as shown in the Sustainables Known column of the class table.  Upon reaching this and subsequent levels, you gain a new Technique that you qualify for if your total number of Techniques is less than the Sustainables Known for your level.  You may also swap an existing Technique for another of your choice that you qualify for upon each level up.  "
                 },
                 {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 3,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can't increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                    "name_str" : "Combat Techniques",
+                    "level" : 2
                 },
                 {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 5,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can't increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
+                    "name_str" : "Combat Techniques",
+                    "level" : 4
+                },
+                {
+                    "name_str" : "Combat Techniques",
+                    "level" : 6
+                },
+                {
+                    "name_str" : "Combat Techniques",
+                    "level" : 8
+                },
+                {
+                    "name_str" : "Combat Techniques",
+                    "level" : 10
+                },
+                {
+                    "name_str" : "Combat Techniques",
+                    "level" : 12
+                },
+                {
+                    "name_str" : "Combat Techniques",
+                    "level" : 14
+                },
+                {
+                    "name_str" : "Combat Techniques",
+                    "level" : 16
+                },
+                {
+                    "name_str" : "Combat Techniques",
+                    "level" : 18
+                },
+                {
+                    "name_str" : "Combat Techniques",
+                    "level" : 20
+                },
+                {
+                    "name_str" : "Subclass Feature",
+                    "level" : 3,
+                    "mechanics_str" : "You gain a subclass as detailed at the bottom of this page.  <br><br>Each subclass offers a Consumable Milestone at this level, and an additional Consumable Milestone at levels 9 and 17.  "
+                },
+                {
+                    "name_str" : "Subclass Feature",
+                    "level" : 9
+                },
+                {
+                    "name_str" : "Subclass Feature",
+                    "level" : 17
                 },
                 {
                     "name_str" : "Tactical Strategy",
-                    "level" : 5,
+                    "level" : 3,
                     "mechanics_str" : "You learn a number of Strategies equal to your Proficiency Bonus, and can learn additional Strategies to reflect your Proficiency or swap one Strategy for another on each subsequent level up.  You gain a number of Strategy dice equal to your Proficiency Bonus, which are d8s.  The Strategies are as follows:<br><ul><li><b>Coordinated Attack: </b>When you hit a target with an Attack, you can expend a Strategy Die to forgo a subsequent attack.  You may then direct an Ally to expend their Reaction and move up to their speed towards the same target, making one Attack against the target if they are able to get within range and adding the Strategy Die to their Attack roll. .  </li><br><li><b>Defensive Stance: </b>You may use a Bonus Action to expend a Strategy Die, increasing your AC by the amount rolled until the end of your next turn.  While you benefit from this AC increase, you do not provoke Opportunity Attacks.  </li><br><li><b>Disarming Strike: </b>When you hit a target with an Attack, you can expend a Strategy Die and add the result to the damage roll.  In addition, the target must make a Strength saving throw, dropping one item of your choice that it's holding at any point within 15 of the target of your choosing upon failure. .  </li><br><li><b>Distracting Strike: </b>When you hit a target with an Attack, you can expend a Strategy Die and add the result to the damage roll.  In addition, you grant all creatures other than you advantage on all Attacks against the target until the end of your next turn.  </li><br><li><b>Feinting Attack: </b>You may use a Bonus Action to expend a Strategy Die, gaining advantage on all Attack rolls against that target until the start of your next turn.  The first time you hit that target while this effect is active, you may add the Strategy Die to that damage roll. .  </li><br><li><b>Focused Agility: </b>When you make a Dexterity or Strength check, you can expend a Strategy Die to gain advantage on the check and add the result to your total.  </li><br><li><b>Grappling Strike: </b>When you hit a target with an Attack, you can expend a Strategy Die to attempt to Grapple the target and add the Strategy Die to your Strength (Athletics) check..  </li><br><li><b>Parry: </b>When an Attack made by a target you are aware of misses you, you may use a Reaction to expend a Strategy Die and reduce the incoming damage by an amount equal to the Strategy Die + your Dexterity Modifier or half of the incoming damage.  </li><br><li><b>Repelling Attack: </b>When you hit a target with an Attack, you can expend a Strategy Die and add the result to the damage roll.  In addition, the target must make a Strength Saving Throw if they are no more than one size category larger than you, being pushed 20 feet away from you upon failure.  </li><br><li><b>Riposte: </b>When an Attack made by a target you are aware of misses you, you may use a Reaction to expend a Strategy Die and make an Attack against the target, add the Strategy Die to that damage roll..  </li><br><li><b>Trip Attack: </b>When you hit a target with an Attack, you can expend a Strategy Die and add the result to the damage roll.  In addition, the target must make a Strength Saving Throw if they are no more than one size category larger than you, being knocked prone upon failure.  </li><br><li><b>Vigilance: </b>When a target you are aware of moves into your reach, you may use a Reaction to expend a Strategy Die and make an Attack against the target, adding the Strategy Die to that damage roll..  </li></ul>"
-                },
-                {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 7,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can't increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
-                },
-                {
-                    "name_str" : "Indomitable",
-                    "level" : 7,
-                    "mechanics_str" : "When you make a saving throw, you can choose to roll an additional d20 and keep any one of the resulting rolls.  You may only use this feature once per Long Rest.  "
                 },
                 {
                     "name_str" : "Improved Strategy",
@@ -737,49 +726,9 @@
                     "mechanics_str" : "Your Strategy dice becomes d10s.  "
                 },
                 {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 11,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can't increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
-                },
-                {
-                    "name_str" : "Inspirational Endurance",
-                    "level" : 11,
-                    "mechanics_str" : "As part of a Short Rest, you can grant up to 10 willing creatures within 100 feet of you throughout the rest a number of hit points equal to your Soldier level + your Proficiency Bonus.  In addition, you and friendly creatures within 10 feet of you can't be frightened while you are conscious.  "
-                },
-                {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 13,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can't increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
-                },
-                {
-                    "name_str" : "Keen Vigilance",
-                    "level" : 13,
-                    "mechanics_str" : "You have advantage on initiative rolls and are immune to the surprised condition.  "
-                },
-                {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 15,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can't increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
-                },
-                {
-                    "name_str" : "Unrelenting Strategy",
-                    "level" : 15,
-                    "mechanics_str" : "When you roll initiative and have no Strategy dice remaining, you regain two Strategy dice.  "
-                },
-                {
                     "name_str" : "Superior Strategy",
                     "level" : 17,
                     "mechanics_str" : "Your Strategy dice becomes d12s.  "
-                },
-                {
-                    "name_str" : "Ability Score Improvement",
-                    "level" : 19,
-                    "mechanics_str" : "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.  You can't increase an ability score above 20 using this feature.  You may gain this feature multiple times.  Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.  "
-                },
-                {
-                    "name_str" : "Hero's Resolve",
-                    "level" : 19,
-                    "mechanics_str" : "Your Second Wind feature recharges when you roll initiative.  "
                 }
             ],
 

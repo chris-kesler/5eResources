@@ -59,7 +59,7 @@
             "flavor_str" : "Not Applicable",
             "mechanics_str" : "Choose one skill with which you are proficient and one tool with which you are proficient.  Your proficiency bonus is doubled for any check that uses the chosen proficiencies.  You also gain proficiency in one new skill and one new tool of your choice.  <br><br>You may take this Technique multiple times.  ",
 
-            "class_str" : "???",
+            "class_str" : "Visionary",
             "subclass_str" : "",
 
             "feats_str" : "",
@@ -81,7 +81,205 @@
             "flavor_str" : "Not Applicable",
             "mechanics_str" : "You may treat the d20 result for any skill check that you make as a 10 if the roll before modifiers is 9 or lower and the skill check applies your proficiency bonus.  ",
 
-            "class_str" : "???",
+            "class_str" : "Prowler",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Precision Strike",
+            "page_url" : "precision-strike.html",
+
+            "level_int" : 3,
+            "level_str" : "3rd",
+
+            "school_str" : "Reflexes",
+            "school_img" : "/_SiteResources/Images/gun-and-sword.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "When you make an Attack, you may gain a bonus to the Attack roll equal to the modifiers applicable to the Damage roll by forgoing those modifiers on the Damage roll.  For example, if your Attack has an Attack roll of 1d20 + 7 and a Damage roll of 2d4 + 4, you could apply this feature to have an Attack roll of 1d20 + 7 + 4 and a Damage roll of 2d4.  ",
+
+            "class_str" : "Prowler",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Redirection",
+            "page_url" : "redirection.html",
+
+            "level_int" : 4,
+            "level_str" : "4th",
+
+            "school_str" : "Reflexes",
+            "school_img" : "/_SiteResources/Images/gun-and-sword.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "When an Attack would hit you, you may use your Reaction to redirect that Attack at any other creature within range of the attacker other than the attacker themselves.  You may use this feature a number of times equal to your Proficiency Bonus between Long Rests.  ",
+
+            "class_str" : "Prowler",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Reverse Engineering",
+            "page_url" : "reverse-engineering.html",
+
+            "level_int" : 1,
+            "level_str" : "1st",
+
+            "school_str" : "Technology",
+            "school_img" : "/_SiteResources/Images/Analysis.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "Choose one Technology, Power, or Spell from any class casting list that you have witnessed being cast at least once.  Events witnessed within your backstory do not qualify for this feature.  The chosen Technology, Power, or Spell must not be of a higher level than the Maximum Technology Level for your current level.  Your selected Technology, Power, or Spell counts as on your Technology list for you, and you are able to learn it as normal at the same level you choose it.  If you are starting at higher levels or have not witnessed any Technologies, Powers, or Spells being cast upon gaining this feature, your GM may provide a list of Technologies, Powers, or Spells for you to choose from.  <br><br>You may take this Technique multiple times.  ",
+
+            "class_str" : "Visionary",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Indomitable",
+            "page_url" : "indomitable.html",
+
+            "level_int" : 4,
+            "level_str" : "4th",
+
+            "school_str" : "Reflexes",
+            "school_img" : "/_SiteResources/Images/gun-and-sword.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "When you make a saving throw, you can choose to roll an additional d20 and keep any one of the resulting rolls.  You may use this feature a number of times equal to your Proficiency Bonus between Long Rests.  ",
+
+            "class_str" : "Soldier",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Inspirational Endurance",
+            "page_url" : "inspirational-endurance.html",
+
+            "level_int" : 6,
+            "level_str" : "6th",
+
+            "school_str" : "Reflexes",
+            "school_img" : "/_SiteResources/Images/gun-and-sword.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "As part of a Short Rest, you can grant up to 10 willing creatures within 100 feet of you throughout the rest a number of temporary hit points equal to your level + your Proficiency Bonus.  In addition, you and friendly creatures within 10 feet of you can't be Frightened while you are conscious.  ",
+
+            "class_str" : "Soldier",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Keen Vigilance",
+            "page_url" : "keen-vigilance.html",
+
+            "level_int" : 7,
+            "level_str" : "7th",
+
+            "school_str" : "Reflexes",
+            "school_img" : "/_SiteResources/Images/gun-and-sword.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "You have advantage on initiative rolls and are immune to the surprised condition.  ",
+
+            "class_str" : "Soldier",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Iron Resolve",
+            "page_url" : "iron-resolve.html",
+
+            "level_int" : 10,
+            "level_str" : "10th",
+
+            "school_str" : "Reflexes",
+            "school_img" : "/_SiteResources/Images/gun-and-sword.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "Your Second Wind feature recharges when you roll initiative.  ",
+
+            "class_str" : "Soldier",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Unrelenting Strategy",
+            "page_url" : "unrelenting-strategy.html",
+
+            "level_int" : 8,
+            "level_str" : "8th",
+
+            "school_str" : "Reflexes",
+            "school_img" : "/_SiteResources/Images/gun-and-sword.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "When you roll initiative and have no Strategy dice remaining, you regain two Strategy dice.  ",
+
+            "class_str" : "Soldier",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Interrogation",
+            "page_url" : "interrogation.html",
+
+            "level_int" : 2,
+            "level_str" : "2nd",
+
+            "school_str" : "Analysis",
+            "school_img" : "/_SiteResources/Images/Analysis.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "You can extract information from a target (granted you have valid methods of conveying information to each other) out of combat or observe their physical weaknesses in combat.  You may select one skill that is Dexterity, Wisdom, or Charisma based.  That skill can always use your Intelligence instead of the original ability.  As a Bonus Action, you may make a contested Intimidation, Insight, or Investigation check against a target's Charisma Saving Throw.  On a success in combat, nothing happens and the target becomes immune to this feature for 24 hours.  On a success out of combat, the target gives you only enough information to save their own skin (which might be everything they know if the threat is sufficient), and is immune to this feature for 24 hours.  On a failure in combat, you become aware of any Vulnerabilities the target might have.  On a failure out of combat, the target is considered Frightened and Compliant, willingly offering all the information they have that might be remotely useful regarding the topic of inquiry.  ",
+
+            "class_str" : "Prowler",
             "subclass_str" : "",
 
             "feats_str" : "",
