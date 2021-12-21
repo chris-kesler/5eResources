@@ -155,6 +155,28 @@
             "races_str" : ""
         },
         {
+            "name_str" : "Apex Power",
+            "page_url" : "apex-power.html",
+
+            "level_int" : 9,
+            "level_str" : "9th",
+            
+            "school_str" : "Resilience",
+            "school_img" : "/_SiteResources/Images/Resilience.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "Your Strength and Constitution scores, along with their maximums, each increase by five.  ",
+
+            "class_str" : "Dynamo",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
             "name_str" : "Champion's Might",
             "page_url" : "champions-might.html",
 
