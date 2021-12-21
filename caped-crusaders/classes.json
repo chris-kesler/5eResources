@@ -252,16 +252,16 @@
                     "level" : 19
                 },
                 {
-                    "name_str" : "Scaling Feature",
+                    "name_str" : "Detective's Intuition",
                     "level" : 1,
-                    "mechanics_str" : "This is a class specific feature that scales.  "
+                    "mechanics_str" : "When character within 60 feet of you that you can see is about to attempt a skill check, you can activate this feature to learn the DC of the endeavor about to be attempted, along with the immediate consequences of failing to meet that DC.  For example, if you are about to disarm a bomb, you could use this feature to learn that the disarming DC is actually 25, which is much higher than you might expect, and that attempting to disarm it and failing would cause it to detonate early.  This could lead you to take an approach more likely to succeed, such as moving the bomb to a safe location and allowing it to detonate.  You may use this feature a number of times equal to your Proficiency Bonus between Long Rests.  <br><br>At level 9, you may use your Detective's Intuition to observe a creature or vehicle as a Bonus Action.  When you do so, you learn the challenge rating and type of creature or vehicle you are observing, and must make an Investigation skill check that meets or exceeds the target's challenge rating.  The GM may also call for another Intelligence based skill check instead of Investigation if the target is notably exotic.  If you succeed, you immediately learn the Armor Class, Hit Points, two weakest Saving Throws, special senses, movement speeds, Weaknesses, and Vulnerabilities of the target.  <br><br>At level 15, if your passive Investigation is higher than the challenge rating of the target, you automatically succeed.  "
                 },
                 {
-                    "name_str" : "Scaling Feature",
+                    "name_str" : "Detective's Intuition",
                     "level" : 9
                 },
                 {
-                    "name_str" : "Scaling Feature",
+                    "name_str" : "Detective's Intuition",
                     "level" : 15
                 },
                 {
@@ -307,9 +307,9 @@
                     "level" : 17
                 },
                 {
-                    "name_str" : "Capstone",
+                    "name_str" : "Unfailing Contingency",
                     "level" : 20,
-                    "mechanics_str" : "This is a class specific capstone.  "
+                    "mechanics_str" : "When you witness a skill check, Saving Throw, or an Attack roll occur within 60 feet of you, you may choose to alter the outcome, turning a failure into a success or a success into a failure.  You may use this feature once per Long Rest.  "
 
                 }
             ],
@@ -458,24 +458,25 @@
                     "level" : 18
                 },
                 {
-                    "name_str" : "Scaling Feature",
+                    "name_str" : "Sneak Attack",
                     "level" : 1,
-                    "mechanics_str" : "Class based scaling feature.  "
+                    "mechanics_str" : "When you make a Dexterity based Attack with Advantage, while in Dim Light or Darkness, or while an ally is within 5 feet of the target, you can deal additional damage equal to a number of d6s equal to your Proficiency Bonus.  <br><br>At level 10, when you deal Sneak Attack damage to a target, all Attacks against the target made by creatures other than you deal an additional 1d6 damage.  This feature can be applied to multiple targets at once, but cannot stack on a single target.  <br><br>At level 20, your Sneak Attack dice become d8s, and the additional damage granted to other attackers increases to 2d8.  "
                 },
                 {
-                    "name_str" : "Scaling Feature",
-                    "level" : 5
+                    "name_str" : "Sharpshooter",
+                    "level" : 5,
+                    "mechanics_str" : "When you make a Dexterity based Attack, you can choose to apply the damage modifiers to the Attack roll instead.  When you hit a target with this feature, their movement speed is reduced by 5 feet until the start of your next turn.  This penalty can affect multiple creatures simultaneously and also stack on a single target.  <br><br>At level 16, when you hit a target with this feature, you reduce the target's Armor Class for all attacks made by creatures other than you by an amount equal to your Proficiency Bonus until the start of your next turn.  This penalty can affect multiple creatures simultaneously, but cannot stack on a single target.  "
                 },
                 {
-                    "name_str" : "Scaling Feature",
+                    "name_str" : "Sneak Attack",
                     "level" : 10
                 },
                 {
-                    "name_str" : "Scaling Feature",
+                    "name_str" : "Sharpshooter",
                     "level" : 16
                 },
                 {
-                    "name_str" : "Scaling Feature",
+                    "name_str" : "Sneak Attack",
                     "level" : 20
                 },
                 {
@@ -1004,7 +1005,7 @@
             "proficiencies_armor" : "Light Mundane Armors, Light Magical Armors",
             "proficiencies_weapons" : "Simple Mundane Weapons, Simple Magical Weapons",
             "proficiencies_tools" : "Choose any one",
-            "proficiencies_saves" : "---",
+            "proficiencies_saves" : "Cha, Dex",
             "proficiencies_skills" : "Choose any two, one of which must be Strength or Wisdom based.  ",
             
             "equipment_armor" : "Any one Light Mundane Armor",
