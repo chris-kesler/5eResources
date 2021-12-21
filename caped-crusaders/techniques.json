@@ -321,7 +321,7 @@
             "damage_effect_str" : "Buff",
             
             "flavor_str" : "Not Applicable",
-            "mechanics_str" : "When you roll initiative and have no Strategy dice remaining, you regain two Strategy dice.  ",
+            "mechanics_str" : "When you roll initiative and have no Strategy Dice remaining, you regain two Strategy Dice.  ",
 
             "class_str" : "Soldier",
             "subclass_str" : "",

@@ -67,6 +67,116 @@
             "races_str" : ""
         },
         {
+            "name_str" : "Divine Endurance",
+            "page_url" : "divine-endurance.html",
+
+            "level_int" : 3,
+            "level_str" : "3rd",
+            
+            "school_str" : "Resilience",
+            "school_img" : "/_SiteResources/Images/Resilience.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "As a bonus action, you can gain temporary hit points equal to your level in this class, replacing any temporary hit points you already have.  You can use this bonus action a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a long rest.  ",
+
+            "class_str" : "Annointed",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Spell Resilience",
+            "page_url" : "spell-resilience.html",
+
+            "level_int" : 5,
+            "level_str" : "5th",
+            
+            "school_str" : "Resilience",
+            "school_img" : "/_SiteResources/Images/Resilience.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "When you make a saving throw against a Spell based effect to avoid damage, you take no damage if you succeed and only half damage if you fail.  ",
+
+            "class_str" : "Annointed",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Aura of Protection",
+            "page_url" : "aura-of-protection.html",
+
+            "level_int" : 6,
+            "level_str" : "6th",
+            
+            "school_str" : "Resilience",
+            "school_img" : "/_SiteResources/Images/Resilience.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "You gain an aura that extends a number of feet equal to your Proficiency Bonus multiplied by five.  When you or an Ally who is within the radius of the aura makes a saving throw, they gain an additional bonus to the saving throw equal to your Proficiency Bonus.  ",
+
+            "class_str" : "Annointed",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Unyielding Warden",
+            "page_url" : "unyielding-warden.html",
+
+            "level_int" : 7,
+            "level_str" : "7th",
+            
+            "school_str" : "Resilience",
+            "school_img" : "/_SiteResources/Images/Resilience.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "When an Ally of yours is hit by an Attack, you may use your reaction to move up to your speed towards the attacker.  If you end within melee range of the target, you may make one attack against that target.  You may only use this reaction a number of times equal to your Proficiency Bonus between long rests.  ",
+
+            "class_str" : "Annointed",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Heroic Valor",
+            "page_url" : "heroic-valor.html",
+
+            "level_int" : 4,
+            "level_str" : "4th",
+            
+            "school_str" : "Resilience",
+            "school_img" : "/_SiteResources/Images/Resilience.png",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Not Applicable",
+            "mechanics_str" : "When you have advantage on an Attack and hit, that target has disadvantage to hit any target other than you until the start of your next turn.  When you take the Attack Action, you can choose to grant advantage to all Attacks made by you and directed at you until the start of your next turn.  ",
+
+            "class_str" : "Annointed",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
             "name_str" : "Serene Mind",
             "page_url" : "serene-mind.html",
 
