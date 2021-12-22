@@ -72,7 +72,7 @@
                 {
                     "name_str" : "Augmented Armor",
                     "level" : 1,
-                    "mechanics_str" : "Your inventive pursuits have led to you making armor that serves as a conduit for your technology.  As part of a Long Rest, you can turn a suit of Mundane Armor you have access to into Augmented Armor, provided you have Inventor's Tools on hand.  The Augmented Armor continues to be Augmented Armor until you create another set of Augmented Armor, or it is destroyed.  If you die while wearing the Augmented Armor, it is destroyed.  The Augmented Armor has the following traits while worn by you:<ul><li>As an Action, you can don or doff the Augmented Armor, or choose to deploy or retract the helmet.  </li><li>Your Strength score becomes equal to your Intelligence score as long as it is not already higher.  You are also considered proficient with the armor.  </li><li>You can use the Augmented Armor as a Techcasting focus for your Visionary spells.  </li><li>The Augmented Armor attaches to you and can't be removed against your will.  </li><li>The Augmented Armor expands to cover your entire body, replacing any missing limbs, functioning identically to a limb it replaces.  </li></ul>At level 12, your Augmented Armor gains the following additional features:<ul><li>As a Bonus Action, you can don or doff the Augmented Armor, or choose to deploy or retract the helmet.  </li><li>When you make an Intelligence check, you can treat the d20 result as equal to half of your Intelligence score (rounded down) if the result before modifiers is lower.  </li><li>You can survive in the vacuum of space for a number of hours equal to your Intelligence modifier.  This ability recharges upon a Long Rest within a hospitable environment.  </li></ul>At level 18, your Augmented Armor gains the following additional features:<ul><li>As a part of any Action, Bonus Action, or Reaction you take, you can don or doff the Augmented Armor, or choose to deploy or retract the helmet.  In addition, when the Augmented Armor is doffed by you, you can choose to have it collapse into a small housing unit.  The housing unit takes on a form of your choosing, and can be no smaller a thick wristwatch.  You can use the housing unit as a Tech casting focus for your Visionary spells while you wear it as components of the Augmented Armor dynamically deploy and retract as needed.  </li><li>When you make an Intelligence check, you can treat the d20 result as equal to your Intelligence score if the result before modifiers is lower.  </li><li>You can survive in the vacuum of space for a number of days equal to your Intelligence modifier.  This ability recharges upon a Long Rest within a hospitable environment.  </li></ul>"
+                    "mechanics_str" : "Your inventive pursuits have led to you employ an advanced suit of technology that serves as a conduit for your Techcasting.  You gain Augmented Armor, which can be activated for a predefined duration a number of times equal to your Intelligence Modifier between Long Rests.  The traits you gain while the Augmented Armor is active are as follows:  <ul><li><b>Activation:  </b>As a Bonus Action, you can activate or deactivate the Augmented Armor, or choose to deploy or retract the helmet.  </li><li><b>Duration:  </b>Your Augmented Armor lasts for a number of minutes equal to your Intelligence Modifier</li><li><b>Armor Class:  </b>You gain an Armor Class bonus equal to your Intelligence Modifier.  </li><li><b>Strength:  </b>Your Strength score becomes equal to your Intelligence score as long as it is not already higher.  </li><li><b>Casting Focus:  </b>You can use the Augmented Armor as a Techcasting focus for your Visionary spells.  </li><li><b>Irremovable:  </b>The Augmented Armor attaches to you and can't be removed against your will.  </li><li><b>Augmentation:  </b>The Augmented Armor expands to cover your entire body, replacing any missing limbs and functioning identically to a limb it replaces.  </li></ul>At level 12, your Augmented Armor gains the following additional features:  <ul><li><b>Activation:  </b>As a Reaction when you are hit by an Attack or forced to make a Saving Throw, you can activate or deactivate the Augmented Armor, or choose to deploy or retract the helmet.  </li><li><b>Intelligence Checks:  </b>When you make an Intelligence check, you can treat the d20 result as equal to half of your Intelligence score (rounded down) if the result before modifiers is lower.  </li><li><b>Vacuum Capability:  </b>You can survive in the vacuum of space for a number of hours equal to your Intelligence modifier.  This ability recharges upon a Long Rest within a hospitable environment.  </li></ul>At level 18, your Augmented Armor gains the following additional features:  <ul><li><b>Activation:  </b>As a part of any Action, Bonus Action, or Reaction you take, you can don or doff the Augmented Armor, or choose to deploy or retract the helmet.  </li><li><b>Casting Focus:  </b>You are always considered to possess a Techcasting focus as components of the Augmented Armor dynamically deploy and retract as needed.  </li><li><b>Intelligence Checks:  </b>When you make an Intelligence check, you can treat the d20 result as equal to your Intelligence score if the result before modifiers is lower.  </li><li><b>Vacuum Capability:  </b>You can survive in the vacuum of space for a number of days equal to your Intelligence modifier.  This ability recharges upon a Long Rest within a hospitable environment.  </li></ul>"
                 },
                 {
                     "name_str" : "Augmented Armor",
@@ -129,17 +129,17 @@
             "subclass_tech_description" : "A paragon of invention and ingenuity, the Virtuoso has created and incorporated a truly sustainable energy source. This energy source grants the Virtuoso several at-will Technologies and capabilities, such as flight. The Virtuoso can also adapt other suits of Technological Armor to fit their needs.  ",
             "subclass_tech_feats" : [
                 {
-                    "name_str" : "Engineerism",
+                    "name_str" : "Integrated Tech",
                     "level" : 2,
-                    "mechanics_str" : "You gain one sustained Tech from the sustained Tech list. In addition, you can also convert any Technological Armor you have access to into your Augmented Armor as normal, retaining the original item's benefits in addition to the Augmented Armor features. You must still meet the level prerequisites for the Armor in order to do so, but ignore all other restrictions as you modify it to accomodate you.  "
+                    "mechanics_str" : "You gain one sustained Tech from the sustained Tech list. You may also swap one previously gained sustained Tech for another that you qualify for.  "
                 },
                 {
-                    "name_str" : "Micronuclear",
+                    "name_str" : "Improved Tech",
                     "level" : 8,
                     "mechanics_str" : "You gain one sustained Tech from the sustained Tech list. You may also swap one previously gained sustained Tech for another that you qualify for.  "
                 },
                 {
-                    "name_str" : "Quantum Induction",
+                    "name_str" : "Superior Tech",
                     "level" : 16,
                     "mechanics_str" : "You gain one sustained Tech from the sustained Tech list. You may also swap one previously gained sustained Tech for another that you qualify for.  "
                 }
@@ -151,17 +151,17 @@
             "subclass_power_description" : "Some superpowers are far more subtle than most, and the Magnate is a prime example. Whether relying on magnetic manipulation, electrokinesis, or cybernetics, you stand out as a Visionary with precise control over your Technology. Having a direct connection between your nervous system and your devices grants you an innate control over your Augmented Armor. The Magnate can also adapt other suits of Metapower Armor to fit their needs.  ",
             "subclass_power_feats" : [
                 {
-                    "name_str" : "Biomechanical Interface",
+                    "name_str" : "Integrated Power",
                     "level" : 2,
-                    "mechanics_str" : "You gain one enhancing Power from the enhancing Power list. In addition, you can also convert any Metapower Armor you have access to into your Augmented Armor as normal, retaining the original item's benefits in addition to the Augmented Armor features. You must still meet the level prerequisites for the Armor in order to do so, but ignore all other restrictions as you modify it to accomodate you.  "
+                    "mechanics_str" : "You gain one enhancing Power from the enhancing Power list.  You may also swap one previously gained enhancing Power for another that you qualify for.  "
                 },
                 {
-                    "name_str" : "Digital Synapses",
+                    "name_str" : "Improved Power",
                     "level" : 8,
                     "mechanics_str" : "You gain one enhancing Power from the enhancing Power list.  You may also swap one previously gained enhancing Power for another that you qualify for.  "
                 },
                 {
-                    "name_str" : "Synthetic Symbiosis",
+                    "name_str" : "Superior Power",
                     "level" : 16,
                     "mechanics_str" : "You gain one enhancing Power from the enhancing Power list.  You may also swap one previously gained enhancing Power for another that you qualify for.  "
                 }
@@ -173,17 +173,17 @@
             "subclass_magic_description" : "A scholar of ancient knowledge and mythology, the Glyphologist combines modern science with ancient magical power sources. Whether it be inscribing runes, compressing motes of power, or integrating powerful artifacts, the Glyphologist binds themselves and their armor together on a supernatural level. While not a spellcaster, the Glyphologist still benefits from magical boons that manifest in a variety of ways. The Glyphologist can also adapt other suits of Magical Armor to fit their needs.  ",
             "subclass_magic_feats" : [
                 {
-                    "name_str" : "Applied Theology",
+                    "name_str" : "Integrated Magic",
                     "level" : 2,
-                    "mechanics_str" : "You gain one enduring Boon from the enduring Boon list. In addition, you can also convert any Magical Armor you have access to into your Augmented Armor as normal, retaining the original item's benefits in addition to the Augmented Armor features. You must still meet the level prerequisites for the Armor in order to do so, but ignore all other restrictions as you modify it to accomodate you.  "
+                    "mechanics_str" : "You gain one enduring Boon from the enduring Boon list.  You may also swap one previously gained enduring Boon for another that you qualify for.  "
                 },
                 {
-                    "name_str" : "Invocationist",
+                    "name_str" : "Improved Magic",
                     "level" : 8,
                     "mechanics_str" : "You gain one enduring Boon from the enduring Boon list.  You may also swap one previously gained enduring Boon for another that you qualify for.  "
                 },
                 {
-                    "name_str" : "Science of Divinity",
+                    "name_str" : "Superior Magic",
                     "level" : 16,
                     "mechanics_str" : "You gain one enduring Boon from the enduring Boon list.  You may also swap one previously gained enduring Boon for another that you qualify for.  "
                 }
@@ -684,6 +684,19 @@
                     "level" : 20
                 },
                 {
+                    "name_str" : "Tactical Strategy",
+                    "level" : 1,
+                    "mechanics_str" : "You learn a number of Strategies equal to your Proficiency Bonus, and can learn additional Strategies to reflect your Proficiency Bonus or swap one Strategy for another on each subsequent level up.  You gain a number of Strategy Dice equal to your Proficiency Bonus, which are d8s.  The Strategies are as follows:<br><ul><li><b>Coordinated Attack: </b>When you hit a target with an Attack, you can expend a Strategy Die to forgo a subsequent attack.  You may then direct an Ally to expend their Reaction and move up to their speed towards the same target, making one Attack against the target if they are able to get within range and adding the Strategy Die to their Attack roll. .  </li><br><li><b>Defensive Stance: </b>You may use a Bonus Action to expend a Strategy Die, increasing your AC by the amount rolled until the end of your next turn.  While you benefit from this AC increase, you do not provoke Opportunity Attacks.  </li><br><li><b>Disarming Strike: </b>When you hit a target with an Attack, you can expend a Strategy Die and add the result to the damage roll.  In addition, the target must make a Strength saving throw, dropping one item of your choice that it's holding at any point within 15 of the target of your choosing upon failure. .  </li><br><li><b>Distracting Strike: </b>When you hit a target with an Attack, you can expend a Strategy Die and add the result to the damage roll.  In addition, you grant all creatures other than you advantage on all Attacks against the target until the end of your next turn.  </li><br><li><b>Feinting Attack: </b>You may use a Bonus Action to expend a Strategy Die, gaining advantage on all Attack rolls against that target until the start of your next turn.  The first time you hit that target while this effect is active, you may add the Strategy Die to that damage roll. .  </li><br><li><b>Focused Agility: </b>When you make a Dexterity or Strength check, you can expend a Strategy Die to gain advantage on the check and add the result to your total.  </li><br><li><b>Grappling Strike: </b>When you hit a target with an Attack, you can expend a Strategy Die to attempt to Grapple the target and add the Strategy Die to your Strength (Athletics) check.  </li><br><li><b>Parry: </b>When an Attack made by a target you are aware of misses you, you may use a Reaction to expend a Strategy Die and reduce the incoming damage by an amount equal to the Strategy Die + your Dexterity Modifier or half of the incoming damage.  </li><br><li><b>Repelling Attack: </b>When you hit a target with an Attack, you can expend a Strategy Die and add the result to the damage roll.  In addition, the target must make a Strength Saving Throw if they are no more than one size category larger than you, being pushed 20 feet away from you upon failure.  </li><br><li><b>Riposte: </b>When an Attack made by a target you are aware of misses you, you may use a Reaction to expend a Strategy Die and make an Attack against the target, add the Strategy Die to that damage roll.  </li><br><li><b>Trip Attack: </b>When you hit a target with an Attack, you can expend a Strategy Die and add the result to the damage roll.  In addition, the target must make a Strength Saving Throw if they are no more than one size category larger than you, being knocked prone upon failure.  </li><br><li><b>Vigilance: </b>When a target you are aware of moves into your reach, you may use a Reaction to expend a Strategy Die and make an Attack against the target, adding the Strategy Die to that damage roll.  </li></ul>At level 13, your Strategy Dice become d10s.  At level 20, your Strategy Dice become d12s, and you gain two Strategy Dice if you roll Initiative with less than two Strategy Dice remaining.  "
+                },
+                {
+                    "name_str" : "Tactical Strategy",
+                    "level" : 13
+                },
+                {
+                    "name_str" : "Tactical Strategy",
+                    "level" : 20
+                },
+                {
                     "name_str" : "Subclass Feature",
                     "level" : 3,
                     "mechanics_str" : "You gain a subclass as detailed at the bottom of this page.  <br><br>Each subclass offers a Consumable Milestone at this level, and an additional Consumable Milestone at levels 9 and 17.  "
@@ -716,19 +729,6 @@
                 {
                     "name_str" : "Ability Score Improvement",
                     "level" : 19
-                },
-                {
-                    "name_str" : "Tactical Strategy",
-                    "level" : 1,
-                    "mechanics_str" : "You learn a number of Strategies equal to your Proficiency Bonus, and can learn additional Strategies to reflect your Proficiency Bonus or swap one Strategy for another on each subsequent level up.  You gain a number of Strategy Dice equal to your Proficiency Bonus, which are d8s.  The Strategies are as follows:<br><ul><li><b>Coordinated Attack: </b>When you hit a target with an Attack, you can expend a Strategy Die to forgo a subsequent attack.  You may then direct an Ally to expend their Reaction and move up to their speed towards the same target, making one Attack against the target if they are able to get within range and adding the Strategy Die to their Attack roll. .  </li><br><li><b>Defensive Stance: </b>You may use a Bonus Action to expend a Strategy Die, increasing your AC by the amount rolled until the end of your next turn.  While you benefit from this AC increase, you do not provoke Opportunity Attacks.  </li><br><li><b>Disarming Strike: </b>When you hit a target with an Attack, you can expend a Strategy Die and add the result to the damage roll.  In addition, the target must make a Strength saving throw, dropping one item of your choice that it's holding at any point within 15 of the target of your choosing upon failure. .  </li><br><li><b>Distracting Strike: </b>When you hit a target with an Attack, you can expend a Strategy Die and add the result to the damage roll.  In addition, you grant all creatures other than you advantage on all Attacks against the target until the end of your next turn.  </li><br><li><b>Feinting Attack: </b>You may use a Bonus Action to expend a Strategy Die, gaining advantage on all Attack rolls against that target until the start of your next turn.  The first time you hit that target while this effect is active, you may add the Strategy Die to that damage roll. .  </li><br><li><b>Focused Agility: </b>When you make a Dexterity or Strength check, you can expend a Strategy Die to gain advantage on the check and add the result to your total.  </li><br><li><b>Grappling Strike: </b>When you hit a target with an Attack, you can expend a Strategy Die to attempt to Grapple the target and add the Strategy Die to your Strength (Athletics) check..  </li><br><li><b>Parry: </b>When an Attack made by a target you are aware of misses you, you may use a Reaction to expend a Strategy Die and reduce the incoming damage by an amount equal to the Strategy Die + your Dexterity Modifier or half of the incoming damage.  </li><br><li><b>Repelling Attack: </b>When you hit a target with an Attack, you can expend a Strategy Die and add the result to the damage roll.  In addition, the target must make a Strength Saving Throw if they are no more than one size category larger than you, being pushed 20 feet away from you upon failure.  </li><br><li><b>Riposte: </b>When an Attack made by a target you are aware of misses you, you may use a Reaction to expend a Strategy Die and make an Attack against the target, add the Strategy Die to that damage roll..  </li><br><li><b>Trip Attack: </b>When you hit a target with an Attack, you can expend a Strategy Die and add the result to the damage roll.  In addition, the target must make a Strength Saving Throw if they are no more than one size category larger than you, being knocked prone upon failure.  </li><br><li><b>Vigilance: </b>When a target you are aware of moves into your reach, you may use a Reaction to expend a Strategy Die and make an Attack against the target, adding the Strategy Die to that damage roll..  </li></ul>At level 13, your Strategy Dice become d10s.  At level 20, your Strategy Dice become d12s, and you gain two Strategy Dice if you roll Initiative with less than two Strategy Dice remaining.  "
-                },
-                {
-                    "name_str" : "Tactical Strategy",
-                    "level" : 13
-                },
-                {
-                    "name_str" : "Tactical Strategy",
-                    "level" : 20
                 }
             ],
 
@@ -917,7 +917,7 @@
                 {
                     "name_str" : "Partial Omnipotence",
                     "level" : 20,
-                    "mechanics_str" : "As a Reaction, you may cast any one Archmage Spell, requiring no components.  Alternatively, you may choose to entirely negate one Spell/Technology/Superpower based effect that already exists or is being cast.  After taking this Reaction, you must wait until six Long Rests have been completed before using it again.  "
+                    "mechanics_str" : "As a Reaction, you may cast any one Archmage Spell, requiring no components.  Alternatively, you may choose to entirely negate one Spell/Technology/Superpower based effect that already exists or is being cast.  You may use this Reaction once per Long Rest.  "
                 }
             ],
 
@@ -1669,7 +1669,7 @@
                 {
                     "name_str" : "Metapowers Milestone",
                     "level" : 1,
-                    "mechanics_str" : "Choose two of the following Metapowers.  When you cast a Superpower, you may choose to add the chosen effect for this casting only:  <ul><li><b>Distant:</b>  The Superpower's range is doubled to a minimum of 30 feet.  </li><li><b>Careful:</b>  A number of creatures up to your Powercasting Modifier that would be affected by the Superpower are not affected.  </li><li><b>Potent:</b>  You may deal damage equal to your Powercasting Ability Modifier to every creature that is affected by the Superpower upon casting it.  </li><li><b>Focused:</b>  Targets have disadvantage on their Saving Throw against this Superpower until the end of your turn.  </li><li><b>Innate:</b>  No components other than Material components which have an explicit cost are required for this casting of the Superpower.  </li><li><b>Extended:</b>  The Superpower's duration is tripled to a minimum of 1 hour.  </li><li><b>Quickened:</b>  The Superpower's casting time is quartered, to a minimum of 1 Action (Superpowers with a casting time of 1 Action are reduced to 1 Bonus Action)  </li><li><b>Twinned:</b>  A Superpower that only targets one creature also targets a second creature of your choice as normal.  </li></ul>You may only apply a Metapower to your Superpowers a number of times equal to your Proficiency Bonus between Long Rests.  <br><br>You learn two additional Metapowers at levels 12 and 18.  On each level up, you may also swap one chosen Metapower for another.  "
+                    "mechanics_str" : "Choose two of the following Metapowers.  When you cast a Superpower, you may choose to add the chosen effect for this casting only:  <ul><li><b>Distant:</b>  The Superpower's range is doubled to a minimum of 30 feet.  </li><li><b>Careful:</b>  A number of creatures up to your Powercasting Modifier that would be affected by the Superpower are not affected.  </li><li><b>Potent:</b>  You may deal damage equal to your Powercasting Ability Modifier to every creature that is affected by the Superpower upon casting it.  </li><li><b>Focused:</b>  Targets have disadvantage on their Saving Throw against this Superpower until the end of your turn.  </li><li><b>Innate:</b>  No components other than Material components which have an explicit cost are required for this casting of the Superpower.  </li><li><b>Extended:</b>  The Superpower's duration is tripled to a minimum of 1 hour.  </li><li><b>Quickened:</b>  The Superpower's casting time is quartered, to a minimum of 1 Action (Superpowers with a casting time of 1 Action are reduced to 1 Bonus Action)  </li><li><b>Twinned:</b>  A Superpower that only targets one creature also targets a second creature of your choice as normal.  </li></ul>You may only apply a Metapower to your Superpowers a number of times equal to twice your Proficiency Bonus between Long Rests.  <br><br>You learn two additional Metapowers at levels 12 and 18.  On each level up, you may also swap one chosen Metapower for another.  "
                 },
                 {
                     "name_str" : "Metapowers Milestone",
@@ -1916,22 +1916,22 @@
             "subclass_tech_description" : "Possessing unrivaled speed, the Speedster perceives and interacts with the battlefield on an entirely different level.  ",
             "subclass_tech_feats" : [
                 {
-                    "name_str" : "Hyperphysics",
+                    "name_str" : "Integrated Tech",
                     "level" : 2,
                     "mechanics_str" : "You gain one sustained Tech from the sustained Tech list. You may also swap one previously gained sustained Tech for another that you qualify for.  "
                 },
                 {
-                    "name_str" : "Muscle Memory",
+                    "name_str" : "Improved Tech",
                     "level" : 6,
                     "mechanics_str" : "You gain one sustained Tech from the sustained Tech list. You may also swap one previously gained sustained Tech for another that you qualify for.  "
                 },
                 {
-                    "name_str" : "Applied Technique",
+                    "name_str" : "Advanced Tech",
                     "level" : 12,
                     "mechanics_str" : "You gain one sustained Tech from the sustained Tech list. You may also swap one previously gained sustained Tech for another that you qualify for.  "
                 },
                 {
-                    "name_str" : "Peak Conditioning",
+                    "name_str" : "Superior Tech",
                     "level" : 18,
                     "mechanics_str" : "You gain one sustained Tech from the sustained Tech list. You may also swap one previously gained sustained Tech for another that you qualify for.  "
                 }
@@ -1943,22 +1943,22 @@
             "subclass_power_description" : "Able to transport themselves and others through spacetime, the Egressor possesses unrivalred individual mobility.  ",
             "subclass_power_feats" : [
                 {
-                    "name_str" : "Genetic Adaptation",
+                    "name_str" : "Integrated Power",
                     "level" : 2,
                     "mechanics_str" : "You gain one enhancing Power from the enhancing Power list.  You may also swap one previously gained enhancing Power for another that you qualify for.  "
                 },
                 {
-                    "name_str" : "Developed Attributes",
+                    "name_str" : "Improved Power",
                     "level" : 6,
                     "mechanics_str" : "You gain one enhancing Power from the enhancing Power list.  You may also swap one previously gained enhancing Power for another that you qualify for.  "
                 },
                 {
-                    "name_str" : "Accelerated Evolution",
+                    "name_str" : "Advanced Power",
                     "level" : 12,
                     "mechanics_str" : "You gain one enhancing Power from the enhancing Power list.  You may also swap one previously gained enhancing Power for another that you qualify for.  "
                 },
                 {
-                    "name_str" : "Dimensional Ascension",
+                    "name_str" : "Superior Power",
                     "level" : 18,
                     "mechanics_str" : "You gain one enhancing Power from the enhancing Power list.  You may also swap one previously gained enhancing Power for another that you qualify for.  "
                 }
@@ -1970,22 +1970,22 @@
             "subclass_magic_description" : "The portalist is able to bridge different points in spacetime, allowing for unique ways to manipulate the battlfield.  ",
             "subclass_magic_feats" : [
                 {
-                    "name_str" : "Applied Theology",
+                    "name_str" : "Integrated Magic",
                     "level" : 2,
                     "mechanics_str" : "You gain one enduring Boon from the enduring Boon list.  You may also swap one previously gained enduring Boon for another that you qualify for.  "
                 },
                 {
-                    "name_str" : "Invocationist",
+                    "name_str" : "Improved Magic",
                     "level" : 6,
                     "mechanics_str" : "You gain one enduring Boon from the enduring Boon list.  You may also swap one previously gained enduring Boon for another that you qualify for.  "
                 },
                 {
-                    "name_str" : "Extraplanar Influence",
+                    "name_str" : "Advanced Magic",
                     "level" : 12,
                     "mechanics_str" : "You gain one enduring Boon from the enduring Boon list.  You may also swap one previously gained enduring Boon for another that you qualify for.  "
                 },
                 {
-                    "name_str" : "Nature of Reality",
+                    "name_str" : "Superior Magic",
                     "level" : 18,
                     "mechanics_str" : "You gain one enduring Boon from the enduring Boon list.  You may also swap one previously gained enduring Boon for another that you qualify for.  "
                 }

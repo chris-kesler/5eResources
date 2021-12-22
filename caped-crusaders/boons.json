@@ -51,8 +51,8 @@
             "level_int" : 4,
             "level_str" : "4th",
             
-            "school_str" : "Resilience",
-            "school_img" : "/_SiteResources/Images/Resilience.png",
+            "school_str" : "Divination",
+            "school_img" : "/_SiteResources/Images/Sigil-Divination.png",
             
             "damage_effect_str" : "Buff",
             
@@ -73,8 +73,8 @@
             "level_int" : 3,
             "level_str" : "3rd",
             
-            "school_str" : "Resilience",
-            "school_img" : "/_SiteResources/Images/Resilience.png",
+            "school_str" : "Necromancy",
+            "school_img" : "/_SiteResources/Images/Sigil-Necromancy.png",
             
             "damage_effect_str" : "Buff",
             
@@ -95,8 +95,8 @@
             "level_int" : 5,
             "level_str" : "5th",
             
-            "school_str" : "Resilience",
-            "school_img" : "/_SiteResources/Images/Resilience.png",
+            "school_str" : "Abjuration",
+            "school_img" : "/_SiteResources/Images/Sigil-Abjuration.png",
             
             "damage_effect_str" : "Buff",
             
@@ -117,8 +117,8 @@
             "level_int" : 6,
             "level_str" : "6th",
             
-            "school_str" : "Resilience",
-            "school_img" : "/_SiteResources/Images/Resilience.png",
+            "school_str" : "Abjuration",
+            "school_img" : "/_SiteResources/Images/Sigil-Abjuration.png",
             
             "damage_effect_str" : "Buff",
             
@@ -139,8 +139,8 @@
             "level_int" : 7,
             "level_str" : "7th",
             
-            "school_str" : "Resilience",
-            "school_img" : "/_SiteResources/Images/Resilience.png",
+            "school_str" : "Divination",
+            "school_img" : "/_SiteResources/Images/Sigil-Divination.png",
             
             "damage_effect_str" : "Buff",
             
@@ -161,8 +161,8 @@
             "level_int" : 4,
             "level_str" : "4th",
             
-            "school_str" : "Resilience",
-            "school_img" : "/_SiteResources/Images/Resilience.png",
+            "school_str" : "Enchantment",
+            "school_img" : "/_SiteResources/Images/Sigil-Enchantment.png",
             
             "damage_effect_str" : "Buff",
             
@@ -183,8 +183,8 @@
             "level_int" : 3,
             "level_str" : "3rd",
             
-            "school_str" : "Resilience",
-            "school_img" : "/_SiteResources/Images/Resilience.png",
+            "school_str" : "Abjuration",
+            "school_img" : "/_SiteResources/Images/Sigil-Abjuration.png",
             
             "damage_effect_str" : "Buff",
             
@@ -205,8 +205,8 @@
             "level_int" : 2,
             "level_str" : "2nd",
             
-            "school_str" : "Resilience",
-            "school_img" : "/_SiteResources/Images/Resilience.png",
+            "school_str" : "Transmutation",
+            "school_img" : "/_SiteResources/Images/Sigil-Transmutation.png",
             
             "damage_effect_str" : "Buff",
             
@@ -227,8 +227,8 @@
             "level_int" : 3,
             "level_str" : "3rd",
 
-            "school_str" : "Evocation",
-            "school_img" : "/_SiteResources/Images/Sigil-Evocation.png",
+            "school_str" : "Necromancy",
+            "school_img" : "/_SiteResources/Images/Sigil-Necromancy.png",
             
             "damage_effect_str" : "Buff",
             

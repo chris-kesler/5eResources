@@ -118,7 +118,7 @@
             "duration_str" : "1 Hour",
             
             "science_str" : "Life Support",
-            "science_img" : "/_SiteResources/Images/Life Support.png",
+            "science_img" : "/_SiteResources/Images/LifeSupport.png",
             
             "attack_save_int" : 0,
             "attack_save_str" : "---",
@@ -164,7 +164,7 @@
             "duration_str" : "8 Hour",
             
             "science_str" : "Life Support",
-            "science_img" : "/_SiteResources/Images/Life Support.png",
+            "science_img" : "/_SiteResources/Images/LifeSupport.png",
             
             "attack_save_int" : 0,
             "attack_save_str" : "---",
@@ -210,7 +210,7 @@
             "duration_str" : "Instantaneous",
             
             "science_str" : "Laser Optics",
-            "science_img" : "/_SiteResources/Images/Laser Optics.png",
+            "science_img" : "/_SiteResources/Images/LaserOptics.png",
             
             "attack_save_int" : 2,
             "attack_save_str" : "Ranged",
@@ -304,7 +304,7 @@
             "duration_str" : "Instantaneous",
             
             "science_str" : "Laser Optics",
-            "science_img" : "/_SiteResources/Images/Laser Optics.png",
+            "science_img" : "/_SiteResources/Images/LaserOptics.png",
 
             "attack_save_int" : 2,
             "attack_save_str" : "Ranged",
@@ -902,7 +902,7 @@
             "duration_str" : "Instantaneous",
             
             "science_str" : "Laser Optics",
-            "science_img" : "/_SiteResources/Images/Laser Optics.png",
+            "science_img" : "/_SiteResources/Images/LaserOptics.png",
             
             "attack_save_int" : 4,
             "attack_save_str" : "Dexterity",
@@ -949,7 +949,7 @@
             "duration_str" : "Instantaneous",
             
             "science_str" : "Laser Optics",
-            "science_img" : "/_SiteResources/Images/Laser Optics.png",
+            "science_img" : "/_SiteResources/Images/LaserOptics.png",
             
             "attack_save_int" : 2,
             "attack_save_str" : "Ranged",
@@ -995,7 +995,7 @@
             "duration_str" : "1 Hour",
             
             "science_str" : "Life Support",
-            "science_img" : "/_SiteResources/Images/Life Support.png",
+            "science_img" : "/_SiteResources/Images/LifeSupport.png",
             
             "attack_save_int" : 0,
             "attack_save_str" : "---",
@@ -1087,7 +1087,7 @@
             "duration_str" : "Instantaneous",
             
             "science_str" : "Laser Optics",
-            "science_img" : "/_SiteResources/Images/Laser Optics.png",
+            "science_img" : "/_SiteResources/Images/LaserOptics.png",
             
             "attack_save_int" : 2,
             "attack_save_str" : "Ranged",
@@ -1179,7 +1179,7 @@
             "duration_str" : "1 Round",
             
             "science_str" : "Life Support",
-            "science_img" : "/_SiteResources/Images/Life Support.png",
+            "science_img" : "/_SiteResources/Images/LifeSupport.png",
             
             "attack_save_int" : 2,
             "attack_save_str" : "---",
@@ -1271,7 +1271,7 @@
             "duration_str" : "Instantaneous",
             
             "science_str" : "Laser Optics",
-            "science_img" : "/_SiteResources/Images/Laser Optics.png",
+            "science_img" : "/_SiteResources/Images/LaserOptics.png",
             
             "attack_save_int" : 2,
             "attack_save_str" : "Ranged",
@@ -1408,7 +1408,7 @@
             "duration_str" : "1 Minute",
             
             "science_str" : "Laser Optics",
-            "science_img" : "/_SiteResources/Images/Laser Optics.png",
+            "science_img" : "/_SiteResources/Images/LaserOptics.png",
             
             "attack_save_int" : 4,
             "attack_save_str" : "Dexterity",
@@ -1547,7 +1547,7 @@
             "duration_str" : "1 Hour",
             
             "science_str" : "Life Support",
-            "science_img" : "/_SiteResources/Images/Life Support.png",
+            "science_img" : "/_SiteResources/Images/LifeSupport.png",
             
             "attack_save_int" : 0,
             "attack_save_str" : "---",
