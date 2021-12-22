@@ -523,84 +523,39 @@
                 }
             ],
 
-            "subclass_tech_name" : "Replicatist",
-            "subclass_tech_img" : "/_SiteResources/Images/Metamorph-Replicatist.png",
+            "subclass_tech_name" : "Espionist",
+            "subclass_tech_img" : "/_SiteResources/Images/Agent-Espionist.png",
             "subclass_tech_img_credit" : "---",
-            "subclass_tech_description" : "By developing their natural shapechanging ability to include (perhaps even specialize in) the adaptation of the nervous system, the Replicatist is able to mimic the appearance and behaviors of other sapiens in a nearly flawless manner.  ",
+            "subclass_tech_description" : "Focusing on skills that infiltrate and undermine, the Espionist specializes in crippling organizations from the inside.  ",
             "subclass_tech_feats" : [
                 {
                     "name_str" : "Techcasting",
                     "level" : 2,
                     "mechanics_str" : "See the Rules for Techcasting mechanics and Technologies list.  <ul><li><b>Technologies Known:</b>  You learn Technologies of your choice as shown in the Consumables Known column of the class table.  You may not learn a Technology of a level higher than your Max Consumable Level, and you may learn a Technology at the same time you learn its prerequisite.  </li><br><li><b>Tech Points:</b>  You have a number of Tech Points as shown in the Consumable Points column of the class table.  You expend these Tech Points to cast Technologies.  You regain all expended Tech Points when you finish a Long Rest.  </li><br><li><b>Max Tech Level:</b>  Many Technologies can be overpowered, consuming more Tech Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Technologies at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a Long Rest.  </li><br><li><b>Techcasting Ability:</b>  Your Techcasting ability is Charisma.  You use your Charisma modifier whenever a Technology refers to your Techcasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Technology you cast and when making an attack roll with one.  </li><br><li><b>Technology save DC</b> = 8 + your Proficiency Bonus + your Techcasting ability modifier.  </li><br><li><b>Technology attack modifier</b> = your Proficiency Bonus + your Techcasting ability modifier.  </li></ul>"
-                },
-                {
-                    "name_str" : "Sapien Form",
-                    "level" : 7,
-                    "mechanics_str" : "When you Manifest Form, you may choose to take on the physical appearance of any sapien creature you choose.  You are able to manifest clothing and other worn items, but not items to be held.  You may take on an appearance derived from your imagination, or imitate a sapien you have seen.  If you imitate a sapien you have seen, your form is indistinuishable from the original.  You have advantage on all Charisma checks made to pass yourself off as this new identity, and may choose any Charisma based skill for the Manifest Form's Expertise feature.  "
-                },
-                {
-                    "name_str" : "Neural Download",
-                    "level" : 13,
-                    "mechanics_str" : "You may use an Action to force a creature you can touch to make an Intelligence Saving Throw, the DC of which is equal to 8 + your Con Mod + your Prof Bonus.  On a success, the creature is unaffected.  On a failure, you learn the information necessary to pass yourself off as this creature flawlessly (no Deception check required), along with any important knowledge the creature might have, such as passwords or the location of a secret base.  You may use this feature once per Long Rest.  "
-                },
-                {
-                    "name_str" : "Doppelganger",
-                    "level" : 19,
-                    "mechanics_str" : "You can modify your appearance as described in Sapien Form feature at will.  You do not gain any of the other benefits unless you use your Manifest Form feature.  "
                 }
             ],
 
-            "subclass_power_name" : "Archeophenix",
-            "subclass_power_img" : "/_SiteResources/Images/Metamorph-Archeophoenix.png",
+            "subclass_power_name" : "Replikist",
+            "subclass_power_img" : "/_SiteResources/Images/Agent-Replikist.png",
             "subclass_power_img_credit" : "---",
-            "subclass_power_description" : "Whether sent as a savior or cursed with a terrible affliction, the Phoenix can manifest a singular powerful magical form that evokes an awe remiscent of that in the oldest of mythos.  ",
+            "subclass_power_description" : "Possessing the innate ability to alter appearance, the Replikist can impersonate and defame like no other.  ",
             "subclass_power_feats" : [
-                {
-                    "name_str" : "Spellcasting",
-                    "level" : 2,
-                    "mechanics_str" : "See the Rules for Spellcasting mechanics and Spells list.  <ul><li><b>Spells Known:</b>  You learn Spells of your choice as shown in the Consumables Known column of the class table.  You may not learn a Spell of a level higher than your Max Consumable Level, and you may learn a Spell at the same time you learn its prerequisite.  </li><br><li><b>Spell Points:</b>  You have a number of Spell Points as shown in the Consumable Points column of the class table.  You expend these Spell Points to cast Spells.  You regain all expended Spell Points when you finish a Long Rest.  </li><br><li><b>Max Spell Level:</b>  Many Spells can be overpowered, consuming more Spell Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Spells at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a Long Rest.  </li><br><li><b>Spellcasting Ability:</b>  Your Spellcasting ability is Intelligence.  You use your Intelligence modifier whenever a Spell refers to your Spellcasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Spell you cast and when making an attack roll with one.  </li><br><li><b>Spell save DC</b> = 8 + your Proficiency Bonus + your Spellcasting ability modifier.  </li><br><li><b>Spell attack modifier</b> = your Proficiency Bonus + your Spellcasting ability modifier.  </li></ul>"
-                },
-                {
-                    "name_str" : "Divine Form",
-                    "level" : 7,
-                    "mechanics_str" : "When you Manifest Form, you may choose to take on the form of a magical flying creature such as a Phoenix, Dragon, Demon, or Angel.  When you Manifest Form, you may take on any of these attributes in addition to the normal effects:  <ul><li><b>Radiance:</b>  Your Unarmed Strikes have a range of 20/60, and can deal Incinerating, Cryogenic, or Corrosive damage.  </li><li><b>Speed:</b>  You gain a Flying Speed equal to your Walking Speed + (Prof Bonus * 5).  </li><li><b>Reciprocity:</b>  When you use your Healing Factor Bonus Action, rather than heal yourself, you can instead choose to heal or harm a target within 10 feet of you for an equal amount.  If you choose to harm, the damage takes effect without an Attack roll or Saving Throw, and has no damage type (cannot be resisted or negated, granted the target is capable of taking damage in the first place).  </li><li><b>Transcendence:</b>  You may choose any Intelligence based skill for the Manifest Form's Expertise feature.  </li>"
-                },
-                {
-                    "name_str" : "Word of Power",
-                    "level" : 13,
-                    "mechanics_str" : "You can understand all languages, and all creatures capable of understanding a language can understand you.  As a Bonus Action, you may force a target within 120 feet of you that can hear you to make a Charisma Saving Throw.  On a success, the creature has disadvantage on Attacks against you until the end of your next turn and is otherwise immune to this feature until the end of your next Long Rest.  On a failure, the creature is Frightened of you for one minute.  "
-                },
-                {
-                    "name_str" : "Divine Strikes",
-                    "level" : 19,
-                    "mechanics_str" : "Your Divine Form Unarmed Strikes now have a range of 40/120 and can deal Psionic damage.  In addition, your Reciprocity feature heals / harms double the standard amount.  "
-                }
-            ],
-            
-            "subclass_magic_name" : "Darwinian",
-            "subclass_magic_img" : "/_SiteResources/Images/Metamorph-Darwinian.png",
-            "subclass_magic_img_credit" : "---",
-            "subclass_magic_description" : "Possessing a gene that rapidly accelerates the process of evolution through individual and instantaneous mutations, the Darwinian is among the most intimidating and difficult beings to kill.  ",
-            "subclass_magic_feats" : [
                 {
                     "name_str" : "Powercasting",
                     "level" : 2,
                     "mechanics_str" : "See the Rules for Powercasting mechanics and Superpowers list.  <ul><li><b>Superpowers Known:</b>  You learn Superpowers of your choice as shown in the Consumables Known column of the class table.  You may not learn a Superpower of a level higher than your Max Consumable Level, and you may learn a Superpower at the same time you learn its prerequisite.  </li><br><li><b>Superpower Points:</b>  You have a number of Superpower Points as shown in the Consumable Points column of the class table.  You expend these Superpower Points to cast Superpowers.  You regain all expended Superpower Points when you finish a Long Rest.  </li><br><li><b>Max Superpower Level:</b>  Many Superpowers can be overpowered, consuming more Superpower Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Superpowers at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a Long Rest.  </li><br><li><b>Powercasting Ability:</b>  Your Powercasting ability is Wisdom.  You use your Wisdom modifier whenever a Superpower refers to your Powercasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Superpower you cast and when making an attack roll with one.  </li><br><li><b>Superpower save DC</b> = 8 + your Proficiency Bonus + your Powercasting ability modifier.  </li><br><li><b>Superpower attack modifier</b> = your Proficiency Bonus + your Powercasting ability modifier.  </li></ul>"
-                },
+                }
+            ],
+            
+            "subclass_magic_name" : "Katana",
+            "subclass_magic_img" : "/_SiteResources/Images/Agent-Katana.png",
+            "subclass_magic_img_credit" : "---",
+            "subclass_magic_description" : "Carrying on an ancient tradition surrounding warrior training and conduct, the Katana is a lethal and unconvential opponent.  ",
+            "subclass_magic_feats" : [
                 {
-                    "name_str" : "Beast Form",
-                    "level" : 7,
-                    "mechanics_str" : "When you Manifest Form, you may choose to take on the physical appearance of a sapien animal hybrid such as a Werewolf, Harpy, or other aesthetic combination of your choice.  When you Manifest Form, you may take on any of these attributes in addition to the normal effects:  <ul><li><b>Unarmed Strikes:</b>  Your Unarmed Strikes deal d6s rather than d4s, and are considered Adamantine.  </li><li><b>Aquatic:</b>  You gain a Swimming Speed equal to your Walking Speed and can breathe normally underwater.  </li><li><b>Pounce:</b>  You may use a Bonus Action to leap through the air a number of feet equal to Prof * 5.  This Pounce does not count against your total movement.  </li><li><b>Instinctual:</b>  You may choose any Wisdom based skill for the Manifest Form's Expertise feature.  </li>"
-                },
-                {
-                    "name_str" : "Relentless Healing",
-                    "level" : 13,
-                    "mechanics_str" : "Your Healing Factor remains active while you have less than your maximum Hit Points.  In addition, you are able to regenerate any missing body parts given sufficient time.  Regenerating a hand or foot takes five minutes, while an entire arm or leg takes an hour.  The GM will determine the amount of time needed for regeneration based on the specific injury using these guidelines.  "
-                },
-                {
-                    "name_str" : "Predator",
-                    "level" : 19,
-                    "mechanics_str" : "Your Beast Form Unarmed Strikes deal d8s instead of d6s.  In addition, You may make an Attack as part of your Beast Form's Pounce Bonus Action.  "
+                    "name_str" : "Spellcasting",
+                    "level" : 2,
+                    "mechanics_str" : "See the Rules for Spellcasting mechanics and Spells list.  <ul><li><b>Spells Known:</b>  You learn Spells of your choice as shown in the Consumables Known column of the class table.  You may not learn a Spell of a level higher than your Max Consumable Level, and you may learn a Spell at the same time you learn its prerequisite.  </li><br><li><b>Spell Points:</b>  You have a number of Spell Points as shown in the Consumable Points column of the class table.  You expend these Spell Points to cast Spells.  You regain all expended Spell Points when you finish a Long Rest.  </li><br><li><b>Max Spell Level:</b>  Many Spells can be overpowered, consuming more Spell Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Spells at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a Long Rest.  </li><br><li><b>Spellcasting Ability:</b>  Your Spellcasting ability is Intelligence.  You use your Intelligence modifier whenever a Spell refers to your Spellcasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Spell you cast and when making an attack roll with one.  </li><br><li><b>Spell save DC</b> = 8 + your Proficiency Bonus + your Spellcasting ability modifier.  </li><br><li><b>Spell attack modifier</b> = your Proficiency Bonus + your Spellcasting ability modifier.  </li></ul>"
                 }
             ]
         },
@@ -1309,16 +1264,15 @@
                 {
                     "name_str" : "Kinetic Surge",
                     "level" : 5,
-                    "mechanics_str" : "You are able to alter the kinetic energy in the heat of battle to protect your allies and harm your enemies.  When a target within 60 feet of you is hit by an attack, as a Reaction, you may choose to add an additional modifier to the damage roll of that attack.  The modifier is equal to twice your Proficiency Bonus, and you choose whether it is positive or negative.  If you are the one making the attack, you may choose to use this feature as a Bonus Action instead.  You may use this feature a number of times equal to your Proficiency Bonus between Long Rests.  <br><br>At level 16, you may use Kinetic Surge multiple times as part of the same Reaction given each use is affecting the same attack.  "
+                    "mechanics_str" : "You are able to alter the kinetic energy in the heat of battle to protect your allies and harm your enemies.  When a target within 60 feet of you is hit by an attack, as a Reaction, you may choose to add an additional modifier to the damage roll of that attack.  The modifier is equal to twice your Proficiency Bonus, and you choose whether it is positive or negative.  If you are the one making the attack, you may choose to use this feature as a Bonus Action instead.  You may use this feature a number of times equal to your Proficiency Bonus between Long Rests.  <br><br>At level 16, you may use Kinetic Surge multiple times as part of the same Reaction given each use is affecting the same attack.  <br><br>At level 20, when you use Kinetic Surge to reduce damage, you grant resistance to the remaining damage.  When you use your Kinetic Surge to deal additional damage, you ignore the target's Resistance and Immunities.  "
                 },
                 {
                     "name_str" : "Kinetic Surge",
                     "level" : 16
                 },
                 {
-                    "name_str" : "Psionic Avatar",
-                    "level" : 20,
-                    "mechanics_str" : "When you use Kinetic Surge to reduce damage, you grant resistance to the remaining damage.  When you use your Kinetic Surge to deal additional damage, you ignore Resistance and Immunities.  "
+                    "name_str" : "Kinetic Surge",
+                    "level" : 20
                 }
             ],
 

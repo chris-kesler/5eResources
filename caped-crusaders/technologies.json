@@ -47,14 +47,14 @@
         },
 
         {
-            "name_str" : "Afterburner Surge",
-            "page_url" : "afterburner-surge.html",
+            "name_str" : "Repeating Jets",
+            "page_url" : "repeating-jets.html",
 
-            "level_int" : 4,
-            "level_str" : "4th",
+            "level_int" : 5,
+            "level_str" : "5th",
 
-            "casting_time_int" : 3,
-            "casting_time_str" : "1 Action",
+            "casting_time_int" : 2,
+            "casting_time_str" : "1 Bonus Action",
             "casting_time_asterisk_str" : "",
             
             "range_area_int" : 0,
@@ -68,8 +68,8 @@
             "components_vsm_str" : "V, S, M",
             "components_description_str" : "",
             
-            "duration_int" : 1,
-            "duration_str" : "1 Turn",
+            "duration_int" : 60,
+            "duration_str" : "1 Minute",
             
             "science_str" : "Propulsion",
             "science_img" : "/_SiteResources/Images/Propulsion.png",
@@ -79,8 +79,8 @@
             
             "damage_effect_str" : "Buff",
             
-            "flavor_str" : "You activate specialized thrusters that provide you with a startling surge of flight speed.",
-            "mechanics_str" : "You gain an additional flying speed of 360 feet and your movement does not provoke opportunity attacks until the end of this turn.",
+            "flavor_str" : "An advanced propulsion system that allows for short powerful bursts of speed.  ",
+            "mechanics_str" : "You gain an additional flying speed of 60 feet and your movement does not provoke opportunity attacks until the end of this turn.  On subsequent turns throughout the duration, you may use a Bonus Action to gain this benefit again.",
             "overchargeable_bool" : false,
             "overcharge_str" : "Not Applicable",
 
@@ -1188,52 +1188,6 @@
             
             "flavor_str" : "Reflective materials line your suit and can momentarily hold a charge, allowing some incoming energy to be redirected at enemies.  ",
             "mechanics_str" : "When you take Incinerating, Cryogenic, Radiation, or Electric damage, you can cast this Tech to gain resistance to that damage type until the end of your next turn.  While you have this resistance, you can deal additional damage of the type you are resistant to equal to your Techcasting ability modifier on your next attack.  If the damage type is Incinerating or Cryogenic, you can only apply this extra damage to a melee attack.  If the damage type is Radiation or Electric, you can only apply this damage to a ranged attack.  When you deal this extra damage, your resistance ends.  ",
-            "overchargeable_bool" : false,
-            "overcharge_str" : "Not Applicable",
-
-            "class_str" : "Visionary",
-            "subclass_str" : "",
-
-            "feats_str" : "",
-            "backgrounds_str" : "",
-            "races_str" : ""
-        },
-
-        {
-            "name_str" : "Repeating Jets",
-            "page_url" : "repeating-jets.html",
-
-            "level_int" : 5,
-            "level_str" : "5th",
-
-            "casting_time_int" : 2,
-            "casting_time_str" : "1 Bonus Action",
-            "casting_time_asterisk_str" : "",
-            
-            "range_area_int" : 0,
-            "range_area_str" : "Self",
-            
-            "components_verbal_bool" : true,
-            "components_somatic_bool" : true,
-            "components_material_bool" : true,
-            "components_cost_int" : 0,
-            "components_cost_str" : "NA",
-            "components_vsm_str" : "V, S, M",
-            "components_description_str" : "",
-            
-            "duration_int" : 60,
-            "duration_str" : "1 Minute",
-            
-            "science_str" : "Propulsion",
-            "science_img" : "/_SiteResources/Images/Propulsion.png",
-            
-            "attack_save_int" : 2,
-            "attack_save_str" : "---",
-            
-            "damage_effect_str" : "Buff",
-            
-            "flavor_str" : "An advanced propulsion system that allows for short powerful bursts of speed.  ",
-            "mechanics_str" : "You gain an additional flying speed of 60 feet and your movement does not provoke opportunity attacks until the end of this turn.  On subsequent turns throughout the duration, you may use a Bonus Action to gain this benefit again.",
             "overchargeable_bool" : false,
             "overcharge_str" : "Not Applicable",
 
