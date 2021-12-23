@@ -397,12 +397,12 @@
         },
 
         {
-            "name_str" : "Agent",
-            "page_url" : "agent.html",
-            "class_img" : "/_SiteResources/Images/Agent.png",
+            "name_str" : "Marksman",
+            "page_url" : "marksman.html",
+            "class_img" : "/_SiteResources/Images/Marksman.png",
             "class_img_credit" : "---",
             "description_short_str" : "A sharpshooting expert who surveys and strikes key enemy forces.  ",
-            "description_long_str" : "With an eye for detail and the skill to hit the mark, the Agent is a lethal addition to the battlefield at any distance.  ",
+            "description_long_str" : "With an eye for detail and the skill to hit the mark, the Marksman is a lethal addition to the battlefield at any distance.  ",
 
             "class_type" : "Secondary Tech Martial",
             "primary_ability" : "Int",
@@ -524,7 +524,7 @@
             ],
 
             "subclass_tech_name" : "Espionist",
-            "subclass_tech_img" : "/_SiteResources/Images/Agent-Espionist.png",
+            "subclass_tech_img" : "/_SiteResources/Images/Marksman-Espionist.png",
             "subclass_tech_img_credit" : "---",
             "subclass_tech_description" : "Focusing on skills that infiltrate and undermine, the Espionist specializes in crippling organizations from the inside.  ",
             "subclass_tech_feats" : [
@@ -536,7 +536,7 @@
             ],
 
             "subclass_power_name" : "Replikist",
-            "subclass_power_img" : "/_SiteResources/Images/Agent-Replikist.png",
+            "subclass_power_img" : "/_SiteResources/Images/Marksman-Replikist.png",
             "subclass_power_img_credit" : "---",
             "subclass_power_description" : "Possessing the innate ability to alter appearance, the Replikist can impersonate and defame like no other.  ",
             "subclass_power_feats" : [
@@ -547,10 +547,10 @@
                 }
             ],
             
-            "subclass_magic_name" : "Katana",
-            "subclass_magic_img" : "/_SiteResources/Images/Agent-Katana.png",
+            "subclass_magic_name" : "Ranger",
+            "subclass_magic_img" : "/_SiteResources/Images/Marksman-Ranger.png",
             "subclass_magic_img_credit" : "---",
-            "subclass_magic_description" : "Carrying on an ancient tradition surrounding warrior training and conduct, the Katana is a lethal and unconvential opponent.  ",
+            "subclass_magic_description" : "Combining deadly accuracy with potent magic, the Ranger employs a balanced approach that excels at striking down hordes and tracking foes through wilderness.  ",
             "subclass_magic_feats" : [
                 {
                     "name_str" : "Spellcasting",
@@ -1746,11 +1746,11 @@
             "page_url" : "subvertist.html",
             "class_img" : "/_SiteResources/Images/Subvertist.png",
             "class_img_credit" : "---",
-            "description_short_str" : "A movement focused master of misdirection who excels in battfield cleanup.  ",
+            "description_short_str" : "A movement focused master of misdirection who excels at battfield cleanup.  ",
             "description_long_str" : "With a razor sharp focus on mobility and agility, the Subvertist thrives when protecting civilians and distracting enemies.  ",
 
             "class_type" : "Secondary Power Caster",
-            "primary_ability" : "Cha",
+            "primary_ability" : "Wis",
             
             "hit_die_int" : 8,
             "hit_die_average_int" : 5,
@@ -1759,7 +1759,7 @@
             "proficiencies_weapons" : "Simple Mundane Weapons, Simple Superpowered Weapons",
             "proficiencies_tools" : "Choose any three",
             "proficiencies_saves" : "Cha, Dex",
-            "proficiencies_skills" : "Choose any two, one of which must be Charisma based",
+            "proficiencies_skills" : "Choose any two, one of which must be Wisdom based",
             
             "equipment_armor" : "None",
             "equipment_weapons" : "Any Simple Mundane Weapon",
@@ -1776,7 +1776,7 @@
                 {
                     "name_str" : "Powercasting Milestone",
                     "level" : 1,
-                    "mechanics_str" : "You have manifested powers beyond that of ordinary creatures.  See the Rules for Powercasting mechanics and Superpowers list.  <ul><li><b>Superpowers Known:</b>  You learn a number of Superpowers of your choice at first level and at subsequent levels as shown in the Superpowers Known column of the Class table.  You may not learn a Superpower of a level higher than your Max Superpower Level, and you may learn a Superpower at the same time you learn its prerequisite.  </li><br><li><b>Power Points:</b>  You have a number of Power Points equal to your Class level x 8, as shown in the Power Points column of the Class table, + your Int modifier.  You expend these Power Points to cast Power Powers.  You regain all expended Power Points when you finish a Long Rest.  </li><br><li><b>Max Power Level:</b>  Many Superpowers can be overpowered, consuming more Power Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Power Level column of the Class table.  You may only cast Superpowers at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a Long Rest.  </li><br><li><b>Powercasting Ability:</b>  Your Powercasting ability is Charisma.  You use your Charisma modifier whenever a Superpower refers to your Powercasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Superpower you cast and when making an attack roll with one.  </li><br><li><b>Superpower save DC</b> = 8 + your Proficiency Bonus + your Powercasting ability modifier.  </li><br><li><b>Superpower attack modifier</b> = your Proficiency Bonus + your Powercasting ability modifier.  </li></ul>"
+                    "mechanics_str" : "You have manifested powers beyond that of ordinary creatures.  See the Rules for Powercasting mechanics and Superpowers list.  <ul><li><b>Superpowers Known:</b>  You learn a number of Superpowers of your choice at first level and at subsequent levels as shown in the Superpowers Known column of the Class table.  You may not learn a Superpower of a level higher than your Max Superpower Level, and you may learn a Superpower at the same time you learn its prerequisite.  </li><br><li><b>Power Points:</b>  You have a number of Power Points equal to your Class level x 8, as shown in the Power Points column of the Class table, + your Int modifier.  You expend these Power Points to cast Power Powers.  You regain all expended Power Points when you finish a Long Rest.  </li><br><li><b>Max Power Level:</b>  Many Superpowers can be overpowered, consuming more Power Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Power Level column of the Class table.  You may only cast Superpowers at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a Long Rest.  </li><br><li><b>Powercasting Ability:</b>  Your Powercasting ability is Wisdom.  You use your Wisdom modifier whenever a Superpower refers to your Powercasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Superpower you cast and when making an attack roll with one.  </li><br><li><b>Superpower save DC</b> = 8 + your Proficiency Bonus + your Powercasting ability modifier.  </li><br><li><b>Superpower attack modifier</b> = your Proficiency Bonus + your Powercasting ability modifier.  </li></ul>"
                 },
                 {
                     "name_str" : "Powercasting Milestone",
