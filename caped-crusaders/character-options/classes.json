@@ -535,10 +535,10 @@
                 }
             ],
 
-            "subclass_power_name" : "Replikist",
-            "subclass_power_img" : "/_SiteResources/Images/Marksman-Replikist.png",
+            "subclass_power_name" : "Assassin",
+            "subclass_power_img" : "/_SiteResources/Images/Marksman-Assassin.png",
             "subclass_power_img_credit" : "---",
-            "subclass_power_description" : "Possessing the innate ability to alter appearance, the Replikist can impersonate and defame like no other.  ",
+            "subclass_power_description" : "Having been altered to increase their combat capability, the Assassin is as deadly as they are discrete.  ",
             "subclass_power_feats" : [
                 {
                     "name_str" : "Powercasting",
@@ -898,10 +898,10 @@
                 }
             ],
 
-            "subclass_power_name" : "Psioneothist",
-            "subclass_power_img" : "/_SiteResources/Images/Archmage-Psioneothist.png",
+            "subclass_power_name" : "Psionotheist",
+            "subclass_power_img" : "/_SiteResources/Images/Archmage-Psionotheist.png",
             "subclass_power_img_credit" : "---",
-            "subclass_power_description" : "With a natural set of superhuman abilities, the Psioneothist exerts a more fine tuned control over their magical abilities.  ",
+            "subclass_power_description" : "With a natural set of superhuman abilities, the Psionotheist exerts a more fine tuned control over their magical abilities.  ",
             "subclass_power_feats" : [
                 {
                     "name_str" : "Integrated Power",
@@ -2072,10 +2072,10 @@
                 }
             ],
 
-            "subclass_tech_name" : "Replicatist",
-            "subclass_tech_img" : "/_SiteResources/Images/Metamorph-Replicatist.png",
+            "subclass_tech_name" : "Replikist",
+            "subclass_tech_img" : "/_SiteResources/Images/Metamorph-Replikist.png",
             "subclass_tech_img_credit" : "---",
-            "subclass_tech_description" : "By developing their natural shapechanging ability to include (perhaps even specialize in) the adaptation of the nervous system, the Replicatist is able to mimic the appearance and behaviors of other sapiens in a nearly flawless manner.  ",
+            "subclass_tech_description" : "By developing their natural shapechanging ability to include (perhaps even specialize in) the adaptation of the nervous system, the Replikist is able to mimic the appearance and behaviors of other sapiens in a nearly flawless manner.  ",
             "subclass_tech_feats" : [
                 {
                     "name_str" : "Techcasting",

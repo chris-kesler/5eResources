@@ -10,24 +10,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
     <script>
       $(function readTech() {
-        var enhancements = [];
-        $.getJSON('enhancements.json', function(data) {   
-          $.each(data.enhancement, function(i, f) {
-            var classes = ""; 
-            var subclasses = "";         
-            for (let j = 0; j < f.class_list.length; j++) {
-              classes = classes + f.class_list[j].class + "<br>";
-            }
-            for (let j = 0; j < f.subclass_list.length; j++) {
-              subclasses = subclasses + f.subclass_list[j].class + "<br>";
-            }
+        var boons = [];
+        $.getJSON('boons.json', function(data) {
+          $.each(data.boon, function(i, f) {
             var tblRow = "<tr>" 
               + "<td>" + "<img class='FilterTableImage' src=" + f.school_img + "><br>" + f.school_str + "</td>" 
               + "<td>" + f.level_str + "</td>" 
-              + "<td><a href='enhancements/" + f.page_url + "' target='_blank'>" + f.name_str + "</a></td>" 
+              + "<td><a href='boons/" + f.page_url + "' target='_blank'>" + f.name_str + "</a></td>" 
               + "<td>" + f.damage_effect_str + "</td>" 
-              + "<td>" + classes + "</td>" 
-              + "<td>" + subclasses + "</td>" 
+              + "<td>" + f.class_str + "</td>" 
+              + "<td>" + f.subclass_str + "</td>" 
               + "<td>" + f.feats_str + "</td>" 
               + "<td>" + f.backgrounds_str + "</td>" 
               + "<td>" + f.races_str + "</td>" 
@@ -45,7 +37,7 @@
       <div class="PageHeader">
         <div class="Import_PageHeader"></div>
 
-          <h1 class="header">Caped Crusaders:  Enhancements</h1>
+          <h1 class="header">Caped Crusaders:  Boons</h1>
           <hr>
       </div>
         
@@ -59,7 +51,7 @@
           <div class="AnchorRight">
 
             <section class="PageContentRight">
-              <button class="WikiBackButton" onclick="location.href='../caped-crusaders.html'">Out to Caped Crusaders</button>
+              <button class="WikiBackButton" onclick="location.href='../character-options.html'">Out to Character Options</button>
               <h2>Include Filters</h2>
               <hr>
 
