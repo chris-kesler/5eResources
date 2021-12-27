@@ -716,6 +716,14 @@ iframe {
   margin-left: 10px;
 }
 
+.class-image-medium, .subclass-image-medium {
+  width: 100px;
+  float: right;
+  border: 4px solid rgb(100,100,100);
+  border-radius: 16px;
+  margin: 2px;
+}
+
 
 .TableSortButton {
   width: auto;

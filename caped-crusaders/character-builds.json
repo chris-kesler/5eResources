@@ -1,15 +1,6 @@
 {
     "character": [
         {
-            "name_str" : "Iron Man",
-            "page_url" : "iron-man.html",
-            "class_str" : "Visionary",
-            "class_type" : "Caster, Primary",
-            "class_source" : "Tech",
-            "subclass_str" : "Virtuoso",
-            "subclass_source" : "Tech"
-        },
-        {
             "name_str" : "Talon",
             "page_url" : "talon.html",
             "class_str" : "Visionary",
@@ -25,12 +16,41 @@
             "class_type" : "Caster, Primary",
             "class_source" : "Tech",
             "subclass_str" : "Magnate",
+            "subclass_source" : "Powers",
+            
+            "build_overview" : "Cyborg is a DC character who was seriously injured and bonded with alien technology that replaced his missing body parts.  He wields powerful technology and the knowledge of how to use it, but his cybernetic interface gives him a more tuned and innate control over his technological components than a standard Visionary might have.  <br><br>We'll be focusing on boosting our defenses and making sure we've got a few good blasts to replicate his signature hand cannon, along with the standard options every Visionary ought to focus on.  The boons we'll be taking amplify and enforce the concept of cybernetic bonding.  <br><br>As we reach higher levels, we'll also focus on acquiring advanced vehicles with which we can shuttle the party around with.  "
+        },
+        {
+            "name_str" : "Iron Man",
+            "page_url" : "iron-man.html",
+            "class_str" : "Visionary",
+            "class_type" : "Caster, Primary",
+            "class_source" : "Tech",
+            "subclass_str" : "Virtuoso",
+            "subclass_source" : "Tech"
+        },
+        {
+            "name_str" : "Sherlock Holmes",
+            "page_url" : "sherlock-holmes.html",
+            "class_str" : "Detective",
+            "class_type" : "Caster, Secondary",
+            "class_source" : "Tech",
+            "subclass_str" : "Victorian",
+            "subclass_source" : "Magic"
+        },
+        {
+            "name_str" : "Alice Cullen",
+            "page_url" : "alice-cullen.html",
+            "class_str" : "Detective",
+            "class_type" : "Caster, Secondary",
+            "class_source" : "Tech",
+            "subclass_str" : "Oracle",
             "subclass_source" : "Powers"
         },
         {
             "name_str" : "Batman",
             "page_url" : "batman.html",
-            "class_str" : "Prowler",
+            "class_str" : "Detective",
             "class_type" : "Caster, Secondary",
             "class_source" : "Tech",
             "subclass_str" : "Exemplar",
@@ -39,19 +59,10 @@
         {
             "name_str" : "Black Widow",
             "page_url" : "black-widow.html",
-            "class_str" : "Prowler",
+            "class_str" : "Detective",
             "class_type" : "Caster, Secondary",
             "class_source" : "Tech",
             "subclass_str" : "Exemplar",
-            "subclass_source" : "Tech"
-        },
-        {
-            "name_str" : "Hawkeye",
-            "page_url" : "hawkeye.html",
-            "class_str" : "Marksman",
-            "class_type" : "Martial, Secondary",
-            "class_source" : "Tech",
-            "subclass_str" : "Espionist",
             "subclass_source" : "Tech"
         },
         {
@@ -73,12 +84,21 @@
             "subclass_source" : "Powers"
         },
         {
-            "name_str" : "Deathstroke",
-            "page_url" : "deathstroke.html",
-            "class_str" : "Soldier",
-            "class_type" : "Martial, Primary",
+            "name_str" : "Gambit",
+            "page_url" : "gambit.html",
+            "class_str" : "Marksman",
+            "class_type" : "Martial, Secondary",
             "class_source" : "Tech",
-            "subclass_str" : "Ronin",
+            "subclass_str" : "Assassin",
+            "subclass_source" : "Powers"
+        },
+        {
+            "name_str" : "Hawkeye",
+            "page_url" : "hawkeye.html",
+            "class_str" : "Marksman",
+            "class_type" : "Martial, Secondary",
+            "class_source" : "Tech",
+            "subclass_str" : "Espionist",
             "subclass_source" : "Tech"
         },
         {
@@ -100,13 +120,22 @@
             "subclass_source" : "Powers"
         },
         {
-            "name_str" : "Dr. Strange",
-            "page_url" : "dr-strange.html",
+            "name_str" : "Deathstroke",
+            "page_url" : "deathstroke.html",
+            "class_str" : "Soldier",
+            "class_type" : "Martial, Primary",
+            "class_source" : "Tech",
+            "subclass_str" : "Ronin",
+            "subclass_source" : "Tech"
+        },
+        {
+            "name_str" : "Harry Potter",
+            "page_url" : "harry-potter.html",
             "class_str" : "Archmage",
             "class_type" : "Caster, Primary",
             "class_source" : "Magic",
             "subclass_str" : "Arcanoblate",
-            "subclass_source" : "Tech"
+            "subclass_source" : "Magic"
         },
         {
             "name_str" : "Professor Xavier",
@@ -116,6 +145,15 @@
             "class_source" : "Magic",
             "subclass_str" : "Psionotheist",
             "subclass_source" : "Powers"
+        },
+        {
+            "name_str" : "Dr. Strange",
+            "page_url" : "dr-strange.html",
+            "class_str" : "Archmage",
+            "class_type" : "Caster, Primary",
+            "class_source" : "Magic",
+            "subclass_str" : "Magiteknician",
+            "subclass_source" : "Tech"
         },
         {
             "name_str" : "Loki",
@@ -132,16 +170,16 @@
             "class_str" : "Trickster",
             "class_type" : "Caster, Secondary",
             "class_source" : "Magic",
-            "subclass_str" : "Hypnotist",
+            "subclass_str" : "Duplikist",
             "subclass_source" : "Powers"
         },
         {
-            "name_str" : "Mandalorian",
-            "page_url" : "mandalorian.html",
-            "class_str" : "Psiblade",
-            "class_type" : "Martial, Secondary",
+            "name_str" : "Mystique",
+            "page_url" : "mystique.html",
+            "class_str" : "Trickster",
+            "class_type" : "Caster, Secondary",
             "class_source" : "Magic",
-            "subclass_str" : "Augmentist",
+            "subclass_str" : "Doppelganger",
             "subclass_source" : "Tech"
         },
         {
@@ -163,6 +201,15 @@
             "subclass_source" : "Powers"
         },
         {
+            "name_str" : "Mandalorian",
+            "page_url" : "mandalorian.html",
+            "class_str" : "Psiblade",
+            "class_type" : "Martial, Secondary",
+            "class_source" : "Magic",
+            "subclass_str" : "Augmentist",
+            "subclass_source" : "Tech"
+        },
+        {
             "name_str" : "Shazam",
             "page_url" : "shazam.html",
             "class_str" : "Annointed",
@@ -181,12 +228,12 @@
             "subclass_source" : "Powers"
         },
         {
-            "name_str" : "Green Lantern",
-            "page_url" : "green-lantern.html",
-            "class_str" : "Nova",
-            "class_type" : "Caster, Primary",
-            "class_source" : "Powers",
-            "subclass_str" : "Galvanic",
+            "name_str" : "Star Lord (Celestial)",
+            "page_url" : "star-lord.html",
+            "class_str" : "Annointed",
+            "class_type" : "Martial, Primary",
+            "class_source" : "Magic",
+            "subclass_str" : "Adaptist",
             "subclass_source" : "Tech"
         },
         {
@@ -208,12 +255,12 @@
             "subclass_source" : "Powers"
         },
         {
-            "name_str" : "Spider-Man",
-            "page_url" : "spider-man.html",
-            "class_str" : "Subvertist",
-            "class_type" : "Caster, Secondary",
+            "name_str" : "Green Lantern",
+            "page_url" : "green-lantern.html",
+            "class_str" : "Nova",
+            "class_type" : "Caster, Primary",
             "class_source" : "Powers",
-            "subclass_str" : "Neutralizer",
+            "subclass_str" : "Galvanic",
             "subclass_source" : "Tech"
         },
         {
@@ -235,12 +282,12 @@
             "subclass_source" : "Powers"
         },
         {
-            "name_str" : "Mystique",
-            "page_url" : "mystique.html",
-            "class_str" : "Metamorph",
-            "class_type" : "Martial, Secondary",
+            "name_str" : "Spider-Man",
+            "page_url" : "spider-man.html",
+            "class_str" : "Subvertist",
+            "class_type" : "Caster, Secondary",
             "class_source" : "Powers",
-            "subclass_str" : "Replikist",
+            "subclass_str" : "Neutralizer",
             "subclass_source" : "Tech"
         },
         {
@@ -249,7 +296,16 @@
             "class_str" : "Metamorph",
             "class_type" : "Martial, Secondary",
             "class_source" : "Powers",
-            "subclass_str" : "Archeophoenix",
+            "subclass_str" : "Demibeast",
+            "subclass_source" : "Magic"
+        },
+        {
+            "name_str" : "Werewolf",
+            "page_url" : "werewolf.html",
+            "class_str" : "Metamorph",
+            "class_type" : "Martial, Secondary",
+            "class_source" : "Powers",
+            "subclass_str" : "Demibeast",
             "subclass_source" : "Magic"
         },
         {
@@ -258,7 +314,7 @@
             "class_str" : "Metamorph",
             "class_type" : "Martial, Secondary",
             "class_source" : "Powers",
-            "subclass_str" : "Darwinian",
+            "subclass_str" : "Primal",
             "subclass_source" : "Powers"
         },
         {
@@ -267,8 +323,26 @@
             "class_str" : "Metamorph",
             "class_type" : "Martial, Secondary",
             "class_source" : "Powers",
-            "subclass_str" : "Darwinian",
+            "subclass_str" : "Primal",
             "subclass_source" : "Powers"
+        },
+        {
+            "name_str" : "Ben 10",
+            "page_url" : "ben-10.html",
+            "class_str" : "Metamorph",
+            "class_type" : "Martial, Secondary",
+            "class_source" : "Powers",
+            "subclass_str" : "Splicer",
+            "subclass_source" : "Tech"
+        },
+        {
+            "name_str" : "Dracula",
+            "page_url" : "dracula.html",
+            "class_str" : "Metamorph",
+            "class_type" : "Martial, Secondary",
+            "class_source" : "Powers",
+            "subclass_str" : "Splicer",
+            "subclass_source" : "Tech"
         },
         {
             "name_str" : "Superman",
@@ -278,6 +352,24 @@
             "class_source" : "Powers",
             "subclass_str" : "Meteor",
             "subclass_source" : "Powers"
+        },
+        {
+            "name_str" : "Battle Beast",
+            "page_url" : "battle-beast.html",
+            "class_str" : "Dynamo",
+            "class_type" : "Martial, Primary",
+            "class_source" : "Powers",
+            "subclass_str" : "Chosen",
+            "subclass_source" : "Magic"
+        },
+        {
+            "name_str" : "Omni-Man",
+            "page_url" : "omni-man.html",
+            "class_str" : "Dynamo",
+            "class_type" : "Martial, Primary",
+            "class_source" : "Powers",
+            "subclass_str" : "Militant",
+            "subclass_source" : "Tech"
         }
     ]
 }
