@@ -39,8 +39,8 @@
             "subclass_source" : "Magic"
         },
         {
-            "name_str" : "Alice Cullen",
-            "page_url" : "alice-cullen.html",
+            "name_str" : "Spider-Man (Noir)",
+            "page_url" : "spider-man-noir.html",
             "class_str" : "Detective",
             "class_type" : "Caster, Secondary",
             "class_source" : "Tech",
@@ -85,6 +85,15 @@
         },
         {
             "name_str" : "Gambit",
+            "page_url" : "gambit.html",
+            "class_str" : "Marksman",
+            "class_type" : "Martial, Secondary",
+            "class_source" : "Tech",
+            "subclass_str" : "Assassin",
+            "subclass_source" : "Powers"
+        },
+        {
+            "name_str" : "Spider-Man (2099)",
             "page_url" : "gambit.html",
             "class_str" : "Marksman",
             "class_type" : "Martial, Secondary",
@@ -282,8 +291,8 @@
             "subclass_source" : "Powers"
         },
         {
-            "name_str" : "Spider-Man",
-            "page_url" : "spider-man.html",
+            "name_str" : "Spider-Man (Tobey Maguire)",
+            "page_url" : "spider-man-tobey-maguire.html",
             "class_str" : "Subvertist",
             "class_type" : "Caster, Secondary",
             "class_source" : "Powers",
@@ -307,6 +316,15 @@
             "class_source" : "Powers",
             "subclass_str" : "Demibeast",
             "subclass_source" : "Magic"
+        },
+        {
+            "name_str" : "Spider-Man (Symbiote)",
+            "page_url" : "spider-man-symbiote.html",
+            "class_str" : "Metamorph",
+            "class_type" : "Martial, Secondary",
+            "class_source" : "Powers",
+            "subclass_str" : "Primal",
+            "subclass_source" : "Powers"
         },
         {
             "name_str" : "Venom",
@@ -338,6 +356,15 @@
         {
             "name_str" : "Dracula",
             "page_url" : "dracula.html",
+            "class_str" : "Metamorph",
+            "class_type" : "Martial, Secondary",
+            "class_source" : "Powers",
+            "subclass_str" : "Splicer",
+            "subclass_source" : "Tech"
+        },
+        {
+            "name_str" : "Spider-Man (Iron Spider)",
+            "page_url" : "spider-man-iron-spider.html",
             "class_str" : "Metamorph",
             "class_type" : "Martial, Secondary",
             "class_source" : "Powers",
