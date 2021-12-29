@@ -28,9 +28,21 @@
               document.getElementById("build-description").innerHTML = f.build_overview;
               var tblRow = "<td>" + f.race_str + "<br><br>" + f.race_description + "</td><td>" + f.background + "<br><br>" + f.background_description + "</td><td>" + f.strength_initial + "<br><br><b>" + f.strength_resolved + "</b></td><td>" + f.dexterity_initial + "<br><br><b>" + f.dexterity_resolved + "</td><td>" + f.constitution_initial + "<br><br><b>" + f.constitution_resolved + "</td><td>" + f.intelligence_initial + "<br><br><b>" + f.intelligence_resolved + "</td><td>" + f.wisdom_initial + "<br><br><b>" + f.wisdom_resolved + "</td><td>" + f.charisma_initial + "<br><br><b>" + f.charisma_resolved + "</td><td>" + f.starting_equipment + "</td>"
               $(tblRow).appendTo("#build-setup-table tbody");
+              // var build_class = f.class_str;
 
-              var build_class = f.class_str;
-              var constitution_score = f.constitution_resolved;
+              // $(function readClass() {
+              //   var classes = [];
+              //   $.getJSON('../classes.json', function(data) {
+              //     var path = window.location.pathname;
+              //     var page = path.split("/").pop();
+              //     $.each(data.class, function(m, n) {
+              //       if (m.name_str == buid_class) {
+              //         hit_points_starting = m.hit_die_int;
+              //         hit_points_levels = m.hit_die_average_int;
+              //       }
+              //     });
+              //   });
+              // });
 
               for (let i = 0; i < 20; i++) {
                 var features = "---";
@@ -42,21 +54,10 @@
                 
                 if (f.class_type == "Martial, Primary") {
                   subclass_active = 3;
-                  hit_die = 12;
-                  hit_die_average = 7;
-                } else if (f.class_type == "Martial, Secondary") {
+                } else {
                   subclass_active = 2;
-                  hit_die = 10;
-                  hit_die_average = 6;
-                } else if (f.class_type == "Caster, Secondary") {
-                  subclass_active = 2;
-                  hit_die = 8;
-                  hit_die_average = 5;
-                } else if (f.class_type == "Caster, Primary") {
-                  subclass_active = 2;
-                  hit_die = 6;
-                  hit_die_average = 4;
                 }
+
                 var class_subclass = "---";
                 for (let k = 0; k < f.level_guide.length; k++) {
                   if (subclass_active <= (i+1)) {
@@ -66,11 +67,9 @@
                   }
                 }
 
-                constitution_modifier = ((constitution_score-10)/2);
+                // hit_points = hit_die_int + (i*hit_die_average_int) + ((i+1)*constitution_modifier);
 
-                hit_points = (hit_die + (i*hit_die_average) + ((i+1)*constitution_modifier));
-
-                var tblRow = "<tr><td>" + (i+1) + "</td><td>" + class_subclass + "</td><td>" + hit_points + "/" + (i+1) + "d" + hit_die + "</td><td>" + features + "</td></tr>"
+                var tblRow = "<tr><td>" + (i+1) + "</td><td>" + class_subclass + "</td><td>" + hit_points + "</td><td>" + features + "</td></tr>"
                 $(tblRow).appendTo("#build-level-table tbody");
               }
             }

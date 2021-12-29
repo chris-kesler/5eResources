@@ -374,7 +374,7 @@ span {
 }
 
 
-.ClassTable, .WealthTable {
+.ClassTable, .build-table {
   display: block;
   width: auto;
   margin: 10px;
@@ -387,25 +387,38 @@ span {
 .ClassTable {
   float: center;  
 }
-.WealthTable {
+.build-table {
   float: left;
 }
 
-.ClassTable th, .ClassTable td, .WealthTable th, .WealthTable td {
+.build-table {
+  display: block;
+  width: auto;
+  margin: 10px;
+  margin-right: 0px;
+  margin-left: 0px;
+  overflow: auto;
+  border: 1px solid rgb(50,50,50);
+  border-collapse: collapse;
+  text-decoration-color: black;
+}
+
+
+.ClassTable th, .ClassTable td, .build-table th, .build-table td, .build-table th {
   width: auto;
   padding: 8px;
   vertical-align: top;
   border: 1px solid rgb(50,50,50);
 }
 
-.ClassTable tr th, .WealthTable tr th {
+.ClassTable tr th, .build-table tr th, .build-table th {
   background-color: rgb(150,150,150);
   color: rgb(25,25,25);
   font-size: medium;
   text-align: left;
 }
 
-.ClassTable tr td, .WealthTable tr td {
+.ClassTable tr td, .build-table tr td, .build-table td {
   background-color: rgb(200,200,200);
   color: rgb(25,25,25);
   font-size: medium;

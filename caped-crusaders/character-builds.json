@@ -18,7 +18,32 @@
             "subclass_str" : "Magnate",
             "subclass_source" : "Powers",
             
-            "build_overview" : "Cyborg is a DC character who was seriously injured and bonded with alien technology that replaced his missing body parts.  He wields powerful technology and the knowledge of how to use it, but his cybernetic interface gives him a more tuned and innate control over his technological components than a standard Visionary might have.  <br><br>We'll be focusing on boosting our defenses and making sure we've got a few good blasts to replicate his signature hand cannon, along with the standard options every Visionary ought to focus on.  The boons we'll be taking amplify and enforce the concept of cybernetic bonding.  <br><br>As we reach higher levels, we'll also focus on acquiring advanced vehicles with which we can shuttle the party around with.  "
+            "build_overview" : "Cyborg is a DC character who was seriously injured and had to bond with alien technology in order to survive, which ended up replacing his missing body parts with advanced cybernetic components.  He wields powerful technology and the knowledge of how to use it, but his cybernetic interface gives him a more tuned and innate control over his technological components than a standard Visionary might have.  <br><br>We'll be focusing on boosting our defenses and making sure we've got a few good blasts to replicate his signature hand cannon, along with the standard options every Visionary ought to focus on.  The boons we'll be taking amplify and enforce the concept of cybernetic bonding.  <br><br>As we reach higher levels, we'll also focus on acquiring advanced vehicles with which we can shuttle the party around with.  ",
+
+            "race_str" : "Augmented",
+            "race_description" : "Thematically appropriate; +2 Int and +1 Con is exactly what we want.  We'll take Binary for our Language and Hacking for our Tool prof to make our Cyborg feel like a real living machine.  ",
+            "background" : "Athlete",
+            "background_description" : "Thematically appropriate; we'll also take advantage of the Longshot feat to increase the range of our Sonic Cannon.  ",
+            "strength_initial" : "15",
+            "dexterity_initial" : "8",
+            "constitution_initial" : "15",
+            "intelligence_initial" : "15",
+            "wisdom_initial" : "8",
+            "charisma_initial" : "8",
+            "strength_resolved" : "15",
+            "dexterity_resolved" : "8",
+            "constitution_resolved" : "16",
+            "intelligence_resolved" : "17",
+            "wisdom_resolved" : "8",
+            "charisma_resolved" : "8",
+            "starting_equipment" : "Hacker's Tools, one Dagger",
+            "level_guide" : [
+                {
+                    "level" : 4,
+                    "intelligence" : "18",
+                    "feature" : "Feat: Viral, +1 Int"
+                }
+            ]
         },
         {
             "name_str" : "Iron Man",
