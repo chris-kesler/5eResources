@@ -34,7 +34,7 @@
 
               var strength_score_int = f.strength_resolved;
               var strength_score_str = f.strength_resolved;
-              var strength_modifier_int = ((strength_score_int-10)/2);
+              var strength_modifier_int = Math.floor((strength_score_int-10)/2);
               var strength_save_int = strength_modifier_int;
               if (strength_modifier_int >= 0) {
                 var strength_save_str = "+" + strength_modifier_int;
@@ -44,8 +44,7 @@
 
               var dexterity_score_int = f.dexterity_resolved;
               var dexterity_score_str = f.dexterity_resolved;
-              var dexterity_modifier_int = ((dexterity_score_int-10)/2);
-              var dexterity_modifier_int = ((dexterity_score_int-10)/2);
+              var dexterity_modifier_int = Math.floor((dexterity_score_int-10)/2);
               var dexterity_save_int = dexterity_modifier_int;
               if (dexterity_modifier_int >= 0) {
                 var dexterity_save_str = "+" + dexterity_modifier_int;
@@ -55,8 +54,7 @@
               
               var constitution_score_int = f.constitution_resolved;
               var constitution_score_str = f.constitution_resolved;
-              var constitution_modifier_int = ((constitution_score_int-10)/2);
-              var constitution_modifier_int = ((constitution_score_int-10)/2);
+              var constitution_modifier_int = Math.floor((constitution_score_int-10)/2);
               var constitution_save_int = constitution_modifier_int;
               if (constitution_modifier_int >= 0) {
                 var constitution_save_str = "+" + constitution_modifier_int;
@@ -66,8 +64,7 @@
 
               var intelligence_score_int = f.intelligence_resolved;
               var intelligence_score_str = f.intelligence_resolved;
-              var intelligence_modifier_int = ((intelligence_score_int-10)/2);
-              var intelligence_modifier_int = ((intelligence_score_int-10)/2);
+              var intelligence_modifier_int = Math.floor((intelligence_score_int-10)/2);
               var intelligence_save_int = intelligence_modifier_int;
               if (intelligence_modifier_int >= 0) {
                 var intelligence_save_str = "+" + intelligence_modifier_int;
@@ -77,8 +74,7 @@
 
               var wisdom_score_int = f.wisdom_resolved;
               var wisdom_score_str = f.wisdom_resolved;
-              var wisdom_modifier_int = ((wisdom_score_int-10)/2);
-              var wisdom_modifier_int = ((wisdom_score_int-10)/2);
+              var wisdom_modifier_int = Math.floor((wisdom_score_int-10)/2);
               var wisdom_save_int = wisdom_modifier_int;
               if (wisdom_modifier_int >= 0) {
                 var wisdom_save_str = "+" + wisdom_modifier_int;
@@ -88,8 +84,8 @@
 
               var charisma_score_int = f.charisma_resolved;
               var charisma_score_str = f.charisma_resolved;
-              var charisma_modifier_int = ((charisma_score_int-10)/2);
-              var charisma_modifier_int = ((charisma_score_int-10)/2);
+              var charisma_modifier_int = Math.floor((charisma_score_int-10)/2);
+              var charisma_modifier_int = Math.floor((charisma_score_int-10)/2);
               var charisma_save_int = charisma_modifier_int;
               if (charisma_modifier_int >= 0) {
                 var charisma_save_str = "+" + charisma_modifier_int;
@@ -184,6 +180,12 @@
                     }
                     charisma_save_str = "<b>" + charisma_save_str + "</b>";
                   }
+
+                  if (f.level_guide[k].level == (i+1)) {
+                    document.getElementById("build-walkthrough-by-level").innerHTML += "<h3>Level: " + (i+1) + "</h3>" + f.level_guide[k].walkthrough;
+
+                    features = f.level_guide[k].feature;
+                  }
                 }
                 
                 if (f.class_type == "Martial, Primary") {
@@ -245,7 +247,7 @@
 
             <section class="PageContentRight">
               <button class="WikiBackButton" onclick="location.href='../classes.html'">Out to Classes</button>
-              <h2>Overview</h2>
+              <h1>Overview</h1>
               <hr>
               <img id="class-image" class="class-image-medium" alt="Class Image">
               <p id="build-description"></p>
@@ -268,9 +270,9 @@
                 </thead>
                 <tbody></tbody>
               </table>
-                                            
+                      
               <hr>
-              <h2>Build Setup</h2>
+              <h2>Level Table</h2>
               <p id="build-level-overview">We'll take features based on the following table to initiate and progress through our build.  </p>
 
               <table id="build-level-table" class="build-table">
@@ -289,6 +291,11 @@
                 </thead>
                 <tbody></tbody>
               </table>
+
+              <hr>
+              <h2>Build Walkthrough</h2>
+              <p id="build-walkthrough-overview">We'll take features based on the following table to initiate and progress through our build.  </p>
+              <div id="build-walkthrough-by-level"></div>
             </section>
 
           </div>

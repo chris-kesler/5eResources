@@ -388,7 +388,7 @@ span {
   float: center;  
 }
 .build-table {
-  float: left;
+  float: center;
 }
 
 .build-table {
@@ -528,6 +528,15 @@ hr {
 
 p, h1, h2 {
   color: rgb(52,58,64);
+}
+h1 {
+  font-size: x-large;
+}
+h2 {
+  font-size: larger;
+}
+h3 {
+  font-size: large;
 }
 .header {
   color: rgb(255, 255, 255);
