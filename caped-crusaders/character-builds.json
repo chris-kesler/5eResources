@@ -32,16 +32,29 @@
             "charisma_initial" : "8",
             "strength_resolved" : "15",
             "dexterity_resolved" : "8",
-            "constitution_resolved" : "16",
+            "constitution_resolved" : 16,
             "intelligence_resolved" : "17",
             "wisdom_resolved" : "8",
             "charisma_resolved" : "8",
             "starting_equipment" : "Hacker's Tools, one Dagger",
             "level_guide" : [
                 {
+                    "level" : 1,
+                    "intelligence_save" : "yes",
+                    "wisdom_save" : "yes",
+                    "feature" : "---",
+                    "ac_update" : "13"
+                },
+                {
                     "level" : 4,
-                    "intelligence" : "18",
-                    "feature" : "Feat: Viral, +1 Int"
+                    "intelligence_update" : "18",
+                    "feature" : "Feat: Viral, +1 Int",
+                    "ac_update" : "14"
+                },
+                {
+                    "level" : 8,
+                    "intelligence_update" : "20",
+                    "feature" : "ASI:  +2 Int"
                 }
             ]
         },
