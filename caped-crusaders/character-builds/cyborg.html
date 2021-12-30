@@ -93,12 +93,36 @@
                 var charisma_save_str = charisma_modifier_int;
               }
 
+              sustainable_selections = "---";
+              cantrip_selections = "---";
+              consumable_selections = "---";
               for (let i = 0; i < 20; i++) {
                 var features = "---";
                 for (let k = 0; k < f.level_guide.length; k++) {
-                  if (f.level_guide[k].level == (i+1)) {
+                  if (f.level_guide[k].feature != undefined && f.level_guide[k].level == (i+1)) {
                     features = f.level_guide[k].feature;
+                  } else if (f.level_guide[k].feature == undefined && f.level_guide[k].level == (i+1)) {
+                    features = "---";
                   }
+
+                  if (f.level_guide[k].sustainables != undefined && f.level_guide[k].level == (i+1)) {
+                    sustainable_selections = f.level_guide[k].sustainables;
+                  } else if (f.level_guide[k].sustainables == undefined && f.level_guide[k].level == (i+1)) {
+                    sustainable_selections = "---";
+                  }
+
+                  if (f.level_guide[k].cantrips != undefined && f.level_guide[k].level == (i+1)) {
+                    cantrip_selections = f.level_guide[k].cantrips;
+                  } else if (f.level_guide[k].cantrips == undefined && f.level_guide[k].level == (i+1)) {
+                    cantrip_selections = "---";
+                  }
+
+                  if (f.level_guide[k].consumables != undefined && f.level_guide[k].level == (i+1)) {
+                    consumable_selections = f.level_guide[k].consumables;
+                  } else if (f.level_guide[k].consumables == undefined && f.level_guide[k].level == (i+1)) {
+                    consumable_selections = "---";
+                  }
+                  
                   if (f.level_guide[k].ac_update != undefined && f.level_guide[k].level == (i+1)) {
                     armor_class = f.level_guide[k].ac_update;
                   } 
@@ -181,10 +205,8 @@
                     charisma_save_str = "<b>" + charisma_save_str + "</b>";
                   }
 
-                  if (f.level_guide[k].level == (i+1)) {
+                  if (f.level_guide[k].walkthrough != undefined && f.level_guide[k].level == (i+1)) {
                     document.getElementById("build-walkthrough-by-level").innerHTML += "<h3>Level: " + (i+1) + "</h3>" + f.level_guide[k].walkthrough;
-
-                    features = f.level_guide[k].feature;
                   }
                 }
                 
@@ -217,8 +239,13 @@
 
                 hit_points = (hit_die + (i*hit_die_average) + ((i+1)*constitution_modifier_int));
 
-                var tblRow = "<tr><td>" + (i+1) + "</td><td>" + class_subclass + "</td><td>" + hit_points + " / " + (i+1) + "d" + hit_die + "</td><td>" + features + "</td><td>" + strength_score_str + " / " + strength_save_str + "</td><td>" + dexterity_score_str + " / " + dexterity_save_str + "</td><td>" + constitution_score_str + " / " + constitution_save_str + "</td><td>" + intelligence_score_str + " / " + intelligence_save_str + "</td><td>" + wisdom_score_str + " / " + wisdom_save_str + "</td><td>" + charisma_score_str + " / " + charisma_save_str + "</td><td>" + armor_class + "</td></tr>"
+                var tblRow = "<tr><td>" + (i+1) + "</td><td>" + class_subclass + "</td><td>" + hit_points + " / " + (i+1) + "d" + hit_die + "</td><td>" + features + "</td><td>" + strength_score_str + " / " + strength_save_str + "</td><td>" + dexterity_score_str + " / " + dexterity_save_str + "</td><td>" + constitution_score_str + " / " + constitution_save_str + "</td><td>" + intelligence_score_str + " / " + intelligence_save_str + "</td><td>" + wisdom_score_str + " / " + wisdom_save_str + "</td><td>" + charisma_score_str + " / " + charisma_save_str + "</td><td>" + armor_class + "</td></tr>";
                 $(tblRow).appendTo("#build-level-table tbody");
+                
+                var tblRow = "<tr><th colspan='2'>"  + class_subclass + " " + (i+1) + "</th></tr><tr><td>Sustainables</td><td>" + sustainable_selections + "</td></tr><tr><td>Cantrips</td><td>" + cantrip_selections + "</td></tr><tr><td>Consumables</td><td>" + consumable_selections + "</td></tr>";
+                $(tblRow).appendTo("#consumable-and-sustainable-selections-table tbody");
+
+
                 if ((i+1) == 4 || (i+1) == 8 || (i+1) == 12 || (i+1) == 16) {
                   prof++;
                 }
@@ -256,7 +283,7 @@
               <img id="subclass-image" class="class-image-medium" alt="Class Image">
               <h2>Build Setup</h2>
               <p id="build-setup-overview">We'll take the following setup prior to our class levels.  </p>
-              <table class="build-table" id="build-setup-table">
+              <table class="caped-crusader-table" id="build-setup-table">
                 <thead>
                   <th>Race</th>
                   <th>Background</th>
@@ -275,7 +302,7 @@
               <h2>Level Table</h2>
               <p id="build-level-overview">We'll take features based on the following table to initiate and progress through our build.  </p>
 
-              <table id="build-level-table" class="build-table">
+              <table id="build-level-table" class="caped-crusader-table">
                 <thead>
                   <th style="width: 5vw">Level</th>
                   <th style="width: 10vw">Class/Subclass</th>
@@ -295,7 +322,16 @@
               <hr>
               <h2>Build Walkthrough</h2>
               <p id="build-walkthrough-overview">We'll take features based on the following table to initiate and progress through our build.  </p>
+
+              <table id="consumable-and-sustainable-selections-table" class="selections-table">
+                <thead>
+                  <th style="width: 15vw" colspan="2">Selections Table</th>
+                </thead>
+                <tbody></tbody>
+              </table>
+
               <div id="build-walkthrough-by-level"></div>
+
             </section>
 
           </div>

@@ -41,24 +41,87 @@
                 {
                     "level" : 1,
                     "walkthrough" : "At level one we will be focusing on slinging cantrips, keeping ourselves out of the fray, laying down some small AoEs to trip up smaller enemies, and buffing allies to face bigger enemies.  Of course, the Visionary is also excellent at out of combat utility, so we'll be sure to be reliable in that regard.  <br><br>We'll be grabbing Omnibeam, Interactive Tutorial, and Repulsing Blast for our cantrips.  Interactive Tutorial gives a welcome boost on a large portion of skill checks, both for ourselves and others.  The other two are decent damage options, but the real draw is the additional effects.  Being able to add a bit of forced movement every turn or select a specific damage type if we know what threat will be coming tomorrow can make a big difference.  We could deal a bit more damage from a safer distance with Focused Beam, but I'm a fan of cantrips that do something other than just damage; if we wanted to do raw damage, we could play a Dynamo or Annointed instead.  <br><br>For our leveled Technologies, we'll be taking Reflective Insulators to boost our defenses, Taser Snare for some battlefield control, Impact Dampeners to avoid falling damage, and Chromabeam for exploiting enemy vulnerabilities.  I know two of these might not get used (which is a good thing; it means we are positioning ourselves properly), but having them available really covers our ass.  If we need them and don't have them, and odds are you will need them, you might not survive the fight.  Don't worry though, we'll take more exciting options later on; our job right now is surviving long enough to see those higher levels.  ",
+                    "cantrips" : "+Interactive Tutorial, +Repulsing Blast", 
+                    "consumables" : "+Reflective Insulators (1st), +Taser Snare (1st), +Impact Dampeners (1st), +Chromabeam (1st)",
                     "intelligence_save" : "yes",
                     "wisdom_save" : "yes",
-                    "feature" : "---",
                     "ac_update" : "13"
                     
                 },
                 {
+                    "level" : 2,
+                    "walkthrough" : "Now we get our subclass, which grants us some Sustainables throughout our character's lifespan.  We will be going with the Magnate subclass and selecting Deflect Projectiles to give us some increased defense against ranged attacks (which is the only kind of attack we should ever be worried about if we are positioning ourselves properly).  Homing Darts is a nice way to force Concentration saves, and Imapct Dampeners further increases our survivability.  ",
+                    "sustainables" : "Deflect Projectiles",
+                    "consumables" : "+Homing Darts (1st), +Impact Dampeners (1st)"
+                },
+                {
+                    "level" : 3,
+                    "walkthrough" : "Second level Technologies!  This is why we play full casters.  We'll be grabbing Rocket Burst and Hologram Projector.  The extra speed from Rocket Burst can be great if there is a target that needs to be reached quickly (and we don't happen to have a Subvertist in the group), or if we find ourselves caught in a horde and want to get far away without risking opportunity attacks.  Hologram Projector is wildly useful.  It can be used for all kinds of deceptive tactics outside of combat, and can effectively block line of sight if placed correctly in combat.  If you aren't creative, no worries; making a hologram of a metal dome that imposes disadvantage on incoming ranged attacks while your party melees the mooks they can reach is still extremely useful.  Think of it like a limited terrain feature that you get to control.  ",
+                    "consumables" : "+Rocket Burst (2nd), +Hologram Projector (1st)"
+                },
+                {
                     "level" : 4,
                     "walkthrough" : "We'll take the Viral feat and round out our Int score.  ",
+                    "sustainables" : "Boon of Summoning",
+                    "cantrips" : "Zapper", 
+                    "consumables" : "Greasebomb",
                     "intelligence_update" : "18",
                     "feature" : "Feat: Viral, +1 Int",
                     "ac_update" : "14"
                 },
                 {
+                    "level" : 5
+                },
+                {
+                    "level" : 6
+                },
+                {
+                    "level" : 7
+                },
+                {
                     "level" : 8,
                     "walkthrough" : "There are a lot of things we could do here, but maxing out our casting stat is always a good option.  ASI for +2 Int.  ",
+                    "sustainables" : "Boon of Flight",
+                    "cantrips" : "Chill Touch", 
+                    "consumables" : "Find Familiar",
                     "intelligence_update" : "20",
                     "feature" : "ASI:  +2 Int"
+                },
+                {
+                    "level" : 9
+                },
+                {
+                    "level" : 10
+                },
+                {
+                    "level" : 11
+                },
+                {
+                    "level" : 12
+                },
+                {
+                    "level" : 13
+                },
+                {
+                    "level" : 14
+                },
+                {
+                    "level" : 15
+                },
+                {
+                    "level" : 16
+                },
+                {
+                    "level" : 17
+                },
+                {
+                    "level" : 18
+                },
+                {
+                    "level" : 19
+                },
+                {
+                    "level" : 20
                 }
             ]
         },
