@@ -1,8 +1,8 @@
 {
     "character": [
         {
-            "name_str" : "Talon",
-            "page_url" : "talon.html",
+            "name_str" : "Talon (Eberron)",
+            "page_url" : "talon-eberron.html",
             "class_str" : "Visionary",
             "class_type" : "Caster, Primary",
             "class_source" : "Tech",
@@ -216,6 +216,15 @@
             "subclass_source" : "Tech"
         },
         {
+            "name_str" : "Mandalorian",
+            "page_url" : "mandalorian.html",
+            "class_str" : "Marksman",
+            "class_type" : "Martial, Secondary",
+            "class_source" : "Tech",
+            "subclass_str" : "Espionist",
+            "subclass_source" : "Tech"
+        },
+        {
             "name_str" : "Leonidas",
             "page_url" : "leonidas.html",
             "class_str" : "Soldier",
@@ -243,8 +252,17 @@
             "subclass_source" : "Tech"
         },
         {
-            "name_str" : "Harry Potter",
-            "page_url" : "harry-potter.html",
+            "name_str" : "Dr. Strange",
+            "page_url" : "dr-strange.html",
+            "class_str" : "Archmage",
+            "class_type" : "Caster, Primary",
+            "class_source" : "Magic",
+            "subclass_str" : "Arcanoblate",
+            "subclass_source" : "Magic"
+        },
+        {
+            "name_str" : "Gandalf",
+            "page_url" : "gandalf.html",
             "class_str" : "Archmage",
             "class_type" : "Caster, Primary",
             "class_source" : "Magic",
@@ -261,8 +279,26 @@
             "subclass_source" : "Powers"
         },
         {
-            "name_str" : "Dr. Strange",
-            "page_url" : "dr-strange.html",
+            "name_str" : "Talon (Forgotten Realms)",
+            "page_url" : "talon-forgotten-realms.html",
+            "class_str" : "Archmage",
+            "class_type" : "Caster, Primary",
+            "class_source" : "Magic",
+            "subclass_str" : "Magiteknician",
+            "subclass_source" : "Tech"
+        },
+        {
+            "name_str" : "Jedi Consular",
+            "page_url" : "jedi-consular.html",
+            "class_str" : "Archmage",
+            "class_type" : "Caster, Primary",
+            "class_source" : "Magic",
+            "subclass_str" : "Magiteknician",
+            "subclass_source" : "Tech"
+        },
+        {
+            "name_str" : "Sith Sorceror",
+            "page_url" : "sith-sorceror.html",
             "class_str" : "Archmage",
             "class_type" : "Caster, Primary",
             "class_source" : "Magic",
@@ -297,6 +333,15 @@
             "subclass_source" : "Tech"
         },
         {
+            "name_str" : "Sith Inquisitor",
+            "page_url" : "sith-inquisitor.html",
+            "class_str" : "Trickster",
+            "class_type" : "Caster, Secondary",
+            "class_source" : "Magic",
+            "subclass_str" : "Doppelganger",
+            "subclass_source" : "Tech"
+        },
+        {
             "name_str" : "Wonder Woman",
             "page_url" : "wonder-woman.html",
             "class_str" : "Psiblade",
@@ -306,8 +351,8 @@
             "subclass_source" : "Magic"
         },
         {
-            "name_str" : "Jedi/Sith",
-            "page_url" : "jedi-sith.html",
+            "name_str" : "Iron Fist",
+            "page_url" : "iron-fist.html",
             "class_str" : "Psiblade",
             "class_type" : "Martial, Secondary",
             "class_source" : "Magic",
@@ -315,8 +360,8 @@
             "subclass_source" : "Powers"
         },
         {
-            "name_str" : "Mandalorian",
-            "page_url" : "mandalorian.html",
+            "name_str" : "Jedi Sentinel",
+            "page_url" : "jedi-sentinel.html",
             "class_str" : "Psiblade",
             "class_type" : "Martial, Secondary",
             "class_source" : "Magic",
@@ -342,13 +387,31 @@
             "subclass_source" : "Powers"
         },
         {
-            "name_str" : "Star Lord (Celestial)",
-            "page_url" : "star-lord-celestial.html",
+            "name_str" : "Jedi Guardian",
+            "page_url" : "jedi-guardian.html",
             "class_str" : "Annointed",
             "class_type" : "Martial, Primary",
             "class_source" : "Magic",
             "subclass_str" : "Adaptist",
             "subclass_source" : "Tech"
+        },
+        {
+            "name_str" : "Sith Warrior",
+            "page_url" : "sith-warrior.html",
+            "class_str" : "Annointed",
+            "class_type" : "Martial, Primary",
+            "class_source" : "Magic",
+            "subclass_str" : "Adaptist",
+            "subclass_source" : "Tech"
+        },
+        {
+            "name_str" : "Scarlet Witch",
+            "page_url" : "scarlet-witch.html",
+            "class_str" : "Nova",
+            "class_type" : "Caster, Primary",
+            "class_source" : "Powers",
+            "subclass_str" : "Luminent",
+            "subclass_source" : "Magic"
         },
         {
             "name_str" : "Jean Grey",
@@ -407,6 +470,15 @@
         {
             "name_str" : "Monster Girl",
             "page_url" : "monster-girl.html",
+            "class_str" : "Metamorph",
+            "class_type" : "Martial, Secondary",
+            "class_source" : "Powers",
+            "subclass_str" : "Demibeast",
+            "subclass_source" : "Magic"
+        },
+        {
+            "name_str" : "Maleficent",
+            "page_url" : "maleficent.html",
             "class_str" : "Metamorph",
             "class_type" : "Martial, Secondary",
             "class_source" : "Powers",
