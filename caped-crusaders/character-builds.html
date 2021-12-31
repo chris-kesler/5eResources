@@ -13,7 +13,7 @@
         var characters = [];
         $.getJSON('character-builds.json', function(data) {
           $.each(data.character, function(i, f) {
-            var tblRow = "<tr>" + "<td>" + "<a href='character-builds/" + f.page_url + "' target='_blank'>" + f.name_str + "</a>" + "</td>" + "<td>" + f.class_str + "</td><td>" + f.class_type + "</td><td>" + f.class_source + "</td><td>" + f.subclass_str + "</td><td>" + f.subclass_source + "</td></tr>"
+            var tblRow = "<tr>" + "<td>" + "<a href='character-builds/" + f.page_url + "' target='_blank'>" + f.name_str + "</a>" + "</td>" + "<td>" + f.class_str + "</td><td>" + f.class_type + "</td><td>" + f.class_source + "</td><td>" + f.subclass_str + "</td><td>" + f.subclass_source + "</td><td>" + f.character_source + "</td></tr>"
             $(tblRow).appendTo("#FilterTable tbody");
           });
         });
@@ -50,8 +50,8 @@
               <input type="text" id="FilterInputInclude3" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Class Source. . .">
               <input type="text" id="FilterInputInclude4" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Subclass. . .">
               <input type="text" id="FilterInputInclude5" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Subclass Type. . .">
-              <!-- <input type="text" id="FilterInputInclude6" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Attack/Save. . .">
-              <input type="text" id="FilterInputInclude7" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Damage/Effect. . .">
+              <input type="text" id="FilterInputInclude6" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Character Source. . .">
+              <!-- <input type="text" id="FilterInputInclude7" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Damage/Effect. . .">
               <input type="text" id="FilterInputInclude8" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Classes. . .">
               <input type="text" id="FilterInputInclude9" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Subclasses. . .">
               <input type="text" id="FilterInputInclude10" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Feats. . .">
@@ -67,24 +67,24 @@
               <input type="text" id="FilterInputExclude3" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Class Source. . .">
               <input type="text" id="FilterInputExclude4" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Subclass. . .">
               <input type="text" id="FilterInputExclude5" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Subclass Type. . .">
-              <!-- <input type="text" id="FilterInputExclude6" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Attack/Save. . .">
-              <input type="text" id="FilterInputExclude7" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Damage/Effect. . .">
+              <input type="text" id="FilterInputExclude6" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Character Source. . .">
+              <!-- <input type="text" id="FilterInputExclude7" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Damage/Effect. . .">
               <input type="text" id="FilterInputExclude8" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Classes. . .">
               <input type="text" id="FilterInputExclude9" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Subclasses. . .">
               <input type="text" id="FilterInputExclude10" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Feats. . .">
               <input type="text" id="FilterInputExclude11" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Backgrounds. . .">
               <input type="text" id="FilterInputExclude12" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Races. . ."> -->
                             
-              <table id="FilterTable">
+              <table id="FilterTable" class="class-table">
                 <thead class="header">
-                  <th><button class="TableSortButton" onclick="sortTable(0)">Character</button></th>
-                  <th><button class="TableSortButton" onclick="sortTable(1)">Class</button></th>
-                  <th><button class="TableSortButton" onclick="sortTable(2)">Class Type</button></th>
-                  <th><button class="TableSortButton" onclick="sortTable(3)">Class Source</button></th>
-                  <th><button class="TableSortButton" onclick="sortTable(4)">Subclass</button></th>
-                  <th><button class="TableSortButton" onclick="sortTable(5)">Subclass Source</button></th>
-                  <!-- <th><button class="TableSortButton" onclick="sortTable(6)">Attack/Save</button></th>
-                  <th><button class="TableSortButton" onclick="sortTable(7)">Damage/Effect</button></th>
+                  <th style="width: 20vw"><button class="TableSortButton" onclick="sortTable(0)">Character</button></th>
+                  <th style="width: 20vw"><button class="TableSortButton" onclick="sortTable(1)">Class</button></th>
+                  <th style="width: 20vw"><button class="TableSortButton" onclick="sortTable(2)">Class Type</button></th>
+                  <th style="width: 20vw"><button class="TableSortButton" onclick="sortTable(3)">Class Source</button></th>
+                  <th style="width: 20vw"><button class="TableSortButton" onclick="sortTable(4)">Subclass</button></th>
+                  <th style="width: 20vw"><button class="TableSortButton" onclick="sortTable(5)">Subclass Source</button></th>
+                  <th style="width: 20vw"><button class="TableSortButton" onclick="sortTable(6)">Character Source</button></th>
+                  <!-- <th><button class="TableSortButton" onclick="sortTable(7)">Damage/Effect</button></th>
                   <th><button class="TableSortButton" onclick="sortTable(8)">Classes</button></th>
                   <th><button class="TableSortButton" onclick="sortTable(9)">Subclasses</button></th>
                   <th><button class="TableSortButton" onclick="sortTable(10)">Feats</button></th>
@@ -140,7 +140,7 @@
     inputIncludeThree = document.getElementById("FilterInputInclude3");
     inputIncludeFour = document.getElementById("FilterInputInclude4");
     inputIncludeFive = document.getElementById("FilterInputInclude5");
-    // inputIncludeSix = document.getElementById("FilterInputInclude6");
+    inputIncludeSix = document.getElementById("FilterInputInclude6");
     // inputIncludeSeven = document.getElementById("FilterInputInclude7");
     // inputIncludeEight = document.getElementById("FilterInputInclude8");
     // inputIncludeNine = document.getElementById("FilterInputInclude9");
@@ -154,7 +154,7 @@
     inputExcludeThree = document.getElementById("FilterInputExclude3");
     inputExcludeFour = document.getElementById("FilterInputExclude4");
     inputExcludeFive = document.getElementById("FilterInputExclude5");
-    // inputExcludeSix = document.getElementById("FilterInputExclude6");
+    inputExcludeSix = document.getElementById("FilterInputExclude6");
     // inputExcludeSeven = document.getElementById("FilterInputExclude7");
     // inputExcludeEight = document.getElementById("FilterInputExclude8");
     // inputExcludeNine = document.getElementById("FilterInputExclude9");
@@ -169,7 +169,7 @@
     filterIncludeThree = inputIncludeThree.value.toUpperCase();
     filterIncludeFour = inputIncludeFour.value.toUpperCase();
     filterIncludeFive = inputIncludeFive.value.toUpperCase();
-    // filterIncludeSix = inputIncludeSix.value.toUpperCase();
+    filterIncludeSix = inputIncludeSix.value.toUpperCase();
     // filterIncludeSeven = inputIncludeSeven.value.toUpperCase();
     // filterIncludeEight = inputIncludeEight.value.toUpperCase();
     // filterIncludeNine = inputIncludeNine.value.toUpperCase();
@@ -183,7 +183,7 @@
     filterExcludeThree = inputExcludeThree.value.toUpperCase();
     filterExcludeFour = inputExcludeFour.value.toUpperCase();
     filterExcludeFive = inputExcludeFive.value.toUpperCase();
-    // filterExcludeSix = inputExcludeSix.value.toUpperCase();
+    filterExcludeSix = inputExcludeSix.value.toUpperCase();
     // filterExcludeSeven = inputExcludeSeven.value.toUpperCase();
     // filterExcludeEight = inputExcludeEight.value.toUpperCase();
     // filterExcludeNine = inputExcludeNine.value.toUpperCase();
@@ -202,7 +202,7 @@
       tdThree = tr[i].getElementsByTagName("td")[3];
       tdFour = tr[i].getElementsByTagName("td")[4];
       tdFive = tr[i].getElementsByTagName("td")[5];
-      // tdSix = tr[i].getElementsByTagName("td")[6];
+      tdSix = tr[i].getElementsByTagName("td")[6];
       // tdSeven = tr[i].getElementsByTagName("td")[7];
       // tdEight = tr[i].getElementsByTagName("td")[8];
       // tdNine = tr[i].getElementsByTagName("td")[9];
@@ -217,7 +217,7 @@
         txtValueThree = tdThree.textContent || tdThree.innerText;
         txtValueFour = tdFour.textContent || tdFour.innerText;
         txtValueFive = tdFive.textContent || tdFive.innerText;
-        // txtValueSix = tdSix.textContent || tdSix.innerText;
+        txtValueSix = tdSix.textContent || tdSix.innerText;
         // txtValueSeven = tdSeven.textContent || tdSeven.innerText;
         // txtValueEight = tdEight.textContent || tdEight.innerText;
         // txtValueNine = tdNine.textContent || tdNine.innerText;
@@ -237,8 +237,8 @@
           tr[i].style.display = "none";
         } else if (txtValueFive.toUpperCase().indexOf(filterIncludeFive) == -1) {
           tr[i].style.display = "none";
-        // } else if (txtValueSix.toUpperCase().indexOf(filterIncludeSix) == -1) {
-        //   tr[i].style.display = "none";
+        } else if (txtValueSix.toUpperCase().indexOf(filterIncludeSix) == -1) {
+          tr[i].style.display = "none";
         // } else if (txtValueSeven.toUpperCase().indexOf(filterIncludeSeven) == -1) {
         //   tr[i].style.display = "none";
         // } else if (txtValueEight.toUpperCase().indexOf(filterIncludeEight) == -1) {
@@ -263,8 +263,8 @@
           tr[i].style.display = "none";
         } else if (txtValueFive.toUpperCase().indexOf(filterExcludeFive) > -1 && filterExcludeFive != '') {
           tr[i].style.display = "none";
-        // } else if (txtValueSix.toUpperCase().indexOf(filterExcludeSix) > -1 && filterExcludeSix != '') {
-        //   tr[i].style.display = "none";
+        } else if (txtValueSix.toUpperCase().indexOf(filterExcludeSix) > -1 && filterExcludeSix != '') {
+          tr[i].style.display = "none";
         // } else if (txtValueSeven.toUpperCase().indexOf(filterExcludeSeven) > -1 && filterExcludeSeven != '') {
         //   tr[i].style.display = "none";
         // } else if (txtValueEight.toUpperCase().indexOf(filterExcludeEight) > -1 && filterExcludeEight != '') {

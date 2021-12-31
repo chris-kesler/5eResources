@@ -684,7 +684,7 @@ iframe {
 
 #FilterTable {
   border-collapse: collapse; /* Collapse borders */
-  width: 80vw; /* Full-width */
+  width: 83vw; /* Full-width */
   border: 1px solid rgb(97, 97, 97); /* Add a grey border */
   overflow: scroll;
   display: inline-block;
@@ -698,6 +698,10 @@ iframe {
   border: 1px solid black;
 }
 
+#FilterTable th {
+  background-color: rgb(150,150,150);
+}
+
 #FilterTable tr {
   /* Add a bottom border to all table rows */
   border-bottom: 1px solid rgb(61, 61, 61);
@@ -705,7 +709,7 @@ iframe {
 
 #FilterTable tr {
   /* Add a grey background color to the table header and on hover */
-  background-color: #999999;
+  background-color: rgb(200,200,200);
 }
 
 #FilterTable tr td:first-child, #FilterTable tr th:first-child  {

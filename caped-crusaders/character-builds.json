@@ -7,7 +7,8 @@
             "class_type" : "Caster, Primary",
             "class_source" : "Tech",
             "subclass_str" : "Glyphologist",
-            "subclass_source" : "Magic"
+            "subclass_source" : "Magic",
+            "character_source" : "Original"
         },
         {
             "name_str" : "Cyborg",
@@ -17,6 +18,7 @@
             "class_source" : "Tech",
             "subclass_str" : "Magnate",
             "subclass_source" : "Powers",
+            "character_source" : "DC (Justice League Hero)",
             
             "build_overview" : "Cyborg is a DC character who was seriously injured and had to bond with alien technology in order to survive, which ended up replacing his missing body parts with advanced cybernetic components.  He wields powerful technology and the knowledge of how to use it, but his cybernetic interface gives him a more tuned and innate control over his technological components than a standard Visionary might have.  <br><br>We'll be focusing on boosting our defenses and making sure we've got a few good blasts to replicate his signature hand cannon, along with the standard options every Visionary ought to focus on.  The boons we'll be taking amplify and enforce the concept of cybernetic bonding.  <br><br>As we reach higher levels, we'll also focus on acquiring advanced vehicles with which we can shuttle the party around with.  ",
 
@@ -132,7 +134,8 @@
             "class_type" : "Caster, Primary",
             "class_source" : "Tech",
             "subclass_str" : "Virtuoso",
-            "subclass_source" : "Tech"
+            "subclass_source" : "Tech",
+            "character_source" : "MARVEL (Avengers Hero)"
         },
         {
             "name_str" : "Sherlock Holmes",
@@ -141,7 +144,8 @@
             "class_type" : "Caster, Secondary",
             "class_source" : "Tech",
             "subclass_str" : "Victorian",
-            "subclass_source" : "Magic"
+            "subclass_source" : "Magic",
+            "character_source" : "Misc Hero"
         },
         {
             "name_str" : "Spider-Man (Noir)",
@@ -150,7 +154,8 @@
             "class_type" : "Caster, Secondary",
             "class_source" : "Tech",
             "subclass_str" : "Oracle",
-            "subclass_source" : "Powers"
+            "subclass_source" : "Powers",
+            "character_source" : "MARVEL (Spider-Verse Hero)"
         },
         {
             "name_str" : "Batman",
@@ -159,7 +164,8 @@
             "class_type" : "Caster, Secondary",
             "class_source" : "Tech",
             "subclass_str" : "Exemplar",
-            "subclass_source" : "Tech"
+            "subclass_source" : "Tech",
+            "character_source" : "DC (Justice League Hero)"
         },
         {
             "name_str" : "Black Widow",
@@ -168,7 +174,8 @@
             "class_type" : "Caster, Secondary",
             "class_source" : "Tech",
             "subclass_str" : "Exemplar",
-            "subclass_source" : "Tech"
+            "subclass_source" : "Tech",
+            "character_source" : "MARVEL (Avengers Hero)"
         },
         {
             "name_str" : "Legolas",
@@ -177,7 +184,8 @@
             "class_type" : "Martial, Secondary",
             "class_source" : "Tech",
             "subclass_str" : "Ranger",
-            "subclass_source" : "Magic"
+            "subclass_source" : "Magic",
+            "character_source" : "Lord of the Rings (Hero)"
         },
         {
             "name_str" : "Deadshot",
@@ -186,7 +194,8 @@
             "class_type" : "Martial, Secondary",
             "class_source" : "Tech",
             "subclass_str" : "Assassin",
-            "subclass_source" : "Powers"
+            "subclass_source" : "Powers",
+            "character_source" : "DC (Suicide Squad Villain)"
         },
         {
             "name_str" : "Gambit",
@@ -195,7 +204,8 @@
             "class_type" : "Martial, Secondary",
             "class_source" : "Tech",
             "subclass_str" : "Assassin",
-            "subclass_source" : "Powers"
+            "subclass_source" : "Powers",
+            "character_source" : "MARVEL (X-Men Hero)"
         },
         {
             "name_str" : "Spider-Man (2099)",
@@ -204,7 +214,8 @@
             "class_type" : "Martial, Secondary",
             "class_source" : "Tech",
             "subclass_str" : "Assassin",
-            "subclass_source" : "Powers"
+            "subclass_source" : "Powers",
+            "character_source" : "MARVEL (Spider-Verse Hero)"
         },
         {
             "name_str" : "Hawkeye",
@@ -213,7 +224,8 @@
             "class_type" : "Martial, Secondary",
             "class_source" : "Tech",
             "subclass_str" : "Espionist",
-            "subclass_source" : "Tech"
+            "subclass_source" : "Tech",
+            "character_source" : "MARVEL (Avengers Hero)"
         },
         {
             "name_str" : "Mandalorian",
@@ -222,7 +234,8 @@
             "class_type" : "Martial, Secondary",
             "class_source" : "Tech",
             "subclass_str" : "Espionist",
-            "subclass_source" : "Tech"
+            "subclass_source" : "Tech",
+            "character_source" : "Star Wars (Antihero)"
         },
         {
             "name_str" : "Leonidas",
@@ -231,7 +244,8 @@
             "class_type" : "Martial, Primary",
             "class_source" : "Tech",
             "subclass_str" : "Sentinel",
-            "subclass_source" : "Magic"
+            "subclass_source" : "Magic",
+            "character_source" : "Misc Hero"
         },
         {
             "name_str" : "Captain America",
@@ -240,7 +254,8 @@
             "class_type" : "Martial, Primary",
             "class_source" : "Tech",
             "subclass_str" : "Patriot",
-            "subclass_source" : "Powers"
+            "subclass_source" : "Powers",
+            "character_source" : "MARVEL (Avengers Hero)"
         },
         {
             "name_str" : "Deathstroke",
@@ -249,7 +264,8 @@
             "class_type" : "Martial, Primary",
             "class_source" : "Tech",
             "subclass_str" : "Ronin",
-            "subclass_source" : "Tech"
+            "subclass_source" : "Tech",
+            "character_source" : "DC (Villain)"
         },
         {
             "name_str" : "Dr. Strange",
@@ -258,7 +274,8 @@
             "class_type" : "Caster, Primary",
             "class_source" : "Magic",
             "subclass_str" : "Arcanoblate",
-            "subclass_source" : "Magic"
+            "subclass_source" : "Magic",
+            "character_source" : "MARVEL (Avengers Hero)"
         },
         {
             "name_str" : "Gandalf",
@@ -267,7 +284,8 @@
             "class_type" : "Caster, Primary",
             "class_source" : "Magic",
             "subclass_str" : "Arcanoblate",
-            "subclass_source" : "Magic"
+            "subclass_source" : "Magic",
+            "character_source" : "Lord of the Rings (Hero)"
         },
         {
             "name_str" : "Professor Xavier",
@@ -276,16 +294,18 @@
             "class_type" : "Caster, Primary",
             "class_source" : "Magic",
             "subclass_str" : "Psionotheist",
-            "subclass_source" : "Powers"
+            "subclass_source" : "Powers",
+            "character_source" : "MARVEL (X-Men Hero)"
         },
         {
-            "name_str" : "Talon (Forgotten Realms)",
-            "page_url" : "talon-forgotten-realms.html",
+            "name_str" : "Talon (Sword Coast)",
+            "page_url" : "talon-sword-coast.html",
             "class_str" : "Archmage",
             "class_type" : "Caster, Primary",
             "class_source" : "Magic",
             "subclass_str" : "Magiteknician",
-            "subclass_source" : "Tech"
+            "subclass_source" : "Tech",
+            "character_source" : "Original"
         },
         {
             "name_str" : "Jedi Consular",
@@ -294,7 +314,8 @@
             "class_type" : "Caster, Primary",
             "class_source" : "Magic",
             "subclass_str" : "Magiteknician",
-            "subclass_source" : "Tech"
+            "subclass_source" : "Tech",
+            "character_source" : "Star Wars (Hero)"
         },
         {
             "name_str" : "Sith Sorceror",
@@ -303,7 +324,8 @@
             "class_type" : "Caster, Primary",
             "class_source" : "Magic",
             "subclass_str" : "Magiteknician",
-            "subclass_source" : "Tech"
+            "subclass_source" : "Tech",
+            "character_source" : "Star Wars (Villain)"
         },
         {
             "name_str" : "Loki",
@@ -312,7 +334,8 @@
             "class_type" : "Caster, Secondary",
             "class_source" : "Magic",
             "subclass_str" : "Soulrender",
-            "subclass_source" : "Magic"
+            "subclass_source" : "Magic",
+            "character_source" : "MARVEL (Avengers Villain)"
         },
         {
             "name_str" : "Duplikate",
@@ -321,7 +344,8 @@
             "class_type" : "Caster, Secondary",
             "class_source" : "Magic",
             "subclass_str" : "Duplikist",
-            "subclass_source" : "Powers"
+            "subclass_source" : "Powers",
+            "character_source" : "Invincible (Hero)"
         },
         {
             "name_str" : "Mystique",
@@ -330,7 +354,8 @@
             "class_type" : "Caster, Secondary",
             "class_source" : "Magic",
             "subclass_str" : "Doppelganger",
-            "subclass_source" : "Tech"
+            "subclass_source" : "Tech",
+            "character_source" : "MARVEL (X-Men Villain)"
         },
         {
             "name_str" : "Sith Inquisitor",
@@ -339,7 +364,8 @@
             "class_type" : "Caster, Secondary",
             "class_source" : "Magic",
             "subclass_str" : "Doppelganger",
-            "subclass_source" : "Tech"
+            "subclass_source" : "Tech",
+            "character_source" : "Star Wars (Villain)"
         },
         {
             "name_str" : "Wonder Woman",
@@ -348,7 +374,8 @@
             "class_type" : "Martial, Secondary",
             "class_source" : "Magic",
             "subclass_str" : "Guardian",
-            "subclass_source" : "Magic"
+            "subclass_source" : "Magic",
+            "character_source" : "DC (Justice League Hero)"
         },
         {
             "name_str" : "Iron Fist",
@@ -357,7 +384,8 @@
             "class_type" : "Martial, Secondary",
             "class_source" : "Magic",
             "subclass_str" : "Specter",
-            "subclass_source" : "Powers"
+            "subclass_source" : "Powers",
+            "character_source" : "MARVEL (Hero)"
         },
         {
             "name_str" : "Jedi Sentinel",
@@ -366,7 +394,8 @@
             "class_type" : "Martial, Secondary",
             "class_source" : "Magic",
             "subclass_str" : "Augmentist",
-            "subclass_source" : "Tech"
+            "subclass_source" : "Tech",
+            "character_source" : "Star Wars (Hero)"
         },
         {
             "name_str" : "Shazam",
@@ -375,7 +404,8 @@
             "class_type" : "Martial, Primary",
             "class_source" : "Magic",
             "subclass_str" : "Supreme",
-            "subclass_source" : "Magic"
+            "subclass_source" : "Magic",
+            "character_source" : "DC (Justice League Hero)"
         },
         {
             "name_str" : "Thor",
@@ -384,7 +414,8 @@
             "class_type" : "Martial, Primary",
             "class_source" : "Magic",
             "subclass_str" : "Infused",
-            "subclass_source" : "Powers"
+            "subclass_source" : "Powers",
+            "character_source" : "MARVEL (Avengers Hero)"
         },
         {
             "name_str" : "Jedi Guardian",
@@ -393,7 +424,8 @@
             "class_type" : "Martial, Primary",
             "class_source" : "Magic",
             "subclass_str" : "Adaptist",
-            "subclass_source" : "Tech"
+            "subclass_source" : "Tech",
+            "character_source" : "Star Wars (Hero)"
         },
         {
             "name_str" : "Sith Warrior",
@@ -402,7 +434,8 @@
             "class_type" : "Martial, Primary",
             "class_source" : "Magic",
             "subclass_str" : "Adaptist",
-            "subclass_source" : "Tech"
+            "subclass_source" : "Tech",
+            "character_source" : "Star Wars (Villain)"
         },
         {
             "name_str" : "Scarlet Witch",
@@ -411,7 +444,8 @@
             "class_type" : "Caster, Primary",
             "class_source" : "Powers",
             "subclass_str" : "Luminent",
-            "subclass_source" : "Magic"
+            "subclass_source" : "Magic",
+            "character_source" : "MARVEL (Avengers Hero)"
         },
         {
             "name_str" : "Jean Grey",
@@ -420,7 +454,8 @@
             "class_type" : "Caster, Primary",
             "class_source" : "Powers",
             "subclass_str" : "Luminent",
-            "subclass_source" : "Magic"
+            "subclass_source" : "Magic",
+            "character_source" : "MARVEL (X-Men Hero)"
         },
         {
             "name_str" : "Invisible Woman",
@@ -429,7 +464,8 @@
             "class_type" : "Caster, Primary",
             "class_source" : "Powers",
             "subclass_str" : "Refractionist",
-            "subclass_source" : "Powers"
+            "subclass_source" : "Powers",
+            "character_source" : "MARVEL (Fantastic 4 Hero)"
         },
         {
             "name_str" : "Green Lantern",
@@ -438,7 +474,8 @@
             "class_type" : "Caster, Primary",
             "class_source" : "Powers",
             "subclass_str" : "Galvanic",
-            "subclass_source" : "Tech"
+            "subclass_source" : "Tech",
+            "character_source" : "DC (Justice League Hero)"
         },
         {
             "name_str" : "Nightcrawler",
@@ -447,7 +484,8 @@
             "class_type" : "Caster, Secondary",
             "class_source" : "Powers",
             "subclass_str" : "Egressor",
-            "subclass_source" : "Magic"
+            "subclass_source" : "Magic",
+            "character_source" : "MARVEL (X-Men Hero)"
         },
         {
             "name_str" : "Flash",
@@ -456,16 +494,18 @@
             "class_type" : "Caster, Secondary",
             "class_source" : "Powers",
             "subclass_str" : "Speedster",
-            "subclass_source" : "Powers"
+            "subclass_source" : "Powers",
+            "character_source" : "DC (Justice League Hero)"
         },
         {
-            "name_str" : "Spider-Man (Tobey Maguire)",
-            "page_url" : "spider-man-tobey-maguire.html",
+            "name_str" : "Spider-Man (Amazing)",
+            "page_url" : "spider-man-amazing.html",
             "class_str" : "Subvertist",
             "class_type" : "Caster, Secondary",
             "class_source" : "Powers",
             "subclass_str" : "Neutralizer",
-            "subclass_source" : "Tech"
+            "subclass_source" : "Tech",
+            "character_source" : "MARVEL (Hero)"
         },
         {
             "name_str" : "Monster Girl",
@@ -474,7 +514,8 @@
             "class_type" : "Martial, Secondary",
             "class_source" : "Powers",
             "subclass_str" : "Demibeast",
-            "subclass_source" : "Magic"
+            "subclass_source" : "Magic",
+            "character_source" : "Invincible (Hero)"
         },
         {
             "name_str" : "Maleficent",
@@ -483,7 +524,8 @@
             "class_type" : "Martial, Secondary",
             "class_source" : "Powers",
             "subclass_str" : "Demibeast",
-            "subclass_source" : "Magic"
+            "subclass_source" : "Magic",
+            "character_source" : "Misc Villain"
         },
         {
             "name_str" : "Werewolf",
@@ -492,7 +534,8 @@
             "class_type" : "Martial, Secondary",
             "class_source" : "Powers",
             "subclass_str" : "Demibeast",
-            "subclass_source" : "Magic"
+            "subclass_source" : "Magic",
+            "character_source" : "Misc Monster"
         },
         {
             "name_str" : "Spider-Man (Symbiote)",
@@ -501,7 +544,8 @@
             "class_type" : "Martial, Secondary",
             "class_source" : "Powers",
             "subclass_str" : "Primal",
-            "subclass_source" : "Powers"
+            "subclass_source" : "Powers",
+            "character_source" : "MARVEL (Spider-Verse Antihero)"
         },
         {
             "name_str" : "Venom",
@@ -510,7 +554,8 @@
             "class_type" : "Martial, Secondary",
             "class_source" : "Powers",
             "subclass_str" : "Primal",
-            "subclass_source" : "Powers"
+            "subclass_source" : "Powers",
+            "character_source" : "MARVEL (Spider-Verse Villain)"
         },
         {
             "name_str" : "Wolverine",
@@ -519,7 +564,8 @@
             "class_type" : "Martial, Secondary",
             "class_source" : "Powers",
             "subclass_str" : "Primal",
-            "subclass_source" : "Powers"
+            "subclass_source" : "Powers",
+            "character_source" : "MARVEL (X-Men Antihero)"
         },
         {
             "name_str" : "Ben 10",
@@ -528,7 +574,8 @@
             "class_type" : "Martial, Secondary",
             "class_source" : "Powers",
             "subclass_str" : "Splicer",
-            "subclass_source" : "Tech"
+            "subclass_source" : "Tech",
+            "character_source" : "Misc Hero"
         },
         {
             "name_str" : "Dracula",
@@ -537,7 +584,8 @@
             "class_type" : "Martial, Secondary",
             "class_source" : "Powers",
             "subclass_str" : "Splicer",
-            "subclass_source" : "Tech"
+            "subclass_source" : "Tech",
+            "character_source" : "Misc Monster"
         },
         {
             "name_str" : "Geralt of Rivia",
@@ -546,7 +594,8 @@
             "class_type" : "Martial, Secondary",
             "class_source" : "Powers",
             "subclass_str" : "Splicer",
-            "subclass_source" : "Tech"
+            "subclass_source" : "Tech",
+            "character_source" : "Misc Antihero"
         },
         {
             "name_str" : "Spider-Man (Iron Spider)",
@@ -555,7 +604,8 @@
             "class_type" : "Martial, Secondary",
             "class_source" : "Powers",
             "subclass_str" : "Splicer",
-            "subclass_source" : "Tech"
+            "subclass_source" : "Tech",
+            "character_source" : "MARVEL (Spider-Verse Hero)"
         },
         {
             "name_str" : "Superman",
@@ -564,7 +614,8 @@
             "class_type" : "Martial, Primary",
             "class_source" : "Powers",
             "subclass_str" : "Meteor",
-            "subclass_source" : "Powers"
+            "subclass_source" : "Powers",
+            "character_source" : "DC (Justice League Hero)"
         },
         {
             "name_str" : "Battle Beast",
@@ -573,7 +624,8 @@
             "class_type" : "Martial, Primary",
             "class_source" : "Powers",
             "subclass_str" : "Chosen",
-            "subclass_source" : "Magic"
+            "subclass_source" : "Magic",
+            "character_source" : "Invincible (Antihero)"
         },
         {
             "name_str" : "Omni-Man",
@@ -582,7 +634,8 @@
             "class_type" : "Martial, Primary",
             "class_source" : "Powers",
             "subclass_str" : "Militant",
-            "subclass_source" : "Tech"
+            "subclass_source" : "Tech",
+            "character_source" : "Invincible (Complicated)"
         }
     ]
 }
