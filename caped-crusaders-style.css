@@ -415,12 +415,11 @@ span {
 
 
 .selections-table {
-  display: block;
-  width: auto;
-  max-width: 30vw;
+  display: inline-table;
+  width: 35vw;
   margin: 10px;
   margin-right: 0px;
-  margin-left: 0px;
+  margin-left: auto;
   overflow: auto;
   border: 1px solid rgb(50,50,50);
   border-collapse: collapse;
@@ -436,9 +435,9 @@ span {
 }
 
 .selections-table tr th {
-  background-color: rgb(175, 175, 175);
+  background-color: rgb(125, 125, 125);
   color: rgb(25,25,25);
-  font-size: small;
+  font-size: large;
   text-align: center;
 }
 
@@ -449,10 +448,12 @@ span {
   text-align: left;
 }
 
-.selections-table thead:first-child th {
-  background-color: rgb(125, 125, 125);
+.selections-table td:nth-child(1) {
+  background-color: rgb(175, 175, 175);
   color: rgb(25,25,25);
-  font-size: large;
+  font-size: small;
+  text-align: center;
+  width: 7vw;
 }
 
 

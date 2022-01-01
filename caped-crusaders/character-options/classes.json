@@ -758,7 +758,7 @@
             "name_str" : "Archmage",
             "page_url" : "archmage.html",
             "class_img" : "/_SiteResources/Images/Archmage.png",
-            "class_img_credit" : "---",
+            "class_img_credit" : "Magic by Hat-Tech from NounProject.com",
             "description_short_str" : "A master of magic with the largest selection of casting options at any time.  ",
             "description_long_str" : "Having studied the nature of supernatural domains of energy, the Archmage is capable of employing various magical effects and religious rituals.  ",
 
@@ -947,7 +947,7 @@
             "name_str" : "Trickster",
             "page_url" : "trickster.html",
             "class_img" : "/_SiteResources/Images/Trickster.png",
-            "class_img_credit" : "---",
+            "class_img_credit" : "Trickster by Robert Bjurshagen from NounProject.com",
             "description_short_str" : "A cunning cutthroat wielding illusions and quick daggers who can never be fully trusted.  ",
             "description_long_str" : "Wielding magic designed to deceive and distract, the Trickster can be a staggering force divider that leaves the enemy drowning in confusion.  ",
 
@@ -1153,7 +1153,7 @@
             "name_str" : "Psiblade",
             "page_url" : "psiblade.html",
             "class_img" : "/_SiteResources/Images/Psiblade.png",
-            "class_img_credit" : "---",
+            "class_img_credit" : "Sword And Shield by Firza Alamsyah from NounProject.com",
             "description_short_str" : "A defense focused warrior wielding a powerful blade and an attuned spirit.  ",
             "description_long_str" : "Honing their gifts to increase their awareness, the Psiblade are among the most dedicated and devout warriors in existence.  ",
 
@@ -1362,7 +1362,7 @@
             "name_str" : "Annointed",
             "page_url" : "annointed.html",
             "class_img" : "/_SiteResources/Images/Annointed.png",
-            "class_img_credit" : "---",
+            "class_img_credit" : "Spartan Helmet by sandi from NounProject.com",
             "description_short_str" : "Magically imbued powerhouses who dominate as champions of the gods.  ",
             "description_long_str" : "Blessed and bolstered by ancient magic, the Annointed perfectly balances destroying their enemies and protecting their allies.  ",
 
@@ -1805,7 +1805,7 @@
                 {
                     "name_str" : "Enhanced Movement",
                     "level" : 1,
-                    "mechanics_str" : "Your speed increases by an amount equal to (Class Level + Proficiency Bonus) * 5.  Your total number of Actions and Reactions is equal to your Proficiency Bonus, but can only affect a specific creature with a Reaction once per round.  You may only take the Attack Action once per turn.  You may also use the Acrobatics skill rather than Athletics when Shoving.  <br><br>At level 9, you are able to pass through mundane matter as though it were difficult terrain, up to distances equal to your Proficiency Bonus * 5, per round.  For example, if your Proficiency Bonus is +2, you can move through a 10 foot solid steel wall, but doing so will cost you 20 feet of movement.  You may also push yourself through mundane matter for a greater distance, but you take 1d12 Disintegrating damage for every 5 feet traveled beyond this distance.  If you end your turn within solid matter, you take three points of exhaustion.  You may also move across liquids and vertical surfaces as though they were flat terrain, but you fall if you end your turn on such a surface.  <br><br>At level 15, when a creature that you can see is the target of an Attack, you may use your Reaction to move up to half of your speed towards the creature and impose advantage or disadvantage on the Attack should you be able to get within 5 feet of them.  Immediately after the Attack is resolved, if you did not use half of your movement speed to reach the target, you can use any remaining movement speed from that pool to position yourself at your discretion.  "
+                    "mechanics_str" : "Your speed increases by an amount equal to (Class Level + Proficiency Bonus) * 5.  Your total number of Reactions is equal to your Proficiency Bonus, but can only affect a specific creature with a Reaction once per round.  You may make a number of Shove Attacks equal to your Powercasting Ability Modifier as a Bonus Action, and you may use the Acrobatics skill rather than Athletics when you do so.  <br><br>At level 9, you are able to pass through mundane matter as though it were difficult terrain, up to distances equal to your Proficiency Bonus * 5, per round.  For example, if your Proficiency Bonus is +2, you can move through a 10 foot solid steel wall, but doing so will cost you 20 feet of movement.  You may also push yourself through mundane matter for a greater distance, but you take 1d12 Disintegrating damage for every 5 feet traveled beyond this distance.  If you end your turn within solid matter, you take three points of exhaustion.  You may also move across liquids and vertical surfaces as though they were flat terrain, but you fall if you end your turn on such a surface.  <br><br>At level 15, when a creature that you can see is the target of an Attack, you may use your Reaction to move up to half of your speed towards the creature and impose advantage or disadvantage on the Attack should you be able to get within 5 feet of them.  Immediately after the Attack is resolved, if you did not use half of your movement speed to reach the target, you can use any remaining movement speed from that pool to position yourself at your discretion.  "
                 },
                 {
                     "name_str" : "Enhanced Movement",
@@ -1920,7 +1920,7 @@
             
             "subclass_tech_name" : "Neutralizer",
             "subclass_tech_img" : "/_SiteResources/Images/Subvertist-Neutralizer.png",
-            "subclass_tech_img_credit" : "---",
+            "subclass_tech_img_credit" : "Spider Web by Eliricon from NounProject.com",
             "subclass_tech_description" : "With the ability to leap and climb in nearly any environment, the Neutralizer can lock down nearly any force on the battlefield.  ",
             "subclass_tech_feats" : [
                 {

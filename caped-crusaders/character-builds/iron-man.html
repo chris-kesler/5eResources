@@ -6,589 +6,354 @@
     <meta http-equiv="X-US-Compatible" content="e-edge">
     <title>KnowOne's Website of Everything</title>
     <link rel="icon" href="/_SiteResources/Images/OwlOfMinerva_ModifiedLogo.png">
-    <link rel="stylesheet" href="/FantasyStyle.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  </head>
+    <link rel="stylesheet" href="/caped-crusaders-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+    <script>
+      $(function importContent() {
+        $(".Import_PageHeader").load("/_SiteResources/Pages/Import_PageHeader.html");
+        $(".Import_PageFooter").load("/_SiteResources/Pages/Import_PageFooter.html");
+      });
+      $(function readCharacter() {
+        var characters = [];
+        $.getJSON('../character-builds.json', function(data) {
+          var path = window.location.pathname;
+          var page = path.split("/").pop();
+          $.each(data.character, function(i, f) {
+            if (f.page_url == page) {
 
+              // Populating basic page data and overview
+              document.getElementById("class-page-title").innerHTML = "Caped Crusaders: Classes > " + f.name_str;
+              document.getElementById("class-image").src = "/_SiteResources/Images/" + f.class_str + ".png";
+              document.getElementById("class-image").alt = f.class_img_credit;
+              document.getElementById("subclass-image").src = "/_SiteResources/Images/" + f.class_str + "-" + f.subclass_str + ".png";
+              document.getElementById("subclass-image").alt = f.class_img_credit;
+              document.getElementById("build-description").innerHTML = f.build_overview;
+
+              // Populating the Build Setup Table with a single row
+              var tblRow = "<td>" + f.race_str + "<br><br>" + f.race_description + "</td><td>" + f.background + "<br><br>" + f.background_description + "</td><td>" + f.strength_initial + "<br><br><b>" + f.strength_resolved + "</b></td><td>" + f.dexterity_initial + "<br><br><b>" + f.dexterity_resolved + "</td><td>" + f.constitution_initial + "<br><br><b>" + f.constitution_resolved + "</td><td>" + f.intelligence_initial + "<br><br><b>" + f.intelligence_resolved + "</td><td>" + f.wisdom_initial + "<br><br><b>" + f.wisdom_resolved + "</td><td>" + f.charisma_initial + "<br><br><b>" + f.charisma_resolved + "</td><td>" + f.starting_equipment + "</td>"
+              $(tblRow).appendTo("#build-setup-table tbody");
+
+              // Initializing the variables we will use throughout the Level Table and Selections Table
+              var proficiency_bonus_int = 2;
+              var class_subclass = f.class_str;
+              if (f.class_type == "Martial, Primary") {
+                subclass_active = 3;
+                hit_die = 12;
+                hit_die_average = 7;
+              } else if (f.class_type == "Martial, Secondary") {
+                subclass_active = 2;
+                hit_die = 10;
+                hit_die_average = 6;
+              } else if (f.class_type == "Caster, Secondary") {
+                subclass_active = 2;
+                hit_die = 8;
+                hit_die_average = 5;
+              } else if (f.class_type == "Caster, Primary") {
+                subclass_active = 2;
+                hit_die = 6;
+                hit_die_average = 4;
+              }
+
+              // Loading Ability Score variables and calculating Ability Score Modifier variables 
+              {
+                // Strength variables
+                var strength_score_int = f.strength_resolved;
+                var strength_score_str = f.strength_resolved;
+                var strength_modifier_int = Math.floor((strength_score_int-10)/2);
+                var strength_save_int = strength_modifier_int;
+                if (strength_modifier_int >= 0) {
+                  var strength_save_str = "+" + strength_modifier_int;
+                } else {
+                  var strength_save_str = strength_modifier_int;
+                } 
+                // Dexterity variables 
+                var dexterity_score_int = f.dexterity_resolved;
+                var dexterity_score_str = f.dexterity_resolved;
+                var dexterity_modifier_int = Math.floor((dexterity_score_int-10)/2);
+                var dexterity_save_int = dexterity_modifier_int;
+                if (dexterity_modifier_int >= 0) {
+                  var dexterity_save_str = "+" + dexterity_modifier_int;
+                } else {
+                  var dexterity_save_str = dexterity_modifier_int;
+                }
+                // Constitution variables
+                var constitution_score_int = f.constitution_resolved;
+                var constitution_score_str = f.constitution_resolved;
+                var constitution_modifier_int = Math.floor((constitution_score_int-10)/2);
+                var constitution_save_int = constitution_modifier_int;
+                if (constitution_modifier_int >= 0) {
+                  var constitution_save_str = "+" + constitution_modifier_int;
+                } else {
+                  var constitution_save_str = constitution_modifier_int;
+                }
+                // Intelligence variables
+                var intelligence_score_int = f.intelligence_resolved;
+                var intelligence_score_str = f.intelligence_resolved;
+                var intelligence_modifier_int = Math.floor((intelligence_score_int-10)/2);
+                var intelligence_save_int = intelligence_modifier_int;
+                if (intelligence_modifier_int >= 0) {
+                  var intelligence_save_str = "+" + intelligence_modifier_int;
+                } else {
+                  var intelligence_save_str = intelligence_modifier_int;
+                }
+                // Wisdom variables
+                var wisdom_score_int = f.wisdom_resolved;
+                var wisdom_score_str = f.wisdom_resolved;
+                var wisdom_modifier_int = Math.floor((wisdom_score_int-10)/2);
+                var wisdom_save_int = wisdom_modifier_int;
+                if (wisdom_modifier_int >= 0) {
+                  var wisdom_save_str = "+" + wisdom_modifier_int;
+                } else {
+                  var wisdom_save_str = wisdom_modifier_int;
+                }
+                // Charisma variables
+                var charisma_score_int = f.charisma_resolved;
+                var charisma_score_str = f.charisma_resolved;
+                var charisma_modifier_int = Math.floor((charisma_score_int-10)/2);
+                var charisma_modifier_int = Math.floor((charisma_score_int-10)/2);
+                var charisma_save_int = charisma_modifier_int;
+                if (charisma_modifier_int >= 0) {
+                  var charisma_save_str = "+" + charisma_modifier_int;
+                } else {
+                  var charisma_save_str = charisma_modifier_int;
+                }
+              }
+              
+              // Looping through the class levels 
+              for (let i = 0; i < 20; i++) {
+
+                // Calculating the Hit Points and Hit Dice for this level 
+                hit_points = (hit_die + (i*hit_die_average) + ((i+1)*constitution_modifier_int));
+
+                // Calculating whether a Subclass has been gained for this level
+                for (let k = 0; k < f.level_guide.length; k++) {
+                  if (class_subclass.includes(":")) {
+                  } else if (subclass_active <= (i+1)){
+                    class_subclass = f.class_str + ": " + f.subclass_str;
+                  }
+                }
+
+                // Looping through each item within the level_guide dictionary
+                for (let k = 0; k < f.level_guide.length; k++) {
+
+                  // Populating data for Level Table 
+                  {
+
+                    // Populating Ability Score Improvement selections
+                    if (f.level_guide[k].feature != undefined && f.level_guide[k].level == (i+1)) {
+                      features = f.level_guide[k].feature;
+                    } else if (f.level_guide[k].feature == undefined && f.level_guide[k].level == (i+1)) {
+                      features = "---";
+                    }
+
+                    // Populating Armor Class updates
+                    if (f.level_guide[k].ac_update != undefined && f.level_guide[k].level == (i+1)) {
+                      armor_class = f.level_guide[k].ac_update;
+                    } else if (f.level_guide[k].ac_update == undefined && f.level_guide[k].level == (i+1)){
+                      armor_class = "---"
+                    }
+
+                    // Populating Strength score and save updates
+                    if (f.level_guide[k].strength_update != undefined && f.level_guide[k].level == (i+2)) {
+                      strength_score_int = f.level_guide[k].strength_update;
+                    } 
+                    if (f.level_guide[k].strength_save != undefined) {
+                      strength_score_str = "<b>" + strength_score_int + "</b>";
+                      strength_save_int = (strength_modifier_int + proficiency_bonus_int);
+                      if (strength_save_int >= 0) {
+                        var strength_save_str = "+" + strength_save_int;
+                      } else {
+                        var strength_save_str = strength_save_int;
+                      }
+                      strength_save_str = "<b>" + strength_save_str + "</b>";
+                    }
+
+                    // Populating Dexterity score and save updates
+                    if (f.level_guide[k].dexterity_update != undefined && f.level_guide[k].level == (i+2)) {
+                      dexterity_score_int = f.level_guide[k].dexterity_update;
+                    }
+                    if (f.level_guide[k].dexterity_save != undefined) {
+                      dexterity_score_str = "<b>" + dexterity_score_int + "</b>";
+                      dexterity_save_int = (dexterity_modifier_int + proficiency_bonus_int);
+                      if (dexterity_save_int >= 0) {
+                        var dexterity_save_str = "+" + dexterity_save_int;
+                      } else {
+                        var dexterity_save_str = dexterity_save_int;
+                      }
+                      dexterity_save_str = "<b>" + dexterity_save_str + "</b>";
+                    }
+                    
+                    // Populating Constitution score and save updates
+                    if (f.level_guide[k].constitution_update != undefined && f.level_guide[k].level == (i+2)) {
+                      constitution_score_int = f.level_guide[k].constitution_update;
+                    }
+                    if (f.level_guide[k].constitution_save != undefined) {
+                      constitution_score_str = "<b>" + constitution_score_int + "</b>";
+                      constitution_save_int = (constitution_modifier_int + proficiency_bonus_int);
+                      if (constitution_save_int >= 0) {
+                        var constitution_save_str = "+" + constitution_save_int;
+                      } else {
+                        var constitution_save_str = constitution_save_int;
+                      }
+                      constitution_save_str = "<b>" + constitution_save_str + "</b>";
+                    }
+                    
+                    // Populating Intelligence score and save updates
+                    if (f.level_guide[k].intelligence_update != undefined && f.level_guide[k].level == (i+2)) {
+                      intelligence_score_int = f.level_guide[k].intelligence_update;
+                    } 
+                    if (f.level_guide[k].intelligence_save != undefined) {
+                      intelligence_score_str = "<b>" + intelligence_score_int + "</b>";
+                      intelligence_save_int = (intelligence_modifier_int + proficiency_bonus_int);
+                      if (intelligence_save_int >= 0) {
+                        var intelligence_save_str = "+" + intelligence_save_int;
+                      } else {
+                        var intelligence_save_str = intelligence_save_int;
+                      }
+                      intelligence_save_str = "<b>" + intelligence_save_str + "</b>";
+                    }
+
+                    // Populating Wisdom score and save updates
+                    if (f.level_guide[k].wisdom_update != undefined && f.level_guide[k].level == (i+2)) {
+                      wisdom_score_int = f.level_guide[k].wisdom_update;
+                    } 
+                    if (f.level_guide[k].wisdom_save != undefined) {
+                      wisdom_score_str = "<b>" + wisdom_score_int + "</b>";
+                      wisdom_save_int = (wisdom_modifier_int + proficiency_bonus_int);
+                      if (wisdom_save_int >= 0) {
+                        var wisdom_save_str = "+" + wisdom_save_int;
+                      } else {
+                        var wisdom_save_str = wisdom_save_int;
+                      }
+                      wisdom_save_str = "<b>" + wisdom_save_str + "</b>";
+                    }
+                    
+                    // Populating Charisma score and save updates
+                    if (f.level_guide[k].charisma_update != undefined && f.level_guide[k].level == (i+2)) {
+                      charisma_score_int = f.level_guide[k].charisma_update;
+                    } 
+                    if (f.level_guide[k].charisma_save != undefined) {
+                      charisma_score_str = "<b>" + charisma_score_int + "</b>";
+                      charisma_save_int = (charisma_modifier_int + proficiency_bonus_int);
+                      if (charisma_save_int >= 0) {
+                        var charisma_save_str = "+" + charisma_save_int;
+                      } else {
+                        var charisma_save_str = charisma_save_int;
+                      }
+                      charisma_save_str = "<b>" + charisma_save_str + "</b>";
+                    }
+                  }
+                  
+                  // Populating data for Selections Table
+                  {
+
+                    // Populating Sustainables with data or default
+                    if (f.level_guide[k].sustainables != undefined && f.level_guide[k].level == (i+1)) {
+                      sustainable_selections = f.level_guide[k].sustainables;
+                    } else if (f.level_guide[k].sustainables == undefined && f.level_guide[k].level == (i+1)) {
+                      sustainable_selections = "---";
+                    }
+
+                    // Populating Cantrips with data or default
+                    if (f.level_guide[k].cantrips != undefined && f.level_guide[k].level == (i+1)) {
+                      cantrip_selections = f.level_guide[k].cantrips;
+                    } else if (f.level_guide[k].cantrips == undefined && f.level_guide[k].level == (i+1)) {
+                      cantrip_selections = "---";
+                    }
+
+                    // Populating Consumables with data or default
+                    if (f.level_guide[k].consumables != undefined && f.level_guide[k].level == (i+1)) {
+                      consumable_selections = f.level_guide[k].consumables;
+                    } else if (f.level_guide[k].consumables == undefined && f.level_guide[k].level == (i+1)) {
+                      consumable_selections = "---";
+                    }
+
+                    // Populating Walkthrough by Level text and Selections tables
+                    if (f.level_guide[k].walkthrough != undefined && f.level_guide[k].level == (i+1)) {
+                      document.getElementById("build-walkthrough-by-level").innerHTML += "<hr><table id='selections-table-" + (i+1) + "' class='selections-table'><thead><th style='width: 15vw' colspan='2'>" + class_subclass + ", lvl " + (i+1) + "</th></thead><tbody><tr><td>Sustainables</td><td>" + sustainable_selections + "</td></tr><tr><td>Cantrips</td><td>" + cantrip_selections + "</td></tr><tr><td>Consumables</td><td>" + consumable_selections + "</td></tr></tbody></table>" + "<h3>Level: " + (i+1) + "</h3>" + f.level_guide[k].walkthrough;
+                    }
+                  }
+                }
+                
+                // Populating the Level Table with a new row for each level
+                var tblRow = "<tr><td>" + (i+1) + "</td><td>" + class_subclass + "</td><td>" + hit_points + " / " + (i+1) + "d" + hit_die + "</td><td>" + features + "</td><td>" + strength_score_str + " / " + strength_save_str + "</td><td>" + dexterity_score_str + " / " + dexterity_save_str + "</td><td>" + constitution_score_str + " / " + constitution_save_str + "</td><td>" + intelligence_score_str + " / " + intelligence_save_str + "</td><td>" + wisdom_score_str + " / " + wisdom_save_str + "</td><td>" + charisma_score_str + " / " + charisma_save_str + "</td><td>" + armor_class + "</td></tr>";
+                $(tblRow).appendTo("#build-level-table tbody");
+                
+                // Increasing the Proficiency Bonus variable upon reaching certain level milestones
+                if ((i+1) == 4 || (i+1) == 8 || (i+1) == 12 || (i+1) == 16) {
+                  proficiency_bonus_int++;
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
 
   <body>
     <div class="PageContainer, PlanesMapBackground"> 
-      <div class="PageHeader">
-        <div class="Import_PageHeader"></div>
 
-          <h1>Character Builds:  Artificer + War Magic</h1>
-          <hr>
-      </div>
-        
+      <div class="PageHeader"><div class="Import_PageHeader"></div><h1 class="header" id="class-page-title"></h1><hr></div>
 
       <div class="PageContent">
         <div class="AnchorCenter">
-          
-
-
           <div class="AnchorRight">
 
             <section class="PageContentRight">
-                <button class="WikiBackButton" onclick="location.href='../WizardBuilds.html'">Out to Wizard Builds</button>
-                <h2>The Meta</h2>
-                <hr>
+              <button class="WikiBackButton" onclick="location.href='../character-builds.html'">Out to Character Builds</button>
+              <h1>Overview</h1>
+              <hr>
+              <img id="class-image" class="class-image-medium" alt="Class Image">
+              <p id="build-description"></p>
+              
+              <hr>
+              <img id="subclass-image" class="class-image-medium" alt="Class Image">
+              <h2>Build Setup</h2>
+              <p id="build-setup-overview">We'll take the following setup prior to our class levels.  </p>
+              <table class="caped-crusader-table" id="build-setup-table">
+                <thead>
+                  <th>Race</th>
+                  <th>Background</th>
+                  <th>STR</th>
+                  <th>DEX</th>
+                  <th>CON</th>
+                  <th>INT</th>
+                  <th>WIS</th>
+                  <th>CHA</th>
+                  <th>Starting Equipment</th>
+                </thead>
+                <tbody></tbody>
+              </table>
+                      
+              <hr>
+              <h2>Level Table</h2>
+              <p id="build-level-overview">We'll take features based on the following table to initiate and progress through our build.  </p>
 
-                <table class="WikiButtonTable">
-                  <tr><td>
-                    <button class="WikiPageButton" onclick="location.href='/Subsite_GameJournals/Category_D&D/Type_RubenJarricor/RubenJarricor.html'">Ruben Jarricor</button>
-                  </td></tr>
-                </table>
-                
-                <p>
-                  Game Journal entries for characters I have used in actual play following this build strategy can be found to the right.  
-                </p>
-                <p>
-                  I once read a guide on how to play a "god" Wizard in D&D that was written by Treantmonk, and I instantly fell in love with the concept.
-                  I had played Paladins and Rogues prior, but every attempt to play a spellcaster left me feeling like a glass cannon that should pack way more punch.
-                  After reading the god wizard guide, I took a totally different approach.
-                  I started playing Wizards who focused on battlefield control and I loved every second of it.
-                  However, the Wizard does have some weaknesses such as a pitiful Armor Class and less than ideal Saving Throws, so my goal with this build is to maximize my godly power while wrapping up loose defensive ends.
-                </p>
-              </section>
+              <table id="build-level-table" class="caped-crusader-table">
+                <thead>
+                  <th style="width: 5vw">Level</th>
+                  <th style="width: 10vw">Class/Subclass</th>
+                  <th style="width: 10vw">Hit Points/Dice</th>
+                  <th style="width: 30vw">Features</th>
+                  <th style="width: 5vw">Str/Save</th>
+                  <th style="width: 5vw">Dex/Save</th>
+                  <th style="width: 5vw">Con/Save</th>
+                  <th style="width: 5vw">Int/Save</th>
+                  <th style="width: 5vw">Wis/Save</th>
+                  <th style="width: 5vw">Cha/Save</th>
+                  <th style="width: 5vw">AC</th>
+                </thead>
+                <tbody></tbody>
+              </table>
 
-              <section class="PageContentRight">                
-                <h2>Build Setup</h2>
-                <hr>
-                <table class="BuildTable">
-                  <tr>
-                    <th>Race</th>
-                    <th>Background</th>
-                    <th>STR</th>
-                    <th>DEX</th>
-                    <th>CON</th>
-                    <th>INT</th>
-                    <th>WIS</th>
-                    <th>CHA</th>
-                    <th>Starting Equipment</th>
-                  </tr>
+              <hr>
+              <h2>Build Walkthrough</h2>
+              <p id="build-walkthrough-overview">We'll take features based on the following table to initiate and progress through our build.  </p>
 
-                  <tr>
-                    <td><p>Custom Lineage</p>
-                      <ul>
-                        <li>Small</li>
-                        <li>+2 Int</li>
-                        <li>Fey Touched Int: Bless</li>
-                        <li>Darkvision</li>
-                        <li>Undercommon</li>
-                      </ul>
-                    </td>
-                    <td>Orzhov Representative<p>
-                    Great background feature and excellent spell list.
-                    We can influence members of the local government to perform small tasks, granting us a modicum of legal authority.</p></td>
-                    <td>PB: 8</td>
-                    <td>PB: 14</td>
-                    <td>PB: 14</td>
-                    <td>PB: 15</td>
-                    <td>PB: 12</td>
-                    <td>PB: 8</td>
-                    <td><p>Gold is preferred, otherwise:</p>
-                      <ul>
-                        <li>any two simple weapons of your choice (2 Light Crossbows to sell later)</li>
-                        <li>a light crossbow and 20 bolts</li>
-                        <li>your choice of studded leather armor or scale mail (Scale Mail)</li>
-                        <li>thieves’ tools and a dungeoneer’s pack</li>
-                      </ul>
-                        Note the lack of shield :(
-                    </td>
-                  </tr>
-                </table>
-              </section>
+              <div id="build-walkthrough-by-level"></div>
 
-              <section class="PageContentRight">
-                <h2>Level Breakdown</h2>
-                <hr>
-                <table class="BuildTable">
-                  <tr>
-                    <th>Levels</th>
-                    <th>Class/Subclass</th>
-                    <th>ASI</th>
-                    <th>HP/HD</th>
-                    <th>Prof Bonus</th>
-                    <th>Armor Class</th>
-                    <th>STR</th>
-                    <th>DEX</th>
-                    <th>CON</th>
-                    <th>INT</th>
-                    <th>WIS</th>
-                    <th>CHA</th>
-                  </tr>
-
-                  <tr>
-                    <td>Level 1</td>
-                    <td>Artificer 1</td>
-                    <td>---</th>
-                    <td>10/1d8</td>
-                    <td>+2</td>
-                    <td>17 = Chain Shirt (13) + Dex (2) + Shield (2)</td>
-                    <td>8</td>
-                    <td>14</td>
-                    <td><b>14</b></td>
-                    <td><b>18</b></td>
-                    <td>12</td>
-                    <td>8</td>
-                  </tr>
-                  <tr>
-                    <td>Level 2</td>
-                    <td>Wizard 1</td>
-                    <td>---</th>
-                    <td>16/1d8 + 1d6</td>
-                    <td>+2</td>
-                    <td>17 = Chain Shirt (13) + Dex (2) + Shield (2)</td>
-                    <td>8</td>
-                    <td>14</td>
-                    <td><b>14</b></td>
-                    <td><b>18</b></td>
-                    <td>12</td>
-                    <td>8</td>
-                  </tr>
-                  <tr>
-                    <td>Level 3</td>
-                    <td>Wizard 2: War Magic</td>
-                    <td>---</th>
-                    <td>22/1d8 + 2d6</td>
-                    <td>+2</td>
-                    <td>17 = Chain Shirt (13) + Dex (2) + Shield (2)</td>
-                    <td>8</td>
-                    <td>14</td>
-                    <td><b>14</b></td>
-                    <td><b>18</b></td>
-                    <td>12</td>
-                    <td>8</td>
-                  </tr>
-                  <tr>
-                    <td>Level 4</td>
-                    <td>Wizard 3: War Magic</td>
-                    <td>---</th>
-                    <td>28/1d8 + 3d6</td>
-                    <td>+2</td>
-                    <td>17 = Chain Shirt (13) + Dex (2) + Shield (2)</td>
-                    <td>8</td>
-                    <td>14</td>
-                    <td><b>14</b></td>
-                    <td><b>18</b></td>
-                    <td>12</td>
-                    <td>8</td>
-                  </tr>
-                  <tr>
-                    <td>Level 5</td>
-                    <td>Wizard 4: War Magic</td>
-                    <td>Telekinetic INT</th>
-                    <td>34/1d8 + 4d6</td>
-                    <td>+3</td>
-                    <td>17 = Chain Shirt (13) + Dex (2) + Shield (2)</td>
-                    <td>8</td>
-                    <td>14</td>
-                    <td><b>14</b></td>
-                    <td><b>19</b></td>
-                    <td>12</td>
-                    <td>8</td>
-                  </tr>
-                  <tr>
-                    <td>Level 6</td>
-                    <td>Wizard 5: War Magic</td>
-                    <td>---</th>
-                    <td>40/1d8 + 5d6</td>
-                    <td>+3</td>
-                    <td>17 = Chain Shirt (13) + Dex (2) + Shield (2)</td>
-                    <td>8</td>
-                    <td>14</td>
-                    <td><b>14</b></td>
-                    <td><b>19</b></td>
-                    <td>12</td>
-                    <td>8</td>
-                  </tr>
-                  <tr>
-                    <td>Level 7</td>
-                    <td>Wizard 6: War Magic</td>
-                    <td>---</th>
-                    <td>46/1d8 + 6d6</td>
-                    <td>+3</td>
-                    <td>17 = Chain Shirt (13) + Dex (2) + Shield (2)</td>
-                    <td>8</td>
-                    <td>14</td>
-                    <td><b>14</b></td>
-                    <td><b>19</b></td>
-                    <td>12</td>
-                    <td>8</td>
-                  </tr>
-                  <tr>
-                    <td>Level 8</td>
-                    <td>Wizard 7: War Magic</td>
-                    <td>---</th>
-                    <td>52/1d8 + 7d6</td>
-                    <td>+3</td>
-                    <td>17 = Chain Shirt (13) + Dex (2) + Shield (2)</td>
-                    <td>8</td>
-                    <td>14</td>
-                    <td><b>14</b></td>
-                    <td><b>19</b></td>
-                    <td>12</td>
-                    <td>8</td>
-                  </tr>
-                  <tr>
-                    <td>Level 9</td>
-                    <td>Wizard 8: War Magic</td>
-                    <td>Observant INT</th>
-                    <td>58/1d8 + 8d6</td>
-                    <td>+4</td>
-                    <td>17 = Chain Shirt (13) + Dex (2) + Shield (2)</td>
-                    <td>8</td>
-                    <td>14</td>
-                    <td><b>14</b></td>
-                    <td><b>20</b></td>
-                    <td>12</td>
-                    <td>8</td>
-                  </tr>
-                  <tr>
-                    <td>Level 10</td>
-                    <td>Wizard 9: War Magic</td>
-                    <td>---</th>
-                    <td>64/1d8 + 9d6</td>
-                    <td>+4</td>
-                    <td>17 = Chain Shirt (13) + Dex (2) + Shield (2)</td>
-                    <td>8</td>
-                    <td>14</td>
-                    <td><b>14</b></td>
-                    <td><b>20</b></td>
-                    <td>12</td>
-                    <td>8</td>
-                  </tr>
-                  <tr>
-                    <td>Level 11</td>
-                    <td>Wizard 10: War Magic</td>
-                    <td>---</th>
-                    <td>70/1d8 + 10d6</td>
-                    <td>+4</td>
-                    <td>19 = Half Plate (15) + Dex (2) + Shield (2)</td>
-                    <td>8</td>
-                    <td>14</td>
-                    <td><b>14</b></td>
-                    <td><b>20</b></td>
-                    <td>12</td>
-                    <td>8</td>
-                  </tr>
-                  <tr>
-                    <td>Level 12</td>
-                    <td>Wizard 11: War Magic</td>
-                    <td>---</th>
-                    <td>76/1d8 + 11d6</td>
-                    <td>+4</td>
-                    <td>19 = Half Plate (15) + Dex (2) + Shield (2)</td>
-                    <td>8</td>
-                    <td>14</td>
-                    <td><b>14</b></td>
-                    <td><b>20</b></td>
-                    <td>12</td>
-                    <td>8</td>
-                  </tr>
-                  <tr>
-                    <td>Level 13</td>
-                    <td>Wizard 12: War Magic</td>
-                    <td>Resilient WIS</th>
-                    <td>82/1d8 + 12d6</td>
-                    <td>+5</td>
-                    <td>19 = Half Plate (15) + Dex (2) + Shield (2)</td>
-                    <td>8</td>
-                    <td>14</td>
-                    <td><b>14</b></td>
-                    <td><b>20</b></td>
-                    <td><b>13</b></td>
-                    <td>8</td>
-                  </tr>
-                  <tr>
-                    <td>Level 14</td>
-                    <td>Wizard 13: War Magic</td>
-                    <td>---</th>
-                    <td>88/1d8 + 13d6</td>
-                    <td>+5</td>
-                    <td>19 = Half Plate (15) + Dex (2) + Shield (2)</td>
-                    <td>8</td>
-                    <td>14</td>
-                    <td><b>14</b></td>
-                    <td><b>20</b></td>
-                    <td><b>13</b></td>
-                    <td>8</td>
-                  </tr>
-                  <tr>
-                    <td>Level 15</td>
-                    <td>Wizard 14: War Magic</td>
-                    <td>---</th>
-                    <td>94/1d8 + 14d6</td>
-                    <td>+5</td>
-                    <td>19 = Half Plate (15) + Dex (2) + Shield (2)</td>
-                    <td>8</td>
-                    <td>14</td>
-                    <td><b>14</b></td>
-                    <td><b>20</b></td>
-                    <td><b>13</b></td>
-                    <td>8</td>
-                  </tr>
-                  <tr>
-                    <td>Level 16</td>
-                    <td>Wizard 15: War Magic</td>
-                    <td>---</th>
-                    <td>100/1d8 + 15d6</td>
-                    <td>+5</td>
-                    <td>19 = Half Plate (15) + Dex (2) + Shield (2)</td>
-                    <td>8</td>
-                    <td>14</td>
-                    <td><b>14</b></td>
-                    <td><b>20</b></td>
-                    <td><b>13</b></td>
-                    <td>8</td>
-                  </tr>
-                  <tr>
-                    <td>Level 17</td>
-                    <td>Wizard 16: War Magic</td>
-                    <td>Skill Expert WIS: Arcana</th>
-                    <td>106/1d8 + 16d6</td>
-                    <td>+6</td>
-                    <td>19 = Half Plate (15) + Dex (2) + Shield (2)</td>
-                    <td>8</td>
-                    <td>14</td>
-                    <td><b>14</b></td>
-                    <td><b>20</b></td>
-                    <td><b>14</b></td>
-                    <td>8</td>
-                  </tr>
-                  <tr>
-                    <td>Level 18</td>
-                    <td>Wizard 17: War Magic</td>
-                    <td>---</th>
-                    <td>112/1d8 + 17d6</td>
-                    <td>+6</td>
-                    <td>19 = Half Plate (15) + Dex (2) + Shield (2)</td>
-                    <td>8</td>
-                    <td>14</td>
-                    <td><b>14</b></td>
-                    <td><b>20</b></td>
-                    <td><b>14</b></td>
-                    <td>8</td>
-                  </tr>
-                  <tr>
-                    <td>Level 19</td>
-                    <td>Wizard 18: War Magic</td>
-                    <td>---</th>
-                    <td>118/1d8 + 18d6</td>
-                    <td>+6</td>
-                    <td>19 = Half Plate (15) + Dex (2) + Shield (2)</td>
-                    <td>8</td>
-                    <td>14</td>
-                    <td><b>14</b></td>
-                    <td><b>20</b></td>
-                    <td><b>14</b></td>
-                    <td>8</td>
-                  </tr>
-                  <tr>
-                    <td>Level 20</td>
-                    <td>Up to you to decide</td>
-                    <td>---</th>
-                    <td>124/1d8 + 18d6 + ?</td>
-                    <td>+6</td>
-                    <td>19 = Half Plate (15) + Dex (2) + Shield (2)</td>
-                    <td>8</td>
-                    <td>14</td>
-                    <td><b>14</b></td>
-                    <td><b>20</b></td>
-                    <td><b>14</b></td>
-                    <td>8</td>
-                  </tr>
-                </table>
-                <br>
-              </section>
-
-              <section class="PageContentRight">
-                <h2>Walkthrough by Tier</h2>
-                <hr>
-
-                <p>
-                  The overall goal of this build is to serve as a force multiplier.  
-                  I want to make my allies more powerful and my enemies less so.  
-                  With that in mind, I have laid out the spells and strategies that I think would best serve each tier of gameplay.  
-                </p>
-
-                <h3>Tier 1</h3>
-                <hr>
-                <table class="selections-table">
-
-                  <tr> 
-                    <th colspan="2">Spell Table</th>
-                  </tr>
-                  <tr> 
-                    <th colspan="2">Artificer 1</th>
-                  </tr>
-                  <tr>
-                    <td>Cantrips</td>
-                    <td>+Guidance, +Thorn Whip<hr>
-                      Artificer:  <b>Guidance, Thorn Whip</b></td>
-                  </tr>
-                  <tr>
-                    <td>1st lvl</td>
-                    <td>+Cure Wounds, +Faerie Fire, +Feather Fall, +Sanctuary
-                      <hr>
-                    Artificer:  <b>Cure Wounds, Faerie Fire, Feather Fall, Sanctuary</b>
-                    </td>
-                  </tr>
-
-                  <tr> 
-                    <th colspan="2">Artificer 1 / Wizard 1</th>
-                  </tr>
-                  <tr>
-                    <td>Cantrips</td>
-                    <td>+Chill Touch, +Mind Sliver, +Minor Illusion
-                      <hr>
-                      Artificer:  <b>Guidance, Thorn Whip</b>
-                      <br>
-                      Wizard:  <b>Chill Touch, Mind Sliver, Minor Illusion</b>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>1st lvl Spells</td>
-                    <td>+Command, +Detect Magic, +Expeditious Retreat, +Find Familiar, +Fog Cloud, +Grease
-                      <hr>
-                      Artificer:  <b>Cure Wounds, Faerie Fire, Feather Fall, Sanctuary</b>
-                      <br>
-                      Wizard:  <b>Command, Detect Magic, Expeditious Retreat, </b>Find Familiar, <b>Fog Cloud, Grease</b>
-                    </td>
-                  </tr>
-
-                  <tr> 
-                    <th colspan="2">Artificer 1 / Wizard 2</th>
-                  </tr>
-                  <tr>
-                    <td>Cantrips</td>
-                    <td>
-                      Artificer:  <b>Guidance, Thorn Whip</b><br>
-                      Wizard:  <b>Chill Touch, Mind Sliver, Minor Illusion</b>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>1st lvl Spells</td>
-                    <td>+Absorb Elements, +Shield
-                      <hr>
-                      Artificer:  <b>Cure Wounds, Faerie Fire, Feather Fall, Sanctuary</b><br>
-                      Wizard:  <b>Absorb Elements, Command, Detect Magic, Expeditious Retreat, </b>Find Familiar, <b>Fog Cloud, Grease, Shield</b>
-                    </td>
-                  </tr>
-
-                  <tr> 
-                    <th colspan="2">Artificer 1 / Wizard 3</th>
-                  </tr>
-                  <tr>
-                    <td>Cantrips</td>
-                    <td>
-                      Artificer:  <b>Guidance, Thorn Whip</b><br>
-                      Wizard:  <b>Chill Touch, Mind Sliver, Minor Illusion</b>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>1st lvl Spells</td>
-                    <td>+?
-                      <hr>
-                      Artificer:  <b>Cure Wounds, Faerie Fire, Feather Fall, Sanctuary</b><br>
-                      Wizard:  <b>Absorb Elements, Command, Detect Magic, Expeditious Retreat, </b>Find Familiar, <b>Fog Cloud, Grease, Shield</b>
-                    </td>
-                  </tr>
-
-                </table>
-
-                <p>
-                  Low levels are rough and unforgiving.  
-                  The main objective here is to keep at least one enemy combatant out of the fight until the rest of the party is ready to gang up on them.  
-                </p>
-
-                <h4>Level 1</h4>
-                <p>
-                  We'll be taking the Guidance and Thorn Whip cantrips from Artificer, as well as Faerie Fire, Cure Wounds, Sanctuary, and Feather Fall.  
-                  Thorn Whip can be used to force enemies to be subjected to my AoEs more often than they might be otherwise.  
-                  Guidance is not a combat cantrip per se, but it goes very very nicely with Gift of Alacrity for an Initiative boost.  
-                  Our Initiative sits at 1d20 + Dex + 1d8 + 1d4 most of the time.
-                  We should always be going first, but what do we do with our leading turn in combat?  
-                  <br><br>
-                  To start, we have Faerie Fire right from level one.  
-                  If the opportunity presents itself, then laying down Faerie Fire on a large group of enemies should be our first turn.  
-                  If not, then we can use Thorn Whip to pull enemies into flanking positions or out of positions that flank allies.  
-                  There really isn't much you can do at level 1 other than this.  
-                </p>
-
-                <h4>Level 2</h4>
-                <p>
-                  At level 2, we get a lot more spells.  
-                  This is why we love Wizards; knowing tons of spells.  
-                  We'll be taking Chill Touch, Mind Sliver, and Minor Illusion from Wizard.  
-                  Three of our five cantrips do damage, but the reason I chose them is for the debuffs they inflict.  
-                  <br><br>
-                  Chill Touch blocks hit point regen, which makes it my favorite combat cantrip in 5e.  
-                  Mind Sliver grants a debuff to the next saving throw, which is rare, and on a cantrip this is awesome for setting up a ton of things.  
-                  Minor Illusion has tons of out of combat utility, and can be used in combat to create obscurement for firing spells from or shooting arrows out of.  
-                  This spell wraps up the cantrip selection nicely as a versatile defensive option.  
-                  <br><br>
-                  We also have a couple good AoEs and a great single target debuff.  
-                  Fog Cloud is great for blinding ranged enemies until we can close the distance for our melee members to do their dirty work.  
-                  Grease is excellent for choke points, and pairs nicely with Thorn Whip.  
-                  Mind Sliver should always preceed Command.  
-                  <br><br>
-                  If the party is facing a lone boss, Mind Sliver followed by Command Grovel on the boss can make a world of difference.  
-                  If the boss has minions, it might be best to lead with Mind Sliver + Faerie Fire and spend the rest of the time Dodging or using Thorn Whip.  
-                  Once the boss has been hit with Faerie Fire, you can even cast Sanctuary and Dodge until the fight ends to make absolutely certain your Concentration isn't broken.  
-                  You can also spend a round or two Greasing up the little guys that escaped Faerie Fire and coordinating with your Familiar for pretty much eternal advantage for your allies.  
-                </p>
-
-                <h4>Level 3</h4>
-                <p>
-                  At level 3, we add two more spells and a Wizard subclass.  
-                  War Magic grants us Tactical Wit, so now our already great Initiative gets our Int mod on top.  
-                  The Shield spell boosts our already great defenses, and Absorb Elements is an especially good insurance against dragons and mages.  
-                  What is interesting is that we now have a 2nd level spell slot, but we are unable to prepare any 2nd level spells.  
-                  <br><br>
-                  This is going to be the case at every odd level due to the multiclass.  
-                  Usually I ignore upcasting, so being somewhat forced into it will actually expand my abilities as a player.  
-                  <br><br>
-                  Right now, there are only two things we can use that slot for: Cure Wounds and Command.  
-                  Now we can Command two targets with one casting, so the boss and his closest lackey can suffer a wasted prone turn.  
-                  Mind Sliver setup still applies to only one, so keep putting that on the boss.
-                  We also get Arcane Deflection, which is my second favorite Wizard feature in 5e.  
-                  I love to make my saving throws.  
-                  <br><br>
-                  At this point we are still doing mostly the same thing as we were before, but now we are less likely to die and can Command two enemies at once.  
-                </p>
-
-                <h4>Level 4</h4>
-                <p>
-                  Level 4 brings many new options as we get our late second level spell preps.  
-                  TO BE CONTINUED
-                </p>
-
-                <h3>Tier 2</h3>
-                <hr>
-                <p>
-                  Tier two explanation
-                </p>
-                <h3>Tier 3</h3>
-                <hr>
-                <p>
-                  Tier three explanation
-                </p>
-                <h3>Tier 4</h3>
-                <hr>
-                <p>
-                  Tier four explanation
-                </p>
-                <h3>Tier 5</h3>
-                <hr>
-                <p>
-                  Tier five explanation
-                </p>
-                <h3>Tier 6</h3>
-                <hr>
-                <p>
-                  Tier six explanation
-                </p>
-              </section>
+            </section>
 
           </div>
         </div>
@@ -597,16 +362,7 @@
       <footer class="Import_PageFooter"></footer>
 
     </div>
-
   </body>
+  
 </html>
 
-<script type="text/javascript">
-  $(function () {
-
-    $(".Import_PageHeader").load("/_SiteResources/Pages/Import_PageHeader.html");
-    $(".Import_ContentLeft").load("/_SiteResources/Pages/Import_ContentLeft.html");
-    $(".Import_PageFooter").load("/_SiteResources/Pages/Import_PageFooter.html");
-
-});
-</script>
