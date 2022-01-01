@@ -1,6 +1,52 @@
 {
     "enhancement": [
         {
+            "name_str" : "Reflex Dodge",
+            "page_url" : "reflex-dodge.html",
+
+            "level_int" : 1,
+            "level_str" : "1st",
+            
+            "school_str" : "Reflexes",
+            "school_img" : "/_SiteResources/Images/Reflexes.png",
+            "school_img_credit" : "Warning by Alfa Design from NounProject.com",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "You can sense incoming danger, allowing you to react before you would otherwise be aware of it.  ",
+            "mechanics_str" : "When you are targeted by an Attack, you may use a Reaction to increase your AC by 3 against that specific attack.  After the Attack is resolved, you may move up to 15 feet without provoking Opportunity Attacks.  ",
+
+            "class_list" : [
+                {
+                    "class" : "<a href='/caped-crusaders/classes/nova.html'>Nova</a>"
+                },
+                {
+                    "class" : "<a href='/caped-crusaders/classes/subvertist.html'>Subvertist</a>"
+                },
+                {
+                    "class" : "<a href='/caped-crusaders/classes/metamorph.html'>Metamorph</a>"
+                },
+                {
+                    "class" : "<a href='/caped-crusaders/classes/dynamo.html'>Dynamo</a>"
+                }
+            ],
+                    
+            
+            "subclass_list" : [
+                {
+                    "class" : "<a href='/caped-crusaders/classes/soldier.html#subclass-power-name'>Patriot</a>"
+                },
+                {
+                    "class" : "<a href='/caped-crusaders/classes/annointed.html#subclass-power-name'>Adaptist</a>"
+                }
+            ],
+
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
             "name_str" : "Unarmored Defense",
             "page_url" : "unarmored-defense.html",
 

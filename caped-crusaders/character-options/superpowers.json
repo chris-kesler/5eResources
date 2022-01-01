@@ -1,6 +1,144 @@
 {
     "power": [
         {
+            "name_str" : "Stunning Shot",
+            "page_url" : "stunning-shot.html",
+
+            "level_int" : 1,
+            "level_str" : "1st",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 0,
+            "range_area_str" : "30 feet",
+            
+            "components_verbal_bool" : false,
+            "components_somatic_bool" : true,
+            "components_material_bool" : false,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "S",
+            "components_description_str" : "",
+            
+            "duration_int" : 0,
+            "duration_str" : "Ten Minutes",
+            
+            "type_str" : "Disabling",
+            "type_img" : "/_SiteResources/Images/Disabling.png",
+            "type_img_credit" : "Disable by Mas Dhimas from NounProject.com",
+            
+            "attack_save_int" : 0,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "---",
+            
+            "flavor_str" : "---",
+            "mechanics_str" : "Make a ranged Power Attack against a target within range.  On a hit, the target's speed is halved, can only make one Attack per Action, and can take no Reactions.  The target can use an Action to contest your Powercasting DC with a Strength Check, ending the effect early on a success.  ",
+            "overchargeable_bool" : true,
+            "overcharge_str" : "For every two levels of Overcharge, increase the number of targets by one.  ",
+
+            "class_str" : "Subvertist",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Distracting Blast",
+            "page_url" : "distracting-blast.html",
+
+            "level_int" : 0,
+            "level_str" : "Cantrip",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 0,
+            "range_area_str" : "60 feet",
+            
+            "components_verbal_bool" : false,
+            "components_somatic_bool" : true,
+            "components_material_bool" : false,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "S",
+            "components_description_str" : "",
+            
+            "duration_int" : 0,
+            "duration_str" : "Instantaneous",
+            
+            "type_str" : "Disabling",
+            "type_img" : "/_SiteResources/Images/Disabling.png",
+            "type_img_credit" : "Disable by Mas Dhimas from NounProject.com",
+            
+            "attack_save_int" : 0,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "---",
+            
+            "flavor_str" : "---",
+            "mechanics_str" : "Make a ranged Power Attack against a number of targets within range equal to your Proficiency Bonus.  On a hit, you deal 1d4 damage, and no attack against the target has disadvantage until the end of your next turn.  ",
+            "overchargeable_bool" : false,
+            "overcharge_str" : "---",
+
+            "class_str" : "Subvertist",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Slowing Arc",
+            "page_url" : "slowing-arc.html",
+
+            "level_int" : 1,
+            "level_str" : "1st",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 0,
+            "range_area_str" : "15 foot cone",
+            
+            "components_verbal_bool" : false,
+            "components_somatic_bool" : true,
+            "components_material_bool" : false,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "S",
+            "components_description_str" : "",
+            
+            "duration_int" : 0,
+            "duration_str" : "Instantaneous",
+            
+            "type_str" : "Disabling",
+            "type_img" : "/_SiteResources/Images/Disabling.png",
+            "type_img_credit" : "Disable by Mas Dhimas from NounProject.com",
+            
+            "attack_save_int" : 0,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "---",
+            
+            "flavor_str" : "---",
+            "mechanics_str" : "All creatures within the area of effect, which is a cone originating from the square you occupy, must make a Dexterity Saving Throw, having their speed reduced by 10 feet on a success, while having their speed halved and imposing an inability to benefit from advantage until the end of your next turn on a failure.  ",
+            "overchargeable_bool" : true,
+            "overcharge_str" : "For every level of Overcharge, increase the range of the power by 10.  ",
+
+            "class_str" : "Subvertist",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
             "name_str" : "Eyeblast",
             "page_url" : "eyeblast.html",
 
