@@ -1,6 +1,280 @@
 {
     "character": [
         {
+            "name_str" : "Spider-Man (Amazing:  Original Peter Parker)",
+            "page_url" : "spider-man-amazing.html",
+            "class_str" : "Subvertist",
+            "class_type" : "Caster, Secondary",
+            "class_source" : "Powers",
+            "subclass_str" : "???",
+            "subclass_source" : "Powers",
+            "character_source" : "MARVEL (Spider-Verse Hero)",
+
+            
+            "build_overview" : "The Amazing Spider-Man is the original Peter Parker from the first run of Spider-Man comics, and what I consider to be the default Spider-Man that is seen most often on Marvel teams.  This is a Spider-Man who relies on webbing to do the heavy lifting and tailor the battlefield for his allies, while also making sure to keep a safe distance from nasty threats.  <br><br>There are lots of ways you could build a Spider-Man character in Caped Crusaders, but this build will try to focus on the conventional role Spider-Man usually takes when on a team.  Peter is a real powerhouse, but constantly holds back in physical combat with few exceptions.  When working with other heroes, Spidey often relies on his webbing and agility to alter the terms of engagement rather than fight a boss villain one on one like we see in his solo adventures.  <br><br>This Spider-Man build does not lean into the genius side of Peter as much since it is relevant to game mechanics in almost no way.  Peter may be a genius, but it's not exactly something that comes up often in combat.  Most of his abilities are based on his powers and senses.  I know I know, he comes up with clever gizmos to defeat specific enemies, but he doesn't rely on raw Intelligence (or even develop it much; his academic performance is often in shambles for the majority of his life) for most of his abilities.  We can be a more effective Spider-Man if we leave the genius side of Peter represented with appropriate skill and tool proficiencies, which do the job just fine in my estimation regardless.  <br><Br>In conclusion, we will be sticking to Wisdom for this build and opting for Int based skills.  We will be taking lots of control casting options to represent the various applications for webbing, and we will do our best to stay out of the fray.  This Spider-Man is not at the center of the stage, and that's exactly how we want it.  ",
+
+            "race_str" : "Terran",
+            "race_description" : "Can't go wrong with a good old human.  Spidey is genetically altered, but we'll represent that through Powercasting.  For now we'll just take Perception and Science.  We'll boost Dex by 1 and Wis by 2; Int seems extremely appropriate for Spidey, but only from a thematic perspective.  As mentioned above, this version of Spider-Man never really uses his Intelligence score in combat, so we'll be leaving the Amazing Spider-Man as a regular joe in regards to raw IQ.  ",
+            "background" : "Student",
+            "background_description" : "Thematically appropriate; we'll also take advantage of the Academic feat to offset our less than thematic Intelligence score.  ",
+            "strength_initial" : 10,
+            "dexterity_initial" : 15,
+            "constitution_initial" : 13,
+            "intelligence_initial" : 10,
+            "wisdom_initial" : 15,
+            "charisma_initial" : 8,
+            "strength_resolved" : 10,
+            "dexterity_resolved" : 16,
+            "constitution_resolved" : 13,
+            "intelligence_resolved" : 10,
+            "wisdom_resolved" : 17,
+            "charisma_resolved" : 8,
+            "starting_equipment" : "Tunic, Fitted Cloth",
+            "level_guide" : [
+                {
+                    "level" : 1,
+                    "walkthrough" : "At level one we will be focusing on slinging debuff cantrips, swooping in to Shove, and kiting back to safety.  We have to be careful when swooping in though, since our movement hasn't been buffed all that much yet; we have to rely on our tankier teammates to draw fire away from us.  If that isn't something that will work out more often than not, we'll just stick to casting from a distance.  <br><br>We'll grab Distracting Blast to represent a little web attack that can help make our enemies easier to defeat.  We'll also take Agility to help us escape sticky situations while avoiding Opportunity Attacks.  <br><br>We also get a leveled Superpower, which we'll use sparingly if the situation calls for it.  We'll keep Stunning Arc for medium hordes that could use a tripping before the Martials rip them up.  ",
+                    "cantrips" : "+Distracting Blast, +Agility",
+                    "consumables" : "+Stunning Arc",
+                    "intelligence_save" : "yes",
+                    "wisdom_save" : "yes"
+                },
+                {
+                    "level" : 2,
+                    "walkthrough" : "Here we get our Subclass, and we'll be going down the Enhancement path.  This will help us increase our senses and durability to feel like a bit more of the hyperaware powerhouse that Spidey is.  We'll be taking the Reflex Dodge Enhancement, which imposes disadvantage on attack targeting us.  This is a good baby step towards a full fledged Spider-Sense.  <br><br>We also get another Consumable, so we'll be taking Binding Shot for larger enemies that are hitting our allies (or us) a bit too hard.  ",
+                    "sustainables" : "+Reflex Dodge",
+                    "consumables" : "+Binding Shot"
+                },
+                {
+                    "level" : 3,
+                    "walkthrough" : "We'll take the Keen Eye feat and round out our Wis score.  <br><br><br><br><br>",
+                    "wisdom_update" : "18",
+                    "feature" : "Feat: Keen Eye, +1 Wis"
+                },
+                {
+                    "level" : 4,
+                    "walkthrough" : "Second Level Superpowers!<br><br><br><br><br>"
+                },
+                {
+                    "level" : 5,
+                    "walkthrough" : "There are a lot of things we could do here, but maxing out our casting stat is always a good option.  ASI for +2 Wis.  <br><br><br><br><br>",
+                    "wisdom_update" : "20",
+                    "feature" : "ASI:  +2 Wis"
+                },
+                {
+                    "level" : 6
+                },
+                {
+                    "level" : 7
+                },
+                {
+                    "level" : 8
+                },
+                {
+                    "level" : 9
+                },
+                {
+                    "level" : 10
+                },
+                {
+                    "level" : 11
+                },
+                {
+                    "level" : 12
+                },
+                {
+                    "level" : 13
+                },
+                {
+                    "level" : 14
+                },
+                {
+                    "level" : 15
+                },
+                {
+                    "level" : 16
+                },
+                {
+                    "level" : 17
+                },
+                {
+                    "level" : 18
+                },
+                {
+                    "level" : 19
+                },
+                {
+                    "level" : 20
+                }
+            ]
+        },
+        {
+            "name_str" : "Spider-Man (Redacted)",
+            "page_url" : "",
+            "class_str" : "",
+            "class_type" : "",
+            "class_source" : "",
+            "subclass_str" : "",
+            "subclass_source" : "",
+            "character_source" : "",
+            
+            "build_overview" : "Spider-Man Noir is a Marvel character who is usually a free agent.  He employs a series of Powers that heighten his natural strength, balance, and reflexes, along with some trained Techniques that enhance his stealthiness and accuracy.  He relies on webbing to immobilize enemies, runaway vehicles, falling debris, and many other environmental  hazards.  His webbing also allows him far greater mobility while remaining stealthy.  <br><br>There are lots of ways you could build a Spider-Man character in Caped Crusaders, but this build will try to focus on the conventional role Spider-Man usually takes when on a team.  Peter is a real powerhouse, but constantly holds back in physical combat with few exceptions.  When working with other heroes, Spidey often relies on his webbing and agility to tailor the battlefield for his allies rather than fight a boss villain one on one like we see in his solo adventures.  Spider-Man Noir tends to stick to the shadows on his solo andventures, but that isn't always an option on a team.  Spider-Man Noir does not lean into the genius side of Peter as much, and so we'll stick to the Wisdom skills rather than the Intelligence skills.  Insight, Perception, and so on, will help give us that gritty dark private eye kinda feel when not in combat.  <br><br>This Spider-Man is not at the center of the stage, and that's exactly how we want it for this build.  ",
+
+            "race_str" : "Terran",
+            "race_description" : "Can't go wrong with a good old human.  Spidey is genetically altered, but we'll represent that through Powercasting.  For now we'll just take Perception and Insight.  We'll boost Dex by 1 and Wis by 2; Int seems extremely appropriate for Spidey, but only from a thematic perspective.  Mechanically, this version of Spider-Man never really uses his Intelligence in combat, so we'll be leaving Spider-Man Noir as a regular joe in regards to raw IQ.  ",
+            "background" : "Criminal",
+            "background_description" : "Thematically appropriate; we'll also take advantage of the Skulker feat to increase our stealthiness.  This will help when sneaking out of combat and allow us to more easily get the drop on distracted enemies in combat.  ",
+            "strength_initial" : 10,
+            "dexterity_initial" : 15,
+            "constitution_initial" : 13,
+            "intelligence_initial" : 8,
+            "wisdom_initial" : 15,
+            "charisma_initial" : 10,
+            "strength_resolved" : 10,
+            "dexterity_resolved" : 16,
+            "constitution_resolved" : 13,
+            "intelligence_resolved" : 8,
+            "wisdom_resolved" : 17,
+            "charisma_resolved" : 10,
+            "starting_equipment" : "Tunic, Fitted Cloth",
+            "level_guide" : [
+                {
+                    "level" : 1,
+                    "walkthrough" : "At level one we will be focusing on slinging debuff cantrips, swooping in to Shove, and kiting back to safety.  We have to be careful when swooping in though, since our movement hasn't been buffed all that much yet; we have to rely on our tankier teammates to draw fire away from us.  If that isn't something that will work out more often than not, we'll just stick to casting from a distance.  <br><br>We'll grab Distracting Blast to represent a little web attack that can help make our enemies easier to defeat.  We'll also take Agility to help us escape sticky situations while avoiding Opportunity Attacks.  <br><br>We also get a leveled Superpower, which we'll use sparingly if the situation calls for it.  We'll keep Stunning Arc for medium hordes that could use a tripping before the Martials rip them up.  ",
+                    "cantrips" : "+Distracting Blast, +Agility",
+                    "consumables" : "+Stunning Arc",
+                    "intelligence_save" : "yes",
+                    "wisdom_save" : "yes"
+                },
+                {
+                    "level" : 2,
+                    "walkthrough" : "Here we get our Subclass, and we'll be going down the Neutralizer path.  This will help us blend in some training to represent a gritty and more experienced Spider-Man Noir.  We'll be taking the Take Aim Technique, which grants us increased precision on our Attacks rolls if we sacrifice some movement.  Consider that we will be out of harm's way most of the time anyyways, this will help us be more effective at a safe distance.  We've got the reaction movement to cover everything we should need most of the time anyways.  <br><br>We also get another Consumable, so we'll be taking Binding Shot for larger enemies that are hitting our allies (or us) a bit too hard.  ",
+                    "consumables" : "+Binding Shot"
+                },
+                {
+                    "level" : 3,
+                    "walkthrough" : "We'll take the Keen Eye feat and round out our Wis score.  <br><br><br><br><br>",
+                    "wisdom_update" : "18",
+                    "feature" : "Feat: Keen Eye, +1 Wis"
+                },
+                {
+                    "level" : 4,
+                    "walkthrough" : "Second Level Superpowers!<br><br><br><br><br>"
+                },
+                {
+                    "level" : 5,
+                    "walkthrough" : "There are a lot of things we could do here, but maxing out our casting stat is always a good option.  ASI for +2 Wis.  <br><br><br><br><br>",
+                    "wisdom_update" : "20",
+                    "feature" : "ASI:  +2 Wis"
+                },
+                {
+                    "level" : 6
+                },
+                {
+                    "level" : 7
+                },
+                {
+                    "level" : 8
+                },
+                {
+                    "level" : 9
+                },
+                {
+                    "level" : 10
+                },
+                {
+                    "level" : 11
+                },
+                {
+                    "level" : 12
+                },
+                {
+                    "level" : 13
+                },
+                {
+                    "level" : 14
+                },
+                {
+                    "level" : 15
+                },
+                {
+                    "level" : 16
+                },
+                {
+                    "level" : 17
+                },
+                {
+                    "level" : 18
+                },
+                {
+                    "level" : 19
+                },
+                {
+                    "level" : 20
+                }
+            ]
+        },
+        {
+            "name_str" : "Spider-Man (Symbiote)",
+            "page_url" : "spider-man-symbiote.html",
+            "class_str" : "Metamorph",
+            "class_type" : "Martial, Secondary",
+            "class_source" : "Powers",
+            "subclass_str" : "Primal",
+            "subclass_source" : "Powers",
+            "character_source" : "MARVEL (Spider-Verse Antihero)"
+        },
+        {
+            "name_str" : "Spider-Man (Noir)",
+            "page_url" : "spider-man-noir.html",
+            "class_str" : "Marksman",
+            "class_type" : "Martial, Secondary",
+            "class_source" : "Tech",
+            "subclass_str" : "???",
+            "subclass_source" : "Powers",
+            "character_source" : "MARVEL (Spider-Verse Hero)"
+        },
+        {
+            "name_str" : "Spider-Man (2099)",
+            "page_url" : "spider-man-2099.html",
+            "class_str" : "Detective",
+            "class_type" : "Caster, Secondary",
+            "class_source" : "Tech",
+            "subclass_str" : "Oracle",
+            "subclass_source" : "Powers",
+            "character_source" : "MARVEL (Spider-Verse Hero)"
+        },
+        {
+            "name_str" : "Spider-Man (Iron Spider)",
+            "page_url" : "spider-man-iron-spider.html",
+            "class_str" : "Metamoprh",
+            "class_type" : "Martial, Secondary",
+            "class_source" : "Powers",
+            "subclass_str" : "???",
+            "subclass_source" : "Tech",
+            "character_source" : "MARVEL (Spider-Verse Hero)"
+        },
+        {
+            "name_str" : "Spider-Man (Ultimate:  Miles Morales)",
+            "page_url" : "spider-man-miles-morales.html",
+            "class_str" : "Subvertist",
+            "class_type" : "Caster, Secondary",
+            "class_source" : "Powers",
+            "subclass_str" : "Neutralizer",
+            "subclass_source" : "Powers",
+            "character_source" : "MARVEL (Spider-Verse Hero)"
+        },
+        {
+            "name_str" : "Spider-Gwen",
+            "page_url" : "spider-gwen.html",
+            "class_str" : "Subvertist",
+            "class_type" : "Caster, Secondary",
+            "class_source" : "Powers",
+            "subclass_str" : "Neutralizer",
+            "subclass_source" : "Powers",
+            "character_source" : "MARVEL (Spider-Verse Hero)"
+        },
+        {
             "name_str" : "Talon (Eberron)",
             "page_url" : "talon-eberron.html",
             "class_str" : "Visionary",
@@ -148,16 +422,6 @@
             "character_source" : "Misc Hero"
         },
         {
-            "name_str" : "Spider-Man (Amazing)",
-            "page_url" : "spider-man-amazing.html",
-            "class_str" : "Detective",
-            "class_type" : "Caster, Secondary",
-            "class_source" : "Tech",
-            "subclass_str" : "Oracle",
-            "subclass_source" : "Powers",
-            "character_source" : "MARVEL (Spider-Verse Hero)"
-        },
-        {
             "name_str" : "Batman",
             "page_url" : "batman.html",
             "class_str" : "Detective",
@@ -206,16 +470,6 @@
             "subclass_str" : "Assassin",
             "subclass_source" : "Powers",
             "character_source" : "MARVEL (X-Men Hero)"
-        },
-        {
-            "name_str" : "Spider-Man (2099)",
-            "page_url" : "gambit.html",
-            "class_str" : "Marksman",
-            "class_type" : "Martial, Secondary",
-            "class_source" : "Tech",
-            "subclass_str" : "Assassin",
-            "subclass_source" : "Powers",
-            "character_source" : "MARVEL (Spider-Verse Hero)"
         },
         {
             "name_str" : "Hawkeye",
@@ -498,112 +752,6 @@
             "character_source" : "DC (Justice League Hero)"
         },
         {
-            "name_str" : "Spider-Man (Noir)",
-            "page_url" : "spider-man-noir.html",
-            "class_str" : "Subvertist",
-            "class_type" : "Caster, Secondary",
-            "class_source" : "Powers",
-            "subclass_str" : "Neutralizer",
-            "subclass_source" : "Tech",
-            "character_source" : "MARVEL (Spider-Verse Hero)",
-            
-            "build_overview" : "Spider-Man Noir is a Marvel character who is usually a free agent.  He employs a series of Powers that heighten his natural strength, balance, and reflexes, along with some trained Techniques that enhance his stealthiness and accuracy.  He relies on webbing to immobilize enemies, runaway vehicles, falling debris, and many other environmental  hazards.  His webbing also allows him far greater mobility while remaining stealthy.  <br><br>There are lots of ways you could build a Spider-Man character in Caped Crusaders, but this build will try to focus on the conventional role Spider-Man usually takes when on a team.  Peter is a real powerhouse, but constantly holds back in physical combat with few exceptions.  When working with other heroes, Spidey often relies on his webbing and agility to tailor the battlefield for his allies rather than fight a boss villain one on one like we see in his solo adventures.  Spider-Man Noir tends to stick to the shadows on his solo andventures, but that isn't always an option on a team.  Spider-Man Noir does not lean into the genius side of Peter as much, and so we'll stick to the Wisdom skills rather than the Intelligence skills.  Insight, Perception, and so on, will help give us that gritty dark private eye kinda feel when not in combat.  <br><br>This Spider-Man is not at the center of the stage, and that's exactly how we want it for this build.  ",
-
-            "race_str" : "Terran",
-            "race_description" : "Can't go wrong with a good old human.  Spidey is genetically altered, but we'll represent that through Powercasting.  For now we'll just take Perception and Insight.  We'll boost Dex by 1 and Wis by 2; Int seems extremely appropriate for Spidey, but only from a thematic perspective.  Mechanically, this version of Spider-Man never really uses his Intelligence in combat, so we'll be leaving Spider-Man Noir as a regular joe in regards to raw IQ.  ",
-            "background" : "Criminal",
-            "background_description" : "Thematically appropriate; we'll also take advantage of the Skulker feat to increase our stealthiness.  This will help when sneaking out of combat and allow us to more easily get the drop on distracted enemies in combat.  ",
-            "strength_initial" : 10,
-            "dexterity_initial" : 15,
-            "constitution_initial" : 13,
-            "intelligence_initial" : 8,
-            "wisdom_initial" : 15,
-            "charisma_initial" : 10,
-            "strength_resolved" : 10,
-            "dexterity_resolved" : 16,
-            "constitution_resolved" : 13,
-            "intelligence_resolved" : 8,
-            "wisdom_resolved" : 17,
-            "charisma_resolved" : 10,
-            "starting_equipment" : "Tunic, Fitted Cloth",
-            "level_guide" : [
-                {
-                    "level" : 1,
-                    "walkthrough" : "At level one we will be focusing on slinging debuff cantrips, swooping in to Shove, and kiting back to safety.  We have to be careful when swooping in though, since our movement hasn't been buffed all that much yet; we have to rely on our tankier teammates to draw fire away from us.  If that isn't something that will work out more often than not, we'll just stick to casting from a distance.  <br><br>We'll grab Distracting Blast to represent a little web attack that can help make our enemies easier to defeat.  We'll also take Agility to help us escape sticky situations while avoiding Opportunity Attacks.  <br><br>We also get a leveled Superpower, which we'll use sparingly if the situation calls for it.  We'll keep Stunning Arc for medium hordes that could use a tripping before the Martials rip them up.  ",
-                    "cantrips" : "+Distracting Blast, +Agility",
-                    "consumables" : "+Stunning Arc",
-                    "intelligence_save" : "yes",
-                    "wisdom_save" : "yes"
-                },
-                {
-                    "level" : 2,
-                    "walkthrough" : "Here we get our Subclass, and we'll be going down the Neutralizer path.  This will help us blend in some training to represent a gritty and more experienced Spider-Man Noir.  We'll be taking the Take Aim Technique, which grants us increased precision on our Attacks rolls if we sacrifice some movement.  Consider that we will be out of harm's way most of the time anyyways, this will help us be more effective at a safe distance.  We've got the reaction movement to cover everything we should need most of the time anyways.  <br><br>We also get another Consumable, so we'll be taking Binding Shot for larger enemies that are hitting our allies (or us) a bit too hard.  ",
-                    "consumables" : "+Binding Shot"
-                },
-                {
-                    "level" : 3,
-                    "walkthrough" : "We'll take the Keen Eye feat and round out our Wis score.  <br><br><br><br><br>",
-                    "wisdom_update" : "18",
-                    "feature" : "Feat: Keen Eye, +1 Wis"
-                },
-                {
-                    "level" : 4,
-                    "walkthrough" : "Second Level Superpowers!<br><br><br><br><br>"
-                },
-                {
-                    "level" : 5,
-                    "walkthrough" : "There are a lot of things we could do here, but maxing out our casting stat is always a good option.  ASI for +2 Wis.  <br><br><br><br><br>",
-                    "wisdom_update" : "20",
-                    "feature" : "ASI:  +2 Wis"
-                },
-                {
-                    "level" : 6
-                },
-                {
-                    "level" : 7
-                },
-                {
-                    "level" : 8
-                },
-                {
-                    "level" : 9
-                },
-                {
-                    "level" : 10
-                },
-                {
-                    "level" : 11
-                },
-                {
-                    "level" : 12
-                },
-                {
-                    "level" : 13
-                },
-                {
-                    "level" : 14
-                },
-                {
-                    "level" : 15
-                },
-                {
-                    "level" : 16
-                },
-                {
-                    "level" : 17
-                },
-                {
-                    "level" : 18
-                },
-                {
-                    "level" : 19
-                },
-                {
-                    "level" : 20
-                }
-            ]
-        },
-        {
             "name_str" : "Monster Girl",
             "page_url" : "monster-girl.html",
             "class_str" : "Metamorph",
@@ -632,16 +780,6 @@
             "subclass_str" : "Demibeast",
             "subclass_source" : "Magic",
             "character_source" : "Misc Monster"
-        },
-        {
-            "name_str" : "Spider-Man (Symbiote)",
-            "page_url" : "spider-man-symbiote.html",
-            "class_str" : "Metamorph",
-            "class_type" : "Martial, Secondary",
-            "class_source" : "Powers",
-            "subclass_str" : "Primal",
-            "subclass_source" : "Powers",
-            "character_source" : "MARVEL (Spider-Verse Antihero)"
         },
         {
             "name_str" : "Venom",
@@ -692,16 +830,6 @@
             "subclass_str" : "Splicer",
             "subclass_source" : "Tech",
             "character_source" : "Misc Antihero"
-        },
-        {
-            "name_str" : "Spider-Man (Iron Spider)",
-            "page_url" : "spider-man-iron-spider.html",
-            "class_str" : "Metamorph",
-            "class_type" : "Martial, Secondary",
-            "class_source" : "Powers",
-            "subclass_str" : "Splicer",
-            "subclass_source" : "Tech",
-            "character_source" : "MARVEL (Spider-Verse Hero)"
         },
         {
             "name_str" : "Superman",
