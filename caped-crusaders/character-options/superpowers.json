@@ -1,6 +1,374 @@
 {
     "power": [
         {
+            "name_str" : "Gravity Assist",
+            "page_url" : "gravity-assist.html",
+
+            "level_int" : 3,
+            "level_str" : "3rd",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 0,
+            "range_area_str" : "30 feet",
+            
+            "components_verbal_bool" : false,
+            "components_somatic_bool" : true,
+            "components_material_bool" : false,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "S",
+            "components_description_str" : "",
+            
+            "duration_int" : 0,
+            "duration_str" : "Instananeous",
+            
+            "type_str" : "Disabling",
+            "type_img" : "/_SiteResources/Images/Disabling.png",
+            "type_img_credit" : "Disable by Mas Dhimas from NounProject.com",
+            
+            "attack_save_int" : 0,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "---",
+            
+            "flavor_str" : "---",
+            "mechanics_str" : "Choose a Medium or smaller object within range.  You can position that object anywhere else within range.  If the object would collide with a target, the target must make a Dexterity Saving Throw, being knocked prone if Large or smaller on a success, while taking Bludgeoning Piercing or Slashing damage (GM's discretion based on the chosen object) equal to a number of d10s based on the size of the object (1d10 for Tiny, 2d10 for Small, 3d10 for Medium, etc) and being knocked prone on a failure.  ",
+            "overchargeable_bool" : false,
+            "overcharge_str" : "---",
+
+            "class_str" : "Subvertist",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Lockdown",
+            "page_url" : "lockdown.html",
+
+            "level_int" : 4,
+            "level_str" : "4th",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 0,
+            "range_area_str" : "120 feet",
+            
+            "components_verbal_bool" : false,
+            "components_somatic_bool" : true,
+            "components_material_bool" : false,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "S",
+            "components_description_str" : "",
+            
+            "duration_int" : 0,
+            "duration_str" : "Instananeous",
+            
+            "type_str" : "Disabling",
+            "type_img" : "/_SiteResources/Images/Disabling.png",
+            "type_img_credit" : "Disable by Mas Dhimas from NounProject.com",
+            
+            "attack_save_int" : 0,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "---",
+            
+            "flavor_str" : "---",
+            "mechanics_str" : "Choose a target within range and make five Powercasting Ability Checks and only count the results over 10.  For every success, reduce the speed of the target by 15.  If you reduce the speed of the target to zero, they are completely Restrained.  Once per round, the target can make a Strength check against your Powercasting DC, ending this effect after three successes.  ",
+            "overchargeable_bool" : true,
+            "overcharge_str" : "For every level of overcharge, make an additional two Powercasting Ability checks",
+
+            "class_str" : "Subvertist",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Slingshot",
+            "page_url" : "slingshot.html",
+
+            "level_int" : 3,
+            "level_str" : "3rd",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 0,
+            "range_area_str" : "5 feet",
+            
+            "components_verbal_bool" : false,
+            "components_somatic_bool" : true,
+            "components_material_bool" : false,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "S",
+            "components_description_str" : "",
+            
+            "duration_int" : 0,
+            "duration_str" : "Instananeous",
+            
+            "type_str" : "Disabling",
+            "type_img" : "/_SiteResources/Images/Disabling.png",
+            "type_img_credit" : "Disable by Mas Dhimas from NounProject.com",
+            
+            "attack_save_int" : 0,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "---",
+            
+            "flavor_str" : "---",
+            "mechanics_str" : "Make a melee Superpower Attack against a target within range.  On a hit, you and the target travel 30 feet along a straight line in a direction of your choosing and the target is pushed another 20 feet beyond that, taking 2d10 Concussive damage (and potentially some fall damage).  In addition, any target that was within five feet you along the 30 foot line is pushed 15 feet perpendicularly away from the line.  Targets in the path of the line are pushed 15 forward and 15 feet left or right (your choice for each).  On a miss, you move along the 30 foot line alone, pushing targets 5 feet each instead of 15.  ",
+            "overchargeable_bool" : false,
+            "overcharge_str" : "---",
+
+            "class_str" : "Subvertist",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Blinding Shot",
+            "page_url" : "blinding-shot.html",
+
+            "level_int" : 0,
+            "level_str" : "cantrip",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Bonus Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 0,
+            "range_area_str" : "30 feet",
+            
+            "components_verbal_bool" : false,
+            "components_somatic_bool" : true,
+            "components_material_bool" : false,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "S",
+            "components_description_str" : "",
+            
+            "duration_int" : 0,
+            "duration_str" : "Instananeous",
+            
+            "type_str" : "Disabling",
+            "type_img" : "/_SiteResources/Images/Disabling.png",
+            "type_img_credit" : "Disable by Mas Dhimas from NounProject.com",
+            
+            "attack_save_int" : 0,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "---",
+            
+            "flavor_str" : "---",
+            "mechanics_str" : "Make a Ranged Superpower Attack against a target within range.  On a hit, that target is Blinded until the end of your turn.  ",
+            "overchargeable_bool" : false,
+            "overcharge_str" : "---",
+
+            "class_str" : "Subvertist",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Trip Assist",
+            "page_url" : "trip-assist.html",
+
+            "level_int" : 2,
+            "level_str" : "2nd",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 0,
+            "range_area_str" : "15 feet",
+            
+            "components_verbal_bool" : false,
+            "components_somatic_bool" : true,
+            "components_material_bool" : false,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "S",
+            "components_description_str" : "",
+            
+            "duration_int" : 0,
+            "duration_str" : "Instananeous",
+            
+            "type_str" : "Disabling",
+            "type_img" : "/_SiteResources/Images/Disabling.png",
+            "type_img_credit" : "Disable by Mas Dhimas from NounProject.com",
+            
+            "attack_save_int" : 0,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "---",
+            
+            "flavor_str" : "---",
+            "mechanics_str" : "Choose a target within range.  That target must make a Strength Saving Throw, being pushed 10 in a direction of your choosing on a failure, while being pushed 30 feet in a direction of your choosing and being knocked prone on a failure.  ",
+            "overchargeable_bool" : true,
+            "overcharge_str" : "For every level of Overcharge, the distance the target is pushed on a failure increases by 15 feet.  ",
+
+            "class_str" : "Subvertist",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Repelling Burst",
+            "page_url" : "repelling-burst.html",
+
+            "level_int" : 2,
+            "level_str" : "2nd",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 0,
+            "range_area_str" : "30 feet",
+            
+            "components_verbal_bool" : false,
+            "components_somatic_bool" : true,
+            "components_material_bool" : false,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "S",
+            "components_description_str" : "",
+            
+            "duration_int" : 0,
+            "duration_str" : "Instananeous",
+            
+            "type_str" : "Disabling",
+            "type_img" : "/_SiteResources/Images/Disabling.png",
+            "type_img_credit" : "Disable by Mas Dhimas from NounProject.com",
+            
+            "attack_save_int" : 0,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "---",
+            
+            "flavor_str" : "---",
+            "mechanics_str" : "Make a number of Ranged Superpower Attacks against up to five targets within range.  You may move as normal between the Attacks made while casting this Superpower.  On a hit, each target suffers Concussive damage equal to your Powercasting Modifier and is pushed 20 feet directly away from you.  ",
+            "overchargeable_bool" : true,
+            "overcharge_str" : "For every level of Overcharge, increase the range of this Superpower by 10 feet and the number of targets by 2.  ",
+
+            "class_str" : "Subvertist",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Vortex Flurry",
+            "page_url" : "vortex-flurry.html",
+
+            "level_int" : 2,
+            "level_str" : "2nd",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Reaction",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 0,
+            "range_area_str" : "60 feet",
+            
+            "components_verbal_bool" : false,
+            "components_somatic_bool" : true,
+            "components_material_bool" : false,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "S",
+            "components_description_str" : "",
+            
+            "duration_int" : 0,
+            "duration_str" : "Instananeous",
+            
+            "type_str" : "Disabling",
+            "type_img" : "/_SiteResources/Images/Disabling.png",
+            "type_img_credit" : "Disable by Mas Dhimas from NounProject.com",
+            
+            "attack_save_int" : 0,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "---",
+            
+            "flavor_str" : "---",
+            "mechanics_str" : "When you witness creatures or objects falling within 60 feet of you, you may cast this Superpower as a Reaction to move up to ten falling creatures or objects up to 30 feet each and negate their fall damage.  ",
+            "overchargeable_bool" : true,
+            "overcharge_str" : "For every level of Overcharge, increase the range of this Superpower by 20 feet and the number of targets by 5.  ",
+
+            "class_str" : "Subvertist",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Disorienting Surge",
+            "page_url" : "disorienting-surge.html",
+
+            "level_int" : 1,
+            "level_str" : "1st",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 0,
+            "range_area_str" : "60 feet / 10 foot cube",
+            
+            "components_verbal_bool" : false,
+            "components_somatic_bool" : true,
+            "components_material_bool" : false,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "S",
+            "components_description_str" : "",
+            
+            "duration_int" : 0,
+            "duration_str" : "One Minute",
+            
+            "type_str" : "Disabling",
+            "type_img" : "/_SiteResources/Images/Disabling.png",
+            "type_img_credit" : "Disable by Mas Dhimas from NounProject.com",
+            
+            "attack_save_int" : 0,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "---",
+            
+            "flavor_str" : "---",
+            "mechanics_str" : "Creatures within the area you designate must make a Dexterity Saving Throw, having their speed reduced by 10 feet on a success, while suffering disadvantage on all of their Attacks and halving their speed on a failure.  Any affected creature can contest your Powercasting DC with a Constitution Check as an Action, ending the effect on themselves on a success.  ",
+            "overchargeable_bool" : true,
+            "overcharge_str" : "For every level of Overcharge, increase each dimension of the cube by 5 feet.  ",
+
+            "class_str" : "Subvertist",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
             "name_str" : "Stunning Shot",
             "page_url" : "stunning-shot.html",
 
@@ -35,7 +403,7 @@
             "damage_effect_str" : "---",
             
             "flavor_str" : "---",
-            "mechanics_str" : "Make a ranged Power Attack against a target within range.  On a hit, the target's speed is halved, can only make one Attack per Action, and can take no Reactions.  The target can use an Action to contest your Powercasting DC with a Strength Check, ending the effect early on a success.  ",
+            "mechanics_str" : "Make a ranged Power Attack against a target within range.  On a hit, the target can only make one Attack per Action and can take no Reactions.  The target can use an Action to contest your Powercasting DC with a Strength Check, ending the effect early on a success.  ",
             "overchargeable_bool" : true,
             "overcharge_str" : "For every two levels of Overcharge, increase the number of targets by one.  ",
 

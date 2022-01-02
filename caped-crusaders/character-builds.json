@@ -1,12 +1,12 @@
 {
     "character": [
         {
-            "name_str" : "Spider-Man (Amazing:  Original Peter Parker)",
+            "name_str" : "Spider-Man (Amazing)",
             "page_url" : "spider-man-amazing.html",
             "class_str" : "Subvertist",
             "class_type" : "Caster, Secondary",
             "class_source" : "Powers",
-            "subclass_str" : "???",
+            "subclass_str" : "Neutralizer",
             "subclass_source" : "Powers",
             "character_source" : "MARVEL (Spider-Verse Hero)",
 
@@ -35,52 +35,64 @@
                     "level" : 1,
                     "walkthrough" : "At level one we will be focusing on slinging debuff cantrips, swooping in to Shove, and kiting back to safety.  We have to be careful when swooping in though, since our movement hasn't been buffed all that much yet; we have to rely on our tankier teammates to draw fire away from us.  If that isn't something that will work out more often than not, we'll just stick to casting from a distance.  <br><br>We'll grab Distracting Blast to represent a little web attack that can help make our enemies easier to defeat.  <br><br>We also get a leveled Superpower, which we'll use sparingly if the situation calls for it.  We'll keep Slowing Arc for medium hordes that could use a tripping before the Martials rip them up.  ",
                     "cantrips" : "+Distracting Blast",
-                    "consumables" : "+Slowing Arc (1st)",
+                    "consumables" : "+Slowing Arc",
                     "intelligence_save" : "yes",
-                    "wisdom_save" : "yes"
+                    "wisdom_save" : "yes",
+                    "feature" : "Enhanced Movement:  Swinging"
                 },
                 {
                     "level" : 2,
                     "walkthrough" : "Here we get our Subclass, and we'll be going down the Enhancement path.  This will help us increase our senses and durability to feel like a bit more of the hyper aware acrobat that Spidey is.  We'll be taking the Reflex Dodge Enhancement, which lets us boost our AC against an incoming attack and skirt away to safety.  This is a good baby step towards a full fledged Spider-Sense.  <br><br>We also get another Consumable, so we'll be taking Stunning Shot for larger enemies that are hitting our allies (or us) a bit too hard.  ",
                     "sustainables" : "+Reflex Dodge",
-                    "consumables" : "+Stunning Shot (1st)"
+                    "consumables" : "+Stunning Shot"
                 },
                 {
                     "level" : 3,
-                    "walkthrough" : "We'll take the Keen Eye feat and round out our Wis score.  Keen Eye allows us to sacrifice a bit of movement in order to make more accurate attacks, which shouldn't be much of a problem if we are positioning ourselves correctly.  If we do manage to get targeted, Agility should be more than enough to keep us intact.  The best part about increasing our attacks is the ability to synergize with our Distracting Shot cantrip.  We can buff our own attack on one turn, making it more likely to impose the debuff, which then makes it easier to snag those enemies in an AoE on the turn after.  Even if we have to sacrifice the first round by getting into position, this can make for a nice little combo during longer fights.  <br><br>Our allies are getting a bit beefier, but so are our enemies.  We can start being a bit more liberal with our leveled Superpowers as long as we keep some reserves for whatever boss might be anticipated.  <br><br>Disorienting Surge is a nice addition that can help prevent the martials from being surrounded.  Best for when the enemies are coming in waves or are forced into a bottleneck of some kind.  ",
+                    "walkthrough" : "We'll take the Keen Eye feat and round out our Wis score.  Keen Eye allows us to sacrifice a bit of movement in order to make more accurate attacks, which shouldn't be much of a problem if we are positioning ourselves correctly.  If we do manage to get targeted, Reflex Dodge should be able to keep us intact.  The best part about increasing our attacks is the ability to synergize with our Distracting Shot cantrip.  We can buff our own attack on one turn, making it more likely to impose the debuff, which then makes it easier to snag those enemies in an AoE on the turn after.  Even if we have to sacrifice the first round by getting into position, this can make for a nice little combo during longer fights.  <br><br>Our allies are getting a bit beefier, but so are our enemies.  We can start being a bit more liberal with our leveled Superpowers as long as we keep some reserves for whatever boss might be anticipated.  <br><br>Disorienting Surge is a nice addition that can help prevent the martials from being surrounded.  Best for when the enemies are coming in waves or are forced into a bottleneck of some kind.  ",
                     "wisdom_update" : "18",
                     "feature" : "Feat: Keen Eye, +1 Wis",
-                    "consumables" : "+Disorienting Surge (1st)"
+                    "consumables" : "+Disorienting Surge"
                 },
                 {
                     "level" : 4,
                     "walkthrough" : "Second Level Superpowers!  We've been pretty good about using our webbing to trip up enemies, but we also need to make sure we can keep civilians safe from falling debris or themselves.  We'll take Vortex Flurry, which allows us to select a few targets within a decent range and negate their fall damage.  This can only be used in a few situations, but they tend to come up often enough and are very difficult to deal with if you don't have mechanics designed for it or built around it.  ",
-                    "consumables" : "+Vortex Flurry (2nd)"
+                    "consumables" : "+Vortex Flurry"
                 },
                 {
                     "level" : 5,
-                    "walkthrough" : "There are a lot of things we could do here, but maxing out our casting stat is always a good option.  ASI for +2 Wis.  <br><br>We'll also take a new Superpower that can force enemy movement, such as Repelling Burst.  We'll be using this to launch enemies into dangerous places such as environmental hazards, clusters for other damage casters to blast on, or even into our own existing AoEs.  This is a Superpower that ought to be upcast later on as well, but sadly won't get as much mileage out of Keen Eye as our other options.  <br><br>The downside to this Superpower is that if we want to take a thinly dispersed crowd and condense them towards a central point, we'll have to move around the battlefield a fair amount throughout the casting.  It's a worthwhile tradeoff when it's called for, and we can still use Keen Eye with this Superpower when in linear environments like hallways or valleys.  ",
+                    "walkthrough" : "There are a lot of things we could do here, but maxing out our casting stat is always a good option.  ASI for +2 Wis.  <br><br>We'll also take a new Superpower that can force enemy movement, such as Repelling Burst.  We'll be using this to launch enemies into dangerous places such as environmental hazards, clusters for other damage casters to blast on, or even into our own existing AoEs.  This is a Superpower that ought to be upcast later on as well, but sadly won't get as much mileage out of Keen Eye as our other options.  <br><br>The downside to this Superpower is that if we want to take a thinly dispersed crowd and condense them towards a central point, we'll have to move around the battlefield a fair amount throughout the casting.  It's a worthwhile tradeoff when it's called for, and we can still use Keen Eye with this Superpower when in linear environments like hallways or valleys. ",
+                    "consumables" : "+Repelling Burst",
                     "wisdom_update" : "20",
                     "feature" : "ASI:  +2 Wis"
                 },
                 {
                     "level" : 6,
-                    "walkthrough" : "At level 6 we get a new Enhancement, which we will use to further develop our Spider-Sense and reflexes.  We'll take Evasive to get a bit better at Dex saves and make it easier to get the drop on enemies in the heat of battle.  We can couple this with Blinding Shot next level to quickly break line of sight and virtually disappear, making it that much easier to snag them with a debuff on the next turn.  <br><br>We'll also grab Mismatch for our new Superpower, which allows us to move an enemy in any direction and knock them prone.   This is a nice way to represent Spidey's ability to yank enemies and throw them around with his webbing.  "
+                    "walkthrough" : "At level 6 we get a new Enhancement, which we will use to further develop our Spider-Sense and reflexes.  We'll take Evasive to get a bit better at Dex saves and make it easier to get the drop on enemies in the heat of battle.  We can couple this with Blinding Shot next level to quickly break line of sight and virtually disappear, making it that much easier to snag them with a debuff on the next turn.  <br><br>We'll also grab Trip Assist for our new Superpower, which allows us to move an enemy in any direction and knock them prone.   This is a nice way to represent Spidey's ability to yank enemies and throw them around with his webbing.  ",
+                    "sustainables" : "+Evasive",
+                    "consumables" : "+Trip Assist"
                 },
                 {
                     "level" : 7,
-                    "walkthrough" : "We get another cantrip, so we'll be taking Blinding Blast to help us break line of sight or improve our Shoving against bosses.  It only lasts until our turn ends, so we can't coordinate with allies as much as we might like.  Some exceptions such as Soldier Strategies might apply, but it's not what we are taking this option for.  <br><br>We also get third level Superpowers, which is a big deal.  We'll take Slingshot to help us punch a hole in groups of enemies or send them flying off of high ledges.  ",
-                    "cantrips" : "Blinding Blast",
-                    "consumables" : "Slingshot"
+                    "walkthrough" : "We get another cantrip, so we'll be taking Blinding Shot to help us break line of sight or improve our Shoving against bosses.  It only lasts until our turn ends, so we can't coordinate with allies as much as we might like.  Some exceptions such as Soldier Strategies might apply, but it's not what we are taking this option for.  <br><br>We also get third level Superpowers, which is a big deal.  We'll take Slingshot to help us punch a hole in groups of enemies or send them flying off of high ledges.  ",
+                    "cantrips" : "+Blinding Shot",
+                    "consumables" : "+Slingshot"
                 },
                 {
-                    "level" : 8
+                    "level" : 8,
+                    "walkthrough" : "We will be taking Resilient Constitution for our feat this level.  We've got enough casting options to keep a concentration Superopower active in most fights now, and keeping those up will free more Power Points for other things.  Even though we have been building up our defenses in order to avoid or limit damage, this will make it that much harder to break our concentration when we do end up getting hit by something.  Also, we'll be rounding out our Con score and getting an extra hit point for every class level.  Spidey can take a beating, and now we are that much tougher.  <br><br>We get another Superpower, so we'll grab Vortex Tunnel to make sure we can keep civilians out of harm's way should a runaway vehicle come barging through.  ",
+                    "feature" : "Feat:  Resilient (Constitution)",
+                    "consumables" : "+Vortex Tunnel"
                 },
                 {
-                    "level" : 9
+                    "level" : 9,
+                    "walkthrough" : "The Enhanced Movement improvement is a welcome addition.  In many Caped Crusaders campaigns, there are a notable number of encounters with serious vertical terrain.  Flying speeds are nice for this, but as long as the terrain has some relatively minimal features, our mobility is about as good as it gets.  <br><br>Our last 3rd level Superpower will be Gravity Assist, which allows us to represent Spidey snagging something heavy with his webs and throwing it downwards at an enemy.  ",
+                    "feature" : "Enhanced Movement:  Improved Swinging",
+                    "consumables" : "+Gravity Assist"
                 },
                 {
-                    "level" : 10
+                    "level" : 10,
+                    "walkthrough" : "We are in the double digits now, which means we get our first 4th level Superpower.  We'll be taking Lockdown to immobilize heavy objects, vehicles, or enemies.  This effectively represents Spidey attaching a bunch of webs between the target and various anchor points.  This can keep a malfunctioning helicopter from crashing onto a crowd, halting a runaway truck in its tracks, or securing a dangerous enemy in a cozy straight jacket while your buddies teach them some manners.  ",
+                    "consumables" : "+Lockdown"
                 },
                 {
                     "level" : 11
@@ -324,7 +336,7 @@
                     "level" : 1,
                     "walkthrough" : "At level one we will be focusing on slinging cantrips, keeping ourselves out of the fray, laying down some small AoEs to trip up smaller enemies, and buffing allies to face bigger enemies.  Of course, the Visionary is also excellent at out of combat utility, so we'll be sure to be reliable in that regard.  <br><br>We'll be grabbing Omnibeam, Interactive Tutorial, and Repulsing Blast for our cantrips.  Interactive Tutorial gives a welcome boost on a large portion of skill checks, both for ourselves and others.  The other two are decent damage options, but the real draw is the additional effects.  Being able to add a bit of forced movement every turn or select a specific damage type if we know what threat will be coming tomorrow can make a big difference.  We could deal a bit more damage from a safer distance with Focused Beam, but I'm a fan of cantrips that do something other than just damage; if we wanted to do raw damage, we could play a Dynamo or Annointed instead.  <br><br>For our leveled Technologies, we'll be taking Reflective Insulators to boost our defenses, Taser Snare for some battlefield control, Impact Dampeners to avoid falling damage, and Chromabeam for exploiting enemy vulnerabilities.  I know two of these might not get used (which is a good thing; it means we are positioning ourselves properly), but having them available really covers our ass.  If we need them and don't have them, and odds are you will need them, you might not survive the fight.  Don't worry though, we'll take more exciting options later on; our job right now is surviving long enough to see those higher levels.  ",
                     "cantrips" : "+Interactive Tutorial, +Repulsing Blast", 
-                    "consumables" : "+Reflective Insulators (1st), +Taser Snare (1st), +Impact Dampeners (1st), +Chromabeam (1st)",
+                    "consumables" : "+Reflective Insulators , +Taser Snare , +Impact Dampeners , +Chromabeam ",
                     "intelligence_save" : "yes",
                     "wisdom_save" : "yes",
                     "ac_update" : "13"
@@ -334,12 +346,12 @@
                     "level" : 2,
                     "walkthrough" : "Now we get our subclass, which grants us some Sustainables throughout our character's lifespan.  We will be going with the Magnate subclass and selecting Deflect Projectiles to give us some increased defense against ranged attacks (which is the only kind of attack we should ever be worried about if we are positioning ourselves properly).  Homing Darts is a nice way to force Concentration saves, and Imapct Dampeners further increases our survivability.  ",
                     "sustainables" : "Deflect Projectiles",
-                    "consumables" : "+Homing Darts (1st), +Impact Dampeners (1st)"
+                    "consumables" : "+Homing Darts , +Impact Dampeners "
                 },
                 {
                     "level" : 3,
                     "walkthrough" : "Second level Technologies!  This is why we play full casters.  We'll be grabbing Rocket Burst and Hologram Projector.  The extra speed from Rocket Burst can be great if there is a target that needs to be reached quickly (and we don't happen to have a Subvertist in the group), or if we find ourselves caught in a horde and want to get far away without risking opportunity attacks.  Hologram Projector is wildly useful.  It can be used for all kinds of deceptive tactics outside of combat, and can effectively block line of sight if placed correctly in combat.  If you aren't creative, no worries; making a hologram of a metal dome that imposes disadvantage on incoming ranged attacks while your party melees the mooks they can reach is still extremely useful.  Think of it like a limited terrain feature that you get to control.  ",
-                    "consumables" : "+Rocket Burst (2nd), +Hologram Projector (1st)"
+                    "consumables" : "+Rocket Burst (2nd), +Hologram Projector "
                 },
                 {
                     "level" : 4,

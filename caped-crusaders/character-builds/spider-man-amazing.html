@@ -33,9 +33,11 @@
               var tblRow = "<td>" + f.race_str + "<br><br>" + f.race_description + "</td><td>" + f.background + "<br><br>" + f.background_description + "</td><td>" + f.strength_initial + "<br><br><b>" + f.strength_resolved + "</b></td><td>" + f.dexterity_initial + "<br><br><b>" + f.dexterity_resolved + "</td><td>" + f.constitution_initial + "<br><br><b>" + f.constitution_resolved + "</td><td>" + f.intelligence_initial + "<br><br><b>" + f.intelligence_resolved + "</td><td>" + f.wisdom_initial + "<br><br><b>" + f.wisdom_resolved + "</td><td>" + f.charisma_initial + "<br><br><b>" + f.charisma_resolved + "</td><td>" + f.starting_equipment + "</td>"
               $(tblRow).appendTo("#build-setup-table tbody");
 
-              // Initializing the variables we will use throughout the Level Table and Selections Table
+              // Initializing the variables we will use throughout the Level Table and Selections Table such as class and prof
               var proficiency_bonus_int = 2;
               var class_subclass = f.class_str;
+
+              // Calculating the hit die and average hit points based on class type
               if (f.class_type == "Martial, Primary") {
                 subclass_active = 3;
                 hit_die = 12;
@@ -53,6 +55,45 @@
                 hit_die = 6;
                 hit_die_average = 4;
               }
+
+              // Calculating sustainable and consumable sources for link usage based on class type derived from hit die 
+              if (f.class_source == "Magic" && hit_die < 9) {
+                consumable_source = "spells";
+              } 
+              if (f.class_source == "Powers" && hit_die < 9) {
+                consumable_source = "superpowers";
+              } 
+              if (f.class_source == "Tech" && hit_die < 9) {
+                consumable_source = "technologies";
+              } 
+              if (f.subclass_source == "Magic" && hit_die < 9) {
+                sustainable_source = "boons";
+              } 
+              if (f.subclass_source == "Powers" && hit_die < 9) {
+                sustainable_source = "enhancements";
+              } 
+              if (f.subclass_source == "Tech" && hit_die < 9) {
+                sustainable_source = "techniques";
+              } 
+              
+              if (f.class_source == "Magic" && hit_die > 9) {
+                sustainable_source = "boons";
+              } 
+              if (f.class_source == "Powers" && hit_die > 9) {
+                sustainable_source = "enhancements";
+              } 
+              if (f.class_source == "Tech" && hit_die > 9) {
+                sustainable_source = "techniques";
+              } 
+              if (f.subclass_source == "Magic" && hit_die > 9) {
+                consumable_source = "spells";
+              } 
+              if (f.subclass_source == "Powers" && hit_die > 9) {
+                consumable_source = "superpowers";
+              } 
+              if (f.subclass_source == "Tech" && hit_die > 9) {
+                consumable_source = "technologies";
+              } 
 
               // Loading Ability Score variables and calculating Ability Score Modifier variables 
               {
@@ -250,27 +291,41 @@
                     // Populating Sustainables with data or default
                     if (f.level_guide[k].sustainables != undefined && f.level_guide[k].level == (i+1)) {
                       sustainable_selections = f.level_guide[k].sustainables;
+                      sustainable_selections_link = sustainable_selections.toLowerCase();
+                      sustainable_selections_link = sustainable_selections_link.replace('-', '');
+                      sustainable_selections_link = sustainable_selections_link.replace('+', '');
+                      sustainable_selections_link = sustainable_selections_link.replace(/\s/g, '-');
+                      sustainable_selections_link = "<a href='/caped-crusaders/character-options/" + sustainable_source + "/" + sustainable_selections_link + ".html'>" + sustainable_selections + "</a>";
                     } else if (f.level_guide[k].sustainables == undefined && f.level_guide[k].level == (i+1)) {
-                      sustainable_selections = "---";
+                      sustainable_selections_link = "---";
                     }
 
                     // Populating Cantrips with data or default
                     if (f.level_guide[k].cantrips != undefined && f.level_guide[k].level == (i+1)) {
                       cantrip_selections = f.level_guide[k].cantrips;
+                      cantrip_selections_link = cantrip_selections.toLowerCase();
+                      cantrip_selections_link = cantrip_selections_link.replace('-', '');
+                      cantrip_selections_link = cantrip_selections_link.replace('+', '');
+                      cantrip_selections_link = cantrip_selections_link.replace(/\s/g, '-');
+                      cantrip_selections_link = "<a href='/caped-crusaders/character-options/" + consumable_source + "/" + cantrip_selections_link + ".html'>" + cantrip_selections + "</a>";
                     } else if (f.level_guide[k].cantrips == undefined && f.level_guide[k].level == (i+1)) {
-                      cantrip_selections = "---";
+                      cantrip_selections_link = "---";
                     }
 
                     // Populating Consumables with data or default
                     if (f.level_guide[k].consumables != undefined && f.level_guide[k].level == (i+1)) {
                       consumable_selections = f.level_guide[k].consumables;
+                      consumable_selections_link = consumable_selections.toLowerCase();
+                      consumable_selections_link = consumable_selections_link.replace('-', '');                      consumable_selections_link = consumable_selections_link.replace('+', '');
+                      consumable_selections_link = consumable_selections_link.replace(/\s/g, '-');
+                      consumable_selections_link = "<a href='/caped-crusaders/character-options/" + consumable_source + "/" + consumable_selections_link + ".html'>" + consumable_selections + "</a>";
                     } else if (f.level_guide[k].consumables == undefined && f.level_guide[k].level == (i+1)) {
-                      consumable_selections = "---";
+                      consumable_selections_link = "---";
                     }
 
                     // Populating Walkthrough by Level text and Selections tables
                     if (f.level_guide[k].walkthrough != undefined && f.level_guide[k].level == (i+1)) {
-                      document.getElementById("build-walkthrough-by-level").innerHTML += "<hr><table id='selections-table-" + (i+1) + "' class='selections-table'><thead><th style='width: 15vw' colspan='2'>" + class_subclass + ", lvl " + (i+1) + "</th></thead><tbody><tr><td>Sustainables</td><td>" + sustainable_selections + "</td></tr><tr><td>Cantrips</td><td>" + cantrip_selections + "</td></tr><tr><td>Consumables</td><td>" + consumable_selections + "</td></tr></tbody></table>" + "<h3>Level: " + (i+1) + "</h3>" + f.level_guide[k].walkthrough;
+                      document.getElementById("build-walkthrough-by-level").innerHTML += "<hr><table id='selections-table-" + (i+1) + "' class='selections-table'><thead><th style='width: 15vw' colspan='2'>" + class_subclass + ", lvl " + (i+1) + "</th></thead><tbody><tr><td>Sustainables</td><td>" + sustainable_selections_link + "</td></tr><tr><td>Cantrips</td><td>" + cantrip_selections_link + "</td></tr><tr><td>Consumables</td><td>" + consumable_selections_link + "</td></tr></tbody></table>" + "<h3>Level: " + (i+1) + "</h3>" + f.level_guide[k].walkthrough;
                     }
                   }
                 }
