@@ -419,7 +419,7 @@ span {
   width: 35vw;
   margin: 10px;
   margin-right: 0px;
-  margin-left: auto;
+  margin-left: 10px;
   overflow: auto;
   border: 1px solid rgb(50,50,50);
   border-collapse: collapse;
@@ -515,11 +515,12 @@ hr {
 
 
 
-p, h1, h2 {
+p, h2 {
   color: rgb(52,58,64);
 }
 h1 {
   font-size: x-large;
+  color: rgb(225, 225, 225);
 }
 h2 {
   font-size: larger;

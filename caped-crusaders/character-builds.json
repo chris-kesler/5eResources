@@ -85,13 +85,13 @@
                 },
                 {
                     "level" : 9,
-                    "walkthrough" : "The Enhanced Movement improvement is a welcome addition.  In many Caped Crusaders campaigns, there are a notable number of encounters with serious vertical terrain.  Flying speeds are nice for this, but as long as the terrain has some relatively minimal features, our mobility is about as good as it gets.  <br><br>Our last 3rd level Superpower will be Gravity Assist, which allows us to represent Spidey snagging something heavy with his webs and throwing it downwards at an enemy.  ",
+                    "walkthrough" : "The Enhanced Movement improvement is a welcome addition.  In many Caped Crusaders campaigns, there are a notable number of encounters with serious vertical terrain.  Flying speeds are nice for this, but as long as the terrain has some relatively minimal features, our mobility is about as good as it gets across the game.  A Subvertist built around Speed will outpace us, but they'll be limited to solid surfaces.  We've got a very useful balance between raw speed and the ability to position ourselves almost any way we like.  <br><br>Our last 3rd level Superpower will be Gravity Assist, which allows us to represent Spidey snagging something heavy with his webs and throwing it downwards at an enemy.  ",
                     "feature" : "Enhanced Movement:  Improved Swinging",
                     "consumables" : "+Gravity Assist"
                 },
                 {
                     "level" : 10,
-                    "walkthrough" : "We are in the double digits now, which means we get our first 4th level Superpower.  We'll be taking Lockdown to immobilize heavy objects, vehicles, or enemies.  This effectively represents Spidey attaching a bunch of webs between the target and various anchor points.  This can keep a malfunctioning helicopter from crashing onto a crowd, halting a runaway truck in its tracks, or securing a dangerous enemy in a cozy straight jacket while your buddies teach them some manners.  ",
+                    "walkthrough" : "We are in the double digits now, which means we get our first 4th level Superpower.  We'll be taking Lockdown to immobilize heavy objects, vehicles, or enemies.  This effectively represents Spidey attaching a bunch of webs between the target and various anchor points.  This can keep a malfunctioning helicopter from crashing onto a crowd, halting a runaway truck in its tracks, or securing a dangerous enemy in a cozy straight jacket while your buddies teach them some manners.  <br><br>We've also got a pretty sizable movement speed now, coming in at an even 100 feet per round.  This should give us more than enough mobility to get all our Shoves off, unleash a nice Superpower, and make it back to a safe vantage point.  ",
                     "consumables" : "+Lockdown"
                 },
                 {
