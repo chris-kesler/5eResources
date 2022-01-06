@@ -265,7 +265,7 @@
             "damage_effect_str" : "Concussive",
             
             "flavor_str" : "By activating rapid hydraulics, you are to stack the momentum of your blow with an explosive force that knocks enemies backwards.  ",
-            "mechanics_str" : "Make a melee attack against one creature within 5 feet of you. On a hit, that creatures suffers Concussive damage equal to a number of d6s equal to your proficiency bonus -1 and is pushed 10 feet away from you.",
+            "mechanics_str" : "Make a melee attack against one creature within 5 feet of you. On a hit, that creatures suffers Concussive damage equal to a number of d10s equal to your proficiency bonus -1 and is pushed 10 feet away from you.",
             
             "overchargeable_bool" : false,
             "overcharge_str" : "Not Applicable",
@@ -787,6 +787,52 @@
         },
 
         {
+            "name_str" : "Focused Flight",
+            "page_url" : "focused-flight.html",
+
+            "level_int" : 0,
+            "level_str" : "0th (Cantrip)",
+
+            "casting_time_int" : 2,
+            "casting_time_str" : "1 Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 0,
+            "range_area_str" : "Self",
+            
+            "components_verbal_bool" : false,
+            "components_somatic_bool" : true,
+            "components_material_bool" : true,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "S, M",
+            "components_description_str" : "",
+            
+            "duration_int" : 0,
+            "duration_str" : "1 Turn",
+            
+            "science_str" : "Propulsion",
+            "science_img" : "/_SiteResources/Images/Propulsion.png",
+            
+            "attack_save_int" : 2,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "Buff",
+            
+            "flavor_str" : "Your propulsion systems are powerful, but not yet automatic enough to be used reflexively.  You have to focus on controlling them in order to fly at all or go faster than normal.  ",
+            "mechanics_str" : "You gain an additional flying speed of 30 feet until the end of your turn.  ",
+            "overchargeable_bool" : false,
+            "overcharge_str" : "Not Applicable",
+
+            "class_str" : "Visionary",
+            "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+
+        {
             "name_str" : "Magnum Punch",
             "page_url" : "magnum-punch.html",
             "level_int" : 1,
@@ -819,7 +865,7 @@
             "damage_effect_str" : "Bludgeoning",
             
             "flavor_str" : "Multiple hydraulic pistons drive your fist forward with shattering force.  This impact leaves the target momentarily dazed.  ",
-            "mechanics_str" : "Make a melee Tech attack against one creature of your choice within 5 feet of you.  On a hit, the target takes 3d10 Bludgeoning damage and next melee attacks made against the target before the end of your next turn have advantage.",
+            "mechanics_str" : "Make a melee Tech attack against one creature of your choice within 5 feet of you.  On a hit, the target takes 4d12 Bludgeoning damage and next melee attacks made against the target before the end of your next turn have advantage.",
             "overchargeable_bool" : false,
             "overcharge_str" : "Not Applicable",
 
@@ -1417,7 +1463,7 @@
             "damage_effect_str" : "Stunned",
             
             "flavor_str" : "You fire four stakes into the target surface, each of which deploy a high voltage coil.  These four coils are unable to discharge between themselves as is, and use any unlucky matter within the area to complete the circuit.  ",
-            "mechanics_str" : "Choose a point within 60 of you.  A 10 foot cube centered on that point becomes electrified, stunning any creature who fails a Con save in the area upon casting or who enters the area while the effect persists.",
+            "mechanics_str" : "Choose a 10 foot cube within 60 of you.  Any creature in the area when you cast this, who enters the area, or who ends their turn in the area, must make a Constitution Saving Throw, becoming Stunned until the start of your next turn on a failure.  The area counts as difficult terrain while it persists.  ",
             "overchargeable_bool" : false,
             "overcharge_str" : "Not Applicable",
 
@@ -1430,8 +1476,8 @@
         },
 
         {
-            "name_str" : "Thermite Missile",
-            "page_url" : "thermite-missile.html",
+            "name_str" : "Phosphorous Missile",
+            "page_url" : "phosphorous-missile.html",
 
             "level_int" : 3,
             "level_str" : "3rd",

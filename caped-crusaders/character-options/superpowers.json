@@ -81,9 +81,9 @@
             "damage_effect_str" : "---",
             
             "flavor_str" : "---",
-            "mechanics_str" : "Choose a Medium or smaller object within range.  You can position that object anywhere else within range.  If the object would collide with a target, the target must make a Dexterity Saving Throw, being knocked prone if Large or smaller on a success, while taking Bludgeoning Piercing or Slashing damage (GM's discretion based on the chosen object) equal to a number of d10s based on the size of the object (1d10 for Tiny, 2d10 for Small, 3d10 for Medium, etc) and being knocked prone on a failure.  ",
-            "overchargeable_bool" : false,
-            "overcharge_str" : "---",
+            "mechanics_str" : "Choose a Medium or smaller target within range.  If the target is an creature, you must succeed on a ranged Powercasting Attack roll.  If the target is an object, you automatically hit.  On a hit, you can position that target anywhere else within range.  If the target would collide with a target, the target must make a Dexterity Saving Throw, being knocked prone if Large or smaller on a success, while taking Bludgeoning Piercing or Slashing damage (GM's discretion based on the chosen target) equal to a number of d10s based on the size of the target (1d10 for Tiny, 2d10 for Small, 3d10 for Medium, etc) and being knocked prone on a failure.  ",
+            "overchargeable_bool" : true,
+            "overcharge_str" : "For every two levels of overcharge, you may choose and position an additional target.  ",
 
             "class_str" : "Subvertist",
             "subclass_str" : "",
@@ -127,9 +127,9 @@
             "damage_effect_str" : "---",
             
             "flavor_str" : "---",
-            "mechanics_str" : "Choose a target within range.  Make five Powercasting Ability Checks against a DC 10.  For every success, reduce the speed of the target by 15.  If you reduce the speed of the target to zero, they are completely Restrained.  Once per round, the target can make a Strength check against your Powercasting DC, ending this effect after three successes.  ",
+            "mechanics_str" : "Make five Powercasting Ability Checks against a DC 10, and choose a target within range.  For every success, reduce the speed of the target by 15.  If you reduce the speed of the target to zero, they are completely Restrained.  Once per round, the target can make a Strength check against your Powercasting DC, ending this effect after three successes.  ",
             "overchargeable_bool" : true,
-            "overcharge_str" : "For every level of overcharge, make an additional two Powercasting Ability checks.  ",
+            "overcharge_str" : "For every level of overcharge, make an additional two Powercasting Ability checks, and you may select one additional target to divide your total number of Powercasting checks between as you see fit.  ",
 
             "class_str" : "Subvertist",
             "subclass_str" : "",
@@ -265,7 +265,7 @@
             "damage_effect_str" : "---",
             
             "flavor_str" : "---",
-            "mechanics_str" : "Choose a target within range.  That target must make a Strength Saving Throw, being pushed 10 in a direction of your choosing on a failure, while being pushed 30 feet in a direction of your choosing and being knocked prone on a failure.  ",
+            "mechanics_str" : "Choose a target within range.  That target must make a Strength Saving Throw, being pushed 15 in a direction of your choosing on a failure, while being pushed 30 feet in a direction of your choosing and being knocked prone on a failure.  ",
             "overchargeable_bool" : true,
             "overcharge_str" : "For every level of Overcharge, the distance the target is pushed on a failure increases by 15 feet.  ",
 
@@ -311,7 +311,7 @@
             "damage_effect_str" : "---",
             
             "flavor_str" : "---",
-            "mechanics_str" : "Make a number of Ranged Superpower Attacks against up to five targets within range.  You may move as normal between the Attacks made while casting this Superpower.  On a hit, each target suffers Concussive damage equal to your Powercasting Modifier and is pushed 20 feet directly away from you.  ",
+            "mechanics_str" : "Make a number of Ranged Superpower Attacks against up to five targets within range.  You may move as normal between the Attacks made while casting this Superpower.  On a hit, each target suffers Concussive damage equal to your Powercasting Modifier and is pushed 10 feet directly away from you.  ",
             "overchargeable_bool" : true,
             "overcharge_str" : "For every level of Overcharge, increase the range of this Superpower by 10 feet and the number of targets by 2.  ",
 
@@ -326,8 +326,8 @@
             "name_str" : "Vortex Flurry",
             "page_url" : "vortex-flurry.html",
 
-            "level_int" : 2,
-            "level_str" : "2nd",
+            "level_int" : 1,
+            "level_str" : "1st",
 
             "casting_time_int" : 3,
             "casting_time_str" : "1 Reaction",
@@ -415,8 +415,8 @@
             "races_str" : ""
         },
         {
-            "name_str" : "Stunning Shot",
-            "page_url" : "stunning-shot.html",
+            "name_str" : "Entangling Shot",
+            "page_url" : "entangling-shot.html",
 
             "level_int" : 1,
             "level_str" : "1st",
@@ -586,7 +586,7 @@
             "damage_effect_str" : "Incinerating",
             
             "flavor_str" : "You are able to channel your internal reserves of radiation into quick beams of destructive light that fire from your eyes.  ",
-            "mechanics_str" : "Make a ranged Power attack against a target within range.  On a hit, the target takes 4d10 Incinerating damage.  ",
+            "mechanics_str" : "Make a ranged Power attack against a target within range.  On a hit, the target takes 2d10 Incinerating damage.  ",
             "overchargeable_bool" : false,
             "overcharge_str" : "For every additional level of overcharge, add 1d10 to the damage roll.  ",
 
@@ -631,54 +631,9 @@
             "damage_effect_str" : "---",
             
             "flavor_str" : "You tap into a wellspring of reactivity to faster perceive and navigate your surroundings.  ",
-            "mechanics_str" : "You benefit from either Disengage or Dash until the end of this turn (your choice).  ",
+            "mechanics_str" : "You benefit from the Disengage and Dash Actions until the end of this turn.  ",
             "overchargeable_bool" : false,
             "overcharge_str" : "When cast at 2nd level, you benefit from Disengage and Dash until the end of this turn, rather than only one.  ",
-
-            "class_str" : "Subvertist",
-            "subclass_str" : "",
-
-            "feats_str" : "",
-            "backgrounds_str" : "",
-            "races_str" : ""
-        },
-        {
-            "name_str" : "Impact Negation",
-            "page_url" : "impact-negation.html",
-
-            "level_int" : 1,
-            "level_str" : "1st",
-
-            "casting_time_int" : 3,
-            "casting_time_str" : "1 Reaction",
-            "casting_time_asterisk_str" : "",
-            
-            "range_area_int" : 0,
-            "range_area_str" : "60",
-            
-            "components_verbal_bool" : false,
-            "components_somatic_bool" : true,
-            "components_material_bool" : false,
-            "components_cost_int" : 0,
-            "components_cost_str" : "NA",
-            "components_vsm_str" : "S",
-            "components_description_str" : "",
-            
-            "duration_int" : 0,
-            "duration_str" : "Instantaneous",
-            
-            "type_str" : "Velocity",
-            "type_img" : "/_SiteResources/Images/Velocity.png",
-            
-            "attack_save_int" : 0,
-            "attack_save_str" : "---",
-            
-            "damage_effect_str" : "---",
-            
-            "flavor_str" : "You harness your power to dampen the fall for multiple targets, potentially including yourself.  ",
-            "mechanics_str" : "When you perceive something falling, you can cast this Superpower to slow the falling speed of the target and 9 others within range (possibly including yourself) sufficiently to prevent falling damage for one round.  ",
-            "overchargeable_bool" : false,
-            "overcharge_str" : "For every level of Overcharge, increase the range of the power by 30 and the number of targets by 10.  ",
 
             "class_str" : "Subvertist",
             "subclass_str" : "",

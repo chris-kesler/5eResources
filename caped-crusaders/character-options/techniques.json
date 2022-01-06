@@ -101,7 +101,7 @@
             "damage_effect_str" : "Buff",
             
             "flavor_str" : "Not Applicable",
-            "mechanics_str" : "When you make an Attack, you may gain a bonus to the Attack roll equal to the modifiers applicable to the Damage roll by forgoing those modifiers on the Damage roll.  For example, if your Attack has an Attack roll of 1d20 + 7 and a Damage roll of 2d4 + 4, you could apply this feature to have an Attack roll of 1d20 + 7 + 4 and a Damage roll of 2d4.  ",
+            "mechanics_str" : "When you make an Attack and miss, you may gain a bonus to the Attack roll equal to the modifiers applicable to the Damage roll by forgoing those modifiers on the Damage roll, potentially turning the Attack into a hit.  For example, if your Attack has an Attack roll of 1d20 + 7 and a Damage roll of 2d4 + 4, you could apply this feature to have an Attack roll of 1d20 + 7 + 4 and a Damage roll of 2d4.  ",
 
             "class_str" : "Prowler",
             "subclass_str" : "",
@@ -123,7 +123,7 @@
             "damage_effect_str" : "Buff",
             
             "flavor_str" : "Not Applicable",
-            "mechanics_str" : "When an Attack would hit you, you may use your Reaction to redirect that Attack at any other creature within range of the attacker other than the attacker themselves.  You may use this feature a number of times equal to your Proficiency Bonus between Long Rests.  ",
+            "mechanics_str" : "When an Attack would hit you, you may use your Reaction to redirect that Attack at any other creature within 15 feet of you other than the attacker themselves.  You may use this feature a number of times equal to your Proficiency Bonus between Long Rests.  ",
 
             "class_str" : "Prowler",
             "subclass_str" : "",
@@ -189,7 +189,7 @@
             "damage_effect_str" : "Buff",
             
             "flavor_str" : "Not Applicable",
-            "mechanics_str" : "As part of a Short Rest, you can grant up to 10 willing creatures within 100 feet of you throughout the rest a number of temporary hit points equal to your level + your Proficiency Bonus.  In addition, you and friendly creatures within 10 feet of you can't be Frightened while you are conscious.  ",
+            "mechanics_str" : "As part of a Short Rest, you can grant up to 10 willing creatures within 100 feet of you throughout the rest a number of temporary hit points equal to your level + your Proficiency Bonus.  You can also grant these Temporary Hit Points to one creature within 30 feet of you as a Bonus Action a number of times equal to your Proficiency Bonus between Long Rests.  In addition, you and friendly creatures within 10 feet of you can't be Frightened while you are conscious.  ",
 
             "class_str" : "Soldier",
             "subclass_str" : "",
