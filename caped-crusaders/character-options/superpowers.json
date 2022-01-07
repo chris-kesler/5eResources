@@ -1,5 +1,24 @@
 {
-    "power": [
+    "type" : [
+        {
+            "type_name" : "Disabling",
+            "type_credit" : "Disable by Mas Dhimas from NounProject.com"    
+        },
+        {
+            "type_name" : "Positioning",
+            "type_credit" : "Move by Тимур Минвалеев from NounProject.com"    
+        },
+        {
+            "type_name" : "Radiation",
+            "type_credit" : "Sun by Angelo Troiano from NounProject.com"    
+        },
+        {
+            "type_name" : "Velocity",
+            "type_credit" : "Speed by Alice Design from NounProject.com"    
+        }
+    ],
+
+    "power" : [
         {
             "name_str" : "Vortex Tunnel",
             "page_url" : "vortex-tunnel.html",
@@ -8,7 +27,7 @@
             "level_str" : "3rd",
 
             "casting_time_int" : 3,
-            "casting_time_str" : "1 Action",
+            "casting_time_str" : "1 Reaction",
             "casting_time_asterisk_str" : "",
             
             "range_area_int" : 0,
@@ -25,9 +44,7 @@
             "duration_int" : 0,
             "duration_str" : "Instananeous",
             
-            "type_str" : "Disabling",
-            "type_img" : "/_SiteResources/Images/Disabling.png",
-            "type_img_credit" : "Disable by Mas Dhimas from NounProject.com",
+            "type_str" : "Positioning",
             
             "attack_save_int" : 0,
             "attack_save_str" : "---",
@@ -35,7 +52,7 @@
             "damage_effect_str" : "---",
             
             "flavor_str" : "---",
-            "mechanics_str" : "Choose up to twenty-five willing creatures or objects within range.  You can move those creatures and objects up to 30 feet in any direction of your choosing for each.  If the creatures or objects are falling, the damage calculation for fall damage resets after you finish moving them.  If a target collides with a solid surface during the movement you have imposed, they take no damage.  ",
+            "mechanics_str" : "When you witness creatures or objects falling within 60 feet of you, you may cast this Superpower as a Reaction to choose up to twenty-five willing creatures or objects within range.  You can move those creatures and objects up to 30 feet in any direction of your choosing for each.  If the creatures or objects are falling, the damage calculation for fall damage resets after you finish moving them.  If a target collides with a solid surface during the movement you have imposed, they take no damage.  ",
             "overchargeable_bool" : true,
             "overcharge_str" : "For each level of overcharge, increase each dimension of the line by 10 feet and the number of targets by 5.  ",
 
@@ -71,9 +88,9 @@
             "duration_int" : 0,
             "duration_str" : "Instananeous",
             
-            "type_str" : "Disabling",
-            "type_img" : "/_SiteResources/Images/Disabling.png",
-            "type_img_credit" : "Disable by Mas Dhimas from NounProject.com",
+            "type_str" : "Positioning",
+            "type_img" : "/_SiteResources/Images/Positioning.png",
+            "type_credit" : "Move by Тимур Минвалеев from NounProject.com",
             
             "attack_save_int" : 0,
             "attack_save_str" : "---",
@@ -119,7 +136,7 @@
             
             "type_str" : "Disabling",
             "type_img" : "/_SiteResources/Images/Disabling.png",
-            "type_img_credit" : "Disable by Mas Dhimas from NounProject.com",
+            "type_credit" : "Disable by Mas Dhimas from NounProject.com",
             
             "attack_save_int" : 0,
             "attack_save_str" : "---",
@@ -163,9 +180,7 @@
             "duration_int" : 0,
             "duration_str" : "Instananeous",
             
-            "type_str" : "Disabling",
-            "type_img" : "/_SiteResources/Images/Disabling.png",
-            "type_img_credit" : "Disable by Mas Dhimas from NounProject.com",
+            "type_str" : "Positioning",
             
             "attack_save_int" : 0,
             "attack_save_str" : "---",
@@ -173,7 +188,7 @@
             "damage_effect_str" : "---",
             
             "flavor_str" : "---",
-            "mechanics_str" : "Make a melee Superpower Attack against a target within range.  On a hit, you and the target travel 30 feet along a straight line in a direction of your choosing and the target is pushed another 20 feet beyond that, taking 2d10 Concussive damage (and potentially some fall damage).  In addition, any target that was within five feet you along the 30 foot line is pushed 15 feet perpendicularly away from the line.  Targets in the path of the line are pushed 15 forward and 15 feet left or right (your choice for each).  On a miss, you move along the 30 foot line alone, pushing targets 5 feet each instead of 15.  ",
+            "mechanics_str" : "Make a melee Superpower Attack against a target within range.  On a hit, you and the target travel 30 feet along a straight line in a direction of your choosing.  In addition, any target that was within five feet you along the 30 foot line other than the main target is pushed 15 feet perpendicularly away from the line.  Targets in the path of the line are pushed 15 forward and 15 feet left or right (your choice for each).  On a miss, you move along the 30 foot line alone, pushing targets 5 feet each instead of 15.  After this line effect is resolved, the original target is then pushed another 20 feet beyond that point if you successfully hit the initial attack, taking 2d10 Concussive damage (and potentially some fall damage).  If the target collides with a creature at least one size larger or a solid surface during this latter movement, they stop moving and fall prone.  ",
             "overchargeable_bool" : false,
             "overcharge_str" : "---",
 
@@ -189,7 +204,7 @@
             "page_url" : "blinding-shot.html",
 
             "level_int" : 0,
-            "level_str" : "cantrip",
+            "level_str" : "Cantrip",
 
             "casting_time_int" : 3,
             "casting_time_str" : "1 Bonus Action",
@@ -210,8 +225,6 @@
             "duration_str" : "Instananeous",
             
             "type_str" : "Disabling",
-            "type_img" : "/_SiteResources/Images/Disabling.png",
-            "type_img_credit" : "Disable by Mas Dhimas from NounProject.com",
             
             "attack_save_int" : 0,
             "attack_save_str" : "---",
@@ -255,9 +268,9 @@
             "duration_int" : 0,
             "duration_str" : "Instananeous",
             
-            "type_str" : "Disabling",
-            "type_img" : "/_SiteResources/Images/Disabling.png",
-            "type_img_credit" : "Disable by Mas Dhimas from NounProject.com",
+            "type_str" : "Positioning",
+            "type_img" : "/_SiteResources/Images/Positioning.png",
+            "type_credit" : "Move by Тимур Минвалеев from NounProject.com",
             
             "attack_save_int" : 0,
             "attack_save_str" : "---",
@@ -301,9 +314,9 @@
             "duration_int" : 0,
             "duration_str" : "Instananeous",
             
-            "type_str" : "Disabling",
-            "type_img" : "/_SiteResources/Images/Disabling.png",
-            "type_img_credit" : "Disable by Mas Dhimas from NounProject.com",
+            "type_str" : "Positioning",
+            "type_img" : "/_SiteResources/Images/Positioning.png",
+            "type_credit" : "Move by Тимур Минвалеев from NounProject.com",
             
             "attack_save_int" : 0,
             "attack_save_str" : "---",
@@ -347,9 +360,9 @@
             "duration_int" : 0,
             "duration_str" : "Instananeous",
             
-            "type_str" : "Disabling",
-            "type_img" : "/_SiteResources/Images/Disabling.png",
-            "type_img_credit" : "Disable by Mas Dhimas from NounProject.com",
+            "type_str" : "Positioning",
+            "type_img" : "/_SiteResources/Images/Positioning.png",
+            "type_credit" : "Move by Тимур Минвалеев from NounProject.com",
             
             "attack_save_int" : 0,
             "attack_save_str" : "---",
@@ -395,7 +408,7 @@
             
             "type_str" : "Disabling",
             "type_img" : "/_SiteResources/Images/Disabling.png",
-            "type_img_credit" : "Disable by Mas Dhimas from NounProject.com",
+            "type_credit" : "Disable by Mas Dhimas from NounProject.com",
             
             "attack_save_int" : 0,
             "attack_save_str" : "---",
@@ -441,7 +454,7 @@
             
             "type_str" : "Disabling",
             "type_img" : "/_SiteResources/Images/Disabling.png",
-            "type_img_credit" : "Disable by Mas Dhimas from NounProject.com",
+            "type_credit" : "Disable by Mas Dhimas from NounProject.com",
             
             "attack_save_int" : 0,
             "attack_save_str" : "---",
@@ -487,7 +500,7 @@
             
             "type_str" : "Disabling",
             "type_img" : "/_SiteResources/Images/Disabling.png",
-            "type_img_credit" : "Disable by Mas Dhimas from NounProject.com",
+            "type_credit" : "Disable by Mas Dhimas from NounProject.com",
             
             "attack_save_int" : 0,
             "attack_save_str" : "---",
@@ -532,8 +545,7 @@
             "duration_str" : "Instantaneous",
             
             "type_str" : "Disabling",
-            "type_img" : "/_SiteResources/Images/Disabling.png",
-            "type_img_credit" : "Disable by Mas Dhimas from NounProject.com",
+            "type_credit" : "Disable by Mas Dhimas from NounProject.com",
             
             "attack_save_int" : 0,
             "attack_save_str" : "---",
@@ -633,7 +645,7 @@
             "flavor_str" : "You tap into a wellspring of reactivity to faster perceive and navigate your surroundings.  ",
             "mechanics_str" : "You benefit from the Disengage and Dash Actions until the end of this turn.  ",
             "overchargeable_bool" : false,
-            "overcharge_str" : "When cast at 2nd level, you benefit from Disengage and Dash until the end of this turn, rather than only one.  ",
+            "overcharge_str" : "---",
 
             "class_str" : "Subvertist",
             "subclass_str" : "",
@@ -643,8 +655,8 @@
             "races_str" : ""
         },
         {
-            "name_str" : "Blinking Step",
-            "page_url" : "blinking-step.html",
+            "name_str" : "Blinking Acrobatics",
+            "page_url" : "blinking-acrobatics.html",
 
             "level_int" : 2,
             "level_str" : "2nd",
@@ -665,7 +677,7 @@
             "components_description_str" : "",
             
             "duration_int" : 0,
-            "duration_str" : "Instantaneous",
+            "duration_str" : "1 Minute",
             
             "type_str" : "Velocity",
             "type_img" : "/_SiteResources/Images/Velocity.png",
@@ -675,55 +687,10 @@
             
             "damage_effect_str" : "---",
             
-            "flavor_str" : "You tap into a wellspring of reactivity instantly move between places.  ",
-            "mechanics_str" : "You teleport up to 30 feet to an unoccupied space you can see.  ",
+            "flavor_str" : "You tap into a wellspring of reactivity and move in an inhuman manner.  ",
+            "mechanics_str" : "You gain the benefits of the Dash and Disengage Actions until the end of this turn, and suffer no harmful effects from moving through hazardous areas of effect.  In addition, you can move through spaces as small as 1 foot in diameter, or any space that a Tiny creature can move through until the end of this turn.  As a Bonus Action on suibsequent turns while this Superpower persists, you can gain this movement bonus again.  ",
             "overchargeable_bool" : false,
             "overcharge_str" : "For every level of overcharge, add 10 feet to the range of this power.  ",
-
-            "class_str" : "Subvertist",
-            "subclass_str" : "",
-
-            "feats_str" : "",
-            "backgrounds_str" : "",
-            "races_str" : ""
-        },
-        {
-            "name_str" : "Rapid Barrage",
-            "page_url" : "rapid-barrage.html",
-
-            "level_int" : 3,
-            "level_str" : "3rd",
-
-            "casting_time_int" : 3,
-            "casting_time_str" : "1 Action",
-            "casting_time_asterisk_str" : "",
-            
-            "range_area_int" : 0,
-            "range_area_str" : "Self",
-            
-            "components_verbal_bool" : false,
-            "components_somatic_bool" : true,
-            "components_material_bool" : false,
-            "components_cost_int" : 0,
-            "components_cost_str" : "NA",
-            "components_vsm_str" : "S",
-            "components_description_str" : "",
-            
-            "duration_int" : 0,
-            "duration_str" : "Instantaneous",
-            
-            "type_str" : "Velocity",
-            "type_img" : "/_SiteResources/Images/Velocity.png",
-            
-            "attack_save_int" : 0,
-            "attack_save_str" : "---",
-            
-            "damage_effect_str" : "---",
-            
-            "flavor_str" : "You hurl a barrage of projectiles, pelleting enemies within the area.  ",
-            "mechanics_str" : "Each creature of your choice within a 60 foot cone must succeed on a Dex save, taking 4d10 bluegeoning, piercing, or slashing damage (your choice) and half as much on a success.  ",
-            "overchargeable_bool" : false,
-            "overcharge_str" : "For every level of overcharge, add 10 feet to the range and 1d10 to the damage of this power.  ",
 
             "class_str" : "Subvertist",
             "subclass_str" : "",

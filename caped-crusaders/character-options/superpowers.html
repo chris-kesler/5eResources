@@ -13,8 +13,13 @@
         var powers = [];
         $.getJSON('superpowers.json', function(data) {
           $.each(data.power, function(i, f) {
+            type_credit = "---";
+            $.each(data.type, function(x, y) {
+              if (f.type_str == y.type_name)
+              type_credit = y.type_credit;
+            });
             var tblRow = "<tr>" 
-              + "<td>" + "<img class='FilterTableImage' src=" + f.type_img + "><br>" + f.type_str + "</td>" 
+              + "<td>" + "<img class='FilterTableImage' src=/_SiteResources/Images/" + f.type_str + ".png alt='" + type_credit + "'><br>" + f.type_str + "</td>" 
               + "<td>" + f.level_str + "</td>" 
               + "<td><a href='superpowers/" + f.page_url + "' target='_blank'>" + f.name_str + "</a></td>" 
               + "<td>" + f.casting_time_str + "</td>" 
@@ -59,7 +64,7 @@
               <h2>Include Filters</h2>
               <hr>
 
-              <input type="text" id="FilterInputInclude0" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Science. . .">
+              <input type="text" id="FilterInputInclude0" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Type. . .">
               <input type="text" id="FilterInputInclude1" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Level. . .">
               <input type="text" id="FilterInputInclude2" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Name. . .">
               <input type="text" id="FilterInputInclude3" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Casting Time. . .">
@@ -76,7 +81,7 @@
               <h2>Exclude Filters</h2>
               <hr>
 
-              <input type="text" id="FilterInputExclude0" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Science. . .">
+              <input type="text" id="FilterInputExclude0" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Type. . .">
               <input type="text" id="FilterInputExclude1" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Level. . .">
               <input type="text" id="FilterInputExclude2" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Name. . .">
               <input type="text" id="FilterInputExclude3" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Casting Time. . .">
@@ -92,7 +97,7 @@
                             
               <table id="FilterTable">
                 <thead class="header">
-                  <th><button class="TableSortButton" onclick="sortTable(0)">Science</button></th>
+                  <th><button class="TableSortButton" onclick="sortTable(0)">Type</button></th>
                   <th><button class="TableSortButton" onclick="sortTable(1)">Level</button></th>
                   <th><button class="TableSortButton" onclick="sortTable(2)">Name</button></th>
                   <th><button class="TableSortButton" onclick="sortTable(3)">Casting Time</button></th>

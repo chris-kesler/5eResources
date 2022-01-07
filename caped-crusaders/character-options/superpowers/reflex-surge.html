@@ -21,7 +21,7 @@
               document.getElementById("page-description-flavor").innerHTML = "<b>Flavor Description:</b>  <i>" + f.flavor_str + "</i>";
               document.getElementById("page-description-mechanics").innerHTML = "<b>Standard Mechanics:</b>  " + f.mechanics_str;
               document.getElementById("page-description-overcharge").innerHTML = "<b>Overcharge Mechanics:</b>  " + f.overcharge_str;
-              document.getElementById("casting-page-image").src = f.type_img;
+              document.getElementById("casting-page-image").src = "/_SiteResources/Images/" + f.type_str + ".png";
               var tblRow1 = "<tr><th style='width: 15vw'>Level</th><th style='width: 15vw'>Casting Time</th><th style='width: 15vw'>Range/Area</th><th style='width: 15vw'>Components</th></tr>"
               $(tblRow1).appendTo("#TechTable tbody");
               var tblRow2 = "<tr>" 
