@@ -152,9 +152,9 @@
             "components_cost_str" : "NA",
             "components_vsm_str" : "V, S",
             "components_description_str" : "",
-                        
+
             "flavor_str" : "---",
-            "mechanics_str" : "You create an eruption of molten rock on a point within range. Any creature within a 30 ft radius of that point must make a Dexterity Saving Throw, on a failed save taking 3d8 fire damage and 3d8 bludgeoning damage, or half as much on a sucessful save. A creature who fails the save is lit on fire, and suffers 1d8 fire damage at the beginning of each of its turns. A creature can repeat the saving throw at the end of each of its turns until they take an action to douse the flames.  ",
+            "mechanics_str" : "You create an eruption of molten rock on a point within range. Any creature within a 30 ft radius of that point must make a Dexterity Saving Throw, on a failed save taking 3d8 fire damage and 3d8 bludgeoning damage, or half as much on a sucessful save. A creature who fails the save is lit on fire, and suffers 1d8 fire damage at the beginning of each of its turns. A creature can use an action to douse the flames, ending this effect.  ",
             "overchargeable_bool" : true,
             "overcharge_str" : "Whenever you cast this spell using a spell slot of 6th level or higher the spell deals an additional 1d8 fire damage for each slot above 5th.  "
         },
@@ -212,12 +212,12 @@
             "components_description_str" : "a small piece of mud",
                         
             "flavor_str" : "---",
-            "mechanics_str" : "You spawn a cold, frigid wind targeting a creature you can see within range. That creature makes a Strength Saving Throw, on a failed save taking 1d6 cold damage and getting pushed back 10 ft.",
+            "mechanics_str" : "You harness cold, frigid winds, which you can direct for the duration.  When you cast this spell or on subsequent turns as an Action, you may target a creature you can see within range.  That creature must makes a Strength Saving Throw, taking 1d6 cold damage and being pushed 10 feet in a direction of your choice on a failed save.",
             "overchargeable_bool" : true,
             "overcharge_str" : "Whenever you cast this spell using a spell slot of 3rd level or higher the spell deals an additional 1d6 cold damage for each slot above 2nd.  "
         },
         {
-            "school_str" : "Transmutation",
+            "school_str" : "Conjuration",
             "level_str" : "1st",
             "name_str" : "Ethereal Gauntlets",
             "casting_time_str" : "1 Action",
@@ -275,7 +275,7 @@
             "overcharge_str" : "---"
         },
         {
-            "school_str" : "Transmutation",
+            "school_str" : "Conjuration",
             "level_str" : "2nd",
             "name_str" : "Frost Gauntlets",
             "casting_time_str" : "1 Action",
@@ -357,7 +357,7 @@
             "components_description_str" : "---",
                         
             "flavor_str" : "---",
-            "mechanics_str" : "You touch a creature within range. Make a melee spell attack roll against a creature within range. On a hit, the creature takes 4d6 lightning damage and must make a Constitution Saving Throw becoming stunned for one round on a failed save.",
+            "mechanics_str" : "Make a melee spell attack roll against a creature within range. On a hit, the creature takes 4d6 lightning damage and must make a Constitution Saving Throw becoming stunned for one round on a failed save.",
             "overchargeable_bool" : true,
             "overcharge_str" : "Whenever you cast this spell using a spell slot of 4th level or higher the spell deals an additional 1d6 lightning damage for each slot above 3rd."
         },
@@ -445,8 +445,8 @@
                         
             "flavor_str" : "---",
             "mechanics_str" : "You create a cloud of poison in a 10 ft radius centered on the target. Creatures within the area other than you must make a Constitution Saving Throw or become poisoned. A poisoned creature can repeat the saving throw at the end of each of their turns, ending the save on a success.",
-            "overchargeable_bool" : true,
-            "overcharge_str" : "Whenever you cast this spell using a spell slot of 3rd level or higher the spell deals an additional 1d6 cold damage for each slot above 2nd."
+            "overchargeable_bool" : false,
+            "overcharge_str" : "---"
         },
         {
             "school_str" : "Transmutation",
@@ -478,7 +478,7 @@
             "overcharge_str" : "Whenever you cast this spell using a spell slot of 3rd level or higher the spell deals an additional 1d6 lightning damage for each level above 2nd."
         },
         {
-            "school_str" : "Transmutation",
+            "school_str" : "Conjuration",
             "level_str" : "1st",
             "name_str" : "Spectral Bindings",
             "casting_time_str" : "1 Action",
@@ -507,7 +507,7 @@
             "overcharge_str" : "Whenever you cast this spell using a spell slot of 2nd level or higher the spell can target an additional humanoid for each slot above 1st."
         },
         {
-            "school_str" : "Transmutation",
+            "school_str" : "Conjuration",
             "level_str" : "3rd",
             "name_str" : "Storm Gauntlets",
             "casting_time_str" : "1 Action",
@@ -531,7 +531,7 @@
             "components_description_str" : "",
                         
             "flavor_str" : "---",
-            "mechanics_str" : "You touch a willing creature within range. Arcs of lightning spawn from that creature's fingers. As an action, that creature can make a melee spell attack roll using your spellcasting attack bonus. On a hit, the target suffers 2d6 lightning damage and 2d6 thunder damage and must make a Constitution Saving Throw, on a failed save getting pushed back 10 ft. At higher levels: Whenever you cast this spell using a spell slot of 4th level or higher the spell deals an additional 1d6 thunder damage for each slot above 3rd.",
+            "mechanics_str" : "You touch a willing creature within range.  Arcs of lightning spawn from that creature's fingers. As an action, that creature can make a melee spell attack roll using your spellcasting attack bonus. On a hit, the target suffers 4d6 lightning or thunder damage (your choice for each strike) and must make a Strength Saving Throw, being pushed back 10 feet upon a failure. At higher levels: Whenever you cast this spell using a spell slot of 4th level or higher the spell deals an additional 1d6 thunder damage for each slot above 3rd.",
             "overchargeable_bool" : false,
             "overcharge_str" : "---"
         },
