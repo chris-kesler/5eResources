@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-US-Compatible" content="e-edge">
+    <title>KnowOne's Website of Everything</title>
+    <link rel="icon" href="/_SiteResources/Images/OwlOfMinerva_ModifiedLogo.png">
+    <link rel="stylesheet" href="/caped-crusaders-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+    <script>
+      $(function readTech() {
+        var npc = [];
+        $.getJSON('../npcs.json', function(data) {
+          var path = window.location.pathname;
+          var page = path.split("/").pop();
+          $.each(data.npc, function(i, f) {
+            data_page = f.name.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html";
+            if (data_page == page) {
+              document.getElementById("casting-page-title").innerHTML = "Caped Crusaders: npcs > " + f.name;
+              document.getElementById("casting-table-title").innerHTML = f.name;
+              document.getElementById("page-description").innerHTML = f.description;
+              document.getElementById("wiki-page-image").src = f.image_weblink;
+              image_source = f.image_sourcelink;
+              image_alt = f.name;
+              var tblRow1 = "<tr><th style='width: 20vw'>Alias</th><th style='width: 20vw'>Title</th><th style='width: 20vw'>Profession</th></tr>"
+              $(tblRow1).appendTo("#TechTable tbody");
+              var tblRow2 = "<tr>" 
+                + "<td>" + f.alias + "</td>" 
+                + "<td>" + f.title + "</td>" 
+                + "<td>" + f.profession + "</td>" 
+                + "</tr>"
+              $(tblRow2).appendTo("#TechTable tbody");
+              var tblRow3 = "<tr><th>Race</th><th>Location</th><th>Faction</th></tr>";
+              $(tblRow3).appendTo("#TechTable tbody");
+              var tblRow4 = "<tr>"
+                + "<td>" + f.race + "</td>" 
+                + "<td>" + f.location + "</td>" 
+                + "<td>" + f.faction + "</td>" 
+                + "</tr>"
+              $(tblRow4).appendTo("#TechTable tbody");
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+
+
+  <body>
+    <div class="PageContainer, PlanesMapBackground"> 
+      <div class="PageHeader">
+        <div class="Import_PageHeader"></div>
+          <h1 id="casting-page-title"></h1>
+          <hr>
+      </div>
+        
+
+      <div class="PageContent">
+        <div class="AnchorCenter">
+          <div class="AnchorRight">
+            <section class="PageContentRight">
+              <button class="WikiBackButton" onclick="location.href='../npcs.html'">Out to npcs</button>
+              <h2 id="casting-table-title"></h2>
+              <hr>
+
+              <img id="wiki-page-image" class="CastingPageImage" alt="NPC Image" onclick="window.open(`${image_source}`)">
+
+              <table id="TechTable" class="caped-crusader-table">
+                <tbody></tbody>
+              </table>
+              <hr>
+              <p id="page-description">
+              </p>
+              
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <footer class="Import_PageFooter"></footer>
+
+    </div>
+
+  </body>
+</html>
+
+<script type="text/javascript">
+  $(function () {
+
+    $(".Import_PageHeader").load("/_SiteResources/Pages/Import_PageHeader.html");
+    $(".Import_ContentLeft").load("/_SiteResources/Pages/Import_ContentLeft.html");
+    $(".Import_PageFooter").load("/_SiteResources/Pages/Import_PageFooter.html");
+
+});
+</script>
