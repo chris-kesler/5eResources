@@ -15,6 +15,10 @@
         {
             "type_name" : "Velocity",
             "type_credit" : "Speed by Alice Design from NounProject.com"    
+        },
+        {
+            "type_name" : "Gravity",
+            "type_credit" : "Gravity by Creaticca Creative Agency from NounProject.com"    
         }
     ],
 
@@ -104,6 +108,51 @@
 
             "class_str" : "Subvertist",
             "subclass_str" : "",
+
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Telekinetic Blast",
+            "page_url" : "telekinetic-blast.html",
+
+            "level_int" : 3,
+            "level_str" : "2nd",
+
+            "casting_time_int" : 3,
+            "casting_time_str" : "1 Action",
+            "casting_time_asterisk_str" : "",
+            
+            "range_area_int" : 0,
+            "range_area_str" : "60 feet",
+            
+            "components_verbal_bool" : false,
+            "components_somatic_bool" : true,
+            "components_material_bool" : false,
+            "components_cost_int" : 0,
+            "components_cost_str" : "NA",
+            "components_vsm_str" : "S",
+            "components_description_str" : "",
+            
+            "duration_int" : 0,
+            "duration_str" : "Instananeous",
+            
+            "type_str" : "Gravity",
+            
+            "attack_save_int" : 0,
+            "attack_save_str" : "---",
+            
+            "damage_effect_str" : "---",
+            
+            "flavor_str" : "---",
+            "mechanics_str" : "You conjure up a blast of force targeting a creature within range. Make a spell attack roll, on a hit dealing 3d8 force damage, and if the creature is size Large or smaller it must make a Strength Saving Throw or get pushed back 10 ft.",
+            "overchargeable_bool" : false,
+            "overcharge_str" : "---",
+
+            "class_str" : "---",
+            "subclass_str" : "",
+            "source_str" : "Thaleron's Spellbook",
 
             "feats_str" : "",
             "backgrounds_str" : "",

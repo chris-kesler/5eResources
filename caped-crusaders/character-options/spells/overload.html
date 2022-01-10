@@ -41,6 +41,14 @@
                 + "<td>" + f.damage_effect_str + "</td>" 
                 + "</tr>"
               $(tblRow4).appendTo("#TechTable tbody");
+              $.each(data.author, function(x, y) {
+                if (f.source_str == y.author_name) {
+                  author_credit = y.author_credit;
+                  source_url = y.source_url;
+                  author_credit = y.author_credit;
+                }
+              });
+              document.getElementById("source").innerHTML = "<a href='" + source_url + "' target='blank'>" + author_credit + "</a>";
             }
           });
         });
@@ -72,6 +80,7 @@
               <table id="TechTable" class="caped-crusader-table">
                 <tbody></tbody>
               </table>
+              <h3 id="source"></h3>
               <hr>
               <p id="page-description-flavor">
               </p>

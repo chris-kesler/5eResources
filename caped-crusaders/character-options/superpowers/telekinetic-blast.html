@@ -10,19 +10,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
     <script>
       $(function readTech() {
-        var spell = [];
-        $.getJSON('../spells.json', function(data) {
+        var superpowers = [];
+        $.getJSON('../superpowers.json', function(data) {
           var path = window.location.pathname;
           var page = path.split("/").pop();
-          $.each(data.spell, function(i, f) {
-            data_page = f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html";
-            if (data_page == page) {
-              document.getElementById("casting-page-title").innerHTML = "Caped Crusaders: Spells > " + f.name_str;
+          $.each(data.power, function(i, f) {
+            if (f.page_url == page) {
+              document.getElementById("casting-page-title").innerHTML = "Caped Crusaders: Superpowers > " + f.name_str;
               document.getElementById("casting-table-title").innerHTML = f.name_str;
               document.getElementById("page-description-flavor").innerHTML = "<b>Flavor Description:</b>  <i>" + f.flavor_str + "</i>";
               document.getElementById("page-description-mechanics").innerHTML = "<b>Standard Mechanics:</b>  " + f.mechanics_str;
               document.getElementById("page-description-overcharge").innerHTML = "<b>Overcharge Mechanics:</b>  " + f.overcharge_str;
-              document.getElementById("casting-page-image").src = "/_SiteResources/Images/Sigil-" + f.school_str + ".png";
+              document.getElementById("casting-page-image").src = "/_SiteResources/Images/" + f.type_str + ".png";
               var tblRow1 = "<tr><th style='width: 15vw'>Level</th><th style='width: 15vw'>Casting Time</th><th style='width: 15vw'>Range/Area</th><th style='width: 15vw'>Components</th></tr>"
               $(tblRow1).appendTo("#TechTable tbody");
               var tblRow2 = "<tr>" 
@@ -32,23 +31,15 @@
                 + "<td>" + f.components_vsm_str + "</td>" 
                 + "</tr>"
               $(tblRow2).appendTo("#TechTable tbody");
-              var tblRow3 = "<tr><th>Duration</th><th>School</th><th>Attack/Save</th><th>Damage/Effect</th></tr>";
+              var tblRow3 = "<tr><th>Duration</th><th>Type</th><th>Attack/Save</th><th>Damage/Effect</th></tr>";
               $(tblRow3).appendTo("#TechTable tbody");
               var tblRow4 = "<tr>"
                 + "<td>" + f.duration_str + "</td>" 
-                + "<td>" + f.school_str + "</td>" 
+                + "<td>" + f.type_str + "</td>" 
                 + "<td>" + f.attack_save_str + "</td>" 
                 + "<td>" + f.damage_effect_str + "</td>" 
                 + "</tr>"
               $(tblRow4).appendTo("#TechTable tbody");
-              $.each(data.author, function(x, y) {
-                if (f.source_str == y.author_name) {
-                  author_credit = y.author_credit;
-                  source_url = y.source_url;
-                  author_credit = y.author_credit;
-                }
-              });
-              document.getElementById("source").innerHTML = "<a href='" + source_url + "' target='blank'>" + author_credit + "</a>";
             }
           });
         });
@@ -70,7 +61,7 @@
         <div class="AnchorCenter">
           <div class="AnchorRight">
             <section class="PageContentRight">
-              <button class="WikiBackButton" onclick="location.href='../spells.html'">Out to Spells</button>
+              <button class="WikiBackButton" onclick="location.href='../superpowers.html'">Out to Superpowers</button>
               <h2 id="casting-table-title"></h2>
               <hr>
 
@@ -80,7 +71,6 @@
               <table id="TechTable" class="caped-crusader-table">
                 <tbody></tbody>
               </table>
-              <h3 id="source"></h3>
               <hr>
               <p id="page-description-flavor">
               </p>

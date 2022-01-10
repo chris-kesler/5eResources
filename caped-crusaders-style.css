@@ -686,7 +686,7 @@ iframe {
 
 #FilterTable {
   border-collapse: collapse; /* Collapse borders */
-  width: 83vw; /* Full-width */
+  min-width: 83vw; /* Full-width */
   border: 1px solid rgb(97, 97, 97); /* Add a grey border */
   overflow: scroll;
   display: inline-block;
@@ -695,7 +695,7 @@ iframe {
 #FilterTable th, #FilterTable tr td {
   text-align: left; /* Left-align text */
   padding: 5px; /* Add padding */
-  min-width: 155px;
+  min-width: 175px;
   color: black;
   border: 1px solid black;
 }
