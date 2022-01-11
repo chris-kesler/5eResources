@@ -253,7 +253,7 @@
             "page_url" : "blinding-shot.html",
 
             "level_int" : 0,
-            "level_str" : "Cantrip",
+            "level_str" : "0th (Cantrip)",
 
             "casting_time_int" : 3,
             "casting_time_str" : "1 Bonus Action",
@@ -527,7 +527,7 @@
             "page_url" : "distracting-blast.html",
 
             "level_int" : 0,
-            "level_str" : "Cantrip",
+            "level_str" : "0th (Cantrip)",
 
             "casting_time_int" : 3,
             "casting_time_str" : "1 Action",

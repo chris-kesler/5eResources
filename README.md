@@ -12,11 +12,11 @@ The jQuery library is used to import persistent HTML elements across multiple pa
 
 Site Content
 -------
-The website is broken down into four main categories, which are Caped Crusaders, Earth-5 Wiki, Tech Guides, and Character Builds.  
+The website is broken down into four main categories, which are Caped Crusaders, Tarreth Wiki, Tech Guides, and Character Builds.  
 
 Caped Crusaders is my personal variant 5e system that includes character options reflecting Magic, Technology/Techniques, and Superpowers.  The goal is to create a system that is comprehensive and more accommodating of science fiction elements.  
 
-The Earth-5 Wiki is a series of entries with descriptions that detail my homebrew world, which is heavily inspired by the standard Forgotten Realms setting.  Many aspects will be recognizable to avid fans of D&D, but there are a great many tweaks and utterly unique elements that distinguish it as its own.  The purpose of this wiki is to serve as an organized reference for lore and information, both for myself as a Dungeon Master and for the Players at my table.
+The Tarreth Wiki is a series of entries with descriptions that detail my homebrew world, which is heavily inspired by the standard Forgotten Realms setting.  Many aspects will be recognizable to avid fans of D&D, but there are a great many tweaks and utterly unique elements that distinguish it as its own.  The purpose of this wiki is to serve as an organized reference for lore and information, both for myself as a Dungeon Master and for the Players at my table.
 
 The Tech Guides are a series of articles I have written that go over Techs (techniques) that are highly effective within the gameplay of D&D 5e.  Some of these techs are rather exploitative of unintended mechanical interactions, but none are written with the intent of causing strife for other table members.  Some are merely thought experiments to see where the limits of the game lie, and how badly it breaks the game to push past those limits.  Others are strategies that help players make the most of their character's abilities.  These techs should not be considered for actual play without first considering the table environment, and are more intended to comment on the nature of 5th Edition mechanics.  
 

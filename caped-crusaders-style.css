@@ -714,9 +714,6 @@ iframe {
   background-color: rgb(200,200,200);
 }
 
-#FilterTable tr td:first-child, #FilterTable tr th:first-child  {
-  text-align: center;
-}
 
 
 .FilterTableImage, .class-image-small {

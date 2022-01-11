@@ -26,6 +26,11 @@
                 source_url = y.source_url;
               }
             });
+            if (f.overcharge_str != undefined) {
+              overchargeable = "True";
+            } else {
+              overchargeable = "False";
+            }
             var tblRow = "<tr>" 
               + "<td><a href='spells/" + f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html' target='_blank'>" + f.name_str + "</a></td>" 
               + "<td>" + f.level_str + "</td>" 
@@ -36,7 +41,7 @@
               + "<td>" + f.duration_str + "</td>" 
               + "<td>" + f.attack_save_str + "</td>" 
               + "<td>" + f.damage_effect_str + "</td>" 
-              + "<td>" + f.overchargeable_bool + "</td>" 
+              + "<td>" + overchargeable + "</td>" 
               + "<td>" + f.class_str + "</td>" 
               + "<td><a target='blank' href='" + source_url + "'>" + f.source_str + "</a></td>" 
               + "</tr>"

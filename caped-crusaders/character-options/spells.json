@@ -38,38 +38,917 @@
     ],
 
     "spell": [
+        
         {
-            "school_str" : "Necromancy",
-            "level_str" : "0th (Cantrip)",
             "name_str" : "Chill Touch",
+            "level_str" : "0th (Cantrip)",
+            "school_str" : "Necromancy",
             "casting_time_str" : "1 Action",
-            "duration_str" : "Instantaneous",
             "range_area_str" : "120 feet",
-            "attack_save_str" : "---",
-            "damage_effect_str" : "Buff",
-            "class_str" : "Sorcerer, Warlock, Wizard",
-            "subclass_str" : "---",
-            "feats_str" : "---",
-            "backgrounds_str" : "---",
-            "races_str" : "---",
-            "source_str" : "5E Basic Rules",
-
-            "casting_time_asterisk_str" : "",
-            
-            
-            "components_verbal_bool" : true,
-            "components_somatic_bool" : true,
-            "components_material_bool" : true,
-            "components_cost_str" : "NA",
             "components_vsm_str" : "V, S, M",
-            "components_description_str" : "",
-                       
-            "flavor_str" : "Not Applicable",
-            "mechanics_str" : "You create a ghostly, skeletal hand in the space of a creature within range. Make a ranged spell attack against the creature to assail it with the chill of the grave. On a hit, the target takes 1d8 necrotic damage, and it can't regain hit points until the start of your next turn. Until then, the hand clings to the target.  If you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn.  This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).  ",
-            "overchargeable_bool" : false,
-            "overcharge_str" : "Not Applicable"
-
-
+            "components_description_str" : "---",
+            "duration_str" : "Instantaneous",
+            "attack_save_str" : "Ranged",
+            "damage_effect_str" : "Necrotic",
+            "class_str" : "Sorcerer, Warlock, Wizard",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "You create a ghostly, skeletal hand in the space of a creature within range.  Make a ranged spell attack against the creature to assail it with the chill of the grave.  On a hit, the target takes 1d8 necrotic damage, and it can't regain hit points until the start of your next turn.  Until then, the hand clings to the target.  If you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn.  This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).  "
+        },
+        {
+            "name_str" : "Acid Splash",
+            "level_str" : "0th (Cantrip)",
+            "school_str" : "Conjuration",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "60 feet",
+            "components_vsm_str" : "V, S",
+            "components_description_str" : "---",
+            "duration_str" : "Instantaneous",
+            "attack_save_str" : "DEX Save",
+            "damage_effect_str" : "Acid",
+            "class_str" : "Sorcerer, Wizard. Artificer",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "You hurl a bubble of acid. Choose one or two creatures you can see within range. If you choose two, they must be within 5 feet of each other. A target must succeed on a Dexterity saving throw or take 1d6 acid damage.This spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
+        },
+        {
+            "name_str" : "Mage Hand",
+            "level_str" : "0th (Cantrip)",
+            "school_str" : "Conjuration",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "30 feet",
+            "components_vsm_str" : "V, S",
+            "components_description_str" : "---",
+            "duration_str" : "1 Minute",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Utility",
+            "class_str" : "Bard, Sorcerer, Warlock, Wizard. Artificer",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.You can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it.The hand can't attack, activate magic items, or carry more than 10 pounds."
+        },
+        {
+            "name_str" : "Poison Spray",
+            "level_str" : "0th (Cantrip)",
+            "school_str" : "Conjuration",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "10 feet",
+            "components_vsm_str" : "V, S",
+            "components_description_str" : "---",
+            "duration_str" : "1 Minute",
+            "attack_save_str" : "CON Save",
+            "damage_effect_str" : "Poison",
+            "class_str" : "Druid, Sorcerer, Warlock, Wizard. Artificer",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "You extend your hand toward a creature you can see within range and project a puff of noxious gas from your palm. The creature must succeed on a Constitution saving throw or take 1d12 poison damage.  This spell's damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12)."
+        },
+        {
+            "name_str" : "Produce Flame",
+            "level_str" : "0th (Cantrip)",
+            "school_str" : "Evocation",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "Self",
+            "components_vsm_str" : "V, S",
+            "components_description_str" : "---",
+            "duration_str" : "10 Minutes",
+            "attack_save_str" : "Ranged",
+            "damage_effect_str" : "Fire",
+            "class_str" : "Druid",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "A flickering flame appears in your hand. The flame remains there for the duration and harms neither you nor your equipment. The flame sheds bright light in a 10-foot radius and dim light for an additional 10 feet. The spell ends if you dismiss it as an action or if you cast it again.<br><br>You can also attack with the flame, although doing so ends the spell. When you cast this spell, or as an action on a later turn, you can hurl the flame at a creature within 30 feet of you. Make a ranged spell attack. On a hit, the target takes 1d8 fire damage.<br><br>This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
+        },
+        {
+            "name_str" : "Entangle",
+            "level_str" : "1st",
+            "school_str" : "Conjuration",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "90 feet (20 foot square)",
+            "components_vsm_str" : "V, S",
+            "components_description_str" : "---",
+            "duration_str" : "1 Minute (Concentration)",
+            "attack_save_str" : "STR Save",
+            "damage_effect_str" : "Restrained",
+            "class_str" : "Druid",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "Grasping weeds and vines sprout from the ground in a 20-foot square starting from a point within range. For the duration, these plants turn the ground in the area into difficult terrain.<br><br>A creature in the area when you cast the spell must succeed on a Strength saving throw or be restrained by the entangling plants until the spell ends. A creature restrained by the plants can use its action to make a Strength check against your spell save DC. On a success, it frees itself.<br><br>When the spell ends, the conjured plants wilt away."
+        },
+        {
+            "name_str" : "Find Familiar",
+            "level_str" : "1st",
+            "school_str" : "Conjuration",
+            "casting_time_str" : "1 Hour (Ritual)",
+            "range_area_str" : "10 feet",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "10 gp worth of charcoal, incense, and herbs that must be consumed by fire in a brass brazier",
+            "duration_str" : "Instantaneous",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Summoning",
+            "class_str" : "Wizard",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "You gain the service of a familiar, a spirit that takes an animal form you choose: bat, cat, crab, frog (toad), hawk, lizard, octopus, owl, poisonous snake, fish (quipper), rat, raven, sea horse, spider, or weasel. Appearing in an unoccupied space within range, the familiar has the statistics of the chosen form, though it is a celestial, fey, or fiend (your choice) instead of a beast.<br><br>Your familiar acts independently of you, but it always obeys your commands. In combat, it rolls its own initiative and acts on its own turn. A familiar can't attack, but it can take other actions as normal.<br><br>When the familiar drops to 0 hit points, it disappears, leaving behind no physical form. It reappears after you cast this spell again. As an action, you can temporarily dismiss the familiar to a pocket dimension. Alternatively, you can dismiss it forever. As an action while it is temporarily dismissed, you can cause it to reappear in any unoccupied space within 30 feet of you. Whenever the familiar drops to 0 hit points or disappears into the pocket dimension, it leaves behind in its space anything it was wearing or carrying.<br><br>While your familiar is within 100 feet of you, you can communicate with it telepathically. Additionally, as an action, you can see through your familiar's eyes and hear what it hears until the start of your next turn, gaining the benefits of any special senses that the familiar has. During this time, you are deaf and blind with regard to your own senses.<br><br>You can't have more than one familiar at a time. If you cast this spell while you already have a familiar, you instead cause it to adopt a new form. Choose one of the forms from the above list. Your familiar transforms into the chosen creature.<br><br>Finally, when you cast a spell with a range of touch, your familiar can deliver the spell as if it had cast the spell. Your familiar must be within 100 feet of you, and it must use its reaction to deliver the spell when you cast it. If the spell requires an attack roll, you use your attack modifier for the roll."
+        },
+        {
+            "name_str" : "Floating Disk",
+            "level_str" : "1st",
+            "school_str" : "Evocation",
+            "casting_time_str" : "1 Action (Ritual)",
+            "range_area_str" : "30 feet",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "a drop of mercury",
+            "duration_str" : "1 Hour",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Movement (...)",
+            "class_str" : "Wizard",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "This spell creates a circular, horizontal plane of force, 3 feet in diameter and 1 inch thick, that floats 3 feet above the ground in an unoccupied space of your choice that you can see within range. The disk remains for the duration, and can hold up to 500 pounds. If more weight is placed on it, the spell ends, and everything on the disk falls to the ground.<br><br>The disk is immobile while you are within 20 feet of it. If you move more than 20 feet away from it, the disk follows you so that it remains within 20 feet of you. It can move across uneven terrain, up or down stairs, slopes and the like, but it can't cross an elevation change of 10 feet or more. For example, the disk can't move across a 10-foot-deep pit, nor could it leave such a pit if it was created at the bottom.<br><br>If you move more than 100 feet from the disk (typically because it can't move around an obstacle to follow you), the spell ends."
+        },
+        {
+            "name_str" : "Fog Cloud",
+            "level_str" : "1st",
+            "school_str" : "Conjuration",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "120 feet (20 foot sphere)",
+            "components_vsm_str" : "V, S",
+            "components_description_str" : "---",
+            "duration_str" : "1 Hour (Concentration)",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Control (...)",
+            "class_str" : "Druid, Ranger, Sorcerer, Wizard",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "You create a 20-foot-radius sphere of fog centered on a point within range. The sphere spreads around corners, and its area is heavily obscured. It lasts for the duration or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it.",
+            "overcharge_str" : "When you cast this spell using a spell slot of 2nd level or higher, the radius of the fog increases by 20 feet for each slot level above 1st."
+        },
+        {
+            "name_str" : "Grease",
+            "level_str" : "1st",
+            "school_str" : "Conjuration",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "60 feet (10 foot square)",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "a bit of pork rind or butter",
+            "duration_str" : "1 Minute",
+            "attack_save_str" : "DEX Save",
+            "damage_effect_str" : "Prone",
+            "class_str" : "Wizard, Artificer",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "Slick grease covers the ground in a 10-foot square centered on a point within range and turns it into difficult terrain for the duration.<br><br>When the grease appears, each creature standing in its area must succeed on a Dexterity saving throw or fall prone. A creature that enters the area or ends its turn there must also succeed on a Dexterity saving throw or fall prone."
+        },
+        {
+            "name_str" : "Find Steed",
+            "level_str" : "2nd",
+            "school_str" : "Conjuration",
+            "casting_time_str" : "10 Minutes",
+            "range_area_str" : "30 feet",
+            "components_vsm_str" : "V, S",
+            "components_description_str" : "---",
+            "duration_str" : "Instant",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Summoning",
+            "class_str" : "Paladin",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "You summon a spirit that assumes the form of an unusually intelligent, strong, and loyal steed, creating a long-lasting bond with it. Appearing in an unoccupied space within range, the steed takes on a form that you choose: a warhorse, a pony, a camel, an elk, or a mastiff. (Your GM might allow other animals to be summoned as steeds.) The steed has the statistics of the chosen form, though it is a celestial, fey, or fiend (your choice) instead of its normal type. Additionally, if your steed has an Intelligence of 5 or less, its Intelligence becomes 6, and it gains the ability to understand one language of your choice that you speak.<br><br>Your steed serves you as a mount, both in combat and out, and you have an instinctive bond with it that allows you to fight as a seamless unit. While mounted on your steed, you can make any spell you cast that targets only you also target your steed.<br><br>When the steed drops to 0 hit points, it disappears, leaving behind no physical form. You can also dismiss your steed at any time as an action, causing it to disappear. In either case, casting this spell again summons the same steed, restored to its hit point maximum.<br><br> While your steed is within 1 mile of you, you can communicate with each other telepathically.<br><br>  You can't have more than one steed bonded by this spell at a time. As an action, you can release the steed from its bond at any time, causing it to disappear."
+        },
+        {
+            "name_str" : "Flaming Sphere",
+            "level_str" : "2nd",
+            "school_str" : "Evocation",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "60 feet",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "a bit of tallow, a pinch of brimstone, and a dusting of powdered iron",
+            "duration_str" : "1 Minute (Concentration)",
+            "attack_save_str" : "DEX Save",
+            "damage_effect_str" : "Fire",
+            "class_str" : "Druid, Wizard",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "A 5-foot-diameter sphere of fire appears in an unoccupied space of your choice within range and lasts for the duration. Any creature that ends its turn within 5 feet of the sphere must make a Dexterity saving throw. The creature takes 2d6 fire damage on a failed save, or half as much damage on a successful one.<br><br>As a bonus action, you can move the sphere up to 30 feet. If you ram the sphere into a creature, that creature must make the saving throw against the sphere's damage, and the sphere stops moving this turn.<br><br>When you move the sphere, you can direct it over barriers up to 5 feet tall and jump it across pits up to 10 feet wide. The sphere ignites flammable objects not being worn or carried, and it sheds bright light in a 20-foot radius and dim light for an additional 20 feet."
+        },
+        {
+            "name_str" : "Misty Step",
+            "level_str" : "2nd",
+            "school_str" : "Conjuration",
+            "casting_time_str" : "1 Bonus Action",
+            "range_area_str" : "Self",
+            "components_vsm_str" : "V",
+            "components_description_str" : "---",
+            "duration_str" : "Instant",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Teleportation",
+            "class_str" : "Sorcerer, Warlock, Wizard",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "You are briefly surrounded by flakes of shimmering brimstone before vanishing and reappearing elsewhere.  ",
+            "mechanics_str" : "You teleport up to 30 feet to an unoccupied space that you can see.  "
+        },
+        {
+            "name_str" : "Web",
+            "level_str" : "2nd",
+            "school_str" : "Conjuration",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "60 feet (20 foot cube)",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "a bit of spiderweb",
+            "duration_str" : "1 Hour (Concentration)",
+            "attack_save_str" : "DEX Save",
+            "damage_effect_str" : "Restrained",
+            "class_str" : "Sorcerer, Warlock, Wizard",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "You conjure a mass of thick, sticky webbing at a point of your choice within range. The webs fill a 20-foot cube from that point for the duration. The webs are difficult terrain and lightly obscure their area.<br><br>If the webs aren't anchored between two solid masses (such as walls or trees) or layered across a floor, wall, or ceiling, the conjured web collapses on itself, and the spell ends at the start of your next turn. Webs layered over a flat surface have a depth of 5 feet.<br><br>    Each creature that starts its turn in the webs or that enters them during its turn must make a Dexterity saving throw. On a failed save, the creature is restrained as long as it remains in the webs or until it breaks free.<br><br>   A creature restrained by the webs can use its action to make a Strength check against your spell save DC. If it succeeds, it is no longer restrained.<br><br>    The webs are flammable. Any 5-foot cube of webs exposed to fire burns away in 1 round, dealing 2d4 fire damage to any creature that starts its turn in the fire."
+        },
+        {
+            "name_str" : "Call Lightning",
+            "level_str" : "3rd",
+            "school_str" : "Conjuration",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "120 feet (60 x 10 cylinder)",
+            "components_vsm_str" : "V, S",
+            "components_description_str" : "---",
+            "duration_str" : "10 Minutes (Concentration)",
+            "attack_save_str" : "DEX Save",
+            "damage_effect_str" : "Lightning",
+            "class_str" : "Druid",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "A storm cloud appears in the shape of a cylinder that is 10 feet tall with a 60-foot radius, centered on a point you can see within range directly above you. The spell fails if you can’t see a point in the air where the storm cloud could appear (for example, if you are in a room that can’t accommodate the cloud).<br><br>    When you cast the spell, choose a point you can see under the cloud. A bolt of lightning flashes down from the cloud to that point. Each creature within 5 feet of that point must make a Dexterity saving throw. A creature takes 3d10 lightning damage on a failed save, or half as much damage on a successful one. On each of your turns until the spell ends, you can use your action to call down lightning in this way again, targeting the same point or a different one.<br><br>   If you are outdoors in stormy conditions when you cast this spell, the spell gives you control over the existing storm instead of creating a new one. Under such conditions, the spell’s damage increases by 1d10.   ",
+            "overcharge_str" : "When you cast this spell using a spell slot of 4th or higher level, the damage increases by 1d10 for each slot level above 3rd."
+        },
+        {
+            "name_str" : "Create Food and Water",
+            "level_str" : "3rd",
+            "school_str" : "Conjuration",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "30 feet",
+            "components_vsm_str" : "V, S",
+            "components_description_str" : "---",
+            "duration_str" : "Instant",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Creation",
+            "class_str" : "Cleric, Paladin, Artificer",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "You create 45 pounds of food and 30 gallons of water on the ground or in containers within range, enough to sustain up to fifteen humanoids or five steeds for 24 hours. The food is bland but nourishing, and spoils if uneaten after 24 hours. The water is clean and doesn't go bad."
+        },
+        {
+            "name_str" : "Sleet Storm",
+            "level_str" : "3rd",
+            "school_str" : "Conjuration",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "150 feet (20 x 40 cylinder",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "a pinch of dust and a few drops of water",
+            "duration_str" : "1 Minute (Concentration)",
+            "attack_save_str" : "DEX Save",
+            "damage_effect_str" : "Prone",
+            "class_str" : "Druid, Sorcerer, Wizard",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "Until the spell ends, freezing rain and sleet fall in a 20-foot-tall cylinder with a 40-foot radius centered on a point you choose within range. The area is heavily obscured, and exposed flames in the area are doused.<br><br>  The ground in the area is covered with slick ice, making it difficult terrain. When a creature enters the spell's area for the first time on a turn or starts its turn there, it must make a Dexterity saving throw. On a failed save, it falls prone.<br><br>    If a creature starts its turn in the spell's area and is concentrating on a spell, the creature must make a successful Constitution saving throw against your spell save DC or lose concentration.    "
+        },
+        {
+            "name_str" : "Resistance",
+            "level_str" : "0th (Cantrip)",
+            "school_str" : "Abjuration",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "Touch",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "a miniature cloak",
+            "duration_str" : "1 Minute (Concentration)",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Buff",
+            "class_str" : "Cleric, Druid, Artificer",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "You touch one willing creature.  Once before the spell ends, the target can roll a d4 and add the number rolled to one saving throw of its choice.  It can roll the die before or after making the saving throw.  The spell then ends.  "
+        },
+        {
+            "name_str" : "Alarm",
+            "level_str" : "1st",
+            "school_str" : "Abjuration",
+            "casting_time_str" : "1 Minute Ritual",
+            "range_area_str" : "30 ft",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "a tiny bell and a piece of fine silver wire",
+            "duration_str" : "8 Hours",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Detection",
+            "class_str" : "Ranger, Wizard, Artificer",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "You set an alarm against unwanted intrusion.  Choose a door, a window, or an area within range that is no larger than a 20-foot cube.  Until the spell ends, an alarm alerts you whenever a Tiny or larger creature touches or enters the warded area.  When you cast the spell, you can designate creatures that won't set off the alarm.  You also choose whether the alarm is mental or audible.  A mental alarm alerts you with a ping in your mind if you are within 1 mile of the warded area.  This ping awakens you if you are sleeping.  An audible alarm produces the sound of a hand bell for 10 seconds within 60 feet.  "
+        },
+        {
+            "name_str" : "Mage Armor",
+            "level_str" : "1st",
+            "school_str" : "Abjuration",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "Touch",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "a piece of cured leather",
+            "duration_str" : "8 Hours",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Buff (...)",
+            "class_str" : "Sorcerer, Wizard",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "You touch a willing creature who isn't wearing armor, and a protective magical force surrounds it until the spell ends.  The target's base AC becomes 13 + its Dexterity modifier.  The spell ends if the target dons armor or if you dismiss the spell as an action.  "
+        },
+        {
+            "name_str" : "Protection from Evil and Good",
+            "level_str" : "1st",
+            "school_str" : "Abjuration",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "Touch",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "holy water or powdered silver and iron, which the spell consumes (5gp)",
+            "duration_str" : "10 Minutes (Concentration)",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Buff (...)",
+            "class_str" : "Cleric, Paladin, Warlock, Wizard",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "Until the spell ends, one willing creature you touch is protected against certain types of creatures: aberrations, celestials, elementals, fey, fiends, and undead.  The protection grants several benefits.  Creatures of those types have disadvantage on attack rolls against the target.  The target also can't be charmed, frightened, or possessed by them.  If the target is already charmed, frightened, or possessed by such a creature, the target has advantage on any new saving throw against the relevant effect.  "
+        },
+        {
+            "name_str" : "Sanctuary",
+            "level_str" : "1st",
+            "school_str" : "Abjuration",
+            "casting_time_str" : "1 Bonus Action",
+            "range_area_str" : "30 feet",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "a small silver mirror",
+            "duration_str" : "10 Minutes (Concentration)",
+            "attack_save_str" : "WIS Save",
+            "damage_effect_str" : "Buff (...)",
+            "class_str" : "Cleric, Artificer",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "You ward a creature within range against attack.  Until the spell ends, any creature who targets the warded creature with an attack or a harmful spell must first make a Wisdom saving throw.  On a failed save, the creature must choose a new target or lose the attack or spell.  This spell doesn't protect the warded creature from area effects, such as the explosion of a fireball.  If the warded creature makes an attack, casts a spell that affects an enemy, or deals damage to another creature, this spell ends.  "
+        },
+        {
+            "name_str" : "Shield of Faith",
+            "level_str" : "1st",
+            "school_str" : "Abjuration",
+            "casting_time_str" : "1 Bonus Action",
+            "range_area_str" : "60 feet",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "a small parchment with a bit of holy text written on it",
+            "duration_str" : "10 Minutes (Concentration)",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Buff (...)",
+            "class_str" : "Cleric, Paladin",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "A shimmering field appears and surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration.  "
+        },
+        {
+            "name_str" : "Aid",
+            "level_str" : "2nd",
+            "school_str" : "Necromancy",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "30 feet",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "a tiny strip of white cloth",
+            "duration_str" : "8 Hours",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Buff",
+            "class_str" : "Cleric, Paladin, Artificer",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "Your spell bolsters your allies with toughness and resolve.  Choose up to three creatures within range.  Each target's hit point maximum and current hit points increase by 5 for the duration.  ",
+            "overcharge_str" : "When you cast this spell using a spell slot of 3rd level or higher, a target's hit points increase by an additional 5 for each slot level above 2nd.  "
+        },
+        {
+            "name_str" : "Arcane Lock",
+            "level_str" : "2nd",
+            "school_str" : "Abjuration",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "Touch",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "gold dust worth at least 25 gp, which the spell consumes",
+            "duration_str" : "Until Dispelled",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Utility (...)",
+            "class_str" : "Wizard, Artificer",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "You touch a closed door, window, gate, chest, or other entryway, and it becomes locked for the duration.  You and the creatures you designate when you cast this spell can open the object normally.  You can also set a password that, when spoken within 5 feet of the object, suppresses this spell for 1 minute.  Otherwise, it is impassable until it is broken or the spell is dispelled or suppressed.  Casting knock on the object suppresses arcane lock for 10 minutes.  While affected by this spell, the object is more difficult to break or force open; the DC to break it or pick any locks on it increases by 10.  "
+        },
+        {
+            "name_str" : "Lesser Restoration",
+            "level_str" : "2nd",
+            "school_str" : "Abjuration",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "Touch",
+            "components_vsm_str" : "V, S",
+            "components_description_str" : "---",
+            "duration_str" : "Instantaneous",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Healing",
+            "class_str" : "Bard, Cleric, Druid, Paladin, Ranger, Artificer",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "You touch a creature and can end either one disease or one condition afflicting it.  The condition can be blinded, deafened, paralyzed, or poisoned.  "
+        },
+        {
+            "name_str" : "Pass Without Trace",
+            "level_str" : "2nd",
+            "school_str" : "Illusion",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "Self",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "ashes from a burned leaf of mistletoe and a sprig of spruce",
+            "duration_str" : "1 Hour (Concentration)",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Buff (...)",
+            "class_str" : "Druid, Ranger",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "A veil of shadows and silence radiates from you, masking you and your companions from detection.  ",
+            "mechanics_str" : "For the duration, each creature you choose within 30 feet of you (including you) has a +10 bonus to Dexterity (Stealth) checks and can't be tracked except by magical means.  A creature that receives this bonus leaves behind no tracks or other traces of its passage.  "
+        },
+        {
+            "name_str" : "Protection from Poison",
+            "level_str" : "2nd",
+            "school_str" : "Abjuration",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "Touch",
+            "components_vsm_str" : "V, S",
+            "components_description_str" : "---",
+            "duration_str" : "1 Hour",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Buff (...)",
+            "class_str" : "Cleric, Druid, Paladin, Ranger, Artificer",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "You touch a creature.  If it is poisoned, you neutralize the poison.  If more than one poison afflicts the target, you neutralize one poison that you know is present, or you neutralize one at random.  For the duration, the target has advantage on saving throws against being poisoned, and it has resistance to poison damage.  "
+        },
+        {
+            "name_str" : "Warding Bond",
+            "level_str" : "2nd",
+            "school_str" : "Abjuration",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "Touch",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "a pair of platinum rings worth at least 50 gp each, which you and the target must wear for the duration",
+            "duration_str" : "1 Hour",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Buff (...)",
+            "class_str" : "Cleric",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "This spell wards a willing creature you touch and creates a mystic connection between you and the target until the spell ends.  While the target is within 60 feet of you, it gains a +1 bonus to AC and saving throws, and it has resistance to all damage.  Also, each time it takes damage, you take the same amount of damage.  The spell ends if you drop to 0 hit points or if you and the target become separated by more than 60 feet.  It also ends if the spell is cast again on either of the connected creatures.  You can also dismiss the spell as an action.  "
+        },
+        {
+            "name_str" : "Beacon of Hope",
+            "level_str" : "3rd",
+            "school_str" : "Necromancy",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "30 feet",
+            "components_vsm_str" : "V, S",
+            "components_description_str" : "---",
+            "duration_str" : "1 Minute (Concentration)",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Buff",
+            "class_str" : "Cleric",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "This spell bestows hope and vitality.  Choose any number of creatures within range.  For the duration, each target has advantage on Wisdom saving throws and death saving throws, and regains the maximum number of hit points possible from any healing.  "
+        },
+        {
+            "name_str" : "Counterspell",
+            "level_str" : "3rd",
+            "school_str" : "Abjuration",
+            "casting_time_str" : "1 Reacction",
+            "range_area_str" : "60 feet",
+            "components_vsm_str" : "S",
+            "components_description_str" : "---",
+            "duration_str" : "Instantaneous",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Negation",
+            "class_str" : "Sorcerer, Warlock, Wizard",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "You attempt to interrupt a creature in the process of casting a spell.  If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect.  If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability.  The DC equals 10 + the spell's level.  On a success, the creature's spell fails and has no effect.  ",
+            "overcharge_str" : "When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.  "
+        },
+        {
+            "name_str" : "Dispel Magic",
+            "level_str" : "3rd",
+            "school_str" : "Abjuration",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "120 feet",
+            "components_vsm_str" : "V, S",
+            "components_description_str" : "---",
+            "duration_str" : "Instantaneous",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Control",
+            "class_str" : "Bard, Cleric, Druid, Paladin, Sorcerer, Warlock, Wizard, Artificer",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "Choose one creature, object, or magical effect within range.  Any spell of 3rd level or lower on the target ends.  For each spell of 4th level or higher on the target, make an ability check using your spellcasting ability.  The DC equals 10 + the spell's level.  On a successful check, the spell ends.  ",
+            "overcharge_str" : "When you cast this spell using a spell slot of 4th level or higher, you automatically end the effects of a spell on the target if the spell's level is equal to or less than the level of the spell slot you used.  "
+        },
+        {
+            "name_str" : "Magic Circle",
+            "level_str" : "3rd",
+            "school_str" : "Abjuration",
+            "casting_time_str" : "1 Minute",
+            "range_area_str" : "10 feet (10 x 20 cylinder)",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "holy water or powdered silver and iron worth at least 100 gp, which the spell consumes",
+            "duration_str" : "1 Hour",
+            "attack_save_str" : "CHA Save",
+            "damage_effect_str" : "Control (...)",
+            "class_str" : "Cleric, Paladin, Warlock, Wizard",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "You create a 10-foot-radius, 20-foot-tall cylinder of magical energy centered on a point on the ground that you can see within range.  Glowing runes appear wherever the cylinder intersects with the floor or other surface.  Choose one or more of the following types of creatures: celestials, elementals, fey, fiends, or undead.  The circle affects a creature of the chosen type in the following ways:The creature can’t willingly enter the cylinder by nonmagical means.  If the creature tries to use teleportation or interplanar travel to do so, it must first succeed on a Charisma saving throw.  The creature has disadvantage on attack rolls against targets within the cylinder.  Targets within the cylinder can’t be charmed, frightened, or possessed by the creature.  When you cast this spell, you can elect to cause its magic to operate in the reverse direction, preventing a creature of the specified type from leaving the cylinder and protecting targets outside it.  ",
+            "overcharge_str" : "When you cast this spell using a spell slot of 4th level or higher, the duration increases by 1 hour for each slot level above 3rd.  "
+        },
+        {
+            "name_str" : "Nondetection",
+            "level_str" : "3rd",
+            "school_str" : "Abjuration",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "Touch",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "a pinch of diamond dust worth 25 gp sprinkled over the target, which the spell consumes",
+            "duration_str" : "8 Hours",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Deception",
+            "class_str" : "Bard, Ranger, Wizard",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "For the duration, you hide a target that you touch from divination magic.  The target can be a willing creature or a place or an object no larger than 10 feet in any dimension.  The target can't be targeted by any divination magic or perceived through magical scrying sensors.  "
+        },
+        {
+            "name_str" : "Protection from Energy",
+            "level_str" : "3rd",
+            "school_str" : "Abjuration",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "Touch",
+            "components_vsm_str" : "V, S",
+            "components_description_str" : "---",
+            "duration_str" : "1 Hour (Concentration)",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Buff (...)",
+            "class_str" : "Cleric, Druid, Ranger, Sorcerer, Wizard, Artificer",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "For the duration, the willing creature you touch has resistance to one damage type of your choice: acid, cold, fire, lightning, or thunder.  "
+        },
+        {
+            "name_str" : "Remove Curse",
+            "level_str" : "3rd",
+            "school_str" : "Abjuration",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "Touch",
+            "components_vsm_str" : "V, S",
+            "components_description_str" : "---",
+            "duration_str" : "Instantaneous",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Buff",
+            "class_str" : "Cleric, Paladin, Warlock, Wizard",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "At your touch, all curses affecting one creature or object end.  If the object is a cursed magic item, its curse remains, but the spell breaks its owner's attunement to the object so it can be removed or discarded.  "
+        },
+        {
+            "name_str" : "Banishment",
+            "level_str" : "4th",
+            "school_str" : "Abjuration",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "60 feet",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "an item distasteful to the target",
+            "duration_str" : "1 Minute (Concentration)",
+            "attack_save_str" : "CHA Save",
+            "damage_effect_str" : "Control",
+            "class_str" : "Cleric, Paladin, Sorcerer, Warlock, Wizard",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "You attempt to send one creature that you can see within range to another plane of existence.  The target must succeed on a Charisma saving throw or be banished.  If the target is native to the plane of existence you're on, you banish the target to a harmless demiplane.  While there, the target is incapacitated.  The target remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.  If the target is native to a different plane of existence than the one you're on, the target is banished with a faint popping noise, returning to its home plane.  If the spell ends before 1 minute has passed, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.  Otherwise, the target doesn't return.  ",
+            "overcharge_str" : "When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th.  "
+        },
+        {
+            "name_str" : "Death Ward",
+            "level_str" : "4th",
+            "school_str" : "Abjuration",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "Touch",
+            "components_vsm_str" : "V, S",
+            "components_description_str" : "---",
+            "duration_str" : "8 Hours",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Buff (...)",
+            "class_str" : "Cleric, Paladin",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "You touch a creature and grant it a measure of protection from death.  The first time the target would drop to 0 hit points as a result of taking damage, the target instead drops to 1 hit point, and the spell ends.  If the spell is still in effect when the target is subjected to an effect that would kill it instantaneously without dealing damage, that effect is instead negated against the target, and the spell ends.  "
+        },
+        {
+            "name_str" : "Freedom of Movement",
+            "level_str" : "4th",
+            "school_str" : "Transmutation",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "Touch",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "a leather strap, bound around the arm or a similar appendage",
+            "duration_str" : "1 Hour",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Buff (...)",
+            "class_str" : "Bard, Cleric, Druid, Ranger, Artificer",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "You touch a willing creature.  For the duration, the target's movement is unaffected by difficult terrain, and spells and other magical effects can neither reduce the target's speed nor cause the target to be paralyzed or restrained.  The target can also spend 5 feet of movement to automatically escape from nonmagical restraints, such as manacles or a creature that has it grappled.  Finally, being underwater imposes no penalties on the target's movement or attacks.  "
+        },
+        {
+            "name_str" : "Private Sanctum",
+            "level_str" : "4th",
+            "school_str" : "Abjuration",
+            "casting_time_str" : "10 Minutes",
+            "range_area_str" : "120 feet (up to 100 x 100 cube)",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "a thin sheet of lead, a piece of opaque glass, a wad of cotton or cloth, and powdered chrysolite",
+            "duration_str" : "24 Hours",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Control",
+            "class_str" : "Wizard",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "You make an area within range magically secure.  The area is a cube that can be as small as 5 feet to as large as 100 feet on each side.  The spell lasts for the duration or until you use an action to dismiss it.  When you cast the spell, you decide what sort of security the spell provides, choosing any or all of the following properties:Sound can't pass through the barrier at the edge of the warded area.  The barrier of the warded area appears dark and foggy, preventing vision (including darkvision) through it.  Sensors created by divination spells can't appear inside the protected area or pass through the barrier at its perimeter.  Creatures in the area can't be targeted by divination spells.  Nothing can teleport into or out of the warded area.  Planar travel is blocked within the warded area.  Casting this spell on the same spot every day for a year makes this effect permanent.  ",
+            "overcharge_str" : "When you cast this spell using a spell slot of 5th level or higher, you can increase the size of the cube by 100 feet for each slot level beyond 4th.  Thus you could protect a cube that can be up to 200 feet on one side by using a spell slot of 5th level.  "
+        },
+        {
+            "name_str" : "Stoneskin",
+            "level_str" : "4th",
+            "school_str" : "Abjuration",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "Touch",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "diamond dust worth 100 gp, which the spell consumes",
+            "duration_str" : "1 Hour (Concentration)",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Buff",
+            "class_str" : "Druid, Ranger, Sorcerer, Wizard, Artificer",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "This spell turns the flesh of a willing creature you touch as hard as stone.  Until the spell ends, the target has resistance to nonmagical bludgeoning, piercing, and slashing damage.  "
+        },
+        {
+            "name_str" : "Antilife Shell",
+            "level_str" : "5th",
+            "school_str" : "Abjuration",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "Self (10 foot sphere)",
+            "components_vsm_str" : "V, S",
+            "components_description_str" : "---",
+            "duration_str" : "1 Hour (Concentration)",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Control (...)",
+            "class_str" : "Druid",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "A shimmering barrier extends out from you in a 10-foot radius and moves with you, remaining centered on you and hedging out creatures other than undead and constructs.  The barrier lasts for the duration.  The barrier prevents an affected creature from passing or reaching through.  An affected creature can cast spells or make attacks with ranged or reach weapons through the barrier.  If you move so that an affected creature is forced to pass through the barrier, the spell ends.  "
+        },
+        {
+            "name_str" : "Dispel Evil and Good",
+            "level_str" : "5th",
+            "school_str" : "Abjuration",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "Self",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "holy water or powdered silver and iron",
+            "duration_str" : "1 Minute (Concentration)",
+            "attack_save_str" : "CHA Save",
+            "damage_effect_str" : "Charmed (...)",
+            "class_str" : "Cleric, Paladin",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "Shimmering energy surrounds and protects you from fey, undead, and creatures originating from beyond the Material Plane.  For the duration, celestials, elementals, fey, fiends, and undead have disadvantage on attack rolls against you.  You can end the spell early by using either of the following special functions.  Break Enchantment.  As your action, you touch a creature you can reach that is charmed, frightened, or possessed by a celestial, an elemental, a fey, a fiend, or an undead.  The creature you touch is no longer charmed, frightened, or possessed by such creatures.  Dismissal.  As your action, make a melee spell attack against a celestial, an elemental, a fey, a fiend, or an undead you can reach.  On a hit, you attempt to drive the creature back to its home plane.  The creature must succeed on a Charisma saving throw or be sent back to its home plane (if it isn't there already).  If they aren't on their home plane, undead are sent to the Shadowfell, and fey are sent to the Feywild.  "
+        },
+        {
+            "name_str" : "Greater Restoration",
+            "level_str" : "5th",
+            "school_str" : "Abjuration",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "Touch",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "diamond dust worth at least 100 gp, which the spell consumes",
+            "duration_str" : "Instant",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Healing",
+            "class_str" : "Bard, Cleric, Druid, Artificer",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "You imbue a creature you touch with positive energy to undo a debilitating effect.  You can reduce the target's exhaustion level by one, or end one of the following effects on the target.  One effect that charmed or petrified the target.  One curse, including the target's attunement to a cursed magic item.  Any reduction to one of the target's ability scores.  One effect reducing the target's hit point maximum"
+        },
+        {
+            "name_str" : "Planar Binding",
+            "level_str" : "5th",
+            "school_str" : "Abjuration",
+            "casting_time_str" : "1 Hour",
+            "range_area_str" : "60 feet",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "a jewel worth at least 1,000 gp, which the spell consumes",
+            "duration_str" : "24 Hours",
+            "attack_save_str" : "CHA Save",
+            "damage_effect_str" : "Control",
+            "class_str" : "Bard, Cleric, Druid, Wizard",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "With this spell, you attempt to bind a celestial, an elemental, a fey, or a fiend to your service.  The creature must be within range for the entire casting of the spell.  (Typically, the creature is first summoned into the center of an inverted magic circle in order to keep it trapped while this spell is cast.  ) At the completion of the casting, the target must make a Charisma saving throw.  On a failed save, it is bound to serve you for the duration.  If the creature was summoned or created by another spell, that spell's duration is extended to match the duration of this spell.  A bound creature must follow your instructions to the best of its ability.  You might command the creature to accompany you on an adventure, to guard a location, or to deliver a message.  The creature obeys the letter of your instructions, but if the creature is hostile to you, it strives to twist your words to achieve its own objectives.  If the creature carries out your instructions completely before the spell ends, it travels to you to report this fact if you are on the same plane of existence.  If you are on a different plane of existence, it returns to the place where you bound it and remains there until the spell ends.  ",
+            "overcharge_str" : "When you cast this spell using a spell slot of a higher level, the duration increases to 10 days with a 6th-level slot, to 30 days with a 7th- level slot, to 180 days with an 8th-level slot, and to a year and a day with a 9th-level spell slot.  "
+        },
+        {
+            "name_str" : "Forbiddance",
+            "level_str" : "6th",
+            "school_str" : "Abjuration",
+            "casting_time_str" : "10 Minutes (Ritual)",
+            "range_area_str" : "Touch (40,000 x 40,000 feet)",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "a sprinkling of holy water, rare incense, and powdered ruby worth at least 1,000 gp",
+            "duration_str" : "24 Hours",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Radiant (...)",
+            "class_str" : "Cleric",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "You create a ward against magical travel that protects up to 40,000 square feet of floor space to a height of 30 feet above the floor.  For the duration, creatures can't teleport into the area or use portals, such as those created by the gate spell, to enter the area.  The spell proofs the area against planar travel, and therefore prevents creatures from accessing the area by way of the Astral Plane, Ethereal Plane, Feywild, Shadowfell, or the plane shift spell.  In addition, the spell damages types of creatures that you choose when you cast it.  Choose one or more of the following: celestials, elementals, fey, fiends, and undead.  When a chosen creature enters the spell's area for the first time on a turn or starts its turn there, the creature takes 5d10 radiant or necrotic damage (your choice when you cast this spell).  When you cast this spell, you can designate a password.  A creature that speaks the password as it enters the area takes no damage from the spell.  The spell's area can't overlap with the area of another forbiddance spell.  If you cast forbiddance every day for 30 days in the same location, the spell lasts until it is dispelled, and the material components are consumed on the last casting.  "
+        },
+        {
+            "name_str" : "Globe of Invulnerability",
+            "level_str" : "6th",
+            "school_str" : "Abjuration",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "Self (10 feet sphere)",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "a glass or crystal bead that shatters when the spell ends (1gp)",
+            "duration_str" : "1 Minute (Concentration)",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Negation (...)",
+            "class_str" : "Sorcerer, Wizard",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "An immobile, faintly shimmering barrier springs into existence in a 10-foot radius around you and remains for the duration.  Any spell of 5th level or lower cast from outside the barrier can't affect creatures or objects within it, even if the spell is cast using a higher level spell slot.  Such a spell can target creatures and objects within the barrier, but the spell has no effect on them.  Similarly, the area within the barrier is excluded from the areas affected by such spells.  ",
+            "overcharge_str" : "When you cast this spell using a spell slot of 7th level or higher, the barrier blocks spells of one level higher for each slot level above 6th.  "
+        },
+        {
+            "name_str" : "Guards and Wards",
+            "level_str" : "6th",
+            "school_str" : "Abjuration",
+            "casting_time_str" : "10 Minutes",
+            "range_area_str" : "Touch (2,500 x 2,500 feet)",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "burning incense, a small measure of brimstone and oil, a knotted string, a small amount of monster blood, and a small silver rod worth at least 10 gp",
+            "duration_str" : "24 Hours",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Control (...)",
+            "class_str" : "Bard, Wizard",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "You create a ward that protects up to 2,500 square feet of floor space (an area 50 feet square, or one hundred 5-foot squares or twenty-five 10-foot squares).  The warded area can be up to 20 feet tall, and shaped as you desire.  You can ward several stories of a stronghold by dividing the area among them, as long as you can walk into each contiguous area while you are casting the spell.  When you cast this spell, you can specify individuals that are unaffected by any or all of the effects that you choose.  You can also specify a password that, when spoken aloud, makes the speaker immune to these effects.  Guards and wards creates the following effects within the warded area.  Corridors.  Fog fills all the warded corridors, making them heavily obscured.  In addition, at each intersection or branching passage offering a choice of direction, there is a 50 percent chance that a creature other than you will believe it is going in the opposite direction from the one it chooses.  Doors.  All doors in the warded area are magically locked, as if sealed by an arcane lock spell.  In addition, you can cover up to ten doors with an illusion (equivalent to the illusory object function of the minor illusion spell) to make them appear as plain sections of wall.  Stairs.  Webs fill all stairs in the warded area from top to bottom, as the web spell.  These strands regrow in 10 minutes if they are burned or torn away while guards and wards lasts.  Other Spell Effect.  You can place your choice of one of the following magical effects within the warded area of the stronghold.  Place dancing lights in four corridors.  You can designate a simple program that the lights repeat as long as guards and wards lasts.  Place magic mouth in two locations.  Place stinking cloud in two locations.  The vapors appear in the places you designate; they return within 10 minutes if dispersed by wind while guards and wards lasts.  Place a constant gust of wind in one corridor or room.  Place a suggestion in one location.  You select an area of up to 5 feet square, and any creature that enters or passes through the area receives the suggestion mentally.  The whole warded area radiates magic.  A dispel magic cast on a specific effect, if successful, removes only that effect.  You can create a permanently guarded and warded structure by casting this spell there every day for one year.  "
+        },
+        {
+            "name_str" : "Antimagic Field",
+            "level_str" : "8th",
+            "school_str" : "Abjuration",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "Self (10 foot sphere)",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "a pinch of powdered iron or iron filings",
+            "duration_str" : "1 Hour (Concentration)",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Control (...)",
+            "class_str" : "Cleric, Wizard",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "A 10-foot-radius invisible sphere of antimagic surrounds you.  This area is divorced from the magical energy that suffuses the multiverse.  Within the sphere, spells can't be cast, summoned creatures disappear, and even magic items become mundane.  Until the spell ends, the sphere moves with you, centered on you.  Spells and other magical effects, except those created by an artifact or a deity, are suppressed in the sphere and can't protrude into it.  A slot expended to cast a suppressed spell is consumed.  While an effect is suppressed, it doesn't function, but the time it spends suppressed counts against its duration.  Targeted Effects.  Spells and other magical effects, such as magic missile and charm person, that target a creature or an object in the sphere have no effect on that target.  Areas of Magic.  The area of another spell or magical effect, such as fireball, can't extend into the sphere.  If the sphere overlaps an area of magic, the part of the area that is covered by the sphere is suppressed.  For example, the flames created by a wall of fire are suppressed within the sphere, creating a gap in the wall if the overlap is large enough.  Spells.  Any active spell or other magical effect on a creature or an object in the sphere is suppressed while the creature or object is in it.  Magic Items.  The properties and powers of magic items are suppressed in the sphere.  For example, a longsword, +1 in the sphere functions as a nonmagical longsword.  A magic weapon's properties and powers are suppressed if it is used against a target in the sphere or wielded by an attacker in the sphere.  If a magic weapon or a piece of magic ammunition fully leaves the sphere (for example, if you fire a magic arrow or throw a magic spear at a target outside the sphere), the magic of the item ceases to be suppressed as soon as it exits.  Magical Travel.  Teleportation and planar travel fail to work in the sphere, whether the sphere is the destination or the departure point for such magical travel.  A portal to another location, world, or plane of existence, as well as an opening to an extradimensional space such as that created by the rope trick spell, temporarily closes while in the sphere.  Creatures and Objects.  A creature or object summoned or created by magic temporarily winks out of existence in the sphere.  Such a creature instantly reappears once the space the creature occupied is no longer within the sphere.  Dispel Magic.  Spells and magical effects such as dispel magic have no effect on the sphere.  Likewise, the spheres created by different antimagic field spells don't nullify each other.  "
+        },
+        {
+            "name_str" : "Holy Aura",
+            "level_str" : "8th",
+            "school_str" : "Abjuration",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "Self (30 foot sphere)",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "a tiny reliquary worth at least 1,000 gp containing a sacred relic, such as a scrap of cloth from a saint's robe or a piece of parchment from a religious text",
+            "duration_str" : "1 Minute  (Concentration)",
+            "attack_save_str" : "CON Save",
+            "damage_effect_str" : "Blinded (...)",
+            "class_str" : "Cleric",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "Divine light washes out from you and coalesces in a soft radiance in a 30-foot radius around you.  Creatures of your choice in that radius when you cast this spell shed dim light in a 5-foot radius and have advantage on all saving throws, and other creatures have disadvantage on attack rolls against them until the spell ends.  In addition, when a fiend or an undead hits an affected creature with a melee attack, the aura flashes with brilliant light.  The attacker must succeed on a Constitution saving throw or be blinded until the spell ends.  "
+        },
+        {
+            "name_str" : "Mind Blank",
+            "level_str" : "8th",
+            "school_str" : "Abjuration",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "Touch",
+            "components_vsm_str" : "V, S",
+            "components_description_str" : "a tiny reliquary worth at least 1,000 gp containing a sacred relic, such as a scrap of cloth from a saint's robe or a piece of parchment from a religious text",
+            "duration_str" : "24 Hours",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Buff",
+            "class_str" : "Bard, Wizard",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "Until the spell ends, one willing creature you touch is immune to psychic damage, any effect that would sense its emotions or read its thoughts, divination spells, and the charmed condition.  The spell even foils wish spells and spells or effects of similar power used to affect the target's mind or to gain information about the target.  "
+        },
+        {
+            "name_str" : "Imprisonment",
+            "level_str" : "9th",
+            "school_str" : "Abjuration",
+            "casting_time_str" : "1 Minute",
+            "range_area_str" : "30 feet",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "a vellum depiction or a carved statuette in the likeness of the target, and a special component that varies according to the version of the spell you choose, worth at least 500 gp per Hit Die of the target",
+            "duration_str" : "Until Dispelled",
+            "attack_save_str" : "WIS Save",
+            "damage_effect_str" : "Restrained (...)",
+            "class_str" : "Warlock, Wizard",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "You create a magical restraint to hold a creature that you can see within range.  The target must succeed on a Wisdom saving throw or be bound by the spell; if it succeeds, it is immune to this spell if you cast it again.  While affected by this spell, the creature doesn't need to breathe, eat, or drink, and it doesn't age.  Divination spells can't locate or perceive the target.  When you cast the spell, you choose one of the following forms of imprisonment.  Burial.  The target is entombed far beneath the earth in a sphere of magical force that is just large enough to contain the target.  Nothing can pass through the sphere, nor can any creature teleport or use planar travel to get into or out of it.  The special component for this version of the spell is a small mithral orb.  Chaining.  Heavy chains, firmly rooted in the ground, hold the target in place.  The target is restrained until the spell ends, and it can't move or be moved by any means until then.  The special component for this version of the spell is a fine chain of precious metal.  Hedged Prison.  The spell transports the target into a tiny demiplane that is warded against teleportation and planar travel.  The demiplane can be a labyrinth, a cage, a tower, or any similar confined structure or area of your choice.  The special component for this version of the spell is a miniature representation of the prison made from jade.  Minimus Containment.  The target shrinks to a height of 1 inch and is imprisoned inside a gemstone or similar object.  Light can pass through the gemstone normally (allowing the target to see out and other creatures to see in), but nothing else can pass through, even by means of teleportation or planar travel.  The gemstone can't be cut or broken while the spell remains in effect.  The special component for this version of the spell is a large, transparent gemstone, such as a corundum, diamond, or ruby.  Slumber.  The target falls asleep and can't be awoken.  The special component for this version of the spell consists of rare soporific herbs.  Ending the Spell.  During the casting of the spell, in any of its versions, you can specify a condition that will cause the spell to end and release the target.  The condition can be as specific or as elaborate as you choose, but the GM must agree that the condition is reasonable and has a likelihood of coming to pass.  The conditions can be based on a creature's name, identity, or deity but otherwise must be based on observable actions or qualities and not based on intangibles such as level, class, or hit points.  A dispel magic spell can end the spell only if it is cast as a 9th-level spell, targeting either the prison or the special component used to create it.  You can use a particular special component to create only one prison at a time.  If you cast the spell again using the same component, the target of the first casting is immediately freed from its binding.  "
+        },
+        {
+            "name_str" : "Prismatic Wall",
+            "level_str" : "9th",
+            "school_str" : "Evocation",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "60 feet",
+            "components_vsm_str" : "V, S",
+            "components_description_str" : "---",
+            "duration_str" : "10 Minutes",
+            "attack_save_str" : "CON Save",
+            "damage_effect_str" : "Fire (...)",
+            "class_str" : "Wizard",
+            "source_str" : "5E Basic Rules",
+        
+            "flavor_str" : "---",
+            "mechanics_str" : "A shimmering, multicolored plane of light forms a vertical opaque wall--up to 90 feet long, 30 feet high, and 1 inch thick--centered on a point you can see within range.  Alternatively, you can shape the wall into a sphere up to 30 feet in diameter centered on a point you choose within range.  The wall remains in place for the duration.  If you position the wall so that it passes through a space occupied by a creature, the spell fails, and your action and the spell slot are wasted.  The wall sheds bright light out to a range of 100 feet and dim light for an additional 100 feet.  You and creatures you designate at the time you cast the spell can pass through and remain near the wall without harm.  If another creature that can see the wall moves to within 20 feet of it or starts its turn there, the creature must succeed on a Constitution saving throw or become blinded for 1 minute.  The wall consists of seven layers, each with a different color.  When a creature attempts to reach into or pass through the wall, it does so one layer at a time through all the wall's layers.  As it passes or reaches through each layer, the creature must make a Dexterity saving throw or be affected by that layer's properties as described below.  The wall can be destroyed, also one layer at a time, in order from red to violet, by means specific to each layer.  Once a layer is destroyed, it remains so for the duration of the spell.  Antimagic field has no effect on the wall, and dispel magic can affect only the violet layer.  1.  Red.  The creature takes 10d6 fire damage on a failed save, or half as much damage on a successful one.  While this layer is in place, nonmagical ranged attacks can't pass through the wall.  The layer can be destroyed by dealing at least 25 cold damage to it.  2.  Orange.  The creature takes 10d6 acid damage on a failed save, or half as much damage on a successful one.  While this layer is in place, magical ranged attacks can't pass through the wall.  The layer is destroyed by a strong wind.  3.  Yellow.  The creature takes 10d6 lightning damage on a failed save, or half as much damage on a successful one.  This layer can be destroyed by dealing at least 60 force damage to it.  4.  Green.  The creature takes 10d6 poison damage on a failed save, or half as much damage on a successful one.  A passwall spell, or another spell of equal or greater level that can open a portal on a solid surface, destroys this layer.  5.  Blue.  The creature takes 10d6 cold damage on a failed save, or half as much damage on a successful one.  This layer can be destroyed by dealing at least 25 fire damage to it.  6.  Indigo.  On a failed save, the creature is restrained.  It must then make a Constitution saving throw at the end of each of its turns.  If it successfully saves three times, the spell ends.  If it fails its save three times, it permanently turns to stone and is subjected to the petrified condition.  The successes and failures don't need to be consecutive; keep track of both until the creature collects three of a kind.  While this layer is in place, spells can't be cast through the wall.  The layer is destroyed by bright light shed by a daylight spell or a similar spell of equal or higher level.  7.  Violet.  On a failed save, the creature is blinded.  It must then make a Wisdom saving throw at the start of your next turn.  A successful save ends the blindness.  If it fails that save, the creature is transported to another plane of the GM's choosing and is no longer blinded.  (Typically, a creature that is on a plane that isn't its home plane is banished home, while other creatures are usually cast into the Astral or Ethereal planes.  ) This layer is destroyed by a dispel magic spell or a similar spell of equal or higher level that can end spells and magical effects.  "
         },
         {
             "school_str" : "Conjuration",
@@ -88,17 +967,11 @@
             "races_str" : "---",
             "source_str" : "Thaleron's Spellbook",
 
-            "components_verbal_bool" : true,
-            "components_somatic_bool" : true,
-            "components_material_bool" : false,
-            "components_cost_str" : "NA",
             "components_vsm_str" : "V, S",
             "components_description_str" : "",
                         
             "flavor_str" : "---",
-            "mechanics_str" : "You channel planar magics to transport yourelf. You and one willing creature within range switch places.  ",
-            "overchargeable_bool" : false,
-            "overcharge_str" : "---"
+            "mechanics_str" : "You channel planar magics to transport yourelf.  You and one willing creature within range switch places.  "
         },
         {
             "school_str" : "Evocation",
@@ -117,17 +990,11 @@
             "races_str" : "---",
             "source_str" : "Thaleron's Spellbook",
 
-            "components_verbal_bool" : true,
-            "components_somatic_bool" : true,
-            "components_material_bool" : false,
-            "components_cost_str" : "NA",
             "components_vsm_str" : "V, S",
             "components_description_str" : "",
                         
             "flavor_str" : "---",
-            "mechanics_str" : "You create a seismic disturbance centered on you. Each creature within a sixty foot radius of you must make a Strength Saving Throw as the ground beneath them begins to shake. On a failed Saving Throw a creature takes 5d8 bludgeoning damage, and becomes restrained as the earth swalows them. On a successful save a creature takes half as much damage and is not restrained. A restrained creature can repeat the saving throw at the end of each of their turns.",
-            "overchargeable_bool" : false,
-            "overcharge_str" : "---"
+            "mechanics_str" : "You create a seismic disturbance centered on you.  Each creature within a sixty foot radius of you must make a Strength Saving Throw as the ground beneath them begins to shake.  On a failed Saving Throw a creature takes 5d8 bludgeoning damage, and becomes restrained as the earth swalows them.  On a successful save a creature takes half as much damage and is not restrained.  A restrained creature can repeat the saving throw at the end of each of their turns.  "
         },
         {
             "school_str" : "Evocation",
@@ -146,16 +1013,11 @@
             "races_str" : "---",
             "source_str" : "Thaleron's Spellbook",
 
-            "components_verbal_bool" : true,
-            "components_somatic_bool" : true,
-            "components_material_bool" : false,
-            "components_cost_str" : "NA",
             "components_vsm_str" : "V, S",
             "components_description_str" : "",
 
             "flavor_str" : "---",
-            "mechanics_str" : "You create an eruption of molten rock on a point within range. Any creature within a 30 ft radius of that point must make a Dexterity Saving Throw, on a failed save taking 3d8 fire damage and 3d8 bludgeoning damage, or half as much on a sucessful save. A creature who fails the save is lit on fire, and suffers 1d8 fire damage at the beginning of each of its turns. A creature can use an action to douse the flames, ending this effect.  ",
-            "overchargeable_bool" : true,
+            "mechanics_str" : "You create an eruption of molten rock on a point within range.  Any creature within a 30 ft radius of that point must make a Dexterity Saving Throw, on a failed save taking 3d8 fire damage and 3d8 bludgeoning damage, or half as much on a sucessful save.  A creature who fails the save is lit on fire, and suffers 1d8 fire damage at the beginning of each of its turns.  A creature can use an action to douse the flames, ending this effect.  ",
             "overcharge_str" : "Whenever you cast this spell using a spell slot of 6th level or higher the spell deals an additional 1d8 fire damage for each slot above 5th.  "
         },
         {
@@ -175,17 +1037,11 @@
             "races_str" : "---",
             "source_str" : "Thaleron's Spellbook",
 
-            "components_verbal_bool" : true,
-            "components_somatic_bool" : true,
-            "components_material_bool" : true,
-            "components_cost_str" : "NA",
             "components_vsm_str" : "V, S, M",
             "components_description_str" : "a small piece of mud",
                         
             "flavor_str" : "---",
-            "mechanics_str" : "Your fists transfigure and turn to stone temporarily. For the duration you can use your action to make a melee spell attack roll. On a hit, you deal 2d6 + your spellcasting ability modifier bludgeoning damage. Additionally, while this spell is active you can use your spellcasting ability modifier instead of your Strength or Dexterity when making an Acrobatics or Athletics check to grapple or escape the grapple of an enemy.  ",
-            "overchargeable_bool" : false,
-            "overcharge_str" : "---"
+            "mechanics_str" : "Your fists transfigure and turn to stone temporarily.  For the duration you can use your action to make a melee spell attack roll.  On a hit, you deal 2d6 + your spellcasting ability modifier bludgeoning damage.  Additionally, while this spell is active you can use your spellcasting ability modifier instead of your Strength or Dexterity when making an Acrobatics or Athletics check to grapple or escape the grapple of an enemy.  "
         },
         {
             "school_str" : "Evocation",
@@ -204,16 +1060,11 @@
             "races_str" : "---",
             "source_str" : "Thaleron's Spellbook",
 
-            "components_verbal_bool" : true,
-            "components_somatic_bool" : true,
-            "components_material_bool" : false,
-            "components_cost_str" : "NA",
             "components_vsm_str" : "V, S",
             "components_description_str" : "a small piece of mud",
                         
             "flavor_str" : "---",
-            "mechanics_str" : "You harness cold, frigid winds, which you can direct for the duration.  When you cast this spell or on subsequent turns as an Action, you may target a creature you can see within range.  That creature must makes a Strength Saving Throw, taking 1d6 cold damage and being pushed 10 feet in a direction of your choice on a failed save.",
-            "overchargeable_bool" : true,
+            "mechanics_str" : "You harness cold, frigid winds, which you can direct for the duration.  When you cast this spell or on subsequent turns as an Action, you may target a creature you can see within range.  That creature must makes a Strength Saving Throw, taking 1d6 cold damage and being pushed 10 feet in a direction of your choice on a failed save.  ",
             "overcharge_str" : "Whenever you cast this spell using a spell slot of 3rd level or higher the spell deals an additional 1d6 cold damage for each slot above 2nd.  "
         },
         {
@@ -233,17 +1084,11 @@
             "races_str" : "---",
             "source_str" : "Thaleron's Spellbook",
 
-            "components_verbal_bool" : true,
-            "components_somatic_bool" : true,
-            "components_material_bool" : false,
-            "components_cost_str" : "NA",
             "components_vsm_str" : "V, S",
             "components_description_str" : "",
                         
             "flavor_str" : "---",
-            "mechanics_str" : "You conjure a set of ethereal gauntlets that surround your arms. For the duration, you can use an action to make a melee spell attack roll. On a hit, you deal your spellcasting ability modifier in force damage and any Large or smaller target is knocked back 10 ft.",
-            "overchargeable_bool" : false,
-            "overcharge_str" : "---"
+            "mechanics_str" : "You conjure a set of ethereal gauntlets that surround your arms.  For the duration, you can use an action to make a melee spell attack roll.  On a hit, you deal your spellcasting ability modifier in force damage and any Large or smaller target is knocked back 10 ft.  "
         },
         {
             "school_str" : "Transmutation",
@@ -262,17 +1107,11 @@
             "races_str" : "---",
             "source_str" : "Thaleron's Spellbook",
 
-            "components_verbal_bool" : true,
-            "components_somatic_bool" : true,
-            "components_material_bool" : false,
-            "components_cost_str" : "NA",
             "components_vsm_str" : "V, S",
             "components_description_str" : "",
                         
             "flavor_str" : "---",
-            "mechanics_str" : "You channel transmutation magic to enlarge a creature within range. The target's size quadruples in all dimensions. This growth increase the target's size by 3 categories, from medium to gargantuan for example, and increase their weight by 24 times. This growth cannot increase something past size gargantuan. If there isn't enough room to quadruple in size, the creature attains the maximum possible size the space allows. Until the spell ends the target gets advantage on Strength Checks and Strength Saving Throws. Any objects the target is wearing or carrying grow with it, including its weapons, which deal an additional 3d4 bludgeoning, piercing, or slashing damage on a hit. Additionally, whenever the spell's target makes an attack roll, it can make an additional attack against one creature within 5 feet of the attack's initial target.",
-            "overchargeable_bool" : false,
-            "overcharge_str" : "---"
+            "mechanics_str" : "You channel transmutation magic to enlarge a creature within range.  The target's size quadruples in all dimensions.  This growth increase the target's size by 3 categories, from medium to gargantuan for example, and increase their weight by 24 times.  This growth cannot increase something past size gargantuan.  If there isn't enough room to quadruple in size, the creature attains the maximum possible size the space allows.  Until the spell ends the target gets advantage on Strength Checks and Strength Saving Throws.  Any objects the target is wearing or carrying grow with it, including its weapons, which deal an additional 3d4 bludgeoning, piercing, or slashing damage on a hit.  Additionally, whenever the spell's target makes an attack roll, it can make an additional attack against one creature within 5 feet of the attack's initial target.  "
         },
         {
             "school_str" : "Conjuration",
@@ -291,17 +1130,11 @@
             "races_str" : "---",
             "source_str" : "Thaleron's Spellbook",
 
-            "components_verbal_bool" : true,
-            "components_somatic_bool" : true,
-            "components_material_bool" : true,
-            "components_cost_str" : "NA",
             "components_vsm_str" : "V, S, M",
             "components_description_str" : "a few drops of cold water",
                         
             "flavor_str" : "---",
-            "mechanics_str" : "You conjure a set of ethereal gauntlets that surround your arms. For the duration, you can use an action to make a melee spell attack roll. On a hit, you deal 2d6 + your spellcasting ability modifier in cold damage. Additionally, the target's movement speed is reduced by 15 ft until the end of its next turn. A creature's movement speed cannot be reduced by more than half in this way.",
-            "overchargeable_bool" : false,
-            "overcharge_str" : "---"
+            "mechanics_str" : "You conjure a set of ethereal gauntlets that surround your arms.  For the duration, you can use an action to make a melee spell attack roll.  On a hit, you deal 2d6 + your spellcasting ability modifier in cold damage.  Additionally, the target's movement speed is reduced by 15 ft until the end of its next turn.  A creature's movement speed cannot be reduced by more than half in this way.  "
         },
         {
             "school_str" : "Evocation",
@@ -320,17 +1153,12 @@
             "races_str" : "---",
             "source_str" : "Thaleron's Spellbook",
 
-            "components_verbal_bool" : true,
-            "components_somatic_bool" : true,
-            "components_material_bool" : false,
-            "components_cost_str" : "NA",
             "components_vsm_str" : "V, S, M",
             "components_description_str" : "a few drops of cold water",
                         
             "flavor_str" : "---",
-            "mechanics_str" : "Make a melee spell attack against a creature within range. On a hit, you deal 2d8 cold damage to the target and its movement speed is reduced by 5 feet until the end of its next turns.",
-            "overchargeable_bool" : true,
-            "overcharge_str" : "Whenever you cast this spell using a spell slot of 2nd level or higher the spell deals an additional 1d8 cold damage for each level above 1st."
+            "mechanics_str" : "Make a melee spell attack against a creature within range.  On a hit, you deal 2d8 cold damage to the target and its movement speed is reduced by 5 feet until the end of its next turns.  ",
+            "overcharge_str" : "Whenever you cast this spell using a spell slot of 2nd level or higher the spell deals an additional 1d8 cold damage for each level above 1st.  "
         },
         {
             "school_str" : "Evocation",
@@ -349,17 +1177,12 @@
             "races_str" : "---",
             "source_str" : "Thaleron's Spellbook",
 
-            "components_verbal_bool" : true,
-            "components_somatic_bool" : true,
-            "components_material_bool" : false,
-            "components_cost_str" : "NA",
             "components_vsm_str" : "V, S",
             "components_description_str" : "---",
                         
             "flavor_str" : "---",
-            "mechanics_str" : "Make a melee spell attack roll against a creature within range. On a hit, the creature takes 4d6 lightning damage and must make a Constitution Saving Throw becoming stunned for one round on a failed save.",
-            "overchargeable_bool" : true,
-            "overcharge_str" : "Whenever you cast this spell using a spell slot of 4th level or higher the spell deals an additional 1d6 lightning damage for each slot above 3rd."
+            "mechanics_str" : "Make a melee spell attack roll against a creature within range.  On a hit, the creature takes 4d6 lightning damage and must make a Constitution Saving Throw becoming stunned for one round on a failed save.  ",
+            "overcharge_str" : "Whenever you cast this spell using a spell slot of 4th level or higher the spell deals an additional 1d6 lightning damage for each slot above 3rd.  "
         },
         {
             "school_str" : "Evocation",
@@ -378,17 +1201,11 @@
             "races_str" : "---",
             "source_str" : "Thaleron's Spellbook",
 
-            "components_verbal_bool" : true,
-            "components_somatic_bool" : true,
-            "components_material_bool" : false,
-            "components_cost_str" : "NA",
             "components_vsm_str" : "V, S",
             "components_description_str" : "---",
                         
             "flavor_str" : "---",
-            "mechanics_str" : "You send a blast of radiant energy out in a direction of your choosing. Each creature within a 60 ft. cone must make a Constitution Saving Throw, on a failed save taking 6d8 radiant damage and becoming blinded, and on a succesful save taking half damage. A blinded creature can repeat the save at the end of each of its turns.",
-            "overchargeable_bool" : false,
-            "overcharge_str" : "---"
+            "mechanics_str" : "You send a blast of radiant energy out in a direction of your choosing.  Each creature within a 60 ft.  cone must make a Constitution Saving Throw, on a failed save taking 6d8 radiant damage and becoming blinded, and on a succesful save taking half damage.  A blinded creature can repeat the save at the end of each of its turns.  "
         },
         {
             "school_str" : "Evocation",
@@ -407,20 +1224,15 @@
             "races_str" : "---",
             "source_str" : "Thaleron's Spellbook",
 
-            "components_verbal_bool" : true,
-            "components_somatic_bool" : true,
-            "components_material_bool" : false,
-            "components_cost_str" : "NA",
             "components_vsm_str" : "V, S, M",
             "components_description_str" : "a shard of glass",
                         
             "flavor_str" : "---",
-            "mechanics_str" : "Lightning radiates out from you in a twenty foot sphere. Each creature within the area must make a Constitution Saving Throw, on a failed save taking 8d6 lightning damage and getting pushed back 10 feet, and on a successful save taking half as much and not getting pushed back.",
-            "overchargeable_bool" : true,
-            "overcharge_str" : "When you cast this spell using a spell slot of 4th level or higher the spell deals an addtional 1d6 lightning damage for each slot above 3rd."
+            "mechanics_str" : "Lightning radiates out from you in a twenty foot sphere.  Each creature within the area must make a Constitution Saving Throw, on a failed save taking 8d6 lightning damage and getting pushed back 10 feet, and on a successful save taking half as much and not getting pushed back.  ",
+            "overcharge_str" : "When you cast this spell using a spell slot of 4th level or higher the spell deals an addtional 1d6 lightning damage for each slot above 3rd.  "
         },
         {
-            "school_str" : "Necromancy",
+            "school_str" : "Conjuration",
             "level_str" : "2nd",
             "name_str" : "Poisonous Presence",
             "casting_time_str" : "1 Action",
@@ -436,17 +1248,11 @@
             "races_str" : "---",
             "source_str" : "Thaleron's Spellbook",
 
-            "components_verbal_bool" : true,
-            "components_somatic_bool" : true,
-            "components_material_bool" : false,
-            "components_cost_str" : "NA",
             "components_vsm_str" : "V, S, M",
             "components_description_str" : "a shard of glass",
                         
             "flavor_str" : "---",
-            "mechanics_str" : "You create a cloud of poison in a 10 ft radius centered on the target. Creatures within the area other than you must make a Constitution Saving Throw or become poisoned. A poisoned creature can repeat the saving throw at the end of each of their turns, ending the save on a success.",
-            "overchargeable_bool" : false,
-            "overcharge_str" : "---"
+            "mechanics_str" : "You create a cloud of poison in a 10 ft radius centered on the target.  Creatures within the area other than you must make a Constitution Saving Throw or become poisoned.  A poisoned creature can repeat the saving throw at the end of each of their turns, ending the save on a success.  "
         },
         {
             "school_str" : "Transmutation",
@@ -465,17 +1271,12 @@
             "races_str" : "---",
             "source_str" : "Thaleron's Spellbook",
 
-            "components_verbal_bool" : true,
-            "components_somatic_bool" : true,
-            "components_material_bool" : false,
-            "components_cost_str" : "NA",
             "components_vsm_str" : "V, S",
             "components_description_str" : "",
                         
             "flavor_str" : "---",
-            "mechanics_str" : "You touch a creature. For the duration, they leave a trail of sparks no more than 30 feet long that lasts for one round.  Creatures that move through the trail take 2d6 lightning damage.  ",
-            "overchargeable_bool" : true,
-            "overcharge_str" : "Whenever you cast this spell using a spell slot of 3rd level or higher the spell deals an additional 1d6 lightning damage for each level above 2nd."
+            "mechanics_str" : "You touch a creature.  For the duration, they leave a trail of sparks no more than 30 feet long that lasts for one round.  Creatures that move through the trail take 2d6 lightning damage.  ",
+            "overcharge_str" : "Whenever you cast this spell using a spell slot of 3rd level or higher the spell deals an additional 1d6 lightning damage for each level above 2nd.  "
         },
         {
             "school_str" : "Conjuration",
@@ -494,17 +1295,12 @@
             "races_str" : "---",
             "source_str" : "Thaleron's Spellbook",
 
-            "components_verbal_bool" : true,
-            "components_somatic_bool" : true,
-            "components_material_bool" : false,
-            "components_cost_str" : "NA",
             "components_vsm_str" : "V, S",
             "components_description_str" : "",
                         
             "flavor_str" : "---",
-            "mechanics_str" : "You target a humanoid within range. That creature must make a Dexterity Saving Throw as spectral shackles reach around to grab them. On a failed save the creature is restrained, and can repeat the save at the end of each of its turn. Additionally, this effect ends early if the target takes any damage.",
-            "overchargeable_bool" : true,
-            "overcharge_str" : "Whenever you cast this spell using a spell slot of 2nd level or higher the spell can target an additional humanoid for each slot above 1st."
+            "mechanics_str" : "You target a humanoid within range.  That creature must make a Dexterity Saving Throw as spectral shackles reach around to grab them.  On a failed save the creature is restrained, and can repeat the save at the end of each of its turn.  Additionally, this effect ends early if the target takes any damage.  ",
+            "overcharge_str" : "Whenever you cast this spell using a spell slot of 2nd level or higher the spell can target an additional humanoid for each slot above 1st.  "
         },
         {
             "school_str" : "Conjuration",
@@ -523,17 +1319,12 @@
             "races_str" : "---",
             "source_str" : "Thaleron's Spellbook",
 
-            "components_verbal_bool" : true,
-            "components_somatic_bool" : true,
-            "components_material_bool" : false,
-            "components_cost_str" : "NA",
             "components_vsm_str" : "V, S",
             "components_description_str" : "",
                         
             "flavor_str" : "---",
-            "mechanics_str" : "You touch a willing creature within range.  Arcs of lightning spawn from that creature's fingers. As an action, that creature can make a melee spell attack roll using your spellcasting attack bonus. On a hit, the target suffers 4d6 lightning or thunder damage (your choice for each strike) and must make a Strength Saving Throw, being pushed back 10 feet upon a failure. At higher levels: Whenever you cast this spell using a spell slot of 4th level or higher the spell deals an additional 1d6 thunder damage for each slot above 3rd.",
-            "overchargeable_bool" : false,
-            "overcharge_str" : "---"
+            "mechanics_str" : "You touch a willing creature within range.  Arcs of lightning spawn from that creature's fingers.  As an action, that creature can make a melee spell attack roll using your spellcasting attack bonus.  On a hit, the target suffers 4d6 lightning or thunder damage (your choice for each strike) and must make a Strength Saving Throw, being pushed back 10 feet upon a failure.  ",
+            "overcharge_str" : "Whenever you cast this spell using a spell slot of 4th level or higher the spell deals an additional 1d6 thunder damage for each slot above 3rd.  "
         },
         {
             "school_str" : "Evocation",
@@ -552,17 +1343,11 @@
             "races_str" : "---",
             "source_str" : "Thaleron's Spellbook",
 
-            "components_verbal_bool" : true,
-            "components_somatic_bool" : true,
-            "components_material_bool" : false,
-            "components_cost_str" : "NA",
             "components_vsm_str" : "V, S",
             "components_description_str" : "",
                         
             "flavor_str" : "---",
-            "mechanics_str" : "A wind manifests in a direction of your choice, pushing you 10 ft away from your current location in the chosen direction. This movement does not provoke attacks of opportunity.",
-            "overchargeable_bool" : false,
-            "overcharge_str" : "---"
+            "mechanics_str" : "A wind manifests in a direction of your choice, pushing you 10 ft away from your current location in the chosen direction.  This movement does not provoke attacks of opportunity.  "
         },
         {
             "school_str" : "Transmutation",
@@ -581,17 +1366,12 @@
             "races_str" : "---",
             "source_str" : "Thaleron's Spellbook",
 
-            "components_verbal_bool" : true,
-            "components_somatic_bool" : true,
-            "components_material_bool" : false,
-            "components_cost_str" : "NA",
             "components_vsm_str" : "V, S",
             "components_description_str" : "",
                         
             "flavor_str" : "---",
-            "mechanics_str" : "You touch a creature within range, who may immediately use a reaction to jump twenty feet in any direction.  Upon landing, a thunderous blast erupts from the ground in a ten foot radius.  Any creature besides the creature who made the jump within the area must make a Constitution Saving Throw, on a failed save becoming deafened and taking 3d8 thunder damage, or taking half as much damage on a successful save and not becoming deafened. A deafened creature can repeat the saving throw at the end of each of its turns.",
-            "overchargeable_bool" : true,
-            "overcharge_str" : "When you cast this spell using a spell slot of 3rd level or higher, the spell deals an additional 1d8 for each slot above 2nd."
+            "mechanics_str" : "You touch a creature within range, who may immediately use a reaction to jump twenty feet in any direction.  Upon landing, a thunderous blast erupts from the ground in a ten foot radius.  Any creature besides the creature who made the jump within the area must make a Constitution Saving Throw, on a failed save becoming deafened and taking 3d8 thunder damage, or taking half as much damage on a successful save and not becoming deafened.  A deafened creature can repeat the saving throw at the end of each of its turns.  ",
+            "overcharge_str" : "When you cast this spell using a spell slot of 3rd level or higher, the spell deals an additional 1d8 for each slot above 2nd.  "
         },
         {
             "school_str" : "Evocation",
@@ -610,17 +1390,12 @@
             "races_str" : "---",
             "source_str" : "Thaleron's Spellbook",
 
-            "components_verbal_bool" : true,
-            "components_somatic_bool" : true,
-            "components_material_bool" : true,
-            "components_cost_str" : "NA",
             "components_vsm_str" : "V, S, M",
             "components_description_str" : "a shard of steel and a small piece of amber",
                         
             "flavor_str" : "---",
-            "mechanics_str" : "You touch a creature within range, surrounding your fist in lightning and thunder. The target must make a Constitution Saving Throw. On a failed save the target takes 5d6 lightning damage and 5d6 thunder damage and is pushed back 20 ft. On a successful save the target takes half damage and is pushed back only 10 ft.",
-            "overchargeable_bool" : true,
-            "overcharge_str" : "When you cast this spell using a spell slot of 7th level or higher the spell deals an additional 1d6 lightning and thunder damage for each slot above 6th."
+            "mechanics_str" : "You touch a creature within range, surrounding your fist in lightning and thunder.  The target must make a Constitution Saving Throw.  On a failed save the target takes 5d6 lightning damage and 5d6 thunder damage and is pushed back 20 ft.  On a successful save the target takes half damage and is pushed back only 10 ft.  ",
+            "overcharge_str" : "When you cast this spell using a spell slot of 7th level or higher the spell deals an additional 1d6 lightning and thunder damage for each slot above 6th.  "
         },
         {
             "school_str" : "Necromancy",
@@ -639,17 +1414,12 @@
             "races_str" : "---",
             "source_str" : "Thaleron's Spellbook",
 
-            "components_verbal_bool" : true,
-            "components_somatic_bool" : true,
-            "components_material_bool" : false,
-            "components_cost_str" : "NA",
             "components_vsm_str" : "V, S",
             "components_description_str" : "",
                         
             "flavor_str" : "---",
-            "mechanics_str" : "Necrotic energies radiate from you, necrotic tentacles floating around you in a ten foot sphere. Creatures within the sphere must make a Constitution Saving Throw, on a failed saving throw taking 3d6 necrotic damage and becoming restrained. On a successful saving throw a creature takes half as much damage and is not restrained. A restrained creature can repeat its saving throw at the end of each of its turns.",
-            "overchargeable_bool" : false,
-            "overcharge_str" : "When you cast this spell using a spell slot of 3rd level or higher, the spell deals an additional 1d6 necrotic damage for each slot above 3rd."
+            "mechanics_str" : "Necrotic energies radiate from you, necrotic tentacles floating around you in a ten foot sphere.  Creatures within the sphere must make a Constitution Saving Throw, on a failed saving throw taking 3d6 necrotic damage and becoming restrained.  On a successful saving throw a creature takes half as much damage and is not restrained.  A restrained creature can repeat its saving throw at the end of each of its turns.  ",
+            "overcharge_str" : "When you cast this spell using a spell slot of 3rd level or higher, the spell deals an additional 1d6 necrotic damage for each slot above 3rd.  "
         },
         {
             "school_str" : "Necromancy",
@@ -668,17 +1438,12 @@
             "races_str" : "---",
             "source_str" : "Thaleron's Spellbook",
 
-            "components_verbal_bool" : true,
-            "components_somatic_bool" : true,
-            "components_material_bool" : false,
-            "components_cost_str" : "NA",
             "components_vsm_str" : "V, S",
             "components_description_str" : "",
                         
             "flavor_str" : "---",
-            "mechanics_str" : "Necrotic energies seep off of your hand. Make an attack roll against a creature within range. On a hit, you deal 4d6 necrotic damage and the target must make a Constitution Saving Throw, becoming paralyzed on a failed save as necrotic energies prevent them from moving. A paralyzed creature may repeat the saving throw at the end of each of its turns turns.",
-            "overchargeable_bool" : true,
-            "overcharge_str" : "When you cast this spell using a spell slot of 5th level or higher, the spell deals an additional 1d6 necrotic damage for each slot above 4th."
+            "mechanics_str" : "Necrotic energies seep off of your hand.  Make an attack roll against a creature within range.  On a hit, you deal 4d6 necrotic damage and the target must make a Constitution Saving Throw, becoming paralyzed on a failed save as necrotic energies prevent them from moving.  A paralyzed creature may repeat the saving throw at the end of each of its turns turns.  ",
+            "overcharge_str" : "When you cast this spell using a spell slot of 5th level or higher, the spell deals an additional 1d6 necrotic damage for each slot above 4th.  "
         },
         {
             "school_str" : "Necromancy",
@@ -697,17 +1462,12 @@
             "races_str" : "---",
             "source_str" : "Thaleron's Spellbook",
 
-            "components_verbal_bool" : true,
-            "components_somatic_bool" : true,
-            "components_material_bool" : false,
-            "components_cost_str" : "NA",
             "components_vsm_str" : "V, S",
             "components_description_str" : "",
                         
             "flavor_str" : "---",
-            "mechanics_str" : "You create a form of living shadows in your hand which you then attempt to pass on to someone else. Make a melee spell attack against a creature within range. On a hit, you deal 6d6 necrotic damage, and can use an action on subsequent turns to deal an additional 6d6 necrotic damage. Additionally, the target must make a Constitution Saving Throw or become blinded. A blinded creature can attempt the saving throw again at the end of each of its turns.",
-            "overchargeable_bool" : true,
-            "overcharge_str" : "When you cast this spell using a slot of 7th level or higher the spell deals an additional 1d6 for each slot above 6th."
+            "mechanics_str" : "You create a form of living shadows in your hand which you then attempt to pass on to someone else.  Make a melee spell attack against a creature within range.  On a hit, you deal 6d6 necrotic damage, and can use an action on subsequent turns to deal an additional 6d6 necrotic damage.  Additionally, the target must make a Constitution Saving Throw or become blinded.  A blinded creature can attempt the saving throw again at the end of each of its turns.  ",
+            "overcharge_str" : "When you cast this spell using a slot of 7th level or higher the spell deals an additional 1d6 for each slot above 6th.  "
         },
         {
             "school_str" : "Necromancy",
@@ -726,17 +1486,12 @@
             "races_str" : "---",
             "source_str" : "Thaleron's Spellbook",
 
-            "components_verbal_bool" : true,
-            "components_somatic_bool" : true,
-            "components_material_bool" : false,
-            "components_cost_str" : "NA",
             "components_vsm_str" : "V, S",
             "components_description_str" : "",
                         
             "flavor_str" : "---",
-            "mechanics_str" : "You conjure a spectral sword made of shadows and darkness that appears in your hand. You can use this sword to make a melee spell attack roll as an action, on a hit dealing 1d8 + your spellcasting ability modifier necrotic damage.",
-            "overchargeable_bool" : true,
-            "overcharge_str" : "whenever you cast this spell at higher levels it deals an additional 1d8 necrotic damage for every level above 1st at which it is cast."
+            "mechanics_str" : "You conjure a spectral sword made of shadows and darkness that appears in your hand.  You can use this sword to make a melee spell attack roll as an action, on a hit dealing 1d8 + your spellcasting ability modifier necrotic damage.  ",
+            "overcharge_str" : "Whenever you cast this spell at higher levels it deals an additional 1d8 necrotic damage for every level above 1st at which it is cast.  "
         },
         {
             "school_str" : "Necromancy",
@@ -755,17 +1510,11 @@
             "races_str" : "---",
             "source_str" : "Thaleron's Spellbook",
 
-            "components_verbal_bool" : true,
-            "components_somatic_bool" : true,
-            "components_material_bool" : false,
-            "components_cost_str" : "NA",
             "components_vsm_str" : "V, S",
             "components_description_str" : "",
                         
             "flavor_str" : "---",
-            "mechanics_str" : "You push your body beyond the limits of what it is normally capable and dash 60 feet in any direction, ignoring any creatures blocking your path. As you dash you leave a trail of necrotic ooze behind you. The area is considered difficult terrain and any creature that starts its turn there takes 5d6 necrotic damage.The terrain naturally returns to normal after ten minutes.",
-            "overchargeable_bool" : false,
-            "overcharge_str" : "---"
+            "mechanics_str" : "You push your body beyond the limits of what it is normally capable and dash 60 feet in any direction, ignoring any creatures blocking your path.  As you dash you leave a trail of necrotic ooze behind you.  The area is considered difficult terrain and any creature that starts its turn there takes 5d6 necrotic damage.  The terrain naturally returns to normal after ten minutes.  "
         }
     ]
 }
