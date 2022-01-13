@@ -17,19 +17,53 @@
           $.each(data.spell, function(i, f) {
             data_page = f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html";
             if (data_page == page) {
+              $.each(data.author, function(x, y) {
+                if (f.source_str == y.author_name) {
+                  author_credit = y.author_credit;
+                  source_url = y.source_url;
+                  author_credit = y.author_credit;
+                }
+              });
               document.getElementById("casting-page-title").innerHTML = "Caped Crusaders: Spells > " + f.name_str;
-              document.getElementById("casting-table-title").innerHTML = f.name_str;
+              document.getElementById("casting-table-title").innerHTML = f.name_str + ", <a href='" + source_url + "' target='blank'>" + author_credit + "</a>";
               document.getElementById("page-description-flavor").innerHTML = "<b>Flavor Description:</b>  <i>" + f.flavor_str + "</i>";
               document.getElementById("page-description-mechanics").innerHTML = "<b>Standard Mechanics:</b>  " + f.mechanics_str;
               document.getElementById("page-description-overcharge").innerHTML = "<b>Overcharge Mechanics:</b>  " + f.overcharge_str;
               document.getElementById("casting-page-image").src = "/_SiteResources/Images/Sigil-" + f.school_str + ".png";
               var tblRow1 = "<tr><th style='width: 15vw'>Level</th><th style='width: 15vw'>Casting Time</th><th style='width: 15vw'>Range/Area</th><th style='width: 15vw'>Components</th></tr>"
               $(tblRow1).appendTo("#TechTable tbody");
+
+              // Checking for Material Components and displaying the material component description
+              if (f.components_vsm_str.includes("M")) {
+                document.getElementById("page-description-components").innerHTML = "<b>Material Components:</b>  <i>(" + f.components_description_str + ")</i>";
+
+                // If materials have a cost, we strip that out and concatenate it to the vsm string with parentheses
+                if (f.components_description_str.replace(/\D/g,'') > 0) {
+                  components_vsm = f.components_vsm_str + "   (" + f.components_description_str.replace(/\D/g,'') + ")";
+
+                // If not, we leave the vsm string alone and pull the data
+                } else {
+                  components_vsm = f.components_vsm_str;
+                }
+
+                // If materials are consumed, we include an asterisk to reflect that in the vsm string
+                if (f.components_description_str.includes("consume")) {
+                components_vsm = components_vsm + "*";
+              
+                // If materials aren't consumed, we do nothing
+                } else {}
+
+                
+              // If there are no material components, we leave the vsm string alone
+              } else {
+                components_vsm = f.components_vsm_str;
+              }
+
               var tblRow2 = "<tr>" 
                 + "<td>" + f.level_str + "</td>" 
                 + "<td>" + f.casting_time_str + "</td>" 
                 + "<td>" + f.range_area_str + "</td>" 
-                + "<td>" + f.components_vsm_str + "</td>" 
+                + "<td>" + components_vsm + "</td>" 
                 + "</tr>"
               $(tblRow2).appendTo("#TechTable tbody");
               var tblRow3 = "<tr><th>Duration</th><th>School</th><th>Attack/Save</th><th>Damage/Effect</th></tr>";
@@ -41,14 +75,6 @@
                 + "<td>" + f.damage_effect_str + "</td>" 
                 + "</tr>"
               $(tblRow4).appendTo("#TechTable tbody");
-              $.each(data.author, function(x, y) {
-                if (f.source_str == y.author_name) {
-                  author_credit = y.author_credit;
-                  source_url = y.source_url;
-                  author_credit = y.author_credit;
-                }
-              });
-              document.getElementById("source").innerHTML = "<a href='" + source_url + "' target='blank'>" + author_credit + "</a>";
             }
           });
         });
@@ -82,13 +108,16 @@
               </table>
               <h3 id="source"></h3>
               <hr>
+              
               <p id="page-description-flavor">
               </p>
               <p id="page-description-mechanics">
               </p>
               <p id="page-description-overcharge">
               </p>
-              
+              <p id="page-description-components">
+              </p>
+
             </section>
           </div>
         </div>

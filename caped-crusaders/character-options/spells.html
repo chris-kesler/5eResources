@@ -31,13 +31,40 @@
             } else {
               overchargeable = "False";
             }
+
+            // Checking for Material Components and displaying the material component description
+            if (f.components_vsm_str.includes("M")) {
+
+                // If materials have a cost, we strip that out and concatenate it to the vsm string with parentheses
+                if (f.components_description_str.replace(/\D/g,'') > 0) {
+                  components_vsm = f.components_vsm_str + "   (" + f.components_description_str.replace(/\D/g,'') + ")";
+
+                // If not, we leave the vsm string alone and pull the data
+                } else {
+                  components_vsm = f.components_vsm_str;
+                }
+
+                // If materials are consumed, we include an asterisk to reflect that in the vsm string
+                if (f.components_description_str.includes("consume")) {
+                components_vsm = components_vsm + "*";
+              
+                // If materials aren't consumed, we do nothing
+                } else {}
+
+                
+              // If there are no material components, we leave the vsm string alone
+              } else {
+                components_vsm = f.components_vsm_str;
+              }
+
+
             var tblRow = "<tr>" 
               + "<td><a href='spells/" + f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html' target='_blank'>" + f.name_str + "</a></td>" 
               + "<td>" + f.level_str + "</td>" 
               + "<td>" + "<img class='FilterTableImage' src=/_SiteResources/Images/Sigil-" + f.school_str + "-Small.png><br>" + f.school_str + "</td>" 
               + "<td>" + f.casting_time_str + "</td>" 
               + "<td>" + f.range_area_str + "</td>" 
-              + "<td>" + f.components_vsm_str + "</td>" 
+              + "<td>" + components_vsm + "</td>" 
               + "<td>" + f.duration_str + "</td>" 
               + "<td>" + f.attack_save_str + "</td>" 
               + "<td>" + f.damage_effect_str + "</td>" 
