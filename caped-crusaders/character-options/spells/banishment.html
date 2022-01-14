@@ -54,7 +54,7 @@
               }
 
               // Checking for Material Components and displaying the material component description
-              if (f.components_vsm_str.includes("M") || f.components_description_str != undefined) {
+              if (f.components_vsm_str.includes("M") && f.components_description_str != undefined) {
                 document.getElementById("page-description").innerHTML += "<b>Material Components:</b>  <i>(" + f.components_description_str + ")</i>";
 
                 // If materials have a cost, we strip that out and concatenate it to the vsm string with parentheses
