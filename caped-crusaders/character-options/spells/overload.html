@@ -9,14 +9,21 @@
     <link rel="stylesheet" href="/caped-crusaders-style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
     <script>
-      $(function readTech() {
-        var spell = [];
+      $(function readSpell() {
+
+        // Reading data from our JSON file
         $.getJSON('../spells.json', function(data) {
-          var path = window.location.pathname;
-          var page = path.split("/").pop();
+
+          // Reading the name of this file
+          var page = window.location.pathname.split("/").pop();
+
+          // Looping through the JSON data 
           $.each(data.spell, function(i, f) {
-            data_page = f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html";
-            if (data_page == page) {
+
+            // Finding the entry that matches this file
+            if (f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html" == page) {
+
+              // Looping through the author array in the JSON file to populate variables for links and credit
               $.each(data.author, function(x, y) {
                 if (f.source_str == y.author_name) {
                   author_credit = y.author_credit;
@@ -24,18 +31,31 @@
                   author_credit = y.author_credit;
                 }
               });
+
+              // Populating the name of the page
               document.getElementById("casting-page-title").innerHTML = "Caped Crusaders: Spells > " + f.name_str;
+
+              // Populating the link to the source for the page content
               document.getElementById("casting-table-title").innerHTML = f.name_str + ", <a href='" + source_url + "' target='blank'>" + author_credit + "</a>";
-              document.getElementById("page-description-flavor").innerHTML = "<b>Flavor Description:</b>  <i>" + f.flavor_str + "</i>";
-              document.getElementById("page-description-mechanics").innerHTML = "<b>Standard Mechanics:</b>  " + f.mechanics_str;
-              document.getElementById("page-description-overcharge").innerHTML = "<b>Overcharge Mechanics:</b>  " + f.overcharge_str;
+
+              // Populating the page image
               document.getElementById("casting-page-image").src = "/_SiteResources/Images/Sigil-" + f.school_str + ".png";
-              var tblRow1 = "<tr><th style='width: 15vw'>Level</th><th style='width: 15vw'>Casting Time</th><th style='width: 15vw'>Range/Area</th><th style='width: 15vw'>Components</th></tr>"
-              $(tblRow1).appendTo("#TechTable tbody");
+
+              
+              // Populating the page description based on flavor, mechanics, overcharge, and components
+              if (f.flavor_str != undefined) {
+                document.getElementById("page-description").innerHTML += "<b>Flavor Description:</b>  <i>" + f.flavor_str + "</i><br><br>";
+              }
+              if (f.mechanics_str != undefined) {
+                document.getElementById("page-description").innerHTML += "<b>Standard Mechanics:</b>  " + f.mechanics_str + "<br><br>";
+              }
+              if (f.overcharge_str != undefined) {
+                document.getElementById("page-description").innerHTML += "<b>Overcharge Mechanics:</b>  " + f.overcharge_str + "<br><br>";
+              }
 
               // Checking for Material Components and displaying the material component description
-              if (f.components_vsm_str.includes("M")) {
-                document.getElementById("page-description-components").innerHTML = "<b>Material Components:</b>  <i>(" + f.components_description_str + ")</i>";
+              if (f.components_vsm_str.includes("M") || f.components_description_str != undefined) {
+                document.getElementById("page-description").innerHTML += "<b>Material Components:</b>  <i>(" + f.components_description_str + ")</i>";
 
                 // If materials have a cost, we strip that out and concatenate it to the vsm string with parentheses
                 if (f.components_description_str.replace(/\D/g,'') > 0) {
@@ -48,33 +68,40 @@
 
                 // If materials are consumed, we include an asterisk to reflect that in the vsm string
                 if (f.components_description_str.includes("consume")) {
-                components_vsm = components_vsm + "*";
-              
-                // If materials aren't consumed, we do nothing
-                } else {}
+                  components_vsm = components_vsm + "*";
+                } 
 
-                
               // If there are no material components, we leave the vsm string alone
               } else {
                 components_vsm = f.components_vsm_str;
               }
 
+              
+              // Defining and populating the first row of the page table
+              var tblRow1 = "<tr><th style='width: 15vw'>Level</th><th style='width: 15vw'>Casting Time</th><th style='width: 15vw'>Range/Area</th><th style='width: 15vw'>Components</th></tr>"
+              $(tblRow1).appendTo("#page-table tbody");
+
+              // Defining and populating the second row of the page table
               var tblRow2 = "<tr>" 
                 + "<td>" + f.level_str + "</td>" 
                 + "<td>" + f.casting_time_str + "</td>" 
                 + "<td>" + f.range_area_str + "</td>" 
                 + "<td>" + components_vsm + "</td>" 
                 + "</tr>"
-              $(tblRow2).appendTo("#TechTable tbody");
+              $(tblRow2).appendTo("#page-table tbody");
+
+              // Defining and populating the second row of the page table
               var tblRow3 = "<tr><th>Duration</th><th>School</th><th>Attack/Save</th><th>Damage/Effect</th></tr>";
-              $(tblRow3).appendTo("#TechTable tbody");
+              $(tblRow3).appendTo("#page-table tbody");
+              
+              // Defining and populating the second row of the page table
               var tblRow4 = "<tr>"
                 + "<td>" + f.duration_str + "</td>" 
                 + "<td>" + f.school_str + "</td>" 
                 + "<td>" + f.attack_save_str + "</td>" 
                 + "<td>" + f.damage_effect_str + "</td>" 
                 + "</tr>"
-              $(tblRow4).appendTo("#TechTable tbody");
+              $(tblRow4).appendTo("#page-table tbody");
             }
           });
         });
@@ -103,19 +130,13 @@
               <img id="casting-page-image" class="CastingPageImage"
                 alt="Sigil-Abjuration">
 
-              <table id="TechTable" class="caped-crusader-table">
+              <table id="page-table" class="caped-crusader-table">
                 <tbody></tbody>
               </table>
               <h3 id="source"></h3>
               <hr>
               
-              <p id="page-description-flavor">
-              </p>
-              <p id="page-description-mechanics">
-              </p>
-              <p id="page-description-overcharge">
-              </p>
-              <p id="page-description-components">
+              <p id="page-description">
               </p>
 
             </section>

@@ -40,6 +40,148 @@
     "spell": [
         
         {
+            "name_str" : "Minor Illusion",
+            "level_str" : "0th (Cantrip)",
+            "school_str" : "Illusion",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "30 feet (5 foot cube)",
+            "components_vsm_str" : "S, M",
+            "components_description_str" : "a bit of fleece",
+            "duration_str" : "1 Minute (Concentration)",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Control",
+            "class_str" : "Bard, Sorcerer, Warlock, Wizard",
+            "source_str" : "5E Basic Rules",
+        
+            "mechanics_str" : "You create a sound or an image of an object within range that lasts for the duration. The illusion also ends if you dismiss it as an action or cast this spell again.<br><br>  If you create a sound, its volume can range from a whisper to a scream. It can be your voice, someone else's voice, a lion's roar, a beating of drums, or any other sound you choose. The sound continues unabated throughout the duration, or you can make discrete sounds at different times before the spell ends.<br><br>If you create an image of an object--such as a chair, muddy footprints, or a small chest--it must be no larger than a 5-foot cube. The image can't create sound, light, smell, or any other sensory effect. Physical interaction with the image reveals it to be an illusion, because things can pass through it.<br><br> If a creature uses its action to examine the sound or image, the creature can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the illusion becomes faint to the creature."
+        },
+        {
+            "name_str" : "Disguise Self",
+            "level_str" : "1st",
+            "school_str" : "Illusion",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "Self",
+            "components_vsm_str" : "V, S",
+            "duration_str" : "1 Hour",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Deception",
+            "class_str" : "Bard, Sorcerer, Wizard, Artificer",
+            "source_str" : "5E Basic Rules",
+        
+            "mechanics_str" : " You make yourself--including your clothing, armor, weapons, and other belongings on your person--look different until the spell ends or until you use your action to dismiss it. You can seem 1 foot shorter or taller and can appear thin, fat, or in between. You can't change your body type, so you must adopt a form that has the same basic arrangement of limbs. Otherwise, the extent of the illusion is up to you.<br><br> The changes wrought by this spell fail to hold up to physical inspection. For example, if you use this spell to add a hat to your outfit, objects pass through the hat, and anyone who touches it would feel nothing or would feel your head and hair. If you use this spell to appear thinner than you are, the hand of someone who reaches out to touch you would bump into you while it was seemingly still in midair.<br><br>  To discern that you are disguised, a creature can use its action to inspect your appearance and must succeed on an Intelligence (Investigation) check against your spell save DC."
+        },
+        {
+            "name_str" : "Silent Image",
+            "level_str" : "1st",
+            "school_str" : "Illusion",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "60 feet (15 foot cube)",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "a bit of fleece",
+            "duration_str" : "10 Minutes (Concentration)",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Control",
+            "class_str" : "Bard, Sorcerer, Wizard",
+            "source_str" : "5E Basic Rules",
+        
+            "mechanics_str" : " You create the image of an object, a creature, or some other visible phenomenon that is no larger than a 15-foot cube. The image appears at a spot within range and lasts for the duration. The image is purely visual; it isn't accompanied by sound, smell, or other sensory effects.<br><br> You can use your action to cause the image to move to any spot within range. As the image changes location, you can alter its appearance so that its movements appear natural for the image. For example, if you create an image of a creature and move it, you can alter the image so that it appears to be walking.<br><br> Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image."
+        },
+        {
+            "name_str" : "Blur",
+            "level_str" : "2nd",
+            "school_str" : "Illusion",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "Self",
+            "components_vsm_str" : "V",
+            "components_description_str" : "a bit of fleece",
+            "duration_str" : "1 Minute",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Deception",
+            "class_str" : "Sorcerer, Wizard, Artificer",
+            "source_str" : "5E Basic Rules",
+        
+            "mechanics_str" : " Your body becomes blurred, shifting and wavering to all who can see you. For the duration, any creature has disadvantage on attack rolls against you. An attacker is immune to this effect if it doesn't rely on sight, as with blindsight, or can see through illusions, as with truesight."
+        },
+        {
+            "name_str" : "Invisibility",
+            "level_str" : "2nd",
+            "school_str" : "Illusion",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "Touch",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "an eyelash encased in gum arabic",
+            "duration_str" : "1 Hour (Concentration)",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Invisible",
+            "class_str" : "Bard, Sorcerer, Warlock, Wizard, Artificer",
+            "source_str" : "5E Basic Rules",
+        
+            "mechanics_str" : "A creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person. The spell ends for a target that attacks or casts a spell.",
+            "overcharge_str" : "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd."
+        },
+        {
+            "name_str" : "Mirror Image",
+            "level_str" : "2nd",
+            "school_str" : "Illusion",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "Self",
+            "components_vsm_str" : "V, S",
+            "duration_str" : "1 Hour (Concentration)",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Deception (...)",
+            "class_str" : "Sorcerer, Warlock, Wizard",
+            "source_str" : "5E Basic Rules",
+        
+            "mechanics_str" : "Three illusory duplicates of yourself appear in your space. Until the spell ends, the duplicates move with you and mimic your actions, shifting position so it's impossible to track which image is real. You can use your action to dismiss the illusory duplicates.<br><br> Each time a creature targets you with an attack during the spell's duration, roll a d20 to determine whether the attack instead targets one of your duplicates.<br><br> If you have three duplicates, you must roll a 6 or higher to change the attack's target to a duplicate. With two duplicates, you must roll an 8 or higher. With one duplicate, you must roll an 11 or higher.<br><br> A duplicate's AC equals 10 + your Dexterity modifier. If an attack hits a duplicate, the duplicate is destroyed. A duplicate can be destroyed only by an attack that hits it. It ignores all other damage and effects. The spell ends when all three duplicates are destroyed.<br><br> A creature is unaffected by this spell if it can't see, if it relies on senses other than sight, such as blindsight, or if it can perceive illusions as false, as with truesight."
+        },
+        {
+            "name_str" : "Silence",
+            "level_str" : "2nd",
+            "school_str" : "Illusion",
+            "casting_time_str" : "1 Action (Ritual)",
+            "range_area_str" : "120 feet (20 foot sphere)",
+            "components_vsm_str" : "V, S",
+            "duration_str" : "1 Hour (Concentration)",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Control",
+            "class_str" : "Bard, Cleric, Ranger",
+            "source_str" : "5E Basic Rules",
+        
+            "mechanics_str" : " For the duration, no sound can be created within or pass through a 20-foot-radius sphere centered on a point you choose within range. Any creature or object entirely inside the sphere is immune to thunder damage, and creatures are deafened while entirely inside it. Casting a spell that includes a verbal component is impossible there."
+        },
+        {
+            "name_str" : "Fear",
+            "level_str" : "3rd",
+            "school_str" : "Illusion",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "Self (30 foot cone)",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "a white feather or the heart of a hen",
+            "duration_str" : "1 Minute (Concentration)",
+            "attack_save_str" : "WIS Save",
+            "damage_effect_str" : "Frightened",
+            "class_str" : "Bard, Sorcerer, Warlock, Wizard",
+            "source_str" : "5E Basic Rules",
+        
+            "mechanics_str" : " You project a phantasmal image of a creature's worst fears. Each creature in a 30-foot cone must succeed on a Wisdom saving throw or drop whatever it is holding and become frightened for the duration.<br><br> While frightened by this spell, a creature must take the Dash action and move away from you by the safest available route on each of its turns, unless there is nowhere to move. If the creature ends its turn in a location where it doesn't have line of sight to you, the creature can make a Wisdom saving throw. On a successful save, the spell ends for that creature."
+        },
+        {
+            "name_str" : "Hypnotic Pattern",
+            "level_str" : "3rd",
+            "school_str" : "Illusion",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "120 feet (30 foot cube)",
+            "components_vsm_str" : "S, M",
+            "components_description_str" : "a glowing stick of incense or a crystal vial filled with phosphorescent material",
+            "duration_str" : "1 Minute (Concentration)",
+            "attack_save_str" : "WIS Save",
+            "damage_effect_str" : "Charmed",
+            "class_str" : "Bard, Sorcerer, Warlock, Wizard",
+            "source_str" : "5E Basic Rules",
+        
+            "mechanics_str" : " You create a twisting pattern of colors that weaves through the air inside a 30-foot cube within range. The pattern appears for a moment and vanishes. Each creature in the area who sees the pattern must make a Wisdom saving throw. On a failed save, the creature becomes charmed for the duration. While charmed by this spell, the creature is incapacitated and has a speed of 0.<br><br> The spell ends for an affected creature if it takes any damage or if someone else uses an action to shake the creature out of its stupor."
+        },
+        {
             "name_str" : "Firebolt",
             "level_str" : "0th (Cantrip)",
             "school_str" : "Evocation",
@@ -108,7 +250,7 @@
             "level_str" : "0th (Cantrip)",
             "school_str" : "Evocation",
             "casting_time_str" : "1 Action",
-            "range_area_str" : "Touch (20 foot sphere)",
+            "range_area_str" : "30 feet (20 foot sphere)",
             "components_vsm_str" : "S",
             "duration_str" : "1 Hour",
             "attack_save_str" : "Melee",
@@ -117,7 +259,7 @@
             "source_str" : "5E Basic Rules",
         
             "flavor_str" : "---",
-            "mechanics_str" : "You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. Completely covering the object with something opaque blocks the light. The spell ends if you cast it again or dismiss it as an action.<br><br>  If you target an object held or worn by a hostile creature, make a melee spell attack against the target.  On a hit, the target takes 1d4 radiant damage, and the object becomes illuminated as described above.<br><br>The spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).  "
+            "mechanics_str" : "Select one object that is no larger than 10 feet in any dimension within range that you can see or touch. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. Completely covering the object with something opaque blocks the light. The spell ends if you cast it again or dismiss it as an action.<br><br>    If you target an object held or worn by a hostile creature, that creature must succeed on a Dexterity saving throw to avoid the spell. "
         },
         {
             "name_str" : "Cure Wounds",
