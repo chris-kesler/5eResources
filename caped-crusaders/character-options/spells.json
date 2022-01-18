@@ -40,6 +40,22 @@
     "spell": [
         
         {
+            "name_str" : "Mending",
+            "level_str" : "0th (Cantrip)",
+            "school_str" : "Transmutation",
+            "casting_time_str" : "1 Minute",
+            "range_area_str" : "Touch",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "two lodestones",
+            "duration_str" : "Instantaneous",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Utility",
+            "class_str" : "Bard, Cleric, Druid, Sorcerer, Wizard, Artificer",
+            "source_str" : "5E Basic Rules",
+        
+            "mechanics_str" : "This spell repairs a single break or tear in an object you touch, such as a broken chain link, two halves of a broken key, a torn cloak, or a leaking wineskin. As long as the break or tear is no larger than 1 foot in any dimension, you mend it, leaving no trace of the former damage.<br><br>This spell can physically repair a magic item or construct, but the spell can't restore magic to such an object."
+        },
+        {
             "name_str" : "Chill Touch",
             "level_str" : "0th (Cantrip)",
             "school_str" : "Necromancy",
@@ -83,8 +99,248 @@
             "class_str" : "Cleric",
             "source_str" : "5E Basic Rules",
         
-            "mechanics_str" : "LMake a melee spell attack against a creature you can reach. On a hit, the target takes 3d10 necrotic damage.",
+            "mechanics_str" : "Make a melee spell attack against a creature you can reach. On a hit, the target takes 3d10 necrotic damage.",
             "overcharge_str" : "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st."
+        },
+        {
+            "name_str" : "Lesser Curse",
+            "level_str" : "2nd",
+            "school_str" : "Necromancy",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "30 feet",
+            "components_vsm_str" : "V",
+            "duration_str" : "1 Minute",
+            "attack_save_str" : "CON Save",
+            "damage_effect_str" : "Blinded (...)",
+            "class_str" : "Bard, Cleric, Sorcerer, Wizard",
+            "source_str" : "5E Basic Rules",
+        
+            "mechanics_str" : "You can blind or deafen a foe. Choose one creature that you can see within range to make a Constitution saving throw. If it fails, the target is either blinded or deafened (your choice) for the duration. At the end of each of its turns, the target can make a Constitution saving throw. On a success, the spell ends.",
+            "overcharge_str" : "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd."
+        },
+        {
+            "name_str" : "Gentle Repose",
+            "level_str" : "2nd",
+            "school_str" : "Abjuration",
+            "casting_time_str" : "1 Action (Ritual)",
+            "range_area_str" : "Touch",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "a pinch of salt and one copper piece placed on each of the corpse's eyes, which must remain there for the duration",
+            "duration_str" : "10 Days",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Warding",
+            "class_str" : "Cleric, Wizard",
+            "source_str" : "5E Basic Rules",
+        
+            "mechanics_str" : "You touch a corpse or other remains. For the duration, the target is protected from decay and can't become undead.<br><br>The spell also effectively extends the time limit on raising the target from the dead, since days spent under the influence of this spell don't count against the time limit of spells such as raise dead."
+        },
+        {
+            "name_str" : "Animate Dead",
+            "level_str" : "3rd",
+            "school_str" : "Necromancy",
+            "casting_time_str" : "1 Minute",
+            "range_area_str" : "10 feet",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "a drop of blood, a piece of flesh, and a pinch of bone dust",
+            "duration_str" : "Instant",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Creation",
+            "class_str" : "Cleric, Wizard",
+            "source_str" : "5E Basic Rules",
+        
+            "mechanics_str" : "This spell creates an undead servant. Choose a pile of bones or a corpse of a Medium or Small humanoid within range. Your spell imbues the target with a foul mimicry of life, raising it as an undead creature. The target becomes a skeleton if you chose bones or a zombie if you chose a corpse (the GM has the creature's game statistics).<br><br>On each of your turns, you can use a bonus action to mentally command any creature you made with this spell if the creature is within 60 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.<br><br>The creature is under your control for 24 hours, after which it stops obeying any command you've given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature again before the current 24-hour period ends. This use of the spell reasserts your control over up to four creatures you have animated with this spell, rather than animating a new one.",
+            "overcharge_str" : "When you cast this spell using a spell slot of 4th level or higher, you animate or reassert control over two additional undead creatures for each slot level above 3rd. Each of the creatures must come from a different corpse or pile of bones."
+        },
+        {
+            "name_str" : "Revivify",
+            "level_str" : "3rd",
+            "school_str" : "Necromancy",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "Touch",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "diamonds worth 300 gp, which the spell consumes",
+            "duration_str" : "Instant",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Healing",
+            "class_str" : "Cleric, Paladin, Artificer",
+            "source_str" : "5E Basic Rules",
+        
+            "mechanics_str" : "You touch a creature that has died within the last minute. That creature returns to life with 1 hit point. This spell can't return to life a creature that has died of old age, nor can it restore any missing body parts."
+        },
+        {
+            "name_str" : "Speak with Dead",
+            "level_str" : "3rd",
+            "school_str" : "Necromancy",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "10 feet",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "burning incense",
+            "duration_str" : "10 Minutes",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Communication (...)",
+            "class_str" : "Bard, Cleric",
+            "source_str" : "5E Basic Rules",
+        
+            "mechanics_str" : "You grant the semblance of life and intelligence to a corpse of your choice within range, allowing it to answer the questions you pose. The corpse must still have a mouth and can't be undead. The spell fails if the corpse was the target of this spell within the last 10 days.<br><br>Until the spell ends, you can ask the corpse up to five questions. The corpse knows only what it knew in life, including the languages it knew. Answers are usually brief, cryptic, or repetitive, and the corpse is under no compulsion to offer a truthful answer if you are hostile to it or it recognizes you as an enemy. This spell doesn't return the creature's soul to its body, only its animating spirit. Thus, the corpse can't learn new information, doesn't comprehend anything that has happened since it died, and can't speculate about future events."
+        },
+        {
+            "name_str" : "Vampiric Touch",
+            "level_str" : "3rd",
+            "school_str" : "Necromancy",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "Self",
+            "components_vsm_str" : "V, S",
+            "duration_str" : "1 Minute (Concentration)",
+            "attack_save_str" : "Melee",
+            "damage_effect_str" : "Necrotic",
+            "class_str" : "Warlock, Wizard",
+            "source_str" : "5E Basic Rules",
+        
+            "mechanics_str" : "The touch of your shadow-wreathed hand can siphon life force from others to heal your wounds. Make a melee spell attack against a creature within your reach. On a hit, the target takes 3d6 necrotic damage, and you regain hit points equal to half the amount of necrotic damage dealt. Until the spell ends, you can make the attack again on each of your turns as an action. ",
+            "overcharge_str" : "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd."
+        },
+        {
+            "name_str" : "Blight",
+            "level_str" : "4th",
+            "school_str" : "Necromancy",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "30 feet",
+            "components_vsm_str" : "V, S",
+            "duration_str" : "Instantaneous",
+            "attack_save_str" : "CON Save",
+            "damage_effect_str" : "Necrotic",
+            "class_str" : "Druid, Sorcerer, Warlock, Wizard",
+            "source_str" : "5E Basic Rules",
+        
+            "mechanics_str" : "Necromantic energy washes over a creature of your choice that you can see within range, draining moisture and vitality from it. The target must make a Constitution saving throw. The target takes 8d8 necrotic damage on a failed save, or half as much damage on a successful one. This spell has no effect on undead or constructs.<br><br>If you target a plant creature or a magical plant, it makes the saving throw with disadvantage, and the spell deals maximum damage to it.<br><br>If you target a nonmagical plant that isn't a creature, such as a tree or shrub, it doesn't make a saving throw; it simply withers and dies.",
+            "overcharge_str" : "When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th."
+        },
+        {
+            "name_str" : "Raise Dead",
+            "level_str" : "5th",
+            "school_str" : "Necromancy",
+            "casting_time_str" : "1 Hour",
+            "range_area_str" : "Touch",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "a diamond worth at least 500 gp, which the spell consumes",
+            "duration_str" : "Instantaneous",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Healing",
+            "class_str" : "Bard, Cleric, Paladin",
+            "source_str" : "5E Basic Rules",
+        
+            "mechanics_str" : "You return a dead creature you touch to life, provided that it has been dead no longer than 10 days. If the creature's soul is both willing and at liberty to rejoin the body, the creature returns to life with 1 hit point.<br><br>This spell also neutralizes any poisons and cures nonmagical diseases that affected the creature at the time it died. This spell doesn't, however, remove magical diseases, curses, or similar effects; if these aren't first removed prior to casting the spell, they take effect when the creature returns to life. The spell can't return an undead creature to life.<br><br>This spell closes all mortal wounds, but it doesn't restore missing body parts. If the creature is lacking body parts or organs integral for its survival--its head, for instance--the spell automatically fails.<br><br>Coming back from the dead is an ordeal. The target takes a −4 penalty to all attack rolls, saving throws, and ability checks. Every time the target finishes a long rest, the penalty is reduced by 1 until it disappears."
+        },
+        {
+            "name_str" : "Circle of Death",
+            "level_str" : "6th",
+            "school_str" : "Necromancy",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "150 feet (60 foot sphere)",
+            "components_vsm_str" : "V, S",
+            "duration_str" : "Instantaneous",
+            "attack_save_str" : "CON Save",
+            "damage_effect_str" : "Necrotic",
+            "class_str" : "Sorcerer, Warlock, Wizard",
+            "source_str" : "5E Basic Rules",
+        
+            "mechanics_str" : "A sphere of negative energy ripples out in a 60-foot-radius sphere from a point within range. Each creature of your choice in that area must make a Constitution saving throw. A target takes 8d6 necrotic damage on a failed save, or half as much damage on a successful one.",
+            "overcharge_str" : "When you cast this spell using a spell slot of 7th level or higher, the damage increases by 2d6 for each slot level above 6th."
+        },
+        {
+            "name_str" : "Harm",
+            "level_str" : "6th",
+            "school_str" : "Necromancy",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "60 feet",
+            "components_vsm_str" : "V, S",
+            "duration_str" : "Instantaneous",
+            "attack_save_str" : "CON Save",
+            "damage_effect_str" : "Necrotic",
+            "class_str" : "Cleric",
+            "source_str" : "5E Basic Rules",
+        
+            "mechanics_str" : "You unleash a virulent disease on a creature that you can see within range. The target must make a Constitution saving throw. On a failed save, it takes 14d6 necrotic damage, or half as much damage on a successful save. The damage can't reduce the target's hit points below 1. If the target fails the saving throw, its hit point maximum is reduced for 1 hour by an amount equal to the necrotic damage it took. Any effect that removes a disease allows a creature's hit point maximum to return to normal before that time passes.",
+            "overcharge_str" : "When you cast this spell using a spell slot of 7th level or higher, the damage increases by 2d6 for each slot level above 6th."
+        },
+        {
+            "name_str" : "Finger of Death",
+            "level_str" : "7th",
+            "school_str" : "Necromancy",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "60 feet",
+            "components_vsm_str" : "V, S",
+            "duration_str" : "Instantaneous",
+            "attack_save_str" : "CON Save",
+            "damage_effect_str" : "Necrotic",
+            "class_str" : "Sorcerer, Warlock, Wizard",
+            "source_str" : "5E Basic Rules",
+        
+            "mechanics_str" : "You send negative energy coursing through a creature that you can see within range, causing it searing pain. The target must make a Constitution saving throw. It takes 7d8 + 30 necrotic damage on a failed save, or half as much damage on a successful one.<br><br>A humanoid killed by this spell rises at the start of your next turn as a zombie that is permanently under your command, following your verbal orders to the best of its ability.  You may only have a number of zombies created from this spell at any given time equal to your maximum nimber of hit dice.  If you create a zombie that puts your total number of zombies created from this spell over that threshold, the oldest zombie collapses into a pile of dusty bone and flesh.  "
+        },
+        {
+            "name_str" : "Resurrection",
+            "level_str" : "7th",
+            "school_str" : "Necromancy",
+            "casting_time_str" : "1 Hour",
+            "range_area_str" : "Touch",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "a diamond worth at least 1,000 gp, which the spell consumes",
+            "duration_str" : "Instantaneous",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Healing",
+            "class_str" : "Bard, Cleric",
+            "source_str" : "5E Basic Rules",
+        
+            "mechanics_str" : "You touch a dead creature that has been dead for no more than a century, that didn't die of old age, and that isn't undead. If its soul is free and willing, the target returns to life with all its hit points.<br><br>This spell neutralizes any poisons and cures normal diseases afflicting the creature when it died. It doesn't, however, remove magical diseases, curses, and the like; if such effects aren't removed prior to casting the spell, they afflict the target on its return to life.<br><br>This spell closes all mortal wounds and restores any missing body parts.<br><br>Coming back from the dead is an ordeal. The target takes a −4 penalty to all attack rolls, saving throws, and ability checks. Every time the target finishes a long rest, the penalty is reduced by 1 until it disappears.<br><br>Casting this spell to restore life to a creature that has been dead for one year or longer taxes you greatly. Until you finish a long rest, you can't cast spells again, and you have disadvantage on all attack rolls, ability checks, and saving throws."
+        },
+        {
+            "name_str" : "Clone",
+            "level_str" : "8th",
+            "school_str" : "Necromancy",
+            "casting_time_str" : "1 Hour",
+            "range_area_str" : "Touch",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "a diamond worth at least one thousand gp and at least one cubic inch of flesh of the creature that is to be cloned, which the spell consumes, and a vessel worth at least two thousand gp that has a sealable lid and is large enough to hold the creature being cloned, such as a huge urn, coffin, mud- filled cyst in the ground, or crystal container filled with salt water, for a total cost of 3000 gp",
+            "duration_str" : "Instantaneous",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Utility",
+            "class_str" : "Wizard",
+            "source_str" : "5E Basic Rules",
+        
+            "mechanics_str" : "This spell grows an inert duplicate of a living creature as a safeguard against death. This clone forms inside the vessel used in the spell’s casting and grows to full size and maturity after 120 days; you can also choose to have the clone be a younger version of the same creature. It remains inert and endures indefinitely, as long as its vessel remains undisturbed.<br><br>At any time after the clone matures, if the original creature dies, its soul transfers to the clone, provided that the soul is free and willing to return. The clone is physically identical to the original and has the same personality, memories, and abilities, but none of the original's equipment. The original creature's physical remains, if they still exist, become inert and can't thereafter be restored to life, since the creature's soul is elsewhere.  <br><br>A given creature may only have a number of Clones equal to its proficiency bonus at any given time.  If you create a new Clone while the target creature already has the maximum number of Clones, the oldest Clone disintegrates, leaving the vessel unharmed.  "
+        },
+        {
+            "name_str" : "Astral Projection",
+            "level_str" : "9th",
+            "school_str" : "Necromancy",
+            "casting_time_str" : "1 Hour",
+            "range_area_str" : "10 feet",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "for each creature you affect with this spell, you must provide one jacinth worth at least 1,000 gp, which the spell consumes",
+            "duration_str" : "Special",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Teleportation",
+            "class_str" : "Cleric, Warlock, Wizard",
+            "source_str" : "5E Basic Rules",
+        
+            "mechanics_str" : "You and up to eight willing creatures within range project your astral bodies into the Astral Plane (the spell fails if you are already on that plane, but the casting is not wasted). The material body you leave behind is unconscious and in a state of suspended animation; it doesn't need food or air and doesn't age.<br><br>Your astral body resembles your mortal form in almost every way, replicating your game statistics and possessions. The principal difference is the addition of a silvery cord that extends from between your shoulder blades and trails behind you, fading to invisibility after 1 foot. This cord is your tether to your material body. As long as the tether remains intact, you can find your way home. If the cord is cut--something that can happen only when an effect specifically states that it does--your soul and body are separated, killing you instantly.<br><br>Your astral form can freely travel through the Astral Plane and can pass through portals there leading to any other plane. If you enter a new plane or return to the plane you were on when casting this spell, your body and possessions are transported along the silver cord, allowing you to re-enter your body as you enter the new plane. Your astral form is a separate incarnation. Any damage or other effects that apply to it have no effect on your physical body, nor do they persist when you return to it.<br><br>The spell ends for you and your companions when you use your action to dismiss it. When the spell ends, the affected creature returns to its physical body, and it awakens.<br><br>The spell might also end early for you or one of your companions. A successful dispel magic spell used against an astral or physical body ends the spell for that creature. If a creature's original body or its astral form drops to 0 hit points, the spell ends for that creature. If the spell ends and the silver cord is intact, the cord pulls the creature's astral form back to its body, ending its state of suspended animation.<br><br>If you are returned to your body prematurely, your companions remain in their astral forms and must find their own way back to their bodies, usually by dropping to 0 hit points."
+        },
+        {
+            "name_str" : "True Resurrection",
+            "level_str" : "9th",
+            "school_str" : "Necromancy",
+            "casting_time_str" : "1 Hour",
+            "range_area_str" : "Touch",
+            "components_vsm_str" : "V, S, M",
+            "components_description_str" : "a sprinkle of holy water and diamonds worth at least 25,000 gp, which the spell consumes",
+            "duration_str" : "Special",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Healing",
+            "class_str" : "Cleric, Druid",
+            "source_str" : "5E Basic Rules",
+        
+            "mechanics_str" : "You touch a creature that has been dead for no longer than 200 years and that died for any reason except old age. If the creature's soul is free and willing, the creature is restored to life with all its hit points.<br><br> This spell closes all wounds, neutralizes any poison, cures all diseases, and lifts any curses affecting the creature when it died. The spell replaces damaged or missing organs and limbs. If the creature was undead, it is restored to its non-undead form.<br><br> The spell can even provide a new body if the original no longer exists, in which case you must speak the creature's name. The creature then appears in an unoccupied space you choose within 10 feet of you."
         },
         {
             "name_str" : "Minor Illusion",
