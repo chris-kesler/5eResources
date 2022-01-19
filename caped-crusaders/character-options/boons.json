@@ -33,10 +33,30 @@
             "author_name" : "Neva's Codex",
             "author_credit" : "Neva's Elemental Codex",
             "source_url" : "https://www.dndbeyond.com/sources/basic-rules"
+        },
+        {
+            "author_name" : "KnowOne",
+            "author_credit" : "KnowOne's Website of Everything",
+            "source_url" : "https://knowoneswebsiteofeverything.com"
         }
     ],
     
     "entries": [
+        {
+            "name_str" : "Arcane Rejuvenation",
+            "level_str" : "3rd",
+            "type_str" : "Necromancy",
+            "casting_time_str" : "DELETEME",
+            "range_area_str" : "DELETEME",
+            "components_vsm_str" : "NA",
+            "duration_str" : "DELETEME",
+            "attack_save_str" : "DELETEME",
+            "damage_effect_str" : "Buff",
+            "class_str" : "Archmage",
+            "source_str" : "KnowOne",
+
+            "mechanics_str" : "When you roll hit dice to regain hit points during a long rest, you regain a number of spell points equal to the amount healed.  "
+        },
         {
             "name_str" : "Extra Attack",
             "page_url" : "extra-attack.html",
@@ -58,7 +78,7 @@
             "feats_str" : "",
             "backgrounds_str" : "",
             "races_str" : "",
-"source_str" : "KnowOne"
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Summon Familiar",
@@ -81,7 +101,7 @@
             "feats_str" : "",
             "backgrounds_str" : "",
             "races_str" : "",
-"source_str" : "KnowOne"
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Warcaster",
@@ -104,7 +124,7 @@
             "feats_str" : "",
             "backgrounds_str" : "",
             "races_str" : "",
-"source_str" : "KnowOne"
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Divine Endurance",
@@ -127,7 +147,7 @@
             "feats_str" : "",
             "backgrounds_str" : "",
             "races_str" : "",
-"source_str" : "KnowOne"
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Spell Resilience",
@@ -150,7 +170,7 @@
             "feats_str" : "",
             "backgrounds_str" : "",
             "races_str" : "",
-"source_str" : "KnowOne"
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Aura of Protection",
@@ -173,7 +193,7 @@
             "feats_str" : "",
             "backgrounds_str" : "",
             "races_str" : "",
-"source_str" : "KnowOne"
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Unyielding Warden",
@@ -196,7 +216,7 @@
             "feats_str" : "",
             "backgrounds_str" : "",
             "races_str" : "",
-"source_str" : "KnowOne"
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Heroic Valor",
@@ -219,7 +239,7 @@
             "feats_str" : "",
             "backgrounds_str" : "",
             "races_str" : "",
-"source_str" : "KnowOne"
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Serene Mind",
@@ -242,7 +262,7 @@
             "feats_str" : "",
             "backgrounds_str" : "",
             "races_str" : "",
-"source_str" : "KnowOne"
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Channeled Athleticism",
@@ -265,31 +285,9 @@
             "feats_str" : "",
             "backgrounds_str" : "",
             "races_str" : "",
-"source_str" : "KnowOne"
+            "source_str" : "KnowOne"
         },
-        {
-            "name_str" : "Arcane Rejuvenation",
-            "page_url" : "arcane-rejuvenation.html",
-
-            "level_int" : 3,
-            "level_str" : "3rd",
-
-            "type_str" : "Necromancy",
-            "school_img" : "/_SiteResources/Images/Sigil-Necromancy.png",
-            
-            "damage_effect_str" : "Buff",
-            
-            "flavor_str" : "Not Applicable",
-            "mechanics_str" : "When you roll hit dice to regain hit points during a long rest, you regain a number of spell points equal to the amount healed.  ",
-
-            "class_str" : "Archmage",
-            "subclass_str" : "",
-
-            "feats_str" : "",
-            "backgrounds_str" : "",
-            "races_str" : "",
-"source_str" : "KnowOne"
-        },
+        
         {
             "name_str" : "Planar Rebuke",
             "page_url" : "planar-rebuke.html",
@@ -311,7 +309,7 @@
             "feats_str" : "",
             "backgrounds_str" : "",
             "races_str" : "",
-"source_str" : "KnowOne"
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Primordial Levitation",
@@ -334,7 +332,7 @@
             "feats_str" : "",
             "backgrounds_str" : "",
             "races_str" : "",
-"source_str" : "KnowOne"
+            "source_str" : "KnowOne"
         }
     ]
 }
