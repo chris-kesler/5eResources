@@ -39,7 +39,7 @@
               document.getElementById("casting-table-title").innerHTML = f.name_str + ", <a href='" + source_url + "' target='blank'>" + author_credit + "</a>";
 
               // Populating the page image
-              document.getElementById("casting-page-image").src = "/_SiteResources/Images/Sigil-" + f.school_str + ".png";
+              document.getElementById("casting-page-image").src = "/_SiteResources/Images/Sigil-" + f.type_str + ".png";
 
               
               // Populating the page description based on flavor, mechanics, overcharge, and components
@@ -97,7 +97,7 @@
               // Defining and populating the second row of the page table
               var tblRow4 = "<tr>"
                 + "<td>" + f.duration_str + "</td>" 
-                + "<td>" + f.school_str + "</td>" 
+                + "<td>" + f.type_str + "</td>" 
                 + "<td>" + f.attack_save_str + "</td>" 
                 + "<td>" + f.damage_effect_str + "</td>" 
                 + "</tr>"

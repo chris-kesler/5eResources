@@ -9,10 +9,15 @@
     <link rel="stylesheet" href="/caped-crusaders-style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
     <script>
-      $(function readTech() {
-        var spells = [];
+      $(function readJSON() {
+
+        // Reading data from our JSON file
         $.getJSON('spells.json', function(data) {
+
+          // Looping through the JSON data 
           $.each(data.spell, function(i, f) {
+
+            // Initializing a default credit and author variable then reading its true value based on a subset within the JSON file
             type_credit = "---";
             $.each(data.type, function(x, y) {
               if (f.type_str == y.type_name) {
@@ -26,6 +31,8 @@
                 source_url = y.source_url;
               }
             });
+
+            // Setting a TF string based on the item attribute
             if (f.overcharge_str != undefined) {
               overchargeable = "True";
             } else {
@@ -57,11 +64,11 @@
                 components_vsm = f.components_vsm_str;
               }
 
-
+            // Defining the table row that contains each entry in the table
             var tblRow = "<tr>" 
               + "<td><a href='spells/" + f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html' target='_blank'>" + f.name_str + "</a></td>" 
               + "<td>" + f.level_str + "</td>" 
-              + "<td>" + "<img class='FilterTableImage' src=/_SiteResources/Images/Sigil-" + f.school_str + "-Small.png><br>" + f.school_str + "</td>" 
+              + "<td>" + "<img class='FilterTableImage' src=/_SiteResources/Images/Sigil-" + f.type_str + "-Small.png><br>" + f.type_str + "</td>" 
               + "<td>" + f.casting_time_str + "</td>" 
               + "<td>" + f.range_area_str + "</td>" 
               + "<td>" + components_vsm + "</td>" 
@@ -72,6 +79,8 @@
               + "<td>" + f.class_str + "</td>" 
               + "<td><a target='blank' href='" + source_url + "'>" + f.source_str + "</a></td>" 
               + "</tr>"
+
+            // Adding the row to the table
             $(tblRow).appendTo("#FilterTable tbody");
           });
         });

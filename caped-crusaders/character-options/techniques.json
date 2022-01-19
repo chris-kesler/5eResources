@@ -7,7 +7,7 @@
             "level_int" : 1,
             "level_str" : "1st",
 
-            "school_str" : "Propulsion",
+            "type_str" : "Propulsion",
             "school_img" : "/_SiteResources/Images/Propulsion.png",
             
             "damage_effect_str" : "Buff",
@@ -29,7 +29,7 @@
             "level_int" : 1,
             "level_str" : "1st",
 
-            "school_str" : "Reflexes",
+            "type_str" : "Reflexes",
             "school_img" : "/_SiteResources/Images/gun-and-sword.png",
             
             "damage_effect_str" : "Buff",
@@ -51,7 +51,7 @@
             "level_int" : 1,
             "level_str" : "1st",
 
-            "school_str" : "Reflexes",
+            "type_str" : "Reflexes",
             "school_img" : "/_SiteResources/Images/gun-and-sword.png",
             
             "damage_effect_str" : "Buff",
@@ -73,7 +73,7 @@
             "level_int" : 6,
             "level_str" : "6th",
 
-            "school_str" : "Reflexes",
+            "type_str" : "Reflexes",
             "school_img" : "/_SiteResources/Images/gun-and-sword.png",
             
             "damage_effect_str" : "Buff",
@@ -95,7 +95,7 @@
             "level_int" : 3,
             "level_str" : "3rd",
 
-            "school_str" : "Reflexes",
+            "type_str" : "Reflexes",
             "school_img" : "/_SiteResources/Images/gun-and-sword.png",
             
             "damage_effect_str" : "Buff",
@@ -117,7 +117,7 @@
             "level_int" : 4,
             "level_str" : "4th",
 
-            "school_str" : "Reflexes",
+            "type_str" : "Reflexes",
             "school_img" : "/_SiteResources/Images/gun-and-sword.png",
             
             "damage_effect_str" : "Buff",
@@ -139,7 +139,7 @@
             "level_int" : 1,
             "level_str" : "1st",
 
-            "school_str" : "Technology",
+            "type_str" : "Technology",
             "school_img" : "/_SiteResources/Images/Analysis.png",
             
             "damage_effect_str" : "Buff",
@@ -161,7 +161,7 @@
             "level_int" : 4,
             "level_str" : "4th",
 
-            "school_str" : "Reflexes",
+            "type_str" : "Reflexes",
             "school_img" : "/_SiteResources/Images/gun-and-sword.png",
             
             "damage_effect_str" : "Buff",
@@ -183,7 +183,7 @@
             "level_int" : 6,
             "level_str" : "6th",
 
-            "school_str" : "Reflexes",
+            "type_str" : "Reflexes",
             "school_img" : "/_SiteResources/Images/gun-and-sword.png",
             
             "damage_effect_str" : "Buff",
@@ -205,7 +205,7 @@
             "level_int" : 7,
             "level_str" : "7th",
 
-            "school_str" : "Reflexes",
+            "type_str" : "Reflexes",
             "school_img" : "/_SiteResources/Images/gun-and-sword.png",
             
             "damage_effect_str" : "Buff",
@@ -227,7 +227,7 @@
             "level_int" : 10,
             "level_str" : "10th",
 
-            "school_str" : "Reflexes",
+            "type_str" : "Reflexes",
             "school_img" : "/_SiteResources/Images/gun-and-sword.png",
             
             "damage_effect_str" : "Buff",
@@ -249,7 +249,7 @@
             "level_int" : 3,
             "level_str" : "3rd",
 
-            "school_str" : "Reflexes",
+            "type_str" : "Reflexes",
             "school_img" : "/_SiteResources/Images/gun-and-sword.png",
             
             "damage_effect_str" : "Buff",
@@ -271,7 +271,7 @@
             "level_int" : 2,
             "level_str" : "2nd",
 
-            "school_str" : "Reflexes",
+            "type_str" : "Reflexes",
             "school_img" : "/_SiteResources/Images/gun-and-sword.png",
             
             "damage_effect_str" : "Buff",
@@ -293,7 +293,7 @@
             "level_int" : 4,
             "level_str" : "4th",
 
-            "school_str" : "Reflexes",
+            "type_str" : "Reflexes",
             "school_img" : "/_SiteResources/Images/gun-and-sword.png",
             
             "damage_effect_str" : "Buff",
@@ -315,7 +315,7 @@
             "level_int" : 8,
             "level_str" : "8th",
 
-            "school_str" : "Reflexes",
+            "type_str" : "Reflexes",
             "school_img" : "/_SiteResources/Images/gun-and-sword.png",
             
             "damage_effect_str" : "Buff",
@@ -337,7 +337,7 @@
             "level_int" : 2,
             "level_str" : "2nd",
 
-            "school_str" : "Analysis",
+            "type_str" : "Analysis",
             "school_img" : "/_SiteResources/Images/Analysis.png",
             
             "damage_effect_str" : "Buff",

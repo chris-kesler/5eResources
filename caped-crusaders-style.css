@@ -371,6 +371,7 @@ span {
   width: auto;
   margin-right: 0px;
   border-radius: 5px;
+  align-content: center;
 }
 
 
@@ -722,12 +723,25 @@ iframe {
 }
 
 .CastingPageImage, .class-image-large, .subclass-image-large {
-  width: 400px;
-  max-width: 30vw;
-  float: right;
+  max-width: 25vw;
   border: 8px solid rgb(100,100,100);
   border-radius: 64px;
   margin-left: 10px;
+}
+
+#page-image-table {
+  float: right;
+  width: auto;
+  margin: 0px;
+  padding: 0px;
+  border: 3px solid rgb(200,200,200);
+  border-radius: 10px;
+}
+
+#page-image-table tr td {
+  color: black;
+  max-width: 30vw;
+  text-align: center;
 }
 
 .class-image-medium, .subclass-image-medium {
