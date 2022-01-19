@@ -12,7 +12,7 @@ button {
 }
 
 
-.PageContainer {
+.page-background-container {
   position: absolute;
   width: 100%;
   height: auto;    
@@ -22,7 +22,7 @@ button {
 
 
 
-.PageHeader {
+.page-header {
   background-color: rgb(54,57,63);
   width: 100%;
   margin: 0px;
@@ -32,19 +32,19 @@ button {
   text-align: center;
 }
 
-.HomeButton {
+.page-header-home-button {
   width: 40%;
   min-width: 400px;
   background-color: rgb(54,57,63);
   border-style: dotted;
   border-color: rgb(54,57,63);
 }
-.HomeButton:hover {
+.page-header-home-button:hover {
   border-color: whitesmoke;
   border-radius: 10px;
 }
 
-.HeaderButton {
+.page-header-nav-button {
   width: 10%;
   min-width: 75px;
   height: 50px;
@@ -53,14 +53,14 @@ button {
   border-color: rgb(54,57,63);
   color: whitesmoke;
 }
-.HeaderButton:hover {
+.page-header-nav-button:hover {
   border-color: whitesmoke;
   border-radius: 10px;
 }
 
 
 
-.PageContent {
+.page-content {
   background-image: url("/_SiteResources/Images/Transparent.png");
   position: relative;
   width: 100%;
@@ -91,7 +91,7 @@ button {
   background-image: url("/_SiteResources/Images/Transparent.png");
 }
 
-.PageContentLeftTop {
+.page-contentLeftTop {
   box-sizing: border-box;
   flex-direction: column;
   margin: 5%;
@@ -103,7 +103,7 @@ button {
   width: 90vw; /* 256*2 -50 for padding -25 for content gap */
 }
 
-.PageContentLeft {
+.page-contentLeft {
   box-sizing: border-box;
   flex-direction: column;
   margin: 5%;
@@ -158,7 +158,7 @@ button {
   background-image: url("/_SiteResources/Images/Transparent.png");
 }
 
-.PageContentRight {
+.page-content-section {
   box-sizing: border-box;
   overflow: hidden;
   flex-direction: column;
@@ -318,7 +318,7 @@ table {
 }
 
 
-.WikiBackButton, .WikiOverviewButton, .WikiOverviewButton_Placeholder {
+.page-back-button, .WikiOverviewButton, .WikiOverviewButton_Placeholder {
   position: relative;
   width: 175px;
   height: 50px;
@@ -329,7 +329,7 @@ table {
 }
 
 
-.WikiBackButton {
+.page-back-button {
   float: right;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
@@ -523,7 +523,7 @@ h2 {
   background-image: url(BrassDragon.jpg);
 }
 
-.Import_PageFooter {
+.import-page-footer {
   background-color: rgb(54,57,63);
   padding: 10px 20px;
   position: relative;

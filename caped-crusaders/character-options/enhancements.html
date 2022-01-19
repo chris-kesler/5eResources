@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/caped-crusaders-style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
     <script>
-      $(function readTech() {
+      $(function readJSON() {
         var enhancements = [];
         $.getJSON('enhancements.json', function(data) {   
           $.each(data.enhancement, function(i, f) {
@@ -41,25 +41,23 @@
 
 
   <body>
-    <div class="PageContainer, PlanesMapBackground"> 
-      <div class="PageHeader">
-        <div class="Import_PageHeader"></div>
+    <div class="page-background-container"> 
+      <div class="page-header">
+        <div class="import-page-header"></div>
 
           <h1 class="header">Caped Crusaders:  Enhancements</h1>
           <hr>
       </div>
         
       
-      <div class="PageContent">
-        <div class="AnchorCenter">
+      <div class="page-content">
           
 
 
 
-          <div class="AnchorRight">
 
-            <section class="PageContentRight">
-              <button class="WikiBackButton" onclick="location.href='../character-options.html'">Out to Character Options</button>
+            <section class="page-content-section">
+              <button id="page-back-button" onclick="location.href='../character-options.html'">Out to Character Options</button>
               <h2>Include Filters</h2>
               <hr>
 
@@ -105,12 +103,10 @@
 
             </section>
             
-          </div>
-        </div>
 
       </div>
 
-      <footer class="Import_PageFooter"></footer>
+      <footer class="import-page-footer"></footer>
     </div>
   </body>
 </html>
@@ -118,9 +114,8 @@
 <script type="text/javascript">
   $(function () {
 
-    $(".Import_PageHeader").load("/_SiteResources/Pages/Import_PageHeader.html");
-    $(".Import_ContentLeft").load("/_SiteResources/Pages/Import_ContentLeft.html");
-    $(".Import_PageFooter").load("/_SiteResources/Pages/Import_PageFooter.html");
+    $(".import-page-header").load("/_SiteResources/Pages/import-page-header.html");
+    $(".import-page-footer").load("/_SiteResources/Pages/import-page-footer.html");
 
 });
 </script>
