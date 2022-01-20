@@ -12,9 +12,9 @@
       $(function readJSON() {
 
         // Defining variables that are used to read the correct JSON file and distinguish which type page we are on
-        var power_source = "Spell";
+        var power_source = "Enhancement";
         var power_source_lower = power_source.toLowerCase();
-        if (power_source.includes("Tech")) {
+        if (power_source.includes("Technology")) {
           power_source_plural = "Technologies";
         } else {
           power_source_plural = power_source + "s";
@@ -67,59 +67,20 @@
               if (f.mechanics_str != undefined) {
                 document.getElementById("page-description").innerHTML += "<b>Standard Mechanics:</b>  " + f.mechanics_str + "<br><br>";
               }
-              if (f.overcharge_str != undefined) {
-                document.getElementById("page-description").innerHTML += "<b>Overcharge Mechanics:</b>  " + f.overcharge_str + "<br><br>";
-              }
-
-              // Checking for Material Components and displaying the material component description
-              if (f.components_vsm_str.includes("M") && f.components_description_str != undefined) {
-                document.getElementById("page-description").innerHTML += "<b>Material Components:</b>  <i>(" + f.components_description_str + ")</i>";
-
-                // If materials have a cost, we strip that out and concatenate it to the vsm string with parentheses
-                if (f.components_description_str.replace(/\D/g,'') > 0) {
-                  components_vsm = f.components_vsm_str + "   (" + f.components_description_str.replace(/\D/g,'') + ")";
-
-                // If not, we leave the vsm string alone and pull the data
-                } else {
-                  components_vsm = f.components_vsm_str;
-                }
-
-                // If materials are consumed, we include an asterisk to reflect that in the vsm string
-                if (f.components_description_str.includes("consume")) {
-                  components_vsm = components_vsm + "*";
-                } 
-
-              // If there are no material components, we leave the vsm string alone
-              } else {
-                components_vsm = f.components_vsm_str;
-              }
 
               
               // Defining and populating the first row of the page table
-              var tblRow1 = "<tr><th style='width: 15vw'>Level</th><th style='width: 15vw'>Casting Time</th><th style='width: 15vw'>Range/Area</th><th style='width: 15vw'>Components</th></tr>"
+              var tblRow1 = "<tr><th style='width: 15vw'>Level</th><th style='width: 15vw'>School</th><th style='width: 15vw'>Attack/Save</th><th style='width: 15vw'>Damage/Effect</th></tr>"
               $(tblRow1).appendTo("#page-overview-table tbody");
 
               // Defining and populating the second row of the page table
               var tblRow2 = "<tr>" 
                 + "<td>" + f.level_str + "</td>" 
-                + "<td>" + f.casting_time_str + "</td>" 
-                + "<td>" + f.range_area_str + "</td>" 
-                + "<td>" + components_vsm + "</td>" 
-                + "</tr>"
-              $(tblRow2).appendTo("#page-overview-table tbody");
-
-              // Defining and populating the second row of the page table
-              var tblRow3 = "<tr><th>Duration</th><th>School</th><th>Attack/Save</th><th>Damage/Effect</th></tr>";
-              $(tblRow3).appendTo("#page-overview-table tbody");
-              
-              // Defining and populating the second row of the page table
-              var tblRow4 = "<tr>"
-                + "<td>" + f.duration_str + "</td>" 
                 + "<td>" + f.type_str + "</td>" 
                 + "<td>" + f.attack_save_str + "</td>" 
                 + "<td>" + f.damage_effect_str + "</td>" 
                 + "</tr>"
-              $(tblRow4).appendTo("#page-overview-table tbody");
+              $(tblRow2).appendTo("#page-overview-table tbody");
             }
           });
         });

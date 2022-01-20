@@ -46,12 +46,8 @@
             "name_str" : "Arcane Rejuvenation",
             "level_str" : "3rd",
             "type_str" : "Necromancy",
-            "casting_time_str" : "DELETEME",
-            "range_area_str" : "DELETEME",
-            "components_vsm_str" : "NA",
-            "duration_str" : "DELETEME",
-            "attack_save_str" : "DELETEME",
-            "damage_effect_str" : "Buff",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Healing",
             "class_str" : "Archmage",
             "source_str" : "KnowOne",
 
@@ -59,13 +55,8 @@
         },
         {
             "name_str" : "Extra Attack",
-            "page_url" : "extra-attack.html",
-
-            "level_int" : 1,
             "level_str" : "1st",
-
             "type_str" : "Transmutation",
-            "school_img" : "/_SiteResources/Images/Sigil-Transmutation.png",
             
             "damage_effect_str" : "Buff",
             
