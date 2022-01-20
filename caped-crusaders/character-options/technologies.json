@@ -1,5 +1,46 @@
 {
-    "technology": [
+    "type" : [
+        {
+            "type_name" : "Disabling",
+            "type_credit" : "Disable by Mas Dhimas from NounProject.com"    
+        },
+        {
+            "type_name" : "Positioning",
+            "type_credit" : "Move by Тимур Минвалеев from NounProject.comMove by Тимур Минвалеев from NounProject.comMove by Тимур Минвалеев from NounProject.com"    
+        },
+        {
+            "type_name" : "Radiation",
+            "type_credit" : "Sun by Angelo Troiano from NounProject.com"    
+        },
+        {
+            "type_name" : "Velocity",
+            "type_credit" : "Speed by Alice Design from NounProject.com"    
+        },
+        {
+            "type_name" : "Gravity",
+            "type_credit" : "Gravity by Creaticca Creative Agency from NounProject.com"    
+        }
+    ],
+
+    "author" : [
+        {
+            "author_name" : "Thaleron's Spellbook",
+            "author_credit" : "Thaleron's Pocketbook: A Spell Compendium for the More Melee Inclined Caster",
+            "source_url" : "https://homebrewery.naturalcrit.com/share/qZzsfYtc0Y3-"
+        },
+        {
+            "author_name" : "5E Basic Rules",
+            "author_credit" : "D&D 5th Edition Basic Rules",
+            "source_url" : "https://www.dndbeyond.com/sources/basic-rules"
+        },
+        {
+            "author_name" : "KnowOne",
+            "author_credit" : "KnowOne's Website of Everything",
+            "source_url" : "https://knowoneswebsiteofeverything.com"
+        }
+    ],
+
+    "entries": [
         {
             "name_str" : "Afterburner Surge",
             "page_url" : "afterburner-surge.html",
@@ -25,7 +66,7 @@
             "duration_int" : 1,
             "duration_str" : "1 Turn",
             
-            "science_str" : "Propulsion",
+            "type_str" : "Propulsion",
             "science_img" : "/_SiteResources/Images/Propulsion.png",
             
             "attack_save_int" : 2,
@@ -43,7 +84,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
 
         {
@@ -71,7 +113,7 @@
             "duration_int" : 60,
             "duration_str" : "1 Minute",
             
-            "science_str" : "Propulsion",
+            "type_str" : "Propulsion",
             "science_img" : "/_SiteResources/Images/Propulsion.png",
             
             "attack_save_int" : 2,
@@ -89,7 +131,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
 
         {
@@ -117,7 +160,7 @@
             "duration_int" : 3600,
             "duration_str" : "1 Hour",
             
-            "science_str" : "Life Support",
+            "type_str" : "Life Support",
             "science_img" : "/_SiteResources/Images/LifeSupport.png",
             
             "attack_save_int" : 0,
@@ -135,7 +178,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
         
         {
@@ -163,7 +207,7 @@
             "duration_int" : 28800,
             "duration_str" : "8 Hour",
             
-            "science_str" : "Life Support",
+            "type_str" : "Life Support",
             "science_img" : "/_SiteResources/Images/LifeSupport.png",
             
             "attack_save_int" : 0,
@@ -181,7 +225,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
 
         {
@@ -209,7 +254,7 @@
             "duration_int" : 0,
             "duration_str" : "Instantaneous",
             
-            "science_str" : "Laser Optics",
+            "type_str" : "Laser Optics",
             "science_img" : "/_SiteResources/Images/LaserOptics.png",
             
             "attack_save_int" : 2,
@@ -228,7 +273,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
 
         {
@@ -256,7 +302,7 @@
             "duration_int" : 0,
             "duration_str" : "Instantaneous",
             
-            "science_str" : "Engineering",
+            "type_str" : "Engineering",
             "science_img" : "/_SiteResources/Images/Engineering.png",
             
             "attack_save_int" : 1,
@@ -275,7 +321,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
 
         {
@@ -303,7 +350,7 @@
             "duration_int" : 0,
             "duration_str" : "Instantaneous",
             
-            "science_str" : "Laser Optics",
+            "type_str" : "Laser Optics",
             "science_img" : "/_SiteResources/Images/LaserOptics.png",
 
             "attack_save_int" : 2,
@@ -322,7 +369,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
         
         {
@@ -350,7 +398,7 @@
             "duration_int" : 28800,
             "duration_str" : "8 Hours",
             
-            "science_str" : "Propulsion",
+            "type_str" : "Propulsion",
             "science_img" : "/_SiteResources/Images/Propulsion.png",
             
             "attack_save_int" : 2,
@@ -368,7 +416,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
 
         {
@@ -396,7 +445,7 @@
             "duration_int" : 60,
             "duration_str" : "1 Minute",
             
-            "science_str" : "Stereoptics",
+            "type_str" : "Stereoptics",
             "science_img" : "/_SiteResources/Images/Stereoptics.png",
 
             "attack_save_int" : 0,
@@ -415,7 +464,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
 
         {
@@ -443,7 +493,7 @@
             "duration_int" : 0,
             "duration_str" : "Instantaneous",
             
-            "science_str" : "Ballistics",
+            "type_str" : "Ballistics",
             "science_img" : "/_SiteResources/Images/Ballistics.png",
             
             "attack_save_int" : 2,
@@ -461,7 +511,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
 
         {
@@ -489,7 +540,7 @@
             "duration_int" : 0,
             "duration_str" : "Instantaneous",
             
-            "science_str" : "Propulsion",
+            "type_str" : "Propulsion",
             "science_img" : "/_SiteResources/Images/Propulsion.png",
             
             "attack_save_int" : 2,
@@ -507,7 +558,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
 
         {
@@ -534,7 +586,7 @@
             "duration_int" : 0,
             "duration_str" : "Instantaneous",
             
-            "science_str" : "Engineering",
+            "type_str" : "Engineering",
             "science_img" : "/_SiteResources/Images/Engineering.png",
             
             "attack_save_int" : 0,
@@ -552,7 +604,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
 
         {
@@ -580,7 +633,7 @@
             "duration_int" : 0,
             "duration_str" : "1 Hour",
             
-            "science_str" : "Propulsion",
+            "type_str" : "Propulsion",
             "science_img" : "/_SiteResources/Images/Propulsion.png",
             
             "attack_save_int" : 2,
@@ -598,7 +651,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
 
         {
@@ -626,7 +680,7 @@
             "duration_int" : 6,
             "duration_str" : "1 Round",
             
-            "science_str" : "Stereoptics",
+            "type_str" : "Stereoptics",
             "science_img" : "/_SiteResources/Images/Stereoptics.png",
 
             "attack_save_int" : 0,
@@ -645,7 +699,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
 
         {
@@ -673,7 +728,7 @@
             "duration_int" : 0,
             "duration_str" : "Instantaneous",
             
-            "science_str" : "Propulsion",
+            "type_str" : "Propulsion",
             "science_img" : "/_SiteResources/Images/Propulsion.png",
             
             "attack_save_int" : 2,
@@ -691,7 +746,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
 
         {
@@ -719,7 +775,7 @@
             "duration_int" : 0,
             "duration_str" : "Instantaneous",
             
-            "science_str" : "Propulsion",
+            "type_str" : "Propulsion",
             "science_img" : "/_SiteResources/Images/Propulsion.png",
             
             "attack_save_int" : 2,
@@ -737,7 +793,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
 
         {
@@ -765,7 +822,7 @@
             "duration_int" : 0,
             "duration_str" : "1 Turn",
             
-            "science_str" : "Propulsion",
+            "type_str" : "Propulsion",
             "science_img" : "/_SiteResources/Images/Propulsion.png",
             
             "attack_save_int" : 2,
@@ -783,7 +840,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
 
         {
@@ -811,7 +869,7 @@
             "duration_int" : 0,
             "duration_str" : "1 Turn",
             
-            "science_str" : "Propulsion",
+            "type_str" : "Propulsion",
             "science_img" : "/_SiteResources/Images/Propulsion.png",
             
             "attack_save_int" : 2,
@@ -829,7 +887,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
 
         {
@@ -856,7 +915,7 @@
             "duration_int" : 0,
             "duration_str" : "Instantaneous",
             
-            "science_str" : "Engineering",
+            "type_str" : "Engineering",
             "science_img" : "/_SiteResources/Images/Engineering.png",
             
             "attack_save_int" : 1,
@@ -874,7 +933,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
 
         {
@@ -901,7 +961,7 @@
             "duration_int" : 3600,
             "duration_str" : "1 Hour",
             
-            "science_str" : "Engineering",
+            "type_str" : "Engineering",
             "science_img" : "/_SiteResources/Images/Engineering.png",
             
             "attack_save_int" : 4,
@@ -919,7 +979,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
 
         {
@@ -947,7 +1008,7 @@
             "duration_int" : 0,
             "duration_str" : "Instantaneous",
             
-            "science_str" : "Laser Optics",
+            "type_str" : "Laser Optics",
             "science_img" : "/_SiteResources/Images/LaserOptics.png",
             
             "attack_save_int" : 4,
@@ -966,7 +1027,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
 
         {
@@ -994,7 +1056,7 @@
             "duration_int" : 0,
             "duration_str" : "Instantaneous",
             
-            "science_str" : "Laser Optics",
+            "type_str" : "Laser Optics",
             "science_img" : "/_SiteResources/Images/LaserOptics.png",
             
             "attack_save_int" : 2,
@@ -1012,7 +1074,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
 
         {
@@ -1040,7 +1103,7 @@
             "duration_int" : 3600,
             "duration_str" : "1 Hour",
             
-            "science_str" : "Life Support",
+            "type_str" : "Life Support",
             "science_img" : "/_SiteResources/Images/LifeSupport.png",
             
             "attack_save_int" : 0,
@@ -1058,7 +1121,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
         
         {
@@ -1086,7 +1150,7 @@
             "duration_int" : 0,
             "duration_str" : "Instantaneous",
             
-            "science_str" : "Propulsion",
+            "type_str" : "Propulsion",
             "science_img" : "/_SiteResources/Images/Propulsion.png",
             
             "attack_save_int" : 2,
@@ -1104,7 +1168,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
 
         {
@@ -1132,7 +1197,7 @@
             "duration_int" : 0,
             "duration_str" : "Instantaneous",
             
-            "science_str" : "Laser Optics",
+            "type_str" : "Laser Optics",
             "science_img" : "/_SiteResources/Images/LaserOptics.png",
             
             "attack_save_int" : 2,
@@ -1150,7 +1215,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
 
         {
@@ -1178,7 +1244,7 @@
             "duration_int" : 0,
             "duration_str" : "Instantaneous",
             
-            "science_str" : "Propulsion",
+            "type_str" : "Propulsion",
             "science_img" : "/_SiteResources/Images/Propulsion.png",
             
             "attack_save_int" : 2,
@@ -1196,7 +1262,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
 
         {
@@ -1224,7 +1291,7 @@
             "duration_int" : 60,
             "duration_str" : "1 Round",
             
-            "science_str" : "Life Support",
+            "type_str" : "Life Support",
             "science_img" : "/_SiteResources/Images/LifeSupport.png",
             
             "attack_save_int" : 2,
@@ -1242,7 +1309,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
 
         {
@@ -1270,7 +1338,7 @@
             "duration_int" : 0,
             "duration_str" : "Instantaneous",
             
-            "science_str" : "Laser Optics",
+            "type_str" : "Laser Optics",
             "science_img" : "/_SiteResources/Images/LaserOptics.png",
             
             "attack_save_int" : 2,
@@ -1288,7 +1356,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
 
         {
@@ -1315,7 +1384,7 @@
             "duration_int" : 3600,
             "duration_str" : "1 Hour",
             
-            "science_str" : "Engineering",
+            "type_str" : "Engineering",
             "science_img" : "/_SiteResources/Images/Engineering.png",
             
             "attack_save_int" : 0,
@@ -1333,7 +1402,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
         
         {
@@ -1361,7 +1431,7 @@
             "duration_int" : 1,
             "duration_str" : "1 Turn",
             
-            "science_str" : "Propulsion",
+            "type_str" : "Propulsion",
             "science_img" : "/_SiteResources/Images/Propulsion.png",
             
             "attack_save_int" : 2,
@@ -1379,7 +1449,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
 
         {
@@ -1407,7 +1478,7 @@
             "duration_int" : 60,
             "duration_str" : "1 Minute",
             
-            "science_str" : "Laser Optics",
+            "type_str" : "Laser Optics",
             "science_img" : "/_SiteResources/Images/LaserOptics.png",
             
             "attack_save_int" : 4,
@@ -1426,7 +1497,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
 
         {
@@ -1454,7 +1526,7 @@
             "duration_int" : 0,
             "duration_str" : "Instantaneous",
             
-            "science_str" : "Electronics",
+            "type_str" : "Electronics",
             "science_img" : "/_SiteResources/Images/Electronics.png",
             
             "attack_save_int" : 2,
@@ -1472,7 +1544,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
 
         {
@@ -1500,7 +1573,7 @@
             "duration_int" : 0,
             "duration_str" : "Instantaneous",
             
-            "science_str" : "Ballistics",
+            "type_str" : "Ballistics",
             "science_img" : "/_SiteResources/Images/Ballistics.png",
             
             "attack_save_int" : 2,
@@ -1518,7 +1591,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
 
         {
@@ -1546,7 +1620,7 @@
             "duration_int" : 3600,
             "duration_str" : "1 Hour",
             
-            "science_str" : "Life Support",
+            "type_str" : "Life Support",
             "science_img" : "/_SiteResources/Images/LifeSupport.png",
             
             "attack_save_int" : 0,
@@ -1564,7 +1638,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         }
     ]
 }

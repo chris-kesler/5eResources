@@ -1,14 +1,62 @@
 {
-    "boon": [
+    "type" : [
+        {
+            "type_name" : "Necromancy",
+            "type_credit" : "---"
+        },
+        {
+            "type_name" : "Positioning",
+            "type_credit" : "Move by Тимур Минвалеев from NounProject.com"    
+        },
+        {
+            "type_name" : "Radiation",
+            "type_credit" : "Sun by Angelo Troiano from NounProject.com"    
+        },
+        {
+            "type_name" : "Velocity",
+            "type_credit" : "Speed by Alice Design from NounProject.com"    
+        }
+    ],
+
+    "author" : [
+        {
+            "author_name" : "Thaleron's Spellbook",
+            "author_credit" : "Thaleron's Pocketbook: A Spell Compendium for the More Melee Inclined Caster",
+            "source_url" : "https://homebrewery.naturalcrit.com/share/qZzsfYtc0Y3-"
+        },
+        {
+            "author_name" : "5E Basic Rules",
+            "author_credit" : "D&D 5th Edition Basic Rules",
+            "source_url" : "https://www.dndbeyond.com/sources/basic-rules"
+        },
+        {
+            "author_name" : "Neva's Codex",
+            "author_credit" : "Neva's Elemental Codex",
+            "source_url" : "https://www.dndbeyond.com/sources/basic-rules"
+        },
+        {
+            "author_name" : "KnowOne",
+            "author_credit" : "KnowOne's Website of Everything",
+            "source_url" : "https://knowoneswebsiteofeverything.com"
+        }
+    ],
+    
+    "entries": [
+        {
+            "name_str" : "Arcane Rejuvenation",
+            "level_str" : "3rd",
+            "type_str" : "Necromancy",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Healing",
+            "class_str" : "Archmage",
+            "source_str" : "KnowOne",
+
+            "mechanics_str" : "When you roll hit dice to regain hit points during a long rest, you regain a number of spell points equal to the amount healed.  "
+        },
         {
             "name_str" : "Extra Attack",
-            "page_url" : "extra-attack.html",
-
-            "level_int" : 1,
             "level_str" : "1st",
-
             "type_str" : "Transmutation",
-            "school_img" : "/_SiteResources/Images/Sigil-Transmutation.png",
             
             "damage_effect_str" : "Buff",
             
@@ -20,7 +68,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Summon Familiar",
@@ -42,7 +91,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Warcaster",
@@ -64,7 +114,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Divine Endurance",
@@ -86,7 +137,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Spell Resilience",
@@ -108,7 +160,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Aura of Protection",
@@ -130,7 +183,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Unyielding Warden",
@@ -152,7 +206,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Heroic Valor",
@@ -174,7 +229,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Serene Mind",
@@ -196,7 +252,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Channeled Athleticism",
@@ -218,30 +275,10 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
-        {
-            "name_str" : "Arcane Rejuvenation",
-            "page_url" : "arcane-rejuvenation.html",
-
-            "level_int" : 3,
-            "level_str" : "3rd",
-
-            "type_str" : "Necromancy",
-            "school_img" : "/_SiteResources/Images/Sigil-Necromancy.png",
-            
-            "damage_effect_str" : "Buff",
-            
-            "flavor_str" : "Not Applicable",
-            "mechanics_str" : "When you roll hit dice to regain hit points during a long rest, you regain a number of spell points equal to the amount healed.  ",
-
-            "class_str" : "Archmage",
-            "subclass_str" : "",
-
-            "feats_str" : "",
-            "backgrounds_str" : "",
-            "races_str" : ""
-        },
+        
         {
             "name_str" : "Planar Rebuke",
             "page_url" : "planar-rebuke.html",
@@ -262,7 +299,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Primordial Levitation",
@@ -284,7 +322,8 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "source_str" : "KnowOne"
         }
     ]
 }

@@ -9,26 +9,78 @@
     <link rel="stylesheet" href="/caped-crusaders-style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
     <script>
-      $(function readTech() {
-        var enhancement = [];
-        $.getJSON('../enhancements.json', function(data) {
-          var path = window.location.pathname;
-          var page = path.split("/").pop();
-          $.each(data.enhancement, function(i, f) {
-            if (f.page_url == page) {
-              document.getElementById("casting-page-title").innerHTML = "Caped Crusaders: Enhancements > " + f.name_str;
-              document.getElementById("casting-table-title").innerHTML = f.name_str;
-              document.getElementById("page-description-flavor").innerHTML = "<b>Flavor Description:</b>  <i>" + f.flavor_str + "</i>";
-              document.getElementById("page-description-mechanics").innerHTML = "<b>Standard Mechanics:</b>  " + f.mechanics_str;
-              document.getElementById("casting-page-image").src = f.school_img;
-              var tblRow1 = "<tr><th style='width: 20vw'>Level</th><th style='width: 20vw'>School</th><th style='width: 20vw'>Damage/Effect</th></tr>"
-              $(tblRow1).appendTo("#TechTable tbody");
+      $(function readJSON() {
+
+        // Defining variables that are used to read the correct JSON file and distinguish which type page we are on
+        var power_source = "Enhancement";
+        var power_source_lower = power_source.toLowerCase();
+        if (power_source.includes("Technology")) {
+          power_source_plural = "Technologies";
+        } else {
+          power_source_plural = power_source + "s";
+        }
+
+        // Populating the page back button
+        document.getElementById("page-back-button").innerHTML = "Out to " + power_source_plural;
+
+        // Reading data from our JSON file
+        $.getJSON(`../${power_source_plural.toLowerCase()}.json`, function(data) {
+
+          // Reading the name of this file
+          var page = window.location.pathname.split("/").pop();
+
+          // Looping through the JSON data 
+          $.each(data.entries, function(i, f) {
+
+            // Finding the entry that matches this file
+            if (f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html" == page) {
+
+              // Looping through the author array in the JSON file to populate variables for links and credit
+              $.each(data.author, function(x, y) {
+                if (f.source_str == y.author_name) {
+                  author_credit = y.author_credit;
+                  source_url = y.source_url;
+                }
+              });
+
+              // Looping through the type array in the JSON file to populate variables for type and credit
+              $.each(data.type, function(x, y) {
+                if (f.type_str == y.type_name) {
+                  document.getElementById("page-image-credit").innerHTML = y.type_credit;
+                }
+              });
+
+              // Populating the name of the page
+              document.getElementById("page-header-title").innerHTML = "Caped Crusaders: " + power_source_plural + " > " + f.name_str;
+
+              // Populating the link to the source for the page content
+              document.getElementById("page-overview-table-title").innerHTML = f.name_str + ", <a href='" + source_url + "' target='blank'>" + author_credit + "</a>";
+
+              // Populating the page image
+              document.getElementById("page-image").src = "/_SiteResources/Images/" + f.type_str.replace(/\s/g, '') + ".png";
+
+              
+              // Populating the page description based on flavor, mechanics, overcharge, and components
+              if (f.flavor_str != undefined) {
+                document.getElementById("page-description").innerHTML += "<b>Flavor Description:</b>  <i>" + f.flavor_str + "</i><br><br>";
+              }
+              if (f.mechanics_str != undefined) {
+                document.getElementById("page-description").innerHTML += "<b>Standard Mechanics:</b>  " + f.mechanics_str + "<br><br>";
+              }
+
+              
+              // Defining and populating the first row of the page table
+              var tblRow1 = "<tr><th style='width: 15vw'>Level</th><th style='width: 15vw'>School</th><th style='width: 15vw'>Attack/Save</th><th style='width: 15vw'>Damage/Effect</th></tr>"
+              $(tblRow1).appendTo("#page-overview-table tbody");
+
+              // Defining and populating the second row of the page table
               var tblRow2 = "<tr>" 
                 + "<td>" + f.level_str + "</td>" 
                 + "<td>" + f.type_str + "</td>" 
+                + "<td>" + f.attack_save_str + "</td>" 
                 + "<td>" + f.damage_effect_str + "</td>" 
                 + "</tr>"
-              $(tblRow2).appendTo("#TechTable tbody");
+              $(tblRow2).appendTo("#page-overview-table tbody");
             }
           });
         });
@@ -38,52 +90,60 @@
 
 
   <body>
-    <div class="PageContainer, PlanesMapBackground"> 
-      <div class="PageHeader">
-        <div class="Import_PageHeader"></div>
-          <h1 id="casting-page-title"></h1>
+    <!-- The fixed background div -->
+    <div class="page-background-container"> 
+
+      <!-- A div to hold our header -->
+      <div class="page-header">
+
+        <!-- Importing the header -->
+        <div class="import-page-header"></div>
+
+          <!-- The page title within the header -->
+          <h1 id="page-header-title"></h1>
           <hr>
       </div>
         
+      <!-- A transparent div to build everything else on top of -->
+      <div class="page-content">
 
-      <div class="PageContent">
-        <div class="AnchorCenter">
-          <div class="AnchorRight">
-            <section class="PageContentRight">
-              <button class="WikiBackButton" onclick="location.href='../enhancements.html'">Out to Enhancements</button>
-              <h2 id="casting-table-title"></h2>
-              <hr>
+        <!-- An off white chunk of the page that holds content -->
+        <section class="page-content-section">
 
-              <img id="casting-page-image" class="CastingPageImage"
-                alt="Sigil-Abjuration">
+          <!-- A back button that navigates out in the file structure  -->
+          <button id="page-back-button" onclick="location.href=`../${power_source_plural.toLowerCase()}.html`"></button>
 
-              <table id="TechTable" class="caped-crusader-table">
-                <tbody></tbody>
-              </table>
-              <hr>
-              <p id="page-description-flavor">
-              </p>
-              <p id="page-description-mechanics">
-              </p>
-              
-            </section>
-          </div>
-        </div>
+          <!-- The title of the page content, including the source as a link -->
+          <h2 id="page-overview-table-title"></h2>
+          <hr>
+
+          <!-- A table to hold the page image and credit to author -->
+          <table id="page-image-table">
+            <tr><td><img id="page-image" alt="Page Image"></td></tr>
+            <tr><td><h3 id="page-image-credit">Image Credit</h3></td></tr>
+          </table>
+
+          <!-- A table to hold the page overview information -->
+          <table id="page-overview-table" class="caped-crusader-table">
+            <tbody></tbody>
+          </table>
+
+          <!-- A paragraph to hold the page content and descriptions -->
+          <p id="page-description"></p>
+        </section>
       </div>
 
-      <footer class="Import_PageFooter"></footer>
-
+      <!-- Importing the footer -->
+      <footer class="import-page-footer"></footer>
     </div>
-
   </body>
 </html>
 
 <script type="text/javascript">
   $(function () {
 
-    $(".Import_PageHeader").load("/_SiteResources/Pages/Import_PageHeader.html");
-    $(".Import_ContentLeft").load("/_SiteResources/Pages/Import_ContentLeft.html");
-    $(".Import_PageFooter").load("/_SiteResources/Pages/Import_PageFooter.html");
+    $(".import-page-header").load("/_SiteResources/Pages/import-page-header.html");
+    $(".import-page-footer").load("/_SiteResources/Pages/import-page-footer.html");
 
 });
 </script>

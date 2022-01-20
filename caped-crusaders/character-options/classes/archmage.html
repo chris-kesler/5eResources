@@ -10,8 +10,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
     <script>
       $(function importContent() {
-        $(".Import_PageHeader").load("/_SiteResources/Pages/Import_PageHeader.html");
-        $(".Import_PageFooter").load("/_SiteResources/Pages/Import_PageFooter.html");
+        $(".import-page-header").load("/_SiteResources/Pages/import-page-header.html");
+        $(".import-page-footer").load("/_SiteResources/Pages/import-page-footer.html");
       });
       $(function readClass() {
         var classes = [];
@@ -20,7 +20,7 @@
           var page = path.split("/").pop();
           $.each(data.class, function(i, f) {
             if (f.page_url == page) {
-              document.getElementById("class-page-title").innerHTML = "Caped Crusaders: Classes > " + f.name_str;
+              document.getElementById("class-page-header-title").innerHTML = "Caped Crusaders: Classes > " + f.name_str;
               document.getElementById("class-page-image").src = f.class_img;
               document.getElementById("class-page-image").alt = f.class_img_credit;
               document.getElementById("class-page-description").innerHTML = f.description_long_str;
@@ -139,24 +139,27 @@
 
 
   <body>
-    <div class="PageContainer, PlanesMapBackground"> 
-      <div class="PageHeader">
-        <div class="Import_PageHeader"></div>
-          <h1 class="header" id="class-page-title"></h1>
+    <div class="page-background-container"> 
+      <div class="page-header">
+        <div class="import-page-header"></div>
+          <h1 class="header" id="class-page-header-title"></h1>
           <hr>
       </div>
         
 
-      <div class="PageContent">
-        <div class="AnchorCenter">
+      <div class="page-content">
           
-          <div class="AnchorRight">
 
-            <section class="PageContentRight">
-              <button class="WikiBackButton" onclick="location.href='../classes.html'">Out to Classes</button>
+            <section class="page-content-section">
+              <button id="page-back-button" onclick="location.href='../classes.html'">Out to Classes</button>
               <h2>Overview</h2>
               <hr>
-              <img id="class-page-image" class="class-image-large" alt="Class Image">
+
+              <table id="page-image-table">
+                <tr><td><img id="class-page-image" class="class-image-large" alt="Class Image"></td></tr>
+                <tr><td><h3 id="page-image-credit">Image Credit</h3></td></tr>
+              </table>
+
               <p id="class-page-description"></p>
               
               <hr>
@@ -216,23 +219,32 @@
               </div>
             </section>
 
-            <section class="PageContentRight">
+            <section class="page-content-section">
               <h2 id="subclass-tech-name"></h2>
-              <img class="subclass-image-large" alt="Tech Subclass" id="subclass-tech-image">
+              <table id="page-image-table">
+                <tr><td><img class="subclass-image-large" alt="Tech Subclass" id="subclass-tech-image"></td></tr>
+                <tr><td><h3 id="page-image-credit">Image Credit</h3></td></tr>
+              </table>
               <p id="subclass-tech-description"></p>
               <div id="subclass-tech-feats"></div>
             </section>
 
-            <section class="PageContentRight">
+            <section class="page-content-section">
               <h2 id="subclass-power-name"></h2>
-              <img class="subclass-image-large" alt="Power Subclass" id="subclass-power-image"></img>
+              <table id="page-image-table">
+                <tr><td><img class="subclass-image-large" alt="Power Subclass" id="subclass-power-image"></img></td></tr>
+                <tr><td><h3 id="page-image-credit">Image Credit</h3></td></tr>
+              </table>
               <p id="subclass-power-description"></p>
               <div id="subclass-power-feats"></div>
             </section>
 
-            <section class="PageContentRight">
+            <section class="page-content-section">
               <h2 id="subclass-magic-name"></h2>
-              <img class="subclass-image-large" alt="Magic Subclass" id="subclass-magic-image">
+              <table id="page-image-table">
+                <tr><td><img class="subclass-image-large" alt="Magic Subclass" id="subclass-magic-image"></img></td></tr>
+                <tr><td><h3 id="page-image-credit">Image Credit</h3></td></tr>
+              </table>
               <p id="subclass-magic-description"></p>
               <div id="subclass-magic-feats"></div>
             </section>
@@ -241,7 +253,7 @@
         </div>
       </div>
 
-      <footer class="Import_PageFooter"></footer>
+      <footer class="import-page-footer"></footer>
 
     </div>
 

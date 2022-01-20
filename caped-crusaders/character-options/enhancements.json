@@ -1,50 +1,59 @@
 {
-    "enhancement": [
+    "type" : [
+        {
+            "type_name" : "Necromancy",
+            "type_credit" : "---"
+        },
+        {
+            "type_name" : "Positioning",
+            "type_credit" : "Move by Тимур Минвалеев from NounProject.com"    
+        },
+        {
+            "type_name" : "Radiation",
+            "type_credit" : "Sun by Angelo Troiano from NounProject.com"    
+        },
+        {
+            "type_name" : "Velocity",
+            "type_credit" : "Speed by Alice Design from NounProject.com"    
+        }
+    ],
+
+    "author" : [
+        {
+            "author_name" : "Thaleron's Spellbook",
+            "author_credit" : "Thaleron's Pocketbook: A Spell Compendium for the More Melee Inclined Caster",
+            "source_url" : "https://homebrewery.naturalcrit.com/share/qZzsfYtc0Y3-"
+        },
+        {
+            "author_name" : "5E Basic Rules",
+            "author_credit" : "D&D 5th Edition Basic Rules",
+            "source_url" : "https://www.dndbeyond.com/sources/basic-rules"
+        },
+        {
+            "author_name" : "Neva's Codex",
+            "author_credit" : "Neva's Elemental Codex",
+            "source_url" : "https://www.dndbeyond.com/sources/basic-rules"
+        },
+        {
+            "author_name" : "KnowOne",
+            "author_credit" : "KnowOne's Website of Everything",
+            "source_url" : "https://knowoneswebsiteofeverything.com"
+        }
+    ],
+    
+    "entries": [
+
         {
             "name_str" : "Evasive",
-            "page_url" : "evasive.html",
-
-            "level_int" : 2,
             "level_str" : "2nd",
-            
             "type_str" : "Reflexes",
-            "school_img" : "/_SiteResources/Images/Reflexes.png",
-            "school_img_credit" : "Warning by Alfa Design from NounProject.com",
-            
+            "attack_save_str" : "None",
             "damage_effect_str" : "Buff",
-            
+
             "flavor_str" : "You can sense incoming danger, allowing you to react before you would otherwise be aware of it.  ",
             "mechanics_str" : "When you make a Dexterity Saving Throw to avoid damage, you take no damage on a success and only half damage on a failure.  In addition, you no longer provoke Opportunity Attacks when moving out of an enemy's reach.  ",
-
-            "class_list" : [
-                {
-                    "class" : "<a href='/caped-crusaders/classes/nova.html'>Nova</a>"
-                },
-                {
-                    "class" : "<a href='/caped-crusaders/classes/subvertist.html'>Subvertist</a>"
-                },
-                {
-                    "class" : "<a href='/caped-crusaders/classes/metamorph.html'>Metamorph</a>"
-                },
-                {
-                    "class" : "<a href='/caped-crusaders/classes/dynamo.html'>Dynamo</a>"
-                }
-            ],
-                    
-            
-            "subclass_list" : [
-                {
-                    "class" : "<a href='/caped-crusaders/classes/soldier.html#subclass-power-name'>Patriot</a>"
-                },
-                {
-                    "class" : "<a href='/caped-crusaders/classes/annointed.html#subclass-power-name'>Adaptist</a>"
-                }
-            ],
-
-
-            "feats_str" : "",
-            "backgrounds_str" : "",
-            "races_str" : ""
+            "class_str" : "Subvertist",
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Reflex Dodge",
@@ -90,7 +99,9 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "class_str" : "Subvertist",
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Unarmored Defense",
@@ -135,7 +146,9 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "class_str" : "Subvertist",
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Potent Powercasting",
@@ -179,7 +192,9 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "class_str" : "Subvertist",
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Manifest Avatar",
@@ -225,7 +240,9 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "class_str" : "Subvertist",
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Temporal Refuge",
@@ -262,7 +279,9 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "class_str" : "Subvertist",
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Awareness",
@@ -298,7 +317,9 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "class_str" : "Subvertist",
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Endurance",
@@ -334,7 +355,9 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "class_str" : "Subvertist",
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Healing Factor",
@@ -370,7 +393,9 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "class_str" : "Subvertist",
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Apex Power",
@@ -407,7 +432,9 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "class_str" : "Subvertist",
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Champion's Might",
@@ -443,7 +470,9 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "class_str" : "Subvertist",
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Stalwart",
@@ -479,7 +508,9 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "class_str" : "Subvertist",
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Power Resilience",
@@ -515,7 +546,9 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "class_str" : "Subvertist",
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Enhanced Speed",
@@ -551,7 +584,9 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "class_str" : "Subvertist",
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Immovable Object",
@@ -587,7 +622,9 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "class_str" : "Subvertist",
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Genepyre",
@@ -623,7 +660,9 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "class_str" : "Subvertist",
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Instinctive Aggression",
@@ -659,7 +698,9 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "class_str" : "Subvertist",
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Accelerated Acclimation",
@@ -695,7 +736,9 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "class_str" : "Subvertist",
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Intercept Projectiles",
@@ -731,7 +774,9 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "class_str" : "Subvertist",
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Vigilant",
@@ -767,7 +812,9 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "class_str" : "Subvertist",
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Evasion",
@@ -803,7 +850,9 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "class_str" : "Subvertist",
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Volatile Soul",
@@ -839,7 +888,9 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "class_str" : "Subvertist",
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Unfailing Talent",
@@ -875,7 +926,9 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "class_str" : "Subvertist",
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Blindsense",
@@ -911,7 +964,9 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "class_str" : "Subvertist",
+            "source_str" : "KnowOne"
         },
         {
             "name_str" : "Meta Kinesis",
@@ -947,7 +1002,9 @@
 
             "feats_str" : "",
             "backgrounds_str" : "",
-            "races_str" : ""
+            "races_str" : "",
+            "class_str" : "Subvertist",
+            "source_str" : "KnowOne"
         }
     ]
 }
