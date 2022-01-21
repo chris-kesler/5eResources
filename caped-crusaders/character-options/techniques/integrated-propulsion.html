@@ -12,13 +12,31 @@
       $(function readJSON() {
 
         // Defining variables that are used to read the correct JSON file and distinguish which type page we are on
-        var power_source = "Technique";
-        var power_source_lower = power_source.toLowerCase();
-        if (power_source.includes("Technology")) {
-          power_source_plural = "Technologies";
-        } else {
+        if (window.location.pathname.includes("spells")) {
+          var power_source = "Spell";
           power_source_plural = power_source + "s";
         }
+        else if (window.location.pathname.includes("superpowers")) {
+          var power_source = "Superpower";
+          power_source_plural = power_source + "s";
+        }
+        else if (window.location.pathname.includes("technologies")) {
+          var power_source = "Technology";
+          power_source_plural = "Technologies";
+        }
+        else if (window.location.pathname.includes("boons")) {
+          var power_source = "Boon";
+          power_source_plural = power_source + "s";
+        }
+        else if (window.location.pathname.includes("enhancements")) {
+          var power_source = "Enhancement";
+          power_source_plural = power_source + "s";
+        }
+        else if (window.location.pathname.includes("techniques")) {
+          var power_source = "Technique";
+          power_source_plural = power_source + "s";
+        }
+        
 
         // Populating the page back button
         document.getElementById("page-back-button").innerHTML = "Out to " + power_source_plural;
@@ -75,7 +93,7 @@
 
               // Defining and populating the second row of the page table
               var tblRow2 = "<tr>" 
-                + "<td>" + f.level_str + "</td>" 
+                + "<td>" + f.level_str + " level " + power_source + "</td>" 
                 + "<td>" + f.type_str + "</td>" 
                 + "<td>" + f.attack_save_str + "</td>" 
                 + "<td>" + f.damage_effect_str + "</td>" 
