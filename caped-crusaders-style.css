@@ -56,7 +56,7 @@ button {
 A series of descriptors that apply to a great many items, such as background color or text color
  */
 /* A condensed dark grey background color style group for the header and footer elements */
-.page-header, .page-header-home-button, .page-header-nav-button, #page-back-button, .WikiOverviewButton, .WikiOverviewButton_Placeholder, .WikiButtonTable, .import-page-footer, .FooterButton {
+.page-header, .page-header-home-button, .page-header-nav-button, #page-back-button, .WikiOverviewButton, .WikiOverviewButton_Placeholder, .page-button-table, .import-page-footer, .FooterButton {
   background-color: rgb(54,57,63);
 }
 
@@ -237,15 +237,14 @@ table {
   color: rgb(58,58,58);
 }
 
-.WikiCategoryButton {
-  width: 225px;
+.page-button-greater {
+  width: 275px;
   max-width: 35vw;
   height: 65px;
   margin: 5px;
-  border-radius: 10px;
+  border-radius: 20px;
   background-color: rgb(175, 175, 175);
-  border-style: solid;
-  border-color: rgb(54,57,63);
+  border: 1px solid aqua;
   font-size: large;
   font-weight: bold;
 }
@@ -412,7 +411,7 @@ span {
   background-color: rgb(189,188,173);
 }
 
-.WikiButtonTable {
+.page-button-table {
   float: right;
   border: 1px solid rgb(54,57,63);
   height: auto;
