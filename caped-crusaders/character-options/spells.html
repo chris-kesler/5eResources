@@ -105,67 +105,67 @@
 
 
 
-            <section class="page-content-section">
-              <button id="page-back-button" onclick="location.href='../character-options.html'">Out to Character Options</button>
-              <h2>Include Filters</h2>
-              <hr>
+        <section class="page-content-section">
+          <button id="page-back-button" onclick="location.href='../character-options.html'">Out to Character Options</button>
+          <h2>Include Filters</h2>
+          <hr>
 
-              <input type="text" id="FilterInputInclude0" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Name. . .">
-              <input type="text" id="FilterInputInclude1" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Level. . .">
-              <input type="text" id="FilterInputInclude2" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by School. . .">
-              <input type="text" id="FilterInputInclude3" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Casting Time. . .">
-              <input type="text" id="FilterInputInclude4" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Range/Area. . .">
-              <input type="text" id="FilterInputInclude5" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Components. . .">
-              <input type="text" id="FilterInputInclude6" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Duration. . .">
-              <input type="text" id="FilterInputInclude7" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Attack/Save. . .">
-              <input type="text" id="FilterInputInclude8" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Damage/Effect. . .">
-              <input type="text" id="FilterInputInclude9" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Overchargeable. . .">
-              <input type="text" id="FilterInputInclude10" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Classes. . .">
-              <input type="text" id="FilterInputInclude11" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Source. . .">
-              <!-- <input type="text" id="FilterInputInclude12" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Races. . .">
-              <input type="text" id="FilterInputInclude13" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Classes. . ."> -->
+          <input type="text" id="FilterInputInclude0" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Name. . .">
+          <input type="text" id="FilterInputInclude1" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Level. . .">
+          <input type="text" id="FilterInputInclude2" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by School. . .">
+          <input type="text" id="FilterInputInclude3" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Casting Time. . .">
+          <input type="text" id="FilterInputInclude4" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Range/Area. . .">
+          <input type="text" id="FilterInputInclude5" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Components. . .">
+          <input type="text" id="FilterInputInclude6" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Duration. . .">
+          <input type="text" id="FilterInputInclude7" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Attack/Save. . .">
+          <input type="text" id="FilterInputInclude8" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Damage/Effect. . .">
+          <input type="text" id="FilterInputInclude9" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Overchargeable. . .">
+          <input type="text" id="FilterInputInclude10" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Classes. . .">
+          <input type="text" id="FilterInputInclude11" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Source. . .">
+          <!-- <input type="text" id="FilterInputInclude12" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Races. . .">
+          <input type="text" id="FilterInputInclude13" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Include by Classes. . ."> -->
 
-              <h2>Exclude Filters</h2>
-              <hr>
+          <h2>Exclude Filters</h2>
+          <hr>
 
-              <input type="text" id="FilterInputExclude0" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Name. . .">
-              <input type="text" id="FilterInputExclude1" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Level. . .">
-              <input type="text" id="FilterInputExclude2" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by School. . .">
-              <input type="text" id="FilterInputExclude3" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Casting Time. . .">
-              <input type="text" id="FilterInputExclude4" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Range/Area. . .">
-              <input type="text" id="FilterInputExclude5" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Components. . .">
-              <input type="text" id="FilterInputExclude6" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Duration. . .">
-              <input type="text" id="FilterInputExclude7" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Attack/Save. . .">
-              <input type="text" id="FilterInputExclude8" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Damage/Effect. . .">
-              <input type="text" id="FilterInputExclude9" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Overchargeable. . .">
-              <input type="text" id="FilterInputExclude10" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Classes. . .">
-              <input type="text" id="FilterInputExclude11" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Source. . .">
-              <!-- <input type="text" id="FilterInputExclude12" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Races. . .">
-              <input type="text" id="FilterInputExclude13" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Classes. . ."> -->
-                            
-              <table id="FilterTable">
-                <thead class="header">
-                  <th><button class="TableSortButton" onclick="sortTable(0)">Name</button></th>
-                  <th><button class="TableSortButton" onclick="sortTable(1)">Level</button></th>
-                  <th><button class="TableSortButton" onclick="sortTable(2)">School</button></th>
-                  <th><button class="TableSortButton" onclick="sortTable(3)">Casting Time</button></th>
-                  <th><button class="TableSortButton" onclick="sortTable(4)">Range/Area</button></th>
-                  <th><button class="TableSortButton" onclick="sortTable(5)">Components</button></th>
-                  <th><button class="TableSortButton" onclick="sortTable(6)">Duration</button></th>
-                  <th><button class="TableSortButton" onclick="sortTable(7)">Attack/Save</button></th>
-                  <th><button class="TableSortButton" onclick="sortTable(8)">Damage/Effect</button></th>
-                  <th><button class="TableSortButton" onclick="sortTable(9)">Overchargeable</button></th>
-                  <th><button class="TableSortButton" onclick="sortTable(10)">Classes</button></th>
-                  <th><button class="TableSortButton" onclick="sortTable(11)">Source</button></th>
-                  <!-- <th><button class="TableSortButton" onclick="sortTable(12)">Races</button></th>
-                  <th><button class="TableSortButton" onclick="sortTable(13)">Classes</button></th> -->
-                </thead>
-                <tbody>
+          <input type="text" id="FilterInputExclude0" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Name. . .">
+          <input type="text" id="FilterInputExclude1" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Level. . .">
+          <input type="text" id="FilterInputExclude2" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by School. . .">
+          <input type="text" id="FilterInputExclude3" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Casting Time. . .">
+          <input type="text" id="FilterInputExclude4" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Range/Area. . .">
+          <input type="text" id="FilterInputExclude5" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Components. . .">
+          <input type="text" id="FilterInputExclude6" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Duration. . .">
+          <input type="text" id="FilterInputExclude7" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Attack/Save. . .">
+          <input type="text" id="FilterInputExclude8" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Damage/Effect. . .">
+          <input type="text" id="FilterInputExclude9" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Overchargeable. . .">
+          <input type="text" id="FilterInputExclude10" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Classes. . .">
+          <input type="text" id="FilterInputExclude11" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Source. . .">
+          <!-- <input type="text" id="FilterInputExclude12" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Races. . .">
+          <input type="text" id="FilterInputExclude13" class="FilterInput" onkeyup="FilterTableFunction()" placeholder="Exclude by Classes. . ."> -->
+                        
+          <table id="FilterTable">
+            <thead class="header">
+              <th><button class="TableSortButton" onclick="sortTable(0)">Name</button></th>
+              <th><button class="TableSortButton" onclick="sortTable(1)">Level</button></th>
+              <th><button class="TableSortButton" onclick="sortTable(2)">School</button></th>
+              <th><button class="TableSortButton" onclick="sortTable(3)">Casting Time</button></th>
+              <th><button class="TableSortButton" onclick="sortTable(4)">Range/Area</button></th>
+              <th><button class="TableSortButton" onclick="sortTable(5)">Components</button></th>
+              <th><button class="TableSortButton" onclick="sortTable(6)">Duration</button></th>
+              <th><button class="TableSortButton" onclick="sortTable(7)">Attack/Save</button></th>
+              <th><button class="TableSortButton" onclick="sortTable(8)">Damage/Effect</button></th>
+              <th><button class="TableSortButton" onclick="sortTable(9)">Overchargeable</button></th>
+              <th><button class="TableSortButton" onclick="sortTable(10)">Classes</button></th>
+              <th><button class="TableSortButton" onclick="sortTable(11)">Source</button></th>
+              <!-- <th><button class="TableSortButton" onclick="sortTable(12)">Races</button></th>
+              <th><button class="TableSortButton" onclick="sortTable(13)">Classes</button></th> -->
+            </thead>
+            <tbody>
 
-                </tbody>
-              </table>
+            </tbody>
+          </table>
 
-            </section>
+        </section>
             
 
       </div>

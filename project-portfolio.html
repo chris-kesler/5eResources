@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-US-Compatible" content="e-edge">
+    <title>KnowOne's Website of Everything</title>
+    <link rel="icon" href="/_SiteResources/Images/OwlOfMinerva_ModifiedLogo.png">
+    <link rel="stylesheet" href="/caped-crusaders-style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  </head>
+
+
+  <body>
+    <div class="page-background-container"> 
+      <div class="page-header">
+        <div class="import-page-header"></div>
+
+          <h1 class="header">Project Portfolio</h1>
+          <hr>
+      </div>
+        
+      
+      <div class="page-content">
+          
+        <section class="page-content-section">
+          <button id="page-back-button" onclick="location.href='/index.html'">Out to Homepage</button>
+          <h2>Overview</h2>
+          <hr>
+
+          <table class="page-button-table">
+            <tr><td>
+              <button class="page-button-greater" onclick="location.href='project-portfolio/contact-service-classes.html'">Contact Service Classes:  <br>JUnit Tests (Java)</button>
+            </td></tr>
+            <tr><td>
+              <button class="page-button-greater" onclick="location.href='project-portfolio/data-structure-and-algorithms.html'">Data Structure & Algorithms:  <br>Binary Search Tree (C++)</button>
+            </td></tr>
+            <tr><td>
+              <button class="page-button-greater" onclick="location.href='project-portfolio/dynamic-filter-table.html'">Dynamic Filter Table:  <br>JSON Database (Javascript)</button>
+            </td></tr>
+          </table>              
+          <p>
+            This subsite is dedicated to my Project Portfolio, detailing several of my most impressive and technically relevant projects.  Each of the buttons in the table to the right will take you to a page with more details about the selected project, along with a link to the project files on GitHub, a detailed description of the project, and a narrated screencast explaining and demonstrating the project when applicable.  
+          </p>
+
+        </section>
+
+      </div>
+
+      <footer class="import-page-footer"></footer>
+    </div>
+  </body>
+</html>
+
+<script type="text/javascript">
+  $(function () {
+
+    $(".import-page-header").load("/_SiteResources/Pages/import-page-header.html");
+    $(".import-page-footer").load("/_SiteResources/Pages/import-page-footer.html");
+
+});
+</script>

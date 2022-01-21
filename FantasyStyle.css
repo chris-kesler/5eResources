@@ -291,7 +291,7 @@ table {
   padding-left: 15px;
 }
 
-.WikiCategoryButton {
+.page-button-greater {
   width: 225px;
   max-width: 35vw;
   height: 65px;
@@ -360,7 +360,7 @@ table {
   background-color: rgb(189,188,173);
 }
 
-.WikiButtonTable {
+.page-button-table {
   float: right;
   border: 1px solid rgb(189,188,173);
   background-color: rgb(223,222,207);
