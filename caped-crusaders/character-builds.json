@@ -1,131 +1,6 @@
 {
-    "character": [
-        {
-            "name_str" : "Spider-Man (Amazing)",
-            "page_url" : "spider-man-amazing.html",
-            "class_str" : "Subvertist",
-            "class_type" : "Caster, Secondary",
-            "class_source" : "Powers",
-            "subclass_str" : "Neutralizer",
-            "subclass_source" : "Powers",
-            "character_source" : "MARVEL (Spider-Verse Hero)",
-
-            
-            "build_overview" : "The Amazing Spider-Man is the original Peter Parker from the first run of Spider-Man comics, and what I consider to be the default Spider-Man that is seen most often on Marvel teams.  This is a Spider-Man who relies on webbing to do the heavy lifting and tailor the battlefield for his allies, while also making sure to keep a safe distance from nasty threats.  <br><br>There are lots of ways you could build a Spider-Man character in Caped Crusaders, but this build will try to focus on the conventional role Spider-Man usually takes when on a team.  Peter is a real powerhouse, but constantly holds back in physical combat with few exceptions.  When working with other heroes, Spidey often relies on his webbing and agility to alter the terms of engagement rather than fight a boss villain one on one like we see in his solo adventures.  <br><br>This Spider-Man build does not lean into the genius side of Peter as much since it is relevant to game mechanics in almost no way.  Peter may be a genius, but it's not exactly something that comes up often in combat.  Most of his abilities are based on his powers and senses.  I know I know, he comes up with clever gizmos to defeat specific enemies, but he doesn't rely on raw Intelligence (or even develop it much; his academic performance is often in shambles for the majority of his life) for most of his abilities.  We can be a more effective Spider-Man if we leave the genius side of Peter represented with appropriate skill and tool proficiencies, which do the job just fine in my estimation regardless.  <br><br>In conclusion, we will be sticking to Wisdom for this build and opting for Int based skills.  We will be taking lots of control casting options to represent the various applications for webbing, and we will do our best to stay out of the fray.  This Spider-Man is not at the center of the stage, and that's exactly how we want it.  <br><br>*Technical note, some of you may protest the use of Powercasting to represent Spidey's web based abilities since his webshooters are actually technological devices.  In theory, we could try to build a Spider-Man that uses Techcasting to represent webbing, but Powercasting also represents Spider-Man's extreme feats of agility and strength.  A build that does use Techcasting based webbing would be the Iron Spider, who also employs a variety of other gadgets.  Webshooters alone aren't necessarily complex enough to be represented through Techcasting in my estimation.  Peter's ability to use his webbing effectively relies more heavily on his natural reflexes and accuracy than on the technology of the webbing or webshooters themselves.  If this perspective continues to bother you, then this build can also be used top represent Tobey Maguire's Spider-Man (whose webbing is organic and has no technological components whatsoever).  ",
-
-            "race_str" : "Terran",
-            "race_description" : "Can't go wrong with a good old human.  Spidey is genetically altered, but we'll represent that through Powercasting.  For now we'll just take Perception and Science.  We'll boost Dex by 1 and Wis by 2; Int seems extremely appropriate for Spidey, but only from a thematic perspective.  As mentioned above, this version of Spider-Man never really uses his Intelligence score in combat, so we'll be leaving the Amazing Spider-Man as a regular joe in regards to raw IQ.  ",
-            "background" : "Student",
-            "background_description" : "Thematically appropriate; we'll also take advantage of the Academic feat to offset our less than thematic Intelligence score.  ",
-            "strength_initial" : 10,
-            "dexterity_initial" : 15,
-            "constitution_initial" : 13,
-            "intelligence_initial" : 10,
-            "wisdom_initial" : 15,
-            "charisma_initial" : 8,
-            "strength_resolved" : 10,
-            "dexterity_resolved" : 16,
-            "constitution_resolved" : 13,
-            "intelligence_resolved" : 10,
-            "wisdom_resolved" : 17,
-            "charisma_resolved" : 8,
-            "starting_equipment" : "Tunic, Fitted Cloth",
-            "level_guide" : [
-                {
-                    "level" : 1,
-                    "walkthrough" : "At level one we will be focusing on slinging debuff cantrips, swooping in to Shove, and kiting back to safety.  We have to be careful when swooping in though, since our movement hasn't been buffed all that much yet; we have to rely on our tankier teammates to draw fire away from us.  If that isn't something that will work out more often than not, we'll just stick to casting from a distance.  <br><br>We'll grab Distracting Blast to represent a little web attack that can help make our enemies easier to defeat.  <br><br>We also get a leveled Superpower, which we'll use sparingly if the situation calls for it.  We'll keep Slowing Arc for medium hordes that could use a tripping before the Martials rip them up.  ",
-                    "cantrips" : "+Distracting Blast",
-                    "consumables" : "+Slowing Arc",
-                    "intelligence_save" : "yes",
-                    "wisdom_save" : "yes",
-                    "feature" : "Enhanced Movement:  Swinging"
-                },
-                {
-                    "level" : 2,
-                    "walkthrough" : "Here we get our Subclass, and we'll be going down the Enhancement path.  This will help us increase our senses and durability to feel like a bit more of the hyper aware acrobat that Spidey is.  We'll be taking the Reflex Dodge Enhancement, which lets us boost our AC against an incoming attack and skirt away to safety.  This is a good baby step towards a full fledged Spider-Sense.  <br><br>We also get another Consumable, so we'll be taking Stunning Shot for larger enemies that are hitting our allies (or us) a bit too hard.  ",
-                    "sustainables" : "+Reflex Dodge",
-                    "consumables" : "+Stunning Shot"
-                },
-                {
-                    "level" : 3,
-                    "walkthrough" : "We'll take the Keen Eye feat and round out our Wis score.  Keen Eye allows us to sacrifice a bit of movement in order to make more accurate attacks, which shouldn't be much of a problem if we are positioning ourselves correctly.  If we do manage to get targeted, Reflex Dodge should be able to keep us intact.  The best part about increasing our attacks is the ability to synergize with our Distracting Shot cantrip.  We can buff our own attack on one turn, making it more likely to impose the debuff, which then makes it easier to snag those enemies in an AoE on the turn after.  Even if we have to sacrifice the first round by getting into position, this can make for a nice little combo during longer fights.  <br><br>Our allies are getting a bit beefier, but so are our enemies.  We can start being a bit more liberal with our leveled Superpowers as long as we keep some reserves for whatever boss might be anticipated.  <br><br>Disorienting Surge is a nice addition that can help prevent the martials from being surrounded.  Best for when the enemies are coming in waves or are forced into a bottleneck of some kind.  ",
-                    "wisdom_update" : "18",
-                    "feature" : "Feat: Keen Eye, +1 Wis",
-                    "consumables" : "+Disorienting Surge"
-                },
-                {
-                    "level" : 4,
-                    "walkthrough" : "Second Level Superpowers!  We've been pretty good about using our webbing to trip up enemies, but we also need to make sure we can keep civilians safe from falling debris or themselves.  We'll take Vortex Flurry, which allows us to select a few targets within a decent range and negate their fall damage.  This can only be used in a few situations, but they tend to come up often enough and are very difficult to deal with if you don't have mechanics designed for it or built around it.  ",
-                    "consumables" : "+Vortex Flurry"
-                },
-                {
-                    "level" : 5,
-                    "walkthrough" : "There are a lot of things we could do here, but maxing out our casting stat is always a good option.  ASI for +2 Wis.  <br><br>We'll also take a new Superpower that can force enemy movement, such as Repelling Burst.  We'll be using this to launch enemies into dangerous places such as environmental hazards, clusters for other damage casters to blast on, or even into our own existing AoEs.  This is a Superpower that ought to be upcast later on as well, but sadly won't get as much mileage out of Keen Eye as our other options.  <br><br>The downside to this Superpower is that if we want to take a thinly dispersed crowd and condense them towards a central point, we'll have to move around the battlefield a fair amount throughout the casting.  It's a worthwhile tradeoff when it's called for, and we can still use Keen Eye with this Superpower when in linear environments like hallways or valleys. ",
-                    "consumables" : "+Repelling Burst",
-                    "wisdom_update" : "20",
-                    "feature" : "ASI:  +2 Wis"
-                },
-                {
-                    "level" : 6,
-                    "walkthrough" : "At level 6 we get a new Enhancement, which we will use to further develop our Spider-Sense and reflexes.  We'll take Evasive to get a bit better at Dex saves and make it easier to get the drop on enemies in the heat of battle.  We can couple this with Blinding Shot next level to quickly break line of sight and virtually disappear, making it that much easier to snag them with a debuff on the next turn.  <br><br>We'll also grab Trip Assist for our new Superpower, which allows us to move an enemy in any direction and knock them prone.   This is a nice way to represent Spidey's ability to yank enemies and throw them around with his webbing.  ",
-                    "sustainables" : "+Evasive",
-                    "consumables" : "+Trip Assist"
-                },
-                {
-                    "level" : 7,
-                    "walkthrough" : "We get another cantrip, so we'll be taking Blinding Shot to help us break line of sight or improve our Shoving against bosses.  It only lasts until our turn ends, so we can't coordinate with allies as much as we might like.  Some exceptions such as Soldier Strategies might apply, but it's not what we are taking this option for.  <br><br>We also get third level Superpowers, which is a big deal.  We'll take Slingshot to help us punch a hole in groups of enemies or send them flying off of high ledges.  ",
-                    "cantrips" : "+Blinding Shot",
-                    "consumables" : "+Slingshot"
-                },
-                {
-                    "level" : 8,
-                    "walkthrough" : "We will be taking Resilient Constitution for our feat this level.  We've got enough casting options to keep a concentration Superopower active in most fights now, and keeping those up will free more Power Points for other things.  Even though we have been building up our defenses in order to avoid or limit damage, this will make it that much harder to break our concentration when we do end up getting hit by something.  Also, we'll be rounding out our Con score and getting an extra hit point for every class level.  Spidey can take a beating, and now we are that much tougher.  <br><br>We get another Superpower, so we'll grab Vortex Tunnel to make sure we can keep civilians out of harm's way should a runaway vehicle come barging through.  ",
-                    "feature" : "Feat:  Resilient (Constitution)",
-                    "consumables" : "+Vortex Tunnel"
-                },
-                {
-                    "level" : 9,
-                    "walkthrough" : "The Enhanced Movement improvement is a welcome addition.  In many Caped Crusaders campaigns, there are a notable number of encounters with serious vertical terrain.  Flying speeds are nice for this, but as long as the terrain has some relatively minimal features, our mobility is about as good as it gets across the game.  A Subvertist built around Speed will outpace us, but they'll be limited to solid surfaces.  We've got a very useful balance between raw speed and the ability to position ourselves almost any way we like.  <br><br>Our last 3rd level Superpower will be Gravity Assist, which allows us to represent Spidey snagging something heavy with his webs and throwing it downwards at an enemy.  ",
-                    "feature" : "Enhanced Movement:  Improved Swinging",
-                    "consumables" : "+Gravity Assist"
-                },
-                {
-                    "level" : 10,
-                    "walkthrough" : "We are in the double digits now, which means we get our first 4th level Superpower.  We'll be taking Lockdown to immobilize heavy objects, vehicles, or enemies.  This effectively represents Spidey attaching a bunch of webs between the target and various anchor points.  This can keep a malfunctioning helicopter from crashing onto a crowd, halting a runaway truck in its tracks, or securing a dangerous enemy in a cozy straight jacket while your buddies teach them some manners.  <br><br>We've also got a pretty sizable movement speed now, coming in at an even 100 feet per round.  This should give us more than enough mobility to get all our Shoves off, unleash a nice Superpower, and make it back to a safe vantage point.  ",
-                    "consumables" : "+Lockdown"
-                },
-                {
-                    "level" : 11
-                },
-                {
-                    "level" : 12
-                },
-                {
-                    "level" : 13
-                },
-                {
-                    "level" : 14
-                },
-                {
-                    "level" : 15
-                },
-                {
-                    "level" : 16
-                },
-                {
-                    "level" : 17
-                },
-                {
-                    "level" : 18
-                },
-                {
-                    "level" : 19
-                },
-                {
-                    "level" : 20
-                }
-            ]
-        },
+    "under development" : [
+        
         {
             "name_str" : "Spider-Man (Redacted)",
             "page_url" : "",
@@ -539,109 +414,7 @@
             "subclass_source" : "Tech",
             "character_source" : "DC (Villain)"
         },
-        {
-            "name_str" : "Dr. Strange",
-            "page_url" : "dr-strange.html",
-            "class_str" : "Archmage",
-            "class_type" : "Caster, Primary",
-            "class_source" : "Magic",
-            "subclass_str" : "Arcanoblate",
-            "subclass_source" : "Magic",
-            "character_source" : "MARVEL (Avengers Hero)",
         
-            "build_overview" : "Dr. Strange is a Marvel hero who uses powerful magic to create a wide variety of effects.  Out of all the Avengers, he arguably has the most diverse pool of abilities to pull from.  This can be difficult to represent mechancially, but lucky for me, 5e already has some solid mage classes and spell lists.  Dr. Strange has few abilities that could not be represented using the 5e Wizard or Bard, but some of his powers are a bit more unique.  The goal in combat is to serve as the ultimate handy man with the spell for the job.  Being able to unleash battlefield control effects, defensive buffs, mass debuffs, mobility options, and direct damage effects are all important to options to at least have if not use for any self respecting mage.  <br><br>There is really only class to make a full casting mage with in Caped Crusaders, and that's the aptly named Archmage class.  We'll be going down the Arcanoblate subclass in order to gain even more magical power through boons, and we'll be focusing on spells that can provide defense, mobility, and deal direct damage.  We want to have access to our hand wards, portals, and the arcane whips that Strange employs so frequently.  <br><br>We'll be sticking to Wisdom for this build in order to maximize our spellcasting potency, we'll focus on feats and boons that make us a more competent mage, and we'll be opting for combat spells with a few key utility selections included.  ",
-
-            "race_str" : "Terran",
-            "race_description" : "Can't go wrong with a good old human.  Strange is capable of magic, but he's stil a mortal man without it.  We'll boost Con by 1 and Wis by 2; Int seems somehwat appropriate for Strange, but only from a thematic perspective.  Strange is certainly smart, but his powers come from an awareness of reality and how to manipulate it that is best represented with Wisdom.  We will be snagging a feat to represent Strange's remarkable memory.  ",
-            "background" : "Physician",
-            "background_description" : "Thematically appropriate; we'll also take advantage of the Academic feat to offset our less than thematic Intelligence score.  ",
-            "strength_initial" : 8,
-            "dexterity_initial" : 14,
-            "constitution_initial" : 15,
-            "intelligence_initial" : 10,
-            "wisdom_initial" : 15,
-            "charisma_initial" : 8,
-            "strength_resolved" : 10,
-            "dexterity_resolved" : 14,
-            "constitution_resolved" : 16,
-            "intelligence_resolved" : 10,
-            "wisdom_resolved" : 17,
-            "charisma_resolved" : 8,
-            "starting_equipment" : "Tunic, Fitted Cloth",
-            "level_guide" : [
-                {
-                    "level" : 1,
-                    "walkthrough" : "At level one we will be focusing on slinging cantrips, the occassional damage spell, and staying alive with defensive spells.  Our options are limited, but we've still got a wider variety than most classes.  Our hit points are pitiful, so keeping at least a few spell points in reserve should we be targeted will be important if we want to see higher levels.  <br><br>We'll be taking Create Bonfire for our first cantrip.  We will want to concentrate on other things down the road, but it offers a small at-will AoE that we can use effectively.  If we find that our Create Bonfire is active and no leveled spells are called for, there is nothing wrong with just Dodging for a turn or three.  <br><br>We'll grab Absorb Elements for defense, Earth Tremor in case we get swarmed, and Ice Knife for a decent damage option.  I'm not a huge fan of damage spells, but Ice Knife combining an attack roll with a small AoE is a design choice I like very much.  Earth Tremor keeps our selection well rounded, even if it is a pretty lame spell.  ",
-                    "cantrips" : "+Create Bonfire",
-                    "consumables" : "+Absorb Elements, +Earth Tremor, +Ice Knife",
-                    "charisma_save" : "yes",
-                    "wisdom_save" : "yes"
-                },
-                {
-                    "level" : 2,
-                    "walkthrough" : "Here we get our Subclass, and we'll be going down the Boon path of the Arcanoblate.  This will help us increase our overall magical potency.  We'll be taking Primordial Levitation to represent Strange's cloak, and keep ourselves up and out of harm's way.  <br><br>We also get more Spells, so we'll be taking Beast Bond, Catapult, and Spectral Armor to start fleshing out our versatile spell list.  Catapult can be helpful if we have an item that needs to get somewhere quickly, and makes for a good game of keepaway if a boss gets disarmed.  I wouldn't rely on it for damage, but it can be a helpful spell.  Beast Bond has somewhat obvious uses, albeit rare ones, but can still be helpful under some circumstances.  Spectral Armor helps patch up our most glaring weakness, Armor Class.  We are still pretty soft; wading into the heat of the frontline would be unforgiving.  But now we can breathe a little easier when that occasional arrow does end up flying our way.  ",
-                    "sustainables" : "+Primordial Levitation",
-                    "consumables" : "+Beast Bond, +Catapult, +Spectral Armor"
-                },
-                {
-                    "level" : 3,
-                    "walkthrough" : "Second level spells are here and they are a welcome addition.  We'll be taking Aganazzar's Scorcher for a nice damage effect, Pyrotechnics to manipulate fire in a few useful ways, and Warding Wind to create an aura around that imposes some situational effects.  A's Scorcher is going to be best against multiple enemies who are lined up, obviously, so hitting one boss with this is not a very efficient move.  Pyrotechnics can impose blindness or create obscurement, both of which can tip the scales to a fair degree in combat.  Warding Wind can provide a small degree of protection against ranged attacks while your close allies deal with melee enemies, and you can get creative by hedging out dangerous vapors or blocking sounds like the wails of sirens.  I wouldn't consider it a default option, but it does have situational uses.  <br><br>We also get a new cantrip, which will be Magic Stone.  We've got a few leveled concentration options now, so Create Bonfire won't be our go to strategy anymore.  Magic Stone deals pretty good damage at lower levels, and we don't have much in the way of Bonus Actions that it interferes with.  ",
-                    "consumables" : "+Aganazzar's Scorcher, +Pyrotechnics, +Warding Wind",
-                    "cantrips" : "+Magic Stone"
-                },
-                {
-                    "level" : 4
-                },
-                {
-                    "level" : 5
-                },
-                {
-                    "level" : 6
-                },
-                {
-                    "level" : 7
-                },
-                {
-                    "level" : 8
-                },
-                {
-                    "level" : 9
-                },
-                {
-                    "level" : 10
-                },
-                {
-                    "level" : 11
-                },
-                {
-                    "level" : 12
-                },
-                {
-                    "level" : 13
-                },
-                {
-                    "level" : 14
-                },
-                {
-                    "level" : 15
-                },
-                {
-                    "level" : 16
-                },
-                {
-                    "level" : 17
-                },
-                {
-                    "level" : 18
-                },
-                {
-                    "level" : 19
-                },
-                {
-                    "level" : 20
-                }
-            ]
-        },
         {
             "name_str" : "Gandalf",
             "page_url" : "gandalf.html",
@@ -971,6 +744,239 @@
             "subclass_str" : "Militant",
             "subclass_source" : "Tech",
             "character_source" : "Invincible (Complicated)"
+        }
+    ],
+
+    
+    "character" : [
+        {
+            "name_str" : "Spider-Man (Amazing)",
+            "page_url" : "spider-man-amazing.html",
+            "class_str" : "Subvertist",
+            "class_type" : "Caster, Secondary",
+            "class_source" : "Powers",
+            "subclass_str" : "Neutralizer",
+            "subclass_source" : "Powers",
+            "character_source" : "MARVEL (Spider-Verse Hero)",
+
+            
+            "build_overview" : "The Amazing Spider-Man is the original Peter Parker from the first run of Spider-Man comics, and what I consider to be the default Spider-Man that is seen most often on Marvel teams.  This is a Spider-Man who relies on webbing to do the heavy lifting and tailor the battlefield for his allies, while also making sure to keep a safe distance from nasty threats.  <br><br>There are lots of ways you could build a Spider-Man character in Caped Crusaders, but this build will try to focus on the conventional role Spider-Man usually takes when on a team.  Peter is a real powerhouse, but constantly holds back in physical combat with few exceptions.  When working with other heroes, Spidey often relies on his webbing and agility to alter the terms of engagement rather than fight a boss villain one on one like we see in his solo adventures.  <br><br>This Spider-Man build does not lean into the genius side of Peter as much since it is relevant to game mechanics in almost no way.  Peter may be a genius, but it's not exactly something that comes up often in combat.  Most of his abilities are based on his powers and senses.  I know I know, he comes up with clever gizmos to defeat specific enemies, but he doesn't rely on raw Intelligence (or even develop it much; his academic performance is often in shambles for the majority of his life) for most of his abilities.  We can be a more effective Spider-Man if we leave the genius side of Peter represented with appropriate skill and tool proficiencies, which do the job just fine in my estimation regardless.  <br><br>In conclusion, we will be sticking to Wisdom for this build and opting for Int based skills.  We will be taking lots of control casting options to represent the various applications for webbing, and we will do our best to stay out of the fray.  This Spider-Man is not at the center of the stage, and that's exactly how we want it.  <br><br>*Technical note, some of you may protest the use of Powercasting to represent Spidey's web based abilities since his webshooters are actually technological devices.  In theory, we could try to build a Spider-Man that uses Techcasting to represent webbing, but Powercasting also represents Spider-Man's extreme feats of agility and strength.  A build that does use Techcasting based webbing would be the Iron Spider, who also employs a variety of other gadgets.  Webshooters alone aren't necessarily complex enough to be represented through Techcasting in my estimation.  Peter's ability to use his webbing effectively relies more heavily on his natural reflexes and accuracy than on the technology of the webbing or webshooters themselves.  If this perspective continues to bother you, then this build can also be used top represent Tobey Maguire's Spider-Man (whose webbing is organic and has no technological components whatsoever).  ",
+
+            "race_str" : "Terran",
+            "race_description" : "Can't go wrong with a good old human.  Spidey is genetically altered, but we'll represent that through Powercasting.  For now we'll just take Perception and Science.  We'll boost Dex by 1 and Wis by 2; Int seems extremely appropriate for Spidey, but only from a thematic perspective.  As mentioned above, this version of Spider-Man never really uses his Intelligence score in combat, so we'll be leaving the Amazing Spider-Man as a regular joe in regards to raw IQ.  ",
+            "background" : "Student",
+            "background_description" : "Thematically appropriate; we'll also take advantage of the Academic feat to offset our less than thematic Intelligence score.  ",
+            "strength_initial" : 10,
+            "dexterity_initial" : 15,
+            "constitution_initial" : 13,
+            "intelligence_initial" : 10,
+            "wisdom_initial" : 15,
+            "charisma_initial" : 8,
+            "strength_resolved" : 10,
+            "dexterity_resolved" : 16,
+            "constitution_resolved" : 13,
+            "intelligence_resolved" : 10,
+            "wisdom_resolved" : 17,
+            "charisma_resolved" : 8,
+            "starting_equipment" : "Tunic, Fitted Cloth",
+            "level_guide" : [
+                {
+                    "level" : 1,
+                    "walkthrough" : "At level one we will be focusing on slinging debuff cantrips, swooping in to Shove, and kiting back to safety.  We have to be careful when swooping in though, since our movement hasn't been buffed all that much yet; we have to rely on our tankier teammates to draw fire away from us.  If that isn't something that will work out more often than not, we'll just stick to casting from a distance.  <br><br>We'll grab Distracting Blast to represent a little web attack that can help make our enemies easier to defeat.  <br><br>We also get a leveled Superpower, which we'll use sparingly if the situation calls for it.  We'll keep Slowing Arc for medium hordes that could use a tripping before the Martials rip them up.  ",
+                    "cantrips" : "+Distracting Blast",
+                    "consumables" : "+Slowing Arc",
+                    "intelligence_save" : "yes",
+                    "wisdom_save" : "yes",
+                    "feature" : "Enhanced Movement:  Swinging"
+                },
+                {
+                    "level" : 2,
+                    "walkthrough" : "Here we get our Subclass, and we'll be going down the Enhancement path.  This will help us increase our senses and durability to feel like a bit more of the hyper aware acrobat that Spidey is.  We'll be taking the Reflex Dodge Enhancement, which lets us boost our AC against an incoming attack and skirt away to safety.  This is a good baby step towards a full fledged Spider-Sense.  <br><br>We also get another Consumable, so we'll be taking Stunning Shot for larger enemies that are hitting our allies (or us) a bit too hard.  ",
+                    "sustainables" : "+Reflex Dodge",
+                    "consumables" : "+Stunning Shot"
+                },
+                {
+                    "level" : 3,
+                    "walkthrough" : "We'll take the Keen Eye feat and round out our Wis score.  Keen Eye allows us to sacrifice a bit of movement in order to make more accurate attacks, which shouldn't be much of a problem if we are positioning ourselves correctly.  If we do manage to get targeted, Reflex Dodge should be able to keep us intact.  The best part about increasing our attacks is the ability to synergize with our Distracting Shot cantrip.  We can buff our own attack on one turn, making it more likely to impose the debuff, which then makes it easier to snag those enemies in an AoE on the turn after.  Even if we have to sacrifice the first round by getting into position, this can make for a nice little combo during longer fights.  <br><br>Our allies are getting a bit beefier, but so are our enemies.  We can start being a bit more liberal with our leveled Superpowers as long as we keep some reserves for whatever boss might be anticipated.  <br><br>Disorienting Surge is a nice addition that can help prevent the martials from being surrounded.  Best for when the enemies are coming in waves or are forced into a bottleneck of some kind.  ",
+                    "wisdom_update" : "18",
+                    "feature" : "Feat: Keen Eye, +1 Wis",
+                    "consumables" : "+Disorienting Surge"
+                },
+                {
+                    "level" : 4,
+                    "walkthrough" : "Second Level Superpowers!  We've been pretty good about using our webbing to trip up enemies, but we also need to make sure we can keep civilians safe from falling debris or themselves.  We'll take Vortex Flurry, which allows us to select a few targets within a decent range and negate their fall damage.  This can only be used in a few situations, but they tend to come up often enough and are very difficult to deal with if you don't have mechanics designed for it or built around it.  ",
+                    "consumables" : "+Vortex Flurry"
+                },
+                {
+                    "level" : 5,
+                    "walkthrough" : "There are a lot of things we could do here, but maxing out our casting stat is always a good option.  ASI for +2 Wis.  <br><br>We'll also take a new Superpower that can force enemy movement, such as Repelling Burst.  We'll be using this to launch enemies into dangerous places such as environmental hazards, clusters for other damage casters to blast on, or even into our own existing AoEs.  This is a Superpower that ought to be upcast later on as well, but sadly won't get as much mileage out of Keen Eye as our other options.  <br><br>The downside to this Superpower is that if we want to take a thinly dispersed crowd and condense them towards a central point, we'll have to move around the battlefield a fair amount throughout the casting.  It's a worthwhile tradeoff when it's called for, and we can still use Keen Eye with this Superpower when in linear environments like hallways or valleys. ",
+                    "consumables" : "+Repelling Burst",
+                    "wisdom_update" : "20",
+                    "feature" : "ASI:  +2 Wis"
+                },
+                {
+                    "level" : 6,
+                    "walkthrough" : "At level 6 we get a new Enhancement, which we will use to further develop our Spider-Sense and reflexes.  We'll take Evasive to get a bit better at Dex saves and make it easier to get the drop on enemies in the heat of battle.  We can couple this with Blinding Shot next level to quickly break line of sight and virtually disappear, making it that much easier to snag them with a debuff on the next turn.  <br><br>We'll also grab Trip Assist for our new Superpower, which allows us to move an enemy in any direction and knock them prone.   This is a nice way to represent Spidey's ability to yank enemies and throw them around with his webbing.  ",
+                    "sustainables" : "+Evasive",
+                    "consumables" : "+Trip Assist"
+                },
+                {
+                    "level" : 7,
+                    "walkthrough" : "We get another cantrip, so we'll be taking Blinding Shot to help us break line of sight or improve our Shoving against bosses.  It only lasts until our turn ends, so we can't coordinate with allies as much as we might like.  Some exceptions such as Soldier Strategies might apply, but it's not what we are taking this option for.  <br><br>We also get third level Superpowers, which is a big deal.  We'll take Slingshot to help us punch a hole in groups of enemies or send them flying off of high ledges.  ",
+                    "cantrips" : "+Blinding Shot",
+                    "consumables" : "+Slingshot"
+                },
+                {
+                    "level" : 8,
+                    "walkthrough" : "We will be taking Resilient Constitution for our feat this level.  We've got enough casting options to keep a concentration Superopower active in most fights now, and keeping those up will free more Power Points for other things.  Even though we have been building up our defenses in order to avoid or limit damage, this will make it that much harder to break our concentration when we do end up getting hit by something.  Also, we'll be rounding out our Con score and getting an extra hit point for every class level.  Spidey can take a beating, and now we are that much tougher.  <br><br>We get another Superpower, so we'll grab Vortex Tunnel to make sure we can keep civilians out of harm's way should a runaway vehicle come barging through.  ",
+                    "feature" : "Feat:  Resilient (Constitution)",
+                    "consumables" : "+Vortex Tunnel"
+                },
+                {
+                    "level" : 9,
+                    "walkthrough" : "The Enhanced Movement improvement is a welcome addition.  In many Caped Crusaders campaigns, there are a notable number of encounters with serious vertical terrain.  Flying speeds are nice for this, but as long as the terrain has some relatively minimal features, our mobility is about as good as it gets across the game.  A Subvertist built around Speed will outpace us, but they'll be limited to solid surfaces.  We've got a very useful balance between raw speed and the ability to position ourselves almost any way we like.  <br><br>Our last 3rd level Superpower will be Gravity Assist, which allows us to represent Spidey snagging something heavy with his webs and throwing it downwards at an enemy.  ",
+                    "feature" : "Enhanced Movement:  Improved Swinging",
+                    "consumables" : "+Gravity Assist"
+                },
+                {
+                    "level" : 10,
+                    "walkthrough" : "We are in the double digits now, which means we get our first 4th level Superpower.  We'll be taking Lockdown to immobilize heavy objects, vehicles, or enemies.  This effectively represents Spidey attaching a bunch of webs between the target and various anchor points.  This can keep a malfunctioning helicopter from crashing onto a crowd, halting a runaway truck in its tracks, or securing a dangerous enemy in a cozy straight jacket while your buddies teach them some manners.  <br><br>We've also got a pretty sizable movement speed now, coming in at an even 100 feet per round.  This should give us more than enough mobility to get all our Shoves off, unleash a nice Superpower, and make it back to a safe vantage point.  ",
+                    "consumables" : "+Lockdown"
+                },
+                {
+                    "level" : 11
+                },
+                {
+                    "level" : 12
+                },
+                {
+                    "level" : 13
+                },
+                {
+                    "level" : 14
+                },
+                {
+                    "level" : 15
+                },
+                {
+                    "level" : 16
+                },
+                {
+                    "level" : 17
+                },
+                {
+                    "level" : 18
+                },
+                {
+                    "level" : 19
+                },
+                {
+                    "level" : 20
+                }
+            ]
+        },
+        {
+            "name_str" : "Dr. Strange",
+            "page_url" : "dr-strange.html",
+            "class_str" : "Archmage",
+            "class_type" : "Caster, Primary",
+            "class_source" : "Magic",
+            "subclass_str" : "Arcanoblate",
+            "subclass_source" : "Magic",
+            "character_source" : "MARVEL (Avengers Hero)",
+        
+            "build_overview" : "Dr. Strange is a Marvel hero who uses powerful magic to create a wide variety of effects.  Out of all the Avengers, he arguably has the most diverse pool of abilities to pull from.  This can be difficult to represent mechancially, but lucky for me, 5e already has some solid mage classes and spell lists.  Dr. Strange has few abilities that could not be represented using the 5e Wizard or Bard, but some of his powers are a bit more unique.  The goal in combat is to serve as the ultimate handy man with the spell for the job.  Being able to unleash battlefield control effects, defensive buffs, mass debuffs, mobility options, and direct damage effects are all important to options to at least have if not use for any self respecting mage.  <br><br>There is really only class to make a full casting mage with in Caped Crusaders, and that's the aptly named Archmage class.  We'll be going down the Arcanoblate subclass in order to gain even more magical power through boons, and we'll be focusing on spells that can provide defense, mobility, and deal direct damage.  We want to have access to our hand wards, portals, and the arcane whips that Strange employs so frequently.  <br><br>We'll be sticking to Wisdom for this build in order to maximize our spellcasting potency, we'll focus on feats and boons that make us a more competent mage, and we'll be opting for combat spells with a few key utility selections included.  ",
+
+            "race_str" : "Terran",
+            "race_description" : "Can't go wrong with a good old human.  Strange is capable of magic, but he's stil a mortal man without it.  We'll boost Con by 1 and Wis by 2; Int seems somehwat appropriate for Strange, but only from a thematic perspective.  Strange is certainly smart, but his powers come from an awareness of reality and how to manipulate it that is best represented with Wisdom.  We will be snagging a feat to represent Strange's remarkable memory.  ",
+            "background" : "Physician",
+            "background_description" : "Thematically appropriate; we'll also take advantage of the Academic feat to offset our less than thematic Intelligence score.  ",
+            "strength_initial" : 8,
+            "dexterity_initial" : 14,
+            "constitution_initial" : 15,
+            "intelligence_initial" : 10,
+            "wisdom_initial" : 15,
+            "charisma_initial" : 8,
+            "strength_resolved" : 10,
+            "dexterity_resolved" : 14,
+            "constitution_resolved" : 16,
+            "intelligence_resolved" : 10,
+            "wisdom_resolved" : 17,
+            "charisma_resolved" : 8,
+            "starting_equipment" : "Tunic, Fitted Cloth",
+            "level_guide" : [
+                {
+                    "level" : 1,
+                    "walkthrough" : "At level one we will be focusing on slinging cantrips, the occassional damage spell, and staying alive with defensive spells.  Our options are limited, but we've still got a wider variety than most classes.  Our hit points are pitiful, so keeping at least a few spell points in reserve should we be targeted will be important if we want to see higher levels.  <br><br>We'll be taking Create Bonfire for our first cantrip.  We will want to concentrate on other things down the road, but it offers a small at-will AoE that we can use effectively.  If we find that our Create Bonfire is active and no leveled spells are called for, there is nothing wrong with just Dodging for a turn or three.  <br><br>We'll grab Absorb Elements for defense, Earth Tremor in case we get swarmed, and Ice Knife for a decent damage option.  I'm not a huge fan of damage spells, but Ice Knife combining an attack roll with a small AoE is a design choice I like very much.  Earth Tremor keeps our selection well rounded, even if it is a pretty lame spell.  ",
+                    "cantrips" : "+Create Bonfire",
+                    "consumables" : "+Absorb Elements, +Earth Tremor, +Ice Knife",
+                    "charisma_save" : "yes",
+                    "wisdom_save" : "yes"
+                },
+                {
+                    "level" : 2,
+                    "walkthrough" : "Here we get our Subclass, and we'll be going down the Boon path of the Arcanoblate.  This will help us increase our overall magical potency.  We'll be taking Primordial Levitation to represent Strange's cloak, and keep ourselves up and out of harm's way.  <br><br>We also get more Spells, so we'll be taking Beast Bond, Catapult, and Spectral Armor to start fleshing out our versatile spell list.  Catapult can be helpful if we have an item that needs to get somewhere quickly, and makes for a good game of keepaway if a boss gets disarmed.  I wouldn't rely on it for damage, but it can be a helpful spell.  Beast Bond has somewhat obvious uses, albeit rare ones, but can still be helpful under some circumstances.  Spectral Armor helps patch up our most glaring weakness, Armor Class.  We are still pretty soft; wading into the heat of the frontline would be unforgiving.  But now we can breathe a little easier when that occasional arrow does end up flying our way.  ",
+                    "sustainables" : "+Primordial Levitation",
+                    "consumables" : "+Beast Bond, +Catapult, +Spectral Armor"
+                },
+                {
+                    "level" : 3,
+                    "walkthrough" : "Second level spells are here and they are a welcome addition.  We'll be taking Aganazzar's Scorcher for a nice damage effect, Pyrotechnics to manipulate fire in a few useful ways, and Warding Wind to create an aura around that imposes some situational effects.  A's Scorcher is going to be best against multiple enemies who are lined up, obviously, so hitting one boss with this is not a very efficient move.  Pyrotechnics can impose blindness or create obscurement, both of which can tip the scales to a fair degree in combat.  Warding Wind can provide a small degree of protection against ranged attacks while your close allies deal with melee enemies, and you can get creative by hedging out dangerous vapors or blocking sounds like the wails of sirens.  I wouldn't consider it a default option, but it does have situational uses.  <br><br>We also get a new cantrip, which will be Magic Stone.  We've got a few leveled concentration options now, so Create Bonfire won't be our go to strategy anymore.  Magic Stone deals pretty good damage at lower levels, and we don't have much in the way of Bonus Actions that it interferes with.  ",
+                    "consumables" : "+Aganazzar's Scorcher, +Pyrotechnics, +Warding Wind",
+                    "cantrips" : "+Magic Stone"
+                },
+                {
+                    "level" : 4
+                },
+                {
+                    "level" : 5
+                },
+                {
+                    "level" : 6
+                },
+                {
+                    "level" : 7
+                },
+                {
+                    "level" : 8
+                },
+                {
+                    "level" : 9
+                },
+                {
+                    "level" : 10
+                },
+                {
+                    "level" : 11
+                },
+                {
+                    "level" : 12
+                },
+                {
+                    "level" : 13
+                },
+                {
+                    "level" : 14
+                },
+                {
+                    "level" : 15
+                },
+                {
+                    "level" : 16
+                },
+                {
+                    "level" : 17
+                },
+                {
+                    "level" : 18
+                },
+                {
+                    "level" : 19
+                },
+                {
+                    "level" : 20
+                }
+            ]
         }
     ]
 }
