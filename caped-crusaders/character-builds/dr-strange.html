@@ -291,25 +291,43 @@
                     // Populating Sustainables with data or default
                     if (f.level_guide[k].sustainables != undefined && f.level_guide[k].level == (i+1)) {
                       sustainable_selections = f.level_guide[k].sustainables;
-                      sustainable_selections_link = sustainable_selections.toLowerCase();
-                      sustainable_selections_link = sustainable_selections_link.replace('-', '');
-                      sustainable_selections_link = sustainable_selections_link.replace('+', '');
-                      sustainable_selections_link = sustainable_selections_link.replace(/\s/g, '-');
-                      sustainable_selections_link = "<a href='/caped-crusaders/character-options/" + sustainable_source + "/" + sustainable_selections_link + ".html'>" + sustainable_selections + "</a>";
+                      sustainable_selections_parsed = sustainable_selections.split(", ");
+                      sustainable_selections_links = "";
+                      for (let k = 0; k < sustainable_selections_parsed.length; k++) {
+                        sustainable_selections_link = sustainable_selections_parsed[k].toLowerCase();
+                        sustainable_selections_link = sustainable_selections_link.replace('-', '');
+                        sustainable_selections_link = sustainable_selections_link.replace('+', '');
+                        sustainable_selections_link = sustainable_selections_link.replace(/\s/g, '-');
+                        sustainable_selections_link = "<a target='blank' href='/caped-crusaders/character-options/" + sustainable_source + "/" + sustainable_selections_link + ".html'>" + sustainable_selections_parsed[k] + "</a>";
+                        if (sustainable_selections_links.includes("href")){
+                          sustainable_selections_links += ", " + sustainable_selections_link;
+                        } else {
+                          sustainable_selections_links = sustainable_selections_link;
+                        }
+                      }
                     } else if (f.level_guide[k].sustainables == undefined && f.level_guide[k].level == (i+1)) {
-                      sustainable_selections_link = "---";
+                      sustainable_selections_links = "---";
                     }
-
+                    
                     // Populating Cantrips with data or default
                     if (f.level_guide[k].cantrips != undefined && f.level_guide[k].level == (i+1)) {
                       cantrip_selections = f.level_guide[k].cantrips;
-                      cantrip_selections_link = cantrip_selections.toLowerCase();
-                      cantrip_selections_link = cantrip_selections_link.replace('-', '');
-                      cantrip_selections_link = cantrip_selections_link.replace('+', '');
-                      cantrip_selections_link = cantrip_selections_link.replace(/\s/g, '-');
-                      cantrip_selections_link = "<a href='/caped-crusaders/character-options/" + consumable_source + "/" + cantrip_selections_link + ".html'>" + cantrip_selections + "</a>";
+                      cantrip_selections_parsed = cantrip_selections.split(", ");
+                      cantrip_selections_links = "";
+                      for (let k = 0; k < cantrip_selections_parsed.length; k++) {
+                        cantrip_selections_link = cantrip_selections_parsed[k].toLowerCase();
+                        cantrip_selections_link = cantrip_selections_link.replace('-', '');
+                        cantrip_selections_link = cantrip_selections_link.replace('+', '');
+                        cantrip_selections_link = cantrip_selections_link.replace(/\s/g, '-');
+                        cantrip_selections_link = "<a target='blank' href='/caped-crusaders/character-options/" + consumable_source + "/" + cantrip_selections_link + ".html'>" + cantrip_selections_parsed[k] + "</a>";
+                        if (cantrip_selections_links.includes("href")){
+                          cantrip_selections_links += ", " + cantrip_selections_link;
+                        } else {
+                          cantrip_selections_links = cantrip_selections_link;
+                        }
+                      }
                     } else if (f.level_guide[k].cantrips == undefined && f.level_guide[k].level == (i+1)) {
-                      cantrip_selections_link = "---";
+                      cantrip_selections_links = "---";
                     }
 
                     // Populating Consumables with data or default
@@ -322,7 +340,7 @@
                         consumable_selections_link = consumable_selections_link.replace('-', '');
                         consumable_selections_link = consumable_selections_link.replace('+', '');
                         consumable_selections_link = consumable_selections_link.replace(/\s/g, '-');
-                        consumable_selections_link = "<a href='/caped-crusaders/character-options/" + consumable_source + "/" + consumable_selections_link + ".html'>" + consumable_selections_parsed[k] + "</a>";
+                        consumable_selections_link = "<a target='blank' href='/caped-crusaders/character-options/" + consumable_source + "/" + consumable_selections_link + ".html'>" + consumable_selections_parsed[k] + "</a>";
                         if (consumable_selections_links.includes("href")){
                           consumable_selections_links += ", " + consumable_selections_link;
                         } else {
@@ -335,7 +353,7 @@
 
                     // Populating Walkthrough by Level text and Selections tables
                     if (f.level_guide[k].walkthrough != undefined && f.level_guide[k].level == (i+1)) {
-                      document.getElementById("build-walkthrough-by-level").innerHTML += "<hr><table id='selections-table-" + (i+1) + "' class='selections-table'><thead><th style='width: 15vw' colspan='2'>" + class_subclass + ", lvl " + (i+1) + "</th></thead><tbody><tr><td>Sustainables</td><td>" + sustainable_selections_link + "</td></tr><tr><td>Cantrips</td><td>" + cantrip_selections_link + "</td></tr><tr><td>Consumables</td><td>" + consumable_selections_links + "</td></tr></tbody></table>" + "<h3>Level: " + (i+1) + "</h3>" + f.level_guide[k].walkthrough;
+                      document.getElementById("build-walkthrough-by-level").innerHTML += "<hr><table id='selections-table-" + (i+1) + "' class='selections-table'><thead><th style='width: 15vw' colspan='2'>" + class_subclass + ", lvl " + (i+1) + "</th></thead><tbody><tr><td>Sustainables</td><td>" + sustainable_selections_links + "</td></tr><tr><td>Cantrips</td><td>" + cantrip_selections_links + "</td></tr><tr><td>Consumables</td><td>" + consumable_selections_links + "</td></tr></tbody></table>" + "<h3>Level: " + (i+1) + "</h3>" + f.level_guide[k].walkthrough;
                     }
                   }
                 }
