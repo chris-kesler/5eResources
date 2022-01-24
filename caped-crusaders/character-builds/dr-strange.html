@@ -181,24 +181,24 @@
                   {
 
                     // Populating Ability Score Improvement selections
-                    if (f.level_guide[k].feature != undefined && f.level_guide[k].level == (i+1)) {
-                      features = f.level_guide[k].feature;
-                    } else if (f.level_guide[k].feature == undefined && f.level_guide[k].level == (i+1)) {
+                    if (f.level_guide[i].feature != undefined && f.level_guide[i].level == (i+1)) {
+                      features = f.level_guide[i].feature;
+                    } else if (f.level_guide[i].feature == undefined && f.level_guide[i].level == (i+1)) {
                       features = "---";
                     }
 
                     // Populating Armor Class updates
-                    if (f.level_guide[k].ac_update != undefined && f.level_guide[k].level == (i+1)) {
-                      armor_class = f.level_guide[k].ac_update;
-                    } else if (f.level_guide[k].ac_update == undefined && f.level_guide[k].level == (i+1)){
+                    if (f.level_guide[i].ac_update != undefined && f.level_guide[i].level == (i+1)) {
+                      armor_class = f.level_guide[i].ac_update;
+                    } else if (f.level_guide[i].ac_update == undefined && f.level_guide[i].level == (i+1)){
                       armor_class = "---"
                     }
 
                     // Populating Strength score and save updates
-                    if (f.level_guide[k].strength_update != undefined && f.level_guide[k].level == (i+2)) {
-                      strength_score_int = f.level_guide[k].strength_update;
+                    if (f.level_guide[i].strength_update != undefined) {
+                      strength_score_int = f.level_guide[i].strength_update;
                     } 
-                    if (f.level_guide[k].strength_save != undefined) {
+                    if (f.level_guide[i].strength_save != undefined) {
                       strength_score_str = "<b>" + strength_score_int + "</b>";
                       strength_save_int = (strength_modifier_int + proficiency_bonus_int);
                       if (strength_save_int >= 0) {
@@ -210,10 +210,10 @@
                     }
 
                     // Populating Dexterity score and save updates
-                    if (f.level_guide[k].dexterity_update != undefined && f.level_guide[k].level == (i+2)) {
-                      dexterity_score_int = f.level_guide[k].dexterity_update;
+                    if (f.level_guide[i].dexterity_update != undefined) {
+                      dexterity_score_int = f.level_guide[i].dexterity_update;
                     }
-                    if (f.level_guide[k].dexterity_save != undefined) {
+                    if (f.level_guide[i].dexterity_save != undefined) {
                       dexterity_score_str = "<b>" + dexterity_score_int + "</b>";
                       dexterity_save_int = (dexterity_modifier_int + proficiency_bonus_int);
                       if (dexterity_save_int >= 0) {
@@ -225,10 +225,10 @@
                     }
                     
                     // Populating Constitution score and save updates
-                    if (f.level_guide[k].constitution_update != undefined && f.level_guide[k].level == (i+2)) {
-                      constitution_score_int = f.level_guide[k].constitution_update;
+                    if (f.level_guide[i].constitution_update != undefined) {
+                      constitution_score_int = f.level_guide[i].constitution_update;
                     }
-                    if (f.level_guide[k].constitution_save != undefined) {
+                    if (f.level_guide[i].constitution_save != undefined) {
                       constitution_score_str = "<b>" + constitution_score_int + "</b>";
                       constitution_save_int = (constitution_modifier_int + proficiency_bonus_int);
                       if (constitution_save_int >= 0) {
@@ -240,10 +240,10 @@
                     }
                     
                     // Populating Intelligence score and save updates
-                    if (f.level_guide[k].intelligence_update != undefined && f.level_guide[k].level == (i+2)) {
-                      intelligence_score_int = f.level_guide[k].intelligence_update;
+                    if (f.level_guide[i].intelligence_update != undefined) {
+                      intelligence_score_int = f.level_guide[i].intelligence_update;
                     } 
-                    if (f.level_guide[k].intelligence_save != undefined) {
+                    if (f.level_guide[i].intelligence_save != undefined) {
                       intelligence_score_str = "<b>" + intelligence_score_int + "</b>";
                       intelligence_save_int = (intelligence_modifier_int + proficiency_bonus_int);
                       if (intelligence_save_int >= 0) {
@@ -255,11 +255,14 @@
                     }
 
                     // Populating Wisdom score and save updates
-                    if (f.level_guide[k].wisdom_update != undefined && f.level_guide[k].level == (i+2)) {
-                      wisdom_score_int = f.level_guide[k].wisdom_update;
+                    if (f.level_guide[i].wisdom_update != undefined) {
+                      wisdom_score_str = f.level_guide[i].wisdom_update;
                     } 
-                    if (f.level_guide[k].wisdom_save != undefined) {
-                      wisdom_score_str = "<b>" + wisdom_score_int + "</b>";
+                    if (f.level_guide[i].wisdom_save != undefined) {
+                      wisdom_save_bool = true;
+                    }
+                    if (wisdom_save_bool) {
+                      wisdom_score_str = "<b>" + wisdom_score_str + "</b>";
                       wisdom_save_int = (wisdom_modifier_int + proficiency_bonus_int);
                       if (wisdom_save_int >= 0) {
                         var wisdom_save_str = "+" + wisdom_save_int;
@@ -270,10 +273,10 @@
                     }
                     
                     // Populating Charisma score and save updates
-                    if (f.level_guide[k].charisma_update != undefined && f.level_guide[k].level == (i+2)) {
-                      charisma_score_int = f.level_guide[k].charisma_update;
+                    if (f.level_guide[i].charisma_update != undefined) {
+                      charisma_score_int = f.level_guide[i].charisma_update;
                     } 
-                    if (f.level_guide[k].charisma_save != undefined) {
+                    if (f.level_guide[i].charisma_save != undefined) {
                       charisma_score_str = "<b>" + charisma_score_int + "</b>";
                       charisma_save_int = (charisma_modifier_int + proficiency_bonus_int);
                       if (charisma_save_int >= 0) {

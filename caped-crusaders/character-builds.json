@@ -885,7 +885,7 @@
             "subclass_source" : "Magic",
             "character_source" : "MARVEL (Avengers Hero)",
         
-            "build_overview" : "Dr. Strange is a Marvel hero who uses powerful magic to create a wide variety of effects.  Out of all the Avengers, he arguably has the most diverse pool of abilities to pull from.  This can be difficult to represent mechancially, but lucky for me, 5e already has some solid mage classes and spell lists.  Dr. Strange has few abilities that could not be represented using the 5e Wizard or Bard, but some of his powers are a bit more unique.  The goal in combat is to serve as the ultimate handy man with the spell for the job.  Being able to unleash battlefield control effects, defensive buffs, mass debuffs, mobility options, and direct damage effects are all important to options to at least have if not use for any self respecting mage.  <br><br>There is really only class to make a full casting mage with in Caped Crusaders, and that's the aptly named Archmage class.  We'll be going down the Arcanoblate subclass in order to gain even more magical power through boons, and we'll be focusing on spells that can provide defense, mobility, and deal direct damage.  We want to have access to our hand wards, portals, and the arcane whips that Strange employs so frequently.  <br><br>We'll be sticking to Wisdom for this build in order to maximize our spellcasting potency, we'll focus on feats and boons that make us a more competent mage, and we'll be opting for combat spells with a few key utility selections included.  ",
+            "build_overview" : "Dr. Strange is a Marvel hero who uses powerful magic to create a wide variety of effects.  Out of all the Avengers, he arguably has the most diverse pool of abilities to pull from.  This can be difficult to represent mechancially, but lucky for me, 5e already has some solid mage classes and spell lists.  Dr. Strange has few abilities that could not be represented using the 5e Wizard or Bard, but some of his powers are a bit more unique.  The goal in combat is to serve as the ultimate handy man with the spell for the job.  Being able to unleash battlefield control effects, defensive buffs, mass debuffs, mobility options, and direct damage effects are all important to options to at least have if not use for any self respecting mage.  <br><br>There is really only one class to make a full casting mage with in Caped Crusaders, and that's the aptly named Archmage class.  We'll be going down the Arcanoblate subclass in order to gain even more magical power through boons, and we'll be focusing on spells that can provide defense, mobility, and deal direct damage.  We want to have access to our hand wards, portals, and the arcane whips that Strange employs so frequently.  <br><br>We'll be sticking to Wisdom for this build in order to maximize our spellcasting potency, we'll focus on feats and boons that make us a more competent mage, and we'll be opting for combat spells with a few key utility selections included.  ",
 
             "race_str" : "Terran",
             "race_description" : "Can't go wrong with a good old human.  Strange is capable of magic, but he's still a mortal man without it.  We'll boost Con by 1 and Wis by 2; Int seems somehwat appropriate for Strange, but only from a thematic perspective.  Strange is certainly smart, but his powers come from an awareness of reality and how to manipulate it that is best represented with Wisdom.  We will be snagging a feat to represent Strange's remarkable memory.  ",
@@ -893,22 +893,22 @@
             "background_description" : "Thematically appropriate; we'll also take advantage of the Academic feat to offset our less than thematic Intelligence score.  ",
             "strength_initial" : 8,
             "dexterity_initial" : 14,
-            "constitution_initial" : 15,
+            "constitution_initial" : 14,
             "intelligence_initial" : 10,
             "wisdom_initial" : 15,
-            "charisma_initial" : 8,
+            "charisma_initial" : 10,
             "strength_resolved" : 10,
             "dexterity_resolved" : 14,
-            "constitution_resolved" : 16,
+            "constitution_resolved" : 15,
             "intelligence_resolved" : 10,
             "wisdom_resolved" : 17,
-            "charisma_resolved" : 8,
+            "charisma_resolved" : 10,
             "starting_equipment" : "Tunic, Fitted Cloth",
             "level_guide" : [
                 {
                     "level" : 1,
-                    "walkthrough" : "At level one we will be focusing on slinging our cantrips, the occassional damage spell, and staying alive with defensive spells.  Our options are limited, but we've still got a wider variety than most classes.  Our hit points are pitiful, so keeping at least a few spell points in reserve should we be targeted will be important if we want to see higher levels.  <br><br>We'll be taking Firebolt for some reliable damage of a useful type that can also be used to ignite objects from a safe distance.  Ray of Frost is helpful if we are trying to keep a nasty melee monster from getting close to the party, and will almost always be my readied cantrip in an ambush.  Light is helpful for dark places when nothing flammable is around, and can be used to tag enemies that like to hide in shadows.  Light tagging is very helpful when facing enemies that have sensistivity to bright light, or enemies that like to turn invisible.  <br><br>We'll grab Feather Fall to prevent dying from fall damage.  It's an embrassing way to go, and it doesn't take much to auto kill us at this level.  Fog Cloud is an excellent way to provide some ranged cover, allowing us to effectively blind our enemy until we've closed the distance.  Once they start stumbling out one at a time, picking them off becomes much easier.  Bane is a nice debuff option that can be stacked onto a single opponent.  While the effect won't stack, the saving throws will, allowing us to somewhat reliably inflict a penalty on larger enemies.  There isn't much else we can do to shut down a boss creature other than Light tagging or speed reduction via Ray of Frost.  ",
-                    "cantrips" : "+Firebolt, +Ray of Frost, +Light",
+                    "walkthrough" : "At level one we will be focusing on slinging our cantrips, the occassional damage spell, and staying alive with defensive spells.  Our options are limited, but we've still got a wider variety than most classes.  Our hit points are pitiful, so keeping at least a few spell points in reserve should we be targeted will be important if we want to see higher levels.  <br><br>We'll be taking Firebolt for some reliable damage of a useful type that can also be used to ignite objects from a safe distance.  Light is helpful for dark places when nothing flammable is around, and can be used to tag enemies that like to hide in shadows.  Light tagging is very helpful when facing enemies that have sensistivity to bright light, or enemies that like to turn invisible.  <br><br>We'll grab Feather Fall to prevent dying from fall damage.  It's an embrassing way to go, and it doesn't take much to auto kill us at this level.  Fog Cloud is an excellent way to provide some ranged cover, allowing us to effectively blind our enemy until we've closed the distance.  Once they start stumbling out one at a time, picking them off becomes much easier.  Bane is a nice debuff option that can be stacked onto a single opponent.  While the effect won't stack, the saving throws will, allowing us to somewhat reliably inflict a penalty on larger enemies.  There isn't much else we can do to shut down a boss creature other than Light tagging or speed reduction via Ray of Frost.  ",
+                    "cantrips" : "+Firebolt, +Light",
                     "consumables" : "+Feather Fall, +Fog Cloud, +Bane",
                     "charisma_save" : "yes",
                     "wisdom_save" : "yes"
@@ -926,27 +926,46 @@
                 },
                 {
                     "level" : 4,
-                    "walkthrough" : "Here we get our first Ability Score Improvement.  We could go with a half feat to round out our Wisdom, but that can wait until later.  We'll boost our Wisdom by 2, bringing it to 19.  <br><br>We'll also grab Mirror Image to boost our defenses, which can be combined with Dodging if we have something particularly important to keep concentrating on.  Flaming Sphere is a nice AoE damage effect that we can position as needed on the battelfield.  Misty Step is a helpful get out of jail free card, allowing us to teleport as a bonus action and avoid obstacles and opportunity attacks along the way.  ",
+                    "walkthrough" : "Here we get our first Ability Score Improvement.  We'll be taking Observant to round out our Wisdom while boosting some useful skills of ours.  <br><br>We'll also grab Mirror Image to boost our defenses, which can be combined with Dodging if we have something particularly important to keep concentrating on.  Flaming Sphere is a nice AoE damage effect that we can position as needed on the battelfield.  Misty Step is a helpful get out of jail free card, allowing us to teleport as a bonus action and avoid obstacles and opportunity attacks along the way.  ",
                     "consumables" : "+Mirror Image, +Flaming Sphere, +Misty Step",
-                    "wisdom_update" : 19
+                    "wisdom_update" : 18
                 },
                 {
-                    "level" : 5
+                    "level" : 5,
+                    "walkthrough" : "Third level spells are here, and we are starting to feel our arcane power awaken.  Ray of Frost is helpful if we are trying to keep a nasty melee monster from getting close to the party, and will almost always be my readied cantrip in an ambush.  <br><br>We'll take Hypnotic Pattern to lock down a bunch of weaker enemies, and possibly some stronger ones too.  You aren't as likely to snag the big guys with this effect, but there is no harm in including them in the area just to see what happens.  Fireball is a classic spell that deals good damage, but should not be our default combat option.  We should save this for clusters of enemies that we know don't have fire resistance or that can be killed with this casting.  Slow is a helpful debuff for larger enemies that we want to ensure our effect applies to.  By now, we've got some spell points to play with, so we can start being a bit more liberal in the application of our spells.  ",
+                    "consumables" : "+Hypnotic Pattern, +Fireball, +Slow",
+                    "cantrips" : "+Ray of Frost"
                 },
                 {
-                    "level" : 6
+                    "level" : 6,
+                    "walkthrough" : "Another ASI, and we'll be putting both points into Wisdom to max it out.   We'll grab Daylight to deal with enemies that have sunlight sensitivity when light tagging isn't enough, which might not be all that often.  Somewhat campaign dependent.  We'll also take Spirit Guardians, giving us a solid self centered AoE to concentrate on.  We want to keep this spell up, so Dodging and even Mirror Image are perfectly fine uses of our Action after casting Spirit Guardians.  Counterspell is a nice option to shut down enemy spellcasting, but only when we know something nasty is coming our way.  We don't want to waste a 3rd level spell slot to negate a cantrip.  ",
+                    "consumables" : "+Daylight, +Spirit Guardians, +Counterspell",
+                    "wisdom_update" : "20"
                 },
                 {
-                    "level" : 7
+                    "level" : 7,
+                    "walkthrough" : "Fourth level spells, our magical power is really ramping up now.  We don't have as many options, but there are still some solid picks we can take.  Dimension Door is a powerful teleport option, allowing us to get in or out of a great many places.  Learning to rely on Dimension Door will enhance our mobility by a huge amount.  Greater Invisibility is something we will probably cast on an ally if they need to infiltrate, or to offer a nice combat buff.  It has some utility applications, but the versatility is the main reason we want it.  Banishment is a good save or suck spell that can leave an enemy boss dangling in between spaces while you clear out their minions.  You can also use this to send yourself back to your home plane should you ever find yourself wandering the cosmos without knowing up from down.  ",
+                    "consumables" : "+Dimension Door, +Greater Invisibility, +Banishment"
                 },
                 {
-                    "level" : 8
+                    "level" : 8,
+                    "walkthrough" : "Our subclass is back to grant us another boon, so we'll be taking Planar Rebuke.  This will let us impose some rather nasty effects on our enemies if they happen to be of some common varieties.  <br><br>We'll take Wall of Fire for some battlefield control that deals damage, which can help thin the horde before they get to us.  Secret Chest is a convenienent little spell that gives us a safe place to store our most precious equipment such as scrolls and spare spellbooks.  Black Tentacles is a nice option when our enemies are constrained to a small area that make avoiding the effect difficult or impossible.  Getting bludgeoned and restrained by other worldly tentacles is most detrimental when you can't simply walk around the portal.  ",
+                    "consumables" : "+Secret Chest, +Wall of Fire, +Black Tentacles"
+
                 },
                 {
-                    "level" : 9
+                    "level" : 9,
+                    "walkthrough" : "Fifth level spells are here and we are becoming quite the arcane powerhouse.  Mending is a handy cantrip to have, and can be used to make some neat mundane items if we have some prep time.  Forging a pair of manacles that have no keyhole, breaking them, and then mending them onto a captive later is just one example.  <br><br>Teleportation Cirlce is going to help us get around out of combat, especially if we have been jotting down the sigil sequences of places we've already visited.  It does have a small cost, but it's probably negligible at this level.  Antilife Shell can hedge out living things, allowing some encounters to be automatically won or even bypassed.  Something like a horde of zombies is completely disarmed by this spell.  Humongify is a cool buff that allows an ally (or yourself, but don't do that) to become really big.  This extra size, attack, and damage, can help control the battlefield or direct the enemies' attention away from something more important.  ",
+                    "consumables" : "+Teleportation Circle, +Antilife Shell, +Humongify",
+                    "cantrips" : "+Mending"
+
                 },
                 {
-                    "level" : 10
+                    "level" : 10,
+                    "walkthrough" : "Our last ASI for this build, so we'll end it off with Resilient Con to round out our Constitution and buff up our concentration saves.  <br><br>Passwall will increase our ability to infiltrate, and we can make quick getaways if we want to trap an enemy somewhere.  It being concentration allows us to drop it at will, so locking the door behind us is very plausible.  Eruption is just a nice damage option, and it will do recurring damage unless the enemy wastes their action, both of which are good outcomes for us.  Hold Monster can be powerful if they fail their saving throw, but it wouldn't be my go to.  I'd save it for lone enemies that are powerful, and even then it will probably take a few tries to get the effect in place.  ",
+                    "consumables" : "+Passwall, +Eruption, +Hold Monster",
+                    "constitution_update" : "16",
+                    "constitution_save" : "yes"
                 },
                 {
                     "level" : 11
