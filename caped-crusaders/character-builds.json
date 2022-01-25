@@ -335,16 +335,6 @@
             "character_source" : "MARVEL (Avengers Hero)"
         },
         {
-            "name_str" : "Legolas",
-            "page_url" : "legolas.html",
-            "class_str" : "Marksman",
-            "class_type" : "Martial, Secondary",
-            "class_source" : "Tech",
-            "subclass_str" : "Ranger",
-            "subclass_source" : "Magic",
-            "character_source" : "Lord of the Rings (Hero)"
-        },
-        {
             "name_str" : "Deadshot",
             "page_url" : "deadshot.html",
             "class_str" : "Marksman",
@@ -842,39 +832,100 @@
                     "level" : 10,
                     "walkthrough" : "We are in the double digits now, which means we get our first 4th level Superpower.  We'll be taking Lockdown to immobilize heavy objects, vehicles, or enemies.  This effectively represents Spidey attaching a bunch of webs between the target and various anchor points.  This can keep a malfunctioning helicopter from crashing onto a crowd, halting a runaway truck in its tracks, or securing a dangerous enemy in a cozy straight jacket while your buddies teach them some manners.  <br><br>We've also got a pretty sizable movement speed now, coming in at an even 100 feet per round.  This should give us more than enough mobility to get all our Shoves off, unleash a nice Superpower, and make it back to a safe vantage point.  ",
                     "consumables" : "+Lockdown"
-                },
-                {
-                    "level" : 11
-                },
-                {
-                    "level" : 12
-                },
-                {
-                    "level" : 13
-                },
-                {
-                    "level" : 14
-                },
-                {
-                    "level" : 15
-                },
-                {
-                    "level" : 16
-                },
-                {
-                    "level" : 17
-                },
-                {
-                    "level" : 18
-                },
-                {
-                    "level" : 19
-                },
-                {
-                    "level" : 20
                 }
             ]
         },
+
+        {
+            
+            "name_str" : "Legolas",
+            "page_url" : "legolas.html",
+            "class_str" : "Marksman",
+            "class_type" : "Martial, Secondary",
+            "class_source" : "Tech",
+            "subclass_str" : "Ranger",
+            "subclass_source" : "Magic",
+            "character_source" : "Lord of the Rings (Hero)",
+
+            
+            "build_overview" : "Legolas is an elven archer from the Lord of the Rings series who specializes in making a series of rapid lethal shots from a distance.   Legolas can also grab some finesse blades and handle himself in melee, but we'll be focusing on his ranged abilities.  We'll also be adding some nature based magic to expand our general combat toolbox.  <br><br>There are a few ways to make a skilled warrior in Caped Crusaders, but only one fits our needs better than the rest.  We'll be making Legolas a Marksman Ranger.  <br><br>This build may not be the most accurate thing in existence given that I am not intimately familiar with Lord of the Rings, but my goal is to showcase the versatility of the Caped Crusaders system.  The most glaring inaccuracy will likely be spell selections, so feel free to tweak this build as you like to suit your needs.  If you happen to have feedback on how to improve this or other builds, feel free to join my discord using the link in the page footer and send me a message.  <br><br>For this build, we'll be relying on Dexterity and a Longbow to deal our ranged damage.  We'll also keep Wisdom relatively high for our spellcasting, but we will prioritize picks that don't care about our ability scores.  ",
+
+            "race_str" : "Elf, Wood",
+            "race_description" : "Legolas is definitely an Elf, and going with Wood Elf nets us some useful weapon proficiencies should we find or craft a magic weapon later.  We'll take advantage of Perception by keeping our Wisdom respectable, and we'll greatly enjoy our Darkvision to get off Sneak Attacks.  ",
+            "background" : "Hunter",
+            "background_description" : "Thematically appropriate; we'll also take advantage of the Survivalist feat to make ourselves truly at home in the wilderness.  ",
+            "strength_initial" : 10,
+            "dexterity_initial" : 15,
+            "constitution_initial" : 13,
+            "intelligence_initial" : 10,
+            "wisdom_initial" : 14,
+            "charisma_initial" : 10,
+            "strength_resolved" : 10,
+            "dexterity_resolved" : 17,
+            "constitution_resolved" : 14,
+            "intelligence_resolved" : 10,
+            "wisdom_resolved" : 14,
+            "charisma_resolved" : 10,
+            "starting_equipment" : "Cuirass, Studded Leather",
+            "level_guide" : [
+                {
+                    "level" : 1,
+                    "walkthrough" : "At level one we don't have much but our weapon and the Attack Action.  We'll snag Extra Attack right away to make our tier one impact more significant, which stacks very nicely with Sneak Attack.  <br><br>The general strategy is to avoid melee and make as many shots qualify for Sneak Attack as possible.  If we can find a spot of Dim Light to dig ourselves into, then we should try to hold that position.  ",
+                    "sustainables" : "+Extra Attack",
+                    "dexterity_save" : "yes",
+                    "intelligence_save" : "yes"
+                },
+                {
+                    "level" : 2,
+                    "walkthrough" : "Here we get our Subclass, and we'll be going down the Spellcasting path.  This will help expand our abilities while leaning into the fantasy theme.  <br><br>We'll take Entangle to represent magical vines gripping and restraining enemies, slowing them down enough for us to pick them off before they can get to us.  ",
+                    "consumables" : "+Entangle"
+                },
+                {
+                    "level" : 3,
+                    "walkthrough" : "We get another Technique, and we'll be taking Extra Attack again.  This gets us three attacks per Action now, which is significant.  We'll also learn Vigorous Leap for boosted mobility.  <br><br>Our strategy is mostly unchanged, but we can afford to be more aggressive when selecting and defending our sniping position.  While melee isn't our strong suit, we can pull out some swords and carve up enemies that get too close.  This should be a backup strategy though.  ",
+                    "sustainables" : "+Extra Attack",
+                    "consumables" : "+Vigorous Leap"
+                },
+                {
+                    "level" : 4,
+                    "walkthrough" : "Our first ASI, we'll be getting a Dex half feat to round out our main ability.  Lurker seems like a good choice, making us better at infiltrating.  We typically would avoid scouting solo in tier one, but we have enough Attacks and hit points to do so somewhat safely now.  I'd still recommend avoiding it unless the situation calls for it, and even then it needs to be handled cautiously.  ",
+                    "feature" : "Feat:  Lurker",
+                    "dexteriity_update" : 18
+                },
+                {
+                    "level" : 5,
+                    "walkthrough" : "Now we get our second baked in feature, and it's a useful one.  Sharpshooter lets us slow down enemies and increase our accuracy at the cost of some damage.  Unless we are facing enemies with AC in the very low teens, making sure our attacks hit will pay off more often than not.  Getting more reliable Sneak Attacks and imposes movement penalties is well worth the damage modifier.  <br><br>Create or Destroy Water is just handy to have for survival purposes since we might find ourselves in a desert at some point.  ",
+                    "consumables" : "+Create or Destroy Water"
+                },
+                {
+                    "level" : 6,
+                    "walkthrough" : "We get a new Technique, so we'll be taking Evasion to shore up our defense against saving throw based effects.  The last thing we want is to get blindsided by a Fireball, and the levels when that is most likely are right upon us.  <br><br>We can afford to group up with our allies a bit more now, but we should still avoid that unless there is some situational benefit for doing so.  ",
+                    "sustainables" : "+Evasion"
+                },
+                {
+                    "level" : 7,
+                    "walkthrough" : "We get 2nd level spells now, which isn't the most amazing thing for us, but it is helpful.  We'll take Spike Growth to give us another solid control option to reduce enemy speed.  This is best cast inside a big choke point against enemies without ranged attacks, allowing us to pick them off while they slowly and painfully make their way towards us.    ",
+                    "consumables" : "+Spike Growth"
+                },
+                {
+                    "level" : 8,
+                    "walkthrough" : "We get another ASI, and we'll be maxing out our Dexterity to make us even better at what we already do best.  This will boost our damage, accuracy, armor class, and some relevant skills.  <br><br>At this point, we can afford to be very aggressive with our offensive strategy.  We shouldn't be reckless, but we can definitely apply consistent damage to our enemies.  ",
+                    "feature" : "ASI:  +2 Dexterity",
+                    "dexterity_update" : 20
+                },
+                {
+                    "level" : 9,
+                    "walkthrough" : "We get another Technique, and it's been a while since we got another Attack.  We'll take Extra Attack again to increase our damage output.  <br><br>We also get another spell, and we'll take Misty Step.  This can get us out of a nasty situation should a big surly monster decide to get too close.  Bonus Action teleport away to somewhere safer, avoid opportunity attacks, and make our ranged attacks as normal.  ",
+                    "sustainables" : "+Extra Attack",
+                    "consumables" : "+Misty Step"
+                },
+                {
+                    "level" : 10,
+                    "walkthrough" : "We are in the double digits now, which is where we'll be leaving this build off for now.  We get an improvement to our baked in Sneak Attack, which grants our allies an increase to their damage against a target we weaken.  This will scale again later on, but it's a nice way to offset the damage we are forgoing for increase accuracy through team coordination.  "
+                }
+            ]
+        },
+
         {
             "name_str" : "Dr. Strange",
             "page_url" : "dr-strange.html",
@@ -941,7 +992,8 @@
                     "level" : 6,
                     "walkthrough" : "Another ASI, and we'll be putting both points into Wisdom to max it out.   We'll grab Daylight to deal with enemies that have sunlight sensitivity when light tagging isn't enough, which might not be all that often.  Somewhat campaign dependent.  We'll also take Spirit Guardians, giving us a solid self centered AoE to concentrate on.  We want to keep this spell up, so Dodging and even Mirror Image are perfectly fine uses of our Action after casting Spirit Guardians.  Counterspell is a nice option to shut down enemy spellcasting, but only when we know something nasty is coming our way.  We don't want to waste a 3rd level spell slot to negate a cantrip.  ",
                     "consumables" : "+Daylight, +Spirit Guardians, +Counterspell",
-                    "wisdom_update" : 20
+                    "wisdom_update" : 20,
+                    "feature" : "ASI:  +2 Wis"
                 },
                 {
                     "level" : 7,
@@ -966,38 +1018,10 @@
                     "walkthrough" : "Our last ASI for this build, so we'll end it off with Resilient Con to round out our Constitution and buff up our concentration saves.  <br><br>Passwall will increase our ability to infiltrate, and we can make quick getaways if we want to trap an enemy somewhere.  It being concentration allows us to drop it at will, so locking the door behind us is very plausible.  Eruption is just a nice damage option, and it will do recurring damage unless the enemy wastes their action, both of which are good outcomes for us.  Hold Monster can be powerful if they fail their saving throw, but it wouldn't be my go to.  I'd save it for lone enemies that are powerful, and even then it will probably take a few tries to get the effect in place.  ",
                     "consumables" : "+Passwall, +Eruption, +Hold Monster",
                     "constitution_update" : 16,
-                    "constitution_save" : "yes"
-                },
-                {
-                    "level" : 11
-                },
-                {
-                    "level" : 12
-                },
-                {
-                    "level" : 13
-                },
-                {
-                    "level" : 14
-                },
-                {
-                    "level" : 15
-                },
-                {
-                    "level" : 16
-                },
-                {
-                    "level" : 17
-                },
-                {
-                    "level" : 18
-                },
-                {
-                    "level" : 19
-                },
-                {
-                    "level" : 20
+                    "constitution_save" : "yes",
+                    "feature" : "Feat:  Resilient (Constitution)"
                 }
+                
             ]
         }
     ]
