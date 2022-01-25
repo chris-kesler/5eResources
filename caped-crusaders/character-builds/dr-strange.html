@@ -57,43 +57,45 @@
               }
 
               // Calculating sustainable and consumable sources for link usage based on class type derived from hit die 
-              if (f.class_source == "Magic" && hit_die < 9) {
-                consumable_source = "spells";
-              } 
-              if (f.class_source == "Powers" && hit_die < 9) {
-                consumable_source = "superpowers";
-              } 
-              if (f.class_source == "Tech" && hit_die < 9) {
-                consumable_source = "technologies";
-              } 
-              if (f.subclass_source == "Magic" && hit_die < 9) {
-                sustainable_source = "boons";
-              } 
-              if (f.subclass_source == "Powers" && hit_die < 9) {
-                sustainable_source = "enhancements";
-              } 
-              if (f.subclass_source == "Tech" && hit_die < 9) {
-                sustainable_source = "techniques";
-              } 
-              
-              if (f.class_source == "Magic" && hit_die > 9) {
-                sustainable_source = "boons";
-              } 
-              if (f.class_source == "Powers" && hit_die > 9) {
-                sustainable_source = "enhancements";
-              } 
-              if (f.class_source == "Tech" && hit_die > 9) {
-                sustainable_source = "techniques";
-              } 
-              if (f.subclass_source == "Magic" && hit_die > 9) {
-                consumable_source = "spells";
-              } 
-              if (f.subclass_source == "Powers" && hit_die > 9) {
-                consumable_source = "superpowers";
-              } 
-              if (f.subclass_source == "Tech" && hit_die > 9) {
-                consumable_source = "technologies";
-              } 
+              {
+                if (f.class_source == "Magic" && hit_die < 9) {
+                  consumable_source = "spells";
+                } 
+                if (f.class_source == "Powers" && hit_die < 9) {
+                  consumable_source = "superpowers";
+                } 
+                if (f.class_source == "Tech" && hit_die < 9) {
+                  consumable_source = "technologies";
+                } 
+                if (f.subclass_source == "Magic" && hit_die < 9) {
+                  sustainable_source = "boons";
+                } 
+                if (f.subclass_source == "Powers" && hit_die < 9) {
+                  sustainable_source = "enhancements";
+                } 
+                if (f.subclass_source == "Tech" && hit_die < 9) {
+                  sustainable_source = "techniques";
+                } 
+                
+                if (f.class_source == "Magic" && hit_die > 9) {
+                  sustainable_source = "boons";
+                } 
+                if (f.class_source == "Powers" && hit_die > 9) {
+                  sustainable_source = "enhancements";
+                } 
+                if (f.class_source == "Tech" && hit_die > 9) {
+                  sustainable_source = "techniques";
+                } 
+                if (f.subclass_source == "Magic" && hit_die > 9) {
+                  consumable_source = "spells";
+                } 
+                if (f.subclass_source == "Powers" && hit_die > 9) {
+                  consumable_source = "superpowers";
+                } 
+                if (f.subclass_source == "Tech" && hit_die > 9) {
+                  consumable_source = "technologies";
+                } 
+              }
 
               // Loading Ability Score variables and calculating Ability Score Modifier variables 
               {
@@ -160,6 +162,14 @@
                 }
               }
               
+              // Initializing save proficiency toggles
+              var strength_save_bool = false;
+              var dexterity_save_bool = false;
+              var constitution_save_bool = false;
+              var intelligence_save_bool = false;
+              var wisdom_save_bool = false;
+              var charisma_save_bool = false;
+
               // Looping through the class levels 
               for (let i = 0; i < 20; i++) {
 
@@ -174,202 +184,315 @@
                   }
                 }
 
+                // Populating Ability Score Improvement selections
+                if (f.level_guide[i].feature != undefined) {
+                  features = f.level_guide[i].feature;
+                } else if (f.level_guide[i].feature == undefined) {
+                  features = "---";
+                }
+
+                // Populating Armor Class updates
+                if (f.level_guide[i].ac_update != undefined) {
+                  armor_class = f.level_guide[i].ac_update;
+                } else if (f.level_guide[i].ac_update == undefined){
+                  armor_class = "---"
+                }
+
+                // Populating Strength score and save updates
+                {
+                  // Checking for ability score update
+                  if (f.level_guide[i].strength_update != undefined) {
+                    strength_score_int = f.level_guide[i].strength_update;
+                    strength_score_str = String(f.level_guide[i].strength_update);
+                    strength_modifier_int = Math.floor((strength_score_int-10)/2);
+                  } 
+
+                  // Toggling save proficiency
+                  if (f.level_guide[i].strength_save != undefined) {
+                    strength_save_bool = true;
+                  }
+
+                  // Checking for save proficiency
+                  if (strength_save_bool) {
+                    strength_save_int = strength_modifier_int + proficiency_bonus_int;
+                    if (strength_save_int >= 0) {
+                      var strength_save_str = "+" + strength_save_int;
+                    } else {
+                      var strength_save_str = strength_save_int;
+                    }
+                    strength_score_str = "<b>" + strength_score_str;
+                    strength_save_str = strength_save_str + "</b>";
+                  } else {
+                    strength_save_int = strength_modifier_int;
+                    if (strength_save_int >= 0) {
+                      var strength_save_str = "+" + strength_save_int;
+                    } else {
+                      var strength_save_str = strength_save_int;
+                    }
+                  }
+                }
+                
+
+                // Populating Dexterity score and save updates
+                {
+                  // Checking for ability score update
+                  if (f.level_guide[i].dexterity_update != undefined) {
+                    dexterity_score_int = f.level_guide[i].dexterity_update;
+                    dexterity_score_str = String(f.level_guide[i].dexterity_update);
+                    dexterity_modifier_int = Math.floor((dexterity_score_int-10)/2);
+                  } 
+
+                  // Toggling save proficiency
+                  if (f.level_guide[i].dexterity_save != undefined) {
+                    dexterity_save_bool = true;
+                  }
+
+                  // Checking for save proficiency
+                  if (dexterity_save_bool) {
+                    dexterity_save_int = dexterity_modifier_int + proficiency_bonus_int;
+                    if (dexterity_save_int >= 0) {
+                      var dexterity_save_str = "+" + dexterity_save_int;
+                    } else {
+                      var dexterity_save_str = dexterity_save_int;
+                    }
+                    dexterity_score_str = "<b>" + dexterity_score_str;
+                    dexterity_save_str = dexterity_save_str + "</b>";
+                  } else {
+                    dexterity_save_int = dexterity_modifier_int;
+                    if (dexterity_save_int >= 0) {
+                      var dexterity_save_str = "+" + dexterity_save_int;
+                    } else {
+                      var dexterity_save_str = dexterity_save_int;
+                    }
+                  }
+                }
+                
+
+                // Populating Constitution score and save updates
+                {
+                  // Checking for ability score update
+                  if (f.level_guide[i].constitution_update != undefined) {
+                    constitution_score_int = f.level_guide[i].constitution_update;
+                    constitution_score_str = String(f.level_guide[i].constitution_update);
+                    constitution_modifier_int = Math.floor((constitution_score_int-10)/2);
+                  } 
+
+                  // Toggling save proficiency
+                  if (f.level_guide[i].constitution_save != undefined) {
+                    constitution_save_bool = true;
+                  }
+
+                  // Checking for save proficiency
+                  if (constitution_save_bool) {
+                    constitution_save_int = constitution_modifier_int + proficiency_bonus_int;
+                    if (constitution_save_int >= 0) {
+                      var constitution_save_str = "+" + constitution_save_int;
+                    } else {
+                      var constitution_save_str = constitution_save_int;
+                    }
+                    constitution_score_str = "<b>" + constitution_score_str;
+                    constitution_save_str = constitution_save_str + "</b>";
+                  } else {
+                    constitution_save_int = constitution_modifier_int;
+                    if (constitution_save_int >= 0) {
+                      var constitution_save_str = "+" + constitution_save_int;
+                    } else {
+                      var constitution_save_str = constitution_save_int;
+                    }
+                  }
+                }
+                
+                
+                // Populating Intelligence score and save updates
+                {
+                  // Checking for ability score update
+                  if (f.level_guide[i].intelligence_update != undefined) {
+                    intelligence_score_int = f.level_guide[i].intelligence_update;
+                    intelligence_score_str = String(f.level_guide[i].intelligence_update);
+                    intelligence_modifier_int = Math.floor((intelligence_score_int-10)/2);
+                  } 
+
+                  // Toggling save proficiency
+                  if (f.level_guide[i].intelligence_save != undefined) {
+                    intelligence_save_bool = true;
+                  }
+
+                  // Checking for save proficiency
+                  if (intelligence_save_bool) {
+                    intelligence_save_int = intelligence_modifier_int + proficiency_bonus_int;
+                    if (intelligence_save_int >= 0) {
+                      var intelligence_save_str = "+" + intelligence_save_int;
+                    } else {
+                      var intelligence_save_str = intelligence_save_int;
+                    }
+                    intelligence_score_str = "<b>" + intelligence_score_str;
+                    intelligence_save_str = intelligence_save_str + "</b>";
+                  } else {
+                    intelligence_save_int = intelligence_modifier_int;
+                    if (intelligence_save_int >= 0) {
+                      var intelligence_save_str = "+" + intelligence_save_int;
+                    } else {
+                      var intelligence_save_str = intelligence_save_int;
+                    }
+                  }
+                }
+                
+
+                // Populating Wisdom score and save updates
+                {
+                  // Checking for ability score update
+                  if (f.level_guide[i].wisdom_update != undefined) {
+                    wisdom_score_int = f.level_guide[i].wisdom_update;
+                    wisdom_score_str = String(f.level_guide[i].wisdom_update);
+                    wisdom_modifier_int = Math.floor((wisdom_score_int-10)/2);
+                  } 
+
+                  // Toggling save proficiency
+                  if (f.level_guide[i].wisdom_save != undefined) {
+                    wisdom_save_bool = true;
+                  }
+
+                  // Checking for save proficiency
+                  if (wisdom_save_bool) {
+                    wisdom_save_int = wisdom_modifier_int + proficiency_bonus_int;
+                    if (wisdom_save_int >= 0) {
+                      var wisdom_save_str = "+" + wisdom_save_int;
+                    } else {
+                      var wisdom_save_str = wisdom_save_int;
+                    }
+                    wisdom_score_str = "<b>" + wisdom_score_str;
+                    wisdom_save_str = wisdom_save_str + "</b>";
+                  } else {
+                    wisdom_save_int = wisdom_modifier_int;
+                    if (wisdom_save_int >= 0) {
+                      var wisdom_save_str = "+" + wisdom_save_int;
+                    } else {
+                      var wisdom_save_str = wisdom_save_int;
+                    }
+                  }
+                }
+                
+
+                // Populating Charisma score and save updates
+                {
+                  // Checking for ability score update
+                  if (f.level_guide[i].charisma_update != undefined) {
+                    charisma_score_int = f.level_guide[i].charisma_update;
+                    charisma_score_str = String(f.level_guide[i].charisma_update);
+                    charisma_modifier_int = Math.floor((charisma_score_int-10)/2);
+                  } 
+
+                  // Toggling save proficiency
+                  if (f.level_guide[i].charisma_save != undefined) {
+                    charisma_save_bool = true;
+                  }
+
+                  // Checking for save proficiency
+                  if (charisma_save_bool) {
+                    charisma_save_int = charisma_modifier_int + proficiency_bonus_int;
+                    if (charisma_save_int >= 0) {
+                      var charisma_save_str = "+" + charisma_save_int;
+                    } else {
+                      var charisma_save_str = charisma_save_int;
+                    }
+                    charisma_score_str = "<b>" + charisma_score_str;
+                    charisma_save_str = charisma_save_str + "</b>";
+                  } else {
+                    charisma_save_int = charisma_modifier_int;
+                    if (charisma_save_int >= 0) {
+                      var charisma_save_str = "+" + charisma_save_int;
+                    } else {
+                      var charisma_save_str = charisma_save_int;
+                    }
+                  }
+                }
+                
+
+
+
                 // Looping through each item within the level_guide dictionary
                 for (let k = 0; k < f.level_guide.length; k++) {
 
-                  // Populating data for Level Table 
-                  {
-
-                    // Populating Ability Score Improvement selections
-                    if (f.level_guide[i].feature != undefined && f.level_guide[i].level == (i+1)) {
-                      features = f.level_guide[i].feature;
-                    } else if (f.level_guide[i].feature == undefined && f.level_guide[i].level == (i+1)) {
-                      features = "---";
-                    }
-
-                    // Populating Armor Class updates
-                    if (f.level_guide[i].ac_update != undefined && f.level_guide[i].level == (i+1)) {
-                      armor_class = f.level_guide[i].ac_update;
-                    } else if (f.level_guide[i].ac_update == undefined && f.level_guide[i].level == (i+1)){
-                      armor_class = "---"
-                    }
-
-                    // Populating Strength score and save updates
-                    if (f.level_guide[i].strength_update != undefined) {
-                      strength_score_int = f.level_guide[i].strength_update;
-                    } 
-                    if (f.level_guide[i].strength_save != undefined) {
-                      strength_score_str = "<b>" + strength_score_int + "</b>";
-                      strength_save_int = (strength_modifier_int + proficiency_bonus_int);
-                      if (strength_save_int >= 0) {
-                        var strength_save_str = "+" + strength_save_int;
+                  // Populating Sustainables with data or default
+                  if (f.level_guide[k].sustainables != undefined && f.level_guide[k].level == (i+1)) {
+                    sustainable_selections = f.level_guide[k].sustainables;
+                    sustainable_selections_parsed = sustainable_selections.split(", ");
+                    sustainable_selections_links = "";
+                    for (let k = 0; k < sustainable_selections_parsed.length; k++) {
+                      sustainable_selections_link = sustainable_selections_parsed[k].toLowerCase();
+                      sustainable_selections_link = sustainable_selections_link.replace('-', '');
+                      sustainable_selections_link = sustainable_selections_link.replace('+', '');
+                      sustainable_selections_link = sustainable_selections_link.replace(/\s/g, '-');
+                      sustainable_selections_link = "<a target='blank' href='/caped-crusaders/character-options/" + sustainable_source + "/" + sustainable_selections_link + ".html'>" + sustainable_selections_parsed[k] + "</a>";
+                      if (sustainable_selections_links.includes("href")){
+                        sustainable_selections_links += ", " + sustainable_selections_link;
                       } else {
-                        var strength_save_str = strength_save_int;
+                        sustainable_selections_links = sustainable_selections_link;
                       }
-                      strength_save_str = "<b>" + strength_save_str + "</b>";
                     }
-
-                    // Populating Dexterity score and save updates
-                    if (f.level_guide[i].dexterity_update != undefined) {
-                      dexterity_score_int = f.level_guide[i].dexterity_update;
-                    }
-                    if (f.level_guide[i].dexterity_save != undefined) {
-                      dexterity_score_str = "<b>" + dexterity_score_int + "</b>";
-                      dexterity_save_int = (dexterity_modifier_int + proficiency_bonus_int);
-                      if (dexterity_save_int >= 0) {
-                        var dexterity_save_str = "+" + dexterity_save_int;
-                      } else {
-                        var dexterity_save_str = dexterity_save_int;
-                      }
-                      dexterity_save_str = "<b>" + dexterity_save_str + "</b>";
-                    }
-                    
-                    // Populating Constitution score and save updates
-                    if (f.level_guide[i].constitution_update != undefined) {
-                      constitution_score_int = f.level_guide[i].constitution_update;
-                    }
-                    if (f.level_guide[i].constitution_save != undefined) {
-                      constitution_score_str = "<b>" + constitution_score_int + "</b>";
-                      constitution_save_int = (constitution_modifier_int + proficiency_bonus_int);
-                      if (constitution_save_int >= 0) {
-                        var constitution_save_str = "+" + constitution_save_int;
-                      } else {
-                        var constitution_save_str = constitution_save_int;
-                      }
-                      constitution_save_str = "<b>" + constitution_save_str + "</b>";
-                    }
-                    
-                    // Populating Intelligence score and save updates
-                    if (f.level_guide[i].intelligence_update != undefined) {
-                      intelligence_score_int = f.level_guide[i].intelligence_update;
-                    } 
-                    if (f.level_guide[i].intelligence_save != undefined) {
-                      intelligence_score_str = "<b>" + intelligence_score_int + "</b>";
-                      intelligence_save_int = (intelligence_modifier_int + proficiency_bonus_int);
-                      if (intelligence_save_int >= 0) {
-                        var intelligence_save_str = "+" + intelligence_save_int;
-                      } else {
-                        var intelligence_save_str = intelligence_save_int;
-                      }
-                      intelligence_save_str = "<b>" + intelligence_save_str + "</b>";
-                    }
-
-                    // Populating Wisdom score and save updates
-                    if (f.level_guide[i].wisdom_update != undefined) {
-                      wisdom_score_str = f.level_guide[i].wisdom_update;
-                    } 
-                    if (f.level_guide[i].wisdom_save != undefined) {
-                      wisdom_save_bool = true;
-                    }
-                    if (wisdom_save_bool) {
-                      wisdom_score_str = "<b>" + wisdom_score_str + "</b>";
-                      wisdom_save_int = (wisdom_modifier_int + proficiency_bonus_int);
-                      if (wisdom_save_int >= 0) {
-                        var wisdom_save_str = "+" + wisdom_save_int;
-                      } else {
-                        var wisdom_save_str = wisdom_save_int;
-                      }
-                      wisdom_save_str = "<b>" + wisdom_save_str + "</b>";
-                    }
-                    
-                    // Populating Charisma score and save updates
-                    if (f.level_guide[i].charisma_update != undefined) {
-                      charisma_score_int = f.level_guide[i].charisma_update;
-                    } 
-                    if (f.level_guide[i].charisma_save != undefined) {
-                      charisma_score_str = "<b>" + charisma_score_int + "</b>";
-                      charisma_save_int = (charisma_modifier_int + proficiency_bonus_int);
-                      if (charisma_save_int >= 0) {
-                        var charisma_save_str = "+" + charisma_save_int;
-                      } else {
-                        var charisma_save_str = charisma_save_int;
-                      }
-                      charisma_save_str = "<b>" + charisma_save_str + "</b>";
-                    }
+                  } else if (f.level_guide[k].sustainables == undefined && f.level_guide[k].level == (i+1)) {
+                    sustainable_selections_links = "---";
                   }
                   
-                  // Populating data for Selections Table
-                  {
-
-                    // Populating Sustainables with data or default
-                    if (f.level_guide[k].sustainables != undefined && f.level_guide[k].level == (i+1)) {
-                      sustainable_selections = f.level_guide[k].sustainables;
-                      sustainable_selections_parsed = sustainable_selections.split(", ");
-                      sustainable_selections_links = "";
-                      for (let k = 0; k < sustainable_selections_parsed.length; k++) {
-                        sustainable_selections_link = sustainable_selections_parsed[k].toLowerCase();
-                        sustainable_selections_link = sustainable_selections_link.replace('-', '');
-                        sustainable_selections_link = sustainable_selections_link.replace('+', '');
-                        sustainable_selections_link = sustainable_selections_link.replace(/\s/g, '-');
-                        sustainable_selections_link = "<a target='blank' href='/caped-crusaders/character-options/" + sustainable_source + "/" + sustainable_selections_link + ".html'>" + sustainable_selections_parsed[k] + "</a>";
-                        if (sustainable_selections_links.includes("href")){
-                          sustainable_selections_links += ", " + sustainable_selections_link;
-                        } else {
-                          sustainable_selections_links = sustainable_selections_link;
-                        }
+                  // Populating Cantrips with data or default
+                  if (f.level_guide[k].cantrips != undefined && f.level_guide[k].level == (i+1)) {
+                    cantrip_selections = f.level_guide[k].cantrips;
+                    cantrip_selections_parsed = cantrip_selections.split(", ");
+                    cantrip_selections_links = "";
+                    for (let k = 0; k < cantrip_selections_parsed.length; k++) {
+                      cantrip_selections_link = cantrip_selections_parsed[k].toLowerCase();
+                      cantrip_selections_link = cantrip_selections_link.replace('-', '');
+                      cantrip_selections_link = cantrip_selections_link.replace('+', '');
+                      cantrip_selections_link = cantrip_selections_link.replace(/\s/g, '-');
+                      cantrip_selections_link = "<a target='blank' href='/caped-crusaders/character-options/" + consumable_source + "/" + cantrip_selections_link + ".html'>" + cantrip_selections_parsed[k] + "</a>";
+                      if (cantrip_selections_links.includes("href")){
+                        cantrip_selections_links += ", " + cantrip_selections_link;
+                      } else {
+                        cantrip_selections_links = cantrip_selections_link;
                       }
-                    } else if (f.level_guide[k].sustainables == undefined && f.level_guide[k].level == (i+1)) {
-                      sustainable_selections_links = "---";
                     }
-                    
-                    // Populating Cantrips with data or default
-                    if (f.level_guide[k].cantrips != undefined && f.level_guide[k].level == (i+1)) {
-                      cantrip_selections = f.level_guide[k].cantrips;
-                      cantrip_selections_parsed = cantrip_selections.split(", ");
-                      cantrip_selections_links = "";
-                      for (let k = 0; k < cantrip_selections_parsed.length; k++) {
-                        cantrip_selections_link = cantrip_selections_parsed[k].toLowerCase();
-                        cantrip_selections_link = cantrip_selections_link.replace('-', '');
-                        cantrip_selections_link = cantrip_selections_link.replace('+', '');
-                        cantrip_selections_link = cantrip_selections_link.replace(/\s/g, '-');
-                        cantrip_selections_link = "<a target='blank' href='/caped-crusaders/character-options/" + consumable_source + "/" + cantrip_selections_link + ".html'>" + cantrip_selections_parsed[k] + "</a>";
-                        if (cantrip_selections_links.includes("href")){
-                          cantrip_selections_links += ", " + cantrip_selections_link;
-                        } else {
-                          cantrip_selections_links = cantrip_selections_link;
-                        }
-                      }
-                    } else if (f.level_guide[k].cantrips == undefined && f.level_guide[k].level == (i+1)) {
-                      cantrip_selections_links = "---";
-                    }
+                  } else if (f.level_guide[k].cantrips == undefined && f.level_guide[k].level == (i+1)) {
+                    cantrip_selections_links = "---";
+                  }
 
-                    // Populating Consumables with data or default
-                    if (f.level_guide[k].consumables != undefined && f.level_guide[k].level == (i+1)) {
-                      consumable_selections = f.level_guide[k].consumables;
-                      consumable_selections_parsed = consumable_selections.split(", ");
-                      consumable_selections_links = "";
-                      for (let k = 0; k < consumable_selections_parsed.length; k++) {
-                        consumable_selections_link = consumable_selections_parsed[k].toLowerCase();
-                        consumable_selections_link = consumable_selections_link.replace('-', '');
-                        consumable_selections_link = consumable_selections_link.replace('+', '');
-                        consumable_selections_link = consumable_selections_link.replace(/\s/g, '-');
-                        consumable_selections_link = "<a target='blank' href='/caped-crusaders/character-options/" + consumable_source + "/" + consumable_selections_link + ".html'>" + consumable_selections_parsed[k] + "</a>";
-                        if (consumable_selections_links.includes("href")){
-                          consumable_selections_links += ", " + consumable_selections_link;
-                        } else {
-                          consumable_selections_links = consumable_selections_link;
-                        }
+                  // Populating Consumables with data or default
+                  if (f.level_guide[k].consumables != undefined && f.level_guide[k].level == (i+1)) {
+                    consumable_selections = f.level_guide[k].consumables;
+                    consumable_selections_parsed = consumable_selections.split(", ");
+                    consumable_selections_links = "";
+                    for (let k = 0; k < consumable_selections_parsed.length; k++) {
+                      consumable_selections_link = consumable_selections_parsed[k].toLowerCase();
+                      consumable_selections_link = consumable_selections_link.replace('-', '');
+                      consumable_selections_link = consumable_selections_link.replace('+', '');
+                      consumable_selections_link = consumable_selections_link.replace(/\s/g, '-');
+                      consumable_selections_link = "<a target='blank' href='/caped-crusaders/character-options/" + consumable_source + "/" + consumable_selections_link + ".html'>" + consumable_selections_parsed[k] + "</a>";
+                      if (consumable_selections_links.includes("href")){
+                        consumable_selections_links += ", " + consumable_selections_link;
+                      } else {
+                        consumable_selections_links = consumable_selections_link;
                       }
-                    } else if (f.level_guide[k].consumables == undefined && f.level_guide[k].level == (i+1)) {
-                      consumable_selections_links = "---";
                     }
+                  } else if (f.level_guide[k].consumables == undefined && f.level_guide[k].level == (i+1)) {
+                    consumable_selections_links = "---";
+                  }
 
-                    // Populating Walkthrough by Level text and Selections tables
-                    if (f.level_guide[k].walkthrough != undefined && f.level_guide[k].level == (i+1)) {
-                      document.getElementById("build-walkthrough-by-level").innerHTML += "<hr><table id='selections-table-" + (i+1) + "' class='selections-table'><thead><th style='width: 15vw' colspan='2'>" + class_subclass + ", lvl " + (i+1) + "</th></thead><tbody><tr><td>Sustainables</td><td>" + sustainable_selections_links + "</td></tr><tr><td>Cantrips</td><td>" + cantrip_selections_links + "</td></tr><tr><td>Consumables</td><td>" + consumable_selections_links + "</td></tr></tbody></table>" + "<h3>Level: " + (i+1) + "</h3>" + f.level_guide[k].walkthrough;
-                    }
+                  // Populating Walkthrough by Level text and Selections tables
+                  if (f.level_guide[k].walkthrough != undefined && f.level_guide[k].level == (i+1)) {
+                    document.getElementById("build-walkthrough-by-level").innerHTML += "<hr><table id='selections-table-" + (i+1) + "' class='selections-table'><thead><th style='width: 15vw' colspan='2'>" + class_subclass + ", lvl " + (i+1) + "</th></thead><tbody><tr><td>Sustainables</td><td>" + sustainable_selections_links + "</td></tr><tr><td>Cantrips</td><td>" + cantrip_selections_links + "</td></tr><tr><td>Consumables</td><td>" + consumable_selections_links + "</td></tr></tbody></table>" + "<h3>Level: " + (i+1) + "</h3>" + f.level_guide[k].walkthrough;
                   }
                 }
                 
-                // Populating the Level Table with a new row for each level
-                var tblRow = "<tr><td>" + (i+1) + "</td><td>" + class_subclass + "</td><td>" + hit_points + " / " + (i+1) + "d" + hit_die + "</td><td>" + features + "</td><td>" + strength_score_str + " / " + strength_save_str + "</td><td>" + dexterity_score_str + " / " + dexterity_save_str + "</td><td>" + constitution_score_str + " / " + constitution_save_str + "</td><td>" + intelligence_score_str + " / " + intelligence_save_str + "</td><td>" + wisdom_score_str + " / " + wisdom_save_str + "</td><td>" + charisma_score_str + " / " + charisma_save_str + "</td><td>" + armor_class + "</td></tr>";
-                $(tblRow).appendTo("#build-level-table tbody");
+                  
                 
-                // Increasing the Proficiency Bonus variable upon reaching certain level milestones
-                if ((i+1) == 4 || (i+1) == 8 || (i+1) == 12 || (i+1) == 16) {
-                  proficiency_bonus_int++;
-                }
+              // Populating the Level Table with a new row for each level
+              var tblRow = "<tr><td>" + (i+1) + "</td><td>" + class_subclass + "</td><td>" + hit_points + " / " + (i+1) + "d" + hit_die + "</td><td>" + features + "</td><td>" + strength_score_str + " / " + strength_save_str + "</td><td>" + dexterity_score_str + " / " + dexterity_save_str + "</td><td>" + constitution_score_str + " / " + constitution_save_str + "</td><td>" + intelligence_score_str + " / " + intelligence_save_str + "</td><td>" + wisdom_score_str + " / " + wisdom_save_str + "</td><td>" + charisma_score_str + " / " + charisma_save_str + "</td><td>" + armor_class + "</td></tr>";
+              $(tblRow).appendTo("#build-level-table tbody");
+              
+              // Increasing the Proficiency Bonus variable upon reaching certain level milestones
+              if ((i+1) == 4 || (i+1) == 8 || (i+1) == 12 || (i+1) == 16) {
+                proficiency_bonus_int++;
               }
+            }
             }
           });
         });

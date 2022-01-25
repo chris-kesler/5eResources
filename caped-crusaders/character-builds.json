@@ -47,7 +47,7 @@
                 {
                     "level" : 3,
                     "walkthrough" : "We'll take the Keen Eye feat and round out our Wis score.  <br><br><br><br><br>",
-                    "wisdom_update" : "18",
+                    "wisdom_update" : 18,
                     "feature" : "Feat: Keen Eye, +1 Wis"
                 },
                 {
@@ -214,7 +214,7 @@
                     "consumables" : "+Reflective Insulators , +Taser Snare , +Impact Dampeners , +Chromabeam ",
                     "intelligence_save" : "yes",
                     "wisdom_save" : "yes",
-                    "ac_update" : "13"
+                    "ac_update" : 13
                     
                 },
                 {
@@ -234,9 +234,9 @@
                     "sustainables" : "Boon of Summoning",
                     "cantrips" : "Zapper", 
                     "consumables" : "Greasebomb",
-                    "intelligence_update" : "18",
+                    "intelligence_update" : 18,
                     "feature" : "Feat: Viral, +1 Int",
-                    "ac_update" : "14"
+                    "ac_update" : 14
                 },
                 {
                     "level" : 5
@@ -253,7 +253,7 @@
                     "sustainables" : "Boon of Flight",
                     "cantrips" : "Chill Touch", 
                     "consumables" : "Find Familiar",
-                    "intelligence_update" : "20",
+                    "intelligence_update" : 20,
                     "feature" : "ASI:  +2 Int"
                 },
                 {
@@ -798,7 +798,7 @@
                 {
                     "level" : 3,
                     "walkthrough" : "We'll take the Keen Eye feat and round out our Wis score.  Keen Eye allows us to sacrifice a bit of movement in order to make more accurate attacks, which shouldn't be much of a problem if we are positioning ourselves correctly.  If we do manage to get targeted, Reflex Dodge should be able to keep us intact.  The best part about increasing our attacks is the ability to synergize with our Distracting Shot cantrip.  We can buff our own attack on one turn, making it more likely to impose the debuff, which then makes it easier to snag those enemies in an AoE on the turn after.  Even if we have to sacrifice the first round by getting into position, this can make for a nice little combo during longer fights.  <br><br>Our allies are getting a bit beefier, but so are our enemies.  We can start being a bit more liberal with our leveled Superpowers as long as we keep some reserves for whatever boss might be anticipated.  <br><br>Disorienting Surge is a nice addition that can help prevent the martials from being surrounded.  Best for when the enemies are coming in waves or are forced into a bottleneck of some kind.  ",
-                    "wisdom_update" : "18",
+                    "wisdom_update" : 18,
                     "feature" : "Feat: Keen Eye, +1 Wis",
                     "consumables" : "+Disorienting Surge"
                 },
@@ -811,7 +811,7 @@
                     "level" : 5,
                     "walkthrough" : "There are a lot of things we could do here, but maxing out our casting stat is always a good option.  ASI for +2 Wis.  <br><br>We'll also take a new Superpower that can force enemy movement, such as Repelling Burst.  We'll be using this to launch enemies into dangerous places such as environmental hazards, clusters for other damage casters to blast on, or even into our own existing AoEs.  This is a Superpower that ought to be upcast later on as well, but sadly won't get as much mileage out of Keen Eye as our other options.  <br><br>The downside to this Superpower is that if we want to take a thinly dispersed crowd and condense them towards a central point, we'll have to move around the battlefield a fair amount throughout the casting.  It's a worthwhile tradeoff when it's called for, and we can still use Keen Eye with this Superpower when in linear environments like hallways or valleys. ",
                     "consumables" : "+Repelling Burst",
-                    "wisdom_update" : "20",
+                    "wisdom_update" : 20,
                     "feature" : "ASI:  +2 Wis"
                 },
                 {
@@ -928,7 +928,8 @@
                     "level" : 4,
                     "walkthrough" : "Here we get our first Ability Score Improvement.  We'll be taking Observant to round out our Wisdom while boosting some useful skills of ours.  <br><br>We'll also grab Mirror Image to boost our defenses, which can be combined with Dodging if we have something particularly important to keep concentrating on.  Flaming Sphere is a nice AoE damage effect that we can position as needed on the battelfield.  Misty Step is a helpful get out of jail free card, allowing us to teleport as a bonus action and avoid obstacles and opportunity attacks along the way.  ",
                     "consumables" : "+Mirror Image, +Flaming Sphere, +Misty Step",
-                    "wisdom_update" : 18
+                    "wisdom_update" : 18,
+                    "feature" : "Feat:  Observant +1 Wis"
                 },
                 {
                     "level" : 5,
@@ -940,7 +941,7 @@
                     "level" : 6,
                     "walkthrough" : "Another ASI, and we'll be putting both points into Wisdom to max it out.   We'll grab Daylight to deal with enemies that have sunlight sensitivity when light tagging isn't enough, which might not be all that often.  Somewhat campaign dependent.  We'll also take Spirit Guardians, giving us a solid self centered AoE to concentrate on.  We want to keep this spell up, so Dodging and even Mirror Image are perfectly fine uses of our Action after casting Spirit Guardians.  Counterspell is a nice option to shut down enemy spellcasting, but only when we know something nasty is coming our way.  We don't want to waste a 3rd level spell slot to negate a cantrip.  ",
                     "consumables" : "+Daylight, +Spirit Guardians, +Counterspell",
-                    "wisdom_update" : "20"
+                    "wisdom_update" : 20
                 },
                 {
                     "level" : 7,
@@ -964,7 +965,7 @@
                     "level" : 10,
                     "walkthrough" : "Our last ASI for this build, so we'll end it off with Resilient Con to round out our Constitution and buff up our concentration saves.  <br><br>Passwall will increase our ability to infiltrate, and we can make quick getaways if we want to trap an enemy somewhere.  It being concentration allows us to drop it at will, so locking the door behind us is very plausible.  Eruption is just a nice damage option, and it will do recurring damage unless the enemy wastes their action, both of which are good outcomes for us.  Hold Monster can be powerful if they fail their saving throw, but it wouldn't be my go to.  I'd save it for lone enemies that are powerful, and even then it will probably take a few tries to get the effect in place.  ",
                     "consumables" : "+Passwall, +Eruption, +Hold Monster",
-                    "constitution_update" : "16",
+                    "constitution_update" : 16,
                     "constitution_save" : "yes"
                 },
                 {
