@@ -1,0 +1,96 @@
+{
+    "type" : [
+        {
+            "type_name" : "Necromancy",
+            "type_credit" : "---"
+        },
+        {
+            "type_name" : "Positioning",
+            "type_credit" : "Move by Тимур Минвалеев from NounProject.com"    
+        },
+        {
+            "type_name" : "Radiation",
+            "type_credit" : "Sun by Angelo Troiano from NounProject.com"    
+        },
+        {
+            "type_name" : "Velocity",
+            "type_credit" : "Speed by Alice Design from NounProject.com"    
+        }
+    ],
+
+    "author" : [
+        {
+            "author_name" : "Tula",
+            "author_credit" : "Tula's Pocketbook: A Spell Compendium for the More Melee Inclined Caster",
+            "source_url" : "https://homebrewery.naturalcrit.com/share/ByVmgFiiN"
+        },
+        {
+            "author_name" : "5eBR",
+            "author_credit" : "D&D 5th Edition Basic Rules",
+            "source_url" : "https://www.dndbeyond.com/sources/basic-rules"
+        }
+    ],
+
+    "npc": [
+        {
+            "name" : "Ulysses Poleski",
+            "image_weblink" : "/_SiteResources/Images/error.png",
+            "image_sourcelink" : "https://external-preview.redd.it/kpu7M_c1nbNQpg7uj5rIHSQbU-he7t1EKEIyDAd1FWQ.jpg?auto=webp&s=d7a01bee9acb9fb73c5b5c31918a35d87152d94e",
+            "alias" : "",
+            "title" : "Vice Admiral",
+            "profession" : "Sailor",
+            "race" : "Human, Turami",
+            "location" : "Waterdeep",
+            "faction" : "Seaside Acquisitions Co",
+            "description" : "A brilliant sailor and leader who climbed the ranks at an early age.  She is known for making daring decisions when the situation calls for it, and for succeeding in those trying times.  "
+        },
+        {
+            "name" : "Jurel Ahlmeric",
+            "image_weblink" : "/_SiteResources/Images/error.png",
+            "image_sourcelink" : "https://www.dndbeyond.com/avatars/thumbnails/15/343/1000/1000/636372273074915633.png",
+            "alias" : "Hellfrog",
+            "title" : "Captain of the Holly Dodger",
+            "profession" : "Sailor",
+            "race" : "Sahuagin",
+            "location" : "Lankerdeep",
+            "faction" : "Seaside Acquisitions Co",
+            "description" : "A cold and intimidating sahuagin who keeps a blade in hand at all times.  He is known to be particularly brutal to those on his ship who betray his trust.  "
+        },
+        {
+            "name" : "Dukhoevy Baromir",
+            "image_weblink" : "/_SiteResources/Images/error.png",
+            "image_sourcelink" : "https://cdna.artstation.com/p/assets/images/images/006/925/062/large/kim-van-deun-dark-obelisk-figaro-kim-van-deun-2x.jpg?1502297250",
+            "alias" : "The Last Redmage",
+            "title" : "Archmage of Thessk",
+            "profession" : "Archmage",
+            "race" : "Half-Orc",
+            "location" : "Thessk",
+            "faction" : "Court of Thessk, Archmage's Administration",
+            "description" : "A competent and careful man who knows exactly how much force is needed to get the desired results.  His temper is well managed, but truly wrathful when invoked.  "
+        },
+        {
+            "name" : "Arrakh Visum",
+            "image_weblink" : "/_SiteResources/Images/error.png",
+            "image_sourcelink" : "https://www.paolopuggioni.com/admin/wp-content/uploads/2013/02/Unlucky-Gambler.jpg",
+            "alias" : "---",
+            "title" : "Scribe",
+            "profession" : "Field Scribe",
+            "race" : "Human (Illuskan)",
+            "location" : "Thessk",
+            "faction" : "Court of Thessk, Archmage's Administration",
+            "description" : "An arrogant but knowledgeable academic who takes a great deal of pride in conducting dangerous field work, though he quietly resents those who have stationary assignments out of jealousy.  "
+        },
+        {
+            "name" : "Lomar Wendriksen",
+            "image_weblink" : "/_SiteResources/Images/error.png",
+            "image_sourcelink" : "https://cdnb.artstation.com/p/assets/images/images/001/765/773/large/danil-strizhov-9.jpg?1452427974",
+            "alias" : "---",
+            "profession" : "Court Scribe",
+            "title" : "Scribe",
+            "race" : "Gnome (Rock)",
+            "location" : "Thessk",
+            "faction" : "Court of Thessk, Archmage's Administration",
+            "description" : "A terse and bitter little gnome, Lomar has tended to the records of Thessk for several human generations.  His less than pleasant attitude is only tolerated due to his vast irreplaceable knowledge of the maze that is the Lower Library of Thessk.  "
+        }
+    ]
+}

@@ -19,9 +19,9 @@
           var path = window.location.pathname;
           var page = path.split("/").pop();
           $.each(data.class, function(i, f) {
-            if (f.page_url == page) {
+            if (f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html" == page) {
               document.getElementById("class-page-header-title").innerHTML = "Caped Crusaders: Classes > " + f.name_str;
-              document.getElementById("class-page-image").src = f.class_img;
+              document.getElementById("class-page-image").src = "/_SiteResources/Images/" + f.name_str + ".png";
               document.getElementById("class-page-image").alt = f.class_img_credit;
               document.getElementById("class-page-description").innerHTML = f.description_long_str;
               document.getElementById("class-features-intro").innerHTML = "As a "  + f.name_str + ", you gain the following Class Features.";
@@ -89,7 +89,7 @@
               }
               // Subclasses
               document.getElementById("subclass-tech-name").innerHTML = "Subclass:  The " + f.subclass_tech_name;
-              document.getElementById("subclass-tech-image").src = f.subclass_tech_img;
+              document.getElementById("subclass-tech-image").src = "/_SiteResources/Images/" + f.name_str + "-" + f.subclass_tech_name + ".png";
               document.getElementById("subclass-tech-image").alt = f.subclass_tech_img_credit;
               document.getElementById("subclass-tech-description").innerHTML = f.subclass_tech_description;
               for (let i = 0; i < f.subclass_tech_feats.length; i++) {
@@ -103,7 +103,7 @@
                 }
               }
               document.getElementById("subclass-power-name").innerHTML = "Subclass:  The " + f.subclass_power_name;
-              document.getElementById("subclass-power-image").src = f.subclass_power_img;
+              document.getElementById("subclass-power-image").src = "/_SiteResources/Images/" + f.name_str + "-" + f.subclass_power_name + ".png";
               document.getElementById("subclass-power-image").alt = f.subclass_power_img_credit;
               document.getElementById("subclass-power-description").innerHTML = f.subclass_power_description;
               for (let i = 0; i < f.subclass_power_feats.length; i++) {
@@ -117,7 +117,7 @@
                 }
               }
               document.getElementById("subclass-magic-name").innerHTML = "Subclass:  The " + f.subclass_magic_name;
-              document.getElementById("subclass-magic-image").src = f.subclass_magic_img;
+              document.getElementById("subclass-magic-image").src = "/_SiteResources/Images/" + f.name_str + "-" + f.subclass_magic_name + ".png";
               document.getElementById("subclass-magic-image").alt = f.subclass_magic_img_credit;
               document.getElementById("subclass-magic-description").innerHTML = f.subclass_magic_description;
               for (let i = 0; i < f.subclass_magic_feats.length; i++) {
@@ -154,12 +154,10 @@
               <button id="page-back-button" onclick="location.href='../classes.html'">Out to Classes</button>
               <h2>Overview</h2>
               <hr>
-
               <table id="page-image-table">
                 <tr><td><img id="class-page-image" class="class-image-large" alt="Class Image"></td></tr>
                 <tr><td><h3 id="page-image-credit">Image Credit</h3></td></tr>
               </table>
-
               <p id="class-page-description"></p>
               
               <hr>

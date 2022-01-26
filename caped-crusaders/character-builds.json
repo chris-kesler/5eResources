@@ -873,7 +873,8 @@
                     "walkthrough" : "At level one we don't have much but our weapon and the Attack Action.  We'll snag Extra Attack right away to make our tier one impact more significant, which stacks very nicely with Sneak Attack.  <br><br>The general strategy is to avoid melee and make as many shots qualify for Sneak Attack as possible.  If we can find a spot of Dim Light to dig ourselves into, then we should try to hold that position.  ",
                     "sustainables" : "+Extra Attack",
                     "dexterity_save" : "yes",
-                    "intelligence_save" : "yes"
+                    "intelligence_save" : "yes",
+                    "ac_update" : 15
                 },
                 {
                     "level" : 2,
@@ -890,7 +891,8 @@
                     "level" : 4,
                     "walkthrough" : "Our first ASI, we'll be getting a Dex half feat to round out our main ability.  Lurker seems like a good choice, making us better at infiltrating.  We typically would avoid scouting solo in tier one, but we have enough Attacks and hit points to do so somewhat safely now.  I'd still recommend avoiding it unless the situation calls for it, and even then it needs to be handled cautiously.  ",
                     "feature" : "Feat:  Lurker",
-                    "dexteriity_update" : 18
+                    "dexteriity_update" : 18,
+                    "ac_update" : 16
                 },
                 {
                     "level" : 5,
@@ -911,7 +913,8 @@
                     "level" : 8,
                     "walkthrough" : "We get another ASI, and we'll be maxing out our Dexterity to make us even better at what we already do best.  This will boost our damage, accuracy, armor class, and some relevant skills.  <br><br>At this point, we can afford to be very aggressive with our offensive strategy.  We shouldn't be reckless, but we can definitely apply consistent damage to our enemies.  ",
                     "feature" : "ASI:  +2 Dexterity",
-                    "dexterity_update" : 20
+                    "dexterity_update" : 20,
+                    "ac_update" : 17
                 },
                 {
                     "level" : 9,

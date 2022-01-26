@@ -22,7 +22,7 @@
             if (f.page_url == page) {
 
               // Populating basic page data and overview
-              document.getElementById("class-page-header-title").innerHTML = "Caped Crusaders: Classes > " + f.name_str;
+              document.getElementById("class-page-header-title").innerHTML = "Caped Crusaders: Character Builds > " + f.name_str;
               document.getElementById("class-image").src = "/_SiteResources/Images/" + f.class_str + ".png";
               document.getElementById("class-image").alt = f.class_img_credit;
               document.getElementById("subclass-image").src = "/_SiteResources/Images/" + f.class_str + "-" + f.subclass_str + ".png";
@@ -169,6 +169,7 @@
               var intelligence_save_bool = false;
               var wisdom_save_bool = false;
               var charisma_save_bool = false;
+              var armor_class = "---";
 
               // Looping through the class levels 
               for (let i = 0; i < 20; i++) {
@@ -194,9 +195,7 @@
                 // Populating Armor Class updates
                 if (f.level_guide[i].ac_update != undefined) {
                   armor_class = f.level_guide[i].ac_update;
-                } else if (f.level_guide[i].ac_update == undefined){
-                  armor_class = "---"
-                }
+                } 
 
                 // Populating Strength score and save updates
                 {
@@ -232,7 +231,6 @@
                   }
                 }
                 
-
                 // Populating Dexterity score and save updates
                 {
                   // Checking for ability score update
@@ -267,7 +265,6 @@
                   }
                 }
                 
-
                 // Populating Constitution score and save updates
                 {
                   // Checking for ability score update
@@ -301,8 +298,7 @@
                     }
                   }
                 }
-                
-                
+                                
                 // Populating Intelligence score and save updates
                 {
                   // Checking for ability score update
@@ -337,7 +333,6 @@
                   }
                 }
                 
-
                 // Populating Wisdom score and save updates
                 {
                   // Checking for ability score update
@@ -372,7 +367,6 @@
                   }
                 }
                 
-
                 // Populating Charisma score and save updates
                 {
                   // Checking for ability score update
@@ -407,92 +401,83 @@
                   }
                 }
                 
-
-
-
-                // Looping through each item within the level_guide dictionary
-                for (let k = 0; k < f.level_guide.length; k++) {
-
-                  // Populating Sustainables with data or default
-                  if (f.level_guide[k].sustainables != undefined && f.level_guide[k].level == (i+1)) {
-                    sustainable_selections = f.level_guide[k].sustainables;
-                    sustainable_selections_parsed = sustainable_selections.split(", ");
-                    sustainable_selections_links = "";
-                    for (let k = 0; k < sustainable_selections_parsed.length; k++) {
-                      sustainable_selections_link = sustainable_selections_parsed[k].toLowerCase();
-                      sustainable_selections_link = sustainable_selections_link.replace('-', '');
-                      sustainable_selections_link = sustainable_selections_link.replace('+', '');
-                      sustainable_selections_link = sustainable_selections_link.replace(/\s/g, '-');
-                      sustainable_selections_link = "<a target='blank' href='/caped-crusaders/character-options/" + sustainable_source + "/" + sustainable_selections_link + ".html'>" + sustainable_selections_parsed[k] + "</a>";
-                      if (sustainable_selections_links.includes("href")){
-                        sustainable_selections_links += ", " + sustainable_selections_link;
-                      } else {
-                        sustainable_selections_links = sustainable_selections_link;
-                      }
+                // Populating Sustainables with data or default
+                if (f.level_guide[i].sustainables != undefined) {
+                  sustainable_selections = f.level_guide[i].sustainables;
+                  sustainable_selections_parsed = sustainable_selections.split(", ");
+                  sustainable_selections_links = "";
+                  for (let k = 0; k < sustainable_selections_parsed.length; k++) {
+                    sustainable_selections_link = sustainable_selections_parsed[k].toLowerCase();
+                    sustainable_selections_link = sustainable_selections_link.replace('-', '');
+                    sustainable_selections_link = sustainable_selections_link.replace('+', '');
+                    sustainable_selections_link = sustainable_selections_link.replace(/\s/g, '-');
+                    sustainable_selections_link = "<a target='blank' href='/caped-crusaders/character-options/" + sustainable_source + "/" + sustainable_selections_link + ".html'>" + sustainable_selections_parsed[k] + "</a>";
+                    if (sustainable_selections_links.includes("href")){
+                      sustainable_selections_links += ", " + sustainable_selections_link;
+                    } else {
+                      sustainable_selections_links = sustainable_selections_link;
                     }
-                  } else if (f.level_guide[k].sustainables == undefined && f.level_guide[k].level == (i+1)) {
-                    sustainable_selections_links = "---";
                   }
-                  
-                  // Populating Cantrips with data or default
-                  if (f.level_guide[k].cantrips != undefined && f.level_guide[k].level == (i+1)) {
-                    cantrip_selections = f.level_guide[k].cantrips;
-                    cantrip_selections_parsed = cantrip_selections.split(", ");
-                    cantrip_selections_links = "";
-                    for (let k = 0; k < cantrip_selections_parsed.length; k++) {
-                      cantrip_selections_link = cantrip_selections_parsed[k].toLowerCase();
-                      cantrip_selections_link = cantrip_selections_link.replace('-', '');
-                      cantrip_selections_link = cantrip_selections_link.replace('+', '');
-                      cantrip_selections_link = cantrip_selections_link.replace(/\s/g, '-');
-                      cantrip_selections_link = "<a target='blank' href='/caped-crusaders/character-options/" + consumable_source + "/" + cantrip_selections_link + ".html'>" + cantrip_selections_parsed[k] + "</a>";
-                      if (cantrip_selections_links.includes("href")){
-                        cantrip_selections_links += ", " + cantrip_selections_link;
-                      } else {
-                        cantrip_selections_links = cantrip_selections_link;
-                      }
-                    }
-                  } else if (f.level_guide[k].cantrips == undefined && f.level_guide[k].level == (i+1)) {
-                    cantrip_selections_links = "---";
-                  }
-
-                  // Populating Consumables with data or default
-                  if (f.level_guide[k].consumables != undefined && f.level_guide[k].level == (i+1)) {
-                    consumable_selections = f.level_guide[k].consumables;
-                    consumable_selections_parsed = consumable_selections.split(", ");
-                    consumable_selections_links = "";
-                    for (let k = 0; k < consumable_selections_parsed.length; k++) {
-                      consumable_selections_link = consumable_selections_parsed[k].toLowerCase();
-                      consumable_selections_link = consumable_selections_link.replace('-', '');
-                      consumable_selections_link = consumable_selections_link.replace('+', '');
-                      consumable_selections_link = consumable_selections_link.replace(/\s/g, '-');
-                      consumable_selections_link = "<a target='blank' href='/caped-crusaders/character-options/" + consumable_source + "/" + consumable_selections_link + ".html'>" + consumable_selections_parsed[k] + "</a>";
-                      if (consumable_selections_links.includes("href")){
-                        consumable_selections_links += ", " + consumable_selections_link;
-                      } else {
-                        consumable_selections_links = consumable_selections_link;
-                      }
-                    }
-                  } else if (f.level_guide[k].consumables == undefined && f.level_guide[k].level == (i+1)) {
-                    consumable_selections_links = "---";
-                  }
-
-                  // Populating Walkthrough by Level text and Selections tables
-                  if (f.level_guide[k].walkthrough != undefined && f.level_guide[k].level == (i+1)) {
-                    document.getElementById("build-walkthrough-by-level").innerHTML += "<hr><table id='selections-table-" + (i+1) + "' class='selections-table'><thead><th style='width: 15vw' colspan='2'>" + class_subclass + ", lvl " + (i+1) + "</th></thead><tbody><tr><td>Sustainables</td><td>" + sustainable_selections_links + "</td></tr><tr><td>Cantrips</td><td>" + cantrip_selections_links + "</td></tr><tr><td>Consumables</td><td>" + consumable_selections_links + "</td></tr></tbody></table>" + "<h3>Level: " + (i+1) + "</h3>" + f.level_guide[k].walkthrough;
-                  }
+                } else if (f.level_guide[i].sustainables == undefined) {
+                  sustainable_selections_links = "---";
                 }
                 
-                  
+                // Populating Cantrips with data or default
+                if (f.level_guide[i].cantrips != undefined) {
+                  cantrip_selections = f.level_guide[i].cantrips;
+                  cantrip_selections_parsed = cantrip_selections.split(", ");
+                  cantrip_selections_links = "";
+                  for (let k = 0; k < cantrip_selections_parsed.length; k++) {
+                    cantrip_selections_link = cantrip_selections_parsed[k].toLowerCase();
+                    cantrip_selections_link = cantrip_selections_link.replace('-', '');
+                    cantrip_selections_link = cantrip_selections_link.replace('+', '');
+                    cantrip_selections_link = cantrip_selections_link.replace(/\s/g, '-');
+                    cantrip_selections_link = "<a target='blank' href='/caped-crusaders/character-options/" + consumable_source + "/" + cantrip_selections_link + ".html'>" + cantrip_selections_parsed[k] + "</a>";
+                    if (cantrip_selections_links.includes("href")){
+                      cantrip_selections_links += ", " + cantrip_selections_link;
+                    } else {
+                      cantrip_selections_links = cantrip_selections_link;
+                    }
+                  }
+                } else if (f.level_guide[i].cantrips == undefined) {
+                  cantrip_selections_links = "---";
+                }
+
+                // Populating Consumables with data or default
+                if (f.level_guide[i].consumables != undefined) {
+                  consumable_selections = f.level_guide[i].consumables;
+                  consumable_selections_parsed = consumable_selections.split(", ");
+                  consumable_selections_links = "";
+                  for (let k = 0; k < consumable_selections_parsed.length; k++) {
+                    consumable_selections_link = consumable_selections_parsed[k].toLowerCase();
+                    consumable_selections_link = consumable_selections_link.replace('-', '');
+                    consumable_selections_link = consumable_selections_link.replace('+', '');
+                    consumable_selections_link = consumable_selections_link.replace(/\s/g, '-');
+                    consumable_selections_link = "<a target='blank' href='/caped-crusaders/character-options/" + consumable_source + "/" + consumable_selections_link + ".html'>" + consumable_selections_parsed[k] + "</a>";
+                    if (consumable_selections_links.includes("href")){
+                      consumable_selections_links += ", " + consumable_selections_link;
+                    } else {
+                      consumable_selections_links = consumable_selections_link;
+                    }
+                  }
+                } else if (f.level_guide[i].consumables == undefined) {
+                  consumable_selections_links = "---";
+                }
+
+                // Populating Walkthrough by Level text and Selections tables
+                if (f.level_guide[i].walkthrough != undefined) {
+                  document.getElementById("build-walkthrough-by-level").innerHTML += "<hr><table id='selections-table-" + (i+1) + "' class='selections-table'><thead><th style='width: 15vw' colspan='2'>" + class_subclass + ", lvl " + (i+1) + "</th></thead><tbody><tr><td>Sustainables</td><td>" + sustainable_selections_links + "</td></tr><tr><td>Cantrips</td><td>" + cantrip_selections_links + "</td></tr><tr><td>Consumables</td><td>" + consumable_selections_links + "</td></tr></tbody></table>" + "<h3>Level: " + (i+1) + "</h3>" + f.level_guide[i].walkthrough;
+                }
                 
-              // Populating the Level Table with a new row for each level
-              var tblRow = "<tr><td>" + (i+1) + "</td><td>" + class_subclass + "</td><td>" + hit_points + " / " + (i+1) + "d" + hit_die + "</td><td>" + features + "</td><td>" + strength_score_str + " / " + strength_save_str + "</td><td>" + dexterity_score_str + " / " + dexterity_save_str + "</td><td>" + constitution_score_str + " / " + constitution_save_str + "</td><td>" + intelligence_score_str + " / " + intelligence_save_str + "</td><td>" + wisdom_score_str + " / " + wisdom_save_str + "</td><td>" + charisma_score_str + " / " + charisma_save_str + "</td><td>" + armor_class + "</td></tr>";
-              $(tblRow).appendTo("#build-level-table tbody");
-              
-              // Increasing the Proficiency Bonus variable upon reaching certain level milestones
-              if ((i+1) == 4 || (i+1) == 8 || (i+1) == 12 || (i+1) == 16) {
-                proficiency_bonus_int++;
+                // Populating the Level Table with a new row for each level
+                var tblRow = "<tr><td>" + (i+1) + "</td><td>" + class_subclass + "</td><td>" + hit_points + " / " + (i+1) + "d" + hit_die + "</td><td>" + features + "</td><td>" + strength_score_str + " / " + strength_save_str + "</td><td>" + dexterity_score_str + " / " + dexterity_save_str + "</td><td>" + constitution_score_str + " / " + constitution_save_str + "</td><td>" + intelligence_score_str + " / " + intelligence_save_str + "</td><td>" + wisdom_score_str + " / " + wisdom_save_str + "</td><td>" + charisma_score_str + " / " + charisma_save_str + "</td><td>" + armor_class + "</td></tr>";
+                $(tblRow).appendTo("#build-level-table tbody");
+                
+                // Increasing the Proficiency Bonus variable upon reaching certain level milestones
+                if ((i+1) == 4 || (i+1) == 8 || (i+1) == 12 || (i+1) == 16) {
+                  proficiency_bonus_int++;
+                }
               }
-            }
             }
           });
         });
