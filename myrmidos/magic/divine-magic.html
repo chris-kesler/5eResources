@@ -9,33 +9,36 @@
     <link rel="stylesheet" href="/caped-crusaders-style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  </head>
 
-
   <body>
+    <!-- The fixed background div -->
     <div class="page-background-container"> 
+
+      <!-- A div to hold our header -->
       <div class="page-header">
+
+        <!-- Importing the header -->
         <div class="import-page-header"></div>
 
-          <h1>Myrmidos Wiki:  Arcane Magic</h1>
-          <hr>
+        <!-- The page title within the header -->
+        <h1 id="page-header-title">Myrmidos Wiki:  Divine Magic</h1>
+        <hr>
       </div>
         
-      
+      <!-- A transparent div to build everything else on top of -->
       <div class="page-content">
-          
 
-
-
-
-            <section class="page-content-section">
-              <button id="page-back-button" onclick="location.href='../Magic.html'">Out to Magic</button>
-              <h2>Overview</h2>
-              <hr>
-             
-          </section>
-            
-
+        <!-- An off white chunk of the page that holds content -->
+        <section class="page-content-section">
+          <button id="page-back-button" onclick="location.href='../magic.html'">Out to Magic</button>
+          <h2>Overview</h2>
+          <hr>
+        
+          <!-- A paragraph to hold the page content and descriptions -->
+          <p id="page-description">Divine Magic is channeled through a connection to a deity or similar otherworldly being, granting access to some magical effects that cannot be drawn straight from the planes.  Examples of Divine Casters include highpriests and shadowdancers.  </p>
+        </section>
       </div>
 
+      <!-- Importing the footer -->
       <footer class="import-page-footer"></footer>
     </div>
   </body>

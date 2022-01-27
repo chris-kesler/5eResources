@@ -221,7 +221,7 @@ table {
 
 
 
-.WikiOverviewTable {
+.wiki-page-overview-table {
   display: block;
   width: 275px;
   max-width: 35vw;
@@ -250,31 +250,31 @@ table {
 }
 
 
-.WikiOverviewTable th, .WikiOverviewTable td {
+.wiki-page-overview-table th, .wiki-page-overview-table td {
   width: auto;
   padding: 10px;
   vertical-align: top;
 }
 
-.WikiOverviewTable tr th {
+.wiki-page-overview-table tr th {
   background-color: rgb(223,222,207);
   color: rgb(58,58,58);
   font-size: small;
 }
 
-.WikiOverviewTable tr td {
+.wiki-page-overview-table tr td {
   background-color: rgb(251,251,251);
   color: rgb(58,58,58);
   font-size: small;
   text-align: left;
 }
 
-.WikiOverviewTable tr:first-child th {
+.wiki-page-overview-table tr:first-child th {
   padding: 0px;
   margin: 0px;
 }
 
-.WikiOverviewTable tr:nth-child(2) th {
+.wiki-page-overview-table tr:nth-child(2) th {
   background-color: rgb(247,247,247);
   color: rgb(58,58,58);
   padding: 2px;
@@ -282,18 +282,18 @@ table {
   font-size: smaller;
 }
 
-.WikiOverviewTable tr:nth-child(3) th, .WikiOverviewTable tr:nth-child(4) th {
+.wiki-page-overview-table tr:nth-child(3) th, .wiki-page-overview-table tr:nth-child(4) th {
   background-color: rgb(189,188,173);
   color: rgb(58,58,58);
   font-size: large;
 }
 
-.WikiOverviewTable tr:nth-child(4) th {
+.wiki-page-overview-table tr:nth-child(4) th {
   padding-top: 0px;
   font-size: x-small;
 }
 
-.WikiTableImage {
+.wiki-page-table-image {
   width: 100%;
   height: auto; 
   display: block;

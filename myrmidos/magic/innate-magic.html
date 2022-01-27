@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-US-Compatible" content="e-edge">
+    <title>KnowOne's Website of Everything</title>
+    <link rel="icon" href="/_SiteResources/Images/OwlOfMinerva_ModifiedLogo.png">
+    <link rel="stylesheet" href="/caped-crusaders-style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  </head>
+
+  <body>
+    <!-- The fixed background div -->
+    <div class="page-background-container"> 
+
+      <!-- A div to hold our header -->
+      <div class="page-header">
+
+        <!-- Importing the header -->
+        <div class="import-page-header"></div>
+
+        <!-- The page title within the header -->
+        <h1 id="page-header-title">Myrmidos Wiki:  Innate Magic</h1>
+        <hr>
+      </div>
+        
+      <!-- A transparent div to build everything else on top of -->
+      <div class="page-content">
+
+        <!-- An off white chunk of the page that holds content -->
+        <section class="page-content-section">
+          <button id="page-back-button" onclick="location.href='../magic.html'">Out to Magic</button>
+          <h2>Overview</h2>
+          <hr>
+        
+          <!-- A paragraph to hold the page content and descriptions -->
+          <p id="page-description">Innate Magic is drawn from a physiological connection to the planes, and often requires more physical constitution than technical skill.  Examples of Innate Casters include a dragon breathing fire, a kraken summoning a whirlpool, a djinn transforming into smoke, a vampire shapechanging, along with many others.  </p>
+        </section>
+      </div>
+
+      <!-- Importing the footer -->
+      <footer class="import-page-footer"></footer>
+    </div>
+  </body>
+</html>
+
+<script type="text/javascript">
+  $(function () {
+
+    $(".import-page-header").load("/_SiteResources/Pages/import-page-header.html");
+    $(".import-page-footer").load("/_SiteResources/Pages/import-page-footer.html");
+
+});
+</script>
