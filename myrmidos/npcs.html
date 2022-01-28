@@ -26,14 +26,43 @@
                 source_url = y.source_url;
               }
             });
+
+            // Populationg table variables with data or default
+            var alias = "---";
+            var title = "---";
+            var profession = "---";
+            var race = "---";
+            var location = "---";
+            var faction = "---";
+
+            if (f.alias != undefined) {
+              alias = f.alias;
+            }
+            if (f.title != undefined) {
+              title = f.title;
+            }
+            if (f.profession != undefined) {
+              profession = f.profession;
+            }
+            if (f.race != undefined) {
+              race = f.race;
+            }
+            if (f.location != undefined) {
+              location = f.location;
+            }
+            if (f.faction != undefined) {
+              faction = f.faction;
+            }
+
+            // Defining table row and adding the entry to the page
             var tblRow = "<tr>"  
               + "<td><a href='npcs/" + f.name.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html' target='_blank'>" + f.name + "</a></td>" 
-              + "<td>" + f.alias + "</td>" 
-              + "<td>" + f.title + "</td>" 
-              + "<td>" + f.profession + "</td>" 
-              + "<td>" + f.race + "</td>" 
-              + "<td>" + f.location + "</td>" 
-              + "<td>" + f.faction + "</td>" 
+              + "<td>" + alias + "</td>" 
+              + "<td>" + title + "</td>" 
+              + "<td>" + profession + "</td>" 
+              + "<td>" + race + "</td>" 
+              + "<td>" + location + "</td>" 
+              + "<td>" + faction + "</td>" 
               + "</tr>"
             $(tblRow).appendTo("#FilterTable tbody");
           });
