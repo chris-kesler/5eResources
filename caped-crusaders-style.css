@@ -293,7 +293,7 @@ table {
   font-size: x-small;
 }
 
-.wiki-page-table-image {
+#wiki-page-table-image {
   width: 100%;
   height: auto; 
   display: block;
