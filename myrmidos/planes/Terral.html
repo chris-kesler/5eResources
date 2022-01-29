@@ -7,103 +7,168 @@
     <title>KnowOne's Website of Everything</title>
     <link rel="icon" href="/_SiteResources/Images/OwlOfMinerva_ModifiedLogo.png">
     <link rel="stylesheet" href="/caped-crusaders-style.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  </head>
+  </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+  <script>
+    $(function readJSON() {
 
+      // Reading the name of this file
+      var page = window.location.pathname.split("/").pop();
+
+      // Reading data from our JSON file
+      $.getJSON(`../planescapes.json`, function(data) {
+
+        // Looping through the JSON data 
+        $.each(data.entries, function(i, f) {
+          if((f.plane.toLowerCase() + ".html") == page) {
+
+            // Populating the page titles
+            document.getElementById("page-header-title").innerHTML = "Myrmidos Wiki:  Planes > " + f.plane;
+            document.getElementById("page-overview-table-title").innerHTML = f.plane + ", Elemental Plane of " + f.element;
+
+            // Populating the page description 
+            document.getElementById("page-description").innerHTML = f.plane_description;
+
+            // Determining additional variables based on data given in JSON
+            if(f.element == "Water" || f.element == "Earth" || f.element == "Fire" || f.element == "Air") {
+              var plane_type = "Primal Elemental Plane";
+              var deity_type = "Titan";
+            } else if(f.element == "Ooze" || f.element == "Ice" || f.element == "Magma" || f.element == "Ash") {
+              var plane_type = "Quasi Elemental Plane";
+              var deity_type = "God";
+            } else {
+              var plane_type = "---";
+              var deity_type = "---";
+            }
+
+            // Populating the page table image and title
+            document.getElementById("wiki-page-table-image").src = f.plane_img;
+            document.getElementById("wiki-page-table-image-source").innerHTML = "Elemental Plane of " + f.element;
+            document.getElementById("wiki-page-table-image-source").href = f.plane_img;
+            document.getElementById("wiki-page-table-title").innerHTML = f.plane;
+            document.getElementById("wiki-page-table-subtitle").innerHTML = plane_type;
+
+            // Populating planar associations
+            document.getElementById("wiki-page-table-position").innerHTML = f.position;
+            document.getElementById("wiki-page-table-school").innerHTML = f.school;
+            document.getElementById("wiki-page-table-school").href = "/myrmidos/magic/schools-of-magic/" + f.school.toLowerCase() + "-magic.html";
+            document.getElementById("wiki-page-table-alignment").innerHTML = f.alignment;
+
+            // Populating planar inhabitants
+            document.getElementById("wiki-page-table-deity").innerHTML = f.deity;
+            document.getElementById("wiki-page-table-deity").href = "/myrmidos/deities/" + deity_type.toLowerCase() + "s/" + f.deity.toLowerCase() + ".html";
+            document.getElementById("wiki-page-table-natives").innerHTML = f.natives;
+            document.getElementById("wiki-page-table-factions").innerHTML = f.factions;
+
+            // Populating planar attributes
+            document.getElementById("wiki-page-table-topography").innerHTML = f.topography;
+            document.getElementById("wiki-page-table-gravity").innerHTML = f.gravity;
+            document.getElementById("wiki-page-table-time").innerHTML = f.time;
+
+          }
+        });
+      });
+    });
+
+  </script>
 
   <body>
+    <!-- The fixed background div -->
     <div class="page-background-container"> 
+
+      <!-- A div to hold our header -->
       <div class="page-header">
+
+        <!-- Importing the header -->
         <div class="import-page-header"></div>
 
-          <h1>Terral, Elemental Plane of Earth</h1>
+          <!-- The page title within the header -->
+          <h1 id="page-header-title"></h1>
           <hr>
       </div>
         
-      
+      <!-- A transparent div to build everything else on top of -->
       <div class="page-content">
+
+        <!-- An off white chunk of the page that holds content -->
+        <section class="page-content-section">
+
+          <!-- A back button that navigates out in the file structure  -->
+          <button id="page-back-button" onclick="location.href='../planes.html'">Out to Planes</button>
+
+          <!-- The title of the page content, including the source as a link -->
+          <h2 id="page-overview-table-title"></h2>
+          <hr>
           
+          <!-- A table to hold the concise page data -->
+          <table class="wiki-page-overview-table">
+            <tr>
+              <th colspan="2"><img id="wiki-page-table-image"></th>
+            </tr>
+            <tr>
+              <th colspan="2"><i><a id="wiki-page-table-image-source" target="_blank"></a></i></th>
+            </tr>
+            <tr>
+              <th colspan="2" id="wiki-page-table-title"></th>
+            </tr>
+            <tr>
+              <th colspan="2" id="wiki-page-table-subtitle"></th>
+            </tr>
 
+            <tr>
+              <th colspan="2">Planar Associations</th>
+            </tr>
+            <tr>
+              <td>Position</td>
+              <td id="wiki-page-table-position"></td>
+            </tr>
+            <tr>
+              <td>School of Magic</td>
+              <td><a id="wiki-page-table-school"></a></td>
+            </tr>
+            <tr>
+              <td>Alignment</td>
+              <td id="wiki-page-table-alignment"></td>
+            </tr>
+            
+            <tr>
+              <th colspan="2">Inhabitants</th>
+            </tr>
+            <tr>
+              <td>Local Deity</td>
+              <td><a id="wiki-page-table-deity"></a></td>
+            </tr>
+            <tr>
+              <td>Native Creatures</td>
+              <td id="wiki-page-table-natives"></td>
+            </tr>
+            <tr>
+              <td>Notable Factions</td>
+              <td id="wiki-page-table-factions"></td>
+            </tr>
+            <tr>
+              <th colspan="2">Attributes</th>
+            </tr>
+            <tr>
+              <td>Topography</td>
+              <td id="wiki-page-table-topography"></td>
+            </tr>
+            <tr>
+              <td>Gravity</td>
+              <td id="wiki-page-table-gravity"></td>
+            </tr>
+            <tr>
+              <td>Time</td>
+              <td id="wiki-page-table-time"></td>
+            </tr>
+          </table>
 
-
-
-            <section class="page-content-section">
-              <table class="wiki-page-overview-table">
-                <tr>
-                  <th colspan="2"><img id="wiki-page-table-image" src="https://upload.wikimedia.org/wikipedia/commons/3/33/140823_M%C3%A4rchendom_Saalfelder_Feengrotten.jpg" alt="Terral"></th>
-                </tr>
-                <tr>
-                  <th colspan="2"><i><a href="https://commons.wikimedia.org/wiki/File:140823_M%C3%A4rchendom_Saalfelder_Feengrotten.jpg" target="_blank">Plane of Earth</a></i></th>
-                </tr>
-                <tr>
-                  <th colspan="2">Terral</th>
-                </tr>
-                <tr>
-                  <th colspan="2">Primal Elemental Plane</th>
-                </tr>
-
-                <tr>
-                    <th colspan="2">Planar Associations</th>
-                </tr>
-                <tr>
-                    <td>Position</td>
-                    <td>Southwestern</td>
-                </tr>
-                <tr>
-                  <td>School of Magic</td>
-                  <td><a href="/myrmidos/Category_Magic/Type_Schools/Subtype_Transmutation/TransmutationMagic.html">Transmutation</a></td>
-                </tr>
-                <tr>
-                    <td>Alignment</td>
-                    <td>Neutral</td>
-                </tr>
-
-                <tr>
-                  <th colspan="2">Inhabitants</th>
-                </tr>
-                <tr>
-                  <td>Deity</td>
-                  <td><a href="/myrmidos/Category_Deities/Type_Titans/Subtype_TitanOfEarth/TitanOfEarth.html">Tarrasque</a></td>
-                </tr>
-                <tr>
-                    <td>Native Creatures</td>
-                    <td><a href="/myrmidos/Category_Monsters/Type_Giants/Giants.html">Giants</a>
-                      <br><a href="/myrmidos/Category_Monsters/Type_Dragons/Subtype_Chromatic/BlackDragon.html">Black Dragons</a>
-                      <br>Earth Elementals
-                    </td>
-                </tr>
-                <tr>
-                    <td>Notable Factions</td>
-                    <td>NA</td>
-                </tr>
-                <tr>
-                    <th colspan="2">Attributes</th>
-                </tr>
-                <tr>
-                    <td>Topography</td>
-                    <td>Infinite bounds, varying air pressure, pieces of earth continually shearing against each other.</td>
-                </tr>
-                <tr>
-                    <td>Gravity</td>
-                    <td>Subjective, directional to nearest surface.</td>
-                </tr>
-                <tr>
-                    <td>Time</td>
-                    <td>Nominal</td>
-                </tr>
-              </table>
-              <button id="page-back-button" onclick="location.href='../planes.html'">Out to Planes</button>
-              
-              <h2>Overview</h2>
-              <hr>
-              <section class="WikiContent">
-                <p>
-                  The Elemental Plane of Earth is positioned to the Southwest of the Great Wheel cosmology.  It is strongly associated with domains relating to Transformation and Stability, and is considered to represent the Neutral alignment in its purest form.  This plane is the source of all Transmutation magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  
-                </p>
-              </section>
-            </section>
-
+          <!-- A paragraph to hold the page content and descriptions -->
+          <p id="page-description"></p>
+        </section>
       </div>
 
+      <!-- Importing the footer -->
       <footer class="import-page-footer"></footer>
     </div>
   </body>

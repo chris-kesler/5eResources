@@ -2,59 +2,141 @@
     "entries" : [
         {
             "plane" : "Eifrost",
-            "position" : "Northern",
             "element" : "Ice",
-            "alignment" : "Lawful Neutral",
+
+            "plane_description" : "The Elemental Plane of Ice is positioned to the North of the Great Wheel cosmology, and is also known as Eifrost. It is strongly associated with domains relating to Knowledge and Order, and is considered to represent the Lawful Neutral alignment in its purest form. This plane is the source of all Divination magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  ",
+            "plane_img" : "https://upload.wikimedia.org/wikipedia/commons/8/8f/Fryxellsee_Opt.jpg",
+            
+            "position" : "Northern",
             "school" : "Divination",
-            "plane_img" : ""
+            "alignment" : "Lawful Neutral",
+
+            "deity" : "Frydeia",
+            "deity_img" : "",
+            "natives" : "Constructs<br>White Dragons<br>Ice Elementals",
+            "factions" : "NA",
+
+            "topography" : "Infinite bounds, varying air pressure, constant snow.",
+            "gravity" : "Subjective, null majority, directional near large objects.",
+            "time" : "Nominal"
         },
         {
             "plane" : "Vulken",
-            "position" : "Southern",
             "element" : "Magma",
-            "alignment" : "Chaotic Neutral",
+
+            "plane_description" : "The Elemental Plane of Magma is positioned to the South of the Great Wheel cosmology, and is also known as Vulken. It is strongly associated with domains relating to Creation and Debauchery, and is considered to represent the Chaotic Neutral alignment in its purest form. This plane is the source of all Conjuration magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  ",
+            "plane_img" : "https://upload.wikimedia.org/wikipedia/commons/8/89/P%C4%81hoehoe_and_Aa_flows_at_Hawaii.jpg",
+            
+            "position" : "Southern",
             "school" : "Conjuration",
-            "plane_img" : ""
+            "alignment" : "Chaotic Neutral",
+
+            "deity" : "Gondarin",
+            "deity_img" : "",
+            "natives" : "Hybrids<br>Brass Dragons<br>Magma Elementals",
+            "factions" : "NA",
+
+            "topography" : "Infinite bounds, varying air pressure, acidic atmosphere.",
+            "gravity" : "Constant, varying for magma flows.",
+            "time" : "Nominal"
         },
         {
             "plane" : "Feywilds",
-            "position" : "Western",
             "element" : "Ooze",
-            "alignment" : "Neutral Good",
+            
+            "plane_description" : "The Elemental Plane of Ooze is positioned to the West of the Great Wheel cosmology, and is also known as the Feywilds. It is strongly associated with domains relating to Life and Balance, and is considered to represent the Nuetral Good alignment in its purest form. This plane is the source of all Enchantment magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school. The Plane of Ooze is adjacent to the Primal Planes of Water to the North and Earth to the West. The Plane of Ooze is complimentary to the Plane of Ash.  ",
+            "plane_img" : "https://upload.wikimedia.org/wikipedia/commons/5/58/Swamp_poratz.jpg",
+            
+            "position" : "Western",
             "school" : "Enchantment",
-            "plane_img" : ""
+            "alignment" : "Neutral Good",
+
+            "deity" : "Deliklese",
+            "deity_img" : "",
+            "natives" : "Fey<br>Green Dragons<br>Oozes",
+            "factions" : "NA",
+
+            "topography" : "Infinite bounds, sporous atmosphere.",
+            "gravity" : "Constant.",
+            "time" : "Nominal"
         },
         {
             "plane" : "Shadowfell",
-            "position" : "Eastern",
             "element" : "Ash",
-            "alignment" : "Neutral Evil",
+            "plane_description" : "The Elemental Plane of Ash is positioned to the East of the Great Wheel cosmology, and is also known as the Shadowfell.  It is strongly associated with domains relating to Death and Undeath, and is considered to represent the Neutral Evil alignment in its purest form.  This plane is the source of all Necromancy magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  ",
+            "plane_img" : "https://upload.wikimedia.org/wikipedia/commons/c/cb/Photograph_from_a_commercial_flight_showing_a_pyrocumulonimbus_cloud.jpg",
+            
+            "position" : "Eastern",
             "school" : "Necromancy",
-            "plane_img" : ""
+            "alignment" : "Neutral Evil",
+
+            "deity" : "Sebabos",
+            "deity_img" : "",
+            "natives" : "Necrophages<br>Shadow Dragons<br>Ash Elementals",
+            "factions" : "NA",
+
+            "topography" : "Infinite bounds, varying air pressure, constant soot snow.",
+            "gravity" : "Subjective, null majority, directional near large objects.",
+            "time" : "Nominal"
         },
         {
             "plane" : "Caelar",
-            "position" : "Northeastern",
             "element" : "Air",
-            "alignment" : "Neutral",
+            "plane_description" : "The Elemental Plane of Air is positioned to the Northeast of the Great Wheel cosmology.  It is strongly associated with domains relating to Knowledge and Wrath, and is considered to represent the Neutral alignment in its purest form.  This plane is the source of all Illusion magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  ",
+            "plane_img" : "https://upload.wikimedia.org/wikipedia/commons/8/83/Lightning_in_Dallas_2015.jpg",
+            
+            "position" : "Northeastern",
             "school" : "Illusion",
-            "plane_img" : ""
+            "alignment" : "Neutral",
+
+            "deity" : "Tempest",
+            "deity_img" : "",
+            "natives" : "<a href='/myrmidos/Category_Monsters/Type_Celestials/Celestials.html'>Celestials</a><br><a href='/myrmidos/Category_Monsters/Type_Dragons/Subtype_Chromatic/BlueDragon.html'>Blue Dragons</a><br>Air Elementals",
+            "factions" : "NA",
+
+            "topography" : "Infinite bounds, varying air pressure, chunks of floating land sparsely distributed.",
+            "gravity" : "Subjective, null majority, directional near large objects.",
+            "time" : "Nominal"
         },
         {
             "plane" : "Ignar",
-            "position" : "Southeastern",
             "element" : "Fire",
-            "alignment" : "Neutral",
+
+            "plane_description" : "The Elemental Plane of Fire is positioned to the Southeast of the Great Wheel cosmology.  It is strongly associated with domains relating to Destruction and Consumption, and is considered to represent the Neutral alignment in its purest form.  This plane is the source of all Evocation magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  ",
+            "plane_img" : "https://upload.wikimedia.org/wikipedia/commons/2/2a/FIRE_01.JPG",
+            
+            "position" : "Southeastern",
             "school" : "Evocation",
-            "plane_img" : ""
+            "alignment" : "Neutral",
+
+            "deity" : "Averdeus",
+            "deity_img" : "",
+            "natives" : "Fiends<br>Red Dragons<br>Fire Elementals",
+            "factions" : "NA",
+
+            "topography" : "Infinite bounds, flames form the air, oceans, and ground in varying density.",
+            "gravity" : "Subjective, directional to nearest surface.",
+            "time" : "Nominal"
         },
         {
             "plane" : "Terral",
-            "position" : "Southwestern",
             "element" : "Earth",
-            "alignment" : "Neutral",
+
+            "plane_description" : "The Elemental Plane of Earth is positioned to the Southwest of the Great Wheel cosmology.  It is strongly associated with domains relating to Transformation and Stability, and is considered to represent the Neutral alignment in its purest form.  This plane is the source of all Transmutation magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  ",
+            "plane_img" : "https://upload.wikimedia.org/wikipedia/commons/3/33/140823_M%C3%A4rchendom_Saalfelder_Feengrotten.jpg",
+            
+            "position" : "Southwestern",
             "school" : "Transmutation",
-            "plane_img" : ""
+            "alignment" : "Neutral",
+
+            "deity" : "Tarrasque",
+            "deity_img" : "",
+            "natives" : "Giants<br>Black Dragons<br>Earth Elementals",
+            "factions" : "NA",
+
+            "topography" : "Infinite bounds, varying air pressure, pieces of earth continually shearing against each other.",
+            "gravity" : "Subjective, directional to nearest surface.",
+            "time" : "Nominal"
         },
         {
             "plane" : "Aquar",
