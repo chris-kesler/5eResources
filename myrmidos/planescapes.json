@@ -12,7 +12,21 @@
             "alignment" : "Lawful Neutral",
 
             "deity" : "Frydeia",
-            "deity_img" : "",
+            "deity_img" : "https://upload.wikimedia.org/wikipedia/commons/1/1b/Les_images_des_dievx_des_anciens_-_contenans_les_idoles%2C_covstvmes%2C_ceremonies%2C_and_autres_choses_appartenans_%C3%A0_la_religion_des_payens_%281581%29_%2814560495887%29.jpg",
+            "deity_description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque condimentum ut neque at malesuada. Quisque mattis vel lorem eget venenatis. Sed cursus dui vel orci cursus hendrerit. Quisque in arcu pretium, laoreet est quis, tincidunt enim. In tincidunt viverra quam, pharetra vestibulum neque porta nec. Ut eu volutpat orci, quis pretium ligula. Aliquam in nibh lorem. Proin id semper nibh. In pulvinar lacus nec velit euismod placerat. In non congue lacus, eu pharetra elit. Praesent id lorem in nunc venenatis congue. Quisque suscipit tempus commodo. Morbi diam quam, rutrum in venenatis sed, pulvinar nec justo. Sed fermentum posuere ligula, sit amet venenatis felis varius in. In imperdiet mollis scelerisque. Phasellus id eleifend felis, ut aliquam arcu.",
+
+            "deity_titles" : "Goddess of Ice<br>Crystal Queen<br>Mother of Creeds<br>The Honored One",
+            "deity_symbol" : "A set of merchant scales hung from the guard of a downturned sword",
+            "deity_worshippers" : "Knights<br>Priests<br>Nobles",
+
+            "deity_alignment" : "Lawful Neutral",
+            "deity_portfolio" : "Honor<br>Tradition<br>Creed",
+            "deity_domains" : "War, Peace, Grave, Twilight, Order",
+
+            "deity_animals" : "Arctic Cat<br>Arctic Roc",
+            "deity_monsters" : "Ice Elementals<br>Water Elementals<br>Air Elementals<br>Celestials<br>White Dragons",
+            "deity_colors" : "White, Aqua, Teal, Platinum",
+
             "natives" : "Constructs<br>White Dragons<br>Ice Elementals",
             "factions" : "NA",
 
@@ -32,7 +46,21 @@
             "alignment" : "Chaotic Neutral",
 
             "deity" : "Gondarin",
-            "deity_img" : "",
+            "deity_img" : "https://upload.wikimedia.org/wikipedia/commons/2/28/The_Mythology_of_all_races_%281918%29_%2814742406276%29.jpg",
+            "deity_description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque condimentum ut neque at malesuada. Quisque mattis vel lorem eget venenatis. Sed cursus dui vel orci cursus hendrerit. Quisque in arcu pretium, laoreet est quis, tincidunt enim. In tincidunt viverra quam, pharetra vestibulum neque porta nec. Ut eu volutpat orci, quis pretium ligula. Aliquam in nibh lorem. Proin id semper nibh. In pulvinar lacus nec velit euismod placerat. In non congue lacus, eu pharetra elit. Praesent id lorem in nunc venenatis congue. Quisque suscipit tempus commodo. Morbi diam quam, rutrum in venenatis sed, pulvinar nec justo. Sed fermentum posuere ligula, sit amet venenatis felis varius in. In imperdiet mollis scelerisque. Phasellus id eleifend felis, ut aliquam arcu.",
+
+            "deity_titles" : "God of Magma<br>Forge Master<br>All-Father<br>The First Artisan",
+            "deity_symbol" : "Brass Hammer",
+            "deity_worshippers" : "Engineers<br>Smiths<br> Miners<br>Dwarves<br>Fiends<br>Demons",
+
+            "deity_alignment" : "Chaotic Neutral",
+            "deity_portfolio" : "Creation<br>Invention<br>Expression",
+            "deity_domains" : "Forge<br>Knowledge<br>War",
+
+            "deity_animals" : "Brass Elephant<br>Magma Wyrm",
+            "deity_monsters" : "Magma Elementals<br>Fire Elementals<br>Earth Elementals<br>Fiends<br>Brass Dragon",
+            "deity_colors" : "Brass, Silver, Obsidian, Red, Black",
+
             "natives" : "Hybrids<br>Brass Dragons<br>Magma Elementals",
             "factions" : "NA",
 
@@ -52,7 +80,21 @@
             "alignment" : "Neutral Good",
 
             "deity" : "Deliklese",
-            "deity_img" : "",
+            "deity_img" : "https://upload.wikimedia.org/wikipedia/commons/c/cb/Greek_mythology_systematized_%281880%29_%2814559602149%29.jpg",
+            "deity_description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque condimentum ut neque at malesuada. Quisque mattis vel lorem eget venenatis. Sed cursus dui vel orci cursus hendrerit. Quisque in arcu pretium, laoreet est quis, tincidunt enim. In tincidunt viverra quam, pharetra vestibulum neque porta nec. Ut eu volutpat orci, quis pretium ligula. Aliquam in nibh lorem. Proin id semper nibh. In pulvinar lacus nec velit euismod placerat. In non congue lacus, eu pharetra elit. Praesent id lorem in nunc venenatis congue. Quisque suscipit tempus commodo. Morbi diam quam, rutrum in venenatis sed, pulvinar nec justo. Sed fermentum posuere ligula, sit amet venenatis felis varius in. In imperdiet mollis scelerisque. Phasellus id eleifend felis, ut aliquam arcu.",
+
+            "deity_titles" : "Goddess of Ooze<br>Life-Giver<br>All-Mother<br>The Merciful One",
+            "deity_symbol" : "Melting Flower",
+            "deity_worshippers" : "Druids<br>Hunters<br>Farmers",
+
+            "deity_alignment" : "Neutral Good",
+            "deity_portfolio" : "Beauty<br>Pleasure<br>Freedom",
+            "deity_domains" : "Life<br>Nature",
+
+            "deity_animals" : "Deer<br>Toad<br>Alligator",
+            "deity_monsters" : "Ooze Elementals<br>Water Elementals<br>Earth Elementals<br>Beasts<br>Green Dragons",
+            "deity_colors" : "Green, Brown, Pink, Yellow",
+
             "natives" : "Fey<br>Green Dragons<br>Oozes",
             "factions" : "NA",
 
@@ -71,7 +113,21 @@
             "alignment" : "Neutral Evil",
 
             "deity" : "Sebabos",
-            "deity_img" : "",
+            "deity_img" : "https://upload.wikimedia.org/wikipedia/commons/c/c4/Phoenix_%281583%29.svg",
+            "deity_description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque condimentum ut neque at malesuada. Quisque mattis vel lorem eget venenatis. Sed cursus dui vel orci cursus hendrerit. Quisque in arcu pretium, laoreet est quis, tincidunt enim. In tincidunt viverra quam, pharetra vestibulum neque porta nec. Ut eu volutpat orci, quis pretium ligula. Aliquam in nibh lorem. Proin id semper nibh. In pulvinar lacus nec velit euismod placerat. In non congue lacus, eu pharetra elit. Praesent id lorem in nunc venenatis congue. Quisque suscipit tempus commodo. Morbi diam quam, rutrum in venenatis sed, pulvinar nec justo. Sed fermentum posuere ligula, sit amet venenatis felis varius in. In imperdiet mollis scelerisque. Phasellus id eleifend felis, ut aliquam arcu.",
+
+            "deity_titles" : "God of Ash<br>Lord of Death<br>Grim Reaper<br>The Dark One",
+            "deity_symbol" : "Black Axe",
+            "deity_worshippers" : "Undertakers<br>Cultists<br>Cannibals<br>Liches",
+
+            "deity_alignment" : "Neutral Evil",
+            "deity_portfolio" : "Destruction<br>Decay<br>Entropy",
+            "deity_domains" : "Death<br>Grave<br>Twilight",
+
+            "deity_animals" : "None",
+            "deity_monsters" : "Ash Elementals<br>Fire Elementals<br>Air Elementals<br>Undead<br>Shadow Dragons",
+            "deity_colors" : "Grey, Gold, Black",
+
             "natives" : "Necrophages<br>Shadow Dragons<br>Ash Elementals",
             "factions" : "NA",
 
@@ -90,7 +146,21 @@
             "alignment" : "Neutral",
 
             "deity" : "Tempest",
-            "deity_img" : "",
+            "deity_img" : "https://upload.wikimedia.org/wikipedia/commons/2/21/Roc_1.jpg",
+            "deity_description" : "Tempest is the Elemental Titan of Caelar, having adapted to a fully airborne.  Tempest is an archaic celestial entity, preferrring to take the form of an avian.  ",
+
+            "deity_titles" : "Skyborn",
+            "deity_symbol" : "An eagle shrouded in lightning",
+            "deity_worshippers" : "The Talons of Caelar",
+
+            "deity_alignment" : "Neutral",
+            "deity_portfolio" : "NA",
+            "deity_domains" : "Tempest",
+
+            "deity_animals" : "Thunder Roc",
+            "deity_monsters" : "Air Elementals",
+            "deity_colors" : "Grey, Violet",
+
             "natives" : "<a href='/myrmidos/Category_Monsters/Type_Celestials/Celestials.html'>Celestials</a><br><a href='/myrmidos/Category_Monsters/Type_Dragons/Subtype_Chromatic/BlueDragon.html'>Blue Dragons</a><br>Air Elementals",
             "factions" : "NA",
 
@@ -110,7 +180,21 @@
             "alignment" : "Neutral",
 
             "deity" : "Averdeus",
-            "deity_img" : "",
+            "deity_img" : "https://upload.wikimedia.org/wikipedia/commons/c/c6/Little_folks_in_feathers_and_fur%2C_and_others_in_neither_%281875%29_%2814597486550%29.jpg",
+            "deity_description" : "Averdeus is the Elemental Titan of Ignar, having adapted to a blistering environment.  Averdeus is a shapeshifting demonic entity, preferrring to combine the most frightening aspects of insects, arachnids, and serpents in his forms.  Many scholars have concluded that Averdeus is his most typical form is both arachnid and insect, but the inclusion of serpent as a subtype of reptile is often the topic of debate.  ",
+
+            "deity_titles" : "Fireborn",
+            "deity_symbol" : "A scorpion wreathed in flames",
+            "deity_worshippers" : "The Pincers of Ignar",
+
+            "deity_alignment" : "Neutral",
+            "deity_portfolio" : "NA",
+            "deity_domains" : "Fire",
+
+            "deity_animals" : "Spider Snake",
+            "deity_monsters" : "Fire Elementals",
+            "deity_colors" : "Red, Black",
+
             "natives" : "Fiends<br>Red Dragons<br>Fire Elementals",
             "factions" : "NA",
 
@@ -130,7 +214,21 @@
             "alignment" : "Neutral",
 
             "deity" : "Tarrasque",
-            "deity_img" : "",
+            "deity_img" : "https://upload.wikimedia.org/wikipedia/commons/7/7d/Gravure_de_la_Tarasque.png",
+            "deity_description" : "The Tarrasque is the Elemental Titan of Terral, having adapted to a subterranean environment.  The Tarrasque is a bestial monstrous entity, preferrring to combine the most physically powerful elements of both reptiles and mammals in his forms.  Many scholars have concluded that the Tarrasque is his most typical form is both reptilian and mammalian, but the ratios involved are less clear.  ",
+
+            "deity_titles" : "Earthborn",
+            "deity_symbol" : "A sleeping reptile with a mountain atop its back",
+            "deity_worshippers" : "The Horns of Terral",
+
+            "deity_alignment" : "Neutral",
+            "deity_portfolio" : "NA",
+            "deity_domains" : "Earth",
+
+            "deity_animals" : "Zaratan",
+            "deity_monsters" : "Earth Elementals",
+            "deity_colors" : "Brown, Tan, Orange",
+
             "natives" : "Giants<br>Black Dragons<br>Earth Elementals",
             "factions" : "NA",
 
@@ -149,7 +247,21 @@
             "alignment" : "Neutral",
 
             "deity" : "Kraken",
-            "deity_img" : "",
+            "deity_img" : "https://upload.wikimedia.org/wikipedia/commons/0/00/PSM_V14_D360_Octopus_or_devil_fish_octopus_vulgaris.png",
+            "deity_description" : "The Kraken is the Elemental Titan of Aquar, having adapted to a dark aquatic environment.  The Kraken is a massive aberrant entity, preferrring to combine the most alien aspects of cephalopods and fish in her forms.  Many scholars have concluded that the Kraken is her most typical form is both cephalopod and fish--specifically shark--but few can agree on the exact ratio involved.  ",
+
+            "deity_titles" : "Waterborn",
+            "deity_symbol" : "Tentacles pulling a sailing ship below the water",
+            "deity_worshippers" : "The Tentacles of Aquar",
+
+            "deity_alignment" : "Neutral",
+            "deity_portfolio" : "NA",
+            "deity_domains" : "Water",
+
+            "deity_animals" : "Dire Squid",
+            "deity_monsters" : "Water Elementals",
+            "deity_colors" : "Blue, Teal, Navy",
+
             "natives" : "<a href='/myrmidos/Category_Monsters/Type_Aberrations/Aberrations.html'>Aberrations</a><br><a href='/myrmidos/Category_Monsters/Type_Dragons/Subtype_Chromatic/Dracoturtle.html'>Dracoturtles</a><br>Water Elementals",
             "factions" : "NA",
 
