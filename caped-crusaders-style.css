@@ -1,4 +1,9 @@
-/* Universal changes made to all HTML elements of the generic kind */
+/* 
+||==========================================================================================
+|| Universal changes made to all HTML elements of the generic kind 
+||==========================================================================================
+*/
+/* The default background color and general text settings */
 body {
   background: rgb(219,219,224);
   font-family: sans-serif;
@@ -7,11 +12,69 @@ body {
   overflow: visible;
 }
 
+/* Level one headings, only seen in the header as the home button and the page title */
+h1 {
+  font-size: x-large;
+  color: rgb(225, 225, 225);
+
+}
+
+/* Headings that are not in the header */
+h2, h3, h4 {
+  font-weight: bolder;
+  color: rgb(25,25,25);
+
+}
+
+/* Level two headings, only used for the first heading outside of the header, usually called "Overview" */
+h2 {
+  font-size: x-large;
+
+}
+
+/* Level three headings */
+h3 {
+  font-size: larger;
+
+}
+
+/* Level four headings */
+h4 {
+  font-size: medium;
+  font-style: italic;
+  margin-left: 15px;
+
+}
+
+/* The generic horizontal line break */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid rgb(0,0,0);
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* The generic text wrapper across the site */
+p {
+  color: rgb(25,25,25);
+  margin-left: 25px;
+
+}
+
 /* All buttons will show cursor by default */
 button {
   cursor: pointer;
+
 }
 
+
+/* 
+||==========================================================================================
+|| Specific changes made to various HTML classes 
+||==========================================================================================
+*/
 /* The background container div that all other HTML elements rest inside (or on top) of */
 .page-background-container {
   width: 100%;
@@ -534,14 +597,7 @@ button.BulletinButton a {
   font-size: medium;
   text-decoration: none;
 }
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid rgb(0, 0, 0);
-  margin: 1em 0;
-  padding: 0;
-}
+
 
 
 .EntryDate {
@@ -554,22 +610,7 @@ hr {
 
 
 
-p, h2 {
-  color: rgb(52,58,64);
-}
-h1 {
-  font-size: x-large;
-  color: rgb(225, 225, 225);
-}
-h2 {
-  font-size: larger;
-}
-h3 {
-  font-size: large;
-}
-.header {
-  color: rgb(255, 255, 255);
-}
+
 
 .Overview {
   flex-direction: column;
