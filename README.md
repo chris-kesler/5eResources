@@ -1,5 +1,5 @@
 # KnowOnesWebsiteOfEverything
-A website that serves as a showcase of my HTML and CSS skills.  The content within is related to Dungeons and Dragons 5th Edition, and covers everything from characters builds of mine, to a original wiki that organizes my homebrew world, to a (planned) proxy filtering system with links to official content.  
+A website that serves as a showcase of my HTML, CSS, and Javascript skills.  The content within is related to Dungeons and Dragons 5th Edition, and covers everything from characters builds of mine, to a original wiki that organizes my homebrew world, to a variant 5e system I've been cooking up.  
 
 How to Use
 ----------
@@ -12,27 +12,53 @@ The jQuery library is used to import persistent HTML elements across multiple pa
 
 Site Content
 -------
-The website is broken down into four main categories, which are Caped Crusaders, Myrmidos Wiki, Tech Guides, and Character Builds.  
-
-Caped Crusaders is my personal variant 5e system that includes character options reflecting Magic, Technology/Techniques, and Superpowers.  The goal is to create a system that is comprehensive and more accommodating of science fiction elements.  
-
-The Myrmidos Wiki is a series of entries with descriptions that detail my homebrew world, which is heavily inspired by the standard Forgotten Realms setting.  Many aspects will be recognizable to avid fans of D&D, but there are a great many tweaks and utterly unique elements that distinguish it as its own.  The purpose of this wiki is to serve as an organized reference for lore and information, both for myself as a Dungeon Master and for the Players at my table.
-
-The Tech Guides are a series of articles I have written that go over Techs (techniques) that are highly effective within the gameplay of D&D 5e.  Some of these techs are rather exploitative of unintended mechanical interactions, but none are written with the intent of causing strife for other table members.  Some are merely thought experiments to see where the limits of the game lie, and how badly it breaks the game to push past those limits.  Others are strategies that help players make the most of their character's abilities.  These techs should not be considered for actual play without first considering the table environment, and are more intended to comment on the nature of 5th Edition mechanics.  
-
-My Character Builds go hand in hand with some Tech Guide articles.  These pages detail 5th Edition characters that I have built as concepts, and some have been tested in actual play.  The overview discusses the goal of the build, the tables go over the choices made at each level, and the tier breakdowns explain how the character is meant to be played at each stage of its life cycle.  As another disclaimer, some of these builds are considered "broken" and might reduce the enjoyment of other players at the table.  Some of these are intended for actual play, and some are thought experiments to test the game mechanics and limits.  The tone of the table must be considered before playing any character, including these builds.  
-
-
-Beyond those four categories, I have also advertised myself to a small degree.  I have linked my GitHub account, LinkedIn, and Discord Server so that anyone who wants to reach out for any reason can do so.  
-
-
-As I mentioned before, I have taken the art in this project from various places across the internet.  I have put in an effort to select art that is tactful, as there are many rather tasteless depiction of fantasy characters in existence.  While some may disagree, I find the idea that every feminine being need be depicted in an arousing way to be extremely tasteless and unprofessional.  Some of those depictions are certainly nice to look at, but many of them seem ridiculously unrealistic.  That may sound ironic when discussing a fictional world with magic, monsters, and gods, but those are all based on immersive assumptions.  I loathe boob-plate and sword swinging warriors in high heels because there are no implicit assumptions about physics or combat working differently than they do in the real world.  
-
-That being said, I have done my best to exclude art I find to be in poor taste, favoring depictions that are respectful and high quality.  I am not an objective filter by any means, and while I may have improved upon whatever the first google results might be, there very well may be an unfair and recognizable distinction between how feminine and masculine entities are presented.  I would greatly appreciate any specific feedback on this topic, especially if one or more replacement images are suggested.  This isn't something that I will ever preach about to the masses since I don't think it is wrong for artists to depict their subjects in whatever way they please, but it is kind of annoying to sift through.  However, I believe that burden can be made much lighter through collaboration.  
-
-I have looked into the legality behind using art found online and it turns out that heavy fines and other penalties can be accrued, even for a portfolio project that never becomes an actual website.  While it may be unlikely to occur, I like to make sure that I am covered.  For this reason, I have removed all art that is not classified under the Creative Commons License until I can get the express consent of the artists or find suitable public domain replacements.  The exception to this includes images found on thenounproject.com, which I have included throughout the Caped Crusaders pages.  These images include artist credit as text within the image itself.  
-
-When the Noun Project does not have what I am looking for, I have been using and will continue to use images under the Creative Commons License as substitutes.  Let me be clear, most Creative Commons images have a very tacky and cheap feel to them, so please try not to judge this site based on the images therein.  I'm doing my best to make something impressive without breaking laws.  
-
-
-If you have any feedback or comments for me regarding anything related to this or other projects, feel free to contact me in any of the ways mentioned above.  
+<p>
+    This site is intended to showcase my HTML, CSS, and Javascript skills.  Most of the content within this site is related to Dungeons and Dragons 5th Edition (which is a table top roleplaying game that I thoroughly enjoy) or my variant 5E system, Caped Crusaders.  I chose to build a site around this topic since I found it easy to remain motivated to continue working on this project, and since it contains content and tools that I have longed for in my ttrpg experiences prior.  
+    <br><br>
+    <b>
+        Feel free to check out the Classes and Spells within the Caped Crusaders subsite above!  There are also entries within Game Journals that are being updated regularly, including my D&D gameplay recordings from YouTube.
+    </b>
+    <br><br>
+    While all subsites can be viewed, the site is still under constant maintenance.  
+    <br><br>
+    This website is broken down into five main categories or substies, which are Caped Crusaders, Character Builds, Game Journals, Myrmidos Wiki, and my Project Portfolio.
+</p>
+<hr>
+<h3>Caped Crusaders</h3>
+<p>
+    Caped Crusaders is being developed as a D&D 5th Edition variatn system that incorporates Magic, Superpowers, and Technology as equally viable sources of power for player characters.  The goal is to create something ultimately versatile that can accomodate science fiction, high fantasy, and modern superheroes all at once since those elements often have a high degree of thematic overlap.  I'd also like to create more comprehensive options for crafting, construction, and vehicle management after all the character options have been handled.  
+    <br><br>
+    I have highly ambitious long term goals that involve a digital character builder and discord bot integration, but there is much to do before that becomes a reality.  
+</p>
+<hr>
+<h3>Character Builds</h3>
+<p>
+    My Character Builds are usually detailing characters that I have or currently am playing in a D&D 5th Edition game.  Some are simply concept builds never meant for actual play, while others are lying in wait until I find a game for them.  In either case, I am not a 5th Edition content creator trying to make a living off of my fantastic builds; these are simply to showcase neat interactions I have discovered and to give greater detail to some Character Journals that go in tandem with a build.  
+    <br><br>
+    The overview discusses the goal of the build, the tables go over the choices made at each level, and the tier breakdowns explain how the character is meant to be played at each stage of its life cycle.  As another disclaimer, some of these builds are considered "broken" and might reduce the enjoyment of other players at the table.  Some of these are intended for actual play, and some are thought experiments to test the game mechanics and limits.  The tone of the table must be considered before playing any character, including these builds.
+</p>
+<hr>
+<h3>Game Journals</h3>
+<p>
+    Game Journals are logs of my experiences with various games such as Minecraft, Solasta, and Dungeons & Dragons 5th Edition.  The goal of this section is to document my progress for personal viewing and review purposes.  As such, these are not very entertaining for most people, but if you are curious to see what I've been up to, feel free to take a look.
+</p>
+<hr>
+<h3>Myrmidos Wiki</h3>
+<p>
+    The Myrmidos Wiki is a series of entries with descriptions that detail my homebrew world, which is heavily inspired by the standard Forgotten Realms setting.  Many aspects will be recognizable to avid fans of D&D, but there are a great many tweaks and utterly unique elements that distinguish it as its own.  The purpose of this wiki is to serve as an organized reference for lore and information, both for myself as a Dungeon Master and for the Players at my table.
+    <br><br>
+    Regarding the images present within the Wiki, I have taken the art in this project from various places across the internet.  I have put in an effort to select art that is tactful, as there are many rather tasteless depiction of fantasy characters in existence.  While some may disagree, I find the idea that every feminine being need be depicted in an arousing way to be extremely tasteless and unprofessional.  Some of those depictions are certainly nice to look at, but many of them seem ridiculously unrealistic.  That may sound ironic when discussing a fictional world with magic, monsters, and fantastical gods, but those are all based on immersive assumptions.  I loathe boob-plate and sword swinging warriors in high heels because there are no implicit assumptions about physics or combat working differently than they do in the real world.  Eg, physical armor still needs to cover most of your body to protect you.
+    <br><br>
+    That being said, I have done my best to exclude art I find to be in poor taste, favoring depictions that are respectful and high quality.  I am not an objective filter by any means, and while I may have improved upon whatever the first google results might be, there very well may be an unfair and recognizable distinction between how feminine and masculine entities are presented.  I would greatly appreciate any specific feedback on this topic, especially if one or more replacement images are suggested.  This isn't something that I will ever preach about to the masses since I don't think it is wrong for artists to depict their subjects in whatever way they please, but it is kind of annoying and time-consuming to sift through.  I believe that burden can be made much lighter through collaboration though.
+    <br><br>
+    I have looked into the legality behind using art found online and it turns out that heavy fines and other penalties can be accrued, even for a portfolio project that never accrues any income.  While it may be unlikely to occur, I like to make sure that my ass is covered.  For this reason, I have avoided all art that is not classified for public use unless I have received the express consent of the artist.  
+    <br><br>
+    In the meantime, I have been using and will continue to use images under the Creative Commons License for the majority of this project.  Let me be clear, most Creative Commons images have a very tacky and cheap feel to them, so please try not to judge this site based on the images therein.  I'm doing my best to make something impressive without breaking laws.
+</p>
+<hr>
+<h3>Project Portfolio</h3>
+<p>
+    My Project Portfolio currently includes three flagship projects that best showcase my knowledge of computer programming concepts.  Each page within contains a description and explanation of the project, along with a link to the project files on GitHub.
+    <br><br>
+    Beyond this category, I have also advertised myself to a small degree.  I have linked my GitHub account and Discord Server in the footer below so that anyone who wants to reach out for any reason can do so.  If you have any feedback or comments for me regarding anything related to this or other projects, feel free to contact me in any of the ways mentioned above.
+</p>
