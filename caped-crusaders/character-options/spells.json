@@ -2,20 +2,36 @@
 {
     "type" : [
         {
+            "type_name" : "Abjuration",
+            "type_credit" : "<a href='https://www.deviantart.com/dryoshiyahu/art/Schools-of-Magic-811154835' target='_blank'>Schools of Magic Sigils</a> by <a href='https://www.deviantart.com/dryoshiyahu' target='_blank'>Dr Yoshiyahu</a> on <a href='https://www.deviantart.com/' target='_blank'>Deviant Art</a>"
+        },
+        {
+            "type_name" : "Divination",
+            "type_credit" : "<a href='https://www.deviantart.com/dryoshiyahu/art/Schools-of-Magic-811154835' target='_blank'>Schools of Magic Sigils</a> by <a href='https://www.deviantart.com/dryoshiyahu' target='_blank'>Dr Yoshiyahu</a> on <a href='https://www.deviantart.com/' target='_blank'>Deviant Art</a>"
+        },
+        {
+            "type_name" : "Evocation",
+            "type_credit" : "<a href='https://www.deviantart.com/dryoshiyahu/art/Schools-of-Magic-811154835' target='_blank'>Schools of Magic Sigils</a> by <a href='https://www.deviantart.com/dryoshiyahu' target='_blank'>Dr Yoshiyahu</a> on <a href='https://www.deviantart.com/' target='_blank'>Deviant Art</a>"
+        },
+        {
+            "type_name" : "Conjuration",
+            "type_credit" : "<a href='https://www.deviantart.com/dryoshiyahu/art/Schools-of-Magic-811154835' target='_blank'>Schools of Magic Sigils</a> by <a href='https://www.deviantart.com/dryoshiyahu' target='_blank'>Dr Yoshiyahu</a> on <a href='https://www.deviantart.com/' target='_blank'>Deviant Art</a>"
+        },
+        {
             "type_name" : "Necromancy",
-            "type_credit" : "---"
+            "type_credit" : "<a href='https://www.deviantart.com/dryoshiyahu/art/Schools-of-Magic-811154835' target='_blank'>Schools of Magic Sigils</a> by <a href='https://www.deviantart.com/dryoshiyahu' target='_blank'>Dr Yoshiyahu</a> on <a href='https://www.deviantart.com/' target='_blank'>Deviant Art</a>"
         },
         {
-            "type_name" : "Positioning",
-            "type_credit" : "Move by Тимур Минвалеев from NounProject.com"    
+            "type_name" : "Transmutation",
+            "type_credit" : "<a href='https://www.deviantart.com/dryoshiyahu/art/Schools-of-Magic-811154835' target='_blank'>Schools of Magic Sigils</a> by <a href='https://www.deviantart.com/dryoshiyahu' target='_blank'>Dr Yoshiyahu</a> on <a href='https://www.deviantart.com/' target='_blank'>Deviant Art</a>"
         },
         {
-            "type_name" : "Radiation",
-            "type_credit" : "Sun by Angelo Troiano from NounProject.com"    
+            "type_name" : "Enchantment",
+            "type_credit" : "<a href='https://www.deviantart.com/dryoshiyahu/art/Schools-of-Magic-811154835' target='_blank'>Schools of Magic Sigils</a> by <a href='https://www.deviantart.com/dryoshiyahu' target='_blank'>Dr Yoshiyahu</a> on <a href='https://www.deviantart.com/' target='_blank'>Deviant Art</a>"
         },
         {
-            "type_name" : "Velocity",
-            "type_credit" : "Speed by Alice Design from NounProject.com"    
+            "type_name" : "Illusion",
+            "type_credit" : "<a href='https://www.deviantart.com/dryoshiyahu/art/Schools-of-Magic-811154835' target='_blank'>Schools of Magic Sigils</a> by <a href='https://www.deviantart.com/dryoshiyahu' target='_blank'>Dr Yoshiyahu</a> on <a href='https://www.deviantart.com/' target='_blank'>Deviant Art</a>"
         }
     ],
 

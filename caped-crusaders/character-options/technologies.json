@@ -1,24 +1,32 @@
 {
     "type" : [
         {
-            "type_name" : "Disabling",
-            "type_credit" : "Disable by Mas Dhimas from NounProject.com"    
+            "type_name" : "Ballistics",
+            "type_credit" : "Rocket by Azam Ishaq from NounProject.com"
         },
         {
-            "type_name" : "Positioning",
-            "type_credit" : "Move by Тимур Минвалеев from NounProject.comMove by Тимур Минвалеев from NounProject.comMove by Тимур Минвалеев from NounProject.com"    
+            "type_name" : "Electronics",
+            "type_credit" : "Circuit by Icon Lauk from NounProject.com"    
         },
         {
-            "type_name" : "Radiation",
-            "type_credit" : "Sun by Angelo Troiano from NounProject.com"    
+            "type_name" : "Engineering",
+            "type_credit" : "Piston by Tippawan Sookruay from NounProject.com"    
         },
         {
-            "type_name" : "Velocity",
-            "type_credit" : "Speed by Alice Design from NounProject.com"    
+            "type_name" : "Laser Optics",
+            "type_credit" : "Laser by Andrew Doane from NounProject.com"    
         },
         {
-            "type_name" : "Gravity",
-            "type_credit" : "Gravity by Creaticca Creative Agency from NounProject.com"    
+            "type_name" : "Life Support",
+            "type_credit" : "Medpack by Agung Cahyo s from NounProject.com"    
+        },
+        {
+            "type_name" : "Propulsion",
+            "type_credit" : "Jetpack by Symbolon from NounProject.com"    
+        },
+        {
+            "type_name" : "Stereoptics",
+            "type_credit" : "Hologram by Turkkub from NounProject.com"    
         }
     ],
 
