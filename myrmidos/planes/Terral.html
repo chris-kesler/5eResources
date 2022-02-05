@@ -42,9 +42,9 @@
             }
 
             // Populating the page table image and title
-            document.getElementById("wiki-page-table-image").src = f.plane_img;
-            document.getElementById("wiki-page-table-image-source").innerHTML = "Elemental Plane of " + f.element;
-            document.getElementById("wiki-page-table-image-source").href = f.plane_img;
+            document.getElementById("content-attributes-table-image").src = f.plane_img;
+            document.getElementById("content-attributes-table-image-source").innerHTML = "Elemental Plane of " + f.element;
+            document.getElementById("content-attributes-table-image-source").href = f.plane_img;
             document.getElementById("wiki-page-table-title").innerHTML = f.plane;
             document.getElementById("wiki-page-table-subtitle").innerHTML = plane_type;
 
@@ -101,12 +101,12 @@
           <hr>
           
           <!-- A table to hold the concise page data -->
-          <table class="wiki-page-overview-table">
+          <table class="content-attributes-overview-table">
             <tr>
-              <th colspan="2"><img id="wiki-page-table-image"></th>
+              <th colspan="2"><img id="content-attributes-table-image"></th>
             </tr>
             <tr>
-              <th colspan="2"><i><a id="wiki-page-table-image-source" target="_blank"></a></i></th>
+              <th colspan="2"><i><a id="content-attributes-table-image-source" target="_blank"></a></i></th>
             </tr>
             <tr>
               <th colspan="2" id="wiki-page-table-title"></th>

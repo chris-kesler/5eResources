@@ -16,7 +16,7 @@
           var page = path.split("/").pop();
           $.each(data.class, function(i, f) {
             document.getElementById(`class-button-${i}`).setAttribute("onclick", "location.href='classes/" + f.name_str.toLowerCase() + ".html'");
-            document.getElementById(`class-button-${i}`).innerHTML = "<section class='button-top'><img class='class-image-small' src='/_SiteResources/Images/" + f.name_str + ".png' alt='" + f.name_str + " Image'><h3>" + f.name_str + "</h3><hr>" + f.description_short_str + "</section><section class='button-bottom'><i><b>Hit Die:</b>  d" + f.hit_die_int + "<br><b>Primary Ability:</b>  " + f.primary_ability + "<br><b>Saves:</b>  " + f.proficiencies_saves + "</section>";
+            document.getElementById(`class-button-${i}`).innerHTML = "<section class='cc-class-button-content-ceiling'><img class='cc-class-image-small' src='/_SiteResources/Images/" + f.name_str + ".png' alt='" + f.name_str + " Image'><h3>" + f.name_str + "</h3><hr>" + f.description_short_str + "</section><section class='cc-class-button-content-floor'><i><b>Hit Die:</b>  d" + f.hit_die_int + "<br><b>Primary Ability:</b>  " + f.primary_ability + "<br><b>Saves:</b>  " + f.proficiencies_saves + "</section>";
           });
         });
       });
@@ -52,43 +52,43 @@
               <h2>Overview</h2>
               <hr>
 
-              <table class="page-button-table">
+              <table class="page-nav-button-table">
                 <tbody></tbody>
                 <tr><td>
-                  <button id="class-button-4" class="MagicClassButton"></button>
+                  <button id="class-button-4" class="cc-class-button-magic"></button>
                 </td>
                 <td>
-                  <button id="class-button-5" class="MagicClassButton"></button>
+                  <button id="class-button-5" class="cc-class-button-magic"></button>
                 </td>
                 <td>
-                  <button id="class-button-6" class="MagicClassButton"></button>
+                  <button id="class-button-6" class="cc-class-button-magic"></button>
                 </td>
                 <td>
-                  <button id="class-button-7" class="MagicClassButton"></button>
+                  <button id="class-button-7" class="cc-class-button-magic"></button>
                 </td></tr>
                 <tr><td>
-                  <button id="class-button-8" class="PowerClassButton"></button>
+                  <button id="class-button-8" class="cc-class-button-power"></button>
                 </td>
                 <td>
-                  <button id="class-button-9" class="PowerClassButton"></button>
+                  <button id="class-button-9" class="cc-class-button-power"></button>
                 </td>
                 <td>
-                  <button id="class-button-10" class="PowerClassButton"></button>
+                  <button id="class-button-10" class="cc-class-button-power"></button>
                 </td>
                 <td>
-                  <button id="class-button-11" class="PowerClassButton"></button>
+                  <button id="class-button-11" class="cc-class-button-power"></button>
                 </td></tr>
                 <tr><td>
-                  <button id="class-button-0" class="TechClassButton"></button>
+                  <button id="class-button-0" class="cc-class-button-tech"></button>
                 </td>
                 <td>
-                  <button id="class-button-1" class="TechClassButton"></button>
+                  <button id="class-button-1" class="cc-class-button-tech"></button>
                 </td>
                 <td>
-                  <button id="class-button-2" class="TechClassButton"></button>
+                  <button id="class-button-2" class="cc-class-button-tech"></button>
                 </td>
                 <td>
-                  <button id="class-button-3" class="TechClassButton"></button>
+                  <button id="class-button-3" class="cc-class-button-tech"></button>
                 </td></tr>
 
               </table>    

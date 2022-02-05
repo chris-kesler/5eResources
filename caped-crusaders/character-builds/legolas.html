@@ -23,10 +23,10 @@
 
               // Populating basic page data and overview
               document.getElementById("class-page-header-title").innerHTML = "Caped Crusaders: Character Builds > " + f.name_str;
-              document.getElementById("class-image").src = "/_SiteResources/Images/" + f.class_str + ".png";
-              document.getElementById("class-image").alt = f.class_img_credit;
-              document.getElementById("subclass-image").src = "/_SiteResources/Images/" + f.class_str + "-" + f.subclass_str + ".png";
-              document.getElementById("subclass-image").alt = f.class_img_credit;
+              document.getElementById("cc-class-image").src = "/_SiteResources/Images/" + f.class_str + ".png";
+              document.getElementById("cc-class-image").alt = f.class_img_credit;
+              document.getElementById("cc-subclass-image").src = "/_SiteResources/Images/" + f.class_str + "-" + f.subclass_str + ".png";
+              document.getElementById("cc-subclass-image").alt = f.class_img_credit;
               document.getElementById("build-description").innerHTML = f.build_overview;
 
               // Populating the Build Setup Table with a single row
@@ -466,7 +466,7 @@
 
                 // Populating Walkthrough by Level text and Selections tables
                 if (f.level_guide[i].walkthrough != undefined) {
-                  document.getElementById("build-walkthrough-by-level").innerHTML += "<hr><table id='selections-table-" + (i+1) + "' class='selections-table'><thead><th style='width: 15vw' colspan='2'>" + class_subclass + ", lvl " + (i+1) + "</th></thead><tbody><tr><td>Sustainables</td><td>" + sustainable_selections_links + "</td></tr><tr><td>Cantrips</td><td>" + cantrip_selections_links + "</td></tr><tr><td>Consumables</td><td>" + consumable_selections_links + "</td></tr></tbody></table>" + "<h4>Level: " + (i+1) + "</h4><p>" + f.level_guide[i].walkthrough + "</p>";
+                  document.getElementById("build-walkthrough-by-level").innerHTML += "<hr><table id='cc-build-selections-table-" + (i+1) + "' class='cc-build-selections-table'><thead><th style='width: 15vw' colspan='2'>" + class_subclass + ", lvl " + (i+1) + "</th></thead><tbody><tr><td>Sustainables</td><td>" + sustainable_selections_links + "</td></tr><tr><td>Cantrips</td><td>" + cantrip_selections_links + "</td></tr><tr><td>Consumables</td><td>" + consumable_selections_links + "</td></tr></tbody></table>" + "<h4>Level: " + (i+1) + "</h4><p>" + f.level_guide[i].walkthrough + "</p>";
                 }
                 
                 // Populating the Level Table with a new row for each level
@@ -497,14 +497,14 @@
               <h2>Overview</h2>
               <hr>
               <center>--CHARACTER BUILDS ONLY GO TO LEVEL 10 UNTIL FURTHER NOTICE--</center>
-              <img id="subclass-image" class="class-image-medium" alt="Class Image">
-              <img id="class-image" class="class-image-medium" alt="Class Image">
+              <img id="cc-subclass-image" class="cc-class-image-medium" alt="Class Image">
+              <img id="cc-class-image" class="cc-class-image-medium" alt="Class Image">
               <p id="build-description"></p>
 
               <hr>
               <h3>Build Setup</h3>
               <p id="build-setup-overview">We'll take the following setup prior to our class levels.  </p>
-              <table class="caped-crusader-table" id="build-setup-table">
+              <table class="cc-attributes-overview-table" id="build-setup-table">
                 <thead>
                   <th>Race</th>
                   <th>Background</th>
@@ -523,7 +523,7 @@
               <h3>Level Table</h3>
               <p id="build-level-overview">We'll take features based on the following table to initiate and progress through our build.  </p>
 
-              <table id="build-level-table" class="caped-crusader-table">
+              <table id="build-level-table" class="cc-attributes-overview-table">
                 <thead>
                   <th style="width: 5vw">Level</th>
                   <th style="width: 10vw">Class/Subclass</th>

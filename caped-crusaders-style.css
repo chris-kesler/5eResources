@@ -12,6 +12,13 @@ body {
   overflow: visible;
 }
 
+/* The generic span used most often in game journals */
+span {
+  display: block;
+  position: bottom;
+  margin-right: 10px;
+}
+
 /* Level one headings, only seen in the header as the home button and the page title */
 h1 {
   font-size: x-large;
@@ -26,7 +33,7 @@ h2, h3, h4 {
 
 }
 
-/* Level two headings, only used for the first heading outside of the header, usually called "Overview" */
+/* Level two headings, only used for the first heading outside of the header, usually consists of "Overview" */
 h2 {
   font-size: x-large;
 
@@ -69,22 +76,74 @@ button {
 
 }
 
+/* All sections white and rounded by default */
+section {
+  background-color: rgb(255,255,255);
+  border-radius: 10px;
+  max-width: 90vw;
+}
+
+/* All divs bound by viewport */
+div {
+  max-width: 100vw;
+}
+
+/* All tables bound by viewport */
+table {
+  max-width: 100vw;
+}
+
+/* 
+Styling for the hyperlinks 
+*/
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* A frame limit for the youtube embeds */
+iframe {
+  max-width: 80vw;
+}
+
+
+
+/* 
+||==========================================================================================
+|| A variety of classes and ids that share some styling such as color
+||==========================================================================================
+*/
+
+/* A condensed dark grey background color style group for the header and footer elements */
+.page-header, .page-header-home-button, .page-header-nav-button, #page-back-button, .page-nav-button-table, .import-page-footer, .page-footer-button {
+  background-color: rgb(54,57,63);
+}
+
+/* A condensed dark grey border color style group for the header elements */
+.page-header-home-button, .page-header-nav-button, .page-nav-button-entry, #page-back-button, .page-footer-button, .filter-table-sort-button {
+  border-color: rgb(54,57,63);
+}
+
+
+/* A condensed off black color style group for dark text elements */
+body, .cc-attributes-overview-table tr th, .cc-attributes-overview-table th, .cc-attributes-overview-table tr td, .cc-attributes-overview-table td, .cc-build-selections-table tr th, .cc-build-selections-table tr td, .cc-build-selections-table td:nth-child(1) {
+  color: rgb(25,25,25);
+}
+
+/* A condensed off white color style group for light text elements or backgrounds */
+.page-header-nav-button, .page-header, button a, td, th {
+  color: rgb(219,219,224);
+}
+
+
 
 /* 
 ||==========================================================================================
 || Specific changes made to various HTML classes 
 ||==========================================================================================
 */
-/* The background container div that all other HTML elements rest inside (or on top) of */
-.page-background-container {
-  width: 100%;
-  height: auto;    
-  overflow: visible;
-  background-image: url("/_SiteResources/Images/ESO_-_Milky_Way.jpg");
-  background-repeat: repeat-y;
-  background-size: 105%;
-  background-attachment: fixed;
-}
 
 /* The header where site title and page title are displayed, and where sitewide navigation begins */
 .page-header {
@@ -95,50 +154,16 @@ button {
   text-align: center;
 }
 
-/* The topmost center button that takes us back to the homepage from anywhere on the site */
-.page-header-home-button {
-  width: 600px;
-  max-width: 100vw;
-  border-style: dotted;
+/* The background container div that all other HTML elements rest inside (or on top) of */
+.page-background-container {
+  width: 100%;
+  height: auto;    
+  overflow: visible;
+  background-image: url("/_SiteResources/Images/ESO_-_Milky_Way.jpg");
+  background-repeat: repeat-y;
+  background-size: 105%;
+  background-attachment: fixed;
 }
-/* The site navigation buttons that line the header */
-.page-header-nav-button {
-  width: 10%;
-  min-width: 75px;
-  height: 50px;
-  border-style: dotted;
-}
-/* On hovering over the header buttons, set the border to a visible off white */
-.page-header-home-button:hover, .page-header-nav-button:hover {
-  border-color: rgb(219,219,224);
-  border-radius: 10px;
-}
-
-
-/* 
-A series of descriptors that apply to a great many items, such as background color or text color
- */
-/* A condensed dark grey background color style group for the header and footer elements */
-.page-header, .page-header-home-button, .page-header-nav-button, #page-back-button, .WikiOverviewButton, .WikiOverviewButton_Placeholder, .page-button-table, .import-page-footer, .FooterButton {
-  background-color: rgb(54,57,63);
-}
-
-/* A condensed dark grey border color style group for the header elements */
-.page-header-home-button, .page-header-nav-button, .AboutThisSite, .WikiPageButton, #page-back-button, .WikiOverviewButton, .WikiOverviewButton_Placeholder, button.BulletinButton:hover, .FooterButton, .TableSortButton {
-  border-color: rgb(54,57,63);
-}
-
-
-/* A condensed off black color style group for dark text elements */
-body, .caped-crusader-table tr th, .caped-crusader-table th, .caped-crusader-table tr td, .caped-crusader-table td, .selections-table tr th, .selections-table tr td, .selections-table td:nth-child(1) {
-  color: rgb(25,25,25);
-}
-
-/* A condensed off white color style group for light text elements or backgrounds */
-.page-header-nav-button, .page-header, button a, td, th {
-  color: rgb(219,219,224);
-}
-
 
 /* The div that holds the actual page content */
 .page-content {
@@ -151,66 +176,7 @@ body, .caped-crusader-table tr th, .caped-crusader-table th, .caped-crusader-tab
   overflow: visible;
 }
 
-
-.AnchorCenter {
-  position: relative;
-  height: auto;
-  padding: 0%;
-  width: 0px; /* Or zero, or something very small */
-  margin-left: 49.4vw; /* -(256 * 1.5) - 12 */
-  overflow: visible;
-  background-image: url("/_SiteResources/Images/Transparent.png");
-}
-
-.AnchorLeft {
-  position: relative;
-  height: auto;
-  padding: 0%;
-  width: 350px; /* Or zero, or something very small */
-  margin-left: -45vw; /* -(256 * 1.5) - 12 */
-  overflow: visible;
-  background-image: url("/_SiteResources/Images/Transparent.png");
-}
-
-.page-contentLeftTop {
-  box-sizing: border-box;
-  flex-direction: column;
-  margin: 5%;
-  margin-left: 0px; /* -256 */
-  margin-top: 0px;
-  padding: 5px;
-  padding-left: 25px;
-  padding-right: 25px; 
-  width: 90vw; /* 256*2 -50 for padding -25 for content gap */
-}
-
-.page-contentLeft {
-  box-sizing: border-box;
-  flex-direction: column;
-  margin: 5%;
-  margin-left: 0px; /* -256 */
-  margin-top: 25px;
-  padding: 5px;
-  padding-left: 25px;
-  padding-right: 25px; 
-  width: 90vw; /* 256*2 -50 for padding -25 for content gap */
-} 
-
-.PortfolioIcon {
-  margin: 5px;
-}
-
-
-.AnchorRight {
-  position: relative;
-  height: auto;
-  padding: 0%;
-  width: 0px; /* Or zero, or something very small */
-  margin-left: -45vw;
-  overflow: visible;
-  background-image: url("/_SiteResources/Images/Transparent.png");
-}
-
+/* The off white chunk of the page that holds content */
 .page-content-section {
   box-sizing: border-box;
   overflow: hidden;
@@ -225,66 +191,10 @@ body, .caped-crusader-table tr th, .caped-crusader-table th, .caped-crusader-tab
   width: 90vw; 
 }
 
-section {
-  background-color: rgb(255,255,255);
-  border-radius: 10px;
-  max-width: 90vw;
-}
-
-div {
-  max-width: 100vw;
-}
-
-table {
-  max-width: 100vw;
-}
 
 
-
-
-
-.AboutThisSite {
-  width: 260px;
-  height: 100px;
-  margin: 20px;
-  margin-bottom: 50px;
-  border-radius: 10px;
-  background-color: rgb(124, 110, 105);
-  border-style: solid;
-  font-size: x-large;
-}
-
-.QuasiPlaneButton, .PrimalPlaneButton, .MaterialPlaneButton {
-  padding: 10px;
-  background-color: rgb(175, 175, 175);
-  border-style: solid;
-  font-size: large;
-  text-align: center;
-  display: block;
-  position: relative;
-}
-.QuasiPlaneButton {
-  width: 150px;
-  height: 150px;
-  border-radius: 75px;
-  margin: 35px;
-}
-.PrimalPlaneButton {
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-  margin: 10px;
-}
-.MaterialPlaneButton {
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
-  margin: 60px;
-}
-
-
-
-.wiki-page-overview-table {
+/* An overview table used frequently throughout the site */
+.content-attributes-overview-table {
   display: block;
   width: 275px;
   max-width: 35vw;
@@ -295,12 +205,129 @@ table {
   border-collapse: collapse;
   float: right;
 }
-
-.WikiContent {
+.content-attributes-overview-table th, .content-attributes-overview-table td {
+  width: auto;
+  padding: 10px;
+  vertical-align: top;
+}
+.content-attributes-overview-table tr th {
+  background-color: rgb(223,222,207);
   color: rgb(58,58,58);
+  font-size: small;
+}
+.content-attributes-overview-table tr td {
+  background-color: rgb(251,251,251);
+  color: rgb(58,58,58);
+  font-size: small;
+  text-align: left;
+}
+.content-attributes-overview-table tr:first-child th {
+  padding: 0px;
+  margin: 0px;
+}
+.content-attributes-overview-table tr:nth-child(2) th {
+  background-color: rgb(247,247,247);
+  color: rgb(58,58,58);
+  padding: 2px;
+  border-top: 0px;
+  font-size: smaller;
+}
+.content-attributes-overview-table tr:nth-child(3) th, .content-attributes-overview-table tr:nth-child(4) th {
+  background-color: rgb(189,188,173);
+  color: rgb(58,58,58);
+  font-size: large;
+}
+.content-attributes-overview-table tr:nth-child(4) th {
+  padding-top: 0px;
+  font-size: x-small;
+}
+#content-attributes-table-image {
+  width: 100%;
+  height: auto; 
+  display: block;
+  overflow: hidden;
 }
 
-.page-button-greater {
+
+
+/* 
+||==========================================================================================
+|| Footer elements  
+||==========================================================================================
+*/
+
+/* The actual footer element to be imported into other pages */
+.import-page-footer {
+  padding: 10px 20px;
+  position: relative;
+  bottom: 0;
+  width: auto;
+  height: auto;
+}
+
+/* The icons that serve as links to other sites within the footer */
+.page-footer-icon {
+  margin: 5px;
+}
+
+/* The buttons that holds the icons and link to other sites */
+.page-footer-button {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+  border-style: solid;
+}
+
+
+
+/* 
+||==========================================================================================
+|| Site navigation buttons 
+||==========================================================================================
+*/
+
+/* The topmost center button that takes us back to the homepage from anywhere on the site */
+.page-header-home-button {
+  width: 600px;
+  max-width: 100vw;
+  border-style: dotted;
+}
+
+/* The site navigation buttons that line the header */
+.page-header-nav-button {
+  width: 10%;
+  min-width: 75px;
+  height: 50px;
+  border-style: dotted;
+}
+
+/* On hovering over the header buttons, set the border to a visible off white */
+.page-header-home-button:hover, .page-header-nav-button:hover {
+  border-color: rgb(219,219,224);
+  border-radius: 10px;
+}
+
+/* A button present on nearly every page that navigates out in the file structure */
+#page-back-button {
+  position: relative;
+  width: 175px;
+  height: 50px;
+  border-style: solid;
+  font-size: small;
+  color: aqua;
+  float: right;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 50px;
+}
+
+/* A button to navigate the website file structure from the page content, signifying a directory page */
+.page-nav-button-directory {
   width: 275px;
   max-width: 35vw;
   height: 65px;
@@ -312,72 +339,65 @@ table {
   font-weight: bold;
 }
 
-
-.wiki-page-overview-table th, .wiki-page-overview-table td {
-  width: auto;
-  padding: 10px;
-  vertical-align: top;
+/* A button to navigate the website file structure from the page content, signifying an entry page */
+.page-nav-button-entry {
+  width: 225px;
+  max-width: 35vw;
+  height: 50px;
+  border-radius: 10px;
+  background-color: rgb(212, 188, 143);
+  border-style: solid;
+  font-size: medium;
+  font-weight: bold;
+  margin: 5px;
 }
 
-.wiki-page-overview-table tr th {
-  background-color: rgb(223,222,207);
-  color: rgb(58,58,58);
-  font-size: small;
-}
-
-.wiki-page-overview-table tr td {
-  background-color: rgb(251,251,251);
-  color: rgb(58,58,58);
-  font-size: small;
-  text-align: left;
-}
-
-.wiki-page-overview-table tr:first-child th {
+/* The school of magic buttons */
+.page-nav-button-magic-school {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  border: 0px;
+  margin: 3px;
   padding: 0px;
-  margin: 0px;
-}
-
-.wiki-page-overview-table tr:nth-child(2) th {
-  background-color: rgb(247,247,247);
-  color: rgb(58,58,58);
-  padding: 2px;
-  border-top: 0px;
-  font-size: smaller;
-}
-
-.wiki-page-overview-table tr:nth-child(3) th, .wiki-page-overview-table tr:nth-child(4) th {
   background-color: rgb(189,188,173);
-  color: rgb(58,58,58);
+}
+
+/* 
+The plane buttons 
+*/
+.page-nav-button-plane-quasi, .page-nav-button-plane-primal, .page-nav-button-plane-material {
+  padding: 10px;
+  background-color: rgb(175, 175, 175);
+  border-style: solid;
   font-size: large;
-}
-
-.wiki-page-overview-table tr:nth-child(4) th {
-  padding-top: 0px;
-  font-size: x-small;
-}
-
-#wiki-page-table-image {
-  width: 100%;
-  height: auto; 
+  text-align: center;
   display: block;
-  overflow: hidden;
+  position: relative;
 }
-
-.WikiContentImageLeft {
+.page-nav-button-plane-quasi {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  margin: 35px;
+}
+.page-nav-button-plane-primal {
   width: 200px;
-  float: left;
-  padding: 0px;
-  padding-right: 15px;
+  height: 200px;
+  border-radius: 100px;
+  margin: 10px;
+}
+.page-nav-button-plane-material {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin: 60px;
 }
 
-.WikiContentImageRight {
-  width: 200px;
-  float: right;
-  padding: 0px;
-  padding-left: 15px;
-}
-
-.TechClassButton, .PowerClassButton, .MagicClassButton, .ClassButton {
+/* 
+The buttons used to navigate and organize the classes within caped crusaders 
+*/
+.cc-class-button-tech, .cc-class-button-power, .cc-class-button-magic, .cc-class-button-generic {
   width: 200px;
   max-width: 15vw;
   height: auto;
@@ -390,91 +410,88 @@ table {
   display: block;
   position: relative;
 }
-.ClassButton {
+.cc-class-button-generic {
   height: 35px;
 }
-.button-top, .button-bottom {
+.cc-class-button-content-ceiling, .cc-class-button-content-floor {
   background-color: rgb(175, 175, 175);
   margin: 0px;
   padding: 10px;
   text-align: left;
 }
-.button-top {
+.cc-class-button-content-ceiling {
   min-height: 175px;
 }
-.TechClassButton {
+.cc-class-button-tech {
   color: rgb(50, 50, 125);
 }
-.PowerClassButton {
+.cc-class-button-power {
   color: rgb(125, 50, 50);
 }
-.MagicClassButton {
+.cc-class-button-magic {
   color: rgb(125, 125, 50);
 }
-.ClassButton {
+.cc-class-button-generic {
   color: rgb(25, 25, 25);
 }
-span {
-  display: block;
-  position: bottom;
-  margin-right: 10px;
-}
-
-.WikiPageButton {
-  width: 225px;
-  max-width: 35vw;
-  height: 50px;
-  border-radius: 10px;
-  background-color: rgb(212, 188, 143);
-  border-style: solid;
-  font-size: medium;
-  font-weight: bold;
-  margin: 5px;
-}
 
 
-#page-back-button, .WikiOverviewButton, .WikiOverviewButton_Placeholder {
-  position: relative;
-  width: 175px;
-  height: 50px;
-  border-style: solid;
-  font-size: small;
-  color: aqua;
-}
 
+/* 
+||==========================================================================================
+|| Image styling
+||==========================================================================================
+*/
 
-#page-back-button {
-  float: right;
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 50px;
-}
-
-.WikiOverviewButton, .WikiOverviewButton_Placeholder {
-  float: right;
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
-}
-
-.WikiOverviewButton_Placeholder, .WikiOverviewButton_Placeholder:hover {
-  cursor: auto;
-  opacity: 0%;
-}
-
-.WikiSchoolOfMagicButton {
+/* A text wrapped image to be inserted into the page description */
+.content-image-left {
   width: 200px;
-  height: 200px;
-  border-radius: 100px;
-  border: 0px;
-  margin: 3px;
+  float: left;
   padding: 0px;
-  background-color: rgb(189,188,173);
+  padding-right: 15px;
 }
 
-.page-button-table {
+/* A text wrapped image to be inserted into the page description */
+.content-image-right {
+  width: 200px;
+  float: right;
+  padding: 0px;
+  padding-left: 15px;
+}
+
+/* Small images for use within buttons or dynamic table entries */
+.dynamic-table-entry-image, .cc-class-image-small {
+  width: 50px;
+  float: right;
+}
+
+/* Medium images used to signify the class and subclass employed by character builds */
+.cc-class-image-medium, .cc-subclass-image-medium {
+  width: 100px;
+  float: right;
+  border: 4px solid rgb(100,100,100);
+  border-radius: 16px;
+  margin: 2px;
+}
+
+/* Large images to be used for entry pages */
+#page-image, .cc-class-image-large, .cc-subclass-image-large {
+  width: 25vw;
+  border: 8px solid rgb(100,100,100);
+  border-radius: 64px;
+  margin-left: 10px;
+}
+
+
+
+/* 
+||==========================================================================================
+|| Static tables 
+||==========================================================================================
+*/
+
+/* A table to hold the various navigation buttons present in the page regardless of button styling */
+.page-nav-button-table {
   float: right;
   border: 1px solid rgb(54,57,63);
   height: auto;
@@ -484,11 +501,10 @@ span {
   align-content: center;
 }
 
-
-
-
-
-.caped-crusader-table {
+/* 
+An overview table for caped crusaders entry pages 
+*/
+.cc-attributes-overview-table {
   display: block;
   width: auto;
   margin: 10px;
@@ -499,31 +515,27 @@ span {
   border-collapse: collapse;
   float: center;
 }
-
-.caped-crusader-table th, .caped-crusader-table td {
+.cc-attributes-overview-table th, .cc-attributes-overview-table td {
   width: auto;
   padding: 8px;
   vertical-align: top;
   border: 1px solid rgb(50,50,50);
 }
-
-.caped-crusader-table tr th, .caped-crusader-table th {
+.cc-attributes-overview-table tr th, .cc-attributes-overview-table th {
   background-color: rgb(150,150,150);
   font-size: medium;
   text-align: left;
 }
-
-.caped-crusader-table tr td, .caped-crusader-table td {
+.cc-attributes-overview-table tr td, .cc-attributes-overview-table td {
   background-color: rgb(200,200,200);
   font-size: medium;
   text-align: left;
 }
 
-
-
-
-
-.selections-table {
+/* 
+A table that details the character build decisions made at each level 
+*/
+.cc-build-selections-table {
   display: inline-table;
   width: 35vw;
   margin: 10px;
@@ -534,147 +546,34 @@ span {
   border-collapse: collapse;
   float: right;
 }
-
-.selections-table th, .selections-table td {
+.cc-build-selections-table th, .cc-build-selections-table td {
   width: auto;
   padding: 7px;
   vertical-align: top;
   background-color: aqua;
   border: 1px solid rgb(50,50,50);
 }
-
-.selections-table tr th {
+.cc-build-selections-table tr th {
   background-color: rgb(125, 125, 125);
   font-size: large;
   text-align: center;
 }
-
-.selections-table tr td {
+.cc-build-selections-table tr td {
   background-color: rgb(225, 225, 225);
   font-size: small;
   text-align: left;
 }
-
-.selections-table td:nth-child(1) {
+.cc-build-selections-table td:nth-child(1) {
   background-color: rgb(175, 175, 175);
   font-size: small;
   text-align: center;
   width: 7vw;
 }
 
-
-
-
-
-nav table {
-  margin-left: 0%;
-  width: 100%;
-  border-bottom: 10px;
-  border-top: 10px;
-  border-color: aqua;
-  padding: 0px;
-}
-table button {
-  margin: 10px;
-  size: 50px;
-  width: 150px;
-  height: 50px;
-  border-radius: 0%;
-}
-
-button.BulletinButton {
-  color: rgb(255,255,255);
-  background-color: rgb(255,255,255);
-  border-color: rgb(255,255,255);
-  border-style: solid;
-}
-button.BulletinButton:hover {
-  color: rgb(255,255,255);
-  background-color: rgb(255,255,255);
-}
-button.BulletinButton a {
-  color: black;
-  font-size: medium;
-  text-decoration: none;
-}
-
-
-
-.EntryDate {
-  float: right;
-  position: fixed;
-}
-
-
-
-
-
-
-
-
-.Overview {
-  flex-direction: column;
-}
-.WikiBG {
-  background-image: url(BrassDragon.jpg);
-}
-
-.import-page-footer {
-  padding: 10px 20px;
-  position: relative;
-  bottom: 0;
-  width: auto;
-  height: auto;            /* Footer height */
-}
-
-.FooterButton {
-  margin-top: 15px;
-  margin-bottom: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
-  height: 80px;
-  width: 80px;
-  border-radius: 40px;
-  border-style: solid;
-}
-
-
-ul.BulletinList {
-  display: table-row;
-}
-li.BulletinList {
-  display: table-row;
-}
-table {
-  width: 96%;
-  margin-left: 2%;
-  margin-right: 2%;
-}
-
-.TierInset {
-  border: 100px;
-  border-color: gold;
-  background-image: url(parchment.jpg);
-  opacity: 90%;
-  width: 90%;
-  margin: 5%;
-  background-color: rgb(44, 26, 0);
-  margin-bottom: -5px;
-}
-
-.TierContent {
-  border: 10px;
-  border-color: red;
-  background-color: rgb(97, 87, 75);
-  width: 96%;
-  margin: 2%;
-  margin-bottom: -5px;
-  display: flex;
-  height: 1000px;
-  flex-direction: column;
-}
-
-.BuildTable {
+/* 
+An overview table for the wiki entry pages 
+*/
+.wiki-attributes-overview-table {
   display: block;
   width: auto;
   margin: 10px;
@@ -685,153 +584,28 @@ table {
   border-collapse: collapse;
   float: center;
 }
-
-.BuildTable th, .BuildTable td {
+.wiki-attributes-overview-table th, .wiki-attributes-overview-table td {
   width: auto;
   padding: 7px;
   vertical-align: top;
   border: 1px solid rgb(189,188,173);
 }
-
-.BuildTable tr th {
+.wiki-attributes-overview-table tr th {
   background-color: rgb(223,222,207);
   color: rgb(58,58,58);
   font-size: small;
   text-align: left;
 }
-
-.BuildTable tr td {
+.wiki-attributes-overview-table tr td {
   background-color: rgb(251,251,251);
   color: rgb(58,58,58);
   font-size: small;
   text-align: left;
 }
 
-.CharacterArt {
-  background-size: cover;
-  background-position: center;
-}
-
-.CharacterArt.GenieLance.Tier1{
-  background-image: url(CharacterBuilds/GenieLance/Tier1.jpg);
-}
-.CharacterArt.GenieLance.Tier2{
-  background-image: url(CharacterBuilds/GenieLance/Tier2.jpg);
-}
-.CharacterArt.GenieLance.Tier3{
-  background-image: url(CharacterBuilds/GenieLance/Tier3.jpg);
-}
-.CharacterArt.GenieLance.Tier4{
-  background-position: top;
-  background-image: url(CharacterBuilds/GenieLance/Tier4.jpg);
-}
-.CharacterArt.GenieLance.Tier5{
-  background-image: url(CharacterBuilds/GenieLance/Tier5.jpg);
-}
-.CharacterArt.GenieLance.Tier6{
-  background-image: url(CharacterBuilds/GenieLance/Tier6.jpg);
-}
-
-.CharacterArt.ArtiChron.Tier1{
-  background-position: top;
-  background-image: url(CharacterBuilds/ArtiChron/Tier1.jpg);
-}
-.CharacterArt.ArtiChron.Tier2{
-  background-image: url(CharacterBuilds/ArtiChron/Tier2.jpg);
-}
-.CharacterArt.ArtiChron.Tier3{
-  background-image: url(CharacterBuilds/ArtiChron/Tier3.jpg);
-}
-.CharacterArt.ArtiChron.Tier4{
-  background-image: url(CharacterBuilds/ArtiChron/Tier4.jpg);
-}
-.CharacterArt.ArtiChron.Tier5{
-  background-image: url(CharacterBuilds/ArtiChron/Tier5.jpg);
-}
-.CharacterArt.ArtiChron.Tier6{
-  background-image: url(CharacterBuilds/ArtiChron/Tier6.jpg);
-}
-
-a {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-
-
-
-iframe {
-  max-width: 80vw;
-}
-
-
-
-
-
-
-
-
-
-
-.FilterInput {
-  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
-  background-position: 10px 12px; /* Position the search icon */
-  background-repeat: no-repeat; /* Do not repeat the icon image */
-  width: auto; /* Full-width */
-  
-  padding: 10px; /* Add some padding */
-  border: 2px solid rgb(63, 62, 62); /* Add a grey border */
-  border-radius: 5px;
-  margin-bottom: 12px; /* Add some space below the input */
-}
-
-
-
-#FilterTable {
-  border-collapse: collapse; /* Collapse borders */
-  min-width: 83vw; /* Full-width */
-  border: 1px solid rgb(97, 97, 97); /* Add a grey border */
-  overflow: scroll;
-  display: inline-block;
-}
-
-#FilterTable th, #FilterTable tr td {
-  text-align: left; /* Left-align text */
-  padding: 5px; /* Add padding */
-  min-width: 175px;
-  color: black;
-  border: 1px solid black;
-}
-
-#FilterTable th {
-  background-color: rgb(150,150,150);
-}
-
-#FilterTable tr {
-  /* Add a bottom border to all table rows */
-  border-bottom: 1px solid rgb(61, 61, 61);
-}
-
-#FilterTable tr {
-  /* Add a grey background color to the table header and on hover */
-  background-color: rgb(200,200,200);
-}
-
-
-
-.FilterTableImage, .class-image-small {
-  width: 50px;
-  float: right;
-}
-
-#page-image, .class-image-large, .subclass-image-large {
-  width: 25vw;
-  border: 8px solid rgb(100,100,100);
-  border-radius: 64px;
-  margin-left: 10px;
-}
-
+/* 
+A small table to hold the entry page image and author credit 
+*/
 #page-image-table {
   float: right;
   width: auto;
@@ -840,23 +614,61 @@ iframe {
   border: 3px solid rgb(200,200,200);
   border-radius: 10px;
 }
-
 #page-image-table tr td {
   color: black;
   width: 30vw;
   text-align: center;
 }
 
-.class-image-medium, .subclass-image-medium {
-  width: 100px;
-  float: right;
-  border: 4px solid rgb(100,100,100);
-  border-radius: 16px;
-  margin: 2px;
+
+
+/* 
+||==========================================================================================
+|| Dynamic table and subelement styling
+||==========================================================================================
+*/
+
+/* The input box that reads filter queries */
+.dynamic-table-query-input {
+  background-image: url('/css/searchicon.png'); 
+  background-position: 10px 12px; 
+  background-repeat: no-repeat; 
+  width: auto; 
+  padding: 10px; 
+  border: 2px solid rgb(63, 62, 62); 
+  border-radius: 5px;
+  margin-bottom: 12px; 
 }
 
+/* 
+The dynamic table  
+*/
+#dynamic-table-content {
+  border-collapse: collapse; 
+  min-width: 83vw; /* Full-width */
+  border: 1px solid rgb(97, 97, 97); 
+  overflow: scroll;
+  display: inline-block;
+}
+#dynamic-table-content th, #dynamic-table-content tr td {
+  text-align: left;
+  padding: 5px; 
+  min-width: 175px;
+  color: black;
+  border: 1px solid black;
+}
+#dynamic-table-content th {
+  background-color: rgb(150,150,150);
+}
+#dynamic-table-content tr {
+  border-bottom: 1px solid rgb(61, 61, 61);
+}
+#dynamic-table-content tr {
+  background-color: rgb(200,200,200);
+}
 
-.TableSortButton {
+/* The buttons that contain the column header, which can be clicked to sort the dynamic table by that column */
+.filter-table-sort-button {
   width: auto;
   height: auto;
   margin: 0px;
