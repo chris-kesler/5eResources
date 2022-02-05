@@ -67,13 +67,12 @@ hr {
 p {
   color: rgb(25,25,25);
   margin-left: 25px;
-
+  margin: 5px;
 }
 
 /* All buttons will show cursor by default */
 button {
   cursor: pointer;
-
 }
 
 /* All sections white and rounded by default */
@@ -616,7 +615,6 @@ A small table to hold the entry page image and author credit
 }
 #page-image-table tr td {
   color: black;
-  width: 30vw;
   text-align: center;
 }
 
