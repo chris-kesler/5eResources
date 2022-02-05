@@ -29,53 +29,53 @@
         }
 
         // Populating page header information
-        document.getElementById("page-header-title").innerHTML = "Caped Crusaders: " + title;
+        document.getElementById("common-page-header-title").innerHTML = "Caped Crusaders: " + title;
         document.getElementById("page-overview-title").innerHTML = title + " Filter Table";
 
         // Populating the Include Filters using the script to allow for dynamic changes in the future
         document.getElementById("include-filters").innerHTML = 
-          "<input type='text' id='dynamic-table-query-inputInclude0' class='dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Name. . .'>" + 
-          "<input type='text' id='dynamic-table-query-inputInclude1' class='dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Level. . .'>" + 
-          "<input type='text' id='dynamic-table-query-inputInclude2' class='dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by " + entry_type + ". . .'>" + 
-          "<input type='text' id='dynamic-table-query-inputInclude3' class='dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Casting Time. . .'>" + 
-          "<input type='text' id='dynamic-table-query-inputInclude4' class='dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Range/Area. . .'>" + 
-          "<input type='text' id='dynamic-table-query-inputInclude5' class='dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Components. . .'>" + 
-          "<input type='text' id='dynamic-table-query-inputInclude6' class='dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Duration. . .'>" + 
-          "<input type='text' id='dynamic-table-query-inputInclude7' class='dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Attack/Save. . .'>" + 
-          "<input type='text' id='dynamic-table-query-inputInclude8' class='dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Damage/Effect. . .'>" + 
-          "<input type='text' id='dynamic-table-query-inputInclude9' class='dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Overchargeable. . .'>" + 
-          "<input type='text' id='dynamic-table-query-inputInclude10' class='dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Classes. . .'>" + 
-          "<input type='text' id='dynamic-table-query-inputInclude11' class='dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Source. . .'>";
+          "<input type='text' id='directory-page-dynamic-table-query-inputInclude0' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Name. . .'>" + 
+          "<input type='text' id='directory-page-dynamic-table-query-inputInclude1' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Level. . .'>" + 
+          "<input type='text' id='directory-page-dynamic-table-query-inputInclude2' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by " + entry_type + ". . .'>" + 
+          "<input type='text' id='directory-page-dynamic-table-query-inputInclude3' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Casting Time. . .'>" + 
+          "<input type='text' id='directory-page-dynamic-table-query-inputInclude4' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Range/Area. . .'>" + 
+          "<input type='text' id='directory-page-dynamic-table-query-inputInclude5' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Components. . .'>" + 
+          "<input type='text' id='directory-page-dynamic-table-query-inputInclude6' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Duration. . .'>" + 
+          "<input type='text' id='directory-page-dynamic-table-query-inputInclude7' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Attack/Save. . .'>" + 
+          "<input type='text' id='directory-page-dynamic-table-query-inputInclude8' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Damage/Effect. . .'>" + 
+          "<input type='text' id='directory-page-dynamic-table-query-inputInclude9' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Overchargeable. . .'>" + 
+          "<input type='text' id='directory-page-dynamic-table-query-inputInclude10' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Classes. . .'>" + 
+          "<input type='text' id='directory-page-dynamic-table-query-inputInclude11' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Source. . .'>";
 
         // Populating the Exclude Filters 
         document.getElementById("exclude-filters").innerHTML = 
-          "<input type='text' id='dynamic-table-query-inputExclude0' class='dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Name. . .'>" + 
-          "<input type='text' id='dynamic-table-query-inputExclude1' class='dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Level. . .'>" + 
-          "<input type='text' id='dynamic-table-query-inputExclude2' class='dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by School. . .'>" + 
-          "<input type='text' id='dynamic-table-query-inputExclude3' class='dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Casting Time. . .'>" + 
-          "<input type='text' id='dynamic-table-query-inputExclude4' class='dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Range/Area. . .'>" + 
-          "<input type='text' id='dynamic-table-query-inputExclude5' class='dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Components. . .'>" + 
-          "<input type='text' id='dynamic-table-query-inputExclude6' class='dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Duration. . .'>" + 
-          "<input type='text' id='dynamic-table-query-inputExclude7' class='dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Attack/Save. . .'>" + 
-          "<input type='text' id='dynamic-table-query-inputExclude8' class='dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Damage/Effect. . .'>" + 
-          "<input type='text' id='dynamic-table-query-inputExclude9' class='dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Overchargeable. . .'>" + 
-          "<input type='text' id='dynamic-table-query-inputExclude10' class='dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Classes. . .'>" + 
-          "<input type='text' id='dynamic-table-query-inputExclude11' class='dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Source. . .'>";
+          "<input type='text' id='directory-page-dynamic-table-query-inputExclude0' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Name. . .'>" + 
+          "<input type='text' id='directory-page-dynamic-table-query-inputExclude1' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Level. . .'>" + 
+          "<input type='text' id='directory-page-dynamic-table-query-inputExclude2' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by School. . .'>" + 
+          "<input type='text' id='directory-page-dynamic-table-query-inputExclude3' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Casting Time. . .'>" + 
+          "<input type='text' id='directory-page-dynamic-table-query-inputExclude4' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Range/Area. . .'>" + 
+          "<input type='text' id='directory-page-dynamic-table-query-inputExclude5' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Components. . .'>" + 
+          "<input type='text' id='directory-page-dynamic-table-query-inputExclude6' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Duration. . .'>" + 
+          "<input type='text' id='directory-page-dynamic-table-query-inputExclude7' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Attack/Save. . .'>" + 
+          "<input type='text' id='directory-page-dynamic-table-query-inputExclude8' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Damage/Effect. . .'>" + 
+          "<input type='text' id='directory-page-dynamic-table-query-inputExclude9' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Overchargeable. . .'>" + 
+          "<input type='text' id='directory-page-dynamic-table-query-inputExclude10' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Classes. . .'>" + 
+          "<input type='text' id='directory-page-dynamic-table-query-inputExclude11' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Source. . .'>";
 
         // Populating table header, which includes buttons to sort the entries in ascending and descending order based on column selected
-        document.getElementById("filter-table-header").innerHTML = 
-          "<th><button class='filter-table-sort-button' onclick='sortTable(0)'>Name</button></th>" + 
-          "<th><button class='filter-table-sort-button' onclick='sortTable(1)'>Level</button></th>" + 
-          "<th><button class='filter-table-sort-button' onclick='sortTable(2)'>" + entry_type + "</button></th>" + 
-          "<th><button class='filter-table-sort-button' onclick='sortTable(3)'>Casting Time</button></th>" + 
-          "<th><button class='filter-table-sort-button' onclick='sortTable(4)'>Range/Area</button></th>" + 
-          "<th><button class='filter-table-sort-button' onclick='sortTable(5)'>Components</button></th>" + 
-          "<th><button class='filter-table-sort-button' onclick='sortTable(6)'>Duration</button></th>" + 
-          "<th><button class='filter-table-sort-button' onclick='sortTable(7)'>Attack/Save</button></th>" + 
-          "<th><button class='filter-table-sort-button' onclick='sortTable(8)'>Damage/Effect</button></th>" + 
-          "<th><button class='filter-table-sort-button' onclick='sortTable(9)'>Overchargeable</button></th>" + 
-          "<th><button class='filter-table-sort-button' onclick='sortTable(10)'>Classes</button></th>" + 
-          "<th><button class='filter-table-sort-button' onclick='sortTable(11)'>Source</button></th>";
+        document.getElementById("directory-page-dynamic-table-header").innerHTML = 
+          "<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(0)'>Name</button></th>" + 
+          "<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(1)'>Level</button></th>" + 
+          "<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(2)'>" + entry_type + "</button></th>" + 
+          "<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(3)'>Casting Time</button></th>" + 
+          "<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(4)'>Range/Area</button></th>" + 
+          "<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(5)'>Components</button></th>" + 
+          "<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(6)'>Duration</button></th>" + 
+          "<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(7)'>Attack/Save</button></th>" + 
+          "<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(8)'>Damage/Effect</button></th>" + 
+          "<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(9)'>Overchargeable</button></th>" + 
+          "<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(10)'>Classes</button></th>" + 
+          "<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(11)'>Source</button></th>";
           
         // Reading data from our JSON file
         $.getJSON('spells.json', function(data) {
@@ -134,7 +134,7 @@
             var tblRow = "<tr>" 
               + "<td><a href='spells/" + f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html' target='_blank'>" + f.name_str + "</a></td>" 
               + "<td>" + f.level_str + "</td>" 
-              + "<td>" + "<img class='dynamic-table-entry-image' src=/_SiteResources/Images/" + f.type_str + ".png><br>" + f.type_str + "</td>" 
+              + "<td>" + "<img class='directory-page-dynamic-table-entry-image' src=/_SiteResources/Images/" + f.type_str + ".png><br>" + f.type_str + "</td>" 
               + "<td>" + f.casting_time_str + "</td>" 
               + "<td>" + f.range_area_str + "</td>" 
               + "<td>" + components_vsm + "</td>" 
@@ -147,7 +147,7 @@
               + "</tr>"
 
             // Adding the row to the table
-            $(tblRow).appendTo("#dynamic-table-content tbody");
+            $(tblRow).appendTo("#directory-page-dynamic-table-content tbody");
           });
         });
       });
@@ -156,27 +156,27 @@
 
   <body>
     <!-- The fixed background div -->
-    <div class="page-background-container"> 
+    <div class="common-page-background"> 
 
       <!-- A div to hold our header -->
-      <div class="page-header">
+      <div class="common-page-header">
 
         <!-- Importing the header -->
-        <div class="import-page-header"></div>
+        <div class="import-common-page-header"></div>
 
           <!-- The page title within the header -->
-          <h1 id="page-header-title">Why no work</h1>
+          <h1 id="common-page-header-title">Why no work</h1>
           <hr>
       </div>
         
       <!-- A transparent div to build everything else on top of -->
-      <div class="page-content">
+      <div class="common-page-content-transparent">
 
         <!-- An off white chunk of the page that holds content -->
-        <section class="page-content-section">
+        <section class="common-page-content-section">
 
           <!-- A back button that navigates out in the file structure  -->
-          <button id="page-back-button" onclick="location.href='../character-options.html'">Out to Character Options</button>
+          <button id="common-page-back-button" onclick="location.href='../character-options.html'">Out to Character Options</button>
           
           <!-- The title of the page content -->
           <h2 id="page-overview-title"></h2>
@@ -198,10 +198,10 @@
 
           <!-- This is the table that contains the entries being filtered -->
           <h3>Sortable Entries</h3>
-          <table id="dynamic-table-content">
+          <table id="directory-page-dynamic-table-content">
             
             <!-- The buttons that designate the column data and serve as the header can be clicked to sort the entries in ascending or descending order -->
-            <thead class="header" id="filter-table-header"></thead>
+            <thead class="header" id="directory-page-dynamic-table-header"></thead>
 
             <!-- The empty table body, which is populated from a JSON file using the above script  -->
             <tbody></tbody>
@@ -211,7 +211,7 @@
       </div>
 
       <!-- Importing the footer -->
-      <footer class="import-page-footer"></footer>
+      <footer class="import-common-page-footer"></footer>
     </div>
   </body>
 </html>
@@ -220,8 +220,8 @@
   
   // This function imports the page header and footer from a centralized html element
   $(function () {
-    $(".import-page-header").load("/_SiteResources/Pages/import-page-header.html");
-    $(".import-page-footer").load("/_SiteResources/Pages/import-page-footer.html");
+    $(".import-common-page-header").load("/_SiteResources/Pages/import-common-page-header.html");
+    $(".import-common-page-footer").load("/_SiteResources/Pages/import-common-page-footer.html");
   });
 
   // This function updates the filter table dynamically as input is entered in the filter boxes
@@ -233,31 +233,31 @@
     var txtValueZero, txtValueOne, txtValueTwo, txtValueThree, txtValueFour, txtValueFive, txtValueSix, txtValueSeven, txtValueEight, txtValueNine, txtValueTen, txtValueEleven, txtValueTwelve, txtValueThirteen;
 
     // Defining filter variables based on the text present in the input boxes
-    var inputIncludeZero = document.getElementById("dynamic-table-query-inputInclude0");
-    var inputIncludeOne = document.getElementById("dynamic-table-query-inputInclude1");
-    var inputIncludeTwo = document.getElementById("dynamic-table-query-inputInclude2");
-    var inputIncludeThree = document.getElementById("dynamic-table-query-inputInclude3");
-    var inputIncludeFour = document.getElementById("dynamic-table-query-inputInclude4");
-    var inputIncludeFive = document.getElementById("dynamic-table-query-inputInclude5");
-    var inputIncludeSix = document.getElementById("dynamic-table-query-inputInclude6");
-    var inputIncludeSeven = document.getElementById("dynamic-table-query-inputInclude7");
-    var inputIncludeEight = document.getElementById("dynamic-table-query-inputInclude8");
-    var inputIncludeNine = document.getElementById("dynamic-table-query-inputInclude9");
-    var inputIncludeTen = document.getElementById("dynamic-table-query-inputInclude10");
-    var inputIncludeEleven = document.getElementById("dynamic-table-query-inputInclude11");
+    var inputIncludeZero = document.getElementById("directory-page-dynamic-table-query-inputInclude0");
+    var inputIncludeOne = document.getElementById("directory-page-dynamic-table-query-inputInclude1");
+    var inputIncludeTwo = document.getElementById("directory-page-dynamic-table-query-inputInclude2");
+    var inputIncludeThree = document.getElementById("directory-page-dynamic-table-query-inputInclude3");
+    var inputIncludeFour = document.getElementById("directory-page-dynamic-table-query-inputInclude4");
+    var inputIncludeFive = document.getElementById("directory-page-dynamic-table-query-inputInclude5");
+    var inputIncludeSix = document.getElementById("directory-page-dynamic-table-query-inputInclude6");
+    var inputIncludeSeven = document.getElementById("directory-page-dynamic-table-query-inputInclude7");
+    var inputIncludeEight = document.getElementById("directory-page-dynamic-table-query-inputInclude8");
+    var inputIncludeNine = document.getElementById("directory-page-dynamic-table-query-inputInclude9");
+    var inputIncludeTen = document.getElementById("directory-page-dynamic-table-query-inputInclude10");
+    var inputIncludeEleven = document.getElementById("directory-page-dynamic-table-query-inputInclude11");
 
-    var inputExcludeZero = document.getElementById("dynamic-table-query-inputExclude0");
-    var inputExcludeOne = document.getElementById("dynamic-table-query-inputExclude1");
-    var inputExcludeTwo = document.getElementById("dynamic-table-query-inputExclude2");
-    var inputExcludeThree = document.getElementById("dynamic-table-query-inputExclude3");
-    var inputExcludeFour = document.getElementById("dynamic-table-query-inputExclude4");
-    var inputExcludeFive = document.getElementById("dynamic-table-query-inputExclude5");
-    var inputExcludeSix = document.getElementById("dynamic-table-query-inputExclude6");
-    var inputExcludeSeven = document.getElementById("dynamic-table-query-inputExclude7");
-    var inputExcludeEight = document.getElementById("dynamic-table-query-inputExclude8");
-    var inputExcludeNine = document.getElementById("dynamic-table-query-inputExclude9");
-    var inputExcludeTen = document.getElementById("dynamic-table-query-inputExclude10");
-    var inputExcludeEleven = document.getElementById("dynamic-table-query-inputExclude11");
+    var inputExcludeZero = document.getElementById("directory-page-dynamic-table-query-inputExclude0");
+    var inputExcludeOne = document.getElementById("directory-page-dynamic-table-query-inputExclude1");
+    var inputExcludeTwo = document.getElementById("directory-page-dynamic-table-query-inputExclude2");
+    var inputExcludeThree = document.getElementById("directory-page-dynamic-table-query-inputExclude3");
+    var inputExcludeFour = document.getElementById("directory-page-dynamic-table-query-inputExclude4");
+    var inputExcludeFive = document.getElementById("directory-page-dynamic-table-query-inputExclude5");
+    var inputExcludeSix = document.getElementById("directory-page-dynamic-table-query-inputExclude6");
+    var inputExcludeSeven = document.getElementById("directory-page-dynamic-table-query-inputExclude7");
+    var inputExcludeEight = document.getElementById("directory-page-dynamic-table-query-inputExclude8");
+    var inputExcludeNine = document.getElementById("directory-page-dynamic-table-query-inputExclude9");
+    var inputExcludeTen = document.getElementById("directory-page-dynamic-table-query-inputExclude10");
+    var inputExcludeEleven = document.getElementById("directory-page-dynamic-table-query-inputExclude11");
 
     // Reformatting the data to uppercase to make handling comparisons easier
     var filterIncludeZero = inputIncludeZero.value.toUpperCase();
@@ -287,7 +287,7 @@
     var filterExcludeEleven = inputExcludeEleven.value.toUpperCase();
 
     // Reading the table element and all table rows within
-    table = document.getElementById("dynamic-table-content");
+    table = document.getElementById("directory-page-dynamic-table-content");
     tr = table.getElementsByTagName("tr");
   
     // Looping through all table rows and hiding those who don't match the search query
@@ -384,7 +384,7 @@
 
     // Defining variables to be used
     var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-    table = document.getElementById("dynamic-table-content");
+    table = document.getElementById("directory-page-dynamic-table-content");
     switching = true;
 
     // Set the sorting direction to ascending:

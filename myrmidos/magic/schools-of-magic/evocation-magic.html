@@ -13,28 +13,28 @@
 
   <body>
     <!-- The fixed background div -->
-    <div class="page-background-container"> 
+    <div class="common-page-background"> 
 
       <!-- A div to hold our header -->
-      <div class="page-header">
+      <div class="common-page-header">
 
         <!-- Importing the header -->
-        <div class="import-page-header"></div>
+        <div class="import-common-page-header"></div>
 
         <!-- The page title within the header -->
-        <h1 id="page-header-title">Myrmidos Wiki:  Schools of Magic > Evocation</h1>
+        <h1 id="common-page-header-title">Myrmidos Wiki:  Schools of Magic > Evocation</h1>
         <hr>
       </div>
         
       <!-- A transparent div to build everything else on top of -->
-      <div class="page-content">
+      <div class="common-page-content-transparent">
 
         <!-- An off white chunk of the page that holds content -->
-        <section class="page-content-section">
-          <button id="page-back-button" onclick="location.href='../schools-of-magic.html'">Out to Schools of Magic</button>
+        <section class="common-page-content-section">
+          <button id="common-page-back-button" onclick="location.href='../schools-of-magic.html'">Out to Schools of Magic</button>
           <h2>Overview</h2>
           <hr>
-          <table class="content-attributes-overview-table">
+          <table class="entry-page-overview-table">
             <tr>
               <th colspan="2"><img id="content-attributes-table-image" src="/_SiteResources/Images/Sigil-Evocation.png" alt="Sigil-Evocation"></th>
             </tr>
@@ -90,7 +90,7 @@
       </div>
 
       <!-- Importing the footer -->
-      <footer class="import-page-footer"></footer>
+      <footer class="import-common-page-footer"></footer>
     </div>
   </body>    
 </html>
@@ -98,8 +98,8 @@
 <script type="text/javascript">
   $(function () {
 
-    $(".import-page-header").load("/_SiteResources/Pages/import-page-header.html");
-    $(".import-page-footer").load("/_SiteResources/Pages/import-page-footer.html");
+    $(".import-common-page-header").load("/_SiteResources/Pages/import-common-page-header.html");
+    $(".import-common-page-footer").load("/_SiteResources/Pages/import-common-page-footer.html");
 
 });
 </script>

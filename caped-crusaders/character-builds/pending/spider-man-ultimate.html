@@ -10,8 +10,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
     <script>
       $(function importContent() {
-        $(".import-page-header").load("/_SiteResources/Pages/import-page-header.html");
-        $(".import-page-footer").load("/_SiteResources/Pages/import-page-footer.html");
+        $(".import-common-page-header").load("/_SiteResources/Pages/import-common-page-header.html");
+        $(".import-common-page-footer").load("/_SiteResources/Pages/import-common-page-footer.html");
       });
       $(function readCharacter() {
         var characters = [];
@@ -22,7 +22,7 @@
             if (f.page_url == page) {
 
               // Populating basic page data and overview
-              document.getElementById("class-page-header-title").innerHTML = "Caped Crusaders: Classes > " + f.name_str;
+              document.getElementById("class-common-page-header-title").innerHTML = "Caped Crusaders: Classes > " + f.name_str;
               document.getElementById("cc-class-image").src = "/_SiteResources/Images/" + f.class_str + ".png";
               document.getElementById("cc-class-image").alt = f.class_img_credit;
               document.getElementById("cc-subclass-image").src = "/_SiteResources/Images/" + f.class_str + "-" + f.subclass_str + ".png";
@@ -347,14 +347,14 @@
   </head>
 
   <body>
-    <div class="page-background-container"> 
+    <div class="common-page-background"> 
 
-      <div class="page-header"><div class="import-page-header"></div><h1 id="class-page-header-title"></h1><hr></div>
+      <div class="common-page-header"><div class="import-common-page-header"></div><h1 id="class-common-page-header-title"></h1><hr></div>
 
-      <div class="page-content">
+      <div class="common-page-content-transparent">
 
-            <section class="page-content-section">
-              <button id="page-back-button" onclick="location.href='../character-builds.html'">Out to Character Builds</button>
+            <section class="common-page-content-section">
+              <button id="common-page-back-button" onclick="location.href='../character-builds.html'">Out to Character Builds</button>
               <h2>Overview</h2>
               <hr>
               <center>--CHARACTER BUILDS ONLY GO TO LEVEL 10 UNTIL FURTHER NOTICE--</center>
@@ -413,7 +413,7 @@
         </div>
       </div>
 
-      <footer class="import-page-footer"></footer>
+      <footer class="import-common-page-footer"></footer>
 
     </div>
   </body>

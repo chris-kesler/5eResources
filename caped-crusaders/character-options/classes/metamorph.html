@@ -10,8 +10,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
     <script>
       $(function importContent() {
-        $(".import-page-header").load("/_SiteResources/Pages/import-page-header.html");
-        $(".import-page-footer").load("/_SiteResources/Pages/import-page-footer.html");
+        $(".import-common-page-header").load("/_SiteResources/Pages/import-common-page-header.html");
+        $(".import-common-page-footer").load("/_SiteResources/Pages/import-common-page-footer.html");
       });
       $(function readClass() {
         var classes = [];
@@ -20,7 +20,7 @@
           var page = path.split("/").pop();
           $.each(data.class, function(i, f) {
             if (f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html" == page) {
-              document.getElementById("class-page-header-title").innerHTML = "Caped Crusaders: Character Options > Classes";
+              document.getElementById("class-common-page-header-title").innerHTML = "Caped Crusaders: Character Options > Classes";
               document.getElementById("page-title").innerHTML = "Class:  The " + f.name_str;
               document.getElementById("class-page-image").src = "/_SiteResources/Images/" + f.name_str + ".png";
               document.getElementById("class-page-image").alt = f.class_img_credit;
@@ -144,22 +144,22 @@
 
 
   <body>
-    <div class="page-background-container"> 
-      <div class="page-header">
-        <div class="import-page-header"></div>
-          <h1 id="class-page-header-title"></h1>
+    <div class="common-page-background"> 
+      <div class="common-page-header">
+        <div class="import-common-page-header"></div>
+          <h1 id="class-common-page-header-title"></h1>
           <hr>
       </div>
         
 
-      <div class="page-content">
+      <div class="common-page-content-transparent">
           
 
-            <section class="page-content-section">
-              <button id="page-back-button" onclick="location.href='../classes.html'">Out to Classes</button>
+            <section class="common-page-content-section">
+              <button id="common-page-back-button" onclick="location.href='../classes.html'">Out to Classes</button>
               <h2 id="page-title"></h2>
               <hr>
-              <table id="page-image-table">
+              <table id="entry-page-image-table">
                 <tr><td><img id="class-page-image" class="cc-class-image-large" alt="Class Image"></td></tr>
                 <tr><td><h4 id="page-image-credit">Image Credit</h4></td></tr>
               </table>
@@ -222,9 +222,9 @@
               </div>
             </section>
             
-            <section class="page-content-section">
+            <section class="common-page-content-section">
               <h2 id="subclass-magic-name"></h2>
-              <table id="page-image-table">
+              <table id="entry-page-image-table">
                 <tr><td><img class="cc-subclass-image-large" alt="Magic Subclass" id="subclass-magic-image"></img></td></tr>
                 <tr><td><h4 id="subclass-magic-image-credit">Image Credit</h4></td></tr>
               </table>
@@ -232,9 +232,9 @@
               <div id="subclass-magic-feats"></div>
             </section>
 
-            <section class="page-content-section">
+            <section class="common-page-content-section">
               <h2 id="subclass-power-name"></h2>
-              <table id="page-image-table">
+              <table id="entry-page-image-table">
                 <tr><td><img class="cc-subclass-image-large" alt="Power Subclass" id="subclass-power-image"></img></td></tr>
                 <tr><td><h4 id="subclass-power-image-credit">Image Credit</h4></td></tr>
               </table>
@@ -242,9 +242,9 @@
               <div id="subclass-power-feats"></div>
             </section>
 
-            <section class="page-content-section">
+            <section class="common-page-content-section">
               <h2 id="subclass-tech-name"></h2>
-              <table id="page-image-table">
+              <table id="entry-page-image-table">
                 <tr><td><img class="cc-subclass-image-large" alt="Tech Subclass" id="subclass-tech-image"></td></tr>
                 <tr><td><h4 id="subclass-tech-image-credit">Image Credit</h4></td></tr>
               </table>
@@ -256,7 +256,7 @@
         </div>
       </div>
 
-      <footer class="import-page-footer"></footer>
+      <footer class="import-common-page-footer"></footer>
 
     </div>
 

@@ -39,7 +39,7 @@
         
 
         // Populating the page back button
-        document.getElementById("page-back-button").innerHTML = "Out to " + power_source_plural;
+        document.getElementById("common-page-back-button").innerHTML = "Out to " + power_source_plural;
 
         // Reading data from our JSON file
         $.getJSON(`../${power_source_plural.toLowerCase()}.json`, function(data) {
@@ -69,7 +69,7 @@
               });
 
               // Populating the name of the page
-              document.getElementById("page-header-title").innerHTML = "Caped Crusaders: " + power_source_plural + " > " + f.name_str;
+              document.getElementById("common-page-header-title").innerHTML = "Caped Crusaders: " + power_source_plural + " > " + f.name_str;
 
               // Populating the link to the source for the page content
               document.getElementById("page-overview-table-title").innerHTML = f.name_str + ", <a href='" + source_url + "' target='blank'>" + author_credit + "</a>";
@@ -109,34 +109,34 @@
 
   <body>
     <!-- The fixed background div -->
-    <div class="page-background-container"> 
+    <div class="common-page-background"> 
 
       <!-- A div to hold our header -->
-      <div class="page-header">
+      <div class="common-page-header">
 
         <!-- Importing the header -->
-        <div class="import-page-header"></div>
+        <div class="import-common-page-header"></div>
 
           <!-- The page title within the header -->
-          <h1 id="page-header-title"></h1>
+          <h1 id="common-page-header-title"></h1>
           <hr>
       </div>
         
       <!-- A transparent div to build everything else on top of -->
-      <div class="page-content">
+      <div class="common-page-content-transparent">
 
         <!-- An off white chunk of the page that holds content -->
-        <section class="page-content-section">
+        <section class="common-page-content-section">
 
           <!-- A back button that navigates out in the file structure  -->
-          <button id="page-back-button" onclick="location.href=`../${power_source_plural.toLowerCase()}.html`"></button>
+          <button id="common-page-back-button" onclick="location.href=`../${power_source_plural.toLowerCase()}.html`"></button>
 
           <!-- The title of the page content, including the source as a link -->
           <h2 id="page-overview-table-title"></h2>
           <hr>
 
           <!-- A table to hold the page image and credit to author -->
-          <table id="page-image-table">
+          <table id="entry-page-image-table">
             <tr><td><img id="page-image" alt="Page Image"></td></tr>
             <tr><td><h4 id="page-image-credit">Image Credit</h4></td></tr>
           </table>
@@ -152,7 +152,7 @@
       </div>
 
       <!-- Importing the footer -->
-      <footer class="import-page-footer"></footer>
+      <footer class="import-common-page-footer"></footer>
     </div>
   </body>
 </html>
@@ -160,8 +160,8 @@
 <script type="text/javascript">
   $(function () {
 
-    $(".import-page-header").load("/_SiteResources/Pages/import-page-header.html");
-    $(".import-page-footer").load("/_SiteResources/Pages/import-page-footer.html");
+    $(".import-common-page-header").load("/_SiteResources/Pages/import-common-page-header.html");
+    $(".import-common-page-footer").load("/_SiteResources/Pages/import-common-page-footer.html");
 
 });
 </script><!DOCTYPE html>
@@ -182,7 +182,7 @@
           var page = path.split("/").pop();
           $.each(data.technique, function(i, f) {
             if (f.page_url == page) {
-              document.getElementById("page-header-title").innerHTML = "Caped Crusaders: Techniques > " + f.name_str;
+              document.getElementById("common-page-header-title").innerHTML = "Caped Crusaders: Techniques > " + f.name_str;
               document.getElementById("page-overview-table-title").innerHTML = f.name_str;
               document.getElementById("page-description-flavor").innerHTML = "<b>Flavor Description:</b>  <i>" + f.flavor_str + "</i>";
               document.getElementById("page-description-mechanics").innerHTML = "<b>Standard Mechanics:</b>  " + f.mechanics_str;
@@ -204,21 +204,21 @@
 
 
   <body>
-    <div class="page-background-container"> 
-      <div class="page-header">
-        <div class="import-page-header"></div>
-          <h1 id="page-header-title"></h1>
+    <div class="common-page-background"> 
+      <div class="common-page-header">
+        <div class="import-common-page-header"></div>
+          <h1 id="common-page-header-title"></h1>
           <hr>
       </div>
         
 
-      <div class="page-content">
-            <section class="page-content-section">
-              <button id="page-back-button" onclick="location.href='../techniques.html'">Out to Techniques</button>
+      <div class="common-page-content-transparent">
+            <section class="common-page-content-section">
+              <button id="common-page-back-button" onclick="location.href='../techniques.html'">Out to Techniques</button>
               <h2 id="page-overview-table-title"></h2>
               <hr>
 
-<table id="page-image-table">
+<table id="entry-page-image-table">
                 <tr><td><img id="page-image" alt="Page Image"></td></tr>
                 <tr><td><h4 id="page-image-credit">Image Credit</h4></td></tr>
               </table>
@@ -236,7 +236,7 @@
         </div>
       </div>
 
-      <footer class="import-page-footer"></footer>
+      <footer class="import-common-page-footer"></footer>
 
     </div>
 
@@ -246,8 +246,8 @@
 <script type="text/javascript">
   $(function () {
 
-    $(".import-page-header").load("/_SiteResources/Pages/import-page-header.html");
-    $(".import-page-footer").load("/_SiteResources/Pages/import-page-footer.html");
+    $(".import-common-page-header").load("/_SiteResources/Pages/import-common-page-header.html");
+    $(".import-common-page-footer").load("/_SiteResources/Pages/import-common-page-footer.html");
 
 });
 </script>
