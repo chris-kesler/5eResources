@@ -20,9 +20,11 @@
           var page = path.split("/").pop();
           $.each(data.class, function(i, f) {
             if (f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html" == page) {
-              document.getElementById("class-page-header-title").innerHTML = "Caped Crusaders: Classes > " + f.name_str;
+              document.getElementById("class-page-header-title").innerHTML = "Caped Crusaders: Character Options > Classes";
+              document.getElementById("page-title").innerHTML = "Class:  The " + f.name_str;
               document.getElementById("class-page-image").src = "/_SiteResources/Images/" + f.name_str + ".png";
               document.getElementById("class-page-image").alt = f.class_img_credit;
+              document.getElementById("page-image-credit").innerHTML = f.class_img_credit;
               document.getElementById("class-page-description").innerHTML = f.description_long_str;
               document.getElementById("class-features-intro").innerHTML = "As a "  + f.name_str + ", you gain the following Class Features.";
               document.getElementById("hit-dice").innerHTML = "<b>Hit Dice:</b>  1d" + f.hit_die_int + " per " + f.name_str + " level";
@@ -82,8 +84,8 @@
                 else {
                   document.getElementById("cc-attributes-overview-table-features").innerHTML += "<hr><h3 id='" 
                   + f.class_feats[i].name_str.replace(/\s+/g, '') + "'>" 
-                  + f.class_feats[i].name_str + "</h3><i><b><a href='#cc-attributes-overview-table'>" + f.name_str 
-                  + "</a>:</b>  level " + f.class_feats[i].level + "</i><p>" 
+                  + f.class_feats[i].name_str + "</h3><h4><i><b><a href='#cc-attributes-overview-table'>" + f.name_str 
+                  + "</a>:</b>  level " + f.class_feats[i].level + "</i></h4><p>" 
                   + f.class_feats[i].mechanics_str + "</p>";
                 }
               }
@@ -91,42 +93,45 @@
               document.getElementById("subclass-tech-name").innerHTML = "Subclass:  The " + f.subclass_tech_name;
               document.getElementById("subclass-tech-image").src = "/_SiteResources/Images/" + f.name_str + "-" + f.subclass_tech_name + ".png";
               document.getElementById("subclass-tech-image").alt = f.subclass_tech_img_credit;
+              document.getElementById("subclass-tech-image-credit").innerHTML = f.subclass_tech_img_credit;
               document.getElementById("subclass-tech-description").innerHTML = f.subclass_tech_description;
               for (let i = 0; i < f.subclass_tech_feats.length; i++) {
                 if (document.getElementById("subclass-tech-feats").innerHTML.indexOf(f.subclass_tech_feats[i].name_str) > 0) {} 
                 else {
                   document.getElementById("subclass-tech-feats").innerHTML += "<hr><h3 id='" 
                   + f.subclass_tech_feats[i].name_str.replace(/\s+/g, '') + "'>" 
-                  + f.subclass_tech_feats[i].name_str + "</h3><i><b><a href='#subclass-tech-name'>" + f.subclass_tech_name 
-                  + "</a>:</b>  level " + f.subclass_tech_feats[i].level + "</i><p>" 
+                  + f.subclass_tech_feats[i].name_str + "</h3><h4><i><b><a href='#subclass-tech-name'>" + f.subclass_tech_name 
+                  + "</a>:</b>  level " + f.subclass_tech_feats[i].level + "</i></h4><p>" 
                   + f.subclass_tech_feats[i].mechanics_str + "</p>";
                 }
               }
               document.getElementById("subclass-power-name").innerHTML = "Subclass:  The " + f.subclass_power_name;
               document.getElementById("subclass-power-image").src = "/_SiteResources/Images/" + f.name_str + "-" + f.subclass_power_name + ".png";
               document.getElementById("subclass-power-image").alt = f.subclass_power_img_credit;
+              document.getElementById("subclass-power-image-credit").innerHTML = f.subclass_power_img_credit;
               document.getElementById("subclass-power-description").innerHTML = f.subclass_power_description;
               for (let i = 0; i < f.subclass_power_feats.length; i++) {
                 if (document.getElementById("subclass-power-feats").innerHTML.indexOf(f.subclass_power_feats[i].name_str) > 0) {} 
                 else {
                   document.getElementById("subclass-power-feats").innerHTML += "<hr><h3 id='" 
                   + f.subclass_power_feats[i].name_str.replace(/\s+/g, '') + "'>" 
-                  + f.subclass_power_feats[i].name_str + "</h3><i><b><a href='#subclass-power-name'>" + f.subclass_power_name 
-                  + "</a>:</b>  level " + f.subclass_power_feats[i].level + "</i><p>" 
+                  + f.subclass_power_feats[i].name_str + "</h3><h4><i><b><a href='#subclass-power-name'>" + f.subclass_power_name 
+                  + "</a>:</b>  level " + f.subclass_power_feats[i].level + "</i></h4><p>" 
                   + f.subclass_power_feats[i].mechanics_str + "</p>";
                 }
               }
               document.getElementById("subclass-magic-name").innerHTML = "Subclass:  The " + f.subclass_magic_name;
               document.getElementById("subclass-magic-image").src = "/_SiteResources/Images/" + f.name_str + "-" + f.subclass_magic_name + ".png";
               document.getElementById("subclass-magic-image").alt = f.subclass_magic_img_credit;
+              document.getElementById("subclass-magic-image-credit").innerHTML = f.subclass_magic_img_credit;
               document.getElementById("subclass-magic-description").innerHTML = f.subclass_magic_description;
               for (let i = 0; i < f.subclass_magic_feats.length; i++) {
                 if (document.getElementById("subclass-magic-feats").innerHTML.indexOf(f.subclass_magic_feats[i].name_str) > 0) {} 
                 else {
                   document.getElementById("subclass-magic-feats").innerHTML += "<hr><h3 id='" 
                   + f.subclass_magic_feats[i].name_str.replace(/\s+/g, '') + "'>" 
-                  + f.subclass_magic_feats[i].name_str + "</h3><i><b><a href='#subclass-magic-name'>" + f.subclass_magic_name 
-                  + "</a>:</b>  level " + f.subclass_magic_feats[i].level + "</i><p>" 
+                  + f.subclass_magic_feats[i].name_str + "</h3><h4><i><b><a href='#subclass-magic-name'>" + f.subclass_magic_name 
+                  + "</a>:</b>  level " + f.subclass_magic_feats[i].level + "</i></h4><p>" 
                   + f.subclass_magic_feats[i].mechanics_str + "</p>";
                 }
               }
@@ -152,7 +157,7 @@
 
             <section class="page-content-section">
               <button id="page-back-button" onclick="location.href='../classes.html'">Out to Classes</button>
-              <h2>Overview</h2>
+              <h2 id="page-title"></h2>
               <hr>
               <table id="page-image-table">
                 <tr><td><img id="class-page-image" class="cc-class-image-large" alt="Class Image"></td></tr>
@@ -164,14 +169,14 @@
               <h3>Class Features</h3>
               <p id="class-features-intro"></p>
               
-              <h3>Hit Points</h3>
+              <h4>Hit Points</h4>
               <ul>
                 <li id="hit-dice"></li>
                 <li id="hit-points-at-1st-level"></li>
                 <li id="hit-points-at-higher-levels"></li>
               </ul>
 
-              <h3>Proficiencies</h3>
+              <h4>Proficiencies</h4>
               <ul>
                 <li id="proficiencies-armor"></li>
                 <li id="proficiencies-weapons"></li>
@@ -180,7 +185,7 @@
                 <li id="proficiencies-skills"></li>
               </ul>
               
-              <h3>Equipment</h3>
+              <h4>Equipment</h4>
               <ul>
                 <li id="equipment-armor"></li>
                 <li id="equipment-weapons"></li>
@@ -216,35 +221,35 @@
                 <body></body>
               </div>
             </section>
-
+            
             <section class="page-content-section">
-              <h3 id="subclass-tech-name"></h3>
+              <h2 id="subclass-magic-name"></h2>
               <table id="page-image-table">
-                <tr><td><img class="cc-subclass-image-large" alt="Tech Subclass" id="subclass-tech-image"></td></tr>
-                <tr><td><h4 id="page-image-credit">Image Credit</h4></td></tr>
+                <tr><td><img class="cc-subclass-image-large" alt="Magic Subclass" id="subclass-magic-image"></img></td></tr>
+                <tr><td><h4 id="subclass-magic-image-credit">Image Credit</h4></td></tr>
               </table>
-              <p id="subclass-tech-description"></p>
-              <div id="subclass-tech-feats"></div>
+              <p id="subclass-magic-description"></p>
+              <div id="subclass-magic-feats"></div>
             </section>
 
             <section class="page-content-section">
-              <h3 id="subclass-power-name"></h3>
+              <h2 id="subclass-power-name"></h2>
               <table id="page-image-table">
                 <tr><td><img class="cc-subclass-image-large" alt="Power Subclass" id="subclass-power-image"></img></td></tr>
-                <tr><td><h4 id="page-image-credit">Image Credit</h4></td></tr>
+                <tr><td><h4 id="subclass-power-image-credit">Image Credit</h4></td></tr>
               </table>
               <p id="subclass-power-description"></p>
               <div id="subclass-power-feats"></div>
             </section>
 
             <section class="page-content-section">
-              <h3 id="subclass-magic-name"></h3>
+              <h2 id="subclass-tech-name"></h2>
               <table id="page-image-table">
-                <tr><td><img class="cc-subclass-image-large" alt="Magic Subclass" id="subclass-magic-image"></img></td></tr>
-                <tr><td><h4 id="page-image-credit">Image Credit</h4></td></tr>
+                <tr><td><img class="cc-subclass-image-large" alt="Tech Subclass" id="subclass-tech-image"></td></tr>
+                <tr><td><h4 id="subclass-tech-image-credit">Image Credit</h4></td></tr>
               </table>
-              <p id="subclass-magic-description"></p>
-              <div id="subclass-magic-feats"></div>
+              <p id="subclass-tech-description"></p>
+              <div id="subclass-tech-feats"></div>
             </section>
 
           </div>

@@ -1249,32 +1249,6 @@
             "subclass_magic_description" : "Harnessing innate abilities that have soaked into their souls, the Specter is able to manipulate matter to better equip themselves for battle.  ",
             "subclass_magic_feats" : [
                 {
-                    "name_str" : "Powercasting",
-                    "level" : 2,
-                    "mechanics_str" : "See the Rules for Powercasting mechanics and Superpowers list.  <ul><li><b>Superpowers Known:</b>  You learn Superpowers of your choice as shown in the Consumables Known column of the class table.  You may not learn a Superpower of a level higher than your Max Consumable Level, and you may learn a Superpower at the same time you learn its prerequisite.  </li><br><li><b>Superpower Points:</b>  You have a number of Superpower Points as shown in the Consumable Points column of the class table.  You expend these Superpower Points to cast Superpowers.  You regain all expended Superpower Points when you finish a Long Rest.  </li><br><li><b>Max Superpower Level:</b>  Many Superpowers can be overpowered, consuming more Superpower Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Superpowers at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a Long Rest.  </li><br><li><b>Powercasting Ability:</b>  Your Powercasting ability is Charisma.  You use your Charisma modifier whenever a Superpower refers to your Powercasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Superpower you cast and when making an attack roll with one.  </li><br><li><b>Superpower save DC</b> = 8 + your Proficiency Bonus + your Powercasting ability modifier.  </li><br><li><b>Superpower attack modifier</b> = your Proficiency Bonus + your Powercasting ability modifier.  </li></ul>"
-                },
-                {
-                    "name_str" : "Energy Blade",
-                    "level" : 7,
-                    "mechanics_str" : "You are able to bond with a weapon, immolating it at the molecular level so it might be called upon later at will.  Over the course of a Short Rest, you may attune to any one weapon with which you are proficient.  The weapon has the following traits while wielded by you:  <ul><li><b>Enhanced:</b>  If the original item is Mundane, the item now counts as Superpowered, and gains a bonus equal to half your Proficiency Bonus rounded down.  If the original item is Superpowered, only the higher bonus takes effect.  </li><li><b>Manifested:</b>  The weapon can be manifested into your hand at any point out of combat or during your turn.  </li><li><b>Damage:</b>  When you bond with the weapon, you may choose Kinetic or Radiation damage to replace the original damage type.  </li><li><b>Attunement:</b>  If the original item typically requires attunement, this item does not.  </li></ul>"
-                },
-                {
-                    "name_str" : "Energy Shield",
-                    "level" : 13,
-                    "mechanics_str" : "You are able to modify a shield, immolating it at the molecular level so it might be called upon later at will.  Over the course of a Short Rest, you may attune to any one shield with which you are proficient.  This shield has the following traits while wielded by you:  <ul><li><b>Enhanced:</b>  If the original item is Mundane, the item now counts as Superpowered, and gains a bonus equal to half your Proficiency Bonus rounded down.  If the original item is Superpowered, only the higher bonus takes effect.  </li><li><b>Manifested:</b>  The shield can be manifested into your hand at any point out of combat or during your turn.  While manifested, you must wield it with your hands as normal for a shield of that type.  </li><li><b>Attunement:</b>  If the original item typically requires attunement, this item does not.  </li></ul>"
-                },
-                {
-                    "name_str" : "Energy Kinesis",
-                    "level" : 19,
-                    "mechanics_str" : "Your Kinetic Surge now includes your Powercasting Ability Modifier in the damage calculation.  Your Kinetic Surge can now deal Kinetic or Radiation damage instead.  When you roll Initiative and have no uses of Kinetic Surge remaining, you gain two uses.  "
-                }
-            ],
-
-            "subclass_power_name" : "Guardian",
-            "subclass_power_img_credit" : "---",
-            "subclass_power_description" : "Embracing their divine gifts, the Guardian rounds out their boons with knowledge of spellcasting and magical weaponry.  ",
-            "subclass_power_feats" : [
-                {
                     "name_str" : "Spellcasting",
                     "level" : 2,
                     "mechanics_str" : "See the Rules for Spellcasting mechanics and Spells list.  <ul><li><b>Spells Known:</b>  You learn Spells of your choice as shown in the Consumables Known column of the class table.  You may not learn a Spell of a level higher than your Max Consumable Level, and you may learn a Spell at the same time you learn its prerequisite.  </li><br><li><b>Spell Points:</b>  You have a number of Spell Points as shown in the Consumable Points column of the class table.  You expend these Spell Points to cast Spells.  You regain all expended Spell Points when you finish a Long Rest.  </li><br><li><b>Max Spell Level:</b>  Many Spells can be overpowered, consuming more Spell Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Spells at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a Long Rest.  </li><br><li><b>Spellcasting Ability:</b>  Your Spellcasting ability is Wisdom.  You use your Wisdom modifier whenever a Spell refers to your Spellcasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Spell you cast and when making an attack roll with one.  </li><br><li><b>Spell save DC</b> = 8 + your Proficiency Bonus + your Spellcasting ability modifier.  </li><br><li><b>Spell attack modifier</b> = your Proficiency Bonus + your Spellcasting ability modifier.  </li></ul>"
@@ -1293,6 +1267,32 @@
                     "name_str" : "Divine Kinesis",
                     "level" : 19,
                     "mechanics_str" : "Your Kinetic Surge now includes your Spellcasting Ability Modifier in the damage calculation.  Your Kinetic Surge can now deal Luminous or Cryogenic damage instead.  When you roll Initiative and have no uses of Kinetic Surge remaining, you gain two uses.  "
+                }
+            ],
+
+            "subclass_power_name" : "Guardian",
+            "subclass_power_img_credit" : "---",
+            "subclass_power_description" : "Embracing their divine gifts, the Guardian rounds out their boons with knowledge of spellcasting and magical weaponry.  ",
+            "subclass_power_feats" : [
+                {
+                    "name_str" : "Powercasting",
+                    "level" : 2,
+                    "mechanics_str" : "See the Rules for Powercasting mechanics and Superpowers list.  <ul><li><b>Superpowers Known:</b>  You learn Superpowers of your choice as shown in the Consumables Known column of the class table.  You may not learn a Superpower of a level higher than your Max Consumable Level, and you may learn a Superpower at the same time you learn its prerequisite.  </li><br><li><b>Superpower Points:</b>  You have a number of Superpower Points as shown in the Consumable Points column of the class table.  You expend these Superpower Points to cast Superpowers.  You regain all expended Superpower Points when you finish a Long Rest.  </li><br><li><b>Max Superpower Level:</b>  Many Superpowers can be overpowered, consuming more Superpower Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Superpowers at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a Long Rest.  </li><br><li><b>Powercasting Ability:</b>  Your Powercasting ability is Charisma.  You use your Charisma modifier whenever a Superpower refers to your Powercasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Superpower you cast and when making an attack roll with one.  </li><br><li><b>Superpower save DC</b> = 8 + your Proficiency Bonus + your Powercasting ability modifier.  </li><br><li><b>Superpower attack modifier</b> = your Proficiency Bonus + your Powercasting ability modifier.  </li></ul>"
+                },
+                {
+                    "name_str" : "Energy Blade",
+                    "level" : 7,
+                    "mechanics_str" : "You are able to bond with a weapon, immolating it at the molecular level so it might be called upon later at will.  Over the course of a Short Rest, you may attune to any one weapon with which you are proficient.  The weapon has the following traits while wielded by you:  <ul><li><b>Enhanced:</b>  If the original item is Mundane, the item now counts as Superpowered, and gains a bonus equal to half your Proficiency Bonus rounded down.  If the original item is Superpowered, only the higher bonus takes effect.  </li><li><b>Manifested:</b>  The weapon can be manifested into your hand at any point out of combat or during your turn.  </li><li><b>Damage:</b>  When you bond with the weapon, you may choose Kinetic or Radiation damage to replace the original damage type.  </li><li><b>Attunement:</b>  If the original item typically requires attunement, this item does not.  </li></ul>"
+                },
+                {
+                    "name_str" : "Energy Shield",
+                    "level" : 13,
+                    "mechanics_str" : "You are able to modify a shield, immolating it at the molecular level so it might be called upon later at will.  Over the course of a Short Rest, you may attune to any one shield with which you are proficient.  This shield has the following traits while wielded by you:  <ul><li><b>Enhanced:</b>  If the original item is Mundane, the item now counts as Superpowered, and gains a bonus equal to half your Proficiency Bonus rounded down.  If the original item is Superpowered, only the higher bonus takes effect.  </li><li><b>Manifested:</b>  The shield can be manifested into your hand at any point out of combat or during your turn.  While manifested, you must wield it with your hands as normal for a shield of that type.  </li><li><b>Attunement:</b>  If the original item typically requires attunement, this item does not.  </li></ul>"
+                },
+                {
+                    "name_str" : "Energy Kinesis",
+                    "level" : 19,
+                    "mechanics_str" : "Your Kinetic Surge now includes your Powercasting Ability Modifier in the damage calculation.  Your Kinetic Surge can now deal Kinetic or Radiation damage instead.  When you roll Initiative and have no uses of Kinetic Surge remaining, you gain two uses.  "
                 }
             ],
             
@@ -1452,27 +1452,6 @@
             "subclass_magic_description" : "Subclass Description",
             "subclass_magic_feats" : [
                 {
-                    "name_str" : "Powercasting",
-                    "level" : 3,
-                    "mechanics_str" : "See the Rules for Powercasting mechanics and Superpowers list.  <ul><li><b>Superpowers Known:</b>  You learn Superpowers of your choice as shown in the Consumables Known column of the class table.  You may not learn a Superpower of a level higher than your Max Consumable Level, and you may learn a Superpower at the same time you learn its prerequisite.  </li><br><li><b>Superpower Points:</b>  You have a number of Superpower Points as shown in the Consumable Points column of the class table.  You expend these Superpower Points to cast Superpowers.  You regain all expended Superpower Points when you finish a Long Rest.  </li><br><li><b>Max Superpower Level:</b>  Many Superpowers can be overpowered, consuming more Superpower Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Superpowers at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a Long Rest.  </li><br><li><b>Powercasting Ability:</b>  Your Powercasting ability is Intelligence.  You use your Intelligence modifier whenever a Superpower refers to your Powercasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Superpower you cast and when making an attack roll with one.  </li><br><li><b>Superpower save DC</b> = 8 + your Proficiency Bonus + your Powercasting ability modifier.  </li><br><li><b>Superpower attack modifier</b> = your Proficiency Bonus + your Powercasting ability modifier.  </li></ul>"
-                },
-                {
-                    "name_str" : "Power Weapon Application",
-                    "level" : 9,
-                    "mechanics_str" : "Attacks using Strength made with Superpowered Weapons now qualify as Unarmed Strikes for the purposes of applying your class features.  "
-                },
-                {
-                    "name_str" : "Power Resilience",
-                    "level" : 17,
-                    "mechanics_str" : "You have advantage on all saving throws against Superpower based effects. In addition, any Superpower based attack roll (Powercasting, not regular attacks) has disadvantage to hit you.  "
-                }
-            ],
-
-            "subclass_power_name" : "Supreme",
-            "subclass_power_img_credit" : "---",
-            "subclass_power_description" : "Subclass Description",
-            "subclass_power_feats" : [
-                {
                     "name_str" : "Spellcasting",
                     "level" : 3,
                     "mechanics_str" : "See the Rules for Spellcasting mechanics and Spells list.  <ul><li><b>Spells Known:</b>  You learn Spells of your choice as shown in the Consumables Known column of the class table.  You may not learn a Spell of a level higher than your Max Consumable Level, and you may learn a Spell at the same time you learn its prerequisite.  </li><br><li><b>Spell Points:</b>  You have a number of Spell Points as shown in the Consumable Points column of the class table.  You expend these Spell Points to cast Spells.  You regain all expended Spell Points when you finish a Long Rest.  </li><br><li><b>Max Spell Level:</b>  Many Spells can be overpowered, consuming more Spell Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Spells at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a Long Rest.  </li><br><li><b>Spellcasting Ability:</b>  Your Spellcasting ability is Intelligence.  You use your Intelligence modifier whenever a Spell refers to your Spellcasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Spell you cast and when making an attack roll with one.  </li><br><li><b>Spell save DC</b> = 8 + your Proficiency Bonus + your Spellcasting ability modifier.  </li><br><li><b>Spell attack modifier</b> = your Proficiency Bonus + your Spellcasting ability modifier.  </li></ul>"
@@ -1486,6 +1465,27 @@
                     "name_str" : "Magic Resilience",
                     "level" : 17,
                     "mechanics_str" : "You have advantage on all saving throws against Magic based effects. In addition, any Magic based attack roll (Spellcasting, not regular attacks) has disadvantage to hit you.  "
+                }
+            ],
+
+            "subclass_power_name" : "Supreme",
+            "subclass_power_img_credit" : "---",
+            "subclass_power_description" : "Subclass Description",
+            "subclass_power_feats" : [
+                {
+                    "name_str" : "Powercasting",
+                    "level" : 3,
+                    "mechanics_str" : "See the Rules for Powercasting mechanics and Superpowers list.  <ul><li><b>Superpowers Known:</b>  You learn Superpowers of your choice as shown in the Consumables Known column of the class table.  You may not learn a Superpower of a level higher than your Max Consumable Level, and you may learn a Superpower at the same time you learn its prerequisite.  </li><br><li><b>Superpower Points:</b>  You have a number of Superpower Points as shown in the Consumable Points column of the class table.  You expend these Superpower Points to cast Superpowers.  You regain all expended Superpower Points when you finish a Long Rest.  </li><br><li><b>Max Superpower Level:</b>  Many Superpowers can be overpowered, consuming more Superpower Points to create a greater effect.  You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Consumable Level column of the class table.  You may only cast Superpowers at 6th, 7th, 8th, and 9th-level once.  You regain the ability to do so after a Long Rest.  </li><br><li><b>Powercasting Ability:</b>  Your Powercasting ability is Intelligence.  You use your Intelligence modifier whenever a Superpower refers to your Powercasting ability.  Additionally, you use this ability score modifier when setting the saving throw DC for a Superpower you cast and when making an attack roll with one.  </li><br><li><b>Superpower save DC</b> = 8 + your Proficiency Bonus + your Powercasting ability modifier.  </li><br><li><b>Superpower attack modifier</b> = your Proficiency Bonus + your Powercasting ability modifier.  </li></ul>"
+                },
+                {
+                    "name_str" : "Power Weapon Application",
+                    "level" : 9,
+                    "mechanics_str" : "Attacks using Strength made with Superpowered Weapons now qualify as Unarmed Strikes for the purposes of applying your class features.  "
+                },
+                {
+                    "name_str" : "Power Resilience",
+                    "level" : 17,
+                    "mechanics_str" : "You have advantage on all saving throws against Superpower based effects. In addition, any Superpower based attack roll (Powercasting, not regular attacks) has disadvantage to hit you.  "
                 }
             ],
             
