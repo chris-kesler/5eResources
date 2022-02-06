@@ -1,0 +1,27 @@
+>Chromatics
+Red = Fire
+Black 
+Green = Ooze
+Blue = Air
+White = Ice
+
+>Primal 
+Brine = Water
+Umbral = Ash
+Magma = Magma
+Cloud 
+Gem = Earth
+
+>Metallics
+Bronze = Water
+Gold = Fire
+Silver = Ice
+Brass = Magma
+Copper = Earth
+
+>Imperial
+Forest = Ooze
+Sky = Air
+Sea = Water
+Underworld = Ash
+Sovereign = Fire

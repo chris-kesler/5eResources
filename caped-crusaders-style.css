@@ -122,7 +122,7 @@ iframe {
 }
 
 /* A condensed dark grey border color style group for the header elements */
-.common-page-header-home-button, .common-page-header-nav-button, .directory-page-nav-button-entry, #common-page-back-button, .common-page-footer-button, .directory-page-dynamic-table-sort-button {
+.common-page-header-home-button, .common-page-header-nav-button, .directory-page-nav-button-to-entry-page, #common-page-back-button, .common-page-footer-button, .directory-page-dynamic-table-sort-button {
   border-color: rgb(54,57,63);
 }
 
@@ -277,8 +277,8 @@ body, .cc-attributes-overview-table tr th, .cc-attributes-overview-table th, .cc
 }
 
 /* A button to navigate the website file structure from the page content, signifying a directory page */
-.directory-page-nav-button-directory {
-  width: 275px;
+.directory-page-nav-button-to-directory-page {
+  width: 225px;
   max-width: 35vw;
   height: 65px;
   margin: 5px;
@@ -290,7 +290,7 @@ body, .cc-attributes-overview-table tr th, .cc-attributes-overview-table th, .cc
 }
 
 /* A button to navigate the website file structure from the page content, signifying an entry page */
-.directory-page-nav-button-entry {
+.directory-page-nav-button-to-entry-page {
   width: 225px;
   max-width: 35vw;
   height: 50px;

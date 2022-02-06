@@ -2101,7 +2101,7 @@
 
         {
             "name_str" : "Dynamo",
-            "class_img_credit" : "---",
+            "class_img_credit" : "Punch by Smalllike from NounProject.com",
             "description_short_str" : "Utter powerhouses that rely on brute force to break down and destroy their enemies.  ",
             "description_long_str" : "Wielding raw physical power, the Dynamo thrives when decimating powerful foes and hordes alike.   ",
 
@@ -2177,7 +2177,7 @@
                 {
                     "name_str" : "Mach Punch",
                     "level" : 1,
-                    "mechanics_str" : "Your Unarmed Strikes deal 1d6 + your Strength Modifier bludgeoning damage, and you can make an Unarmed Strike as a Bonus Action.  When you make an Unarmed Strike with advantage or an Ally is within melee range of your target, you can deal additional damage equal to a number of d6s equal to your level.  You can only deal this damage once per turn.  <br><br>At level 13, when you reduce a creature to zero hit points with Mach Punch damage, you can apply the remaining damage to a creature within five feet of the original target that is also within your reach.  You can move after making the initial attack to get within reach of another creature in order to apply the damage.  This can chain indefinitely until the Mach Punch damage has been used up or you have no more movement.  <br><br>At 20th level, when you reduce a creature to zero hit points using Mach Punch damage and apply the remaining damage to another creature, roll an additional 2d6 and add it to the remaining damage.  This can chain indefinitely until the Mach Punch damage has been used up or you have no more movement.  "
+                    "mechanics_str" : "Your Unarmed Strikes deal 1d6 + your Strength Modifier bludgeoning damage, and you can make an Unarmed Strike as a Bonus Action.  When you deal damage with an Unarmed Strike, you can deal additional damage equal to a number of d6s equal to your level.  You can only deal this damage once per turn.  <br><br>At level 13, when you reduce a creature to zero hit points with Mach Punch damage, you may apply the remaining damage to a creature within five feet of the original target if the new target is also within your reach and the original attack roll would also hit the new target.  You can move after making the initial attack to get within reach of another creature in order to satisfy the range requirement.  This can chain indefinitely until the Mach Punch damage has been used up or you have no more movement.  <br><br>At 20th level, when you reduce a creature to zero hit points using Mach Punch damage and apply the remaining damage to another creature, roll an additional 2d6 and add it to the remaining damage.  This can chain and stack indefinitely until the Mach Punch damage has been used up or you have no more movement.  "
                 },
                 {
                     "name_str" : "Mach Punch",
