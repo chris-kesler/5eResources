@@ -1,0 +1,1294 @@
+{
+    "entries" : [
+        {
+            "entry_name" : "Crimson Dragon",
+            "entry_category" : "Dragon",
+            "entry_type" : "Primal",
+            "entry_variety" : "Crimson",
+
+            "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/023/017/181/large/miguel-regodon-harkness-pzo2102-ancient-red-dragon-final-2.jpg?1577731619",
+            "img_source" : "https://www.artstation.com/artwork/xzVV1E",
+
+            "entry_description" : "Crimson Dragons are notably egotistical, even among dragons.  They prefer to enslave and berate mortals of all kinds, demanding their reverance and zealous servitude.  They typically pillage seeking great treasures and materials to adorn their lair in their own honor.  ",
+
+            "overview_table_groups" : [
+                {
+                    "overview_table_group_heading" : "Associations",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Planescape",
+                            "content" : "Ignar"
+                        },
+                        {
+                            "title" : "Alignment",
+                            "content" : "Neutral Evil"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Physiology",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Breath Weapon",
+                            "content" : "Fire"
+                        },
+                        {
+                            "title" : "Horns",
+                            "content" : "Rearward Cluster"
+                        },
+                        {
+                            "title" : "Wing Type",
+                            "content" : "Conventional (Bat-like)"
+                        },
+                        {
+                            "title" : "Coloration",
+                            "content" : "Vibrant Red"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Ecology",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Preferred Habitat",
+                            "content" : "Scorching Deserts and Savanha Prairies"
+                        },
+                        {
+                            "title" : "Preferred Prey",
+                            "content" : "Savanha and Desert fauna; camels, bison, gazelles, elephants"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Life Cycle",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Gestation",
+                            "content" : "10 years"
+                        },
+                        {
+                            "title" : "Hatchling",
+                            "content" : "0-20 years"
+                        },
+                        {
+                            "title" : "Juvenile",
+                            "content" : "20-200 years"
+                        },
+                        {
+                            "title" : "Adult",
+                            "content" : "200-2000 years"
+                        },
+                        {
+                            "title" : "Wyrm",
+                            "content" : "2000+ years"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "entry_name" : "Azure Dragon",
+            "entry_category" : "Dragon",
+            "entry_type" : "Primal",
+            "entry_variety" : "Azure",
+
+            "img_linked" : "https://cdna.artstation.com/p/assets/images/images/036/867/138/large/miguel-regodon-harkness-pzo2104-adult-cloud-dragon.jpg?1618851020",
+            "img_source" : "https://www.artstation.com/artwork/9malJq",
+
+            "entry_description" : "Azure Dragons are lofty and distant, valuing knowledge and relishing trickery.  ",
+
+            "overview_table_groups" : [
+                {
+                    "overview_table_group_heading" : "Associations",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Planescape",
+                            "content" : "Caelar"
+                        },
+                        {
+                            "title" : "Alignment",
+                            "content" : "Neutral Evil"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Physiology",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Breath Weapon",
+                            "content" : "Lightning"
+                        },
+                        {
+                            "title" : "Horns",
+                            "content" : "Forward Scooping (Bull and Boar like)"
+                        },
+                        {
+                            "title" : "Wing Type",
+                            "content" : "Conventional (Bat-like)"
+                        },
+                        {
+                            "title" : "Coloration",
+                            "content" : "Pale Blue and Ivory"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Ecology",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Preferred Habitat",
+                            "content" : "Plateaus and Mountaintops"
+                        },
+                        {
+                            "title" : "Preferred Prey",
+                            "content" : "Mountain and Prairie fauna; deer, elk, horses"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Life Cycle",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Gestation",
+                            "content" : "10 years"
+                        },
+                        {
+                            "title" : "Hatchling",
+                            "content" : "0-20 years"
+                        },
+                        {
+                            "title" : "Juvenile",
+                            "content" : "20-200 years"
+                        },
+                        {
+                            "title" : "Adult",
+                            "content" : "200-2000 years"
+                        },
+                        {
+                            "title" : "Wyrm",
+                            "content" : "2000+ years"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "entry_name" : "Crimson Dragon",
+            "entry_category" : "Dragon",
+            "entry_type" : "Primal",
+            "entry_variety" : "Crimson",
+
+            "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/032/538/923/large/miguel-regodon-harkness-pzo2102-adult-red-dragon-copia.jpg?1606753019",
+            "img_source" : "https://www.artstation.com/artwork/v2yNmO",
+
+            "entry_description" : "Crimson Dragons are notably egotistical, even among dragons.  They prefer to enslave and berate mortals of all kinds, demanding their reverance and zealous servitude.  They typically pillage seeking great treasures and materials to adorn their lair in their own honor.  ",
+
+            "overview_table_groups" : [
+                {
+                    "overview_table_group_heading" : "Associations",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Planescape",
+                            "content" : "Ignar"
+                        },
+                        {
+                            "title" : "Alignment",
+                            "content" : "Neutral Evil"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Physiology",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Breath Weapon",
+                            "content" : "Fire"
+                        },
+                        {
+                            "title" : "Horns",
+                            "content" : "Rearward Cluster"
+                        },
+                        {
+                            "title" : "Wing Type",
+                            "content" : "Conventional (Bat-like)"
+                        },
+                        {
+                            "title" : "Coloration",
+                            "content" : "Vibrant Red"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Ecology",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Preferred Habitat",
+                            "content" : "Scorching Deserts and Savanha Prairies"
+                        },
+                        {
+                            "title" : "Preferred Prey",
+                            "content" : "Savanha and Desert fauna; camels, bison, gazelles, elephants"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Life Cycle",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Gestation",
+                            "content" : "10 years"
+                        },
+                        {
+                            "title" : "Hatchling",
+                            "content" : "0-20 years"
+                        },
+                        {
+                            "title" : "Juvenile",
+                            "content" : "20-200 years"
+                        },
+                        {
+                            "title" : "Adult",
+                            "content" : "200-2000 years"
+                        },
+                        {
+                            "title" : "Wyrm",
+                            "content" : "2000+ years"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "entry_name" : "Gemstone Dragon",
+            "entry_category" : "Dragon",
+            "entry_type" : "Primal",
+            "entry_variety" : "Gemstone",
+
+            "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/036/867/147/large/miguel-regodon-harkness-pzo2104-adult-crystal-dragon.jpg?1618851025",
+            "img_source" : "https://www.artstation.com/artwork/9malJq",
+
+            "entry_description" : "Gemstone Dragons are mysterious and inscrutinable.  They live the vast majority of their lives underground, carving massive subterranean lairs with sprawling networks of caves.  ",
+
+            "overview_table_groups" : [
+                {
+                    "overview_table_group_heading" : "Associations",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Planescape",
+                            "content" : "Terral"
+                        },
+                        {
+                            "title" : "Alignment",
+                            "content" : "Neutral Evil"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Physiology",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Breath Weapon",
+                            "content" : "Thunder"
+                        },
+                        {
+                            "title" : "Horns",
+                            "content" : "Minimal"
+                        },
+                        {
+                            "title" : "Wing Type",
+                            "content" : "Conventional (Bird-like)"
+                        },
+                        {
+                            "title" : "Coloration",
+                            "content" : "Prismatic Jade"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Ecology",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Preferred Habitat",
+                            "content" : "Deep Underground"
+                        },
+                        {
+                            "title" : "Preferred Prey",
+                            "content" : "Subterranean fauna; worms, spiders, insects"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Life Cycle",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Gestation",
+                            "content" : "10 years"
+                        },
+                        {
+                            "title" : "Hatchling",
+                            "content" : "0-20 years"
+                        },
+                        {
+                            "title" : "Juvenile",
+                            "content" : "20-200 years"
+                        },
+                        {
+                            "title" : "Adult",
+                            "content" : "200-2000 years"
+                        },
+                        {
+                            "title" : "Wyrm",
+                            "content" : "2000+ years"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "entry_name" : "Indigo Dragon",
+            "entry_category" : "Dragon",
+            "entry_type" : "Primal",
+            "entry_variety" : "Indigo",
+
+            "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/036/867/133/large/miguel-regodon-harkness-pzo2104-adult-birne-dragon.jpg?1618851015",
+            "img_source" : "https://www.artstation.com/artwork/9malJq",
+
+            "entry_description" : "Indigo Dragons are especially fearsome, preying on coastal civilizations and seafaring vessels alike.  They greatly prefer to enslave aquatic mortals, but even that is a rare occurence.  Indigo Dragons are voracious and aggressive, likely due to the large number of comparable threats that the seas contain compared to other environments.  They typically decorate their lair with sunken vessels and the corpses of their mightiest foes.  ",
+
+            "overview_table_groups" : [
+                {
+                    "overview_table_group_heading" : "Associations",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Planescape",
+                            "content" : "Aquar"
+                        },
+                        {
+                            "title" : "Alignment",
+                            "content" : "Neutral Evil"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Physiology",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Breath Weapon",
+                            "content" : "Psychic"
+                        },
+                        {
+                            "title" : "Horns",
+                            "content" : "Rearward Binary"
+                        },
+                        {
+                            "title" : "Wing Type",
+                            "content" : "Conventional (Bat-like)"
+                        },
+                        {
+                            "title" : "Coloration",
+                            "content" : "Aquamarine and Ivory"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Ecology",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Preferred Habitat",
+                            "content" : "Deep Oceans"
+                        },
+                        {
+                            "title" : "Preferred Prey",
+                            "content" : "Aquatic and Coastal faunu; fish, whales, bison"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Life Cycle",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Gestation",
+                            "content" : "10 years"
+                        },
+                        {
+                            "title" : "Hatchling",
+                            "content" : "0-20 years"
+                        },
+                        {
+                            "title" : "Juvenile",
+                            "content" : "20-200 years"
+                        },
+                        {
+                            "title" : "Adult",
+                            "content" : "200-2000 years"
+                        },
+                        {
+                            "title" : "Wyrm",
+                            "content" : "2000+ years"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "entry_name" : "Alabaster Dragon",
+            "entry_category" : "Dragon",
+            "entry_type" : "Quasiprimal",
+            "entry_variety" : "Alabaster",
+
+            "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/032/538/925/large/miguel-regodon-harkness-pzo2102-adult-white-dragon-copia.jpg?1606753023",
+            "img_source" : "https://www.artstation.com/artwork/v2yNmO",
+
+            "entry_description" : "Alabaster Dragons are arguably the most sadistic of the dragons.  They enslave mortals on occasion, but never retain them for long.  The brutally cold temperatures inside an Alabaster Dragons lair makes certain of that.  Alabaster Dragons find great joy in watching their subjects slowly freeze to death, adorning their lair with frozen statues and inset displays of their defeated foes and prior minions encased in ice.  ",
+
+            "overview_table_groups" : [
+                {
+                    "overview_table_group_heading" : "Associations",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Planescape",
+                            "content" : "Eifrost"
+                        },
+                        {
+                            "title" : "Alignment",
+                            "content" : "Lawful Evil"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Physiology",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Breath Weapon",
+                            "content" : "Ice"
+                        },
+                        {
+                            "title" : "Horns",
+                            "content" : "Rearward Frill"
+                        },
+                        {
+                            "title" : "Wing Type",
+                            "content" : "Scalloped (Feathered)"
+                        },
+                        {
+                            "title" : "Coloration",
+                            "content" : "Stark White"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Ecology",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Preferred Habitat",
+                            "content" : "Arctic Tundra"
+                        },
+                        {
+                            "title" : "Preferred Prey",
+                            "content" : "Arctic fauna; yetis, polar bears, mammoths, seals"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Life Cycle",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Gestation",
+                            "content" : "10 years"
+                        },
+                        {
+                            "title" : "Hatchling",
+                            "content" : "0-20 years"
+                        },
+                        {
+                            "title" : "Juvenile",
+                            "content" : "20-200 years"
+                        },
+                        {
+                            "title" : "Adult",
+                            "content" : "200-2000 years"
+                        },
+                        {
+                            "title" : "Wyrm",
+                            "content" : "2000+ years"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "entry_name" : "Umbral Dragon",
+            "entry_category" : "Dragon",
+            "entry_type" : "Quasiprimal",
+            "entry_variety" : "Umbral",
+
+            "img_linked" : "https://cdna.artstation.com/p/assets/images/images/036/867/158/large/miguel-regodon-harkness-pzo902104-adult-umbra-dragon.jpg?1618851039",
+            "img_source" : "https://www.artstation.com/artwork/9malJq",
+
+            "entry_description" : "Umbral Dragons are detached and rationale, only showing or acting on emotion in exceptionally rare circumstances.  Their motivations are largely unknown, and they are often found meddling with mortal affairs from the inside.  It is not uncommon for an Umbral Dragon to set two things that are at odds with each other in motion, leaving many confused about their true motivations.  ",
+
+            "overview_table_groups" : [
+                {
+                    "overview_table_group_heading" : "Associations",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Planescape",
+                            "content" : "Shadowfell"
+                        },
+                        {
+                            "title" : "Alignment",
+                            "content" : "True Neutral"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Physiology",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Breath Weapon",
+                            "content" : "Necrotic"
+                        },
+                        {
+                            "title" : "Horns",
+                            "content" : "Rearward Binary"
+                        },
+                        {
+                            "title" : "Wing Type",
+                            "content" : "Conventional (Bat-like)"
+                        },
+                        {
+                            "title" : "Coloration",
+                            "content" : "Matte Ebony"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Ecology",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Preferred Habitat",
+                            "content" : "Abandoned Urban Environments"
+                        },
+                        {
+                            "title" : "Preferred Prey",
+                            "content" : "Urban fauna; rats, alligators, horses, people"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Life Cycle",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Gestation",
+                            "content" : "10 years"
+                        },
+                        {
+                            "title" : "Hatchling",
+                            "content" : "0-20 years"
+                        },
+                        {
+                            "title" : "Juvenile",
+                            "content" : "20-200 years"
+                        },
+                        {
+                            "title" : "Adult",
+                            "content" : "200-2000 years"
+                        },
+                        {
+                            "title" : "Wyrm",
+                            "content" : "2000+ years"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "entry_name" : "Stygian Dragon",
+            "entry_category" : "Dragon",
+            "entry_type" : "Quasiprimal",
+            "entry_variety" : "Stygian",
+
+            "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/036/867/155/large/miguel-regodon-harkness-pzo2104-adult-magma-dragon.jpg?1618851035",
+            "img_source" : "https://www.artstation.com/artwork/9malJq",
+
+            "entry_description" : "Stygian Dragons are often mistaken for demons, both in their appearance and behaviors.  They are famously unpredictable, resentful of authority structures that they are not at the top of, and creatively cruel.  Many of them enslave demons and mortals alike, along with any other hapless being that might be unfortunate enough to meet them.  They often adorn their lairs with unique expressions of suffering, often including custom made mechanisms or living testaments.  Stygian Dragons are widely considered the most undesireable, and for good reason.  ",
+
+            "overview_table_groups" : [
+                {
+                    "overview_table_group_heading" : "Associations",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Planescape",
+                            "content" : "Vulken"
+                        },
+                        {
+                            "title" : "Alignment",
+                            "content" : "Chaotic Evil"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Physiology",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Breath Weapon",
+                            "content" : "Acid"
+                        },
+                        {
+                            "title" : "Horns",
+                            "content" : "Rearward Crown"
+                        },
+                        {
+                            "title" : "Wing Type",
+                            "content" : "Conventional (Bat-like)"
+                        },
+                        {
+                            "title" : "Coloration",
+                            "content" : "Deep Obsidian"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Ecology",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Preferred Habitat",
+                            "content" : "Volcanic terrain; Mountains and Caverns"
+                        },
+                        {
+                            "title" : "Preferred Prey",
+                            "content" : "Any non aquatic fauna"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Life Cycle",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Gestation",
+                            "content" : "10 years"
+                        },
+                        {
+                            "title" : "Hatchling",
+                            "content" : "0-20 years"
+                        },
+                        {
+                            "title" : "Juvenile",
+                            "content" : "20-200 years"
+                        },
+                        {
+                            "title" : "Adult",
+                            "content" : "200-2000 years"
+                        },
+                        {
+                            "title" : "Wyrm",
+                            "content" : "2000+ years"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "entry_name" : "Viridian Dragon",
+            "entry_category" : "Dragon",
+            "entry_type" : "Quasiprimal",
+            "entry_variety" : "Viridian",
+
+            "img_linked" : "https://cdna.artstation.com/p/assets/images/images/032/538/922/large/miguel-regodon-harkness-pzo2102-adult-green-dragon-copia.jpg?1606753014",
+            "img_source" : "https://www.artstation.com/artwork/v2yNmO",
+
+            "entry_description" : "Viridian Dragons are revered by those who value nature, and are often incorporated in pagan religions.  Viridian Dragons keep to themselves and guard their chosen territory with relentless cunning and brutality.  They have been commonly known to allow nomads passage through their territory, and even allow hunters to stalk their territory if they are deemed worthy and respectful of the nature around them.  In many ways, Viridian Dragons are literal guardians of nature itself, behaving as ethical stewards of their land while living off of it.  Stories of Viridian Dragons that have saved herds of deer from raging dire crocodiles or feral therianthropes are not uncommon, with the dragon leaving the herd intact afterwards in most cases.  Their fearsome appearance and large menacing horn often provokes conflict with those who are familiar with their nature, especially mercenaries or soldiers who are unknowingly trespassing.  ",
+
+            "overview_table_groups" : [
+                {
+                    "overview_table_group_heading" : "Associations",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Planescape",
+                            "content" : "Feywilds"
+                        },
+                        {
+                            "title" : "Alignment",
+                            "content" : "True Neutral"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Physiology",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Breath Weapon",
+                            "content" : "Poison"
+                        },
+                        {
+                            "title" : "Horns",
+                            "content" : "Snout Singular"
+                        },
+                        {
+                            "title" : "Wing Type",
+                            "content" : "Conventional (Bat-like)"
+                        },
+                        {
+                            "title" : "Coloration",
+                            "content" : "Emerald Green"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Ecology",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Preferred Habitat",
+                            "content" : "Swamps and Forests"
+                        },
+                        {
+                            "title" : "Preferred Prey",
+                            "content" : "Forest fauna; deer, cattle, wolves, rabbits"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Life Cycle",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Gestation",
+                            "content" : "10 years"
+                        },
+                        {
+                            "title" : "Hatchling",
+                            "content" : "0-20 years"
+                        },
+                        {
+                            "title" : "Juvenile",
+                            "content" : "20-200 years"
+                        },
+                        {
+                            "title" : "Adult",
+                            "content" : "200-2000 years"
+                        },
+                        {
+                            "title" : "Wyrm",
+                            "content" : "2000+ years"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "entry_name" : "Cobalt Dragon",
+            "entry_category" : "Dragon",
+            "entry_type" : "Metallic",
+            "entry_variety" : "Cobalt",
+
+            "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/032/538/919/large/miguel-regodon-harkness-pzo2102-adult-blue-dragon-copia.jpg?1606753010",
+            "img_source" : "https://www.artstation.com/artwork/v2yNmO",
+
+            "entry_description" : "Cobalt Dragons are masters of knowledge and secrets, commonly revered in academic symbolism.  They often lend aid to nations and organizations known to possess large libraries, humbling requesting access in return.  The lairs of Cobalt Dragons are the envy of learned mages across all lands, containing tomes acquired and meticulously maintained across thousands of years in some cases.  Many Cobalt Dragons are knowledgeable mages themselves, but they typically abhor the thought of using magic for violence.  ",
+
+            "overview_table_groups" : [
+                {
+                    "overview_table_group_heading" : "Associations",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Planescape",
+                            "content" : "Caelar"
+                        },
+                        {
+                            "title" : "Alignment",
+                            "content" : "Neutral Good"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Physiology",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Breath Weapon",
+                            "content" : "Lightning"
+                        },
+                        {
+                            "title" : "Horns",
+                            "content" : "Rearward Binary"
+                        },
+                        {
+                            "title" : "Wing Type",
+                            "content" : "Conventional (Bat-like)"
+                        },
+                        {
+                            "title" : "Coloration",
+                            "content" : "Steel Blue"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Ecology",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Preferred Habitat",
+                            "content" : "Plateaus and Mountaintops"
+                        },
+                        {
+                            "title" : "Preferred Prey",
+                            "content" : "Mountain and Prairie fauna; deer, elk, horses"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Life Cycle",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Gestation",
+                            "content" : "10 years"
+                        },
+                        {
+                            "title" : "Hatchling",
+                            "content" : "0-20 years"
+                        },
+                        {
+                            "title" : "Juvenile",
+                            "content" : "20-200 years"
+                        },
+                        {
+                            "title" : "Adult",
+                            "content" : "200-2000 years"
+                        },
+                        {
+                            "title" : "Wyrm",
+                            "content" : "2000+ years"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "entry_name" : "Gold Dragon",
+            "entry_category" : "Dragon",
+            "entry_type" : "Metallic",
+            "entry_variety" : "Gold",
+
+            "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/032/571/931/large/miguel-regodon-harkness-pzo2102-adult-gold-dragon.jpg?1606837456",
+            "img_source" : "https://www.artstation.com/artwork/xJ2Yo1",
+
+            "entry_description" : "Gold Dragons are often seen as the Kings of Dragons, and heavily associated with regality and nobility.  Gold Dragons are known for swift and vengeful retribution when an act of cruelty or barbarism is committed in their presence.  This extends across the entirety of their territory, sometimes creating small micro-societies within their territory that are governed only by the local dragon's justice.  ",
+
+            "overview_table_groups" : [
+                {
+                    "overview_table_group_heading" : "Associations",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Planescape",
+                            "content" : "Ignar"
+                        },
+                        {
+                            "title" : "Alignment",
+                            "content" : "Neutral Good"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Physiology",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Breath Weapon",
+                            "content" : "Fire"
+                        },
+                        {
+                            "title" : "Horns",
+                            "content" : "Rearward Binary"
+                        },
+                        {
+                            "title" : "Wing Type",
+                            "content" : "Conventional (Bird-like)"
+                        },
+                        {
+                            "title" : "Coloration",
+                            "content" : "Shimmering Bullion"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Ecology",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Preferred Habitat",
+                            "content" : "Scorching Deserts and Savanha Prairies"
+                        },
+                        {
+                            "title" : "Preferred Prey",
+                            "content" : "Savanha and Desert fauna; camels, bison, gazelles, elephants"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Life Cycle",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Gestation",
+                            "content" : "10 years"
+                        },
+                        {
+                            "title" : "Hatchling",
+                            "content" : "0-20 years"
+                        },
+                        {
+                            "title" : "Juvenile",
+                            "content" : "20-200 years"
+                        },
+                        {
+                            "title" : "Adult",
+                            "content" : "200-2000 years"
+                        },
+                        {
+                            "title" : "Wyrm",
+                            "content" : "2000+ years"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "entry_name" : "Copper Dragon",
+            "entry_category" : "Dragon",
+            "entry_type" : "Metallic",
+            "entry_variety" : "Copper",
+
+            "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/032/571/925/large/miguel-regodon-harkness-pzo2102-adult-copper-dragon.jpg?1606837452",
+            "img_source" : "https://www.artstation.com/artwork/xJ2Yo1",
+
+            "entry_description" : "Copper Dragons are the least interested in mortal affairs of the metallic dragons, only intervening when the most catastrophic of events or injustices occur.  They keep to themselves in underground lairs, often collecting historical remnants of nations they have interacted with so as to preserve pieces of their culture.  While bored by the grand machinations of mortals, Copper Dragons are known to possess a deep longing for intimate and challengin conversation.  The mortals who do happen across Copper Dragons, both in their lair and elsewhere, are either dismissed as irrelevant and spoken with as briefly as possible to obtain the desired information or obsessively analyzed, questioned, and challenged in a civil battle of words and wits.  ",
+
+            "overview_table_groups" : [
+                {
+                    "overview_table_group_heading" : "Associations",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Planescape",
+                            "content" : "Terral"
+                        },
+                        {
+                            "title" : "Alignment",
+                            "content" : "Neutral Good"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Physiology",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Breath Weapon",
+                            "content" : "Thunder"
+                        },
+                        {
+                            "title" : "Horns",
+                            "content" : "Rearward Crown"
+                        },
+                        {
+                            "title" : "Wing Type",
+                            "content" : "Conventional (Bat-like)"
+                        },
+                        {
+                            "title" : "Coloration",
+                            "content" : "Rich Orange"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Ecology",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Preferred Habitat",
+                            "content" : "Deep Underground"
+                        },
+                        {
+                            "title" : "Preferred Prey",
+                            "content" : "Subterranean fauna; worms, spiders, insects"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Life Cycle",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Gestation",
+                            "content" : "10 years"
+                        },
+                        {
+                            "title" : "Hatchling",
+                            "content" : "0-20 years"
+                        },
+                        {
+                            "title" : "Juvenile",
+                            "content" : "20-200 years"
+                        },
+                        {
+                            "title" : "Adult",
+                            "content" : "200-2000 years"
+                        },
+                        {
+                            "title" : "Wyrm",
+                            "content" : "2000+ years"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "entry_name" : "Bronze Dragon",
+            "entry_category" : "Dragon",
+            "entry_type" : "Metallic",
+            "entry_variety" : "Bronze",
+
+            "img_linked" : "https://cdna.artstation.com/p/assets/images/images/032/571/910/large/miguel-regodon-harkness-pzo2102-adult-bronce-dragon.jpg?1606837442",
+            "img_source" : "https://www.artstation.com/artwork/xJ2Yo1",
+
+            "entry_description" : "Bronze Dragons are extremely financially inclined and logistically focused.  They find a great deal of joy in tracking cargo shipments and reviewing warehouse stock levels.  Bronze Dragons usually procure treasure from sunken vessels and return it to the rigthful owner with fees for their service removed, allowing them to amass small fortunes that they then use to invest in seafaring cargo shipment companies.  You would be hard pressed to find a merchantile coster with seafaring vessels that doesn't have the financial backing of a Bronze Dragon.  While Bronze Dragons do value civility and order as any Metallic Dragon would, they hold a remarkably potent resentment for pirates.  Gold Dragons are widely considered the most brutal and vengeful of the Metallic Dragons, but accounts of Bronze Dragons razing pirate vessels certainly makes them a competitor for that title.  ",
+
+            "overview_table_groups" : [
+                {
+                    "overview_table_group_heading" : "Associations",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Planescape",
+                            "content" : "Aquar"
+                        },
+                        {
+                            "title" : "Alignment",
+                            "content" : "Neutral Good"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Physiology",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Breath Weapon",
+                            "content" : "Psychic"
+                        },
+                        {
+                            "title" : "Horns",
+                            "content" : "Rearward Gills"
+                        },
+                        {
+                            "title" : "Wing Type",
+                            "content" : "Conventional (Bat-like)"
+                        },
+                        {
+                            "title" : "Coloration",
+                            "content" : "Pale Brown and Sea Green"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Ecology",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Preferred Habitat",
+                            "content" : "Deep Oceans"
+                        },
+                        {
+                            "title" : "Preferred Prey",
+                            "content" : "Aquatic and Coastal faunu; fish, whales, bison"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Life Cycle",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Gestation",
+                            "content" : "10 years"
+                        },
+                        {
+                            "title" : "Hatchling",
+                            "content" : "0-20 years"
+                        },
+                        {
+                            "title" : "Juvenile",
+                            "content" : "20-200 years"
+                        },
+                        {
+                            "title" : "Adult",
+                            "content" : "200-2000 years"
+                        },
+                        {
+                            "title" : "Wyrm",
+                            "content" : "2000+ years"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "entry_name" : "Silver Dragon",
+            "entry_category" : "Dragon",
+            "entry_type" : "Metallic",
+            "entry_variety" : "Silver",
+
+            "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/032/571/937/large/miguel-regodon-harkness-pzo2102-adult-silver-dragon.jpg?1606837462",
+            "img_source" : "https://www.artstation.com/artwork/xJ2Yo1",
+
+            "entry_description" : "Silver Dragons are the most interested in mortal affairs of all the dragons.  They often seek to offer council to rulers in government and judges in courts of law.  Silver Dragons utterly despise those who corrupt the legal system, having been known to publicly execute government officials who fail to uphold the oath they took.  Their lairs are often adorned with documents and organizational symbols, such as house crests or the statue that presided over a courthouse.  The treasure they value most of all are legislative documents from nations past, often spending hours poring over them and coming up with new ideas to present to the nobles they advise.  ",
+
+            "overview_table_groups" : [
+                {
+                    "overview_table_group_heading" : "Associations",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Planescape",
+                            "content" : "Eifrost"
+                        },
+                        {
+                            "title" : "Alignment",
+                            "content" : "Lawful Good"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Physiology",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Breath Weapon",
+                            "content" : "Ice"
+                        },
+                        {
+                            "title" : "Horns",
+                            "content" : "Rearward Binary"
+                        },
+                        {
+                            "title" : "Wing Type",
+                            "content" : "Scalloped (Feathered)"
+                        },
+                        {
+                            "title" : "Coloration",
+                            "content" : "Gleaming Chrome"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Ecology",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Preferred Habitat",
+                            "content" : "Arctic Tundra"
+                        },
+                        {
+                            "title" : "Preferred Prey",
+                            "content" : "Arctic fauna; yetis, polar bears, mammoths, seals"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Life Cycle",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Gestation",
+                            "content" : "10 years"
+                        },
+                        {
+                            "title" : "Hatchling",
+                            "content" : "0-20 years"
+                        },
+                        {
+                            "title" : "Juvenile",
+                            "content" : "20-200 years"
+                        },
+                        {
+                            "title" : "Adult",
+                            "content" : "200-2000 years"
+                        },
+                        {
+                            "title" : "Wyrm",
+                            "content" : "2000+ years"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "entry_name" : "Brass Dragon",
+            "entry_category" : "Dragon",
+            "entry_type" : "Metallic",
+            "entry_variety" : "Brass",
+
+            "img_linked" : "https://cdna.artstation.com/p/assets/images/images/032/571/920/large/miguel-regodon-harkness-pzo2102-adult-brass-dragon.jpg?1606837447",
+            "img_source" : "https://www.artstation.com/artwork/xJ2Yo1",
+
+            "entry_description" : "Brass Dragons are the most eccentric of the Metallic Dragons by a considerable margin.  They often insert themselves in mortal societies with a series of rotating interests, the most stable of which being art.  Brass Dragons fill their lairs with the most unique and potent works of art they can find, often treasuring their newest pieces most dearly.  They constantly redecorate and cycle through their collection to adorn their lair in different combinations from year to year, sometimes forgetting about pieces they own that are buried in the back of their storage chambers.  There have been relics from cultures thousands of years old found in Brass Dragon hoards, and they are just as prone to give it away as they are to defend it with their lives.  As unreliable as Brass Dragons may be, any city fortunate enough to find a Brass Dragon setting up permanent residence within its walls is sure to find itself much wealthier as it becomes a central hub of culture and expression.  ",
+
+            "overview_table_groups" : [
+                {
+                    "overview_table_group_heading" : "Associations",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Planescape",
+                            "content" : "Vulken"
+                        },
+                        {
+                            "title" : "Alignment",
+                            "content" : "Chaotic Good"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Physiology",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Breath Weapon",
+                            "content" : "Acid"
+                        },
+                        {
+                            "title" : "Horns",
+                            "content" : "Rearward Crown"
+                        },
+                        {
+                            "title" : "Wing Type",
+                            "content" : "Scalloped (Feathered)"
+                        },
+                        {
+                            "title" : "Coloration",
+                            "content" : "Faded Amber"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Ecology",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Preferred Habitat",
+                            "content" : "Volcanic terrain; Mountains and Caverns"
+                        },
+                        {
+                            "title" : "Preferred Prey",
+                            "content" : "Any non aquatic fauna"
+                        }
+                    ]
+                },
+                {
+                    "overview_table_group_heading" : "Life Cycle",
+                    "overview_table_group_data" : [
+                        {
+                            "title" : "Gestation",
+                            "content" : "10 years"
+                        },
+                        {
+                            "title" : "Hatchling",
+                            "content" : "0-20 years"
+                        },
+                        {
+                            "title" : "Juvenile",
+                            "content" : "20-200 years"
+                        },
+                        {
+                            "title" : "Adult",
+                            "content" : "200-2000 years"
+                        },
+                        {
+                            "title" : "Wyrm",
+                            "content" : "2000+ years"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-US-Compatible" content="e-edge">
+        <title>KnowOne's Website of Everything</title>
+        <link rel="icon" href="/_SiteResources/Images/OwlOfMinerva_ModifiedLogo.png">
+        <link rel="stylesheet" href="/caped-crusaders-style.css">
+    </head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+    <script>
+        $(function readJSON() {
+    
+          // Reading the name of this file
+          var page = window.location.pathname.split("/").pop();
+    
+          // Reading data from our JSON file
+          $.getJSON(`../../planescapes.json`, function(data) {
+    
+            // Looping through the JSON data 
+            $.each(data.entries, function(i, f) {
+              if((f.deity.toLowerCase() + ".html") == page) {
+
+                // Determining additional variables based on data given in JSON
+                if(f.element == "Water" || f.element == "Earth" || f.element == "Fire" || f.element == "Air") {
+                  var plane_type = "Primal Elemental Plane";
+                  var deity_type = "Titan";
+                  var deity_title = "Elemental Titan";
+                } else if(f.element == "Ooze" || f.element == "Ice" || f.element == "Magma" || f.element == "Ash") {
+                  var plane_type = "Quasi Elemental Plane";
+                  var deity_type = "God";
+                  var deity_title = "Greater Deity";
+                } else {
+                  var plane_type = "---";
+                  var deity_type = "---";
+                  var deity_title = "---";
+                }
+
+                // Populating the page titles
+                document.getElementById("common-page-header-title").innerHTML = "Myrmidos Wiki:  Deities > " + f.deity;
+                document.getElementById("common-page-content-title").innerHTML = f.deity + ", " + deity_title + " of " + f.plane;
+    
+                // Populating the page description 
+                document.getElementById("common-page-description").innerHTML = f.deity_description;
+                document.getElementById("common-page-back-button").innerHTML = "Out to " + deity_type + "s";    
+    
+                // Populating the page table image and title
+                document.getElementById("entry-page-overview-table-image").src = f.deity_img;
+                document.getElementById("entry-page-overview-table-image-source").innerHTML = deity_type + " of " + f.element;
+                document.getElementById("entry-page-overview-table-image-source").href = f.deity_img;
+                document.getElementById("wiki-page-table-title").innerHTML = f.deity;
+                document.getElementById("wiki-page-table-subtitle").innerHTML = deity_title;
+    
+                // Populating deity followers
+                document.getElementById("wiki-page-table-titles").innerHTML = f.deity_titles;
+                document.getElementById("wiki-page-table-symbol").innerHTML = f.deity_symbol;
+                document.getElementById("wiki-page-table-worshippers").innerHTML = f.deity_worshippers;
+    
+                // Populating deity attributes
+                document.getElementById("wiki-page-table-alignment").innerHTML = f.deity_alignment;
+                document.getElementById("wiki-page-table-portfolio").innerHTML = f.deity_portfolio;
+                document.getElementById("wiki-page-table-domains").innerHTML = f.deity_domains;
+    
+                // Populating deity manifestation
+                document.getElementById("wiki-page-table-animals").innerHTML = f.deity_animals;
+                document.getElementById("wiki-page-table-monsters").innerHTML = f.deity_monsters;
+                document.getElementById("wiki-page-table-colors").innerHTML = f.deity_colors;
+    
+              }
+            });
+          });
+        });
+    
+      </script>
+    
+      <body>
+        <!-- The fixed background div -->
+        <div class="common-page-background"> 
+    
+            <!-- A div to hold our header -->
+            <div class="common-page-header">
+        
+                <!-- Importing the header -->
+                <div class="import-common-page-header"></div>
+        
+                <!-- The page title within the header -->
+                <h1 id="common-page-header-title"></h1>
+                <hr>
+            </div>
+                
+            <!-- A transparent div to build everything else on top of -->
+            <div class="common-page-content-transparent">
+        
+                <!-- An off white chunk of the page that holds content -->
+                <section class="common-page-content-section">
+        
+                <!-- A back button that navigates out in the file structure  -->
+                <button id="common-page-back-button" onclick = "location.href='../gods.html'"></button>
+        
+                <!-- The title of the page content, including the source as a link -->
+                <h2 id="common-page-content-title"></h2>
+                <hr>
+                
+                <!-- A table to hold the concise page data -->
+                <table class="entry-page-overview-table">
+                    <tr>
+                        <th colspan="2"><img id="entry-page-overview-table-image"></th>
+                    </tr>
+                    <tr>
+                        <th colspan="2"><i><a id="entry-page-overview-table-image-source" target="_blank"></a></i></th>
+                    </tr>
+                    
+                    <tr>
+                        <th colspan="2" id="wiki-page-table-title"></th>
+                    </tr>
+                    <tr>
+                        <th colspan="2" id="wiki-page-table-subtitle"></th>
+                    </tr>
+        
+                    <tr>
+                    <th colspan="2">Followers</th>
+                    </tr>
+                    <tr>
+                        <td>Titles</td>
+                        <td id="wiki-page-table-titles"></td>
+                    </tr>
+                    <tr>
+                        <td>Symbol</td>
+                        <td id="wiki-page-table-symbol"></td>
+                    </tr>
+                    <tr>
+                        <td>Worshippers</td>
+                        <td><a id="wiki-page-table-worshippers"></a></td>
+                    </tr>
+                    
+                    <tr>
+                        <th colspan="2">Attributes</th>
+                    </tr>
+                    <tr>
+                        <td>Alignment</td>
+                        <td><a id="wiki-page-table-alignment"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Portfolio</td>
+                        <td id="wiki-page-table-portfolio"></td>
+                    </tr>
+                    <tr>
+                        <td>Domains</td>
+                        <td id="wiki-page-table-domains"></td>
+                    </tr>
+
+                    <tr>
+                        <th colspan="2">Manifestations</th>
+                    </tr>
+                    <tr>
+                        <td>Favored Animals</td>
+                        <td id="wiki-page-table-animals"></td>
+                    </tr>
+                    <tr>
+                        <td>Favored Monsters</td>
+                        <td id="wiki-page-table-monsters"></td>
+                    </tr>
+                    <tr>
+                        <td>Favored Colors</td>
+                        <td id="wiki-page-table-colors"></td>
+                    </tr>
+
+                </table>
+        
+                <!-- A paragraph to hold the page content and descriptions -->
+                <p id="common-page-description"></p>
+                </section>
+            </div>
+        
+            <!-- Importing the footer -->
+            <footer class="import-common-page-footer"></footer>
+        </div>
+    </body>
+</html>
+
+<script type="text/javascript">
+  $(function () {
+
+    $(".import-common-page-header").load("/_SiteResources/Pages/import-common-page-header.html");
+    $(".import-common-page-footer").load("/_SiteResources/Pages/import-common-page-footer.html");
+
+});
+</script>

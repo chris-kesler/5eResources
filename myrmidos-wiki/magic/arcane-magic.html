@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-US-Compatible" content="e-edge">
+    <title>KnowOne's Website of Everything</title>
+    <link rel="icon" href="/_SiteResources/Images/OwlOfMinerva_ModifiedLogo.png">
+    <link rel="stylesheet" href="/caped-crusaders-style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  </head>
+
+  <body>
+    <!-- The fixed background div -->
+    <div class="common-page-background"> 
+
+      <!-- A div to hold our header -->
+      <div class="common-page-header">
+
+        <!-- Importing the header -->
+        <div class="import-common-page-header"></div>
+
+        <!-- The page title within the header -->
+        <h1 id="common-page-header-title">Myrmidos Wiki:  Arcane Magic</h1>
+        <hr>
+      </div>
+        
+      <!-- A transparent div to build everything else on top of -->
+      <div class="common-page-content-transparent">
+
+        <!-- An off white chunk of the page that holds content -->
+        <section class="common-page-content-section">
+          <button id="common-page-back-button" onclick="location.href='../magic.html'">Out to Magic</button>
+          <h2>Overview</h2>
+          <hr>
+        
+          <!-- A paragraph to hold the page content and descriptions -->
+          <p id="common-page-description">Arcane Magic is an academic skill that employs specific components to "pluck" at the strands of energy leaking through from the other planes that are already present in a given reality.  Examples of Arcane Casters include humanoid archmages and liches.  </p>
+        </section>
+      </div>
+
+      <!-- Importing the footer -->
+      <footer class="import-common-page-footer"></footer>
+    </div>
+  </body>
+</html>
+
+<script type="text/javascript">
+  $(function () {
+
+    $(".import-common-page-header").load("/_SiteResources/Pages/import-common-page-header.html");
+    $(".import-common-page-footer").load("/_SiteResources/Pages/import-common-page-footer.html");
+
+});
+</script>

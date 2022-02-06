@@ -25,7 +25,7 @@
               document.getElementById("class-page-image").src = "/_SiteResources/Images/" + f.name_str + ".png";
               document.getElementById("class-page-image").alt = f.class_img_credit;
               document.getElementById("page-image-credit").innerHTML = f.class_img_credit;
-              document.getElementById("class-page-description").innerHTML = f.description_long_str;
+              document.getElementById("class-common-page-description").innerHTML = f.description_long_str;
               document.getElementById("class-features-intro").innerHTML = "As a "  + f.name_str + ", you gain the following Class Features.";
               document.getElementById("hit-dice").innerHTML = "<b>Hit Dice:</b>  1d" + f.hit_die_int + " per " + f.name_str + " level";
               document.getElementById("hit-points-at-1st-level").innerHTML = "<b>Hit Points at 1st level:</b>  " + f.hit_die_int + " your Constitution modifier";
@@ -163,7 +163,7 @@
                 <tr><td><img id="class-page-image" class="cc-class-image-large" alt="Class Image"></td></tr>
                 <tr><td><h4 id="page-image-credit">Image Credit</h4></td></tr>
               </table>
-              <p id="class-page-description"></p>
+              <p id="class-common-page-description"></p>
               
               <hr>
               <h3>Class Features</h3>

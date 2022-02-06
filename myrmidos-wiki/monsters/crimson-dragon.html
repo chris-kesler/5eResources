@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-US-Compatible" content="e-edge">
+    <title>KnowOne's Website of Everything</title>
+    <link rel="icon" href="/_SiteResources/Images/OwlOfMinerva_ModifiedLogo.png">
+    <link rel="stylesheet" href="/caped-crusaders-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+    <script>
+      $(function readJSON() {
+        // Reading data from our JSON file
+        $.getJSON(`monsters.json`, function(data) {
+
+          // Reading the name of this file
+          var page = window.location.pathname.split("/").pop();
+
+          // Looping through the JSON data 
+          $.each(data.entries, function(i, f) {
+
+            // Finding the entry that matches this file
+            if (f.entry_name.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html" == page) {
+            
+              // Populating the page title within the header
+              document.getElementById("common-page-header-title").innerHTML = "Myrmidos Wiki:  Monsters";
+
+              // Populating the page title within the page content
+              document.getElementById("common-page-content-title").innerHTML = f.entry_name;
+
+              // Defining a table row with an image and appending it to the overview table
+              var tblRow = "<tr><th colspan='2'><img id='entry-page-overview-table-image' alt='" + f.entry_name + "'></th></tr>";
+              $(tblRow).appendTo("#entry-page-overview-table tbody");
+
+              // Populating that image using JSON data
+              if (f.img_rehosted != undefined) {
+                document.getElementById("entry-page-overview-table-image").src = f.img_rehosted;
+              } else {
+                document.getElementById("entry-page-overview-table-image").src = "/_SiteResources/Images/WikiPlaceholder.png";
+              }
+              
+              // Appending a table row with a link to the page art 
+              var tblRow = "<tr><th colspan='2'><i><a href='" + f.img_linked + "' target='_blank'>Link to " + f.entry_name + " Art</a></i></th></tr>";
+              $(tblRow).appendTo("#entry-page-overview-table tbody");
+
+              // Appending a table row with a link to the page art source
+              var tblRow = "<tr><th colspan='2'><i><a href='" + f.img_source + "' target='_blank'>Link to Art Source</a></i></th></tr>";
+              $(tblRow).appendTo("#entry-page-overview-table tbody");
+
+              // Appending a table row with the monster name 
+              var tblRow = "<tr><th colspan='2'>" + f.entry_name + "</th></tr>";
+              $(tblRow).appendTo("#entry-page-overview-table tbody");
+
+              // Appending a table row with the monster type and category 
+              var tblRow = "<tr><th colspan='2'>" + f.entry_type + " " + f.entry_category + "</th></tr>";
+              $(tblRow).appendTo("#entry-page-overview-table tbody");
+
+              // Appending a table row with a heading for a data group 
+              var tblRow = "<tr><th colspan='2'>General Information</th></tr>";
+              $(tblRow).appendTo("#entry-page-overview-table tbody");
+
+              // Appending a table row with a heading for a data group 
+              var tblRow = "<tr><td>Category</td><td><a href='/myrmidos-wiki/monsters/" + f.entry_category.toLowerCase() + "s.html'>" + f.entry_category + "</a></td></tr>";
+              $(tblRow).appendTo("#entry-page-overview-table tbody");
+
+              // Appending a table row with a heading for a data group 
+              var tblRow = "<tr><td>Type</td><td>" + f.entry_type + "</td></tr>";
+              $(tblRow).appendTo("#entry-page-overview-table tbody");
+
+              // Appending a table row with a heading for a data group 
+              var tblRow = "<tr><td>Variety</td><td>" + f.entry_variety + "</td></tr>";
+              $(tblRow).appendTo("#entry-page-overview-table tbody");
+
+
+
+              // Dynamically and adaptively populating overview table information from the JSON file 
+              for(var z = 0; f.overview_table_groups.length > z; z++) {
+                var tblRow = "<tr><th colspan='2'>" + f.overview_table_groups[z].overview_table_group_heading + "</th></tr>";
+                $(tblRow).appendTo("#entry-page-overview-table tbody");
+
+                for(var y = 0; f.overview_table_groups[z].overview_table_group_data.length > y; y++) {
+                  var tblRow = "<tr><td>" + f.overview_table_groups[z].overview_table_group_data[y].title + "</td><td>" + f.overview_table_groups[z].overview_table_group_data[y].content + "</td></tr>";
+                  $(tblRow).appendTo("#entry-page-overview-table tbody");
+
+                }
+
+              }
+
+              // Populating the page description text
+              document.getElementById("common-page-description").innerHTML = f.entry_description;
+
+
+            }
+
+          });
+
+        });
+
+      });
+    </script>
+  </head>
+
+
+  <body>
+    <!-- The fixed background div -->
+    <div class="common-page-background"> 
+
+        <!-- A div to hold our header -->
+        <div class="common-page-header">
+    
+            <!-- Importing the header -->
+            <div class="import-common-page-header"></div>
+    
+            <!-- The page title within the header -->
+            <h1 id="common-page-header-title"></h1>
+            <hr>
+        </div>
+            
+        <!-- A transparent div to build everything else on top of -->
+        <div class="common-page-content-transparent">
+    
+            <!-- An off white chunk of the page that holds content -->
+            <section class="common-page-content-section">
+    
+            <!-- A back button that navigates out in the file structure  -->
+            <button id="common-page-back-button" onclick = "location.href='../monsters.html'">Out to Monsters</button>
+    
+            <!-- The title of the page content, including the source as a link -->
+            <h2 id="common-page-content-title"></h2>
+            <hr>
+                        
+            <!-- A table to hold the concise page data -->
+            <table class="entry-page-overview-table" id="entry-page-overview-table">
+              <tbody></tbody>
+            </table>
+    
+            <!-- A paragraph to hold the page content and descriptions -->
+            <p id="common-page-description"></p>
+            </section>
+        </div>
+    
+        <!-- Importing the footer -->
+        <footer class="import-common-page-footer"></footer>
+    </div>
+  </body>
+</html>
+
+<script type="text/javascript">
+  $(function () {
+
+    $(".import-common-page-header").load("/_SiteResources/Pages/import-common-page-header.html");
+    $(".import-common-page-footer").load("/_SiteResources/Pages/import-common-page-footer.html");
+
+});
+</script>

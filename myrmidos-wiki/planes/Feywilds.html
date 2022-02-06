@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-US-Compatible" content="e-edge">
+    <title>KnowOne's Website of Everything</title>
+    <link rel="icon" href="/_SiteResources/Images/OwlOfMinerva_ModifiedLogo.png">
+    <link rel="stylesheet" href="/caped-crusaders-style.css">
+  </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+  <script>
+    $(function readJSON() {
+
+      // Reading the name of this file
+      var page = window.location.pathname.split("/").pop();
+
+      // Reading data from our JSON file
+      $.getJSON(`../planescapes.json`, function(data) {
+
+        // Looping through the JSON data 
+        $.each(data.entries, function(i, f) {
+          if((f.plane.toLowerCase() + ".html") == page) {
+
+            // Populating the page titles
+            document.getElementById("common-page-header-title").innerHTML = "Myrmidos Wiki:  Planes > " + f.plane;
+            document.getElementById("common-page-content-title").innerHTML = f.plane + ", Elemental Plane of " + f.element;
+
+            // Populating the page description 
+            document.getElementById("common-page-description").innerHTML = f.plane_description;
+
+            // Determining additional variables based on data given in JSON
+            if(f.element == "Water" || f.element == "Earth" || f.element == "Fire" || f.element == "Air") {
+              var plane_type = "Primal Elemental Plane";
+              var deity_type = "Titan";
+            } else if(f.element == "Ooze" || f.element == "Ice" || f.element == "Magma" || f.element == "Ash") {
+              var plane_type = "Quasi Elemental Plane";
+              var deity_type = "God";
+            } else {
+              var plane_type = "---";
+              var deity_type = "---";
+            }
+
+            // Populating the page table image and title
+            document.getElementById("entry-page-overview-table-image").src = f.plane_img;
+            document.getElementById("entry-page-overview-table-image-source").innerHTML = "Elemental Plane of " + f.element;
+            document.getElementById("entry-page-overview-table-image-source").href = f.plane_img;
+            document.getElementById("wiki-page-table-title").innerHTML = f.plane;
+            document.getElementById("wiki-page-table-subtitle").innerHTML = plane_type;
+
+            // Populating planar associations
+            document.getElementById("wiki-page-table-position").innerHTML = f.position;
+            document.getElementById("wiki-page-table-school").innerHTML = f.school;
+            document.getElementById("wiki-page-table-school").href = "/myrmidos-wiki/magic/schools-of-magic/" + f.school.toLowerCase() + "-magic.html";
+            document.getElementById("wiki-page-table-alignment").innerHTML = f.alignment;
+
+            // Populating planar inhabitants
+            document.getElementById("wiki-page-table-deity").innerHTML = f.deity;
+            document.getElementById("wiki-page-table-deity").href = "/myrmidos-wiki/deities/" + deity_type.toLowerCase() + "s/" + f.deity.toLowerCase() + ".html";
+            document.getElementById("wiki-page-table-natives").innerHTML = f.natives;
+            document.getElementById("wiki-page-table-factions").innerHTML = f.factions;
+
+            // Populating planar attributes
+            document.getElementById("wiki-page-table-topography").innerHTML = f.topography;
+            document.getElementById("wiki-page-table-gravity").innerHTML = f.gravity;
+            document.getElementById("wiki-page-table-time").innerHTML = f.time;
+
+          }
+        });
+      });
+    });
+
+  </script>
+
+  <body>
+    <!-- The fixed background div -->
+    <div class="common-page-background"> 
+
+      <!-- A div to hold our header -->
+      <div class="common-page-header">
+
+        <!-- Importing the header -->
+        <div class="import-common-page-header"></div>
+
+          <!-- The page title within the header -->
+          <h1 id="common-page-header-title"></h1>
+          <hr>
+      </div>
+        
+      <!-- A transparent div to build everything else on top of -->
+      <div class="common-page-content-transparent">
+
+        <!-- An off white chunk of the page that holds content -->
+        <section class="common-page-content-section">
+
+          <!-- A back button that navigates out in the file structure  -->
+          <button id="common-page-back-button" onclick="location.href='../planes.html'">Out to Planes</button>
+
+          <!-- The title of the page content, including the source as a link -->
+          <h2 id="common-page-content-title"></h2>
+          <hr>
+          
+          <!-- A table to hold the concise page data -->
+          <table class="entry-page-overview-table">
+            <tr>
+              <th colspan="2"><img id="entry-page-overview-table-image"></th>
+            </tr>
+            <tr>
+              <th colspan="2"><i><a id="entry-page-overview-table-image-source" target="_blank"></a></i></th>
+            </tr>
+            <tr>
+              <th colspan="2" id="wiki-page-table-title"></th>
+            </tr>
+            <tr>
+              <th colspan="2" id="wiki-page-table-subtitle"></th>
+            </tr>
+
+            <tr>
+              <th colspan="2">Planar Associations</th>
+            </tr>
+            <tr>
+              <td>Position</td>
+              <td id="wiki-page-table-position"></td>
+            </tr>
+            <tr>
+              <td>School of Magic</td>
+              <td><a id="wiki-page-table-school"></a></td>
+            </tr>
+            <tr>
+              <td>Alignment</td>
+              <td id="wiki-page-table-alignment"></td>
+            </tr>
+            
+            <tr>
+              <th colspan="2">Inhabitants</th>
+            </tr>
+            <tr>
+              <td>Local Deity</td>
+              <td><a id="wiki-page-table-deity"></a></td>
+            </tr>
+            <tr>
+              <td>Native Creatures</td>
+              <td id="wiki-page-table-natives"></td>
+            </tr>
+            <tr>
+              <td>Notable Factions</td>
+              <td id="wiki-page-table-factions"></td>
+            </tr>
+            <tr>
+              <th colspan="2">Attributes</th>
+            </tr>
+            <tr>
+              <td>Topography</td>
+              <td id="wiki-page-table-topography"></td>
+            </tr>
+            <tr>
+              <td>Gravity</td>
+              <td id="wiki-page-table-gravity"></td>
+            </tr>
+            <tr>
+              <td>Time</td>
+              <td id="wiki-page-table-time"></td>
+            </tr>
+          </table>
+
+          <!-- A paragraph to hold the page content and descriptions -->
+          <p id="common-page-description"></p>
+        </section>
+      </div>
+
+      <!-- Importing the footer -->
+      <footer class="import-common-page-footer"></footer>
+    </div>
+  </body>
+</html>
+
+<script type="text/javascript">
+  $(function () {
+
+    $(".import-common-page-header").load("/_SiteResources/Pages/import-common-page-header.html");
+    $(".import-common-page-footer").load("/_SiteResources/Pages/import-common-page-footer.html");
+
+});
+</script>

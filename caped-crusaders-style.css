@@ -601,23 +601,23 @@ A small table to hold the entry page image and author credit
   padding: 0px;
   margin: 0px;
 }
-.entry-page-overview-table tr:nth-child(2) th {
+.entry-page-overview-table tr:nth-child(3) th, .entry-page-overview-table tr:nth-child(2) th {
   background-color: rgb(247,247,247);
   color: rgb(58,58,58);
   padding: 2px;
   border-top: 0px;
   font-size: smaller;
 }
-.entry-page-overview-table tr:nth-child(3) th, .entry-page-overview-table tr:nth-child(4) th {
+.entry-page-overview-table tr:nth-child(4) th, .entry-page-overview-table tr:nth-child(5) th {
   background-color: rgb(189,188,173);
   color: rgb(58,58,58);
   font-size: large;
 }
-.entry-page-overview-table tr:nth-child(4) th {
+.entry-page-overview-table tr:nth-child(5) th {
   padding-top: 0px;
   font-size: x-small;
 }
-#content-attributes-table-image {
+#entry-page-overview-table-image {
   width: 100%;
   height: auto; 
   display: block;
