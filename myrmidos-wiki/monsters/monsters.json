@@ -623,7 +623,7 @@
             "img_linked" : "https://cdna.artstation.com/p/assets/images/images/032/538/922/large/miguel-regodon-harkness-pzo2102-adult-green-dragon-copia.jpg?1606753014",
             "img_linked_source" : "https://www.artstation.com/artwork/v2yNmO",
 
-            "entry_description" : "Viridian Dragons are revered by those who value nature, and are often incorporated in pagan religions.  Viridian Dragons keep to themselves and guard their chosen territory with relentless cunning and brutality.  They have been commonly known to allow nomads passage through their territory, and even allow hunters to stalk their territory if they are deemed worthy and respectful of the nature around them.  In many ways, Viridian Dragons are literal guardians of nature itself, behaving as ethical stewards of their land while living off of it.  Stories of Viridian Dragons that have saved herds of deer from raging dire crocodiles or feral therianthropes are not uncommon, with the dragon leaving the herd intact afterwards in most cases.  Their fearsome appearance and large menacing horn often provokes conflict with those who are familiar with their nature, especially mercenaries or soldiers who are unknowingly trespassing.  ",
+            "entry_description" : "Viridian Dragons are revered by those who value nature, and are often incorporated in pagan religions.  Viridian Dragons keep to themselves and guard their chosen territory with relentless cunning and brutality.  They have been commonly known to allow nomads passage through their territory, and even allow hunters to stalk their territory if they are deemed worthy and respectful of the nature around them.  In many ways, Viridian Dragons are literal guardians of nature itself, behaving as ethical stewards of their land while living off of it.  Stories of Viridian Dragons that have saved herds of deer from raging dire crocodiles or feral therianthropes are not uncommon, with the dragon leaving the herd intact afterwards in most cases.  Their fearsome appearance and large menacing horn often provokes conflict with those who are unfamiliar with their nature, especially mercenaries or soldiers who are unknowingly trespassing.  ",
 
             "overview_table_groups" : [
                 {
@@ -710,7 +710,7 @@
             "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/032/538/919/large/miguel-regodon-harkness-pzo2102-adult-blue-dragon-copia.jpg?1606753010",
             "img_linked_source" : "https://www.artstation.com/artwork/v2yNmO",
 
-            "entry_description" : "Cobalt Dragons are masters of knowledge and secrets, commonly revered in academic symbolism.  They often lend aid to nations and organizations known to possess large libraries, humbling requesting access in return.  The lairs of Cobalt Dragons are the envy of learned mages across all lands, containing tomes acquired and meticulously maintained across thousands of years in some cases.  Many Cobalt Dragons are knowledgeable mages themselves, but they typically abhor the thought of using magic for violence.  ",
+            "entry_description" : "Cobalt Dragons are masters of knowledge and secrets, commonly revered in academic symbolism.  They often lend aid to nations and organizations known to possess large libraries, humbling requesting access in return for their services.  The lairs of Cobalt Dragons are the envy of learned mages across all lands, containing tomes acquired and meticulously maintained across thousands of years in some cases.  Many Cobalt Dragons are knowledgeable mages themselves, but they typically abhor the thought of using magic for violence.  ",
 
             "overview_table_groups" : [
                 {
@@ -885,7 +885,7 @@
             "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/032/571/925/large/miguel-regodon-harkness-pzo2102-adult-copper-dragon.jpg?1606837452",
             "img_linked_source" : "https://www.artstation.com/artwork/xJ2Yo1",
 
-            "entry_description" : "Copper Dragons are the least interested in mortal affairs of the metallic dragons, only intervening when the most catastrophic of events or injustices occur.  They keep to themselves in underground lairs, often collecting historical remnants of nations they have interacted with so as to preserve pieces of their culture.  While bored by the grand machinations of mortals, Copper Dragons are known to possess a deep longing for intimate and challengin conversation.  The mortals who do happen across Copper Dragons, both in their lair and elsewhere, are either dismissed as irrelevant and spoken with as briefly as possible to obtain the desired information or obsessively analyzed, questioned, and challenged in a civil battle of words and wits.  ",
+            "entry_description" : "Copper Dragons are the least interested in mortal affairs of the metallic dragons, only intervening when the most catastrophic of events or injustices occur.  They keep to themselves in underground lairs, often collecting historical remnants of nations they have interacted with so as to preserve pieces of their culture.  While bored by the grand machinations of mortals, Copper Dragons are known to possess a deep longing for intimate and challenging conversation.  The mortals who do happen across Copper Dragons, both in their lair and elsewhere, are either dismissed as irrelevant and spoken with as briefly as possible to obtain the desired information, or, obsessively analyzed, questioned, and challenged in a civil battle of words and wits.  ",
 
             "overview_table_groups" : [
                 {
@@ -971,7 +971,7 @@
             "img_linked" : "https://cdna.artstation.com/p/assets/images/images/032/571/910/large/miguel-regodon-harkness-pzo2102-adult-bronce-dragon.jpg?1606837442",
             "img_linked_source" : "https://www.artstation.com/artwork/xJ2Yo1",
 
-            "entry_description" : "Bronze Dragons are extremely financially inclined and logistically focused.  They find a great deal of joy in tracking cargo shipments and reviewing warehouse stock levels.  Bronze Dragons usually procure treasure from sunken vessels and return it to the rigthful owner with fees for their service removed, allowing them to amass small fortunes that they then use to invest in seafaring cargo shipment companies.  You would be hard pressed to find a merchantile coster with seafaring vessels that doesn't have the financial backing of a Bronze Dragon.  While Bronze Dragons do value civility and order as any Metallic Dragon would, they hold a remarkably potent resentment for pirates.  Gold Dragons are widely considered the most brutal and vengeful of the Metallic Dragons, but accounts of Bronze Dragons razing pirate vessels certainly makes them a competitor for that title.  ",
+            "entry_description" : "Bronze Dragons are extremely financially inclined and logistically focused.  They find a great deal of joy in tracking cargo shipments and reviewing warehouse stock levels.  Bronze Dragons usually procure treasure from sunken vessels and return it to the rigthful owner with fees for their service removed, allowing them to amass small fortunes that they then use to invest in seafaring cargo shipment companies.  You would be hard pressed to find a mercantile coster with seafaring vessels that doesn't have the financial backing of a Bronze Dragon.  While Bronze Dragons do value civility and order as any Metallic Dragon would, they hold a remarkably potent resentment for pirates.  Gold Dragons are widely considered the most brutal and vengeful of the Metallic Dragons, but accounts of Bronze Dragons razing pirate vessels certainly makes them a competitor for that title.  ",
 
             "overview_table_groups" : [
                 {
@@ -1343,7 +1343,7 @@
                         },
                         {
                             "title" : "Horns",
-                            "content" : "Rearward Branching"
+                            "content" : "Upward Branching"
                         },
                         {
                             "title" : "Wing Type",
