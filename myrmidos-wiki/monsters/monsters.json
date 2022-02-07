@@ -22,6 +22,10 @@
                         {
                             "title" : "Alignment",
                             "content" : "Neutral Evil"
+                        },
+                        {
+                            "title" : "Values",
+                            "content" : "Knowledge, Penitence"
                         }
                     ]
                 },
@@ -111,6 +115,10 @@
                         {
                             "title" : "Alignment",
                             "content" : "Neutral Evil"
+                        },
+                        {
+                            "title" : "Values",
+                            "content" : "Power, Domination"
                         }
                     ]
                 },
@@ -197,6 +205,10 @@
                         {
                             "title" : "Alignment",
                             "content" : "Neutral Evil"
+                        },
+                        {
+                            "title" : "Values",
+                            "content" : "Architecture, Legacy"
                         }
                     ]
                 },
@@ -283,6 +295,10 @@
                         {
                             "title" : "Alignment",
                             "content" : "Neutral Evil"
+                        },
+                        {
+                            "title" : "Values",
+                            "content" : "Cleanliness, Superiority"
                         }
                     ]
                 },
@@ -372,6 +388,10 @@
                         {
                             "title" : "Alignment",
                             "content" : "Lawful Evil"
+                        },
+                        {
+                            "title" : "Values",
+                            "content" : "Knowledge, Preservation"
                         }
                     ]
                 },
@@ -461,6 +481,10 @@
                         {
                             "title" : "Alignment",
                             "content" : "True Neutral"
+                        },
+                        {
+                            "title" : "Values",
+                            "content" : "Mysteries"
                         }
                     ]
                 },
@@ -550,6 +574,10 @@
                         {
                             "title" : "Alignment",
                             "content" : "Chaotic Evil"
+                        },
+                        {
+                            "title" : "Values",
+                            "content" : "Agency"
                         }
                     ]
                 },
@@ -636,6 +664,10 @@
                         {
                             "title" : "Alignment",
                             "content" : "True Neutral"
+                        },
+                        {
+                            "title" : "Values",
+                            "content" : "Sustainability"
                         }
                     ]
                 },
@@ -723,6 +755,10 @@
                         {
                             "title" : "Alignment",
                             "content" : "Neutral Good"
+                        },
+                        {
+                            "title" : "Values",
+                            "content" : "Knowledge"
                         }
                     ]
                 },
@@ -812,6 +848,10 @@
                         {
                             "title" : "Alignment",
                             "content" : "Neutral Good"
+                        },
+                        {
+                            "title" : "Values",
+                            "content" : "Power"
                         }
                     ]
                 },
