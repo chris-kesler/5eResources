@@ -66,7 +66,7 @@
 
             "deity_alignment" : "Chaotic Neutral",
             "deity_portfolio" : "Creation<br>Invention<br>Expression",
-            "deity_domains" : "Forge<br>Knowledge<br>War",
+            "deity_domains" : "Forge<br>War<br>Arcana<br>Trickery",
 
             "deity_animals" : "Brass Elephant<br>Magma Wyrm",
             "deity_monsters" : "Magma Elementals<br>Fire Elementals<br>Earth Elementals<br>Fiends<br>Brass Dragon",
@@ -103,7 +103,7 @@
 
             "deity" : "Deliklese",
             "deity_img" : "https://upload.wikimedia.org/wikipedia/commons/c/cb/Greek_mythology_systematized_%281880%29_%2814559602149%29.jpg",
-            "deity_description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque condimentum ut neque at malesuada. Quisque mattis vel lorem eget venenatis. Sed cursus dui vel orci cursus hendrerit. Quisque in arcu pretium, laoreet est quis, tincidunt enim. In tincidunt viverra quam, pharetra vestibulum neque porta nec. Ut eu volutpat orci, quis pretium ligula. Aliquam in nibh lorem. Proin id semper nibh. In pulvinar lacus nec velit euismod placerat. In non congue lacus, eu pharetra elit. Praesent id lorem in nunc venenatis congue. Quisque suscipit tempus commodo. Morbi diam quam, rutrum in venenatis sed, pulvinar nec justo. Sed fermentum posuere ligula, sit amet venenatis felis varius in. In imperdiet mollis scelerisque. Phasellus id eleifend felis, ut aliquam arcu.",
+            "deity_description" : "The Goddess of Ooze and Life is also known as the All-Mother. She is considered to be the only truly benevolent deity of the four. The All-Mother is gentle, generous, and understanding in most cases, but she and her followers have shown remarkable zeal when taking up arms in the defense of goodness.  ",
 
             "deity_titles" : "Goddess of Ooze<br>Life-Giver<br>All-Mother<br>The Merciful One",
             "deity_symbol" : "Melting Flower",
@@ -111,7 +111,7 @@
 
             "deity_alignment" : "Neutral Good",
             "deity_portfolio" : "Beauty<br>Pleasure<br>Freedom",
-            "deity_domains" : "Life<br>Nature",
+            "deity_domains" : "Nature<br>Life<br>Grave",
 
             "deity_animals" : "Deer<br>Toad<br>Alligator",
             "deity_monsters" : "Ooze Elementals<br>Water Elementals<br>Earth Elementals<br>Beasts<br>Green Dragons",
@@ -147,15 +147,15 @@
 
             "deity" : "Sebabos",
             "deity_img" : "https://upload.wikimedia.org/wikipedia/commons/c/c4/Phoenix_%281583%29.svg",
-            "deity_description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque condimentum ut neque at malesuada. Quisque mattis vel lorem eget venenatis. Sed cursus dui vel orci cursus hendrerit. Quisque in arcu pretium, laoreet est quis, tincidunt enim. In tincidunt viverra quam, pharetra vestibulum neque porta nec. Ut eu volutpat orci, quis pretium ligula. Aliquam in nibh lorem. Proin id semper nibh. In pulvinar lacus nec velit euismod placerat. In non congue lacus, eu pharetra elit. Praesent id lorem in nunc venenatis congue. Quisque suscipit tempus commodo. Morbi diam quam, rutrum in venenatis sed, pulvinar nec justo. Sed fermentum posuere ligula, sit amet venenatis felis varius in. In imperdiet mollis scelerisque. Phasellus id eleifend felis, ut aliquam arcu.",
+            "deity_description" : "The God of Ash and Death is also known as the Phoenix since this is his chosen avatar. He may be immortal himself, but he chose to adopt this form with Gondarin to create the Phoenix with the ability to recycle its own life forces. This was made as a both a testament to and a mockery of his own domain of death. The meaning behind this act is still a matter of debate.<br><br>Sebabos is Neutral Evil in that he brings the destruction of life whenever he can, but that is not to say he reigns chaos whenever he can. He remains utterly detached from mortal affairs, but happily reaps souls whenever the opportunity presents itself. He takes the power he gains from reaped souls, replenishes his own reservoirs, and splits the rest evenly among the four Greater Deities. Nonsentient creatures do not have souls, and instead leave a lesser life force behind for Sebabos to gather. Sebabos is deeply in love with Deliklese, and continually gifts her with the reaped life energy of soulless beings.<br><br>While Sebabos is accurately referred to as a reaper, he does not prefer to wield a scythe as some pagan versions depict. Sebabos' preferred weapon and tool is that of a black bladed axe akin to a headsman, with discreet golden insets. He dislikes all color save for the sheen of gold, and many legends tell of those who have bought extra weeks or months of life with their vast fortunes.  ",
 
             "deity_titles" : "God of Ash<br>Lord of Death<br>Grim Reaper<br>The Dark One",
-            "deity_symbol" : "Black Axe",
+            "deity_symbol" : "Grey Phoenix holding a black and gold axe",
             "deity_worshippers" : "Undertakers<br>Cultists<br>Cannibals<br>Liches",
 
             "deity_alignment" : "Neutral Evil",
             "deity_portfolio" : "Destruction<br>Decay<br>Entropy",
-            "deity_domains" : "Death<br>Grave<br>Twilight",
+            "deity_domains" : "Death<br>Light<br>Twilight",
 
             "deity_animals" : "None",
             "deity_monsters" : "Ash Elementals<br>Fire Elementals<br>Air Elementals<br>Undead<br>Shadow Dragons",
