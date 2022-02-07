@@ -21,3 +21,9 @@ Old timey dragon illustration {
     https://commons.wikimedia.org/wiki/File:Grimm-dragon-1912-illustration.jpg
     https://upload.wikimedia.org/wikipedia/commons/e/eb/Grimm-dragon-1912-illustration.jpg
 }
+
+Imperial Dragons {
+    https://www.artstation.com/artwork/8e3Zgq
+    https://www.artstation.com/artwork/8e3lAm
+    https://www.artstation.com/artwork/B1qqem
+}
