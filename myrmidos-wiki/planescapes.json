@@ -94,11 +94,11 @@
             "plane" : "Feywilds",
             "element" : "Ooze",
             
-            "plane_description" : "The Elemental Plane of Ooze is positioned to the West of the Great Wheel cosmology, and is also known as the Feywilds. It is strongly associated with domains relating to Life and Balance, and is considered to represent the Nuetral Good alignment in its purest form. This plane is the source of all Enchantment magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school. The Plane of Ooze is adjacent to the Primal Planes of Water to the North and Earth to the West. The Plane of Ooze is complimentary to the Plane of Ash.  <br><br>Ooze is associated with life and purity. It channels the school of enchantment in that easing of pain and numbing of prey are manipulations of the soul.            ",
+            "plane_description" : "The Elemental Plane of Ooze is positioned to the West of the Great Wheel cosmology, and is also known as the Feywilds. It is strongly associated with domains relating to Life, Balance, and Death, and is considered to represent the Neutral Good alignment in its purest form. This plane is the source of all Necromancy magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school. The Plane of Ooze is adjacent to the Primal Planes of Water to the North and Earth to the West. The Plane of Ooze is complimentary to the Plane of Ash.  <br><br>Ooze is associated with life and purity. It channels the school of Necromancy in that it seeds life from death in a constant cycle.  ",
             "plane_img" : "https://upload.wikimedia.org/wikipedia/commons/5/58/Swamp_poratz.jpg",
             
             "position" : "Western",
-            "school" : "Enchantment",
+            "school" : "Necromancy",
             "alignment" : "Neutral Good",
 
             "deity" : "Deliklese",
@@ -138,24 +138,24 @@
         {
             "plane" : "Shadowfell",
             "element" : "Ash",
-            "plane_description" : "The Elemental Plane of Ash is positioned to the East of the Great Wheel cosmology, and is also known as the Shadowfell.  It is strongly associated with domains relating to Death and Undeath, and is considered to represent the Neutral Evil alignment in its purest form.  This plane is the source of all Necromancy magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  <br><br>Ash is associated with death and undeath. It channels necromancy in that it harvests and manipulates life forces akin to Sebabos.",
+            "plane_description" : "The Elemental Plane of Ash is positioned to the East of the Great Wheel cosmology, and is also known as the Shadowfell.  It is strongly associated with domains relating to Death and Undeath, and is considered to represent the Neutral Evil alignment in its purest form.  This plane is the source of all Enchantment magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  <br><br>Ash is associated with undeath and insanity. It channels Enchantment in that its environment induces deep hallucinations.  The creatures that hail from the Shadowfell embrace Enchantment in order to lure living things into their grasp, which they must feed on since they often are undead and do not have a stable life force of their own.  ",
             "plane_img" : "https://upload.wikimedia.org/wikipedia/commons/c/cb/Photograph_from_a_commercial_flight_showing_a_pyrocumulonimbus_cloud.jpg",
             
             "position" : "Eastern",
-            "school" : "Necromancy",
+            "school" : "Enchantment",
             "alignment" : "Neutral Evil",
 
             "deity" : "Sebabos",
             "deity_img" : "https://upload.wikimedia.org/wikipedia/commons/c/c4/Phoenix_%281583%29.svg",
-            "deity_description" : "The God of Ash and Death is also known as the Phoenix since this is his chosen avatar. He may be immortal himself, but he chose to adopt this form with Gondarin to create the Phoenix with the ability to recycle its own life forces. This was made as a both a testament to and a mockery of his own domain of death. The meaning behind this act is still a matter of debate.<br><br>Sebabos is Neutral Evil in that he brings the destruction of life whenever he can, but that is not to say he reigns chaos whenever he can. He remains utterly detached from mortal affairs, but happily reaps souls whenever the opportunity presents itself. He takes the power he gains from reaped souls, replenishes his own reservoirs, and splits the rest evenly among the four Greater Deities. Nonsentient creatures do not have souls, and instead leave a lesser life force behind for Sebabos to gather. Sebabos is deeply in love with Deliklese, and continually gifts her with the reaped life energy of soulless beings.<br><br>While Sebabos is accurately referred to as a reaper, he does not prefer to wield a scythe as some pagan versions depict. Sebabos' preferred weapon and tool is that of a black bladed axe akin to a headsman, with discreet golden insets. He dislikes all color save for the sheen of gold, and many legends tell of those who have bought extra weeks or months of life with their vast fortunes.  ",
+            "deity_description" : "The God of Ash and Death is also known as the Phoenix since this is his chosen avatar.  He may be immortal himself, but he chose to adopt this form of his own volition.  By collaborating with Gondarin, Sebabos created the Phoenix as a creature with the ability to recycle its own life forces.  This was made as a mockery of his lover's domain of life and death.  The meaning behind this act is still a matter of debate.  <br><br>Sebabos is Neutral Evil in that he brings the prolonging of suffering whenever he can, but that is not to say he reigns mayhem whenever he can.  He remains utterly detached from mortal affairs, but happily tricks and beguils mortals whenever the opportunity presents itself.  He relishes suffering that is brought about by one's own actions, only intervening in a literal sense in the most enticing of circumstances.  <br><br>Sebabos is deeply in love with Deliklese, and continually gifts her with reaped souls from mortals he has won and swindled.  <br><br>While Sebabos is accurately referred to as a Deceiver and Reaper, he does not prefer to wield a scythe as some pagan interpretations depict.  Sebabos' preferred weapon and tool is that of a black bladed axe akin to a headsman, with discreet golden insets. He dislikes all color save for the sheen of gold, and many legends tell of those who have bought extra weeks or months of life with their vast fortunes.  ",
 
-            "deity_titles" : "God of Ash<br>Lord of Death<br>Grim Reaper<br>The Dark One",
+            "deity_titles" : "God of Ash<br>Lord of Death<br>Grim Reaper<br>The Deceiver",
             "deity_symbol" : "Grey Phoenix holding a black and gold axe",
             "deity_worshippers" : "Undertakers<br>Cultists<br>Cannibals<br>Liches",
 
             "deity_alignment" : "Neutral Evil",
-            "deity_portfolio" : "Destruction<br>Decay<br>Entropy",
-            "deity_domains" : "Death<br>Light<br>Twilight",
+            "deity_portfolio" : "Suffering<br>Betrayal<br>Deception",
+            "deity_domains" : "Death<br>Light<br>Twilight<br>Trickery",
 
             "deity_animals" : "None",
             "deity_monsters" : "Ash Elementals<br>Fire Elementals<br>Air Elementals<br>Undead<br>Shadow Dragons",
