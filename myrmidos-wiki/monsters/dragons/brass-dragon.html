@@ -11,7 +11,7 @@
     <script>
       $(function readJSON() {
         // Reading data from our JSON file
-        $.getJSON(`monsters.json`, function(data) {
+        $.getJSON(`../monsters.json`, function(data) {
 
           // Reading the name of this file
           var page = window.location.pathname.split("/").pop();
@@ -28,23 +28,28 @@
               // Populating the page title within the page content
               document.getElementById("common-page-content-title").innerHTML = f.entry_name;
 
-              // Defining a table row with an image and appending it to the overview table
-              var tblRow = "<tr><th colspan='2'><img id='entry-page-overview-table-image' alt='" + f.entry_name + "'></th></tr>";
-              $(tblRow).appendTo("#entry-page-overview-table tbody");
+              // Populating the page back button into the placeholder div
+              document.getElementById("common-page-back-button-holder").innerHTML = "<button id='common-page-back-button' onclick = 'location.href=`../" + f.entry_category.toLowerCase() + "s.html`'>Out to " + f.entry_category + "s</button>";
 
-              // Populating that image using JSON data
-              if (f.img_rehosted != undefined) {
-                document.getElementById("entry-page-overview-table-image").src = f.img_rehosted;
+              // Defining a table row with an image, populating it with JSON data, and appending it to the overview table
+              if (f.img_rehosted != undefined && f.img_rehosted_source != undefined ) {
+
+                // The image with a populated rehost and credit link upon clicking
+                var tblRow = "<tr><th colspan='2'><img id='entry-page-overview-table-image' alt='" + f.entry_name + "' target='blank' src='" + f.img_rehosted + "' onclick='window.open(`" + f.img_rehosted_source + "`)'></th></tr>";
+                $(tblRow).appendTo("#entry-page-overview-table tbody");
               } else {
-                document.getElementById("entry-page-overview-table-image").src = "/_SiteResources/Images/WikiPlaceholder.png";
+
+                // A default placeholder image that does activate when clicked
+                var tblRow = "<tr><th colspan='2'><img id='entry-page-overview-table-image' alt='" + f.entry_name + "' target='blank' src='/_SiteResources/Images/WikiPlaceholder.png' onclick='window.open(this.src)'></th></tr>";
+                $(tblRow).appendTo("#entry-page-overview-table tbody");
               }
               
               // Appending a table row with a link to the page art 
-              var tblRow = "<tr><th colspan='2'><i><a href='" + f.img_linked + "' target='_blank'>Link to " + f.entry_name + " Art</a></i></th></tr>";
+              var tblRow = "<tr><th colspan='2'><i><a href='" + f.img_linked + "' target='_blank'>Link to Additional " + f.entry_name + " Art</a></i></th></tr>";
               $(tblRow).appendTo("#entry-page-overview-table tbody");
 
               // Appending a table row with a link to the page art source
-              var tblRow = "<tr><th colspan='2'><i><a href='" + f.img_source + "' target='_blank'>Link to Art Source</a></i></th></tr>";
+              var tblRow = "<tr><th colspan='2'><i><a href='" + f.img_linked_source + "' target='_blank'>Link to Additional Art Source</a></i></th></tr>";
               $(tblRow).appendTo("#entry-page-overview-table tbody");
 
               // Appending a table row with the monster name 
@@ -88,8 +93,7 @@
 
               // Populating the page description text
               document.getElementById("common-page-description").innerHTML = f.entry_description;
-
-
+              
             }
 
           });
@@ -123,8 +127,7 @@
             <section class="common-page-content-section">
     
             <!-- A back button that navigates out in the file structure  -->
-            <button id="common-page-back-button" onclick = "location.href='../monsters.html'">Out to Monsters</button>
-    
+            <div id="common-page-back-button-holder"></div>
             <!-- The title of the page content, including the source as a link -->
             <h2 id="common-page-content-title"></h2>
             <hr>
