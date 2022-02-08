@@ -78,17 +78,22 @@
 
 
 
-              // Dynamically and adaptively populating overview table information from the JSON file 
-              for(var z = 0; f.overview_table_groups.length > z; z++) {
-                var tblRow = "<tr><th colspan='2'>" + f.overview_table_groups[z].overview_table_group_heading + "</th></tr>";
-                $(tblRow).appendTo("#entry-page-overview-table tbody");
+              try {
+                // Dynamically and adaptively populating overview table information from the JSON file 
+                for(var z = 0; f.overview_table_groups.length > z; z++) {
+                    var tblRow = "<tr><th colspan='2'>" + f.overview_table_groups[z].overview_table_group_heading + "</th></tr>";
+                    $(tblRow).appendTo("#entry-page-overview-table tbody");
 
-                for(var y = 0; f.overview_table_groups[z].overview_table_group_data.length > y; y++) {
-                  var tblRow = "<tr><td>" + f.overview_table_groups[z].overview_table_group_data[y].title + "</td><td>" + f.overview_table_groups[z].overview_table_group_data[y].content + "</td></tr>";
-                  $(tblRow).appendTo("#entry-page-overview-table tbody");
+                    for(var y = 0; f.overview_table_groups[z].overview_table_group_data.length > y; y++) {
+                        var tblRow = "<tr><td>" + f.overview_table_groups[z].overview_table_group_data[y].title + "</td><td>" + f.overview_table_groups[z].overview_table_group_data[y].content + "</td></tr>";
+                        $(tblRow).appendTo("#entry-page-overview-table tbody");
+
+                    }
 
                 }
 
+              } catch {
+                  
               }
 
               // Populating the page description text

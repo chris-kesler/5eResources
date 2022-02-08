@@ -21,7 +21,7 @@
     
             // Looping through the JSON data 
             $.each(data.entries, function(i, f) {
-              if((f.deity.toLowerCase() + ".html") == page) {
+              if((f.entry_name.toLowerCase() + ".html") == page) {
 
                 var element = "---";
                 // Looping through the planes file for relevant associations
@@ -29,41 +29,41 @@
     
                     // Looping through the JSON data 
                     $.each(data.entries, function(z, y) {
-                        if(y.associated_deity == f.deity) {
+                        if(y.associated_deity == f.entry) {
                             element = y.planar_element;
-                            document.getElementById("entry-page-overview-table-image-source").innerHTML = f.deity_type_formal + " of " + element;
+                            document.getElementById("entry-page-overview-table-image-source").innerHTML = f.entry_type_formal + " of " + element;
                         } 
                     });
                 });
 
                 // Populating the page titles
-                document.getElementById("common-page-header-title").innerHTML = "Myrmidos Wiki:  Deities > " + f.deity;
-                document.getElementById("common-page-content-title").innerHTML = f.deity + ", " + f.deity_title;
+                document.getElementById("common-page-header-title").innerHTML = "Myrmidos Wiki:  Deities > " + f.entry;
+                document.getElementById("common-page-content-title").innerHTML = f.entry + ", " + f.entry_title;
     
                 // Populating the page description 
-                document.getElementById("common-page-description").innerHTML = f.deity_description;
+                document.getElementById("common-page-description").innerHTML = f.entry_description;
                 document.getElementById("common-page-back-button").innerHTML = "Out to Deities";    
     
                 // Populating the page table image and title
-                document.getElementById("entry-page-overview-table-image").src = f.deity_img;
-                document.getElementById("entry-page-overview-table-image-source").href = f.deity_img;
-                document.getElementById("wiki-page-table-title").innerHTML = f.deity;
-                document.getElementById("wiki-page-table-subtitle").innerHTML = f.deity_title;
+                document.getElementById("entry-page-overview-table-image").src = f.entry_img;
+                document.getElementById("entry-page-overview-table-image-source").href = f.entry_img;
+                document.getElementById("wiki-page-table-title").innerHTML = f.entry;
+                document.getElementById("wiki-page-table-subtitle").innerHTML = f.entry_title;
     
                 // Populating deity followers
-                document.getElementById("wiki-page-table-titles").innerHTML = f.deity_titles;
-                document.getElementById("wiki-page-table-symbol").innerHTML = f.deity_symbol;
-                document.getElementById("wiki-page-table-worshippers").innerHTML = f.deity_worshippers;
+                document.getElementById("wiki-page-table-titles").innerHTML = f.entry_titles;
+                document.getElementById("wiki-page-table-symbol").innerHTML = f.entry_symbol;
+                document.getElementById("wiki-page-table-worshippers").innerHTML = f.entry_worshippers;
     
                 // Populating deity attributes
-                document.getElementById("wiki-page-table-alignment").innerHTML = f.deity_alignment;
-                document.getElementById("wiki-page-table-portfolio").innerHTML = f.deity_portfolio;
-                document.getElementById("wiki-page-table-domains").innerHTML = f.deity_domains;
+                document.getElementById("wiki-page-table-alignment").innerHTML = f.entry_alignment;
+                document.getElementById("wiki-page-table-portfolio").innerHTML = f.entry_portfolio;
+                document.getElementById("wiki-page-table-domains").innerHTML = f.entry_domains;
     
                 // Populating deity manifestation
-                document.getElementById("wiki-page-table-animals").innerHTML = f.deity_animals;
-                document.getElementById("wiki-page-table-monsters").innerHTML = f.deity_monsters;
-                document.getElementById("wiki-page-table-colors").innerHTML = f.deity_colors;
+                document.getElementById("wiki-page-table-animals").innerHTML = f.entry_animals;
+                document.getElementById("wiki-page-table-monsters").innerHTML = f.entry_monsters;
+                document.getElementById("wiki-page-table-colors").innerHTML = f.entry_colors;
     
               }
             });
