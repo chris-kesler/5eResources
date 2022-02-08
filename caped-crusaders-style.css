@@ -599,7 +599,7 @@ A small table to hold the entry page image and author credit
 .entry-page-overview-table {
   display: block;
   width: 275px;
-  max-width: 35vw;
+  max-width: 65vw;
   margin: 10px;
   margin-right: 0px;
   overflow: auto;

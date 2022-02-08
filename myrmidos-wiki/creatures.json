@@ -4,7 +4,7 @@
             "entry_name" : "Azure Dragon",
             "entry_category" : "Dragon",
             "entry_type" : "Primal",
-            "entry_variety" : "Azure",
+            "entry_variety" : "Primadraconicus Caelaria",
 
             "img_linked" : "https://cdna.artstation.com/p/assets/images/images/036/867/138/large/miguel-regodon-harkness-pzo2104-adult-cloud-dragon.jpg?1618851020",
             "img_linked_source" : "https://www.artstation.com/artwork/9malJq",
@@ -83,11 +83,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Preferred Habitat",
+                            "heading" : "Habitat",
                             "content" : "Plateaus and Mountaintops"
                         },
                         {
-                            "heading" : "Preferred Prey",
+                            "heading" : "Prey",
                             "content" : "Mountain and Prairie fauna; deer, elk, horses"
                         }
                     ]
@@ -123,7 +123,7 @@
             "entry_name" : "Crimson Dragon",
             "entry_category" : "Dragon",
             "entry_type" : "Primal",
-            "entry_variety" : "Crimson",
+            "entry_variety" : "Primadraconicus Ignaria",
 
             "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/e/e4/2010-01-C%26E_Dragon.png",
             "img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:2010-01-C%26E_Dragon.png",
@@ -135,27 +135,33 @@
             "entry_description_library" : [
                 {
                     "heading" : "Description",
-                    "content" : "Crimson Dragons have deep blood red scales covering almost the entirety of their bodies, with the scales of the underbelly being only a shade or two lighter.  Crimson Dragons have fearsome horn structures, with clusters of barbs lining their spine from the neck to the base of the tail.  Starting at the tail, they have a pair of microfanes extending to either side that are very sharp.  "
+                    "content" : "Crimson Dragons have deep blood red scales covering almost the entirety of their bodies, with the scales of the underbelly being only a shade or two lighter. Crimson Dragons have fearsome spine structures, with clusters of barbs lining their back from the neck to the base of the tail. Starting at the tail, they have a pair of microfanes extending to either side that are remarkably sharp. Scholars have theorized that the microfanes assists in flight stability, but they are seen most often used to slash open their foes with tail attacks.                    ",
+                    "sublibrary" : [
+                        {
+                            "heading" : "Physiology",
+                            "content" : "Crimson Dragons have exceptionally high body temperatures, preferring to live in the heart of scorching deserts far from oceans and water sources as a result.  Many first hand acocunts of Crimson Dragons describe heat distortion in the air immediately surrounding their figures.  They have a remarkable ability to survive with minimal liquid intake, most never needing additional moisture beyond that which they get from their food.                            "
+                        }
+                    ]
                 },
                 {
                     "heading" : "Personality",
-                    "content" : "Crimson Dragons find a great deal of joy in witnessing conflict, having been known to circle above raging battles as spectators. They often force their subjects to fight one another for a myriad of reasons, and almost always to the death.  "
+                    "content" : "Crimson Dragons are arrogant and bloodthirsty, treating the glory of battle like an obsessive religion. Crimson Dragons care not for gifts and offerings lest they are works serving as testaments to the greatness of themselves. Crimson Dragons are extremely prideful, expecting respect and taking offense should any dare to speak to them without first being spoken to. Crimson Dragons revere violent conflict, having been known to circle overhead while armies battle or cities are razed. When fighting, a Crimson Dragon denies itself any situational advantage, longing for an honorable fight. If outmatched, a Crimson Dragon will fight to the death and die at peace knowing it fought honorably. Upon achieving victory, Crimson Dragons will gloat and initimidate their foes and spectators. These speeches are sometimes prepared in advance, after which the loser is executed.                    "
                 },
                 {
                     "heading" : "Combat Tactics",
-                    "content" : "Scholars have theorized that these microfanes assists in flight stability, but they are seen most often used to slash open their foes with tail attacks.  Crimson Dragons relish good battles, eagerly clashing with foes that are capable of going toe to toe with them.  They often treat the battle like a game, only using select tools at their disposal and increasing the challenge for their foe as time progresses.  When faced with overwhelming force, a Crimson Dragon will avoid fighting in the first place.  However, once engaged, Crimson Dragons will fight to the death and die satisfied knowing they fought honorably.  The exceptionally rare Crimson Dragons who do retreat from a fight are often hunted down by posses of other Crimson Dragons who heard the tale, ripping them to pieces in a bloood fueled rage.  Crimson Dragons consider themselves the superior species, and will not tolerate dishonor from their own kind.  "
+                    "content" : "Crimson Dragons relish good battles, eagerly clashing with foes that are capable of going toe to toe with them. When faced with a show of overwhelming force, a Crimson Dragon will avoid fighting in the first place. However, once engaged, Crimson Dragons will fight to the death. They often treat the battle like a game, only using select tools at their disposal and increasing the challenge for their foe as time progresses. A Crimson Dragon first uses their claws to rip and tear their foe, then their tail to batter and slash, then their wings to buffet and skewer, followed by their jaws to crush and snap, and lastly their fire breath to totally immolate and incinerate.                    "
                 },
                 {
                     "heading" : "Social Behavior",
-                    "content" : "Crimson Dragons demand obedience and perfection from their subjects, dealing harsh punishments for even the slightest insult or mistake.  Crimson Dragons enjoy laughing, and as a result, keep a jester nearby at all times within their lair. There is only one jester at any given time, and each jester is selected from the Dragon's subjects. It is the second most respected position in the hierarchy, though not a desireable one. Crimson Dragons grow bored of their jesters rather quickly, burning them alive when they are no longer amusing.",
+                    "content" : "Crimson Dragons demand obedience and perfection from their subjects, dealing harsh punishments for even the slightest insult or mistake. Crimson Dragons enjoy laughing, and as a result, keep a jester nearby at all times within their lair. There is only one jester at any given time, and each jester is selected from the Dragon's subjects. It is the second most respected position in the hierarchy, though not a desireable one. Crimson Dragons grow bored of their jesters rather quickly, burning them alive when they are no longer amusing.                      ",
                     "sublibrary" : [
                         {
-                            "heading" : "Lair",
-                            "content" : "  Crimson Dragons enjoy pillaging wealthy kingdoms and kidnapping artisans of all kinds. They typically raze and steal seeking great treasures and materials of high quality and wealth. The artisans are usually conscripted to great a great work in their lord's honor, such as a statue, mural, or epic poem. As a result, an older Crimson Dragon's lair is very much like a shrine to itself.  "
+                            "heading" : "Dragonkin",
+                            "content" : "Crimson Dragons consider themselves the superior breed of creature, and will not tolerate dishonor from their own kind. The exceptionally rare occasions when a Crimson Dragon does retreat from a fight are met with absolute outrage. They are dubbed 'dishonored ones', and are no longer considered members of the Crimson Dragon race.  Since they still wear the crimson scales of their kind, which is a grave sin, they are hunted down and torn to pieces by posses of other Crimson Dragons. The same treatment is given to any creature wearing or owning an object that incorporates crimson dragon scales in it.  While Crimson Dragons refuse to flee a fight, they do avoid conflict when face dwith a show of overwhelming force. In these situations, a Crimson Dragon will show a great deal of respect to their would be opponent by bowing and acknowledging their dominance. This is often a distasteful act for a Crimson Dragon to perform, but they justify it by rationalizing that they are not yet fully grown and there is more greatness and glory for them to face in the future. Crimson Dragons can accept their death, but they do not seek it out."
                         },
                         {
-                            "heading" : "Habitat",
-                            "content" : "Crimson Dragons prefer to live in the heart of scorching deserts far from oceans and water sources.  They have a remarkable ability to survive with minimal liquid intake, most never needing additional moisture beyond that which they get from their food.  "
+                            "heading" : "Lair",
+                            "content" : "  Crimson Dragons enjoy pillaging wealthy kingdoms and kidnapping artisans of all kinds. They typically raze and steal seeking great treasures and materials of high quality and wealth. The artisans are usually conscripted to great a great work in their lord's honor, such as a statue, mural, or epic poem. As a result, an older Crimson Dragon's lair is very much like a shrine to itself.                            "
                         }
 
                     ]
@@ -205,11 +211,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Preferred Habitat",
+                            "heading" : "Habitat",
                             "content" : "Scorching Deserts and Savanha Prairies"
                         },
                         {
-                            "heading" : "Preferred Prey",
+                            "heading" : "Prey",
                             "content" : "Savanha and Desert fauna; camels, bison, gazelles, elephants"
                         }
                     ]
@@ -245,7 +251,7 @@
             "entry_name" : "Gemstone Dragon",
             "entry_category" : "Dragon",
             "entry_type" : "Primal",
-            "entry_variety" : "Gemstone",
+            "entry_variety" : "Primadraconicus Terralia",
 
             "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/036/867/147/large/miguel-regodon-harkness-pzo2104-adult-crystal-dragon.jpg?1618851025",
             "img_linked_source" : "https://www.artstation.com/artwork/9malJq",
@@ -295,11 +301,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Preferred Habitat",
+                            "heading" : "Habitat",
                             "content" : "Deep Underground"
                         },
                         {
-                            "heading" : "Preferred Prey",
+                            "heading" : "Prey",
                             "content" : "Subterranean fauna; worms, spiders, insects"
                         }
                     ]
@@ -335,7 +341,7 @@
             "entry_name" : "Turquoise Dragon",
             "entry_category" : "Dragon",
             "entry_type" : "Primal",
-            "entry_variety" : "Turquoise",
+            "entry_variety" : "Primadraconicus Aquaria",
 
             "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/036/867/133/large/miguel-regodon-harkness-pzo2104-adult-birne-dragon.jpg?1618851015",
             "img_linked_source" : "https://www.artstation.com/artwork/9malJq",
@@ -385,11 +391,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Preferred Habitat",
+                            "heading" : "Habitat",
                             "content" : "Deep Oceans"
                         },
                         {
-                            "heading" : "Preferred Prey",
+                            "heading" : "Prey",
                             "content" : "Aquatic and Coastal faunu; fish, whales, bison"
                         }
                     ]
@@ -425,7 +431,7 @@
             "entry_name" : "Alabaster Dragon",
             "entry_category" : "Dragon",
             "entry_type" : "Quasiprimal",
-            "entry_variety" : "Alabaster",
+            "entry_variety" : "Quasidraconicus Arctica",
 
             "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/6/6d/Durian_-_Sintel-wallpaper-dragon.jpg",
             "img_rehosted_source" : "https://commons.m.wikimedia.org/wiki/File:Durian_-_Sintel-wallpaper-dragon.jpg",
@@ -478,11 +484,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Preferred Habitat",
+                            "heading" : "Habitat",
                             "content" : "Arctic Tundra"
                         },
                         {
-                            "heading" : "Preferred Prey",
+                            "heading" : "Prey",
                             "content" : "Arctic fauna; yetis, polar bears, mammoths, seals"
                         }
                     ]
@@ -518,7 +524,7 @@
             "entry_name" : "Umbral Dragon",
             "entry_category" : "Dragon",
             "entry_type" : "Quasiprimal",
-            "entry_variety" : "Umbral",
+            "entry_variety" : "Quasidraconicus Penumbria",
 
             "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/6/6b/Easy_origami_dragon_for_beginners-_how_to_paint_a_dragon_for_beginners.jpg",
             "img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Easy_origami_dragon_for_beginners-_how_to_paint_a_dragon_for_beginners.jpg",
@@ -571,11 +577,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Preferred Habitat",
+                            "heading" : "Habitat",
                             "content" : "Abandoned Urban Environments"
                         },
                         {
-                            "heading" : "Preferred Prey",
+                            "heading" : "Prey",
                             "content" : "Urban fauna; rats, alligators, horses, people"
                         }
                     ]
@@ -611,7 +617,7 @@
             "entry_name" : "Stygian Dragon",
             "entry_category" : "Dragon",
             "entry_type" : "Quasiprimal",
-            "entry_variety" : "Stygian",
+            "entry_variety" : "Quasidraconicus Basaltia",
 
             "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/d/d9/MyPaint_dragon.jpg",
             "img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:MyPaint_dragon.jpg",
@@ -664,11 +670,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Preferred Habitat",
+                            "heading" : "Habitat",
                             "content" : "Volcanic terrain; Mountains and Caverns"
                         },
                         {
-                            "heading" : "Preferred Prey",
+                            "heading" : "Prey",
                             "content" : "Any non aquatic fauna"
                         }
                     ]
@@ -704,7 +710,7 @@
             "entry_name" : "Viridian Dragon",
             "entry_category" : "Dragon",
             "entry_type" : "Quasiprimal",
-            "entry_variety" : "Viridian",
+            "entry_variety" : "Quasidraconicus Verdaria",
 
             "img_linked" : "https://cdna.artstation.com/p/assets/images/images/032/538/922/large/miguel-regodon-harkness-pzo2102-adult-green-dragon-copia.jpg?1606753014",
             "img_linked_source" : "https://www.artstation.com/artwork/v2yNmO",
@@ -754,11 +760,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Preferred Habitat",
+                            "heading" : "Habitat",
                             "content" : "Swamps and Forests"
                         },
                         {
-                            "heading" : "Preferred Prey",
+                            "heading" : "Prey",
                             "content" : "Forest fauna; deer, cattle, wolves, rabbits"
                         }
                     ]
@@ -795,7 +801,7 @@
             "entry_name" : "Cobalt Dragon",
             "entry_category" : "Dragon",
             "entry_type" : "Metallic",
-            "entry_variety" : "Cobalt",
+            "entry_variety" : "Allodraconicus Caelaria",
 
             "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/032/538/919/large/miguel-regodon-harkness-pzo2102-adult-blue-dragon-copia.jpg?1606753010",
             "img_linked_source" : "https://www.artstation.com/artwork/v2yNmO",
@@ -845,11 +851,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Preferred Habitat",
+                            "heading" : "Habitat",
                             "content" : "Plateaus and Mountaintops"
                         },
                         {
-                            "heading" : "Preferred Prey",
+                            "heading" : "Prey",
                             "content" : "Mountain and Prairie fauna; deer, elk, horses"
                         }
                     ]
@@ -885,7 +891,7 @@
             "entry_name" : "Gold Dragon",
             "entry_category" : "Dragon",
             "entry_type" : "Metallic",
-            "entry_variety" : "Gold",
+            "entry_variety" : "Allodraconicus Ignaria",
 
             "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/7/7b/Dragon-Linda_BlackWin24_Jansson.jpg",
             "img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Dragon-Linda_BlackWin24_Jansson.jpg",
@@ -938,11 +944,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Preferred Habitat",
+                            "heading" : "Habitat",
                             "content" : "Scorching Deserts and Savanha Prairies"
                         },
                         {
-                            "heading" : "Preferred Prey",
+                            "heading" : "Prey",
                             "content" : "Savanha and Desert fauna; camels, bison, gazelles, elephants"
                         }
                     ]
@@ -978,7 +984,7 @@
             "entry_name" : "Copper Dragon",
             "entry_category" : "Dragon",
             "entry_type" : "Metallic",
-            "entry_variety" : "Copper",
+            "entry_variety" : "Allodraconicus Terralia",
 
             "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/032/571/925/large/miguel-regodon-harkness-pzo2102-adult-copper-dragon.jpg?1606837452",
             "img_linked_source" : "https://www.artstation.com/artwork/xJ2Yo1",
@@ -1024,11 +1030,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Preferred Habitat",
+                            "heading" : "Habitat",
                             "content" : "Deep Underground"
                         },
                         {
-                            "heading" : "Preferred Prey",
+                            "heading" : "Prey",
                             "content" : "Subterranean fauna; worms, spiders, insects"
                         }
                     ]
@@ -1064,7 +1070,7 @@
             "entry_name" : "Bronze Dragon",
             "entry_category" : "Dragon",
             "entry_type" : "Metallic",
-            "entry_variety" : "Bronze",
+            "entry_variety" : "Allodraconicus Aquaria",
 
             "img_linked" : "https://cdna.artstation.com/p/assets/images/images/032/571/910/large/miguel-regodon-harkness-pzo2102-adult-bronce-dragon.jpg?1606837442",
             "img_linked_source" : "https://www.artstation.com/artwork/xJ2Yo1",
@@ -1110,11 +1116,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Preferred Habitat",
+                            "heading" : "Habitat",
                             "content" : "Deep Oceans"
                         },
                         {
-                            "heading" : "Preferred Prey",
+                            "heading" : "Prey",
                             "content" : "Aquatic and Coastal faunu; fish, whales, bison"
                         }
                     ]
@@ -1150,7 +1156,7 @@
             "entry_name" : "Silver Dragon",
             "entry_category" : "Dragon",
             "entry_type" : "Metallic",
-            "entry_variety" : "Silver",
+            "entry_variety" : "Allodraconicus Artica",
 
             "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/032/571/937/large/miguel-regodon-harkness-pzo2102-adult-silver-dragon.jpg?1606837462",
             "img_linked_source" : "https://www.artstation.com/artwork/xJ2Yo1",
@@ -1196,11 +1202,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Preferred Habitat",
+                            "heading" : "Habitat",
                             "content" : "Arctic Tundra"
                         },
                         {
-                            "heading" : "Preferred Prey",
+                            "heading" : "Prey",
                             "content" : "Arctic fauna; yetis, polar bears, mammoths, seals"
                         }
                     ]
@@ -1236,7 +1242,7 @@
             "entry_name" : "Brass Dragon",
             "entry_category" : "Dragon",
             "entry_type" : "Metallic",
-            "entry_variety" : "Brass",
+            "entry_variety" : "Allodraconicus Basaltia",
 
             "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/9/92/Dragon_by_Henry_Justice_Ford.jpg",
             "img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Dragon_by_Henry_Justice_Ford.jpg",
@@ -1285,11 +1291,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Preferred Habitat",
+                            "heading" : "Habitat",
                             "content" : "Volcanic terrain; Mountains and Caverns"
                         },
                         {
-                            "heading" : "Preferred Prey",
+                            "heading" : "Prey",
                             "content" : "Any non aquatic fauna"
                         }
                     ]
@@ -1325,7 +1331,7 @@
             "entry_name" : "Dracofiend",
             "entry_category" : "Dragon",
             "entry_type" : "Spirit",
-            "entry_variety" : "Infernal",
+            "entry_variety" : "Deiadraconicus Basaltia",
 
             "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/038/863/747/large/miguel-regodon-harkness-imperial-dragon-sovereign-adult.jpg?1624292613",
             "img_linked_source" : "https://www.artstation.com/artwork/8e3lAm",
@@ -1371,11 +1377,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Preferred Habitat",
+                            "heading" : "Habitat",
                             "content" : "Volcanic terrain; Mountains and Caverns"
                         },
                         {
-                            "heading" : "Preferred Prey",
+                            "heading" : "Prey",
                             "content" : "Any non aquatic fauna"
                         }
                     ]
@@ -1411,7 +1417,7 @@
             "entry_name" : "Dracowisp",
             "entry_category" : "Dragon",
             "entry_type" : "Spirit",
-            "entry_variety" : "Celestial",
+            "entry_variety" : "Deiadraconicus Arctica",
 
             "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/038/863/741/large/miguel-regodon-harkness-imperial-dragon-sky-adult.jpg?1624292607",
             "img_linked_source" : "https://www.artstation.com/artwork/8e3lAm",
@@ -1457,11 +1463,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Preferred Habitat",
+                            "heading" : "Habitat",
                             "content" : "Arctic Tundra"
                         },
                         {
-                            "heading" : "Preferred Prey",
+                            "heading" : "Prey",
                             "content" : "Arctic fauna; yetis, polar bears, mammoths, seals"
                         }
                     ]
@@ -1497,7 +1503,7 @@
             "entry_name" : "Dracoshade",
             "entry_category" : "Dragon",
             "entry_type" : "Spirit",
-            "entry_variety" : "Abyssal",
+            "entry_variety" : "Deiadraconicus Penumbria",
 
             "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/6/6b/Easy_origami_dragon_for_beginners-_how_to_paint_a_dragon_for_beginners.jpg",
             "img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Easy_origami_dragon_for_beginners-_how_to_paint_a_dragon_for_beginners.jpg",
@@ -1546,11 +1552,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Preferred Habitat",
+                            "heading" : "Habitat",
                             "content" : "Abandoned Urban Environments"
                         },
                         {
-                            "heading" : "Preferred Prey",
+                            "heading" : "Prey",
                             "content" : "Urban fauna; rats, alligators, horses, people"
                         }
                     ]
@@ -1586,7 +1592,7 @@
             "entry_name" : "Dracofey",
             "entry_category" : "Dragon",
             "entry_type" : "Spirit",
-            "entry_variety" : "Fey",
+            "entry_variety" : "Deiadraconicus Verdaria",
 
             "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/038/863/731/large/miguel-regodon-harkness-imperial-dragon-forest-adult.jpg?1624292598",
             "img_linked_source" : "https://www.artstation.com/artwork/8e3lAm",
@@ -1632,11 +1638,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Preferred Habitat",
+                            "heading" : "Habitat",
                             "content" : "Swamps and Forests"
                         },
                         {
-                            "heading" : "Preferred Prey",
+                            "heading" : "Prey",
                             "content" : "Forest fauna; deer, cattle, wolves, rabbits"
                         }
                     ]
@@ -1672,7 +1678,7 @@
             "entry_name" : "Sea Serpent",
             "entry_category" : "Dragon",
             "entry_type" : "Draconid",
-            "entry_variety" : "Drakkus",
+            "entry_variety" : "Drakkenia Anguilliformes",
 
             "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/038/863/737/large/miguel-regodon-harkness-imperial-dragon-sea-adult.jpg?1624292603",
             "img_linked_source" : "https://www.artstation.com/artwork/8e3lAm",
@@ -1718,11 +1724,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Preferred Habitat",
+                            "heading" : "Habitat",
                             "content" : "Deep Oceans"
                         },
                         {
-                            "heading" : "Preferred Prey",
+                            "heading" : "Prey",
                             "content" : "Aquatic and Coastal faunu; fish, whales, bison"
                         }
                     ]
@@ -1758,7 +1764,7 @@
             "entry_name" : "Drakken",
             "entry_category" : "Dragon",
             "entry_type" : "Draconid",
-            "entry_variety" : "Drakkus",
+            "entry_variety" : "Drakkenia Archaica",
 
             "img_linked" : "https://cdna.artstation.com/p/assets/images/images/036/867/158/large/miguel-regodon-harkness-pzo902104-adult-umbra-dragon.jpg?1618851039",
             "img_linked_source" : "https://www.artstation.com/artwork/9malJq",
@@ -1804,11 +1810,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Preferred Habitat",
+                            "heading" : "Habitat",
                             "content" : "Abandoned Urban Environments"
                         },
                         {
-                            "heading" : "Preferred Prey",
+                            "heading" : "Prey",
                             "content" : "Urban fauna; rats, alligators, horses, people"
                         }
                     ]
@@ -1844,7 +1850,7 @@
             "entry_name" : "Wyvern",
             "entry_category" : "Dragon",
             "entry_type" : "Draconid",
-            "entry_variety" : "Drakkus",
+            "entry_variety" : "Drakkenia Chiroptera",
 
             "img_linked" : "",
             "img_linked_source" : "",
@@ -1890,11 +1896,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Preferred Habitat",
+                            "heading" : "Habitat",
                             "content" : "Plateaus and Valleys"
                         },
                         {
-                            "heading" : "Preferred Prey",
+                            "heading" : "Prey",
                             "content" : "Prairie fauna; antelope, rabbit"
                         }
                     ]
@@ -1930,7 +1936,7 @@
             "entry_name" : "Drake",
             "entry_category" : "Dragon",
             "entry_type" : "Draconid",
-            "entry_variety" : "Drakkus",
+            "entry_variety" : "Drakkenia Lacertilia",
 
             "img_linked" : "",
             "img_linked_source" : "",
@@ -1976,11 +1982,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Preferred Habitat",
+                            "heading" : "Habitat",
                             "content" : "Varied"
                         },
                         {
-                            "heading" : "Preferred Prey",
+                            "heading" : "Prey",
                             "content" : "Varied"
                         }
                     ]
