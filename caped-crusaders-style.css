@@ -195,7 +195,33 @@ body, .cc-attributes-overview-table tr th, .cc-attributes-overview-table th, .cc
   padding-left: 25px;
   padding-right: 25px;
   height: auto;
-  width: 90vw; 
+  max-width: 90vw; 
+  width: auto;
+}
+
+/* The off white chunk of the page that holds content */
+.entry-page-nav-table-section, .entry-page-nav-table-section-placeholder {
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-left: 3vw; 
+  margin-right: 3vw;
+  margin-top: 25px;
+  margin-bottom: 2vw;
+  padding: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: auto;
+  width: 12vw; 
+  float: left;
+}
+
+.entry-page-nav-table-section {
+  position: fixed;
+}
+
+.entry-page-nav-table-section-placeholder {
+  background-image: url("/_SiteResources/Images/Transparent.png");
+  background-color: transparent;
 }
 
 

@@ -12,27 +12,27 @@
             "entry_description_overview" : "The Azure Dragons are cunning and treacherous creatures, interested only in the advancement of the pagan sects they construct around themselves.",
             "entry_description_library" : [
                 {
-                    "title" : "Description and Appearance",
+                    "heading" : "Description",
                     "content" : "Azure Dragons have vibrant cerulean scales mottled with faint white and grey tints, allowing them to blend into the sky when flying.  They have pale ivory underbellies, horns, wing membrane, forelimbs, and hindlimbs.  Their snouts were short and broad, resembling bovine cattle.  They posessed two sets of horns; one pair curving and upwards akin to a bull or demon, the other hooking forward akin to a boar or elephant.  "
                 },
                 {
-                    "title" : "Personality and Behavior",
+                    "heading" : "Personality",
                     "content" : "Azure Dragons value their influence and reverance above all, constantly seeking to gain new followers.  Azure Dragons relish hymnal music of the religious and ominous variety, and resent academic skepticism.  The wrath of an Azure Dragon is often brought about by posing academic inquiries or challenges of doctrine it holds dear.  "
                 },
                 {
-                    "title" : "Combat Tactics",
+                    "heading" : "Combat Tactics",
                     "content" : "Azure Dragons rely on their Lightning Breath whenever they can, eager to show their awesome power.  They deal with foes who survive or avoid the initial blast by goring them with their horns.  If the target is particularly resilient, the Azure Dragon will hide in the clouds or sky while swooping down for additional Lightning Breath and gore attacks.  If clearly outmatched or grievously wounded, the Azure Dragon will close with a final Lightning Breath attack for good measure before lurking in the sky.  Their foes are often waiting for another swooping attack, which never comes.  "
                 },
                 {
-                    "title" : "Social Behavior",
+                    "heading" : "Social Behavior",
                     "content" : "The Azure Dragons are cunning and treacherous, only treating their loyal acolytes with any respect or fairness.  Azure Dragons are the most active of the dragons regarding religious groups that consider dragons divine, gladly enjoying whatever praise and offerings they may have for them.  They are also all too eager to inspire zealouts to spread their doctrine and recruit new converts.  Due to this, Azure Dragon cults make up the largest religious demographic outside the Pantheon of the Eight.",
                     "sublibrary" : [
                         {
-                            "title" : "Lair",
+                            "heading" : "Lair",
                             "content" : "Azure Dragons adorn their lairs like epic cathedrals at the absolute peak of the highest mountain in their territory. They treasure religious texts, especially those containing hymns.  They hold services in their lair daily with the most high ranking members of the cult, often including a great deal of ominous music that resonates deeply with Azure Dragons.  All but the smallest lairs have sleeping quarters at the edges for the highest ranking acolytes, with the main chamber having pews and swooping glass murals akin to a cathedral.  Below the glass mural and behind the altar and pulpit, a large smooth dais serves as the resting place of the Azure Dragon.  The dragon remains there both during services and while sleeping.  "
                         },
                         {
-                            "title" : "Habitat",
+                            "heading" : "Habitat",
                             "content" : "Azure Dragons loathe oceans and flat land.  They often roam far and wide to find the steepest mountain range they can, but enough elevation can make up for a flatter mountain.  Azure Dragons compete for mountaintops, with the largest and oldest claiming the tallest mountains.  They hunt elk, yetis, moose, bears, foxes, and all other varities of mountain fauna.  Azure Dragons also enjoy berries and even flowers, being one of the few omnivorous dragons.  While they resent oceans, they have been known to tolerate streams and lakes long enough to hunt fish, dolphins, and in some cases, whales.  "
                         }
 
@@ -45,15 +45,15 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Planescape",
+                            "heading" : "Planescape",
                             "content" : "Caelar"
                         },
                         {
-                            "title" : "Alignment",
+                            "heading" : "Alignment",
                             "content" : "Neutral Evil"
                         },
                         {
-                            "title" : "Values",
+                            "heading" : "Values",
                             "content" : "Religion and Music"
                         }
                     ]
@@ -62,19 +62,19 @@
                     "overview_table_group_heading" : "Physiology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Breath Weapon",
+                            "heading" : "Breath Weapon",
                             "content" : "Lightning"
                         },
                         {
-                            "title" : "Horns",
+                            "heading" : "Horns",
                             "content" : "Forward Scooping (Bull and Boar like)"
                         },
                         {
-                            "title" : "Wing Type",
+                            "heading" : "Wing Type",
                             "content" : "Conventional (Bat-like)"
                         },
                         {
-                            "title" : "Coloration",
+                            "heading" : "Coloration",
                             "content" : "Pale Blue and Ivory"
                         }
                     ]
@@ -83,11 +83,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Preferred Habitat",
+                            "heading" : "Preferred Habitat",
                             "content" : "Plateaus and Mountaintops"
                         },
                         {
-                            "title" : "Preferred Prey",
+                            "heading" : "Preferred Prey",
                             "content" : "Mountain and Prairie fauna; deer, elk, horses"
                         }
                     ]
@@ -96,23 +96,23 @@
                     "overview_table_group_heading" : "Life Cycle",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Gestation",
+                            "heading" : "Gestation",
                             "content" : "4 years"
                         },
                         {
-                            "title" : "Hatchling",
+                            "heading" : "Hatchling",
                             "content" : "0-8 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/036/970/206/large/miguel-regodon-harkness-pzo2104-young-cloud-dragon.jpg?1619111370'>Juvenile</a>",
+                            "heading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/036/970/206/large/miguel-regodon-harkness-pzo2104-young-cloud-dragon.jpg?1619111370'>Juvenile</a>",
                             "content" : "8-80 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/036/867/138/large/miguel-regodon-harkness-pzo2104-adult-cloud-dragon.jpg?1618851020'>Adult</a>",
+                            "heading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/036/867/138/large/miguel-regodon-harkness-pzo2104-adult-cloud-dragon.jpg?1618851020'>Adult</a>",
                             "content" : "80-800 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/036/783/268/large/miguel-regodon-harkness-pzo2104-ancient-cloud-dragon.jpg?1618593682'>Wyrm</a>",
+                            "heading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/036/783/268/large/miguel-regodon-harkness-pzo2104-ancient-cloud-dragon.jpg?1618593682'>Wyrm</a>",
                             "content" : "800+ years"
                         }
                     ]
@@ -134,27 +134,27 @@
             "entry_description_overview" : "Crimson Dragons are notably egotistical, even among dragons. They value blood and honor above all. Crimson Dragons prefer to enslave and berate mortals of any kind, but usually avoid the arctic and aquatic races due to locational limitations. ",
             "entry_description_library" : [
                 {
-                    "title" : "Description and Appearance",
+                    "heading" : "Description",
                     "content" : "Crimson Dragons have deep blood red scales covering almost the entirety of their bodies, with the scales of the underbelly being only a shade or two lighter.  Crimson Dragons have fearsome horn structures, with clusters of barbs lining their spine from the neck to the base of the tail.  Starting at the tail, they have a pair of microfanes extending to either side that are very sharp.  "
                 },
                 {
-                    "title" : "Personality and Behavior",
+                    "heading" : "Personality",
                     "content" : "Crimson Dragons find a great deal of joy in witnessing conflict, having been known to circle above raging battles as spectators. They often force their subjects to fight one another for a myriad of reasons, and almost always to the death.  "
                 },
                 {
-                    "title" : "Combat Tactics",
+                    "heading" : "Combat Tactics",
                     "content" : "Scholars have theorized that these microfanes assists in flight stability, but they are seen most often used to slash open their foes with tail attacks.  Crimson Dragons relish good battles, eagerly clashing with foes that are capable of going toe to toe with them.  They often treat the battle like a game, only using select tools at their disposal and increasing the challenge for their foe as time progresses.  When faced with overwhelming force, a Crimson Dragon will avoid fighting in the first place.  However, once engaged, Crimson Dragons will fight to the death and die satisfied knowing they fought honorably.  The exceptionally rare Crimson Dragons who do retreat from a fight are often hunted down by posses of other Crimson Dragons who heard the tale, ripping them to pieces in a bloood fueled rage.  Crimson Dragons consider themselves the superior species, and will not tolerate dishonor from their own kind.  "
                 },
                 {
-                    "title" : "Social Behavior",
+                    "heading" : "Social Behavior",
                     "content" : "Crimson Dragons demand obedience and perfection from their subjects, dealing harsh punishments for even the slightest insult or mistake.  Crimson Dragons enjoy laughing, and as a result, keep a jester nearby at all times within their lair. There is only one jester at any given time, and each jester is selected from the Dragon's subjects. It is the second most respected position in the hierarchy, though not a desireable one. Crimson Dragons grow bored of their jesters rather quickly, burning them alive when they are no longer amusing.",
                     "sublibrary" : [
                         {
-                            "title" : "Lair",
+                            "heading" : "Lair",
                             "content" : "  Crimson Dragons enjoy pillaging wealthy kingdoms and kidnapping artisans of all kinds. They typically raze and steal seeking great treasures and materials of high quality and wealth. The artisans are usually conscripted to great a great work in their lord's honor, such as a statue, mural, or epic poem. As a result, an older Crimson Dragon's lair is very much like a shrine to itself.  "
                         },
                         {
-                            "title" : "Habitat",
+                            "heading" : "Habitat",
                             "content" : "Crimson Dragons prefer to live in the heart of scorching deserts far from oceans and water sources.  They have a remarkable ability to survive with minimal liquid intake, most never needing additional moisture beyond that which they get from their food.  "
                         }
 
@@ -167,15 +167,15 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Planescape",
+                            "heading" : "Planescape",
                             "content" : "Ignar"
                         },
                         {
-                            "title" : "Alignment",
+                            "heading" : "Alignment",
                             "content" : "Neutral Evil"
                         },
                         {
-                            "title" : "Values",
+                            "heading" : "Values",
                             "content" : "Power and Honor"
                         }
                     ]
@@ -184,19 +184,19 @@
                     "overview_table_group_heading" : "Physiology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Breath Weapon",
+                            "heading" : "Breath Weapon",
                             "content" : "Fire"
                         },
                         {
-                            "title" : "Horns",
+                            "heading" : "Horns",
                             "content" : "Rearward Cluster"
                         },
                         {
-                            "title" : "Wing Type",
+                            "heading" : "Wing Type",
                             "content" : "Conventional (Bat-like)"
                         },
                         {
-                            "title" : "Coloration",
+                            "heading" : "Coloration",
                             "content" : "Vibrant Red"
                         }
                     ]
@@ -205,11 +205,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Preferred Habitat",
+                            "heading" : "Preferred Habitat",
                             "content" : "Scorching Deserts and Savanha Prairies"
                         },
                         {
-                            "title" : "Preferred Prey",
+                            "heading" : "Preferred Prey",
                             "content" : "Savanha and Desert fauna; camels, bison, gazelles, elephants"
                         }
                     ]
@@ -218,23 +218,23 @@
                     "overview_table_group_heading" : "Life Cycle",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Gestation",
+                            "heading" : "Gestation",
                             "content" : "4 years"
                         },
                         {
-                            "title" : "Hatchling",
+                            "heading" : "Hatchling",
                             "content" : "0-8 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/780/801/large/miguel-regodon-harkness-pzo2102-young-red-dragon.jpg?1607450405'>Juvenile</a>",
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/780/801/large/miguel-regodon-harkness-pzo2102-young-red-dragon.jpg?1607450405'>Juvenile</a>",
                             "content" : "8-80 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/538/923/large/miguel-regodon-harkness-pzo2102-adult-red-dragon-copia.jpg?1606753019'>Adult</a>",
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/538/923/large/miguel-regodon-harkness-pzo2102-adult-red-dragon-copia.jpg?1606753019'>Adult</a>",
                             "content" : "80-800 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/023/017/181/large/miguel-regodon-harkness-pzo2102-ancient-red-dragon-final-2.jpg?1577731619'>Wyrm</a>",
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/023/017/181/large/miguel-regodon-harkness-pzo2102-ancient-red-dragon-final-2.jpg?1577731619'>Wyrm</a>",
                             "content" : "800+ years"
                         }
                     ]
@@ -257,15 +257,15 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Planescape",
+                            "heading" : "Planescape",
                             "content" : "Terral"
                         },
                         {
-                            "title" : "Alignment",
+                            "heading" : "Alignment",
                             "content" : "Neutral Evil"
                         },
                         {
-                            "title" : "Values",
+                            "heading" : "Values",
                             "content" : "Architecture, Legacy"
                         }
                     ]
@@ -274,19 +274,19 @@
                     "overview_table_group_heading" : "Physiology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Breath Weapon",
+                            "heading" : "Breath Weapon",
                             "content" : "Thunder"
                         },
                         {
-                            "title" : "Horns",
+                            "heading" : "Horns",
                             "content" : "Minimal"
                         },
                         {
-                            "title" : "Wing Type",
+                            "heading" : "Wing Type",
                             "content" : "Conventional (Bird-like)"
                         },
                         {
-                            "title" : "Coloration",
+                            "heading" : "Coloration",
                             "content" : "Prismatic Jade"
                         }
                     ]
@@ -295,11 +295,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Preferred Habitat",
+                            "heading" : "Preferred Habitat",
                             "content" : "Deep Underground"
                         },
                         {
-                            "title" : "Preferred Prey",
+                            "heading" : "Preferred Prey",
                             "content" : "Subterranean fauna; worms, spiders, insects"
                         }
                     ]
@@ -308,23 +308,23 @@
                     "overview_table_group_heading" : "Life Cycle",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Gestation",
+                            "heading" : "Gestation",
                             "content" : "4 years"
                         },
                         {
-                            "title" : "Hatchling",
+                            "heading" : "Hatchling",
                             "content" : "0-8 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/036/970/210/large/miguel-regodon-harkness-pzo2104-young-crystal-dragon.jpg?1619111375'>Juvenile</a>",
+                            "heading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/036/970/210/large/miguel-regodon-harkness-pzo2104-young-crystal-dragon.jpg?1619111375'>Juvenile</a>",
                             "content" : "8-80 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/036/867/147/large/miguel-regodon-harkness-pzo2104-adult-crystal-dragon.jpg?1618851025'>Adult</a>",
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/036/867/147/large/miguel-regodon-harkness-pzo2104-adult-crystal-dragon.jpg?1618851025'>Adult</a>",
                             "content" : "80-800 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/036/783/269/large/miguel-regodon-harkness-pzo2104-ancient-crystal-dragon.jpg?1618593686'>Wyrm</a>",
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/036/783/269/large/miguel-regodon-harkness-pzo2104-ancient-crystal-dragon.jpg?1618593686'>Wyrm</a>",
                             "content" : "800+ years"
                         }
                     ]
@@ -347,15 +347,15 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Planescape",
+                            "heading" : "Planescape",
                             "content" : "Aquar"
                         },
                         {
-                            "title" : "Alignment",
+                            "heading" : "Alignment",
                             "content" : "Neutral Evil"
                         },
                         {
-                            "title" : "Values",
+                            "heading" : "Values",
                             "content" : "Cleanliness, Superiority"
                         }
                     ]
@@ -364,19 +364,19 @@
                     "overview_table_group_heading" : "Physiology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Breath Weapon",
+                            "heading" : "Breath Weapon",
                             "content" : "Psychic"
                         },
                         {
-                            "title" : "Horns",
+                            "heading" : "Horns",
                             "content" : "Rearward Binary"
                         },
                         {
-                            "title" : "Wing Type",
+                            "heading" : "Wing Type",
                             "content" : "Conventional (Bat-like)"
                         },
                         {
-                            "title" : "Coloration",
+                            "heading" : "Coloration",
                             "content" : "Aquamarine and Ivory"
                         }
                     ]
@@ -385,11 +385,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Preferred Habitat",
+                            "heading" : "Preferred Habitat",
                             "content" : "Deep Oceans"
                         },
                         {
-                            "title" : "Preferred Prey",
+                            "heading" : "Preferred Prey",
                             "content" : "Aquatic and Coastal faunu; fish, whales, bison"
                         }
                     ]
@@ -398,23 +398,23 @@
                     "overview_table_group_heading" : "Life Cycle",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Gestation",
+                            "heading" : "Gestation",
                             "content" : "7 years"
                         },
                         {
-                            "title" : "Hatchling",
+                            "heading" : "Hatchling",
                             "content" : "7-14 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/036/970/204/large/miguel-regodon-harkness-pzo2104-young-birne-dragon.jpg?1619111366'>Juvenile</a>",
+                            "heading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/036/970/204/large/miguel-regodon-harkness-pzo2104-young-birne-dragon.jpg?1619111366'>Juvenile</a>",
                             "content" : "14-140 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/036/867/133/large/miguel-regodon-harkness-pzo2104-adult-birne-dragon.jpg?1618851015'>Adult</a>",
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/036/867/133/large/miguel-regodon-harkness-pzo2104-adult-birne-dragon.jpg?1618851015'>Adult</a>",
                             "content" : "140-1400 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/036/783/258/large/miguel-regodon-harkness-pzo2104-ancient-birne-dragon.jpg?1618593673'>Wyrm</a>",
+                            "heading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/036/783/258/large/miguel-regodon-harkness-pzo2104-ancient-birne-dragon.jpg?1618593673'>Wyrm</a>",
                             "content" : "1400+ years"
                         }
                     ]
@@ -440,15 +440,15 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Planescape",
+                            "heading" : "Planescape",
                             "content" : "Eifrost"
                         },
                         {
-                            "title" : "Alignment",
+                            "heading" : "Alignment",
                             "content" : "Lawful Evil"
                         },
                         {
-                            "title" : "Values",
+                            "heading" : "Values",
                             "content" : "Knowledge, Preservation"
                         }
                     ]
@@ -457,19 +457,19 @@
                     "overview_table_group_heading" : "Physiology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Breath Weapon",
+                            "heading" : "Breath Weapon",
                             "content" : "Ice"
                         },
                         {
-                            "title" : "Horns",
+                            "heading" : "Horns",
                             "content" : "Rearward Frill"
                         },
                         {
-                            "title" : "Wing Type",
+                            "heading" : "Wing Type",
                             "content" : "Scalloped (Feathered)"
                         },
                         {
-                            "title" : "Coloration",
+                            "heading" : "Coloration",
                             "content" : "Stark White"
                         }
                     ]
@@ -478,11 +478,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Preferred Habitat",
+                            "heading" : "Preferred Habitat",
                             "content" : "Arctic Tundra"
                         },
                         {
-                            "title" : "Preferred Prey",
+                            "heading" : "Preferred Prey",
                             "content" : "Arctic fauna; yetis, polar bears, mammoths, seals"
                         }
                     ]
@@ -491,23 +491,23 @@
                     "overview_table_group_heading" : "Life Cycle",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Gestation",
+                            "heading" : "Gestation",
                             "content" : "7 years"
                         },
                         {
-                            "title" : "Hatchling",
+                            "heading" : "Hatchling",
                             "content" : "7-14 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/032/780/806/large/miguel-regodon-harkness-pzo2102-young-white-dragon.jpg?1607450409'>Juvenile</a>",
+                            "heading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/032/780/806/large/miguel-regodon-harkness-pzo2102-young-white-dragon.jpg?1607450409'>Juvenile</a>",
                             "content" : "14-140 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/538/925/large/miguel-regodon-harkness-pzo2102-adult-white-dragon-copia.jpg?1606753023'>Adult</a>",
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/538/925/large/miguel-regodon-harkness-pzo2102-adult-white-dragon-copia.jpg?1606753023'>Adult</a>",
                             "content" : "140-1400 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/023/017/185/large/miguel-regodon-harkness-pzo2102-ancient-white-dragon-final-2.jpg?1577731622'>Wyrm</a>",
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/023/017/185/large/miguel-regodon-harkness-pzo2102-ancient-white-dragon-final-2.jpg?1577731622'>Wyrm</a>",
                             "content" : "1400+ years"
                         }
                     ]
@@ -533,15 +533,15 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Planescape",
+                            "heading" : "Planescape",
                             "content" : "Shadowfell"
                         },
                         {
-                            "title" : "Alignment",
+                            "heading" : "Alignment",
                             "content" : "True Neutral"
                         },
                         {
-                            "title" : "Values",
+                            "heading" : "Values",
                             "content" : "Mysteries"
                         }
                     ]
@@ -550,19 +550,19 @@
                     "overview_table_group_heading" : "Physiology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Breath Weapon",
+                            "heading" : "Breath Weapon",
                             "content" : "Necrotic"
                         },
                         {
-                            "title" : "Horns",
+                            "heading" : "Horns",
                             "content" : "Rearward Crown"
                         },
                         {
-                            "title" : "Wing Type",
+                            "heading" : "Wing Type",
                             "content" : "Conventional (Bat-like)"
                         },
                         {
-                            "title" : "Coloration",
+                            "heading" : "Coloration",
                             "content" : "Shimmering Ebony"
                         }
                     ]
@@ -571,11 +571,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Preferred Habitat",
+                            "heading" : "Preferred Habitat",
                             "content" : "Abandoned Urban Environments"
                         },
                         {
-                            "title" : "Preferred Prey",
+                            "heading" : "Preferred Prey",
                             "content" : "Urban fauna; rats, alligators, horses, people"
                         }
                     ]
@@ -584,23 +584,23 @@
                     "overview_table_group_heading" : "Life Cycle",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Gestation",
+                            "heading" : "Gestation",
                             "content" : "7 years"
                         },
                         {
-                            "title" : "Hatchling",
+                            "heading" : "Hatchling",
                             "content" : "7-14 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/780/787/large/miguel-regodon-harkness-pzo2102-young-black-dragon.jpg?1607450383'>Juvenile</a>",
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/780/787/large/miguel-regodon-harkness-pzo2102-young-black-dragon.jpg?1607450383'>Juvenile</a>",
                             "content" : "14-140 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/538/917/large/miguel-regodon-harkness-pzo2102-adult-black-dragon-copia.jpg?1606753006'>Adult</a>",
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/538/917/large/miguel-regodon-harkness-pzo2102-adult-black-dragon-copia.jpg?1606753006'>Adult</a>",
                             "content" : "140-1400 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/023/017/143/large/miguel-regodon-harkness-pzo2102-ancient-black-dragon-final-2.jpg?1577731609'>Wyrm</a>",
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/023/017/143/large/miguel-regodon-harkness-pzo2102-ancient-black-dragon-final-2.jpg?1577731609'>Wyrm</a>",
                             "content" : "1400+ years"
                         }
                     ]
@@ -626,15 +626,15 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Planescape",
+                            "heading" : "Planescape",
                             "content" : "Vulken"
                         },
                         {
-                            "title" : "Alignment",
+                            "heading" : "Alignment",
                             "content" : "Chaotic Evil"
                         },
                         {
-                            "title" : "Values",
+                            "heading" : "Values",
                             "content" : "Agency"
                         }
                     ]
@@ -643,19 +643,19 @@
                     "overview_table_group_heading" : "Physiology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Breath Weapon",
+                            "heading" : "Breath Weapon",
                             "content" : "Acid"
                         },
                         {
-                            "title" : "Horns",
+                            "heading" : "Horns",
                             "content" : "Rearward Crown"
                         },
                         {
-                            "title" : "Wing Type",
+                            "heading" : "Wing Type",
                             "content" : "Conventional (Bat-like)"
                         },
                         {
-                            "title" : "Coloration",
+                            "heading" : "Coloration",
                             "content" : "Deep Obsidian"
                         }
                     ]
@@ -664,11 +664,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Preferred Habitat",
+                            "heading" : "Preferred Habitat",
                             "content" : "Volcanic terrain; Mountains and Caverns"
                         },
                         {
-                            "title" : "Preferred Prey",
+                            "heading" : "Preferred Prey",
                             "content" : "Any non aquatic fauna"
                         }
                     ]
@@ -677,23 +677,23 @@
                     "overview_table_group_heading" : "Life Cycle",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Gestation",
+                            "heading" : "Gestation",
                             "content" : "7 years"
                         },
                         {
-                            "title" : "Hatchling",
+                            "heading" : "Hatchling",
                             "content" : "7-14 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/036/970/211/large/miguel-regodon-harkness-pzo2104-young-magma-dragon.jpg?1619111379'>Juvenile</a>",
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/036/970/211/large/miguel-regodon-harkness-pzo2104-young-magma-dragon.jpg?1619111379'>Juvenile</a>",
                             "content" : "14-140 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/036/867/155/large/miguel-regodon-harkness-pzo2104-adult-magma-dragon.jpg?1618851035'>Adult</a>",
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/036/867/155/large/miguel-regodon-harkness-pzo2104-adult-magma-dragon.jpg?1618851035'>Adult</a>",
                             "content" : "140-1400 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/036/783/273/large/miguel-regodon-harkness-pzo2104-ancient-magma-dragon.jpg?1618593691'>Wyrm</a>",
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/036/783/273/large/miguel-regodon-harkness-pzo2104-ancient-magma-dragon.jpg?1618593691'>Wyrm</a>",
                             "content" : "1400+ years"
                         }
                     ]
@@ -716,15 +716,15 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Planescape",
+                            "heading" : "Planescape",
                             "content" : "Feywilds"
                         },
                         {
-                            "title" : "Alignment",
+                            "heading" : "Alignment",
                             "content" : "True Neutral"
                         },
                         {
-                            "title" : "Values",
+                            "heading" : "Values",
                             "content" : "Sustainability"
                         }
                     ]
@@ -733,19 +733,19 @@
                     "overview_table_group_heading" : "Physiology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Breath Weapon",
+                            "heading" : "Breath Weapon",
                             "content" : "Poison"
                         },
                         {
-                            "title" : "Horns",
+                            "heading" : "Horns",
                             "content" : "Snout Singular"
                         },
                         {
-                            "title" : "Wing Type",
+                            "heading" : "Wing Type",
                             "content" : "Conventional (Bat-like)"
                         },
                         {
-                            "title" : "Coloration",
+                            "heading" : "Coloration",
                             "content" : "Emerald Green"
                         }
                     ]
@@ -754,11 +754,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Preferred Habitat",
+                            "heading" : "Preferred Habitat",
                             "content" : "Swamps and Forests"
                         },
                         {
-                            "title" : "Preferred Prey",
+                            "heading" : "Preferred Prey",
                             "content" : "Forest fauna; deer, cattle, wolves, rabbits"
                         }
                     ]
@@ -768,23 +768,23 @@
                     "overview_table_group_data" : [
                         
                         {
-                            "title" : "Gestation",
+                            "heading" : "Gestation",
                             "content" : "7 years"
                         },
                         {
-                            "title" : "Hatchling",
+                            "heading" : "Hatchling",
                             "content" : "7-14 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/780/797/large/miguel-regodon-harkness-pzo2102-young-green-dragon.jpg?1607450400'>Juvenile</a>",
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/780/797/large/miguel-regodon-harkness-pzo2102-young-green-dragon.jpg?1607450400'>Juvenile</a>",
                             "content" : "14-140 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/032/538/922/large/miguel-regodon-harkness-pzo2102-adult-green-dragon-copia.jpg?1606753014'>Adult</a>",
+                            "heading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/032/538/922/large/miguel-regodon-harkness-pzo2102-adult-green-dragon-copia.jpg?1606753014'>Adult</a>",
                             "content" : "140-1400 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/023/017/173/large/miguel-regodon-harkness-pzo2102-ancient-green-dragon-final-2.jpg?1577731617'>Wyrm</a>",
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/023/017/173/large/miguel-regodon-harkness-pzo2102-ancient-green-dragon-final-2.jpg?1577731617'>Wyrm</a>",
                             "content" : "1400+ years"
                         }
                     ]
@@ -807,15 +807,15 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Planescape",
+                            "heading" : "Planescape",
                             "content" : "Caelar"
                         },
                         {
-                            "title" : "Alignment",
+                            "heading" : "Alignment",
                             "content" : "Neutral Good"
                         },
                         {
-                            "title" : "Values",
+                            "heading" : "Values",
                             "content" : "Knowledge"
                         }
                     ]
@@ -824,19 +824,19 @@
                     "overview_table_group_heading" : "Physiology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Breath Weapon",
+                            "heading" : "Breath Weapon",
                             "content" : "Lightning"
                         },
                         {
-                            "title" : "Horns",
+                            "heading" : "Horns",
                             "content" : "Rearward Binary"
                         },
                         {
-                            "title" : "Wing Type",
+                            "heading" : "Wing Type",
                             "content" : "Conventional (Bat-like)"
                         },
                         {
-                            "title" : "Coloration",
+                            "heading" : "Coloration",
                             "content" : "Steel Blue"
                         }
                     ]
@@ -845,11 +845,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Preferred Habitat",
+                            "heading" : "Preferred Habitat",
                             "content" : "Plateaus and Mountaintops"
                         },
                         {
-                            "title" : "Preferred Prey",
+                            "heading" : "Preferred Prey",
                             "content" : "Mountain and Prairie fauna; deer, elk, horses"
                         }
                     ]
@@ -858,23 +858,23 @@
                     "overview_table_group_heading" : "Life Cycle",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Gestation",
+                            "heading" : "Gestation",
                             "content" : "10 years"
                         },
                         {
-                            "title" : "Hatchling",
+                            "heading" : "Hatchling",
                             "content" : "0-20 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/032/780/792/large/miguel-regodon-harkness-pzo2102-young-blue-dragon.jpg?1607450392'>Juvenile</a>",
+                            "heading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/032/780/792/large/miguel-regodon-harkness-pzo2102-young-blue-dragon.jpg?1607450392'>Juvenile</a>",
                             "content" : "20-200 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/538/919/large/miguel-regodon-harkness-pzo2102-adult-blue-dragon-copia.jpg?1606753010'>Adult</a>",
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/538/919/large/miguel-regodon-harkness-pzo2102-adult-blue-dragon-copia.jpg?1606753010'>Adult</a>",
                             "content" : "200-2000 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/023/017/165/large/miguel-regodon-harkness-pzo2102-ancient-blue-dragon-final-2.jpg?1577731613'>Wyrm</a>",
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/023/017/165/large/miguel-regodon-harkness-pzo2102-ancient-blue-dragon-final-2.jpg?1577731613'>Wyrm</a>",
                             "content" : "2000+ years"
                         }
                     ]
@@ -900,15 +900,15 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Planescape",
+                            "heading" : "Planescape",
                             "content" : "Ignar"
                         },
                         {
-                            "title" : "Alignment",
+                            "heading" : "Alignment",
                             "content" : "Neutral Good"
                         },
                         {
-                            "title" : "Values",
+                            "heading" : "Values",
                             "content" : "Power"
                         }
                     ]
@@ -917,19 +917,19 @@
                     "overview_table_group_heading" : "Physiology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Breath Weapon",
+                            "heading" : "Breath Weapon",
                             "content" : "Fire"
                         },
                         {
-                            "title" : "Horns",
+                            "heading" : "Horns",
                             "content" : "Rearward Binary"
                         },
                         {
-                            "title" : "Wing Type",
+                            "heading" : "Wing Type",
                             "content" : "Conventional (Bird-like)"
                         },
                         {
-                            "title" : "Coloration",
+                            "heading" : "Coloration",
                             "content" : "Shimmering Bullion"
                         }
                     ]
@@ -938,11 +938,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Preferred Habitat",
+                            "heading" : "Preferred Habitat",
                             "content" : "Scorching Deserts and Savanha Prairies"
                         },
                         {
-                            "title" : "Preferred Prey",
+                            "heading" : "Preferred Prey",
                             "content" : "Savanha and Desert fauna; camels, bison, gazelles, elephants"
                         }
                     ]
@@ -951,23 +951,23 @@
                     "overview_table_group_heading" : "Life Cycle",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Gestation",
+                            "heading" : "Gestation",
                             "content" : "10 years"
                         },
                         {
-                            "title" : "Hatchling",
+                            "heading" : "Hatchling",
                             "content" : "0-20 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/841/275/large/miguel-regodon-harkness-pzo2102-young-gold-dragon.jpg?1607619239'>Juvenile</a>",
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/841/275/large/miguel-regodon-harkness-pzo2102-young-gold-dragon.jpg?1607619239'>Juvenile</a>",
                             "content" : "20-200 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/571/931/large/miguel-regodon-harkness-pzo2102-adult-gold-dragon.jpg?1606837456'>Adult</a>",
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/571/931/large/miguel-regodon-harkness-pzo2102-adult-gold-dragon.jpg?1606837456'>Adult</a>",
                             "content" : "200-2000 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/023/017/689/large/miguel-regodon-harkness-pzo2102-ancient-gold-dragon-final-2.jpg?1577732638'>Wyrm</a>",
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/023/017/689/large/miguel-regodon-harkness-pzo2102-ancient-gold-dragon-final-2.jpg?1577732638'>Wyrm</a>",
                             "content" : "2000+ years"
                         }
                     ]
@@ -990,11 +990,11 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Planescape",
+                            "heading" : "Planescape",
                             "content" : "Terral"
                         },
                         {
-                            "title" : "Alignment",
+                            "heading" : "Alignment",
                             "content" : "Neutral Good"
                         }
                     ]
@@ -1003,19 +1003,19 @@
                     "overview_table_group_heading" : "Physiology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Breath Weapon",
+                            "heading" : "Breath Weapon",
                             "content" : "Thunder"
                         },
                         {
-                            "title" : "Horns",
+                            "heading" : "Horns",
                             "content" : "Rearward Crown"
                         },
                         {
-                            "title" : "Wing Type",
+                            "heading" : "Wing Type",
                             "content" : "Conventional (Bat-like)"
                         },
                         {
-                            "title" : "Coloration",
+                            "heading" : "Coloration",
                             "content" : "Rich Orange"
                         }
                     ]
@@ -1024,11 +1024,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Preferred Habitat",
+                            "heading" : "Preferred Habitat",
                             "content" : "Deep Underground"
                         },
                         {
-                            "title" : "Preferred Prey",
+                            "heading" : "Preferred Prey",
                             "content" : "Subterranean fauna; worms, spiders, insects"
                         }
                     ]
@@ -1037,23 +1037,23 @@
                     "overview_table_group_heading" : "Life Cycle",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Gestation",
+                            "heading" : "Gestation",
                             "content" : "10 years"
                         },
                         {
-                            "title" : "Hatchling",
+                            "heading" : "Hatchling",
                             "content" : "0-20 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/841/273/large/miguel-regodon-harkness-pzo2102-young-copper-dragon.jpg?1607619235'>Juvenile</a>",
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/841/273/large/miguel-regodon-harkness-pzo2102-young-copper-dragon.jpg?1607619235'>Juvenile</a>",
                             "content" : "20-200 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/571/925/large/miguel-regodon-harkness-pzo2102-adult-copper-dragon.jpg?1606837452'>Adult</a>",
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/571/925/large/miguel-regodon-harkness-pzo2102-adult-copper-dragon.jpg?1606837452'>Adult</a>",
                             "content" : "200-2000 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/023/017/688/large/miguel-regodon-harkness-pzo2102-ancient-copper-dragon-final-2.jpg?1577732636'>Wyrm</a>",
+                            "heading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/023/017/688/large/miguel-regodon-harkness-pzo2102-ancient-copper-dragon-final-2.jpg?1577732636'>Wyrm</a>",
                             "content" : "2000+ years"
                         }
                     ]
@@ -1069,18 +1069,18 @@
             "img_linked" : "https://cdna.artstation.com/p/assets/images/images/032/571/910/large/miguel-regodon-harkness-pzo2102-adult-bronce-dragon.jpg?1606837442",
             "img_linked_source" : "https://www.artstation.com/artwork/xJ2Yo1",
 
-            "entry_description_overview" : "Bronze Dragons are extremely financially inclined and logistically focused.  They find a great deal of joy in tracking cargo shipments and reviewing warehouse stock levels.  Bronze Dragons usually procure treasure from sunken vessels and return it to the rigthful owner with fees for their service removed, allowing them to amass small fortunes that they then use to invest in seafaring cargo shipment companies.  You would be hard pressed to find a mercantile coster with seafaring vessels that doesn't have the financial backing of a Bronze Dragon.  While Bronze Dragons do value civility and order as any Metallic Dragon would, they hold a remarkably potent resentment for pirates.  Gold Dragons are widely considered the most brutal and vengeful of the Metallic Dragons, but accounts of Bronze Dragons razing pirate vessels certainly makes them a competitor for that title.  ",
+            "entry_description_overview" : "Bronze Dragons are extremely financially inclined and logistically focused.  They find a great deal of joy in tracking cargo shipments and reviewing warehouse stock levels.  Bronze Dragons usually procure treasure from sunken vessels and return it to the rigthful owner with fees for their service removed, allowing them to amass small fortunes that they then use to invest in seafaring cargo shipment companies.  You would be hard pressed to find a mercantile coster with seafaring vessels that doesn't have the financial backing of a Bronze Dragon.  While Bronze Dragons do value civility and order as any Metallic Dragon would, they hold a remarkably potent resentment for pirates.  Gold Dragons are widely considered the most brutal and vengeful of the Metallic Dragons, but accounts of Bronze Dragons razing pirate vessels certainly makes them a competitor for that heading.  ",
 
             "overview_table_groups" : [
                 {
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Planescape",
+                            "heading" : "Planescape",
                             "content" : "Aquar"
                         },
                         {
-                            "title" : "Alignment",
+                            "heading" : "Alignment",
                             "content" : "Neutral Good"
                         }
                     ]
@@ -1089,19 +1089,19 @@
                     "overview_table_group_heading" : "Physiology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Breath Weapon",
+                            "heading" : "Breath Weapon",
                             "content" : "Psychic"
                         },
                         {
-                            "title" : "Horns",
+                            "heading" : "Horns",
                             "content" : "Rearward Gills"
                         },
                         {
-                            "title" : "Wing Type",
+                            "heading" : "Wing Type",
                             "content" : "Conventional (Bat-like)"
                         },
                         {
-                            "title" : "Coloration",
+                            "heading" : "Coloration",
                             "content" : "Pale Brown and Sea Green"
                         }
                     ]
@@ -1110,11 +1110,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Preferred Habitat",
+                            "heading" : "Preferred Habitat",
                             "content" : "Deep Oceans"
                         },
                         {
-                            "title" : "Preferred Prey",
+                            "heading" : "Preferred Prey",
                             "content" : "Aquatic and Coastal faunu; fish, whales, bison"
                         }
                     ]
@@ -1123,23 +1123,23 @@
                     "overview_table_group_heading" : "Life Cycle",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Gestation",
+                            "heading" : "Gestation",
                             "content" : "10 years"
                         },
                         {
-                            "title" : "Hatchling",
+                            "heading" : "Hatchling",
                             "content" : "0-20 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/032/841/270/large/miguel-regodon-harkness-pzo2102-young-bronce-dragon.jpg?1607619231'>Juvenile</a>",
+                            "heading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/032/841/270/large/miguel-regodon-harkness-pzo2102-young-bronce-dragon.jpg?1607619231'>Juvenile</a>",
                             "content" : "20-200 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/032/571/910/large/miguel-regodon-harkness-pzo2102-adult-bronce-dragon.jpg?1606837442'>Adult</a>",
+                            "heading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/032/571/910/large/miguel-regodon-harkness-pzo2102-adult-bronce-dragon.jpg?1606837442'>Adult</a>",
                             "content" : "200-2000 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/023/017/687/large/miguel-regodon-harkness-pzo2102-ancient-bronce-dragon-final-2.jpg?1577732634'>Wyrm</a>",
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/023/017/687/large/miguel-regodon-harkness-pzo2102-ancient-bronce-dragon-final-2.jpg?1577732634'>Wyrm</a>",
                             "content" : "2000+ years"
                         }
                     ]
@@ -1162,11 +1162,11 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Planescape",
+                            "heading" : "Planescape",
                             "content" : "Eifrost"
                         },
                         {
-                            "title" : "Alignment",
+                            "heading" : "Alignment",
                             "content" : "Lawful Good"
                         }
                     ]
@@ -1175,19 +1175,19 @@
                     "overview_table_group_heading" : "Physiology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Breath Weapon",
+                            "heading" : "Breath Weapon",
                             "content" : "Ice"
                         },
                         {
-                            "title" : "Horns",
+                            "heading" : "Horns",
                             "content" : "Rearward Binary"
                         },
                         {
-                            "title" : "Wing Type",
+                            "heading" : "Wing Type",
                             "content" : "Scalloped (Feathered)"
                         },
                         {
-                            "title" : "Coloration",
+                            "heading" : "Coloration",
                             "content" : "Gleaming Chrome"
                         }
                     ]
@@ -1196,11 +1196,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Preferred Habitat",
+                            "heading" : "Preferred Habitat",
                             "content" : "Arctic Tundra"
                         },
                         {
-                            "title" : "Preferred Prey",
+                            "heading" : "Preferred Prey",
                             "content" : "Arctic fauna; yetis, polar bears, mammoths, seals"
                         }
                     ]
@@ -1209,23 +1209,23 @@
                     "overview_table_group_heading" : "Life Cycle",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Gestation",
+                            "heading" : "Gestation",
                             "content" : "10 years"
                         },
                         {
-                            "title" : "Hatchling",
+                            "heading" : "Hatchling",
                             "content" : "0-20 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/841/279/large/miguel-regodon-harkness-pzo2102-young-silver-dragon.jpg?1607619243'>Juvenile</a>",
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/841/279/large/miguel-regodon-harkness-pzo2102-young-silver-dragon.jpg?1607619243'>Juvenile</a>",
                             "content" : "20-200 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/571/937/large/miguel-regodon-harkness-pzo2102-adult-silver-dragon.jpg?1606837462'>Adult</a>",
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/571/937/large/miguel-regodon-harkness-pzo2102-adult-silver-dragon.jpg?1606837462'>Adult</a>",
                             "content" : "200-2000 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/023/017/691/large/miguel-regodon-harkness-pzo2102-ancient-silver-dragon-final-2.jpg?1577732640'>Wyrm</a>",
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/023/017/691/large/miguel-regodon-harkness-pzo2102-ancient-silver-dragon-final-2.jpg?1577732640'>Wyrm</a>",
                             "content" : "2000+ years"
                         }
                     ]
@@ -1251,11 +1251,11 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Planescape",
+                            "heading" : "Planescape",
                             "content" : "Vulken"
                         },
                         {
-                            "title" : "Alignment",
+                            "heading" : "Alignment",
                             "content" : "Chaotic Good"
                         }
                     ]
@@ -1264,19 +1264,19 @@
                     "overview_table_group_heading" : "Physiology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Breath Weapon",
+                            "heading" : "Breath Weapon",
                             "content" : "Acid"
                         },
                         {
-                            "title" : "Horns",
+                            "heading" : "Horns",
                             "content" : "Rearward Crown"
                         },
                         {
-                            "title" : "Wing Type",
+                            "heading" : "Wing Type",
                             "content" : "Scalloped (Feathered)"
                         },
                         {
-                            "title" : "Coloration",
+                            "heading" : "Coloration",
                             "content" : "Faded Amber"
                         }
                     ]
@@ -1285,11 +1285,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Preferred Habitat",
+                            "heading" : "Preferred Habitat",
                             "content" : "Volcanic terrain; Mountains and Caverns"
                         },
                         {
-                            "title" : "Preferred Prey",
+                            "heading" : "Preferred Prey",
                             "content" : "Any non aquatic fauna"
                         }
                     ]
@@ -1298,23 +1298,23 @@
                     "overview_table_group_heading" : "Life Cycle",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Gestation",
+                            "heading" : "Gestation",
                             "content" : "10 years"
                         },
                         {
-                            "title" : "Hatchling",
+                            "heading" : "Hatchling",
                             "content" : "0-20 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/032/841/268/large/miguel-regodon-harkness-pzo2102-young-brass-dragon.jpg?1607619228'>Juvenile</a>",
+                            "heading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/032/841/268/large/miguel-regodon-harkness-pzo2102-young-brass-dragon.jpg?1607619228'>Juvenile</a>",
                             "content" : "20-200 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/032/571/920/large/miguel-regodon-harkness-pzo2102-adult-brass-dragon.jpg?1606837447'>Adult</a>",
+                            "heading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/032/571/920/large/miguel-regodon-harkness-pzo2102-adult-brass-dragon.jpg?1606837447'>Adult</a>",
                             "content" : "200-2000 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/023/017/684/large/miguel-regodon-harkness-pzo2102-ancient-brass-dragon-final-2.jpg?1577732632'>Wyrm</a>",
+                            "heading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/023/017/684/large/miguel-regodon-harkness-pzo2102-ancient-brass-dragon-final-2.jpg?1577732632'>Wyrm</a>",
                             "content" : "2000+ years"
                         }
                     ]
@@ -1337,11 +1337,11 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Planescape",
+                            "heading" : "Planescape",
                             "content" : "Vulken"
                         },
                         {
-                            "title" : "Alignment",
+                            "heading" : "Alignment",
                             "content" : "Chaotic Neutral"
                         }
                     ]
@@ -1350,19 +1350,19 @@
                     "overview_table_group_heading" : "Physiology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Breath Weapon",
+                            "heading" : "Breath Weapon",
                             "content" : "Acid/Fire"
                         },
                         {
-                            "title" : "Horns",
+                            "heading" : "Horns",
                             "content" : "Rearward Crown"
                         },
                         {
-                            "title" : "Wing Type",
+                            "heading" : "Wing Type",
                             "content" : "Absent"
                         },
                         {
-                            "title" : "Coloration",
+                            "heading" : "Coloration",
                             "content" : "Brilliant Bullion"
                         }
                     ]
@@ -1371,11 +1371,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Preferred Habitat",
+                            "heading" : "Preferred Habitat",
                             "content" : "Volcanic terrain; Mountains and Caverns"
                         },
                         {
-                            "title" : "Preferred Prey",
+                            "heading" : "Preferred Prey",
                             "content" : "Any non aquatic fauna"
                         }
                     ]
@@ -1384,23 +1384,23 @@
                     "overview_table_group_heading" : "Life Cycle",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Gestation",
+                            "heading" : "Gestation",
                             "content" : "1 years"
                         },
                         {
-                            "title" : "Hatchling",
+                            "heading" : "Hatchling",
                             "content" : "0-1 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/038/965/627/large/miguel-regodon-harkness-imperial-dragon-sovereign-young.jpg?1624555741'>Juvenile</a>",
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/038/965/627/large/miguel-regodon-harkness-imperial-dragon-sovereign-young.jpg?1624555741'>Juvenile</a>",
                             "content" : "1-10 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/038/863/747/large/miguel-regodon-harkness-imperial-dragon-sovereign-adult.jpg?1624292613'>Adult</a>",
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/038/863/747/large/miguel-regodon-harkness-imperial-dragon-sovereign-adult.jpg?1624292613'>Adult</a>",
                             "content" : "10-100 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/038/752/608/large/miguel-regodon-harkness-imperial-dragon-sovereign-ancient.jpg?1623952542'>Wyrm</a>",
+                            "heading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/038/752/608/large/miguel-regodon-harkness-imperial-dragon-sovereign-ancient.jpg?1623952542'>Wyrm</a>",
                             "content" : "100+ years"
                         }
                     ]
@@ -1423,11 +1423,11 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Planescape",
+                            "heading" : "Planescape",
                             "content" : "Eifrost"
                         },
                         {
-                            "title" : "Alignment",
+                            "heading" : "Alignment",
                             "content" : "Lawful Neutral"
                         }
                     ]
@@ -1436,19 +1436,19 @@
                     "overview_table_group_heading" : "Physiology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Breath Weapon",
+                            "heading" : "Breath Weapon",
                             "content" : "Ice/Psychic"
                         },
                         {
-                            "title" : "Horns",
+                            "heading" : "Horns",
                             "content" : "Upward Branching"
                         },
                         {
-                            "title" : "Wing Type",
+                            "heading" : "Wing Type",
                             "content" : "Absent"
                         },
                         {
-                            "title" : "Coloration",
+                            "heading" : "Coloration",
                             "content" : "Translucent Indigo"
                         }
                     ]
@@ -1457,11 +1457,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Preferred Habitat",
+                            "heading" : "Preferred Habitat",
                             "content" : "Arctic Tundra"
                         },
                         {
-                            "title" : "Preferred Prey",
+                            "heading" : "Preferred Prey",
                             "content" : "Arctic fauna; yetis, polar bears, mammoths, seals"
                         }
                     ]
@@ -1470,23 +1470,23 @@
                     "overview_table_group_heading" : "Life Cycle",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Gestation",
+                            "heading" : "Gestation",
                             "content" : "1 years"
                         },
                         {
-                            "title" : "Hatchling",
+                            "heading" : "Hatchling",
                             "content" : "0-1 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/038/965/625/large/miguel-regodon-harkness-imperial-dragon-sky-young.jpg?1624555737'>Juvenile</a>",
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/038/965/625/large/miguel-regodon-harkness-imperial-dragon-sky-young.jpg?1624555737'>Juvenile</a>",
                             "content" : "1-10 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/038/863/741/large/miguel-regodon-harkness-imperial-dragon-sky-adult.jpg?1624292607'>Adult</a>",
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/038/863/741/large/miguel-regodon-harkness-imperial-dragon-sky-adult.jpg?1624292607'>Adult</a>",
                             "content" : "10-100 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/038/752/605/large/miguel-regodon-harkness-imperial-dragon-sky-ancient.jpg?1623952538'>Wyrm</a>",
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/038/752/605/large/miguel-regodon-harkness-imperial-dragon-sky-ancient.jpg?1623952538'>Wyrm</a>",
                             "content" : "100+ years"
                         }
                     ]
@@ -1512,11 +1512,11 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Planescape",
+                            "heading" : "Planescape",
                             "content" : "Shadowfell"
                         },
                         {
-                            "title" : "Alignment",
+                            "heading" : "Alignment",
                             "content" : "Neutral Evil"
                         }
                     ]
@@ -1525,19 +1525,19 @@
                     "overview_table_group_heading" : "Physiology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Breath Weapon",
+                            "heading" : "Breath Weapon",
                             "content" : "Necrotic/Lightning"
                         },
                         {
-                            "title" : "Horns",
+                            "heading" : "Horns",
                             "content" : "Rearward Binary"
                         },
                         {
-                            "title" : "Wing Type",
+                            "heading" : "Wing Type",
                             "content" : "Absent"
                         },
                         {
-                            "title" : "Coloration",
+                            "heading" : "Coloration",
                             "content" : "Prismatic Magenta"
                         }
                     ]
@@ -1546,11 +1546,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Preferred Habitat",
+                            "heading" : "Preferred Habitat",
                             "content" : "Abandoned Urban Environments"
                         },
                         {
-                            "title" : "Preferred Prey",
+                            "heading" : "Preferred Prey",
                             "content" : "Urban fauna; rats, alligators, horses, people"
                         }
                     ]
@@ -1559,23 +1559,23 @@
                     "overview_table_group_heading" : "Life Cycle",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Gestation",
+                            "heading" : "Gestation",
                             "content" : "1 years"
                         },
                         {
-                            "title" : "Hatchling",
+                            "heading" : "Hatchling",
                             "content" : "0-1 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/038/965/629/large/miguel-regodon-harkness-imperial-dragon-underworld-young.jpg?1624555745'>Juvenile</a>",
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/038/965/629/large/miguel-regodon-harkness-imperial-dragon-underworld-young.jpg?1624555745'>Juvenile</a>",
                             "content" : "1-10 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/038/863/752/large/miguel-regodon-harkness-imperial-dragon-underworld-adult.jpg?1624292617'>Adult</a>",
+                            "heading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/038/863/752/large/miguel-regodon-harkness-imperial-dragon-underworld-adult.jpg?1624292617'>Adult</a>",
                             "content" : "10-100 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/038/752/612/large/miguel-regodon-harkness-imperial-dragon-underworld-ancient.jpg?1623952546'>Wyrm</a>",
+                            "heading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/038/752/612/large/miguel-regodon-harkness-imperial-dragon-underworld-ancient.jpg?1623952546'>Wyrm</a>",
                             "content" : "100+ years"
                         }
                     ]
@@ -1598,11 +1598,11 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Planescape",
+                            "heading" : "Planescape",
                             "content" : "Feywilds"
                         },
                         {
-                            "title" : "Alignment",
+                            "heading" : "Alignment",
                             "content" : "Neutral Good"
                         }
                     ]
@@ -1611,19 +1611,19 @@
                     "overview_table_group_heading" : "Physiology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Breath Weapon",
+                            "heading" : "Breath Weapon",
                             "content" : "Poison/Thunder"
                         },
                         {
-                            "title" : "Horns",
+                            "heading" : "Horns",
                             "content" : "Upward Branching"
                         },
                         {
-                            "title" : "Wing Type",
+                            "heading" : "Wing Type",
                             "content" : "Absent"
                         },
                         {
-                            "title" : "Coloration",
+                            "heading" : "Coloration",
                             "content" : "Forest Jade"
                         }
                     ]
@@ -1632,11 +1632,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Preferred Habitat",
+                            "heading" : "Preferred Habitat",
                             "content" : "Swamps and Forests"
                         },
                         {
-                            "title" : "Preferred Prey",
+                            "heading" : "Preferred Prey",
                             "content" : "Forest fauna; deer, cattle, wolves, rabbits"
                         }
                     ]
@@ -1645,23 +1645,23 @@
                     "overview_table_group_heading" : "Life Cycle",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Gestation",
+                            "heading" : "Gestation",
                             "content" : "1 years"
                         },
                         {
-                            "title" : "Hatchling",
+                            "heading" : "Hatchling",
                             "content" : "0-1 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/038/965/620/large/miguel-regodon-harkness-imperial-dragon-forest-young.jpg?1624555729'>Juvenile</a>",
+                            "heading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/038/965/620/large/miguel-regodon-harkness-imperial-dragon-forest-young.jpg?1624555729'>Juvenile</a>",
                             "content" : "1-10 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/038/863/731/large/miguel-regodon-harkness-imperial-dragon-forest-adult.jpg?1624292598'>Adult</a>",
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/038/863/731/large/miguel-regodon-harkness-imperial-dragon-forest-adult.jpg?1624292598'>Adult</a>",
                             "content" : "10-100 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/038/752/598/large/miguel-regodon-harkness-imperial-dragon-forest-ancient.jpg?1623952529'>Wyrm</a>",
+                            "heading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/038/752/598/large/miguel-regodon-harkness-imperial-dragon-forest-ancient.jpg?1623952529'>Wyrm</a>",
                             "content" : "100+ years"
                         }
                     ]
@@ -1684,11 +1684,11 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Planescape",
+                            "heading" : "Planescape",
                             "content" : "Material"
                         },
                         {
-                            "title" : "Alignment",
+                            "heading" : "Alignment",
                             "content" : "Chaotic Evil"
                         }
                     ]
@@ -1697,19 +1697,19 @@
                     "overview_table_group_heading" : "Physiology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Breath Weapon",
+                            "heading" : "Breath Weapon",
                             "content" : "Absent"
                         },
                         {
-                            "title" : "Horns",
+                            "heading" : "Horns",
                             "content" : "Rearward Crown"
                         },
                         {
-                            "title" : "Wing Type",
+                            "heading" : "Wing Type",
                             "content" : "Absent"
                         },
                         {
-                            "title" : "Coloration",
+                            "heading" : "Coloration",
                             "content" : "Deep Indigo"
                         }
                     ]
@@ -1718,11 +1718,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Preferred Habitat",
+                            "heading" : "Preferred Habitat",
                             "content" : "Deep Oceans"
                         },
                         {
-                            "title" : "Preferred Prey",
+                            "heading" : "Preferred Prey",
                             "content" : "Aquatic and Coastal faunu; fish, whales, bison"
                         }
                     ]
@@ -1731,23 +1731,23 @@
                     "overview_table_group_heading" : "Life Cycle",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Gestation",
+                            "heading" : "Gestation",
                             "content" : "1 years"
                         },
                         {
-                            "title" : "Hatchling",
+                            "heading" : "Hatchling",
                             "content" : "0-1 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/038/965/623/large/miguel-regodon-harkness-imperial-dragon-sea-young.jpg?1624555733'>Juvenile</a>",
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/038/965/623/large/miguel-regodon-harkness-imperial-dragon-sea-young.jpg?1624555733'>Juvenile</a>",
                             "content" : "1-10 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/038/863/737/large/miguel-regodon-harkness-imperial-dragon-sea-adult.jpg?1624292603'>Adult</a>",
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/038/863/737/large/miguel-regodon-harkness-imperial-dragon-sea-adult.jpg?1624292603'>Adult</a>",
                             "content" : "10-100 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/038/752/603/large/miguel-regodon-harkness-imperial-dragon-sea-ancient.jpg?1623952534'>Wyrm</a>",
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/038/752/603/large/miguel-regodon-harkness-imperial-dragon-sea-ancient.jpg?1623952534'>Wyrm</a>",
                             "content" : "100+ years"
                         }
                     ]
@@ -1770,11 +1770,11 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Planescape",
+                            "heading" : "Planescape",
                             "content" : "Material"
                         },
                         {
-                            "title" : "Alignment",
+                            "heading" : "Alignment",
                             "content" : "Chaotic Evil"
                         }
                     ]
@@ -1783,19 +1783,19 @@
                     "overview_table_group_heading" : "Physiology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Breath Weapon",
+                            "heading" : "Breath Weapon",
                             "content" : "Absent"
                         },
                         {
-                            "title" : "Horns",
+                            "heading" : "Horns",
                             "content" : "Rearward Binary"
                         },
                         {
-                            "title" : "Wing Type",
+                            "heading" : "Wing Type",
                             "content" : "Conventional (Bat-like)"
                         },
                         {
-                            "title" : "Coloration",
+                            "heading" : "Coloration",
                             "content" : "Matte Ebony"
                         }
                     ]
@@ -1804,11 +1804,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Preferred Habitat",
+                            "heading" : "Preferred Habitat",
                             "content" : "Abandoned Urban Environments"
                         },
                         {
-                            "title" : "Preferred Prey",
+                            "heading" : "Preferred Prey",
                             "content" : "Urban fauna; rats, alligators, horses, people"
                         }
                     ]
@@ -1817,23 +1817,23 @@
                     "overview_table_group_heading" : "Life Cycle",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Gestation",
+                            "heading" : "Gestation",
                             "content" : "1 years"
                         },
                         {
-                            "title" : "Hatchling",
+                            "heading" : "Hatchling",
                             "content" : "0-1 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/036/970/215/large/miguel-regodon-harkness-pzo902104-young-umbra-dragon.jpg?1619111383'>Juvenile</a>",
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/036/970/215/large/miguel-regodon-harkness-pzo902104-young-umbra-dragon.jpg?1619111383'>Juvenile</a>",
                             "content" : "1-10 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/036/867/158/large/miguel-regodon-harkness-pzo902104-adult-umbra-dragon.jpg?1618851039'>Adult</a>",
+                            "heading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/036/867/158/large/miguel-regodon-harkness-pzo902104-adult-umbra-dragon.jpg?1618851039'>Adult</a>",
                             "content" : "10-100 years"
                         },
                         {
-                            "title" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/036/783/276/large/miguel-regodon-harkness-pzo902104-ancient-umbra-dragon.jpg?1618593695'>Wyrm</a>",
+                            "heading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/036/783/276/large/miguel-regodon-harkness-pzo902104-ancient-umbra-dragon.jpg?1618593695'>Wyrm</a>",
                             "content" : "100+ years"
                         }
                     ]
@@ -1856,11 +1856,11 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Planescape",
+                            "heading" : "Planescape",
                             "content" : "Material"
                         },
                         {
-                            "title" : "Alignment",
+                            "heading" : "Alignment",
                             "content" : "Neutral"
                         }
                     ]
@@ -1869,19 +1869,19 @@
                     "overview_table_group_heading" : "Physiology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Breath Weapon",
+                            "heading" : "Breath Weapon",
                             "content" : "Absent"
                         },
                         {
-                            "title" : "Horns",
+                            "heading" : "Horns",
                             "content" : "Rearward Binary"
                         },
                         {
-                            "title" : "Wing Type",
+                            "heading" : "Wing Type",
                             "content" : "Conventional (Bat-like)"
                         },
                         {
-                            "title" : "Coloration",
+                            "heading" : "Coloration",
                             "content" : "Dull Brown"
                         }
                     ]
@@ -1890,11 +1890,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Preferred Habitat",
+                            "heading" : "Preferred Habitat",
                             "content" : "Plateaus and Valleys"
                         },
                         {
-                            "title" : "Preferred Prey",
+                            "heading" : "Preferred Prey",
                             "content" : "Prairie fauna; antelope, rabbit"
                         }
                     ]
@@ -1903,23 +1903,23 @@
                     "overview_table_group_heading" : "Life Cycle",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Gestation",
+                            "heading" : "Gestation",
                             "content" : "1 years"
                         },
                         {
-                            "title" : "Hatchling",
+                            "heading" : "Hatchling",
                             "content" : "0-1 years"
                         },
                         {
-                            "title" : "<a target='blank' href=''>Juvenile</a>",
+                            "heading" : "<a target='blank' href=''>Juvenile</a>",
                             "content" : "1-10 years"
                         },
                         {
-                            "title" : "<a target='blank' href=''>Adult</a>",
+                            "heading" : "<a target='blank' href=''>Adult</a>",
                             "content" : "10-100 years"
                         },
                         {
-                            "title" : "<a target='blank' href=''>Wyrm</a>",
+                            "heading" : "<a target='blank' href=''>Wyrm</a>",
                             "content" : "100+ years"
                         }
                     ]
@@ -1942,11 +1942,11 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Planescape",
+                            "heading" : "Planescape",
                             "content" : "Material"
                         },
                         {
-                            "title" : "Alignment",
+                            "heading" : "Alignment",
                             "content" : "Neutral"
                         }
                     ]
@@ -1955,19 +1955,19 @@
                     "overview_table_group_heading" : "Physiology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Breath Weapon",
+                            "heading" : "Breath Weapon",
                             "content" : "Absent"
                         },
                         {
-                            "title" : "Horns",
+                            "heading" : "Horns",
                             "content" : "Rearward Binary"
                         },
                         {
-                            "title" : "Wing Type",
+                            "heading" : "Wing Type",
                             "content" : "Absent"
                         },
                         {
-                            "title" : "Coloration",
+                            "heading" : "Coloration",
                             "content" : "Varied"
                         }
                     ]
@@ -1976,11 +1976,11 @@
                     "overview_table_group_heading" : "Ecology",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Preferred Habitat",
+                            "heading" : "Preferred Habitat",
                             "content" : "Varied"
                         },
                         {
-                            "title" : "Preferred Prey",
+                            "heading" : "Preferred Prey",
                             "content" : "Varied"
                         }
                     ]
@@ -1989,23 +1989,23 @@
                     "overview_table_group_heading" : "Life Cycle",
                     "overview_table_group_data" : [
                         {
-                            "title" : "Gestation",
+                            "heading" : "Gestation",
                             "content" : "1 years"
                         },
                         {
-                            "title" : "Hatchling",
+                            "heading" : "Hatchling",
                             "content" : "0-1 years"
                         },
                         {
-                            "title" : "<a target='blank' href=''>Juvenile</a>",
+                            "heading" : "<a target='blank' href=''>Juvenile</a>",
                             "content" : "1-10 years"
                         },
                         {
-                            "title" : "<a target='blank' href=''>Adult</a>",
+                            "heading" : "<a target='blank' href=''>Adult</a>",
                             "content" : "10-100 years"
                         },
                         {
-                            "title" : "<a target='blank' href=''>Wyrm</a>",
+                            "heading" : "<a target='blank' href=''>Wyrm</a>",
                             "content" : "100+ years"
                         }
                     ]
