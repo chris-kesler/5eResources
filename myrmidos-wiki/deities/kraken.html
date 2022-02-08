@@ -17,41 +17,38 @@
           var page = window.location.pathname.split("/").pop();
     
           // Reading data from our JSON file
-          $.getJSON(`../../planescapes.json`, function(data) {
+          $.getJSON(`/myrmidos-wiki/deities.json`, function(data) {
     
             // Looping through the JSON data 
             $.each(data.entries, function(i, f) {
               if((f.deity.toLowerCase() + ".html") == page) {
 
-                // Determining additional variables based on data given in JSON
-                if(f.element == "Water" || f.element == "Earth" || f.element == "Fire" || f.element == "Air") {
-                  var plane_type = "Primal Elemental Plane";
-                  var deity_type = "Titan";
-                  var deity_title = "Elemental Titan";
-                } else if(f.element == "Ooze" || f.element == "Ice" || f.element == "Magma" || f.element == "Ash") {
-                  var plane_type = "Quasi Elemental Plane";
-                  var deity_type = "God";
-                  var deity_title = "Greater Deity";
-                } else {
-                  var plane_type = "---";
-                  var deity_type = "---";
-                  var deity_title = "---";
-                }
+                var element = "---";
+                // Looping through the planes file for relevant associations
+                $.getJSON(`/myrmidos-wiki/planes.json`, function(data) {
+    
+                    // Looping through the JSON data 
+                    $.each(data.entries, function(z, y) {
+                        if(y.associated_deity == f.deity) {
+                            element = y.planar_element;
+                            document.getElementById("entry-page-overview-table-image-source").innerHTML = f.deity_type_formal + " of " + element;
+                        } 
+                    });
+                });
 
                 // Populating the page titles
                 document.getElementById("common-page-header-title").innerHTML = "Myrmidos Wiki:  Deities > " + f.deity;
-                document.getElementById("common-page-content-title").innerHTML = f.deity + ", " + deity_title + " of " + f.plane;
+                document.getElementById("common-page-content-title").innerHTML = f.deity + ", " + f.deity_title;
     
                 // Populating the page description 
                 document.getElementById("common-page-description").innerHTML = f.deity_description;
-                document.getElementById("common-page-back-button").innerHTML = "Out to " + deity_type + "s";    
+                document.getElementById("common-page-back-button").innerHTML = "Out to Deities";    
     
                 // Populating the page table image and title
                 document.getElementById("entry-page-overview-table-image").src = f.deity_img;
-                document.getElementById("entry-page-overview-table-image-source").innerHTML = deity_type + " of " + f.element;
                 document.getElementById("entry-page-overview-table-image-source").href = f.deity_img;
                 document.getElementById("wiki-page-table-title").innerHTML = f.deity;
-                document.getElementById("wiki-page-table-subtitle").innerHTML = deity_title;
+                document.getElementById("wiki-page-table-subtitle").innerHTML = f.deity_title;
     
                 // Populating deity followers
                 document.getElementById("wiki-page-table-titles").innerHTML = f.deity_titles;
@@ -97,7 +94,7 @@
                 <section class="common-page-content-section">
         
                 <!-- A back button that navigates out in the file structure  -->
-                <button id="common-page-back-button" onclick = "location.href='../titans.html'"></button>
+                <button id="common-page-back-button" onclick = "location.href='../deities.html'"></button>
         
                 <!-- The title of the page content, including the source as a link -->
                 <h2 id="common-page-content-title"></h2>

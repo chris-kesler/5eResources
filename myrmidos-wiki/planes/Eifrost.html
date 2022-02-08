@@ -16,7 +16,7 @@
       var page = window.location.pathname.split("/").pop();
 
       // Reading data from our JSON file
-      $.getJSON(`../planescapes.json`, function(data) {
+      $.getJSON(`/myrmidos-wiki/planes.json`, function(data) {
 
         // Looping through the JSON data 
         $.each(data.entries, function(i, f) {
@@ -24,16 +24,16 @@
 
             // Populating the page titles
             document.getElementById("common-page-header-title").innerHTML = "Myrmidos Wiki:  Planes > " + f.plane;
-            document.getElementById("common-page-content-title").innerHTML = f.plane + ", Elemental Plane of " + f.element;
+            document.getElementById("common-page-content-title").innerHTML = f.plane + ", Elemental Plane of " + f.planar_element;
 
             // Populating the page description 
             document.getElementById("common-page-description").innerHTML = f.plane_description;
 
             // Determining additional variables based on data given in JSON
-            if(f.element == "Water" || f.element == "Earth" || f.element == "Fire" || f.element == "Air") {
+            if(f.planar_element == "Water" || f.planar_element == "Earth" || f.planar_element == "Fire" || f.planar_element == "Air") {
               var plane_type = "Primal Elemental Plane";
               var deity_type = "Titan";
-            } else if(f.element == "Ooze" || f.element == "Ice" || f.element == "Magma" || f.element == "Ash") {
+            } else if(f.planar_element == "Ooze" || f.planar_element == "Ice" || f.planar_element == "Magma" || f.planar_element == "Ash") {
               var plane_type = "Quasi Elemental Plane";
               var deity_type = "God";
             } else {
@@ -43,27 +43,27 @@
 
             // Populating the page table image and title
             document.getElementById("entry-page-overview-table-image").src = f.plane_img;
-            document.getElementById("entry-page-overview-table-image-source").innerHTML = "Elemental Plane of " + f.element;
+            document.getElementById("entry-page-overview-table-image-source").innerHTML = "Elemental Plane of " + f.planar_element;
             document.getElementById("entry-page-overview-table-image-source").href = f.plane_img;
             document.getElementById("wiki-page-table-title").innerHTML = f.plane;
             document.getElementById("wiki-page-table-subtitle").innerHTML = plane_type;
 
             // Populating planar associations
-            document.getElementById("wiki-page-table-position").innerHTML = f.position;
-            document.getElementById("wiki-page-table-school").innerHTML = f.school;
-            document.getElementById("wiki-page-table-school").href = "/myrmidos-wiki/magic/schools-of-magic/" + f.school.toLowerCase() + "-magic.html";
-            document.getElementById("wiki-page-table-alignment").innerHTML = f.alignment;
+            document.getElementById("wiki-page-table-position").innerHTML = f.planar_position;
+            document.getElementById("wiki-page-table-school").innerHTML = f.associated_school;
+            document.getElementById("wiki-page-table-school").href = "/myrmidos-wiki/magic/schools-of-magic/" + f.associated_school.toLowerCase() + "-magic.html";
+            document.getElementById("wiki-page-table-alignment").innerHTML = f.associated_alignment;
 
             // Populating planar inhabitants
-            document.getElementById("wiki-page-table-deity").innerHTML = f.deity;
-            document.getElementById("wiki-page-table-deity").href = "/myrmidos-wiki/deities/" + deity_type.toLowerCase() + "s/" + f.deity.toLowerCase() + ".html";
-            document.getElementById("wiki-page-table-natives").innerHTML = f.natives;
-            document.getElementById("wiki-page-table-factions").innerHTML = f.factions;
+            document.getElementById("wiki-page-table-deity").innerHTML = f.associated_deity;
+            document.getElementById("wiki-page-table-deity").href = "/myrmidos-wiki/deities/" + deity_type.toLowerCase() + "s/" + f.associated_deity.toLowerCase() + ".html";
+            document.getElementById("wiki-page-table-natives").innerHTML = f.associated_creatures;
+            document.getElementById("wiki-page-table-factions").innerHTML = f.associated_factions;
 
             // Populating planar attributes
-            document.getElementById("wiki-page-table-topography").innerHTML = f.topography;
-            document.getElementById("wiki-page-table-gravity").innerHTML = f.gravity;
-            document.getElementById("wiki-page-table-time").innerHTML = f.time;
+            document.getElementById("wiki-page-table-topography").innerHTML = f.planar_topography;
+            document.getElementById("wiki-page-table-gravity").innerHTML = f.planar_gravity;
+            document.getElementById("wiki-page-table-time").innerHTML = f.planar_time;
 
           }
         });

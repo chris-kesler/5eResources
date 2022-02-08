@@ -1,0 +1,173 @@
+{
+    "entries" : [
+        {
+            "deity" : "Frydeia",
+            "deity_type_informal" : "God",
+            "deity_type_formal" : "Greater Deity",
+            "deity_title" : "Arbiter of Law",
+            "deity_img" : "https://upload.wikimedia.org/wikipedia/commons/1/1b/Les_images_des_dievx_des_anciens_-_contenans_les_idoles%2C_covstvmes%2C_ceremonies%2C_and_autres_choses_appartenans_%C3%A0_la_religion_des_payens_%281581%29_%2814560495887%29.jpg",
+            "deity_description" : "The Goddess of Ice and Honor is also known as the Arbiter of all Law. She helped forge the Edict during The Binding of the Lesser Deities, and oversees its observation in the mortal world. When the Edict is crossed, Frydeia does her part to dole judgment as she sees fit so that the Edict need not balance the offense itself. This is to avoid absolute catastrophe, since the Edict is raw power. That isn't say that Frydeia is merciful by mortal standards; she has had entire kingdoms put to the blade when a noble is being especially stubborn. Because of this, some believe that the Edict would resolve things in a kinder way than Frydeia does, and her intervention is solely for her own enjoyment. These rumors have not been shown to bother the Arbiter or her followers in the past.            <br><br>The Sigil of Frydeia is a downwards sword whose guard forms the arms of a merchant's scale. The favored form of Frydeia is that of a knight with a crystalline carapace.            <br><br>The Arbiter rules over the plane of Ice, which is home to the Contructs. These beings the mechanical denizens created and powered by Frydeia's psionic abilities.            <br><br>The Arbiter commands a strict religious sect of followers who seek to assist any nation in maintaining order. While the Arbiter herself does not condemn evilness as long as order is maintained, the organization has adopted its own additional standards that focus on peace, diplomacy, and violent intervention only when no other reasonable option presents itself. This group is known as the Magistrate, and its members are known as Magisters. Their ranks include mostly gishes such as Bladesingers and Twilight Clerics, but also War Magic Wizards and Peace Clerics. They exist outside of any nation's jurisdiction.            ",
+
+            "deity_titles" : "Goddess of Ice<br>Crystal Queen<br>Mother of Creeds<br>The Honored One",
+            "deity_symbol" : "A set of merchant scales hung from the guard of a downturned sword",
+            "deity_worshippers" : "Knights<br>Priests<br>Nobles",
+
+            "deity_alignment" : "Lawful Neutral",
+            "deity_portfolio" : "Honor<br>Tradition<br>Creed",
+            "deity_domains" : "War, Peace, Grave, Twilight, Order, Knowledge",
+
+            "deity_animals" : "Arctic Cat<br>Arctic Roc",
+            "deity_monsters" : "Ice Elementals<br>Water Elementals<br>Air Elementals<br>Celestials<br>White Dragons",
+            "deity_colors" : "White, Aqua, Teal, Platinum"
+
+        },
+        {
+            "deity" : "Gondarin",
+            "deity_type_informal" : "God",
+            "deity_type_formal" : "Greater Deity",
+            "deity_title" : "All-Father",
+
+            "deity_img" : "https://upload.wikimedia.org/wikipedia/commons/2/28/The_Mythology_of_all_races_%281918%29_%2814742406276%29.jpg",
+            "deity_description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque condimentum ut neque at malesuada. Quisque mattis vel lorem eget venenatis. Sed cursus dui vel orci cursus hendrerit. Quisque in arcu pretium, laoreet est quis, tincidunt enim. In tincidunt viverra quam, pharetra vestibulum neque porta nec. Ut eu volutpat orci, quis pretium ligula. Aliquam in nibh lorem. Proin id semper nibh. In pulvinar lacus nec velit euismod placerat. In non congue lacus, eu pharetra elit. Praesent id lorem in nunc venenatis congue. Quisque suscipit tempus commodo. Morbi diam quam, rutrum in venenatis sed, pulvinar nec justo. Sed fermentum posuere ligula, sit amet venenatis felis varius in. In imperdiet mollis scelerisque. Phasellus id eleifend felis, ut aliquam arcu.",
+
+            "deity_titles" : "God of Magma<br>Forge Master<br>All-Father<br>The First Artisan",
+            "deity_symbol" : "Brass Hammer",
+            "deity_worshippers" : "Engineers<br>Smiths<br> Miners<br>Dwarves<br>Fiends<br>Demons",
+
+            "deity_alignment" : "Chaotic Neutral",
+            "deity_portfolio" : "Creation<br>Invention<br>Expression",
+            "deity_domains" : "Forge<br>War<br>Arcana<br>Trickery",
+
+            "deity_animals" : "Brass Elephant<br>Magma Wyrm",
+            "deity_monsters" : "Magma Elementals<br>Fire Elementals<br>Earth Elementals<br>Fiends<br>Brass Dragon",
+            "deity_colors" : "Brass, Silver, Obsidian, Red, Black"
+
+        },
+        {
+            "deity" : "Deliklese",
+            "deity_type_informal" : "God",
+            "deity_type_formal" : "Greater Deity",
+            "deity_title" : "All-Mother",
+
+            "deity_img" : "https://upload.wikimedia.org/wikipedia/commons/c/cb/Greek_mythology_systematized_%281880%29_%2814559602149%29.jpg",
+            "deity_description" : "The Goddess of Ooze and Life is also known as the All-Mother. She is considered to be the only truly benevolent deity of the four. The All-Mother is gentle, generous, and understanding in most cases, but she and her followers have shown remarkable zeal when taking up arms in the defense of goodness.  ",
+
+            "deity_titles" : "Goddess of Ooze<br>Life-Giver<br>All-Mother<br>The Merciful One",
+            "deity_symbol" : "Melting Flower",
+            "deity_worshippers" : "Druids<br>Hunters<br>Farmers",
+
+            "deity_alignment" : "Neutral Good",
+            "deity_portfolio" : "Beauty<br>Pleasure<br>Freedom",
+            "deity_domains" : "Nature<br>Life<br>Grave",
+
+            "deity_animals" : "Deer<br>Toad<br>Alligator",
+            "deity_monsters" : "Ooze Elementals<br>Water Elementals<br>Earth Elementals<br>Beasts<br>Green Dragons",
+            "deity_colors" : "Green, Brown, Pink, Yellow"
+        },
+        {
+            "deity" : "Sebabos",
+            "deity_type_informal" : "God",
+            "deity_type_formal" : "Greater Deity",
+            "deity_title" : "The Dark Adversary",
+
+            "deity_img" : "https://upload.wikimedia.org/wikipedia/commons/c/c4/Phoenix_%281583%29.svg",
+            "deity_description" : "The God of Ash and Death is also known as the Phoenix since this is his chosen avatar.  He may be immortal himself, but he chose to adopt this form of his own volition.  By collaborating with Gondarin, Sebabos created the Phoenix as a creature with the ability to recycle its own life forces.  This was made as a mockery of his lover's domain of life and death.  The meaning behind this act is still a matter of debate.  <br><br>Sebabos is Neutral Evil in that he brings the prolonging of suffering whenever he can, but that is not to say he reigns mayhem whenever he can.  He remains utterly detached from mortal affairs, but happily tricks and beguils mortals whenever the opportunity presents itself.  He relishes suffering that is brought about by one's own actions, only intervening in a literal sense in the most enticing of circumstances.  <br><br>Sebabos is deeply in love with Deliklese, and continually gifts her with reaped souls from mortals he has won and swindled.  <br><br>While Sebabos is accurately referred to as a Deceiver and Reaper, he does not prefer to wield a scythe as some pagan interpretations depict.  Sebabos' preferred weapon and tool is that of a black bladed axe akin to a headsman, with discreet golden insets. He dislikes all color save for the sheen of gold, and many legends tell of those who have bought extra weeks or months of life with their vast fortunes.  ",
+
+            "deity_titles" : "God of Ash<br>Lord of Death<br>Grim Reaper<br>The Deceiver",
+            "deity_symbol" : "Grey Phoenix holding a black and gold axe",
+            "deity_worshippers" : "Undertakers<br>Cultists<br>Cannibals<br>Liches",
+
+            "deity_alignment" : "Neutral Evil",
+            "deity_portfolio" : "Suffering<br>Betrayal<br>Deception",
+            "deity_domains" : "Death<br>Light<br>Twilight<br>Trickery",
+
+            "deity_animals" : "None",
+            "deity_monsters" : "Ash Elementals<br>Fire Elementals<br>Air Elementals<br>Undead<br>Shadow Dragons",
+            "deity_colors" : "Grey, Gold, Black"
+        },
+        {
+            "deity" : "Tempest",
+            "deity_type_informal" : "Titan",
+            "deity_type_formal" : "Elemental Titan",
+            "deity_title" : "Skyborn",
+
+            "deity_img" : "https://upload.wikimedia.org/wikipedia/commons/2/21/Roc_1.jpg",
+            "deity_description" : "Tempest is the Elemental Titan of Caelar, having adapted to a fully airborne.  Tempest is an archaic celestial entity, preferring to take the form of an avian whose closest living relatives are Rocs and Dire Eagles.            ",
+
+            "deity_titles" : "Skyborn",
+            "deity_symbol" : "An eagle shrouded in lightning",
+            "deity_worshippers" : "The Talons of Caelar",
+
+            "deity_alignment" : "Neutral",
+            "deity_portfolio" : "NA",
+            "deity_domains" : "Tempest",
+
+            "deity_animals" : "Thunder Roc",
+            "deity_monsters" : "Air Elementals",
+            "deity_colors" : "White, Grey, Violet, Cyan"
+        },
+        {
+            "deity" : "Averdeus",
+            "deity_type_informal" : "Titan",
+            "deity_type_formal" : "Elemental Titan",
+            "deity_title" : "Fireborn",
+
+            "deity_img" : "https://upload.wikimedia.org/wikipedia/commons/c/c6/Little_folks_in_feathers_and_fur%2C_and_others_in_neither_%281875%29_%2814597486550%29.jpg",
+            "deity_description" : "Averdeus is the Elemental Titan of Ignar, having adapted to a blistering environment.  Averdeus is a shapeshifting demonic entity, preferring to combine the most frightening aspects of insects, arachnids, and serpents in his forms.  Many scholars have concluded that Averdeus is his most typical form is both arachnid and insect, but the inclusion of serpent as a subtype of reptile is often the topic of debate.  Averdeus' closest relatives are Dire Scorpions and Dire Wasps.            ",
+
+            "deity_titles" : "Fireborn",
+            "deity_symbol" : "A scorpion wreathed in flames",
+            "deity_worshippers" : "The Pincers of Ignar",
+
+            "deity_alignment" : "Neutral",
+            "deity_portfolio" : "NA",
+            "deity_domains" : "Fire",
+
+            "deity_animals" : "Spider Snake",
+            "deity_monsters" : "Fire Elementals",
+            "deity_colors" : "Red, Orange, Gold, Black"
+        },
+        {
+            "deity" : "Tarrasque",
+            "deity_type_informal" : "Titan",
+            "deity_type_formal" : "Elemental Titan",
+            "deity_title" : "Earthborn",
+
+            "deity_img" : "https://upload.wikimedia.org/wikipedia/commons/7/7d/Gravure_de_la_Tarasque.png",
+            "deity_description" : "The Tarrasque is the Elemental Titan of Terral, having adapted to a subterranean environment.  The Tarrasque is a bestial monstrous entity, preferring to combine the most physically powerful elements of both reptiles and mammals in his forms.  Many scholars have concluded that the Tarrasque is his most typical form is both reptilian and mammalian, but the ratios involved are less clear.  The closest living relatives to the Tarrasque are the Armadillo and the Tyrannosaurus",
+
+            "deity_titles" : "Earthborn",
+            "deity_symbol" : "A sleeping reptile with a mountain atop its back",
+            "deity_worshippers" : "The Horns of Terral",
+
+            "deity_alignment" : "Neutral",
+            "deity_portfolio" : "NA",
+            "deity_domains" : "Earth",
+
+            "deity_animals" : "Zaratan",
+            "deity_monsters" : "Earth Elementals",
+            "deity_colors" : "Brown, Tan, Orange, Black"
+        },
+        {
+            "deity" : "Kraken",
+            "deity_type_informal" : "Titan",
+            "deity_type_formal" : "Elemental Titan",
+            "deity_title" : "Seaborn",
+
+            "deity_img" : "https://upload.wikimedia.org/wikipedia/commons/0/00/PSM_V14_D360_Octopus_or_devil_fish_octopus_vulgaris.png",
+            "deity_description" : "The Kraken is the Elemental Titan of Aquar, having adapted to a dark aquatic environment.  The Kraken is a massive aberrant entity, preferring to combine the most alien aspects of cephalopods and fish in her forms.  Many scholars have concluded that the Kraken is her most typical form is both cephalopod and fish--specifically shark--but few can agree on the exact ratio involved.  ",
+
+            "deity_titles" : "Waterborn",
+            "deity_symbol" : "Tentacles pulling a sailing ship below the water",
+            "deity_worshippers" : "The Tentacles of Aquar",
+
+            "deity_alignment" : "Neutral",
+            "deity_portfolio" : "NA",
+            "deity_domains" : "Water",
+
+            "deity_animals" : "Dire Squid",
+            "deity_monsters" : "Water Elementals",
+            "deity_colors" : "Blue, Teal, Navy"
+        }
+    ]
+}

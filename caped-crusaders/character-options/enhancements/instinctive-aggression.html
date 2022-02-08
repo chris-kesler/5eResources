@@ -186,7 +186,7 @@
               document.getElementById("common-page-content-title").innerHTML = f.name_str;
               document.getElementById("common-page-description-flavor").innerHTML = "<b>Flavor Description:</b>  <i>" + f.flavor_str + "</i>";
               document.getElementById("common-page-description-mechanics").innerHTML = "<b>Standard Mechanics:</b>  " + f.mechanics_str;
-              document.getElementById("casting-page-image").src = f.school_img;
+              document.getElementById("casting-page-image").src = f.associated_school_img;
               var tblRow1 = "<tr><th style='width: 20vw'>Level</th><th style='width: 20vw'>School</th><th style='width: 20vw'>Damage/Effect</th></tr>"
               $(tblRow1).appendTo("#TechTable tbody");
               var tblRow2 = "<tr>" 
