@@ -9,8 +9,37 @@
             "img_linked" : "https://cdna.artstation.com/p/assets/images/images/036/867/138/large/miguel-regodon-harkness-pzo2104-adult-cloud-dragon.jpg?1618851020",
             "img_linked_source" : "https://www.artstation.com/artwork/9malJq",
 
-            "entry_description" : "Azure Dragons are lofty and distant, valuing knowledge and relishing trickery.  ",
+            "entry_description_overview" : "The Azure Dragons are cunning and treacherous creatures, interested only in the advancement of the pagan sects they construct around themselves.",
+            "entry_description_library" : [
+                {
+                    "title" : "Description and Appearance",
+                    "content" : "Azure Dragons have vibrant cerulean scales mottled with faint white and grey tints, allowing them to blend into the sky when flying.  They have pale ivory underbellies, horns, wing membrane, forelimbs, and hindlimbs.  Their snouts were short and broad, resembling bovine cattle.  They posessed two sets of horns; one pair curving and upwards akin to a bull or demon, the other hooking forward akin to a boar or elephant.  "
+                },
+                {
+                    "title" : "Personality and Behavior",
+                    "content" : "Azure Dragons value their influence and reverance above all, constantly seeking to gain new followers.  Azure Dragons relish hymnal music of the religious and ominous variety, and resent academic skepticism.  The wrath of an Azure Dragon is often brought about by posing academic inquiries or challenges of doctrine it holds dear.  "
+                },
+                {
+                    "title" : "Combat Tactics",
+                    "content" : "Azure Dragons rely on their Lightning Breath whenever they can, eager to show their awesome power.  They deal with foes who survive or avoid the initial blast by goring them with their horns.  If the target is particularly resilient, the Azure Dragon will hide in the clouds or sky while swooping down for additional Lightning Breath and gore attacks.  If clearly outmatched or grievously wounded, the Azure Dragon will close with a final Lightning Breath attack for good measure before lurking in the sky.  Their foes are often waiting for another swooping attack, which never comes.  "
+                },
+                {
+                    "title" : "Social Behavior",
+                    "content" : "The Azure Dragons are cunning and treacherous, only treating their loyal acolytes with any respect or fairness.  Azure Dragons are the most active of the dragons regarding religious groups that consider dragons divine, gladly enjoying whatever praise and offerings they may have for them.  They are also all too eager to inspire zealouts to spread their doctrine and recruit new converts.  Due to this, Azure Dragon cults make up the largest religious demographic outside the Pantheon of the Eight.",
+                    "sublibrary" : [
+                        {
+                            "title" : "Lair",
+                            "content" : "Azure Dragons adorn their lairs like epic cathedrals at the absolute peak of the highest mountain in their territory. They treasure religious texts, especially those containing hymns.  They hold services in their lair daily with the most high ranking members of the cult, often including a great deal of ominous music that resonates deeply with Azure Dragons.  All but the smallest lairs have sleeping quarters at the edges for the highest ranking acolytes, with the main chamber having pews and swooping glass murals akin to a cathedral.  Below the glass mural and behind the altar and pulpit, a large smooth dais serves as the resting place of the Azure Dragon.  The dragon remains there both during services and while sleeping.  "
+                        },
+                        {
+                            "title" : "Habitat",
+                            "content" : "Azure Dragons loathe oceans and flat land.  They often roam far and wide to find the steepest mountain range they can, but enough elevation can make up for a flatter mountain.  Azure Dragons compete for mountaintops, with the largest and oldest claiming the tallest mountains.  They hunt elk, yetis, moose, bears, foxes, and all other varities of mountain fauna.  Azure Dragons also enjoy berries and even flowers, being one of the few omnivorous dragons.  While they resent oceans, they have been known to tolerate streams and lakes long enough to hunt fish, dolphins, and in some cases, whales.  "
+                        }
 
+                    ]
+                }
+            ],
+            
             "overview_table_groups" : [
                 {
                     "overview_table_group_heading" : "Associations",
@@ -25,7 +54,7 @@
                         },
                         {
                             "title" : "Values",
-                            "content" : "Knowledge, Penitence"
+                            "content" : "Religion and Music"
                         }
                     ]
                 },
@@ -102,7 +131,36 @@
             "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/032/538/923/large/miguel-regodon-harkness-pzo2102-adult-red-dragon-copia.jpg?1606753019",
             "img_linked_source" : "https://www.artstation.com/artwork/v2yNmO",
 
-            "entry_description" : "Crimson Dragons are notably egotistical, even among dragons.  They prefer to enslave and berate mortals of all kinds, demanding their reverance and zealous servitude.  They typically pillage seeking great treasures and materials to adorn their lair in their own honor.  ",
+            "entry_description_overview" : "Crimson Dragons are notably egotistical, even among dragons. They value blood and honor above all. Crimson Dragons prefer to enslave and berate mortals of any kind, but usually avoid the arctic and aquatic races due to locational limitations. ",
+            "entry_description_library" : [
+                {
+                    "title" : "Description and Appearance",
+                    "content" : "Crimson Dragons have deep blood red scales covering almost the entirety of their bodies, with the scales of the underbelly being only a shade or two lighter.  Crimson Dragons have fearsome horn structures, with clusters of barbs lining their spine from the neck to the base of the tail.  Starting at the tail, they have a pair of microfanes extending to either side that are very sharp.  "
+                },
+                {
+                    "title" : "Personality and Behavior",
+                    "content" : "Crimson Dragons find a great deal of joy in witnessing conflict, having been known to circle above raging battles as spectators. They often force their subjects to fight one another for a myriad of reasons, and almost always to the death.  "
+                },
+                {
+                    "title" : "Combat Tactics",
+                    "content" : "Scholars have theorized that these microfanes assists in flight stability, but they are seen most often used to slash open their foes with tail attacks.  Crimson Dragons relish good battles, eagerly clashing with foes that are capable of going toe to toe with them.  They often treat the battle like a game, only using select tools at their disposal and increasing the challenge for their foe as time progresses.  When faced with overwhelming force, a Crimson Dragon will avoid fighting in the first place.  However, once engaged, Crimson Dragons will fight to the death and die satisfied knowing they fought honorably.  The exceptionally rare Crimson Dragons who do retreat from a fight are often hunted down by posses of other Crimson Dragons who heard the tale, ripping them to pieces in a bloood fueled rage.  Crimson Dragons consider themselves the superior species, and will not tolerate dishonor from their own kind.  "
+                },
+                {
+                    "title" : "Social Behavior",
+                    "content" : "Crimson Dragons demand obedience and perfection from their subjects, dealing harsh punishments for even the slightest insult or mistake.  Crimson Dragons enjoy laughing, and as a result, keep a jester nearby at all times within their lair. There is only one jester at any given time, and each jester is selected from the Dragon's subjects. It is the second most respected position in the hierarchy, though not a desireable one. Crimson Dragons grow bored of their jesters rather quickly, burning them alive when they are no longer amusing.",
+                    "sublibrary" : [
+                        {
+                            "title" : "Lair",
+                            "content" : "  Crimson Dragons enjoy pillaging wealthy kingdoms and kidnapping artisans of all kinds. They typically raze and steal seeking great treasures and materials of high quality and wealth. The artisans are usually conscripted to great a great work in their lord's honor, such as a statue, mural, or epic poem. As a result, an older Crimson Dragon's lair is very much like a shrine to itself.  "
+                        },
+                        {
+                            "title" : "Habitat",
+                            "content" : "Crimson Dragons prefer to live in the heart of scorching deserts far from oceans and water sources.  They have a remarkable ability to survive with minimal liquid intake, most never needing additional moisture beyond that which they get from their food.  "
+                        }
+
+                    ]
+                }
+            ],
 
             "overview_table_groups" : [
                 {
@@ -118,7 +176,7 @@
                         },
                         {
                             "title" : "Values",
-                            "content" : "Power, Domination"
+                            "content" : "Power and Honor"
                         }
                     ]
                 },
@@ -192,7 +250,7 @@
             "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/036/867/147/large/miguel-regodon-harkness-pzo2104-adult-crystal-dragon.jpg?1618851025",
             "img_linked_source" : "https://www.artstation.com/artwork/9malJq",
 
-            "entry_description" : "Gemstone Dragons are mysterious and inscrutinable.  They live the vast majority of their lives underground, carving massive subterranean lairs with sprawling networks of caves.  ",
+            "entry_description_overview" : "Gemstone Dragons are mysterious and inscrutinable.  They live the vast majority of their lives underground, carving massive subterranean lairs with sprawling networks of caves.  ",
 
             "overview_table_groups" : [
                 {
@@ -282,7 +340,7 @@
             "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/036/867/133/large/miguel-regodon-harkness-pzo2104-adult-birne-dragon.jpg?1618851015",
             "img_linked_source" : "https://www.artstation.com/artwork/9malJq",
 
-            "entry_description" : "Turquoise Dragons are especially fearsome, preying on coastal civilizations and seafaring vessels alike.  They greatly prefer to enslave aquatic mortals, but even that is a rare occurence.  Turquoise Dragons are voracious and aggressive, likely due to the large number of comparable threats that the seas contain compared to other environments.  They typically decorate their lair with sunken vessels and the corpses of their mightiest foes.  ",
+            "entry_description_overview" : "Turquoise Dragons are especially fearsome, preying on coastal civilizations and seafaring vessels alike.  They greatly prefer to enslave aquatic mortals, but even that is a rare occurence.  Turquoise Dragons are voracious and aggressive, likely due to the large number of comparable threats that the seas contain compared to other environments.  They typically decorate their lair with sunken vessels and the corpses of their mightiest foes.  ",
 
             "overview_table_groups" : [
                 {
@@ -375,7 +433,7 @@
             "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/032/538/925/large/miguel-regodon-harkness-pzo2102-adult-white-dragon-copia.jpg?1606753023",
             "img_linked_source" : "https://www.artstation.com/artwork/v2yNmO",
 
-            "entry_description" : "Alabaster Dragons are arguably the most sadistic of the dragons.  They enslave mortals on occasion, but never retain them for long.  The brutally cold temperatures inside an Alabaster Dragons lair makes certain of that.  Alabaster Dragons find great joy in watching their subjects slowly freeze to death, adorning their lair with frozen statues and inset displays of their defeated foes and prior minions encased in ice.  ",
+            "entry_description_overview" : "Alabaster Dragons are arguably the most sadistic of the dragons.  They enslave mortals on occasion, but never retain them for long.  The brutally cold temperatures inside an Alabaster Dragons lair makes certain of that.  Alabaster Dragons find great joy in watching their subjects slowly freeze to death, adorning their lair with frozen statues and inset displays of their defeated foes and prior minions encased in ice.  ",
 
             "overview_table_groups" : [
                 {
@@ -468,7 +526,7 @@
             "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/032/538/917/large/miguel-regodon-harkness-pzo2102-adult-black-dragon-copia.jpg?1606753006",
             "img_linked_source" : "https://www.artstation.com/artwork/v2yNmO",
 
-            "entry_description" : "Umbral Dragons are detached and rationale, only showing or acting on emotion in exceptionally rare circumstances.  Their motivations are largely unknown, and they are often found meddling with mortal affairs from the inside.  It is not uncommon for an Umbral Dragon to set two things that are at odds with each other in motion, leaving many confused about their true motivations.  ",
+            "entry_description_overview" : "Umbral Dragons are detached and rationale, only showing or acting on emotion in exceptionally rare circumstances.  Their motivations are largely unknown, and they are often found meddling with mortal affairs from the inside.  It is not uncommon for an Umbral Dragon to set two things that are at odds with each other in motion, leaving many confused about their true motivations.  ",
 
             "overview_table_groups" : [
                 {
@@ -561,7 +619,7 @@
             "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/036/867/155/large/miguel-regodon-harkness-pzo2104-adult-magma-dragon.jpg?1618851035",
             "img_linked_source" : "https://www.artstation.com/artwork/9malJq",
 
-            "entry_description" : "Stygian Dragons are often mistaken for demons, both in their appearance and behaviors.  They are famously unpredictable, resentful of authority structures that they are not at the top of, and creatively cruel.  Many of them enslave demons and mortals alike, along with any other hapless being that might be unfortunate enough to meet them.  They often adorn their lairs with unique expressions of suffering, often including custom made mechanisms or living testaments.  Stygian Dragons are widely considered the most undesireable, and for good reason.  ",
+            "entry_description_overview" : "Stygian Dragons are often mistaken for demons, both in their appearance and behaviors.  They are famously unpredictable, resentful of authority structures that they are not at the top of, and creatively cruel.  Many of them enslave demons and mortals alike, along with any other hapless being that might be unfortunate enough to meet them.  They often adorn their lairs with unique expressions of suffering, often including custom made mechanisms or living testaments.  Stygian Dragons are widely considered the most undesireable, and for good reason.  ",
 
             "overview_table_groups" : [
                 {
@@ -651,7 +709,7 @@
             "img_linked" : "https://cdna.artstation.com/p/assets/images/images/032/538/922/large/miguel-regodon-harkness-pzo2102-adult-green-dragon-copia.jpg?1606753014",
             "img_linked_source" : "https://www.artstation.com/artwork/v2yNmO",
 
-            "entry_description" : "Viridian Dragons are revered by those who value nature, and are often incorporated in pagan religions.  Viridian Dragons keep to themselves and guard their chosen territory with relentless cunning and brutality.  They have been commonly known to allow nomads passage through their territory, and even allow hunters to stalk their territory if they are deemed worthy and respectful of the nature around them.  In many ways, Viridian Dragons are literal guardians of nature itself, behaving as ethical stewards of their land while living off of it.  Stories of Viridian Dragons that have saved herds of deer from raging dire crocodiles or feral therianthropes are not uncommon, with the dragon leaving the herd intact afterwards in most cases.  Their fearsome appearance and large menacing horn often provokes conflict with those who are unfamiliar with their nature, especially mercenaries or soldiers who are unknowingly trespassing.  ",
+            "entry_description_overview" : "Viridian Dragons are revered by those who value nature, and are often incorporated in pagan religions.  Viridian Dragons keep to themselves and guard their chosen territory with relentless cunning and brutality.  They have been commonly known to allow nomads passage through their territory, and even allow hunters to stalk their territory if they are deemed worthy and respectful of the nature around them.  In many ways, Viridian Dragons are literal guardians of nature itself, behaving as ethical stewards of their land while living off of it.  Stories of Viridian Dragons that have saved herds of deer from raging dire crocodiles or feral therianthropes are not uncommon, with the dragon leaving the herd intact afterwards in most cases.  Their fearsome appearance and large menacing horn often provokes conflict with those who are unfamiliar with their nature, especially mercenaries or soldiers who are unknowingly trespassing.  ",
 
             "overview_table_groups" : [
                 {
@@ -742,7 +800,7 @@
             "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/032/538/919/large/miguel-regodon-harkness-pzo2102-adult-blue-dragon-copia.jpg?1606753010",
             "img_linked_source" : "https://www.artstation.com/artwork/v2yNmO",
 
-            "entry_description" : "Cobalt Dragons are masters of knowledge and secrets, commonly revered in academic symbolism.  They often lend aid to nations and organizations known to possess large libraries, humbling requesting access in return for their services.  The lairs of Cobalt Dragons are the envy of learned mages across all lands, containing tomes acquired and meticulously maintained across thousands of years in some cases.  Many Cobalt Dragons are knowledgeable mages themselves, but they typically abhor the thought of using magic for violence.  ",
+            "entry_description_overview" : "Cobalt Dragons are masters of knowledge and secrets, commonly revered in academic symbolism.  They often lend aid to nations and organizations known to possess large libraries, humbling requesting access in return for their services.  The lairs of Cobalt Dragons are the envy of learned mages across all lands, containing tomes acquired and meticulously maintained across thousands of years in some cases.  Many Cobalt Dragons are knowledgeable mages themselves, but they typically abhor the thought of using magic for violence.  ",
 
             "overview_table_groups" : [
                 {
@@ -835,7 +893,7 @@
             "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/032/571/931/large/miguel-regodon-harkness-pzo2102-adult-gold-dragon.jpg?1606837456",
             "img_linked_source" : "https://www.artstation.com/artwork/xJ2Yo1",
 
-            "entry_description" : "Gold Dragons are often seen as the Kings of Dragons, and heavily associated with regality and nobility.  Gold Dragons are known for swift and vengeful retribution when an act of cruelty or barbarism is committed in their presence.  This extends across the entirety of their territory, sometimes creating small micro-societies within their territory that are governed only by the local dragon's justice.  ",
+            "entry_description_overview" : "Gold Dragons are often seen as the Kings of Dragons, and heavily associated with regality and nobility.  Gold Dragons are known for swift and vengeful retribution when an act of cruelty or barbarism is committed in their presence.  This extends across the entirety of their territory, sometimes creating small micro-societies within their territory that are governed only by the local dragon's justice.  ",
 
             "overview_table_groups" : [
                 {
@@ -925,7 +983,7 @@
             "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/032/571/925/large/miguel-regodon-harkness-pzo2102-adult-copper-dragon.jpg?1606837452",
             "img_linked_source" : "https://www.artstation.com/artwork/xJ2Yo1",
 
-            "entry_description" : "Copper Dragons are the least interested in mortal affairs of the metallic dragons, only intervening when the most catastrophic of events or injustices occur.  They keep to themselves in underground lairs, often collecting historical remnants of nations they have interacted with so as to preserve pieces of their culture.  While bored by the grand machinations of mortals, Copper Dragons are known to possess a deep longing for intimate and challenging conversation.  The mortals who do happen across Copper Dragons, both in their lair and elsewhere, are either dismissed as irrelevant and spoken with as briefly as possible to obtain the desired information, or, obsessively analyzed, questioned, and challenged in a civil battle of words and wits.  ",
+            "entry_description_overview" : "Copper Dragons are the least interested in mortal affairs of the metallic dragons, only intervening when the most catastrophic of events or injustices occur.  They keep to themselves in underground lairs, often collecting historical remnants of nations they have interacted with so as to preserve pieces of their culture.  While bored by the grand machinations of mortals, Copper Dragons are known to possess a deep longing for intimate and challenging conversation.  The mortals who do happen across Copper Dragons, both in their lair and elsewhere, are either dismissed as irrelevant and spoken with as briefly as possible to obtain the desired information, or, obsessively analyzed, questioned, and challenged in a civil battle of words and wits.  ",
 
             "overview_table_groups" : [
                 {
@@ -1011,7 +1069,7 @@
             "img_linked" : "https://cdna.artstation.com/p/assets/images/images/032/571/910/large/miguel-regodon-harkness-pzo2102-adult-bronce-dragon.jpg?1606837442",
             "img_linked_source" : "https://www.artstation.com/artwork/xJ2Yo1",
 
-            "entry_description" : "Bronze Dragons are extremely financially inclined and logistically focused.  They find a great deal of joy in tracking cargo shipments and reviewing warehouse stock levels.  Bronze Dragons usually procure treasure from sunken vessels and return it to the rigthful owner with fees for their service removed, allowing them to amass small fortunes that they then use to invest in seafaring cargo shipment companies.  You would be hard pressed to find a mercantile coster with seafaring vessels that doesn't have the financial backing of a Bronze Dragon.  While Bronze Dragons do value civility and order as any Metallic Dragon would, they hold a remarkably potent resentment for pirates.  Gold Dragons are widely considered the most brutal and vengeful of the Metallic Dragons, but accounts of Bronze Dragons razing pirate vessels certainly makes them a competitor for that title.  ",
+            "entry_description_overview" : "Bronze Dragons are extremely financially inclined and logistically focused.  They find a great deal of joy in tracking cargo shipments and reviewing warehouse stock levels.  Bronze Dragons usually procure treasure from sunken vessels and return it to the rigthful owner with fees for their service removed, allowing them to amass small fortunes that they then use to invest in seafaring cargo shipment companies.  You would be hard pressed to find a mercantile coster with seafaring vessels that doesn't have the financial backing of a Bronze Dragon.  While Bronze Dragons do value civility and order as any Metallic Dragon would, they hold a remarkably potent resentment for pirates.  Gold Dragons are widely considered the most brutal and vengeful of the Metallic Dragons, but accounts of Bronze Dragons razing pirate vessels certainly makes them a competitor for that title.  ",
 
             "overview_table_groups" : [
                 {
@@ -1097,7 +1155,7 @@
             "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/032/571/937/large/miguel-regodon-harkness-pzo2102-adult-silver-dragon.jpg?1606837462",
             "img_linked_source" : "https://www.artstation.com/artwork/xJ2Yo1",
 
-            "entry_description" : "Silver Dragons are the most interested in mortal affairs of all the dragons.  They often seek to offer council to rulers in government and judges in courts of law.  Silver Dragons utterly despise those who corrupt the legal system, having been known to publicly execute government officials who fail to uphold the oath they took.  Their lairs are often adorned with documents and organizational symbols, such as house crests or the statue that presided over a courthouse.  The treasure they value most of all are legislative documents from nations past, often spending hours poring over them and coming up with new ideas to present to the nobles they advise.  ",
+            "entry_description_overview" : "Silver Dragons are the most interested in mortal affairs of all the dragons.  They often seek to offer council to rulers in government and judges in courts of law.  Silver Dragons utterly despise those who corrupt the legal system, having been known to publicly execute government officials who fail to uphold the oath they took.  Their lairs are often adorned with documents and organizational symbols, such as house crests or the statue that presided over a courthouse.  The treasure they value most of all are legislative documents from nations past, often spending hours poring over them and coming up with new ideas to present to the nobles they advise.  ",
 
             "overview_table_groups" : [
                 {
@@ -1186,7 +1244,7 @@
             "img_linked" : "https://cdna.artstation.com/p/assets/images/images/032/571/920/large/miguel-regodon-harkness-pzo2102-adult-brass-dragon.jpg?1606837447",
             "img_linked_source" : "https://www.artstation.com/artwork/xJ2Yo1",
 
-            "entry_description" : "Brass Dragons are the most eccentric of the Metallic Dragons by a considerable margin.  They often insert themselves in mortal societies with a series of rotating interests, the most stable of which being art.  Brass Dragons fill their lairs with the most unique and potent works of art they can find, often treasuring their newest pieces most dearly.  They constantly redecorate and cycle through their collection to adorn their lair in different combinations from year to year, sometimes forgetting about pieces they own that are buried in the back of their storage chambers.  There have been relics from cultures thousands of years old found in Brass Dragon hoards, and they are just as prone to give it away as they are to defend it with their lives.  As unreliable as Brass Dragons may be, any city fortunate enough to find a Brass Dragon setting up permanent residence within its walls is sure to find itself much wealthier as it becomes a central hub of culture and expression.  ",
+            "entry_description_overview" : "Brass Dragons are the most eccentric of the Metallic Dragons by a considerable margin.  They often insert themselves in mortal societies with a series of rotating interests, the most stable of which being art.  Brass Dragons fill their lairs with the most unique and potent works of art they can find, often treasuring their newest pieces most dearly.  They constantly redecorate and cycle through their collection to adorn their lair in different combinations from year to year, sometimes forgetting about pieces they own that are buried in the back of their storage chambers.  There have been relics from cultures thousands of years old found in Brass Dragon hoards, and they are just as prone to give it away as they are to defend it with their lives.  As unreliable as Brass Dragons may be, any city fortunate enough to find a Brass Dragon setting up permanent residence within its walls is sure to find itself much wealthier as it becomes a central hub of culture and expression.  ",
 
             "overview_table_groups" : [
                 {
@@ -1272,7 +1330,7 @@
             "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/038/863/747/large/miguel-regodon-harkness-imperial-dragon-sovereign-adult.jpg?1624292613",
             "img_linked_source" : "https://www.artstation.com/artwork/8e3lAm",
 
-            "entry_description" : "The Dracofiend is the embodiment of Chaos, and supervises the proceedings that occur within Vulken.  The Dracofiend answers directly to Gondarin, with each new entity that takes up the mantle studying a form of art prodigiously.  Some of the most priceless and works in existence were created by the Dracofiend of their time.  ",
+            "entry_description_overview" : "The Dracofiend is the embodiment of Chaos, and supervises the proceedings that occur within Vulken.  The Dracofiend answers directly to Gondarin, with each new entity that takes up the mantle studying a form of art prodigiously.  Some of the most priceless and works in existence were created by the Dracofiend of their time.  ",
 
             "overview_table_groups" : [
                 {
@@ -1358,7 +1416,7 @@
             "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/038/863/741/large/miguel-regodon-harkness-imperial-dragon-sky-adult.jpg?1624292607",
             "img_linked_source" : "https://www.artstation.com/artwork/8e3lAm",
 
-            "entry_description" : "TBD",
+            "entry_description_overview" : "TBD",
 
             "overview_table_groups" : [
                 {
@@ -1447,7 +1505,7 @@
             "img_linked" : "https://cdna.artstation.com/p/assets/images/images/038/863/752/large/miguel-regodon-harkness-imperial-dragon-underworld-adult.jpg?1624292617",
             "img_linked_source" : "https://www.artstation.com/artwork/8e3lAm",
 
-            "entry_description" : "TBD",
+            "entry_description_overview" : "TBD",
 
             "overview_table_groups" : [
                 {
@@ -1533,7 +1591,7 @@
             "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/038/863/731/large/miguel-regodon-harkness-imperial-dragon-forest-adult.jpg?1624292598",
             "img_linked_source" : "https://www.artstation.com/artwork/8e3lAm",
 
-            "entry_description" : "TBD",
+            "entry_description_overview" : "TBD",
 
             "overview_table_groups" : [
                 {
@@ -1619,7 +1677,7 @@
             "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/038/863/737/large/miguel-regodon-harkness-imperial-dragon-sea-adult.jpg?1624292603",
             "img_linked_source" : "https://www.artstation.com/artwork/8e3lAm",
 
-            "entry_description" : "TBD",
+            "entry_description_overview" : "TBD",
 
             "overview_table_groups" : [
                 {
@@ -1705,7 +1763,7 @@
             "img_linked" : "https://cdna.artstation.com/p/assets/images/images/036/867/158/large/miguel-regodon-harkness-pzo902104-adult-umbra-dragon.jpg?1618851039",
             "img_linked_source" : "https://www.artstation.com/artwork/9malJq",
 
-            "entry_description" : "Drakkens are little more than six limbed wyverns, but seem to have retained a great deal of cunning that their draconid cousins do not.  ",
+            "entry_description_overview" : "Drakkens are little more than six limbed wyverns, but seem to have retained a great deal of cunning that their draconid cousins do not.  ",
 
             "overview_table_groups" : [
                 {
@@ -1791,7 +1849,7 @@
             "img_linked" : "",
             "img_linked_source" : "",
 
-            "entry_description" : "TBD",
+            "entry_description_overview" : "TBD",
 
             "overview_table_groups" : [
                 {
@@ -1877,7 +1935,7 @@
             "img_linked" : "",
             "img_linked_source" : "",
 
-            "entry_description" : "",
+            "entry_description_overview" : "",
 
             "overview_table_groups" : [
                 {

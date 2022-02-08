@@ -117,9 +117,42 @@
                   
               }
 
-              // Populating the page description text
-              document.getElementById("common-page-description").innerHTML = f.entry_description;
-              
+              // Populating the page description text using dynamic scripts that read json libraries
+
+              // Populating the page overview text
+              if (f.entry_description_overview != undefined) {
+                document.getElementById("common-page-description").innerHTML = "<p>" + f.entry_description_overview + "</p>";
+              }
+
+              // Checking if the page content library is present
+              if (f.entry_description_library != undefined) {
+
+                // Looping through all the library entries
+                for(var x = 0; f.entry_description_library.length > x; x++) {
+
+                  // Ensuring data exists
+                  if (f.entry_description_library[x].title != undefined && f.entry_description_library[x].content != undefined) {
+
+                    // Populating the heading and content
+                    document.getElementById("common-page-description").innerHTML += "<h3>" + f.entry_description_library[x].title + "</h3><p>" + f.entry_description_library[x].content + "</p>";
+
+                    // Checking for sublibrary
+                    if (f.entry_description_library[x].sublibrary != undefined) {
+
+                      // Looping through all entries
+                      for(var w = 0; f.entry_description_library[x].sublibrary.length > w; w++) {
+
+                        // Verifying content exists
+                        if (f.entry_description_library[x].sublibrary[w].title != undefined && f.entry_description_library[x].sublibrary[w].content != undefined) {
+
+                          // Populating subheading and content
+                          document.getElementById("common-page-description").innerHTML += "<h4>" + f.entry_description_library[x].sublibrary[w].title + "</h4><p>" + f.entry_description_library[x].sublibrary[w].content + "</p>";
+                        }
+                      }
+                    }
+                  }
+                }
+              }
             }
 
           });
@@ -164,7 +197,7 @@
             </table>
     
             <!-- A paragraph to hold the page content and descriptions -->
-            <p id="common-page-description"></p>
+            <div id="common-page-description"></div>
             </section>
         </div>
     
