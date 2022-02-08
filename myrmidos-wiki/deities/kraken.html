@@ -9,27 +9,35 @@
     <link rel="stylesheet" href="/caped-crusaders-style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
     <script>
-      $(function readJSON() {
-        // Reading data from our JSON file
-        $.getJSON(`../deities.json`, function(data) {
+      function capitalizeFirstLetter(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+      }
 
-          // Reading the name of this file
-          var page = window.location.pathname.split("/").pop();
+      $(function readJSON() {
+
+        // Reading the name of this file
+        var page_array = window.location.pathname.split("/");
+        var page_title = page_array.pop();
+        var page_category = page_array.pop();
+        var page_directory = page_array.pop();
+
+        // Reading data from our JSON file
+        $.getJSON(`/myrmidos-wiki/` + page_category + `.json`, function(data) {
 
           // Looping through the JSON data 
           $.each(data.entries, function(i, f) {
 
             // Finding the entry that matches this file
-            if (f.entry_name.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html" == page) {
+            if (f.entry_name.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html" == page_title) {
             
               // Populating the page title within the header
-              document.getElementById("common-page-header-title").innerHTML = "Myrmidos Wiki:  Deities";
+              document.getElementById("common-page-header-title").innerHTML = "Myrmidos Wiki:  " + capitalizeFirstLetter(page_category);
 
               // Populating the page title within the page content
               document.getElementById("common-page-content-title").innerHTML = f.entry_name;
 
               // Populating the page back button into the placeholder div
-              document.getElementById("common-page-back-button-holder").innerHTML = "<button id='common-page-back-button' onclick = 'location.href=`../" + f.entry_category_plural.toLowerCase() + ".html`'>Out to " + f.entry_category_plural + "</button>";
+              document.getElementById("common-page-back-button-holder").innerHTML = "<button id='common-page-back-button' onclick = 'location.href=`../" + page_category + ".html`'>Out to " + capitalizeFirstLetter(page_category) + "</button>";
 
               // Defining a table row with an image, populating it with JSON data, and appending it to the overview table
               if (f.img_rehosted != undefined && f.img_rehosted_source != undefined ) {
@@ -65,11 +73,11 @@
 
               }
 
-              // Appending a table row with the monster name 
+              // Appending a table row with the creature name 
               var tblRow = "<tr><th colspan='2'>" + f.entry_name + "</th></tr>";
               $(tblRow).appendTo("#entry-page-overview-table tbody");
 
-              // Appending a table row with the monster type and category 
+              // Appending a table row with the creature type and category 
               var tblRow = "<tr><th colspan='2'>" + f.entry_type + " " + f.entry_category + "</th></tr>";
               $(tblRow).appendTo("#entry-page-overview-table tbody");
 
@@ -78,7 +86,7 @@
               $(tblRow).appendTo("#entry-page-overview-table tbody");
 
               // Appending a table row with a heading for a data group 
-              var tblRow = "<tr><td>Category</td><td><a href='/myrmidos-wiki/" + f.entry_category_plural.toLowerCase() + ".html'>" + f.entry_category + "</a></td></tr>";
+              var tblRow = "<tr><td>Category</td><td><a href='/myrmidos-wiki/" + capitalizeFirstLetter(page_category) + ".html'>" + f.entry_category + "</a></td></tr>";
               $(tblRow).appendTo("#entry-page-overview-table tbody");
 
               // Appending a table row with a heading for a data group 

@@ -1,180 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-US-Compatible" content="e-edge">
-        <title>KnowOne's Website of Everything</title>
-        <link rel="icon" href="/_SiteResources/Images/OwlOfMinerva_ModifiedLogo.png">
-        <link rel="stylesheet" href="/caped-crusaders-style.css">
-    </head>
-
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-US-Compatible" content="e-edge">
+    <title>KnowOne's Website of Everything</title>
+    <link rel="icon" href="/_SiteResources/Images/OwlOfMinerva_ModifiedLogo.png">
+    <link rel="stylesheet" href="/caped-crusaders-style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
     <script>
-        $(function readJSON() {
-    
-          // Reading the name of this file
-          var page = window.location.pathname.split("/").pop();
-    
-          // Reading data from our JSON file
-          $.getJSON(`/myrmidos-wiki/deities.json`, function(data) {
-    
-            // Looping through the JSON data 
-            $.each(data.entries, function(i, f) {
-              if((f.entry_name.toLowerCase() + ".html") == page) {
+      function capitalizeFirstLetter(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+      }
 
-                var element = "---";
-                // Looping through the planes file for relevant associations
-                $.getJSON(`/myrmidos-wiki/planes.json`, function(data) {
-    
-                    // Looping through the JSON data 
-                    $.each(data.entries, function(z, y) {
-                        if(y.associated_deity == f.entry) {
-                            element = y.planar_element;
-                            document.getElementById("entry-page-overview-table-image-source").innerHTML = f.entry_type_formal + " of " + element;
-                        } 
-                    });
-                });
+      $(function readJSON() {
 
-                // Populating the page titles
-                document.getElementById("common-page-header-title").innerHTML = "Myrmidos Wiki:  Deities > " + f.entry;
-                document.getElementById("common-page-content-title").innerHTML = f.entry + ", " + f.entry_title;
-    
-                // Populating the page description 
-                document.getElementById("common-page-description").innerHTML = f.entry_description;
-                document.getElementById("common-page-back-button").innerHTML = "Out to Deities";    
-    
-                // Populating the page table image and title
-                document.getElementById("entry-page-overview-table-image").src = f.entry_img;
-                document.getElementById("entry-page-overview-table-image-source").href = f.entry_img;
-                document.getElementById("wiki-page-table-title").innerHTML = f.entry;
-                document.getElementById("wiki-page-table-subtitle").innerHTML = f.entry_title;
-    
-                // Populating deity followers
-                document.getElementById("wiki-page-table-titles").innerHTML = f.entry_titles;
-                document.getElementById("wiki-page-table-symbol").innerHTML = f.entry_symbol;
-                document.getElementById("wiki-page-table-worshippers").innerHTML = f.entry_worshippers;
-    
-                // Populating deity attributes
-                document.getElementById("wiki-page-table-alignment").innerHTML = f.entry_alignment;
-                document.getElementById("wiki-page-table-portfolio").innerHTML = f.entry_portfolio;
-                document.getElementById("wiki-page-table-domains").innerHTML = f.entry_domains;
-    
-                // Populating deity manifestation
-                document.getElementById("wiki-page-table-animals").innerHTML = f.entry_animals;
-                document.getElementById("wiki-page-table-monsters").innerHTML = f.entry_monsters;
-                document.getElementById("wiki-page-table-colors").innerHTML = f.entry_colors;
-    
+        // Reading the name of this file
+        var page_array = window.location.pathname.split("/");
+        var page_title = page_array.pop();
+        var page_category = page_array.pop();
+        var page_directory = page_array.pop();
+
+        // Reading data from our JSON file
+        $.getJSON(`/myrmidos-wiki/` + page_category + `.json`, function(data) {
+
+          // Looping through the JSON data 
+          $.each(data.entries, function(i, f) {
+
+            // Finding the entry that matches this file
+            if (f.entry_name.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html" == page_title) {
+            
+              // Populating the page title within the header
+              document.getElementById("common-page-header-title").innerHTML = "Myrmidos Wiki:  " + capitalizeFirstLetter(page_category);
+
+              // Populating the page title within the page content
+              document.getElementById("common-page-content-title").innerHTML = f.entry_name;
+
+              // Populating the page back button into the placeholder div
+              document.getElementById("common-page-back-button-holder").innerHTML = "<button id='common-page-back-button' onclick = 'location.href=`../" + page_category + ".html`'>Out to " + capitalizeFirstLetter(page_category) + "</button>";
+
+              // Defining a table row with an image, populating it with JSON data, and appending it to the overview table
+              if (f.img_rehosted != undefined && f.img_rehosted_source != undefined ) {
+
+                // The image with a populated rehost and credit link upon clicking
+                var tblRow = "<tr><th colspan='2'><img id='entry-page-overview-table-image' alt='" + f.entry_name + "' target='blank' src='" + f.img_rehosted + "' onclick='window.open(`" + f.img_rehosted_source + "`)'></th></tr>";
+                $(tblRow).appendTo("#entry-page-overview-table tbody");
+              } else {
+
+                // A default placeholder image that does activate when clicked
+                var tblRow = "<tr><th colspan='2'><img id='entry-page-overview-table-image' alt='" + f.entry_name + "' target='blank' src='/_SiteResources/Images/WikiPlaceholder.png' onclick='window.open(this.src)'></th></tr>";
+                $(tblRow).appendTo("#entry-page-overview-table tbody");
               }
-            });
+              
+              if (f.img_linked != undefined && f.img_linked_source != undefined) { 
+
+                // Appending a table row with a link to the page art 
+                var tblRow = "<tr><th colspan='2'><i><a href='" + f.img_linked + "' target='_blank'>Link to Additional " + f.entry_name + " Art</a></i></th></tr>";
+                $(tblRow).appendTo("#entry-page-overview-table tbody");
+
+                // Appending a table row with a link to the page art source
+                var tblRow = "<tr><th colspan='2'><i><a href='" + f.img_linked_source + "' target='_blank'>Link to Additional Art Source</a></i></th></tr>";
+                $(tblRow).appendTo("#entry-page-overview-table tbody");
+
+              } else {
+                // Appending a table row with a link to the page art 
+                var tblRow = "<tr><th colspan='2'><i><a href='" + f.img_rehosted + "' target='_blank'>Link to Above " + f.entry_name + " Art</a></i></th></tr>";
+                $(tblRow).appendTo("#entry-page-overview-table tbody");
+
+                // Appending a table row with a link to the page art source
+                var tblRow = "<tr><th colspan='2'><i><a href='" + f.img_rehosted_source + "' target='_blank'>Link to Above Art Source</a></i></th></tr>";
+                $(tblRow).appendTo("#entry-page-overview-table tbody");
+
+              }
+
+              // Appending a table row with the creature name 
+              var tblRow = "<tr><th colspan='2'>" + f.entry_name + "</th></tr>";
+              $(tblRow).appendTo("#entry-page-overview-table tbody");
+
+              // Appending a table row with the creature type and category 
+              var tblRow = "<tr><th colspan='2'>" + f.entry_type + " " + f.entry_category + "</th></tr>";
+              $(tblRow).appendTo("#entry-page-overview-table tbody");
+
+              // Appending a table row with a heading for a data group 
+              var tblRow = "<tr><th colspan='2'>General Information</th></tr>";
+              $(tblRow).appendTo("#entry-page-overview-table tbody");
+
+              // Appending a table row with a heading for a data group 
+              var tblRow = "<tr><td>Category</td><td><a href='/myrmidos-wiki/" + capitalizeFirstLetter(page_category) + ".html'>" + f.entry_category + "</a></td></tr>";
+              $(tblRow).appendTo("#entry-page-overview-table tbody");
+
+              // Appending a table row with a heading for a data group 
+              var tblRow = "<tr><td>Type</td><td>" + f.entry_type + "</td></tr>";
+              $(tblRow).appendTo("#entry-page-overview-table tbody");
+
+              // Appending a table row with a heading for a data group 
+              var tblRow = "<tr><td>Variety</td><td>" + f.entry_variety + "</td></tr>";
+              $(tblRow).appendTo("#entry-page-overview-table tbody");
+
+
+
+              try {
+                // Dynamically and adaptively populating overview table information from the JSON file 
+                for(var z = 0; f.overview_table_groups.length > z; z++) {
+                    var tblRow = "<tr><th colspan='2'>" + f.overview_table_groups[z].overview_table_group_heading + "</th></tr>";
+                    $(tblRow).appendTo("#entry-page-overview-table tbody");
+
+                    for(var y = 0; f.overview_table_groups[z].overview_table_group_data.length > y; y++) {
+                        var tblRow = "<tr><td>" + f.overview_table_groups[z].overview_table_group_data[y].title + "</td><td>" + f.overview_table_groups[z].overview_table_group_data[y].content + "</td></tr>";
+                        $(tblRow).appendTo("#entry-page-overview-table tbody");
+
+                    }
+
+                }
+
+              } catch {
+                  
+              }
+
+              // Populating the page description text
+              document.getElementById("common-page-description").innerHTML = f.entry_description;
+              
+            }
+
           });
+
         });
-    
-      </script>
-    
-      <body>
-        <!-- The fixed background div -->
-        <div class="common-page-background"> 
-    
-            <!-- A div to hold our header -->
-            <div class="common-page-header">
-        
-                <!-- Importing the header -->
-                <div class="import-common-page-header"></div>
-        
-                <!-- The page title within the header -->
-                <h1 id="common-page-header-title"></h1>
-                <hr>
-            </div>
-                
-            <!-- A transparent div to build everything else on top of -->
-            <div class="common-page-content-transparent">
-        
-                <!-- An off white chunk of the page that holds content -->
-                <section class="common-page-content-section">
-        
-                <!-- A back button that navigates out in the file structure  -->
-                <button id="common-page-back-button" onclick = "location.href='../deities.html'"></button>
-        
-                <!-- The title of the page content, including the source as a link -->
-                <h2 id="common-page-content-title"></h2>
-                <hr>
-                
-                <!-- A table to hold the concise page data -->
-                <table class="entry-page-overview-table">
-                    <tr>
-                        <th colspan="2"><img id="entry-page-overview-table-image"></th>
-                    </tr>
-                    <tr>
-                        <th colspan="2"><i><a id="entry-page-overview-table-image-source" target="_blank"></a></i></th>
-                    </tr>
-                    
-                    <tr>
-                        <th colspan="2" id="wiki-page-table-title"></th>
-                    </tr>
-                    <tr>
-                        <th colspan="2" id="wiki-page-table-subtitle"></th>
-                    </tr>
-        
-                    <tr>
-                    <th colspan="2">Followers</th>
-                    </tr>
-                    <tr>
-                        <td>Titles</td>
-                        <td id="wiki-page-table-titles"></td>
-                    </tr>
-                    <tr>
-                        <td>Symbol</td>
-                        <td id="wiki-page-table-symbol"></td>
-                    </tr>
-                    <tr>
-                        <td>Worshippers</td>
-                        <td><a id="wiki-page-table-worshippers"></a></td>
-                    </tr>
-                    
-                    <tr>
-                        <th colspan="2">Attributes</th>
-                    </tr>
-                    <tr>
-                        <td>Alignment</td>
-                        <td><a id="wiki-page-table-alignment"></a></td>
-                    </tr>
-                    <tr>
-                        <td>Portfolio</td>
-                        <td id="wiki-page-table-portfolio"></td>
-                    </tr>
-                    <tr>
-                        <td>Domains</td>
-                        <td id="wiki-page-table-domains"></td>
-                    </tr>
 
-                    <tr>
-                        <th colspan="2">Manifestations</th>
-                    </tr>
-                    <tr>
-                        <td>Favored Animals</td>
-                        <td id="wiki-page-table-animals"></td>
-                    </tr>
-                    <tr>
-                        <td>Favored Monsters</td>
-                        <td id="wiki-page-table-monsters"></td>
-                    </tr>
-                    <tr>
-                        <td>Favored Colors</td>
-                        <td id="wiki-page-table-colors"></td>
-                    </tr>
+      });
+    </script>
+  </head>
 
-                </table>
-        
-                <!-- A paragraph to hold the page content and descriptions -->
-                <p id="common-page-description"></p>
-                </section>
-            </div>
-        
-            <!-- Importing the footer -->
-            <footer class="import-common-page-footer"></footer>
+
+  <body>
+    <!-- The fixed background div -->
+    <div class="common-page-background"> 
+
+        <!-- A div to hold our header -->
+        <div class="common-page-header">
+    
+            <!-- Importing the header -->
+            <div class="import-common-page-header"></div>
+    
+            <!-- The page title within the header -->
+            <h1 id="common-page-header-title"></h1>
+            <hr>
         </div>
-    </body>
+            
+        <!-- A transparent div to build everything else on top of -->
+        <div class="common-page-content-transparent">
+    
+            <!-- An off white chunk of the page that holds content -->
+            <section class="common-page-content-section">
+    
+            <!-- A back button that navigates out in the file structure  -->
+            <div id="common-page-back-button-holder"></div>
+            <!-- The title of the page content, including the source as a link -->
+            <h2 id="common-page-content-title"></h2>
+            <hr>
+                        
+            <!-- A table to hold the concise page data -->
+            <table class="entry-page-overview-table" id="entry-page-overview-table">
+              <tbody></tbody>
+            </table>
+    
+            <!-- A paragraph to hold the page content and descriptions -->
+            <p id="common-page-description"></p>
+            </section>
+        </div>
+    
+        <!-- Importing the footer -->
+        <footer class="import-common-page-footer"></footer>
+    </div>
+  </body>
 </html>
 
 <script type="text/javascript">

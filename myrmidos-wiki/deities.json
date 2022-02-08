@@ -2,11 +2,15 @@
     "entries" : [
         {
             "entry_name" : "Frydeia",
-            "entry_type_informal" : "God",
-            "entry_type_formal" : "Greater Deity",
+            "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/1/1b/Les_images_des_dievx_des_anciens_-_contenans_les_idoles%2C_covstvmes%2C_ceremonies%2C_and_autres_choses_appartenans_%C3%A0_la_religion_des_payens_%281581%29_%2814560495887%29.jpg",
+            "img_rehosted_source" : "",
+
+            "entry_category" : "Deity",
+            "entry_type" : "Greater",
+            "entry_variety" : "Frydeia",
+
             "entry_title" : "Arbiter of Law",
-            "entry_img" : "https://upload.wikimedia.org/wikipedia/commons/1/1b/Les_images_des_dievx_des_anciens_-_contenans_les_idoles%2C_covstvmes%2C_ceremonies%2C_and_autres_choses_appartenans_%C3%A0_la_religion_des_payens_%281581%29_%2814560495887%29.jpg",
-            "entry_description" : "The Goddess of Ice and Honor is also known as the Arbiter of all Law. She helped forge the Edict during The Binding of the Lesser Deities, and oversees its observation in the mortal world. When the Edict is crossed, Frydeia does her part to dole judgment as she sees fit so that the Edict need not balance the offense itself. This is to avoid absolute catastrophe, since the Edict is raw power. That isn't say that Frydeia is merciful by mortal standards; she has had entire kingdoms put to the blade when a noble is being especially stubborn. Because of this, some believe that the Edict would resolve things in a kinder way than Frydeia does, and her intervention is solely for her own enjoyment. These rumors have not been shown to bother the Arbiter or her followers in the past.            <br><br>The Sigil of Frydeia is a downwards sword whose guard forms the arms of a merchant's scale. The favored form of Frydeia is that of a knight with a crystalline carapace.            <br><br>The Arbiter rules over the plane of Ice, which is home to the Contructs. These beings the mechanical denizens created and powered by Frydeia's psionic abilities.            <br><br>The Arbiter commands a strict religious sect of followers who seek to assist any nation in maintaining order. While the Arbiter herself does not condemn evilness as long as order is maintained, the organization has adopted its own additional standards that focus on peace, diplomacy, and violent intervention only when no other reasonable option presents itself. This group is known as the Magistrate, and its members are known as Magisters. Their ranks include mostly gishes such as Bladesingers and Twilight Clerics, but also War Magic Wizards and Peace Clerics. They exist outside of any nation's jurisdiction.            ",
+            "entry_description" : "The Goddess of Ice and Honor is also known as the Arbiter of all Law. She helped forge the Edict during The Binding of the Lesser Deities, and oversees its observation in the mortal world. When the Edict is crossed, Frydeia does her part to dole judgment as she sees fit so that the Edict need not balance the offense itself. This is to avoid absolute catastrophe, since the Edict is raw power. That isn't say that Frydeia is merciful by mortal standards; she has had entire kingdoms put to the blade when a noble is being especially stubborn. Because of this, some believe that the Edict would resolve things in a kinder way than Frydeia does, and her intervention is solely for her own enjoyment. These rumors have not been shown to bother the Arbiter or her followers in the past.            <br><br>The Sigil of Frydeia is a downwards sword whose guard forms the arms of a merchant's scale. The favored form of Frydeia is that of a knight with a crystalline carapace.            <br><br>The Arbiter rules over the plane of Ice, which is home to the Constructs. These beings the mechanical denizens created and powered by Frydeia's psionic abilities.            <br><br>The Arbiter commands a strict religious sect of followers who seek to assist any nation in maintaining order. While the Arbiter herself does not condemn evilness as long as order is maintained, the organization has adopted its own additional standards that focus on peace, diplomacy, and violent intervention only when no other reasonable option presents itself. This group is known as the Magistrate, and its members are known as Magisters. Their ranks include mostly gishes such as Bladesingers and Twilight Clerics, but also War Magic Wizards and Peace Clerics. They exist outside of any nation's jurisdiction.            ",
 
             "entry_titles" : "Goddess of Ice<br>Crystal Queen<br>Mother of Creeds<br>The Honored One",
             "entry_symbol" : "A set of merchant scales hung from the guard of a downturned sword",
@@ -17,17 +21,20 @@
             "entry_domains" : "War, Peace, Grave, Twilight, Order, Knowledge",
 
             "entry_animals" : "Arctic Cat<br>Arctic Roc",
-            "entry_monsters" : "Ice Elementals<br>Water Elementals<br>Air Elementals<br>Celestials<br>White Dragons",
+            "entry_creatures" : "Ice Elementals<br>Water Elementals<br>Air Elementals<br>Celestials<br>White Dragons",
             "entry_colors" : "White, Aqua, Teal, Platinum"
 
         },
         {
             "entry_name" : "Gondarin",
-            "entry_type_informal" : "God",
-            "entry_type_formal" : "Greater Deity",
-            "entry_title" : "All-Father",
+            "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/2/28/The_Mythology_of_all_races_%281918%29_%2814742406276%29.jpg",
+            "img_rehosted_source" : "",
 
-            "entry_img" : "https://upload.wikimedia.org/wikipedia/commons/2/28/The_Mythology_of_all_races_%281918%29_%2814742406276%29.jpg",
+            "entry_category" : "Deity",
+            "entry_type" : "Greater",
+            "entry_variety" : "Gondarin",
+
+            "entry_title" : "All-Father",
             "entry_description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque condimentum ut neque at malesuada. Quisque mattis vel lorem eget venenatis. Sed cursus dui vel orci cursus hendrerit. Quisque in arcu pretium, laoreet est quis, tincidunt enim. In tincidunt viverra quam, pharetra vestibulum neque porta nec. Ut eu volutpat orci, quis pretium ligula. Aliquam in nibh lorem. Proin id semper nibh. In pulvinar lacus nec velit euismod placerat. In non congue lacus, eu pharetra elit. Praesent id lorem in nunc venenatis congue. Quisque suscipit tempus commodo. Morbi diam quam, rutrum in venenatis sed, pulvinar nec justo. Sed fermentum posuere ligula, sit amet venenatis felis varius in. In imperdiet mollis scelerisque. Phasellus id eleifend felis, ut aliquam arcu.",
 
             "entry_titles" : "God of Magma<br>Forge Master<br>All-Father<br>The First Artisan",
@@ -39,17 +46,20 @@
             "entry_domains" : "Forge<br>War<br>Arcana<br>Trickery",
 
             "entry_animals" : "Brass Elephant<br>Magma Wyrm",
-            "entry_monsters" : "Magma Elementals<br>Fire Elementals<br>Earth Elementals<br>Fiends<br>Brass Dragon",
+            "entry_creatures" : "Magma Elementals<br>Fire Elementals<br>Earth Elementals<br>Fiends<br>Brass Dragon",
             "entry_colors" : "Brass, Silver, Obsidian, Red, Black"
 
         },
         {
             "entry_name" : "Deliklese",
-            "entry_type_informal" : "God",
-            "entry_type_formal" : "Greater Deity",
-            "entry_title" : "All-Mother",
+            "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/c/cb/Greek_mythology_systematized_%281880%29_%2814559602149%29.jpg",
+            "img_rehosted_source" : "",
 
-            "entry_img" : "https://upload.wikimedia.org/wikipedia/commons/c/cb/Greek_mythology_systematized_%281880%29_%2814559602149%29.jpg",
+            "entry_category" : "Deity",
+            "entry_type" : "Greater",
+            "entry_variety" : "Deliklese",
+
+            "entry_title" : "All-Mother",
             "entry_description" : "The Goddess of Ooze and Life is also known as the All-Mother. She is considered to be the only truly benevolent of the four. The All-Mother is gentle, generous, and understanding in most cases, but she and her followers have shown remarkable zeal when taking up arms in the defense of goodness.  ",
 
             "entry_titles" : "Goddess of Ooze<br>Life-Giver<br>All-Mother<br>The Merciful One",
@@ -61,16 +71,19 @@
             "entry_domains" : "Nature<br>Life<br>Grave",
 
             "entry_animals" : "Deer<br>Toad<br>Alligator",
-            "entry_monsters" : "Ooze Elementals<br>Water Elementals<br>Earth Elementals<br>Beasts<br>Green Dragons",
+            "entry_creatures" : "Ooze Elementals<br>Water Elementals<br>Earth Elementals<br>Beasts<br>Green Dragons",
             "entry_colors" : "Green, Brown, Pink, Yellow"
         },
         {
             "entry_name" : "Sebabos",
-            "entry_type_informal" : "God",
-            "entry_type_formal" : "Greater Deity",
-            "entry_title" : "The Dark Adversary",
+            "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/c/c4/Phoenix_%281583%29.svg",
+            "img_rehosted_source" : "",
 
-            "entry_img" : "https://upload.wikimedia.org/wikipedia/commons/c/c4/Phoenix_%281583%29.svg",
+            "entry_category" : "Deity",
+            "entry_type" : "Greater",
+            "entry_variety" : "Sebabos",
+
+            "entry_title" : "The Dark Adversary",
             "entry_description" : "The God of Ash and Death is also known as the Phoenix since this is his chosen avatar.  He may be immortal himself, but he chose to adopt this form of his own volition.  By collaborating with Gondarin, Sebabos created the Phoenix as a creature with the ability to recycle its own life forces.  This was made as a mockery of his lover's domain of life and death.  The meaning behind this act is still a matter of debate.  <br><br>Sebabos is Neutral Evil in that he brings the prolonging of suffering whenever he can, but that is not to say he reigns mayhem whenever he can.  He remains utterly detached from mortal affairs, but happily tricks and beguils mortals whenever the opportunity presents itself.  He relishes suffering that is brought about by one's own actions, only intervening in a literal sense in the most enticing of circumstances.  <br><br>Sebabos is deeply in love with Deliklese, and continually gifts her with reaped souls from mortals he has won and swindled.  <br><br>While Sebabos is accurately referred to as a Deceiver and Reaper, he does not prefer to wield a scythe as some pagan interpretations depict.  Sebabos' preferred weapon and tool is that of a black bladed axe akin to a headsman, with discreet golden insets. He dislikes all color save for the sheen of gold, and many legends tell of those who have bought extra weeks or months of life with their vast fortunes.  ",
 
             "entry_titles" : "God of Ash<br>Lord of Death<br>Grim Reaper<br>The Deceiver",
@@ -82,7 +95,7 @@
             "entry_domains" : "Death<br>Light<br>Twilight<br>Trickery",
 
             "entry_animals" : "None",
-            "entry_monsters" : "Ash Elementals<br>Fire Elementals<br>Air Elementals<br>Undead<br>Shadow Dragons",
+            "entry_creatures" : "Ash Elementals<br>Fire Elementals<br>Air Elementals<br>Undead<br>Shadow Dragons",
             "entry_colors" : "Grey, Gold, Black"
         },
         {
@@ -107,7 +120,7 @@
             "entry_domains" : "Tempest",
 
             "entry_animals" : "Thunder Roc",
-            "entry_monsters" : "Air Elementals",
+            "entry_creatures" : "Air Elementals",
             "entry_colors" : "White, Grey, Violet, Cyan"
         },
         {
@@ -132,7 +145,7 @@
             "entry_domains" : "Fire",
 
             "entry_animals" : "Spider Snake",
-            "entry_monsters" : "Fire Elementals",
+            "entry_creatures" : "Fire Elementals",
             "entry_colors" : "Red, Orange, Gold, Black"
         },
         {
@@ -157,7 +170,7 @@
             "entry_domains" : "Earth",
 
             "entry_animals" : "Zaratan",
-            "entry_monsters" : "Earth Elementals",
+            "entry_creatures" : "Earth Elementals",
             "entry_colors" : "Brown, Tan, Orange, Black"
         },
         {
@@ -182,7 +195,7 @@
             "entry_domains" : "Water",
 
             "entry_animals" : "Dire Squid",
-            "entry_monsters" : "Water Elementals",
+            "entry_creatures" : "Water Elementals",
             "entry_colors" : "Blue, Teal, Navy"
         },
         {
@@ -191,7 +204,6 @@
             "img_rehosted_source" : "https://commons.m.wikimedia.org/wiki/File:Wind-God-Fujin-by-Ogata-Korin.jpg",
 
             "entry_category" : "Deity",
-            "entry_category_plural" : "Deities",
             "entry_type" : "Lesser",
             "entry_variety" : "Dao",
 
@@ -199,7 +211,7 @@
             "alignment" : "Chaotic Good",
 
             "entry_title" : "---",
-            "entry_description" : "The Goddess of Ice and Honor is also known as the Arbiter of all Law. She helped forge the Edict during The Binding of the Lesser Deities, and oversees its observation in the mortal world. When the Edict is crossed, Frydeia does her part to dole judgment as she sees fit so that the Edict need not balance the offense itself. This is to avoid absolute catastrophe, since the Edict is raw power. That isn't say that Frydeia is merciful by mortal standards; she has had entire kingdoms put to the blade when a noble is being especially stubborn. Because of this, some believe that the Edict would resolve things in a kinder way than Frydeia does, and her intervention is solely for her own enjoyment. These rumors have not been shown to bother the Arbiter or her followers in the past.            <br><br>The Sigil of Frydeia is a downwards sword whose guard forms the arms of a merchant's scale. The favored form of Frydeia is that of a knight with a crystalline carapace.            <br><br>The Arbiter rules over the plane of Ice, which is home to the Contructs. These beings the mechanical denizens created and powered by Frydeia's psionic abilities.            <br><br>The Arbiter commands a strict religious sect of followers who seek to assist any nation in maintaining order. While the Arbiter herself does not condemn evilness as long as order is maintained, the organization has adopted its own additional standards that focus on peace, diplomacy, and violent intervention only when no other reasonable option presents itself. This group is known as the Magistrate, and its members are known as Magisters. Their ranks include mostly gishes such as Bladesingers and Twilight Clerics, but also War Magic Wizards and Peace Clerics. They exist outside of any nation's jurisdiction.            ",
+            "entry_description" : "",
 
             "entry_titles" : "Goddess of Ice<br>Crystal Queen<br>Mother of Creeds<br>The Honored One",
             "entry_symbol" : "A set of merchant scales hung from the guard of a downturned sword",
@@ -210,7 +222,7 @@
             "entry_domains" : "War, Peace, Grave, Twilight, Order, Knowledge",
 
             "entry_animals" : "Arctic Cat<br>Arctic Roc",
-            "entry_monsters" : "Ice Elementals<br>Water Elementals<br>Air Elementals<br>Celestials<br>White Dragons",
+            "entry_creatures" : "Ice Elementals<br>Water Elementals<br>Air Elementals<br>Celestials<br>White Dragons",
             "entry_colors" : "White, Aqua, Teal, Platinum"
         },
         {
@@ -239,7 +251,7 @@
             "entry_domains" : "War, Peace, Grave, Twilight, Order, Knowledge",
 
             "entry_animals" : "Arctic Cat<br>Arctic Roc",
-            "entry_monsters" : "Ice Elementals<br>Water Elementals<br>Air Elementals<br>Celestials<br>White Dragons",
+            "entry_creatures" : "Ice Elementals<br>Water Elementals<br>Air Elementals<br>Celestials<br>White Dragons",
             "entry_colors" : "White, Aqua, Teal, Platinum"
         },
         {
@@ -268,7 +280,7 @@
             "entry_domains" : "War, Peace, Grave, Twilight, Order, Knowledge",
 
             "entry_animals" : "Arctic Cat<br>Arctic Roc",
-            "entry_monsters" : "Ice Elementals<br>Water Elementals<br>Air Elementals<br>Celestials<br>White Dragons",
+            "entry_creatures" : "Ice Elementals<br>Water Elementals<br>Air Elementals<br>Celestials<br>White Dragons",
             "entry_colors" : "White, Aqua, Teal, Platinum"
         },
         {
@@ -297,8 +309,20 @@
             "entry_domains" : "War, Peace, Grave, Twilight, Order, Knowledge",
 
             "entry_animals" : "Arctic Cat<br>Arctic Roc",
-            "entry_monsters" : "Ice Elementals<br>Water Elementals<br>Air Elementals<br>Celestials<br>White Dragons",
+            "entry_creatures" : "Ice Elementals<br>Water Elementals<br>Air Elementals<br>Celestials<br>White Dragons",
             "entry_colors" : "White, Aqua, Teal, Platinum"
+        },
+        {
+            "entry_name" : "Beyok",
+            "img_linked" : "https://cdna.artstation.com/p/assets/images/images/038/752/608/large/miguel-regodon-harkness-imperial-dragon-sovereign-ancient.jpg?1623952542",
+            "img_linked_source" : "https://www.artstation.com/artwork/B1qqem",
+
+            "entry_category" : "Deity",
+            "entry_type" : "Demigod",
+            "entry_variety" : "Dracofiend",
+
+            "entry_description" : "Beyok is a Golden Greatwyrm, and is widely considered the eldest living Greatwyrm in existence. In his youth, Beyok took the form of a mortal and befriended a human king named Urigeth. Urigeth sought to conduct a crusade against the chaos and barbarism of his time, and Beyok joined him. Together, they brought fire and steel upon many of the bandits that plagued the lands. Nearing the end of the crusade, Beyok had to reveal his true form in order to save his friend from certain death. Urigeth was filled with wrath at this deception, but eventually accepted the reality of Beyok's nature. Urigeth's council was far less understanding.<br><br>After succeeding in their conquest, Urigeth held a banquet. His mead had been poisoned, and Beyok sensed it too late. Urigeth died quickly, and the members of his council attempted to frame Beyok for the murder. Beyok was having none of it, and it took all he had not to burn the entire castle to the ground. Frustrated with the politics of mortalkind, Beyok decided to leave the human kingdom, never to return.<br><br>In the many years since, Beyok has been known to live among the commoners and help them drive off creatures that they could never hope to without assitance. Beyok still exhibits a drastic distaste for the politics of mortalkind, but holds a great deal of reverance for leaders who show virtue. Beyok is often represented with the emblem of a torn banner that bears Urigeth's sigil of House Ketran (a pale green salmon), which he is often seen wearing as a makeshift poncho and cloak when in mortal form.  "
+
         }
     ]
 }

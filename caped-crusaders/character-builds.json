@@ -626,8 +626,8 @@
             "character_source" : "DC (Justice League Hero)"
         },
         {
-            "name_str" : "Monster Girl",
-            "page_url" : "monster-girl.html",
+            "name_str" : "Creature Girl",
+            "page_url" : "creature-girl.html",
             "class_str" : "Metamorph",
             "class_type" : "Martial, Secondary",
             "class_source" : "Powers",
@@ -653,7 +653,7 @@
             "class_source" : "Powers",
             "subclass_str" : "Demibeast",
             "subclass_source" : "Magic",
-            "character_source" : "Misc Monster"
+            "character_source" : "Misc Creature"
         },
         {
             "name_str" : "Venom",
@@ -693,7 +693,7 @@
             "class_source" : "Powers",
             "subclass_str" : "Splicer",
             "subclass_source" : "Tech",
-            "character_source" : "Misc Monster"
+            "character_source" : "Misc Creature"
         },
         {
             "name_str" : "Geralt of Rivia",
@@ -918,7 +918,7 @@
                 },
                 {
                     "level" : 9,
-                    "walkthrough" : "We get another Technique, and it's been a while since we got another Attack.  We'll take Extra Attack again to increase our damage output.  <br><br>We also get another spell, and we'll take Misty Step.  This can get us out of a nasty situation should a big surly monster decide to get too close.  Bonus Action teleport away to somewhere safer, avoid opportunity attacks, and make our ranged attacks as normal.  ",
+                    "walkthrough" : "We get another Technique, and it's been a while since we got another Attack.  We'll take Extra Attack again to increase our damage output.  <br><br>We also get another spell, and we'll take Misty Step.  This can get us out of a nasty situation should a big surly creature decide to get too close.  Bonus Action teleport away to somewhere safer, avoid opportunity attacks, and make our ranged attacks as normal.  ",
                     "sustainables" : "+Extra Attack",
                     "consumables" : "+Misty Step"
                 },
@@ -987,7 +987,7 @@
                 },
                 {
                     "level" : 5,
-                    "walkthrough" : "Third level spells are here, and we are starting to feel our arcane power awaken.  Ray of Frost is helpful if we are trying to keep a nasty melee monster from getting close to the party, and will almost always be my readied cantrip in an ambush.  <br><br>We'll take Hypnotic Pattern to lock down a bunch of weaker enemies, and possibly some stronger ones too.  You aren't as likely to snag the big guys with this effect, but there is no harm in including them in the area just to see what happens.  Fireball is a classic spell that deals good damage, but should not be our default combat option.  We should save this for clusters of enemies that we know don't have fire resistance or that can be killed with this casting.  Slow is a helpful debuff for larger enemies that we want to ensure our effect applies to.  By now, we've got some spell points to play with, so we can start being a bit more liberal in the application of our spells.  ",
+                    "walkthrough" : "Third level spells are here, and we are starting to feel our arcane power awaken.  Ray of Frost is helpful if we are trying to keep a nasty melee creature from getting close to the party, and will almost always be my readied cantrip in an ambush.  <br><br>We'll take Hypnotic Pattern to lock down a bunch of weaker enemies, and possibly some stronger ones too.  You aren't as likely to snag the big guys with this effect, but there is no harm in including them in the area just to see what happens.  Fireball is a classic spell that deals good damage, but should not be our default combat option.  We should save this for clusters of enemies that we know don't have fire resistance or that can be killed with this casting.  Slow is a helpful debuff for larger enemies that we want to ensure our effect applies to.  By now, we've got some spell points to play with, so we can start being a bit more liberal in the application of our spells.  ",
                     "consumables" : "+Hypnotic Pattern, +Fireball, +Slow",
                     "cantrips" : "+Ray of Frost"
                 },
@@ -1018,8 +1018,8 @@
                 },
                 {
                     "level" : 10,
-                    "walkthrough" : "Our last ASI for this build, so we'll end it off with Resilient Con to round out our Constitution and buff up our concentration saves.  <br><br>Passwall will increase our ability to infiltrate, and we can make quick getaways if we want to trap an enemy somewhere.  It being concentration allows us to drop it at will, so locking the door behind us is very plausible.  Eruption is just a nice damage option, and it will do recurring damage unless the enemy wastes their action, both of which are good outcomes for us.  Hold Monster can be powerful if they fail their saving throw, but it wouldn't be my go to.  I'd save it for lone enemies that are powerful, and even then it will probably take a few tries to get the effect in place.  ",
-                    "consumables" : "+Passwall, +Eruption, +Hold Monster",
+                    "walkthrough" : "Our last ASI for this build, so we'll end it off with Resilient Con to round out our Constitution and buff up our concentration saves.  <br><br>Passwall will increase our ability to infiltrate, and we can make quick getaways if we want to trap an enemy somewhere.  It being concentration allows us to drop it at will, so locking the door behind us is very plausible.  Eruption is just a nice damage option, and it will do recurring damage unless the enemy wastes their action, both of which are good outcomes for us.  Hold Creature can be powerful if they fail their saving throw, but it wouldn't be my go to.  I'd save it for lone enemies that are powerful, and even then it will probably take a few tries to get the effect in place.  ",
+                    "consumables" : "+Passwall, +Eruption, +Hold Creature",
                     "constitution_update" : 16,
                     "constitution_save" : "yes",
                     "feature" : "Feat:  Resilient (Constitution)"

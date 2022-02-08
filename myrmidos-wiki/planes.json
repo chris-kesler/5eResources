@@ -24,7 +24,7 @@
             "associated_deity_domains" : "War, Peace, Grave, Twilight, Order, Knowledge",
 
             "associated_deity_animals" : "Arctic Cat<br>Arctic Roc",
-            "associated_deity_monsters" : "Ice Elementals<br>Water Elementals<br>Air Elementals<br>Celestials<br>White Dragons",
+            "associated_deity_creatures" : "Ice Elementals<br>Water Elementals<br>Air Elementals<br>Celestials<br>White Dragons",
             "associated_deity_colors" : "White, Aqua, Teal, Platinum",
 
             "associated_dragons" : [
@@ -73,7 +73,7 @@
             "associated_deity_domains" : "Forge<br>War<br>Arcana<br>Trickery",
 
             "associated_deity_animals" : "Brass Elephant<br>Magma Wyrm",
-            "associated_deity_monsters" : "Magma Elementals<br>Fire Elementals<br>Earth Elementals<br>Fiends<br>Brass Dragon",
+            "associated_deity_creatures" : "Magma Elementals<br>Fire Elementals<br>Earth Elementals<br>Fiends<br>Brass Dragon",
             "associated_deity_colors" : "Brass, Silver, Obsidian, Red, Black",
 
             "associated_dragons" : [
@@ -126,7 +126,7 @@
             "associated_deity_domains" : "Nature<br>Life<br>Grave",
 
             "associated_deity_animals" : "Deer<br>Toad<br>Alligator",
-            "associated_deity_monsters" : "Ooze Elementals<br>Water Elementals<br>Earth Elementals<br>Beasts<br>Green Dragons",
+            "associated_deity_creatures" : "Ooze Elementals<br>Water Elementals<br>Earth Elementals<br>Beasts<br>Green Dragons",
             "associated_deity_colors" : "Green, Brown, Pink, Yellow",
 
             "associated_dragons" : [
@@ -166,7 +166,7 @@
             "associated_deity_domains" : "Death<br>Light<br>Twilight<br>Trickery",
 
             "associated_deity_animals" : "None",
-            "associated_deity_monsters" : "Ash Elementals<br>Fire Elementals<br>Air Elementals<br>Undead<br>Shadow Dragons",
+            "associated_deity_creatures" : "Ash Elementals<br>Fire Elementals<br>Air Elementals<br>Undead<br>Shadow Dragons",
             "associated_deity_colors" : "Grey, Gold, Black",
 
             "associated_dragons" : [
@@ -210,7 +210,7 @@
             "associated_deity_domains" : "Tempest",
 
             "associated_deity_animals" : "Thunder Roc",
-            "associated_deity_monsters" : "Air Elementals",
+            "associated_deity_creatures" : "Air Elementals",
             "associated_deity_colors" : "White, Grey, Violet, Cyan",
 
             "associated_dragons" : [
@@ -224,7 +224,7 @@
                 }
             ],
 
-            "associated_creatures" : "<a href='/myrmidos-wiki/Category_Monsters/Type_Celestials/Celestials.html'>Celestials</a><br><a href='/myrmidos-wiki/Category_Monsters/Type_Dragons/Subtype_Chromatic/BlueDragon.html'>Blue Dragons</a><br>Air Elementals",
+            "associated_creatures" : "<a href='/myrmidos-wiki/Category_Creatures/Type_Celestials/Celestials.html'>Celestials</a><br><a href='/myrmidos-wiki/Category_Creatures/Type_Dragons/Subtype_Chromatic/BlueDragon.html'>Blue Dragons</a><br>Air Elementals",
             "associated_factions" : "NA",
 
             "planar_topography" : "Infinite bounds, varying air pressure, chunks of floating land sparsely distributed.",
@@ -290,7 +290,7 @@
             "associated_deity_domains" : "Earth",
 
             "associated_deity_animals" : "Zaratan",
-            "associated_deity_monsters" : "Earth Elementals",
+            "associated_deity_creatures" : "Earth Elementals",
             "associated_deity_colors" : "Brown, Tan, Orange, Black",
 
             "associated_dragons" : [
@@ -334,7 +334,7 @@
             "associated_deity_domains" : "Water",
 
             "associated_deity_animals" : "Dire Squid",
-            "associated_deity_monsters" : "Water Elementals",
+            "associated_deity_creatures" : "Water Elementals",
             "associated_deity_colors" : "Blue, Teal, Navy",
 
             "associated_dragons" : [
@@ -352,7 +352,7 @@
                 }
             ],
 
-            "associated_creatures" : "<a href='/myrmidos-wiki/Category_Monsters/Type_Aberrations/Aberrations.html'>Aberrations</a><br><a href='/myrmidos-wiki/Category_Monsters/Type_Dragons/Subtype_Chromatic/Dracoturtle.html'>Dracoturtles</a><br>Water Elementals",
+            "associated_creatures" : "<a href='/myrmidos-wiki/Category_Creatures/Type_Aberrations/Aberrations.html'>Aberrations</a><br><a href='/myrmidos-wiki/Category_Creatures/Type_Dragons/Subtype_Chromatic/Dracoturtle.html'>Dracoturtles</a><br>Water Elementals",
             "associated_factions" : "NA",
 
             "planar_topography" : "Infinite bounds, varying water pressure, all light is from bioluminescence.",

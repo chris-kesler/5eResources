@@ -1599,7 +1599,7 @@
             "overcharge_str" : "When you cast this spell using a 6th-level spell slot, the duration is concentration, up to 10 minutes. When you use a 7th-level spell slot, the duration is concentration, up to 1 hour. When you use a spell slot of 8th level or higher, the duration is concentration, up to 8 hours. "
         },
         {
-            "name_str" : "Hold Monster",
+            "name_str" : "Hold Creature",
             "level_str" : "5th",
             "type_str" : "Enchantment",
             "casting_time_str" : "1 Action",
@@ -1616,7 +1616,7 @@
             "overcharge_str" : "When you cast this spell using a spell slot of 6th level or higher, you can target one additional creature for each slot level above 5th. The creatures must be within 30 feet of each other when you target them."
         },
         {
-            "name_str" : "Dominate Monster",
+            "name_str" : "Dominate Creature",
             "level_str" : "7th",
             "type_str" : "Enchantment",
             "casting_time_str" : "1 Action",
@@ -2823,7 +2823,7 @@
             "casting_time_str" : "10 Minutes",
             "range_area_str" : "Touch (2,500 x 2,500 feet)",
             "components_vsm_str" : "V, S, M",
-            "components_description_str" : "burning incense, a small measure of brimstone and oil, a knotted string, a small amount of monster blood, and a small silver rod worth at least 10 gp",
+            "components_description_str" : "burning incense, a small measure of brimstone and oil, a knotted string, a small amount of creature blood, and a small silver rod worth at least 10 gp",
             "duration_str" : "24 Hours",
             "attack_save_str" : "None",
             "damage_effect_str" : "Control (...)",
