@@ -217,6 +217,7 @@ body, .cc-attributes-overview-table tr th, .cc-attributes-overview-table th, .cc
 
 .entry-page-nav-table-section {
   position: fixed;
+  z-index: 10;
 }
 
 .entry-page-nav-table-section-placeholder {

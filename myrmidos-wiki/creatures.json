@@ -134,36 +134,72 @@
             "entry_description_overview" : "Crimson Dragons are notably egotistical, even among dragons. They value blood and honor above all. Crimson Dragons prefer to enslave and berate mortals of any kind, but usually avoid the arctic and aquatic races due to locational limitations. ",
             "entry_description_library" : [
                 {
-                    "heading" : "Description",
-                    "content" : "Crimson Dragons have deep blood red scales covering almost the entirety of their bodies, with the scales of the underbelly being only a shade or two lighter. Crimson Dragons have fearsome spine structures, with clusters of barbs lining their back from the neck to the base of the tail. Starting at the tail, they have a pair of microfanes extending to either side that are remarkably sharp. Scholars have theorized that the microfanes assists in flight stability, but they are seen most often used to slash open their foes with tail attacks.                    ",
+                            
+                    "heading" : "Physiology",
+                    "content" : "Crimson Dragons have exceptionally high body temperatures, with many first hand accounts of Crimson Dragons describing heat distortion in the air immediately surrounding their figures.  They have a remarkable ability to survive with minimal liquid intake, most never needing additional moisture beyond that which they get from their food.  ",
                     "sublibrary" : [
                         {
-                            "heading" : "Physiology",
-                            "content" : "Crimson Dragons have exceptionally high body temperatures, preferring to live in the heart of scorching deserts far from oceans and water sources as a result.  Many first hand acocunts of Crimson Dragons describe heat distortion in the air immediately surrounding their figures.  They have a remarkable ability to survive with minimal liquid intake, most never needing additional moisture beyond that which they get from their food.                            "
+                            "heading" : "Appearance",
+                            "content" : "Crimson Dragons have deep blood red scales covering almost the entirety of their bodies, with the scales of the underbelly being only a shade or two lighter. Crimson Dragons have fearsome spine structures, with clusters of barbs lining their back from the neck to the base of the tail. Starting at the tail, they have a pair of microfanes extending to either side that are remarkably sharp.  "
+                        },
+                        {
+                            "heading" : "Anatomy",
+                            "content" : "Scholars have theorized that the microfanes lining a Crimson Dragon's tail assist in flight stability, but this has been difficult to study.  Whether they were evolved for this purpose or not, academics unanimously agree that the microfanes effectively serve as weapons to slash open foes with when using tail attacks.  "
                         }
                     ]
                 },
                 {
-                    "heading" : "Personality",
-                    "content" : "Crimson Dragons are arrogant and bloodthirsty, treating the glory of battle like an obsessive religion. Crimson Dragons care not for gifts and offerings lest they are works serving as testaments to the greatness of themselves. Crimson Dragons are extremely prideful, expecting respect and taking offense should any dare to speak to them without first being spoken to. Crimson Dragons revere violent conflict, having been known to circle overhead while armies battle or cities are razed. When fighting, a Crimson Dragon denies itself any situational advantage, longing for an honorable fight. If outmatched, a Crimson Dragon will fight to the death and die at peace knowing it fought honorably. Upon achieving victory, Crimson Dragons will gloat and initimidate their foes and spectators. These speeches are sometimes prepared in advance, after which the loser is executed.                    "
-                },
-                {
-                    "heading" : "Combat Tactics",
-                    "content" : "Crimson Dragons relish good battles, eagerly clashing with foes that are capable of going toe to toe with them. When faced with a show of overwhelming force, a Crimson Dragon will avoid fighting in the first place. However, once engaged, Crimson Dragons will fight to the death. They often treat the battle like a game, only using select tools at their disposal and increasing the challenge for their foe as time progresses. A Crimson Dragon first uses their claws to rip and tear their foe, then their tail to batter and slash, then their wings to buffet and skewer, followed by their jaws to crush and snap, and lastly their fire breath to totally immolate and incinerate.                    "
-                },
-                {
-                    "heading" : "Social Behavior",
-                    "content" : "Crimson Dragons demand obedience and perfection from their subjects, dealing harsh punishments for even the slightest insult or mistake. Crimson Dragons enjoy laughing, and as a result, keep a jester nearby at all times within their lair. There is only one jester at any given time, and each jester is selected from the Dragon's subjects. It is the second most respected position in the hierarchy, though not a desireable one. Crimson Dragons grow bored of their jesters rather quickly, burning them alive when they are no longer amusing.                      ",
+                    "heading" : "Ecology",
+                    "content" : "", 
                     "sublibrary" : [
                         {
-                            "heading" : "Dragonkin",
-                            "content" : "Crimson Dragons consider themselves the superior breed of creature, and will not tolerate dishonor from their own kind. The exceptionally rare occasions when a Crimson Dragon does retreat from a fight are met with absolute outrage. They are dubbed 'dishonored ones', and are no longer considered members of the Crimson Dragon race.  Since they still wear the crimson scales of their kind, which is a grave sin, they are hunted down and torn to pieces by posses of other Crimson Dragons. The same treatment is given to any creature wearing or owning an object that incorporates crimson dragon scales in it.  While Crimson Dragons refuse to flee a fight, they do avoid conflict when face dwith a show of overwhelming force. In these situations, a Crimson Dragon will show a great deal of respect to their would be opponent by bowing and acknowledging their dominance. This is often a distasteful act for a Crimson Dragon to perform, but they justify it by rationalizing that they are not yet fully grown and there is more greatness and glory for them to face in the future. Crimson Dragons can accept their death, but they do not seek it out."
+                            "heading" : "Food Chain",
+                            "content" : ""
+                        },
+                        {
+                            "heading" : "Habitat",
+                            "content" : "Crimson Dragons prefer to live in the heart of scorching deserts far from oceans and water sources.  They also actively destroy any oasis they come across within their territory.  "
                         },
                         {
                             "heading" : "Lair",
-                            "content" : "  Crimson Dragons enjoy pillaging wealthy kingdoms and kidnapping artisans of all kinds. They typically raze and steal seeking great treasures and materials of high quality and wealth. The artisans are usually conscripted to great a great work in their lord's honor, such as a statue, mural, or epic poem. As a result, an older Crimson Dragon's lair is very much like a shrine to itself.                            "
+                            "content" : "Crimson Dragons enjoy pillaging wealthy kingdoms and kidnapping artisans of all kinds. They typically raze and steal seeking great treasures and materials of high quality and wealth. The artisans are usually conscripted to great a great work in their lord's honor, such as a statue, mural, or epic poem. As a result, an older Crimson Dragon's lair is very much like a shrine to itself.  "
                         }
-
+                    ]
+                },
+                {
+                    "heading" : "Behavior",
+                    "content" : "", 
+                    "sublibrary" : [
+                        {
+                            "heading" : "Hunting",
+                            "content" : ""
+                        },
+                        {
+                            "heading" : "Defense",
+                            "content" : "Crimson Dragons relish good battles, eagerly clashing with foes that are capable of going toe to toe with them. When faced with a show of overwhelming force, a Crimson Dragon will avoid fighting in the first place. However, once engaged, Crimson Dragons will fight to the death. They often treat the battle like a game, only using select tools at their disposal and increasing the challenge for their foe as time progresses. A Crimson Dragon first uses their claws to rip and tear their foe, then their tail to batter and slash, then their wings to buffet and skewer, followed by their jaws to crush and snap, and lastly their fire breath to totally immolate and incinerate.  "
+                        },
+                        {
+                            "heading" : "Personality",
+                            "content" : "Crimson Dragons are arrogant and bloodthirsty, treating the glory of battle like an obsessive religion. Crimson Dragons care not for gifts and offerings lest they are works serving as testaments to the greatness of themselves. Crimson Dragons are extremely prideful, expecting respect and taking offense should any dare to speak to them without first being spoken to. Crimson Dragons revere violent conflict, having been known to circle overhead while armies battle or cities are razed. When fighting, a Crimson Dragon denies itself any situational advantage, longing for an honorable fight. If outmatched, a Crimson Dragon will fight to the death and die at peace knowing it fought honorably. Upon achieving victory, Crimson Dragons will gloat and initimidate their foes and spectators. These speeches are sometimes prepared in advance, after which the loser is executed.  "
+                        }
+                    ]
+                },
+                {
+                    "heading" : "Society",
+                    "content" : "", 
+                    "sublibrary" : [
+                        {
+                            "heading" : "Individual",
+                            "content" : "Crimson Dragons demand obedience and perfection from their subjects, dealing harsh punishments for even the slightest insult or mistake. Crimson Dragons enjoy laughing, and as a result, keep a jester nearby at all times within their lair. There is only one jester at any given time, and each jester is selected from the Dragon's subjects. It is the second most respected position in the hierarchy, though not a desireable one. Crimson Dragons grow bored of their jesters rather quickly, burning them alive when they are no longer amusing.  "
+                        },
+                        {
+                            "heading" : "Intraspeciary",
+                            "content" : "Crimson Dragons consider themselves the superior breed of creature, and will not tolerate dishonor from their own kind. The exceptionally rare occasions when a Crimson Dragon does retreat from a fight are met with absolute outrage. They are dubbed 'dishonored ones', and are no longer considered members of the Crimson Dragon race.  Since they still wear the crimson scales of their kind, which is a grave sin, they are hunted down and torn to pieces by posses of other Crimson Dragons. The same treatment is given to any creature wearing or owning an object that incorporates crimson dragon scales in it.  While Crimson Dragons refuse to flee a fight, they do avoid conflict when face dwith a show of overwhelming force. In these situations, a Crimson Dragon will show a great deal of respect to their would be opponent by bowing and acknowledging their dominance. This is often a distasteful act for a Crimson Dragon to perform, but they justify it by rationalizing that they are not yet fully grown and there is more greatness and glory for them to face in the future. Crimson Dragons can accept their death, but they do not seek it out.  "
+                        },
+                        {
+                            "heading" : "Intercultural",
+                            "content" : ""
+                        }
                     ]
                 }
             ],
