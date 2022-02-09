@@ -44,7 +44,7 @@
               document.getElementById("common-page-content-title").innerHTML = "<div id=" + f.entry_name.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + ">" + f.entry_name + "</div>";
 
               // Populating the page title in the floating nav table
-              var tblRow = "<tr><td><a href='#" + f.entry_name.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'>" + f.entry_name + "</a></td></tr>";
+              var tblRow = "<tr><th><a href='#" + f.entry_name.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'>" + f.entry_name + "</a></th></tr>";
               $(tblRow).appendTo("#entry-page-nav-table tbody");
 
 
@@ -197,10 +197,10 @@
                         if (f.entry_description_library[x].sublibrary[w].heading != undefined && f.entry_description_library[x].sublibrary[w].content != undefined) {
 
                           // Populating subheading and content
-                          document.getElementById("common-page-description").innerHTML += "<div id='" + f.entry_description_library[x].sublibrary[w].heading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h4>" + f.entry_description_library[x].sublibrary[w].heading + "</h4></div><p>" + f.entry_description_library[x].sublibrary[w].content + "</p>";
+                          document.getElementById("common-page-description").innerHTML += "<div id='" + f.entry_description_library[x].sublibrary[w].heading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h4>&#8226;  " + f.entry_description_library[x].sublibrary[w].heading + "</h4></div><p>" + f.entry_description_library[x].sublibrary[w].content + "</p>";
                           
                           // Populating the page heading in the floating nav table
-                          var tblRow = "<tr><td><a style='margin-left: 20px' href='#" + f.entry_description_library[x].sublibrary[w].heading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'>" + f.entry_description_library[x].sublibrary[w].heading + "</a></td></tr>";
+                          var tblRow = "<tr><td><a style='margin-left: 20px' href='#" + f.entry_description_library[x].sublibrary[w].heading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'>&#8226;  " + f.entry_description_library[x].sublibrary[w].heading + "</a></td></tr>";
                           $(tblRow).appendTo("#entry-page-nav-table tbody");
 
                         }

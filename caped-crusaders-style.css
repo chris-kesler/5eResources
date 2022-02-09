@@ -201,17 +201,15 @@ body, .cc-attributes-overview-table tr th, .cc-attributes-overview-table th, .cc
 
 /* The off white chunk of the page that holds content */
 .entry-page-nav-table-section, .entry-page-nav-table-section-placeholder {
-  box-sizing: border-box;
-  overflow: hidden;
   margin-left: 3vw; 
   margin-right: 3vw;
-  margin-top: 25px;
+  margin-top: -10px;
   margin-bottom: 2vw;
   padding: 15px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
   height: auto;
-  width: 12vw; 
+  width: 10vw; 
   float: left;
 }
 
@@ -225,7 +223,14 @@ body, .cc-attributes-overview-table tr th, .cc-attributes-overview-table th, .cc
   background-color: transparent;
 }
 
+#entry-page-nav-table th {
+  border-bottom: 1px dotted grey;
+  text-align: left;
+}
 
+#entry-page-nav-table {
+  width: 10vw;
+}
 
 /* 
 ||==========================================================================================
