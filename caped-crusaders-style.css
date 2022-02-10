@@ -195,6 +195,7 @@ body, .cc-attributes-overview-table tr th, .cc-attributes-overview-table th, .cc
   padding-left: 25px;
   padding-right: 25px;
   height: auto;
+  min-width: 265px;
   max-width: 90vw; 
   width: auto;
 }
@@ -209,12 +210,12 @@ body, .cc-attributes-overview-table tr th, .cc-attributes-overview-table th, .cc
   padding-left: 15px;
   padding-right: 15px;
   height: auto;
-  width: 10vw; 
   float: left;
 }
 
 .entry-page-nav-table-section {
   position: fixed;
+  background-color: rgb(200,200,200);
   z-index: 10;
 }
 
@@ -228,10 +229,12 @@ body, .cc-attributes-overview-table tr th, .cc-attributes-overview-table th, .cc
   text-align: left;
 }
 
-#entry-page-nav-table {
-  width: 10vw;
-}
 
+.entry-page-nav-table-section, .entry-page-nav-table-section-placeholder, #entry-page-nav-table {
+  width: 10vw;
+  min-width: 135px; 
+}
+  
 /* 
 ||==========================================================================================
 || Footer elements  
@@ -281,8 +284,8 @@ body, .cc-attributes-overview-table tr th, .cc-attributes-overview-table th, .cc
 
 /* The site navigation buttons that line the header */
 .common-page-header-nav-button {
-  width: 10%;
-  min-width: 75px;
+  width: 10vw;
+  min-width: 65px;
   height: 50px;
   border-style: dotted;
 }
@@ -604,8 +607,8 @@ A small table to hold the entry page image and author credit
 /* An overview table used frequently throughout the site */
 .entry-page-overview-table {
   display: block;
-  width: 275px;
-  max-width: 65vw;
+  width: 25vw;
+  min-width: 200px;
   margin: 10px;
   margin-right: 0px;
   overflow: auto;
