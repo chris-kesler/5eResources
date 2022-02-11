@@ -238,19 +238,27 @@
         <!-- A transparent div to build everything else on top of -->
         <div class="common-page-content-transparent">
     
+          <!-- A button to hide and unhide the navigation table -->
+          <button id='entry-page-nav-table-hide-button' onclick='hideUnhideNavTable()'>&#60;&#60;</button>
+
           <!-- A fixed navigation section that contains links to page content sections -->
-          <section class="entry-page-nav-table-section">
+          <section id="entry-page-nav-table-section">
+
+            <!-- A button to scroll the nav table up if some of it is cropped by the viewport -->
+            <button id='entry-page-nav-table-show-button' onclick='hideUpDownNavTable()'>&and; &and; &and;</button>
+
+            <!-- The table to hold the navigation links -->
             <table id="entry-page-nav-table">
               <tbody></tbody>
             </table>
           </section>
 
           <!-- An empty div to allow other elements to style around the fixed nav table -->
-          <section class="entry-page-nav-table-section-placeholder"></section>
+          <section id="entry-page-nav-table-section-placeholder"></section>
 
             <!-- An off white chunk of the page that holds content -->
             <section class="common-page-content-section">
-    
+
             <!-- A back button that navigates out in the file structure  -->
             <div id="common-page-back-button-holder"></div>
             <!-- The title of the page content, including the source as a link -->
@@ -279,5 +287,43 @@
     $(".import-common-page-header").load("/_SiteResources/Pages/import-common-page-header.html");
     $(".import-common-page-footer").load("/_SiteResources/Pages/import-common-page-footer.html");
 
-});
+  });
+
+  function hideUnhideNavTable() {
+    var hidden = '-1000px' ;
+    var unhidden = '3vw';
+    
+    if (document.getElementById('entry-page-nav-table-section').style.marginLeft != hidden) {
+      document.getElementById('entry-page-nav-table-section').style.marginLeft = hidden;
+      document.getElementById('entry-page-nav-table-section-placeholder').style.marginLeft = hidden;
+
+      document.getElementById('entry-page-nav-table-hide-button').innerHTML = '&#62; &#62;';
+
+    } else {
+      document.getElementById('entry-page-nav-table-section').style.marginLeft = unhidden;
+      document.getElementById('entry-page-nav-table-section-placeholder').style.marginLeft = unhidden;
+
+      document.getElementById('entry-page-nav-table-hide-button').innerHTML = '&#60; &#60;';
+    }
+  }
+
+  function hideUpDownNavTable() {
+    var hidden = '-250px';
+    var unhidden = '-10px';
+    
+    if (document.getElementById('entry-page-nav-table-section').style.marginTop != hidden) {
+      document.getElementById('entry-page-nav-table-section').style.marginTop = hidden;
+      document.getElementById('entry-page-nav-table-hide-button').style.marginTop = hidden;
+
+      document.getElementById('entry-page-nav-table-show-button').innerHTML = '&or; &or; &or;';
+
+    } else {
+      document.getElementById('entry-page-nav-table-section').style.marginTop = unhidden;
+      document.getElementById('entry-page-nav-table-hide-button').style.marginTop = unhidden;
+
+      document.getElementById('entry-page-nav-table-show-button').innerHTML = '&and; &and; &and;';
+    }
+  }
+
+
 </script>

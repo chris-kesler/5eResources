@@ -69,6 +69,7 @@ p {
   color: rgb(25,25,25);
   margin-left: 25px;
   margin: 15px;
+  min-width: 200px;
 }
 
 /* All buttons will show cursor by default */
@@ -200,8 +201,12 @@ body, .cc-attributes-overview-table tr th, .cc-attributes-overview-table th, .cc
   width: auto;
 }
 
-/* The off white chunk of the page that holds content */
-.entry-page-nav-table-section, .entry-page-nav-table-section-placeholder {
+/* The off white chunk of the page that holds the entry page nav table in a fixed position, along with a placeholder for other html elements to float aroundand the table within */
+#entry-page-nav-table-section, #entry-page-nav-table-section-placeholder, #entry-page-nav-table {
+  width: 10vw;
+  min-width: 135px; 
+}
+#entry-page-nav-table-section, #entry-page-nav-table-section-placeholder {
   margin-left: 3vw; 
   margin-right: 3vw;
   margin-top: -10px;
@@ -211,26 +216,41 @@ body, .cc-attributes-overview-table tr th, .cc-attributes-overview-table th, .cc
   padding-right: 15px;
   height: auto;
   float: left;
+  border-top-left-radius: 0px;
 }
-
-.entry-page-nav-table-section {
+#entry-page-nav-table-section {
   position: fixed;
   background-color: rgb(200,200,200);
-  z-index: 10;
+  z-index: 5;
 }
-
-.entry-page-nav-table-section-placeholder {
+#entry-page-nav-table-section-placeholder {
   background-image: url("/_SiteResources/Images/Transparent.png");
   background-color: transparent;
 }
-
 #entry-page-nav-table th {
   border-bottom: 1px dotted grey;
   text-align: left;
 }
 
+/* The fixed button that hides and unhides the nav table */
+#entry-page-nav-table-hide-button, #entry-page-nav-table-show-button {
+  z-index: 11;
+  min-width: 30px;
+  color: aqua;
+  background-color: rgb(100,100,100);
+  border: 1px solid rgb(125,125,125);
+  border-radius: 5px;
+}
 
-.entry-page-nav-table-section, .entry-page-nav-table-section-placeholder, #entry-page-nav-table {
+#entry-page-nav-table-hide-button {
+  position: fixed;
+  width: 3vw;
+  margin-top: -10px;
+  border-top-right-radius: 0px;
+}
+
+#entry-page-nav-table-show-button { 
+  float: right;
   width: 10vw;
   min-width: 135px; 
 }
