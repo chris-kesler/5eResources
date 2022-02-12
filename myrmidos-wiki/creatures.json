@@ -71,11 +71,11 @@
                     "sublibrary" : [
                         {
                             "heading" : "Individual",
-                            "content" : "*under development*"
+                            "content" : "Azure Dragons typically avoid pillaging settlements unless it serves the interests of their sect.  They do enjoy preying on lone travelers, taking them captive for later use within demented rituals.  Azure Dragons prize religious texts that include pagan doctrine or hymnals, taking tidbits they fancy from any religion and incorporating them into their own.  "
                         },
                         {
                             "heading" : "Intraspeciary",
-                            "content" : "*under development*"
+                            "content" : "Azure Dragons tend to avoid one another.  If one surveys a mountain and sees fresh scrapings on the trees and rocks, the outsider will only continue and engage if they are desperate or significantly larger than the resident.  The exception to this involves mating.  An Azure Dragon who surveys the territory of the opposite sex will investigate if the scrapings are impressive enough.  Then, upon meeting, the dragons size each other up with a ritual that seems like a dance.  The utility of this dance is still a mystery, but it clearly has significance; if it goes badly, they might break out into an all out brawl.  Afterwards, if everything goes smoothly, the resident shows the visitor their cathedral lair and they discuss the resident's religious doctrine at length.  If the visitor finds the cathedral and doctrine satisfactory, they agree to become mated.  This involves the two sharing territory and cathedrals, although the resident remains the Mahant (deity priest) while the visitor becomes the Bhagat (a similar title, but secondary in terms of rank).  These mated pairs are able to coordinate together very effectively to expand their territory, grow their congregation, and massively improve their cathedral.  "
                         },
                         {
                             "heading" : "Intercultural",
@@ -334,6 +334,9 @@
             "entry_type" : "Primal",
             "entry_variety" : "Primadraconicus Terralia",
 
+            "img_rehosted" : "https://www.maxpixel.net/static/photo/1x/3d-Isolated-Fantasy-Animal-Legend-Dragon-4788969.jpg",
+            "img_rehosted_source" : "https://www.maxpixel.net/3d-Isolated-Fantasy-Animal-Legend-Dragon-4788969",
+
             "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/036/867/147/large/miguel-regodon-harkness-pzo2104-adult-crystal-dragon.jpg?1618851025",
             "img_linked_source" : "https://www.artstation.com/artwork/9malJq",
 
@@ -424,8 +427,8 @@
             "entry_type" : "Primal",
             "entry_variety" : "Primadraconicus Aquaria",
 
-            "img_rehosted" : "https://freesvg.org/img/1523127101.png",
-            "img_rehosed_link" : "https://freesvg.org/1523127101",
+            "img_rehosted" : "https://www.maxpixel.net/static/photo/1x/Body-Of-Water-Immersed-Travel-Sea-Ocean-Nature-3179245.jpg",
+            "img_rehosted_source" : "https://www.maxpixel.net/Body-Of-Water-Immersed-Travel-Sea-Ocean-Nature-3179245",
 
             "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/036/867/133/large/miguel-regodon-harkness-pzo2104-adult-birne-dragon.jpg?1618851015",
             "img_linked_source" : "https://www.artstation.com/artwork/9malJq",
@@ -517,8 +520,8 @@
             "entry_type" : "Quasiprimal",
             "entry_variety" : "Quasidraconicus Arctica",
 
-            "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/6/6d/Durian_-_Sintel-wallpaper-dragon.jpg",
-            "img_rehosted_source" : "https://commons.m.wikimedia.org/wiki/File:Durian_-_Sintel-wallpaper-dragon.jpg",
+            "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/4/41/Gringotts_Dragon_%2828462847187%29.jpg",
+            "img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Gringotts_Dragon_(28462847187).jpg",
 
             "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/032/538/925/large/miguel-regodon-harkness-pzo2102-adult-white-dragon-copia.jpg?1606753023",
             "img_linked_source" : "https://www.artstation.com/artwork/v2yNmO",
@@ -703,8 +706,8 @@
             "entry_type" : "Quasiprimal",
             "entry_variety" : "Quasidraconicus Basaltia",
 
-            "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/d/d9/MyPaint_dragon.jpg",
-            "img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:MyPaint_dragon.jpg",
+            "img_rehosted" : "https://www.maxpixel.net/static/photo/1x/Couch-Dragon-Composing-Fire-Sofa-Fantasy-5463104.jpg",
+            "img_rehosted_source" : "https://www.maxpixel.net/Couch-Dragon-Composing-Fire-Sofa-Fantasy-5463104",
 
             "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/036/867/155/large/miguel-regodon-harkness-pzo2104-adult-magma-dragon.jpg?1618851035",
             "img_linked_source" : "https://www.artstation.com/artwork/9malJq",
@@ -796,6 +799,9 @@
             "entry_type" : "Quasiprimal",
             "entry_variety" : "Quasidraconicus Verdaria",
 
+            "img_rehosted" : "https://www.maxpixel.net/static/photo/1x/Monster-Reptile-Monsters-Dragon-Dragoon-Dragons-3462724.jpg",
+            "img_rehosted_source" : "https://www.maxpixel.net/Monster-Reptile-Monsters-Dragon-Dragoon-Dragons-3462724",
+
             "img_linked" : "https://cdna.artstation.com/p/assets/images/images/032/538/922/large/miguel-regodon-harkness-pzo2102-adult-green-dragon-copia.jpg?1606753014",
             "img_linked_source" : "https://www.artstation.com/artwork/v2yNmO",
 
@@ -886,6 +892,9 @@
             "entry_category" : "Dragon",
             "entry_type" : "Metallic",
             "entry_variety" : "Allodraconicus Caelaria",
+
+            "img_rehosted" : "https://openclipart.org/image/800px/319787",
+            "img_rehosted_source" : "https://openclipart.org/detail/319787/blue-tribal-dragon-on-black-background",
 
             "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/032/538/919/large/miguel-regodon-harkness-pzo2102-adult-blue-dragon-copia.jpg?1606753010",
             "img_linked_source" : "https://www.artstation.com/artwork/v2yNmO",
@@ -1156,10 +1165,85 @@
             "entry_type" : "Metallic",
             "entry_variety" : "Allodraconicus Aquaria",
 
+            "img_rehosted" : "https://freesvg.org/img/1526744332.png",
+            "img_rehosted_source" : "https://freesvg.org/1526744332",
+
             "img_linked" : "https://cdna.artstation.com/p/assets/images/images/032/571/910/large/miguel-regodon-harkness-pzo2102-adult-bronce-dragon.jpg?1606837442",
             "img_linked_source" : "https://www.artstation.com/artwork/xJ2Yo1",
 
             "entry_description_overview" : "Bronze Dragons are extremely financially inclined and logistically focused.  They find a great deal of joy in tracking cargo shipments and reviewing warehouse stock levels.  Bronze Dragons usually procure treasure from sunken vessels and return it to the rigthful owner with fees for their service removed, allowing them to amass small fortunes that they then use to invest in seafaring cargo shipment companies.  You would be hard pressed to find a mercantile coster with seafaring vessels that doesn't have the financial backing of a Bronze Dragon.  While Bronze Dragons do value civility and order as any Metallic Dragon would, they hold a remarkably potent resentment for pirates.  Gold Dragons are widely considered the most brutal and vengeful of the Metallic Dragons, but accounts of Bronze Dragons razing pirate vessels certainly makes them a competitor for that heading.  ",
+
+            "entry_description_library" : [
+                {
+                            
+                    "heading" : "Physiology",
+                    "content" : "",
+                    "sublibrary" : [
+                        {
+                            "heading" : "Appearance",
+                            "content" : ""
+                        },
+                        {
+                            "heading" : "Anatomy",
+                            "content" : ""
+                        }
+                    ]
+                },
+                {
+                    "heading" : "Ecology",
+                    "content" : "", 
+                    "sublibrary" : [
+                        {
+                            "heading" : "Food Chain",
+                            "content" : ""
+                        },
+                        {
+                            "heading" : "Habitat",
+                            "content" : ""
+                        },
+                        {
+                            "heading" : "Lair",
+                            "content" : ""
+                        }
+                    ]
+                },
+                {
+                    "heading" : "Behavior",
+                    "content" : "", 
+                    "sublibrary" : [
+                        {
+                            "heading" : "Hunting",
+                            "content" : ""
+                        },
+                        {
+                            "heading" : "Defense",
+                            "content" : ""
+                        },
+                        {
+                            "heading" : "Personality",
+                            "content" : ""
+                        }
+                    ]
+                },
+                {
+                    "heading" : "Society",
+                    "content" : "", 
+                    "sublibrary" : [
+                        {
+                            "heading" : "Individual",
+                            "content" : ""
+                        },
+                        {
+                            "heading" : "Intraspeciary",
+                            "content" : ""
+                        },
+                        {
+                            "heading" : "Intercultural",
+                            "content" : ""
+                        }
+                    ]
+                }
+            ],
 
             "overview_table_groups" : [
                 {
@@ -1241,6 +1325,9 @@
             "entry_category" : "Dragon",
             "entry_type" : "Metallic",
             "entry_variety" : "Allodraconicus Artica",
+
+            "img_rehosted" : "https://cdn.pixabay.com/photo/2020/10/22/08/51/dragon-5675326_960_720.png",
+            "img_rehosted_source" : "https://pixabay.com/illustrations/dragon-statue-sculpture-decorative-5675326/",
 
             "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/032/571/937/large/miguel-regodon-harkness-pzo2102-adult-silver-dragon.jpg?1606837462",
             "img_linked_source" : "https://www.artstation.com/artwork/xJ2Yo1",
@@ -1589,8 +1676,8 @@
             "entry_type" : "Spirit",
             "entry_variety" : "Deiadraconicus Penumbria",
 
-            "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/6/6b/Easy_origami_dragon_for_beginners-_how_to_paint_a_dragon_for_beginners.jpg",
-            "img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Easy_origami_dragon_for_beginners-_how_to_paint_a_dragon_for_beginners.jpg",
+            "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/6/6c/Qing_Dynasty_Dragon.png",
+            "img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Qing_Dynasty_Dragon.png",
 
             "img_linked" : "https://cdna.artstation.com/p/assets/images/images/038/863/752/large/miguel-regodon-harkness-imperial-dragon-underworld-adult.jpg?1624292617",
             "img_linked_source" : "https://www.artstation.com/artwork/8e3lAm",
@@ -1763,6 +1850,9 @@
             "entry_category" : "Dragon",
             "entry_type" : "Draconid",
             "entry_variety" : "Drakkenia Anguilliformes",
+
+            "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/2/2d/Sea_Serpent_after_Owen_1741.png",
+            "img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Sea_Serpent_after_Owen_1741.png",
 
             "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/038/863/737/large/miguel-regodon-harkness-imperial-dragon-sea-adult.jpg?1624292603",
             "img_linked_source" : "https://www.artstation.com/artwork/8e3lAm",
