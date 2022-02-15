@@ -335,7 +335,8 @@ body, .cc-attributes-overview-table tr th, .cc-attributes-overview-table th, .cc
 .directory-page-nav-button-to-directory-page {
   width: 300px;
   max-width: 35vw;
-  height: 65px;
+  height: auto;
+  min-height: 65px;
   margin: 5px;
   border-radius: 20px;
   background-color: rgb(175, 175, 175);
@@ -348,7 +349,8 @@ body, .cc-attributes-overview-table tr th, .cc-attributes-overview-table th, .cc
 .directory-page-nav-button-to-entry-page {
   width: 300px;
   max-width: 35vw;
-  height: 50px;
+  height: auto;
+  min-height: 50px;
   border-radius: 10px;
   background-color: rgb(212, 188, 143);
   border-style: solid;
