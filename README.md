@@ -105,7 +105,7 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 Inspiration, code snippets, etc.
 <ul>
 <li>
-My experiences with <a href='https://company.wizards.com/en'>Wizards of the Coast's</a> table top roleplaying game <a href='https://dnd.wizards.com/'>Dungeons and Dragons 5th Edition</a> inspired a great deal of my wiki content, variant system mechanics, and even the name of this project (which takes after two 5e sourcebooks:  <a href='https://dnd.wizards.com/products/xanathars-guide-everything'>Xanathar's Guide to Everything</a> and <a href='https://dnd.wizards.com/products/tabletop-games/rpg-products/tashas-cauldron-everything'>Tasha's Cualdron of Everything</a>)
+My experiences with <a href='https://company.wizards.com/en'>Wizards of the Coast's</a> table top roleplaying game <a href='https://dnd.wizards.com/'>Dungeons and Dragons 5th Edition</a> inspired a great deal of my wiki content, variant system mechanics, and even the name of this project (which takes after two 5e sourcebooks:  <a href='https://dnd.wizards.com/products/xanathars-guide-everything'>Xanathar's Guide to Everything</a> and <a href='https://dnd.wizards.com/products/tabletop-games/rpg-products/tashas-cauldron-everything'>Tasha's Cauldron of Everything</a>)
 </li>
 <li>
 A great many of the images used in this project come from <a href='https://commons.wikimedia.org/wiki/Main_Page'>Wikimedia Commons</a> and <a href='https://thenounproject.com/'>The Noun Project</a>.  Both of these sites contain a myriad of fantastic images free for use under the Creative Commons License.  
