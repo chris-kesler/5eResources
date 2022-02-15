@@ -1,7 +1,6 @@
 <html>
 
 <h2><a href="https://github.com/christian-kesler/knowones-website-of-everything">KnowOne's Website Of Everything on GitHub</a></h2>
-<hr>
 <p>
 A website containing styled directories and pages that populate data based on centralized JSON files with sortable and filterable table entries.  
 </p>
