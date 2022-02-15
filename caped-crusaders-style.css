@@ -333,7 +333,7 @@ body, .cc-attributes-overview-table tr th, .cc-attributes-overview-table th, .cc
 
 /* A button to navigate the website file structure from the page content, signifying a directory page */
 .directory-page-nav-button-to-directory-page {
-  width: 225px;
+  width: 300px;
   max-width: 35vw;
   height: 65px;
   margin: 5px;
@@ -346,7 +346,7 @@ body, .cc-attributes-overview-table tr th, .cc-attributes-overview-table th, .cc
 
 /* A button to navigate the website file structure from the page content, signifying an entry page */
 .directory-page-nav-button-to-entry-page {
-  width: 225px;
+  width: 300px;
   max-width: 35vw;
   height: 50px;
   border-radius: 10px;
