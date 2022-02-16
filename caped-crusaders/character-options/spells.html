@@ -406,18 +406,27 @@
         x = rows[i].getElementsByTagName("TD")[n];
         y = rows[i + 1].getElementsByTagName("TD")[n];
 
+        // Checking whether we are comparing string characters or converting to integers
+        if (/\d/.test(parseInt(x.innerHTML.toLowerCase().replace(/\D/g,'')))) {
+          var xcompare = parseInt(x.innerHTML.toLowerCase().replace(/\D/g,''));
+          var ycompare = parseInt(y.innerHTML.toLowerCase().replace(/\D/g,''));
+        } else {
+          var xcompare = x.innerHTML.toLowerCase();
+          var ycompare = y.innerHTML.toLowerCase();
+        }
+
         // Perform comparisons and switch entries based on direction of sort
         if (dir == "asc") {
           
           // If comparison returns true, entries should be switched
-          if (parseInt(x.innerHTML.toLowerCase().replace(/\D/g,'')) > parseInt(y.innerHTML.toLowerCase().replace(/\D/g,''))) {
+          if (xcompare > ycompare) {
             shouldSwitch = true;
             break;
           }
         } else if (dir == "desc") {
-
+          
           // If comparison returns true, entries should be switched
-          if (parseInt(x.innerHTML.toLowerCase().replace(/\D/g,'')) < parseInt(y.innerHTML.toLowerCase().replace(/\D/g,''))) {
+          if (xcompare < ycompare) {
             shouldSwitch = true;
             break;
           }
