@@ -95,18 +95,32 @@ In truth, this project is still in constant development.  While I have subscribe
 v1.0.0
 <ul>
 <li>
-Initial Release upon completion of the CS-260 course at Southern New Hampshire University
+Initial Release 
 </li>
 <li>
-See commit change or See release history
+While I would like to publish this release, I was using images downloaded from the internet without proper credit or usage rights at the time.  This was always acceptable for personal use in the past, but is sorely inappropriate for this project.  Since this project could be considered commercial if I gain employment based on the content within, I converted my image use practices to those that are entirely compliant with full commercial use to the best of my knowledge.  This involves images that have been purchased with permission for commercial use, images under the Creative Commons License that are rehosted with author and source credit, and images I have no rights to that are only linked without any rehosting.  Given this, I do not think it appropriate to package and release the initial stages of this project prior to legal image use conversion.  
 </li>
 </ul>
 </li>
 <li>
-v1.1.0
+<a target='blank' href='https://github.com/christian-kesler/knowones-website-of-everything/releases/tag/v1.1.0'>v1.1.0</a>
 <ul>
 <li>
-Enhanced Revision created during the CS-499 course at Southern New Hampshire University
+<a target='blank' href='https://github.com/christian-kesler/knowones-website-of-everything/releases/tag/v1.1.0'>Image Licensing Update</a>
+</li>
+<li>
+This version of the project is the first remotely showcase ready iteration that used proper image credit and licensing.
+</li>
+</ul>
+</li>
+<li>
+<a target='blank' href='https://github.com/christian-kesler/knowones-website-of-everything/releases/tag/v1.2.0'>v1.2.0</a>
+<ul>
+<li>
+<a target='blank' href='https://github.com/christian-kesler/knowones-website-of-everything/releases/tag/v1.2.0'>Caped Crusaders Prerelease</a>
+</li>
+<li>
+The first draft of content for the Caped Crusaders 5th Edition variant system, including a series of classes and subclasses. It also includes a list of spell items drawn from the 5E SRD and third party homebrew creations with source links included.  
 </li>
 </ul>
 </li>
@@ -114,7 +128,7 @@ Enhanced Revision created during the CS-499 course at Southern New Hampshire Uni
 
 <h4>License</h4>
 <p>
-This project is licensed under the MIT License - see the LICENSE.md file for details.  
+This project is licensed under the default license for GitHub repositories, which can be read about here:  <a target='blank' href='https://choosealicense.com/no-permission/'>No License, GitHub</a>
 </p>
 
 <h4>Acknowledgements</h4>
@@ -132,5 +146,6 @@ A great many of the images used in this project come from <a target='blank' href
 Some of the content within Caped Crusaders was created and shared by acquaintances met on Discord, and links to their original work are included when applicable.  
 </li>
 </ul>
+
 
 </html>
