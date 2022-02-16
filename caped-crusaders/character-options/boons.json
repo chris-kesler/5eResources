@@ -79,7 +79,7 @@
             "level_str" : "1st",
 
             "type_str" : "Conjuration",
-            "school_img" : "/_SiteResources/Images/Sigil-Conjuration.png",
+            "school_img" : "/resources/Images/Sigil-Conjuration.png",
             
             "damage_effect_str" : "Buff",
             
@@ -102,7 +102,7 @@
             "level_str" : "4th",
             
             "type_str" : "Divination",
-            "school_img" : "/_SiteResources/Images/Sigil-Divination.png",
+            "school_img" : "/resources/Images/Sigil-Divination.png",
             
             "damage_effect_str" : "Buff",
             
@@ -125,7 +125,7 @@
             "level_str" : "3rd",
             
             "type_str" : "Necromancy",
-            "school_img" : "/_SiteResources/Images/Sigil-Necromancy.png",
+            "school_img" : "/resources/Images/Sigil-Necromancy.png",
             
             "damage_effect_str" : "Buff",
             
@@ -148,7 +148,7 @@
             "level_str" : "5th",
             
             "type_str" : "Abjuration",
-            "school_img" : "/_SiteResources/Images/Sigil-Abjuration.png",
+            "school_img" : "/resources/Images/Sigil-Abjuration.png",
             
             "damage_effect_str" : "Buff",
             
@@ -171,7 +171,7 @@
             "level_str" : "6th",
             
             "type_str" : "Abjuration",
-            "school_img" : "/_SiteResources/Images/Sigil-Abjuration.png",
+            "school_img" : "/resources/Images/Sigil-Abjuration.png",
             
             "damage_effect_str" : "Buff",
             
@@ -194,7 +194,7 @@
             "level_str" : "7th",
             
             "type_str" : "Divination",
-            "school_img" : "/_SiteResources/Images/Sigil-Divination.png",
+            "school_img" : "/resources/Images/Sigil-Divination.png",
             
             "damage_effect_str" : "Buff",
             
@@ -217,7 +217,7 @@
             "level_str" : "4th",
             
             "type_str" : "Enchantment",
-            "school_img" : "/_SiteResources/Images/Sigil-Enchantment.png",
+            "school_img" : "/resources/Images/Sigil-Enchantment.png",
             
             "damage_effect_str" : "Buff",
             
@@ -240,7 +240,7 @@
             "level_str" : "3rd",
             
             "type_str" : "Abjuration",
-            "school_img" : "/_SiteResources/Images/Sigil-Abjuration.png",
+            "school_img" : "/resources/Images/Sigil-Abjuration.png",
             
             "damage_effect_str" : "Buff",
             
@@ -263,7 +263,7 @@
             "level_str" : "2nd",
             
             "type_str" : "Transmutation",
-            "school_img" : "/_SiteResources/Images/Sigil-Transmutation.png",
+            "school_img" : "/resources/Images/Sigil-Transmutation.png",
             
             "damage_effect_str" : "Buff",
             
@@ -287,7 +287,7 @@
             "level_str" : "2nd",
 
             "type_str" : "Evocation",
-            "school_img" : "/_SiteResources/Images/Sigil-Evocation.png",
+            "school_img" : "/resources/Images/Sigil-Evocation.png",
             
             "damage_effect_str" : "Buff",
             
@@ -310,7 +310,7 @@
             "level_str" : "1st",
 
             "type_str" : "Transmutation",
-            "school_img" : "/_SiteResources/Images/Sigil-Transmutation.png",
+            "school_img" : "/resources/Images/Sigil-Transmutation.png",
             
             "damage_effect_str" : "Buff",
             
