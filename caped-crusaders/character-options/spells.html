@@ -410,14 +410,14 @@
         if (dir == "asc") {
           
           // If comparison returns true, entries should be switched
-          if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          if (parseInt(x.innerHTML.toLowerCase().replace(/\D/g,'')) > parseInt(y.innerHTML.toLowerCase().replace(/\D/g,''))) {
             shouldSwitch = true;
             break;
           }
         } else if (dir == "desc") {
 
           // If comparison returns true, entries should be switched
-          if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          if (parseInt(x.innerHTML.toLowerCase().replace(/\D/g,'')) < parseInt(y.innerHTML.toLowerCase().replace(/\D/g,''))) {
             shouldSwitch = true;
             break;
           }
