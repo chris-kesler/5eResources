@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-US-Compatible" content="e-edge">
+    <title>KnowOne's Website of Everything</title>
+    <link rel="icon" href="/resources/Images/OwlOfMinerva_ModifiedLogo.png">
+    <link rel="stylesheet" href="/caped-crusaders-style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  </head>
+
+
+  <body>
+    <div class="common-page-background"> 
+      <div class="common-page-header">
+        <div class="import-common-page-header"></div>
+
+          <h1>Character Builds:  Artificer + War Magic</h1>
+          <hr>
+      </div>
+        
+
+      <div class="common-page-content-transparent">
+          
+
+
+
+            <section class="common-page-content-section">
+                <button id="common-page-back-button" onclick="location.href='/character-builds.html'">Out to Character Builds</button>
+                <h3>The Meta</h3>
+                <hr>
+
+                <table class="directory-page-nav-button-table">
+                  <tr><td>
+                    <button class="directory-page-nav-button-to-entry-page" onclick="location.href='/game-journals/dnd5e/ruben-jarricor.html'">Ruben Jarricor</button>
+                  </td></tr>
+                </table>
+                
+                <p>
+                  Game Journal entries for characters I have used in actual play following this build strategy can be found to the right.  
+                </p>
+                <p>
+                  I once read a guide on how to play a "god" Wizard in D&D that was written by Treantmonk, and I instantly fell in love with the concept.
+                  I had played Paladins and Rogues prior, but every attempt to play a spellcaster left me feeling like a glass cannon that should pack way more punch.
+                  After reading the god wizard guide, I took a totally different approach.
+                  I started playing Wizards who focused on battlefield control and I loved every second of it.
+                  However, the Wizard does have some weaknesses such as a pitiful Armor Class and less than ideal Saving Throws, so my goal with this build is to maximize my godly power while wrapping up loose defensive ends.
+                </p>
+              </section>
+
+              <section class="common-page-content-section">                
+                <h3>Build Setup</h3>
+                <hr>
+                <table class="wiki-attributes-overview-table">
+                  <tr>
+                    <th>Race</th>
+                    <th>Background</th>
+                    <th>STR</th>
+                    <th>DEX</th>
+                    <th>CON</th>
+                    <th>INT</th>
+                    <th>WIS</th>
+                    <th>CHA</th>
+                    <th>Starting Equipment</th>
+                  </tr>
+
+                  <tr>
+                    <td><p>Custom Lineage</p>
+                      <ul>
+                        <li>Small</li>
+                        <li>+2 Int</li>
+                        <li>Fey Touched Int: Bless</li>
+                        <li>Darkvision</li>
+                        <li>Undercommon</li>
+                      </ul>
+                    </td>
+                    <td>Orzhov Representative<p>
+                    Great background feature and excellent spell list.
+                    We can influence members of the local government to perform small tasks, granting us a modicum of legal authority.</p></td>
+                    <td>PB: 8</td>
+                    <td>PB: 14</td>
+                    <td>PB: 14</td>
+                    <td>PB: 15</td>
+                    <td>PB: 12</td>
+                    <td>PB: 8</td>
+                    <td><p>Gold is preferred, otherwise:</p>
+                      <ul>
+                        <li>any two simple weapons of your choice (2 Light Crossbows to sell later)</li>
+                        <li>a light crossbow and 20 bolts</li>
+                        <li>your choice of studded leather armor or scale mail (Scale Mail)</li>
+                        <li>thieves’ tools and a dungeoneer’s pack</li>
+                      </ul>
+                        Note the lack of shield :(
+                    </td>
+                  </tr>
+                </table>
+              </section>
+
+              <section class="common-page-content-section">
+                <h3>Level Breakdown</h3>
+                <hr>
+                <table class="wiki-attributes-overview-table">
+                  <tr>
+                    <th>Levels</th>
+                    <th>Class/Subclass</th>
+                    <th>ASI</th>
+                    <th>HP/HD</th>
+                    <th>Prof Bonus</th>
+                    <th>Armor Class</th>
+                    <th>STR</th>
+                    <th>DEX</th>
+                    <th>CON</th>
+                    <th>INT</th>
+                    <th>WIS</th>
+                    <th>CHA</th>
+                  </tr>
+
+                  <tr>
+                    <td>Level 1</td>
+                    <td>Artificer 1</td>
+                    <td>---</th>
+                    <td>10/1d8</td>
+                    <td>+2</td>
+                    <td>17 = Chain Shirt (13) + Dex (2) + Shield (2)</td>
+                    <td>8</td>
+                    <td>14</td>
+                    <td><b>14</b></td>
+                    <td><b>18</b></td>
+                    <td>12</td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td>Level 2</td>
+                    <td>Wizard 1</td>
+                    <td>---</th>
+                    <td>16/1d8 + 1d6</td>
+                    <td>+2</td>
+                    <td>17 = Chain Shirt (13) + Dex (2) + Shield (2)</td>
+                    <td>8</td>
+                    <td>14</td>
+                    <td><b>14</b></td>
+                    <td><b>18</b></td>
+                    <td>12</td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td>Level 3</td>
+                    <td>Wizard 2: War Magic</td>
+                    <td>---</th>
+                    <td>22/1d8 + 2d6</td>
+                    <td>+2</td>
+                    <td>17 = Chain Shirt (13) + Dex (2) + Shield (2)</td>
+                    <td>8</td>
+                    <td>14</td>
+                    <td><b>14</b></td>
+                    <td><b>18</b></td>
+                    <td>12</td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td>Level 4</td>
+                    <td>Wizard 3: War Magic</td>
+                    <td>---</th>
+                    <td>28/1d8 + 3d6</td>
+                    <td>+2</td>
+                    <td>17 = Chain Shirt (13) + Dex (2) + Shield (2)</td>
+                    <td>8</td>
+                    <td>14</td>
+                    <td><b>14</b></td>
+                    <td><b>18</b></td>
+                    <td>12</td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td>Level 5</td>
+                    <td>Wizard 4: War Magic</td>
+                    <td>Telekinetic INT</th>
+                    <td>34/1d8 + 4d6</td>
+                    <td>+3</td>
+                    <td>17 = Chain Shirt (13) + Dex (2) + Shield (2)</td>
+                    <td>8</td>
+                    <td>14</td>
+                    <td><b>14</b></td>
+                    <td><b>19</b></td>
+                    <td>12</td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td>Level 6</td>
+                    <td>Wizard 5: War Magic</td>
+                    <td>---</th>
+                    <td>40/1d8 + 5d6</td>
+                    <td>+3</td>
+                    <td>17 = Chain Shirt (13) + Dex (2) + Shield (2)</td>
+                    <td>8</td>
+                    <td>14</td>
+                    <td><b>14</b></td>
+                    <td><b>19</b></td>
+                    <td>12</td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td>Level 7</td>
+                    <td>Wizard 6: War Magic</td>
+                    <td>---</th>
+                    <td>46/1d8 + 6d6</td>
+                    <td>+3</td>
+                    <td>17 = Chain Shirt (13) + Dex (2) + Shield (2)</td>
+                    <td>8</td>
+                    <td>14</td>
+                    <td><b>14</b></td>
+                    <td><b>19</b></td>
+                    <td>12</td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td>Level 8</td>
+                    <td>Wizard 7: War Magic</td>
+                    <td>---</th>
+                    <td>52/1d8 + 7d6</td>
+                    <td>+3</td>
+                    <td>17 = Chain Shirt (13) + Dex (2) + Shield (2)</td>
+                    <td>8</td>
+                    <td>14</td>
+                    <td><b>14</b></td>
+                    <td><b>19</b></td>
+                    <td>12</td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td>Level 9</td>
+                    <td>Wizard 8: War Magic</td>
+                    <td>Observant INT</th>
+                    <td>58/1d8 + 8d6</td>
+                    <td>+4</td>
+                    <td>17 = Chain Shirt (13) + Dex (2) + Shield (2)</td>
+                    <td>8</td>
+                    <td>14</td>
+                    <td><b>14</b></td>
+                    <td><b>20</b></td>
+                    <td>12</td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td>Level 10</td>
+                    <td>Wizard 9: War Magic</td>
+                    <td>---</th>
+                    <td>64/1d8 + 9d6</td>
+                    <td>+4</td>
+                    <td>17 = Chain Shirt (13) + Dex (2) + Shield (2)</td>
+                    <td>8</td>
+                    <td>14</td>
+                    <td><b>14</b></td>
+                    <td><b>20</b></td>
+                    <td>12</td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td>Level 11</td>
+                    <td>Wizard 10: War Magic</td>
+                    <td>---</th>
+                    <td>70/1d8 + 10d6</td>
+                    <td>+4</td>
+                    <td>19 = Half Plate (15) + Dex (2) + Shield (2)</td>
+                    <td>8</td>
+                    <td>14</td>
+                    <td><b>14</b></td>
+                    <td><b>20</b></td>
+                    <td>12</td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td>Level 12</td>
+                    <td>Wizard 11: War Magic</td>
+                    <td>---</th>
+                    <td>76/1d8 + 11d6</td>
+                    <td>+4</td>
+                    <td>19 = Half Plate (15) + Dex (2) + Shield (2)</td>
+                    <td>8</td>
+                    <td>14</td>
+                    <td><b>14</b></td>
+                    <td><b>20</b></td>
+                    <td>12</td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td>Level 13</td>
+                    <td>Wizard 12: War Magic</td>
+                    <td>Resilient WIS</th>
+                    <td>82/1d8 + 12d6</td>
+                    <td>+5</td>
+                    <td>19 = Half Plate (15) + Dex (2) + Shield (2)</td>
+                    <td>8</td>
+                    <td>14</td>
+                    <td><b>14</b></td>
+                    <td><b>20</b></td>
+                    <td><b>13</b></td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td>Level 14</td>
+                    <td>Wizard 13: War Magic</td>
+                    <td>---</th>
+                    <td>88/1d8 + 13d6</td>
+                    <td>+5</td>
+                    <td>19 = Half Plate (15) + Dex (2) + Shield (2)</td>
+                    <td>8</td>
+                    <td>14</td>
+                    <td><b>14</b></td>
+                    <td><b>20</b></td>
+                    <td><b>13</b></td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td>Level 15</td>
+                    <td>Wizard 14: War Magic</td>
+                    <td>---</th>
+                    <td>94/1d8 + 14d6</td>
+                    <td>+5</td>
+                    <td>19 = Half Plate (15) + Dex (2) + Shield (2)</td>
+                    <td>8</td>
+                    <td>14</td>
+                    <td><b>14</b></td>
+                    <td><b>20</b></td>
+                    <td><b>13</b></td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td>Level 16</td>
+                    <td>Wizard 15: War Magic</td>
+                    <td>---</th>
+                    <td>100/1d8 + 15d6</td>
+                    <td>+5</td>
+                    <td>19 = Half Plate (15) + Dex (2) + Shield (2)</td>
+                    <td>8</td>
+                    <td>14</td>
+                    <td><b>14</b></td>
+                    <td><b>20</b></td>
+                    <td><b>13</b></td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td>Level 17</td>
+                    <td>Wizard 16: War Magic</td>
+                    <td>Skill Expert WIS: Arcana</th>
+                    <td>106/1d8 + 16d6</td>
+                    <td>+6</td>
+                    <td>19 = Half Plate (15) + Dex (2) + Shield (2)</td>
+                    <td>8</td>
+                    <td>14</td>
+                    <td><b>14</b></td>
+                    <td><b>20</b></td>
+                    <td><b>14</b></td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td>Level 18</td>
+                    <td>Wizard 17: War Magic</td>
+                    <td>---</th>
+                    <td>112/1d8 + 17d6</td>
+                    <td>+6</td>
+                    <td>19 = Half Plate (15) + Dex (2) + Shield (2)</td>
+                    <td>8</td>
+                    <td>14</td>
+                    <td><b>14</b></td>
+                    <td><b>20</b></td>
+                    <td><b>14</b></td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td>Level 19</td>
+                    <td>Wizard 18: War Magic</td>
+                    <td>---</th>
+                    <td>118/1d8 + 18d6</td>
+                    <td>+6</td>
+                    <td>19 = Half Plate (15) + Dex (2) + Shield (2)</td>
+                    <td>8</td>
+                    <td>14</td>
+                    <td><b>14</b></td>
+                    <td><b>20</b></td>
+                    <td><b>14</b></td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td>Level 20</td>
+                    <td>Up to you to decide</td>
+                    <td>---</th>
+                    <td>124/1d8 + 18d6 + ?</td>
+                    <td>+6</td>
+                    <td>19 = Half Plate (15) + Dex (2) + Shield (2)</td>
+                    <td>8</td>
+                    <td>14</td>
+                    <td><b>14</b></td>
+                    <td><b>20</b></td>
+                    <td><b>14</b></td>
+                    <td>8</td>
+                  </tr>
+                </table>
+                <br>
+              </section>
+
+              <section class="common-page-content-section">
+                <h3>Walkthrough by Tier</h3>
+                <hr>
+
+                <p>
+                  The overall goal of this build is to serve as a force multiplier.  
+                  I want to make my allies more powerful and my enemies less so.  
+                  With that in mind, I have laid out the spells and strategies that I think would best serve each tier of gameplay.  
+                </p>
+
+                <h3>Tier 1</h3>
+                <hr>
+                <table class="cc-build-selections-table">
+
+                  <tr> 
+                    <th colspan="2">Spell Table</th>
+                  </tr>
+                  <tr> 
+                    <th colspan="2">Artificer 1</th>
+                  </tr>
+                  <tr>
+                    <td>Cantrips</td>
+                    <td>+Guidance, +Thorn Whip<hr>
+                      Artificer:  <b>Guidance, Thorn Whip</b></td>
+                  </tr>
+                  <tr>
+                    <td>1st lvl</td>
+                    <td>+Cure Wounds, +Faerie Fire, +Feather Fall, +Sanctuary
+                      <hr>
+                    Artificer:  <b>Cure Wounds, Faerie Fire, Feather Fall, Sanctuary</b>
+                    </td>
+                  </tr>
+
+                  <tr> 
+                    <th colspan="2">Artificer 1 / Wizard 1</th>
+                  </tr>
+                  <tr>
+                    <td>Cantrips</td>
+                    <td>+Chill Touch, +Mind Sliver, +Minor Illusion
+                      <hr>
+                      Artificer:  <b>Guidance, Thorn Whip</b>
+                      <br>
+                      Wizard:  <b>Chill Touch, Mind Sliver, Minor Illusion</b>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1st lvl Spells</td>
+                    <td>+Command, +Detect Magic, +Expeditious Retreat, +Find Familiar, +Fog Cloud, +Grease
+                      <hr>
+                      Artificer:  <b>Cure Wounds, Faerie Fire, Feather Fall, Sanctuary</b>
+                      <br>
+                      Wizard:  <b>Command, Detect Magic, Expeditious Retreat, </b>Find Familiar, <b>Fog Cloud, Grease</b>
+                    </td>
+                  </tr>
+
+                  <tr> 
+                    <th colspan="2">Artificer 1 / Wizard 2</th>
+                  </tr>
+                  <tr>
+                    <td>Cantrips</td>
+                    <td>
+                      Artificer:  <b>Guidance, Thorn Whip</b><br>
+                      Wizard:  <b>Chill Touch, Mind Sliver, Minor Illusion</b>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1st lvl Spells</td>
+                    <td>+Absorb Elements, +Shield
+                      <hr>
+                      Artificer:  <b>Cure Wounds, Faerie Fire, Feather Fall, Sanctuary</b><br>
+                      Wizard:  <b>Absorb Elements, Command, Detect Magic, Expeditious Retreat, </b>Find Familiar, <b>Fog Cloud, Grease, Shield</b>
+                    </td>
+                  </tr>
+
+                  <tr> 
+                    <th colspan="2">Artificer 1 / Wizard 3</th>
+                  </tr>
+                  <tr>
+                    <td>Cantrips</td>
+                    <td>
+                      Artificer:  <b>Guidance, Thorn Whip</b><br>
+                      Wizard:  <b>Chill Touch, Mind Sliver, Minor Illusion</b>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1st lvl Spells</td>
+                    <td>+?
+                      <hr>
+                      Artificer:  <b>Cure Wounds, Faerie Fire, Feather Fall, Sanctuary</b><br>
+                      Wizard:  <b>Absorb Elements, Command, Detect Magic, Expeditious Retreat, </b>Find Familiar, <b>Fog Cloud, Grease, Shield</b>
+                    </td>
+                  </tr>
+
+                </table>
+
+                <p>
+                  Low levels are rough and unforgiving.  
+                  The main objective here is to keep at least one enemy combatant out of the fight until the rest of the party is ready to gang up on them.  
+                </p>
+
+                <h4>Level 1</h4>
+                <p>
+                  We'll be taking the Guidance and Thorn Whip cantrips from Artificer, as well as Faerie Fire, Cure Wounds, Sanctuary, and Feather Fall.  
+                  Thorn Whip can be used to force enemies to be subjected to my AoEs more often than they might be otherwise.  
+                  Guidance is not a combat cantrip per se, but it goes very very nicely with Gift of Alacrity for an Initiative boost.  
+                  Our Initiative sits at 1d20 + Dex + 1d8 + 1d4 most of the time.
+                  We should always be going first, but what do we do with our leading turn in combat?  
+                  <br><br>
+                  To start, we have Faerie Fire right from level one.  
+                  If the opportunity presents itself, then laying down Faerie Fire on a large group of enemies should be our first turn.  
+                  If not, then we can use Thorn Whip to pull enemies into flanking positions or out of positions that flank allies.  
+                  There really isn't much you can do at level 1 other than this.  
+                </p>
+
+                <h4>Level 2</h4>
+                <p>
+                  At level 2, we get a lot more spells.  
+                  This is why we love Wizards; knowing tons of spells.  
+                  We'll be taking Chill Touch, Mind Sliver, and Minor Illusion from Wizard.  
+                  Three of our five cantrips do damage, but the reason I chose them is for the debuffs they inflict.  
+                  <br><br>
+                  Chill Touch blocks hit point regen, which makes it my favorite combat cantrip in 5e.  
+                  Mind Sliver grants a debuff to the next saving throw, which is rare, and on a cantrip this is awesome for setting up a ton of things.  
+                  Minor Illusion has tons of out of combat utility, and can be used in combat to create obscurement for firing spells from or shooting arrows out of.  
+                  This spell wraps up the cantrip selection nicely as a versatile defensive option.  
+                  <br><br>
+                  We also have a couple good AoEs and a great single target debuff.  
+                  Fog Cloud is great for blinding ranged enemies until we can close the distance for our melee members to do their dirty work.  
+                  Grease is excellent for choke points, and pairs nicely with Thorn Whip.  
+                  Mind Sliver should always preceed Command.  
+                  <br><br>
+                  If the party is facing a lone boss, Mind Sliver followed by Command Grovel on the boss can make a world of difference.  
+                  If the boss has minions, it might be best to lead with Mind Sliver + Faerie Fire and spend the rest of the time Dodging or using Thorn Whip.  
+                  Once the boss has been hit with Faerie Fire, you can even cast Sanctuary and Dodge until the fight ends to make absolutely certain your Concentration isn't broken.  
+                  You can also spend a round or two Greasing up the little guys that escaped Faerie Fire and coordinating with your Familiar for pretty much eternal advantage for your allies.  
+                </p>
+
+                <h4>Level 3</h4>
+                <p>
+                  At level 3, we add two more spells and a Wizard subclass.  
+                  War Magic grants us Tactical Wit, so now our already great Initiative gets our Int mod on top.  
+                  The Shield spell boosts our already great defenses, and Absorb Elements is an especially good insurance against dragons and mages.  
+                  What is interesting is that we now have a 2nd level spell slot, but we are unable to prepare any 2nd level spells.  
+                  <br><br>
+                  This is going to be the case at every odd level due to the multiclass.  
+                  Usually I ignore upcasting, so being somewhat forced into it will actually expand my abilities as a player.  
+                  <br><br>
+                  Right now, there are only two things we can use that slot for: Cure Wounds and Command.  
+                  Now we can Command two targets with one casting, so the boss and his closest lackey can suffer a wasted prone turn.  
+                  Mind Sliver setup still applies to only one, so keep putting that on the boss.
+                  We also get Arcane Deflection, which is my second favorite Wizard feature in 5e.  
+                  I love to make my saving throws.  
+                  <br><br>
+                  At this point we are still doing mostly the same thing as we were before, but now we are less likely to die and can Command two enemies at once.  
+                </p>
+
+                <h4>Level 4</h4>
+                <p>
+                  Level 4 brings many new options as we get our late second level spell preps.  
+                  TO BE CONTINUED
+                </p>
+
+                <h3>Tier 2</h3>
+                <hr>
+                <p>
+                  Tier two explanation
+                </p>
+                <h3>Tier 3</h3>
+                <hr>
+                <p>
+                  Tier three explanation
+                </p>
+                <h3>Tier 4</h3>
+                <hr>
+                <p>
+                  Tier four explanation
+                </p>
+                <h3>Tier 5</h3>
+                <hr>
+                <p>
+                  Tier five explanation
+                </p>
+                <h3>Tier 6</h3>
+                <hr>
+                <p>
+                  Tier six explanation
+                </p>
+              </section>
+
+          </div>
+        </div>
+      </div>
+
+      <footer class="import-common-page-footer"></footer>
+
+    </div>
+
+  </body>
+</html>
+
+<script type="text/javascript">
+  $(function () {
+
+    $(".import-common-page-header").load("/resources/Pages/import-common-page-header.html");
+    $(".import-common-page-footer").load("/resources/Pages/import-common-page-footer.html");
+
+});
+</script>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-US-Compatible" content="e-edge">
     <title>KnowOne's Website of Everything</title>
-    <link rel="icon" href="/_SiteResources/Images/OwlOfMinerva_ModifiedLogo.png">
+    <link rel="icon" href="/resources/Images/OwlOfMinerva_ModifiedLogo.png">
     <link rel="stylesheet" href="/caped-crusaders-style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
     <script>
@@ -16,7 +16,7 @@
           var page = path.split("/").pop();
           $.each(data.class, function(i, f) {
             document.getElementById(`class-button-${i}`).setAttribute("onclick", "location.href='classes/" + f.name_str.toLowerCase() + ".html'");
-            document.getElementById(`class-button-${i}`).innerHTML = "<section class='cc-class-button-content-ceiling'><img class='cc-class-image-small' src='/_SiteResources/Images/" + f.name_str + ".png' alt='" + f.name_str + " Image'><h3>" + f.name_str + "</h3><hr>" + f.description_short_str + "</section><section class='cc-class-button-content-floor'><i><b>Hit Die:</b>  d" + f.hit_die_int + "<br><b>Primary Ability:</b>  " + f.primary_ability + "<br><b>Saves:</b>  " + f.proficiencies_saves + "</section>";
+            document.getElementById(`class-button-${i}`).innerHTML = "<section class='cc-class-button-content-ceiling'><img class='cc-class-image-small' src='/resources/Images/" + f.name_str + ".png' alt='" + f.name_str + " Image'><h3>" + f.name_str + "</h3><hr>" + f.description_short_str + "</section><section class='cc-class-button-content-floor'><i><b>Hit Die:</b>  d" + f.hit_die_int + "<br><b>Primary Ability:</b>  " + f.primary_ability + "<br><b>Saves:</b>  " + f.proficiencies_saves + "</section>";
           });
         });
       });
@@ -24,8 +24,8 @@
     <script>
       $(function importContent() {
     
-        $(".import-common-page-header").load("/_SiteResources/Pages/import-common-page-header.html");
-            $(".import-common-page-footer").load("/_SiteResources/Pages/import-common-page-footer.html");
+        $(".import-common-page-header").load("/resources/Pages/import-common-page-header.html");
+            $(".import-common-page-footer").load("/resources/Pages/import-common-page-footer.html");
     
     });
     </script>

@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-US-Compatible" content="e-edge">
     <title>KnowOne's Website of Everything</title>
-    <link rel="icon" href="/_SiteResources/Images/OwlOfMinerva_ModifiedLogo.png">
+    <link rel="icon" href="/resources/Images/OwlOfMinerva_ModifiedLogo.png">
     <link rel="stylesheet" href="/caped-crusaders-style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
     <script>
       $(function importContent() {
-        $(".import-common-page-header").load("/_SiteResources/Pages/import-common-page-header.html");
-        $(".import-common-page-footer").load("/_SiteResources/Pages/import-common-page-footer.html");
+        $(".import-common-page-header").load("/resources/Pages/import-common-page-header.html");
+        $(".import-common-page-footer").load("/resources/Pages/import-common-page-footer.html");
       });
       $(function readClass() {
         var classes = [];
@@ -22,7 +22,7 @@
             if (f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html" == page) {
               document.getElementById("class-common-page-header-title").innerHTML = "Caped Crusaders: Character Options > Classes";
               document.getElementById("page-title").innerHTML = "Class:  The " + f.name_str;
-              document.getElementById("class-page-image").src = "/_SiteResources/Images/" + f.name_str + ".png";
+              document.getElementById("class-page-image").src = "/resources/Images/" + f.name_str + ".png";
               document.getElementById("class-page-image").alt = f.class_img_credit;
               document.getElementById("page-image-credit").innerHTML = f.class_img_credit;
               document.getElementById("class-common-page-description").innerHTML = f.description_long_str;
@@ -91,7 +91,7 @@
               }
               // Subclasses
               document.getElementById("subclass-tech-name").innerHTML = "Subclass:  The " + f.subclass_tech_name;
-              document.getElementById("subclass-tech-image").src = "/_SiteResources/Images/" + f.name_str + "-" + f.subclass_tech_name + ".png";
+              document.getElementById("subclass-tech-image").src = "/resources/Images/" + f.name_str + "-" + f.subclass_tech_name + ".png";
               document.getElementById("subclass-tech-image").alt = f.subclass_tech_img_credit;
               document.getElementById("subclass-tech-image-credit").innerHTML = f.subclass_tech_img_credit;
               document.getElementById("subclass-tech-description").innerHTML = f.subclass_tech_description;
@@ -106,7 +106,7 @@
                 }
               }
               document.getElementById("subclass-power-name").innerHTML = "Subclass:  The " + f.subclass_power_name;
-              document.getElementById("subclass-power-image").src = "/_SiteResources/Images/" + f.name_str + "-" + f.subclass_power_name + ".png";
+              document.getElementById("subclass-power-image").src = "/resources/Images/" + f.name_str + "-" + f.subclass_power_name + ".png";
               document.getElementById("subclass-power-image").alt = f.subclass_power_img_credit;
               document.getElementById("subclass-power-image-credit").innerHTML = f.subclass_power_img_credit;
               document.getElementById("subclass-power-description").innerHTML = f.subclass_power_description;
@@ -121,7 +121,7 @@
                 }
               }
               document.getElementById("subclass-magic-name").innerHTML = "Subclass:  The " + f.subclass_magic_name;
-              document.getElementById("subclass-magic-image").src = "/_SiteResources/Images/" + f.name_str + "-" + f.subclass_magic_name + ".png";
+              document.getElementById("subclass-magic-image").src = "/resources/Images/" + f.name_str + "-" + f.subclass_magic_name + ".png";
               document.getElementById("subclass-magic-image").alt = f.subclass_magic_img_credit;
               document.getElementById("subclass-magic-image-credit").innerHTML = f.subclass_magic_img_credit;
               document.getElementById("subclass-magic-description").innerHTML = f.subclass_magic_description;
