@@ -334,53 +334,69 @@
 
 
 <script>
+  // This function sorts the entries in ascending or descending order based on the column selected and number of clicks applied
   function sortTable(n) {
+
+    // Defining variables to be used
     var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
     table = document.getElementById("directory-page-dynamic-table-content");
     switching = true;
+
     // Set the sorting direction to ascending:
     dir = "asc";
-    /* Make a loop that will continue until
-    no switching has been done: */
+    // A loop that will continue until no switching has been done
     while (switching) {
-      // Start by saying: no switching is done:
+
+      // Switching is not complete
       switching = false;
       rows = table.rows;
-      /* Loop through all table rows (except the
-      first, which contains table headers): */
+
+      // Loop through all table rows besides the header
       for (i = 1; i < (rows.length - 1); i++) {
-        // Start by saying there should be no switching:
+
+        // Ensure that switching is false
         shouldSwitch = false;
-        /* Get the two elements you want to compare,
-        one from current row and one from the next: */
+
+        // Reading two elements to compare from this row and the following row
         x = rows[i].getElementsByTagName("TD")[n];
         y = rows[i + 1].getElementsByTagName("TD")[n];
-        /* Check if the two rows should switch place,
-        based on the direction, asc or desc: */
+
+        // Checking whether we are comparing string characters or converting to integers
+        if (/\d/.test(parseInt(x.innerHTML.toLowerCase().replace(/\D/g,'')))) {
+          var xcompare = parseInt(x.innerHTML.toLowerCase().replace(/\D/g,''));
+          var ycompare = parseInt(y.innerHTML.toLowerCase().replace(/\D/g,''));
+        } else {
+          var xcompare = x.innerHTML.toLowerCase();
+          var ycompare = y.innerHTML.toLowerCase();
+        }
+
+        // Perform comparisons and switch entries based on direction of sort
         if (dir == "asc") {
-          if (parseInt(x.innerHTML.toLowerCase().replace(/\D/g,'')) > parseInt(y.innerHTML.toLowerCase().replace(/\D/g,''))) {
-            // If so, mark as a switch and break the loop:
+          
+          // If comparison returns true, entries should be switched
+          if (xcompare > ycompare) {
             shouldSwitch = true;
             break;
           }
         } else if (dir == "desc") {
-          if (parseInt(x.innerHTML.toLowerCase().replace(/\D/g,'')) < parseInt(y.innerHTML.toLowerCase().replace(/\D/g,''))) {
-            // If so, mark as a switch and break the loop:
+          
+          // If comparison returns true, entries should be switched
+          if (xcompare < ycompare) {
             shouldSwitch = true;
             break;
           }
         }
       }
+
+      // After breaking from the previous loop, we check to see if this entry is marked for switching
       if (shouldSwitch) {
-        /* If a switch has been marked, make the switch
-        and mark that a switch has been done: */
+        
+        // Performing the switch, setting switching to true, and incrementing the switch counter
         rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
         switching = true;
-        // Each time a switch is done, increase this count by 1:
         switchcount ++;
       } else {
-        /* If no switching has been done AND the direction is "asc",
-        set the direction to "desc" and run the while loop again. */
+        // If no switching has been done AND the direction is "asc", set the direction to "desc" and run the while loop again.
         if (switchcount == 0 && dir == "asc") {
           dir = "desc";
           switching = true;
