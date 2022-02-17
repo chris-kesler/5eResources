@@ -63,7 +63,7 @@
             "level_str" : "1st",
             
             "type_str" : "Reflexes",
-            "school_img" : "/resources/Images/Reflexes.png",
+            "school_img" : "/resources/images/Reflexes.png",
             "school_img_credit" : "Warning by Alfa Design from NounProject.com",
             
             "damage_effect_str" : "Buff",
@@ -111,7 +111,7 @@
             "level_str" : "1st",
             
             "type_str" : "Resilience",
-            "school_img" : "/resources/Images/Resilience.png",
+            "school_img" : "/resources/images/Resilience.png",
             
             "damage_effect_str" : "Buff",
             
@@ -158,7 +158,7 @@
             "level_str" : "1st",
             
             "type_str" : "Resilience",
-            "school_img" : "/resources/Images/Resilience.png",
+            "school_img" : "/resources/images/Resilience.png",
             
             "damage_effect_str" : "Buff",
             
@@ -204,7 +204,7 @@
             "level_str" : "2nd",
             
             "type_str" : "Resilience",
-            "school_img" : "/resources/Images/Resilience.png",
+            "school_img" : "/resources/images/Resilience.png",
             
             "damage_effect_str" : "Buff",
             
@@ -252,7 +252,7 @@
             "level_str" : "3rd",
             
             "type_str" : "Resilience",
-            "school_img" : "/resources/Images/Resilience.png",
+            "school_img" : "/resources/images/Resilience.png",
             
             "damage_effect_str" : "Buff",
             
@@ -291,7 +291,7 @@
             "level_str" : "2nd",
             
             "type_str" : "Resilience",
-            "school_img" : "/resources/Images/Resilience.png",
+            "school_img" : "/resources/images/Resilience.png",
             
             "damage_effect_str" : "Buff",
             
@@ -329,7 +329,7 @@
             "level_str" : "5th",
             
             "type_str" : "Resilience",
-            "school_img" : "/resources/Images/Resilience.png",
+            "school_img" : "/resources/images/Resilience.png",
             
             "damage_effect_str" : "Buff",
             
@@ -367,7 +367,7 @@
             "level_str" : "1st",
             
             "type_str" : "Resilience",
-            "school_img" : "/resources/Images/Resilience.png",
+            "school_img" : "/resources/images/Resilience.png",
             
             "damage_effect_str" : "Buff",
             
@@ -405,7 +405,7 @@
             "level_str" : "9th",
             
             "type_str" : "Resilience",
-            "school_img" : "/resources/Images/Resilience.png",
+            "school_img" : "/resources/images/Resilience.png",
             
             "damage_effect_str" : "Buff",
             
@@ -444,7 +444,7 @@
             "level_str" : "1st",
             
             "type_str" : "Resilience",
-            "school_img" : "/resources/Images/Resilience.png",
+            "school_img" : "/resources/images/Resilience.png",
             
             "damage_effect_str" : "Buff",
             
@@ -482,7 +482,7 @@
             "level_str" : "6th",
             
             "type_str" : "Resilience",
-            "school_img" : "/resources/Images/Resilience.png",
+            "school_img" : "/resources/images/Resilience.png",
             
             "damage_effect_str" : "Buff",
             
@@ -520,7 +520,7 @@
             "level_str" : "5th",
             
             "type_str" : "Resilience",
-            "school_img" : "/resources/Images/Resilience.png",
+            "school_img" : "/resources/images/Resilience.png",
             
             "damage_effect_str" : "Buff",
             
@@ -558,7 +558,7 @@
             "level_str" : "3rd",
             
             "type_str" : "Resilience",
-            "school_img" : "/resources/Images/Resilience.png",
+            "school_img" : "/resources/images/Resilience.png",
             
             "damage_effect_str" : "Buff",
             
@@ -596,7 +596,7 @@
             "level_str" : "2nd",
             
             "type_str" : "Resilience",
-            "school_img" : "/resources/Images/Resilience.png",
+            "school_img" : "/resources/images/Resilience.png",
             
             "damage_effect_str" : "Buff",
             
@@ -634,7 +634,7 @@
             "level_str" : "5th",
             
             "type_str" : "Resilience",
-            "school_img" : "/resources/Images/Resilience.png",
+            "school_img" : "/resources/images/Resilience.png",
             
             "damage_effect_str" : "Buff",
             
@@ -672,7 +672,7 @@
             "level_str" : "4th",
             
             "type_str" : "Resilience",
-            "school_img" : "/resources/Images/Resilience.png",
+            "school_img" : "/resources/images/Resilience.png",
             
             "damage_effect_str" : "Buff",
             
@@ -710,7 +710,7 @@
             "level_str" : "3rd",
             
             "type_str" : "Resilience",
-            "school_img" : "/resources/Images/Resilience.png",
+            "school_img" : "/resources/images/Resilience.png",
             
             "damage_effect_str" : "Buff",
             
@@ -748,7 +748,7 @@
             "level_str" : "1st",
             
             "type_str" : "Resilience",
-            "school_img" : "/resources/Images/Resilience.png",
+            "school_img" : "/resources/images/Resilience.png",
             
             "damage_effect_str" : "Buff",
             
@@ -786,7 +786,7 @@
             "level_str" : "2nd",
             
             "type_str" : "Resilience",
-            "school_img" : "/resources/Images/Resilience.png",
+            "school_img" : "/resources/images/Resilience.png",
             
             "damage_effect_str" : "Buff",
             
@@ -824,7 +824,7 @@
             "level_str" : "2nd",
             
             "type_str" : "Resilience",
-            "school_img" : "/resources/Images/Resilience.png",
+            "school_img" : "/resources/images/Resilience.png",
             
             "damage_effect_str" : "Buff",
             
@@ -862,7 +862,7 @@
             "level_str" : "2nd",
             
             "type_str" : "Resilience",
-            "school_img" : "/resources/Images/Resilience.png",
+            "school_img" : "/resources/images/Resilience.png",
             
             "damage_effect_str" : "Buff",
             
@@ -900,7 +900,7 @@
             "level_str" : "3rd",
             
             "type_str" : "Resilience",
-            "school_img" : "/resources/Images/Resilience.png",
+            "school_img" : "/resources/images/Resilience.png",
             
             "damage_effect_str" : "Buff",
             
@@ -938,7 +938,7 @@
             "level_str" : "2nd",
             
             "type_str" : "Resilience",
-            "school_img" : "/resources/Images/Resilience.png",
+            "school_img" : "/resources/images/Resilience.png",
             
             "damage_effect_str" : "Buff",
             
@@ -976,7 +976,7 @@
             "level_str" : "1st",
             
             "type_str" : "Mobility",
-            "school_img" : "/resources/Images/Mobility.png",
+            "school_img" : "/resources/images/Mobility.png",
             
             "damage_effect_str" : "Buff",
             

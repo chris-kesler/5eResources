@@ -167,7 +167,7 @@ body, .cc-attributes-overview-table tr th, .cc-attributes-overview-table th, .cc
   width: 100%;
   height: auto;    
   overflow: visible;
-  background-image: url("/resources/Images/ESO_-_Milky_Way.jpg");
+  background-image: url("/resources/images/ESO_-_Milky_Way.jpg");
   background-repeat: repeat-y;
   background-size: 105%;
   background-attachment: fixed;
@@ -175,7 +175,7 @@ body, .cc-attributes-overview-table tr th, .cc-attributes-overview-table th, .cc
 
 /* The div that holds the actual page content */
 .common-page-content-transparent {
-  background-image: url("/resources/Images/Transparent.png");
+  background-image: url("/resources/images/Transparent.png");
   position: relative;
   width: 100%;
   height: auto;
@@ -224,7 +224,7 @@ body, .cc-attributes-overview-table tr th, .cc-attributes-overview-table th, .cc
   z-index: 5;
 }
 #entry-page-nav-table-section-placeholder {
-  background-image: url("/resources/Images/Transparent.png");
+  background-image: url("/resources/images/Transparent.png");
   background-color: transparent;
 }
 #entry-page-nav-table th {

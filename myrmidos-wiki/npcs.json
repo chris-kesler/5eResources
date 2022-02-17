@@ -34,7 +34,7 @@
     "npc": [
         {
             "name" : "Ulysses Poleski",
-            "image_weblink" : "/resources/Images/error.png",
+            "image_weblink" : "/resources/images/error.png",
             "image_sourcelink" : "https://external-preview.redd.it/kpu7M_c1nbNQpg7uj5rIHSQbU-he7t1EKEIyDAd1FWQ.jpg?auto=webp&s=d7a01bee9acb9fb73c5b5c31918a35d87152d94e",
             "title" : "Vice Admiral",
             "profession" : "Sailor",
@@ -45,7 +45,7 @@
         },
         {
             "name" : "Jurel Ahlmeric",
-            "image_weblink" : "/resources/Images/error.png",
+            "image_weblink" : "/resources/images/error.png",
             "image_sourcelink" : "https://www.dndbeyond.com/avatars/thumbnails/15/343/1000/1000/636372273074915633.png",
             "alias" : "Hellfrog",
             "title" : "Captain of the Holly Dodger",
@@ -57,7 +57,7 @@
         },
         {
             "name" : "Dukhoevy Baromir",
-            "image_weblink" : "/resources/Images/error.png",
+            "image_weblink" : "/resources/images/error.png",
             "image_sourcelink" : "https://cdna.artstation.com/p/assets/images/images/006/925/062/large/kim-van-deun-dark-obelisk-figaro-kim-van-deun-2x.jpg?1502297250",
             "alias" : "The Last Redmage",
             "title" : "Archmage of Thessk",
@@ -69,7 +69,7 @@
         },
         {
             "name" : "Arrakh Visum",
-            "image_weblink" : "/resources/Images/error.png",
+            "image_weblink" : "/resources/images/error.png",
             "image_sourcelink" : "https://www.paolopuggioni.com/admin/wp-content/uploads/2013/02/Unlucky-Gambler.jpg",
             "title" : "Scribe",
             "profession" : "Field Scribe",
@@ -80,7 +80,7 @@
         },
         {
             "name" : "Lomar Wendriksen",
-            "image_weblink" : "/resources/Images/error.png",
+            "image_weblink" : "/resources/images/error.png",
             "image_sourcelink" : "https://cdnb.artstation.com/p/assets/images/images/001/765/773/large/danil-strizhov-9.jpg?1452427974",
             "profession" : "Court Scribe",
             "title" : "Scribe",

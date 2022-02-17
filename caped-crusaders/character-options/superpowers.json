@@ -247,7 +247,7 @@
             "components_vsm_str" : "S, M",
             "duration_str" : "Instantaneous",
             "type_str" : "Radiation",
-            "type_img" : "/resources/Images/Radiation.png",
+            "type_img" : "/resources/images/Radiation.png",
             "attack_save_str" : "---",
             "damage_effect_str" : "Incinerating",
             "flavor_str" : "You are able to channel your internal reserves of radiation into quick beams of destructive light that fire from your eyes.  ",
