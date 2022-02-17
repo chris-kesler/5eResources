@@ -405,8 +405,9 @@ The plane buttons
 The buttons used to navigate and organize the classes within caped crusaders 
 */
 .cc-class-button-tech, .cc-class-button-power, .cc-class-button-magic, .cc-class-button-generic {
-  width: 200px;
-  max-width: 15vw;
+  max-width: 200px;
+  width: 15vw;
+  min-width: 150px;
   height: auto;
   margin: 5px;
   background-color: rgb(175, 175, 175);
@@ -639,7 +640,8 @@ A small table to hold the entry page image and author credit
   float: right;
 }
 .entry-page-overview-table th, .entry-page-overview-table td {
-  width: auto;
+  width: 25vw;
+  max-width: auto;
   padding: 10px;
   vertical-align: top;
 }
