@@ -2,7 +2,7 @@
     "class" : [
         {
             "name_str" : "Visionary",
-            "class_img_credit" : "---",
+            "class_img_credit" : "Created by VINZENCE STUDIO from NounProject.com",
             "description_short_str" : "An armored sentinel wielding unique technology beyond the cutting edge.  ",
             "description_long_str" : "Armed with the most advanced arsenal of devices and weapons of the era, the Visionary is a durable and versatile Primary Techcaster who contributes to combat and excels at utility.  ",
 
@@ -122,7 +122,7 @@
             ],
 
             "subclass_magic_name" : "Glyphologist",
-            "subclass_magic_img_credit" : "---",
+            "subclass_magic_img_credit" : "Created by Andrejs Kirma from NounProject.com",
             "subclass_magic_description" : "A scholar of ancient knowledge and mythology, the Glyphologist combines modern science with ancient magical power sources. Whether it be inscribing runes, compressing motes of power, or integrating powerful artifacts, the Glyphologist binds themselves and their armor together on a supernatural level. While not a spellcaster, the Glyphologist still benefits from magical boons that manifest in a variety of ways. The Glyphologist can also adapt other suits of Magical Armor to fit their needs.  ",
             "subclass_magic_feats" : [
                 {
@@ -143,7 +143,7 @@
             ],
 
             "subclass_power_name" : "Magnate",
-            "subclass_power_img_credit" : "---",
+            "subclass_power_img_credit" : "Created by Dairy Free Design from NounProject.com",
             "subclass_power_description" : "Some superpowers are far more subtle than most, and the Magnate is a prime example. Whether relying on magnetic manipulation, electrokinesis, or cybernetics, you stand out as a Visionary with precise control over your Technology. Having a direct connection between your nervous system and your devices grants you an innate control over your Augmented Armor. The Magnate can also adapt other suits of Metapower Armor to fit their needs.  ",
             "subclass_power_feats" : [
                 {
@@ -164,7 +164,7 @@
             ],
             
             "subclass_tech_name" : "Virtuoso",
-            "subclass_tech_img_credit" : "---",
+            "subclass_tech_img_credit" : "Created by Adityas Fathunurrahman from NounProject.com",
             "subclass_tech_description" : "A paragon of invention and ingenuity, the Virtuoso has created and incorporated a truly sustainable energy source. This energy source grants the Virtuoso several at-will Technologies and capabilities, such as flight. The Virtuoso can also adapt other suits of Technological Armor to fit their needs.  ",
             "subclass_tech_feats" : [
                 {
@@ -187,7 +187,7 @@
 
         {
             "name_str" : "Detective",
-            "class_img_credit" : "---",
+            "class_img_credit" : "Created by Stijn van der Grinten from NounProject.com",
             "description_short_str" : "A skilled predator that employs a wide variety of techniques to maintain the upper hand.  ",
             "description_long_str" : "Driven by an unwavering vendetta, the Detective never settles for anything less than perfection in their own performance in order to become a paragon of human capability.  ",
 
@@ -308,7 +308,7 @@
             ],
 
             "subclass_magic_name" : "Victorian",
-            "subclass_magic_img_credit" : "---",
+            "subclass_magic_img_credit" : "Created by Zach Bogart from NounProject.com",
             "subclass_magic_description" : "Employing all manner of things learned from the most obscure places, the Victorian employs ancient magic to aid in their endeavors.  ",
             "subclass_magic_feats" : [
                 {
@@ -334,7 +334,8 @@
             ],
 
             "subclass_power_name" : "Oracle",
-            "subclass_power_img_credit" : "---",
+            "subclass_power_img_credit" : "The Prophecy by Anatolii Babii from NounProject.com",
+            "subclass_power_img_source" : "https://thenounproject.com/icon/the-prophecy-1745437/",
             "subclass_power_description" : "Combining a trained eye for detail with innate senses that extend into the supernatural, the Oracle is able to discern information that might be too obscure for others.  ",
             "subclass_power_feats" : [
                 {
@@ -360,7 +361,8 @@
             ],
             
             "subclass_tech_name" : "Exemplar",
-            "subclass_tech_img_credit" : "---",
+            "subclass_tech_img_credit" : "Sword Symbol from HiClipart",
+            "subclass_tech_img_source" : "https://www.hiclipart.com/free-transparent-background-png-clipart-pubeh",
             "subclass_tech_description" : "A being of sheer will, the Exemplar relentlessly applies the most advanced techniques to strike fear into the hearts of average mooks and command respect as a mortal in a world of demigods.  ",
             "subclass_tech_feats" : [
                 {
@@ -388,7 +390,8 @@
 
         {
             "name_str" : "Marksman",
-            "class_img_credit" : "---",
+            "class_img_credit" : "Target by yusuf from NounProject.com",
+            "class_img_source" : "https://thenounproject.com/icon/target-3741107/",
             "description_short_str" : "A sharpshooting expert who surveys and strikes key enemy forces.  ",
             "description_long_str" : "With an eye for detail and the skill to hit the mark, the Marksman is a lethal addition to the battlefield at any distance.  ",
 
@@ -523,7 +526,7 @@
             ],
 
             "subclass_power_name" : "Assassin",
-            "subclass_power_img_credit" : "---",
+            "subclass_power_img_credit" : "Created by m. turan ercan from NounProject.com",
             "subclass_power_description" : "Having been altered to increase their combat capability, the Assassin is as deadly as they are discrete.  ",
             "subclass_power_feats" : [
                 {
@@ -534,7 +537,7 @@
             ],
             
             "subclass_tech_name" : "Espionist",
-            "subclass_tech_img_credit" : "---",
+            "subclass_tech_img_credit" : "Created by Icon Fair from NounProject.com",
             "subclass_tech_description" : "Focusing on skills that infiltrate and undermine, the Espionist specializes in crippling organizations from the inside.  ",
             "subclass_tech_feats" : [
                 {
@@ -547,7 +550,7 @@
 
         {
             "name_str" : "Soldier",
-            "class_img_credit" : "---",
+            "class_img_credit" : "Created by Becris from NounProject.com",
             "description_short_str" : "A warrior who relies on martial prowess and tactical skill to lead small units.  ",
             "description_long_str" : "After countless hours of training to be the perfect weapon, the Soldier is capable of waging war on the frontline and organizing allies simultaneously.  ",
 
@@ -671,7 +674,7 @@
             ],
 
             "subclass_magic_name" : "Sentinel",
-            "subclass_magic_img_credit" : "---",
+            "subclass_magic_img_credit" : "Created by Maxicons from NounProject.com",
             "subclass_magic_description" : "Becoming enhanced at the hands of experimentation, the Patriot leads by example of self sacrifice.  ",
             "subclass_magic_feats" : [
                 {
@@ -692,7 +695,7 @@
             ],
 
             "subclass_power_name" : "Patriot",
-            "subclass_power_img_credit" : "---",
+            "subclass_power_img_credit" : "Created by myiconfinder from NounProject.com",
             "subclass_power_description" : "Becoming enhanced at the hands of experimentation, the Patriot leads by example of self sacrifice.  ",
             "subclass_power_feats" : [
                 {
@@ -713,7 +716,7 @@
             ],
             
             "subclass_tech_name" : "Ronin",
-            "subclass_tech_img_credit" : "---",
+            "subclass_tech_img_credit" : "Created by lastspark from NounProject.com",
             "subclass_tech_description" : "Blending instinctive skills with expendable gadgets, the Ronin is a capable and unpredictable combatant.  ",
             "subclass_tech_feats" : [
                 {
@@ -855,7 +858,7 @@
             ],
 
             "subclass_magic_name" : "Arcanoblate",
-            "subclass_magic_img_credit" : "---",
+            "subclass_magic_img_credit" : "Created by Smalllike from NounProject.com",
             "subclass_magic_description" : "Devoted to the practice and study of magic, philosophy, and religion, the Arcanoblate attains a higher spiritual connection to the nature of magic itself.  ",
             "subclass_magic_feats" : [
                 {
@@ -876,7 +879,7 @@
             ],
 
             "subclass_power_name" : "Psionotheist",
-            "subclass_power_img_credit" : "---",
+            "subclass_power_img_credit" : "Created by emilegraphics from NounProject.com",
             "subclass_power_description" : "With a natural set of superhuman abilities, the Psionotheist exerts a more fine tuned control over their magical abilities.  ",
             "subclass_power_feats" : [
                 {
@@ -897,7 +900,7 @@
             ],
             
             "subclass_tech_name" : "Magiteknician",
-            "subclass_tech_img_credit" : "---",
+            "subclass_tech_img_credit" : "Created by Yarden Gilboa from NounProject.com",
             "subclass_tech_description" : "Combining arcane power with technological knowledge, the Magiteknician carves out a unique niche where science and magic collide.  ",
             "subclass_tech_feats" : [
                 {
@@ -1041,7 +1044,7 @@
             ],
 
             "subclass_magic_name" : "Soulrender",
-            "subclass_magic_img_credit" : "---",
+            "subclass_magic_img_credit" : "Created by HeadsOfBirds from NounProject.com",
             "subclass_magic_description" : "Focusing on magic meant to psychologically scar and disarm, the Soulrender embraces everything dark and unnatural to keep foes offput.  ",
             "subclass_magic_feats" : [
                 {
@@ -1067,7 +1070,7 @@
             ],
 
             "subclass_power_name" : "Duplikist",
-            "subclass_power_img_credit" : "---",
+            "subclass_power_img_credit" : "Created by Ben Davis from NounProject.com",
             "subclass_power_description" : "Being able to split into multiple instances of self while creating mirages, the Duplikist can maintain several aspects of the battlefield simultaneously.  ",
             "subclass_power_feats" : [
                 {
@@ -1093,7 +1096,7 @@
             ],
             
             "subclass_tech_name" : "Doppelganger",
-            "subclass_tech_img_credit" : "---",
+            "subclass_tech_img_credit" : "Created by ProSymbols from NounProject.com",
             "subclass_tech_description" : "Developing skills meant to deceive and dissuade, the Doppelganger excels at mimickry and sowing confusion.  ",
             "subclass_tech_feats" : [
                 {
@@ -1245,7 +1248,7 @@
             ],
 
             "subclass_magic_name" : "Specter",
-            "subclass_magic_img_credit" : "---",
+            "subclass_magic_img_credit" : "Created by NeMaria from NounProject.com",
             "subclass_magic_description" : "Harnessing innate abilities that have soaked into their souls, the Specter is able to manipulate matter to better equip themselves for battle.  ",
             "subclass_magic_feats" : [
                 {
@@ -1271,7 +1274,7 @@
             ],
 
             "subclass_power_name" : "Guardian",
-            "subclass_power_img_credit" : "---",
+            "subclass_power_img_credit" : "Created by Jordy Madueno from NounProject.com",
             "subclass_power_description" : "Embracing their divine gifts, the Guardian rounds out their boons with knowledge of spellcasting and magical weaponry.  ",
             "subclass_power_feats" : [
                 {
@@ -1297,7 +1300,7 @@
             ],
             
             "subclass_tech_name" : "Augmentist",
-            "subclass_tech_img_credit" : "---",
+            "subclass_tech_img_credit" : "Created by H Alberto Gongora from NounProject.com",
             "subclass_tech_description" : "Choosing to focus on improving themselves so they might not always rely on the gods, the Augmentist employs gadgets and cybernetic modifications to impose a unique battlefield presence.  ",
             "subclass_tech_feats" : [
                 {
@@ -1448,7 +1451,7 @@
             ],
 
             "subclass_magic_name" : "Infused",
-            "subclass_magic_img_credit" : "---",
+            "subclass_magic_img_credit" : "Created by Pau Urquijo from NounProject.com",
             "subclass_magic_description" : "Subclass Description",
             "subclass_magic_feats" : [
                 {
@@ -1469,7 +1472,7 @@
             ],
 
             "subclass_power_name" : "Supreme",
-            "subclass_power_img_credit" : "---",
+            "subclass_power_img_credit" : "Created by Sumit Saengthong from NounProject.com",
             "subclass_power_description" : "Subclass Description",
             "subclass_power_feats" : [
                 {
@@ -1490,7 +1493,7 @@
             ],
             
             "subclass_tech_name" : "Adaptist",
-            "subclass_tech_img_credit" : "---",
+            "subclass_tech_img_credit" : "Created by Mike Rowe from NounProject.com",
             "subclass_tech_description" : "Subclass Description",
             "subclass_tech_feats" : [
                 {
@@ -1513,7 +1516,7 @@
 
         {
             "name_str" : "Nova",
-            "class_img_credit" : "---",
+            "class_img_credit" : "Created by Eucalyp from NounProject.com",
             "description_short_str" : "Energy wielders that can summon defensive fields and unleash devastating blasts.  ",
             "description_long_str" : "Possessing a massive reservoir of internalized energy, the Nova can unleash destructive beams and construct protective fields to manipulate the battlefield.  ",
 
@@ -1633,7 +1636,8 @@
             ],
 
             "subclass_magic_name" : "Luminent",
-            "subclass_magic_img_credit" : "---",
+            "subclass_magic_img_credit" : "Explode by Victoruler from NounProject.com",
+            "subclass_magic_img_source" : "https://thenounproject.com/icon/explode-3128944/",
             "subclass_magic_description" : "Having come across extraplanar forces in some manner, the Luminent has taken on powerful otherworldly attributes that draw on their natural power reserves.  ",
             "subclass_magic_feats" : [
                 {
@@ -1654,7 +1658,7 @@
             ],
 
             "subclass_power_name" : "Refractionist",
-            "subclass_power_img_credit" : "---",
+            "subclass_power_img_credit" : "Created by Fernando Affonso from NounProject.com",
             "subclass_power_description" : "Possessing deeply rooted reserves of energy, the Refractionist has benefitted from long term physiological mutations to make good use of that energy.  ",
             "subclass_power_feats" : [
                 {
@@ -1675,7 +1679,7 @@
             ],
             
             "subclass_tech_name" : "Galvanic",
-            "subclass_tech_img_credit" : "---",
+            "subclass_tech_img_credit" : "Created by Eucalyp from NounProject.com",
             "subclass_tech_description" : "By allowing some of their excess energy serve as a power source, the Galvanic is able to augment their abilities with ordinary modern technology that wouldn't be feasible due to power limitations under nearly any other circumstances.  ",
             "subclass_tech_feats" : [
                 {
@@ -1698,7 +1702,7 @@
 
         {
             "name_str" : "Subvertist",
-            "class_img_credit" : "---",
+            "class_img_credit" : "Created by Romain Bernard from NounProject.com",
             "description_short_str" : "A movement focused master of misdirection who excels at battfield cleanup.  ",
             "description_long_str" : "With a razor sharp focus on mobility and agility, the Subvertist thrives when protecting civilians and distracting enemies.  ",
 
@@ -1818,7 +1822,7 @@
             ],
 
             "subclass_magic_name" : "Egressor",
-            "subclass_magic_img_credit" : "---",
+            "subclass_magic_img_credit" : "Created by Maxicons from NounProject.com",
             "subclass_magic_description" : "Able to transport themselves and others through spacetime, the Egressor possesses unrivalred individual mobility.  ",
             "subclass_magic_feats" : [
                 {
@@ -1844,7 +1848,7 @@
             ],
 
             "subclass_power_name" : "Speedster",
-            "subclass_power_img_credit" : "---",
+            "subclass_power_img_credit" : "Created by NOVILAMISASTRA from NounProject.com",
             "subclass_power_description" : "Possessing unrivaled speed, the Speedster perceives and interacts with the battlefield on an entirely different level.  ",
             "subclass_power_feats" : [
                 {
@@ -1898,7 +1902,7 @@
 
         {
             "name_str" : "Metamorph",
-            "class_img_credit" : "---",
+            "class_img_credit" : "Created by iconfield from NounProject.com",
             "description_short_str" : "A versatile shapechanger that can specialize down several paths.  ",
             "description_long_str" : "Reshaping themselves to fit the needs of the situation, the Metamorph is a highly adaptive-often considered critical-component of enhanced team groups.  ",
 
@@ -2021,7 +2025,7 @@
             ],
 
             "subclass_magic_name" : "Primal",
-            "subclass_magic_img_credit" : "---",
+            "subclass_magic_img_credit" : "Created by Zach Bogart from NounProject.com",
             "subclass_magic_description" : "Possessing a gene that rapidly accelerates the process of evolution through individual and instantaneous mutations, the Primal is among the most intimidating and difficult beings to kill.  ",
             "subclass_magic_feats" : [
                 {
@@ -2047,7 +2051,7 @@
             ],
 
             "subclass_power_name" : "Demibeast",
-            "subclass_power_img_credit" : "---",
+            "subclass_power_img_credit" : "Created by Amethyst Studio from NounProject.com",
             "subclass_power_description" : "Whether sent as a savior or cursed with a terrible affliction, the Phoenix can manifest a singular powerful magical form that evokes an awe remiscent of that in the oldest of mythos.  ",
             "subclass_power_feats" : [
                 {
@@ -2073,7 +2077,7 @@
             ],
             
             "subclass_tech_name" : "Splicer",
-            "subclass_tech_img_credit" : "---",
+            "subclass_tech_img_credit" : "Created by H Albert Gongora from NounProject.com",
             "subclass_tech_description" : "Whether through extensive training or advanced technological guidance, the Splicer is able to more accurately control their transformations and take on a myriad of specific forms.  ",
             "subclass_tech_feats" : [
                 {
@@ -2224,7 +2228,7 @@
             ],
 
             "subclass_magic_name" : "Meteor",
-            "subclass_magic_img_credit" : "---",
+            "subclass_magic_img_credit" : "Created by Anton Barbarov from NounProject.com",
             "subclass_magic_description" : "Wielding power that registers on the stellar scale, the Meteor has the potential to be a force of unbridled destruction.  ",
             "subclass_magic_feats" : [
                 {
@@ -2245,7 +2249,7 @@
             ],
 
             "subclass_power_name" : "Chosen",
-            "subclass_power_img_credit" : "---",
+            "subclass_power_img_credit" : "Created by Maxicons from NounProject.com",
             "subclass_power_description" : "Harnessing energy that would devour mere mortals, the Chosen mightily bends magic to their will.  ",
             "subclass_power_feats" : [
                 {
@@ -2266,7 +2270,7 @@
             ],
             
             "subclass_tech_name" : "Militant",
-            "subclass_tech_img_credit" : "---",
+            "subclass_tech_img_credit" : "Created by Icongeek26 from NounProject.com",
             "subclass_tech_description" : "Honing their immense strength with training and discipline, the Militant balances their power with resourcefulness.  ",
             "subclass_tech_feats" : [
                 {
