@@ -485,8 +485,6 @@ The buttons used to navigate and organize the classes within caped crusaders
 /* Large images to be used for entry pages */
 #page-image, .cc-class-image-large, .cc-subclass-image-large {
   width: 25vw;
-  border: 8px solid rgb(100,100,100);
-  border-radius: 64px;
   margin-left: 10px;
 }
 
@@ -617,14 +615,17 @@ A small table to hold the entry page image and author credit
 #entry-page-image-table {
   float: right;
   width: auto;
+  max-width: 25vw;
   margin: 0px;
   padding: 0px;
-  border: 3px solid rgb(200,200,200);
-  border-radius: 10px;
+  border: 7px solid rgb(150,150,150);
+  border-radius: 32px;
+  background-color: rgb(200, 200, 200);
 }
-#entry-page-image-table tr td {
+#entry-page-image-table tr:nth-child(2) td {
   color: black;
   text-align: center;
+  border-top: 3px solid rgb(175,175,175);
 }
 
 /* An overview table used frequently throughout the site */
