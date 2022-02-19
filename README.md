@@ -11,12 +11,8 @@ The artifact I have chosen to showcase my Database capabilities is KnowOne'sWebs
 This project was developed by me in my spare time using self taught HTML, CSS, and Javascript skills.  The project files include various webpages that read data from JSON files and populate the content within.  I developed this website in order to have a searchable presence online and to showcase my web development skills.  I quickly became irritated by manually changing the same information across multiple pages, so I began constructing scripts that would pull relevant data from JSON files.  I managed to condense everything to a point where dozens of webpages with different content when viewed from a browser are actually identical in terms of the HTML and Javascript code within the file.  
 <br><br>
 
-The script within pulls information from the JSON file based on the name of the file page, meaning I can copy the HTML file and rename it in order to create entirely different entries.  Attributes for the same item that are displayed on multiple pages do not need to be modified more than once; changing the JSON file will update the attribute in all places that it exists across the site.  At some point in the future, I might consider converting to SQL rather than JSON.  A demonstration of this project's functionality can be viewed below.
+The script within pulls information from the JSON file based on the name of the file page, meaning I can copy the HTML file and rename it in order to create entirely different entries.  Attributes for the same item that are displayed on multiple pages do not need to be modified more than once; changing the JSON file will update the attribute in all places that it exists across the site.  At some point in the future, I might consider converting to SQL rather than JSON.  A demonstration of this project's functionality can be viewed here:  <a target='blank' href="https://youtu.be/r4HEfxFY7iU">CS Showcase: HTML, CSS, Javascript (KnowOne's Website of Everything)</a>
 </p>
-
-<center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/r4HEfxFY7iU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</center>
 
 <h4>Enhancement Progress</h4>
 <p>
