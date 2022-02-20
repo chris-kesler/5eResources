@@ -2,12 +2,15 @@
     "entries" : [
         {
             "entry_name" : "Frydeia",
-            "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/1/1b/Les_images_des_dievx_des_anciens_-_contenans_les_idoles%2C_covstvmes%2C_ceremonies%2C_and_autres_choses_appartenans_%C3%A0_la_religion_des_payens_%281581%29_%2814560495887%29.jpg",
-            "img_rehosted_source" : "",
+            "img_rehosted" : "/resources/images/frydeia.webp",
+            "img_rehosted_source" : "https://artflow.ai/",
+
+            "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/002/443/459/large/jason-nguyen-waterknight-jasonnguyen.jpg?1461796817",
+            "img_linked_source" : "https://www.artstation.com/artwork/XDDYn",
 
             "entry_category" : "Deity",
             "entry_type" : "Greater",
-            "entry_variety" : "Frydeia",
+            "entry_variety" : "Deus Iustitia",
 
             "entry_title" : "Arbiter of Law",
             "entry_description_overview" : "The Goddess of Ice and Honor is also known as the Arbiter of all Law. She helped forge the Edict during The Binding of the Lesser Deities, and oversees its observation in the mortal world. When the Edict is crossed, Frydeia does her part to dole judgment as she sees fit so that the Edict need not balance the offense itself. This is to avoid absolute catastrophe, since the Edict is raw power. That isn't say that Frydeia is merciful by mortal standards; she has had entire kingdoms put to the blade when a noble is being especially stubborn. Because of this, some believe that the Edict would resolve things in a kinder way than Frydeia does, and her intervention is solely for her own enjoyment. These rumors have not been shown to bother the Arbiter or her followers in the past.            <br><br>The Sigil of Frydeia is a downwards sword whose guard forms the arms of a merchant's scale. The favored form of Frydeia is that of a knight with a crystalline carapace.            <br><br>The Arbiter rules over the plane of Ice, which is home to the Constructs. These beings the mechanical denizens created and powered by Frydeia's psionic abilities.            <br><br>The Arbiter commands a strict religious sect of followers who seek to assist any nation in maintaining order. While the Arbiter herself does not condemn evilness as long as order is maintained, the organization has adopted its own additional standards that focus on peace, diplomacy, and violent intervention only when no other reasonable option presents itself. This group is known as the Magistrate, and its members are known as Magisters. Their ranks include mostly gishes such as Bladesingers and Twilight Clerics, but also War Magic Wizards and Peace Clerics. They exist outside of any nation's jurisdiction.            ",
@@ -27,15 +30,18 @@
         },
         {
             "entry_name" : "Gondarin",
-            "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/2/28/The_Mythology_of_all_races_%281918%29_%2814742406276%29.jpg",
-            "img_rehosted_source" : "",
+            "img_rehosted" : "/resources/images/gondarin.webp",
+            "img_rehosted_source" : "https://artflow.ai/",
+
+            "img_linked" : "https://cdn.bhdw.net/im/league-of-legends-lol-ornn-leter-muri-55620_w635.jpg",
+            "img_linked_source" : "https://www.besthdwallpaper.com/lol/league-of-legends-lol-ornn-dt_sq-55620.html",
 
             "entry_category" : "Deity",
             "entry_type" : "Greater",
-            "entry_variety" : "Gondarin",
+            "entry_variety" : "Deus Gehennia",
 
             "entry_title" : "All-Father",
-            "entry_description_overview" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque condimentum ut neque at malesuada. Quisque mattis vel lorem eget venenatis. Sed cursus dui vel orci cursus hendrerit. Quisque in arcu pretium, laoreet est quis, tincidunt enim. In tincidunt viverra quam, pharetra vestibulum neque porta nec. Ut eu volutpat orci, quis pretium ligula. Aliquam in nibh lorem. Proin id semper nibh. In pulvinar lacus nec velit euismod placerat. In non congue lacus, eu pharetra elit. Praesent id lorem in nunc venenatis congue. Quisque suscipit tempus commodo. Morbi diam quam, rutrum in venenatis sed, pulvinar nec justo. Sed fermentum posuere ligula, sit amet venenatis felis varius in. In imperdiet mollis scelerisque. Phasellus id eleifend felis, ut aliquam arcu.",
+            "entry_description_overview" : "under development",
 
             "entry_titles" : "God of Magma<br>Forge Master<br>All-Father<br>The First Artisan",
             "entry_symbol" : "Brass Hammer",
@@ -52,12 +58,15 @@
         },
         {
             "entry_name" : "Deliklese",
-            "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/c/cb/Greek_mythology_systematized_%281880%29_%2814559602149%29.jpg",
-            "img_rehosted_source" : "",
+            "img_rehosted" : "/resources/images/deliklese.webp",
+            "img_rehosted_source" : "https://artflow.ai/",
+
+            "img_linked" : "https://fantasy-art-engine-blog.tumblr.com/image/102817115499",
+            "img_linked_source" : "https://fantasy-art-engine-blog.tumblr.com/post/102817115499/melandru-nature-goddess-by-kekai-kotaki",
 
             "entry_category" : "Deity",
             "entry_type" : "Greater",
-            "entry_variety" : "Deliklese",
+            "entry_variety" : "Deus Venatia",
 
             "entry_title" : "All-Mother",
             "entry_description_overview" : "The Goddess of Ooze and Life is also known as the All-Mother. She is considered to be the only truly benevolent of the four. The All-Mother is gentle, generous, and understanding in most cases, but she and her followers have shown remarkable zeal when taking up arms in the defense of goodness.  ",
@@ -76,12 +85,15 @@
         },
         {
             "entry_name" : "Sebabos",
-            "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/c/c4/Phoenix_%281583%29.svg",
-            "img_rehosted_source" : "",
+            "img_rehosted" : "/resources/images/sebabos.webp",
+            "img_rehosted_source" : "https://artflow.ai/",
+
+            "img_linked" : "https://cdna.artstation.com/p/assets/images/images/002/468/854/large/ramses-melendez-only-death-and-ashes.jpg?1462125044",
+            "img_linked_source" : "https://www.artstation.com/artwork/qZENR",
 
             "entry_category" : "Deity",
             "entry_type" : "Greater",
-            "entry_variety" : "Sebabos",
+            "entry_variety" : "Deus Mendacium",
 
             "entry_title" : "The Dark Adversary",
             "entry_description_overview" : "The God of Ash and Death is also known as the Phoenix since this is his chosen avatar.  He may be immortal himself, but he chose to adopt this form of his own volition.  By collaborating with Gondarin, Sebabos created the Phoenix as a creature with the ability to recycle its own life forces.  This was made as a mockery of his lover's domain of life and death.  The meaning behind this act is still a matter of debate.  <br><br>Sebabos is Neutral Evil in that he brings the prolonging of suffering whenever he can, but that is not to say he reigns mayhem whenever he can.  He remains utterly detached from mortal affairs, but happily tricks and beguils mortals whenever the opportunity presents itself.  He relishes suffering that is brought about by one's own actions, only intervening in a literal sense in the most enticing of circumstances.  <br><br>Sebabos is deeply in love with Deliklese, and continually gifts her with reaped souls from mortals he has won and swindled.  <br><br>While Sebabos is accurately referred to as a Deceiver and Reaper, he does not prefer to wield a scythe as some pagan interpretations depict.  Sebabos' preferred weapon and tool is that of a black bladed axe akin to a headsman, with discreet golden insets. He dislikes all color save for the sheen of gold, and many legends tell of those who have bought extra weeks or months of life with their vast fortunes.  <br><br>Sebabos is associated with Illusion magic, weaving lies and trickery with masterful skill. The need for discretion is great, drawing the attention of many unsavory entities including undead.  ",
@@ -314,6 +326,9 @@
         },
         {
             "entry_name" : "Beyok",
+            "img_rehosted" : "/resources/images/beyok.webp",
+            "img_rehosted_source" : "https://artflow.ai/",
+
             "img_linked" : "https://cdna.artstation.com/p/assets/images/images/038/752/608/large/miguel-regodon-harkness-imperial-dragon-sovereign-ancient.jpg?1623952542",
             "img_linked_source" : "https://www.artstation.com/artwork/B1qqem",
 
