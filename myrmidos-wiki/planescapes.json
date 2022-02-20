@@ -101,7 +101,7 @@
         {
             "plane" : "Feywilds",
             
-            "plane_description" : "The Elemental Plane of Ooze is positioned to the West of the Great Wheel cosmology, and is also known as the Feywilds. It is strongly associated with domains relating to Life, Balance, and Death, and is considered to represent the Neutral Good alignment in its purest form. This plane is the source of all Necromancy magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school. The Plane of Ooze is adjacent to the Primal Planes of Water to the North and Earth to the West. The Plane of Ooze is complimentary to the Plane of Ash.  <br><br>Ooze is associated with life and purity. It channels the school of Necromancy in that it seeds life from death in a constant cycle.  ",
+            "plane_description" : "The Elemental Plane of Ooze is positioned to the West of the Great Wheel cosmology, and is also known as the Feywilds. It is strongly associated with domains relating to Life, Balance, and Death, and is considered to represent the Neutral Good alignment in its purest form. This plane is the source of all Necromancy magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school. The Plane of Ooze is adjacent to the Primal Planescapes of Water to the North and Earth to the West. The Plane of Ooze is complimentary to the Plane of Ash.  <br><br>Ooze is associated with life and purity. It channels the school of Necromancy in that it seeds life from death in a constant cycle.  ",
             "plane_img" : "https://upload.wikimedia.org/wikipedia/commons/5/58/Swamp_poratz.jpg",
             
             "planar_element" : "Ooze",
@@ -314,7 +314,7 @@
         {
             "plane" : "Aquar",
             "planar_element" : "Water",
-            "plane_description" : "The Elemental Plane of Water is positioned to the Northwest of the Great Wheel cosmology.  It is strongly associated with domains relating to Adaptability and Cleansing, and is considered to represent the Neutral alignment in its purest form.  This plane is the source of all Abjuration magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  The Plane of Water is adjacent to the Primal Planes of Earth to the Southwest, and Air to the Northwest.  The Border Planes at these junctions are the Plane of Ooze and the Plane of Ice, which are also known as the Feywilds and Eifrost respectively.  ",
+            "plane_description" : "The Elemental Plane of Water is positioned to the Northwest of the Great Wheel cosmology.  It is strongly associated with domains relating to Adaptability and Cleansing, and is considered to represent the Neutral alignment in its purest form.  This plane is the source of all Abjuration magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  The Plane of Water is adjacent to the Primal Planescapes of Earth to the Southwest, and Air to the Northwest.  The Border Planescapes at these junctions are the Plane of Ooze and the Plane of Ice, which are also known as the Feywilds and Eifrost respectively.  ",
             "plane_img" : "https://upload.wikimedia.org/wikipedia/commons/2/2e/Underwater_world.jpg",
             
             "planar_position" : "Northwestern",

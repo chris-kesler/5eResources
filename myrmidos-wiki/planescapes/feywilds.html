@@ -16,14 +16,14 @@
       var page = window.location.pathname.split("/").pop();
 
       // Reading data from our JSON file
-      $.getJSON(`/myrmidos-wiki/planes.json`, function(data) {
+      $.getJSON(`/myrmidos-wiki/Planescapes.json`, function(data) {
 
         // Looping through the JSON data 
         $.each(data.entries, function(i, f) {
           if((f.plane.toLowerCase() + ".html") == page) {
 
             // Populating the page titles
-            document.getElementById("common-page-header-title").innerHTML = "Myrmidos Wiki:  Planes > " + f.plane;
+            document.getElementById("common-page-header-title").innerHTML = "Myrmidos Wiki:  Planescapes > " + f.plane;
             document.getElementById("common-page-content-title").innerHTML = f.plane + ", Elemental Plane of " + f.planar_element;
 
             // Populating the page description 
@@ -94,7 +94,7 @@
         <section class="common-page-content-section">
 
           <!-- A back button that navigates out in the file structure  -->
-          <button id="common-page-back-button" onclick="location.href='../planes.html'">Out to Planes</button>
+          <button id="common-page-back-button" onclick="location.href='../planescapes.html'">Out to Planescapes</button>
 
           <!-- The title of the page content, including the source as a link -->
           <h2 id="common-page-content-title"></h2>
