@@ -435,6 +435,78 @@
 
             "entry_description_overview" : "Turquoise Dragons are especially fearsome, preying on coastal civilizations and seafaring vessels alike.  They greatly prefer to enslave aquatic mortals, but even that is a rare occurence.  Turquoise Dragons are voracious and aggressive, likely due to the large number of comparable threats that the seas contain compared to other environments.  They typically decorate their lair with sunken vessels and the corpses of their mightiest foes.  ",
 
+            "entry_description_library" : [
+                {
+                            
+                    "heading" : "Physiology",
+                    "content" : "",
+                    "sublibrary" : [
+                        {
+                            "heading" : "Appearance",
+                            "content" : "Turquoise Dragons have the standard six limbed anatomy typical of their species, although they are more flexible and serpentine in their movements than their brethren.  They are covered in vibrant sea green scales, hence the name.  Their wings are conventional in structure, but have thicker, fleshier membranes than their batlike cousins.  The underside of their wing membrane is a dull ivory color, much like a barnacle.  A series of ivory colored vanes run along the Dragon's spine, culminating in a moderately sized central head crest.  Two vanes extend downwards from the Dragon's cheekbones, while a pair of rearfacing horns swoop back from the base of the skull.  The Turquoise Dragon's tail ends with a series of flexible tendrils akin to a jellyfish, which are only a shade more pale than the vanes.  "
+                        },
+                        {
+                            "heading" : "Anatomy",
+                            "content" : "Turquoise Dragons are anatomically similar to sharks in a number of ways.  Firstly, their scales are much smaller than those of other dragons, being a series of tightly packed sharp dermal denticles rather than large layered plates.  This results in skin that appears smooth, but can tear open unprotected flesh should it rub against it with force.  Their bones are also far more flexible due to high levels of cartilage composition.  This allows the Turquoise Dragon to much more easily shrug of bludgeoning impacts, but makes it harder for them to maintain sustained flight over long distances.  While their wings are powerful, they are best suited for short bursts of flight and aquatic navigation; the flexibility of their skeleton makes endurance flight require far more effort.  Turquoise Dragons also have a series of ever replenishing teeth that move forward as they grow.  While this process is similar to that which sharks undergo, the functionality of the Dragon's jaws are more akin to a large constrictor snake.  The smaller teeth that have yet to move forward serve as one way skewers, preventing anything in the Dragon's mouth from sliding out once it's been latched onto.  <br><br>Lastly, Turquoise Dragons have a set of robust gills, although not in the typical sense.  The ivory colored membranes, underbelly, and tail vanes of the Turquoise Dragon serve to pull oxygen from the surrounding water at an alarming rate.  Turquoise Dragons have remarkable endurance when underwater, which is likely due to their heightened ability to satisfy their cardiovascular system.  While the tail vanes of a Turquoise Dragon do serve as gills in some sense (and the most robust of the Dragon's gills at that), they also serve another purpose; they are visually and functionally similar to a jellyfish's stingers, containing a series of neurotoxins that inflict an immobilizing surge of pain.  While the toxins employed are not among the most powerful when compared to jellyfish, the effect of the tail is sufficient to partially paralyze or numb an area roughly one tenth of the Dragon's size.  The duration of this effect varies based on the Dragon's age, with Hatchlings and Juveniles only inflicting it for a few seconds, while the sting from Wyrms can linger for days.  "
+                        }
+                    ]
+                },
+                {
+                    "heading" : "Ecology",
+                    "content" : "", 
+                    "sublibrary" : [
+                        {
+                            "heading" : "Food Chain",
+                            "content" : "The oceans are filled with predators capable of holding their own and even hunting all but the largest Tuquoise Dragons.  Hatchlings hunt fish while doing their best to avoid predators.  Juvenile Turquoise Dragons are especially aggressive hunters, preferring to hunt small predators and frequently attacking things as large or larger than they are.  They sometimes succeed by using their psychic blast and tail stingers to gain an advantage, but lose just as often.  Turquoise Dragons have no issue with fleeing a fight, becoming even more adept at escaping than they are at hunting.  Once the Dragon is an Adult, it is capable of hunting all but the greatest sharks with ease.  At this age, they clash with similarly sized foes less often, but still actively go after orcas and dire squids when they can.  Adult Dragons are still wary of large lurking threats, such as sperm whales and dire sharks.  By the time the Dragon is a Wyrm, they have very very few natural predators remaining.  Only the greatest aquatic monsters such as the Kraken or Leviathan could make a Turquoise Wyrm flee in a one on one encounter.  "
+                        },
+                        {
+                            "heading" : "Habitat",
+                            "content" : "Turquoise Dragons can be found in temperate waters throughout the world. Their preferred habitats are deep oceans relatively near islands and coasts, but they will settle for territory that is far from land if they must.  They prefer to avoid the most tropical and arctic waters of the world, but can just as easily make their home in such climates if necessary.  Turquoise Dragons love dwelling in and near underwater ruins and abandoned ships, though they will also inhabit caverns if such caves are deep enough for them to swim through.  "
+                        },
+                        {
+                            "heading" : "Lair",
+                            "content" : "When a Turquoise Dragon seeks a lair, it selects a crevice or cave to begin working with.  The Dragon then finds and breaks off select pieces of coral from multiple places and colors to bring back to their lair.  Using their natural psychic abilities, the Dragon can easily influence and control the microorganisms that live within the coral.  Under the Dragon's guidance and control, they reform their coral structures and hew away the stone to create magnificent structures for the lair.  As a result, Tuquoise Dragon lairs end up appearing as opulent palaces formed entirely of coral.  The largest known Turquoise Dragon lair was discovered off the coast of Westcrown, and was originally thought to be an abandoned city for merpeople.  "
+                        }
+                    ]
+                },
+                {
+                    "heading" : "Behavior",
+                    "content" : "", 
+                    "sublibrary" : [
+                        {
+                            "heading" : "Hunting",
+                            "content" : "Turquoise Dragons are solitary creatures, though they do sometimes band together to form larger lairs. A single Turquoise Dragon has no problem defending its territory from all comers, but many smaller creatures have been known to prey upon one another as well. They may also attack humans, elves, dwarves, and other draconic creatures that enter their territories uninvited.  "
+                        },
+                        {
+                            "heading" : "Defense",
+                            "content" : "In combat, Turquoise Dragons are fierce fighters, using their powerful wings to propel themselves into the air and rain down attacks upon their foes. While in flight, they can strike with their tails, which are capable of cutting through most materials and slaying even heavily armored foes.  Their claws can tear apart stone, wood, and flesh alike.  When fighting on land, Turquoise Dragons will often use their long necks to swing around and launch themselves at their opponents.  They use their mental powers to great effect in battle, blasting their enemies psychically before launching a physical assault.  "
+                        },
+                        {
+                            "heading" : "Personality",
+                            "content" : ".  "
+                        }
+                    ]
+                },
+                {
+                    "heading" : "Society",
+                    "content" : "", 
+                    "sublibrary" : [
+                        {
+                            "heading" : "Individual",
+                            "content" : ".  "
+                        },
+                        {
+                            "heading" : "Intraspeciary",
+                            "content" : "Turquoise Dragons are highly intelligent and cunning, able to communicate with other dragons through telepathy. Because of this ability, Turquoise Dragons tend to be solitary creatures, preferring to avoid contact with others whenever possible.  "
+                        },
+                        {
+                            "heading" : "Intercultural",
+                            "content" : "They have no trouble keeping secrets, even when dealing with powerful individuals such as kings or queens.  "
+                        }
+                    ]
+                }
+            ],
+
             "overview_table_groups" : [
                 {
                     "overview_table_group_heading" : "Associations",
