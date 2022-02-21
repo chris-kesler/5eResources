@@ -109,6 +109,10 @@ iframe {
   max-width: 80vw;
 }
 
+button {
+  background-size: cover;
+}
+
 
 
 /* 
@@ -377,7 +381,9 @@ The plane buttons
   padding: 10px;
   background-color: rgb(175, 175, 175);
   border-style: solid;
-  font-size: large;
+  font-size: larger;
+  font-weight: 900;
+  -webkit-text-stroke: 0.5px whitesmoke;
   text-align: center;
   display: block;
   position: relative;

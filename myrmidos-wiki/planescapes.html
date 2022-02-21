@@ -8,8 +8,98 @@
     <link rel="icon" href="/resources/images/OwlOfMinerva_ModifiedLogo.png">
     <link rel="stylesheet" href="/caped-crusaders-style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  </head>
+    <script>
+      $(function readJSON() {
+  
+        // Reading the name of this file
+        var page = window.location.pathname.split("/").pop();
+  
+        // Reading data from our JSON file
+        $.getJSON(`/myrmidos-wiki/planescapes.json`, function(data) {
+  
+          var tableRow;
+          // Looping through the JSON data 
+          $.each(data.entries, function(i, f) {
 
+            if((f.planar_element.toLowerCase()) == 'ash') {
+              document.getElementById("nw").innerHTML = f.plane;
+              document.getElementById("nw").style.backgroundImage = "url('" + f.plane_img + "')";
+              document.getElementById("nw").onclick = function() {
+                window.location = "planescapes/" + f.plane.toLowerCase() + ".html";
+              }
+            }
+
+            if((f.planar_element.toLowerCase()) == 'air') {
+              document.getElementById("n").innerHTML = f.plane;
+              document.getElementById("n").style.backgroundImage = "url('" + f.plane_img + "')";
+              document.getElementById("n").onclick = function() {
+                window.location = "planescapes/" + f.plane.toLowerCase() + ".html";
+              }
+            } 
+
+            if((f.planar_element.toLowerCase()) == 'ice') {
+              document.getElementById("ne").innerHTML = f.plane;
+              document.getElementById("ne").style.backgroundImage = "url('" + f.plane_img + "')";
+              document.getElementById("ne").onclick = function() {
+                window.location = "planescapes/" + f.plane.toLowerCase() + ".html";
+              }
+            } 
+
+            if((f.planar_element.toLowerCase()) == 'fire') {
+              document.getElementById("w").innerHTML = f.plane;
+              document.getElementById("w").style.backgroundImage = "url('" + f.plane_img + "')";
+              document.getElementById("w").onclick = function() {
+                window.location = "planescapes/" + f.plane.toLowerCase() + ".html";
+              }
+            }
+            
+            if((f.planar_element.toLowerCase()) == 'material') {
+              document.getElementById("c").innerHTML = f.plane;
+              document.getElementById("c").style.backgroundImage = "url('" + f.plane_img + "')";
+              document.getElementById("c").onclick = function() {
+                window.location = "planescapes/" + f.plane.toLowerCase() + ".html";
+              }
+            } 
+
+            if((f.planar_element.toLowerCase()) == 'water') {
+              document.getElementById("e").innerHTML = f.plane;
+              document.getElementById("e").style.backgroundImage = "url('" + f.plane_img + "')";
+              document.getElementById("e").onclick = function() {
+                window.location = "planescapes/" + f.plane.toLowerCase() + ".html";
+              }
+            } 
+
+            if((f.planar_element.toLowerCase()) == 'magma') {
+              document.getElementById("sw").innerHTML = f.plane;
+              document.getElementById("sw").style.backgroundImage = "url('" + f.plane_img + "')";
+              document.getElementById("sw").onclick = function() {
+                window.location = "planescapes/" + f.plane.toLowerCase() + ".html";
+              }
+            } 
+            
+
+            if((f.planar_element.toLowerCase()) == 'earth') {
+              document.getElementById("s").innerHTML = f.plane;
+              document.getElementById("s").style.backgroundImage = "url('" + f.plane_img + "')";
+              document.getElementById("s").onclick = function() {
+                window.location = "planescapes/" + f.plane.toLowerCase() + ".html";
+              }
+            } 
+
+            if((f.planar_element.toLowerCase()) == 'ooze') {
+              document.getElementById("se").innerHTML = f.plane;
+              document.getElementById("se").style.backgroundImage = "url('" + f.plane_img + "')";
+              document.getElementById("se").onclick = function() {
+                window.location = "planescapes/" + f.plane.toLowerCase() + ".html";
+              }
+            } 
+
+          });
+        });
+      });
+    </script>
+  
+  </head>
 
   <body>
     <div class="common-page-background"> 
@@ -31,51 +121,51 @@
               <h2>Overview</h2>
               <hr>
 
-              <table class="directory-page-nav-button-table">
-                <tbody></tbody>
+              <table id='planes-button-table' class="directory-page-nav-button-table">
                 <tr>
                   <td>
-                    <button id="class-button-6" class="directory-page-nav-button-plane-primal" onclick="location.href='planescapes/aquar.html'">Water</button>
+                    <button id="nw" class='directory-page-nav-button-plane-quasi'></button>
                   </td>
                   <td>
-                    <button id="class-button-2" class="directory-page-nav-button-plane-quasi" onclick="location.href='planescapes/eifrost.html'">Ice</button>
+                    <button id="n" class='directory-page-nav-button-plane-primal'></button>
                   </td>
                   <td>
-                    <button id="class-button-1" class="directory-page-nav-button-plane-primal" onclick="location.href='planescapes/caelar.html'">Air</button>
+                    <button id="ne" class='directory-page-nav-button-plane-quasi'></button>
                   </td>
                 </tr>
+
                 <tr>
                   <td>
-                    <button id="class-button-10" class="directory-page-nav-button-plane-quasi" onclick="location.href='planescapes/feywilds.html'">Ooze</button>
+                    <button id="w" class='directory-page-nav-button-plane-primal'></button>
                   </td>
                   <td>
-                    <button id="class-button-5" class="directory-page-nav-button-plane-material">Material</button>
+                    <button id="c" class='directory-page-nav-button-plane-quasi'></button>
                   </td>
                   <td>
-                    <button id="class-button-0" class="directory-page-nav-button-plane-quasi" onclick="location.href='planescapes/shadowfell.html'">Ash</button>
+                    <button id="e" class='directory-page-nav-button-plane-primal'></button>
                   </td>
                 </tr>
+
                 <tr>
                   <td>
-                    <button id="class-button-9" class="directory-page-nav-button-plane-primal" onclick="location.href='planescapes/terral.html'">Earth</button>
+                    <button id="sw" class='directory-page-nav-button-plane-quasi'></button>
                   </td>
                   <td>
-                    <button id="class-button-8" class="directory-page-nav-button-plane-quasi" onclick="location.href='planescapes/vulken.html'">Magma</button>
+                    <button id="s" class='directory-page-nav-button-plane-primal'></button>
                   </td>
                   <td>
-                    <button id="class-button-4" class="directory-page-nav-button-plane-primal" onclick="location.href='planescapes/ignar.html'">Fire</button>
+                    <button id="se" class='directory-page-nav-button-plane-quasi'></button>
                   </td>
                 </tr>
+
               </table>
-              
-              <section class="WikiContent">
-                <p>
-                  The Planescapes are the various metaphysical realities that the universe is comprised of.  Each plane exists on a different branch or frequency of the wave function that defines reality, remaining entirely distinct and separate from each other in with the exception of the borders.  The overlap created by two primal Planescapes becomes a quasi plane, being significantly smaller due to the lesser degree of commonality.  The overlap created by all four primal Planescapes becomes the universe as we know it, being made up of mostly empty space since very very little contact between such repellant forces can be tolerated.  
-                </p>
-                <p>
-                  The other Planescapes can be traveled to by magical means, and have inhabitants of their own, much like the material plane.  These Planescapes contain an environment dominated by a particular type of matter that extends--for all practical applications--infinitely.  
-                </p>
-              </section>
+            
+              <p>
+                The Planescapes are the various metaphysical realities that the universe is comprised of.  Each plane exists on a different branch or frequency of the wave function that defines reality, remaining entirely distinct and separate from each other in with the exception of the borders.  The overlap created by two primal Planescapes becomes a quasi plane, being significantly smaller due to the lesser degree of commonality.  The overlap created by all four primal Planescapes becomes the universe as we know it, being made up of mostly empty space since very very little contact between such repellant forces can be tolerated.  
+              </p>
+              <p>
+                The other Planescapes can be traveled to by magical means, and have inhabitants of their own, much like the material plane.  These Planescapes contain an environment dominated by a particular type of matter that extends--for all practical applications--infinitely.  
+              </p>
 
             </section>
 

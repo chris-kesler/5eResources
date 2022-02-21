@@ -358,6 +358,51 @@
             "planar_topography" : "Infinite bounds, varying water pressure, all light is from bioluminescence.",
             "planar_gravity" : "Subjective, directional to nearest surface.",
             "planar_time" : "Nominal"
+        },
+        {
+            "plane" : "Material",
+            
+            "plane_description" : "The Elemental Plane of Ooze is positioned to the West of the Great Wheel cosmology, and is also known as the Feywilds. It is strongly associated with domains relating to Life, Balance, and Death, and is considered to represent the Neutral Good alignment in its purest form. This plane is the source of all Necromancy magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school. The Plane of Ooze is adjacent to the Primal Planescapes of Water to the North and Earth to the West. The Plane of Ooze is complimentary to the Plane of Ash.  <br><br>Ooze is associated with life and purity. It channels the school of Necromancy in that it seeds life from death in a constant cycle.  ",
+            "plane_img" : "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/898px-The_Earth_seen_from_Apollo_17.jpg?20200925203546",
+            
+            "planar_element" : "material",
+            "planar_position" : "Western",
+            "planar_topography" : "Infinite bounds, sporous atmosphere.",
+            "planar_gravity" : "Constant.",
+            "planar_time" : "Nominal",
+
+            "associated_school" : "Necromancy",
+            "associated_alignment" : "Neutral Good",
+
+            "associated_deity" : "Deliklese",
+            "associated_deity_img" : "https://upload.wikimedia.org/wikipedia/commons/c/cb/Greek_mythology_systematized_%281880%29_%2814559602149%29.jpg",
+            "associated_deity_description" : "The Goddess of Ooze and Life is also known as the All-Mother. She is considered to be the only truly benevolent deity of the four. The All-Mother is gentle, generous, and understanding in most cases, but she and her followers have shown remarkable zeal when taking up arms in the defense of goodness.  ",
+
+            "associated_deity_titles" : "Goddess of Ooze<br>Life-Giver<br>All-Mother<br>The Merciful One",
+            "associated_deity_symbol" : "Melting Flower",
+            "associated_deity_worshippers" : "Druids<br>Hunters<br>Farmers",
+
+            "associated_deity_alignment" : "Neutral Good",
+            "associated_deity_portfolio" : "Beauty<br>Pleasure<br>Freedom",
+            "associated_deity_domains" : "Nature<br>Life<br>Grave",
+
+            "associated_deity_animals" : "Deer<br>Toad<br>Alligator",
+            "associated_deity_creatures" : "Ooze Elementals<br>Water Elementals<br>Earth Elementals<br>Beasts<br>Green Dragons",
+            "associated_deity_colors" : "Green, Brown, Pink, Yellow",
+
+            "associated_dragons" : [
+                {
+                    "species" : "Viridian",
+                    "type" : "Quasiprimal"
+                },
+                {
+                    "species" : "Dracofey",
+                    "type" : "Spirit"
+                }
+            ],
+
+            "associated_creatures" : "Fey<br>Green Dragons<br>Oozes",
+            "associated_factions" : "NA"
         }
     ]
 }
