@@ -224,7 +224,7 @@
                 }
             ],
 
-            "associated_creatures" : "<a href='/myrmidos-wiki/Category_Creatures/celestials/Celestials.html'>Celestials</a><br><a href='/myrmidos-wiki/Category_Creatures/Type_Dragons/Subtype_Chromatic/BlueDragon.html'>Blue Dragons</a><br>Air Elementals",
+            "associated_creatures" : "Celestials<br>Blue Dragons<br>Air Elementals",
             "associated_factions" : "NA",
 
             "planar_topography" : "Infinite bounds, varying air pressure, chunks of floating land sparsely distributed.",
@@ -352,7 +352,7 @@
                 }
             ],
 
-            "associated_creatures" : "<a href='/myrmidos-wiki/Category_Creatures/aberrations/Aberrations.html'>Aberrations</a><br><a href='/myrmidos-wiki/Category_Creatures/Type_Dragons/Subtype_Chromatic/Dracoturtle.html'>Dracoturtles</a><br>Water Elementals",
+            "associated_creatures" : "Aberrations<br>Dracoturtles<br>Water Elementals",
             "associated_factions" : "NA",
 
             "planar_topography" : "Infinite bounds, varying water pressure, all light is from bioluminescence.",
