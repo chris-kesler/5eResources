@@ -22,12 +22,12 @@
         {
             "author_name" : "Tula",
             "author_credit" : "Tula's Pocketbook: A Spell Compendium for the More Melee Inclined Caster",
-            "source_url" : "https://homebrewery.naturalcrit.com/share/ByVmgFiiN"
+            "content_source" : "https://homebrewery.naturalcrit.com/share/ByVmgFiiN"
         },
         {
             "author_name" : "5eBR",
             "author_credit" : "D&D 5th Edition Basic Rules",
-            "source_url" : "https://www.dndbeyond.com/sources/basic-rules"
+            "content_source" : "https://www.dndbeyond.com/sources/basic-rules"
         }
     ],
 

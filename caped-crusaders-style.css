@@ -69,7 +69,16 @@ p {
   color: rgb(25,25,25);
   margin-left: 25px;
   margin: 15px;
-  min-width: 200px;
+  min-width: 20vw;
+}
+
+p:before {
+  content: "";
+  width: 35vw;
+  display: block;
+  overflow: hidden;
+  /* For Demonstration */
+  /* border: 1px solid green; */
 }
 
 /* All buttons will show cursor by default */
@@ -517,18 +526,23 @@ The buttons used to navigate and organize the classes within caped crusaders
 An overview table for caped crusaders entry pages 
 */
 .cc-attributes-overview-table {
-  display: block;
-  width: auto;
-  margin: 10px;
-  margin-right: 0px;
-  margin-left: 0px;
+  width: 55vw;
+  max-width: 55vw;
+  overflow: visible;
+  margin: 0px;
+  margin-bottom: 15px;
   overflow: auto;
   border: 1px solid rgb(50,50,50);
   border-collapse: collapse;
-  float: center;
+  float: left;
+}
+.cc-attributes-overview-table thead tr td{
+  border: 0px hidden aqua;
+  border-bottom: 1px solid rgb(50,50,50);
+  background: transparent;
+  background-color: transparent;
 }
 .cc-attributes-overview-table th, .cc-attributes-overview-table td {
-  width: auto;
   padding: 8px;
   vertical-align: top;
   border: 1px solid rgb(50,50,50);
@@ -620,9 +634,10 @@ A small table to hold the entry page image and author credit
 */
 #entry-page-image-table {
   float: right;
-  width: auto;
-  max-width: 25vw;
+  width: 25vw;
   margin: 0px;
+  margin-right: -10px;
+  margin-left: 10px;
   padding: 0px;
   border: 7px solid rgb(150,150,150);
   border-radius: 32px;

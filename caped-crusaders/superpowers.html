@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-US-Compatible" content="e-edge">
+    <title>KnowOne's Website of Everything</title>
+    <link rel="icon" href="/resources/images/OwlOfMinerva_ModifiedLogo.png">
+    <link rel="stylesheet" href="/caped-crusaders-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+    <script>
+      $(function readJSON() {
+
+        // Reading data from our JSON file
+        $.getJSON('superpowers.json', function(data) {
+
+          // Looping through the JSON data 
+          $.each(data.entries, function(i, f) {
+
+            // Initializing a default credit and author variable then reading its true value based on a subset within the JSON file
+            type_credit = "---";
+            $.each(data.type, function(x, y) {
+              if (f.type_str == y.type_name) {
+                type_credit = y.type_credit;
+              }
+            });
+            author_credit = "---";
+            $.each(data.author, function(x, y) {
+              if (f.source_str == y.author_name) {
+                author_credit = y.author_credit;
+                content_source = y.content_source;
+              }
+            });
+
+            // Setting a TF string based on the item attribute
+            if (f.overcharge_str != undefined) {
+              overchargeable = "True";
+            } else {
+              overchargeable = "False";
+            }
+
+            // Checking for Material Components and displaying the material component description
+            if (f.components_vsm_str.includes("M") && f.components_description_str != undefined) {
+
+                // If materials have a cost, we strip that out and concatenate it to the vsm string with parentheses
+                if (f.components_description_str.replace(/\D/g,'') > 0) {
+                  components_vsm = f.components_vsm_str + "   (" + f.components_description_str.replace(/\D/g,'') + ")";
+
+                // If not, we leave the vsm string alone and pull the data
+                } else {
+                  components_vsm = f.components_vsm_str;
+                }
+
+                // If materials are consumed, we include an asterisk to reflect that in the vsm string
+                if (f.components_description_str.includes("consume")) {
+                components_vsm = components_vsm + "*";
+              
+                // If materials aren't consumed, we do nothing
+                } else {}
+
+                
+              // If there are no material components, we leave the vsm string alone
+              } else {
+                components_vsm = f.components_vsm_str;
+              }
+
+            // Defining the table row that contains each entry in the table
+            var tblRow = "<tr>" 
+              + "<td><a href='superpowers/" + f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html' target='_blank'>" + f.name_str + "</a></td>" 
+              + "<td>" + f.level_str + "</td>" 
+              + "<td>" + "<img class='directory-page-dynamic-table-entry-image' src=/resources/images/" + f.type_str + ".png><br>" + f.type_str + "</td>" 
+              + "<td>" + f.casting_time_str + "</td>" 
+              + "<td>" + f.range_area_str + "</td>" 
+              + "<td>" + components_vsm + "</td>" 
+              + "<td>" + f.duration_str + "</td>" 
+              + "<td>" + f.attack_save_str + "</td>" 
+              + "<td>" + f.damage_effect_str + "</td>" 
+              + "<td>" + overchargeable + "</td>" 
+              + "<td>" + f.class_str + "</td>" 
+              + "<td><a target='blank' href='" + content_source + "'>" + f.source_str + "</a></td>" 
+              + "</tr>"
+
+            // Adding the row to the table
+            $(tblRow).appendTo("#directory-page-dynamic-table-content tbody");
+          });
+        });
+      });
+    </script>
+  </head>
+
+
+  <body>
+    <div class="common-page-background"> 
+      <div class="common-page-header">
+        <div class="import-common-page-header"></div>
+
+          <h1>Caped Crusaders:  Superpowers</h1>
+          <hr>
+      </div>
+        
+      
+      <div class="common-page-content-transparent">
+          
+
+
+
+
+            <section class="common-page-content-section">
+              <button id="common-page-back-button" onclick="location.href='../caped-crusaders.html'">Out to Caped Crusaders</button>
+              <h3>Include Filters</h3>
+              <hr>
+
+              <input type="text" id="directory-page-dynamic-table-query-inputInclude0" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Name. . .">
+              <input type="text" id="directory-page-dynamic-table-query-inputInclude1" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Level. . .">
+              <input type="text" id="directory-page-dynamic-table-query-inputInclude2" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Type. . .">
+              <input type="text" id="directory-page-dynamic-table-query-inputInclude3" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Casting Time. . .">
+              <input type="text" id="directory-page-dynamic-table-query-inputInclude4" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Range/Area. . .">
+              <input type="text" id="directory-page-dynamic-table-query-inputInclude5" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Components. . .">
+              <input type="text" id="directory-page-dynamic-table-query-inputInclude6" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Duration. . .">
+              <input type="text" id="directory-page-dynamic-table-query-inputInclude7" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Attack/Save. . .">
+              <input type="text" id="directory-page-dynamic-table-query-inputInclude8" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Damage/Effect. . .">
+              <input type="text" id="directory-page-dynamic-table-query-inputInclude9" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Overchargeable. . .">
+              <input type="text" id="directory-page-dynamic-table-query-inputInclude10" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Classes. . .">
+              <input type="text" id="directory-page-dynamic-table-query-inputInclude11" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Source. . .">
+              <!-- <input type="text" id="directory-page-dynamic-table-query-inputInclude12" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Races. . .">
+              <input type="text" id="directory-page-dynamic-table-query-inputInclude13" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Classes. . ."> -->
+
+              <h3>Exclude Filters</h3>
+              <hr>
+
+              <input type="text" id="directory-page-dynamic-table-query-inputExclude0" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Name. . .">
+              <input type="text" id="directory-page-dynamic-table-query-inputExclude1" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Level. . .">
+              <input type="text" id="directory-page-dynamic-table-query-inputExclude2" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Type. . .">
+              <input type="text" id="directory-page-dynamic-table-query-inputExclude3" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Casting Time. . .">
+              <input type="text" id="directory-page-dynamic-table-query-inputExclude4" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Range/Area. . .">
+              <input type="text" id="directory-page-dynamic-table-query-inputExclude5" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Components. . .">
+              <input type="text" id="directory-page-dynamic-table-query-inputExclude6" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Duration. . .">
+              <input type="text" id="directory-page-dynamic-table-query-inputExclude7" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Attack/Save. . .">
+              <input type="text" id="directory-page-dynamic-table-query-inputExclude8" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Damage/Effect. . .">
+              <input type="text" id="directory-page-dynamic-table-query-inputExclude9" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Overchargeable. . .">
+              <input type="text" id="directory-page-dynamic-table-query-inputExclude10" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Classes. . .">
+              <input type="text" id="directory-page-dynamic-table-query-inputExclude11" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Source. . .">
+              <!-- <input type="text" id="directory-page-dynamic-table-query-inputExclude12" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Races. . .">
+              <input type="text" id="directory-page-dynamic-table-query-inputExclude13" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Classes. . ."> -->
+                            
+              <table id="directory-page-dynamic-table-content">
+                <thead class="header">
+                  <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(0)">Name</button></th>
+                  <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(1)">Level</button></th>
+                  <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(2)">Type</button></th>
+                  <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(3)">Casting Time</button></th>
+                  <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(4)">Range/Area</button></th>
+                  <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(5)">Components</button></th>
+                  <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(6)">Duration</button></th>
+                  <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(7)">Attack/Save</button></th>
+                  <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(8)">Damage/Effect</button></th>
+                  <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(9)">Overchargeable</button></th>
+                  <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(10)">Classes</button></th>
+                  <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(11)">Source</button></th>
+                  <!-- <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(12)">Races</button></th>
+                  <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(13)">Classes</button></th> -->
+                </thead>
+                <tbody>
+
+                </tbody>
+              </table>
+
+            </section>
+            
+
+      </div>
+
+      <footer class="import-common-page-footer"></footer>
+    </div>
+  </body>
+</html>
+
+<script type="text/javascript">
+  $(function () {
+
+    $(".import-common-page-header").load("/resources/pages/import-common-page-header.html");
+    $(".import-common-page-footer").load("/resources/pages/import-common-page-footer.html");
+
+});
+</script>
+
+
+
+
+
+<script>
+  
+  function FilterTableFunction() {
+    // Declare variables
+    var table, tr, i; 
+    var inputIncludeZero, inputIncludeOne, inputIncludeTwo, inputIncludeThree, inputIncludeFour, inputIncludeFive, inputIncludeSix, inputIncludeSeven, inputIncludeEight, inputIncludeNine, inputIncludeTen, inputIncludeEleven, inputIncludeTwelve, inputIncludeThirteen;  
+    var inputExcludeZero, inputExcludeOne, inputExcludeTwo, inputExcludeThree, inputExcludeFour, inputExcludeFive, inputExcludeSix, inputExcludeSeven, inputExcludeEight, inputExcludeNine, inputExcludeTen, inputExcludeEleven, inputExcludeTwelve, inputExcludeThirteen;  
+    var filterIncludeZero, filterIncludeOne, filterIncludeTwo, filterIncludeThree, filterIncludeFour, filterIncludeFive, filterIncludeSix, filterIncludeSeven, filterIncludeEight, filterIncludeNine, filterIncludeTen, filterIncludeEleven, filterIncludeTwelve, filterIncludeThirteen;  
+    var filterExcludeZero, filterExcludeOne, filterExcludeTwo, filterExcludeThree, filterExcludeFour, filterExcludeFive, filterExcludeSix, filterExcludeSeven, filterExcludeEight, filterExcludeNine, filterExcludeTen, filterExcludeEleven, filterExcludeTwelve, filterExcludeThirteen;  
+    var tdZero, tdOne, tdTwo, tdThree, tdFour, tdFive, tdSix, tdSeven, tdEight, tdNine, tdTen, tdEleven, tdTwelve;  
+    var txtValueZero, txtValueOne, txtValueTwo, txtValueThree, txtValueFour, txtValueFive, txtValueSix, txtValueSeven, txtValueEight, txtValueNine, txtValueTen, txtValueEleven, txtValueTwelve, txtValueThirteen;
+
+    inputIncludeZero = document.getElementById("directory-page-dynamic-table-query-inputInclude0");
+    inputIncludeOne = document.getElementById("directory-page-dynamic-table-query-inputInclude1");
+    inputIncludeTwo = document.getElementById("directory-page-dynamic-table-query-inputInclude2");
+    inputIncludeThree = document.getElementById("directory-page-dynamic-table-query-inputInclude3");
+    inputIncludeFour = document.getElementById("directory-page-dynamic-table-query-inputInclude4");
+    inputIncludeFive = document.getElementById("directory-page-dynamic-table-query-inputInclude5");
+    inputIncludeSix = document.getElementById("directory-page-dynamic-table-query-inputInclude6");
+    inputIncludeSeven = document.getElementById("directory-page-dynamic-table-query-inputInclude7");
+    inputIncludeEight = document.getElementById("directory-page-dynamic-table-query-inputInclude8");
+    inputIncludeNine = document.getElementById("directory-page-dynamic-table-query-inputInclude9");
+    inputIncludeTen = document.getElementById("directory-page-dynamic-table-query-inputInclude10");
+    inputIncludeEleven = document.getElementById("directory-page-dynamic-table-query-inputInclude11");
+    // inputIncludeTwelve = document.getElementById("directory-page-dynamic-table-query-inputInclude12");
+    // inputIncludeThirteen = document.getElementById("directory-page-dynamic-table-query-inputInclude13");
+
+    inputExcludeZero = document.getElementById("directory-page-dynamic-table-query-inputExclude0");
+    inputExcludeOne = document.getElementById("directory-page-dynamic-table-query-inputExclude1");
+    inputExcludeTwo = document.getElementById("directory-page-dynamic-table-query-inputExclude2");
+    inputExcludeThree = document.getElementById("directory-page-dynamic-table-query-inputExclude3");
+    inputExcludeFour = document.getElementById("directory-page-dynamic-table-query-inputExclude4");
+    inputExcludeFive = document.getElementById("directory-page-dynamic-table-query-inputExclude5");
+    inputExcludeSix = document.getElementById("directory-page-dynamic-table-query-inputExclude6");
+    inputExcludeSeven = document.getElementById("directory-page-dynamic-table-query-inputExclude7");
+    inputExcludeEight = document.getElementById("directory-page-dynamic-table-query-inputExclude8");
+    inputExcludeNine = document.getElementById("directory-page-dynamic-table-query-inputExclude9");
+    inputExcludeTen = document.getElementById("directory-page-dynamic-table-query-inputExclude10");
+    inputExcludeEleven = document.getElementById("directory-page-dynamic-table-query-inputExclude11");
+    // inputExcludeTwelve = document.getElementById("directory-page-dynamic-table-query-inputExclude12");
+    // inputExcludeThirteen = document.getElementById("directory-page-dynamic-table-query-inputExclude13");
+
+
+    filterIncludeZero = inputIncludeZero.value.toUpperCase();
+    filterIncludeOne = inputIncludeOne.value.toUpperCase();
+    filterIncludeTwo = inputIncludeTwo.value.toUpperCase();
+    filterIncludeThree = inputIncludeThree.value.toUpperCase();
+    filterIncludeFour = inputIncludeFour.value.toUpperCase();
+    filterIncludeFive = inputIncludeFive.value.toUpperCase();
+    filterIncludeSix = inputIncludeSix.value.toUpperCase();
+    filterIncludeSeven = inputIncludeSeven.value.toUpperCase();
+    filterIncludeEight = inputIncludeEight.value.toUpperCase();
+    filterIncludeNine = inputIncludeNine.value.toUpperCase();
+    filterIncludeTen = inputIncludeTen.value.toUpperCase();
+    filterIncludeEleven = inputIncludeEleven.value.toUpperCase();
+    // filterIncludeTwelve = inputIncludeTwelve.value.toUpperCase();
+    // filterIncludeThirteen = inputIncludeThirteen.value.toUpperCase();
+
+    filterExcludeZero = inputExcludeZero.value.toUpperCase();
+    filterExcludeOne = inputExcludeOne.value.toUpperCase();
+    filterExcludeTwo = inputExcludeTwo.value.toUpperCase();
+    filterExcludeThree = inputExcludeThree.value.toUpperCase();
+    filterExcludeFour = inputExcludeFour.value.toUpperCase();
+    filterExcludeFive = inputExcludeFive.value.toUpperCase();
+    filterExcludeSix = inputExcludeSix.value.toUpperCase();
+    filterExcludeSeven = inputExcludeSeven.value.toUpperCase();
+    filterExcludeEight = inputExcludeEight.value.toUpperCase();
+    filterExcludeNine = inputExcludeNine.value.toUpperCase();
+    filterExcludeTen = inputExcludeTen.value.toUpperCase();
+    filterExcludeEleven = inputExcludeEleven.value.toUpperCase();
+    // filterExcludeTwelve = inputExcludeTwelve.value.toUpperCase();
+    // filterExcludeThirteen = inputExcludeThirteen.value.toUpperCase();
+
+    table = document.getElementById("directory-page-dynamic-table-content");
+    tr = table.getElementsByTagName("tr");
+  
+    // Loop through all table rows, and hide those who don't match the search query
+    for (i = 0; i < tr.length; i++) {
+      tdZero = tr[i].getElementsByTagName("td")[0];
+      tdOne = tr[i].getElementsByTagName("td")[1];
+      tdTwo = tr[i].getElementsByTagName("td")[2];
+      tdThree = tr[i].getElementsByTagName("td")[3];
+      tdFour = tr[i].getElementsByTagName("td")[4];
+      tdFive = tr[i].getElementsByTagName("td")[5];
+      tdSix = tr[i].getElementsByTagName("td")[6];
+      tdSeven = tr[i].getElementsByTagName("td")[7];
+      tdEight = tr[i].getElementsByTagName("td")[8];
+      tdNine = tr[i].getElementsByTagName("td")[9];
+      tdTen = tr[i].getElementsByTagName("td")[10];
+      tdEleven = tr[i].getElementsByTagName("td")[11];
+      // tdTwelve = tr[i].getElementsByTagName("td")[12];
+      // tdTwelve = tr[i].getElementsByTagName("td")[13];
+
+      if (tdZero) {
+        txtValueZero = tdZero.textContent || tdZero.innerText;
+        txtValueOne = tdOne.textContent || tdOne.innerText;
+        txtValueTwo = tdTwo.textContent || tdTwo.innerText;
+        txtValueThree = tdThree.textContent || tdThree.innerText;
+        txtValueFour = tdFour.textContent || tdFour.innerText;
+        txtValueFive = tdFive.textContent || tdFive.innerText;
+        txtValueSix = tdSix.textContent || tdSix.innerText;
+        txtValueSeven = tdSeven.textContent || tdSeven.innerText;
+        txtValueEight = tdEight.textContent || tdEight.innerText;
+        txtValueNine = tdNine.textContent || tdNine.innerText;
+        txtValueTen = tdTen.textContent || tdTen.innerText;
+        txtValueEleven = tdEleven.textContent || tdEleven.innerText;
+        // txtValueTwelve = tdTwelve.textContent || tdTwelve.innerText;
+        // txtValueThirteen = tdThirteen.textContent || tdThirteen.innerText;
+
+        if (txtValueZero.toUpperCase().indexOf(filterIncludeZero) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueOne.toUpperCase().indexOf(filterIncludeOne) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueTwo.toUpperCase().indexOf(filterIncludeTwo) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueThree.toUpperCase().indexOf(filterIncludeThree) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueFour.toUpperCase().indexOf(filterIncludeFour) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueFive.toUpperCase().indexOf(filterIncludeFive) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueSix.toUpperCase().indexOf(filterIncludeSix) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueSeven.toUpperCase().indexOf(filterIncludeSeven) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueEight.toUpperCase().indexOf(filterIncludeEight) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueNine.toUpperCase().indexOf(filterIncludeNine) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueTen.toUpperCase().indexOf(filterIncludeTen) == -1) {
+          tr[i].style.display = "none";
+        } else if (txtValueEleven.toUpperCase().indexOf(filterIncludeEleven) == -1) {
+          tr[i].style.display = "none";
+        // } else if (txtValueTwelve.toUpperCase().indexOf(filterIncludeTwelve) == -1) {
+        //   tr[i].style.display = "none";
+        // } else if (txtValueThirteen.toUpperCase().indexOf(filterIncludeThirteen) == -1) {
+        //   tr[i].style.display = "none";
+        } else if (txtValueZero.toUpperCase().indexOf(filterExcludeZero) > -1 && filterExcludeZero != '') {
+          tr[i].style.display = "none";
+        } else if (txtValueOne.toUpperCase().indexOf(filterExcludeOne) > -1 && filterExcludeOne != '') {
+          tr[i].style.display = "none";
+        } else if (txtValueTwo.toUpperCase().indexOf(filterExcludeTwo) > -1 && filterExcludeTwo != '') {
+          tr[i].style.display = "none";
+        } else if (txtValueThree.toUpperCase().indexOf(filterExcludeThree) > -1 && filterExcludeThree != '') {
+          tr[i].style.display = "none";
+        } else if (txtValueFour.toUpperCase().indexOf(filterExcludeFour) > -1 && filterExcludeFour != '') {
+          tr[i].style.display = "none";
+        } else if (txtValueFive.toUpperCase().indexOf(filterExcludeFive) > -1 && filterExcludeFive != '') {
+          tr[i].style.display = "none";
+        } else if (txtValueSix.toUpperCase().indexOf(filterExcludeSix) > -1 && filterExcludeSix != '') {
+          tr[i].style.display = "none";
+        } else if (txtValueSeven.toUpperCase().indexOf(filterExcludeSeven) > -1 && filterExcludeSeven != '') {
+          tr[i].style.display = "none";
+        } else if (txtValueEight.toUpperCase().indexOf(filterExcludeEight) > -1 && filterExcludeEight != '') {
+          tr[i].style.display = "none";
+        } else if (txtValueNine.toUpperCase().indexOf(filterExcludeNine) > -1 && filterExcludeNine != '') {
+          tr[i].style.display = "none";
+        } else if (txtValueTen.toUpperCase().indexOf(filterExcludeTen) > -1 && filterExcludeTen != '') {
+          tr[i].style.display = "none";
+        } else if (txtValueEleven.toUpperCase().indexOf(filterExcludeEleven) > -1 && filterExcludeEleven != '') {
+          tr[i].style.display = "none";
+        // } else if (txtValueTwelve.toUpperCase().indexOf(filterExcludeTwelve) > -1 && filterExcludeTwelve != '') {
+        //   tr[i].style.display = "none";
+        // } else if (txtValueThirteen.toUpperCase().indexOf(filterExcludeThirteen) > -1 && filterExcludeThirteen != '') {
+        //   tr[i].style.display = "none";
+        } else {
+          tr[i].style.display = "";
+        }
+      }
+    }
+  }
+
+</script>
+
+
+
+
+
+
+
+
+<script>
+  // This function sorts the entries in ascending or descending order based on the column selected and number of clicks applied
+  function sortTable(n) {
+
+    // Defining variables to be used
+    var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+    table = document.getElementById("directory-page-dynamic-table-content");
+    switching = true;
+
+    // Set the sorting direction to ascending:
+    dir = "asc";
+    // A loop that will continue until no switching has been done
+    while (switching) {
+
+      // Switching is not complete
+      switching = false;
+      rows = table.rows;
+
+      // Loop through all table rows besides the header
+      for (i = 1; i < (rows.length - 1); i++) {
+
+        // Ensure that switching is false
+        shouldSwitch = false;
+
+        // Reading two elements to compare from this row and the following row
+        x = rows[i].getElementsByTagName("TD")[n];
+        y = rows[i + 1].getElementsByTagName("TD")[n];
+
+        // Checking whether we are comparing string characters or converting to integers
+        if (/\d/.test(parseInt(x.innerHTML.toLowerCase().replace(/\D/g,'')))) {
+          var xcompare = parseInt(x.innerHTML.toLowerCase().replace(/\D/g,''));
+          var ycompare = parseInt(y.innerHTML.toLowerCase().replace(/\D/g,''));
+        } else {
+          var xcompare = x.innerHTML.toLowerCase();
+          var ycompare = y.innerHTML.toLowerCase();
+        }
+
+        // Perform comparisons and switch entries based on direction of sort
+        if (dir == "asc") {
+          
+          // If comparison returns true, entries should be switched
+          if (xcompare > ycompare) {
+            shouldSwitch = true;
+            break;
+          }
+        } else if (dir == "desc") {
+          
+          // If comparison returns true, entries should be switched
+          if (xcompare < ycompare) {
+            shouldSwitch = true;
+            break;
+          }
+        }
+      }
+
+      // After breaking from the previous loop, we check to see if this entry is marked for switching
+      if (shouldSwitch) {
+        
+        // Performing the switch, setting switching to true, and incrementing the switch counter
+        rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+        switching = true;
+        switchcount ++;
+      } else {
+        // If no switching has been done AND the direction is "asc", set the direction to "desc" and run the while loop again.
+        if (switchcount == 0 && dir == "asc") {
+          dir = "desc";
+          switching = true;
+        }
+      }
+    }
+  }
+  </script>

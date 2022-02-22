@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-US-Compatible" content="e-edge">
+    <title>KnowOne's Website of Everything</title>
+    <link rel="icon" href="/resources/images/OwlOfMinerva_ModifiedLogo.png">
+    <link rel="stylesheet" href="/caped-crusaders-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+    <script>
+      function titleCase(str) {
+        var splitStr = str.toLowerCase().split(' ');
+        for (var i = 0; i < splitStr.length; i++) {
+            // You do not need to check if i is larger than splitStr length, as your for does that for you
+            // Assign it back to the array
+            splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);     
+        }
+        // Directly return the joined string
+        return splitStr.join(' '); 
+      }
+
+      $(function readJSON() {
+
+        // Defining variables that are used to read the correct JSON file and distinguish which type page we are on
+        if (window.location.pathname.includes("spells")) {
+          var power_source = "Spell";
+          power_source_plural = power_source + "s";
+        }
+        else if (window.location.pathname.includes("superpowers")) {
+          var power_source = "Superpower";
+          power_source_plural = power_source + "s";
+        }
+        else if (window.location.pathname.includes("technologies")) {
+          var power_source = "Technology";
+          power_source_plural = "Technologies";
+        }
+        else if (window.location.pathname.includes("boons")) {
+          var power_source = "Boon";
+          power_source_plural = power_source + "s";
+        }
+        else if (window.location.pathname.includes("enhancements")) {
+          var power_source = "Enhancement";
+          power_source_plural = power_source + "s";
+        }
+        else if (window.location.pathname.includes("techniques")) {
+          var power_source = "Technique";
+          power_source_plural = power_source + "s";
+        }
+        
+
+        // Reading data from our JSON file
+        $.getJSON(`../${power_source_plural.toLowerCase()}.json`, function(data) {
+
+          // Reading the name of this file
+          var page_array = window.location.pathname.split("/");
+          var page = page_array.pop();
+          var page_directory = page_array.pop();
+          var page_subsite = page_array.pop();
+
+
+          // Looping through the JSON data 
+          $.each(data.entries, function(i, f) {
+
+            // Finding the entry that matches this file
+            if (f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html" == page) {
+
+              // Looping through the author array in the JSON file to populate variables for links and credit
+              $.each(data.author, function(x, y) {
+                if (f.source_str == y.author_name) {
+                  author_credit = y.author_credit;
+                  content_source = y.content_source;
+                }
+              });
+
+              // Looping through the type array in the JSON file to populate variables for type and credit
+              $.each(data.type, function(x, y) {
+                if (f.type_str == y.type_name) {
+                  document.getElementById("page-image-credit").innerHTML = y.type_credit;
+                }
+              });
+
+              // Populating the name of the page
+              if (content_source != undefined){
+                document.getElementById("common-page-header-title").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > <a target='blank' href='" + content_source + "'>" + titleCase(page.replace('-', ' ').replace('.html', '')) + " (source)</a>";
+              } else {
+                document.getElementById("common-page-header-title").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > " + titleCase(page.replace('-', ' ').replace('.html', ''));
+
+              }
+
+
+              // Populating the page image
+              document.getElementById("page-image").src = "/resources/images/" + f.type_str.replace(/\s/g, '') + ".png";
+
+              
+              // Populating the page description based on flavor, mechanics, overcharge, and components
+              if (f.flavor_str != undefined) {
+                document.getElementById("common-page-description").innerHTML += "<b>Flavor Description:</b>  <i>" + f.flavor_str + "</i><br><br>";
+              }
+              if (f.mechanics_str != undefined) {
+                document.getElementById("common-page-description").innerHTML += "<b>Standard Mechanics:</b>  " + f.mechanics_str + "<br><br>";
+              }
+
+              
+              // Defining and populating the first row of the page table
+              var tblRow1 = "<tr><th style='width: 15vw'>Level</th><th style='width: 15vw'>School</th><th style='width: 15vw'>Attack/Save</th><th style='width: 15vw'>Damage/Effect</th></tr>"
+              $(tblRow1).appendTo("#page-overview-table tbody");
+
+              // Defining and populating the second row of the page table
+              var tblRow2 = "<tr>" 
+                + "<td>" + f.level_str + " level " + power_source + "</td>" 
+                + "<td>" + f.type_str + "</td>" 
+                + "<td>" + f.attack_save_str + "</td>" 
+                + "<td>" + f.damage_effect_str + "</td>" 
+                + "</tr>"
+              $(tblRow2).appendTo("#page-overview-table tbody");
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+
+
+  <body>
+    <!-- The fixed background div -->
+    <div class="common-page-background"> 
+
+      <!-- A div to hold our header -->
+      <div class="common-page-header">
+
+        <!-- Importing the header -->
+        <div class="import-common-page-header"></div>
+
+      </div>
+        
+      <!-- A transparent div to build everything else on top of -->
+      <div class="common-page-content-transparent">
+
+        <!-- An off white chunk of the page that holds content -->
+        <section class="common-page-content-section">
+
+          <!-- A table to hold the page overview information -->
+          <table id="page-overview-table" class="cc-attributes-overview-table">
+
+            <!-- The title of the page content, including the source as a link -->
+            <thead><tr><td colspan="6"><h2 id="common-page-header-title"></h2><hr></td></tr></thead>
+            <tbody></tbody>
+          </table>
+
+          <!-- A table to hold the page image and credit to author -->
+          <table id="entry-page-image-table">
+            <tr><td><img id="page-image" alt="Page Image"></td></tr>
+            <tr><td><h4 id="page-image-credit">Image Credit</h4></td></tr>
+          </table>
+
+
+          <!-- A paragraph to hold the page content and descriptions -->
+          <p id="common-page-description"></p>
+        </section>
+      </div>
+
+      <!-- Importing the footer -->
+      <footer class="import-common-page-footer"></footer>
+    </div>
+  </body>
+</html>
+
+<script type="text/javascript">
+  $(function () {
+
+    $(".import-common-page-header").load("/resources/pages/import-common-page-header.html");
+    $(".import-common-page-footer").load("/resources/pages/import-common-page-footer.html");
+
+});
+</script>

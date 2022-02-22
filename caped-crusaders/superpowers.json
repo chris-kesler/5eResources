@@ -1,0 +1,306 @@
+{
+    "type" : [
+        {
+            "type_name" : "Disabling",
+            "type_credit" : "Disable by Mas Dhimas from NounProject.com"    
+        },
+        {
+            "type_name" : "Positioning",
+            "type_credit" : "Move by Тимур Минвалеев from NounProject.comMove by Тимур Минвалеев from NounProject.comMove by Тимур Минвалеев from NounProject.com"    
+        },
+        {
+            "type_name" : "Radiation",
+            "type_credit" : "Sun by Angelo Troiano from NounProject.com"    
+        },
+        {
+            "type_name" : "Velocity",
+            "type_credit" : "Speed by Alice Design from NounProject.com"    
+        },
+        {
+            "type_name" : "Gravity",
+            "type_credit" : "Gravity by Creaticca Creative Agency from NounProject.com"    
+        }
+    ],
+
+    "author" : [
+        {
+            "author_name" : "Thaleron's Spellbook",
+            "author_credit" : "Thaleron's Pocketbook: A Spell Compendium for the More Melee Inclined Caster",
+            "content_source" : "https://homebrewery.naturalcrit.com/share/qZzsfYtc0Y3-"
+        },
+        {
+            "author_name" : "5E Basic Rules",
+            "author_credit" : "D&D 5th Edition Basic Rules",
+            "content_source" : "https://www.dndbeyond.com/sources/basic-rules"
+        },
+        {
+            "author_name" : "KnowOne",
+            "author_credit" : "KnowOne's Website of Everything",
+            "content_source" : "https://knowoneswebsiteofeverything.com"
+        }
+    ],
+
+    "entries" : [
+
+        {
+            "name_str" : "Vortex Tunnel",
+            "level_str" : "3rd",
+            "type_str" : "Positioning",
+            "casting_time_str" : "1 Reaction",
+            "range_area_str" : "250 foot by 30 foot line",
+            "components_vsm_str" : "S",
+            "duration_str" : "Instantaneous",
+            "attack_save_str" : "None",
+            "damage_effect_str" : "Control",
+            "class_str" : "Subvertist",
+            "source_str" : "KnowOne",
+        
+            "mechanics_str" : "When you witness creatures or objects falling within 60 feet of you, you may cast this Superpower as a Reaction to choose up to twenty-five willing creatures or objects within range that are each Large sized or smaller.  You can move those creatures and objects up to 30 feet in any direction of your choosing for each.  If the creatures or objects are falling, the damage calculation for fall damage resets after you finish moving them.  If a target collides with a solid surface during the movement you have imposed, they take no damage.  ",
+            "overcharge_str" : "For each level of overcharge, increase each dimension of the line by 10 feet and the number of targets by 5.  "
+        },
+        {
+            "name_str" : "Gravity Assist",
+            "level_str" : "3rd",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "30 feet",
+            "components_vsm_str" : "S",
+            "duration_str" : "Instananeous",
+            "type_str" : "Positioning",
+            "attack_save_str" : "Ranged",
+            "damage_effect_str" : "BPS",
+            "class_str" : "Subvertist",
+            "source_str" : "KnowOne",
+            "flavor_str" : "You psionically lift an enemy into the air, slamming them downward on top of their ally.  <br><br>You leap into the air and unleash a tendril that wraps around your foe, bringing them airborne with your momentum and flinging them into a nearby wall.  <br><br>You teleport behind your foe, grabbing them and teleporting the both of you into the open space over the nearby cliff, before quickly releasing to teleport yourself to safety.",
+            "mechanics_str" : "Choose a Medium or smaller target within range.  If the target is an creature, you must succeed on a ranged Powercasting Attack roll.  If the target is an object, you automatically hit.  On a hit, you can position that target anywhere else within range.  If the target would collide with a target, the target must make a Dexterity Saving Throw, being knocked prone if Large or smaller on a success, while taking Bludgeoning Piercing or Slashing damage (GM's discretion based on the chosen target) equal to a number of d10s based on the size of the target (1d10 for Tiny, 2d10 for Small, 3d10 for Medium, etc) and being knocked prone on a failure.  ",
+            "overcharge_str" : "For every two levels of overcharge, you may choose and position an additional target.  "
+        },
+        {
+            "name_str" : "Telekinetic Blast",
+            "level_str" : "2nd",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "60 feet",
+            "components_vsm_str" : "S",
+            "duration_str" : "Instananeous",
+            "type_str" : "Gravity",
+            "attack_save_str" : "Ranged",
+            "damage_effect_str" : "Force",
+            "class_str" : "Nova",
+            "source_str" : "Thaleron's Spellbook",
+            "flavor_str" : "You conjure up a blast of force targeting a creature within range. ",
+            "mechanics_str" : "Make a Ranged Powercasting attack roll, on a hit dealing 3d8 force damage, and if the creature is size Large or smaller it must make a Strength Saving Throw or get pushed back 10 ft."
+        },
+        {
+            "name_str" : "Lockdown",
+            "level_str" : "4th",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "120 feet",
+            "components_vsm_str" : "S",
+            "duration_str" : "Instananeous",
+            "type_str" : "Disabling",
+            "attack_save_str" : "---",
+            "damage_effect_str" : "---",
+            "class_str" : "Subvertist",
+            "source_str" : "KnowOne",
+            "mechanics_str" : "Make five Powercasting Ability Checks against a DC 10, and choose a target within range.  For every success, reduce the speed of the target by 15.  If you reduce the speed of the target to zero, they are completely Restrained.  Once per round, the target can make a Strength check against your Powercasting DC, ending this effect after three successes.  ",
+            "overcharge_str" : "For every level of overcharge, make an additional two Powercasting Ability checks, and you may select one additional target to divide your total number of Powercasting checks between as you see fit.  "
+        },
+        {
+            "name_str" : "Slingshot",
+            "level_str" : "3rd",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "5 feet",
+            "components_vsm_str" : "S",
+            "duration_str" : "Instananeous",
+            "type_str" : "Positioning",
+            "attack_save_str" : "---",
+            "damage_effect_str" : "---",
+            "class_str" : "Subvertist",
+            "source_str" : "KnowOne",
+            "mechanics_str" : "Make a melee Superpower Attack against a target within range.  On a hit, you and the target travel 30 feet along a straight line in a direction of your choosing.  In addition, any target that was within five feet you along the 30 foot line other than the main target is pushed 15 feet perpendicularly away from the line.  Targets in the path of the line are pushed 15 forward and 15 feet left or right (your choice for each).  On a miss, you move along the 30 foot line alone, pushing targets 5 feet each instead of 15.  After this line effect is resolved, the original target is then pushed another 20 feet beyond that point if you successfully hit the initial attack, taking 2d10 Concussive damage (and potentially some fall damage).  If the target collides with a creature at least one size larger or a solid surface during this latter movement, they stop moving and fall prone.  ",
+            "overcharge_str" : "---"
+        },
+        {
+            "name_str" : "Blinding Shot",
+            "level_str" : "0th (Cantrip)",
+            "casting_time_str" : "1 Bonus Action",
+            "range_area_str" : "30 feet",
+            "components_vsm_str" : "S",
+            "duration_str" : "Instananeous",
+            "type_str" : "Disabling",
+            "attack_save_str" : "---",
+            "damage_effect_str" : "---",
+            "class_str" : "Subvertist",
+            "source_str" : "KnowOne",
+            "mechanics_str" : "Make a Ranged Superpower Attack against a target within range.  On a hit, that target is Blinded until the end of your turn.  ",
+            "overcharge_str" : "---"
+        },
+        {
+            "name_str" : "Trip Assist",
+            "level_str" : "2nd",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "15 feet",
+            "components_vsm_str" : "S",
+            "duration_str" : "Instananeous",
+            "type_str" : "Positioning",
+            "attack_save_str" : "---",
+            "damage_effect_str" : "---",
+            "class_str" : "Subvertist",
+            "source_str" : "KnowOne",
+            "mechanics_str" : "Choose a target within range.  That target must make a Strength Saving Throw, being pushed 15 in a direction of your choosing on a failure, while being pushed 30 feet in a direction of your choosing and being knocked prone on a failure.  ",
+            "overcharge_str" : "For every level of Overcharge, the distance the target is pushed on a failure increases by 15 feet.  "
+        },
+        {
+            "name_str" : "Repelling Burst",
+            "level_str" : "2nd",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "30 feet",
+            "components_vsm_str" : "S",
+            "duration_str" : "Instananeous",
+            "type_str" : "Positioning",
+            "attack_save_str" : "---",
+            "damage_effect_str" : "---",
+            "class_str" : "Subvertist",
+            "source_str" : "KnowOne",
+            "mechanics_str" : "Make a number of Ranged Superpower Attacks against up to five targets within range.  You may move as normal between the Attacks made while casting this Superpower.  On a hit, each target suffers Concussive damage equal to your Powercasting Modifier and is pushed 10 feet directly away from you.  ",
+            "overcharge_str" : "For every level of Overcharge, increase the range of this Superpower by 10 feet and the number of targets by 2.  "
+        },
+        {
+            "name_str" : "Vortex Flurry",
+            "level_str" : "1st",
+            "casting_time_str" : "1 Reaction",
+            "range_area_str" : "60 feet",
+            "components_vsm_str" : "S",
+            "duration_str" : "Instananeous",
+            "type_str" : "Positioning",
+            "attack_save_str" : "---",
+            "damage_effect_str" : "---",
+            "class_str" : "Subvertist",
+            "source_str" : "KnowOne",
+            "mechanics_str" : "When you witness creatures or objects falling within 60 feet of you, you may cast this Superpower as a Reaction to move up to ten falling creatures or objects up to 30 feet each and negate their fall damage.  ",
+            "overcharge_str" : "For every level of Overcharge, increase the range of this Superpower by 20 feet and the number of targets by 5.  "
+        },
+        {
+            "name_str" : "Disorienting Surge",
+            "level_str" : "1st",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "60 feet / 10 foot cube",
+            "components_vsm_str" : "S",
+            "duration_str" : "One Minute",
+            "type_str" : "Disabling",
+            "attack_save_str" : "---",
+            "damage_effect_str" : "---",
+            "class_str" : "Subvertist",
+            "source_str" : "KnowOne",
+            "mechanics_str" : "Creatures within the area you designate must make a Dexterity Saving Throw, having their speed reduced by 10 feet on a success, while suffering disadvantage on all of their Attacks and halving their speed on a failure.  Any affected creature can contest your Powercasting DC with a Constitution Check as an Action, ending the effect on themselves on a success.  ",
+            "overcharge_str" : "For every level of Overcharge, increase each dimension of the cube by 5 feet.  "
+        },
+        {
+            "name_str" : "Entangling Shot",
+            "level_str" : "1st",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "30 feet",
+            "components_vsm_str" : "S",
+            "duration_str" : "10 Minutes",
+            "type_str" : "Disabling",
+            "attack_save_str" : "---",
+            "damage_effect_str" : "---",
+            "class_str" : "Subvertist",
+            "source_str" : "KnowOne",
+            "mechanics_str" : "Make a ranged Power Attack against a target within range.  On a hit, the target can only make one Attack per Action and can take no Reactions.  The target can use an Action to contest your Powercasting DC with a Strength Check, ending the effect early on a success.  ",
+            "overcharge_str" : "For every two levels of Overcharge, increase the number of targets by one.  "
+        },
+        {
+            "name_str" : "Distracting Blast",
+            "level_str" : "0th (Cantrip)",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "60 feet",
+            "components_vsm_str" : "S",
+            "duration_str" : "Instantaneous",
+            "type_str" : "Disabling",
+            "attack_save_str" : "---",
+            "damage_effect_str" : "---",
+            "class_str" : "Subvertist",
+            "source_str" : "KnowOne",
+            "mechanics_str" : "Make a ranged Power Attack against a number of targets within range equal to your Proficiency Bonus.  On a hit, you deal 1d4 damage, and no attack against the target has disadvantage until the end of your next turn.  ",
+            "overcharge_str" : "---"
+        },
+        {
+            "name_str" : "Slowing Arc",
+            "level_str" : "1st",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "15 foot cone",
+            "components_vsm_str" : "S",
+            "duration_str" : "Instantaneous",
+            "type_str" : "Disabling",            
+            "attack_save_str" : "---",
+            "damage_effect_str" : "---",
+            "class_str" : "Subvertist",
+            "source_str" : "KnowOne",
+            "mechanics_str" : "All creatures within the area of effect, which is a cone originating from the square you occupy, must make a Dexterity Saving Throw, having their speed reduced by 10 feet on a success, while having their speed halved and imposing an inability to benefit from advantage until the end of your next turn on a failure.  ",
+            "overcharge_str" : "For every level of Overcharge, increase the range of the power by 10.  "
+        },
+        {
+            "name_str" : "Eyeblast",
+            "level_str" : "1st",
+            "casting_time_str" : "1 Action",
+            "range_area_str" : "120 feet",
+            "components_vsm_str" : "S, M",
+            "duration_str" : "Instantaneous",
+            "type_str" : "Radiation",
+            "type_img" : "/resources/images/Radiation.png",
+            "attack_save_str" : "---",
+            "damage_effect_str" : "Incinerating",
+            "flavor_str" : "You are able to channel your internal reserves of radiation into quick beams of destructive light that fire from your eyes.  ",
+            "source_str" : "KnowOne",
+            "mechanics_str" : "Make a ranged Power attack against a target within range.  On a hit, the target takes 2d10 Incinerating damage.  ",
+            "overcharge_str" : "For every additional level of overcharge, add 1d10 to the damage roll.  ",
+            "class_str" : "Dynamo",
+            "subclass_str" : "",
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Reflex Surge",
+            "page_url" : "reflex-surge.html",
+            "level_str" : "1st",
+            "casting_time_str" : "1 Bonus Action",
+            "range_area_str" : "Self",
+            "components_vsm_str" : "S",
+            "duration_str" : "Instantaneous",
+            "type_str" : "Velocity",
+            "attack_save_str" : "---",
+            "damage_effect_str" : "---",
+            "flavor_str" : "You tap into a wellspring of reactivity to faster perceive and navigate your surroundings.  ",
+            "source_str" : "KnowOne",
+            "mechanics_str" : "You benefit from the Disengage and Dash Actions until the end of this turn.  ",
+            "overcharge_str" : "---",
+            "class_str" : "Subvertist",
+            "subclass_str" : "",
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        },
+        {
+            "name_str" : "Blinking Acrobatics",
+            "page_url" : "blinking-acrobatics.html",
+            "level_str" : "2nd",
+            "casting_time_str" : "1 Bonus Action",
+            "range_area_str" : "Self",
+            "components_vsm_str" : "S",
+            "duration_str" : "1 Minute",
+            "type_str" : "Velocity",
+            "attack_save_str" : "---",
+            "damage_effect_str" : "---",
+            "class_str" : "Subvertist",
+            "flavor_str" : "You tap into a wellspring of reactivity and move in an inhuman manner.  ",
+            "source_str" : "KnowOne",
+            "mechanics_str" : "You gain the benefits of the Dash and Disengage Actions until the end of this turn, and suffer no harmful effects from moving through hazardous areas of effect.  In addition, you can move through spaces as small as 1 foot in diameter, or any space that a Tiny creature can move through until the end of this turn.  As a Bonus Action on suibsequent turns while this Superpower persists, you can gain this movement bonus again.  ",
+            "overcharge_str" : "For every level of overcharge, add 10 feet to the range of this power.  ",
+            "subclass_str" : "",
+            "feats_str" : "",
+            "backgrounds_str" : "",
+            "races_str" : ""
+        }
+    ]
+}
