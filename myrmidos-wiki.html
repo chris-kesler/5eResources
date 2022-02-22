@@ -13,7 +13,7 @@
   <body>
     <div class="common-page-background"> 
       <div class="common-page-header">
-        <div class="import-common-page-header"></div>
+        <div id="import-header"></div>
           <h1>Myrmidos Wiki</h1>
           <hr>
       </div>
@@ -71,7 +71,7 @@
 
       </div>
 
-      <footer class="import-common-page-footer"></footer>
+      <footer id="import-footer"></footer>
     </div>
   </body>
 </html>
@@ -79,8 +79,8 @@
 <script type="text/javascript">
   $(function () {
 
-    $(".import-common-page-header").load("/resources/pages/import-common-page-header.html");
-    $(".import-common-page-footer").load("/resources/pages/import-common-page-footer.html");
+    $("#import-header").load("/resources/pages/import-header.html");
+    $("#import-footer").load("/resources/pages/import-footer.html");
 
 });
 </script>

@@ -162,7 +162,7 @@
       <div class="common-page-header">
 
         <!-- Importing the header -->
-        <div class="import-common-page-header"></div>
+        <div id="import-header"></div>
 
           <!-- The page title within the header -->
           <h1 id="common-page-header-title">Why no work</h1>
@@ -211,7 +211,7 @@
       </div>
 
       <!-- Importing the footer -->
-      <footer class="import-common-page-footer"></footer>
+      <footer id="import-footer"></footer>
     </div>
   </body>
 </html>
@@ -220,8 +220,8 @@
   
   // This function imports the page header and footer from a centralized html element
   $(function () {
-    $(".import-common-page-header").load("/resources/pages/import-common-page-header.html");
-    $(".import-common-page-footer").load("/resources/pages/import-common-page-footer.html");
+    $("#import-header").load("/resources/pages/import-header.html");
+    $("#import-footer").load("/resources/pages/import-footer.html");
   });
 
   // This function updates the filter table dynamically as input is entered in the filter boxes

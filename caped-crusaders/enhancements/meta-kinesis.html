@@ -130,7 +130,7 @@
       <div class="common-page-header">
 
         <!-- Importing the header -->
-        <div class="import-common-page-header"></div>
+        <div id="import-header"></div>
 
       </div>
         
@@ -144,7 +144,7 @@
           <table id="page-overview-table" class="cc-attributes-overview-table">
 
             <!-- The title of the page content, including the source as a link -->
-            <thead><tr><td colspan="6"><h2 id="common-page-header-title"></h2><hr></td></tr></thead>
+            <thead><tr><td colspan="6"><h2 id="common-page-header-title"></h2></td></tr></thead>
             <tbody></tbody>
           </table>
 
@@ -161,7 +161,7 @@
       </div>
 
       <!-- Importing the footer -->
-      <footer class="import-common-page-footer"></footer>
+      <footer id="import-footer"></footer>
     </div>
   </body>
 </html>
@@ -169,8 +169,8 @@
 <script type="text/javascript">
   $(function () {
 
-    $(".import-common-page-header").load("/resources/pages/import-common-page-header.html");
-    $(".import-common-page-footer").load("/resources/pages/import-common-page-footer.html");
+    $("#import-header").load("/resources/pages/import-header.html");
+    $("#import-footer").load("/resources/pages/import-footer.html");
 
 });
 </script>
