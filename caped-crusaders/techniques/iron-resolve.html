@@ -54,7 +54,7 @@
 
           // Reading the name of this file
           var page_array = window.location.pathname.split("/");
-          var page = page_array.pop();
+          var page_title = page_array.pop();
           var page_directory = page_array.pop();
           var page_subsite = page_array.pop();
 
@@ -63,7 +63,7 @@
           $.each(data.entries, function(i, f) {
 
             // Finding the entry that matches this file
-            if (f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html" == page) {
+            if (f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html" == page_title) {
 
               // Looping through the author array in the JSON file to populate variables for links and credit
               $.each(data.author, function(x, y) {
@@ -82,9 +82,9 @@
 
               // Populating the name of the page
               if (content_source != undefined){
-                document.getElementById("common-page-header-title").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > <a target='blank' href='" + content_source + "'>" + titleCase(page.replace('-', ' ').replace('.html', '')) + " (source)</a>";
+                document.getElementById("common-page-header-title").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > <a target='blank' href='" + content_source + "'>" + titleCase(page_title.replace('-', ' ').replace('.html', '')) + " (source)</a>";
               } else {
-                document.getElementById("common-page-header-title").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > " + titleCase(page.replace('-', ' ').replace('.html', ''));
+                document.getElementById("common-page-header-title").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > " + titleCase(page_title.replace('-', ' ').replace('.html', ''));
 
               }
 

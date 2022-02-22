@@ -19,7 +19,7 @@
           var path = window.location.pathname;
           var page = path.split("/").pop();
           $.each(data.class, function(i, f) {
-            if (f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html" == page) {
+            if (f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html" == page_title) {
               document.getElementById("class-common-page-header-title").innerHTML = "Caped Crusaders: Character Options > Classes";
               document.getElementById("page-title").innerHTML = "Class:  The " + f.name_str;
               document.getElementById("class-page-image").src = "/resources/images/" + f.name_str + ".png";

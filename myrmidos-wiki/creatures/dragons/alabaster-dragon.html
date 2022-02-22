@@ -17,12 +17,12 @@
 
         // Reading the name of this file
         var page_array = window.location.pathname.split("/");
-        var page_title = page_array.pop();
-        var page_category = page_array.pop();
-        var page_directory = page_array.pop();
+          var page_title = page_array.pop();
+          var page_directory = page_array.pop();
+          var page_subsite = page_array.pop();
 
         // Reading data from our JSON file
-        $.getJSON(`/myrmidos-wiki/` + page_directory + `.json`, function(data) {
+        $.getJSON(`/myrmidos-wiki/` + page_subsite + `.json`, function(data) {
 
           // Looping through the JSON data 
           $.each(data.entries, function(i, f) {
@@ -37,7 +37,7 @@
               // =========================================================================================
 
               // Populating the page title within the header
-              document.getElementById("common-page-header-title").innerHTML = "Myrmidos Wiki:  " + capitalizeFirstLetter(page_directory) + " > " + capitalizeFirstLetter(page_category);
+              // document.getElementById("common-page-header-title").innerHTML = "Myrmidos Wiki:  " + capitalizeFirstLetter(page_subsite) + " > " + capitalizeFirstLetter(page_directory);
 
 
               // Populating the page title within the page content
@@ -49,7 +49,7 @@
 
 
               // Populating the page back button into the placeholder div
-              document.getElementById("common-page-back-button-holder").innerHTML = "<button id='common-page-back-button' onclick = 'location.href=`../" + page_category + ".html`'>Out to " + capitalizeFirstLetter(page_category) + "</button>";
+              document.getElementById("common-page-back-button-holder").innerHTML = "<button id='common-page-back-button' onclick = 'location.href=`../" + page_directory + ".html`'>Out to " + capitalizeFirstLetter(page_directory) + "</button>";
 
 
 
@@ -107,7 +107,7 @@
                 $(tblRow).appendTo("#entry-page-overview-table tbody");
 
                 // Appending a table row with a heading for a data group 
-                var tblRow = "<tr><td>Category</td><td><a href='/myrmidos-wiki/" + capitalizeFirstLetter(page_category) + ".html'>" + f.entry_category + "</a></td></tr>";
+                var tblRow = "<tr><td>Category</td><td><a href='/myrmidos-wiki/" + capitalizeFirstLetter(page_directory) + ".html'>" + f.entry_category + "</a></td></tr>";
                 $(tblRow).appendTo("#entry-page-overview-table tbody");
 
                 // Appending a table row with a heading for a data group 
@@ -230,9 +230,6 @@
             <!-- Importing the header -->
             <div class="import-common-page-header"></div>
     
-            <!-- The page title within the header -->
-            <h1 id="common-page-header-title"></h1>
-            <hr>
         </div>
             
         <!-- A transparent div to build everything else on top of -->

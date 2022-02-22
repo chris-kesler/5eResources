@@ -17,9 +17,9 @@
 
         // Reading the name of this file
         var page_array = window.location.pathname.split("/");
-        var page_title = page_array.pop();
-        var page_category = page_array.pop();
-        var page_directory = page_array.pop();
+          var page_title = page_array.pop();
+          var page_directory = page_array.pop();
+          var page_subsite = page_array.pop();
 
         // Reading data from our JSON file
         $.getJSON(`/myrmidos-wiki/` + page_category + `.json`, function(data) {

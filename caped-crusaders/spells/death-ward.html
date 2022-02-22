@@ -54,7 +54,7 @@
 
           // Reading the name of this file
           var page_array = window.location.pathname.split("/");
-          var page = page_array.pop();
+          var page_title = page_array.pop();
           var page_directory = page_array.pop();
           var page_subsite = page_array.pop();
 
@@ -63,7 +63,7 @@
           $.each(data.entries, function(i, f) {
 
             // Finding the entry that matches this file
-            if (f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html" == page) {
+            if (f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html" == page_title) {
 
               // Looping through the author array in the JSON file to populate variables for links and credit
               $.each(data.author, function(x, y) {
@@ -82,9 +82,9 @@
 
               // Populating the name of the page
               if (content_source != undefined){
-                document.getElementById("common-page-header-title").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > <a target='blank' href='" + content_source + "'>" + titleCase(page.replace('-', ' ').replace('.html', '')) + " (source)</a>";
+                document.getElementById("common-page-header-title").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > <a target='blank' href='" + content_source + "'>" + titleCase(page_title.replace('-', ' ').replace('.html', '')) + " (source)</a>";
               } else {
-                document.getElementById("common-page-header-title").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > " + titleCase(page.replace('-', ' ').replace('.html', ''));
+                document.getElementById("common-page-header-title").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > " + titleCase(page_title.replace('-', ' ').replace('.html', ''));
 
               }
 
@@ -171,9 +171,6 @@
         <!-- Importing the header -->
         <div class="import-common-page-header"></div>
 
-          <!-- The page title within the header -->
-          <h1 id="common-page-header-title"></h1>
-          <hr>
       </div>
         
       <!-- A transparent div to build everything else on top of -->
@@ -182,12 +179,13 @@
         <!-- An off white chunk of the page that holds content -->
         <section class="common-page-content-section">
 
-          <!-- A back button that navigates out in the file structure  -->
-          <button id="common-page-back-button" onclick="location.href=`../${power_source_plural.toLowerCase()}.html`"></button>
+          <!-- A table to hold the page overview information -->
+          <table id="page-overview-table" class="cc-attributes-overview-table">
 
-          <!-- The title of the page content, including the source as a link -->
-          <h2 id="common-page-content-title"></h2>
-          <hr>
+            <!-- The title of the page content, including the source as a link -->
+            <thead><tr><td colspan="6"><h2 id="common-page-header-title"></h2><hr></td></tr></thead>
+            <tbody></tbody>
+          </table>
 
           <!-- A table to hold the page image and credit to author -->
           <table id="entry-page-image-table">
@@ -195,10 +193,6 @@
             <tr><td><h4 id="page-image-credit">Image Credit</h4></td></tr>
           </table>
 
-          <!-- A table to hold the page overview information -->
-          <table id="page-overview-table" class="cc-attributes-overview-table">
-            <tbody></tbody>
-          </table>
 
           <!-- A paragraph to hold the page content and descriptions -->
           <p id="common-page-description"></p>
@@ -206,7 +200,7 @@
       </div>
 
       <!-- Importing the footer -->
-      <footer class="import-page-footer"></footer>
+      <footer class="import-common-page-footer"></footer>
     </div>
   </body>
 </html>
