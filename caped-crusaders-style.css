@@ -142,7 +142,7 @@ button {
 
 
 /* A condensed off black color style group for dark text elements */
-body, .cc-attributes-overview-table tr th, .cc-attributes-overview-table th, .cc-attributes-overview-table tr td, .cc-attributes-overview-table td, .cc-build-selections-table tr th, .cc-build-selections-table tr td, .cc-build-selections-table td:nth-child(1) {
+body, #page-title-table tr th, #page-title-table th, #page-title-table tr td, #page-title-table td, .cc-build-selections-table tr th, .cc-build-selections-table tr td, .cc-build-selections-table td:nth-child(1) {
   color: rgb(25,25,25);
 }
 
@@ -176,7 +176,7 @@ body, .cc-attributes-overview-table tr th, .cc-attributes-overview-table th, .cc
 }
 
 /* The background container div that all other HTML elements rest inside (or on top) of */
-.common-page-background {
+#page-background-div {
   width: 100%;
   height: auto;    
   overflow: visible;
@@ -187,7 +187,7 @@ body, .cc-attributes-overview-table tr th, .cc-attributes-overview-table th, .cc
 }
 
 /* The div that holds the actual page content */
-.common-page-content-transparent {
+.common-page-content-section-transparent {
   background-image: url("/resources/images/Transparent.png");
   position: relative;
   width: 100%;
@@ -198,7 +198,7 @@ body, .cc-attributes-overview-table tr th, .cc-attributes-overview-table th, .cc
 }
 
 /* The off white chunk of the page that holds content */
-.common-page-content-section {
+.page-content-section {
   box-sizing: border-box;
   overflow: hidden;
   margin-left: 5vw; 
@@ -467,7 +467,7 @@ The buttons used to navigate and organize the classes within caped crusaders
 */
 
 /* A text wrapped image to be inserted into the page description */
-.common-page-content-image-left {
+.common-page-content-section-image-left {
   width: 200px;
   float: left;
   padding: 0px;
@@ -475,7 +475,7 @@ The buttons used to navigate and organize the classes within caped crusaders
 }
 
 /* A text wrapped image to be inserted into the page description */
-.common-page-content-image-right {
+.common-page-content-section-image-right {
   width: 200px;
   float: right;
   padding: 0px;
@@ -525,7 +525,7 @@ The buttons used to navigate and organize the classes within caped crusaders
 /* 
 An overview table for caped crusaders entry pages 
 */
-.cc-attributes-overview-table {
+#page-title-table {
   width: 55vw;
   max-width: 55vw;
   overflow: visible;
@@ -536,23 +536,23 @@ An overview table for caped crusaders entry pages
   border-collapse: collapse;
   float: left;
 }
-.cc-attributes-overview-table thead tr td{
+#page-title-table thead tr td{
   border: 0px hidden aqua;
   border-bottom: 1px solid rgb(50,50,50);
   background: transparent;
   background-color: transparent;
 }
-.cc-attributes-overview-table th, .cc-attributes-overview-table td {
+#page-title-table th, #page-title-table td {
   padding: 8px;
   vertical-align: top;
   border: 1px solid rgb(50,50,50);
 }
-.cc-attributes-overview-table tr th, .cc-attributes-overview-table th {
+#page-title-table tr th, #page-title-table th {
   background-color: rgb(150,150,150);
   font-size: medium;
   text-align: left;
 }
-.cc-attributes-overview-table tr td, .cc-attributes-overview-table td {
+#page-title-table tr td, #page-title-table td {
   background-color: rgb(200,200,200);
   font-size: medium;
   text-align: left;
@@ -650,7 +650,7 @@ A small table to hold the entry page image and author credit
 }
 
 /* An overview table used frequently throughout the site */
-.entry-page-overview-table {
+#page-attributes-table {
   display: block;
   width: 25vw;
   min-width: 200px;
@@ -661,44 +661,44 @@ A small table to hold the entry page image and author credit
   border-collapse: collapse;
   float: right;
 }
-.entry-page-overview-table th, .entry-page-overview-table td {
+#page-attributes-table th, #page-attributes-table td {
   width: 25vw;
   max-width: auto;
   padding: 10px;
   vertical-align: top;
 }
-.entry-page-overview-table tr th {
+#page-attributes-table tr th {
   background-color: rgb(223,222,207);
   color: rgb(58,58,58);
   font-size: small;
 }
-.entry-page-overview-table tr td {
+#page-attributes-table tr td {
   background-color: rgb(251,251,251);
   color: rgb(58,58,58);
   font-size: small;
   text-align: left;
 }
-.entry-page-overview-table tr:first-child th {
+#page-attributes-table tr:first-child th {
   padding: 0px;
   margin: 0px;
 }
-.entry-page-overview-table tr:nth-child(3) th, .entry-page-overview-table tr:nth-child(2) th {
+#page-attributes-table tr:nth-child(3) th, #page-attributes-table tr:nth-child(2) th {
   background-color: rgb(247,247,247);
   color: rgb(58,58,58);
   padding: 2px;
   border-top: 0px;
   font-size: smaller;
 }
-.entry-page-overview-table tr:nth-child(4) th, .entry-page-overview-table tr:nth-child(5) th {
+#page-attributes-table tr:nth-child(4) th, #page-attributes-table tr:nth-child(5) th {
   background-color: rgb(189,188,173);
   color: rgb(58,58,58);
   font-size: large;
 }
-.entry-page-overview-table tr:nth-child(5) th {
+#page-attributes-table tr:nth-child(5) th {
   padding-top: 0px;
   font-size: x-small;
 }
-#entry-page-overview-table-image {
+#page-attributes-table-image {
   width: 100%;
   height: auto; 
   display: block;

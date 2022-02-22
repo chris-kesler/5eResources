@@ -65,7 +65,7 @@
               }
 
             // Defining the table row that contains each entry in the table
-            var tblRow = "<tr>" 
+            var table_row = "<tr>" 
               + "<td><a href='superpowers/" + f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html' target='_blank'>" + f.name_str + "</a></td>" 
               + "<td>" + f.level_str + "</td>" 
               + "<td>" + "<img class='directory-page-dynamic-table-entry-image' src=/resources/images/" + f.type_str + ".png><br>" + f.type_str + "</td>" 
@@ -81,7 +81,7 @@
               + "</tr>"
 
             // Adding the row to the table
-            $(tblRow).appendTo("#directory-page-dynamic-table-content tbody");
+            $(table_row).appendTo("#directory-page-dynamic-table-content tbody");
           });
         });
       });
@@ -90,7 +90,7 @@
 
 
   <body>
-    <div class="common-page-background"> 
+    <div id="page-background-div"> 
       <div class="common-page-header">
         <div id="import-header"></div>
 
@@ -99,13 +99,13 @@
       </div>
         
       
-      <div class="common-page-content-transparent">
+      <div class="common-page-content-section-transparent">
           
 
 
 
 
-            <section class="common-page-content-section">
+            <section class="page-content-section">
               <button id="common-page-back-button" onclick="location.href='../caped-crusaders.html'">Out to Caped Crusaders</button>
               <h3>Include Filters</h3>
               <hr>

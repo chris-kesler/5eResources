@@ -17,28 +17,28 @@
           $.each(data.npc, function(i, f) {
             data_page = f.name.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html";
             if (data_page == page) {
-              document.getElementById("common-page-header-title").innerHTML = "Myrmidos:  NPCs > " + f.name;
-              document.getElementById("common-page-content-title").innerHTML = f.name;
-              document.getElementById("common-page-description").innerHTML = f.description;
+              document.getElementById("page-title-table-path").innerHTML = "Myrmidos:  NPCs > " + f.name;
+              document.getElementById("common-page-content-section-title").innerHTML = f.name;
+              document.getElementById("page-description-div").innerHTML = f.description;
               document.getElementById("page-image").src = f.image_weblink;
               image_source = f.image_sourcelink;
               image_alt = f.name;
-              var tblRow1 = "<tr><th style='width: 20vw'>Alias</th><th style='width: 20vw'>Title</th><th style='width: 20vw'>Profession</th></tr>"
-              $(tblRow1).appendTo("#TechTable tbody");
-              var tblRow2 = "<tr>" 
+              var table_row1 = "<tr><th style='width: 20vw'>Alias</th><th style='width: 20vw'>Title</th><th style='width: 20vw'>Profession</th></tr>"
+              $(table_row1).appendTo("#TechTable tbody");
+              var table_row2 = "<tr>" 
                 + "<td>" + f.alias + "</td>" 
                 + "<td>" + f.title + "</td>" 
                 + "<td>" + f.profession + "</td>" 
                 + "</tr>"
-              $(tblRow2).appendTo("#TechTable tbody");
-              var tblRow3 = "<tr><th>Race</th><th>Location</th><th>Faction</th></tr>";
-              $(tblRow3).appendTo("#TechTable tbody");
-              var tblRow4 = "<tr>"
+              $(table_row2).appendTo("#TechTable tbody");
+              var table_row3 = "<tr><th>Race</th><th>Location</th><th>Faction</th></tr>";
+              $(table_row3).appendTo("#TechTable tbody");
+              var table_row4 = "<tr>"
                 + "<td>" + f.race + "</td>" 
                 + "<td>" + f.location + "</td>" 
                 + "<td>" + f.faction + "</td>" 
                 + "</tr>"
-              $(tblRow4).appendTo("#TechTable tbody");
+              $(table_row4).appendTo("#TechTable tbody");
             }
           });
         });
@@ -48,18 +48,18 @@
 
 
   <body>
-    <div class="common-page-background"> 
+    <div id="page-background-div"> 
       <div class="common-page-header">
         <div id="import-header"></div>
-          <h1 id="common-page-header-title"></h1>
+          <h1 id="page-title-table-path"></h1>
           <hr>
       </div>
         
 
-      <div class="common-page-content-transparent">
-            <section class="common-page-content-section">
+      <div class="common-page-content-section-transparent">
+            <section class="page-content-section">
               <button id="common-page-back-button" onclick="location.href='../npcs.html'">Out to npcs</button>
-              <h2 id="common-page-content-title"></h2>
+              <h2 id="common-page-content-section-title"></h2>
               <hr>
 
               <!-- A table to hold the page image and credit to author -->
@@ -68,11 +68,11 @@
                 <tr><td><h4 id="page-image-credit">Image Credit</h4></td></tr>
               </table>
 
-              <table id="TechTable" class="cc-attributes-overview-table">
+              <table id="TechTable" class="page-title-table">
                 <tbody></tbody>
               </table>
               <hr>
-              <p id="common-page-description">
+              <p id="page-description-div">
               </p>
               
             </section>

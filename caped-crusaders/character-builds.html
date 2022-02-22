@@ -13,8 +13,8 @@
         var characters = [];
         $.getJSON('character-builds.json', function(data) {
           $.each(data.character, function(i, f) {
-            var tblRow = "<tr>" + "<td>" + "<a href='character-builds/" + f.page_url + "' target='_blank'>" + f.name_str + "</a>" + "</td>" + "<td>" + f.class_str + "</td><td>" + f.class_type + "</td><td>" + f.class_source + "</td><td>" + f.subclass_str + "</td><td>" + f.subclass_source + "</td><td>" + f.character_source + "</td></tr>"
-            $(tblRow).appendTo("#directory-page-dynamic-table-content tbody");
+            var table_row = "<tr>" + "<td>" + "<a href='character-builds/" + f.page_url + "' target='_blank'>" + f.name_str + "</a>" + "</td>" + "<td>" + f.class_str + "</td><td>" + f.class_type + "</td><td>" + f.class_source + "</td><td>" + f.subclass_str + "</td><td>" + f.subclass_source + "</td><td>" + f.character_source + "</td></tr>"
+            $(table_row).appendTo("#directory-page-dynamic-table-content tbody");
           });
         });
       });
@@ -23,7 +23,7 @@
 
 
   <body>
-    <div class="common-page-background"> 
+    <div id="page-background-div"> 
       <div class="common-page-header">
         <div id="import-header"></div>
           <h1>Caped Crusaders: Character Builds</h1>
@@ -31,13 +31,13 @@
       </div>
         
       
-      <div class="common-page-content-transparent">
+      <div class="common-page-content-section-transparent">
           
 
 
 
 
-            <section class="common-page-content-section">
+            <section class="page-content-section">
               <button id="common-page-back-button" onclick="location.href='../caped-crusaders.html'">Out to Caped Crusaders</button>
               <h3>Include Filters</h3>
               <hr>

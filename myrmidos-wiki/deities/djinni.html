@@ -31,10 +31,10 @@
             if (f.entry_name.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html" == page_title) {
             
               // Populating the page title within the header
-              document.getElementById("common-page-header-title").innerHTML = "Myrmidos Wiki:  " + capitalizeFirstLetter(page_category);
+              document.getElementById("page-title-table-path").innerHTML = "Myrmidos Wiki:  " + capitalizeFirstLetter(page_category);
 
               // Populating the page title within the page content
-              document.getElementById("common-page-content-title").innerHTML = f.entry_name;
+              document.getElementById("common-page-content-section-title").innerHTML = f.entry_name;
 
               // Populating the page back button into the placeholder div
               document.getElementById("common-page-back-button-holder").innerHTML = "<button id='common-page-back-button' onclick = 'location.href=`../" + page_category + ".html`'>Out to " + capitalizeFirstLetter(page_category) + "</button>";
@@ -43,71 +43,71 @@
               if (f.img_rehosted != undefined && f.img_rehosted_source != undefined ) {
 
                 // The image with a populated rehost and credit link upon clicking
-                var tblRow = "<tr><th colspan='2'><img id='entry-page-overview-table-image' alt='" + f.entry_name + "' target='blank' src='" + f.img_rehosted + "' onclick='window.open(`" + f.img_rehosted_source + "`)'></th></tr>";
-                $(tblRow).appendTo("#entry-page-overview-table tbody");
+                var table_row = "<tr><th colspan='2'><img id='page-attributes-table-image' alt='" + f.entry_name + "' target='blank' src='" + f.img_rehosted + "' onclick='window.open(`" + f.img_rehosted_source + "`)'></th></tr>";
+                $(table_row).appendTo("#page-attributes-table tbody");
               } else {
 
                 // A default placeholder image that does activate when clicked
-                var tblRow = "<tr><th colspan='2'><img id='entry-page-overview-table-image' alt='" + f.entry_name + "' target='blank' src='/resources/images/WikiPlaceholder.png' onclick='window.open(this.src)'></th></tr>";
-                $(tblRow).appendTo("#entry-page-overview-table tbody");
+                var table_row = "<tr><th colspan='2'><img id='page-attributes-table-image' alt='" + f.entry_name + "' target='blank' src='/resources/images/WikiPlaceholder.png' onclick='window.open(this.src)'></th></tr>";
+                $(table_row).appendTo("#page-attributes-table tbody");
               }
               
               if (f.img_linked != undefined && f.img_linked_source != undefined) { 
 
                 // Appending a table row with a link to the page art 
-                var tblRow = "<tr><th colspan='2'><i><a href='" + f.img_linked + "' target='_blank'>Link to Additional " + f.entry_name + " Art</a></i></th></tr>";
-                $(tblRow).appendTo("#entry-page-overview-table tbody");
+                var table_row = "<tr><th colspan='2'><i><a href='" + f.img_linked + "' target='_blank'>Link to Additional " + f.entry_name + " Art</a></i></th></tr>";
+                $(table_row).appendTo("#page-attributes-table tbody");
 
                 // Appending a table row with a link to the page art source
-                var tblRow = "<tr><th colspan='2'><i><a href='" + f.img_linked_source + "' target='_blank'>Link to Additional Art Source</a></i></th></tr>";
-                $(tblRow).appendTo("#entry-page-overview-table tbody");
+                var table_row = "<tr><th colspan='2'><i><a href='" + f.img_linked_source + "' target='_blank'>Link to Additional Art Source</a></i></th></tr>";
+                $(table_row).appendTo("#page-attributes-table tbody");
 
               } else {
                 // Appending a table row with a link to the page art 
-                var tblRow = "<tr><th colspan='2'><i><a href='" + f.img_rehosted + "' target='_blank'>Link to Above " + f.entry_name + " Art</a></i></th></tr>";
-                $(tblRow).appendTo("#entry-page-overview-table tbody");
+                var table_row = "<tr><th colspan='2'><i><a href='" + f.img_rehosted + "' target='_blank'>Link to Above " + f.entry_name + " Art</a></i></th></tr>";
+                $(table_row).appendTo("#page-attributes-table tbody");
 
                 // Appending a table row with a link to the page art source
-                var tblRow = "<tr><th colspan='2'><i><a href='" + f.img_rehosted_source + "' target='_blank'>Link to Above Art Source</a></i></th></tr>";
-                $(tblRow).appendTo("#entry-page-overview-table tbody");
+                var table_row = "<tr><th colspan='2'><i><a href='" + f.img_rehosted_source + "' target='_blank'>Link to Above Art Source</a></i></th></tr>";
+                $(table_row).appendTo("#page-attributes-table tbody");
 
               }
 
               // Appending a table row with the creature name 
-              var tblRow = "<tr><th colspan='2'>" + f.entry_name + "</th></tr>";
-              $(tblRow).appendTo("#entry-page-overview-table tbody");
+              var table_row = "<tr><th colspan='2'>" + f.entry_name + "</th></tr>";
+              $(table_row).appendTo("#page-attributes-table tbody");
 
               // Appending a table row with the creature type and category 
-              var tblRow = "<tr><th colspan='2'>" + f.entry_type + " " + f.entry_category + "</th></tr>";
-              $(tblRow).appendTo("#entry-page-overview-table tbody");
+              var table_row = "<tr><th colspan='2'>" + f.entry_type + " " + f.entry_category + "</th></tr>";
+              $(table_row).appendTo("#page-attributes-table tbody");
 
               // Appending a table row with a heading for a data group 
-              var tblRow = "<tr><th colspan='2'>General Information</th></tr>";
-              $(tblRow).appendTo("#entry-page-overview-table tbody");
+              var table_row = "<tr><th colspan='2'>General Information</th></tr>";
+              $(table_row).appendTo("#page-attributes-table tbody");
 
               // Appending a table row with a heading for a data group 
-              var tblRow = "<tr><td>Category</td><td><a href='/myrmidos-wiki/" + capitalizeFirstLetter(page_category) + ".html'>" + f.entry_category + "</a></td></tr>";
-              $(tblRow).appendTo("#entry-page-overview-table tbody");
+              var table_row = "<tr><td>Category</td><td><a href='/myrmidos-wiki/" + capitalizeFirstLetter(page_category) + ".html'>" + f.entry_category + "</a></td></tr>";
+              $(table_row).appendTo("#page-attributes-table tbody");
 
               // Appending a table row with a heading for a data group 
-              var tblRow = "<tr><td>Type</td><td>" + f.entry_type + "</td></tr>";
-              $(tblRow).appendTo("#entry-page-overview-table tbody");
+              var table_row = "<tr><td>Type</td><td>" + f.entry_type + "</td></tr>";
+              $(table_row).appendTo("#page-attributes-table tbody");
 
               // Appending a table row with a heading for a data group 
-              var tblRow = "<tr><td>Variety</td><td>" + f.entry_variety + "</td></tr>";
-              $(tblRow).appendTo("#entry-page-overview-table tbody");
+              var table_row = "<tr><td>Variety</td><td>" + f.entry_variety + "</td></tr>";
+              $(table_row).appendTo("#page-attributes-table tbody");
 
 
 
               try {
                 // Dynamically and adaptively populating overview table information from the JSON file 
                 for(var z = 0; f.overview_table_groups.length > z; z++) {
-                    var tblRow = "<tr><th colspan='2'>" + f.overview_table_groups[z].overview_table_group_heading + "</th></tr>";
-                    $(tblRow).appendTo("#entry-page-overview-table tbody");
+                    var table_row = "<tr><th colspan='2'>" + f.overview_table_groups[z].overview_table_group_heading + "</th></tr>";
+                    $(table_row).appendTo("#page-attributes-table tbody");
 
                     for(var y = 0; f.overview_table_groups[z].overview_table_group_data.length > y; y++) {
-                        var tblRow = "<tr><td>" + f.overview_table_groups[z].overview_table_group_data[y].title + "</td><td>" + f.overview_table_groups[z].overview_table_group_data[y].content + "</td></tr>";
-                        $(tblRow).appendTo("#entry-page-overview-table tbody");
+                        var table_row = "<tr><td>" + f.overview_table_groups[z].overview_table_group_data[y].title + "</td><td>" + f.overview_table_groups[z].overview_table_group_data[y].content + "</td></tr>";
+                        $(table_row).appendTo("#page-attributes-table tbody");
 
                     }
 
@@ -121,7 +121,7 @@
 
               // Populating the page overview text
               if (f.entry_description_overview != undefined) {
-                document.getElementById("common-page-description").innerHTML = "<p>" + f.entry_description_overview + "</p>";
+                document.getElementById("page-description-div").innerHTML = "<p>" + f.entry_description_overview + "</p>";
               }
 
               // Checking if the page content library is present
@@ -134,7 +134,7 @@
                   if (f.entry_description_library[x].title != undefined && f.entry_description_library[x].content != undefined) {
 
                     // Populating the heading and content
-                    document.getElementById("common-page-description").innerHTML += "<h3>" + f.entry_description_library[x].title + "</h3><p>" + f.entry_description_library[x].content + "</p>";
+                    document.getElementById("page-description-div").innerHTML += "<h3>" + f.entry_description_library[x].title + "</h3><p>" + f.entry_description_library[x].content + "</p>";
 
                     // Checking for sublibrary
                     if (f.entry_description_library[x].sublibrary != undefined) {
@@ -146,7 +146,7 @@
                         if (f.entry_description_library[x].sublibrary[w].title != undefined && f.entry_description_library[x].sublibrary[w].content != undefined) {
 
                           // Populating subheading and content
-                          document.getElementById("common-page-description").innerHTML += "<h4>" + f.entry_description_library[x].sublibrary[w].title + "</h4><p>" + f.entry_description_library[x].sublibrary[w].content + "</p>";
+                          document.getElementById("page-description-div").innerHTML += "<h4>" + f.entry_description_library[x].sublibrary[w].title + "</h4><p>" + f.entry_description_library[x].sublibrary[w].content + "</p>";
                         }
                       }
                     }
@@ -166,7 +166,7 @@
 
   <body>
     <!-- The fixed background div -->
-    <div class="common-page-background"> 
+    <div id="page-background-div"> 
 
         <!-- A div to hold our header -->
         <div class="common-page-header">
@@ -175,29 +175,29 @@
             <div id="import-header"></div>
     
             <!-- The page title within the header -->
-            <h1 id="common-page-header-title"></h1>
+            <h1 id="page-title-table-path"></h1>
             <hr>
         </div>
             
         <!-- A transparent div to build everything else on top of -->
-        <div class="common-page-content-transparent">
+        <div class="common-page-content-section-transparent">
     
             <!-- An off white chunk of the page that holds content -->
-            <section class="common-page-content-section">
+            <section class="page-content-section">
     
             <!-- A back button that navigates out in the file structure  -->
             <div id="common-page-back-button-holder"></div>
             <!-- The title of the page content, including the source as a link -->
-            <h2 id="common-page-content-title"></h2>
+            <h2 id="common-page-content-section-title"></h2>
             <hr>
                         
             <!-- A table to hold the concise page data -->
-            <table class="entry-page-overview-table" id="entry-page-overview-table">
+            <table id="page-attributes-table">
               <tbody></tbody>
             </table>
     
             <!-- A paragraph to hold the page content and descriptions -->
-            <div id="common-page-description"></div>
+            <div id="page-description-div"></div>
             </section>
         </div>
     

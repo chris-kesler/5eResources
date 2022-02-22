@@ -20,12 +20,12 @@
           var page = path.split("/").pop();
           $.each(data.class, function(i, f) {
             if (f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html" == page_title) {
-              document.getElementById("class-common-page-header-title").innerHTML = "Caped Crusaders: Character Options > Classes";
+              document.getElementById("class-page-title-table-path").innerHTML = "Caped Crusaders: Character Options > Classes";
               document.getElementById("page-title").innerHTML = "Class:  The " + f.name_str;
               document.getElementById("class-page-image").src = "/resources/images/" + f.name_str + ".png";
               document.getElementById("class-page-image").alt = f.class_img_credit;
               document.getElementById("page-image-credit").innerHTML = f.class_img_credit;
-              document.getElementById("class-common-page-description").innerHTML = f.description_long_str;
+              document.getElementById("class-page-description-div").innerHTML = f.description_long_str;
               document.getElementById("class-features-intro").innerHTML = "As a "  + f.name_str + ", you gain the following Class Features.";
               document.getElementById("hit-dice").innerHTML = "<b>Hit Dice:</b>  1d" + f.hit_die_int + " per " + f.name_str + " level";
               document.getElementById("hit-points-at-1st-level").innerHTML = "<b>Hit Points at 1st level:</b>  " + f.hit_die_int + " your Constitution modifier";
@@ -42,7 +42,7 @@
               document.getElementById("equipment-tools").innerHTML = "<b>Tools:</b>  " + f.equipment_tools;
               document.getElementById("equipment-packs").innerHTML = "<b>Packs:</b>  " + f.equipment_packs;
               document.getElementById("starting-wealth").innerHTML = "<td>" + f.name_str + "</td><td>" + f.equipment_variant + "</td>";
-              document.getElementById("cc-attributes-overview-table-title").innerHTML = "The " + f.name_str + " Table";
+              document.getElementById("page-title-table-title").innerHTML = "The " + f.name_str + " Table";
               var prof = 2;
               let j = 0;
               for (let i = 0; i < 20; i++) {
@@ -72,19 +72,19 @@
                   var consumables_points = Math.ceil((i+1)*f.consumables_points_per_level);
                   var consumables_max = Math.min(Math.ceil((i+1)/f.consumables_max_per_level_denominator), 9)
                 }
-                var tblRow = "<tr>" + "<td>" + (i+1) + "</td>" + "<td>" + prof + "</td>" + "<td>" + links + "</td>" + "<td>" + sustainables + "</td>" + "<td>" + consumables_known + "</td>" + "<td>" + consumables_points + "</td>" + "<td>" + consumables_max + "</td>" + "</tr>"
+                var table_row = "<tr>" + "<td>" + (i+1) + "</td>" + "<td>" + prof + "</td>" + "<td>" + links + "</td>" + "<td>" + sustainables + "</td>" + "<td>" + consumables_known + "</td>" + "<td>" + consumables_points + "</td>" + "<td>" + consumables_max + "</td>" + "</tr>"
                 j = j + 2;
-                $(tblRow).appendTo("#cc-attributes-overview-table tbody");
+                $(table_row).appendTo("#page-title-table tbody");
                 if ((i+1) == 4 || (i+1) == 8 || (i+1) == 12 || (i+1) == 16) {
                   prof++;
                 }
               }
               for (let i = 0; i < f.class_feats.length; i++) {
-                if (document.getElementById("cc-attributes-overview-table-features").innerHTML.indexOf(f.class_feats[i].name_str) > 0) {} 
+                if (document.getElementById("page-title-table-features").innerHTML.indexOf(f.class_feats[i].name_str) > 0) {} 
                 else {
-                  document.getElementById("cc-attributes-overview-table-features").innerHTML += "<hr><h3 id='" 
+                  document.getElementById("page-title-table-features").innerHTML += "<hr><h3 id='" 
                   + f.class_feats[i].name_str.replace(/\s+/g, '') + "'>" 
-                  + f.class_feats[i].name_str + "</h3><h4><i><b><a href='#cc-attributes-overview-table'>" + f.name_str 
+                  + f.class_feats[i].name_str + "</h3><h4><i><b><a href='#page-title-table'>" + f.name_str 
                   + "</a>:</b>  level " + f.class_feats[i].level + "</i></h4><p>" 
                   + f.class_feats[i].mechanics_str + "</p>";
                 }
@@ -144,18 +144,18 @@
 
 
   <body>
-    <div class="common-page-background"> 
+    <div id="page-background-div"> 
       <div class="common-page-header">
         <div id="import-header"></div>
-          <h1 id="class-common-page-header-title"></h1>
+          <h1 id="class-page-title-table-path"></h1>
           <hr>
       </div>
         
 
-      <div class="common-page-content-transparent">
+      <div class="common-page-content-section-transparent">
           
 
-            <section class="common-page-content-section">
+            <section class="page-content-section">
               <button id="common-page-back-button" onclick="location.href='../classes.html'">Out to Classes</button>
               <h2 id="page-title"></h2>
               <hr>
@@ -163,7 +163,7 @@
                 <tr><td><img id="class-page-image" class="cc-class-image-large" alt="Class Image"></td></tr>
                 <tr><td><h4 id="page-image-credit">Image Credit</h4></td></tr>
               </table>
-              <p id="class-common-page-description"></p>
+              <p id="class-page-description-div"></p>
               
               <hr>
               <h3>Class Features</h3>
@@ -194,7 +194,7 @@
               </ul>
               <hr>
               <h3>Variant Equipment: Starting Wealth</h3>
-              <table class="cc-attributes-overview-table" style="float: right;"><tr>
+              <table class="page-title-table" style="float: right;"><tr>
                 <th>Class</th>
                 <th>Wealth</th>
               </tr><tr id="starting-wealth"></tr></table>
@@ -203,8 +203,8 @@
               <br><br><br><br>
                               
               <hr>
-              <h3 id="cc-attributes-overview-table-title"></h3>
-              <table id="cc-attributes-overview-table" class="cc-attributes-overview-table">
+              <h3 id="page-title-table-title"></h3>
+              <table id="page-title-table" class="page-title-table">
                 <thead>
                   <th style="width: 5vw">Level</th>
                   <th style="width: 10vw">Proficiency Bonus</th>
@@ -217,12 +217,12 @@
                 <tbody></tbody>
               </table>
 
-              <div id="cc-attributes-overview-table-features">
+              <div id="page-title-table-features">
                 <body></body>
               </div>
             </section>
             
-            <section class="common-page-content-section">
+            <section class="page-content-section">
               <h2 id="subclass-magic-name"></h2>
               <table id="entry-page-image-table">
                 <tr><td><img class="cc-subclass-image-large" alt="Magic Subclass" id="subclass-magic-image"></img></td></tr>
@@ -232,7 +232,7 @@
               <div id="subclass-magic-feats"></div>
             </section>
 
-            <section class="common-page-content-section">
+            <section class="page-content-section">
               <h2 id="subclass-power-name"></h2>
               <table id="entry-page-image-table">
                 <tr><td><img class="cc-subclass-image-large" alt="Power Subclass" id="subclass-power-image"></img></td></tr>
@@ -242,7 +242,7 @@
               <div id="subclass-power-feats"></div>
             </section>
 
-            <section class="common-page-content-section">
+            <section class="page-content-section">
               <h2 id="subclass-tech-name"></h2>
               <table id="entry-page-image-table">
                 <tr><td><img class="cc-subclass-image-large" alt="Tech Subclass" id="subclass-tech-image"></td></tr>

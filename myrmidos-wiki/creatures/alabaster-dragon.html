@@ -9,19 +9,30 @@
     <link rel="stylesheet" href="/caped-crusaders-style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
     <script>
-        function titleCase(str) {
+      function titleCase(str) {
         var splitStr = str.toLowerCase().split(' ');
         for (var i = 0; i < splitStr.length; i++) {
-            // You do not need to check if i is larger than splitStr length, as your for does that for you
-            // Assign it back to the array
-            splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);     
+          // You do not need to check if i is larger than splitStr length, as your for does that for you
+          // Assign it back to the array
+          splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);     
         }
         // Directly return the joined string
         return splitStr.join(' '); 
       }
 
-      $(function readJSON() {
+      $(function populatePageData() {
 
+
+// =========================================================================================
+// Populating the page HEADER
+// =========================================================================================
+        $("#import-header").load("/resources/pages/import-header.html");
+
+
+// =========================================================================================
+// Populating the page TITLE
+// =========================================================================================
+        
         // Reading the name of this file
         var page_array = window.location.pathname.split("/");
         var page_title = page_array.pop();
@@ -37,143 +48,113 @@
             // Finding the entry that matches this file
             if (f.entry_name.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html" == page_title) {
 
-              // =========================================================================================
-              // Populating the page title elements using attributes that we know for certain will be present
-              // =========================================================================================
-
               // Populating the name of the page
               if (f.content_source != undefined){
-                document.getElementById("common-page-header-title").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > <a target='blank' href='" + f.content_source + "'>" + titleCase(page_title.replace('-', ' ').replace('.html', '')) + " (source)</a>";
+                document.getElementById("page-title-table-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > <a target='blank' href='" + f.content_source + "'>" + titleCase(page_title.replace('-', ' ').replace('.html', '')) + " (source)</a>";
               } else {
-                document.getElementById("common-page-header-title").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > " + titleCase(page_title.replace('-', ' ').replace('.html', ''));
+                document.getElementById("page-title-table-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > " + titleCase(page_title.replace('-', ' ').replace('.html', ''));
               }
 
-              // Populating the page title within the header
-              // document.getElementById("common-page-header-title").innerHTML = "Myrmidos Wiki:  " + titleCase(page_subsite) + " > " + titleCase(page_directory);
 
-
-              // Populating the page title within the page content
-              // document.getElementById("common-page-content-title").innerHTML = "<div id=" + f.entry_name.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + ">" + f.entry_name + "</div>";
-
-              // Populating the page title in the floating nav table
-              var tblRow = "<tr><th><a href='#" + f.entry_name.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'>" + f.entry_name + "</a></th></tr>";
-              $(tblRow).appendTo("#entry-page-nav-table tbody");
-
-
-              // =========================================================================================
-              // Populating the page overview table using attributes that may be present in the JSON source
-              // =========================================================================================
+// =========================================================================================
+// Populating the page ATTRIBUTES
+// =========================================================================================
 
               // Defining a table row with an image, populating it with JSON data, and appending it to the overview table
               if (f.img_rehosted != undefined && f.img_rehosted_source != undefined ) {
 
                 // The image with a populated rehost and credit link upon clicking
-                var tblRow = "<tr><th colspan='2'><img id='entry-page-overview-table-image' alt='" + f.entry_name + "' target='blank' src='" + f.img_rehosted + "' onclick='window.open(`" + f.img_rehosted_source + "`)'></th></tr>";
-                $(tblRow).appendTo("#entry-page-overview-table tbody");
+                var table_row = "<tr><th colspan='2'><img id='page-attributes-table-image' alt='" + f.entry_name + "' target='blank' src='" + f.img_rehosted + "' onclick='window.open(`" + f.img_rehosted_source + "`)'></th></tr>";
+
+                // Table Row #1
+                $(table_row).appendTo("#page-attributes-table tbody");
               } else {
 
                 // A default placeholder image that does activate when clicked
-                var tblRow = "<tr><th colspan='2'><img id='entry-page-overview-table-image' alt='" + f.entry_name + "' target='blank' src='/resources/images/WikiPlaceholder.png' onclick='window.open(this.src)'></th></tr>";
-                $(tblRow).appendTo("#entry-page-overview-table tbody");
+                var table_row = "<tr><th colspan='2'><img id='page-attributes-table-image' alt='" + f.entry_name + "' target='blank' src='/resources/images/WikiPlaceholder.png' onclick='window.open(this.src)'></th></tr>";
+
+                // Table Row #1
+                $(table_row).appendTo("#page-attributes-table tbody");
               }
               
+
               // Defining a table row with an image link, populating it with JSON data, and appending it to the overview table
               if (f.img_linked != undefined && f.img_linked_source != undefined) { 
 
                 // Appending a table row with a link to the page art 
-                var tblRow = "<tr><th colspan='2'><i><a href='" + f.img_linked + "' target='_blank'>Link to Additional " + f.entry_name + " Art</a></i></th></tr>";
-                $(tblRow).appendTo("#entry-page-overview-table tbody");
+                var table_row = "<tr><th colspan='2'><i><a href='" + f.img_linked + "' target='_blank'>Link to Additional " + f.entry_name + " Art</a></i></th></tr>";
+
+                // Table Row #2
+                $(table_row).appendTo("#page-attributes-table tbody");
 
                 // Appending a table row with a link to the page art source
-                var tblRow = "<tr><th colspan='2'><i><a href='" + f.img_linked_source + "' target='_blank'>Link to Additional Art Source</a></i></th></tr>";
-                $(tblRow).appendTo("#entry-page-overview-table tbody");
+                var table_row = "<tr><th colspan='2'><i><a href='" + f.img_linked_source + "' target='_blank'>Link to Additional Art Source</a></i></th></tr>";
+                
+                // Table Row #3
+                $(table_row).appendTo("#page-attributes-table tbody");
 
               } else {
                 // Appending a table row with a link to the page art 
-                var tblRow = "<tr><th colspan='2'><i><a href='" + f.img_rehosted + "' target='_blank'>Link to Above " + f.entry_name + " Art</a></i></th></tr>";
-                $(tblRow).appendTo("#entry-page-overview-table tbody");
+                var table_row = "<tr><th colspan='2'><i><a href='" + f.img_rehosted + "' target='_blank'>Link to Above " + f.entry_name + " Art</a></i></th></tr>";
+                
+                // Table Row #2
+                $(table_row).appendTo("#page-attributes-table tbody");
 
                 // Appending a table row with a link to the page art source
-                var tblRow = "<tr><th colspan='2'><i><a href='" + f.img_rehosted_source + "' target='_blank'>Link to Above Art Source</a></i></th></tr>";
-                $(tblRow).appendTo("#entry-page-overview-table tbody");
-
+                var table_row = "<tr><th colspan='2'><i><a href='" + f.img_rehosted_source + "' target='_blank'>Link to Above Art Source</a></i></th></tr>";
+                
+                // Table Row #3
+                $(table_row).appendTo("#page-attributes-table tbody");
               }
 
 
               // Appending a table row with the creature name 
-              var tblRow = "<tr><th colspan='2'>" + f.entry_name + "</th></tr>";
-              $(tblRow).appendTo("#entry-page-overview-table tbody");
+              var table_row = "<tr><th colspan='2'>" + f.entry_name + "</th></tr>";
+              
+              // Table Row #4
+              $(table_row).appendTo("#page-attributes-table tbody");
 
+              // Appending a table row with the creature type and category 
               if (f.entry_type != undefined && f.entry_category != undefined) {
+                
                 // Appending a table row with the creature type and category 
-                var tblRow = "<tr><th colspan='2'>" + f.entry_type + " " + f.entry_category + "</th></tr>";
-                $(tblRow).appendTo("#entry-page-overview-table tbody");
-
-                // Appending a table row with a heading for a data group 
-                var tblRow = "<tr><th colspan='2'>General Information</th></tr>";
-                $(tblRow).appendTo("#entry-page-overview-table tbody");
-
-                // Appending a table row with a heading for a data group 
-                var tblRow = "<tr><td>Category</td><td><a href='/myrmidos-wiki/" + titleCase(page_directory) + ".html'>" + f.entry_category + "</a></td></tr>";
-                $(tblRow).appendTo("#entry-page-overview-table tbody");
-
-                // Appending a table row with a heading for a data group 
-                var tblRow = "<tr><td>Type</td><td>" + f.entry_type + "</td></tr>";
-                $(tblRow).appendTo("#entry-page-overview-table tbody");
+                var table_row = "<tr><th colspan='2'>" + f.entry_type + " " + f.entry_category + "</th></tr>";
+                
+                // Table Row #5
+                $(table_row).appendTo("#page-attributes-table tbody");
               } else {
+                
                 // Appending a table row with a default creature type and category 
-                var tblRow = "<tr><th colspan='2'>Unknown Creature</th></tr>";
-                $(tblRow).appendTo("#entry-page-overview-table tbody");
-
-                // Appending a table row with a heading for a data group 
-                var tblRow = "<tr><th colspan='2'>General Information</th></tr>";
-                $(tblRow).appendTo("#entry-page-overview-table tbody");
-
-                // Appending a table row with a default heading for a data group 
-                var tblRow = "<tr><td>Category</td><td>Unknown</td></tr>";
-                $(tblRow).appendTo("#entry-page-overview-table tbody");
-
-                // Appending a table row with a default heading for a data group 
-                var tblRow = "<tr><td>Type</td><td>Unknown</td></tr>";
-                $(tblRow).appendTo("#entry-page-overview-table tbody");
-
-              }
-
-              if (f.entry_variety != undefined) {
-                // Appending a table row with the creature variety 
-                var tblRow = "<tr><td>Variety</td><td>" + f.entry_variety + "</td></tr>";
-                $(tblRow).appendTo("#entry-page-overview-table tbody");
-              } else {
-                // Appending a table row with a default variety 
-                var tblRow = "<tr><td>Variety</td><td>Unknown</td></tr>";
-                $(tblRow).appendTo("#entry-page-overview-table tbody");
+                var table_row = "<tr><th colspan='2'>Unknown Creature</th></tr>";
+                
+                // Table Row #5
+                $(table_row).appendTo("#page-attributes-table tbody");
               }
 
 
               // Dynamically and adaptively populating overview table information from the JSON file 
               if (f.overview_table_groups != undefined) {
                 for(var z = 0; f.overview_table_groups.length > z; z++) {
-                  var tblRow = "<tr><th colspan='2'>" + f.overview_table_groups[z].overview_table_group_heading + "</th></tr>";
-                  $(tblRow).appendTo("#entry-page-overview-table tbody");
+                  var table_row = "<tr><th colspan='2'>" + f.overview_table_groups[z].overview_table_group_heading + "</th></tr>";
+                  $(table_row).appendTo("#page-attributes-table tbody");
 
                   if (f.overview_table_groups[z].overview_table_group_data != undefined) {
                     for(var y = 0; f.overview_table_groups[z].overview_table_group_data.length > y; y++) {
-                      var tblRow = "<tr><td>" + f.overview_table_groups[z].overview_table_group_data[y].heading + "</td><td>" + f.overview_table_groups[z].overview_table_group_data[y].content + "</td></tr>";
-                      $(tblRow).appendTo("#entry-page-overview-table tbody");
+                      var table_row = "<tr><td>" + f.overview_table_groups[z].overview_table_group_data[y].heading + "</td><td>" + f.overview_table_groups[z].overview_table_group_data[y].content + "</td></tr>";
+                      $(table_row).appendTo("#page-attributes-table tbody");
                     }
                   }
                 }
               }
 
 
-
-              // =========================================================================================
-              // Populating the page description text using dynamic scripts that read json libraries
-              // =========================================================================================
+// =========================================================================================
+// Populating the page DESCRIPTION
+// =========================================================================================
 
               // Populating the page overview text
               if (f.entry_description_overview != undefined) {
-                document.getElementById("common-page-description").innerHTML = "<p>" + f.entry_description_overview + "</p>";
+                document.getElementById("page-description-div").innerHTML = "<p>" + f.entry_description_overview + "</p>";
               }
 
 
@@ -187,12 +168,7 @@
                   if (f.entry_description_library[x].heading != undefined && f.entry_description_library[x].content != undefined) {
 
                     // Populating the heading and content
-                    document.getElementById("common-page-description").innerHTML += "<div id='" + f.entry_description_library[x].heading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h3>" + f.entry_description_library[x].heading + "</h3></div><p>" + f.entry_description_library[x].content + "</p>";
-
-                    // Populating the page heading in the floating nav table
-                    var tblRow = "<tr><td><a style='margin-left: 10px' href='#" + f.entry_description_library[x].heading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'>" + f.entry_description_library[x].heading + "</a></td></tr>";
-                    $(tblRow).appendTo("#entry-page-nav-table tbody");
-
+                    document.getElementById("page-description-div").innerHTML += "<div id='" + f.entry_description_library[x].heading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h3>" + f.entry_description_library[x].heading + "</h3></div><p>" + f.entry_description_library[x].content + "</p>";
 
                     // Checking for sublibrary
                     if (f.entry_description_library[x].sublibrary != undefined) {
@@ -204,12 +180,7 @@
                         if (f.entry_description_library[x].sublibrary[w].heading != undefined && f.entry_description_library[x].sublibrary[w].content != undefined) {
 
                           // Populating subheading and content
-                          document.getElementById("common-page-description").innerHTML += "<div id='" + f.entry_description_library[x].sublibrary[w].heading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h4>&#8226;  " + f.entry_description_library[x].sublibrary[w].heading + "</h4></div><p>" + f.entry_description_library[x].sublibrary[w].content + "</p>";
-                          
-                          // Populating the page heading in the floating nav table
-                          var tblRow = "<tr><td><a style='margin-left: 20px' href='#" + f.entry_description_library[x].sublibrary[w].heading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'>&#8226;  " + f.entry_description_library[x].sublibrary[w].heading + "</a></td></tr>";
-                          $(tblRow).appendTo("#entry-page-nav-table tbody");
-
+                          document.getElementById("page-description-div").innerHTML += "<div id='" + f.entry_description_library[x].sublibrary[w].heading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h4>&#8226;  " + f.entry_description_library[x].sublibrary[w].heading + "</h4></div><p>" + f.entry_description_library[x].sublibrary[w].content + "</p>";
                         }
                       }
                     }
@@ -217,116 +188,59 @@
                 }
               }
             }
-
           });
-
         });
 
+
+// =========================================================================================
+// Populating the page FOOTER
+// =========================================================================================
+        $("#import-footer").load("/resources/pages/import-footer.html");
       });
     </script>
   </head>
 
 
   <body>
-    <!-- A div for the fixed BACKGROUND -->
-    <div class="common-page-background">
+    <!-- 
+      A div for the page BACKGROUND 
+    -->
+    <div id="page-background-div">
 
-        <!-- A div for the HEADER -->
-        <div id="import-header"></div>
-            
-
-        <!-- 
-          A button for hiding and unhiding the navigation LIST 
-        -->
-        <button id='entry-page-nav-table-hide-button' onclick='hideUnhideNavTable()'>&#60;&#60;</button>
-
-        <!-- A fixed navigation section that contains links to page content sections -->
-        <section id="entry-page-nav-table-section">
-
-          <!-- A button to scroll the nav table up if some of it is cropped by the viewport -->
-          <button id='entry-page-nav-table-show-button' onclick='hideUpDownNavTable()'>&and; &and; &and;</button>
-
-          <!-- The table to hold the navigation links -->
-          <table id="entry-page-nav-table">
-            <tbody></tbody>
-          </table>
-        </section>
-
-        <!-- An empty div to allow other elements to style around the fixed nav table -->
-        <section id="entry-page-nav-table-section-placeholder"></section>
-
-
+      <!-- 
+        A div for the HEADER 
+      -->
+      <div id="import-header"></div>
+          
+      <!-- 
+        A section for the page CONTENT 
+      -->
+      <section class="page-content-section">
 
         <!-- 
-          A section for the page CONTENT 
+          A table for the page TITLE 
         -->
-        <section class="common-page-content-section">
+        <table id="page-title-table">
+          <thead><tr><td colspan="6"><h2 id="page-title-table-path"></h2></td></tr></thead>
+          <tbody></tbody>
+        </table>
+                    
+        <!-- 
+          A table for the page ATTRIBUTES 
+        -->
+        <table id="page-attributes-table"><tbody></tbody></table>
 
-          <!-- A table for the page TITLE -->
-          <table id="page-overview-table" class="cc-attributes-overview-table">
-            <thead><tr><td colspan="6"><h2 id="common-page-header-title"></h2></td></tr></thead>
-            <tbody></tbody>
-          </table>
-                      
-          <!-- A table for the page ATTRIBUTES -->
-          <table class="entry-page-overview-table" id="entry-page-overview-table">
-            <tbody></tbody>
-          </table>
+        <!-- 
+          A div for the page DESCRIPTION 
+        -->
+        <div id="page-description-div"></div>
+      </section>
+      
   
-          <!-- A div for the page DESCRIPTION -->
-          <div id="common-page-description"></div>
-          </section>
-        
-    
-        <!-- Importing the footer -->
-        <footer id="import-footer"></footer>
+      <!-- 
+        A div for the FOOTER 
+      -->
+      <footer id="import-footer"></footer>
     </div>
   </body>
 </html>
-
-<script type="text/javascript">
-  $(function () {
-
-    $("#import-header").load("/resources/pages/import-header.html");
-    $("#import-footer").load("/resources/pages/import-footer.html");
-
-  });
-
-  function hideUnhideNavTable() {
-    var hidden = '-1000px' ;
-    var unhidden = '3vw';
-    
-    if (document.getElementById('entry-page-nav-table-section').style.marginLeft != hidden) {
-      document.getElementById('entry-page-nav-table-section').style.marginLeft = hidden;
-      document.getElementById('entry-page-nav-table-section-placeholder').style.marginLeft = hidden;
-
-      document.getElementById('entry-page-nav-table-hide-button').innerHTML = '&#62; &#62;';
-
-    } else {
-      document.getElementById('entry-page-nav-table-section').style.marginLeft = unhidden;
-      document.getElementById('entry-page-nav-table-section-placeholder').style.marginLeft = unhidden;
-
-      document.getElementById('entry-page-nav-table-hide-button').innerHTML = '&#60; &#60;';
-    }
-  }
-
-  function hideUpDownNavTable() {
-    var hidden = '-250px';
-    var unhidden = '-10px';
-    
-    if (document.getElementById('entry-page-nav-table-section').style.marginTop != hidden) {
-      document.getElementById('entry-page-nav-table-section').style.marginTop = hidden;
-      document.getElementById('entry-page-nav-table-hide-button').style.marginTop = hidden;
-
-      document.getElementById('entry-page-nav-table-show-button').innerHTML = '&or; &or; &or;';
-
-    } else {
-      document.getElementById('entry-page-nav-table-section').style.marginTop = unhidden;
-      document.getElementById('entry-page-nav-table-hide-button').style.marginTop = unhidden;
-
-      document.getElementById('entry-page-nav-table-show-button').innerHTML = '&and; &and; &and;';
-    }
-  }
-
-
-</script>

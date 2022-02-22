@@ -55,7 +55,7 @@
             }
 
             // Defining table row and adding the entry to the page
-            var tblRow = "<tr>"  
+            var table_row = "<tr>"  
               + "<td><a href='npcs/" + f.name.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html' target='_blank'>" + f.name + "</a></td>" 
               + "<td>" + alias + "</td>" 
               + "<td>" + title + "</td>" 
@@ -64,7 +64,7 @@
               + "<td>" + location + "</td>" 
               + "<td>" + faction + "</td>" 
               + "</tr>"
-            $(tblRow).appendTo("#directory-page-dynamic-table-content tbody");
+            $(table_row).appendTo("#directory-page-dynamic-table-content tbody");
           });
         });
       });
@@ -73,7 +73,7 @@
 
 
   <body>
-    <div class="common-page-background"> 
+    <div id="page-background-div"> 
       <div class="common-page-header">
         <div id="import-header"></div>
 
@@ -82,13 +82,13 @@
       </div>
         
       
-      <div class="common-page-content-transparent">
+      <div class="common-page-content-section-transparent">
           
 
 
 
 
-            <section class="common-page-content-section">
+            <section class="page-content-section">
               <button id="common-page-back-button" onclick="location.href='../myrmidos-wiki.html'">Out to Myrmidos Wiki</button>
               <h3>Include Filters</h3>
               <hr>

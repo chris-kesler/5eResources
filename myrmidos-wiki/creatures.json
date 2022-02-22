@@ -90,7 +90,7 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Planescapescape",
+                            "heading" : "Planescape",
                             "content" : "Caelar"
                         },
                         {
@@ -254,7 +254,7 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Planescapescape",
+                            "heading" : "Planescape",
                             "content" : "Ignar"
                         },
                         {
@@ -347,7 +347,7 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Planescapescape",
+                            "heading" : "Planescape",
                             "content" : "Terral"
                         },
                         {
@@ -512,7 +512,7 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Planescapescape",
+                            "heading" : "Planescape",
                             "content" : "Aquar"
                         },
                         {
@@ -602,10 +602,27 @@
 
             "overview_table_groups" : [
                 {
+                    "overview_table_group_heading" : "General Information",
+                    "overview_table_group_data" : [
+                        {
+                            "heading" : "Category",
+                            "content" : "Dragon"
+                        },
+                        {
+                            "heading" : "Type",
+                            "content" : "Quasiprimal"
+                        },
+                        {
+                            "heading" : "Variety",
+                            "content" : "Quasidraconicus Arctica"
+                        }
+                    ]
+                },
+                {
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Planescapescape",
+                            "heading" : "Planescape",
                             "content" : "Eifrost"
                         },
                         {
@@ -698,7 +715,7 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Planescapescape",
+                            "heading" : "Planescape",
                             "content" : "Shadowfell"
                         },
                         {
@@ -791,7 +808,7 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Planescapescape",
+                            "heading" : "Planescape",
                             "content" : "Vulken"
                         },
                         {
@@ -884,7 +901,7 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Planescapescape",
+                            "heading" : "Planescape",
                             "content" : "Feywilds"
                         },
                         {
@@ -978,7 +995,7 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Planescapescape",
+                            "heading" : "Planescape",
                             "content" : "Caelar"
                         },
                         {
@@ -1071,7 +1088,7 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Planescapescape",
+                            "heading" : "Planescape",
                             "content" : "Ignar"
                         },
                         {
@@ -1161,7 +1178,7 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Planescapescape",
+                            "heading" : "Planescape",
                             "content" : "Terral"
                         },
                         {
@@ -1322,7 +1339,7 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Planescapescape",
+                            "heading" : "Planescape",
                             "content" : "Aquar"
                         },
                         {
@@ -1411,7 +1428,7 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Planescapescape",
+                            "heading" : "Planescape",
                             "content" : "Eifrost"
                         },
                         {
@@ -1500,7 +1517,7 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Planescapescape",
+                            "heading" : "Planescape",
                             "content" : "Vulken"
                         },
                         {
@@ -1586,7 +1603,7 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Planescapescape",
+                            "heading" : "Planescape",
                             "content" : "Vulken"
                         },
                         {
@@ -1672,7 +1689,7 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Planescapescape",
+                            "heading" : "Planescape",
                             "content" : "Eifrost"
                         },
                         {
@@ -1761,7 +1778,7 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Planescapescape",
+                            "heading" : "Planescape",
                             "content" : "Shadowfell"
                         },
                         {
@@ -1847,7 +1864,7 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Planescapescape",
+                            "heading" : "Planescape",
                             "content" : "Feywilds"
                         },
                         {
@@ -1936,7 +1953,7 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Planescapescape",
+                            "heading" : "Planescape",
                             "content" : "Material"
                         },
                         {
@@ -2022,7 +2039,7 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Planescapescape",
+                            "heading" : "Planescape",
                             "content" : "Material"
                         },
                         {
@@ -2108,7 +2125,7 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Planescapescape",
+                            "heading" : "Planescape",
                             "content" : "Material"
                         },
                         {
@@ -2194,7 +2211,7 @@
                     "overview_table_group_heading" : "Associations",
                     "overview_table_group_data" : [
                         {
-                            "heading" : "Planescapescape",
+                            "heading" : "Planescape",
                             "content" : "Material"
                         },
                         {

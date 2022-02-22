@@ -29,7 +29,7 @@
         }
 
         // Populating page header information
-        document.getElementById("common-page-header-title").innerHTML = "Caped Crusaders: " + title;
+        document.getElementById("page-title-table-path").innerHTML = "Caped Crusaders: " + title;
         document.getElementById("page-overview-title").innerHTML = title + " Filter Table";
 
         // Populating the Include Filters using the script to allow for dynamic changes in the future
@@ -131,7 +131,7 @@
               }
 
             // Defining the table row that contains each entry in the table
-            var tblRow = "<tr>" 
+            var table_row = "<tr>" 
               + "<td><a href='spells/" + f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html' target='_blank'>" + f.name_str + "</a></td>" 
               + "<td>" + f.level_str + "</td>" 
               + "<td>" + "<img class='directory-page-dynamic-table-entry-image' src=/resources/images/" + f.type_str + ".png><br>" + f.type_str + "</td>" 
@@ -147,7 +147,7 @@
               + "</tr>"
 
             // Adding the row to the table
-            $(tblRow).appendTo("#directory-page-dynamic-table-content tbody");
+            $(table_row).appendTo("#directory-page-dynamic-table-content tbody");
           });
         });
       });
@@ -156,7 +156,7 @@
 
   <body>
     <!-- The fixed background div -->
-    <div class="common-page-background"> 
+    <div id="page-background-div"> 
 
       <!-- A div to hold our header -->
       <div class="common-page-header">
@@ -165,15 +165,15 @@
         <div id="import-header"></div>
 
           <!-- The page title within the header -->
-          <h1 id="common-page-header-title">Why no work</h1>
+          <h1 id="page-title-table-path">Why no work</h1>
           <hr>
       </div>
         
       <!-- A transparent div to build everything else on top of -->
-      <div class="common-page-content-transparent">
+      <div class="common-page-content-section-transparent">
 
         <!-- An off white chunk of the page that holds content -->
-        <section class="common-page-content-section">
+        <section class="page-content-section">
 
           <!-- A back button that navigates out in the file structure  -->
           <button id="common-page-back-button" onclick="location.href='../character-options.html'">Out to Character Options</button>

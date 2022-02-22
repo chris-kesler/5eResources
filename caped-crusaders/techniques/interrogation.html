@@ -82,9 +82,9 @@
 
               // Populating the name of the page
               if (content_source != undefined){
-                document.getElementById("common-page-header-title").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > <a target='blank' href='" + content_source + "'>" + titleCase(page_title.replace('-', ' ').replace('.html', '')) + " (source)</a>";
+                document.getElementById("page-title-table-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > <a target='blank' href='" + content_source + "'>" + titleCase(page_title.replace('-', ' ').replace('.html', '')) + " (source)</a>";
               } else {
-                document.getElementById("common-page-header-title").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > " + titleCase(page_title.replace('-', ' ').replace('.html', ''));
+                document.getElementById("page-title-table-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > " + titleCase(page_title.replace('-', ' ').replace('.html', ''));
 
               }
 
@@ -95,25 +95,25 @@
               
               // Populating the page description based on flavor, mechanics, overcharge, and components
               if (f.flavor_str != undefined) {
-                document.getElementById("common-page-description").innerHTML += "<b>Flavor Description:</b>  <i>" + f.flavor_str + "</i><br><br>";
+                document.getElementById("page-description-div").innerHTML += "<b>Flavor Description:</b>  <i>" + f.flavor_str + "</i><br><br>";
               }
               if (f.mechanics_str != undefined) {
-                document.getElementById("common-page-description").innerHTML += "<b>Standard Mechanics:</b>  " + f.mechanics_str + "<br><br>";
+                document.getElementById("page-description-div").innerHTML += "<b>Standard Mechanics:</b>  " + f.mechanics_str + "<br><br>";
               }
 
               
               // Defining and populating the first row of the page table
-              var tblRow1 = "<tr><th style='width: 15vw'>Level</th><th style='width: 15vw'>School</th><th style='width: 15vw'>Attack/Save</th><th style='width: 15vw'>Damage/Effect</th></tr>"
-              $(tblRow1).appendTo("#page-overview-table tbody");
+              var table_row1 = "<tr><th style='width: 15vw'>Level</th><th style='width: 15vw'>School</th><th style='width: 15vw'>Attack/Save</th><th style='width: 15vw'>Damage/Effect</th></tr>"
+              $(table_row1).appendTo("#page-title-table tbody");
 
               // Defining and populating the second row of the page table
-              var tblRow2 = "<tr>" 
+              var table_row2 = "<tr>" 
                 + "<td>" + f.level_str + " level " + power_source + "</td>" 
                 + "<td>" + f.type_str + "</td>" 
                 + "<td>" + f.attack_save_str + "</td>" 
                 + "<td>" + f.damage_effect_str + "</td>" 
                 + "</tr>"
-              $(tblRow2).appendTo("#page-overview-table tbody");
+              $(table_row2).appendTo("#page-title-table tbody");
             }
           });
         });
@@ -124,7 +124,7 @@
 
   <body>
     <!-- The fixed background div -->
-    <div class="common-page-background"> 
+    <div id="page-background-div"> 
 
       <!-- A div to hold our header -->
       <div class="common-page-header">
@@ -135,16 +135,16 @@
       </div>
         
       <!-- A transparent div to build everything else on top of -->
-      <div class="common-page-content-transparent">
+      <div class="common-page-content-section-transparent">
 
         <!-- An off white chunk of the page that holds content -->
-        <section class="common-page-content-section">
+        <section class="page-content-section">
 
           <!-- A table to hold the page overview information -->
-          <table id="page-overview-table" class="cc-attributes-overview-table">
+          <table id="page-title-table">
 
             <!-- The title of the page content, including the source as a link -->
-            <thead><tr><td colspan="6"><h2 id="common-page-header-title"></h2></td></tr></thead>
+            <thead><tr><td colspan="6"><h2 id="page-title-table-path"></h2></td></tr></thead>
             <tbody></tbody>
           </table>
 
@@ -156,7 +156,7 @@
 
 
           <!-- A paragraph to hold the page content and descriptions -->
-          <p id="common-page-description"></p>
+          <p id="page-description-div"></p>
         </section>
       </div>
 
