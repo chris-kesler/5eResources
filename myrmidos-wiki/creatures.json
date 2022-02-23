@@ -166,20 +166,112 @@
         },
         {
             "entry_name" : "Crimson Dragon",
-            "entry_category" : "Dragon",
-            "entry_type" : "Primal",
-            "entry_species" : "Primadraconicus Ignaria",
 
-            "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/e/e4/2010-01-C%26E_Dragon.png",
-            "img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:2010-01-C%26E_Dragon.png",
+            "title_library" : [
 
-            "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/032/538/923/large/miguel-regodon-harkness-pzo2102-adult-red-dragon-copia.jpg?1606753019",
-            "img_linked_source" : "https://www.artstation.com/artwork/v2yNmO",
-
-            "entry_description_overview" : "Crimson Dragons are notably egotistical, even among dragons. They value blood and honor above all. Crimson Dragons prefer to enslave and berate mortals of any kind, but usually avoid the arctic and aquatic races due to locational limitations. ",
-            "entry_description_library" : [
+            ],
+            "attribute_library" : [
                 {
-                            
+                    "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/e/e4/2010-01-C%26E_Dragon.png",
+                    "img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:2010-01-C%26E_Dragon.png",
+        
+                    "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/032/538/923/large/miguel-regodon-harkness-pzo2102-adult-red-dragon-copia.jpg?1606753019",
+                    "img_linked_source" : "https://www.artstation.com/artwork/v2yNmO",
+                    "attribute_species" : "Primadraconicus Ignaria"
+                },
+                {
+                    "attribute_group_heading" : "General Information",
+                    "attribute_group_data" : [
+                        {
+                            "heading" : "Category",
+                            "content" : "Dragon"
+                        },
+                        {
+                            "heading" : "Type",
+                            "content" : "Primal"
+                        }
+                    ]
+                },
+                {
+                    "attribute_group_heading" : "Associations",
+                    "attribute_group_data" : [
+                        {
+                            "heading" : "Planescape",
+                            "content" : "Ignar"
+                        },
+                        {
+                            "heading" : "Alignment",
+                            "content" : "Neutral Evil"
+                        },
+                        {
+                            "heading" : "Values",
+                            "content" : "Power and Honor"
+                        }
+                    ]
+                },
+                {
+                    "attribute_group_heading" : "Physiology",
+                    "attribute_group_data" : [
+                        {
+                            "heading" : "Breath Weapon",
+                            "content" : "Fire"
+                        },
+                        {
+                            "heading" : "Horns",
+                            "content" : "Rearward Cluster"
+                        },
+                        {
+                            "heading" : "Wing Type",
+                            "content" : "Conventional (Bat-like)"
+                        },
+                        {
+                            "heading" : "Coloration",
+                            "content" : "Vibrant Red"
+                        }
+                    ]
+                },
+                {
+                    "attribute_group_heading" : "Ecology",
+                    "attribute_group_data" : [
+                        {
+                            "heading" : "Habitat",
+                            "content" : "Scorching Deserts and Savanha Prairies"
+                        },
+                        {
+                            "heading" : "Prey",
+                            "content" : "Savanha and Desert fauna; camels, bison, gazelles, elephants"
+                        }
+                    ]
+                },
+                {
+                    "attribute_group_heading" : "Life Cycle",
+                    "attribute_group_data" : [
+                        {
+                            "heading" : "Gestation",
+                            "content" : "4 years"
+                        },
+                        {
+                            "heading" : "Hatchling",
+                            "content" : "0-8 years"
+                        },
+                        {
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/780/801/large/miguel-regodon-harkness-pzo2102-young-red-dragon.jpg?1607450405'>Juvenile</a>",
+                            "content" : "8-80 years"
+                        },
+                        {
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/538/923/large/miguel-regodon-harkness-pzo2102-adult-red-dragon-copia.jpg?1606753019'>Adult</a>",
+                            "content" : "80-800 years"
+                        },
+                        {
+                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/023/017/181/large/miguel-regodon-harkness-pzo2102-ancient-red-dragon-final-2.jpg?1577731619'>Wyrm</a>",
+                            "content" : "800+ years"
+                        }
+                    ]
+                }
+            ],
+            "description_library" : [
+                {
+                    "overview" : "Crimson Dragons are notably egotistical, even among dragons. They value blood and honor above all. Crimson Dragons prefer to enslave and berate mortals of any kind, but usually avoid the arctic and aquatic races due to locational limitations.  ",
                     "heading" : "Physiology",
                     "content" : "",
                     "sublibrary" : [
@@ -247,86 +339,7 @@
                         }
                     ]
                 }
-            ],
-
-            "overview_table_groups" : [
-                {
-                    "overview_table_group_heading" : "Associations",
-                    "overview_table_group_data" : [
-                        {
-                            "heading" : "Planescape",
-                            "content" : "Ignar"
-                        },
-                        {
-                            "heading" : "Alignment",
-                            "content" : "Neutral Evil"
-                        },
-                        {
-                            "heading" : "Values",
-                            "content" : "Power and Honor"
-                        }
-                    ]
-                },
-                {
-                    "overview_table_group_heading" : "Physiology",
-                    "overview_table_group_data" : [
-                        {
-                            "heading" : "Breath Weapon",
-                            "content" : "Fire"
-                        },
-                        {
-                            "heading" : "Horns",
-                            "content" : "Rearward Cluster"
-                        },
-                        {
-                            "heading" : "Wing Type",
-                            "content" : "Conventional (Bat-like)"
-                        },
-                        {
-                            "heading" : "Coloration",
-                            "content" : "Vibrant Red"
-                        }
-                    ]
-                },
-                {
-                    "overview_table_group_heading" : "Ecology",
-                    "overview_table_group_data" : [
-                        {
-                            "heading" : "Habitat",
-                            "content" : "Scorching Deserts and Savanha Prairies"
-                        },
-                        {
-                            "heading" : "Prey",
-                            "content" : "Savanha and Desert fauna; camels, bison, gazelles, elephants"
-                        }
-                    ]
-                },
-                {
-                    "overview_table_group_heading" : "Life Cycle",
-                    "overview_table_group_data" : [
-                        {
-                            "heading" : "Gestation",
-                            "content" : "4 years"
-                        },
-                        {
-                            "heading" : "Hatchling",
-                            "content" : "0-8 years"
-                        },
-                        {
-                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/780/801/large/miguel-regodon-harkness-pzo2102-young-red-dragon.jpg?1607450405'>Juvenile</a>",
-                            "content" : "8-80 years"
-                        },
-                        {
-                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/538/923/large/miguel-regodon-harkness-pzo2102-adult-red-dragon-copia.jpg?1606753019'>Adult</a>",
-                            "content" : "80-800 years"
-                        },
-                        {
-                            "heading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/023/017/181/large/miguel-regodon-harkness-pzo2102-ancient-red-dragon-final-2.jpg?1577731619'>Wyrm</a>",
-                            "content" : "800+ years"
-                        }
-                    ]
-                }
-            ]
+            ]            
         },
         {
             "entry_name" : "Gemstone Dragon",

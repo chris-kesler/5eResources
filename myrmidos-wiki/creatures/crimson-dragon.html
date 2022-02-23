@@ -59,10 +59,10 @@
 // =========================================================================================
 
               // Defining a table row with an image, populating it with JSON data, and appending it to the overview table
-              if (f.img_rehosted != undefined && f.img_rehosted_source != undefined ) {
+              if (f.attribute_library[0].img_rehosted != undefined && f.attribute_library[0].img_rehosted_source != undefined ) {
 
                 // The image with a populated rehost and credit link upon clicking
-                var table_row = "<tr><th colspan='2'><img id='page-attributes-table-image' alt='" + f.entry_name + "' target='blank' src='" + f.img_rehosted + "' onclick='window.open(`" + f.img_rehosted_source + "`)' style='display:block'></th></tr>";
+                var table_row = "<tr><th colspan='2'><img id='page-attributes-table-image' alt='" + f.entry_name + "' target='blank' src='" + f.attribute_library[0].img_rehosted + "' onclick='window.open(`" + f.attribute_library[0].img_rehosted_source + "`)' style='display:block'></th></tr>";
 
                 // Table Row #1
                 $(table_row).appendTo("#page-attributes-table tbody");
@@ -77,10 +77,10 @@
               
 
               // Defining a table row with an image link, populating it with JSON data, and appending it to the overview table
-              if (f.img_linked != undefined && f.img_linked_source != undefined) { 
+              if (f.attribute_library[0].img_linked != undefined && f.attribute_library[0].img_linked_source != undefined) { 
 
                 // Appending a table row with a link to the page art 
-                var table_row = "<tr><th colspan='2'><i><a href='" + f.img_linked + "' target='_blank'>Additional Art</a> and <a href='" + f.img_linked_source + "' target='blank'>(source)</a></i></th></tr>";
+                var table_row = "<tr><th colspan='2'><i><a href='" + f.attribute_library[0].img_linked + "' target='_blank'>Additional Art</a> and <a href='" + f.attribute_library[0].img_linked_source + "' target='blank'>(source)</a></i></th></tr>";
 
                 // Table Row #2
                 $(table_row).appendTo("#page-attributes-table tbody");
@@ -101,10 +101,10 @@
               $(table_row).appendTo("#page-attributes-table tbody");
 
               // Appending a table row with the creature type and category 
-              if (f.entry_species != undefined) {
+              if (f.attribute_library[0].attribute_species != undefined) {
                 
                 // Appending a table row with the creature type and category 
-                var table_row = "<tr><th colspan='2'>(" + f.entry_species + ")</th></tr>";
+                var table_row = "<tr><th colspan='2'>(" + f.attribute_library[0].attribute_species + ")</th></tr>";
                 
                 // Table Row #5
                 $(table_row).appendTo("#page-attributes-table tbody");
@@ -119,15 +119,17 @@
 
 
               // Dynamically and adaptively populating overview table information from the JSON file 
-              if (f.overview_table_groups != undefined) {
-                for(var z = 0; f.overview_table_groups.length > z; z++) {
-                  var table_row = "<tr><th colspan='2'>" + f.overview_table_groups[z].overview_table_group_heading + "</th></tr>";
-                  $(table_row).appendTo("#page-attributes-table tbody");
+              if (f.attribute_library != undefined) {
+                for(var z = 0; f.attribute_library.length > z; z++) {
+                  if (f.attribute_library[z].attribute_group_heading != undefined){
+                    var table_row = "<tr><th colspan='2'>" + f.attribute_library[z].attribute_group_heading + "</th></tr>";
+                    $(table_row).appendTo("#page-attributes-table tbody");
 
-                  if (f.overview_table_groups[z].overview_table_group_data != undefined) {
-                    for(var y = 0; f.overview_table_groups[z].overview_table_group_data.length > y; y++) {
-                      var table_row = "<tr><td>" + f.overview_table_groups[z].overview_table_group_data[y].heading + "</td><td>" + f.overview_table_groups[z].overview_table_group_data[y].content + "</td></tr>";
-                      $(table_row).appendTo("#page-attributes-table tbody");
+                    if (f.attribute_library[z].attribute_group_data != undefined) {
+                      for(var y = 0; f.attribute_library[z].attribute_group_data.length > y; y++) {
+                        var table_row = "<tr><td>" + f.attribute_library[z].attribute_group_data[y].heading + "</td><td>" + f.attribute_library[z].attribute_group_data[y].content + "</td></tr>";
+                        $(table_row).appendTo("#page-attributes-table tbody");
+                      }
                     }
                   }
                 }
@@ -139,34 +141,39 @@
 // =========================================================================================
 
               // Populating the page overview text
-              if (f.entry_description_overview != undefined) {
-                document.getElementById("page-description-div").innerHTML = "<p>" + f.entry_description_overview + "</p>";
+              if (f.description_overview != undefined) {
+                document.getElementById("page-description-div").innerHTML = "<p>" + f.description_overview + "</p>";
               }
 
 
               // Checking if the page content library is present
-              if (f.entry_description_library != undefined) {
+              if (f.description_library != undefined) {
 
                 // Looping through all the library entries
-                for(var x = 0; f.entry_description_library.length > x; x++) {
+                for(var x = 0; f.description_library.length > x; x++) {
 
-                  // Ensuring data exists
-                  if (f.entry_description_library[x].heading != undefined && f.entry_description_library[x].content != undefined) {
+                  // Ensuring overview exists
+                  if (f.description_library[x].overview != undefined) {
+                    document.getElementById("page-description-div").innerHTML += "<p>" + f.description_library[x].overview + "</p>";
+                  }
+
+                  // Ensuring heading and content exist
+                  if (f.description_library[x].heading != undefined && f.description_library[x].content != undefined) {
 
                     // Populating the heading and content
-                    document.getElementById("page-description-div").innerHTML += "<div id='" + f.entry_description_library[x].heading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h3>" + f.entry_description_library[x].heading + "</h3></div><p>" + f.entry_description_library[x].content + "</p>";
+                    document.getElementById("page-description-div").innerHTML += "<div id='" + f.description_library[x].heading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h3>" + f.description_library[x].heading + "</h3></div><p>" + f.description_library[x].content + "</p>";
 
                     // Checking for sublibrary
-                    if (f.entry_description_library[x].sublibrary != undefined) {
+                    if (f.description_library[x].sublibrary != undefined) {
 
                       // Looping through all entries
-                      for(var w = 0; f.entry_description_library[x].sublibrary.length > w; w++) {
+                      for(var w = 0; f.description_library[x].sublibrary.length > w; w++) {
 
                         // Verifying content exists
-                        if (f.entry_description_library[x].sublibrary[w].heading != undefined && f.entry_description_library[x].sublibrary[w].content != undefined) {
+                        if (f.description_library[x].sublibrary[w].heading != undefined && f.description_library[x].sublibrary[w].content != undefined) {
 
                           // Populating subheading and content
-                          document.getElementById("page-description-div").innerHTML += "<div id='" + f.entry_description_library[x].sublibrary[w].heading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h4>&#8226;  " + f.entry_description_library[x].sublibrary[w].heading + "</h4></div><p>" + f.entry_description_library[x].sublibrary[w].content + "</p>";
+                          document.getElementById("page-description-div").innerHTML += "<div id='" + f.description_library[x].sublibrary[w].heading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h4>&#8226;  " + f.description_library[x].sublibrary[w].heading + "</h4></div><p>" + f.description_library[x].sublibrary[w].content + "</p>";
                         }
                       }
                     }
