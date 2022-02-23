@@ -90,7 +90,7 @@
 
 
               // Populating the page image
-              document.getElementById("page-image").src = "/resources/images/" + f.type_str.replace(/\s/g, '') + ".png";
+              document.getElementById("page-attributes-table-image").src = "/resources/images/" + f.type_str.replace(/\s/g, '') + ".png";
 
               
               // Populating the page description based on flavor, mechanics, overcharge, and components
@@ -188,9 +188,9 @@
           </table>
 
           <!-- A table to hold the page image and credit to author -->
-          <table id="entry-page-image-table">
-            <tr><td><img id="page-image" alt="Page Image"></td></tr>
-            <tr><td><h4 id="page-image-credit">Image Credit</h4></td></tr>
+          <table id="page-attributes-table">
+            <tr><th><img id="page-attributes-table-image" alt="Page Image"></th></tr>
+            <tr><th><h4 id="page-image-credit">Image Credit</h4></th></tr>
           </table>
 
 

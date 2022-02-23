@@ -499,8 +499,8 @@ The buttons used to navigate and organize the classes within caped crusaders
 
 /* Large images to be used for entry pages */
 #page-image, .cc-class-image-large, .cc-subclass-image-large {
-  width: 25vw;
-  margin-left: 10px;
+  min-width: 20vw;
+  width: auto;
 }
 
 
@@ -638,28 +638,38 @@ A small table to hold the entry page image and author credit
   margin: 0px;
   margin-right: -10px;
   margin-left: 10px;
-  padding: 0px;
   border: 7px solid rgb(150,150,150);
   border-radius: 32px;
   background-color: rgb(200, 200, 200);
 }
 #entry-page-image-table tr:nth-child(2) td {
-  color: black;
+  color: rgb(58,58,58);
+  padding: 2px;
+  border-top: 0px;
+  font-size: smaller;
   text-align: center;
-  border-top: 3px solid rgb(175,175,175);
+  border-top: 2px solid rgb(175,175,175);
 }
 
 /* An overview table used frequently throughout the site */
 #page-attributes-table {
   display: block;
+  float: right;
+  overflow: auto;
+  border-collapse: collapse;
   width: 25vw;
   min-width: 200px;
-  margin: 10px;
-  margin-right: 0px;
-  overflow: auto;
-  border: 1px solid rgb(189,188,173);
-  border-collapse: collapse;
-  float: right;
+  padding: 0px;
+  margin: 0px;
+  margin-right: -10px;
+  margin-left: 10px;
+  border: 5px solid rgb(150,150,150);
+  border-radius: 32px;
+  background-color: rgb(200, 200, 200);
+}
+#page-attributes-table tr:first-child th {
+  object-fit: cover;
+  overflow: hidden;
 }
 #page-attributes-table th, #page-attributes-table td {
   width: 25vw;
@@ -668,41 +678,42 @@ A small table to hold the entry page image and author credit
   vertical-align: top;
 }
 #page-attributes-table tr th {
-  background-color: rgb(223,222,207);
+  background-color: rgb(200,200,200);
   color: rgb(58,58,58);
   font-size: small;
 }
 #page-attributes-table tr td {
-  background-color: rgb(251,251,251);
+  background-color: rgb(225,225,225);
   color: rgb(58,58,58);
   font-size: small;
   text-align: left;
 }
-#page-attributes-table tr:first-child th {
-  padding: 0px;
-  margin: 0px;
-}
-#page-attributes-table tr:nth-child(3) th, #page-attributes-table tr:nth-child(2) th {
-  background-color: rgb(247,247,247);
+#page-attributes-table tr:nth-child(2) th, #page-attributes-table tr:nth-child(1) th {
   color: rgb(58,58,58);
   padding: 2px;
   border-top: 0px;
   font-size: smaller;
+  text-align: center;
 }
-#page-attributes-table tr:nth-child(4) th, #page-attributes-table tr:nth-child(5) th {
-  background-color: rgb(189,188,173);
-  color: rgb(58,58,58);
+#page-attributes-table tr:nth-child(2) th {
+  border-top: 2px solid rgb(175,175,175);
+}
+#page-attributes-table tr:nth-child(3) th, #page-attributes-table tr:nth-child(4) th {
+  background-color: rgb(100,100,100);
+  color: rgb(25,25,25);
   font-size: large;
 }
-#page-attributes-table tr:nth-child(5) th {
+#page-attributes-table tr:nth-child(4) th {
   padding-top: 0px;
-  font-size: x-small;
+  font-size: small;
 }
 #page-attributes-table-image {
-  width: 100%;
+  width: 110%;
   height: auto; 
   display: block;
   overflow: hidden;
+  margin: -5%;
+  margin-bottom: -1%;
 }
 
 

@@ -74,22 +74,17 @@
               if (f.img_linked != undefined && f.img_linked_source != undefined) { 
 
                 // Appending a table row with a link to the page art 
-                var table_row = "<tr><th colspan='2'><i><a href='" + f.img_linked + "' target='_blank'>Link to Additional " + f.entry_name + " Art</a></i></th></tr>";
-                $(table_row).appendTo("#page-attributes-table tbody");
+                var table_row = "<tr><th colspan='2'><i><a href='" + f.img_linked + "' target='_blank'>Additional Art</a> and <a href='" + f.img_linked_source + "' target='blank'>(source)</a></i></th></tr>";
 
-                // Appending a table row with a link to the page art source
-                var table_row = "<tr><th colspan='2'><i><a href='" + f.img_linked_source + "' target='_blank'>Link to Additional Art Source</a></i></th></tr>";
+                // Table Row #2
                 $(table_row).appendTo("#page-attributes-table tbody");
 
               } else {
                 // Appending a table row with a link to the page art 
-                var table_row = "<tr><th colspan='2'><i><a href='" + f.img_rehosted + "' target='_blank'>Link to Above " + f.entry_name + " Art</a></i></th></tr>";
+                var table_row = "<tr><th colspan='2'><i>No Additional Art Available</a></i></th></tr>";
+                
+                // Table Row #2
                 $(table_row).appendTo("#page-attributes-table tbody");
-
-                // Appending a table row with a link to the page art source
-                var table_row = "<tr><th colspan='2'><i><a href='" + f.img_rehosted_source + "' target='_blank'>Link to Above Art Source</a></i></th></tr>";
-                $(table_row).appendTo("#page-attributes-table tbody");
-
               }
 
 

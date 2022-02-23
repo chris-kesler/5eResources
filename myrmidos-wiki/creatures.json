@@ -4,7 +4,7 @@
             "entry_name" : "Azure Dragon",
             "entry_category" : "Dragon",
             "entry_type" : "Primal",
-            "entry_variety" : "Primadraconicus Caelaria",
+            "entry_species" : "Primadraconicus Caelaria",
 
             "img_rehosted" : "https://openclipart.org/download/319789/blue-tribal-dragons-sword-postcard.svg",
             "img_rehosted_source" : "https://openclipart.org/detail/319789/blue-tribal-dragons-sword-postcard",
@@ -168,7 +168,7 @@
             "entry_name" : "Crimson Dragon",
             "entry_category" : "Dragon",
             "entry_type" : "Primal",
-            "entry_variety" : "Primadraconicus Ignaria",
+            "entry_species" : "Primadraconicus Ignaria",
 
             "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/e/e4/2010-01-C%26E_Dragon.png",
             "img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:2010-01-C%26E_Dragon.png",
@@ -332,7 +332,7 @@
             "entry_name" : "Gemstone Dragon",
             "entry_category" : "Dragon",
             "entry_type" : "Primal",
-            "entry_variety" : "Primadraconicus Terralia",
+            "entry_species" : "Primadraconicus Terralia",
 
             "img_rehosted" : "https://www.maxpixel.net/static/photo/1x/3d-Isolated-Fantasy-Animal-Legend-Dragon-4788969.jpg",
             "img_rehosted_source" : "https://www.maxpixel.net/3d-Isolated-Fantasy-Animal-Legend-Dragon-4788969",
@@ -425,7 +425,7 @@
             "entry_name" : "Turquoise Dragon",
             "entry_category" : "Dragon",
             "entry_type" : "Primal",
-            "entry_variety" : "Primadraconicus Aquaria",
+            "entry_species" : "Primadraconicus Aquaria",
 
             "img_rehosted" : "https://www.maxpixel.net/static/photo/1x/Body-Of-Water-Immersed-Travel-Sea-Ocean-Nature-3179245.jpg",
             "img_rehosted_source" : "https://www.maxpixel.net/Body-Of-Water-Immersed-Travel-Sea-Ocean-Nature-3179245",
@@ -590,7 +590,7 @@
             "entry_name" : "Alabaster Dragon",
             "entry_category" : "Dragon",
             "entry_type" : "Quasiprimal",
-            "entry_variety" : "Quasidraconicus Arctica",
+            "entry_species" : "Quasidraconicus Arctica",
 
             "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/4/41/Gringotts_Dragon_%2828462847187%29.jpg",
             "img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Gringotts_Dragon_(28462847187).jpg",
@@ -611,10 +611,6 @@
                         {
                             "heading" : "Type",
                             "content" : "Quasiprimal"
-                        },
-                        {
-                            "heading" : "Variety",
-                            "content" : "Quasidraconicus Arctica"
                         }
                     ]
                 },
@@ -700,7 +696,7 @@
             "entry_name" : "Umbral Dragon",
             "entry_category" : "Dragon",
             "entry_type" : "Quasiprimal",
-            "entry_variety" : "Quasidraconicus Penumbria",
+            "entry_species" : "Quasidraconicus Penumbria",
 
             "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/6/6b/Easy_origami_dragon_for_beginners-_how_to_paint_a_dragon_for_beginners.jpg",
             "img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Easy_origami_dragon_for_beginners-_how_to_paint_a_dragon_for_beginners.jpg",
@@ -793,7 +789,7 @@
             "entry_name" : "Stygian Dragon",
             "entry_category" : "Dragon",
             "entry_type" : "Quasiprimal",
-            "entry_variety" : "Quasidraconicus Basaltia",
+            "entry_species" : "Quasidraconicus Basaltia",
 
             "img_rehosted" : "https://www.maxpixel.net/static/photo/1x/Couch-Dragon-Composing-Fire-Sofa-Fantasy-5463104.jpg",
             "img_rehosted_source" : "https://www.maxpixel.net/Couch-Dragon-Composing-Fire-Sofa-Fantasy-5463104",
@@ -886,7 +882,7 @@
             "entry_name" : "Viridian Dragon",
             "entry_category" : "Dragon",
             "entry_type" : "Quasiprimal",
-            "entry_variety" : "Quasidraconicus Verdaria",
+            "entry_species" : "Quasidraconicus Verdaria",
 
             "img_rehosted" : "https://www.maxpixel.net/static/photo/1x/Monster-Reptile-Monsters-Dragon-Dragoon-Dragons-3462724.jpg",
             "img_rehosted_source" : "https://www.maxpixel.net/Monster-Reptile-Monsters-Dragon-Dragoon-Dragons-3462724",
@@ -980,7 +976,7 @@
             "entry_name" : "Cobalt Dragon",
             "entry_category" : "Dragon",
             "entry_type" : "Metallic",
-            "entry_variety" : "Allodraconicus Caelaria",
+            "entry_species" : "Allodraconicus Caelaria",
 
             "img_rehosted" : "https://openclipart.org/image/800px/319787",
             "img_rehosted_source" : "https://openclipart.org/detail/319787/blue-tribal-dragon-on-black-background",
@@ -1073,7 +1069,7 @@
             "entry_name" : "Gold Dragon",
             "entry_category" : "Dragon",
             "entry_type" : "Metallic",
-            "entry_variety" : "Allodraconicus Ignaria",
+            "entry_species" : "Allodraconicus Ignaria",
 
             "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/7/7b/Dragon-Linda_BlackWin24_Jansson.jpg",
             "img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Dragon-Linda_BlackWin24_Jansson.jpg",
@@ -1166,7 +1162,7 @@
             "entry_name" : "Copper Dragon",
             "entry_category" : "Dragon",
             "entry_type" : "Metallic",
-            "entry_variety" : "Allodraconicus Terralia",
+            "entry_species" : "Allodraconicus Terralia",
 
             "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/032/571/925/large/miguel-regodon-harkness-pzo2102-adult-copper-dragon.jpg?1606837452",
             "img_linked_source" : "https://www.artstation.com/artwork/xJ2Yo1",
@@ -1252,7 +1248,7 @@
             "entry_name" : "Bronze Dragon",
             "entry_category" : "Dragon",
             "entry_type" : "Metallic",
-            "entry_variety" : "Allodraconicus Aquaria",
+            "entry_species" : "Allodraconicus Aquaria",
 
             "img_rehosted" : "https://freesvg.org/img/1526744332.png",
             "img_rehosted_source" : "https://freesvg.org/1526744332",
@@ -1413,7 +1409,7 @@
             "entry_name" : "Silver Dragon",
             "entry_category" : "Dragon",
             "entry_type" : "Metallic",
-            "entry_variety" : "Allodraconicus Artica",
+            "entry_species" : "Allodraconicus Artica",
 
             "img_rehosted" : "https://cdn.pixabay.com/photo/2020/10/22/08/51/dragon-5675326_960_720.png",
             "img_rehosted_source" : "https://pixabay.com/illustrations/dragon-statue-sculpture-decorative-5675326/",
@@ -1502,7 +1498,7 @@
             "entry_name" : "Brass Dragon",
             "entry_category" : "Dragon",
             "entry_type" : "Metallic",
-            "entry_variety" : "Allodraconicus Basaltia",
+            "entry_species" : "Allodraconicus Basaltia",
 
             "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/9/92/Dragon_by_Henry_Justice_Ford.jpg",
             "img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Dragon_by_Henry_Justice_Ford.jpg",
@@ -1591,7 +1587,7 @@
             "entry_name" : "Dracofiend",
             "entry_category" : "Dragon",
             "entry_type" : "Spirit",
-            "entry_variety" : "Deiadraconicus Basaltia",
+            "entry_species" : "Deiadraconicus Basaltia",
 
             "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/038/863/747/large/miguel-regodon-harkness-imperial-dragon-sovereign-adult.jpg?1624292613",
             "img_linked_source" : "https://www.artstation.com/artwork/8e3lAm",
@@ -1677,7 +1673,7 @@
             "entry_name" : "Dracowisp",
             "entry_category" : "Dragon",
             "entry_type" : "Spirit",
-            "entry_variety" : "Deiadraconicus Arctica",
+            "entry_species" : "Deiadraconicus Arctica",
 
             "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/038/863/741/large/miguel-regodon-harkness-imperial-dragon-sky-adult.jpg?1624292607",
             "img_linked_source" : "https://www.artstation.com/artwork/8e3lAm",
@@ -1763,7 +1759,7 @@
             "entry_name" : "Dracoshade",
             "entry_category" : "Dragon",
             "entry_type" : "Spirit",
-            "entry_variety" : "Deiadraconicus Penumbria",
+            "entry_species" : "Deiadraconicus Penumbria",
 
             "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/6/6c/Qing_Dynasty_Dragon.png",
             "img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Qing_Dynasty_Dragon.png",
@@ -1852,7 +1848,7 @@
             "entry_name" : "Dracofey",
             "entry_category" : "Dragon",
             "entry_type" : "Spirit",
-            "entry_variety" : "Deiadraconicus Verdaria",
+            "entry_species" : "Deiadraconicus Verdaria",
 
             "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/038/863/731/large/miguel-regodon-harkness-imperial-dragon-forest-adult.jpg?1624292598",
             "img_linked_source" : "https://www.artstation.com/artwork/8e3lAm",
@@ -1938,7 +1934,7 @@
             "entry_name" : "Sea Serpent",
             "entry_category" : "Dragon",
             "entry_type" : "Draconid",
-            "entry_variety" : "Drakkenia Anguilliformes",
+            "entry_species" : "Drakkenia Anguilliformes",
 
             "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/2/2d/Sea_Serpent_after_Owen_1741.png",
             "img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Sea_Serpent_after_Owen_1741.png",
@@ -2027,7 +2023,7 @@
             "entry_name" : "Drakken",
             "entry_category" : "Dragon",
             "entry_type" : "Draconid",
-            "entry_variety" : "Drakkenia Archaica",
+            "entry_species" : "Drakkenia Archaica",
 
             "img_linked" : "https://cdna.artstation.com/p/assets/images/images/036/867/158/large/miguel-regodon-harkness-pzo902104-adult-umbra-dragon.jpg?1618851039",
             "img_linked_source" : "https://www.artstation.com/artwork/9malJq",
@@ -2113,7 +2109,7 @@
             "entry_name" : "Wyvern",
             "entry_category" : "Dragon",
             "entry_type" : "Draconid",
-            "entry_variety" : "Drakkenia Chiroptera",
+            "entry_species" : "Drakkenia Chiroptera",
 
             "img_linked" : "",
             "img_linked_source" : "",
@@ -2199,7 +2195,7 @@
             "entry_name" : "Drake",
             "entry_category" : "Dragon",
             "entry_type" : "Draconid",
-            "entry_variety" : "Drakkenia Lacertilia",
+            "entry_species" : "Drakkenia Lacertilia",
 
             "img_linked" : "",
             "img_linked_source" : "",
