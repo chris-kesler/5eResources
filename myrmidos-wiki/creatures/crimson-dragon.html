@@ -53,83 +53,22 @@
                 document.getElementById("page-title-table-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > " + titleCase(page_title.replace('-', ' ').replace('.html', ''));
               }
 
-
-// =========================================================================================
-// Populating the page ATTRIBUTES
-// =========================================================================================
-
-              // Defining a table row with an image, populating it with JSON data, and appending it to the overview table
-              if (f.attribute_library[0].img_rehosted != undefined && f.attribute_library[0].img_rehosted_source != undefined ) {
-
-                // The image with a populated rehost and credit link upon clicking
-                var table_row = "<tr><th colspan='2'><img id='page-attributes-table-image' alt='" + f.entry_name + "' target='blank' src='" + f.attribute_library[0].img_rehosted + "' onclick='window.open(`" + f.attribute_library[0].img_rehosted_source + "`)' style='display:block'></th></tr>";
-
-                // Table Row #1
-                $(table_row).appendTo("#page-attributes-table tbody");
-              } else {
-
-                // A default placeholder image that does activate when clicked
-                var table_row = "<tr><th colspan='2'><img id='page-attributes-table-image' alt='" + f.entry_name + "' target='blank' src='/resources/images/WikiPlaceholder.png' onclick='window.open(this.src)'></th></tr>";
-
-                // Table Row #1
-                $(table_row).appendTo("#page-attributes-table tbody");
-              }
-              
-
-              // Defining a table row with an image link, populating it with JSON data, and appending it to the overview table
-              if (f.attribute_library[0].img_linked != undefined && f.attribute_library[0].img_linked_source != undefined) { 
-
-                // Appending a table row with a link to the page art 
-                var table_row = "<tr><th colspan='2'><i><a href='" + f.attribute_library[0].img_linked + "' target='_blank'>Additional Art</a> and <a href='" + f.attribute_library[0].img_linked_source + "' target='blank'>(source)</a></i></th></tr>";
-
-                // Table Row #2
-                $(table_row).appendTo("#page-attributes-table tbody");
-
-              } else {
-                // Appending a table row with a link to the page art 
-                var table_row = "<tr><th colspan='2'><i>No Additional Art Available</a></i></th></tr>";
-                
-                // Table Row #2
-                $(table_row).appendTo("#page-attributes-table tbody");
-              }
-
-
-              // Appending a table row with the creature name 
-              var table_row = "<tr><th colspan='2'>" + f.entry_name + "</th></tr>";
-              
-              // Table Row #4
-              $(table_row).appendTo("#page-attributes-table tbody");
-
-              // Appending a table row with the creature type and category 
-              if (f.attribute_library[0].attribute_species != undefined) {
-                
-                // Appending a table row with the creature type and category 
-                var table_row = "<tr><th colspan='2'>(" + f.attribute_library[0].attribute_species + ")</th></tr>";
-                
-                // Table Row #5
-                $(table_row).appendTo("#page-attributes-table tbody");
-              } else {
-                
-                // Appending a table row with a default creature type and category 
-                var table_row = "<tr><th colspan='2'>(Unknown Species)</th></tr>";
-                
-                // Table Row #5
-                $(table_row).appendTo("#page-attributes-table tbody");
-              }
-
-
-              // Dynamically and adaptively populating overview table information from the JSON file 
-              if (f.attribute_library != undefined) {
-                for(var z = 0; f.attribute_library.length > z; z++) {
-                  if (f.attribute_library[z].attribute_group_heading != undefined){
-                    var table_row = "<tr><th colspan='2'>" + f.attribute_library[z].attribute_group_heading + "</th></tr>";
-                    $(table_row).appendTo("#page-attributes-table tbody");
-
-                    if (f.attribute_library[z].attribute_group_data != undefined) {
-                      for(var y = 0; f.attribute_library[z].attribute_group_data.length > y; y++) {
-                        var table_row = "<tr><td>" + f.attribute_library[z].attribute_group_data[y].heading + "</td><td>" + f.attribute_library[z].attribute_group_data[y].content + "</td></tr>";
-                        $(table_row).appendTo("#page-attributes-table tbody");
+              // // If Title Library Exists
+              if (f.title_library != undefined) {
+                for (var x = 0; f.title_library.length > x; x++) {
+                  if (f.title_library[x].table_row != undefined) {
+                    var table_row1 = "<tr>";
+                    var table_row2 = "<tr>";
+                    for (var y = 0; f.title_library[x].table_row.length > y; y++) {
+                      if (f.title_library[x].table_row[y].heading != undefined && f.title_library[x].table_row[y].content != undefined) {
+                        table_row1 += "<th style='width: 15vw'>" + f.title_library[x].table_row[y].heading + "</th>";
+                        table_row2 += "<td style='width: 15vw'>" + f.title_library[x].table_row[y].content + "</td>";
                       }
+                    }
+                    table_row += "</tr>";
+                    if (!table_row1.includes("<tr></tr>") && !table_row2.includes("<tr></tr>")) {
+                      $(table_row1).appendTo("#page-title-table tbody");
+                      $(table_row2).appendTo("#page-title-table tbody");
                     }
                   }
                 }
@@ -137,43 +76,104 @@
 
 
 // =========================================================================================
-// Populating the page DESCRIPTION
+// Populating the page ATTRIBUTES
 // =========================================================================================
 
-              // Populating the page overview text
-              if (f.description_overview != undefined) {
-                document.getElementById("page-description-div").innerHTML = "<p>" + f.description_overview + "</p>";
+              // If Attribute Library Exists
+              if (f.attribute_library != undefined) {
+
+                // Table Row #1:  Rehosted Art
+                if (f.attribute_library[0].img_rehosted != undefined && f.attribute_library[0].img_rehosted_source != undefined ) {
+                  var table_row = "<tr><th colspan='2'><img id='page-attributes-table-image' alt='" + f.entry_name + "' target='blank' src='" + f.attribute_library[0].img_rehosted + "' onclick='window.open(`" + f.attribute_library[0].img_rehosted_source + "`)' style='display:block'></th></tr>";
+                } else {
+                  var table_row = "<tr><th colspan='2'><img id='page-attributes-table-image' alt='" + f.entry_name + "' target='blank' src='/resources/images/WikiPlaceholder.png' onclick='window.open(this.src)'></th></tr>";
+                }
+                $(table_row).appendTo("#page-attributes-table tbody");
+                
+
+                // Table Row #2:  Linked Art
+                if (f.attribute_library[0].img_linked != undefined && f.attribute_library[0].img_linked_source != undefined) { 
+                  var table_row = "<tr><th colspan='2'><i><a href='" + f.attribute_library[0].img_linked + "' target='_blank'>Additional Art</a> and <a href='" + f.attribute_library[0].img_linked_source + "' target='blank'>(source)</a></i></th></tr>";
+                } else {
+                  var table_row = "<tr><th colspan='2'><i>No Additional Art Available</a></i></th></tr>";
+                }
+                $(table_row).appendTo("#page-attributes-table tbody");
+
+
+                // If the library contains data for a wiki wtyle table
+                if (f.attribute_library[1] != undefined) {
+                  
+                  // Table Row #3:  Entry Name
+                  var table_row = "<tr><th colspan='2'>" + f.entry_name + "</th></tr>";
+                  $(table_row).appendTo("#page-attributes-table tbody");
+
+                  // Table Row #4:  Species 
+                  if (f.attribute_library[0].species != undefined) {
+                    var table_row = "<tr><th colspan='2'>(" + f.attribute_library[0].species + ")</th></tr>";
+                  } else {
+                    var table_row = "<tr><th colspan='2'>(Unknown Species)</th></tr>";
+                  }
+                  $(table_row).appendTo("#page-attributes-table tbody");
+
+
+                  // Table Row(s) #5-n:  Attribute Details
+                  for (var z = 0; f.attribute_library.length > z; z++) {
+                    if (f.attribute_library[z].category != undefined && f.attribute_library[z].data != undefined) {
+                      var table_row = "<tr><th colspan='2'>" + f.attribute_library[z].category + "</th></tr>";
+                      $(table_row).appendTo("#page-attributes-table tbody");
+                      for (var y = 0; f.attribute_library[z].data.length > y; y++) {
+                        if (f.attribute_library[z].data[y].heading != undefined && f.attribute_library[z].data[y].content != undefined) {
+                          var table_row = "<tr><td>" + f.attribute_library[z].data[y].heading + "</td><td>" + f.attribute_library[z].data[y].content + "</td></tr>";
+                          $(table_row).appendTo("#page-attributes-table tbody");
+                        }
+                      }
+                    }
+                  }
+                } 
+              } else {
+                // Table Row #1:  Rehosted Art
+                var table_row = "<tr><th colspan='2'><img id='page-attributes-table-image' alt='" + f.entry_name + "' target='blank' src='/resources/images/WikiPlaceholder.png' onclick='window.open(this.src)'></th></tr>";
+                $(table_row).appendTo("#page-attributes-table tbody");
+                
+                // Table Row #2:  Linked Art
+                var table_row = "<tr><th colspan='2'><i>No Additional Art Available</a></i></th></tr>";
+                $(table_row).appendTo("#page-attributes-table tbody");
               }
 
 
-              // Checking if the page content library is present
+// =========================================================================================
+// Populating the page DESCRIPTION
+// =========================================================================================
+
+              // If Description Library Exists
               if (f.description_library != undefined) {
 
-                // Looping through all the library entries
-                for(var x = 0; f.description_library.length > x; x++) {
+                // Populating Description Overview underneath title table with no heading
+                if (f.description_library[0].overview != undefined) {
+                  document.getElementById("page-description-div").innerHTML = "<p>" + f.description_library[0].overview + "</p>";
+                }
 
-                  // Ensuring overview exists
-                  if (f.description_library[x].overview != undefined) {
-                    document.getElementById("page-description-div").innerHTML += "<p>" + f.description_library[x].overview + "</p>";
-                  }
+                // Looping through all Library entries
+                for (var x = 0; f.description_library.length > x; x++) {
 
-                  // Ensuring heading and content exist
-                  if (f.description_library[x].heading != undefined && f.description_library[x].content != undefined) {
+                  // Populating Heading
+                  if (f.description_library[x].heading != undefined) {
+                    document.getElementById("page-description-div").innerHTML += "<div id='" + f.description_library[x].heading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h3>" + f.description_library[x].heading + "</h3></div>";
 
-                    // Populating the heading and content
-                    document.getElementById("page-description-div").innerHTML += "<div id='" + f.description_library[x].heading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h3>" + f.description_library[x].heading + "</h3></div><p>" + f.description_library[x].content + "</p>";
+                    // Populating Heading Content
+                    if (f.description_library[x].content != undefined) {
+                      document.getElementById("page-description-div").innerHTML += "<p>" + f.description_library[x].content + "</p>";
+                    }
 
-                    // Checking for sublibrary
+                    // If Sublibrary Exists
                     if (f.description_library[x].sublibrary != undefined) {
 
-                      // Looping through all entries
-                      for(var w = 0; f.description_library[x].sublibrary.length > w; w++) {
+                      // Looping through all Sublibrary entries
+                      for (var w = 0; f.description_library[x].sublibrary.length > w; w++) {
 
-                        // Verifying content exists
-                        if (f.description_library[x].sublibrary[w].heading != undefined && f.description_library[x].sublibrary[w].content != undefined) {
-
-                          // Populating subheading and content
-                          document.getElementById("page-description-div").innerHTML += "<div id='" + f.description_library[x].sublibrary[w].heading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h4>&#8226;  " + f.description_library[x].sublibrary[w].heading + "</h4></div><p>" + f.description_library[x].sublibrary[w].content + "</p>";
+                        // Populating Subheading and Subcontent
+                        if (f.description_library[x].sublibrary[w].subheading != undefined && f.description_library[x].sublibrary[w].subcontent != undefined) {
+                          document.getElementById("page-description-div").innerHTML += "<div id='" + f.description_library[x].sublibrary[w].subheading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h4>&#8226;  " + f.description_library[x].sublibrary[w].subheading + "</h4></div><p>" + f.description_library[x].sublibrary[w].subcontent + "</p>";
                         }
                       }
                     }
