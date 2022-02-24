@@ -223,16 +223,16 @@ body, #page-title-table tr th, #page-title-table th, #page-title-table tr td, #p
   position: fixed;
   right: 0;
   margin-right: 0px;
-  margin-top: -10px;
+  margin-top: -100px;
   z-index: 5;
   width: 250px;
 
-  padding: 15px;
+  padding: 10px;
 
   visibility: hidden;
 
   height: auto;
-  border-top-left-radius: 0px;
+  border: 5px solid rgb(100,100,100);
   background-color: rgb(200,200,200);
 }
 #page-navlist-table th {
@@ -245,16 +245,16 @@ body, #page-title-table tr th, #page-title-table th, #page-title-table tr td, #p
   position: fixed;
   right: 0;
   margin-right: 0px;
-  margin-top: -10px;
+  margin-top: -13.5px;
   z-index: 11;
 
-  width: 3vw;
-  min-width: 30px;
+  width: 50px;
   
   color: aqua;
   background-color: rgb(100,100,100);
   
   border: 1px solid rgb(125,125,125);
+  border-right: 0px;
   border-radius: 5px;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;

@@ -20,7 +20,7 @@
           var page = path.split("/").pop();
           $.each(data.class, function(i, f) {
             if (f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html" == page_title) {
-              document.getElementById("class-page-title-table-path").innerHTML = "Caped Crusaders: Character Options > Classes";
+              document.getElementById("class-page-title-path").innerHTML = "Caped Crusaders: Character Options > Classes";
               document.getElementById("page-title").innerHTML = "Class:  The " + f.name_str;
               document.getElementById("class-page-image").src = "/resources/images/" + f.name_str + ".png";
               document.getElementById("class-page-image").alt = f.class_img_credit;
@@ -147,7 +147,7 @@
     <div id="page-background-div"> 
       <div class="common-page-header">
         <div id="import-header"></div>
-          <h1 id="class-page-title-table-path"></h1>
+          <h1 id="class-page-title-path"></h1>
           <hr>
       </div>
         

@@ -22,7 +22,7 @@
             if (f.page_url == page) {
 
               // Populating basic page data and overview
-              document.getElementById("class-page-title-table-path").innerHTML = "Caped Crusaders: Classes > " + f.name_str;
+              document.getElementById("class-page-title-path").innerHTML = "Caped Crusaders: Classes > " + f.name_str;
               document.getElementById("cc-class-image").src = "/resources/images/" + f.class_str + ".png";
               document.getElementById("cc-class-image").alt = f.class_img_credit;
               document.getElementById("cc-subclass-image").src = "/resources/images/" + f.class_str + "-" + f.subclass_str + ".png";
@@ -503,7 +503,7 @@
   <body>
     <div id="page-background-div"> 
 
-      <div class="common-page-header"><div id="import-header"></div><h1 id="class-page-title-table-path"></h1><hr></div>
+      <div class="common-page-header"><div id="import-header"></div><h1 id="class-page-title-path"></h1><hr></div>
 
       <div class="common-page-content-section-transparent">
 

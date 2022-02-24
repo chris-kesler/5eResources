@@ -82,9 +82,9 @@
 
               // Populating the name of the page
               if (content_source != undefined){
-                document.getElementById("page-title-table-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > <a target='blank' href='" + content_source + "'>" + titleCase(page_title.replace('-', ' ').replace('.html', '')) + " (source)</a>";
+                document.getElementById("page-title-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > <a target='blank' href='" + content_source + "'>" + titleCase(page_title.replace('-', ' ').replace('.html', '')) + " (source)</a>";
               } else {
-                document.getElementById("page-title-table-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > " + titleCase(page_title.replace('-', ' ').replace('.html', ''));
+                document.getElementById("page-title-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > " + titleCase(page_title.replace('-', ' ').replace('.html', ''));
 
               }
 
@@ -144,7 +144,7 @@
           <table id="page-title-table">
 
             <!-- The title of the page content, including the source as a link -->
-            <thead><tr><td colspan="6"><h2 id="page-title-table-path"></h2></td></tr></thead>
+            <thead><tr><td colspan="6"><h2 id="page-title-path"></h2></td></tr></thead>
             <tbody></tbody>
           </table>
 

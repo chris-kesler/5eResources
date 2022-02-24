@@ -48,9 +48,9 @@
 
               // Populating the name of the page
               if (f.content_source != undefined){
-                document.getElementById("page-title-table-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > <a target='blank' href='" + f.content_source + "'>" + titleCase(page_title.replace('-', ' ').replace('.html', '')) + " (source)</a>";
+                document.getElementById("page-title-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > <a target='blank' href='" + f.content_source + "'>" + titleCase(page_title.replace('-', ' ').replace('.html', '')) + " (source)</a>";
               } else {
-                document.getElementById("page-title-table-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > " + titleCase(page_title.replace('-', ' ').replace('.html', ''));
+                document.getElementById("page-title-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > " + titleCase(page_title.replace('-', ' ').replace('.html', ''));
               }
 
               // // If Title Library Exists
@@ -142,8 +142,12 @@
 
 
 // =========================================================================================
-// Populating the page DESCRIPTION
+// Populating the page DESCRIPTION and NAVLIST
 // =========================================================================================
+
+              // Populating the page title in the floating nav table
+              var table_row = "<tr><th><a href='#page-title-table'>" + f.entry_name + "</a></th></tr>";
+              $(table_row).appendTo("#page-navlist-table tbody");
 
               // If Description Library Exists
               if (f.description_library != undefined) {
@@ -160,6 +164,10 @@
                   if (f.description_library[x].heading != undefined) {
                     document.getElementById("page-description-div").innerHTML += "<div id='" + f.description_library[x].heading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h3>" + f.description_library[x].heading + "</h3></div>";
 
+                    // Populating the page heading in the floating nav table
+                    var table_row = "<tr><td><a style='margin-left: 10px' href='#" + f.description_library[x].heading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'>" + f.description_library[x].heading + "</a></td></tr>";
+                    $(table_row).appendTo("#page-navlist-table tbody");
+
                     // Populating Heading Content
                     if (f.description_library[x].content != undefined) {
                       document.getElementById("page-description-div").innerHTML += "<p>" + f.description_library[x].content + "</p>";
@@ -174,6 +182,11 @@
                         // Populating Subheading and Subcontent
                         if (f.description_library[x].sublibrary[w].subheading != undefined && f.description_library[x].sublibrary[w].subcontent != undefined) {
                           document.getElementById("page-description-div").innerHTML += "<div id='" + f.description_library[x].sublibrary[w].subheading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h4>&#8226;  " + f.description_library[x].sublibrary[w].subheading + "</h4></div><p>" + f.description_library[x].sublibrary[w].subcontent + "</p>";
+
+                          // Populating the page heading in the floating nav table
+                          var table_row = "<tr><td><a style='margin-left: 20px' href='#" + f.description_library[x].sublibrary[w].subheading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'>&#8226;  " + f.description_library[x].sublibrary[w].subheading + "</a></td></tr>";
+                          $(table_row).appendTo("#page-navlist-table tbody");
+
                         }
                       }
                     }
@@ -240,7 +253,7 @@
           A table for the page TITLE 
         -->
         <table id="page-title-table">
-          <thead><tr><td colspan="6"><h2 id="page-title-table-path"></h2></td></tr></thead>
+          <thead><tr><td colspan="6"><h2 id="page-title-path"></h2></td></tr></thead>
           <tbody></tbody>
         </table>
                     
