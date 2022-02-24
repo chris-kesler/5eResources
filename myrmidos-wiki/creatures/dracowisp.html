@@ -45,7 +45,7 @@
 
               // Populating the page title in the floating nav table
               var table_row = "<tr><th><a href='#" + f.entry_name.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'>" + f.entry_name + "</a></th></tr>";
-              $(table_row).appendTo("#entry-page-nav-table tbody");
+              $(table_row).appendTo("#page-navlist-table tbody");
 
 
               // Populating the page back button into the placeholder div
@@ -179,7 +179,7 @@
 
                     // Populating the page heading in the floating nav table
                     var table_row = "<tr><td><a style='margin-left: 10px' href='#" + f.entry_description_library[x].heading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'>" + f.entry_description_library[x].heading + "</a></td></tr>";
-                    $(table_row).appendTo("#entry-page-nav-table tbody");
+                    $(table_row).appendTo("#page-navlist-table tbody");
 
 
                     // Checking for sublibrary
@@ -196,7 +196,7 @@
                           
                           // Populating the page heading in the floating nav table
                           var table_row = "<tr><td><a style='margin-left: 20px' href='#" + f.entry_description_library[x].sublibrary[w].heading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'>&#8226;  " + f.entry_description_library[x].sublibrary[w].heading + "</a></td></tr>";
-                          $(table_row).appendTo("#entry-page-nav-table tbody");
+                          $(table_row).appendTo("#page-navlist-table tbody");
 
                         }
                       }
@@ -234,22 +234,22 @@
         <div class="common-page-content-section-transparent">
     
           <!-- A button to hide and unhide the navigation table -->
-          <button id='entry-page-nav-table-hide-button' onclick='hideUnhideNavTable()'>&#60;&#60;</button>
+          <button id='page-list-button' onclick='hideUnhideNavTable()'>&#60;&#60;</button>
 
           <!-- A fixed navigation section that contains links to page content sections -->
-          <section id="entry-page-nav-table-section">
+          <section id="page-navlist-section">
 
             <!-- A button to scroll the nav table up if some of it is cropped by the viewport -->
-            <button id='entry-page-nav-table-show-button' onclick='hideUpDownNavTable()'>&and; &and; &and;</button>
+            <button id='page-navlist-table-show-button' onclick='hideUpDownNavTable()'>&and; &and; &and;</button>
 
             <!-- The table to hold the navigation links -->
-            <table id="entry-page-nav-table">
+            <table id="page-navlist-table">
               <tbody></tbody>
             </table>
           </section>
 
           <!-- An empty div to allow other elements to style around the fixed nav table -->
-          <section id="entry-page-nav-table-section-placeholder"></section>
+          <section id="page-navlist-section-placeholder"></section>
 
             <!-- An off white chunk of the page that holds content -->
             <section class="page-content-section">
@@ -288,17 +288,17 @@
     var hidden = '-1000px' ;
     var unhidden = '3vw';
     
-    if (document.getElementById('entry-page-nav-table-section').style.marginLeft != hidden) {
-      document.getElementById('entry-page-nav-table-section').style.marginLeft = hidden;
-      document.getElementById('entry-page-nav-table-section-placeholder').style.marginLeft = hidden;
+    if (document.getElementById('page-navlist-section').style.marginLeft != hidden) {
+      document.getElementById('page-navlist-section').style.marginLeft = hidden;
+      document.getElementById('page-navlist-section-placeholder').style.marginLeft = hidden;
 
-      document.getElementById('entry-page-nav-table-hide-button').innerHTML = '&#62; &#62;';
+      document.getElementById('page-list-button').innerHTML = '&#62; &#62;';
 
     } else {
-      document.getElementById('entry-page-nav-table-section').style.marginLeft = unhidden;
-      document.getElementById('entry-page-nav-table-section-placeholder').style.marginLeft = unhidden;
+      document.getElementById('page-navlist-section').style.marginLeft = unhidden;
+      document.getElementById('page-navlist-section-placeholder').style.marginLeft = unhidden;
 
-      document.getElementById('entry-page-nav-table-hide-button').innerHTML = '&#60; &#60;';
+      document.getElementById('page-list-button').innerHTML = '&#60; &#60;';
     }
   }
 
@@ -306,17 +306,17 @@
     var hidden = '-250px';
     var unhidden = '-10px';
     
-    if (document.getElementById('entry-page-nav-table-section').style.marginTop != hidden) {
-      document.getElementById('entry-page-nav-table-section').style.marginTop = hidden;
-      document.getElementById('entry-page-nav-table-hide-button').style.marginTop = hidden;
+    if (document.getElementById('page-navlist-section').style.marginTop != hidden) {
+      document.getElementById('page-navlist-section').style.marginTop = hidden;
+      document.getElementById('page-list-button').style.marginTop = hidden;
 
-      document.getElementById('entry-page-nav-table-show-button').innerHTML = '&or; &or; &or;';
+      document.getElementById('page-navlist-table-show-button').innerHTML = '&or; &or; &or;';
 
     } else {
-      document.getElementById('entry-page-nav-table-section').style.marginTop = unhidden;
-      document.getElementById('entry-page-nav-table-hide-button').style.marginTop = unhidden;
+      document.getElementById('page-navlist-section').style.marginTop = unhidden;
+      document.getElementById('page-list-button').style.marginTop = unhidden;
 
-      document.getElementById('entry-page-nav-table-show-button').innerHTML = '&and; &and; &and;';
+      document.getElementById('page-navlist-table-show-button').innerHTML = '&and; &and; &and;';
     }
   }
 

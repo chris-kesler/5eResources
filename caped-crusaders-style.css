@@ -215,57 +215,49 @@ body, #page-title-table tr th, #page-title-table th, #page-title-table tr td, #p
 }
 
 /* The off white chunk of the page that holds the entry page nav table in a fixed position, along with a placeholder for other html elements to float aroundand the table within */
-#entry-page-nav-table-section, #entry-page-nav-table-section-placeholder, #entry-page-nav-table {
+#page-navlist-section, #page-navlist-table {
   width: 10vw;
   min-width: 135px; 
 }
-#entry-page-nav-table-section, #entry-page-nav-table-section-placeholder {
-  margin-left: 3vw; 
-  margin-right: 3vw;
-  margin-top: -10px;
-  margin-bottom: 2vw;
-  padding: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  height: auto;
-  float: left;
-  border-top-left-radius: 0px;
-}
-#entry-page-nav-table-section {
+#page-navlist-section {
   position: fixed;
-  background-color: rgb(200,200,200);
+  right: 0;
+  margin-right: 0px;
+  margin-top: -10px;
   z-index: 5;
+  width: 250px;
+
+  padding: 15px;
+
+  visibility: hidden;
+
+  height: auto;
+  border-top-left-radius: 0px;
+  background-color: rgb(200,200,200);
 }
-#entry-page-nav-table-section-placeholder {
-  background-image: url("/resources/images/Transparent.png");
-  background-color: transparent;
-}
-#entry-page-nav-table th {
+#page-navlist-table th {
   border-bottom: 1px dotted grey;
   text-align: left;
 }
 
 /* The fixed button that hides and unhides the nav table */
-#entry-page-nav-table-hide-button, #entry-page-nav-table-show-button {
+#page-navlist-button {
+  position: fixed;
+  right: 0;
+  margin-right: 0px;
+  margin-top: -10px;
   z-index: 11;
+
+  width: 3vw;
   min-width: 30px;
+  
   color: aqua;
   background-color: rgb(100,100,100);
+  
   border: 1px solid rgb(125,125,125);
   border-radius: 5px;
-}
-
-#entry-page-nav-table-hide-button {
-  position: fixed;
-  width: 3vw;
-  margin-top: -10px;
   border-top-right-radius: 0px;
-}
-
-#entry-page-nav-table-show-button { 
-  float: right;
-  width: 10vw;
-  min-width: 135px; 
+  border-bottom-right-radius: 0px;
 }
   
 /* 

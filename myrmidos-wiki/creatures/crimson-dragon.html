@@ -190,6 +190,23 @@
 // =========================================================================================
         $("#import-footer").load("/resources/pages/import-footer.html");
       });
+
+      // The function that Hides and Shows the Navlist
+      function hideShowNavList() {
+        var hidden = '0px';
+        var shown = '280px';
+
+        if (document.getElementById('page-navlist-button').style.marginRight.includes(shown)) {
+          document.getElementById('page-navlist-button').style.marginRight = hidden;
+          document.getElementById('page-navlist-button').innerHTML = '&#60; &#60;';
+          document.getElementById('page-navlist-section').style.visibility = 'hidden';
+        } else {
+          document.getElementById('page-navlist-button').style.marginRight = shown;
+          document.getElementById('page-navlist-button').innerHTML = '&#62; &#62;';
+          document.getElementById('page-navlist-section').style.visibility = 'visible';
+        }
+      }
+
     </script>
   </head>
 
@@ -200,10 +217,19 @@
     -->
     <div id="page-background-div">
 
+
       <!-- 
-        A div for the HEADER 
+        A div for the page HEADER 
       -->
       <div id="import-header"></div>
+
+      <!-- 
+        A series of element for the page NAVLIST
+       -->
+      <section id="page-navlist-section">
+        <table id="page-navlist-table"><tbody></tbody></table>
+      </section>
+      <button id='page-navlist-button' onclick='hideShowNavList()'>&#60; &#60;</button>
           
       <!-- 
         A section for the page CONTENT 
@@ -231,7 +257,7 @@
       
   
       <!-- 
-        A div for the FOOTER 
+        A div for the page FOOTER 
       -->
       <footer id="import-footer"></footer>
     </div>
