@@ -171,10 +171,10 @@
                 if (f.attribute_library[0] != undefined) {
                   
                   // Table Row #1:  Rehosted Art
-                  if (f.attribute_library[0].img_rehosted != undefined && f.attribute_library[0].img_rehosted_source != undefined ) {
-                    var table_row = "<tr><th colspan='2'><img id='page-attributes-table-image' alt='" + f.entry_name + "' target='blank' src='" + f.attribute_library[0].img_rehosted + "' onclick='window.open(`" + f.attribute_library[0].img_rehosted_source + "`)' style='display:block'></th></tr>";
-                  } else {
+                  if (f.attribute_library[0].img_rehosted === "" || f.attribute_library[0].img_rehosted_source === "") {
                     var table_row = "<tr><th colspan='2'><img id='page-attributes-table-image' alt='" + f.entry_name + "' target='blank' src='/resources/images/WikiPlaceholder.png' onclick='window.open(this.src)'></th></tr>";
+                  } else {
+                    var table_row = "<tr><th colspan='2'><img id='page-attributes-table-image' alt='" + f.entry_name + "' target='blank' src='" + f.attribute_library[0].img_rehosted + "' onclick='window.open(`" + f.attribute_library[0].img_rehosted_source + "`)' style='display:block'></th></tr>";
                   }
                   $(table_row).appendTo("#page-attributes-table tbody");
                   
