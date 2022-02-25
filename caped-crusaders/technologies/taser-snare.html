@@ -1,12 +1,4 @@
 <!DOCTYPE html>
-<!-- =========================================================================================
-  This is an ENTRY page.  It contains HEADER, BACKGROUND, CONTENT, and FOOTER elements that are standard across the site.
-  It also contains TITLE, ATTRIBUTES, NAVLIST, and DESCRIPTION elements that are uniquely handled as an ENTRY page.
-
-  The ENTRY page script reads the file path and discerns the following:  /<subsite>/<directory>/<page_name>
-  The data is populated from a JSON file that is titled <directory>.JSON and stored within the <subsite> folder
-  The data is populated from an entry within that JSON file if the entry_name attribute matches the <page_name>
- ========================================================================================= -->
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -17,313 +9,131 @@
     <link rel="stylesheet" href="/caped-crusaders-style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
     <script>
-
-      // A function that capitalizes the first letter of each word in a string
       function titleCase(str) {
-        var split_string = str.toLowerCase().split(' ');
-        for (var i = 0; i < split_string.length; i++) {
-          split_string[i] = split_string[i].charAt(0).toUpperCase() + split_string[i].substring(1);     
+        var splitStr = str.toLowerCase().split(' ');
+        for (var i = 0; i < splitStr.length; i++) {
+            // You do not need to check if i is larger than splitStr length, as your for does that for you
+            // Assign it back to the array
+            splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);     
         }
-        return split_string.join(' '); 
+        // Directly return the joined string
+        return splitStr.join(' '); 
       }
 
-      // The function that Hides and Shows the Navlist
-      function hideShowNavList() {
-        var hidden = '0px';
-        var shown = '280px';
+      $(function readJSON() {
 
-        // If the NAVLIST is already shown (which it will not be by default upon loading the page)
-        if (document.getElementById('page-navlist-button').style.marginRight.includes(shown)) {
-
-          // Set NAVLIST margins to the right and update button characters 
-          document.getElementById('page-navlist-button').style.marginRight = hidden;
-          document.getElementById('page-navlist-section').style.marginRight = '-280px';
-          document.getElementById('page-navlist-button').innerHTML = '&#60; &#60;';
-
-          // Animate NAVLIST elements from their Shown position to their recently updated Hidden position
-          document.getElementById("page-navlist-section").animate([
-            { transform: 'translateX(-280px)' },
-            { transform: 'translateX(0px)' }
-          ], {
-            duration: 750,
-            iterations: 1
-          });
-          document.getElementById("page-navlist-button").animate([
-            { transform: 'translateX(-280px)' },
-            { transform: 'translateX(0px)' }
-          ], {
-            duration: 750,
-            iterations: 1
-          });
-        } else {
-
-          // Set NAVLIST margins to the lefft and update button characters
-          document.getElementById('page-navlist-button').style.marginRight = shown;
-          document.getElementById('page-navlist-section').style.marginRight = '0px';
-          document.getElementById('page-navlist-button').innerHTML = '&#62; &#62;';
-
-          // Animate NAVLIST elements from their Hidden position to their recently updated Shown position
-          document.getElementById("page-navlist-section").animate([
-            { transform: 'translateX(280px)' },
-            { transform: 'translateX(0px)' }
-          ], {
-            duration: 750,
-            iterations: 1
-          });
-          document.getElementById("page-navlist-button").animate([
-            { transform: 'translateX(280px)' },
-            { transform: 'translateX(0px)' }
-          ], {
-            duration: 750,
-            iterations: 1
-          });
+        // Defining variables that are used to read the correct JSON file and distinguish which type page we are on
+        if (window.location.pathname.includes("spells")) {
+          var power_source = "Spell";
+          power_source_plural = power_source + "s";
         }
-      }
-
-
-      // The function that populates all page data into preset elements
-      $(function populatePageData() {
-
-
-// =========================================================================================
-// Populating the page HEADER
-// 
-// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
-// =========================================================================================
-        $("#import-header").load("/resources/pages/import-header.html");
-
-
-// =========================================================================================
-// Populating the page TITLE
-// 
-// The page TITLE can include a table of details for spells or monster statblocks
-// If title_library does not have a table_row library, the table of details is hidden and only the TITLE path is populated
-// =========================================================================================
+        else if (window.location.pathname.includes("superpowers")) {
+          var power_source = "Superpower";
+          power_source_plural = power_source + "s";
+        }
+        else if (window.location.pathname.includes("technologies")) {
+          var power_source = "Technology";
+          power_source_plural = "Technologies";
+        }
+        else if (window.location.pathname.includes("boons")) {
+          var power_source = "Boon";
+          power_source_plural = power_source + "s";
+        }
+        else if (window.location.pathname.includes("enhancements")) {
+          var power_source = "Enhancement";
+          power_source_plural = power_source + "s";
+        }
+        else if (window.location.pathname.includes("techniques")) {
+          var power_source = "Technique";
+          power_source_plural = power_source + "s";
+        }
         
-        // Reading the name of this file
-        var page_array = window.location.pathname.split("/");
-        var page_title = page_array.pop();
-        var page_directory = page_array.pop();
-        var page_subsite = page_array.pop();
 
         // Reading data from our JSON file
-        $.getJSON(`/` + page_subsite + `/` + page_directory + `.json`, function(data) {
+        $.getJSON(`../${power_source_plural.toLowerCase()}.json`, function(data) {
+
+          // Reading the name of this file
+          var page_array = window.location.pathname.split("/");
+          var page_title = page_array.pop();
+          var page_directory = page_array.pop();
+          var page_subsite = page_array.pop();
+
 
           // Looping through the JSON data 
           $.each(data.entries, function(i, f) {
 
             // Finding the entry that matches this file
-            if (f.entry_name.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html" == page_title) {
+            if (f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html" == page_title) {
+
+              // Looping through the author array in the JSON file to populate variables for links and credit
+              $.each(data.author, function(x, y) {
+                if (f.source_str == y.author_name) {
+                  author_credit = y.author_credit;
+                  content_source = y.content_source;
+                }
+              });
+
+              // Looping through the type array in the JSON file to populate variables for type and credit
+              $.each(data.type, function(x, y) {
+                if (f.type_str == y.type_name) {
+                  document.getElementById("page-image-credit").innerHTML = y.type_credit;
+                }
+              });
 
               // Populating the name of the page
-              if (f.content_source != undefined){
-                document.getElementById("page-title-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > <a target='blank' href='" + f.content_source + "'>" + titleCase(page_title.replace('-', ' ').replace('.html', '')) + " (source)</a>";
+              if (content_source != undefined){
+                document.getElementById("page-title-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > <a target='blank' href='" + content_source + "'>" + titleCase(page_title.replace('-', ' ').replace('.html', '')) + " (source)</a>";
               } else {
                 document.getElementById("page-title-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > " + titleCase(page_title.replace('-', ' ').replace('.html', ''));
-              }
 
-              // // If Title Library Exists
-              if (f.title_library != undefined) {
-                for (var x = 0; f.title_library.length > x; x++) {
-                  if (f.title_library[x].table_row != undefined) {
-                    var table_row1 = "<tr>";
-                    var table_row2 = "<tr>";
-                    for (var y = 0; f.title_library[x].table_row.length > y; y++) {
-                      if (f.title_library[x].table_row[y].heading != undefined && f.title_library[x].table_row[y].content != undefined) {
-                        table_row1 += "<th style='width: 15vw'>" + f.title_library[x].table_row[y].heading + "</th>";
-                        table_row2 += "<td style='width: 15vw'>" + f.title_library[x].table_row[y].content + "</td>";
-                      }
-                    }
-                    table_row += "</tr>";
-                    if (!table_row1.includes("<tr></tr>") && !table_row2.includes("<tr></tr>")) {
-                      $(table_row1).appendTo("#page-title-table tbody");
-                      $(table_row2).appendTo("#page-title-table tbody");
-                    }
-                  }
-                }
               }
 
 
-// =========================================================================================
-// Populating the page ATTRIBUTES
-// 
-// The ATTRIBUTES table can include a table of details for wiki entries such as monsters or planescapes
-// If attribute_library does not have a additional entries, the table of details is hidden and only the ATTRIBUTE image is populated
-// =========================================================================================
+              // Populating the page image
+              document.getElementById("page-image").src = "/resources/images/" + f.type_str.replace(/\s/g, '') + ".png";
 
-              // If Attribute Library Exists
-              if (f.attribute_library != undefined) {
-                if (f.attribute_library[0] != undefined) {
-                  
-                  // Table Row #1:  Rehosted Art
-                  if (f.attribute_library[0].img_rehosted != undefined && f.attribute_library[0].img_rehosted_source != undefined ) {
-                    var table_row = "<tr><th colspan='2'><img id='page-attributes-table-image' alt='" + f.entry_name + "' target='blank' src='" + f.attribute_library[0].img_rehosted + "' onclick='window.open(`" + f.attribute_library[0].img_rehosted_source + "`)' style='display:block'></th></tr>";
-                  } else {
-                    var table_row = "<tr><th colspan='2'><img id='page-attributes-table-image' alt='" + f.entry_name + "' target='blank' src='/resources/images/WikiPlaceholder.png' onclick='window.open(this.src)'></th></tr>";
-                  }
-                  $(table_row).appendTo("#page-attributes-table tbody");
-                  
+              
+              // Populating the page description based on flavor, mechanics, overcharge, and components
+              if (f.flavor_str != undefined) {
+                document.getElementById("page-description-div").innerHTML += "<b>Flavor Description:</b>  <i>" + f.flavor_str + "</i><br><br>";
+              }
+              if (f.mechanics_str != undefined) {
+                document.getElementById("page-description-div").innerHTML += "<b>Standard Mechanics:</b>  " + f.mechanics_str + "<br><br>";
+              }
+              if (f.overcharge_str != undefined) {
+                document.getElementById("page-description-div").innerHTML += "<b>Overcharge Mechanics:</b>  " + f.overcharge_str + "<br><br>";
+              }
 
-                  // Table Row #2:  Linked Art
-                  if (f.attribute_library[0].img_linked != undefined && f.attribute_library[0].img_linked_source != undefined) { 
-                    var table_row = "<tr><th colspan='2'><i><a href='" + f.attribute_library[0].img_linked + "' target='_blank'>Additional Art</a> and <a href='" + f.attribute_library[0].img_linked_source + "' target='blank'>(source)</a></i></th></tr>";
-                  } else {
-                    var table_row = "<tr><th colspan='2'><i>No Additional Art Available</a></i></th></tr>";
-                  }
-                  $(table_row).appendTo("#page-attributes-table tbody");
+              // Checking for Material Components and displaying the material component description
+              if (f.components_vsm_str.includes("M") && f.components_description_str != undefined) {
+                document.getElementById("page-description-div").innerHTML += "<b>Material Components:</b>  <i>(" + f.components_description_str + ")</i>";
 
+                // If materials have a cost, we strip that out and concatenate it to the vsm string with parentheses
+                if (f.components_description_str.replace(/\D/g,'') > 0) {
+                  components_vsm = f.components_vsm_str + "   (" + f.components_description_str.replace(/\D/g,'') + ")";
 
-                  // If the library contains data for a wiki wtyle table
-                  if (f.attribute_library[1] != undefined) {
-                    
-                    // Table Row #3:  Entry Name
-                    var table_row = "<tr><th colspan='2'>" + f.entry_name + "</th></tr>";
-                    $(table_row).appendTo("#page-attributes-table tbody");
-
-                    // Table Row #4:  Species 
-                    if (f.attribute_library[0].species != undefined) {
-                      var table_row = "<tr><th colspan='2'>(" + f.attribute_library[0].species + ")</th></tr>";
-                    } else {
-                      var table_row = "<tr><th colspan='2'>(Unknown Species)</th></tr>";
-                    }
-                    $(table_row).appendTo("#page-attributes-table tbody");
-
-
-                    // Table Row(s) #5-n:  Attribute Details
-                    for (var z = 0; f.attribute_library.length > z; z++) {
-                      if (f.attribute_library[z].category != undefined && f.attribute_library[z].data != undefined) {
-                        var table_row = "<tr><th colspan='2'>" + f.attribute_library[z].category + "</th></tr>";
-                        $(table_row).appendTo("#page-attributes-table tbody");
-                        for (var y = 0; f.attribute_library[z].data.length > y; y++) {
-                          if (f.attribute_library[z].data[y].heading != undefined && f.attribute_library[z].data[y].content != undefined) {
-                            var table_row = "<tr><td>" + f.attribute_library[z].data[y].heading + "</td><td>" + f.attribute_library[z].data[y].content + "</td></tr>";
-                            $(table_row).appendTo("#page-attributes-table tbody");
-                          }
-                        }
-                      }
-                    }
-                  } 
+                // If not, we leave the vsm string alone and pull the data
                 } else {
-                  // Table Row #1:  Rehosted Art
-                  var table_row = "<tr><th colspan='2'><img id='page-attributes-table-image' alt='" + f.entry_name + "' target='blank' src='/resources/images/WikiPlaceholder.png' onclick='window.open(this.src)'></th></tr>";
-                  $(table_row).appendTo("#page-attributes-table tbody");
-                  
-                  // Table Row #2:  Linked Art
-                  var table_row = "<tr><th colspan='2'><i>No Additional Art Available</a></i></th></tr>";
-                  $(table_row).appendTo("#page-attributes-table tbody");
+                  components_vsm = f.components_vsm_str;
                 }
+
+                // If materials are consumed, we include an asterisk to reflect that in the vsm string
+                if (f.components_description_str.includes("consume")) {
+                  components_vsm = components_vsm + "*";
+                } 
+
+              // If there are no material components, we leave the vsm string alone
               } else {
-                // Table Row #1:  Rehosted Art
-                var table_row = "<tr><th colspan='2'><img id='page-attributes-table-image' alt='" + f.entry_name + "' target='blank' src='/resources/images/WikiPlaceholder.png' onclick='window.open(this.src)'></th></tr>";
-                $(table_row).appendTo("#page-attributes-table tbody");
-                
-                // Table Row #2:  Linked Art
-                var table_row = "<tr><th colspan='2'><i>No Additional Art Available</a></i></th></tr>";
-                $(table_row).appendTo("#page-attributes-table tbody");
+                components_vsm = f.components_vsm_str;
               }
 
+              
+              // Defining and populating the first row of the page table
+              var table_row1 = "<tr><th style='width: 15vw'>Level</th><th style='width: 15vw'>Casting Time</th><th style='width: 15vw'>Range/Area</th><th style='width: 15vw'>Components</th></tr>"
+              $(table_row1).appendTo("#page-title-table tbody");
 
-// =========================================================================================
-// Populating the page DESCRIPTION and NAVLIST
-// 
-// The DESCRIPTION div can any number of headings and paragraphs
-// The NAVLIST is updated with links to the DESCRIPTION headings as they are populated
-// =========================================================================================
-
-              // Populating the page title in the floating nav table
-              var table_row = "<tr><th><a href='#page-title-table'>" + f.entry_name + "</a></th></tr>";
-              $(table_row).appendTo("#page-navlist-table tbody");
-
-              // If Description Library Exists
-              if (f.description_library != undefined) {
-
-                // Populating Description Overview underneath title table with no heading
-                if (f.description_library[0].overview != undefined) {
-                  document.getElementById("page-description-div").innerHTML = "<p>" + f.description_library[0].overview + "</p>";
-                }
-
-                // Looping through all Library entries
-                for (var x = 0; f.description_library.length > x; x++) {
-
-                  // Populating Heading
-                  if (f.description_library[x].heading != undefined) {
-                    document.getElementById("page-description-div").innerHTML += "<div id='" + f.description_library[x].heading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h3>" + f.description_library[x].heading + "</h3></div>";
-
-                    // Populating the page heading in the floating nav table
-                    var table_row = "<tr><td><a style='margin-left: 10px' href='#" + f.description_library[x].heading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'>" + f.description_library[x].heading + "</a></td></tr>";
-                    $(table_row).appendTo("#page-navlist-table tbody");
-
-                    // Populating Heading Content
-                    if (f.description_library[x].content != undefined) {
-                      document.getElementById("page-description-div").innerHTML += "<p>" + f.description_library[x].content + "</p>";
-                    }
-
-                    // If Sublibrary Exists
-                    if (f.description_library[x].sublibrary != undefined) {
-
-                      // Looping through all Sublibrary entries
-                      for (var w = 0; f.description_library[x].sublibrary.length > w; w++) {
-
-                        // Populating Subheading and Subcontent
-                        if (f.description_library[x].sublibrary[w].subheading != undefined && f.description_library[x].sublibrary[w].subcontent != undefined) {
-                          document.getElementById("page-description-div").innerHTML += "<div id='" + f.description_library[x].sublibrary[w].subheading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h4>&#8226;  " + f.description_library[x].sublibrary[w].subheading + "</h4></div><p>" + f.description_library[x].sublibrary[w].subcontent + "</p>";
-
-                          // Populating the page heading in the floating nav table
-                          var table_row = "<tr><td><a style='margin-left: 20px' href='#" + f.description_library[x].sublibrary[w].subheading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'>&#8226;  " + f.description_library[x].sublibrary[w].subheading + "</a></td></tr>";
-                          $(table_row).appendTo("#page-navlist-table tbody");
-
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          });
-        });
-
-
-// =========================================================================================
-// Populating the page FOOTER
-// 
-// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
-// =========================================================================================
-        $("#import-footer").load("/resources/pages/import-footer.html");
-      });
-    </script>
-  </head>
-
-
-  <body>
-    <!-- 
-      A div for the page BACKGROUND -->
-    <div id="page-background-div">
-      <!-- 
-        A div for the page HEADER -->
-      <div id="import-header"></div>
-      <!-- 
-        A series of element for the page NAVLIST -->
-      <section id="page-navlist-section"><table id="page-navlist-table"><tbody></tbody></table></section>
-      <button id='page-navlist-button' onclick='hideShowNavList()'>&#60; &#60;</button>
-      <!-- 
-        A section for the page CONTENT -->
-      <section class="page-content-section">
-        <!-- 
-          A table for the page TITLE -->
-        <table id="page-title-table"><thead><tr><td colspan="6"><h2 id="page-title-path"></h2></td></tr></thead><tbody></tbody></table>   
-        <!-- 
-          A table for the page ATTRIBUTES -->
-        <table id="page-attributes-table"><tbody></tbody></table>
-        <!-- 
-          A div for the page DESCRIPTION -->
-        <div id="page-description-div"></div>
-      </section>
-      <!-- 
-        A div for the page FOOTER -->
-      <footer id="import-footer"></footer>
-    </div>
-  </body>
-</html>              var table_row2 = "<tr>" 
+              // Defining and populating the second row of the page table
+              var table_row2 = "<tr>" 
                 + "<td>" + f.level_str + "</td>" 
                 + "<td>" + f.casting_time_str + "</td>" 
                 + "<td>" + f.range_area_str + "</td>" 
