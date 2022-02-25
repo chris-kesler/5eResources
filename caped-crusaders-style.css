@@ -222,7 +222,7 @@ body, #page-title-table tr th, #page-title-table th, #page-title-table tr td, #p
 #page-navlist-section {
   position: fixed;
   right: 0;
-  margin-right: 0px;
+  margin-right: -280px;
   margin-top: -100px;
   z-index: 5;
   width: 250px;
