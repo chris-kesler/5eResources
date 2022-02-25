@@ -1,12 +1,4 @@
 <!DOCTYPE html>
-<!-- =========================================================================================
-  This is an ENTRY page.  It contains HEADER, BACKGROUND, CONTENT, and FOOTER elements that are standard across the site.
-  It also contains TITLE, ATTRIBUTES, NAVLIST, and DESCRIPTION elements that are uniquely handled as an ENTRY page.
-
-  The ENTRY page script reads the file path and discerns the following:  /<subsite>/<directory>/<page_name>
-  The data is populated from a JSON file that is titled <directory>.JSON and stored within the <subsite> folder
-  The data is populated from an entry within that JSON file if the entry_name attribute matches the <page_name>
- ========================================================================================= -->
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -17,8 +9,6 @@
     <link rel="stylesheet" href="/caped-crusaders-style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
     <script>
-
-      // A function that capitalizes the first letter of each word in a string
       function titleCase(str) {
         var split_string = str.toLowerCase().split(' ');
         for (var i = 0; i < split_string.length; i++) {
@@ -27,77 +17,18 @@
         return split_string.join(' '); 
       }
 
-      // The function that Hides and Shows the Navlist
-      function hideShowNavList() {
-        var hidden = '0px';
-        var shown = '280px';
-
-        // If the NAVLIST is already shown (which it will not be by default upon loading the page)
-        if (document.getElementById('page-navlist-button').style.marginRight.includes(shown)) {
-
-          // Set NAVLIST margins to the right and update button characters 
-          document.getElementById('page-navlist-button').style.marginRight = hidden;
-          document.getElementById('page-navlist-section').style.marginRight = '-280px';
-          document.getElementById('page-navlist-button').innerHTML = '&#60; &#60;';
-
-          // Animate NAVLIST elements from their Shown position to their recently updated Hidden position
-          document.getElementById("page-navlist-section").animate([
-            { transform: 'translateX(-280px)' },
-            { transform: 'translateX(0px)' }
-          ], {
-            duration: 750,
-            iterations: 1
-          });
-          document.getElementById("page-navlist-button").animate([
-            { transform: 'translateX(-280px)' },
-            { transform: 'translateX(0px)' }
-          ], {
-            duration: 750,
-            iterations: 1
-          });
-        } else {
-
-          // Set NAVLIST margins to the lefft and update button characters
-          document.getElementById('page-navlist-button').style.marginRight = shown;
-          document.getElementById('page-navlist-section').style.marginRight = '0px';
-          document.getElementById('page-navlist-button').innerHTML = '&#62; &#62;';
-
-          // Animate NAVLIST elements from their Hidden position to their recently updated Shown position
-          document.getElementById("page-navlist-section").animate([
-            { transform: 'translateX(280px)' },
-            { transform: 'translateX(0px)' }
-          ], {
-            duration: 750,
-            iterations: 1
-          });
-          document.getElementById("page-navlist-button").animate([
-            { transform: 'translateX(280px)' },
-            { transform: 'translateX(0px)' }
-          ], {
-            duration: 750,
-            iterations: 1
-          });
-        }
-      }
-
-
-      // The function that populates all page data into preset elements
       $(function populatePageData() {
 
 
 // =========================================================================================
 // Populating the page HEADER
-// 
-// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
 // =========================================================================================
         $("#import-header").load("/resources/pages/import-header.html");
 
 
 // =========================================================================================
+// BACKGROUND and CONTENT are static
 // Populating the page TITLE
-// 
-// The page TITLE can include a table of details for spells or monster statblocks
-// If title_library does not have a table_row library, the table of details is hidden and only the TITLE path is populated
 // =========================================================================================
         
         // Reading the name of this file
@@ -146,72 +77,59 @@
 
 // =========================================================================================
 // Populating the page ATTRIBUTES
-// 
-// The ATTRIBUTES table can include a table of details for wiki entries such as monsters or planescapes
-// If attribute_library does not have a additional entries, the table of details is hidden and only the ATTRIBUTE image is populated
 // =========================================================================================
 
               // If Attribute Library Exists
               if (f.attribute_library != undefined) {
-                if (f.attribute_library[0] != undefined) {
+
+                // Table Row #1:  Rehosted Art
+                if (f.attribute_library[0].img_rehosted != undefined && f.attribute_library[0].img_rehosted_source != undefined ) {
+                  var table_row = "<tr><th colspan='2'><img id='page-attributes-table-image' alt='" + f.entry_name + "' target='blank' src='" + f.attribute_library[0].img_rehosted + "' onclick='window.open(`" + f.attribute_library[0].img_rehosted_source + "`)' style='display:block'></th></tr>";
+                } else {
+                  var table_row = "<tr><th colspan='2'><img id='page-attributes-table-image' alt='" + f.entry_name + "' target='blank' src='/resources/images/WikiPlaceholder.png' onclick='window.open(this.src)'></th></tr>";
+                }
+                $(table_row).appendTo("#page-attributes-table tbody");
+                
+
+                // Table Row #2:  Linked Art
+                if (f.attribute_library[0].img_linked != undefined && f.attribute_library[0].img_linked_source != undefined) { 
+                  var table_row = "<tr><th colspan='2'><i><a href='" + f.attribute_library[0].img_linked + "' target='_blank'>Additional Art</a> and <a href='" + f.attribute_library[0].img_linked_source + "' target='blank'>(source)</a></i></th></tr>";
+                } else {
+                  var table_row = "<tr><th colspan='2'><i>No Additional Art Available</a></i></th></tr>";
+                }
+                $(table_row).appendTo("#page-attributes-table tbody");
+
+
+                // If the library contains data for a wiki wtyle table
+                if (f.attribute_library[1] != undefined) {
                   
-                  // Table Row #1:  Rehosted Art
-                  if (f.attribute_library[0].img_rehosted != undefined && f.attribute_library[0].img_rehosted_source != undefined ) {
-                    var table_row = "<tr><th colspan='2'><img id='page-attributes-table-image' alt='" + f.entry_name + "' target='blank' src='" + f.attribute_library[0].img_rehosted + "' onclick='window.open(`" + f.attribute_library[0].img_rehosted_source + "`)' style='display:block'></th></tr>";
+                  // Table Row #3:  Entry Name
+                  var table_row = "<tr><th colspan='2'>" + f.entry_name + "</th></tr>";
+                  $(table_row).appendTo("#page-attributes-table tbody");
+
+                  // Table Row #4:  Species 
+                  if (f.attribute_library[0].species != undefined) {
+                    var table_row = "<tr><th colspan='2'>(" + f.attribute_library[0].species + ")</th></tr>";
                   } else {
-                    var table_row = "<tr><th colspan='2'><img id='page-attributes-table-image' alt='" + f.entry_name + "' target='blank' src='/resources/images/WikiPlaceholder.png' onclick='window.open(this.src)'></th></tr>";
+                    var table_row = "<tr><th colspan='2'>(Unknown Species)</th></tr>";
                   }
                   $(table_row).appendTo("#page-attributes-table tbody");
-                  
-
-                  // Table Row #2:  Linked Art
-                  if (f.attribute_library[0].img_linked != undefined && f.attribute_library[0].img_linked_source != undefined) { 
-                    var table_row = "<tr><th colspan='2'><i><a href='" + f.attribute_library[0].img_linked + "' target='_blank'>Additional Art</a> and <a href='" + f.attribute_library[0].img_linked_source + "' target='blank'>(source)</a></i></th></tr>";
-                  } else {
-                    var table_row = "<tr><th colspan='2'><i>No Additional Art Available</a></i></th></tr>";
-                  }
-                  $(table_row).appendTo("#page-attributes-table tbody");
 
 
-                  // If the library contains data for a wiki wtyle table
-                  if (f.attribute_library[1] != undefined) {
-                    
-                    // Table Row #3:  Entry Name
-                    var table_row = "<tr><th colspan='2'>" + f.entry_name + "</th></tr>";
-                    $(table_row).appendTo("#page-attributes-table tbody");
-
-                    // Table Row #4:  Species 
-                    if (f.attribute_library[0].species != undefined) {
-                      var table_row = "<tr><th colspan='2'>(" + f.attribute_library[0].species + ")</th></tr>";
-                    } else {
-                      var table_row = "<tr><th colspan='2'>(Unknown Species)</th></tr>";
-                    }
-                    $(table_row).appendTo("#page-attributes-table tbody");
-
-
-                    // Table Row(s) #5-n:  Attribute Details
-                    for (var z = 0; f.attribute_library.length > z; z++) {
-                      if (f.attribute_library[z].category != undefined && f.attribute_library[z].data != undefined) {
-                        var table_row = "<tr><th colspan='2'>" + f.attribute_library[z].category + "</th></tr>";
-                        $(table_row).appendTo("#page-attributes-table tbody");
-                        for (var y = 0; f.attribute_library[z].data.length > y; y++) {
-                          if (f.attribute_library[z].data[y].heading != undefined && f.attribute_library[z].data[y].content != undefined) {
-                            var table_row = "<tr><td>" + f.attribute_library[z].data[y].heading + "</td><td>" + f.attribute_library[z].data[y].content + "</td></tr>";
-                            $(table_row).appendTo("#page-attributes-table tbody");
-                          }
+                  // Table Row(s) #5-n:  Attribute Details
+                  for (var z = 0; f.attribute_library.length > z; z++) {
+                    if (f.attribute_library[z].category != undefined && f.attribute_library[z].data != undefined) {
+                      var table_row = "<tr><th colspan='2'>" + f.attribute_library[z].category + "</th></tr>";
+                      $(table_row).appendTo("#page-attributes-table tbody");
+                      for (var y = 0; f.attribute_library[z].data.length > y; y++) {
+                        if (f.attribute_library[z].data[y].heading != undefined && f.attribute_library[z].data[y].content != undefined) {
+                          var table_row = "<tr><td>" + f.attribute_library[z].data[y].heading + "</td><td>" + f.attribute_library[z].data[y].content + "</td></tr>";
+                          $(table_row).appendTo("#page-attributes-table tbody");
                         }
                       }
                     }
-                  } 
-                } else {
-                  // Table Row #1:  Rehosted Art
-                  var table_row = "<tr><th colspan='2'><img id='page-attributes-table-image' alt='" + f.entry_name + "' target='blank' src='/resources/images/WikiPlaceholder.png' onclick='window.open(this.src)'></th></tr>";
-                  $(table_row).appendTo("#page-attributes-table tbody");
-                  
-                  // Table Row #2:  Linked Art
-                  var table_row = "<tr><th colspan='2'><i>No Additional Art Available</a></i></th></tr>";
-                  $(table_row).appendTo("#page-attributes-table tbody");
-                }
+                  }
+                } 
               } else {
                 // Table Row #1:  Rehosted Art
                 var table_row = "<tr><th colspan='2'><img id='page-attributes-table-image' alt='" + f.entry_name + "' target='blank' src='/resources/images/WikiPlaceholder.png' onclick='window.open(this.src)'></th></tr>";
@@ -225,9 +143,6 @@
 
 // =========================================================================================
 // Populating the page DESCRIPTION and NAVLIST
-// 
-// The DESCRIPTION div can any number of headings and paragraphs
-// The NAVLIST is updated with links to the DESCRIPTION headings as they are populated
 // =========================================================================================
 
               // Populating the page title in the floating nav table
@@ -285,41 +200,78 @@
 
 // =========================================================================================
 // Populating the page FOOTER
-// 
-// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
 // =========================================================================================
         $("#import-footer").load("/resources/pages/import-footer.html");
       });
+
+      // The function that Hides and Shows the Navlist
+      function hideShowNavList() {
+        var hidden = '0px';
+        var shown = '280px';
+
+        if (document.getElementById('page-navlist-button').style.marginRight.includes(shown)) {
+          document.getElementById('page-navlist-button').style.marginRight = hidden;
+          document.getElementById('page-navlist-button').innerHTML = '&#60; &#60;';
+          document.getElementById('page-navlist-section').style.visibility = 'hidden';
+        } else {
+          document.getElementById('page-navlist-button').style.marginRight = shown;
+          document.getElementById('page-navlist-button').innerHTML = '&#62; &#62;';
+          document.getElementById('page-navlist-section').style.visibility = 'visible';
+        }
+      }
+
     </script>
   </head>
 
 
   <body>
     <!-- 
-      A div for the page BACKGROUND -->
+      A div for the page BACKGROUND 
+    -->
     <div id="page-background-div">
+
+
       <!-- 
-        A div for the page HEADER -->
+        A div for the page HEADER 
+      -->
       <div id="import-header"></div>
+
       <!-- 
-        A series of element for the page NAVLIST -->
-      <section id="page-navlist-section"><table id="page-navlist-table"><tbody></tbody></table></section>
+        A series of element for the page NAVLIST
+       -->
+      <section id="page-navlist-section">
+        <table id="page-navlist-table"><tbody></tbody></table>
+      </section>
       <button id='page-navlist-button' onclick='hideShowNavList()'>&#60; &#60;</button>
+          
       <!-- 
-        A section for the page CONTENT -->
+        A section for the page CONTENT 
+      -->
       <section class="page-content-section">
+
         <!-- 
-          A table for the page TITLE -->
-        <table id="page-title-table"><thead><tr><td colspan="6"><h2 id="page-title-path"></h2></td></tr></thead><tbody></tbody></table>   
+          A table for the page TITLE 
+        -->
+        <table id="page-title-table">
+          <thead><tr><td colspan="6"><h2 id="page-title-path"></h2></td></tr></thead>
+          <tbody></tbody>
+        </table>
+                    
         <!-- 
-          A table for the page ATTRIBUTES -->
+          A table for the page ATTRIBUTES 
+        -->
         <table id="page-attributes-table"><tbody></tbody></table>
+
         <!-- 
-          A div for the page DESCRIPTION -->
+          A div for the page DESCRIPTION 
+        -->
         <div id="page-description-div"></div>
       </section>
+      
+  
       <!-- 
-        A div for the page FOOTER -->
+        A div for the page FOOTER 
+      -->
       <footer id="import-footer"></footer>
     </div>
   </body>
