@@ -101,9 +101,20 @@
         
         // Reading the name of this file
         var page_array = window.location.pathname.split("/");
-        var page_title = page_array.pop();
-        var page_directory = page_array.pop();
-        var page_subsite = page_array.pop();
+        var page_array_length = page_array.length;
+
+        if (page_array.length == 5) {
+          var page_title = page_array.pop();
+          var page_category = page_array.pop();
+          var page_directory = page_array.pop();
+          var page_subsite = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 4) {
+          var page_title = page_array.pop();
+          var page_directory = page_array.pop();
+          var page_subsite = page_array.pop();
+          var page_site = page_array.pop();
+        }
 
         // Reading data from our JSON file
         $.getJSON(`/` + page_subsite + `/` + page_directory + `.json`, function(data) {
@@ -115,10 +126,15 @@
             if (f.entry_name.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html" == page_title) {
 
               // Populating the name of the page
+              document.getElementById("page-title-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > </a><a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a>";
+              if (page_category != undefined) {
+                document.getElementById("page-title-path").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + "/" + page_category + ".html'>" + titleCase(page_category.replace('-', ' ').replace('.html', '')) + "</a>";
+              }
+
               if (f.content_source != undefined){
-                document.getElementById("page-title-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > <a target='blank' href='" + f.content_source + "'>" + titleCase(page_title.replace('-', ' ').replace('.html', '')) + " (source)</a>";
+                document.getElementById("page-title-path").innerHTML += " > <a target='blank' href='" + f.content_source + "'>" + titleCase(page_title.replace('-', ' ').replace('.html', '')) + " (source)</a>";
               } else {
-                document.getElementById("page-title-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > " + titleCase(page_title.replace('-', ' ').replace('.html', ''));
+                document.getElementById("page-title-path").innerHTML += " > " + titleCase(page_title.replace('-', ' ').replace('.html', ''));
               }
 
               // // If Title Library Exists

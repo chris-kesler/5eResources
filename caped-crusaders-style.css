@@ -229,7 +229,7 @@ body, #page-title-table tr th, #page-title-table th, #page-title-table tr td, #p
 
   padding: 10px;
 
-  visibility: hidden;
+  visibility: visible;
 
   height: auto;
   border: 5px solid rgb(100,100,100);
