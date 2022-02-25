@@ -206,12 +206,12 @@
 
                     // Table Row(s) #5-n:  Attribute Details
                     for (var z = 0; f.attribute_library.length > z; z++) {
-                      if (f.attribute_library[z].category != undefined && f.attribute_library[z].data != undefined) {
-                        var table_row = "<tr><th colspan='2'>" + f.attribute_library[z].category + "</th></tr>";
+                      if (f.attribute_library[z].heading != undefined && f.attribute_library[z].sublibrary != undefined) {
+                        var table_row = "<tr><th colspan='2'>" + f.attribute_library[z].heading + "</th></tr>";
                         $(table_row).appendTo("#page-attributes-table tbody");
-                        for (var y = 0; f.attribute_library[z].data.length > y; y++) {
-                          if (f.attribute_library[z].data[y].heading != undefined && f.attribute_library[z].data[y].content != undefined) {
-                            var table_row = "<tr><td>" + f.attribute_library[z].data[y].heading + "</td><td>" + f.attribute_library[z].data[y].content + "</td></tr>";
+                        for (var y = 0; f.attribute_library[z].sublibrary.length > y; y++) {
+                          if (f.attribute_library[z].sublibrary[y].subheading != undefined && f.attribute_library[z].sublibrary[y].subcontent != undefined) {
+                            var table_row = "<tr><td>" + f.attribute_library[z].sublibrary[y].subheading + "</td><td>" + f.attribute_library[z].sublibrary[y].subcontent + "</td></tr>";
                             $(table_row).appendTo("#page-attributes-table tbody");
                           }
                         }
