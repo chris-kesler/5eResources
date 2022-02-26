@@ -7,211 +7,315 @@
     <title>KnowOne's Website of Everything</title>
     <link rel="icon" href="/resources/images/OwlOfMinerva_ModifiedLogo.png">
     <link rel="stylesheet" href="/caped-crusaders-style.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+
+      // A function that capitalizes the first letter of each word in a string
+      function titleCase(str) {
+        var split_string = str.toLowerCase().split(' ');
+        for (var i = 0; i < split_string.length; i++) {
+          split_string[i] = split_string[i].charAt(0).toUpperCase() + split_string[i].substring(1);     
+        }
+        return split_string.join(' '); 
+      }
+
+      // The function that Hides and Shows the Navlist
+      function hideShowNavList() {
+        var hidden = '0px';
+        var shown = '280px';
+
+        // If the NAVLIST is already shown (which it will not be by default upon loading the page)
+        if (document.getElementById('page-navlist-button').style.marginRight.includes(shown)) {
+
+          // Set NAVLIST margins to the right and update button characters 
+          document.getElementById('page-navlist-button').style.marginRight = hidden;
+          document.getElementById('page-navlist-section').style.marginRight = '-280px';
+          document.getElementById('page-navlist-button').innerHTML = '&#60; &#60;';
+
+          // Animate NAVLIST elements from their Shown position to their recently updated Hidden position
+          document.getElementById("page-navlist-section").animate([
+            { transform: 'translateX(-280px)' },
+            { transform: 'translateX(0px)' }
+          ], {
+            duration: 750,
+            iterations: 1
+          });
+          document.getElementById("page-navlist-button").animate([
+            { transform: 'translateX(-280px)' },
+            { transform: 'translateX(0px)' }
+          ], {
+            duration: 750,
+            iterations: 1
+          });
+        } else {
+
+          // Set NAVLIST margins to the lefft and update button characters
+          document.getElementById('page-navlist-button').style.marginRight = shown;
+          document.getElementById('page-navlist-section').style.marginRight = '0px';
+          document.getElementById('page-navlist-button').innerHTML = '&#62; &#62;';
+
+          // Animate NAVLIST elements from their Hidden position to their recently updated Shown position
+          document.getElementById("page-navlist-section").animate([
+            { transform: 'translateX(280px)' },
+            { transform: 'translateX(0px)' }
+          ], {
+            duration: 750,
+            iterations: 1
+          });
+          document.getElementById("page-navlist-button").animate([
+            { transform: 'translateX(280px)' },
+            { transform: 'translateX(0px)' }
+          ], {
+            duration: 750,
+            iterations: 1
+          });
+        }
+      }
+
+
+      // The function that populates all page data into preset elements
+      $(function populatePageData() {
+
+
+    // =========================================================================================
+    // Populating the page HEADER
+    // 
+    // The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
+    // =========================================================================================
+        $("#import-header").load("/resources/pages/import-header.html");
+
+
+    // =========================================================================================
+    // Populating the page TITLE
+    // 
+    // The page TITLE can include a table of details for spells or monster statblocks
+    // If title_library does not have a table_row library, the table of details is hidden and only the TITLE path is populated
+    // =========================================================================================
+        
+        // Reading the name of this file
+        var page_array = window.location.pathname.split("/");
+        var page_array_length = page_array.length;
+
+        if (page_array.length == 5) {
+          var page_title = page_array.pop();
+          var page_category = page_array.pop();
+          var page_directory = page_array.pop();
+          var page_subsite = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 4) {
+          var page_title = page_array.pop();
+          var page_directory = page_array.pop();
+          var page_subsite = page_array.pop();
+          var page_site = page_array.pop();
+        }
+
+        document.getElementById("page-title-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > </a><a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a>";
+        if (page_category != undefined) {
+          document.getElementById("page-title-path").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + "/" + page_category + ".html'>" + titleCase(page_category.replace('-', ' ').replace('.html', '')) + "</a>";
+        }
+        document.getElementById("page-title-path").innerHTML += " > " + titleCase(page_title.replace('-', ' ').replace('.html', ''));
+
+      });
+    </script>
+  </head>
+  
+
 
 
   <body>
-    <div id="page-background-div"> 
-      <div class="common-page-header">
-        <div id="import-header"></div>
+    <!-- 
+      A div for the page BACKGROUND -->
+    <div id="page-background-div">
+      <!-- 
+        A div for the page HEADER -->
+      <div id="import-header"></div>
+      <!-- 
+        A section for the page CONTENT -->
+      <section class="page-content-section">
+        <!-- 
+          A table for the page TITLE -->
+        <table id="page-title-table"><thead><tr><td colspan="6"><h2 id="page-title-path"></h2></td></tr></thead><tbody></tbody></table>
 
-          <h1>Myrmidos Wiki:  Dragons</h1>
-          <hr>
-      </div>
-        
-      
-      <div class="common-page-content-section-transparent">
+        <table class="directory-page-nav-button-table">
           
+          <!-- Primal Dragons -->
+          <tr><td>
+            <center><h2 style="color: antiquewhite;">Primal Dragons</h2></center>
+          </td></tr>
 
+          <tr><td>
+            <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/azure-dragon.html'">Azure Dragon</button>
+          </td></tr>
+          <tr><td>
+            <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/crimson-dragon.html'">Crimson Dragon</button>
+          </td></tr>
+          <tr><td>
+            <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/gemstone-dragon.html'">Gemstone Dragon</button>
+          </td></tr>
+          <tr><td>
+            <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/turquoise-dragon.html'">Turquoise Dragon</button>
+          </td></tr>
 
+          <!-- Quasiprimal Dragons -->
+          <tr><td>
+            <center><h2 style="color: antiquewhite;">Quasiprimal Dragons</h2></center>
+          </td></tr>
 
+          <tr><td>
+            <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/alabaster-dragon.html'">Alabaster Dragon</button>
+          </td></tr>
+          <tr><td>
+            <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/umbral-dragon.html'">Umbral Dragon</button>
+          </td></tr>
+          <tr><td>
+            <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/stygian-dragon.html'">Stygian Dragon</button>
+          </td></tr>
+          <tr><td>
+            <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/viridian-dragon.html'">Viridian Dragon</button>
+          </td></tr>
 
-            <section class="page-content-section">           
-              <button id="common-page-back-button" onclick="location.href='../creatures.html'">Out to Creatures</button>
-              <h2>Overview</h2>
-              <hr>
+          <!-- Metallic Dragons -->
+          <tr><td>
+            <center><h2 style="color: antiquewhite;">Metallic Dragons</h2></center>
+          </td></tr>
 
-              <table class="directory-page-nav-button-table">
-                
-                <!-- Primal Dragons -->
-                <tr><td>
-                  <center><h2 style="color: antiquewhite;">Primal Dragons</h2></center>
-                </td></tr>
+          <tr><td>
+            <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/cobalt-dragon.html'">Cobalt Dragon</button>
+          </td></tr>
+          <tr><td>
+            <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/gold-dragon.html'">Gold Dragon</button>
+          </td></tr>
+          <tr><td>
+            <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/copper-dragon.html'">Copper Dragon</button>
+          </td></tr>
+          <tr><td>
+            <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/bronze-dragon.html'">Bronze Dragon</button>
+          </td></tr>
+          <tr><td>
+            <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/silver-dragon.html'">Silver Dragon</button>
+          </td></tr>
+          <tr><td>
+            <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/brass-dragon.html'">Brass Dragon</button>
+          </td></tr>
 
-                <tr><td>
-                  <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/azure-dragon.html'">Azure Dragon</button>
-                </td></tr>
-                <tr><td>
-                  <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/crimson-dragon.html'">Crimson Dragon</button>
-                </td></tr>
-                <tr><td>
-                  <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/gemstone-dragon.html'">Gemstone Dragon</button>
-                </td></tr>
-                <tr><td>
-                  <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/turquoise-dragon.html'">Turquoise Dragon</button>
-                </td></tr>
+          <!-- Spirit Dragons -->
+          <tr><td>
+            <center><h2 style="color: antiquewhite;">Spirit Dragons</h2></center>
+          </td></tr>
 
-                <!-- Quasiprimal Dragons -->
-                <tr><td>
-                  <center><h2 style="color: antiquewhite;">Quasiprimal Dragons</h2></center>
-                </td></tr>
+          <tr><td>
+            <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/dracowisp.html'">Dracowisp</button>
+          </td></tr>
+          <tr><td>
+            <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/dracoshade.html'">Dracoshade</button>
+          </td></tr>
+          <tr><td>
+            <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/dracofiend.html'">Dracofiend</button>
+          </td></tr>
+          <tr><td>
+            <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/dracofey.html'">Dracofey</button>
+          </td></tr>              
 
-                <tr><td>
-                  <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/alabaster-dragon.html'">Alabaster Dragon</button>
-                </td></tr>
-                <tr><td>
-                  <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/umbral-dragon.html'">Umbral Dragon</button>
-                </td></tr>
-                <tr><td>
-                  <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/stygian-dragon.html'">Stygian Dragon</button>
-                </td></tr>
-                <tr><td>
-                  <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/viridian-dragon.html'">Viridian Dragon</button>
-                </td></tr>
+          <!-- Draconids -->
+          <tr><td>
+            <center><h2 style="color: antiquewhite;">Draconids</h2></center>
+          </td></tr>
 
-                <!-- Metallic Dragons -->
-                <tr><td>
-                  <center><h2 style="color: antiquewhite;">Metallic Dragons</h2></center>
-                </td></tr>
+          <tr><td>
+            <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/drake.html'">Drake</button>
+          </td></tr>
+          <tr><td>
+            <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/wyvern.html'">Wyvern</button>
+          </td></tr>
+          <tr><td>
+            <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/sea-serpent.html'">Sea Serpent</button>
+          </td></tr>
+          <tr><td>
+            <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/drakken.html'">Drakken</button>
+          </td></tr>
+          
+        </table>
 
-                <tr><td>
-                  <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/cobalt-dragon.html'">Cobalt Dragon</button>
-                </td></tr>
-                <tr><td>
-                  <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/gold-dragon.html'">Gold Dragon</button>
-                </td></tr>
-                <tr><td>
-                  <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/copper-dragon.html'">Copper Dragon</button>
-                </td></tr>
-                <tr><td>
-                  <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/bronze-dragon.html'">Bronze Dragon</button>
-                </td></tr>
-                <tr><td>
-                  <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/silver-dragon.html'">Silver Dragon</button>
-                </td></tr>
-                <tr><td>
-                  <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/brass-dragon.html'">Brass Dragon</button>
-                </td></tr>
+        <p>
+          There are a great many species of dragons, falling into several categories.  The five major types of Dragons are Primal Dragons, Quasiprimal Dragons, Metallic Dragons, Spirit Dragons, and Draconids.
+          <br><br>
+          The first dragon was a Titan of the Material Plane, and sought to feed on the energy of the other Planescapes and their Titans.  This fifth Titan was unlike the others in that it reproduced asexually, and in astounding numbers.  However, each of this Titan's offspring were widely varied in size, with some nearing a third of their parent's colossal proportions, and others never exceeding that of a riding horse.  All the dragon offspring served the dragon Titan much like bees serve their queen.  They had no choice; they were forced to assist in the attack on the other Planescapes led by the dragon Titan.  Thus began the First Dragon War.  
+          <br><br>
+          The four Primal Titans fought side by side to destroy this dragon, slaying as many of her children as possible along the way.  All the dragons of notable size were destroyed, but many many smaller and even medium sized dragons were able to scurry away.  Thus ended the First Dragon War.  
+          <br><br>
+          These swarms of surviving dragon offspring scattered to the corners of every plane seeking refuge.  Few remained on the Material Plane, as the stench of their dead mother still affected them in a negative way.  Those that did stay became the Draconids as they devolved into Wyverns and Drakes; reduced to four limbs, devoid of breath weapons, and behaving as little more than fearsome beasts.  
+          <br><br>
+          However, the dragons that sought refuge in the elemental Planescapes had a very different fate in store for them.  They were able to adapt and survive, absorbing the energy of the plane they reside on over many thousands of years.  This is how the Primal and Quasiprimal dragons came to be.
+          <br><br>
+          The Primal Dragons:
+        </p>
 
-                <!-- Spirit Dragons -->
-                <tr><td>
-                  <center><h2 style="color: antiquewhite;">Spirit Dragons</h2></center>
-                </td></tr>
+        <ul>
+          <li>The Azure dragons hail from the plane of Air.</li>
+          <li>The Crimson dragons hail from the plane of Fire.</li>
+          <li>The Gemstone dragons hail from the plane of Earth.</li>
+          <li>The Turquoise dragons hail from the plane of Water.</li>
+        </ul>
+          
+        <p>
+          The Quasiprimal Dragons:
+        </p>
 
-                <tr><td>
-                  <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/dracowisp.html'">Dracowisp</button>
-                </td></tr>
-                <tr><td>
-                  <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/dracoshade.html'">Dracoshade</button>
-                </td></tr>
-                <tr><td>
-                  <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/dracofiend.html'">Dracofiend</button>
-                </td></tr>
-                <tr><td>
-                  <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/dracofey.html'">Dracofey</button>
-                </td></tr>              
+        <ul>
+          <li>The Alabaster dragons hail from the plane of Ice.</li>
+          <li>The Umbral dragons hail from the plane of Ash.</li>
+          <li>The Stygian dragons hail from the plane of Magma.</li>
+          <li>The Viridian dragons hail from the plane of Ooze.</li>
+        </ul>
 
-                <!-- Draconids -->
-                <tr><td>
-                  <center><h2 style="color: antiquewhite;">Draconids</h2></center>
-                </td></tr>
+        <p>
+          The stench of the dead dragon Titan still lingered, making dragons hesitant to return to the material plane.  The Creator Race and Genies had always managed to keep extraplanar threats at bay.  After the Genies slaughtered the Creator Race and were confined to vessels during The Binding, lesser mortals were created and began wandering the material plane.  After several centuries, they were still squabbling in tribes over territory and hunting with primitve tools.  The dragons learned that these new creatures were not nearly the same as the Creator Race they had encountered in ages past.  They saw an opportunity to return to the Material Plane, and to exert their dominion over lesser beings.  They quickly enslaved as many mortals as each individually could manage, which was a great number for some of the eldest beings.  Mortalkind was plunged into one of their darkest eras.  
+          <br><br>
 
-                <tr><td>
-                  <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/drake.html'">Drake</button>
-                </td></tr>
-                <tr><td>
-                  <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/wyvern.html'">Wyvern</button>
-                </td></tr>
-                <tr><td>
-                  <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/sea-serpent.html'">Sea Serpent</button>
-                </td></tr>
-                <tr><td>
-                  <button class="directory-page-nav-button-to-entry-page" onclick="location.href='dragons/drakken.html'">Drakken</button>
-                </td></tr>
-                
-              </table>
+          Over time, Gondarin noticed that the dragons had become distinctly adapted to their planar homes.  Ever seeking a new form of expression, Gondarin welcomed several of the Stygians that roamed his home plane.  He offered them a regality they could not refuse, and so they underwent the gilding process.  This reformed both their bodies and souls, reinforcing their scales with metal and seeding an ethical conscience.  In return for this gift, Gondarin asked that these new Brass dragons seek out specimens of other varieties and bring them to him.  They succeeded in converting a significant portion of the dragons in Vulken, Ignar, and Terral.  There were still far more of the original variety, but the new Metallics had the ability to work together and coordinate their efforts.  Eventually, Gondarin moved on to other projects, but the Metallic dragons carried on.  They set out to end the inescapable tyranny their kin imposed on mortalkind, beginning the Second Dragon War.  
+          <br><br>
 
-              <p>
-                There are a great many species of dragons, falling into several categories.  The five major types of Dragons are Primal Dragons, Quasiprimal Dragons, Metallic Dragons, Spirit Dragons, and Draconids.
-                <br><br>
-                The first dragon was a Titan of the Material Plane, and sought to feed on the energy of the other Planescapes and their Titans.  This fifth Titan was unlike the others in that it reproduced asexually, and in astounding numbers.  However, each of this Titan's offspring were widely varied in size, with some nearing a third of their parent's colossal proportions, and others never exceeding that of a riding horse.  All the dragon offspring served the dragon Titan much like bees serve their queen.  They had no choice; they were forced to assist in the attack on the other Planescapes led by the dragon Titan.  Thus began the First Dragon War.  
-                <br><br>
-                The four Primal Titans fought side by side to destroy this dragon, slaying as many of her children as possible along the way.  All the dragons of notable size were destroyed, but many many smaller and even medium sized dragons were able to scurry away.  Thus ended the First Dragon War.  
-                <br><br>
-                These swarms of surviving dragon offspring scattered to the corners of every plane seeking refuge.  Few remained on the Material Plane, as the stench of their dead mother still affected them in a negative way.  Those that did stay became the Draconids as they devolved into Wyverns and Drakes; reduced to four limbs, devoid of breath weapons, and behaving as little more than fearsome beasts.  
-                <br><br>
-                However, the dragons that sought refuge in the elemental Planescapes had a very different fate in store for them.  They were able to adapt and survive, absorbing the energy of the plane they reside on over many thousands of years.  This is how the Primal and Quasiprimal dragons came to be.
-                <br><br>
-                The Primal Dragons:
-              </p>
+          Frydeia took notice of Gondarin's creations, being impressed at how much balance he had brought to such a brutal and self centered race by going against the grain of conventionality.  The Dragon War was not going well for the Metallics, with their coordinated advantage being negated by the dragons of opposing elements.  Frydeia sought to rectify this by reaching out to Gondarin and proposing a collaborative project.  Setting their differences aside, they gathered specimens and gilded more dragons of all varieties except Umbral and Viridian.  Sebabos and Deliklese made it clear they wanted no part in the Dragon War, and that any related conflict on their territory would be met with swift retribution.  As a result, many of the Umbral and Viridian dragons sat the conflict out.  Together, Frydeia and Gondarin bolstered the Metallic dragons' ranks, both with sheer number and new species that could directly face their elemental counterparts.  
+          <br><br>
 
-              <ul>
-                <li>The Azure dragons hail from the plane of Air.</li>
-                <li>The Crimson dragons hail from the plane of Fire.</li>
-                <li>The Gemstone dragons hail from the plane of Earth.</li>
-                <li>The Turquoise dragons hail from the plane of Water.</li>
-              </ul>
-                
-              <p>
-                The Quasiprimal Dragons:
-              </p>
+          The Metallic Dragons:
+        </p>
 
-              <ul>
-                <li>The Alabaster dragons hail from the plane of Ice.</li>
-                <li>The Umbral dragons hail from the plane of Ash.</li>
-                <li>The Stygian dragons hail from the plane of Magma.</li>
-                <li>The Viridian dragons hail from the plane of Ooze.</li>
-              </ul>
+        <ul>
+          <li>The Gold dragons were originally Crimson dragons from the plane of Fire.</li>
+          <li>The Brass dragons were originally Stygian dragons from the plane of Magma.</li>
+          <li>The Copper dragons were originally Gemstone dragons from the plane of Earth.</li>
+          <li>The Silver dragons were originally Alabaster dragons from the plane of Ice.</li>
+          <li>The Bronze dragons were originally Turquoise dragons from the plane of Water.</li>
+          <li>The Cobalt dragons were originally Azure dragons from the plane of Air.</li>
+        </ul>
 
-              <p>
-                The stench of the dead dragon Titan still lingered, making dragons hesitant to return to the material plane.  The Creator Race and Genies had always managed to keep extraplanar threats at bay.  After the Genies slaughtered the Creator Race and were confined to vessels during The Binding, lesser mortals were created and began wandering the material plane.  After several centuries, they were still squabbling in tribes over territory and hunting with primitve tools.  The dragons learned that these new creatures were not nearly the same as the Creator Race they had encountered in ages past.  They saw an opportunity to return to the Material Plane, and to exert their dominion over lesser beings.  They quickly enslaved as many mortals as each individually could manage, which was a great number for some of the eldest beings.  Mortalkind was plunged into one of their darkest eras.  
-                <br><br>
+        <p>
+          There are Metallic dragons for all Planescapes except the Feywilds and Shadowfell. Instead of joining Gondarin and Frydeia, Deliklese and Sebabos granted a modicum of their power to one select dragon each within their domains, transforming them into Spirit Dragons. Deliklese created the Dracofey, and Sebabos created the Dracoshade. These creatures served as zealous and stalwart protectors of their domains to keep the Second Dragon War outside their respective Planescapes.
 
-                Over time, Gondarin noticed that the dragons had become distinctly adapted to their planar homes.  Ever seeking a new form of expression, Gondarin welcomed several of the Stygians that roamed his home plane.  He offered them a regality they could not refuse, and so they underwent the gilding process.  This reformed both their bodies and souls, reinforcing their scales with metal and seeding an ethical conscience.  In return for this gift, Gondarin asked that these new Brass dragons seek out specimens of other varieties and bring them to him.  They succeeded in converting a significant portion of the dragons in Vulken, Ignar, and Terral.  There were still far more of the original variety, but the new Metallics had the ability to work together and coordinate their efforts.  Eventually, Gondarin moved on to other projects, but the Metallic dragons carried on.  They set out to end the inescapable tyranny their kin imposed on mortalkind, beginning the Second Dragon War.  
-                <br><br>
+          <br><br>
+          The Second Dragon War was long and trying, but the bulk of the conflict occured within a short period.  After the Primal and Quasiprimal dragons realized that opposing the Metallics on a massive scale was folly, they retreated to guard their individual territories.  There were isolated conflicts and developments, often spaced out over years.  Only after several mortal kingdoms were established and maintained for roughly a century did the uncertainty and conflict quell enough to warrant an official end to the Second Dragon War.  
 
-                Frydeia took notice of Gondarin's creations, being impressed at how much balance he had brought to such a brutal and self centered race by going against the grain of conventionality.  The Dragon War was not going well for the Metallics, with their coordinated advantage being negated by the dragons of opposing elements.  Frydeia sought to rectify this by reaching out to Gondarin and proposing a collaborative project.  Setting their differences aside, they gathered specimens and gilded more dragons of all varieties except Umbral and Viridian.  Sebabos and Deliklese made it clear they wanted no part in the Dragon War, and that any related conflict on their territory would be met with swift retribution.  As a result, many of the Umbral and Viridian dragons sat the conflict out.  Together, Frydeia and Gondarin bolstered the Metallic dragons' ranks, both with sheer number and new species that could directly face their elemental counterparts.  
-                <br><br>
+          <br><br>
+          After the Second Dragon War, Gondarin and Frydeia took after their siblings by creating Spirit Dragons of their own. The Dracofiend and the Dracowisp were born, becoming the new Lesser Deities.  There may only be one Spirit Dragon and egg of each variety at any given time, with the egg only hatching upon the parent's death.  The Spirit Dragons serve their deity when called upon, but are largely left to their own devices.  They each have temples in the Material Plane where mortals can wake them from their slumber through ritual and seek their audience.
 
-                The Metallic Dragons:
-              </p>
+          <br><br>
+          The Spirit Dragons:
+        </p>
+        
+        <ul>
+          <li>The Dracowisp was originally an Silver dragon from the plane of Ice.</li>
+          <li>The Dracoshade was originally a Umbral dragon from the plane of Ash.</li>
+          <li>The Dracofiend was originally a Gold dragon from the plane of Magma.</li>
+          <li>The Dracofey was originally a Viridian dragon from the plane of Ooze.</li>
+        </ul>
 
-              <ul>
-                <li>The Gold dragons were originally Crimson dragons from the plane of Fire.</li>
-                <li>The Brass dragons were originally Stygian dragons from the plane of Magma.</li>
-                <li>The Copper dragons were originally Gemstone dragons from the plane of Earth.</li>
-                <li>The Silver dragons were originally Alabaster dragons from the plane of Ice.</li>
-                <li>The Bronze dragons were originally Turquoise dragons from the plane of Water.</li>
-                <li>The Cobalt dragons were originally Azure dragons from the plane of Air.</li>
-              </ul>
-
-              <p>
-                There are Metallic dragons for all Planescapes except the Feywilds and Shadowfell. Instead of joining Gondarin and Frydeia, Deliklese and Sebabos granted a modicum of their power to one select dragon each within their domains, transforming them into Spirit Dragons. Deliklese created the Dracofey, and Sebabos created the Dracoshade. These creatures served as zealous and stalwart protectors of their domains to keep the Second Dragon War outside their respective Planescapes.
-
-                <br><br>
-                The Second Dragon War was long and trying, but the bulk of the conflict occured within a short period.  After the Primal and Quasiprimal dragons realized that opposing the Metallics on a massive scale was folly, they retreated to guard their individual territories.  There were isolated conflicts and developments, often spaced out over years.  Only after several mortal kingdoms were established and maintained for roughly a century did the uncertainty and conflict quell enough to warrant an official end to the Second Dragon War.  
-
-                <br><br>
-                After the Second Dragon War, Gondarin and Frydeia took after their siblings by creating Spirit Dragons of their own. The Dracofiend and the Dracowisp were born, becoming the new Lesser Deities.  There may only be one Spirit Dragon and egg of each variety at any given time, with the egg only hatching upon the parent's death.  The Spirit Dragons serve their deity when called upon, but are largely left to their own devices.  They each have temples in the Material Plane where mortals can wake them from their slumber through ritual and seek their audience.
-
-                <br><br>
-                The Spirit Dragons:
-              </p>
-              <ul>
-                <li>The Dracowisp was originally an Silver dragon from the plane of Ice.</li>
-                <li>The Dracoshade was originally a Umbral dragon from the plane of Ash.</li>
-                <li>The Dracofiend was originally a Gold dragon from the plane of Magma.</li>
-                <li>The Dracofey was originally a Viridian dragon from the plane of Ooze.</li>
-              </ul>
-
-              <p>
-                And so, the dragons as we know them came to be.  
-              </p>
-            </section>
-            
-
-      </div>
-
+        <p>
+          And so, the dragons as we know them came to be.  
+        </p>
+      </section>
+      <!-- 
+        A div for the page FOOTER -->
       <footer id="import-footer"></footer>
     </div>
   </body>
@@ -223,5 +327,5 @@
     $("#import-header").load("/resources/pages/import-header.html");
     $("#import-footer").load("/resources/pages/import-footer.html");
 
-});
+  });
 </script>

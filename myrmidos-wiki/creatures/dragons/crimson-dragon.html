@@ -131,7 +131,7 @@
                 document.getElementById("page-title-path").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + "/" + page_category + ".html'>" + titleCase(page_category.replace('-', ' ').replace('.html', '')) + "</a>";
               }
 
-              if (f.content_source != undefined){
+              if (f.content_source != undefined && f.content_source !== ""){
                 document.getElementById("page-title-path").innerHTML += " > <a target='blank' href='" + f.content_source + "'>" + titleCase(page_title.replace('-', ' ').replace('.html', '')) + " (source)</a>";
               } else {
                 document.getElementById("page-title-path").innerHTML += " > " + titleCase(page_title.replace('-', ' ').replace('.html', ''));
@@ -144,7 +144,7 @@
                     var table_row1 = "<tr>";
                     var table_row2 = "<tr>";
                     for (var y = 0; f.title_library[x].table_row.length > y; y++) {
-                      if (f.title_library[x].table_row[y].heading != undefined && f.title_library[x].table_row[y].content != undefined) {
+                      if (f.title_library[x].table_row[y].heading != undefined && f.title_library[x].table_row[y].content != undefined && f.title_library[x].table_row[y].heading !== "" && f.title_library[x].table_row[y].content !== "") {
                         table_row1 += "<th style='width: 15vw'>" + f.title_library[x].table_row[y].heading + "</th>";
                         table_row2 += "<td style='width: 15vw'>" + f.title_library[x].table_row[y].content + "</td>";
                       }
@@ -171,16 +171,16 @@
                 if (f.attribute_library[0] != undefined) {
                   
                   // Table Row #1:  Rehosted Art
-                  if (f.attribute_library[0].img_rehosted === "" || f.attribute_library[0].img_rehosted_source === "") {
-                    var table_row = "<tr><th colspan='2'><img id='page-attributes-table-image' alt='" + f.entry_name + "' target='blank' src='/resources/images/WikiPlaceholder.png' onclick='window.open(this.src)'></th></tr>";
-                  } else {
+                  if (f.attribute_library[0].img_rehosted != undefined && f.attribute_library[0].img_rehosted_source != undefined && f.attribute_library[0].img_rehosted !== "" && f.attribute_library[0].img_rehosted_source !== "") {
                     var table_row = "<tr><th colspan='2'><img id='page-attributes-table-image' alt='" + f.entry_name + "' target='blank' src='" + f.attribute_library[0].img_rehosted + "' onclick='window.open(`" + f.attribute_library[0].img_rehosted_source + "`)' style='display:block'></th></tr>";
+                  } else {
+                    var table_row = "<tr><th colspan='2'><img id='page-attributes-table-image' alt='" + f.entry_name + "' target='blank' src='/resources/images/WikiPlaceholder.png' onclick='window.open(this.src)'></th></tr>";
                   }
                   $(table_row).appendTo("#page-attributes-table tbody");
                   
 
                   // Table Row #2:  Linked Art
-                  if (f.attribute_library[0].img_linked != undefined && f.attribute_library[0].img_linked_source != undefined) { 
+                  if (f.attribute_library[0].img_linked != undefined && f.attribute_library[0].img_linked_source != undefined && f.attribute_library[0].img_linked !== "" && f.attribute_library[0].img_linked_source !== "") { 
                     var table_row = "<tr><th colspan='2'><i><a href='" + f.attribute_library[0].img_linked + "' target='_blank'>Additional Art</a> and <a href='" + f.attribute_library[0].img_linked_source + "' target='blank'>(source)</a></i></th></tr>";
                   } else {
                     var table_row = "<tr><th colspan='2'><i>No Additional Art Available</a></i></th></tr>";
@@ -196,7 +196,7 @@
                     $(table_row).appendTo("#page-attributes-table tbody");
 
                     // Table Row #4:  Species 
-                    if (f.attribute_library[0].species != undefined) {
+                    if (f.attribute_library[0].species != undefined && f.attribute_library[0].species !== "") {
                       var table_row = "<tr><th colspan='2'>(" + f.attribute_library[0].species + ")</th></tr>";
                     } else {
                       var table_row = "<tr><th colspan='2'>(Unknown Species)</th></tr>";
@@ -206,11 +206,11 @@
 
                     // Table Row(s) #5-n:  Attribute Details
                     for (var z = 0; f.attribute_library.length > z; z++) {
-                      if (f.attribute_library[z].heading != undefined && f.attribute_library[z].sublibrary != undefined) {
+                      if (f.attribute_library[z].heading != undefined && f.attribute_library[z].sublibrary !== "") {
                         var table_row = "<tr><th colspan='2'>" + f.attribute_library[z].heading + "</th></tr>";
                         $(table_row).appendTo("#page-attributes-table tbody");
                         for (var y = 0; f.attribute_library[z].sublibrary.length > y; y++) {
-                          if (f.attribute_library[z].sublibrary[y].subheading != undefined && f.attribute_library[z].sublibrary[y].subcontent != undefined) {
+                          if (f.attribute_library[z].sublibrary[y].subheading != undefined && f.attribute_library[z].sublibrary[y].subcontent != undefined && f.attribute_library[z].sublibrary[y].subheading !== "" && f.attribute_library[z].sublibrary[y].subcontent !== "") {
                             var table_row = "<tr><td>" + f.attribute_library[z].sublibrary[y].subheading + "</td><td>" + f.attribute_library[z].sublibrary[y].subcontent + "</td></tr>";
                             $(table_row).appendTo("#page-attributes-table tbody");
                           }
@@ -253,15 +253,28 @@
               if (f.description_library != undefined) {
 
                 // Populating Description Overview underneath title table with no heading
-                if (f.description_library[0].overview != undefined) {
+                if (f.description_library[0].overview != undefined && f.description_library[0].overview !== "") {
                   document.getElementById("page-description-div").innerHTML = "<p>" + f.description_library[0].overview + "</p>";
                 }
 
                 // Looping through all Library entries
                 for (var x = 0; f.description_library.length > x; x++) {
 
+                  // Determining if Heading should be shown
+                  if (f.description_library[x].content != undefined && f.description_library[x].content !== "") {
+                    var showHeading = true;
+                  } else if (f.description_library[x].sublibrary != undefined) {
+                    for (var w = 0; f.description_library[x].sublibrary.length > w; w++) {
+                      if (f.description_library[x].sublibrary[w].subheading != undefined && f.description_library[x].sublibrary[w].subcontent != undefined && f.description_library[x].sublibrary[w].subheading !== "" && f.description_library[x].sublibrary[w].subcontent !== "") {
+                        var showHeading = true;
+                      }
+                    }
+                  } else {
+                    var showHeading = false;
+                  }
+
                   // Populating Heading
-                  if (f.description_library[x].heading != undefined) {
+                  if (f.description_library[x].heading != undefined && f.description_library[x].heading !== "" && showHeading) {
                     document.getElementById("page-description-div").innerHTML += "<div id='" + f.description_library[x].heading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h3>" + f.description_library[x].heading + "</h3></div>";
 
                     // Populating the page heading in the floating nav table
@@ -269,7 +282,7 @@
                     $(table_row).appendTo("#page-navlist-table tbody");
 
                     // Populating Heading Content
-                    if (f.description_library[x].content != undefined) {
+                    if (f.description_library[x].content != undefined && f.description_library[x].content !== "") {
                       document.getElementById("page-description-div").innerHTML += "<p>" + f.description_library[x].content + "</p>";
                     }
 
@@ -280,7 +293,7 @@
                       for (var w = 0; f.description_library[x].sublibrary.length > w; w++) {
 
                         // Populating Subheading and Subcontent
-                        if (f.description_library[x].sublibrary[w].subheading != undefined && f.description_library[x].sublibrary[w].subcontent != undefined) {
+                        if (f.description_library[x].sublibrary[w].subheading != undefined && f.description_library[x].sublibrary[w].subcontent != undefined && f.description_library[x].sublibrary[w].subheading !== "" && f.description_library[x].sublibrary[w].subcontent !== "") {
                           document.getElementById("page-description-div").innerHTML += "<div id='" + f.description_library[x].sublibrary[w].subheading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h4>&#8226;  " + f.description_library[x].sublibrary[w].subheading + "</h4></div><p>" + f.description_library[x].sublibrary[w].subcontent + "</p>";
 
                           // Populating the page heading in the floating nav table
