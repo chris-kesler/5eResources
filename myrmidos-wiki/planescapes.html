@@ -1,4 +1,273 @@
 <!DOCTYPE html>
+<!-- =========================================================================================
+  This is a DIRECTORY page.  It contains HEADER, BACKGROUND, CONTENT, and FOOTER elements that are standard across the site.
+  It also contains TITLE, PAGES, and DESCRIPTION elements that are unique and static as a DIRECTORY page.
+========================================================================================= -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-US-Compatible" content="e-edge">
+    <title>KnowOne's Website of Everything</title>
+    <link rel="icon" href="/resources/images/OwlOfMinerva_ModifiedLogo.png">
+    <link rel="stylesheet" href="/caped-crusaders-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+
+      // A function that capitalizes the first letter of each word in a string
+      function titleCase(str) {
+        var split_string = str.toLowerCase().split(' ');
+        for (var i = 0; i < split_string.length; i++) {
+          split_string[i] = split_string[i].charAt(0).toUpperCase() + split_string[i].substring(1);     
+        }
+        return split_string.join(' '); 
+      }
+
+
+      // The function that populates all page data into preset elements
+      $(function populatePageData() {
+
+
+// =========================================================================================
+// Populating the page HEADER
+// 
+// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
+// =========================================================================================
+        $("#import-header").load("/resources/pages/import-header.html");
+
+
+// =========================================================================================
+// Populating the page TITLE
+// 
+// The page TITLE can include a table of details for spells or monster statblocks
+// If title_library does not have a table_row library, the table of details is hidden and only the TITLE path is populated
+// =========================================================================================
+        
+        // Reading the name of this file
+        var page_array = window.location.pathname.split("/");
+        var page_array_length = page_array.length;
+
+        if (page_array.length == 5) {
+          var page_title = page_array.pop();
+          var page_category = page_array.pop();
+          var page_directory = page_array.pop();
+          var page_subsite = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 4) {
+          var page_title = page_array.pop();
+          var page_directory = page_array.pop();
+          var page_subsite = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 3) {
+          var page_title = page_array.pop();
+          var page_subsite = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 2) {
+          var page_title = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 1) {
+          var page_title = page_array.pop();
+        } 
+
+        var titleCompleted = false;
+        if (page_subsite != undefined) {
+          document.getElementById("page-title-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a>";
+        } else {
+          document.getElementById("page-title-path").innerHTML = titleCase(page_title.replace('-', ' ').replace('.html', ''));
+          titleCompleted = true;
+        }
+        if (page_directory != undefined && !titleCompleted) {
+          document.getElementById("page-title-path").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a>";
+        }
+        if (page_category != undefined && !titleCompleted) {
+          document.getElementById("page-title-path").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + "/" + page_category + ".html'>" + titleCase(page_category.replace('-', ' ').replace('.html', '')) + "</a>";
+        }
+        if (page_title != undefined && !titleCompleted) {
+          document.getElementById("page-title-path").innerHTML += " > " + titleCase(page_title.replace('-', ' ').replace('.html', ''));
+          titleCompleted = true;
+        }
+
+
+// =========================================================================================
+// Populating the page FOOTER
+// 
+// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
+// =========================================================================================
+      $("#import-footer").load("/resources/pages/import-footer.html");
+            });
+
+      // Filling button backgrounds
+      $(function readJSON() {
+  
+      // Reading the name of this file
+      var page = window.location.pathname.split("/").pop();
+
+      // Reading data from our JSON file
+      $.getJSON(`/myrmidos-wiki/planescapes.json`, function(data) {
+
+        var tableRow;
+        // Looping through the JSON data 
+        $.each(data.entries, function(i, f) {
+
+          if((f.planar_element.toLowerCase()) == 'ash') {
+            document.getElementById("nw").innerHTML = f.plane;
+            document.getElementById("nw").style.backgroundImage = "url('" + f.plane_img + "')";
+            document.getElementById("nw").onclick = function() {
+              window.location = "planescapes/" + f.plane.toLowerCase() + ".html";
+            }
+          }
+
+          if((f.planar_element.toLowerCase()) == 'air') {
+            document.getElementById("n").innerHTML = f.plane;
+            document.getElementById("n").style.backgroundImage = "url('" + f.plane_img + "')";
+            document.getElementById("n").onclick = function() {
+              window.location = "planescapes/" + f.plane.toLowerCase() + ".html";
+            }
+          } 
+
+          if((f.planar_element.toLowerCase()) == 'ice') {
+            document.getElementById("ne").innerHTML = f.plane;
+            document.getElementById("ne").style.backgroundImage = "url('" + f.plane_img + "')";
+            document.getElementById("ne").onclick = function() {
+              window.location = "planescapes/" + f.plane.toLowerCase() + ".html";
+            }
+          } 
+
+          if((f.planar_element.toLowerCase()) == 'fire') {
+            document.getElementById("w").innerHTML = f.plane;
+            document.getElementById("w").style.backgroundImage = "url('" + f.plane_img + "')";
+            document.getElementById("w").onclick = function() {
+              window.location = "planescapes/" + f.plane.toLowerCase() + ".html";
+            }
+          }
+          
+          if((f.planar_element.toLowerCase()) == 'material') {
+            document.getElementById("c").innerHTML = f.plane;
+            document.getElementById("c").style.backgroundImage = "url('" + f.plane_img + "')";
+            document.getElementById("c").onclick = function() {
+              window.location = "planescapes/" + f.plane.toLowerCase() + ".html";
+            }
+          } 
+
+          if((f.planar_element.toLowerCase()) == 'water') {
+            document.getElementById("e").innerHTML = f.plane;
+            document.getElementById("e").style.backgroundImage = "url('" + f.plane_img + "')";
+            document.getElementById("e").onclick = function() {
+              window.location = "planescapes/" + f.plane.toLowerCase() + ".html";
+            }
+          } 
+
+          if((f.planar_element.toLowerCase()) == 'magma') {
+            document.getElementById("sw").innerHTML = f.plane;
+            document.getElementById("sw").style.backgroundImage = "url('" + f.plane_img + "')";
+            document.getElementById("sw").onclick = function() {
+              window.location = "planescapes/" + f.plane.toLowerCase() + ".html";
+            }
+          } 
+          
+
+          if((f.planar_element.toLowerCase()) == 'earth') {
+            document.getElementById("s").innerHTML = f.plane;
+            document.getElementById("s").style.backgroundImage = "url('" + f.plane_img + "')";
+            document.getElementById("s").onclick = function() {
+              window.location = "planescapes/" + f.plane.toLowerCase() + ".html";
+            }
+          } 
+
+          if((f.planar_element.toLowerCase()) == 'ooze') {
+            document.getElementById("se").innerHTML = f.plane;
+            document.getElementById("se").style.backgroundImage = "url('" + f.plane_img + "')";
+            document.getElementById("se").onclick = function() {
+              window.location = "planescapes/" + f.plane.toLowerCase() + ".html";
+            }
+          } 
+
+        });
+      });
+    });
+    </script>
+  </head>  
+
+
+  <body>
+    <!-- 
+      A div for the page BACKGROUND -->
+    <div id="page-background-div">
+      <!-- 
+        A div for the page HEADER -->
+      <div id="import-header"></div>
+      <!-- 
+        A section for the page CONTENT -->
+      <section class="page-content-section">
+        <!-- 
+          A table for the page TITLE -->
+        <table id="page-title-table"><thead><tr><td colspan="6"><h2 id="page-title-path"></h2></td></tr></thead><tbody></tbody></table>   
+        <!-- 
+          A table for the PAGES -->
+        <table class="page-directory-table">
+          <tr><td>
+            <button class="directory-page-nav-button-to-directory-page" onclick="location.href='creatures/aberrations.html'">Aberrations</button>
+          </td></tr>
+          <tr><td>
+            <button class="directory-page-nav-button-to-directory-page" onclick="location.href='creatures/beasts.html'">Beasts</button>
+          </td></tr>
+          <tr><td>
+            <button class="directory-page-nav-button-to-directory-page" onclick="location.href='creatures/celestials.html'">Celestials</button>
+          </td></tr>
+          <tr><td>
+            <button class="directory-page-nav-button-to-directory-page" onclick="location.href='creatures/constructs.html'">Constructs</button>
+          </td></tr>
+          <tr><td>
+            <button class="directory-page-nav-button-to-directory-page" onclick="location.href='creatures/dragons.html'">Dragons</button>
+          </td></tr>
+          <tr><td>
+            <button class="directory-page-nav-button-to-directory-page" onclick="location.href='creatures/elementals.html'">Elementals</button>
+          </td></tr>
+          <tr><td>
+            <button class="directory-page-nav-button-to-directory-page" onclick="location.href='creatures/fey.html'">Fey</button>
+          </td></tr>
+          <tr><td>
+            <button class="directory-page-nav-button-to-directory-page" onclick="location.href='creatures/fiends.html'">Fiends</button>
+          </td></tr>
+          <tr><td>
+            <button class="directory-page-nav-button-to-directory-page" onclick="location.href='creatures/giants.html'">Giants</button>
+          </td></tr>
+          <tr><td>
+            <button class="directory-page-nav-button-to-directory-page" onclick="location.href='creatures/hybrids.html'">Hybrids</button>
+          </td></tr>
+          <tr><td>
+            <button class="directory-page-nav-button-to-directory-page" onclick="location.href='creatures/necrophages.html'">Necrophages</button>
+          </td></tr>
+          <tr><td>
+            <button class="directory-page-nav-button-to-directory-page" onclick="location.href='creatures/plants.html'">Plants</button>
+          </td></tr>
+        </table>
+        <!-- 
+          A div for the page DESCRIPTION -->
+        <div id="page-description-div">
+          <p>
+            You may have noticed that the creature types on this page are somewhat different than those seen in 5th Edition, and that is intentional.  
+            I find that classifying Humanoids as creatures is irksome, so they have been removed and left to be covered elsewhere in the wiki.  
+            Specific species such as Aarakocra are covered under Races, and generic individuals with given abilities have been covered under Factions.  
+            Given the very intertwined planar structure of my world, I have decided to classify Oozes as elementals.  
+            This may seem strange since there are a wide variety of Oozes that other Elementals do not have, but given the accelerated evolutionary pace of the Plane of Ooze, I think the variation makes a fair amount of sense.  
+            On top of that, there are only so many ways a Fire Elemental can manifest, making the difference much more understandable.  
+          </p>
+        </div>
+      </section>
+      <!-- 
+        A div for the page FOOTER -->
+      <footer id="import-footer"></footer>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
