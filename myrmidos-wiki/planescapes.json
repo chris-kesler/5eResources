@@ -1,7 +1,7 @@
 {
     "entries" : [
         {
-            "plane" : "Eifrost",
+            "entry_name" : "Eifrost",
             "planar_element" : "Ice",
 
             "plane_description" : "The Elemental Plane of Ice is positioned to the North of the Great Wheel cosmology, and is also known as Eifrost. It is strongly associated with domains relating to Knowledge and Order, and is considered to represent the Lawful Neutral alignment in its purest form. This plane is the source of all Divination magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  <br><br>Ice is associated with knowledge and law. It channels the school of divination in that ice and crystals represent clarity, and is the source of psionics.            ",
@@ -50,7 +50,7 @@
             "planar_time" : "Nominal"
         },
         {
-            "plane" : "Vulken",
+            "entry_name" : "Vulken",
             "planar_element" : "Magma",
 
             "plane_description" : "The Elemental Plane of Magma is positioned to the South of the Great Wheel cosmology, and is also known as Vulken. It is strongly associated with domains relating to Creation and Debauchery, and is considered to represent the Chaotic Neutral alignment in its purest form. This plane is the source of all Conjuration magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  <br><br>Magma is associated with creation and chaos. It channels the school of conjuration in that spontaneous creation and summoning are akin to Gondarin's daily endeavors.            ",
@@ -99,7 +99,7 @@
             "planar_time" : "Nominal"
         },
         {
-            "plane" : "Feywilds",
+            "entry_name" : "Feywilds",
             
             "plane_description" : "The Elemental Plane of Ooze is positioned to the West of the Great Wheel cosmology, and is also known as the Feywilds. It is strongly associated with domains relating to Life, Balance, and Death, and is considered to represent the Neutral Good alignment in its purest form. This plane is the source of all Necromancy magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school. The Plane of Ooze is adjacent to the Primal Planescapes of Water to the North and Earth to the West. The Plane of Ooze is complimentary to the Plane of Ash.  <br><br>Ooze is associated with life and purity. It channels the school of Necromancy in that it seeds life from death in a constant cycle.  ",
             "plane_img" : "https://upload.wikimedia.org/wikipedia/commons/5/58/Swamp_poratz.jpg",
@@ -144,7 +144,7 @@
             "associated_factions" : "NA"
         },
         {
-            "plane" : "Shadowfell",
+            "entry_name" : "Shadowfell",
             "planar_element" : "Ash",
             "plane_description" : "The Elemental Plane of Ash is positioned to the East of the Great Wheel cosmology, and is also known as the Shadowfell.  It is strongly associated with domains relating to Death and Undeath, and is considered to represent the Neutral Evil alignment in its purest form.  This plane is the source of all Enchantment magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  <br><br>Ash is associated with undeath and insanity. It channels Enchantment in that its environment induces deep hallucinations.  The creatures that hail from the Shadowfell embrace Enchantment in order to lure living things into their grasp, which they must feed on since they often are undead and do not have a stable life force of their own.  ",
             "plane_img" : "https://upload.wikimedia.org/wikipedia/commons/c/cb/Photograph_from_a_commercial_flight_showing_a_pyrocumulonimbus_cloud.jpg",
@@ -188,51 +188,94 @@
             "planar_time" : "Nominal"
         },
         {
-            "plane" : "Caelar",
-            "planar_element" : "Air",
-            "plane_description" : "The Elemental Plane of Air is positioned to the Northeast of the Great Wheel cosmology.  It is strongly associated with domains relating to Knowledge and Wrath, and is considered to represent the Neutral alignment in its purest form.  This plane is the source of all Illusion magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  ",
-            "plane_img" : "https://upload.wikimedia.org/wikipedia/commons/8/83/Lightning_in_Dallas_2015.jpg",
-            
-            "planar_position" : "Northeastern",
-            "associated_school" : "Illusion",
-            "associated_alignment" : "Neutral",
-
-            "associated_deity" : "Tempest",
-            "associated_deity_img" : "https://upload.wikimedia.org/wikipedia/commons/2/21/Roc_1.jpg",
-            "associated_deity_description" : "Tempest is the Elemental Titan of Caelar, having adapted to a fully airborne.  Tempest is an archaic celestial entity, preferring to take the form of an avian whose closest living relatives are Rocs and Dire Eagles.            ",
-
-            "associated_deity_titles" : "Skyborn",
-            "associated_deity_symbol" : "An eagle shrouded in lightning",
-            "associated_deity_worshippers" : "The Talons of Caelar",
-
-            "associated_deity_alignment" : "Neutral",
-            "associated_deity_portfolio" : "NA",
-            "associated_deity_domains" : "Tempest",
-
-            "associated_deity_animals" : "Thunder Roc",
-            "associated_deity_creatures" : "Air Elementals",
-            "associated_deity_colors" : "White, Grey, Violet, Cyan",
-
-            "associated_dragons" : [
-                {
-                    "species" : "Azure",
-                    "type" : "Primal"
-                },
-                {
-                    "species" : "Cobalt",
-                    "type" : "Metallic"
-                }
-            ],
-
-            "associated_creatures" : "Celestials<br>Blue Dragons<br>Air Elementals",
-            "associated_factions" : "NA",
-
-            "planar_topography" : "Infinite bounds, varying air pressure, chunks of floating land sparsely distributed.",
-            "planar_gravity" : "Subjective, null majority, directional near large objects.",
-            "planar_time" : "Nominal"
-        },
+			"entry_name" : "Caelar",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+					"img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/8/83/Lightning_in_Dallas_2015.jpg",
+					"img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Lightning_in_Dallas_2015.jpg",
+					"img_linked" : "https://cdna.artstation.com/p/assets/images/images/027/038/996/large/ari-matti-toivonen-planeofair.jpg?1590424783",
+					"img_linked_source" : "https://www.reddit.com/r/ImaginaryLeviathans/comments/gr2g3i/the_elemental_plane_of_air_by_arimatti_toivonen/?utm_source=share&utm_medium=ios_app&utm_name=iossmf&utm_term=link",
+                    "species" : "Caelaris Fulgaria"
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : "Northern"
+						},
+						{
+							"subheading" : "School of Magic",
+							"subcontent" : "Illusion"
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : "Neutral"
+						}
+					]
+				},
+				{
+					"heading" : "Inhabitants",
+					"sublibrary" : [
+						{
+							"subheading" : "Deity",
+							"subcontent" : "Tempest"
+						},
+						{
+							"subheading" : "Creatures",
+							"subcontent" : "Celestials, Blue Dragons, Air Elementals"
+						},
+						{
+							"subheading" : "Factions",
+							"subcontent" : "The Talons of Tempest"
+						}
+					]
+				},
+				{
+					"heading" : "Attributes",
+					"sublibrary" : [
+						{
+							"subheading" : "Topography",
+							"subcontent" : "Infinite bounds, varying air pressure, chunks of floating land sparsely distributed"
+						},
+						{
+							"subheading" : "Gravity",
+							"subcontent" : "Subjective, null majority, directional near large objects"
+						},
+						{
+							"subheading" : "Time",
+							"subcontent" : "Nominal"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "The Elemental Plane of Air is positioned to the Northeast of the Great Wheel cosmology. It is strongly associated with domains relating to Knowledge and Wrath, and is considered to represent the Neutral alignment in its purest form. This plane is the source of all Illusion magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  "
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Magic",
+							"subcontent" : ""
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
         {
-            "plane" : "Ignar",
+            "entry_name" : "Ignar",
             "planar_element" : "Fire",
 
             "plane_description" : "The Elemental Plane of Fire is positioned to the Southeast of the Great Wheel cosmology.  It is strongly associated with domains relating to Destruction and Consumption, and is considered to represent the Neutral alignment in its purest form.  This plane is the source of all Evocation magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  ",
@@ -267,7 +310,7 @@
             "planar_time" : "Nominal"
         },
         {
-            "plane" : "Terral",
+            "entry_name" : "Terral",
             "planar_element" : "Earth",
 
             "plane_description" : "The Elemental Plane of Earth is positioned to the Southwest of the Great Wheel cosmology.  It is strongly associated with domains relating to Transformation and Stability, and is considered to represent the Neutral alignment in its purest form.  This plane is the source of all Transmutation magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  ",
@@ -312,7 +355,7 @@
             "planar_time" : "Nominal"
         },
         {
-            "plane" : "Aquar",
+            "entry_name" : "Aquar",
             "planar_element" : "Water",
             "plane_description" : "The Elemental Plane of Water is positioned to the Northwest of the Great Wheel cosmology.  It is strongly associated with domains relating to Adaptability and Cleansing, and is considered to represent the Neutral alignment in its purest form.  This plane is the source of all Abjuration magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  The Plane of Water is adjacent to the Primal Planescapes of Earth to the Southwest, and Air to the Northwest.  The Border Planescapes at these junctions are the Plane of Ooze and the Plane of Ice, which are also known as the Feywilds and Eifrost respectively.  ",
             "plane_img" : "https://upload.wikimedia.org/wikipedia/commons/2/2e/Underwater_world.jpg",
@@ -360,7 +403,7 @@
             "planar_time" : "Nominal"
         },
         {
-            "plane" : "Material",
+            "entry_name" : "Material",
             
             "plane_description" : "The Elemental Plane of Ooze is positioned to the West of the Great Wheel cosmology, and is also known as the Feywilds. It is strongly associated with domains relating to Life, Balance, and Death, and is considered to represent the Neutral Good alignment in its purest form. This plane is the source of all Necromancy magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school. The Plane of Ooze is adjacent to the Primal Planescapes of Water to the North and Earth to the West. The Plane of Ooze is complimentary to the Plane of Ash.  <br><br>Ooze is associated with life and purity. It channels the school of Necromancy in that it seeds life from death in a constant cycle.  ",
             "plane_img" : "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/898px-The_Earth_seen_from_Apollo_17.jpg?20200925203546",
