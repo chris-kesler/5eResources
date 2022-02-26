@@ -391,6 +391,7 @@ The plane buttons
   text-align: center;
   display: block;
   position: relative;
+  image-resolution: 5dpi;
 }
 .directory-page-nav-button-plane-quasi {
   width: 150px;
