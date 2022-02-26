@@ -178,7 +178,8 @@ body, #page-title-table tr th, #page-title-table th, #page-title-table tr td, #p
 /* The background container div that all other HTML elements rest inside (or on top) of */
 #page-background-div {
   width: 100%;
-  height: auto;    
+  height: auto;
+  min-height: 100vh;    
   overflow: visible;
   background-image: url("/resources/images/ESO_-_Milky_Way.jpg");
   background-repeat: repeat-y;
@@ -204,11 +205,12 @@ body, #page-title-table tr th, #page-title-table th, #page-title-table tr td, #p
   margin-left: 5vw; 
   margin-right: 5vw;
   margin-top: 25px;
-  margin-bottom: 5vw;
+  margin-bottom: 25px;
   padding: 15px;
   padding-left: 25px;
   padding-right: 25px;
   height: auto;
+  min-height: 42vh;    
   min-width: 265px;
   max-width: 90vw; 
   width: auto;

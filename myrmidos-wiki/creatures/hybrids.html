@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<!-- =========================================================================================
+  This is a DIRECTORY page.  It contains HEADER, BACKGROUND, CONTENT, and FOOTER elements that are standard across the site.
+  It also contains TITLE, PAGES, and DESCRIPTION elements that are unique and static as a DIRECTORY page.
+========================================================================================= -->
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -7,61 +11,119 @@
     <title>KnowOne's Website of Everything</title>
     <link rel="icon" href="/resources/images/OwlOfMinerva_ModifiedLogo.png">
     <link rel="stylesheet" href="/caped-crusaders-style.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+
+      // A function that capitalizes the first letter of each word in a string
+      function titleCase(str) {
+        var split_string = str.toLowerCase().split(' ');
+        for (var i = 0; i < split_string.length; i++) {
+          split_string[i] = split_string[i].charAt(0).toUpperCase() + split_string[i].substring(1);     
+        }
+        return split_string.join(' '); 
+      }
+
+
+      // The function that populates all page data into preset elements
+      $(function populatePageData() {
+
+
+// =========================================================================================
+// Populating the page HEADER
+// 
+// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
+// =========================================================================================
+        $("#import-header").load("/resources/pages/import-header.html");
+
+
+// =========================================================================================
+// Populating the page TITLE
+// 
+// The page TITLE can include a table of details for spells or monster statblocks
+// If title_library does not have a table_row library, the table of details is hidden and only the TITLE path is populated
+// =========================================================================================
+        
+        // Reading the name of this file
+        var page_array = window.location.pathname.split("/");
+        var page_array_length = page_array.length;
+
+        if (page_array.length == 5) {
+          var page_title = page_array.pop();
+          var page_category = page_array.pop();
+          var page_directory = page_array.pop();
+          var page_subsite = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 4) {
+          var page_title = page_array.pop();
+          var page_directory = page_array.pop();
+          var page_subsite = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 3) {
+          var page_title = page_array.pop();
+          var page_subsite = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 2) {
+          var page_title = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 1) {
+          var page_title = page_array.pop();
+        } 
+
+        if (page_subsite != undefined) {
+          document.getElementById("page-title-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a>";
+        } else {
+          document.getElementById("page-title-path").innerHTML = titleCase(page_title.replace('-', ' ').replace('.html', ''));
+        }
+        if (page_directory != undefined) {
+          document.getElementById("page-title-path").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a>";
+        }
+        if (page_category != undefined) {
+          document.getElementById("page-title-path").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + "/" + page_category + ".html'>" + titleCase(page_category.replace('-', ' ').replace('.html', '')) + "</a>";
+        }
+        if (page_title != undefined) {
+          document.getElementById("page-title-path").innerHTML += " > " + titleCase(page_title.replace('-', ' ').replace('.html', ''));
+        }
+
+
+// =========================================================================================
+// Populating the page FOOTER
+// 
+// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
+// =========================================================================================
+$("#import-footer").load("/resources/pages/import-footer.html");
+      });
+    </script>
+  </head>  
 
 
   <body>
-    <div id="page-background-div"> 
-      <div class="common-page-header">
-        <div id="import-header"></div>
-
-          <h1>Myrmidos Wiki:  Hybrids</h1>
-          <hr>
-      </div>
-        
-      
-      <div class="common-page-content-section-transparent">
-          
-
-
-
-
-            <section class="page-content-section">           
-              <button id="common-page-back-button" onclick="location.href='../creatures.html'">Out to Creatures</button>
-              <h2>Overview</h2>
-              <hr>
-
-              <div style="display: none;">
-              <table class="page-directory-table">
-                <tr><td>
-                  <button class="page-directory-table-entry-button" onclick="location.href='/resources/pages/404.html'">Sample Button</button>
-                </td></tr>
-                <tr><td>
-                  <button class="page-directory-table-entry-button" onclick="location.href='/resources/pages/404.html'">Sample Button</button>
-                </td></tr>
-                <tr><td>
-                  <button class="page-directory-table-entry-button" onclick="location.href='/resources/pages/404.html'">Sample Button</button>
-                </td></tr>
-              </table>
-              </div>
-              Hybrids are the zany creations of gondarin, and are technically native to the plane of magma. 
-              Examples include chimeras, driders, and harpies.
-              
-            </section>
-            
-
-      </div>
-
+    <!-- 
+      A div for the page BACKGROUND -->
+    <div id="page-background-div">
+      <!-- 
+        A div for the page HEADER -->
+      <div id="import-header"></div>
+      <!-- 
+        A section for the page CONTENT -->
+      <section class="page-content-section">
+        <!-- 
+          A table for the page TITLE -->
+        <table id="page-title-table"><thead><tr><td colspan="6"><h2 id="page-title-path"></h2></td></tr></thead><tbody></tbody></table>   
+        <!-- 
+          A table for the PAGES -->
+        <table class="page-directory-table">
+        </table>
+        <!-- 
+          A div for the page DESCRIPTION -->
+        <div id="page-description-div">
+          <p>
+            Hybrids are the zany creations of gondarin, and are technically native to the plane of magma. Examples include chimeras, driders, and harpies.
+          </p>
+        </div>
+      </section>
+      <!-- 
+        A div for the page FOOTER -->
       <footer id="import-footer"></footer>
     </div>
   </body>
 </html>
-
-<script type="text/javascript">
-  $(function () {
-
-    $("#import-header").load("/resources/pages/import-header.html");
-    $("#import-footer").load("/resources/pages/import-footer.html");
-
-});
-</script>
