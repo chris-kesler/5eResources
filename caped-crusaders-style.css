@@ -177,13 +177,15 @@ body, #page-title-table tr th, #page-title-table th, #page-title-table tr td, #p
 
 /* The background container div that all other HTML elements rest inside (or on top) of */
 #page-background-div {
+  position: relative;
   width: 100%;
   height: auto;
-  min-height: 100vh;    
+  min-height: 80vh;
   overflow: visible;
   background-image: url("/resources/images/ESO_-_Milky_Way.jpg");
   background-repeat: repeat-y;
   background-size: 105%;
+  padding-bottom: 20vh;    /* Footer height */
   background-attachment: fixed;
 }
 
@@ -194,7 +196,6 @@ body, #page-title-table tr th, #page-title-table th, #page-title-table tr td, #p
   width: 100%;
   height: auto;
   min-height: 135VH;
-  padding-bottom: 2.5rem;    /* Footer height */
   overflow: visible;
 }
 
@@ -271,11 +272,12 @@ body, #page-title-table tr th, #page-title-table th, #page-title-table tr td, #p
 
 /* The actual footer element to be imported into other pages */
 #import-footer {
-  padding: 10px 20px;
-  position: relative;
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
   bottom: 0;
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 15vh;
 }
 
 /* The icons that serve as links to other sites within the footer */
