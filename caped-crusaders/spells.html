@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="/caped-crusaders-style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
     <script>
+      
+      // A function that populates the list entries
       $(function readJSON() {
 
         // Reading the name of this file
@@ -27,10 +29,6 @@
           var title = "Technologies";
           var entry_type = "Type";
         }
-
-        // Populating page header information
-        document.getElementById("page-title-path").innerHTML = "Caped Crusaders: " + title;
-        document.getElementById("page-overview-title").innerHTML = title + " Filter Table";
 
         // Populating the Include Filters using the script to allow for dynamic changes in the future
         document.getElementById("include-filters").innerHTML = 
@@ -151,79 +149,138 @@
           });
         });
       });
+      
+      // A function that capitalizes the first letter of each word in a string
+      function titleCase(str) {
+        var split_string = str.toLowerCase().split(' ');
+        for (var i = 0; i < split_string.length; i++) {
+          split_string[i] = split_string[i].charAt(0).toUpperCase() + split_string[i].substring(1);     
+        }
+        return split_string.join(' '); 
+      }
+
+
+      // The function that populates all page data into preset elements
+      $(function populatePageData() {
+
+
+// =========================================================================================
+// Populating the page HEADER
+// 
+// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
+// =========================================================================================
+        $("#import-header").load("/resources/pages/import-header.html");
+
+
+// =========================================================================================
+// Populating the page TITLE
+// 
+// The page TITLE can include a table of details for spells or monster statblocks
+// If title_library does not have a table_row library, the table of details is hidden and only the TITLE path is populated
+// =========================================================================================
+        
+        // Reading the name of this file
+        var page_array = window.location.pathname.split("/");
+        var page_array_length = page_array.length;
+
+        if (page_array.length == 5) {
+          var page_title = page_array.pop();
+          var page_category = page_array.pop();
+          var page_directory = page_array.pop();
+          var page_subsite = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 4) {
+          var page_title = page_array.pop();
+          var page_directory = page_array.pop();
+          var page_subsite = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 3) {
+          var page_title = page_array.pop();
+          var page_subsite = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 2) {
+          var page_title = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 1) {
+          var page_title = page_array.pop();
+        } 
+
+        var titleCompleted = false;
+        if (page_subsite != undefined) {
+          document.getElementById("page-title-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+        } else {
+          document.getElementById("page-title-path").innerHTML = titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
+          titleCompleted = true;
+        }
+        if (page_directory != undefined && !titleCompleted) {
+          document.getElementById("page-title-path").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+        }
+        if (page_category != undefined && !titleCompleted) {
+          document.getElementById("page-title-path").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + "/" + page_category + ".html'>" + titleCase(page_category.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+        }
+        if (page_title != undefined && !titleCompleted) {
+          document.getElementById("page-title-path").innerHTML += " > " + titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
+          titleCompleted = true;
+        }
+
+
+// =========================================================================================
+// Populating the page FOOTER
+// 
+// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
+// =========================================================================================
+        $("#import-footer").load("/resources/pages/import-footer.html");
+      });
     </script>
   </head>
 
   <body>
-    <!-- The fixed background div -->
-    <div id="page-background-div"> 
+    <!-- 
+      A div for the page BACKGROUND -->
+    <div id="page-background-div">
+      <!-- 
+        A div for the page HEADER -->
+      <div id="import-header"></div>
+      <!-- 
+        A section for the page CONTENT -->
+      <section class="page-content-section">
+        <!-- 
+          A table for the page TITLE -->
+        <table id="page-title-table"><thead><tr><td colspan="6"><h2 id="page-title-path"></h2></td></tr></thead><tbody></tbody></table>   
+        <hr>
+        <h3>Include Filters</h3>
 
-      <!-- A div to hold our header -->
-      <div class="common-page-header">
+        <!-- The include filters are a series of text boxes that can be filled to hide elements that do not contain the string entered within the designated attribute  -->
+        <p id="include-filters"></p>
+        <hr>
 
-        <!-- Importing the header -->
-        <div id="import-header"></div>
+        <!-- A heading to clarify the filter functionality -->
+        <h3>Exclude Filters</h3>
 
-          <!-- The page title within the header -->
-          <h1 id="page-title-path">Why no work</h1>
-          <hr>
-      </div>
-        
-      <!-- A transparent div to build everything else on top of -->
-      <div class="common-page-content-section-transparent">
+        <!-- The exclude filters are a series of text boxes that can be filled to hide elements that do contain the string entered within the designated attribute  -->
+        <p id="exclude-filters"></p>
+        <hr> 
 
-        <!-- An off white chunk of the page that holds content -->
-        <section class="page-content-section">
-
-          <!-- A back button that navigates out in the file structure  -->
-          <button id="common-page-back-button" onclick="location.href='../character-options.html'">Out to Character Options</button>
+        <!-- This is the table that contains the entries being filtered -->
+        <h3>Sortable Entries</h3>
+        <table id="directory-page-dynamic-table-content">
           
-          <!-- The title of the page content -->
-          <h2 id="page-overview-title"></h2>
-          <hr>
-          
-          <!-- A heading to clarify the filter functionality -->
-          <h3>Include Filters</h3>
+          <!-- The buttons that designate the column data and serve as the header can be clicked to sort the entries in ascending or descending order -->
+          <thead class="header" id="directory-page-dynamic-table-header"></thead>
 
-          <!-- The include filters are a series of text boxes that can be filled to hide elements that do not contain the string entered within the designated attribute  -->
-          <p id="include-filters"></p>
-          <hr>
+          <!-- The empty table body, which is populated from a JSON file using the above script  -->
+          <tbody></tbody>
+        </table>
 
-          <!-- A heading to clarify the filter functionality -->
-          <h3>Exclude Filters</h3>
-
-          <!-- The exclude filters are a series of text boxes that can be filled to hide elements that do contain the string entered within the designated attribute  -->
-          <p id="exclude-filters"></p>
-          <hr> 
-
-          <!-- This is the table that contains the entries being filtered -->
-          <h3>Sortable Entries</h3>
-          <table id="directory-page-dynamic-table-content">
-            
-            <!-- The buttons that designate the column data and serve as the header can be clicked to sort the entries in ascending or descending order -->
-            <thead class="header" id="directory-page-dynamic-table-header"></thead>
-
-            <!-- The empty table body, which is populated from a JSON file using the above script  -->
-            <tbody></tbody>
-          </table>
-
-        </section>
-      </div>
-
-      <!-- Importing the footer -->
+      </section>
+      <!-- 
+        A div for the page FOOTER -->
       <footer id="import-footer"></footer>
     </div>
   </body>
 </html>
-
-<script>
   
-  // This function imports the page header and footer from a centralized html element
-  $(function () {
-    $("#import-header").load("/resources/pages/import-header.html");
-    $("#import-footer").load("/resources/pages/import-footer.html");
-  });
-
+<script>
   // This function updates the filter table dynamically as input is entered in the filter boxes
   function FilterTableFunction() {
 

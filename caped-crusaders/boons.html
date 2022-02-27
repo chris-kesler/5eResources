@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="/caped-crusaders-style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
     <script>
+
+      // A function that populates list entries
       $(function readJSON() {
 
         // Reading data from our JSON file
@@ -49,109 +51,171 @@
           });
         });
       });
+    
+          // A function that capitalizes the first letter of each word in a string
+          function titleCase(str) {
+        var split_string = str.toLowerCase().split(' ');
+        for (var i = 0; i < split_string.length; i++) {
+          split_string[i] = split_string[i].charAt(0).toUpperCase() + split_string[i].substring(1);     
+        }
+        return split_string.join(' '); 
+      }
+
+
+      // The function that populates all page data into preset elements
+      $(function populatePageData() {
+
+
+// =========================================================================================
+// Populating the page HEADER
+// 
+// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
+// =========================================================================================
+        $("#import-header").load("/resources/pages/import-header.html");
+
+
+// =========================================================================================
+// Populating the page TITLE
+// 
+// The page TITLE can include a table of details for spells or monster statblocks
+// If title_library does not have a table_row library, the table of details is hidden and only the TITLE path is populated
+// =========================================================================================
+        
+        // Reading the name of this file
+        var page_array = window.location.pathname.split("/");
+        var page_array_length = page_array.length;
+
+        if (page_array.length == 5) {
+          var page_title = page_array.pop();
+          var page_category = page_array.pop();
+          var page_directory = page_array.pop();
+          var page_subsite = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 4) {
+          var page_title = page_array.pop();
+          var page_directory = page_array.pop();
+          var page_subsite = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 3) {
+          var page_title = page_array.pop();
+          var page_subsite = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 2) {
+          var page_title = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 1) {
+          var page_title = page_array.pop();
+        } 
+
+        var titleCompleted = false;
+        if (page_subsite != undefined) {
+          document.getElementById("page-title-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+        } else {
+          document.getElementById("page-title-path").innerHTML = titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
+          titleCompleted = true;
+        }
+        if (page_directory != undefined && !titleCompleted) {
+          document.getElementById("page-title-path").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+        }
+        if (page_category != undefined && !titleCompleted) {
+          document.getElementById("page-title-path").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + "/" + page_category + ".html'>" + titleCase(page_category.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+        }
+        if (page_title != undefined && !titleCompleted) {
+          document.getElementById("page-title-path").innerHTML += " > " + titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
+          titleCompleted = true;
+        }
+
+
+// =========================================================================================
+// Populating the page FOOTER
+// 
+// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
+// =========================================================================================
+        $("#import-footer").load("/resources/pages/import-footer.html");
+      });
     </script>
   </head>
 
 
   <body>
-    <div id="page-background-div"> 
-      <div class="common-page-header">
-        <div id="import-header"></div>
+    <!-- 
+      A div for the page BACKGROUND -->
+    <div id="page-background-div">
+      <!-- 
+        A div for the page HEADER -->
+      <div id="import-header"></div>
+      <!-- 
+        A section for the page CONTENT -->
+      <section class="page-content-section">
+        <!-- 
+          A table for the page TITLE -->
+        <table id="page-title-table"><thead><tr><td colspan="6"><h2 id="page-title-path"></h2></td></tr></thead><tbody></tbody></table>   
+        <hr>
+        <h3>Include Filters</h3>
 
-          <h1>Caped Crusaders:  Boons</h1>
-          <hr>
-      </div>
-        
-      
-      <div class="common-page-content-section-transparent">
-          
+        <input type="text" id="directory-page-dynamic-table-query-inputInclude0" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Name. . .">
+        <input type="text" id="directory-page-dynamic-table-query-inputInclude1" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Level. . .">
+        <input type="text" id="directory-page-dynamic-table-query-inputInclude2" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by School. . .">
+        <input type="text" id="directory-page-dynamic-table-query-inputInclude3" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Attack/Save. . .">
+        <input type="text" id="directory-page-dynamic-table-query-inputInclude4" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Damage/Effect. . .">
+        <input type="text" id="directory-page-dynamic-table-query-inputInclude5" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Classes. . .">
+        <input type="text" id="directory-page-dynamic-table-query-inputInclude6" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Source. . .">
+        <!-- <input type="text" id="directory-page-dynamic-table-query-inputInclude7" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Attack/Save. . .">
+        <input type="text" id="directory-page-dynamic-table-query-inputInclude8" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Damage/Effect. . .">
+        <input type="text" id="directory-page-dynamic-table-query-inputInclude9" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Overchargeable. . .">
+        <input type="text" id="directory-page-dynamic-table-query-inputInclude10" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Classes. . .">
+        <input type="text" id="directory-page-dynamic-table-query-inputInclude11" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Source. . .">
+        <input type="text" id="directory-page-dynamic-table-query-inputInclude12" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Races. . .">
+        <input type="text" id="directory-page-dynamic-table-query-inputInclude13" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Classes. . ."> -->
 
+        <h3>Exclude Filters</h3>
+        <hr>
 
+        <input type="text" id="directory-page-dynamic-table-query-inputExclude0" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Name. . .">
+        <input type="text" id="directory-page-dynamic-table-query-inputExclude1" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Level. . .">
+        <input type="text" id="directory-page-dynamic-table-query-inputExclude2" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by School. . .">
+        <input type="text" id="directory-page-dynamic-table-query-inputExclude3" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Attack/Save. . .">
+        <input type="text" id="directory-page-dynamic-table-query-inputExclude4" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Damage/Effect. . .">
+        <input type="text" id="directory-page-dynamic-table-query-inputExclude5" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Classes. . .">
+        <input type="text" id="directory-page-dynamic-table-query-inputExclude6" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Source. . .">
+        <!-- <input type="text" id="directory-page-dynamic-table-query-inputExclude7" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Attack/Save. . .">
+        <input type="text" id="directory-page-dynamic-table-query-inputExclude8" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Damage/Effect. . .">
+        <input type="text" id="directory-page-dynamic-table-query-inputExclude9" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Overchargeable. . .">
+        <input type="text" id="directory-page-dynamic-table-query-inputExclude10" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Classes. . .">
+        <input type="text" id="directory-page-dynamic-table-query-inputExclude11" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Source. . .">
+        <input type="text" id="directory-page-dynamic-table-query-inputExclude12" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Races. . .">
+        <input type="text" id="directory-page-dynamic-table-query-inputExclude13" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Classes. . ."> -->
+                      
+        <table id="directory-page-dynamic-table-content">
+          <thead class="header">
+            <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(0)">Name</button></th>
+            <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(1)">Level</button></th>
+            <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(2)">School</button></th>
+            <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(3)">Attack/Save</button></th>
+            <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(4)">Damage/Effect</button></th>
+            <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(5)">Classes</button></th>
+            <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(6)">Source</button></th>
+            <!-- <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(7)">Attack/Save</button></th>
+            <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(8)">Damage/Effect</button></th>
+            <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(9)">Overchargeable</button></th>
+            <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(10)">Classes</button></th>
+            <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(11)">Source</button></th>
+            <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(12)">Races</button></th>
+            <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(13)">Classes</button></th> -->
+          </thead>
+          <tbody>
 
+          </tbody>
+        </table>
 
-            <section class="page-content-section">
-              <button id="common-page-back-button" onclick="location.href='../caped-crusaders.html'">Out to Caped Crusaders</button>
-              <h3>Include Filters</h3>
-              <hr>
-
-              <input type="text" id="directory-page-dynamic-table-query-inputInclude0" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Name. . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputInclude1" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Level. . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputInclude2" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by School. . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputInclude3" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Attack/Save. . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputInclude4" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Damage/Effect. . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputInclude5" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Classes. . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputInclude6" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Source. . .">
-              <!-- <input type="text" id="directory-page-dynamic-table-query-inputInclude7" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Attack/Save. . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputInclude8" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Damage/Effect. . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputInclude9" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Overchargeable. . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputInclude10" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Classes. . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputInclude11" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Source. . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputInclude12" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Races. . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputInclude13" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Classes. . ."> -->
-
-              <h3>Exclude Filters</h3>
-              <hr>
-
-              <input type="text" id="directory-page-dynamic-table-query-inputExclude0" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Name. . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputExclude1" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Level. . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputExclude2" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by School. . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputExclude3" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Attack/Save. . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputExclude4" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Damage/Effect. . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputExclude5" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Classes. . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputExclude6" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Source. . .">
-              <!-- <input type="text" id="directory-page-dynamic-table-query-inputExclude7" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Attack/Save. . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputExclude8" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Damage/Effect. . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputExclude9" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Overchargeable. . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputExclude10" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Classes. . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputExclude11" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Source. . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputExclude12" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Races. . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputExclude13" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Classes. . ."> -->
-                            
-              <table id="directory-page-dynamic-table-content">
-                <thead class="header">
-                  <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(0)">Name</button></th>
-                  <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(1)">Level</button></th>
-                  <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(2)">School</button></th>
-                  <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(3)">Attack/Save</button></th>
-                  <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(4)">Damage/Effect</button></th>
-                  <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(5)">Classes</button></th>
-                  <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(6)">Source</button></th>
-                  <!-- <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(7)">Attack/Save</button></th>
-                  <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(8)">Damage/Effect</button></th>
-                  <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(9)">Overchargeable</button></th>
-                  <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(10)">Classes</button></th>
-                  <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(11)">Source</button></th>
-                  <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(12)">Races</button></th>
-                  <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(13)">Classes</button></th> -->
-                </thead>
-                <tbody>
-
-                </tbody>
-              </table>
-
-            </section>
-            
-
-      </div>
-
+      </section>
+      <!-- 
+        A div for the page FOOTER -->
       <footer id="import-footer"></footer>
     </div>
   </body>
 </html>
-
-<script type="text/javascript">
-  $(function () {
-
-    $("#import-header").load("/resources/pages/import-header.html");
-    $("#import-footer").load("/resources/pages/import-footer.html");
-
-});
-</script>
-
-
-
-
-
+  
 <script>
   
   function FilterTableFunction() {
@@ -326,13 +390,6 @@
 
 </script>
 
-
-
-
-
-
-
-
 <script>
   // This function sorts the entries in ascending or descending order based on the column selected and number of clicks applied
   function sortTable(n) {
@@ -404,4 +461,4 @@
       }
     }
   }
-  </script>
+</script>
