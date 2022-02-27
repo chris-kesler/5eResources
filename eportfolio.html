@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<!-- =========================================================================================
+  This is a DIRECTORY page.  It contains HEADER, BACKGROUND, CONTENT, and FOOTER elements that are standard across the site.
+  It also contains TITLE, PAGES, and DESCRIPTION elements that are unique and static as a DIRECTORY page.
+========================================================================================= -->
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -7,39 +11,72 @@
     <title>KnowOne's Website of Everything</title>
     <link rel="icon" href="/resources/images/OwlOfMinerva_ModifiedLogo.png">
     <link rel="stylesheet" href="/caped-crusaders-style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
-  </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+
+      // A function that capitalizes the first letter of each word in a string
+      function titleCase(str) {
+        var split_string = str.toLowerCase().split(' ');
+        for (var i = 0; i < split_string.length; i++) {
+          split_string[i] = split_string[i].charAt(0).toUpperCase() + split_string[i].substring(1);     
+        }
+        return split_string.join(' '); 
+      }
+
+
+      // The function that populates all page data into preset elements
+      $(function populatePageData() {
+
+
+// =========================================================================================
+// Populating the page HEADER
+// 
+// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
+// =========================================================================================
+        $("#import-header").load("/resources/pages/import-header.html");
+
+
+// =========================================================================================
+// Populating the page FOOTER
+// 
+// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
+// =========================================================================================
+        $("#import-footer").load("/resources/pages/import-footer.html");
+      });
+    </script>
+  </head>  
+
 
   <body>
-    <div id="page-background-div"> 
-      <div class="common-page-header">
-        <div id="import-header"></div>
-
-          <h1>Christian Kesler's ePortfolio</h1>
-          <hr>
-      </div>
-        
-      
-      <div class="common-page-content-section-transparent">
-          
-        <section class="page-content-section">
-          <button id="common-page-back-button" onclick="location.href='/index.html'">Out to Homepage</button>
-          <h2>Overview</h2>
-          <hr>
-
-          <table class="page-directory-table">
-            <tr><th><h2 style="color: aqua;">Artifacts</h2></th></tr>
-            <tr><td>
-              <button class="directory-page-nav-button-to-directory-page" onclick="location.href='/eportfolio/software-design-and-engineering.html'">Software Design & Engineering:  <br>JUnit Tests (Java)</button>
-            </td></tr>
-            <tr><td>
-              <button class="directory-page-nav-button-to-directory-page" onclick="location.href='/eportfolio/data-structure-and-algorithms.html'">Data Structure & Algorithms:  <br>Binary Search Tree (C++)</button>
-            </td></tr>
-            <tr><td>
-              <button class="directory-page-nav-button-to-directory-page" onclick="location.href='/eportfolio/databases-and-centralization.html'">Databases & Centralization:  <br>JSON Database (Javascript)</button>
-            </td></tr>
-          </table>
-
+    <!-- 
+      A div for the page BACKGROUND -->
+    <div id="page-background-div">
+      <!-- 
+        A div for the page HEADER -->
+      <div id="import-header"></div>
+      <!-- 
+        A section for the page CONTENT -->
+      <section class="page-content-section">
+        <!-- 
+          A table for the page TITLE -->
+        <table id="page-title-table"><thead><tr><td colspan="6"><h2 id="page-title-path">Christian Kesler's B.Sc. of Computer Science Capstone ePortfolio</h2></td></tr></thead><tbody></tbody></table>   
+        <!-- 
+        A table for the PAGES -->
+        <table class="page-directory-table">
+          <tr><th><h2 style="color: aqua;">Artifacts</h2></th></tr>
+          <tr><td>
+            <button class="directory-page-nav-button-to-directory-page" onclick="location.href='/eportfolio/software-design-and-engineering.html'">Software Design & Engineering:  <br>JUnit Tests (Java)</button>
+          </td></tr>
+          <tr><td>
+            <button class="directory-page-nav-button-to-directory-page" onclick="location.href='/eportfolio/data-structure-and-algorithms.html'">Data Structure & Algorithms:  <br>Binary Search Tree (C++)</button>
+          </td></tr>
+          <tr><td>
+            <button class="directory-page-nav-button-to-directory-page" onclick="location.href='/eportfolio/databases-and-centralization.html'">Databases & Centralization:  <br>JSON Database (Javascript)</button>
+          </td></tr>
+        </table>
+        <!-- 
+          A div for the page DESCRIPTION -->
+        <div id="page-description-div">
           <p>
             This page is dedicated to my ePortfolio, detailing several of my most impressive and technically relevant projects.  Each of the buttons in the table to the right will take you to a page with more details about the selected project, along with a link to the project files on GitHub, a detailed description of the project, and a narrated screencast explaining and demonstrating the project when applicable.  
           </p>
@@ -151,21 +188,11 @@
           <p>
             My chosen Artifacts serve to showcase a well-rounded competency with various programming languages and IDEs while demonstrating core programming concepts and principles common across all projects.  These Artifacts also demonstrate my ability to learn and implement academic course content, as well as competently pursue completely new topics and technologies without external guidance or structure.  The documents linked above and the content within this ePortfolio serve to showcase my written communication skills, both in academic settings and when conveying concepts to those who may not be familiar with the given material.  A firm and passionate understanding of data structures and algorithms in theory and practice is displayed in my written report and aptly named Artifact, while this very website serves as a testament to my grasp of software engineering and data centralization.  My insistence on adhering to version control best practices and accounting for as many program exceptions as I am aware of limits the number of vulnerabilities in my code, and my plans regarding overall security protocols outlined in my written report demonstrate my ability to perceive and handle issues from a broader perspective.  
           </p>
-
-        </section>
-
-      </div>
-
+        </div>
+      </section>
+      <!-- 
+        A div for the page FOOTER -->
       <footer id="import-footer"></footer>
     </div>
   </body>
 </html>
-
-<script type="text/javascript">
-  $(function () {
-
-    $("#import-header").load("/resources/pages/import-header.html");
-    $("#import-footer").load("/resources/pages/import-footer.html");
-
-});
-</script>
