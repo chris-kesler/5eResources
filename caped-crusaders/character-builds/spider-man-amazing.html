@@ -9,20 +9,89 @@
     <link rel="stylesheet" href="/caped-crusaders-style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
     <script>
-      $(function importContent() {
+
+      // A function that capitalizes the first letter of each word in a string
+      function titleCase(str) {
+        var split_string = str.toLowerCase().split(' ');
+        for (var i = 0; i < split_string.length; i++) {
+          split_string[i] = split_string[i].charAt(0).toUpperCase() + split_string[i].substring(1);     
+        }
+        return split_string.join(' '); 
+      }
+
+      // The function that populates all page data into preset elements
+      $(function populatePageData() {
+
+
+// =========================================================================================
+// Populating the page HEADER
+// 
+// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
+// =========================================================================================
         $("#import-header").load("/resources/pages/import-header.html");
-        $("#import-footer").load("/resources/pages/import-footer.html");
-      });
-      $(function readCharacter() {
-        var characters = [];
-        $.getJSON('../character-builds.json', function(data) {
-          var path = window.location.pathname;
-          var page = path.split("/").pop();
-          $.each(data.character, function(i, f) {
-            if (f.page_url == page) {
+
+
+// =========================================================================================
+// Populating the page TITLE
+// 
+// The page TITLE can include a table of details for spells or monster statblocks
+// If title_library does not have a table_row library, the table of details is hidden and only the TITLE path is populated
+// =========================================================================================
+        
+        // Reading the name of this file
+        var page_array = window.location.pathname.split("/");
+        var page_array_length = page_array.length;
+
+        if (page_array.length == 5) {
+          var page_title = page_array.pop();
+          var page_category = page_array.pop();
+          var page_directory = page_array.pop();
+          var page_subsite = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 4) {
+          var page_title = page_array.pop();
+          var page_directory = page_array.pop();
+          var page_subsite = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 3) {
+          var page_title = page_array.pop();
+          var page_subsite = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 2) {
+          var page_title = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 1) {
+          var page_title = page_array.pop();
+        } 
+
+        if (page_subsite != undefined) {
+          document.getElementById("page-title-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+        } else {
+          document.getElementById("page-title-path").innerHTML = titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
+        }
+        if (page_directory != undefined) {
+          document.getElementById("page-title-path").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+        }
+        if (page_category != undefined) {
+          document.getElementById("page-title-path").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + "/" + page_category + ".html'>" + titleCase(page_category.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+        }
+
+        // Reading data from our JSON file
+        // $.getJSON(`/` + page_subsite + `/` + page_directory + `.json`, function(data) {
+        $.getJSON(`/caped-crusaders/character-builds.json`, function(data) {
+
+
+          // Looping through the JSON data 
+          $.each(data.entries, function(i, f) {
+            if (f.page_url == page_title) {
+
+              if (f.content_source != undefined && f.content_source !== ""){
+                document.getElementById("page-title-path").innerHTML += " > <a target='blank' href='" + f.content_source + "'>" + f.name_str + " (source)</a>";
+              } else {
+                document.getElementById("page-title-path").innerHTML += " > " + f.name_str;
+              }
 
               // Populating basic page data and overview
-              document.getElementById("class-page-title-path").innerHTML = "Caped Crusaders: Character Builds > " + f.name_str;
               document.getElementById("cc-class-image").src = "/resources/images/" + f.class_str + ".png";
               document.getElementById("cc-class-image").alt = f.class_img_credit;
               document.getElementById("cc-subclass-image").src = "/resources/images/" + f.class_str + "-" + f.subclass_str + ".png";
@@ -481,81 +550,87 @@
             }
           });
         });
+
+
+// =========================================================================================
+// Populating the page FOOTER
+// 
+// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
+// =========================================================================================
+        $("#import-footer").load("/resources/pages/import-footer.html");
       });
+
     </script>
   </head>
 
   <body>
-    <div id="page-background-div"> 
+    <!-- 
+      A div for the page BACKGROUND -->
+    <div id="page-background-div">
+      <!-- 
+        A div for the page HEADER -->
+      <div id="import-header"></div>
+      <!-- 
+        A section for the page CONTENT -->
+      <section class="page-content-section">
+        <!-- 
+          A table for the page TITLE -->
+        <table id="page-title-table"><thead><tr><td colspan="6"><h2 id="page-title-path"></h2></td></tr></thead><tbody></tbody></table>   
 
-      <div class="common-page-header"><div id="import-header"></div><h1 id="class-page-title-path"></h1><hr></div>
+        <center>--CHARACTER BUILDS ONLY GO TO LEVEL 10 UNTIL FURTHER NOTICE--</center>
+        <img id="cc-subclass-image" class="cc-class-image-medium" alt="Class Image">
+        <img id="cc-class-image" class="cc-class-image-medium" alt="Class Image">
+        <p id="build-description"></p>
 
-      <div class="common-page-content-section-transparent">
+        <hr>
+        <h3>Build Setup</h3>
+        <p id="build-setup-overview">We'll take the following setup prior to our class levels.  </p>
+        <table class="level-table" id="build-setup-table">
+          <thead>
+            <th>Race</th>
+            <th>Background</th>
+            <th>STR</th>
+            <th>DEX</th>
+            <th>CON</th>
+            <th>INT</th>
+            <th>WIS</th>
+            <th>CHA</th>
+            <th>Starting Equipment</th>
+          </thead>
+          <tbody></tbody>
+        </table>
+                
+        <hr>
+        <h3>Level Table</h3>
+        <p id="build-level-overview">We'll take features based on the following table to initiate and progress through our build.  </p>
 
-            <section class="page-content-section">
-              <button id="common-page-back-button" onclick="location.href='../character-builds.html'">Out to Character Builds</button>
-              <h2>Overview</h2>
-              <hr>
-              <center>--CHARACTER BUILDS ONLY GO TO LEVEL 10 UNTIL FURTHER NOTICE--</center>
-              <img id="cc-subclass-image" class="cc-class-image-medium" alt="Class Image">
-              <img id="cc-class-image" class="cc-class-image-medium" alt="Class Image">
-              <p id="build-description"></p>
+        <table id="build-level-table" class="level-table">
+          <thead>
+            <th style="width: 5vw">Level</th>
+            <th style="width: 10vw">Class/Subclass</th>
+            <th style="width: 10vw">Hit Points/Dice</th>
+            <th style="width: 30vw">Features</th>
+            <th style="width: 5vw">Str/Save</th>
+            <th style="width: 5vw">Dex/Save</th>
+            <th style="width: 5vw">Con/Save</th>
+            <th style="width: 5vw">Int/Save</th>
+            <th style="width: 5vw">Wis/Save</th>
+            <th style="width: 5vw">Cha/Save</th>
+            <th style="width: 5vw">AC</th>
+          </thead>
+          <tbody></tbody>
+        </table>
 
-              <hr>
-              <h3>Build Setup</h3>
-              <p id="build-setup-overview">We'll take the following setup prior to our class levels.  </p>
-              <table class="page-title-table" id="build-setup-table">
-                <thead>
-                  <th>Race</th>
-                  <th>Background</th>
-                  <th>STR</th>
-                  <th>DEX</th>
-                  <th>CON</th>
-                  <th>INT</th>
-                  <th>WIS</th>
-                  <th>CHA</th>
-                  <th>Starting Equipment</th>
-                </thead>
-                <tbody></tbody>
-              </table>
-                      
-              <hr>
-              <h3>Level Table</h3>
-              <p id="build-level-overview">We'll take features based on the following table to initiate and progress through our build.  </p>
+        <hr>
+        <h3>Build Walkthrough</h3>
+        <p id="build-walkthrough-overview">We'll take features based on the following tables to initiate and progress through our build.  </p>
 
-              <table id="build-level-table" class="page-title-table">
-                <thead>
-                  <th style="width: 5vw">Level</th>
-                  <th style="width: 10vw">Class/Subclass</th>
-                  <th style="width: 10vw">Hit Points/Dice</th>
-                  <th style="width: 30vw">Features</th>
-                  <th style="width: 5vw">Str/Save</th>
-                  <th style="width: 5vw">Dex/Save</th>
-                  <th style="width: 5vw">Con/Save</th>
-                  <th style="width: 5vw">Int/Save</th>
-                  <th style="width: 5vw">Wis/Save</th>
-                  <th style="width: 5vw">Cha/Save</th>
-                  <th style="width: 5vw">AC</th>
-                </thead>
-                <tbody></tbody>
-              </table>
+        <div id="build-walkthrough-by-level"></div>
 
-              <hr>
-              <h3>Build Walkthrough</h3>
-              <p id="build-walkthrough-overview">We'll take features based on the following tables to initiate and progress through our build.  </p>
-
-              <div id="build-walkthrough-by-level"></div>
-
-            </section>
-
-          </div>
-        </div>
-      </div>
-
+      </section>
+      <!-- 
+        A div for the page FOOTER -->
       <footer id="import-footer"></footer>
-
     </div>
   </body>
-  
 </html>
-
