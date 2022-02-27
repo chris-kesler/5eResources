@@ -9,19 +9,86 @@
     <link rel="stylesheet" href="/caped-crusaders-style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
     <script>
-      $(function importContent() {
+
+      // A function that capitalizes the first letter of each word in a string
+      function titleCase(str) {
+        var split_string = str.toLowerCase().split(' ');
+        for (var i = 0; i < split_string.length; i++) {
+          split_string[i] = split_string[i].charAt(0).toUpperCase() + split_string[i].substring(1);     
+        }
+        return split_string.join(' '); 
+      }
+      
+      // The function that populates all page data into preset elements
+      $(function populatePageData() {
+
+
+// =========================================================================================
+// Populating the page HEADER
+// 
+// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
+// =========================================================================================
         $("#import-header").load("/resources/pages/import-header.html");
-        $("#import-footer").load("/resources/pages/import-footer.html");
-      });
-      $(function readClass() {
-        var classes = [];
-        $.getJSON('../classes.json', function(data) {
-          var path = window.location.pathname;
-          var page = path.split("/").pop();
-          $.each(data.class, function(i, f) {
+
+
+// =========================================================================================
+// Populating the page TITLE
+// 
+// The page TITLE can include a table of details for spells or monster statblocks
+// If title_library does not have a table_row library, the table of details is hidden and only the TITLE path is populated
+// =========================================================================================
+        
+        // Reading the name of this file
+        var page_array = window.location.pathname.split("/");
+        var page_array_length = page_array.length;
+
+        if (page_array.length == 5) {
+          var page_title = page_array.pop();
+          var page_category = page_array.pop();
+          var page_directory = page_array.pop();
+          var page_subsite = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 4) {
+          var page_title = page_array.pop();
+          var page_directory = page_array.pop();
+          var page_subsite = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 3) {
+          var page_title = page_array.pop();
+          var page_subsite = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 2) {
+          var page_title = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 1) {
+          var page_title = page_array.pop();
+        } 
+
+        if (page_subsite != undefined) {
+          document.getElementById("page-title-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+        } else {
+          document.getElementById("page-title-path").innerHTML = titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
+        }
+        if (page_directory != undefined) {
+          document.getElementById("page-title-path").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+        }
+        if (page_category != undefined) {
+          document.getElementById("page-title-path").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + "/" + page_category + ".html'>" + titleCase(page_category.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+        }
+
+        // Reading data from our JSON file
+        $.getJSON(`/` + page_subsite + `/` + page_directory + `.json`, function(data) {
+
+          // Looping through the JSON data 
+          $.each(data.entries, function(i, f) {
             if (f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html" == page_title) {
-              document.getElementById("class-page-title-path").innerHTML = "Caped Crusaders: Character Options > Classes";
-              document.getElementById("page-title").innerHTML = "Class:  The " + f.name_str;
+
+              if (f.content_source != undefined && f.content_source !== ""){
+                document.getElementById("page-title-path").innerHTML += " > <a target='blank' href='" + f.content_source + "'>" + titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', '')) + " (source)</a>";
+              } else {
+                document.getElementById("page-title-path").innerHTML += " > The " + titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
+              }
+
               document.getElementById("class-page-image").src = "/resources/images/" + f.name_str + ".png";
               document.getElementById("class-page-image").alt = f.class_img_credit;
               document.getElementById("page-image-credit").innerHTML = f.class_img_credit;
@@ -74,7 +141,7 @@
                 }
                 var table_row = "<tr>" + "<td>" + (i+1) + "</td>" + "<td>" + prof + "</td>" + "<td>" + links + "</td>" + "<td>" + sustainables + "</td>" + "<td>" + consumables_known + "</td>" + "<td>" + consumables_points + "</td>" + "<td>" + consumables_max + "</td>" + "</tr>"
                 j = j + 2;
-                $(table_row).appendTo("#page-title-table tbody");
+                $(table_row).appendTo("#level-table tbody");
                 if ((i+1) == 4 || (i+1) == 8 || (i+1) == 12 || (i+1) == 16) {
                   prof++;
                 }
@@ -84,7 +151,7 @@
                 else {
                   document.getElementById("page-title-table-features").innerHTML += "<hr><h3 id='" 
                   + f.class_feats[i].name_str.replace(/\s+/g, '') + "'>" 
-                  + f.class_feats[i].name_str + "</h3><h4><i><b><a href='#page-title-table'>" + f.name_str 
+                  + f.class_feats[i].name_str + "</h3><h4><i><b><a href='#level-table'>" + f.name_str 
                   + "</a>:</b>  level " + f.class_feats[i].level + "</i></h4><p>" 
                   + f.class_feats[i].mechanics_str + "</p>";
                 }
@@ -138,128 +205,138 @@
             }
           });
         });
+
+
+// =========================================================================================
+// Populating the page FOOTER
+// 
+// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
+// =========================================================================================
+        $("#import-footer").load("/resources/pages/import-footer.html");
       });
+
     </script>
   </head>
 
 
   <body>
-    <div id="page-background-div"> 
-      <div class="common-page-header">
-        <div id="import-header"></div>
-          <h1 id="class-page-title-path"></h1>
-          <hr>
-      </div>
+    <!-- 
+      A div for the page BACKGROUND -->
+    <div id="page-background-div">
+      <!-- 
+        A div for the page HEADER -->
+      <div id="import-header"></div>
+      <!-- 
+        A section for the page CONTENT -->
+      <section class="page-content-section">
+        <!-- 
+          A table for the page TITLE -->
+        <table id="page-title-table"><thead><tr><td colspan="6"><h2 id="page-title-path"></h2></td></tr></thead><tbody></tbody></table>   
+
+        <table id="entry-page-image-table">
+          <tr><td><img id="class-page-image" class="cc-class-image-large" alt="Class Image"></td></tr>
+          <tr><td><h4 id="page-image-credit">Image Credit</h4></td></tr>
+        </table>
+        <p id="class-page-description-div"></p>
         
+        <hr>
+        <h3>Class Features</h3>
+        <p id="class-features-intro"></p>
+        
+        <h4>Hit Points</h4>
+        <ul>
+          <li id="hit-dice"></li>
+          <li id="hit-points-at-1st-level"></li>
+          <li id="hit-points-at-higher-levels"></li>
+        </ul>
 
-      <div class="common-page-content-section-transparent">
-          
-
-            <section class="page-content-section">
-              <button id="common-page-back-button" onclick="location.href='../classes.html'">Out to Classes</button>
-              <h2 id="page-title"></h2>
-              <hr>
-              <table id="entry-page-image-table">
-                <tr><td><img id="class-page-image" class="cc-class-image-large" alt="Class Image"></td></tr>
-                <tr><td><h4 id="page-image-credit">Image Credit</h4></td></tr>
-              </table>
-              <p id="class-page-description-div"></p>
-              
-              <hr>
-              <h3>Class Features</h3>
-              <p id="class-features-intro"></p>
-              
-              <h4>Hit Points</h4>
-              <ul>
-                <li id="hit-dice"></li>
-                <li id="hit-points-at-1st-level"></li>
-                <li id="hit-points-at-higher-levels"></li>
-              </ul>
-
-              <h4>Proficiencies</h4>
-              <ul>
-                <li id="proficiencies-armor"></li>
-                <li id="proficiencies-weapons"></li>
-                <li id="proficiencies-tools"></li>
-                <li id="proficiencies-saving-throws"></li>
-                <li id="proficiencies-skills"></li>
-              </ul>
-              
-              <h4>Equipment</h4>
-              <ul>
-                <li id="equipment-armor"></li>
-                <li id="equipment-weapons"></li>
-                <li id="equipment-tools"></li>
-                <li id="equipment-packs"></li>
-              </ul>
-              <hr>
-              <h3>Variant Equipment: Starting Wealth</h3>
-              <table class="page-title-table" style="float: right;"><tr>
-                <th>Class</th>
-                <th>Wealth</th>
-              </tr><tr id="starting-wealth"></tr></table>
-              Rather than acquiring the equipment granted by your class and background, you can elect to purchase your starting gear. 
-              If you do so, you receive no equipment from your class and background, and instead roll for your starting wealth using the criteria to the right:
-              <br><br><br><br>
-                              
-              <hr>
-              <h3 id="page-title-table-title"></h3>
-              <table id="page-title-table" class="page-title-table">
-                <thead>
-                  <th style="width: 5vw">Level</th>
-                  <th style="width: 10vw">Proficiency Bonus</th>
-                  <th style="width: 30vw">Features</th>
-                  <th style="width: 10vw">Sustainables Gained</th>
-                  <th style="width: 10vw">Consumables Known</th>
-                  <th style="width: 10vw">Consumable Points</th>
-                  <th style="width: 10vw">Consumable Max Level</th>
-                </thead>
-                <tbody></tbody>
-              </table>
-
-              <div id="page-title-table-features">
-                <body></body>
-              </div>
-            </section>
-            
-            <section class="page-content-section">
-              <h2 id="subclass-magic-name"></h2>
-              <table id="entry-page-image-table">
-                <tr><td><img class="cc-subclass-image-large" alt="Magic Subclass" id="subclass-magic-image"></img></td></tr>
-                <tr><td><h4 id="subclass-magic-image-credit">Image Credit</h4></td></tr>
-              </table>
-              <p id="subclass-magic-description"></p>
-              <div id="subclass-magic-feats"></div>
-            </section>
-
-            <section class="page-content-section">
-              <h2 id="subclass-power-name"></h2>
-              <table id="entry-page-image-table">
-                <tr><td><img class="cc-subclass-image-large" alt="Power Subclass" id="subclass-power-image"></img></td></tr>
-                <tr><td><h4 id="subclass-power-image-credit">Image Credit</h4></td></tr>
-              </table>
-              <p id="subclass-power-description"></p>
-              <div id="subclass-power-feats"></div>
-            </section>
-
-            <section class="page-content-section">
-              <h2 id="subclass-tech-name"></h2>
-              <table id="entry-page-image-table">
-                <tr><td><img class="cc-subclass-image-large" alt="Tech Subclass" id="subclass-tech-image"></td></tr>
-                <tr><td><h4 id="subclass-tech-image-credit">Image Credit</h4></td></tr>
-              </table>
-              <p id="subclass-tech-description"></p>
-              <div id="subclass-tech-feats"></div>
-            </section>
-
-          </div>
+        <h4>Proficiencies</h4>
+        <ul>
+          <li id="proficiencies-armor"></li>
+          <li id="proficiencies-weapons"></li>
+          <li id="proficiencies-tools"></li>
+          <li id="proficiencies-saving-throws"></li>
+          <li id="proficiencies-skills"></li>
+        </ul>
+        
+        <h4>Equipment</h4>
+        <ul>
+          <li id="equipment-armor"></li>
+          <li id="equipment-weapons"></li>
+          <li id="equipment-tools"></li>
+          <li id="equipment-packs"></li>
+        </ul>
+        <hr>
+        <h3>Variant Equipment: Starting Wealth</h3>
+        <table class="level-table" style="float: right;">
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Wealth</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="starting-wealth"></tr>
+          </tbody>
+        </table>
+        <div style="min-height: 75px;">
+          <p>
+            Rather than acquiring the equipment granted by your class and background, you can elect to purchase your starting gear.  If you do so, you receive no equipment from your class and background, and instead roll for your starting wealth using the criteria to the right:  
+          </p>
         </div>
-      </div>
+                        
+        <hr>
+        <h3 id="page-title-table-title"></h3>
+        <table id="level-table" class="level-table">
+          <thead>
+            <th style="width: 5vw">Level</th>
+            <th style="width: 10vw">Proficiency Bonus</th>
+            <th style="width: 30vw">Features</th>
+            <th style="width: 10vw">Sustainables Gained</th>
+            <th style="width: 10vw">Consumables Known</th>
+            <th style="width: 10vw">Consumable Points</th>
+            <th style="width: 10vw">Consumable Max Level</th>
+          </thead>
+          <tbody></tbody>
+        </table>
 
+        <div id="page-title-table-features">
+          <body></body>
+        </div>
+      </section>
+      
+      <section class="page-content-section">
+        <h2 id="subclass-magic-name"></h2>
+        <table id="entry-page-image-table">
+          <tr><td><img class="cc-subclass-image-large" alt="Magic Subclass" id="subclass-magic-image"></img></td></tr>
+          <tr><td><h4 id="subclass-magic-image-credit">Image Credit</h4></td></tr>
+        </table>
+        <p id="subclass-magic-description"></p>
+        <div id="subclass-magic-feats"></div>
+      </section>
+
+      <section class="page-content-section">
+        <h2 id="subclass-power-name"></h2>
+        <table id="entry-page-image-table">
+          <tr><td><img class="cc-subclass-image-large" alt="Power Subclass" id="subclass-power-image"></img></td></tr>
+          <tr><td><h4 id="subclass-power-image-credit">Image Credit</h4></td></tr>
+        </table>
+        <p id="subclass-power-description"></p>
+        <div id="subclass-power-feats"></div>
+      </section>
+
+      <section class="page-content-section">
+        <h2 id="subclass-tech-name"></h2>
+        <table id="entry-page-image-table">
+          <tr><td><img class="cc-subclass-image-large" alt="Tech Subclass" id="subclass-tech-image"></td></tr>
+          <tr><td><h4 id="subclass-tech-image-credit">Image Credit</h4></td></tr>
+        </table>
+        <p id="subclass-tech-description"></p>
+        <div id="subclass-tech-feats"></div>
+      </section>
+      <!-- 
+        A div for the page FOOTER -->
       <footer id="import-footer"></footer>
-
     </div>
-
   </body>
 </html>
-

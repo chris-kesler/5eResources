@@ -74,7 +74,7 @@ p {
 
 p:before {
   content: "";
-  width: 35vw;
+  width: 25vw;
   display: block;
   overflow: hidden;
   /* For Demonstration */
@@ -142,7 +142,7 @@ button {
 
 
 /* A condensed off black color style group for dark text elements */
-body, #page-title-table tr th, #page-title-table th, #page-title-table tr td, #page-title-table td, .cc-build-selections-table tr th, .cc-build-selections-table tr td, .cc-build-selections-table td:nth-child(1) {
+body, #page-title-table tr th, #page-title-table th, #page-title-table tr td, #page-title-table td, .level-table tr th, .level-table th, .level-table tr td, .level-table td, .cc-build-selections-table tr th, .cc-build-selections-table tr td, .cc-build-selections-table td:nth-child(1) {
   color: rgb(25,25,25);
 }
 
@@ -277,7 +277,7 @@ body, #page-title-table tr th, #page-title-table th, #page-title-table tr td, #p
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 15vh;
+  height: 20vh;
 }
 
 /* The icons that serve as links to other sites within the footer */
@@ -498,6 +498,7 @@ The buttons used to navigate and organize the classes within caped crusaders
 /* Large images to be used for entry pages */
 #page-image, .cc-class-image-large, .cc-subclass-image-large {
   min-width: 20vw;
+  max-width: 25vw;
   width: auto;
 }
 
@@ -524,8 +525,9 @@ The buttons used to navigate and organize the classes within caped crusaders
 An overview table for caped crusaders entry pages 
 */
 #page-title-table {
-  width: 55vw;
-  max-width: 55vw;
+  width: 100%;
+}
+#page-title-table, .level-table {
   overflow: visible;
   margin: 0px;
   margin-bottom: 15px;
@@ -534,23 +536,23 @@ An overview table for caped crusaders entry pages
   border-collapse: collapse;
   float: left;
 }
-#page-title-table thead tr td{
+#page-title-table thead tr td, .level-table thead tr td{
   border: 0px hidden aqua;
   border-bottom: 1px solid rgb(50,50,50);
   background: transparent;
   background-color: transparent;
 }
-#page-title-table th, #page-title-table td {
+#page-title-table th, #page-title-table td, .level-table th, .level-table td {
   padding: 8px;
   vertical-align: top;
   border: 1px solid rgb(50,50,50);
 }
-#page-title-table tr th, #page-title-table th {
+#page-title-table tr th, #page-title-table th, .level-table tr th, .level-table th {
   background-color: rgb(150,150,150);
   font-size: medium;
   text-align: left;
 }
-#page-title-table tr td, #page-title-table td {
+#page-title-table tr td, #page-title-table td, .level-table tr td, .level-table td {
   background-color: rgb(200,200,200);
   font-size: medium;
   text-align: left;
@@ -633,6 +635,7 @@ A small table to hold the entry page image and author credit
 #entry-page-image-table {
   float: right;
   width: 25vw;
+  max-width: 25vw;
   margin: 0px;
   margin-right: -10px;
   margin-left: 10px;
