@@ -21,7 +21,7 @@
 						},
 						{
 							"subheading" : "School of Magic",
-							"subcontent" : "Illusion"
+							"subcontent" : "Enchantment"
 						},
                         {
 							"subheading" : "Alignment",
@@ -33,8 +33,8 @@
 					"heading" : "Inhabitants",
 					"sublibrary" : [
 						{
-							"subheading" : "Deity",
-							"subcontent" : "Tempest"
+							"subheading" : "Deities",
+							"subcontent" : "Tempest, Djinnis"
 						},
 						{
 							"subheading" : "Creatures",
@@ -66,7 +66,7 @@
 			],
 			"description_library" : [
 				{
-					"overview" : "The Elemental Plane of Air is positioned to the Northeast of the Great Wheel cosmology. It is strongly associated with domains relating to Knowledge and Wrath, and is considered to represent the Neutral alignment in its purest form. This plane is the source of all Illusion magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  "
+					"overview" : "The Elemental Plane of Air is positioned to the North of the Great Wheel cosmology. It is strongly associated with domains relating to Knowledge and Wrath, and is considered to represent the Neutral alignment in its purest form. This plane is the source of all Enchantment magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  "
 				},
 				{
 					"heading" : "Planar Associations",
@@ -120,8 +120,8 @@
 					"heading" : "Inhabitants",
 					"sublibrary" : [
 						{
-							"subheading" : "Deity",
-							"subcontent" : "Frydeia"
+							"subheading" : "Deities",
+							"subcontent" : "Frydeia, The Dracowisp"
 						},
 						{
 							"subheading" : "Creatures",
@@ -153,7 +153,7 @@
 			],
 			"description_library" : [
 				{
-					"overview" : "The Elemental Plane of Ice is positioned to the North of the Great Wheel cosmology, and is also known as Eifrost. It is strongly associated with domains relating to Knowledge and Order, and is considered to represent the Lawful Neutral alignment in its purest form. This plane is the source of all Divination magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  Ice is associated with knowledge and law. It channels the school of divination in that ice and crystals represent clarity, and is the source of psionics.  "
+					"overview" : "The Elemental Plane of Ice is positioned to the North-East of the Great Wheel cosmology, and is also known as Eifrost. It is strongly associated with domains relating to Knowledge and Order, and is considered to represent the Lawful Neutral alignment in its purest form. This plane is the source of all Divination magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  It channels the school of Divination in that ice and crystals represent clarity, and is the source of psionics.  "
 				},
 				{
 					"heading" : "Planar Associations",
@@ -207,8 +207,8 @@
 					"heading" : "Inhabitants",
 					"sublibrary" : [
 						{
-							"subheading" : "Deity",
-							"subcontent" : "Kraken"
+							"subheading" : "Deities",
+							"subcontent" : "Kraken, Marids"
 						},
 						{
 							"subheading" : "Creatures",
@@ -240,7 +240,7 @@
 			],
 			"description_library" : [
 				{
-					"overview" : "The Elemental Plane of Water is positioned to the Northwest of the Great Wheel cosmology.  It is strongly associated with domains relating to Adaptability and Cleansing, and is considered to represent the Neutral alignment in its purest form.  This plane is the source of all Abjuration magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  The Plane of Water is adjacent to the Primal Planescapes of Earth to the Southwest, and Air to the Northwest.  The Border Planescapes at these junctions are the Plane of Ooze and the Plane of Ice, which are also known as the Feywilds and Eifrost respectively.  "
+					"overview" : "The Elemental Plane of Water is positioned to the East of the Great Wheel cosmology.  It is strongly associated with domains relating to Adaptability and Cleansing, and is considered to represent the Neutral alignment in its purest form.  This plane is the source of all Abjuration magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  "
 				},
 				{
 					"heading" : "Planar Associations",
@@ -294,8 +294,8 @@
 					"heading" : "Inhabitants",
 					"sublibrary" : [
 						{
-							"subheading" : "Deity",
-							"subcontent" : "Deliklese"
+							"subheading" : "Deities",
+							"subcontent" : "Deliklese, The Dracofey"
 						},
 						{
 							"subheading" : "Creatures",
@@ -327,7 +327,7 @@
 			],
 			"description_library" : [
 				{
-					"overview" : "The Elemental Plane of Ooze is positioned to the West of the Great Wheel cosmology, and is also known as the Feywilds. It is strongly associated with domains relating to Life, Balance, and Death, and is considered to represent the Neutral Good alignment in its purest form. This plane is the source of all Necromancy magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school. The Plane of Ooze is adjacent to the Primal Planescapes of Water to the North and Earth to the West. The Plane of Ooze is complimentary to the Plane of Ash.  <br><br>Ooze is associated with life and purity. It channels the school of Necromancy in that it seeds life from death in a constant cycle.  "
+					"overview" : "The Elemental Plane of Ooze is positioned to the South-East of the Great Wheel cosmology, and is also known as the Feywilds. It is strongly associated with domains relating to Life, Balance, and Hunt, and is considered to represent the Neutral Good alignment in its purest form. This plane is the source of all Necromancy magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  It channels the school of Necromancy in that it seeds life from death in a constant cycle.  "
 				},
 				{
 					"heading" : "Planar Associations",
@@ -381,8 +381,8 @@
 					"heading" : "Inhabitants",
 					"sublibrary" : [
 						{
-							"subheading" : "Deity",
-							"subcontent" : "Tarrasque"
+							"subheading" : "Deities",
+							"subcontent" : "Tarrasque, Daos"
 						},
 						{
 							"subheading" : "Creatures",
@@ -414,7 +414,7 @@
 			],
 			"description_library" : [
 				{
-					"overview" : "The Elemental Plane of Earth is positioned to the Southwest of the Great Wheel cosmology.  It is strongly associated with domains relating to Transformation and Stability, and is considered to represent the Neutral alignment in its purest form.  This plane is the source of all Transmutation magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  "
+					"overview" : "The Elemental Plane of Earth is positioned to the South of the Great Wheel cosmology.  It is strongly associated with domains relating to Transformation and Stability, and is considered to represent the Neutral alignment in its purest form.  This plane is the source of all Transmutation magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  "
 				},
 				{
 					"heading" : "Planar Associations",
@@ -468,8 +468,8 @@
 					"heading" : "Inhabitants",
 					"sublibrary" : [
 						{
-							"subheading" : "Deity",
-							"subcontent" : "Gondarin"
+							"subheading" : "Deities",
+							"subcontent" : "Gondarin, The Dracofiend"
 						},
 						{
 							"subheading" : "Creatures",
@@ -501,7 +501,7 @@
 			],
 			"description_library" : [
 				{
-					"overview" : "The Elemental Plane of Magma is positioned to the South of the Great Wheel cosmology, and is also known as Vulken. It is strongly associated with domains relating to Creation and Debauchery, and is considered to represent the Chaotic Neutral alignment in its purest form. This plane is the source of all Conjuration magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  <br><br>Magma is associated with creation and chaos. It channels the school of conjuration in that spontaneous creation and summoning are akin to Gondarin's daily endeavors.  "
+					"overview" : "The Elemental Plane of Magma is positioned to the South-West of the Great Wheel cosmology, and is also known as Vulken. It is strongly associated with domains relating to Creation and Debauchery, and is considered to represent the Chaotic Neutral alignment in its purest form. This plane is the source of all Conjuration magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  It channels the school of Conjuration in that spontaneous creation and summoning are akin to Gondarin's daily endeavors.  "
 				},
 				{
 					"heading" : "Planar Associations",
@@ -555,8 +555,8 @@
 					"heading" : "Inhabitants",
 					"sublibrary" : [
 						{
-							"subheading" : "Deity",
-							"subcontent" : "Averdeus"
+							"subheading" : "Deities",
+							"subcontent" : "Averdeus, Efreetis"
 						},
 						{
 							"subheading" : "Creatures",
@@ -588,7 +588,7 @@
 			],
 			"description_library" : [
 				{
-					"overview" : "The Elemental Plane of Fire is positioned to the Southeast of the Great Wheel cosmology.  It is strongly associated with domains relating to Destruction and Consumption, and is considered to represent the Neutral alignment in its purest form.  This plane is the source of all Evocation magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  "
+					"overview" : "The Elemental Plane of Fire is positioned to the West of the Great Wheel cosmology.  It is strongly associated with domains relating to Destruction and Consumption, and is considered to represent the Neutral alignment in its purest form.  This plane is the source of all Evocation magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  "
 				},
 				{
 					"heading" : "Planar Associations",
@@ -630,7 +630,7 @@
 						},
 						{
 							"subheading" : "School of Magic",
-							"subcontent" : "Enchantment"
+							"subcontent" : "Illusion"
 						},
                         {
 							"subheading" : "Alignment",
@@ -642,8 +642,8 @@
 					"heading" : "Inhabitants",
 					"sublibrary" : [
 						{
-							"subheading" : "Deity",
-							"subcontent" : "Sebabos"
+							"subheading" : "Deities",
+							"subcontent" : "Sebabos, The Dracoshade"
 						},
 						{
 							"subheading" : "Creatures",
@@ -675,7 +675,7 @@
 			],
 			"description_library" : [
 				{
-					"overview" : "The Elemental Plane of Ash is positioned to the East of the Great Wheel cosmology, and is also known as the Shadowfell.  It is strongly associated with domains relating to Death and Undeath, and is considered to represent the Neutral Evil alignment in its purest form.  This plane is the source of all Enchantment magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  <br><br>Ash is associated with undeath and insanity. It channels Enchantment in that its environment induces deep hallucinations.  The creatures that hail from the Shadowfell embrace Enchantment in order to lure living things into their grasp, which they must feed on since they often are undead and do not have a stable life force of their own.  "
+					"overview" : "The Elemental Plane of Ash is positioned to the North-West of the Great Wheel cosmology, and is also known as the Shadowfell.  It is strongly associated with domains relating to Death and Greed, and is considered to represent the Neutral Evil alignment in its purest form.  This plane is the source of all Illusion magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  It channels Illusion in that its environment induces deep hallucinations in visitors.  The creatures that hail from the Shadowfell embrace Illusion in order to lure living things into their grasp, which they must feed on since they often are undead and do not have a stable life force of their own.  "
 				},
 				{
 					"heading" : "Planar Associations",

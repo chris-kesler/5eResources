@@ -42,7 +42,7 @@
 						},
                         {
 							"subheading" : "Portfolio",
-							"subcontent" : "Illusion"
+							"subcontent" : "Enchantment"
 						},
 						{
 							"subheading" : "Factions",
@@ -70,7 +70,7 @@
 			],
 			"description_library" : [
 				{
-					"overview" : "Tempest is the Elemental Titan of Caelar, having adapted to a fully airborne environment. Tempest is an archaic celestial entity, preferring to take the form of an avian whose closest living relatives are Rocs, Dire Eagles, and Peacocks.  This Titan is rarely seen in calm weather, with violent gales and thundrous storms eternally clinging to the surrounding area. Tempest has been known to flare their tail, which shimmers in a literally enchanting manner. Those who gaze upon Tempest's display are often frozen in awe until the Titan leaves their sight.  Tempest does not have a lair, choosing instead to roam Caelar restlessly. The Titan is most often sighted striking prey with lightning and carrying them into the horizon.  "
+					"overview" : "Tempest is the Elemental Titan of Caelar, having adapted to a fully airborne environment. Tempest is an archaic celestial entity, preferring to take the form of an avian whose closest living relatives are Rocs, Dire Eagles, and Peacocks.  This Titan is rarely seen in calm weather, with violent gales and thundrous storms eternally clinging to the surrounding area. Tempest has been known to flare their tail, which shimmers in a literally enchanting manner.  Those who gaze upon Tempest's display are often frozen in awe until the Titan leaves their sight.  Tempest does not have a lair, choosing instead to roam Caelar restlessly. The Titan is most often sighted striking prey with lightning and carrying them into the horizon.  "
 				},
 				{
 					"heading" : "Planar Associations",
@@ -161,7 +161,7 @@
 			],
 			"description_library" : [
 				{
-					"overview" : "The Goddess of Ice and Honor is also known as the Arbiter of all Law. She helped forge the Edict during The Binding of the Lesser Deities, and oversees its observation in the mortal world. When the Edict is crossed, Frydeia does her part to dole judgment as she sees fit so that the Edict need not balance the offense itself. This is to avoid absolute catastrophe, since the Edict is raw power. That isn't say that Frydeia is merciful by mortal standards; she has had entire kingdoms put to the blade when a noble is being especially stubborn. Because of this, some believe that the Edict would resolve things in a kinder way than Frydeia does, and her intervention is solely for her own enjoyment. These rumors have not been shown to bother the Arbiter or her followers in the past.            <br><br>The Sigil of Frydeia is a downwards sword whose guard forms the arms of a merchant's scale. The favored form of Frydeia is that of a knight with a crystalline carapace.            <br><br>The Arbiter rules over the plane of Ice, which is home to the Constructs. These beings the mechanical denizens created and powered by Frydeia's psionic abilities.            <br><br>The Arbiter commands a strict religious sect of followers who seek to assist any nation in maintaining order. While the Arbiter herself does not condemn evilness as long as order is maintained, the organization has adopted its own additional standards that focus on peace, diplomacy, and violent intervention only when no other reasonable option presents itself. This group is known as the Magistrate, and its members are known as Magisters. Their ranks include mostly gishes such as Bladesingers and Twilight Clerics, but also War Magic Wizards and Peace Clerics. They exist outside of any nation's jurisdiction.  "
+					"overview" : "The Goddess of Ice and Honor is also known as the Arbiter of all Law. She helped forge the Edict during The Binding of the Lesser Deities, and oversees its observation in the mortal world. When the Edict is crossed, Frydeia does her part to dole judgment as she sees fit so that the Edict need not balance the offense itself. This is to avoid absolute catastrophe, since the Edict is raw power. That isn't say that Frydeia is merciful by mortal standards; she has had entire kingdoms put to the blade when a noble is being especially stubborn. Because of this, some believe that the Edict would resolve things in a kinder way than Frydeia does, and her intervention is solely for her own enjoyment. These rumors have not been shown to bother the Arbiter or her followers in the past.            <br><br>The Sigil of Frydeia is a downwards sword whose guard forms the arms of a merchant's scale. The favored form of Frydeia is that of a knight with a crystalline carapace.            <br><br>The Arbiter rules over the plane of Ice, which is home to the Constructs. These beings are the mechanical denizens created by Gondarin as a gift to Frydeia, and have been self replicating in her service for eons.  <br><br>The Arbiter commands a strict religious sect of followers who seek to assist any nation in maintaining order. While the Arbiter herself does not condemn evilness as long as order is maintained, the organization has adopted its own additional standards that focus on peace, diplomacy, and violent intervention only when no other reasonable option presents itself. This group is known as the Magistrate, and its members are known as Magisters. Their ranks mostly include gishes such as Bladesingers and Twilight Clerics, but also War Magic Wizards and Peace Clerics. They exist outside of any one nation's jurisdiction.  "
 				},
 				{
 					"heading" : "Planar Associations",
@@ -190,8 +190,8 @@
 				{
                     "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/2/23/Coupin%281912%29animaux_excentriques%284ed%29-p243-pieuvre.jpg",
                     "img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Coupin(1912)animaux_excentriques(4ed)-p243-pieuvre.jpg",
-                    "img_linked" : "https://i.imgur.com/yOLvfmn.jpeg",
-                    "img_linked_source" : "https://imgur.com/gallery/0kCSMwl",
+                    "img_linked" : "https://static.wikia.nocookie.net/35eb08df-cf5d-4af0-95e1-909825471933",
+                    "img_linked_source" : "https://godzilla.fandom.com/f/p/4400000000000002230",
                     "species" : "Deus Polystrisia"
 				},
 				{
@@ -252,7 +252,7 @@
 			],
 			"description_library" : [
 				{
-					"overview" : "The Kraken is the Elemental Titan of Aquar, having adapted to a dark aquatic environment.  The Kraken is a massive aberrant entity, preferring to combine the most alien aspects of cephalopods and fish in her forms.  Many scholars have concluded that the Kraken is her most typical form is both cephalopod and fish--specifically shark--but few can agree on the exact ratio involved.  "
+					"overview" : "The Kraken is the Elemental Titan of Aquar, having adapted to a dark aquatic environment.  The Kraken is a massive aberrant entity, preferring to combine the most alien aspects of cephalopods and fish in her forms.  Many scholars have concluded that the Kraken in her most typical form is both cephalopod and fish--specifically shark--but few can agree on the exact ratio involved.  "
 				},
 				{
 					"heading" : "Planar Associations",
@@ -343,7 +343,7 @@
 			],
 			"description_library" : [
 				{
-					"overview" : "The Goddess of Ooze and Life is also known as the All-Mother. She is considered to be the only truly benevolent of the four. The All-Mother is gentle, generous, and understanding in most cases, but she and her followers have shown remarkable zeal when taking up arms in the defense of goodness.  "
+					"overview" : "The Goddess of Ooze and Life is also known as the All-Mother. She is considered to be the only truly benevolent deity among the Gods and Titans. The All-Mother is gentle, generous, and understanding in most cases, but she and her followers have shown remarkable zeal when taking up arms in the defense of a righteous cause.  "
 				},
 				{
 					"heading" : "Planar Associations",
@@ -434,7 +434,7 @@
 			],
 			"description_library" : [
 				{
-					"overview" : "The Tarrasque is the Elemental Titan of Terral, having adapted to a subterranean environment.  The Tarrasque is a bestial monstrous entity, preferring to combine the most physically powerful elements of both reptiles and mammals in his forms.  Many scholars have concluded that the Tarrasque is his most typical form is both reptilian and mammalian, but the ratios involved are less clear.  The closest living relatives to the Tarrasque are the Armadillo and the Tyrannosaurus.  "
+					"overview" : "The Tarrasque is the Elemental Titan of Terral, having adapted to a subterranean environment.  The Tarrasque is a bestial monstrous entity, preferring to combine the most physically powerful elements of both reptiles and mammals in his forms.  Many scholars have concluded that the Tarrasque in his most typical form is both reptilian and mammalian, but the ratios involved are less clear.  The closest living relatives to the Tarrasque are the Armadillo and the Tyrannosaurus.  "
 				},
 				{
 					"heading" : "Planar Associations",
@@ -616,7 +616,7 @@
 			],
 			"description_library" : [
 				{
-					"overview" : "Averdeus is the Elemental Titan of Ignar, having adapted to a blistering environment.  Averdeus is a shapeshifting demonic entity, preferring to combine the most frightening aspects of insects, arachnids, and serpents in his forms.  Many scholars have concluded that Averdeus is his most typical form is both arachnid and insect, but the inclusion of serpent as a subtype of reptile is often the topic of debate.  Averdeus' closest relatives are Dire Scorpions and Dire Wasps.  "
+					"overview" : "Averdeus is the Elemental Titan of Ignar, having adapted to a blistering environment.  Averdeus is a shapeshifting demonic entity, preferring to combine the most frightening aspects of insects, arachnids, and serpents in his forms.  Many scholars have concluded that Averdeus in his most typical form is both arachnid and insect, but the inclusion of serpent as a subtype of reptile is often the topic of debate.  Averdeus' closest relatives are Dire Scorpions and Dire Wasps.  "
 				},
 				{
 					"heading" : "Planar Associations",

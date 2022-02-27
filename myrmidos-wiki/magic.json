@@ -15,11 +15,11 @@
 					"sublibrary" : [
                         {
 							"subheading" : "Planar Origin",
-							"subcontent" : "Caelar"
+							"subcontent" : "Shadowfell"
 						},
 						{
 							"subheading" : "Alignment",
-							"subcontent" : "Lawful Evil"
+							"subcontent" : "Neutral Evil"
 						}
 					]
 				}
@@ -344,11 +344,11 @@
 					"sublibrary" : [
                         {
 							"subheading" : "Planar Origin",
-							"subcontent" : "Shadowfell"
+							"subcontent" : "Caelar"
 						},
 						{
 							"subheading" : "Alignment",
-							"subcontent" : "Neutral Evil"
+							"subcontent" : "Lawful Evil"
 						}
 					]
 				}
