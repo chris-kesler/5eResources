@@ -1,367 +1,998 @@
 {
     "entries" : [
         {
-            "entry_name" : "Frydeia",
-            "img_rehosted" : "/resources/images/frydeia.webp",
-            "img_rehosted_source" : "https://artflow.ai/",
-
-            "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/002/443/459/large/jason-nguyen-waterknight-jasonnguyen.jpg?1461796817",
-            "img_linked_source" : "https://www.artstation.com/artwork/XDDYn",
-
-            "entry_category" : "Deity",
-            "entry_type" : "Greater",
-            "entry_variety" : "Deus Iustitia",
-
-            "entry_title" : "Arbiter of Law",
-            "entry_description_overview" : "The Goddess of Ice and Honor is also known as the Arbiter of all Law. She helped forge the Edict during The Binding of the Lesser Deities, and oversees its observation in the mortal world. When the Edict is crossed, Frydeia does her part to dole judgment as she sees fit so that the Edict need not balance the offense itself. This is to avoid absolute catastrophe, since the Edict is raw power. That isn't say that Frydeia is merciful by mortal standards; she has had entire kingdoms put to the blade when a noble is being especially stubborn. Because of this, some believe that the Edict would resolve things in a kinder way than Frydeia does, and her intervention is solely for her own enjoyment. These rumors have not been shown to bother the Arbiter or her followers in the past.            <br><br>The Sigil of Frydeia is a downwards sword whose guard forms the arms of a merchant's scale. The favored form of Frydeia is that of a knight with a crystalline carapace.            <br><br>The Arbiter rules over the plane of Ice, which is home to the Constructs. These beings the mechanical denizens created and powered by Frydeia's psionic abilities.            <br><br>The Arbiter commands a strict religious sect of followers who seek to assist any nation in maintaining order. While the Arbiter herself does not condemn evilness as long as order is maintained, the organization has adopted its own additional standards that focus on peace, diplomacy, and violent intervention only when no other reasonable option presents itself. This group is known as the Magistrate, and its members are known as Magisters. Their ranks include mostly gishes such as Bladesingers and Twilight Clerics, but also War Magic Wizards and Peace Clerics. They exist outside of any nation's jurisdiction.            ",
-
-            "entry_titles" : "Goddess of Ice<br>Crystal Queen<br>Mother of Creeds<br>The Honored One",
-            "entry_symbol" : "A set of merchant scales hung from the guard of a downturned sword",
-            "entry_worshippers" : "Knights<br>Priests<br>Nobles",
-
-            "entry_alignment" : "Lawful Neutral",
-            "entry_portfolio" : "Honor<br>Tradition<br>Creed",
-            "entry_domains" : "War, Peace, Grave, Twilight, Order, Knowledge",
-
-            "entry_animals" : "Arctic Cat<br>Arctic Roc",
-            "entry_creatures" : "Ice Elementals<br>Water Elementals<br>Air Elementals<br>Celestials<br>White Dragons",
-            "entry_colors" : "White, Aqua, Teal, Platinum"
-
-        },
+			"entry_name" : "Tempest",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+                    "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/2/21/Roc_1.jpg",
+                    "img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Roc_1.jpg",
+                    "img_linked" : "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/86b645e3-7cc1-4d8d-82ab-82c4e6be236b/d78akf4-d40e51d2-e807-4274-9a0f-b3a5c12ddf35.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg2YjY0NWUzLTdjYzEtNGQ4ZC04MmFiLTgyYzRlNmJlMjM2YlwvZDc4YWtmNC1kNDBlNTFkMi1lODA3LTQyNzQtOWEwZi1iM2E1YzEyZGRmMzUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.934Ywf9beOizDYTQQWVPcW7F4Uexr8bpXVZrdCNNheE",
+                    "img_linked_source" : "https://www.deviantart.com/c0ng/art/Thunder-Bird-437193184",
+                    "species" : "Deus Incanfulgar"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+                        {
+							"subheading" : "Planar Domain",
+							"subcontent" : "Caelar"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Neutral"
+						},
+                        {
+							"subheading" : "Titles",
+							"subcontent" : "Skyborn"
+						}
+					]
+				},
+				{
+					"heading" : "Religion",
+					"sublibrary" : [
+                        {
+							"subheading" : "Symbol",
+							"subcontent" : "An peacock shrouded in lightning"
+						},
+                        {
+							"subheading" : "Domains",
+							"subcontent" : "Tempest"
+						},
+                        {
+							"subheading" : "Portfolio",
+							"subcontent" : "Illusion"
+						},
+						{
+							"subheading" : "Factions",
+							"subcontent" : "The Talons of Tempest"
+						}
+					]
+				},
+				{
+					"heading" : "Manifestations",
+					"sublibrary" : [
+						{
+							"subheading" : "Animal Forms",
+							"subcontent" : "Thunder Roc"
+						},
+						{
+							"subheading" : "Other Forms",
+							"subcontent" : "Air Elementals"
+						},
+						{
+							"subheading" : "Colors",
+							"subcontent" : "White, Grey, Violet, Cyan"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "Tempest is the Elemental Titan of Caelar, having adapted to a fully airborne environment. Tempest is an archaic celestial entity, preferring to take the form of an avian whose closest living relatives are Rocs, Dire Eagles, and Peacocks.  This Titan is rarely seen in calm weather, with violent gales and thundrous storms eternally clinging to the surrounding area. Tempest has been known to flare their tail, which shimmers in a literally enchanting manner. Those who gaze upon Tempest's display are often frozen in awe until the Titan leaves their sight.  Tempest does not have a lair, choosing instead to roam Caelar restlessly. The Titan is most often sighted striking prey with lightning and carrying them into the horizon.  "
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Magic",
+							"subcontent" : ""
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
         {
-            "entry_name" : "Gondarin",
-            "img_rehosted" : "/resources/images/gondarin.webp",
-            "img_rehosted_source" : "https://artflow.ai/",
-
-            "img_linked" : "https://cdn.bhdw.net/im/league-of-legends-lol-ornn-leter-muri-55620_w635.jpg",
-            "img_linked_source" : "https://www.besthdwallpaper.com/lol/league-of-legends-lol-ornn-dt_sq-55620.html",
-
-            "entry_category" : "Deity",
-            "entry_type" : "Greater",
-            "entry_variety" : "Deus Gehennia",
-
-            "entry_title" : "All-Father",
-            "entry_description_overview" : "under development",
-
-            "entry_titles" : "God of Magma<br>Forge Master<br>All-Father<br>The First Artisan",
-            "entry_symbol" : "Brass Hammer",
-            "entry_worshippers" : "Engineers<br>Smiths<br> Miners<br>Dwarves<br>Fiends<br>Demons",
-
-            "entry_alignment" : "Chaotic Neutral",
-            "entry_portfolio" : "Creation<br>Invention<br>Expression",
-            "entry_domains" : "Forge<br>War<br>Arcana<br>Trickery",
-
-            "entry_animals" : "Brass Elephant<br>Magma Wyrm",
-            "entry_creatures" : "Magma Elementals<br>Fire Elementals<br>Earth Elementals<br>Fiends<br>Brass Dragon",
-            "entry_colors" : "Brass, Silver, Obsidian, Red, Black"
-
-        },
+			"entry_name" : "Frydeia",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+                    "img_rehosted" : "/resources/images/frydeia.webp",
+                    "img_rehosted_source" : "https://artflow.ai/",
+                    "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/002/443/459/large/jason-nguyen-waterknight-jasonnguyen.jpg?1461796817",
+                    "img_linked_source" : "https://www.artstation.com/artwork/XDDYn",
+                    "species" : "Deus Iustitia"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+                        {
+							"subheading" : "Planar Domain",
+							"subcontent" : "Eifrost"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Lawful Neutral"
+						},
+                        {
+							"subheading" : "Titles",
+							"subcontent" : "Arbiter of Law, Goddess of Ice, Crystal Queen, Mother of Creeds, The Honored One"
+						}
+					]
+				},
+				{
+					"heading" : "Religion",
+					"sublibrary" : [
+                        {
+							"subheading" : "Symbol",
+							"subcontent" : "A set of merchant scales hung from the guard of a downturned sword"
+						},
+                        {
+							"subheading" : "Domains",
+							"subcontent" : "War, Peace, Grave, Twilight, Order, Knowledge"
+						},
+                        {
+							"subheading" : "Portfolio",
+							"subcontent" : "Honor, Tradition, Creed"
+						},
+						{
+							"subheading" : "Factions",
+							"subcontent" : "The Magistrate of Frydeia"
+						}
+					]
+				},
+				{
+					"heading" : "Manifestations",
+					"sublibrary" : [
+						{
+							"subheading" : "Animal Forms",
+							"subcontent" : "Arctic Cat, Arctic Roc"
+						},
+						{
+							"subheading" : "Other Forms",
+							"subcontent" : "Ice Elementals, Water Elementals, Air Elementals, Celestials, White Dragons"
+						},
+						{
+							"subheading" : "Colors",
+							"subcontent" : "White, Aqua, Teal, Platinum"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "The Goddess of Ice and Honor is also known as the Arbiter of all Law. She helped forge the Edict during The Binding of the Lesser Deities, and oversees its observation in the mortal world. When the Edict is crossed, Frydeia does her part to dole judgment as she sees fit so that the Edict need not balance the offense itself. This is to avoid absolute catastrophe, since the Edict is raw power. That isn't say that Frydeia is merciful by mortal standards; she has had entire kingdoms put to the blade when a noble is being especially stubborn. Because of this, some believe that the Edict would resolve things in a kinder way than Frydeia does, and her intervention is solely for her own enjoyment. These rumors have not been shown to bother the Arbiter or her followers in the past.            <br><br>The Sigil of Frydeia is a downwards sword whose guard forms the arms of a merchant's scale. The favored form of Frydeia is that of a knight with a crystalline carapace.            <br><br>The Arbiter rules over the plane of Ice, which is home to the Constructs. These beings the mechanical denizens created and powered by Frydeia's psionic abilities.            <br><br>The Arbiter commands a strict religious sect of followers who seek to assist any nation in maintaining order. While the Arbiter herself does not condemn evilness as long as order is maintained, the organization has adopted its own additional standards that focus on peace, diplomacy, and violent intervention only when no other reasonable option presents itself. This group is known as the Magistrate, and its members are known as Magisters. Their ranks include mostly gishes such as Bladesingers and Twilight Clerics, but also War Magic Wizards and Peace Clerics. They exist outside of any nation's jurisdiction.  "
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Magic",
+							"subcontent" : ""
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
         {
-            "entry_name" : "Deliklese",
-            "img_rehosted" : "/resources/images/deliklese.webp",
-            "img_rehosted_source" : "https://artflow.ai/",
-
-            "img_linked" : "https://fantasy-art-engine-blog.tumblr.com/image/102817115499",
-            "img_linked_source" : "https://fantasy-art-engine-blog.tumblr.com/post/102817115499/melandru-nature-goddess-by-kekai-kotaki",
-
-            "entry_category" : "Deity",
-            "entry_type" : "Greater",
-            "entry_variety" : "Deus Venatia",
-
-            "entry_title" : "All-Mother",
-            "entry_description_overview" : "The Goddess of Ooze and Life is also known as the All-Mother. She is considered to be the only truly benevolent of the four. The All-Mother is gentle, generous, and understanding in most cases, but she and her followers have shown remarkable zeal when taking up arms in the defense of goodness.  ",
-
-            "entry_titles" : "Goddess of Ooze<br>Life-Giver<br>All-Mother<br>The Merciful One",
-            "entry_symbol" : "Melting Flower",
-            "entry_worshippers" : "Druids<br>Hunters<br>Farmers",
-
-            "entry_alignment" : "Neutral Good",
-            "entry_portfolio" : "Beauty<br>Pleasure<br>Freedom",
-            "entry_domains" : "Nature<br>Life<br>Grave",
-
-            "entry_animals" : "Deer<br>Toad<br>Alligator",
-            "entry_creatures" : "Ooze Elementals<br>Water Elementals<br>Earth Elementals<br>Beasts<br>Green Dragons",
-            "entry_colors" : "Green, Brown, Pink, Yellow"
-        },
+			"entry_name" : "Kraken",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+                    "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/2/23/Coupin%281912%29animaux_excentriques%284ed%29-p243-pieuvre.jpg",
+                    "img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Coupin(1912)animaux_excentriques(4ed)-p243-pieuvre.jpg",
+                    "img_linked" : "https://i.imgur.com/yOLvfmn.jpeg",
+                    "img_linked_source" : "https://imgur.com/gallery/0kCSMwl",
+                    "species" : "Deus Polystrisia"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+                        {
+							"subheading" : "Planar Domain",
+							"subcontent" : "Aquar"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Neutral"
+						},
+                        {
+							"subheading" : "Titles",
+							"subcontent" : "Seaborn"
+						}
+					]
+				},
+				{
+					"heading" : "Religion",
+					"sublibrary" : [
+                        {
+							"subheading" : "Symbol",
+							"subcontent" : "Tentacles pulling a sailing ship below the water"
+						},
+                        {
+							"subheading" : "Domains",
+							"subcontent" : "Water"
+						},
+                        {
+							"subheading" : "Portfolio",
+							"subcontent" : "None"
+						},
+						{
+							"subheading" : "Factions",
+							"subcontent" : "The Tentacles of Kraken"
+						}
+					]
+				},
+				{
+					"heading" : "Manifestations",
+					"sublibrary" : [
+						{
+							"subheading" : "Animal Forms",
+							"subcontent" : "Dire Squid"
+						},
+						{
+							"subheading" : "Other Forms",
+							"subcontent" : "Water Elementals"
+						},
+						{
+							"subheading" : "Colors",
+							"subcontent" : "Blue, Teal, Navy"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "The Kraken is the Elemental Titan of Aquar, having adapted to a dark aquatic environment.  The Kraken is a massive aberrant entity, preferring to combine the most alien aspects of cephalopods and fish in her forms.  Many scholars have concluded that the Kraken is her most typical form is both cephalopod and fish--specifically shark--but few can agree on the exact ratio involved.  "
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Magic",
+							"subcontent" : ""
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
         {
-            "entry_name" : "Sebabos",
-            "img_rehosted" : "/resources/images/sebabos.webp",
-            "img_rehosted_source" : "https://artflow.ai/",
-
-            "img_linked" : "https://cdna.artstation.com/p/assets/images/images/002/468/854/large/ramses-melendez-only-death-and-ashes.jpg?1462125044",
-            "img_linked_source" : "https://www.artstation.com/artwork/qZENR",
-
-            "entry_category" : "Deity",
-            "entry_type" : "Greater",
-            "entry_variety" : "Deus Mendacium",
-
-            "entry_title" : "The Dark Adversary",
-            "entry_description_overview" : "The God of Ash and Death is also known as the Phoenix since this is his chosen avatar.  He may be immortal himself, but he chose to adopt this form of his own volition.  By collaborating with Gondarin, Sebabos created the Phoenix as a creature with the ability to recycle its own life forces.  This was made as a mockery of his lover's domain of life and death.  The meaning behind this act is still a matter of debate.  <br><br>Sebabos is Neutral Evil in that he brings the prolonging of suffering whenever he can, but that is not to say he reigns mayhem whenever he can.  He remains utterly detached from mortal affairs, but happily tricks and beguils mortals whenever the opportunity presents itself.  He relishes suffering that is brought about by one's own actions, only intervening in a literal sense in the most enticing of circumstances.  <br><br>Sebabos is deeply in love with Deliklese, and continually gifts her with reaped souls from mortals he has won and swindled.  <br><br>While Sebabos is accurately referred to as a Deceiver and Reaper, he does not prefer to wield a scythe as some pagan interpretations depict.  Sebabos' preferred weapon and tool is that of a black bladed axe akin to a headsman, with discreet golden insets. He dislikes all color save for the sheen of gold, and many legends tell of those who have bought extra weeks or months of life with their vast fortunes.  <br><br>Sebabos is associated with Illusion magic, weaving lies and trickery with masterful skill. The need for discretion is great, drawing the attention of many unsavory entities including undead.  ",
-
-            "entry_titles" : "God of Ash<br>Lord of Death<br>Grim Reaper<br>The Deceiver",
-            "entry_symbol" : "Grey Phoenix holding a black and gold axe",
-            "entry_worshippers" : "Undertakers<br>Cultists<br>Cannibals<br>Liches",
-
-            "entry_alignment" : "Neutral Evil",
-            "entry_portfolio" : "Suffering<br>Betrayal<br>Deception",
-            "entry_domains" : "Death<br>Light<br>Twilight<br>Trickery",
-
-            "entry_animals" : "None",
-            "entry_creatures" : "Ash Elementals<br>Fire Elementals<br>Air Elementals<br>Undead<br>Shadow Dragons",
-            "entry_colors" : "Grey, Gold, Black"
-        },
+			"entry_name" : "Deliklese",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+                    "img_rehosted" : "/resources/images/deliklese.webp",
+                    "img_rehosted_source" : "https://artflow.ai/",
+                    "img_linked" : "https://fantasy-art-engine-blog.tumblr.com/image/102817115499",
+                    "img_linked_source" : "https://fantasy-art-engine-blog.tumblr.com/post/102817115499/melandru-nature-goddess-by-kekai-kotaki",
+                    "species" : "Deus Venatia"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+                        {
+							"subheading" : "Planar Domain",
+							"subcontent" : "Feywilds"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Neutral Good"
+						},
+                        {
+							"subheading" : "Titles",
+							"subcontent" : "All-Mother, Goddess of Ooze, Life-Giver, All-Mother, The Merciful One"
+						}
+					]
+				},
+				{
+					"heading" : "Religion",
+					"sublibrary" : [
+                        {
+							"subheading" : "Symbol",
+							"subcontent" : "A melting Flower"
+						},
+                        {
+							"subheading" : "Domains",
+							"subcontent" : "Nature, Life, Grave"
+						},
+                        {
+							"subheading" : "Portfolio",
+							"subcontent" : "Beauty, Pleasure, Freedom"
+						},
+						{
+							"subheading" : "Factions",
+							"subcontent" : "The Wardens of Deliklese"
+						}
+					]
+				},
+				{
+					"heading" : "Manifestations",
+					"sublibrary" : [
+						{
+							"subheading" : "Animal Forms",
+							"subcontent" : "Deer, Toad, Alligator"
+						},
+						{
+							"subheading" : "Other Forms",
+							"subcontent" : "Ooze Elementals, Water Elementals, Earth Elementals, Beasts, Green Dragons"
+						},
+						{
+							"subheading" : "Colors",
+							"subcontent" : "Green, Brown, Pink, Yellow"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "The Goddess of Ooze and Life is also known as the All-Mother. She is considered to be the only truly benevolent of the four. The All-Mother is gentle, generous, and understanding in most cases, but she and her followers have shown remarkable zeal when taking up arms in the defense of goodness.  "
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Magic",
+							"subcontent" : ""
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
         {
-            "entry_name" : "Tempest",
-            "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/2/21/Roc_1.jpg",
-            "img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Roc_1.jpg",
-
-            "img_linked" : "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/86b645e3-7cc1-4d8d-82ab-82c4e6be236b/d78akf4-d40e51d2-e807-4274-9a0f-b3a5c12ddf35.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg2YjY0NWUzLTdjYzEtNGQ4ZC04MmFiLTgyYzRlNmJlMjM2YlwvZDc4YWtmNC1kNDBlNTFkMi1lODA3LTQyNzQtOWEwZi1iM2E1YzEyZGRmMzUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.934Ywf9beOizDYTQQWVPcW7F4Uexr8bpXVZrdCNNheE",
-            "img_linked_source" : "https://www.deviantart.com/c0ng/art/Thunder-Bird-437193184",
-
-            "entry_category" : "Deity",
-            "entry_category_plural" : "Deities",
-            "entry_type" : "Elder",
-            "entry_variety" : "Deus Incanfulgar",
-
-            "entry_title" : "Skyborn",
-            "entry_description_overview" : "Tempest is the Elemental Titan of Caelar, having adapted to a fully airborne environment. Tempest is an archaic celestial entity, preferring to take the form of an avian whose closest living relatives are Rocs, Dire Eagles, and Peacocks.  This Titan is rarely seen in calm weather, with violent gales and thundrous storms eternally clinging to the surrounding area. Tempest has been known to flare their tail, which shimmers in a literally enchanting manner. Those who gaze upon Tempest's display are often frozen in awe until the Titan leaves their sight.  Tempest does not have a lair, choosing instead to roam Caelar restlessly. The Titan is most often sighted striking prey with lightning and carrying them into the horizon.  ",
-
-            "entry_titles" : "Skyborn",
-            "entry_symbol" : "An eagle shrouded in lightning",
-            "entry_worshippers" : "The Talons of Caelar",
-
-            "entry_alignment" : "Neutral",
-            "entry_portfolio" : "NA",
-            "entry_domains" : "Tempest",
-
-            "entry_animals" : "Thunder Roc",
-            "entry_creatures" : "Air Elementals",
-            "entry_colors" : "White, Grey, Violet, Cyan"
-        },
+			"entry_name" : "Tarrasque",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+                    "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/7/7d/Gravure_de_la_Tarasque.png",
+                    "img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Gravure_de_la_Tarasque.png",
+                    "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/012/504/865/large/iker-paz-cd-d-d-tarrasque-web-ikerpaz.jpg?1535120931",
+                    "img_linked_source" : "https://www.artstation.com/artwork/2D8ge",
+                    "species" : "Deus Horribilis"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+                        {
+							"subheading" : "Planar Domain",
+							"subcontent" : "Terral"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Neutral"
+						},
+                        {
+							"subheading" : "Titles",
+							"subcontent" : "Earthborn"
+						}
+					]
+				},
+				{
+					"heading" : "Religion",
+					"sublibrary" : [
+                        {
+							"subheading" : "Symbol",
+							"subcontent" : "A sleeping reptile with a mountain atop its back"
+						},
+                        {
+							"subheading" : "Domains",
+							"subcontent" : "Earth"
+						},
+                        {
+							"subheading" : "Portfolio",
+							"subcontent" : "None"
+						},
+						{
+							"subheading" : "Factions",
+							"subcontent" : "The Horns of Tarrasque"
+						}
+					]
+				},
+				{
+					"heading" : "Manifestations",
+					"sublibrary" : [
+						{
+							"subheading" : "Animal Forms",
+							"subcontent" : "Zaratan"
+						},
+						{
+							"subheading" : "Other Forms",
+							"subcontent" : "Earth Elementals"
+						},
+						{
+							"subheading" : "Colors",
+							"subcontent" : "Brown, Tan, Orange, Black"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "The Tarrasque is the Elemental Titan of Terral, having adapted to a subterranean environment.  The Tarrasque is a bestial monstrous entity, preferring to combine the most physically powerful elements of both reptiles and mammals in his forms.  Many scholars have concluded that the Tarrasque is his most typical form is both reptilian and mammalian, but the ratios involved are less clear.  The closest living relatives to the Tarrasque are the Armadillo and the Tyrannosaurus.  "
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Magic",
+							"subcontent" : ""
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
         {
-            "entry_name" : "Averdeus",
-            "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/c/c6/Little_folks_in_feathers_and_fur%2C_and_others_in_neither_%281875%29_%2814597486550%29.jpg",
-            "img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Little_folks_in_feathers_and_fur,_and_others_in_neither_(1875)_(14597486550).jpg",
-
-            "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/000/129/309/large/xu-pengcheng-4.jpg?1404923143",
-            "img_linked_source" : "https://www.artstation.com/artwork/the-fly-insect",
-
-            "entry_category" : "Deity",
-            "entry_category_plural" : "Deities",
-            "entry_type" : "Elder",
-            "entry_variety" : "NA",
-
-            "entry_title" : "Fireborn",
-            "entry_description_overview" : "Averdeus is the Elemental Titan of Ignar, having adapted to a blistering environment.  Averdeus is a shapeshifting demonic entity, preferring to combine the most frightening aspects of insects, arachnids, and serpents in his forms.  Many scholars have concluded that Averdeus is his most typical form is both arachnid and insect, but the inclusion of serpent as a subtype of reptile is often the topic of debate.  Averdeus' closest relatives are Dire Scorpions and Dire Wasps.            ",
-
-            "entry_titles" : "Fireborn",
-            "entry_symbol" : "A scorpion wreathed in flames",
-            "entry_worshippers" : "The Pincers of Ignar",
-
-            "entry_alignment" : "Neutral",
-            "entry_portfolio" : "NA",
-            "entry_domains" : "Fire",
-
-            "entry_animals" : "Spider Snake",
-            "entry_creatures" : "Fire Elementals",
-            "entry_colors" : "Red, Orange, Gold, Black"
-        },
+			"entry_name" : "Gondarin",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+                    "img_rehosted" : "/resources/images/gondarin.webp",
+                    "img_rehosted_source" : "https://artflow.ai/",
+                    "img_linked" : "https://cdn.bhdw.net/im/league-of-legends-lol-ornn-leter-muri-55620_w635.jpg",
+                    "img_linked_source" : "https://www.besthdwallpaper.com/lol/league-of-legends-lol-ornn-dt_sq-55620.html",
+                    "species" : "Deus Gehennia"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+                        {
+							"subheading" : "Planar Domain",
+							"subcontent" : "Vulken"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Chaotic Neutral"
+						},
+                        {
+							"subheading" : "Titles",
+							"subcontent" : "All-Father, God of Magma, Forge Master, All-Father, The First Artisan"
+						}
+					]
+				},
+				{
+					"heading" : "Religion",
+					"sublibrary" : [
+                        {
+							"subheading" : "Symbol",
+							"subcontent" : "A Brass Hammer"
+						},
+                        {
+							"subheading" : "Domains",
+							"subcontent" : "Forge, War, Arcana, Trickery"
+						},
+                        {
+							"subheading" : "Portfolio",
+							"subcontent" : "Creation, Invention, Expression"
+						},
+						{
+							"subheading" : "Factions",
+							"subcontent" : "The Artisans of Gondarin"
+						}
+					]
+				},
+				{
+					"heading" : "Manifestations",
+					"sublibrary" : [
+						{
+							"subheading" : "Animal Forms",
+							"subcontent" : "Brass Elephant, Magma Wyrm"
+						},
+						{
+							"subheading" : "Other Forms",
+							"subcontent" : "Magma Elementals, Fire Elementals, Earth Elementals, Fiends, Brass Dragon"
+						},
+						{
+							"subheading" : "Colors",
+							"subcontent" : "Brass, Silver, Obsidian, Red, Black"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "under development"
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Magic",
+							"subcontent" : ""
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
         {
-            "entry_name" : "Tarrasque",
-            "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/7/7d/Gravure_de_la_Tarasque.png",
-            "img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Gravure_de_la_Tarasque.png",
-
-            "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/012/504/865/large/iker-paz-cd-d-d-tarrasque-web-ikerpaz.jpg?1535120931",
-            "img_linked_source" : "https://www.artstation.com/artwork/2D8ge",
-
-            "entry_category" : "Deity",
-            "entry_category_plural" : "Deities",
-            "entry_type" : "Elder",
-            "entry_variety" : "Kraken",
-
-            "entry_title" : "Earthborn",
-            "entry_description_overview" : "The Tarrasque is the Elemental Titan of Terral, having adapted to a subterranean environment.  The Tarrasque is a bestial monstrous entity, preferring to combine the most physically powerful elements of both reptiles and mammals in his forms.  Many scholars have concluded that the Tarrasque is his most typical form is both reptilian and mammalian, but the ratios involved are less clear.  The closest living relatives to the Tarrasque are the Armadillo and the Tyrannosaurus",
-
-            "entry_titles" : "Earthborn",
-            "entry_symbol" : "A sleeping reptile with a mountain atop its back",
-            "entry_worshippers" : "The Horns of Terral",
-
-            "entry_alignment" : "Neutral",
-            "entry_portfolio" : "NA",
-            "entry_domains" : "Earth",
-
-            "entry_animals" : "Zaratan",
-            "entry_creatures" : "Earth Elementals",
-            "entry_colors" : "Brown, Tan, Orange, Black"
-        },
+			"entry_name" : "Averdeus",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+                    "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/c/c6/Little_folks_in_feathers_and_fur%2C_and_others_in_neither_%281875%29_%2814597486550%29.jpg",
+                    "img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Little_folks_in_feathers_and_fur,_and_others_in_neither_(1875)_(14597486550).jpg",
+                    "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/000/129/309/large/xu-pengcheng-4.jpg?1404923143",
+                    "img_linked_source" : "https://www.artstation.com/artwork/the-fly-insect",
+                    "species" : "Deus Aradeatis"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+                        {
+							"subheading" : "Planar Domain",
+							"subcontent" : "Ignar"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Neutral"
+						},
+                        {
+							"subheading" : "Titles",
+							"subcontent" : "Fireborn"
+						}
+					]
+				},
+				{
+					"heading" : "Religion",
+					"sublibrary" : [
+                        {
+							"subheading" : "Symbol",
+							"subcontent" : "A scorpion wreathed in flames"
+						},
+                        {
+							"subheading" : "Domains",
+							"subcontent" : "Fire"
+						},
+                        {
+							"subheading" : "Portfolio",
+							"subcontent" : "None"
+						},
+						{
+							"subheading" : "Factions",
+							"subcontent" : "The Stingers of Averdeus"
+						}
+					]
+				},
+				{
+					"heading" : "Manifestations",
+					"sublibrary" : [
+						{
+							"subheading" : "Animal Forms",
+							"subcontent" : "Spider Snake"
+						},
+						{
+							"subheading" : "Other Forms",
+							"subcontent" : "Fire Elementals"
+						},
+						{
+							"subheading" : "Colors",
+							"subcontent" : "Red, Orange, Gold, Black"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "Averdeus is the Elemental Titan of Ignar, having adapted to a blistering environment.  Averdeus is a shapeshifting demonic entity, preferring to combine the most frightening aspects of insects, arachnids, and serpents in his forms.  Many scholars have concluded that Averdeus is his most typical form is both arachnid and insect, but the inclusion of serpent as a subtype of reptile is often the topic of debate.  Averdeus' closest relatives are Dire Scorpions and Dire Wasps.  "
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Magic",
+							"subcontent" : ""
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
         {
-            "entry_name" : "Kraken",
-            "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/2/23/Coupin%281912%29animaux_excentriques%284ed%29-p243-pieuvre.jpg",
-            "img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Coupin(1912)animaux_excentriques(4ed)-p243-pieuvre.jpg",
-
-            "img_linked" : "https://i.imgur.com/yOLvfmn.jpeg",
-            "img_linked_source" : "https://imgur.com/gallery/0kCSMwl",
-
-            "entry_category" : "Deity",
-            "entry_category_plural" : "Deities",
-            "entry_type" : "Elder",
-            "entry_variety" : "Kraken",
-
-            "entry_title" : "Seaborn",
-            "entry_description_overview" : "The Kraken is the Elemental Titan of Aquar, having adapted to a dark aquatic environment.  The Kraken is a massive aberrant entity, preferring to combine the most alien aspects of cephalopods and fish in her forms.  Many scholars have concluded that the Kraken is her most typical form is both cephalopod and fish--specifically shark--but few can agree on the exact ratio involved.  ",
-
-            "entry_titles" : "Waterborn",
-            "entry_symbol" : "Tentacles pulling a sailing ship below the water",
-            "entry_worshippers" : "The Tentacles of Aquar",
-
-            "entry_alignment" : "Neutral",
-            "entry_portfolio" : "NA",
-            "entry_domains" : "Water",
-
-            "entry_animals" : "Dire Squid",
-            "entry_creatures" : "Water Elementals",
-            "entry_colors" : "Blue, Teal, Navy"
-        },
+			"entry_name" : "Sebabos",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+                    "img_rehosted" : "/resources/images/sebabos.webp",
+                    "img_rehosted_source" : "https://artflow.ai/",
+                    "img_linked" : "https://cdna.artstation.com/p/assets/images/images/002/468/854/large/ramses-melendez-only-death-and-ashes.jpg?1462125044",
+                    "img_linked_source" : "https://www.artstation.com/artwork/qZENR",
+                    "species" : "Deus Mendacium"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+                        {
+							"subheading" : "Planar Domain",
+							"subcontent" : "Shadowfell"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Neutral Evil"
+						},
+                        {
+							"subheading" : "Titles",
+							"subcontent" : "The Dark Adversary, God of Ash, Lord of Death, Grim Reaper, The Deceiver"
+						}
+					]
+				},
+				{
+					"heading" : "Religion",
+					"sublibrary" : [
+                        {
+							"subheading" : "Symbol",
+							"subcontent" : "Grey Phoenix holding a black and gold axe"
+						},
+                        {
+							"subheading" : "Domains",
+							"subcontent" : "Death, Light, Twilight, Trickery"
+						},
+                        {
+							"subheading" : "Portfolio",
+							"subcontent" : "Suffering, Betrayal, Deception"
+						},
+						{
+							"subheading" : "Factions",
+							"subcontent" : "The Reapers of Sebabos"
+						}
+					]
+				},
+				{
+					"heading" : "Manifestations",
+					"sublibrary" : [
+						{
+							"subheading" : "Animal Forms",
+							"subcontent" : "None"
+						},
+						{
+							"subheading" : "Other Forms",
+							"subcontent" : "Ash Elementals, Fire Elementals, Air Elementals, Undead, Shadow Dragons"
+						},
+						{
+							"subheading" : "Colors",
+							"subcontent" : "Grey, Gold, Black"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "The God of Ash and Death is also known as the Phoenix since this is his chosen avatar.  He may be immortal himself, but he chose to adopt this form of his own volition.  By collaborating with Gondarin, Sebabos created the Phoenix as a creature with the ability to recycle its own life forces.  This was made as a mockery of his lover's domain of life and death.  The meaning behind this act is still a matter of debate.  <br><br>Sebabos is Neutral Evil in that he brings the prolonging of suffering whenever he can, but that is not to say he reigns mayhem whenever he can.  He remains utterly detached from mortal affairs, but happily tricks and beguils mortals whenever the opportunity presents itself.  He relishes suffering that is brought about by one's own actions, only intervening in a literal sense in the most enticing of circumstances.  <br><br>Sebabos is deeply in love with Deliklese, and continually gifts her with reaped souls from mortals he has won and swindled.  <br><br>While Sebabos is accurately referred to as a Deceiver and Reaper, he does not prefer to wield a scythe as some pagan interpretations depict.  Sebabos' preferred weapon and tool is that of a black bladed axe akin to a headsman, with discreet golden insets. He dislikes all color save for the sheen of gold, and many legends tell of those who have bought extra weeks or months of life with their vast fortunes.  <br><br>Sebabos is associated with Illusion magic, weaving lies and trickery with masterful skill. The need for discretion is great, drawing the attention of many unsavory entities including undead.  "
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Magic",
+							"subcontent" : ""
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
         {
-            "entry_name" : "Dao",
-            "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/8/8e/Wind-God-Fujin-by-Ogata-Korin.jpg",
-            "img_rehosted_source" : "https://commons.m.wikimedia.org/wiki/File:Wind-God-Fujin-by-Ogata-Korin.jpg",
-
-            "img_linked" : "https://preview.redd.it/l662mzh0xhf61.jpg?width=960&crop=smart&auto=webp&s=d9813c5931660c74bedf387fcb4899936f6c0933",
-            "img_linked_source" : "https://www.reddit.com/r/DnD/comments/lckwxi/art_dao_genie_commissions_are_open/",
-
-            "entry_category" : "Deity",
-            "entry_type" : "Lesser",
-            "entry_variety" : "Dao",
-
-            "vessels" : "Precious Gemstones and Copper Trinkets",
-            "alignment" : "Chaotic Good",
-
-            "entry_title" : "---",
-            "entry_description_overview" : "<i><b>*under development*</b></i>",
-
-            "entry_titles" : "Goddess of Ice<br>Crystal Queen<br>Mother of Creeds<br>The Honored One",
-            "entry_symbol" : "A set of merchant scales hung from the guard of a downturned sword",
-            "entry_worshippers" : "Knights<br>Priests<br>Nobles",
-
-            "entry_alignment" : "Lawful Neutral",
-            "entry_portfolio" : "Honor<br>Tradition<br>Creed",
-            "entry_domains" : "War, Peace, Grave, Twilight, Order, Knowledge",
-
-            "entry_animals" : "Arctic Cat<br>Arctic Roc",
-            "entry_creatures" : "Ice Elementals<br>Water Elementals<br>Air Elementals<br>Celestials<br>White Dragons",
-            "entry_colors" : "White, Aqua, Teal, Platinum"
-        },
+			"entry_name" : "Djinni",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+                    "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/4/4a/FOCDarley-Aladdin-and-the-genie.JPG",
+                    "img_rehosted_source" : "https://commons.m.wikimedia.org/wiki/File:FOCDarley-Aladdin-and-the-genie.JPG",
+                    "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/006/057/583/large/roman-guro-2016-romanguro-djinn-woman.jpg?1495720326",
+                    "img_linked_source" : "https://www.artstation.com/artwork/lnxko",        
+                    "species" : "Deus Incanfulgar Minor"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+                        {
+							"subheading" : "Planar Domain",
+							"subcontent" : "Caelar"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Lawful Evil"
+						},
+                        {
+							"subheading" : "Vessels",
+							"subcontent" : "Wind Instruments and Cobalt Trinkets"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "under development"
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Magic",
+							"subcontent" : ""
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
         {
-            "entry_name" : "Efreeti",
-            "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/8/8f/A_god_or_devil_worshipped_in_Calicut_called_Deumo.jpg",
-            "img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:A_god_or_devil_worshipped_in_Calicut_called_Deumo.jpg",
-
-            "img_linked" : "https://media.magic.wizards.com/images/featured/EN_DTK_01_Gallery.jpg",
-            "img_linked_source" : "https://magic.wizards.com/en/story/planes/tarkir-dragons-tarkir",
-
-            "entry_category" : "Deity",
-            "entry_category_plural" : "Deities",
-            "entry_type" : "Lesser",
-            "entry_variety" : "Efreeti",
-
-            "vessels" : "Volcanic Glass and Gold Trinkets",
-            "alignment" : "Chaotic Evil",
-            
-            "entry_title" : "---",
-            "entry_img" : "https://upload.wikimedia.org/wikipedia/commons/1/1b/Les_images_des_dievx_des_anciens_-_contenans_les_idoles%2C_covstvmes%2C_ceremonies%2C_and_autres_choses_appartenans_%C3%A0_la_religion_des_payens_%281581%29_%2814560495887%29.jpg",
-            "entry_description_overview" : "<i><b>*under development*</b></i>",
-
-            "entry_titles" : "Goddess of Ice<br>Crystal Queen<br>Mother of Creeds<br>The Honored One",
-            "entry_symbol" : "A set of merchant scales hung from the guard of a downturned sword",
-            "entry_worshippers" : "Knights<br>Priests<br>Nobles",
-
-            "entry_alignment" : "Lawful Neutral",
-            "entry_portfolio" : "Honor<br>Tradition<br>Creed",
-            "entry_domains" : "War, Peace, Grave, Twilight, Order, Knowledge",
-
-            "entry_animals" : "Arctic Cat<br>Arctic Roc",
-            "entry_creatures" : "Ice Elementals<br>Water Elementals<br>Air Elementals<br>Celestials<br>White Dragons",
-            "entry_colors" : "White, Aqua, Teal, Platinum"
-        },
+			"entry_name" : "Marid",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+                    "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/5/51/Tristam_Bird_and_Mermaid.jpg",
+                    "img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Tristam_Bird_and_Mermaid.jpg",
+                    "img_linked" : "https://cdna.artstation.com/p/assets/images/images/023/194/994/large/miguel-regodon-harkness-siren.jpg?1578419680",
+                    "img_linked_source" : "https://www.artstation.com/artwork/2x2ObK",
+                    "species" : "Deus Polystrisia Minor"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+                        {
+							"subheading" : "Planar Domain",
+							"subcontent" : "Aquar"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Lawful Good"
+						},
+                        {
+							"subheading" : "Vessels",
+							"subcontent" : "Aquamarine Minerals and Bronze Trinkets"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "under development"
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Magic",
+							"subcontent" : ""
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
         {
-            "entry_name" : "Marid",
-            "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/5/51/Tristam_Bird_and_Mermaid.jpg",
-            "img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Tristam_Bird_and_Mermaid.jpg",
-
-            "img_linked" : "https://cdna.artstation.com/p/assets/images/images/023/194/994/large/miguel-regodon-harkness-siren.jpg?1578419680",
-            "img_linked_source" : "https://www.artstation.com/artwork/2x2ObK",
-
-            "entry_category" : "Deity",
-            "entry_category_plural" : "Deities",
-            "entry_type" : "Lesser",
-            "entry_variety" : "Marid",
-
-            "vessels" : "Aquamarine Minerals and Bronze Trinkets",
-            "alignment" : "Lawful Good",
-
-            "entry_title" : "---",
-            "entry_img" : "https://upload.wikimedia.org/wikipedia/commons/1/1b/Les_images_des_dievx_des_anciens_-_contenans_les_idoles%2C_covstvmes%2C_ceremonies%2C_and_autres_choses_appartenans_%C3%A0_la_religion_des_payens_%281581%29_%2814560495887%29.jpg",
-            "entry_description_overview" : "under development",
-
-            "entry_titles" : "Goddess of Ice<br>Crystal Queen<br>Mother of Creeds<br>The Honored One",
-            "entry_symbol" : "A set of merchant scales hung from the guard of a downturned sword",
-            "entry_worshippers" : "Knights<br>Priests<br>Nobles",
-
-            "entry_alignment" : "Lawful Neutral",
-            "entry_portfolio" : "Honor<br>Tradition<br>Creed",
-            "entry_domains" : "War, Peace, Grave, Twilight, Order, Knowledge",
-
-            "entry_animals" : "Arctic Cat<br>Arctic Roc",
-            "entry_creatures" : "Ice Elementals<br>Water Elementals<br>Air Elementals<br>Celestials<br>White Dragons",
-            "entry_colors" : "White, Aqua, Teal, Platinum"
-        },
+			"entry_name" : "Dao",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+                    "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/8/8e/Wind-God-Fujin-by-Ogata-Korin.jpg",
+                    "img_rehosted_source" : "https://commons.m.wikimedia.org/wiki/File:Wind-God-Fujin-by-Ogata-Korin.jpg",
+                    "img_linked" : "https://preview.redd.it/l662mzh0xhf61.jpg?width=960&crop=smart&auto=webp&s=d9813c5931660c74bedf387fcb4899936f6c0933",
+                    "img_linked_source" : "https://www.reddit.com/r/DnD/comments/lckwxi/art_dao_genie_commissions_are_open/",
+                    "species" : "Deus Horribilis Minor"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+                        {
+							"subheading" : "Planar Domain",
+							"subcontent" : "Terral"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Chaotic Good"
+						},
+                        {
+							"subheading" : "Vessels",
+							"subcontent" : "Precious Gemstones and Copper Trinkets"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "under development"
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Magic",
+							"subcontent" : ""
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
         {
-            "entry_name" : "Djinni",
-            "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/4/4a/FOCDarley-Aladdin-and-the-genie.JPG",
-            "img_rehosted_source" : "https://commons.m.wikimedia.org/wiki/File:FOCDarley-Aladdin-and-the-genie.JPG",
-
-            "img_linked" : "https://cdnb.artstation.com/p/assets/images/images/006/057/583/large/roman-guro-2016-romanguro-djinn-woman.jpg?1495720326",
-            "img_linked_source" : "https://www.artstation.com/artwork/lnxko",
-
-            "entry_category" : "Deity",
-            "entry_category_plural" : "Deities",
-            "entry_type" : "Lesser",
-            "entry_variety" : "Djinni",
-
-            "vessels" : "Wind Instruments and Cobalt Trinkets",
-            "alignment" : "Lawful Evil",
-
-            "entry_title" : "---",
-            "entry_img" : "https://upload.wikimedia.org/wikipedia/commons/1/1b/Les_images_des_dievx_des_anciens_-_contenans_les_idoles%2C_covstvmes%2C_ceremonies%2C_and_autres_choses_appartenans_%C3%A0_la_religion_des_payens_%281581%29_%2814560495887%29.jpg",
-            "entry_description_overview" : "under development",
-
-            "entry_titles" : "Goddess of Ice<br>Crystal Queen<br>Mother of Creeds<br>The Honored One",
-            "entry_symbol" : "A set of merchant scales hung from the guard of a downturned sword",
-            "entry_worshippers" : "Knights<br>Priests<br>Nobles",
-
-            "entry_alignment" : "Lawful Neutral",
-            "entry_portfolio" : "Honor<br>Tradition<br>Creed",
-            "entry_domains" : "War, Peace, Grave, Twilight, Order, Knowledge",
-
-            "entry_animals" : "Arctic Cat<br>Arctic Roc",
-            "entry_creatures" : "Ice Elementals<br>Water Elementals<br>Air Elementals<br>Celestials<br>White Dragons",
-            "entry_colors" : "White, Aqua, Teal, Platinum"
-        },
+			"entry_name" : "Efreeti",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+                    "img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/8/8f/A_god_or_devil_worshipped_in_Calicut_called_Deumo.jpg",
+                    "img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:A_god_or_devil_worshipped_in_Calicut_called_Deumo.jpg",
+                    "img_linked" : "https://media.magic.wizards.com/images/featured/EN_DTK_01_Gallery.jpg",
+                    "img_linked_source" : "https://magic.wizards.com/en/story/planes/tarkir-dragons-tarkir",        
+                    "species" : "Deus Aradeatis Minor"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+                        {
+							"subheading" : "Planar Domain",
+							"subcontent" : "Ignar"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Chaotic Evil"
+						},
+                        {
+							"subheading" : "Vessels",
+							"subcontent" : "Volcanic Glass and Gold Trinkets"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "under development"
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Magic",
+							"subcontent" : ""
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
+        
         {
-            "entry_name" : "Beyok",
-            "img_rehosted" : "/resources/images/beyok.webp",
-            "img_rehosted_source" : "https://artflow.ai/",
-
-            "img_linked" : "https://cdna.artstation.com/p/assets/images/images/038/752/608/large/miguel-regodon-harkness-imperial-dragon-sovereign-ancient.jpg?1623952542",
-            "img_linked_source" : "https://www.artstation.com/artwork/B1qqem",
-
-            "entry_category" : "Deity",
-            "entry_type" : "Demigod",
-            "entry_variety" : "Dracofiend",
-
-            "entry_description_overview" : "Beyok is a Golden Greatwyrm, and is widely considered the eldest living Greatwyrm in existence. In his youth, Beyok took the form of a mortal and befriended a human king named Urigeth. Urigeth sought to conduct a crusade against the chaos and barbarism of his time, and Beyok joined him. Together, they brought fire and steel upon many of the bandits that plagued the lands. Nearing the end of the crusade, Beyok had to reveal his true form in order to save his friend from certain death. Urigeth was filled with wrath at this deception, but eventually accepted the reality of Beyok's nature. Urigeth's council was far less understanding.<br><br>After succeeding in their conquest, Urigeth held a banquet. His mead had been poisoned, and Beyok sensed it too late. Urigeth died quickly, and the members of his council attempted to frame Beyok for the murder. Beyok was having none of it, and it took all he had not to burn the entire castle to the ground. Frustrated with the politics of mortalkind, Beyok decided to leave the human kingdom, never to return.<br><br>In the many years since, Beyok has been known to live among the commoners and help them drive off creatures that they could never hope to without assitance. Beyok still exhibits a drastic distaste for the politics of mortalkind, but holds a great deal of reverance for leaders who show virtue. Beyok is often represented with the emblem of a torn banner that bears Urigeth's sigil of House Ketran (a pale green salmon), which he is often seen wearing as a makeshift poncho and cloak when in mortal form.  "
-
-        }
+			"entry_name" : "Beyok",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+                    "img_rehosted" : "/resources/images/beyok.webp",
+                    "img_rehosted_source" : "https://artflow.ai/",
+                    "img_linked" : "https://cdna.artstation.com/p/assets/images/images/038/752/608/large/miguel-regodon-harkness-imperial-dragon-sovereign-ancient.jpg?1623952542",
+                    "img_linked_source" : "https://www.artstation.com/artwork/B1qqem",
+                    "species" : "Deus Iustitia Pueri"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+                        {
+							"subheading" : "Planar Domain",
+							"subcontent" : "Material"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Neutral Good (formerly Lawful Good)"
+						},
+                        {
+							"subheading" : "Titles",
+							"subcontent" : "Drake of the West"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "Beyok is a Golden Greatwyrm, and is widely considered the eldest living Greatwyrm in existence. In his youth, Beyok took the form of a mortal and befriended a human king named Urigeth. Urigeth sought to conduct a crusade against the chaos and barbarism of his time, and Beyok joined him. Together, they brought fire and steel upon many of the bandits that plagued the lands. Nearing the end of the crusade, Beyok had to reveal his true form in order to save his friend from certain death. Urigeth was filled with wrath at this deception, but eventually accepted the reality of Beyok's nature. Urigeth's council was far less understanding.<br><br>After succeeding in their conquest, Urigeth held a banquet. His mead had been poisoned, and Beyok sensed it too late. Urigeth died quickly, and the members of his council attempted to frame Beyok for the murder. Beyok was having none of it, and it took all he had not to burn the entire castle to the ground. Frustrated with the politics of mortalkind, Beyok decided to leave the human kingdom, never to return.<br><br>In the many years since, Beyok has been known to live among the commoners and help them drive off creatures that they could never hope to without assitance. Beyok still exhibits a drastic distaste for the politics of mortalkind, but holds a great deal of reverance for leaders who show virtue. Beyok is often represented with the emblem of a torn banner that bears Urigeth's sigil of House Ketran (a pale green salmon), which he is often seen wearing as a makeshift poncho and cloak when in mortal form.  "
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Magic",
+							"subcontent" : ""
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		}
     ]
 }

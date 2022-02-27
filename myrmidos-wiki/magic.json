@@ -1,0 +1,380 @@
+{
+    "entries" : [
+		{
+			"entry_name" : "Illusion",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+                    "img_rehosted" : "/resources/images/Sigil-Illusion.png",
+                    "img_rehosted_source" : "https://www.deviantart.com/dryoshiyahu/art/Schools-of-Magic-811154835",
+                    "species" : "Fallere Caelaria"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+                        {
+							"subheading" : "Planar Origin",
+							"subcontent" : "Caelar"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Lawful Evil"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "under development"
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Magic",
+							"subcontent" : ""
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
+        {
+			"entry_name" : "Divination",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+                    "img_rehosted" : "/resources/images/Sigil-Divination.png",
+                    "img_rehosted_source" : "https://www.deviantart.com/dryoshiyahu/art/Schools-of-Magic-811154835",
+                    "species" : "Scire Arctica"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+                        {
+							"subheading" : "Planar Origin",
+							"subcontent" : "Eifrost"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Lawful Neutral"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "under development"
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Magic",
+							"subcontent" : ""
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
+        {
+			"entry_name" : "Abjuration",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+                    "img_rehosted" : "/resources/images/Sigil-Abjuration.png",
+                    "img_rehosted_source" : "https://www.deviantart.com/dryoshiyahu/art/Schools-of-Magic-811154835",
+                    "species" : "Abiurare Aquarius"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+                        {
+							"subheading" : "Planar Origin",
+							"subcontent" : "Aquar"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Lawful Good"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "under development"
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Magic",
+							"subcontent" : ""
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
+        {
+			"entry_name" : "Necromancy",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+                    "img_rehosted" : "/resources/images/Sigil-Necromancy.png",
+                    "img_rehosted_source" : "https://www.deviantart.com/dryoshiyahu/art/Schools-of-Magic-811154835",
+                    "species" : "Cromantia Uligo"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+                        {
+							"subheading" : "Planar Origin",
+							"subcontent" : "Feywilds"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Neutral Good"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "under development"
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Magic",
+							"subcontent" : ""
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
+        {
+			"entry_name" : "Transmutation",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+                    "img_rehosted" : "/resources/images/Sigil-Transmutation.png",
+                    "img_rehosted_source" : "https://www.deviantart.com/dryoshiyahu/art/Schools-of-Magic-811154835",
+                    "species" : "Transmutare Terralia"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+                        {
+							"subheading" : "Planar Origin",
+							"subcontent" : "Terral"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Chaotic Good"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "under development"
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Magic",
+							"subcontent" : ""
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
+        {
+			"entry_name" : "Conjuration",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+                    "img_rehosted" : "/resources/images/Sigil-Conjuration.png",
+                    "img_rehosted_source" : "https://www.deviantart.com/dryoshiyahu/art/Schools-of-Magic-811154835",
+                    "species" : "Obtestor Volcanica"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+                        {
+							"subheading" : "Planar Origin",
+							"subcontent" : "Vulken"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Chaotic Neutral"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "under development"
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Magic",
+							"subcontent" : ""
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
+        {
+			"entry_name" : "Evocation",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+                    "img_rehosted" : "/resources/images/Sigil-Evocation.png",
+                    "img_rehosted_source" : "https://www.deviantart.com/dryoshiyahu/art/Schools-of-Magic-811154835",
+                    "species" : "Ciere Ignaria"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+                        {
+							"subheading" : "Planar Origin",
+							"subcontent" : "Ignar"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Chaotic Evil"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "under development"
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Magic",
+							"subcontent" : ""
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
+        {
+			"entry_name" : "Enchantment",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+                    "img_rehosted" : "/resources/images/Sigil-Enchantment.png",
+                    "img_rehosted_source" : "https://www.deviantart.com/dryoshiyahu/art/Schools-of-Magic-811154835",
+                    "species" : "Incantare Mortemia"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+                        {
+							"subheading" : "Planar Origin",
+							"subcontent" : "Shadowfell"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Neutral Evil"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "under development"
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Magic",
+							"subcontent" : ""
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		}
+    ]
+}

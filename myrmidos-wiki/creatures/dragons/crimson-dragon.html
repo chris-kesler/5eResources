@@ -126,15 +126,15 @@
         } 
 
         if (page_subsite != undefined) {
-          document.getElementById("page-title-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a>";
+          document.getElementById("page-title-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
         } else {
-          document.getElementById("page-title-path").innerHTML = titleCase(page_title.replace('-', ' ').replace('.html', ''));
+          document.getElementById("page-title-path").innerHTML = titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
         }
         if (page_directory != undefined) {
-          document.getElementById("page-title-path").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a>";
+          document.getElementById("page-title-path").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
         }
         if (page_category != undefined) {
-          document.getElementById("page-title-path").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + "/" + page_category + ".html'>" + titleCase(page_category.replace('-', ' ').replace('.html', '')) + "</a>";
+          document.getElementById("page-title-path").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + "/" + page_category + ".html'>" + titleCase(page_category.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
         }
 
         // Reading data from our JSON file
@@ -144,15 +144,15 @@
           $.each(data.entries, function(i, f) {
 
             // Finding the entry that matches this file
-            if (f.entry_name.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html" == page_title) {
+            if (f.entry_name.toLowerCase().replaceAll(/\s/g, '-').replaceAll("'", "") + ".html" == page_title) {
 
               if (f.content_source != undefined && f.content_source !== ""){
-                document.getElementById("page-title-path").innerHTML += " > <a target='blank' href='" + f.content_source + "'>" + titleCase(page_title.replace('-', ' ').replace('.html', '')) + " (source)</a>";
+                document.getElementById("page-title-path").innerHTML += " > <a target='blank' href='" + f.content_source + "'>" + titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', '')) + " (source)</a>";
               } else {
-                document.getElementById("page-title-path").innerHTML += " > " + titleCase(page_title.replace('-', ' ').replace('.html', ''));
+                document.getElementById("page-title-path").innerHTML += " > " + titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
               }
 
-              // // If Title Library Exists
+              // If Title Library Exists
               if (f.title_library != undefined) {
                 for (var x = 0; f.title_library.length > x; x++) {
                   if (f.title_library[x].table_row != undefined) {

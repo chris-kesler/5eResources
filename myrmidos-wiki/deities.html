@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<!-- =========================================================================================
+  This is a DIRECTORY page.  It contains HEADER, BACKGROUND, CONTENT, and FOOTER elements that are standard across the site.
+  It also contains TITLE, PAGES, and DESCRIPTION elements that are unique and static as a DIRECTORY page.
+========================================================================================= -->
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -7,178 +11,328 @@
     <title>KnowOne's Website of Everything</title>
     <link rel="icon" href="/resources/images/OwlOfMinerva_ModifiedLogo.png">
     <link rel="stylesheet" href="/caped-crusaders-style.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+
+      // A function that capitalizes the first letter of each word in a string
+      function titleCase(str) {
+        var split_string = str.toLowerCase().split(' ');
+        for (var i = 0; i < split_string.length; i++) {
+          split_string[i] = split_string[i].charAt(0).toUpperCase() + split_string[i].substring(1);     
+        }
+        return split_string.join(' '); 
+      }
+
+
+      // The function that populates all page data into preset elements
+      $(function populatePageData() {
+
+
+// =========================================================================================
+// Populating the page HEADER
+// 
+// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
+// =========================================================================================
+        $("#import-header").load("/resources/pages/import-header.html");
+
+
+// =========================================================================================
+// Populating the page TITLE
+// 
+// The page TITLE can include a table of details for spells or monster statblocks
+// If title_library does not have a table_row library, the table of details is hidden and only the TITLE path is populated
+// =========================================================================================
+        
+        // Reading the name of this file
+        var page_array = window.location.pathname.split("/");
+        var page_array_length = page_array.length;
+
+        if (page_array.length == 5) {
+          var page_title = page_array.pop();
+          var page_category = page_array.pop();
+          var page_directory = page_array.pop();
+          var page_subsite = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 4) {
+          var page_title = page_array.pop();
+          var page_directory = page_array.pop();
+          var page_subsite = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 3) {
+          var page_title = page_array.pop();
+          var page_subsite = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 2) {
+          var page_title = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 1) {
+          var page_title = page_array.pop();
+        } 
+
+        var titleCompleted = false;
+        if (page_subsite != undefined) {
+          document.getElementById("page-title-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+        } else {
+          document.getElementById("page-title-path").innerHTML = titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
+          titleCompleted = true;
+        }
+        if (page_directory != undefined && !titleCompleted) {
+          document.getElementById("page-title-path").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+        }
+        if (page_category != undefined && !titleCompleted) {
+          document.getElementById("page-title-path").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + "/" + page_category + ".html'>" + titleCase(page_category.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+        }
+        if (page_title != undefined && !titleCompleted) {
+          document.getElementById("page-title-path").innerHTML += " > " + titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
+          titleCompleted = true;
+        }
+
+
+// =========================================================================================
+// Populating the page FOOTER
+// 
+// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
+// =========================================================================================
+        $("#import-footer").load("/resources/pages/import-footer.html");
+      });
+    </script>
+  </head>  
 
 
   <body>
-    <div id="page-background-div"> 
-      <div class="common-page-header">
-        <div id="import-header"></div>
+    <!-- 
+      A div for the page BACKGROUND -->
+    <div id="page-background-div">
+      <!-- 
+        A div for the page HEADER -->
+      <div id="import-header"></div>
+      <!-- 
+        A section for the page CONTENT -->
+      <section class="page-content-section">
+        <!-- 
+          A table for the page TITLE -->
+        <table id="page-title-table"><thead><tr><td colspan="6"><h2 id="page-title-path"></h2></td></tr></thead><tbody></tbody></table>   
+        <!-- 
+          A table for the PAGES -->
+          <table class="page-directory-table">
+            <tr><td>
+              <center><h2 style="color: antiquewhite;">Elemental Titans</h2></center>
+            </td></tr>
+  
+            <tr><td>
+              <button class="page-directory-table-entry-button" onclick="location.href='deities/tempest.html'">Tempest, Titan of Air</button>
+            </td></tr>
+            <tr><td>
+              <button class="page-directory-table-entry-button" onclick="location.href='deities/kraken.html'">Kraken, Titan of Water</button>
+            </td></tr>
+            <tr><td>
+              <button class="page-directory-table-entry-button" onclick="location.href='deities/tarrasque.html'">Tarrasque, Titan of Earth</button>
+            </td></tr>
+            <tr><td>
+              <button class="page-directory-table-entry-button" onclick="location.href='deities/averdeus.html'">Averdeus, Titan of Fire</button>
+            </td></tr>
 
-          <h1>Myrmidos Wiki:  Deities</h1>
-          <hr>
-      </div>
-        
-      
-      <div class="common-page-content-section-transparent">
-          
-
-
-
-
-            <section class="page-content-section">
-              <button id="common-page-back-button" onclick="location.href='/myrmidos-wiki.html'">Out to Myrmidos Wiki</button>
-              <h2>Overview</h2>
-              <hr>
-
-              <table class="page-directory-table">
-                <tr><td>
-                  <button class="directory-page-nav-button-to-directory-page" onclick="location.href='deities/titans.html'">Elemental Titans</button>
-                </td></tr>
-
-                <tr><td>
-                  <button class="page-directory-table-entry-button" onclick="location.href='deities/tempest.html'">Tempest, Titan of Air</button>
-                </td></tr>
-                <tr><td>
-                  <button class="page-directory-table-entry-button" onclick="location.href='deities/kraken.html'">Kraken, Titan of Water</button>
-                </td></tr>
-                <tr><td>
-                  <button class="page-directory-table-entry-button" onclick="location.href='deities/tarrasque.html'">Tarrasque, Titan of Earth</button>
-                </td></tr>
-                <tr><td>
-                  <button class="page-directory-table-entry-button" onclick="location.href='deities/averdeus.html'">Averdeus, Titan of Fire</button>
-                </td></tr>
-
-                
-                <tr><td>
-                  <button class="directory-page-nav-button-to-directory-page" onclick="location.href='deities/gods.html'">Gods:  Greater Deities</button>
-                </td></tr>
-                
-                <tr><td>
-                  <button class="page-directory-table-entry-button" onclick="location.href='deities/frydeia.html'">Frydeia, Queen of Ice</button>
-                </td></tr>
-                <tr><td>
-                  <button class="page-directory-table-entry-button" onclick="location.href='deities/deliklese.html'">Deliklese, Lady of Ooze</button>
-                </td></tr>
-                <tr><td>
-                  <button class="page-directory-table-entry-button" onclick="location.href='deities/gondarin.html'">Gondarin, King of Magma</button>
-                </td></tr>
-                <tr><td>
-                  <button class="page-directory-table-entry-button" onclick="location.href='deities/sebabos.html'">Sebabos, Lord of Ash</button>
-                </td></tr>
-
-
-                <tr><td>
-                  <button class="directory-page-nav-button-to-directory-page" onclick="location.href='deities/genies.html'">Genies:  Lesser Deities</button>
-                </td></tr>
-                
-                <tr><td>
-                  <button class="page-directory-table-entry-button" onclick="location.href='deities/djinni.html'">Djinni, Genie of Air</button>
-                </td></tr>
-                <tr><td>
-                  <button class="page-directory-table-entry-button" onclick="location.href='deities/marid.html'">Marid, Genie of Water</button>
-                </td></tr>
-                <tr><td>
-                  <button class="page-directory-table-entry-button" onclick="location.href='deities/dao.html'">Dao, Genie of Earth</button>
-                </td></tr>
-                <tr><td>
-                  <button class="page-directory-table-entry-button" onclick="location.href='deities/efreeti.html'">Efreeti, Genie of Fire</button>
-                </td></tr>
-
-                
-                <tr><td>
-                  <button class="directory-page-nav-button-to-directory-page" onclick="location.href='deities/demigods.html'">Demigods</button>
-                </td></tr>
-
-                <tr><td>
-                  <button class="page-directory-table-entry-button" onclick="location.href='deities/beyok.html'">Beyok</button>
-                </td></tr>
-
-
-              </table>
-
-              <p>
-                There are four Types of Deities.  
-                The oldest and arguably most powerful are the Titans.  
-                There are four Titans, with each one inhabiting a primary elemental plane.  
-                Each Titan had a child with each of the other Titans, and those children whose parents inhabited adjacent Planescapes became Greater Deities.  
-                The children whose Titan parents were not of adjacent Planescapes, meaning opposite Planescapes such as Earth/Air or Water/Fire, those children became formless beasts known as Mimics.  
-              <br><br>
-                There are four Greater Deities, with each one inhabiting a border elemental plane.  
-                The Greater Deities had children with each other much like the Titans did, except in far greater numbers.  
-                The offspring of two Greater Deities who inhabited adjacent Planescapes became a Lesser Deity, also known as a Genie.  
-                These Genies had the characteristics of whichever primary element their parents shared, but could wield universal magic due to their connection to the other Planescapes.  
-                The offspring of Greater Deities who did not share adjacent Planescapes became formless humanoids who could only manipulate the magic within themselves.  
-                They became known as the Creator Race, and while they possessed a great deal of magic, they could not release it into the world.  
-                The only application for their power was to change the way they manifest and present themselves.  
-                These are the ancestors of the Changelings.  
-              <br><br>
-                The members of the Creator Race had all the capacity of an actual god but none of the abilities.  
-                The Greater Deities were having children with each other somewhat carelessly, so there were quite a few members of the Creator Race by the time Kushim, the first one, decided to start building a home for himself in the Material Plane.  
-                The Creator Race banded together in order to make survival easy.  
-                Social groups formed instantly, and laws came shortly after.  
-                Before long, great structures were being designed and built, and advancements in science were progressing at an alarming rate.  
-                The Creator Race even managed to build an outpost on Myrmidos's moon.
-              <br><br>
-                At the height of their power, the Creator Race was the perfect civilization.  
-                They commanded the Material Plane and perfectly managed all the resources they had available.  
-                This made the Genies, who inhabited the primary elemental Planescapes, quite envious.  
-                The Genies banded together to conquer the Material Plane and enslave the Creator Race.  
-                The results of this conquest were catastrophic.  
-              <br><br>
-                Only ten members of the Creator Race managed to survive the slaughter.  
-                Nearly everything that had been built was demolished, and it seemed the entire world was soaked in the blood of the Creator Race.  
-                Furious and afraid for their domains, the Greater Deities gathered to forge an unbreakable ward known as The Edict.  
-                On this Edict, they bound each Genie to a vessel so that they might never again use their godly magic to upset the balance of the world.  
-                Having some compassion for their children but still wanting them to learn from their misbehavior, the Genies were allowed a way to free themselves; 
-                they had to give up their powers and become mortal, just as the Creator Race they loathed so much.  
-                Very few Genies chose to become mortal, but those that did became the first members of the Genasi race.
-              <br><br>
-                The members of the Creator Race that remained ere filled with sorrow, and longed for a release to their pain.  
-                They longed to rebuild what had been lost, but the anguish crippled them from doing so.  
-                Taking pity on them, Gondarin proposed a new idea.  
-                Gondarin forged each of the members of the Creator Race into Metallic Dragons; two of each variety.  
-                Gondarin then made a new kind of being for the Creator Race to watch over and guide; humans.  
-              <br><br>
-                While the Creator Race had built an incredibly powerful civilization, it had not been perfect.  
-                These newly forged Metallic Dragons were filled with joy to see mankind begin to flourish.  
-                They happily lived among them as both Dragons and shapeshifted into humanoids, teaching them about agriculture and other primitive sciences.  
-                When the Metallic Dragons had children with each other, those offspring became Metallic Dragons as well.  
-                However, when a shapeshifted Metallic Dragon had a child with a human, that child became a Changeling as we know them today.  
-                Eventually, mankind grew to fear the Chromatic Dragons and magic itself, projecting both onto the Metallic Dragons.  
-                The era of superstition had begun, and the Metallic Dragons were forced to keep their true nature a secret in order to avoid provoking conflict.  
-              <br><br>
-                Over time, humans began to reproduce with a number of other compatible races, most notably the Greater Deities themselves.  
-                The Titans were too primal and beastlike to anything but another Titan as a potential mate.  
-                The Lesser Deities that held onto their power viewed mortals with digust, never wanting to so much as touch them.  
-                But the Greater Deities, they spent time amongst mortals on occasion.  
-                And that occasionally led to the conception of a Demigod.  
-              <br><br>
-                Demigods are half Greater Deity and half mortal.  
-                The Demigods can be loosely broken down into subtypes based on their divine heritage, but the characteristics and manifested abilities are so varied that such categorization is of little use.  
-                There isn't much that can be said about Demigods as a blanket type of deity, except that they often have a great amount of influence over their era.  
-                In fact, many eras are marked as beginning or ending based on the birth or death of a Demigod.  
-              <br><br>
-                The only other beings with direct heritage tying back to the deities are the mimics that came about from Titans of opposite Planescapes.  
-                The first Mimics were massive, and their children became progressively smaller.  
-                It is unknown is the original Mimics still live, or where they might located.
-              </p>
-
-          </section>
             
+            <tr><td>
+              <center><h2 style="color: antiquewhite;">Gods:  Greater Deities</h2></center>
+            </td></tr>
+              
+            <tr><td>
+              <button class="page-directory-table-entry-button" onclick="location.href='deities/frydeia.html'">Frydeia, Queen of Ice</button>
+            </td></tr>
+            <tr><td>
+              <button class="page-directory-table-entry-button" onclick="location.href='deities/deliklese.html'">Deliklese, Lady of Ooze</button>
+            </td></tr>
+            <tr><td>
+              <button class="page-directory-table-entry-button" onclick="location.href='deities/gondarin.html'">Gondarin, King of Magma</button>
+            </td></tr>
+            <tr><td>
+              <button class="page-directory-table-entry-button" onclick="location.href='deities/sebabos.html'">Sebabos, Lord of Ash</button>
+            </td></tr>
 
-      </div>
 
+            <tr><td>
+              <center><h2 style="color: antiquewhite;">Genies:  Lesser Deities</h2></center>
+            </td></tr>
+              
+            <tr><td>
+              <button class="page-directory-table-entry-button" onclick="location.href='deities/djinni.html'">Djinni, Genie of Air</button>
+            </td></tr>
+            <tr><td>
+              <button class="page-directory-table-entry-button" onclick="location.href='deities/marid.html'">Marid, Genie of Water</button>
+            </td></tr>
+            <tr><td>
+              <button class="page-directory-table-entry-button" onclick="location.href='deities/dao.html'">Dao, Genie of Earth</button>
+            </td></tr>
+            <tr><td>
+              <button class="page-directory-table-entry-button" onclick="location.href='deities/efreeti.html'">Efreeti, Genie of Fire</button>
+            </td></tr>
+
+            
+            <tr><td>
+              <center><h2 style="color: antiquewhite;">Demigods</h2></center>
+            </td></tr>
+  
+            <tr><td>
+              <button class="page-directory-table-entry-button" onclick="location.href='deities/beyok.html'">Beyok</button>
+            </td></tr>
+
+
+          </table>
+        <!-- 
+          A div for the page DESCRIPTION -->
+        <div id="page-description-div">
+          <p>
+            There are four Types of Deities.  
+            The oldest and arguably most powerful are the Titans.  
+            There are four Titans, with each one inhabiting a primary elemental plane.  
+            Each Titan had a child with each of the other Titans, and those children whose parents inhabited adjacent Planescapes became Greater Deities.  
+            The children whose Titan parents were not of adjacent Planescapes, meaning opposite Planescapes such as Earth/Air or Water/Fire, those children became formless beasts known as Mimics.  
+          <br><br>
+            There are four Greater Deities, with each one inhabiting a border elemental plane.  
+            The Greater Deities had children with each other much like the Titans did, except in far greater numbers.  
+            The offspring of two Greater Deities who inhabited adjacent Planescapes became a Lesser Deity, also known as a Genie.  
+            These Genies had the characteristics of whichever primary element their parents shared, but could wield universal magic due to their connection to the other Planescapes.  
+            The offspring of Greater Deities who did not share adjacent Planescapes became formless humanoids who could only manipulate the magic within themselves.  
+            They became known as the Creator Race, and while they possessed a great deal of magic, they could not release it into the world.  
+            The only application for their power was to change the way they manifest and present themselves.  
+            These are the ancestors of the Changelings.  
+          <br><br>
+            The members of the Creator Race had all the capacity of an actual god but none of the abilities.  
+            The Greater Deities were having children with each other somewhat carelessly, so there were quite a few members of the Creator Race by the time Kushim, the first one, decided to start building a home for himself in the Material Plane.  
+            The Creator Race banded together in order to make survival easy.  
+            Social groups formed instantly, and laws came shortly after.  
+            Before long, great structures were being designed and built, and advancements in science were progressing at an alarming rate.  
+            The Creator Race even managed to build an outpost on Myrmidos's moon.
+          <br><br>
+            At the height of their power, the Creator Race was the perfect civilization.  
+            They commanded the Material Plane and perfectly managed all the resources they had available.  
+            This made the Genies, who inhabited the primary elemental Planescapes, quite envious.  
+            The Genies banded together to conquer the Material Plane and enslave the Creator Race.  
+            The results of this conquest were catastrophic.  
+          <br><br>
+            Only ten members of the Creator Race managed to survive the slaughter.  
+            Nearly everything that had been built was demolished, and it seemed the entire world was soaked in the blood of the Creator Race.  
+            Furious and afraid for their domains, the Greater Deities gathered to forge an unbreakable ward known as The Edict.  
+            On this Edict, they bound each Genie to a vessel so that they might never again use their godly magic to upset the balance of the world.  
+            Having some compassion for their children but still wanting them to learn from their misbehavior, the Genies were allowed a way to free themselves; 
+            they had to give up their powers and become mortal, just as the Creator Race they loathed so much.  
+            Very few Genies chose to become mortal, but those that did became the first members of the Genasi race.
+          <br><br>
+            The members of the Creator Race that remained ere filled with sorrow, and longed for a release to their pain.  
+            They longed to rebuild what had been lost, but the anguish crippled them from doing so.  
+            Taking pity on them, Gondarin proposed a new idea.  
+            Gondarin forged each of the members of the Creator Race into Metallic Dragons; two of each variety.  
+            Gondarin then made a new kind of being for the Creator Race to watch over and guide; humans.  
+          <br><br>
+            While the Creator Race had built an incredibly powerful civilization, it had not been perfect.  
+            These newly forged Metallic Dragons were filled with joy to see mankind begin to flourish.  
+            They happily lived among them as both Dragons and shapeshifted into humanoids, teaching them about agriculture and other primitive sciences.  
+            When the Metallic Dragons had children with each other, those offspring became Metallic Dragons as well.  
+            However, when a shapeshifted Metallic Dragon had a child with a human, that child became a Changeling as we know them today.  
+            Eventually, mankind grew to fear the Chromatic Dragons and magic itself, projecting both onto the Metallic Dragons.  
+            The era of superstition had begun, and the Metallic Dragons were forced to keep their true nature a secret in order to avoid provoking conflict.  
+          <br><br>
+            Over time, humans began to reproduce with a number of other compatible races, most notably the Greater Deities themselves.  
+            The Titans were too primal and beastlike to anything but another Titan as a potential mate.  
+            The Lesser Deities that held onto their power viewed mortals with digust, never wanting to so much as touch them.  
+            But the Greater Deities, they spent time amongst mortals on occasion.  
+            And that occasionally led to the conception of a Demigod.  
+          <br><br>
+            Demigods are half Greater Deity and half mortal.  
+            The Demigods can be loosely broken down into subtypes based on their divine heritage, but the characteristics and manifested abilities are so varied that such categorization is of little use.  
+            There isn't much that can be said about Demigods as a blanket type of deity, except that they often have a great amount of influence over their era.  
+            In fact, many eras are marked as beginning or ending based on the birth or death of a Demigod.  
+          <br><br>
+            The only other beings with direct heritage tying back to the deities are the mimics that came about from Titans of opposite Planescapes.  
+            The first Mimics were massive, and their children became progressively smaller.  
+            It is unknown is the original Mimics still live, or where they might located.
+          </p>  
+
+          <div style="display: none;">
+            <p>
+              GODS<br>
+              The four Greater Deities are the children of the Elemental Titans.  The Titans of Air and Water sired Frydeia, the Titans of Water and Earth sired Deliklese, the Titans of Earth and Fire sired Gondarin, and the Titans of Fire and Air sired Sebabos.  The Titans that are of opposing elements did not have any children together.  
+              <br><br>
+              These four Greater Deities took on aspects of their parents, but also became unique in many ways.  Their humanoid appearance is the most obvious example.  While the Titans would remain as beastly lords over their Planescapes, the Greater Deities chose to actively shape their border plane homes.  
+              <br><br>
+              Frydeia embodies Law, stirring the residents of her plane to form creeds and hold themselves to a code.  Delikelese embodies Good, enjoying the most pleasurable things existence offers and seeding life with every touch.  Gondarin embodies Chaos, building a workshop within a volcano to forge unique weapons and creatures to satisfy his need for artistic expression.  Sebabos embodies Evil, seeking to drain the energy from anything he laid hands upon.  
+  
+              TITANS<br>
+              <p>
+                The four Elemental Titans Deities were the first sentient beings to form in the universe.  
+                Much in the same way that dense matter attracts other matter in space, dense energy attracts more energy within the Primal Elemental Planescapes.  
+                A type of energy specific to each plane begin to accumulate over eons, becoming capable of interacting with the environment.  
+                These masses of planar energy became alive, and eventually, sentient.  
+                For a very long time, these Titans were simply non-descript masses of their respective element.  
+                It is not known when or how the Titans developed their preferences for their appearances, but they did learn to take on a more corporeal form of their choosing.  
+              </p>
+              <p>
+                The Titan of Air presents as an avian, the Titan of Water presents as a cephalopod, the Titan of Earth a reptile, and the Titan of Fire an arachnid.  
+                They have aspects that are more complex than that, but even the brief description above shows that they are far more than standard elementals.  
+                In fact, it has been theorized that the origins of the standard elementals involve pieces of the Titans themselves that remained alive after being detached in some way.  
+                It's also quite possible that they came to be from pure planar energy just as the Titans did, and it is unknown if a method to test this thoery exists.  
+              </p>
+              <p>
+                The Titans rarely interact with each other, and the occasions in which they do leave a lasting impact on every plane for eons.  
+                The Titan of Fire has been known to show unwarranted aggression towards both the Titan of Air and the Titan of Earth.  
+                It often results in the Titan of Fire taking on a form that mocks the oppponent, and being driven off after some time.  
+                Some speculate that the Titan of Fire's behavior is intended to incite playfulness.  
+                Regardless, the Titans do not interact very often and are anything but affectionate.  
+                They did work as allies to slay the Dragon Titan, which has been the only known instance of such collaboration.  
+                It is commonly theorized that the aftermath of this event led to the conception of the Greater Deities, but records from that time period are notably difficult to obtain, if they exist at all.   
+              </p>
+  
+              GENIES<br>
+              The Lesser Deities are beings whose parents are both Greater Deities with adjacent domains.  
+              If the parents have adjacent domains, then a Genie of the overlapping element is created.  
+              For example, if Gondarin and Deliklese were to have a child together, it would be an Earth Genie, also known as a Dao.  
+              If the parents were not of adjecent Planescapes, then the child would become a formless shapeshifting entity that came in two varieties: Mimics and Changelings.  
+              Each of these beings are detailed in other pages.  
+              While they are of divine heritage, they are not categorized as Lesser Deities or Demigods.
+              <br><br>
+              The gods had many Genie children with each other over the eons before the event known as The Binding.  
+              Mortalkind had been in its infancy, but the Genies did not care for Gondarin's new creations.  
+              They attempted to enslave all mortalkind, and when they were met with resistance, all mortals were slain.  
+              This enraged Gondarin.
+              <br><br>
+              Prior to this event, the other three gods had grown worried that the Genies would continue to grow in power and overthrow the Greater Deities through sheer numbers.  
+              The proposed solution was to bind all Lesser Deities to physical vessels, preventing them from acting of their own agenda or growing in power.  
+              Gondarin despised the idea of imposing such a restriction, and Deliklese thought it far too cruel a fate.
+              <br><br>
+              The slaughter of the first races prompted the Greater Deities into action.  
+              Gondarin was all too eager to bind the Lesser Deities to vessels, but Deliklese still disliked the cruelty of it.  
+              They reached a compromise that would allow any bound Genie to free themselves, but only by giving up their godly powers and becoming mortal themselves.  
+              In order to facilitate this exchange, a magical ward of unimaginable power was forged.  
+              The magic behind The Binding was built around this divine law known as the Edict, and it still serves as the foundation of oaths and vows to this day.
+              <br><br>
+              Afterwards, Gondarin began mortalkind anew.  
+              These new mortals had the right to swear on the Edict as they saw fit, binding themselves much like the Genies with their word.  
+              Initially, none of the Genies chose to become mortal.  
+              The first Genie to do so waited nearly a thousand years before choosing freedom.  
+              He became the first member of the Genasi race, and he sought out other Genie vessels to convince his kind to choose life.  
+              Very few chose to join him, but those that did ended up forming small colonies and having mortal children of their own.  
+              Other mortals were wary of the Genasi due to their past crimes.  
+              The descendants of the Genies still persist as Genasi to this day, but many Genies still hold onto their power and immortality, biding their time from within their vessels. 
+  
+              DEMIGODS<br>
+              <p>
+                Demigods are the offspring of a mortal and any of the other deities, and as a result, are the most varied category of divine being.  Offspring between mortals and the Titans are extremely rare, and offspring between mortals and genies are only a small measure more common.  The vast majority of demigods are children of the Greater Deities and mortals, usually becoming noteworthy in historical records.  The gods tend to favor their children, and their children have a tendency to accomplish great things.  Many of the powers that demigods can manifest are directly related to their parent's domain, including spells from the associated school of magic and abilities unique to the native elementals.  The nature of divine manifestation that demigods exhibit are wildly vvaried, even among those with the same heritage.  For example, a demigod of Deliklese might be able to take on a bestial form much like a lycanthrope to better stalk her prey, while another demigod of Delkilese might be able to convert his body into an ooze like substance to pass through small cracks and avoid being harmed by slashing weapons.  
+                <br><br>
+                While less common than mortal demigods, there are some known examples of demigods with dragons or beasts as the mortal parent.  These creatures often become utter legend, making them difficult to track and document.  While dragons are inherently deific to some degree, they are in fact mortal despite what some might insist.  Dragons do age and eventually die of old age, although after an admittedly long lifespan.  Only dragon demigods are able to live indefinitely and attain the status of GreatWyrm.  While some dragons do extend their lifespan through necromancy, this does not allow them to continue growing naturally, and thus stunts their development.  GreatWyrms are a remarkably powerful category of creature, not quite a God, but certainly exceeding the Genies.  
+                <br><br>
+                There is some speculation about whether some varieties of creature are descendants of demigods, therianthropes being chief among them.  While not an uncommon perception, therianthropes are not directly related to demigods at all.  A demigod might be able to contract therianthropy, but the curse is exactly that; a curse.  Demigods possess innate abilities that cannot be acquired or removed.  It is technically impossible to prove that therianthropy did not originate from a feral demigod, but there is no evidence in favor of such a theory.  
+              </p>
+  
+  
+            </p>
+  
+          </div>
+        </div>
+      </section>
+      <!-- 
+        A div for the page FOOTER -->
       <footer id="import-footer"></footer>
     </div>
   </body>
 </html>
-
-<script type="text/javascript">
-  $(function () {
-
-    $("#import-header").load("/resources/pages/import-header.html");
-    $("#import-footer").load("/resources/pages/import-footer.html");
-
-});
-</script>
