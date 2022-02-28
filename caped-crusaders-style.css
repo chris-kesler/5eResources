@@ -176,18 +176,34 @@ body, #page-title-table tr th, #page-title-table th, #page-title-table tr td, #p
 }
 
 /* The background container div that all other HTML elements rest inside (or on top) of */
-#page-background-div {
+#page-background-div, #page-background-div-caped-crusaders, #page-background-div-myrmidos-wiki, #page-background-div-game-journals, #page-background-div-eportfolio, #page-background-div-homepage {
   position: relative;
   width: 100%;
   height: auto;
   min-height: 80vh;
   overflow: visible;
-  background-image: url("/resources/images/ESO_-_Milky_Way.jpg");
   background-repeat: repeat-y;
-  background-size: 105%;
+  background-size: 100%;
   padding-bottom: 20vh;    /* Footer height */
   background-attachment: fixed;
 }
+#page-background-div-caped-crusaders {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Taichung_sunset_skyline_2019.jpg/1200px-Taichung_sunset_skyline_2019.jpg?20200526005223");
+}
+#page-background-div-game-journals {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e6/Conways_game_of_life_breeder_animation.gif?20140304220345");
+}
+#page-background-div-myrmidos-wiki {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Maurice_Prendergast_-_Fantasy_-_Google_Art_Project.jpg/1200px-Maurice_Prendergast_-_Fantasy_-_Google_Art_Project.jpg?20130108152852");
+}
+#page-background-div-eportfolio {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Cloudscape_Over_the_Philippine_Sea.jpg/1199px-Cloudscape_Over_the_Philippine_Sea.jpg?20161117110401");
+}
+#page-background-div-homepage {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/A_New_View_of_the_Tarantula_Nebula.jpg/1166px-A_New_View_of_the_Tarantula_Nebula.jpg?20120423153745");
+}
+
+
 
 /* The div that holds the actual page content */
 .common-page-content-section-transparent {
@@ -201,6 +217,7 @@ body, #page-title-table tr th, #page-title-table th, #page-title-table tr td, #p
 
 /* The off white chunk of the page that holds content */
 .page-content-section {
+  border: 2px solid rgb(100,100,100);
   box-sizing: border-box;
   overflow: hidden;
   margin-left: 5vw; 
@@ -295,6 +312,13 @@ body, #page-title-table tr th, #page-title-table th, #page-title-table tr td, #p
   width: 80px;
   border-radius: 40px;
   border-style: solid;
+}
+
+.footer-attribution-button {
+  text-decoration: underline;
+  font-weight: bold;
+  border: 1px solid rgb(54,57,63);
+  background-color: rgb(54,57,63);
 }
 
 
