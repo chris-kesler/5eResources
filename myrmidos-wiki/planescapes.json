@@ -10,6 +10,7 @@
 					"img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Lightning_in_Dallas_2015.jpg",
 					"img_linked" : "https://cdna.artstation.com/p/assets/images/images/027/038/996/large/ari-matti-toivonen-planeofair.jpg?1590424783",
 					"img_linked_source" : "https://www.reddit.com/r/ImaginaryLeviathans/comments/gr2g3i/the_elemental_plane_of_air_by_arimatti_toivonen/?utm_source=share&utm_medium=ios_app&utm_name=iossmf&utm_term=link",
+					"img_thumbnail" : "/resources/images/caelar.jpg",
                     "species" : "The Primal Elemental Plane of Air"
 				},
 				{
@@ -97,7 +98,8 @@
 					"img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Fryxellsee_Opt.jpg",
 					"img_linked" : "https://i.pinimg.com/originals/b3/30/41/b330415ce92df5a2b676dea5e416a551.jpg",
 					"img_linked_source" : "https://www.roleplayerguild.com/topics/158293-final-fantasy-the-dark-days-fantasy-sci-fi-adventure-interest-check/ooc",
-                    "species" : "The Quasi Elemental Plane of Ice"
+					"img_thumbnail" : "/resources/images/eifrost.jpg",
+					"species" : "The Quasi Elemental Plane of Ice"
 				},
 				{
 					"heading" : "Planar Associations",
@@ -184,7 +186,8 @@
 					"img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Underwater_world.jpg",
 					"img_linked" : "https://db4sgowjqfwig.cloudfront.net/campaigns/29929/assets/446853/Elemental_Plane_of_Water.jpg?1428680744",
 					"img_linked_source" : "https://skies-of-glass.obsidianportal.com/wikis/elemental-plane-of-water",
-                    "species" : "The Primal Elemental Plane of Water"
+					"img_thumbnail" : "/resources/images/aquar.jpg",
+					"species" : "The Primal Elemental Plane of Water"
 				},
 				{
 					"heading" : "Planar Associations",
@@ -271,7 +274,8 @@
 					"img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Swamp_poratz.jpg",
 					"img_linked" : "https://static.wikia.nocookie.net/realmsofahlus/images/1/16/The_Glass_Road.jpg/revision/latest?cb=20200503220249",
 					"img_linked_source" : "https://realmsofahlus.fandom.com/wiki/The_Glass_Road",
-                    "species" : "The Quasi Elemental Plane of Ooze"
+					"img_thumbnail" : "/resources/images/feywilds.jpg",
+					"species" : "The Quasi Elemental Plane of Ooze"
 				},
 				{
 					"heading" : "Planar Associations",
@@ -358,7 +362,8 @@
 					"img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:140823_M%C3%A4rchendom_Saalfelder_Feengrotten.jpg",
 					"img_linked" : "https://preview.redd.it/4yzr0lykh3y61.jpg?auto=webp&s=1b83e25abc73650b51598e656880ac654bd1cdb2",
 					"img_linked_source" : "https://www.reddit.com/r/DnD/comments/n8e7ov/oc_art_a_reimagining_of_the_elemental_plane_of/",
-                    "species" : "Caelaris Fulgaria"
+					"img_thumbnail" : "/resources/images/terral.jpg",
+					"species" : "Caelaris Fulgaria"
 				},
 				{
 					"heading" : "Planar Associations",
@@ -445,7 +450,8 @@
 					"img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:P%C4%81hoehoe_and_Aa_flows_at_Hawaii.jpg",
 					"img_linked" : "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cbfc9e55-f453-4c12-83b8-e99189a97def/d86zszc-278ce6f2-8a3f-45e2-aab9-6781dce5b25d.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2NiZmM5ZTU1LWY0NTMtNGMxMi04M2I4LWU5OTE4OWE5N2RlZlwvZDg2enN6Yy0yNzhjZTZmMi04YTNmLTQ1ZTItYWFiOS02NzgxZGNlNWIyNWQuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.btTgDJjdOonDTATPz_NoXxfMRlGGw5BB_TIWgOwWFFs",
 					"img_linked_source" : "https://www.deviantart.com/concept-art-house/art/Volcano-495477624",
-                    "species" : "The Quasi Elemental Plane of Magma"
+					"img_thumbnail" : "/resources/images/vulken.jpg",
+					"species" : "The Quasi Elemental Plane of Magma"
 				},
 				{
 					"heading" : "Planar Associations",
@@ -532,7 +538,8 @@
 					"img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:FIRE_01.JPG",
 					"img_linked" : "https://db4sgowjqfwig.cloudfront.net/campaigns/105480/assets/887245/pCIkRlg.jpg?1533694990",
 					"img_linked_source" : "https://phandeversfinest.obsidianportal.com/wikis/elemental-plane-of-fire",
-                    "species" : "The Primal Elemental Plane of Fire"
+					"img_thumbnail" : "/resources/images/ignar.jpg",
+					"species" : "The Primal Elemental Plane of Fire"
 				},
 				{
 					"heading" : "Planar Associations",
@@ -619,7 +626,8 @@
 					"img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Photograph_from_a_commercial_flight_showing_a_pyrocumulonimbus_cloud.jpg",
 					"img_linked" : "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9aa31f9e-3752-478a-bcae-305421dcb295/dd3bimg-5b6b38e9-574b-40d3-a015-82cde8f5b639.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzlhYTMxZjllLTM3NTItNDc4YS1iY2FlLTMwNTQyMWRjYjI5NVwvZGQzYmltZy01YjZiMzhlOS01NzRiLTQwZDMtYTAxNS04MmNkZThmNWI2MzkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.rSkNWUE4n7Df_g5G9nX6ZjwWw2BvoBLk984azPxrgKs",
 					"img_linked_source" : "https://www.deviantart.com/wuggynaut/art/Shadowfell-791636488",
-                    "species" : "The Quasi Elemental Plane of Ash"
+					"img_thumbnail" : "/resources/images/shadowfell.jpg",
+					"species" : "The Quasi Elemental Plane of Ash"
 				},
 				{
 					"heading" : "Planar Associations",
@@ -706,7 +714,8 @@
 					"img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:The_Earth_seen_from_Apollo_17.jpg",
 					"img_linked" : "https://www.worldanvil.com/uploads/images/313ab330767a891530f70ae8fe805160.jpg",
 					"img_linked_source" : "https://www.worldanvil.com/w/faerun-reborn-rathofkelly/discussion-boards",
-                    "species" : "The Material Plane"
+					"img_thumbnail" : "/resources/images/myrmidos.jpg",
+					"species" : "The Material Plane"
 				},
 				{
 					"heading" : "Planar Associations",
