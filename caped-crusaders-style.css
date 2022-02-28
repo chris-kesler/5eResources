@@ -201,6 +201,8 @@ body, #page-title-table tr th, #page-title-table th, #page-title-table tr td, #p
 }
 #page-background-div-homepage {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/A_New_View_of_the_Tarantula_Nebula.jpg/1166px-A_New_View_of_the_Tarantula_Nebula.jpg?20120423153745");
+  background-position: 3%;
+  background-size: 103%;
 }
 
 
