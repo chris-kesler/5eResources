@@ -63,7 +63,7 @@
           $.each(data.entries, function(i, f) {
 
             // Finding the entry that matches this file
-            if (f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html" == page_title) {
+            if (f.entry_name.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html" == page_title) {
 
               // Looping through the author array in the JSON file to populate variables for links and credit
               $.each(data.author, function(x, y) {
@@ -95,18 +95,18 @@
               
               // Populating the page description based on flavor, mechanics, overcharge, and components
               if (f.flavor_str != undefined) {
-                document.getElementById("page-description-div").innerHTML += "<b>Flavor Description:</b>  <i>" + f.flavor_str + "</i><br><br>";
+                document.getElementById("page-description-div").innerHTML += "<p><b>Flavor Description:</b>  <i>" + f.flavor_str + "</i></p>";
               }
               if (f.mechanics_str != undefined) {
-                document.getElementById("page-description-div").innerHTML += "<b>Standard Mechanics:</b>  " + f.mechanics_str + "<br><br>";
+                document.getElementById("page-description-div").innerHTML += "<p><b>Standard Mechanics:</b>  " + f.mechanics_str + "</p>";
               }
               if (f.overcharge_str != undefined) {
-                document.getElementById("page-description-div").innerHTML += "<b>Overcharge Mechanics:</b>  " + f.overcharge_str + "<br><br>";
+                document.getElementById("page-description-div").innerHTML += "<p><b>Overcharge Mechanics:</b>  " + f.overcharge_str + "</p>";
               }
 
               // Checking for Material Components and displaying the material component description
               if (f.components_vsm_str.includes("M") && f.components_description_str != undefined) {
-                document.getElementById("page-description-div").innerHTML += "<b>Material Components:</b>  <i>(" + f.components_description_str + ")</i>";
+                document.getElementById("page-description-div").innerHTML += "<p><b>Material Components:</b>  <i>(" + f.components_description_str + ")</i></p>";
 
                 // If materials have a cost, we strip that out and concatenate it to the vsm string with parentheses
                 if (f.components_description_str.replace(/\D/g,'') > 0) {
@@ -162,44 +162,38 @@
 
 
   <body>
-    <!-- The fixed background div -->
-    <div id="page-background-div"> 
-
-      <!-- A div to hold our header -->
-      <div class="common-page-header">
-
-        <!-- Importing the header -->
-        <div id="import-header"></div>
-
-      </div>
-        
-      <!-- A transparent div to build everything else on top of -->
-      <div class="common-page-content-section-transparent">
-
-        <!-- An off white chunk of the page that holds content -->
-        <section class="page-content-section">
-
-          <!-- A table to hold the page overview information -->
-          <table id="page-title-table">
-
-            <!-- The title of the page content, including the source as a link -->
-            <thead><tr><td colspan="6"><h2 id="page-title-path"></h2></td></tr></thead>
-            <tbody></tbody>
+    <!-- 
+      A div for the page BACKGROUND -->
+    <div id="page-background-div-caped-crusaders">
+      <!-- 
+        A div for the page HEADER -->
+      <div id="import-header"></div>
+      <!-- 
+        A series of element for the page NAVLIST -->
+      <section style="display: none;" id="page-navlist-section"><table id="page-navlist-table"><tbody></tbody></table></section>
+      <button style="display: none;" id='page-navlist-button' onclick='hideShowNavList()'>&#60; &#60;</button>
+      <!-- 
+        A section for the page CONTENT -->
+      <section class="page-content-section">
+        <!-- 
+          A table for the page TITLE -->
+        <table id="page-title-table"><thead><tr><td colspan="6"><h2 id="page-title-path"></h2></td></tr></thead><tbody></tbody></table>           
+        <!-- 
+          A table for the page ATTRIBUTES -->
+          <table id="page-attributes-table">
+            <thead>
+              <tr><th><img id="page-image" alt="Page Image"></th></tr>
+            </thead>
+            <tbody>
+              <tr><td><h4 id="page-image-credit">Image Credit</h4></td></tr>
+            </tbody>
           </table>
-
-          <!-- A table to hold the page image and credit to author -->
-          <table id="entry-page-image-table">
-            <tr><td><img id="page-image" alt="Page Image"></td></tr>
-            <tr><td><h4 id="page-image-credit">Image Credit</h4></td></tr>
-          </table>
-
-
-          <!-- A paragraph to hold the page content and descriptions -->
-          <p id="page-description-div"></p>
-        </section>
-      </div>
-
-      <!-- Importing the footer -->
+        <!-- 
+          A div for the page DESCRIPTION -->
+        <div id="page-description-div"></div>
+      </section>
+      <!-- 
+        A div for the page FOOTER -->
       <footer id="import-footer"></footer>
     </div>
   </body>

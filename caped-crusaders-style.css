@@ -136,7 +136,7 @@ button {
 }
 
 /* A condensed dark grey border color style group for the header elements */
-.import-header-home-button, .import-header-nav-button, .page-list-table-entry-button, #common-page-back-button, .common-page-footer-button, .directory-page-dynamic-table-sort-button {
+.import-header-home-button, .import-header-nav-button, .page-list-entry-button, #common-page-back-button, .common-page-footer-button, .directory-page-dynamic-table-sort-button {
   border-color: rgb(54,57,63);
 }
 
@@ -369,30 +369,28 @@ body, #page-title-table tr th, #page-title-table th, #page-title-table tr td, #p
 
 /* A button to navigate the website file structure from the page content, signifying a directory page */
 .page-list-directory-button {
-  width: 300px;
-  max-width: 35vw;
+  width: 24vw;
   height: auto;
-  min-height: 65px;
-  margin: 5px;
+  min-height: 55px;
+  margin: 0.5vw;
   border-radius: 20px;
   background-color: rgb(175, 175, 175);
-  border: 1px solid aqua;
+  border: 2px solid aqua;
   font-size: large;
   font-weight: bold;
 }
 
 /* A button to navigate the website file structure from the page content, signifying an entry page */
-.page-list-table-entry-button {
-  width: 300px;
-  max-width: 35vw;
+.page-list-entry-button {
+  width: 24vw;
   height: auto;
-  min-height: 50px;
+  min-height: 45px;
+  margin: 0.5vw;
   border-radius: 10px;
-  background-color: rgb(212, 188, 143);
-  border-style: solid;
+  background-color: rgb(200, 200, 200);
+  border: 2px solid aqua;
   font-size: medium;
   font-weight: bold;
-  margin: 5px;
 }
 
 /* The school of magic buttons */
@@ -523,9 +521,7 @@ The buttons used to navigate and organize the classes within caped crusaders
 
 /* Large images to be used for entry pages */
 #page-image, .cc-class-image-large, .cc-subclass-image-large {
-  min-width: 20vw;
-  max-width: 25vw;
-  width: auto;
+  width: 100%;
 }
 
 
@@ -539,21 +535,21 @@ The buttons used to navigate and organize the classes within caped crusaders
 /* A table to hold the various navigation buttons present in the page regardless of button styling */
 .page-list-table {
   float: right;
-  border: 1px solid rgb(54,57,63);
   height: auto;
-  width: auto;
-  margin-right: 0px;
-  border-radius: 5px;
-  align-content: center;
+  width: 25vw;
+  border-radius: 15px;
 }
 
 /* 
 An overview table for caped crusaders entry pages 
 */
 #page-title-table {
+  width: 60vw;
+}
+#page-title-table-wide {
   width: 100%;
 }
-#page-title-table, .level-table {
+#page-title-table, #page-title-table-wide, .level-table {
   overflow: visible;
   margin: 0px;
   margin-bottom: 15px;
@@ -562,23 +558,23 @@ An overview table for caped crusaders entry pages
   border-collapse: collapse;
   float: left;
 }
-#page-title-table thead tr td, .level-table thead tr td{
+#page-title-table thead tr td, #page-title-table-wide thead tr td, .level-table thead tr td{
   border: 0px hidden aqua;
   border-bottom: 1px solid rgb(50,50,50);
   background: transparent;
   background-color: transparent;
 }
-#page-title-table th, #page-title-table td, .level-table th, .level-table td {
+#page-title-table th, #page-title-table-wide th, #page-title-table td, #page-title-table-wide td, .level-table th, .level-table td {
   padding: 8px;
   vertical-align: top;
   border: 1px solid rgb(50,50,50);
 }
-#page-title-table tr th, #page-title-table th, .level-table tr th, .level-table th {
+#page-title-table tr th, #page-title-table-wide tr th, #page-title-table th, #page-title-table-wide th, .level-table tr th, .level-table th {
   background-color: rgb(150,150,150);
   font-size: medium;
   text-align: left;
 }
-#page-title-table tr td, #page-title-table td, .level-table tr td, .level-table td {
+#page-title-table tr td, #page-title-table-wide tr td, #page-title-table  td, #page-title-table-wide td, .level-table tr td, .level-table td {
   background-color: rgb(200,200,200);
   font-size: medium;
   text-align: left;
@@ -685,13 +681,14 @@ A small table to hold the entry page image and author credit
   overflow: auto;
   border-collapse: collapse;
   width: 25vw;
-  min-width: 200px;
   padding: 0px;
   margin: 0px;
   margin-right: -10px;
   margin-left: 10px;
   border: 5px solid rgb(150,150,150);
   border-radius: 32px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   background-color: rgb(200, 200, 200);
 }
 #page-attributes-table tr:first-child th {
@@ -768,7 +765,7 @@ The dynamic table
 */
 #directory-page-dynamic-table-content {
   border-collapse: collapse; 
-  min-width: 83vw; /* Full-width */
+  width: 100%; 
   border: 1px solid rgb(97, 97, 97); 
   overflow: scroll;
   display: inline-block;

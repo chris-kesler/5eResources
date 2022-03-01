@@ -50,7 +50,7 @@
 
     "entries": [
         {
-            "name_str" : "Afterburner Surge",
+            "entry_name" : "Afterburner Surge",
             "page_url" : "afterburner-surge.html",
 
             "level_int" : 4,
@@ -97,7 +97,7 @@
         },
 
         {
-            "name_str" : "Repeating Jets",
+            "entry_name" : "Repeating Jets",
             "page_url" : "repeating-jets.html",
 
             "level_int" : 5,
@@ -144,7 +144,7 @@
         },
 
         {
-            "name_str" : "Altitude Rebreather",
+            "entry_name" : "Altitude Rebreather",
             "page_url" : "altitude-rebreather.html",
 
             "level_int" : 2,
@@ -191,7 +191,7 @@
         },
         
         {
-            "name_str" : "Automated Defibrilator",
+            "entry_name" : "Automated Defibrilator",
             "page_url" : "automated-defibrilator.html",
 
             "level_int" : 4,
@@ -238,7 +238,7 @@
         },
 
         {
-            "name_str" : "Chromabeam",
+            "entry_name" : "Chromabeam",
             "page_url" : "chromabeam.html",
 
             "level_int" : 1,
@@ -286,7 +286,7 @@
         },
 
         {
-            "name_str" : "Concussive Punch",
+            "entry_name" : "Concussive Punch",
             "page_url" : "concussive-punch.html",
 
             "level_int" : 0,
@@ -334,7 +334,7 @@
         },
 
         {
-            "name_str" : "Focused Beam",
+            "entry_name" : "Focused Beam",
             "page_url" : "focused-beam.html",
 
             "level_int" : 0,
@@ -382,7 +382,7 @@
         },
         
         {
-            "name_str" : "HALO Infiltration",
+            "entry_name" : "HALO Infiltration",
             "page_url" : "halo-infiltration.html",
 
             "level_int" : 5,
@@ -429,7 +429,7 @@
         },
 
         {
-            "name_str" : "Hologram Projector",
+            "entry_name" : "Hologram Projector",
             "page_url" : "hologram-projector.html",
 
             "level_int" : 2,
@@ -477,7 +477,7 @@
         },
 
         {
-            "name_str" : "Homing Darts",
+            "entry_name" : "Homing Darts",
             "page_url" : "homing-darts.html",
 
             "level_int" : 1,
@@ -524,7 +524,7 @@
         },
 
         {
-            "name_str" : "Hypersonic Travel",
+            "entry_name" : "Hypersonic Travel",
             "page_url" : "hypersonic-travel.html",
 
             "level_int" : 6,
@@ -571,7 +571,7 @@
         },
 
         {
-            "name_str" : "Impact Dampeners",
+            "entry_name" : "Impact Dampeners",
             "page_url" : "impact-dampeners.html",
             "level_int" : 1,
             "level_str" : "1st",
@@ -617,7 +617,7 @@
         },
 
         {
-            "name_str" : "Integrated Thrusters",
+            "entry_name" : "Integrated Thrusters",
             "page_url" : "integrated-thrusters.html",
 
             "level_int" : 3,
@@ -664,7 +664,7 @@
         },
 
         {
-            "name_str" : "Interactive Tutorial",
+            "entry_name" : "Interactive Tutorial",
             "page_url" : "interactive-tutorial.html",
 
             "level_int" : 0,
@@ -712,7 +712,7 @@
         },
 
         {
-            "name_str" : "Interplanetary Travel",
+            "entry_name" : "Interplanetary Travel",
             "page_url" : "interplanetary-travel.html",
 
             "level_int" : 8,
@@ -759,7 +759,7 @@
         },
 
         {
-            "name_str" : "Interstellar Traversal",
+            "entry_name" : "Interstellar Traversal",
             "page_url" : "interstellar-traversal.html",
 
             "level_int" : 9,
@@ -806,7 +806,7 @@
         },
 
         {
-            "name_str" : "Jump Pack",
+            "entry_name" : "Jump Pack",
             "page_url" : "jump-pack.html",
 
             "level_int" : 0,
@@ -853,7 +853,7 @@
         },
 
         {
-            "name_str" : "Focused Flight",
+            "entry_name" : "Focused Flight",
             "page_url" : "focused-flight.html",
 
             "level_int" : 0,
@@ -900,7 +900,7 @@
         },
 
         {
-            "name_str" : "Magnum Punch",
+            "entry_name" : "Magnum Punch",
             "page_url" : "magnum-punch.html",
             "level_int" : 1,
             "level_str" : "1st",
@@ -946,7 +946,7 @@
         },
 
         {
-            "name_str" : "Mechbuster",
+            "entry_name" : "Mechbuster",
             "page_url" : "mechbuster.html",
             "level_int" : 4,
             "level_str" : "4th",
@@ -992,7 +992,7 @@
         },
 
         {
-            "name_str" : "Multibeam",
+            "entry_name" : "Multibeam",
             "page_url" : "multibeam.html",
 
             "level_int" : 7,
@@ -1040,7 +1040,7 @@
         },
 
         {
-            "name_str" : "Omnibeam",
+            "entry_name" : "Omnibeam",
             "page_url" : "omnibeam.html",
 
             "level_int" : 0,
@@ -1087,7 +1087,7 @@
         },
 
         {
-            "name_str" : "Oxygen Filter",
+            "entry_name" : "Oxygen Filter",
             "page_url" : "oxygen-filter.html",
 
             "level_int" : 3,
@@ -1134,7 +1134,7 @@
         },
         
         {
-            "name_str" : "Interorbital Traversal",
+            "entry_name" : "Interorbital Traversal",
             "page_url" : "interorbital-traversal.html",
 
             "level_int" : 7,
@@ -1181,7 +1181,7 @@
         },
 
         {
-            "name_str" : "Quickfire Beam",
+            "entry_name" : "Quickfire Beam",
             "page_url" : "quickfire-beam.html",
 
             "level_int" : 0,
@@ -1228,7 +1228,7 @@
         },
 
         {
-            "name_str" : "Rapid Deceleration",
+            "entry_name" : "Rapid Deceleration",
             "page_url" : "rapid-deceleration.html",
 
             "level_int" : 1,
@@ -1275,7 +1275,7 @@
         },
 
         {
-            "name_str" : "Reflective Insulators",
+            "entry_name" : "Reflective Insulators",
             "page_url" : "reflective-insulators.html",
 
             "level_int" : 1,
@@ -1322,7 +1322,7 @@
         },
 
         {
-            "name_str" : "Repulsing Blast",
+            "entry_name" : "Repulsing Blast",
             "page_url" : "repulsing-blast.html",
 
             "level_int" : 0,
@@ -1369,7 +1369,7 @@
         },
 
         {
-            "name_str" : "Robotitan",
+            "entry_name" : "Robotitan",
             "page_url" : "robotitan.html",
             "level_int" : 8,
             "level_str" : "8th",
@@ -1415,7 +1415,7 @@
         },
         
         {
-            "name_str" : "Rocket Burst",
+            "entry_name" : "Rocket Burst",
             "page_url" : "rocket-burst.html",
 
             "level_int" : 2,
@@ -1462,7 +1462,7 @@
         },
 
         {
-            "name_str" : "Solar Mirror",
+            "entry_name" : "Solar Mirror",
             "page_url" : "solar-mirror.html",
 
             "level_int" : 9,
@@ -1510,7 +1510,7 @@
         },
 
         {
-            "name_str" : "Taser Snare",
+            "entry_name" : "Taser Snare",
             "page_url" : "taser-snare.html",
 
             "level_int" : 1,
@@ -1557,7 +1557,7 @@
         },
 
         {
-            "name_str" : "Phosphorous Missile",
+            "entry_name" : "Phosphorous Missile",
             "page_url" : "phosphorous-missile.html",
 
             "level_int" : 3,
@@ -1604,7 +1604,7 @@
         },
 
         {
-            "name_str" : "Vacuum Compression",
+            "entry_name" : "Vacuum Compression",
             "page_url" : "vacuum-compression.html",
 
             "level_int" : 5,
