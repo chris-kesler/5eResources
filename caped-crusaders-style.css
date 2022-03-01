@@ -74,7 +74,7 @@ p {
 
 p:before {
   content: "";
-  width: 25vw;
+  width: 28vw;
   display: block;
   overflow: hidden;
   /* For Demonstration */
