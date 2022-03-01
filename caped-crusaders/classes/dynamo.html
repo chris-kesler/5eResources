@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-US-Compatible" content="e-edge">
+    <title>KnowOne's Website of Everything</title>
+    <link rel="icon" href="/resources/images/OwlOfMinerva_ModifiedLogo.png">
+    <link rel="stylesheet" href="/caped-crusaders-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+    <script>
+
+      // A function that capitalizes the first letter of each word in a string
+      function titleCase(str) {
+        var split_string = str.toLowerCase().split(' ');
+        for (var i = 0; i < split_string.length; i++) {
+          split_string[i] = split_string[i].charAt(0).toUpperCase() + split_string[i].substring(1);     
+        }
+        return split_string.join(' '); 
+      }
+      
+      // The function that populates all page data into preset elements
+      $(function populatePageData() {
+
+
+// =========================================================================================
+// Populating the page HEADER
+// 
+// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
+// =========================================================================================
+        $("#import-header").load("/resources/pages/import-header.html");
+
+
+// =========================================================================================
+// Populating the page TITLE
+// 
+// The page TITLE can include a table of details for spells or monster statblocks
+// If title_library does not have a table_row library, the table of details is hidden and only the TITLE path is populated
+// =========================================================================================
+        
+        // Reading the name of this file
+        var page_array = window.location.pathname.split("/");
+        var page_array_length = page_array.length;
+
+        if (page_array.length == 5) {
+          var page_title = page_array.pop();
+          var page_category = page_array.pop();
+          var page_directory = page_array.pop();
+          var page_subsite = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 4) {
+          var page_title = page_array.pop();
+          var page_directory = page_array.pop();
+          var page_subsite = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 3) {
+          var page_title = page_array.pop();
+          var page_subsite = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 2) {
+          var page_title = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 1) {
+          var page_title = page_array.pop();
+        } 
+
+        if (page_subsite != undefined) {
+          document.getElementById("page-title-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+        } else {
+          document.getElementById("page-title-path").innerHTML = titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
+        }
+        if (page_directory != undefined) {
+          document.getElementById("page-title-path").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+        }
+        if (page_category != undefined) {
+          document.getElementById("page-title-path").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + "/" + page_category + ".html'>" + titleCase(page_category.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+        }
+
+        // Reading data from our JSON file
+        $.getJSON(`/` + page_subsite + `/` + page_directory + `.json`, function(data) {
+
+          // Looping through the JSON data 
+          $.each(data.entries, function(i, f) {
+            if (f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html" == page_title) {
+
+              if (f.content_source != undefined && f.content_source !== ""){
+                document.getElementById("page-title-path").innerHTML += " > <a target='blank' href='" + f.content_source + "'>" + titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', '')) + " (source)</a>";
+              } else {
+                document.getElementById("page-title-path").innerHTML += " > The " + titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
+              }
+
+              document.getElementById("class-page-image").src = "/resources/images/" + f.name_str + ".png";
+              document.getElementById("class-page-image").alt = f.class_img_credit;
+              document.getElementById("page-image-credit").innerHTML = f.class_img_credit;
+              document.getElementById("class-page-description-div").innerHTML = f.description_long_str;
+              document.getElementById("class-features-intro").innerHTML = "As a "  + f.name_str + ", you gain the following Class Features.";
+              document.getElementById("hit-dice").innerHTML = "<b>Hit Dice:</b>  1d" + f.hit_die_int + " per " + f.name_str + " level";
+              document.getElementById("hit-points-at-1st-level").innerHTML = "<b>Hit Points at 1st level:</b>  " + f.hit_die_int + " your Constitution modifier";
+              document.getElementById("hit-points-at-higher-levels").innerHTML = "<b>Hit Points at higher levels:</b>  1d" + f.hit_die_int + " (or " + f.hit_die_average_int + ") + your Constitution modifier per " + f.name_str + " level after 1st";
+
+              document.getElementById("proficiencies-armor").innerHTML = "<b>Armor:</b>  " + f.proficiencies_armor;
+              document.getElementById("proficiencies-weapons").innerHTML = "<b>Weapons:</b>  " + f.proficiencies_weapons;
+              document.getElementById("proficiencies-tools").innerHTML = "<b>Tools:</b>  " + f.proficiencies_tools;
+              document.getElementById("proficiencies-saving-throws").innerHTML = "<b>Saving Throws:</b>  " + f.proficiencies_saves;
+              document.getElementById("proficiencies-skills").innerHTML = "<b>Skills:</b>  " + f.proficiencies_skills;
+
+              document.getElementById("equipment-armor").innerHTML = "<b>Armor:</b>  " + f.equipment_armor;
+              document.getElementById("equipment-weapons").innerHTML = "<b>Weapons:</b>  " + f.equipment_weapons;
+              document.getElementById("equipment-tools").innerHTML = "<b>Tools:</b>  " + f.equipment_tools;
+              document.getElementById("equipment-packs").innerHTML = "<b>Packs:</b>  " + f.equipment_packs;
+              document.getElementById("starting-wealth").innerHTML = "<td>" + f.name_str + "</td><td>" + f.equipment_variant + "</td>";
+              document.getElementById("page-title-table-title").innerHTML = "The " + f.name_str + " Table";
+              var prof = 2;
+              let j = 0;
+              for (let i = 0; i < 20; i++) {
+                var links = "---";
+                for (let k = 0; k < f.class_feats.length; k++) {
+                  if (f.class_feats[k].level == (i+1)) {
+                    if (links.includes("href")) {
+                      links += ", <a href='#" + f.class_feats[k].name_str.replace(/\s+/g, '') + "'>" 
+                      + f.class_feats[k].name_str + "</a>";  
+                    } else {
+                      links = "<a href='#" + f.class_feats[k].name_str.replace(/\s+/g, '') + "'>" 
+                      + f.class_feats[k].name_str + "</a>";
+                    }
+                  } 
+                }
+                if ( (i+2)/f.sustainables_known_denominator < 0.35 ) {
+                  var sustainables = "---";
+                } else {
+                  var sustainables = Math.ceil((i+2)/f.sustainables_known_denominator);
+                }
+                if ( (i+1)/f.consumables_max_per_level_denominator < 0.3 ) {
+                  var consumables_known = "---";
+                  var consumables_points = "---";
+                  var consumables_max = "---";
+                } else {
+                  var consumables_known = Math.ceil((i+1)*f.consumables_known_per_level);
+                  var consumables_points = Math.ceil((i+1)*f.consumables_points_per_level);
+                  var consumables_max = Math.min(Math.ceil((i+1)/f.consumables_max_per_level_denominator), 9)
+                }
+                var table_row = "<tr>" + "<td>" + (i+1) + "</td>" + "<td>" + prof + "</td>" + "<td>" + links + "</td>" + "<td>" + sustainables + "</td>" + "<td>" + consumables_known + "</td>" + "<td>" + consumables_points + "</td>" + "<td>" + consumables_max + "</td>" + "</tr>"
+                j = j + 2;
+                $(table_row).appendTo("#level-table tbody");
+                if ((i+1) == 4 || (i+1) == 8 || (i+1) == 12 || (i+1) == 16) {
+                  prof++;
+                }
+              }
+              for (let i = 0; i < f.class_feats.length; i++) {
+                if (document.getElementById("page-title-table-features").innerHTML.indexOf(f.class_feats[i].name_str) > 0) {} 
+                else {
+                  document.getElementById("page-title-table-features").innerHTML += "<hr><h3 id='" 
+                  + f.class_feats[i].name_str.replace(/\s+/g, '') + "'>" 
+                  + f.class_feats[i].name_str + "</h3><h4><i><b><a href='#level-table'>" + f.name_str 
+                  + "</a>:</b>  level " + f.class_feats[i].level + "</i></h4><p>" 
+                  + f.class_feats[i].mechanics_str + "</p>";
+                }
+              }
+              // Subclasses
+              document.getElementById("subclass-tech-name").innerHTML = "Subclass:  The " + f.subclass_tech_name;
+              document.getElementById("subclass-tech-image").src = "/resources/images/" + f.name_str + "-" + f.subclass_tech_name + ".png";
+              document.getElementById("subclass-tech-image").alt = f.subclass_tech_img_credit;
+              document.getElementById("subclass-tech-image-credit").innerHTML = f.subclass_tech_img_credit;
+              document.getElementById("subclass-tech-description").innerHTML = f.subclass_tech_description;
+              for (let i = 0; i < f.subclass_tech_feats.length; i++) {
+                if (document.getElementById("subclass-tech-feats").innerHTML.indexOf(f.subclass_tech_feats[i].name_str) > 0) {} 
+                else {
+                  document.getElementById("subclass-tech-feats").innerHTML += "<hr><h3 id='" 
+                  + f.subclass_tech_feats[i].name_str.replace(/\s+/g, '') + "'>" 
+                  + f.subclass_tech_feats[i].name_str + "</h3><h4><i><b><a href='#subclass-tech-name'>" + f.subclass_tech_name 
+                  + "</a>:</b>  level " + f.subclass_tech_feats[i].level + "</i></h4><p>" 
+                  + f.subclass_tech_feats[i].mechanics_str + "</p>";
+                }
+              }
+              document.getElementById("subclass-power-name").innerHTML = "Subclass:  The " + f.subclass_power_name;
+              document.getElementById("subclass-power-image").src = "/resources/images/" + f.name_str + "-" + f.subclass_power_name + ".png";
+              document.getElementById("subclass-power-image").alt = f.subclass_power_img_credit;
+              document.getElementById("subclass-power-image-credit").innerHTML = f.subclass_power_img_credit;
+              document.getElementById("subclass-power-description").innerHTML = f.subclass_power_description;
+              for (let i = 0; i < f.subclass_power_feats.length; i++) {
+                if (document.getElementById("subclass-power-feats").innerHTML.indexOf(f.subclass_power_feats[i].name_str) > 0) {} 
+                else {
+                  document.getElementById("subclass-power-feats").innerHTML += "<hr><h3 id='" 
+                  + f.subclass_power_feats[i].name_str.replace(/\s+/g, '') + "'>" 
+                  + f.subclass_power_feats[i].name_str + "</h3><h4><i><b><a href='#subclass-power-name'>" + f.subclass_power_name 
+                  + "</a>:</b>  level " + f.subclass_power_feats[i].level + "</i></h4><p>" 
+                  + f.subclass_power_feats[i].mechanics_str + "</p>";
+                }
+              }
+              document.getElementById("subclass-magic-name").innerHTML = "Subclass:  The " + f.subclass_magic_name;
+              document.getElementById("subclass-magic-image").src = "/resources/images/" + f.name_str + "-" + f.subclass_magic_name + ".png";
+              document.getElementById("subclass-magic-image").alt = f.subclass_magic_img_credit;
+              document.getElementById("subclass-magic-image-credit").innerHTML = f.subclass_magic_img_credit;
+              document.getElementById("subclass-magic-description").innerHTML = f.subclass_magic_description;
+              for (let i = 0; i < f.subclass_magic_feats.length; i++) {
+                if (document.getElementById("subclass-magic-feats").innerHTML.indexOf(f.subclass_magic_feats[i].name_str) > 0) {} 
+                else {
+                  document.getElementById("subclass-magic-feats").innerHTML += "<hr><h3 id='" 
+                  + f.subclass_magic_feats[i].name_str.replace(/\s+/g, '') + "'>" 
+                  + f.subclass_magic_feats[i].name_str + "</h3><h4><i><b><a href='#subclass-magic-name'>" + f.subclass_magic_name 
+                  + "</a>:</b>  level " + f.subclass_magic_feats[i].level + "</i></h4><p>" 
+                  + f.subclass_magic_feats[i].mechanics_str + "</p>";
+                }
+              }
+            }
+          });
+        });
+
+
+// =========================================================================================
+// Populating the page FOOTER
+// 
+// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
+// =========================================================================================
+        $("#import-footer").load("/resources/pages/import-footer.html");
+      });
+
+    </script>
+  </head>
+
+
+  <body>
+    <!-- 
+      A div for the page BACKGROUND -->
+    <div id="page-background-div-caped-crusaders">
+      <!-- 
+        A div for the page HEADER -->
+      <div id="import-header"></div>
+      <!-- 
+        A section for the page CONTENT -->
+      <section class="page-content-section">
+        <!-- 
+          A table for the page TITLE -->
+        <table id="page-title-table"><thead><tr><td colspan="6"><h2 id="page-title-path"></h2></td></tr></thead><tbody></tbody></table>   
+
+        <table id="entry-page-image-table">
+          <tr><td><img id="class-page-image" class="cc-class-image-large" alt="Class Image"></td></tr>
+          <tr><td><h4 id="page-image-credit">Image Credit</h4></td></tr>
+        </table>
+        <p id="class-page-description-div"></p>
+        
+        <hr>
+        <h3>Class Features</h3>
+        <p id="class-features-intro"></p>
+        
+        <h4>Hit Points</h4>
+        <ul>
+          <li id="hit-dice"></li>
+          <li id="hit-points-at-1st-level"></li>
+          <li id="hit-points-at-higher-levels"></li>
+        </ul>
+
+        <h4>Proficiencies</h4>
+        <ul>
+          <li id="proficiencies-armor"></li>
+          <li id="proficiencies-weapons"></li>
+          <li id="proficiencies-tools"></li>
+          <li id="proficiencies-saving-throws"></li>
+          <li id="proficiencies-skills"></li>
+        </ul>
+        
+        <h4>Equipment</h4>
+        <ul>
+          <li id="equipment-armor"></li>
+          <li id="equipment-weapons"></li>
+          <li id="equipment-tools"></li>
+          <li id="equipment-packs"></li>
+        </ul>
+        <hr>
+        <h3>Variant Equipment: Starting Wealth</h3>
+        <table class="level-table" style="float: right;">
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Wealth</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="starting-wealth"></tr>
+          </tbody>
+        </table>
+        <div style="min-height: 75px;">
+          <p>
+            Rather than acquiring the equipment granted by your class and background, you can elect to purchase your starting gear.  If you do so, you receive no equipment from your class and background, and instead roll for your starting wealth using the criteria to the right:  
+          </p>
+        </div>
+                        
+        <hr>
+        <h3 id="page-title-table-title"></h3>
+        <table id="level-table" class="level-table">
+          <thead>
+            <th style="width: 5vw">Level</th>
+            <th style="width: 10vw">Proficiency Bonus</th>
+            <th style="width: 30vw">Features</th>
+            <th style="width: 10vw">Sustainables Gained</th>
+            <th style="width: 10vw">Consumables Known</th>
+            <th style="width: 10vw">Consumable Points</th>
+            <th style="width: 10vw">Consumable Max Level</th>
+          </thead>
+          <tbody></tbody>
+        </table>
+
+        <div id="page-title-table-features">
+          <body></body>
+        </div>
+      </section>
+      
+      <section class="page-content-section">
+        <h2 id="subclass-magic-name"></h2>
+        <table id="entry-page-image-table">
+          <tr><td><img class="cc-subclass-image-large" alt="Magic Subclass" id="subclass-magic-image"></img></td></tr>
+          <tr><td><h4 id="subclass-magic-image-credit">Image Credit</h4></td></tr>
+        </table>
+        <p id="subclass-magic-description"></p>
+        <div id="subclass-magic-feats"></div>
+      </section>
+
+      <section class="page-content-section">
+        <h2 id="subclass-power-name"></h2>
+        <table id="entry-page-image-table">
+          <tr><td><img class="cc-subclass-image-large" alt="Power Subclass" id="subclass-power-image"></img></td></tr>
+          <tr><td><h4 id="subclass-power-image-credit">Image Credit</h4></td></tr>
+        </table>
+        <p id="subclass-power-description"></p>
+        <div id="subclass-power-feats"></div>
+      </section>
+
+      <section class="page-content-section">
+        <h2 id="subclass-tech-name"></h2>
+        <table id="entry-page-image-table">
+          <tr><td><img class="cc-subclass-image-large" alt="Tech Subclass" id="subclass-tech-image"></td></tr>
+          <tr><td><h4 id="subclass-tech-image-credit">Image Credit</h4></td></tr>
+        </table>
+        <p id="subclass-tech-description"></p>
+        <div id="subclass-tech-feats"></div>
+      </section>
+      <!-- 
+        A div for the page FOOTER -->
+      <footer id="import-footer"></footer>
+    </div>
+  </body>
+</html>

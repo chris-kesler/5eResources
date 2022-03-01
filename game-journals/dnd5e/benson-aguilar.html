@@ -11,29 +11,29 @@
 
 
   <body>
-    <div class="common-page-background"> 
+    <div id="page-background-div"> 
       <div class="common-page-header">
-        <div class="import-common-page-header"></div>
+        <div id="import-header"></div>
 
           <h1>Game Journal:  Benson Aguilar</h1>
           <hr>
       </div>
         
       
-      <div class="common-page-content-transparent">
+      <div class="common-page-content-section-transparent">
           
 
 
 
 
-            <section class="common-page-content-section">
+            <section class="page-content-section">
                 <button id="common-page-back-button" onclick="location.href='../dnd5e.html'">Out to D&D</button>
                 <h2>Overview</h2>
                 <hr>
 
-                <!-- <table class="directory-page-nav-button-table">
+                <!-- <table class="page-list-table">
                     <tr><td>
-                        <button class="directory-page-nav-button-to-entry-page" onclick="location.href='/character-builds/artificer-warmagic.html'">Arcana Cleric</button>
+                        <button class="page-list-entry-button" onclick="location.href='/character-builds/artificer-warmagic.html'">Arcana Cleric</button>
                     </td></tr>
                 </table> -->
 
@@ -59,7 +59,7 @@
 
                 <h3>Backstory</h3>
 
-                <table class="entry-page-overview-table">
+                <table class="page-attributes-table">
                     <tr>
                         <th colspan="2">Session Zero</th>
                     </tr>
@@ -99,7 +99,7 @@
 
       </div>
 
-      <footer class="import-common-page-footer"></footer>
+      <footer id="import-footer"></footer>
     </div>
   </body>
 </html>
@@ -107,8 +107,8 @@
 <script type="text/javascript">
   $(function () {
 
-    $(".import-common-page-header").load("/resources/pages/import-common-page-header.html");
-    $(".import-common-page-footer").load("/resources/pages/import-common-page-footer.html");
+    $("#import-header").load("/resources/pages/import-header.html");
+    $("#import-footer").load("/resources/pages/import-footer.html");
 
 });
 </script>

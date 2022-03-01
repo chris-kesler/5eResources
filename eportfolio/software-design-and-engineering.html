@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<!-- =========================================================================================
+  This is a DIRECTORY page.  It contains HEADER, BACKGROUND, CONTENT, and FOOTER elements that are standard across the site.
+  It also contains TITLE, PAGE LIST, and DESCRIPTION elements that are unique and static as a DIRECTORY page.
+========================================================================================= -->
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -7,25 +11,58 @@
     <title>KnowOne's Website of Everything</title>
     <link rel="icon" href="/resources/images/OwlOfMinerva_ModifiedLogo.png">
     <link rel="stylesheet" href="/caped-crusaders-style.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+
+      // A function that capitalizes the first letter of each word in a string
+      function titleCase(str) {
+        var split_string = str.toLowerCase().split(' ');
+        for (var i = 0; i < split_string.length; i++) {
+          split_string[i] = split_string[i].charAt(0).toUpperCase() + split_string[i].substring(1);     
+        }
+        return split_string.join(' '); 
+      }
+
+
+      // The function that populates all page data into preset elements
+      $(function populatePageData() {
+
+
+// =========================================================================================
+// Populating the page HEADER
+// 
+// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
+// =========================================================================================
+        $("#import-header").load("/resources/pages/import-header.html");
+
+
+// =========================================================================================
+// Populating the page FOOTER
+// 
+// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
+// =========================================================================================
+        $("#import-footer").load("/resources/pages/import-footer.html");
+      });
+    </script>
+  </head>  
 
 
   <body>
-    <div class="common-page-background"> 
-      <div class="common-page-header">
-        <div class="import-common-page-header"></div>
-
-          <h1>ePortfolio > Software Design & Engineering:  JUnit Tests (Java)</h1>
-          <hr>
-      </div>
-        
-      
-      <div class="common-page-content-transparent">
-          
-        <section class="common-page-content-section">
-          <button id="common-page-back-button" onclick="location.href='../eportfolio.html'">Out to ePortfolio</button>
-          <h2><a target='blank' href="https://github.com/christian-kesler/junit-testing-java">Contact Service on GitHub</a></h2>
-          <hr>
+    <!-- 
+      A div for the page BACKGROUND -->
+    <div id="page-background-div-eportfolio">
+      <!-- 
+        A div for the page HEADER -->
+      <div id="import-header"></div>
+      <!-- 
+        A section for the page CONTENT -->
+      <section class="page-content-section">
+        <!-- 
+          A table for the page TITLE -->
+        <table id="page-title-table-wide"><thead><tr><td colspan="6"><h2 id="page-title-path"><a href='/eportfolio.html'>Christian Kesler's B.Sc. of Computer Science Capstone ePortfolio</a> > <a target='blank' href="https://github.com/christian-kesler/junit-testing-java">Contact Service (GitHub)</a></h2></td></tr></thead><tbody></tbody></table>   
+        <!-- 
+          A div for the page DESCRIPTION -->
+        <div id="page-description-div">
           <p>
             The artifact I have chosen to showcase my Software Engineering and Design capabilities is the Contact Service Java application, which involves a group of Java classes and comprehensive Junit test cases that ensure class attributes abide by the specifications.  This artifact serves to showcase my competency with the Java programming language, the Eclipse IDE, object oriented programming, automated testing technical principles, and observation of programming best practices such as naming conventions and comment etiquette.  Considering that Java, Eclipse, and JUnit are widely used in software development, I find this artifact to be extremely worthy of inclusion in my portfolio.  
           </p>
@@ -144,21 +181,11 @@
               <a target='blank' href='https://gist.github.com/DomPizzie/7a5ff55ffa9081f2de27c315f5018afc'>README Template</a>
             </li>
           </ul>
-
-        </section>
-
-      </div>
-
-      <footer class="import-common-page-footer"></footer>
+        </div>
+      </section>
+      <!-- 
+        A div for the page FOOTER -->
+      <footer id="import-footer"></footer>
     </div>
   </body>
 </html>
-
-<script type="text/javascript">
-  $(function () {
-
-    $(".import-common-page-header").load("/resources/pages/import-common-page-header.html");
-    $(".import-common-page-footer").load("/resources/pages/import-common-page-footer.html");
-
-});
-</script>

@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<!-- =========================================================================================
+  This is a DIRECTORY page.  It contains HEADER, BACKGROUND, CONTENT, and FOOTER elements that are standard across the site.
+  It also contains TITLE, PAGE LIST, and DESCRIPTION elements that are unique and static as a DIRECTORY page.
+========================================================================================= -->
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -8,97 +12,106 @@
     <link rel="icon" href="/resources/images/OwlOfMinerva_ModifiedLogo.png">
     <link rel="stylesheet" href="/caped-crusaders-style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  </head>
+    <script>
+
+      // A function that capitalizes the first letter of each word in a string
+      function titleCase(str) {
+        var split_string = str.toLowerCase().split(' ');
+        for (var i = 0; i < split_string.length; i++) {
+          split_string[i] = split_string[i].charAt(0).toUpperCase() + split_string[i].substring(1);     
+        }
+        return split_string.join(' '); 
+      }
+
+
+      // The function that populates all page data into preset elements
+      $(function populatePageData() {
+
+
+// =========================================================================================
+// Populating the page HEADER
+// 
+// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
+// =========================================================================================
+        $("#import-header").load("/resources/pages/import-header.html");
+
+
+// =========================================================================================
+// Populating the page FOOTER
+// 
+// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
+// =========================================================================================
+        $("#import-footer").load("/resources/pages/import-footer.html");
+      });
+    </script>
+  </head>  
 
 
   <body>
+    <!-- 
+      A div for the page BACKGROUND -->
+    <div id="page-background-div-homepage">
+      <!-- 
+        A div for the page HEADER -->
+      <div id="import-header"></div>
+      <!-- 
+        A section for the page CONTENT -->
+      <section class="page-content-section">
+        <!-- 
+          A table for the page TITLE -->
+        <table id="page-title-table"><thead><tr><td colspan="6"><h2 id="page-title-path">Welcome to KnowOne's Website of Everything!</h2></td></tr></thead><tbody></tbody></table>   
 
-    <div class="common-page-background"> 
-
-      <div class="common-page-header">
-
-        <div class="import-common-page-header"></div>
-
-          <h1>Welcome!</h1>
-          <hr>
-
-      </div>
-        
-      
-      <div class="common-page-content-transparent">
-
-        <section class="common-page-content-section">
-          <h2>Overview</h2>
-          <hr>
+        <!-- 
+          A div for the page DESCRIPTION -->
+        <div id="page-description-div">
           <p>
             This site is intended to showcase my HTML, CSS, and Javascript skills.  Most of the content within this site is related to Dungeons and Dragons 5th Edition (which is a table top roleplaying game that I thoroughly enjoy) or my variant 5E system, Caped Crusaders.  I chose to build a site around this topic since I found it easy to remain motivated to continue working on this project, and since it contains content and tools that I have longed for in my ttrpg experiences prior.  
             <br><br>
             <b>
-              Feel free to check out the Classes and Spells within the Caped Crusaders subsite above!  There are also entries within Game Journals that are being updated regularly, including my D&D gameplay recordings from YouTube.
+              Feel free to check out the Classes within the Caped Crusaders subsite above!  There are also entries within Game Journals that are being updated regularly, including my D&D gameplay recordings from YouTube.
             </b>
             <br><br>
             While all subsites can be viewed, the site is still under constant maintenance.  
             <br><br>
             This website is broken down into five main categories or substies, which are Caped Crusaders, Character Builds, Game Journals, Myrmidos Wiki, and my ePortfolio.
           </p>
-          <hr>
-          <h3>Caped Crusaders</h3>
+            <hr>
+            <h3>Caped Crusaders</h3>
           <p>
-            Caped Crusaders is being developed as a D&D 5th Edition variatn system that incorporates Magic, Superpowers, and Technology as equally viable sources of power for player characters.  The goal is to create something ultimately versatile that can accomodate science fiction, high fantasy, and modern superheroes all at once since those elements often have a high degree of thematic overlap.  I'd also like to create more comprehensive options for crafting, construction, and vehicle management after all the character options have been handled.  
+            Caped Crusaders is being developed as a D&D 5th Edition variant system that incorporates Magic, Superpowers, and Technology as equally viable sources of power for player characters.  The goal is to create something ultimately versatile that can accomodate science fiction, high fantasy, and modern heroism all at once since those elements often have a high degree of thematic overlap.  I'd also like to create more comprehensive options for crafting, construction, and vehicle management after all the character options have been handled.  
             <br><br>
             I have highly ambitious long term goals that involve a digital character builder and discord bot integration, but there is much to do before that becomes a reality.  
           </p>
-          <hr>
-          <h3>Character Builds</h3>
+            <hr>
+            <h3>Game Journals</h3>
           <p>
-            My Character Builds are usually detailing characters that I have or currently am playing in a D&D 5th Edition game.  Some are simply concept builds never meant for actual play, while others are lying in wait until I find a game for them.  In either case, I am not a 5th Edition content creator trying to make a living off of my fantastic builds; these are simply to showcase neat interactions I have discovered and to give greater detail to some Character Journals that go in tandem with a build.  
-            <br><br>
-            The overview discusses the goal of the build, the tables go over the choices made at each level, and the tier breakdowns explain how the character is meant to be played at each stage of its life cycle.  As another disclaimer, some of these builds are considered "broken" and might reduce the enjoyment of other players at the table.  Some of these are intended for actual play, and some are thought experiments to test the game mechanics and limits.  The tone of the table must be considered before playing any character, including these builds.
+            Game Journals are logs of my experiences with various games such as Solasta and Dungeons & Dragons 5th Edition.  The goal of this section is to document my progress for personal viewing and review purposes.  As such, these are not very entertaining for most people, but if you are curious to see what I've been up to, feel free to take a look.  
           </p>
-          <hr>
-          <h3>Game Journals</h3>
+            <hr>
+            <h3>Myrmidos Wiki</h3>
           <p>
-            Game Journals are logs of my experiences with various games such as Minecraft, Solasta, and Dungeons & Dragons 5th Edition.  The goal of this section is to document my progress for personal viewing and review purposes.  As such, these are not very entertaining for most people, but if you are curious to see what I've been up to, feel free to take a look.
-          </p>
-          <hr>
-          <h3>Myrmidos Wiki</h3>
-          <p>
-            The Myrmidos Wiki is a series of entries with descriptions that detail my homebrew world, which is heavily inspired by the standard Forgotten Realms setting.  Many aspects will be recognizable to avid fans of D&D, but there are a great many tweaks and utterly unique elements that distinguish it as its own.  The purpose of this wiki is to serve as an organized reference for lore and information, both for myself as a Dungeon Master and for the Players at my table.
+            The Myrmidos Wiki is a series of directories and entries with descriptions that detail my homebrew world, which is heavily inspired by the standard Forgotten Realms setting.  Many aspects will be recognizable to avid fans of D&D, but there are a great many tweaks and utterly unique elements that distinguish it as its own.  The purpose of this Wiki is to serve as an organized reference for lore and information, both for myself as a Dungeon Master and for the Players at my table.
             <br><br>
-            Regarding the images present within the Wiki, I have taken the art in this project from various places across the internet.  I have put in an effort to select art that is tactful, as there are many rather tasteless depiction of fantasy characters in existence.  While some may disagree, I find the idea that every feminine being need be depicted in an arousing way to be extremely tasteless and unprofessional.  Some of those depictions are certainly nice to look at, but many of them seem ridiculously unrealistic.  That may sound ironic when discussing a fictional world with magic, creatures, and fantastical gods, but those are all based on immersive assumptions.  I loathe boob-plate and sword swinging warriors in high heels because there are no implicit assumptions about physics or combat working differently than they do in the real world.  Eg, physical armor still needs to cover most of your body to protect you.
+            Regarding the images present within the Wiki, I have taken the art in this project from various places across the internet.  I have put in an effort to select art that is tactful, as there are many rather tasteless depiction of fantasy characters in existence.  While some may disagree, I find the idea that every feminine being need be depicted in an arousing way to be extremely tasteless and unprofessional.  Some of those depictions are certainly nice to look at, but many of them seem ridiculously unrealistic.  That may sound ironic when discussing a fictional world with magic, bizarre creatures, and fantastical gods, but those are all based on immersive assumptions.  I loathe boob-plate and sword swinging warriors in high heels because there are no implicit assumptions about physics or medieval combat functioning differently than they do in the real world.  Eg, physical armor still needs to cover most of your body to protect you.
             <br><br>
             That being said, I have done my best to exclude art I find to be in poor taste, favoring depictions that are respectful and high quality.  I am not an objective filter by any means, and while I may have improved upon whatever the first google results might be, there very well may be an unfair and recognizable distinction between how feminine and masculine entities are presented.  I would greatly appreciate any specific feedback on this topic, especially if one or more replacement images are suggested.  This isn't something that I will ever preach about to the masses since I don't think it is wrong for artists to depict their subjects in whatever way they please, but it is kind of annoying and time-consuming to sift through.  I believe that burden can be made much lighter through collaboration though.
             <br><br>
-            I have looked into the legality behind using art found online and it turns out that heavy fines and other penalties can be accrued, even for a portfolio project that never accrues any income.  While it may be unlikely to occur, I like to make sure that my ass is covered.  For this reason, I have avoided all art that is not classified for public use unless I have received the express consent of the artist.  
+            I have looked into the legality behind rehosting art found online and it turns out that heavy fines and other penalties can be accrued, even for a portfolio project that never accrues any income.  While it may be unlikely to occur, I like to minimize the risk to myself on all fronts.  For this reason, I have avoided rehosting all art that is not classified for public use unless I have received the express consent of the artist.  Some of the art that is illegal to rehost is extremely cool and fits exactly what I'm looking for, so I made a point to include links to the image and source when applicable.  
             <br><br>
-            In the meantime, I have been using and will continue to use images under the Creative Commons License for the majority of this project.  Let me be clear, most Creative Commons images have a very tacky and cheap feel to them, so please try not to judge this site based on the images therein.  I'm doing my best to make something impressive without breaking laws.
+            As for the rehosted images, I have been using and will continue to use images under the Creative Commons License for the majority of this project.  Let me be clear, most Creative Commons images have a very tacky and cheap feel to them, so please try not to judge this site based on the images therein.  I'm doing my best to make something impressive without breaking laws.
           </p>
-          <hr>
-          <h3>ePortfolio</h3>
-          <p>
+            <hr>
+            <h3>ePortfolio</h3>
+          <p> 
             My ePortfolio currently includes three flagship projects that best showcase my knowledge of computer programming concepts.  Each page within contains a description and explanation of the project, along with a link to the project files on GitHub.
             <br><br>
-            Beyond this category, I have also advertised myself to a small degree.  I have linked my GitHub account and Discord Server in the footer below so that anyone who wants to reach out for any reason can do so.  If you have any feedback or comments for me regarding anything related to this or other projects, feel free to contact me in any of the ways mentioned above.
+            Beyond this category, I have also advertised myself to a small degree.  I have linked my LinkedIn account, GitHub account, and Discord Server in the footer below so that anyone who wants to reach out for any reason can do so.  If you have any feedback or comments for me regarding anything related to this or other projects, feel free to contact me in any of the ways mentioned above.
           </p>
-
-        </section>
-
-      </div>
-
-      <footer class="import-common-page-footer"></footer>
-
+        </div>
+      </section>
+      <!-- 
+        A div for the page FOOTER -->
+      <footer id="import-footer"></footer>
     </div>
-
   </body>
-
 </html>
-
-<script type="text/javascript">
-
-  $(function () {
-
-    $(".import-common-page-header").load("/resources/pages/import-common-page-header.html");
-    $(".import-common-page-footer").load("/resources/pages/import-common-page-footer.html");
-
-});
-</script>

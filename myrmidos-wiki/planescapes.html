@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<!-- =========================================================================================
+  This is a DIRECTORY page.  It contains HEADER, BACKGROUND, CONTENT, and FOOTER elements that are standard across the site.
+  It also contains TITLE, PAGE LIST, and DESCRIPTION elements that are unique and static as a DIRECTORY page.
+========================================================================================= -->
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -9,88 +13,174 @@
     <link rel="stylesheet" href="/caped-crusaders-style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
+
+      // A function that capitalizes the first letter of each word in a string
+      function titleCase(str) {
+        var split_string = str.toLowerCase().split(' ');
+        for (var i = 0; i < split_string.length; i++) {
+          split_string[i] = split_string[i].charAt(0).toUpperCase() + split_string[i].substring(1);     
+        }
+        return split_string.join(' '); 
+      }
+
+
+      // The function that populates all page data into preset elements
+      $(function populatePageData() {
+
+
+// =========================================================================================
+// Populating the page HEADER
+// 
+// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
+// =========================================================================================
+        $("#import-header").load("/resources/pages/import-header.html");
+
+
+// =========================================================================================
+// Populating the page TITLE
+// 
+// The page TITLE can include a table of details for spells or monster statblocks
+// If title_library does not have a table_row library, the table of details is hidden and only the TITLE path is populated
+// =========================================================================================
+        
+        // Reading the name of this file
+        var page_array = window.location.pathname.split("/");
+        var page_array_length = page_array.length;
+
+        if (page_array.length == 5) {
+          var page_title = page_array.pop();
+          var page_category = page_array.pop();
+          var page_directory = page_array.pop();
+          var page_subsite = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 4) {
+          var page_title = page_array.pop();
+          var page_directory = page_array.pop();
+          var page_subsite = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 3) {
+          var page_title = page_array.pop();
+          var page_subsite = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 2) {
+          var page_title = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 1) {
+          var page_title = page_array.pop();
+        } 
+
+        var titleCompleted = false;
+        if (page_subsite != undefined) {
+          document.getElementById("page-title-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+        } else {
+          document.getElementById("page-title-path").innerHTML = titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
+          titleCompleted = true;
+        }
+        if (page_directory != undefined && !titleCompleted) {
+          document.getElementById("page-title-path").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+        }
+        if (page_category != undefined && !titleCompleted) {
+          document.getElementById("page-title-path").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + "/" + page_category + ".html'>" + titleCase(page_category.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+        }
+        if (page_title != undefined && !titleCompleted) {
+          document.getElementById("page-title-path").innerHTML += " > " + titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
+          titleCompleted = true;
+        }
+
+
+// =========================================================================================
+// Populating the page FOOTER
+// 
+// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
+// =========================================================================================
+      $("#import-footer").load("/resources/pages/import-footer.html");
+            });
+
+// =========================================================================================
+// Populating the page button backgrounds
+// =========================================================================================
       $(function readJSON() {
-  
+    
         // Reading the name of this file
         var page = window.location.pathname.split("/").pop();
-  
+
         // Reading data from our JSON file
         $.getJSON(`/myrmidos-wiki/planescapes.json`, function(data) {
-  
+
           var tableRow;
           // Looping through the JSON data 
           $.each(data.entries, function(i, f) {
 
-            if((f.planar_element.toLowerCase()) == 'ash') {
-              document.getElementById("nw").innerHTML = f.plane;
-              document.getElementById("nw").style.backgroundImage = "url('" + f.plane_img + "')";
+            if(f.entry_name == 'Shadowfell') {
+              document.getElementById("nw").innerHTML = f.entry_name;
+              document.getElementById("nw").style.backgroundImage = "url('" + f.attribute_library[0].img_thumbnail + "')";
               document.getElementById("nw").onclick = function() {
-                window.location = "planescapes/" + f.plane.toLowerCase() + ".html";
+                window.location = "planescapes/" + f.entry_name.toLowerCase() + ".html";
               }
             }
 
-            if((f.planar_element.toLowerCase()) == 'air') {
-              document.getElementById("n").innerHTML = f.plane;
-              document.getElementById("n").style.backgroundImage = "url('" + f.plane_img + "')";
+            if(f.entry_name == 'Caelar') {
+              document.getElementById("n").innerHTML = f.entry_name;
+              document.getElementById("n").style.backgroundImage = "url('" + f.attribute_library[0].img_thumbnail + "')";
               document.getElementById("n").onclick = function() {
-                window.location = "planescapes/" + f.plane.toLowerCase() + ".html";
+                window.location = "planescapes/" + f.entry_name.toLowerCase() + ".html";
               }
             } 
 
-            if((f.planar_element.toLowerCase()) == 'ice') {
-              document.getElementById("ne").innerHTML = f.plane;
-              document.getElementById("ne").style.backgroundImage = "url('" + f.plane_img + "')";
+            if(f.entry_name == 'Eifrost') {
+              document.getElementById("ne").innerHTML = f.entry_name;
+              document.getElementById("ne").style.backgroundImage = "url('" + f.attribute_library[0].img_thumbnail + "')";
               document.getElementById("ne").onclick = function() {
-                window.location = "planescapes/" + f.plane.toLowerCase() + ".html";
+                window.location = "planescapes/" + f.entry_name.toLowerCase() + ".html";
               }
             } 
 
-            if((f.planar_element.toLowerCase()) == 'fire') {
-              document.getElementById("w").innerHTML = f.plane;
-              document.getElementById("w").style.backgroundImage = "url('" + f.plane_img + "')";
+            if(f.entry_name == 'Ignar') {
+              document.getElementById("w").innerHTML = f.entry_name;
+              document.getElementById("w").style.backgroundImage = "url('" + f.attribute_library[0].img_thumbnail + "')";
               document.getElementById("w").onclick = function() {
-                window.location = "planescapes/" + f.plane.toLowerCase() + ".html";
+                window.location = "planescapes/" + f.entry_name.toLowerCase() + ".html";
               }
             }
             
-            if((f.planar_element.toLowerCase()) == 'material') {
-              document.getElementById("c").innerHTML = f.plane;
-              document.getElementById("c").style.backgroundImage = "url('" + f.plane_img + "')";
+            if(f.entry_name == 'Myrmidos') {
+              document.getElementById("c").innerHTML = f.entry_name;
+              document.getElementById("c").style.backgroundImage = "url('" + f.attribute_library[0].img_thumbnail + "')";
               document.getElementById("c").onclick = function() {
-                window.location = "planescapes/" + f.plane.toLowerCase() + ".html";
+                window.location = "planescapes/" + f.entry_name.toLowerCase() + ".html";
               }
             } 
 
-            if((f.planar_element.toLowerCase()) == 'water') {
-              document.getElementById("e").innerHTML = f.plane;
-              document.getElementById("e").style.backgroundImage = "url('" + f.plane_img + "')";
+            if(f.entry_name == 'Aquar') {
+              document.getElementById("e").innerHTML = f.entry_name;
+              document.getElementById("e").style.backgroundImage = "url('" + f.attribute_library[0].img_thumbnail + "')";
               document.getElementById("e").onclick = function() {
-                window.location = "planescapes/" + f.plane.toLowerCase() + ".html";
+                window.location = "planescapes/" + f.entry_name.toLowerCase() + ".html";
               }
             } 
 
-            if((f.planar_element.toLowerCase()) == 'magma') {
-              document.getElementById("sw").innerHTML = f.plane;
-              document.getElementById("sw").style.backgroundImage = "url('" + f.plane_img + "')";
+            if(f.entry_name == 'Vulken') {
+              document.getElementById("sw").innerHTML = f.entry_name;
+              document.getElementById("sw").style.backgroundImage = "url('" + f.attribute_library[0].img_thumbnail + "')";
               document.getElementById("sw").onclick = function() {
-                window.location = "planescapes/" + f.plane.toLowerCase() + ".html";
+                window.location = "planescapes/" + f.entry_name.toLowerCase() + ".html";
               }
             } 
             
 
-            if((f.planar_element.toLowerCase()) == 'earth') {
-              document.getElementById("s").innerHTML = f.plane;
-              document.getElementById("s").style.backgroundImage = "url('" + f.plane_img + "')";
+            if(f.entry_name == 'Terral') {
+              document.getElementById("s").innerHTML = f.entry_name;
+              document.getElementById("s").style.backgroundImage = "url('" + f.attribute_library[0].img_thumbnail + "')";
               document.getElementById("s").onclick = function() {
-                window.location = "planescapes/" + f.plane.toLowerCase() + ".html";
+                window.location = "planescapes/" + f.entry_name.toLowerCase() + ".html";
               }
             } 
 
-            if((f.planar_element.toLowerCase()) == 'ooze') {
-              document.getElementById("se").innerHTML = f.plane;
-              document.getElementById("se").style.backgroundImage = "url('" + f.plane_img + "')";
+            if(f.entry_name == 'Feywilds') {
+              document.getElementById("se").innerHTML = f.entry_name;
+              document.getElementById("se").style.backgroundImage = "url('" + f.attribute_library[0].img_thumbnail + "')";
               document.getElementById("se").onclick = function() {
-                window.location = "planescapes/" + f.plane.toLowerCase() + ".html";
+                window.location = "planescapes/" + f.entry_name.toLowerCase() + ".html";
               }
             } 
 
@@ -98,90 +188,75 @@
         });
       });
     </script>
-  
-  </head>
+  </head>  
+
 
   <body>
-    <div class="common-page-background"> 
-      <div class="common-page-header">
-        <div class="import-common-page-header"></div>
-          <h1>Myrmidos Wiki:  Planescapes</h1>
-          <hr>
-      </div>
-        
-      
-      <div class="common-page-content-transparent">
-          
+    <!-- 
+      A div for the page BACKGROUND -->
+    <div id="page-background-div-myrmidos-wiki">
+      <!-- 
+        A div for the page HEADER -->
+      <div id="import-header"></div>
+      <!-- 
+        A section for the page CONTENT -->
+      <section class="page-content-section">
+        <!-- 
+          A table for the page TITLE -->
+        <table id="page-title-table-wide"><thead><tr><td colspan="6"><h2 id="page-title-path"></h2></td></tr></thead><tbody></tbody></table>   
+        <!-- 
+          A table for the PAGE LIST -->
+          <table id='planes-button-table' class="page-list-table">
+            <tr>
+              <td>
+                <button id="nw" class='directory-page-nav-button-plane-quasi' style='background-image: url(/resources/images/shadowfell.jpg);'></button>
+              </td>
+              <td>
+                <button id="n" class='directory-page-nav-button-plane-primal'></button>
+              </td>
+              <td>
+                <button id="ne" class='directory-page-nav-button-plane-quasi'></button>
+              </td>
+            </tr>
 
+            <tr>
+              <td>
+                <button id="w" class='directory-page-nav-button-plane-primal'></button>
+              </td>
+              <td>
+                <button id="c" class='directory-page-nav-button-plane-quasi'></button>
+              </td>
+              <td>
+                <button id="e" class='directory-page-nav-button-plane-primal'></button>
+              </td>
+            </tr>
 
-
-
-            <section class="common-page-content-section">
-              <button id="common-page-back-button" onclick="location.href='/myrmidos-wiki.html'">Out to Myrmidos Wiki</button>
-              <h2>Overview</h2>
-              <hr>
-
-              <table id='planes-button-table' class="directory-page-nav-button-table">
-                <tr>
-                  <td>
-                    <button id="nw" class='directory-page-nav-button-plane-quasi'></button>
-                  </td>
-                  <td>
-                    <button id="n" class='directory-page-nav-button-plane-primal'></button>
-                  </td>
-                  <td>
-                    <button id="ne" class='directory-page-nav-button-plane-quasi'></button>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>
-                    <button id="w" class='directory-page-nav-button-plane-primal'></button>
-                  </td>
-                  <td>
-                    <button id="c" class='directory-page-nav-button-plane-quasi'></button>
-                  </td>
-                  <td>
-                    <button id="e" class='directory-page-nav-button-plane-primal'></button>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>
-                    <button id="sw" class='directory-page-nav-button-plane-quasi'></button>
-                  </td>
-                  <td>
-                    <button id="s" class='directory-page-nav-button-plane-primal'></button>
-                  </td>
-                  <td>
-                    <button id="se" class='directory-page-nav-button-plane-quasi'></button>
-                  </td>
-                </tr>
-
-              </table>
-            
-              <p>
-                The Planescapes are the various metaphysical realities that the universe is comprised of.  Each plane exists on a different branch or frequency of the wave function that defines reality, remaining entirely distinct and separate from each other in with the exception of the borders.  The overlap created by two primal Planescapes becomes a quasi plane, being significantly smaller due to the lesser degree of commonality.  The overlap created by all four primal Planescapes becomes the universe as we know it, being made up of mostly empty space since very very little contact between such repellant forces can be tolerated.  
-              </p>
-              <p>
-                The other Planescapes can be traveled to by magical means, and have inhabitants of their own, much like the material plane.  These Planescapes contain an environment dominated by a particular type of matter that extends--for all practical applications--infinitely.  
-              </p>
-
-            </section>
-
-
-      </div>
-
-      <footer class="import-common-page-footer"></footer>
+            <tr>
+              <td>
+                <button id="sw" class='directory-page-nav-button-plane-quasi'></button>
+              </td>
+              <td>
+                <button id="s" class='directory-page-nav-button-plane-primal'></button>
+              </td>
+              <td>
+                <button id="se" class='directory-page-nav-button-plane-quasi'></button>
+              </td>
+            </tr>
+          </table>
+        <!-- 
+          A div for the page DESCRIPTION -->
+        <div id="page-description-div">
+          <p>
+            The Planescapes are the various metaphysical realities that the universe is comprised of.  Each plane exists on a different branch or frequency of the wave function that defines reality, remaining entirely distinct and separate from each other in with the exception of the borders.  The overlap created by two primal Planescapes becomes a quasi plane, being significantly smaller due to the lesser degree of commonality.  The overlap created by all four primal Planescapes becomes the universe as we know it, being made up of mostly empty space since very very little contact between such repellant forces can be tolerated.  
+          </p>
+          <p>
+            The other Planescapes can be traveled to by magical means, and have inhabitants of their own, much like the material plane.  These Planescapes contain an environment dominated by a particular type of matter that extends--for all practical applications--infinitely.  
+          </p>
+        </div>
+      </section>
+      <!-- 
+        A div for the page FOOTER -->
+      <footer id="import-footer"></footer>
     </div>
   </body>
 </html>
-
-<script type="text/javascript">
-  $(function () {
-
-    $(".import-common-page-header").load("/resources/pages/import-common-page-header.html");
-    $(".import-common-page-footer").load("/resources/pages/import-common-page-footer.html");
-
-});
-</script>

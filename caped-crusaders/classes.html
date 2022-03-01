@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!-- =========================================================================================
+  This is a DIRECTORY page.  It contains HEADER, BACKGROUND, CONTENT, and FOOTER elements that are standard across the site.
+  It also contains TITLE, PAGE LIST, and DESCRIPTION elements that are unique and static as a DIRECTORY page.
+========================================================================================= -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-US-Compatible" content="e-edge">
+    <title>KnowOne's Website of Everything</title>
+    <link rel="icon" href="/resources/images/OwlOfMinerva_ModifiedLogo.png">
+    <link rel="stylesheet" href="/caped-crusaders-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      
+      // A function that populates the page buttons and data within
+      $(function readClass() {
+        var classes = [];
+        $.getJSON('classes.json', function(data) {
+          var path = window.location.pathname;
+          var page = path.split("/").pop();
+          $.each(data.entries, function(i, f) {
+            document.getElementById(`class-button-${i}`).setAttribute("onclick", "location.href='classes/" + f.name_str.toLowerCase() + ".html'");
+            document.getElementById(`class-button-${i}`).innerHTML = "<section class='cc-class-button-content-ceiling'><img class='cc-class-image-small' src='/resources/images/" + f.name_str + ".png' alt='" + f.name_str + " Image'><h3>" + f.name_str + "</h3><hr>" + f.description_short_str + "</section><section class='cc-class-button-content-floor'><i><b>Hit Die:</b>  d" + f.hit_die_int + "<br><b>Primary Ability:</b>  " + f.primary_ability + "<br><b>Saves:</b>  " + f.proficiencies_saves + "</section>";
+          });
+        });
+      });
+
+      // A function that capitalizes the first letter of each word in a string
+      function titleCase(str) {
+        var split_string = str.toLowerCase().split(' ');
+        for (var i = 0; i < split_string.length; i++) {
+          split_string[i] = split_string[i].charAt(0).toUpperCase() + split_string[i].substring(1);     
+        }
+        return split_string.join(' '); 
+      }
+
+
+      // The function that populates all page data into preset elements
+      $(function populatePageData() {
+
+
+// =========================================================================================
+// Populating the page HEADER
+// 
+// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
+// =========================================================================================
+        $("#import-header").load("/resources/pages/import-header.html");
+
+
+// =========================================================================================
+// Populating the page TITLE
+// 
+// The page TITLE can include a table of details for spells or monster statblocks
+// If title_library does not have a table_row library, the table of details is hidden and only the TITLE path is populated
+// =========================================================================================
+        
+        // Reading the name of this file
+        var page_array = window.location.pathname.split("/");
+        var page_array_length = page_array.length;
+
+        if (page_array.length == 5) {
+          var page_title = page_array.pop();
+          var page_category = page_array.pop();
+          var page_directory = page_array.pop();
+          var page_subsite = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 4) {
+          var page_title = page_array.pop();
+          var page_directory = page_array.pop();
+          var page_subsite = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 3) {
+          var page_title = page_array.pop();
+          var page_subsite = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 2) {
+          var page_title = page_array.pop();
+          var page_site = page_array.pop();
+        } else if (page_array.length == 1) {
+          var page_title = page_array.pop();
+        } 
+
+        var titleCompleted = false;
+        if (page_subsite != undefined) {
+          document.getElementById("page-title-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+        } else {
+          document.getElementById("page-title-path").innerHTML = titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
+          titleCompleted = true;
+        }
+        if (page_directory != undefined && !titleCompleted) {
+          document.getElementById("page-title-path").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+        }
+        if (page_category != undefined && !titleCompleted) {
+          document.getElementById("page-title-path").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + "/" + page_category + ".html'>" + titleCase(page_category.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+        }
+        if (page_title != undefined && !titleCompleted) {
+          document.getElementById("page-title-path").innerHTML += " > " + titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
+          titleCompleted = true;
+        }
+
+
+// =========================================================================================
+// Populating the page FOOTER
+// 
+// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
+// =========================================================================================
+        $("#import-footer").load("/resources/pages/import-footer.html");
+      });
+    </script>
+  </head>  
+
+
+  <body>
+    <!-- 
+      A div for the page BACKGROUND -->
+    <div id="page-background-div-caped-crusaders">
+      <!-- 
+        A div for the page HEADER -->
+      <div id="import-header"></div>
+      <!-- 
+        A section for the page CONTENT -->
+      <section class="page-content-section">
+        <!-- 
+          A table for the page TITLE -->
+        <table id="page-title-table-wide"><thead><tr><td colspan="6"><h2 id="page-title-path"></h2></td></tr></thead><tbody></tbody></table>   
+        <!-- 
+          A table for the PAGE LIST -->
+        <table class="page-list-table">
+          <tr><td>
+            <button id="class-button-4" class="cc-class-button-magic"></button>
+          </td>
+          <td>
+            <button id="class-button-5" class="cc-class-button-magic"></button>
+          </td>
+          <td>
+            <button id="class-button-6" class="cc-class-button-magic"></button>
+          </td>
+          <td>
+            <button id="class-button-7" class="cc-class-button-magic"></button>
+          </td></tr>
+          <tr><td>
+            <button id="class-button-8" class="cc-class-button-power"></button>
+          </td>
+          <td>
+            <button id="class-button-9" class="cc-class-button-power"></button>
+          </td>
+          <td>
+            <button id="class-button-10" class="cc-class-button-power"></button>
+          </td>
+          <td>
+            <button id="class-button-11" class="cc-class-button-power"></button>
+          </td></tr>
+          <tr><td>
+            <button id="class-button-0" class="cc-class-button-tech"></button>
+          </td>
+          <td>
+            <button id="class-button-1" class="cc-class-button-tech"></button>
+          </td>
+          <td>
+            <button id="class-button-2" class="cc-class-button-tech"></button>
+          </td>
+          <td>
+            <button id="class-button-3" class="cc-class-button-tech"></button>
+          </td></tr>
+        </table>
+        <!-- 
+          A div for the page DESCRIPTION -->
+        <div id="page-description-div">
+          <p>
+            A Class is a bounded set of mechanics that represent player character abilities.  The classes are placed into categories based on the source of their power.  There are twelve classes in total, with four classes in each category.  The categories are Tech, Powers, and Magic.  
+            <br><br>
+            Each category has a Primary Caster, a Secondary Caster, a Secondary Martial, and a Primary Martial.  For example, the Visionary is the Primary Technology Caster, the Nova is the Primary Power Caster, and the Archmage is the Primary Magic Caster.  
+            <br><br>
+            A Caster Class uses expendable resources in order to produce powerful effects.  An example would be a demigod unleashing a massive Lightning Bolt, or a robot sentry releasing a swarm of homing missiles.  It may not always use resources in a physical sense, but the character won't be able to perform this action at will all day long without running out of physical resources or getting extremely tired.  All classes gain at least a small amount of casting, but some get more than others.  
+            <br><br>
+            A Martial Class relies on innate abilities that are always active.  An example would be an alien character whose species innately possesses super strength and flight, or a highly trained mercenary who can perform a counter attack on pure reflex.  Those features are always active and can be used continually to a reasonable degree.  All classes get at least a few always active abilities, but again, some get more than others. 
+            <br><br>
+            Each Class balances Casting and Martial features in varying amounts.  The subclasses are intended to augment the main source of abilities and create a generally equal playing field among players.  That being said, each class does widely different things aren't exactly comparable in their niches.  You cannot expect a Prowler to pack a punch all day long like a Dynamo, and likewise shouldn't expect an Annointed to be able to tailor the battlefield like a Subvertist.  
+            <br><br>
+            The mechanics within Caped Crusaders can often be described or flavored in various ways, but some flavor is provided as a guideline to rely on if you don't want to describe everything and to set implicit boundaries regarding what flavor might be too outlandish.  
+          </p>
+        </div>
+      </section>
+      <!-- 
+        A div for the page FOOTER -->
+      <footer id="import-footer"></footer>
+    </div>
+  </body>
+</html>

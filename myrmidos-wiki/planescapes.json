@@ -1,408 +1,792 @@
 {
     "entries" : [
         {
-            "plane" : "Eifrost",
-            "planar_element" : "Ice",
-
-            "plane_description" : "The Elemental Plane of Ice is positioned to the North of the Great Wheel cosmology, and is also known as Eifrost. It is strongly associated with domains relating to Knowledge and Order, and is considered to represent the Lawful Neutral alignment in its purest form. This plane is the source of all Divination magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  <br><br>Ice is associated with knowledge and law. It channels the school of divination in that ice and crystals represent clarity, and is the source of psionics.            ",
-            "plane_img" : "https://upload.wikimedia.org/wikipedia/commons/8/8f/Fryxellsee_Opt.jpg",
-            
-            "planar_position" : "Northern",
-            "associated_school" : "Divination",
-            "associated_alignment" : "Lawful Neutral",
-
-            "associated_deity" : "Frydeia",
-            "associated_deity_img" : "https://upload.wikimedia.org/wikipedia/commons/1/1b/Les_images_des_dievx_des_anciens_-_contenans_les_idoles%2C_covstvmes%2C_ceremonies%2C_and_autres_choses_appartenans_%C3%A0_la_religion_des_payens_%281581%29_%2814560495887%29.jpg",
-            "associated_deity_description" : "The Goddess of Ice and Honor is also known as the Arbiter of all Law. She helped forge the Edict during The Binding of the Lesser Deities, and oversees its observation in the mortal world. When the Edict is crossed, Frydeia does her part to dole judgment as she sees fit so that the Edict need not balance the offense itself. This is to avoid absolute catastrophe, since the Edict is raw power. That isn't say that Frydeia is merciful by mortal standards; she has had entire kingdoms put to the blade when a noble is being especially stubborn. Because of this, some believe that the Edict would resolve things in a kinder way than Frydeia does, and her intervention is solely for her own enjoyment. These rumors have not been shown to bother the Arbiter or her followers in the past.            <br><br>The Sigil of Frydeia is a downwards sword whose guard forms the arms of a merchant's scale. The favored form of Frydeia is that of a knight with a crystalline carapace.            <br><br>The Arbiter rules over the plane of Ice, which is home to the Contructs. These beings the mechanical denizens created and powered by Frydeia's psionic abilities.            <br><br>The Arbiter commands a strict religious sect of followers who seek to assist any nation in maintaining order. While the Arbiter herself does not condemn evilness as long as order is maintained, the organization has adopted its own additional standards that focus on peace, diplomacy, and violent intervention only when no other reasonable option presents itself. This group is known as the Magistrate, and its members are known as Magisters. Their ranks include mostly gishes such as Bladesingers and Twilight Clerics, but also War Magic Wizards and Peace Clerics. They exist outside of any nation's jurisdiction.            ",
-
-            "associated_deity_titles" : "Goddess of Ice<br>Crystal Queen<br>Mother of Creeds<br>The Honored One",
-            "associated_deity_symbol" : "A set of merchant scales hung from the guard of a downturned sword",
-            "associated_deity_worshippers" : "Knights<br>Priests<br>Nobles",
-
-            "associated_deity_alignment" : "Lawful Neutral",
-            "associated_deity_portfolio" : "Honor<br>Tradition<br>Creed",
-            "associated_deity_domains" : "War, Peace, Grave, Twilight, Order, Knowledge",
-
-            "associated_deity_animals" : "Arctic Cat<br>Arctic Roc",
-            "associated_deity_creatures" : "Ice Elementals<br>Water Elementals<br>Air Elementals<br>Celestials<br>White Dragons",
-            "associated_deity_colors" : "White, Aqua, Teal, Platinum",
-
-            "associated_dragons" : [
-                {
-                    "species" : "Alabaster",
-                    "type" : "Quasiprimal"
-                },
-                {
-                    "species" : "Silver",
-                    "type" : "Metallic"
-                },
-                {
-                    "species" : "Spirit",
-                    "type" : "Dracowisp"
-                }
-            ],
-
-            "associated_creatures" : "Constructs<br>White Dragons<br>Ice Elementals",
-            "associated_factions" : "NA",
-
-            "planar_topography" : "Infinite bounds, varying air pressure, constant snow.",
-            "planar_gravity" : "Subjective, null majority, directional near large objects.",
-            "planar_time" : "Nominal"
-        },
+			"entry_name" : "Caelar",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+					"img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/8/83/Lightning_in_Dallas_2015.jpg",
+					"img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Lightning_in_Dallas_2015.jpg",
+					"img_linked" : "https://cdna.artstation.com/p/assets/images/images/027/038/996/large/ari-matti-toivonen-planeofair.jpg?1590424783",
+					"img_linked_source" : "https://www.reddit.com/r/ImaginaryLeviathans/comments/gr2g3i/the_elemental_plane_of_air_by_arimatti_toivonen/?utm_source=share&utm_medium=ios_app&utm_name=iossmf&utm_term=link",
+					"img_thumbnail" : "/resources/images/caelar.jpg",
+                    "species" : "The Primal Elemental Plane of Air"
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : "Northern"
+						},
+						{
+							"subheading" : "School of Magic",
+							"subcontent" : "Enchantment"
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : "Neutral"
+						}
+					]
+				},
+				{
+					"heading" : "Inhabitants",
+					"sublibrary" : [
+						{
+							"subheading" : "Deities",
+							"subcontent" : "Tempest, Djinnis"
+						},
+						{
+							"subheading" : "Creatures",
+							"subcontent" : "Celestials, Azure Dragons, Cobalt Dragons, Air Elementals"
+						},
+						{
+							"subheading" : "Factions",
+							"subcontent" : "The Talons of Tempest"
+						}
+					]
+				},
+				{
+					"heading" : "Attributes",
+					"sublibrary" : [
+						{
+							"subheading" : "Topography",
+							"subcontent" : "Infinite bounds, varying air pressure, chunks of floating land sparsely distributed"
+						},
+						{
+							"subheading" : "Gravity",
+							"subcontent" : "Subjective, null majority, directional near large objects"
+						},
+						{
+							"subheading" : "Time",
+							"subcontent" : "Nominal"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "The Elemental Plane of Air is positioned to the North of the Great Wheel cosmology. It is strongly associated with domains relating to Knowledge and Wrath, and is considered to represent the Neutral alignment in its purest form. This plane is the source of all Enchantment magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  "
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Magic",
+							"subcontent" : ""
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
         {
-            "plane" : "Vulken",
-            "planar_element" : "Magma",
-
-            "plane_description" : "The Elemental Plane of Magma is positioned to the South of the Great Wheel cosmology, and is also known as Vulken. It is strongly associated with domains relating to Creation and Debauchery, and is considered to represent the Chaotic Neutral alignment in its purest form. This plane is the source of all Conjuration magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  <br><br>Magma is associated with creation and chaos. It channels the school of conjuration in that spontaneous creation and summoning are akin to Gondarin's daily endeavors.            ",
-            "plane_img" : "https://upload.wikimedia.org/wikipedia/commons/8/89/P%C4%81hoehoe_and_Aa_flows_at_Hawaii.jpg",
-            
-            "planar_position" : "Southern",
-            "associated_school" : "Conjuration",
-            "associated_alignment" : "Chaotic Neutral",
-
-            "associated_deity" : "Gondarin",
-            "associated_deity_img" : "https://upload.wikimedia.org/wikipedia/commons/2/28/The_Mythology_of_all_races_%281918%29_%2814742406276%29.jpg",
-            "associated_deity_description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque condimentum ut neque at malesuada. Quisque mattis vel lorem eget venenatis. Sed cursus dui vel orci cursus hendrerit. Quisque in arcu pretium, laoreet est quis, tincidunt enim. In tincidunt viverra quam, pharetra vestibulum neque porta nec. Ut eu volutpat orci, quis pretium ligula. Aliquam in nibh lorem. Proin id semper nibh. In pulvinar lacus nec velit euismod placerat. In non congue lacus, eu pharetra elit. Praesent id lorem in nunc venenatis congue. Quisque suscipit tempus commodo. Morbi diam quam, rutrum in venenatis sed, pulvinar nec justo. Sed fermentum posuere ligula, sit amet venenatis felis varius in. In imperdiet mollis scelerisque. Phasellus id eleifend felis, ut aliquam arcu.",
-
-            "associated_deity_titles" : "God of Magma<br>Forge Master<br>All-Father<br>The First Artisan",
-            "associated_deity_symbol" : "Brass Hammer",
-            "associated_deity_worshippers" : "Engineers<br>Smiths<br> Miners<br>Dwarves<br>Fiends<br>Demons",
-
-            "associated_deity_alignment" : "Chaotic Neutral",
-            "associated_deity_portfolio" : "Creation<br>Invention<br>Expression",
-            "associated_deity_domains" : "Forge<br>War<br>Arcana<br>Trickery",
-
-            "associated_deity_animals" : "Brass Elephant<br>Magma Wyrm",
-            "associated_deity_creatures" : "Magma Elementals<br>Fire Elementals<br>Earth Elementals<br>Fiends<br>Brass Dragon",
-            "associated_deity_colors" : "Brass, Silver, Obsidian, Red, Black",
-
-            "associated_dragons" : [
-                {
-                    "species" : "Stygian",
-                    "type" : "Quasiprimal"
-                },
-                {
-                    "species" : "Brass",
-                    "type" : "Metallic"
-                },
-                {
-                    "species" : "Dracofiend",
-                    "type" : "Spirit"
-                }
-            ],
-
-            "associated_creatures" : "Hybrids<br>Brass Dragons<br>Magma Elementals",
-            "associated_factions" : "NA",
-
-            "planar_topography" : "Infinite bounds, varying air pressure, acidic atmosphere.",
-            "planar_gravity" : "Constant, varying for magma flows.",
-            "planar_time" : "Nominal"
-        },
+			"entry_name" : "Eifrost",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+					"img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/8/8f/Fryxellsee_Opt.jpg",
+					"img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Fryxellsee_Opt.jpg",
+					"img_linked" : "https://i.pinimg.com/originals/b3/30/41/b330415ce92df5a2b676dea5e416a551.jpg",
+					"img_linked_source" : "https://www.roleplayerguild.com/topics/158293-final-fantasy-the-dark-days-fantasy-sci-fi-adventure-interest-check/ooc",
+					"img_thumbnail" : "/resources/images/eifrost.jpg",
+					"species" : "The Quasi Elemental Plane of Ice"
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : "North-Eastern"
+						},
+						{
+							"subheading" : "School of Magic",
+							"subcontent" : "Divination"
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : "Lawful Neutral"
+						}
+					]
+				},
+				{
+					"heading" : "Inhabitants",
+					"sublibrary" : [
+						{
+							"subheading" : "Deities",
+							"subcontent" : "Frydeia, The Dracowisp"
+						},
+						{
+							"subheading" : "Creatures",
+							"subcontent" : "Constructs, Alabaster Dragons, Silver Dragons, Ice Elementals"
+						},
+						{
+							"subheading" : "Factions",
+							"subcontent" : "The Magistrate of Frydeia"
+						}
+					]
+				},
+				{
+					"heading" : "Attributes",
+					"sublibrary" : [
+						{
+							"subheading" : "Topography",
+							"subcontent" : "Infinite bounds, varying air pressure, constant snow"
+						},
+						{
+							"subheading" : "Gravity",
+							"subcontent" : "Subjective, null majority, directional near large objects"
+						},
+						{
+							"subheading" : "Time",
+							"subcontent" : "Nominal"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "The Elemental Plane of Ice is positioned to the North-East of the Great Wheel cosmology, and is also known as Eifrost. It is strongly associated with domains relating to Knowledge and Order, and is considered to represent the Lawful Neutral alignment in its purest form. This plane is the source of all Divination magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  It channels the school of Divination in that ice and crystals represent clarity, and is the source of psionics.  "
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Magic",
+							"subcontent" : ""
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
         {
-            "plane" : "Feywilds",
-            
-            "plane_description" : "The Elemental Plane of Ooze is positioned to the West of the Great Wheel cosmology, and is also known as the Feywilds. It is strongly associated with domains relating to Life, Balance, and Death, and is considered to represent the Neutral Good alignment in its purest form. This plane is the source of all Necromancy magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school. The Plane of Ooze is adjacent to the Primal Planescapes of Water to the North and Earth to the West. The Plane of Ooze is complimentary to the Plane of Ash.  <br><br>Ooze is associated with life and purity. It channels the school of Necromancy in that it seeds life from death in a constant cycle.  ",
-            "plane_img" : "https://upload.wikimedia.org/wikipedia/commons/5/58/Swamp_poratz.jpg",
-            
-            "planar_element" : "Ooze",
-            "planar_position" : "Western",
-            "planar_topography" : "Infinite bounds, sporous atmosphere.",
-            "planar_gravity" : "Constant.",
-            "planar_time" : "Nominal",
-
-            "associated_school" : "Necromancy",
-            "associated_alignment" : "Neutral Good",
-
-            "associated_deity" : "Deliklese",
-            "associated_deity_img" : "https://upload.wikimedia.org/wikipedia/commons/c/cb/Greek_mythology_systematized_%281880%29_%2814559602149%29.jpg",
-            "associated_deity_description" : "The Goddess of Ooze and Life is also known as the All-Mother. She is considered to be the only truly benevolent deity of the four. The All-Mother is gentle, generous, and understanding in most cases, but she and her followers have shown remarkable zeal when taking up arms in the defense of goodness.  ",
-
-            "associated_deity_titles" : "Goddess of Ooze<br>Life-Giver<br>All-Mother<br>The Merciful One",
-            "associated_deity_symbol" : "Melting Flower",
-            "associated_deity_worshippers" : "Druids<br>Hunters<br>Farmers",
-
-            "associated_deity_alignment" : "Neutral Good",
-            "associated_deity_portfolio" : "Beauty<br>Pleasure<br>Freedom",
-            "associated_deity_domains" : "Nature<br>Life<br>Grave",
-
-            "associated_deity_animals" : "Deer<br>Toad<br>Alligator",
-            "associated_deity_creatures" : "Ooze Elementals<br>Water Elementals<br>Earth Elementals<br>Beasts<br>Green Dragons",
-            "associated_deity_colors" : "Green, Brown, Pink, Yellow",
-
-            "associated_dragons" : [
-                {
-                    "species" : "Viridian",
-                    "type" : "Quasiprimal"
-                },
-                {
-                    "species" : "Dracofey",
-                    "type" : "Spirit"
-                }
-            ],
-
-            "associated_creatures" : "Fey<br>Green Dragons<br>Oozes",
-            "associated_factions" : "NA"
-        },
+			"entry_name" : "Aquar",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+					"img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/2/2e/Underwater_world.jpg",
+					"img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Underwater_world.jpg",
+					"img_linked" : "https://db4sgowjqfwig.cloudfront.net/campaigns/29929/assets/446853/Elemental_Plane_of_Water.jpg?1428680744",
+					"img_linked_source" : "https://skies-of-glass.obsidianportal.com/wikis/elemental-plane-of-water",
+					"img_thumbnail" : "/resources/images/aquar.jpg",
+					"species" : "The Primal Elemental Plane of Water"
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : "Eastern"
+						},
+						{
+							"subheading" : "School of Magic",
+							"subcontent" : "Abjuration"
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : "Neutral"
+						}
+					]
+				},
+				{
+					"heading" : "Inhabitants",
+					"sublibrary" : [
+						{
+							"subheading" : "Deities",
+							"subcontent" : "Kraken, Marids"
+						},
+						{
+							"subheading" : "Creatures",
+							"subcontent" : "Aberrations, Turquoise Dragons, Bronze Dragons, Water Elementals"
+						},
+						{
+							"subheading" : "Factions",
+							"subcontent" : "The Tentacles of Kraken"
+						}
+					]
+				},
+				{
+					"heading" : "Attributes",
+					"sublibrary" : [
+						{
+							"subheading" : "Topography",
+							"subcontent" : "Infinite bounds, varying water pressure, all light is from bioluminescence"
+						},
+						{
+							"subheading" : "Gravity",
+							"subcontent" : "Subjective, directional to nearest surface"
+						},
+						{
+							"subheading" : "Time",
+							"subcontent" : "Nominal"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "The Elemental Plane of Water is positioned to the East of the Great Wheel cosmology.  It is strongly associated with domains relating to Adaptability and Cleansing, and is considered to represent the Neutral alignment in its purest form.  This plane is the source of all Abjuration magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  "
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Magic",
+							"subcontent" : ""
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
         {
-            "plane" : "Shadowfell",
-            "planar_element" : "Ash",
-            "plane_description" : "The Elemental Plane of Ash is positioned to the East of the Great Wheel cosmology, and is also known as the Shadowfell.  It is strongly associated with domains relating to Death and Undeath, and is considered to represent the Neutral Evil alignment in its purest form.  This plane is the source of all Enchantment magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  <br><br>Ash is associated with undeath and insanity. It channels Enchantment in that its environment induces deep hallucinations.  The creatures that hail from the Shadowfell embrace Enchantment in order to lure living things into their grasp, which they must feed on since they often are undead and do not have a stable life force of their own.  ",
-            "plane_img" : "https://upload.wikimedia.org/wikipedia/commons/c/cb/Photograph_from_a_commercial_flight_showing_a_pyrocumulonimbus_cloud.jpg",
-            
-            "planar_position" : "Eastern",
-            "associated_school" : "Enchantment",
-            "associated_alignment" : "Neutral Evil",
-
-            "associated_deity" : "Sebabos",
-            "associated_deity_img" : "https://upload.wikimedia.org/wikipedia/commons/c/c4/Phoenix_%281583%29.svg",
-            "associated_deity_description" : "The God of Ash and Death is also known as the Phoenix since this is his chosen avatar.  He may be immortal himself, but he chose to adopt this form of his own volition.  By collaborating with Gondarin, Sebabos created the Phoenix as a creature with the ability to recycle its own life forces.  This was made as a mockery of his lover's domain of life and death.  The meaning behind this act is still a matter of debate.  <br><br>Sebabos is Neutral Evil in that he brings the prolonging of suffering whenever he can, but that is not to say he reigns mayhem whenever he can.  He remains utterly detached from mortal affairs, but happily tricks and beguils mortals whenever the opportunity presents itself.  He relishes suffering that is brought about by one's own actions, only intervening in a literal sense in the most enticing of circumstances.  <br><br>Sebabos is deeply in love with Deliklese, and continually gifts her with reaped souls from mortals he has won and swindled.  <br><br>While Sebabos is accurately referred to as a Deceiver and Reaper, he does not prefer to wield a scythe as some pagan interpretations depict.  Sebabos' preferred weapon and tool is that of a black bladed axe akin to a headsman, with discreet golden insets. He dislikes all color save for the sheen of gold, and many legends tell of those who have bought extra weeks or months of life with their vast fortunes.  ",
-
-            "associated_deity_titles" : "God of Ash<br>Lord of Death<br>Grim Reaper<br>The Deceiver",
-            "associated_deity_symbol" : "Grey Phoenix holding a black and gold axe",
-            "associated_deity_worshippers" : "Undertakers<br>Cultists<br>Cannibals<br>Liches",
-
-            "associated_deity_alignment" : "Neutral Evil",
-            "associated_deity_portfolio" : "Suffering<br>Betrayal<br>Deception",
-            "associated_deity_domains" : "Death<br>Light<br>Twilight<br>Trickery",
-
-            "associated_deity_animals" : "None",
-            "associated_deity_creatures" : "Ash Elementals<br>Fire Elementals<br>Air Elementals<br>Undead<br>Shadow Dragons",
-            "associated_deity_colors" : "Grey, Gold, Black",
-
-            "associated_dragons" : [
-                {
-                    "species" : "Umbral",
-                    "type" : "Quasiprimal"
-                },
-                {
-                    "species" : "Dracoshade",
-                    "type" : "Spirit"
-                }
-            ],
-
-            "associated_creatures" : "Necrophages<br>Shadow Dragons<br>Ash Elementals",
-            "associated_factions" : "NA",
-
-            "planar_topography" : "Infinite bounds, varying air pressure, constant soot snow.",
-            "planar_gravity" : "Subjective, null majority, directional near large objects.",
-            "planar_time" : "Nominal"
-        },
+			"entry_name" : "Feywilds",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+					"img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/5/58/Swamp_poratz.jpg",
+					"img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Swamp_poratz.jpg",
+					"img_linked" : "https://static.wikia.nocookie.net/realmsofahlus/images/1/16/The_Glass_Road.jpg/revision/latest?cb=20200503220249",
+					"img_linked_source" : "https://realmsofahlus.fandom.com/wiki/The_Glass_Road",
+					"img_thumbnail" : "/resources/images/feywilds.jpg",
+					"species" : "The Quasi Elemental Plane of Ooze"
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : "South-Eastern"
+						},
+						{
+							"subheading" : "School of Magic",
+							"subcontent" : "Necromancy"
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : "Neutral Good"
+						}
+					]
+				},
+				{
+					"heading" : "Inhabitants",
+					"sublibrary" : [
+						{
+							"subheading" : "Deities",
+							"subcontent" : "Deliklese, The Dracofey"
+						},
+						{
+							"subheading" : "Creatures",
+							"subcontent" : "Fey, Viridian Dragons, Oozes"
+						},
+						{
+							"subheading" : "Factions",
+							"subcontent" : "The Wardens of Deliklese"
+						}
+					]
+				},
+				{
+					"heading" : "Attributes",
+					"sublibrary" : [
+						{
+							"subheading" : "Topography",
+							"subcontent" : "Infinite bounds, sporous atmosphere"
+						},
+						{
+							"subheading" : "Gravity",
+							"subcontent" : "Constant"
+						},
+						{
+							"subheading" : "Time",
+							"subcontent" : "Nominal"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "The Elemental Plane of Ooze is positioned to the South-East of the Great Wheel cosmology, and is also known as the Feywilds. It is strongly associated with domains relating to Life, Balance, and Hunt, and is considered to represent the Neutral Good alignment in its purest form. This plane is the source of all Necromancy magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  It channels the school of Necromancy in that it seeds life from death in a constant cycle.  "
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Magic",
+							"subcontent" : ""
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
         {
-            "plane" : "Caelar",
-            "planar_element" : "Air",
-            "plane_description" : "The Elemental Plane of Air is positioned to the Northeast of the Great Wheel cosmology.  It is strongly associated with domains relating to Knowledge and Wrath, and is considered to represent the Neutral alignment in its purest form.  This plane is the source of all Illusion magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  ",
-            "plane_img" : "https://upload.wikimedia.org/wikipedia/commons/8/83/Lightning_in_Dallas_2015.jpg",
-            
-            "planar_position" : "Northeastern",
-            "associated_school" : "Illusion",
-            "associated_alignment" : "Neutral",
-
-            "associated_deity" : "Tempest",
-            "associated_deity_img" : "https://upload.wikimedia.org/wikipedia/commons/2/21/Roc_1.jpg",
-            "associated_deity_description" : "Tempest is the Elemental Titan of Caelar, having adapted to a fully airborne.  Tempest is an archaic celestial entity, preferring to take the form of an avian whose closest living relatives are Rocs and Dire Eagles.            ",
-
-            "associated_deity_titles" : "Skyborn",
-            "associated_deity_symbol" : "An eagle shrouded in lightning",
-            "associated_deity_worshippers" : "The Talons of Caelar",
-
-            "associated_deity_alignment" : "Neutral",
-            "associated_deity_portfolio" : "NA",
-            "associated_deity_domains" : "Tempest",
-
-            "associated_deity_animals" : "Thunder Roc",
-            "associated_deity_creatures" : "Air Elementals",
-            "associated_deity_colors" : "White, Grey, Violet, Cyan",
-
-            "associated_dragons" : [
-                {
-                    "species" : "Azure",
-                    "type" : "Primal"
-                },
-                {
-                    "species" : "Cobalt",
-                    "type" : "Metallic"
-                }
-            ],
-
-            "associated_creatures" : "Celestials<br>Blue Dragons<br>Air Elementals",
-            "associated_factions" : "NA",
-
-            "planar_topography" : "Infinite bounds, varying air pressure, chunks of floating land sparsely distributed.",
-            "planar_gravity" : "Subjective, null majority, directional near large objects.",
-            "planar_time" : "Nominal"
-        },
+			"entry_name" : "Terral",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+					"img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/3/33/140823_M%C3%A4rchendom_Saalfelder_Feengrotten.jpg",
+					"img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:140823_M%C3%A4rchendom_Saalfelder_Feengrotten.jpg",
+					"img_linked" : "https://preview.redd.it/4yzr0lykh3y61.jpg?auto=webp&s=1b83e25abc73650b51598e656880ac654bd1cdb2",
+					"img_linked_source" : "https://www.reddit.com/r/DnD/comments/n8e7ov/oc_art_a_reimagining_of_the_elemental_plane_of/",
+					"img_thumbnail" : "/resources/images/terral.jpg",
+					"species" : "Caelaris Fulgaria"
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : "Southern"
+						},
+						{
+							"subheading" : "School of Magic",
+							"subcontent" : "Transmutation"
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : "Neutral"
+						}
+					]
+				},
+				{
+					"heading" : "Inhabitants",
+					"sublibrary" : [
+						{
+							"subheading" : "Deities",
+							"subcontent" : "Tarrasque, Daos"
+						},
+						{
+							"subheading" : "Creatures",
+							"subcontent" : "Giants, Gemstone Dragons, Copper Dragons, Earth Elementals"
+						},
+						{
+							"subheading" : "Factions",
+							"subcontent" : "The Horns of Tarrasque"
+						}
+					]
+				},
+				{
+					"heading" : "Attributes",
+					"sublibrary" : [
+						{
+							"subheading" : "Topography",
+							"subcontent" : "Infinite bounds, varying air pressure, pieces of earth continually shearing against each other"
+						},
+						{
+							"subheading" : "Gravity",
+							"subcontent" : "Subjective, directional to nearest surface"
+						},
+						{
+							"subheading" : "Time",
+							"subcontent" : "Nominal"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "The Elemental Plane of Earth is positioned to the South of the Great Wheel cosmology.  It is strongly associated with domains relating to Transformation and Stability, and is considered to represent the Neutral alignment in its purest form.  This plane is the source of all Transmutation magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  "
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Magic",
+							"subcontent" : ""
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
         {
-            "plane" : "Ignar",
-            "planar_element" : "Fire",
-
-            "plane_description" : "The Elemental Plane of Fire is positioned to the Southeast of the Great Wheel cosmology.  It is strongly associated with domains relating to Destruction and Consumption, and is considered to represent the Neutral alignment in its purest form.  This plane is the source of all Evocation magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  ",
-            "plane_img" : "https://upload.wikimedia.org/wikipedia/commons/2/2a/FIRE_01.JPG",
-            
-            "planar_position" : "Southeastern",
-            "associated_school" : "Evocation",
-            "associated_alignment" : "Neutral",
-
-            "associated_deity" : "Averdeus",
-
-            "associated_dragons" : [
-                {
-                    "species" : "Crimson",
-                    "type" : "Primal"
-                },
-                {
-                    "species" : "Gold",
-                    "type" : "Metallic"
-                },
-                {
-                    "species" : "Sovereign",
-                    "type" : "Imperial"
-                }
-            ],
-
-            "associated_creatures" : "Fiends<br>Red Dragons<br>Fire Elementals",
-            "associated_factions" : "NA",
-
-            "planar_topography" : "Infinite bounds, flames form the air, oceans, and ground in varying density.",
-            "planar_gravity" : "Subjective, directional to nearest surface.",
-            "planar_time" : "Nominal"
-        },
+			"entry_name" : "Vulken",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+					"img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/8/89/P%C4%81hoehoe_and_Aa_flows_at_Hawaii.jpg",
+					"img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:P%C4%81hoehoe_and_Aa_flows_at_Hawaii.jpg",
+					"img_linked" : "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cbfc9e55-f453-4c12-83b8-e99189a97def/d86zszc-278ce6f2-8a3f-45e2-aab9-6781dce5b25d.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2NiZmM5ZTU1LWY0NTMtNGMxMi04M2I4LWU5OTE4OWE5N2RlZlwvZDg2enN6Yy0yNzhjZTZmMi04YTNmLTQ1ZTItYWFiOS02NzgxZGNlNWIyNWQuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.btTgDJjdOonDTATPz_NoXxfMRlGGw5BB_TIWgOwWFFs",
+					"img_linked_source" : "https://www.deviantart.com/concept-art-house/art/Volcano-495477624",
+					"img_thumbnail" : "/resources/images/vulken.jpg",
+					"species" : "The Quasi Elemental Plane of Magma"
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : "South-Western"
+						},
+						{
+							"subheading" : "School of Magic",
+							"subcontent" : "Conjuration"
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : "Chaotic Neutral"
+						}
+					]
+				},
+				{
+					"heading" : "Inhabitants",
+					"sublibrary" : [
+						{
+							"subheading" : "Deities",
+							"subcontent" : "Gondarin, The Dracofiend"
+						},
+						{
+							"subheading" : "Creatures",
+							"subcontent" : "Hybrids, Stygian Dragons, Brass Dragons, Magma Elementals"
+						},
+						{
+							"subheading" : "Factions",
+							"subcontent" : "The Artisans of Gondarin"
+						}
+					]
+				},
+				{
+					"heading" : "Attributes",
+					"sublibrary" : [
+						{
+							"subheading" : "Topography",
+							"subcontent" : "Infinite bounds, varying air pressure, acidic atmosphere"
+						},
+						{
+							"subheading" : "Gravity",
+							"subcontent" : "Constant, varying for magma flows"
+						},
+						{
+							"subheading" : "Time",
+							"subcontent" : "Nominal"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "The Elemental Plane of Magma is positioned to the South-West of the Great Wheel cosmology, and is also known as Vulken. It is strongly associated with domains relating to Creation and Debauchery, and is considered to represent the Chaotic Neutral alignment in its purest form. This plane is the source of all Conjuration magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  It channels the school of Conjuration in that spontaneous creation and summoning are akin to Gondarin's daily endeavors.  "
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Magic",
+							"subcontent" : ""
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
         {
-            "plane" : "Terral",
-            "planar_element" : "Earth",
-
-            "plane_description" : "The Elemental Plane of Earth is positioned to the Southwest of the Great Wheel cosmology.  It is strongly associated with domains relating to Transformation and Stability, and is considered to represent the Neutral alignment in its purest form.  This plane is the source of all Transmutation magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  ",
-            "plane_img" : "https://upload.wikimedia.org/wikipedia/commons/3/33/140823_M%C3%A4rchendom_Saalfelder_Feengrotten.jpg",
-            
-            "planar_position" : "Southwestern",
-            "associated_school" : "Transmutation",
-            "associated_alignment" : "Neutral",
-
-            "associated_deity" : "Tarrasque",
-            "associated_deity_img" : "https://upload.wikimedia.org/wikipedia/commons/7/7d/Gravure_de_la_Tarasque.png",
-            "associated_deity_description" : "The Tarrasque is the Elemental Titan of Terral, having adapted to a subterranean environment.  The Tarrasque is a bestial monstrous entity, preferring to combine the most physically powerful elements of both reptiles and mammals in his forms.  Many scholars have concluded that the Tarrasque is his most typical form is both reptilian and mammalian, but the ratios involved are less clear.  The closest living relatives to the Tarrasque are the Armadillo and the Tyrannosaurus",
-
-            "associated_deity_titles" : "Earthborn",
-            "associated_deity_symbol" : "A sleeping reptile with a mountain atop its back",
-            "associated_deity_worshippers" : "The Horns of Terral",
-
-            "associated_deity_alignment" : "Neutral",
-            "associated_deity_portfolio" : "NA",
-            "associated_deity_domains" : "Earth",
-
-            "associated_deity_animals" : "Zaratan",
-            "associated_deity_creatures" : "Earth Elementals",
-            "associated_deity_colors" : "Brown, Tan, Orange, Black",
-
-            "associated_dragons" : [
-                {
-                    "species" : "Gemstone",
-                    "type" : "Primal"
-                },
-                {
-                    "species" : "Copper",
-                    "type" : "Metallic"
-                }
-            ],
-
-            "associated_creatures" : "Giants<br>Black Dragons<br>Earth Elementals",
-            "associated_factions" : "NA",
-
-            "planar_topography" : "Infinite bounds, varying air pressure, pieces of earth continually shearing against each other.",
-            "planar_gravity" : "Subjective, directional to nearest surface.",
-            "planar_time" : "Nominal"
-        },
+			"entry_name" : "Ignar",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+					"img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/2/2a/FIRE_01.JPG",
+					"img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:FIRE_01.JPG",
+					"img_linked" : "https://db4sgowjqfwig.cloudfront.net/campaigns/105480/assets/887245/pCIkRlg.jpg?1533694990",
+					"img_linked_source" : "https://phandeversfinest.obsidianportal.com/wikis/elemental-plane-of-fire",
+					"img_thumbnail" : "/resources/images/ignar.jpg",
+					"species" : "The Primal Elemental Plane of Fire"
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : "Western"
+						},
+						{
+							"subheading" : "School of Magic",
+							"subcontent" : "Evocation"
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : "Neutral"
+						}
+					]
+				},
+				{
+					"heading" : "Inhabitants",
+					"sublibrary" : [
+						{
+							"subheading" : "Deities",
+							"subcontent" : "Averdeus, Efreetis"
+						},
+						{
+							"subheading" : "Creatures",
+							"subcontent" : "Fiends, Crimson Dragons, Gold Dragons, Fire Elementals"
+						},
+						{
+							"subheading" : "Factions",
+							"subcontent" : "The Stingers of Averdeus"
+						}
+					]
+				},
+				{
+					"heading" : "Attributes",
+					"sublibrary" : [
+						{
+							"subheading" : "Topography",
+							"subcontent" : "Infinite bounds, flames form the air, oceans, and ground in varying density"
+						},
+						{
+							"subheading" : "Gravity",
+							"subcontent" : "Subjective, directional to nearest surface"
+						},
+						{
+							"subheading" : "Time",
+							"subcontent" : "Nominal"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "The Elemental Plane of Fire is positioned to the West of the Great Wheel cosmology.  It is strongly associated with domains relating to Destruction and Consumption, and is considered to represent the Neutral alignment in its purest form.  This plane is the source of all Evocation magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  "
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Magic",
+							"subcontent" : ""
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
         {
-            "plane" : "Aquar",
-            "planar_element" : "Water",
-            "plane_description" : "The Elemental Plane of Water is positioned to the Northwest of the Great Wheel cosmology.  It is strongly associated with domains relating to Adaptability and Cleansing, and is considered to represent the Neutral alignment in its purest form.  This plane is the source of all Abjuration magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  The Plane of Water is adjacent to the Primal Planescapes of Earth to the Southwest, and Air to the Northwest.  The Border Planescapes at these junctions are the Plane of Ooze and the Plane of Ice, which are also known as the Feywilds and Eifrost respectively.  ",
-            "plane_img" : "https://upload.wikimedia.org/wikipedia/commons/2/2e/Underwater_world.jpg",
-            
-            "planar_position" : "Northwestern",
-            "associated_school" : "Abjuration",
-            "associated_alignment" : "Neutral",
-
-            "associated_deity" : "Kraken",
-            "associated_deity_img" : "https://upload.wikimedia.org/wikipedia/commons/0/00/PSM_V14_D360_Octopus_or_devil_fish_octopus_vulgaris.png",
-            "associated_deity_description" : "The Kraken is the Elemental Titan of Aquar, having adapted to a dark aquatic environment.  The Kraken is a massive aberrant entity, preferring to combine the most alien aspects of cephalopods and fish in her forms.  Many scholars have concluded that the Kraken is her most typical form is both cephalopod and fish--specifically shark--but few can agree on the exact ratio involved.  ",
-
-            "associated_deity_titles" : "Waterborn",
-            "associated_deity_symbol" : "Tentacles pulling a sailing ship below the water",
-            "associated_deity_worshippers" : "The Tentacles of Aquar",
-
-            "associated_deity_alignment" : "Neutral",
-            "associated_deity_portfolio" : "NA",
-            "associated_deity_domains" : "Water",
-
-            "associated_deity_animals" : "Dire Squid",
-            "associated_deity_creatures" : "Water Elementals",
-            "associated_deity_colors" : "Blue, Teal, Navy",
-
-            "associated_dragons" : [
-                {
-                    "species" : "Cobalt",
-                    "type" : "Primal"
-                },
-                {
-                    "species" : "Bronze",
-                    "type" : "Metallic"
-                },
-                {
-                    "species" : "Sea",
-                    "type" : "Imperial"
-                }
-            ],
-
-            "associated_creatures" : "Aberrations<br>Dracoturtles<br>Water Elementals",
-            "associated_factions" : "NA",
-
-            "planar_topography" : "Infinite bounds, varying water pressure, all light is from bioluminescence.",
-            "planar_gravity" : "Subjective, directional to nearest surface.",
-            "planar_time" : "Nominal"
-        },
+			"entry_name" : "Shadowfell",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+					"img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/c/cb/Photograph_from_a_commercial_flight_showing_a_pyrocumulonimbus_cloud.jpg",
+					"img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Photograph_from_a_commercial_flight_showing_a_pyrocumulonimbus_cloud.jpg",
+					"img_linked" : "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9aa31f9e-3752-478a-bcae-305421dcb295/dd3bimg-5b6b38e9-574b-40d3-a015-82cde8f5b639.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzlhYTMxZjllLTM3NTItNDc4YS1iY2FlLTMwNTQyMWRjYjI5NVwvZGQzYmltZy01YjZiMzhlOS01NzRiLTQwZDMtYTAxNS04MmNkZThmNWI2MzkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.rSkNWUE4n7Df_g5G9nX6ZjwWw2BvoBLk984azPxrgKs",
+					"img_linked_source" : "https://www.deviantart.com/wuggynaut/art/Shadowfell-791636488",
+					"img_thumbnail" : "/resources/images/shadowfell.jpg",
+					"species" : "The Quasi Elemental Plane of Ash"
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : "North-Western"
+						},
+						{
+							"subheading" : "School of Magic",
+							"subcontent" : "Illusion"
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : "Neutral Evil"
+						}
+					]
+				},
+				{
+					"heading" : "Inhabitants",
+					"sublibrary" : [
+						{
+							"subheading" : "Deities",
+							"subcontent" : "Sebabos, The Dracoshade"
+						},
+						{
+							"subheading" : "Creatures",
+							"subcontent" : "Necrophages, Umbral Dragons, Ash Elementals"
+						},
+						{
+							"subheading" : "Factions",
+							"subcontent" : "The Reapers of Sebabos"
+						}
+					]
+				},
+				{
+					"heading" : "Attributes",
+					"sublibrary" : [
+						{
+							"subheading" : "Topography",
+							"subcontent" : "Infinite bounds, varying air pressure, constant falling soot"
+						},
+						{
+							"subheading" : "Gravity",
+							"subcontent" : "Subjective, null majority, directional near large objects"
+						},
+						{
+							"subheading" : "Time",
+							"subcontent" : "Nominal"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "The Elemental Plane of Ash is positioned to the North-West of the Great Wheel cosmology, and is also known as the Shadowfell.  It is strongly associated with domains relating to Death and Greed, and is considered to represent the Neutral Evil alignment in its purest form.  This plane is the source of all Illusion magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school.  It channels Illusion in that its environment induces deep hallucinations in visitors.  The creatures that hail from the Shadowfell embrace Illusion in order to lure living things into their grasp, which they must feed on since they often are undead and do not have a stable life force of their own.  "
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Magic",
+							"subcontent" : ""
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
         {
-            "plane" : "Material",
-            
-            "plane_description" : "The Elemental Plane of Ooze is positioned to the West of the Great Wheel cosmology, and is also known as the Feywilds. It is strongly associated with domains relating to Life, Balance, and Death, and is considered to represent the Neutral Good alignment in its purest form. This plane is the source of all Necromancy magic, channeling raw energy from the Weave and converting it to magic of the aforementioned school. The Plane of Ooze is adjacent to the Primal Planescapes of Water to the North and Earth to the West. The Plane of Ooze is complimentary to the Plane of Ash.  <br><br>Ooze is associated with life and purity. It channels the school of Necromancy in that it seeds life from death in a constant cycle.  ",
-            "plane_img" : "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/898px-The_Earth_seen_from_Apollo_17.jpg?20200925203546",
-            
-            "planar_element" : "material",
-            "planar_position" : "Western",
-            "planar_topography" : "Infinite bounds, sporous atmosphere.",
-            "planar_gravity" : "Constant.",
-            "planar_time" : "Nominal",
-
-            "associated_school" : "Necromancy",
-            "associated_alignment" : "Neutral Good",
-
-            "associated_deity" : "Deliklese",
-            "associated_deity_img" : "https://upload.wikimedia.org/wikipedia/commons/c/cb/Greek_mythology_systematized_%281880%29_%2814559602149%29.jpg",
-            "associated_deity_description" : "The Goddess of Ooze and Life is also known as the All-Mother. She is considered to be the only truly benevolent deity of the four. The All-Mother is gentle, generous, and understanding in most cases, but she and her followers have shown remarkable zeal when taking up arms in the defense of goodness.  ",
-
-            "associated_deity_titles" : "Goddess of Ooze<br>Life-Giver<br>All-Mother<br>The Merciful One",
-            "associated_deity_symbol" : "Melting Flower",
-            "associated_deity_worshippers" : "Druids<br>Hunters<br>Farmers",
-
-            "associated_deity_alignment" : "Neutral Good",
-            "associated_deity_portfolio" : "Beauty<br>Pleasure<br>Freedom",
-            "associated_deity_domains" : "Nature<br>Life<br>Grave",
-
-            "associated_deity_animals" : "Deer<br>Toad<br>Alligator",
-            "associated_deity_creatures" : "Ooze Elementals<br>Water Elementals<br>Earth Elementals<br>Beasts<br>Green Dragons",
-            "associated_deity_colors" : "Green, Brown, Pink, Yellow",
-
-            "associated_dragons" : [
-                {
-                    "species" : "Viridian",
-                    "type" : "Quasiprimal"
-                },
-                {
-                    "species" : "Dracofey",
-                    "type" : "Spirit"
-                }
-            ],
-
-            "associated_creatures" : "Fey<br>Green Dragons<br>Oozes",
-            "associated_factions" : "NA"
-        }
+			"entry_name" : "Myrmidos",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+					"img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/898px-The_Earth_seen_from_Apollo_17.jpg?20200925203546",
+					"img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:The_Earth_seen_from_Apollo_17.jpg",
+					"img_linked" : "https://www.worldanvil.com/uploads/images/313ab330767a891530f70ae8fe805160.jpg",
+					"img_linked_source" : "https://www.worldanvil.com/w/faerun-reborn-rathofkelly/discussion-boards",
+					"img_thumbnail" : "/resources/images/myrmidos.jpg",
+					"species" : "The Material Plane"
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : "Central"
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : "None"
+						}
+					]
+				},
+				{
+					"heading" : "Inhabitants",
+					"sublibrary" : [
+						{
+							"subheading" : "Deities",
+							"subcontent" : "Genies, Demigods"
+						},
+						{
+							"subheading" : "Creatures",
+							"subcontent" : "Humans, Beasts"
+						},
+						{
+							"subheading" : "Factions",
+							"subcontent" : "Varied"
+						}
+					]
+				},
+				{
+					"heading" : "Attributes",
+					"sublibrary" : [
+						{
+							"subheading" : "Topography",
+							"subcontent" : "Spherical, consistent atmosphere, dramatically varied climates depending on location and season"
+						},
+						{
+							"subheading" : "Gravity",
+							"subcontent" : "Constant towards center of planet"
+						},
+						{
+							"subheading" : "Time",
+							"subcontent" : "Nominal (minor variations based on gravity experienced)"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "The Material Plane is positioned in the Center of the Great Wheel cosmology.  It the common denominator among all the planes, and is widely considered to be the Center of the Reality.  This plane is the source of no magic, instead generating a series of metaphysical bindings that interconnect all the planes and create the Material Plane.  Mages have learned to pluck at these connections, allowing for magic from all of the Schools to be cast here.  "
+				},
+				{
+					"heading" : "Planar Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Position",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Magic",
+							"subcontent" : ""
+						},
+                        {
+							"subheading" : "Alignment",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		}
     ]
 }

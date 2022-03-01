@@ -10,8 +10,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
     <script>
       $(function importContent() {
-        $(".import-common-page-header").load("/resources/pages/import-common-page-header.html");
-        $(".import-common-page-footer").load("/resources/pages/import-common-page-footer.html");
+        $("#import-header").load("/resources/pages/import-header.html");
+        $("#import-footer").load("/resources/pages/import-footer.html");
       });
       $(function readCharacter() {
         var characters = [];
@@ -22,7 +22,7 @@
             if (f.page_url == page) {
 
               // Populating basic page data and overview
-              document.getElementById("class-common-page-header-title").innerHTML = "Caped Crusaders: Classes > " + f.name_str;
+              document.getElementById("class-page-title-path").innerHTML = "Caped Crusaders: Classes > " + f.name_str;
               document.getElementById("cc-class-image").src = "/resources/images/" + f.class_str + ".png";
               document.getElementById("cc-class-image").alt = f.class_img_credit;
               document.getElementById("cc-subclass-image").src = "/resources/images/" + f.class_str + "-" + f.subclass_str + ".png";
@@ -30,8 +30,8 @@
               document.getElementById("build-description").innerHTML = f.build_overview;
 
               // Populating the Build Setup Table with a single row
-              var tblRow = "<td>" + f.race_str + "<br><br>" + f.race_description + "</td><td>" + f.background + "<br><br>" + f.background_description + "</td><td>" + f.strength_initial + "<br><br><b>" + f.strength_resolved + "</b></td><td>" + f.dexterity_initial + "<br><br><b>" + f.dexterity_resolved + "</td><td>" + f.constitution_initial + "<br><br><b>" + f.constitution_resolved + "</td><td>" + f.intelligence_initial + "<br><br><b>" + f.intelligence_resolved + "</td><td>" + f.wisdom_initial + "<br><br><b>" + f.wisdom_resolved + "</td><td>" + f.charisma_initial + "<br><br><b>" + f.charisma_resolved + "</td><td>" + f.starting_equipment + "</td>"
-              $(tblRow).appendTo("#build-setup-table tbody");
+              var table_row = "<td>" + f.race_str + "<br><br>" + f.race_description + "</td><td>" + f.background + "<br><br>" + f.background_description + "</td><td>" + f.strength_initial + "<br><br><b>" + f.strength_resolved + "</b></td><td>" + f.dexterity_initial + "<br><br><b>" + f.dexterity_resolved + "</td><td>" + f.constitution_initial + "<br><br><b>" + f.constitution_resolved + "</td><td>" + f.intelligence_initial + "<br><br><b>" + f.intelligence_resolved + "</td><td>" + f.wisdom_initial + "<br><br><b>" + f.wisdom_resolved + "</td><td>" + f.charisma_initial + "<br><br><b>" + f.charisma_resolved + "</td><td>" + f.starting_equipment + "</td>"
+              $(table_row).appendTo("#build-setup-table tbody");
 
               // Initializing the variables we will use throughout the Level Table and Selections Table such as class and prof
               var proficiency_bonus_int = 2;
@@ -423,7 +423,7 @@
                       sustainable_selections_link = sustainable_selections_link.replace('-', '');
                       sustainable_selections_link = sustainable_selections_link.replace('+', '');
                       sustainable_selections_link = sustainable_selections_link.replace(/\s/g, '-');
-                      sustainable_selections_link = "<a target='blank' href='/caped-crusaders/character-options/" + sustainable_source + "/" + sustainable_selections_link + ".html'>" + sustainable_selections_parsed[k] + "</a>";
+                      sustainable_selections_link = "<a target='blank' href='/caped-crusaders/" + sustainable_source + "/" + sustainable_selections_link + ".html'>" + sustainable_selections_parsed[k] + "</a>";
                       if (sustainable_selections_links.includes("href")){
                         sustainable_selections_links += ", " + sustainable_selections_link;
                       } else {
@@ -444,7 +444,7 @@
                       cantrip_selections_link = cantrip_selections_link.replace('-', '');
                       cantrip_selections_link = cantrip_selections_link.replace('+', '');
                       cantrip_selections_link = cantrip_selections_link.replace(/\s/g, '-');
-                      cantrip_selections_link = "<a target='blank' href='/caped-crusaders/character-options/" + consumable_source + "/" + cantrip_selections_link + ".html'>" + cantrip_selections_parsed[k] + "</a>";
+                      cantrip_selections_link = "<a target='blank' href='/caped-crusaders/" + consumable_source + "/" + cantrip_selections_link + ".html'>" + cantrip_selections_parsed[k] + "</a>";
                       if (cantrip_selections_links.includes("href")){
                         cantrip_selections_links += ", " + cantrip_selections_link;
                       } else {
@@ -465,7 +465,7 @@
                       consumable_selections_link = consumable_selections_link.replace('-', '');
                       consumable_selections_link = consumable_selections_link.replace('+', '');
                       consumable_selections_link = consumable_selections_link.replace(/\s/g, '-');
-                      consumable_selections_link = "<a target='blank' href='/caped-crusaders/character-options/" + consumable_source + "/" + consumable_selections_link + ".html'>" + consumable_selections_parsed[k] + "</a>";
+                      consumable_selections_link = "<a target='blank' href='/caped-crusaders/" + consumable_source + "/" + consumable_selections_link + ".html'>" + consumable_selections_parsed[k] + "</a>";
                       if (consumable_selections_links.includes("href")){
                         consumable_selections_links += ", " + consumable_selections_link;
                       } else {
@@ -485,8 +485,8 @@
                   
                 
               // Populating the Level Table with a new row for each level
-              var tblRow = "<tr><td>" + (i+1) + "</td><td>" + class_subclass + "</td><td>" + hit_points + " / " + (i+1) + "d" + hit_die + "</td><td>" + features + "</td><td>" + strength_score_str + " / " + strength_save_str + "</td><td>" + dexterity_score_str + " / " + dexterity_save_str + "</td><td>" + constitution_score_str + " / " + constitution_save_str + "</td><td>" + intelligence_score_str + " / " + intelligence_save_str + "</td><td>" + wisdom_score_str + " / " + wisdom_save_str + "</td><td>" + charisma_score_str + " / " + charisma_save_str + "</td><td>" + armor_class + "</td></tr>";
-              $(tblRow).appendTo("#build-level-table tbody");
+              var table_row = "<tr><td>" + (i+1) + "</td><td>" + class_subclass + "</td><td>" + hit_points + " / " + (i+1) + "d" + hit_die + "</td><td>" + features + "</td><td>" + strength_score_str + " / " + strength_save_str + "</td><td>" + dexterity_score_str + " / " + dexterity_save_str + "</td><td>" + constitution_score_str + " / " + constitution_save_str + "</td><td>" + intelligence_score_str + " / " + intelligence_save_str + "</td><td>" + wisdom_score_str + " / " + wisdom_save_str + "</td><td>" + charisma_score_str + " / " + charisma_save_str + "</td><td>" + armor_class + "</td></tr>";
+              $(table_row).appendTo("#build-level-table tbody");
               
               // Increasing the Proficiency Bonus variable upon reaching certain level milestones
               if ((i+1) == 4 || (i+1) == 8 || (i+1) == 12 || (i+1) == 16) {
@@ -501,13 +501,13 @@
   </head>
 
   <body>
-    <div class="common-page-background"> 
+    <div id="page-background-div"> 
 
-      <div class="common-page-header"><div class="import-common-page-header"></div><h1 id="class-common-page-header-title"></h1><hr></div>
+      <div class="common-page-header"><div id="import-header"></div><h1 id="class-page-title-path"></h1><hr></div>
 
-      <div class="common-page-content-transparent">
+      <div class="common-page-content-section-transparent">
 
-            <section class="common-page-content-section">
+            <section class="page-content-section">
               <button id="common-page-back-button" onclick="location.href='../character-builds.html'">Out to Character Builds</button>
               <h2>Overview</h2>
               <hr>
@@ -519,7 +519,7 @@
               <hr>
               <h3>Build Setup</h3>
               <p id="build-setup-overview">We'll take the following setup prior to our class levels.  </p>
-              <table class="cc-attributes-overview-table" id="build-setup-table">
+              <table class="page-title-table" id="build-setup-table">
                 <thead>
                   <th>Race</th>
                   <th>Background</th>
@@ -538,7 +538,7 @@
               <h3>Level Table</h3>
               <p id="build-level-overview">We'll take features based on the following table to initiate and progress through our build.  </p>
 
-              <table id="build-level-table" class="cc-attributes-overview-table">
+              <table id="build-level-table" class="page-title-table">
                 <thead>
                   <th style="width: 5vw">Level</th>
                   <th style="width: 10vw">Class/Subclass</th>
@@ -567,7 +567,7 @@
         </div>
       </div>
 
-      <footer class="import-common-page-footer"></footer>
+      <footer id="import-footer"></footer>
 
     </div>
   </body>
