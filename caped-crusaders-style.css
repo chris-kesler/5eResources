@@ -43,14 +43,14 @@ h2 {
 /* Level three headings */
 h3 {
   font-size: larger;
-
+  margin-left: 10px;
 }
 
 /* Level four headings */
 h4 {
   font-size: medium;
   font-style: italic;
-  margin-left: 5px;
+  margin-left: 10px;
 
 }
 
