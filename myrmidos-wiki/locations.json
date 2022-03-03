@@ -1,0 +1,3750 @@
+{
+	"entries" : [
+		{
+			"entry_name" : "Hammerdeep",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+					"img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Durian_-_Sintel-wallpaper-ishtar.jpg/1200px-Durian_-_Sintel-wallpaper-ishtar.jpg?20100114215406",
+					"img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Durian_-_Sintel-wallpaper-ishtar.jpg",
+					"img_linked" : "https://c.wallhere.com/photos/8f/01/digital_art_artwork_nature_river_mountains_castle_fantasy_art_fantasy_city-1948837.jpg!d",
+					"img_linked_source" : "https://wallhere.com/en/wallpaper/1948837",
+					"species" : "The City of Brass and Bronze"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+						{
+							"subheading" : "Approximate Dimnensions",
+							"subcontent" : "~3 Miles (NS) by ~1 Mile (WE)"
+						},
+						{
+							"subheading" : "Approximate Area",
+							"subcontent" : "~1920 Acres"
+						},
+						{
+							"subheading" : "Urban Population",
+							"subcontent" : "~100 Thousand"
+						},
+						{
+							"subheading" : "Rural Population",
+							"subcontent" : "~250 Thousand"
+						}
+					]
+				},
+				{
+					"heading" : "Government",
+					"sublibrary" : [
+						{
+							"subheading" : "Leader / Monarch",
+							"subcontent" : "1 Open Lord:  Elmyra Inapetor"
+						},
+						{
+							"subheading" : "Advisors / Representatives",
+							"subcontent" : "13 Masked Lords: Anonymous"
+						},
+						{
+							"subheading" : "Political System",
+							"subcontent" : "Feudalism"
+						}
+					]
+				},
+				{
+					"heading" : "Culture",
+					"sublibrary" : [
+						{
+							"subheading" : "Symbols",
+							"subcontent" : "The Crest of House Inapetor, Factional Sigils"
+						},
+						{
+							"subheading" : "Language",
+							"subcontent" : "Street Slang, Factional Jargon, Elven Phrases"
+						},
+						{
+							"subheading" : "Norms",
+							"subcontent" : "Lenient, Festival Attendance"
+						},
+						{
+							"subheading" : "Values",
+							"subcontent" : "Honesty, Discipline, Work Ethic, Patience"
+						},
+						{
+							"subheading" : "Artifacts",
+							"subcontent" : "Elegant and Practical Metalworking"
+						}
+					]
+				},
+				{
+					"heading" : "Geography",
+					"sublibrary" : [
+						{
+							"subheading" : "Biome",
+							"subcontent" : "Coastal"
+						},
+						{
+							"subheading" : "Climate",
+							"subcontent" : "Varied:  Full Seasons"
+						},
+						{
+							"subheading" : "Latitude",
+							"subcontent" : "~39° North <a target='blank' href='http://2.bp.blogspot.com/-5HsmtaGxbuk/VjLBkHtrgfI/AAAAAAAAN9I/rQl7-GbA__s/s1600/Faerun%2BGE%2BSnip%2B3.PNG'>(source)</a>"
+						},
+						{
+							"subheading" : "Longitude",
+							"subcontent" : "~117° West <a target='blank' href='http://2.bp.blogspot.com/-5HsmtaGxbuk/VjLBkHtrgfI/AAAAAAAAN9I/rQl7-GbA__s/s1600/Faerun%2BGE%2BSnip%2B3.PNG'>(source)</a>"
+						}
+					]
+				},
+				{
+					"heading" : "Points of Interest",
+					"sublibrary" : [
+						{
+							"subheading" : "Capitol Building",
+							"subcontent" : "Castle Hammerdeep <a target='blank' href='https://www.aidedd.org/atlas/index.php?map=W&l=1'>(see also)</a>"
+						},
+						{
+							"subheading" : "Entrances and Exits",
+							"subcontent" : "West Gate, Troll Gate, North Gate, River Gate, South Gate <a target='blank' href='https://www.aidedd.org/atlas/index.php?map=W&l=1'>(see also)</a>"
+						},
+						{
+							"subheading" : "Islands",
+							"subcontent" : "Deepwater Isle, Stormhaven Island <a target='blank' href='https://www.aidedd.org/atlas/index.php?map=W&l=1'>(see also)</a>"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "The City of Hammerdeep is one of the largest and wealthiest in Myrmidos.  It stands out as a city rife with artistic expression, metallurgic innovation, factional tension, and seemingly endless opportunities.  "
+				},
+				{
+					"heading" : "Demographics",
+					"content" : "Majority races are defined as any species that comprises more than 5% of the population, while minority races are defined as any species that comprises less than 5% of the population.  ",
+					"sublibrary" : [
+						{
+							"subheading" : "Majorities",
+							"subcontent" : "Most of the population in Hammerdeep is comprised of Humans and Dwarves.  While slightly less common, Halflings, Gnomes, and Half-Dwarves are also among the majority races.  The Elves are the least common of the majority races, but their population is incredibly stable due to their long lifespans.  "
+						},
+						{
+							"subheading" : "Minorities",
+							"subcontent" : "Nearly every sentient species capable of living in a civil society can be found in Hammerdeep.  The most common include Hobgoblins, Orcs, Genasi, Goliaths, and Vedalken.  Hobgoblins have shown a remarkable capacity for clerical work, often taking positions as bookkeepers, registrars, secretaries, and logistical officers.  Orcs have proven exceptional animal handlers, dominating the husbandry industry.  Genasi are extremely varied, and can be found in nearly any position (although some varieties do have tendencies that can be observed).  Goliaths have remarkable respiratory systems attuned for thin atmospheres, making them well suited for intense physical labor.  Unexpectedly, they also have a knack for cooking hearty cuisine that is popular among the working class.  Vedalken are a particularly clever people, and their obsessive pursuit of perfection allows them to succeed in a great many industries.  They make for remarkable scholars, mages, and tradesman, with Vedalken clocksmiths being unrivaled by all but the Dwarves.  "
+						}
+					]
+				}
+			]
+		},
+		{
+			"entry_name" : "Crimson Dragon",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+					"img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/e/e4/2010-01-C%26E_Dragon.png",
+					"img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:2010-01-C%26E_Dragon.png",
+					"img_linked" : "https://cdnb.artstation.com/p/assets/images/images/032/538/923/large/miguel-regodon-harkness-pzo2102-adult-red-dragon-copia.jpg?1606753019",
+					"img_linked_source" : "https://www.artstation.com/artwork/v2yNmO",
+					"species" : "Primadraconicus Ignaria"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+						{
+							"subheading" : "Category",
+							"subcontent" : "Dragon"
+						},
+						{
+							"subheading" : "Type",
+							"subcontent" : "Primal"
+						}
+					]
+				},
+				{
+					"heading" : "Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Planescape",
+							"subcontent" : "Ignar"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Neutral Evil"
+						},
+						{
+							"subheading" : "Values",
+							"subcontent" : "Power and Honor"
+						}
+					]
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Breath Weapon",
+							"subcontent" : "Fire"
+						},
+						{
+							"subheading" : "Horns",
+							"subcontent" : "Rearward Cluster"
+						},
+						{
+							"subheading" : "Wing Type",
+							"subcontent" : "Conventional (Bat-like)"
+						},
+						{
+							"subheading" : "Coloration",
+							"subcontent" : "Vibrant Red"
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Habitat",
+							"subcontent" : "Scorching Deserts and Savanha Prairies"
+						},
+						{
+							"subheading" : "Prey",
+							"subcontent" : "Savanha and Desert fauna; camels, bison, gazelles, elephants"
+						}
+					]
+				},
+				{
+					"heading" : "Life Cycle",
+					"sublibrary" : [
+						{
+							"subheading" : "Gestation",
+							"subcontent" : "4 years"
+						},
+						{
+							"subheading" : "Hatchling",
+							"subcontent" : "0-8 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/780/801/large/miguel-regodon-harkness-pzo2102-young-red-dragon.jpg?1607450405'>Juvenile</a>",
+							"subcontent" : "8-80 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/538/923/large/miguel-regodon-harkness-pzo2102-adult-red-dragon-copia.jpg?1606753019'>Adult</a>",
+							"subcontent" : "80-800 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/023/017/181/large/miguel-regodon-harkness-pzo2102-ancient-red-dragon-final-2.jpg?1577731619'>Wyrm</a>",
+							"subcontent" : "800+ years"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "Crimson Dragons are notably egotistical, even among dragons. They value blood and honor above all. Crimson Dragons prefer to enslave and berate mortals of any kind, but usually avoid the arctic and aquatic races due to locational limitations.  "
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Appearance",
+							"subcontent" : "Crimson Dragons have deep blood red scales covering almost the entirety of their bodies, with the scales of the underbelly being only a shade or two lighter. Crimson Dragons have fearsome spine structures, with clusters of barbs lining their back from the neck to the base of the tail. Starting at the tail, they have a pair of microfanes extending to either side that are remarkably sharp.  "
+						},
+						{
+							"subheading" : "Anatomy",
+							"subcontent" : "Crimson Dragons have exceptionally high body temperatures, with many first hand accounts of Crimson Dragons describing heat distortion in the air immediately surrounding their figures.  They have a remarkable ability to survive with minimal liquid intake, most never needing additional moisture beyond that which they get from their food.  <br><br>Scholars have theorized that the microfanes lining a Crimson Dragon's tail assist in flight stability, but this theory has been difficult to test, making it a topic that remains debated.  However, whether they were evolved for this purpose or not, academics unanimously agree that the microfanes effectively serve as weapons to slash open foes with when using tail attacks.  "
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Food Chain",
+							"subcontent" : "Young Crimson Dragons are preyed upon by few creatures, but certain varities of snake have been known to get a lucky venomous strike.  Hatchlings are often pursued by mongooses and other mammals that enjoy eating snakes.  Once the dragon has achieved Juvenile status, it no longer has any natural predators.  Crimson Dragons hunt snakes, lizards, and mammals throughout their lifetime, and are at the very top of their local food chain for all but the earliest years of their life.  "
+						},
+						{
+							"subheading" : "Habitat",
+							"subcontent" : "Crimson Dragons prefer to live in the heart of scorching deserts far from oceans and water sources.  They also actively destroy any oasis they come across within their territory, with the only exception being for their subjects.  Their territory also becomes pockmarked towards the edges with glass structures jutting up like statues.  These are the result of the Crimson Dragon marking their territory to others of their kind, but many other creatures have learned to be wary of these glass monoliths and what they represent.  "
+						},
+						{
+							"subheading" : "Lair",
+							"subcontent" : "Crimson Dragons select lairs that are in the heart of a scorching desert, far from oceans and foliage.  They seek out a large sand dune, burrow inside, and sculpt a cavern for themselves using their fire breath to convert the sand to glass.  After establishing a burrow, the Crimson Dragon constructs a large glass sculpture out of their dune.  This sculpture often looks like a menacing series of spires, but has been known to take other forms as well.  As the dragon ages, the lair continues to grow in size as the dragon heats and stretches the confines of its space.  The lair incorporates several rooms, including a main chamber for the dragon to rest in and display their favorite objects, a subjects chamber for their servants and slaves to live and sleep in, a vault to hold their greatest treasures, and a prison for containing unruly captives.  The floors, walls, and ceilings are all made from distorted glass.  The floors are the least transparent and most coplanar, having a thin layer of sand on top that scratches and flattens it through normal use.  "
+						}
+					]
+				},
+				{
+					"heading" : "Behavior",
+					"sublibrary" : [
+						{
+							"subheading" : "Hunting",
+							"subcontent" : "Crimson Dragons hunt a wide variety of creatures within their territory.  They often prey on snakes and lizards when younger, while hunting camels when older.  A sufficiently large Crimson Dragon will leave the desert to hunt large prey such as elephants and carry it back to their lair.  <br><br>Their hunting behavior typically involves swooping down from above and landing with crushing force on the target's back.  They then sink their claws into the torso, wrap their razor sharp tails around the underbelly, and latch their jaws onto the base of the neck.  The wings remain extended and flapping to maintain balance.  Most targets never escape this embrace, sometimes being killed instantly by the dragon's powerful jaws.  "
+						},
+						{
+							"subheading" : "Defense",
+							"subcontent" : "Crimson Dragons relish good battles, eagerly clashing with foes that are capable of going toe to toe with them. When faced with a show of overwhelming force, a Crimson Dragon will avoid fighting in the first place. However, once engaged, Crimson Dragons will fight to the death. They often treat the battle like a game, only using select tools at their disposal and increasing the challenge for their foe as time progresses. A Crimson Dragon first uses their claws to rip and tear their foe, then their tail to batter and slash, then their wings to buffet and skewer, followed by their jaws to crush and snap, and lastly their fire breath to totally immolate and incinerate.  "
+						},
+						{
+							"subheading" : "Personality",
+							"subcontent" : "Crimson Dragons are arrogant and bloodthirsty, treating the glory of battle like an obsessive religion. Crimson Dragons care not for gifts and offerings lest they are custom works that honor themselves specifically.  Crimson Dragons are extremely prideful, expecting regal respect and taking offense should any dare to speak to them without first being spoken to. Crimson Dragons revere violent conflict, having been known to circle overhead while armies battle or cities are razed.  <br><br>When fighting, a Crimson Dragon denies itself any situational advantage, longing for an honorable fight. If outmatched, a Crimson Dragon will fight to the death and die at peace knowing it fought honorably. Upon achieving victory, Crimson Dragons will gloat and initimidate their foes and spectators. These speeches are sometimes prepared in advance, after which the loser is executed.  "
+						}
+					]
+				},
+				{
+					"heading" : "Society",
+					"sublibrary" : [
+						{
+							"subheading" : "Individual",
+							"subcontent" : "Crimson Dragons enjoy pillaging wealthy kingdoms and kidnapping artisans of all kinds. They typically raze and steal seeking great treasures and materials of high quality and wealth. The artisans are usually conscripted to create a great work in their lord's honor, such as a statue, mural, or epic poem. As a result, an older Crimson Dragon's lair is very much like a shrine to itself.  <br><br>The glass monoliths that mark the territory of the Crimson Dragons are created to intimidate would be challengers and attract mates, but they can also be observed to estimate the age and sex of the dragon.  Older dragons create larger monoliths due to their extended fire breath duration.  If a Crimson Dragon were to attempt to create a monolith in multiple sittings, the glass would either crack or have layers within that are visible to the eyes of all Crimson Dragons and trained glassblowers.  The shape of the monolith indicates the dragons sex in that males create monoliths that are tall and sharp by invertedly spinning the monoliths as they melt it, while females create spiked domes by blasting and pummeling a portion of the sand on the ground to create a concave shape with tendrils extending outwards.  "
+						},
+						{
+							"subheading" : "Intraspeciary",
+							"subcontent" : "Crimson Dragons consider themselves the superior breed of creature, and will not tolerate dishonor from their own kind.  Creating glass monoliths in multiple sittings rather than with a continual gout of sustained flame is considered a deceptive dishonor, provoking any Crimson Dragon who sees such a creation to immediately challenge the creator.  The exceptionally rare occasions when a Crimson Dragon does retreat from a fight are met with absolute outrage. They are dubbed 'dishonored ones', and are no longer considered members of the Crimson Dragon race.  Since they still wear the crimson scales of their kind, which is a grave sin, they are hunted down and torn to pieces by posses of other Crimson Dragons.  The same treatment is given to any creature wearing or owning an object that incorporates crimson dragon scales in it.  <br><br>While Crimson Dragons refuse to flee a fight, they do avoid conflict between themselves as often as possible.  They understand that only one victor can emerge, and that the overall glory of their race would diminish as a result.  Due to this, Crimson Dragons have developed an aggressive ritual that serves to thoroughly evaluate who is likely to be the victor in a conflict.  In these situations, a Crimson Dragon who has deemed the opponent their superior will show a great deal of respect by bowing and acknowledging their dominance.  This is often a distasteful act for a Crimson Dragon to perform, but they justify it by rationalizing that they are not yet fully grown and there is more greatness and glory for them to face in the future.  Crimson Dragons can accept their death, but they do not long for it or seek it out.  "
+						},
+						{
+							"subheading" : "Intercultural",
+							"subcontent" : "Crimson Dragons demand obedience and perfection from their often unwilling subjects, dealing harsh punishments for even the slightest insult or mistake.  Crimson Dragons enjoy laughing, and as a result, keep a jester nearby at all times within their lair. There is only one jester at any given time, and each jester is selected from the Dragon's subjects.  It is the second most respected position in the hierarchy, though not a desireable one.  Crimson Dragons grow bored of their jesters rather quickly, burning them alive when they are no longer amusing.  "
+						}
+					]
+				}
+			]
+		},
+		{
+			"entry_name" : "Gemstone Dragon",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+					"img_rehosted" : "https://www.maxpixel.net/static/photo/1x/3d-Isolated-Fantasy-Animal-Legend-Dragon-4788969.jpg",
+					"img_rehosted_source" : "https://www.maxpixel.net/3d-Isolated-Fantasy-Animal-Legend-Dragon-4788969",
+					"img_linked" : "https://cdnb.artstation.com/p/assets/images/images/036/867/147/large/miguel-regodon-harkness-pzo2104-adult-crystal-dragon.jpg?1618851025",
+					"img_linked_source" : "https://www.artstation.com/artwork/9malJq",
+					"species" : "Primadraconicus Terralia"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+						{
+							"subheading" : "Category",
+							"subcontent" : "Dragon"
+						},
+						{
+							"subheading" : "Type",
+							"subcontent" : "Primal"
+						}
+					]
+				},
+				{
+					"heading" : "Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Planescape",
+							"subcontent" : "Terral"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Neutral Evil"
+						},
+						{
+							"subheading" : "Values",
+							"subcontent" : "Architecture, Legacy"
+						}
+					]
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Breath Weapon",
+							"subcontent" : "Thunder"
+						},
+						{
+							"subheading" : "Horns",
+							"subcontent" : "Minimal"
+						},
+						{
+							"subheading" : "Wing Type",
+							"subcontent" : "Conventional (Bird-like)"
+						},
+						{
+							"subheading" : "Coloration",
+							"subcontent" : "Prismatic Jade"
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Habitat",
+							"subcontent" : "Deep Underground"
+						},
+						{
+							"subheading" : "Prey",
+							"subcontent" : "Subterranean fauna; worms, spiders, insects"
+						}
+					]
+				},
+				{
+					"heading" : "Life Cycle",
+					"sublibrary" : [
+						{
+							"subheading" : "Gestation",
+							"subcontent" : "4 years"
+						},
+						{
+							"subheading" : "Hatchling",
+							"subcontent" : "0-8 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/036/970/210/large/miguel-regodon-harkness-pzo2104-young-crystal-dragon.jpg?1619111375'>Juvenile</a>",
+							"subcontent" : "8-80 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/036/867/147/large/miguel-regodon-harkness-pzo2104-adult-crystal-dragon.jpg?1618851025'>Adult</a>",
+							"subcontent" : "80-800 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/036/783/269/large/miguel-regodon-harkness-pzo2104-ancient-crystal-dragon.jpg?1618593686'>Wyrm</a>",
+							"subcontent" : "800+ years"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "Gemstone Dragons are mysterious and inscrutinable.  They live the vast majority of their lives underground, carving massive subterranean lairs with sprawling networks of caves.  "
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Appearance",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Anatomy",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Food Chain",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Habitat",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Lair",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Behavior",
+					"sublibrary" : [
+						{
+							"subheading" : "Hunting",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Defense",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Personality",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Society",
+					"sublibrary" : [
+						{
+							"subheading" : "Individual",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Intraspeciary",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Intercultural",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"entry_name" : "Turquoise Dragon",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+					"img_rehosted" : "https://www.maxpixel.net/static/photo/1x/Body-Of-Water-Immersed-Travel-Sea-Ocean-Nature-3179245.jpg",
+					"img_rehosted_source" : "https://www.maxpixel.net/Body-Of-Water-Immersed-Travel-Sea-Ocean-Nature-3179245",
+					"img_linked" : "https://cdnb.artstation.com/p/assets/images/images/036/867/133/large/miguel-regodon-harkness-pzo2104-adult-birne-dragon.jpg?1618851015",
+					"img_linked_source" : "https://www.artstation.com/artwork/9malJq",
+					"species" : "Primadraconicus Aquaria"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+						{
+							"subheading" : "Category",
+							"subcontent" : "Dragon"
+						},
+						{
+							"subheading" : "Type",
+							"subcontent" : "Primal"
+						}
+					]
+				},
+				{
+					"heading" : "Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Planescape",
+							"subcontent" : "Aquar"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Neutral Evil"
+						},
+						{
+							"subheading" : "Values",
+							"subcontent" : "Cleanliness, Superiority"
+						}
+					]
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Breath Weapon",
+							"subcontent" : "Psychic"
+						},
+						{
+							"subheading" : "Horns",
+							"subcontent" : "Rearward Binary"
+						},
+						{
+							"subheading" : "Wing Type",
+							"subcontent" : "Conventional (Bat-like)"
+						},
+						{
+							"subheading" : "Coloration",
+							"subcontent" : "Aquamarine and Ivory"
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Habitat",
+							"subcontent" : "Deep Oceans"
+						},
+						{
+							"subheading" : "Prey",
+							"subcontent" : "Aquatic and Coastal faunu; fish, whales, bison"
+						}
+					]
+				},
+				{
+					"heading" : "Life Cycle",
+					"sublibrary" : [
+						{
+							"subheading" : "Gestation",
+							"subcontent" : "7 years"
+						},
+						{
+							"subheading" : "Hatchling",
+							"subcontent" : "7-14 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/036/970/204/large/miguel-regodon-harkness-pzo2104-young-birne-dragon.jpg?1619111366'>Juvenile</a>",
+							"subcontent" : "14-140 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/036/867/133/large/miguel-regodon-harkness-pzo2104-adult-birne-dragon.jpg?1618851015'>Adult</a>",
+							"subcontent" : "140-1400 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/036/783/258/large/miguel-regodon-harkness-pzo2104-ancient-birne-dragon.jpg?1618593673'>Wyrm</a>",
+							"subcontent" : "1400+ years"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "Turquoise Dragons are especially fearsome, preying on coastal civilizations and seafaring vessels alike.  They greatly prefer to enslave aquatic mortals, but even that is a rare occurence.  Turquoise Dragons are voracious and aggressive, likely due to the large number of comparable threats that the seas contain compared to other environments.  They typically decorate their lair with sunken vessels and the corpses of their mightiest foes.  "
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Appearance",
+							"subcontent" : "Turquoise Dragons have the standard six limbed anatomy typical of their species, although they are more flexible and serpentine in their movements than their brethren.  They are covered in vibrant sea green scales, hence the name.  Their wings are conventional in structure, but have thicker, fleshier membranes than their batlike cousins.  The underside of their wing membrane is a dull ivory color, much like a barnacle.  A series of ivory colored vanes run along the Dragon's spine, culminating in a moderately sized central head crest.  Two vanes extend downwards from the Dragon's cheekbones, while a pair of rearfacing horns swoop back from the base of the skull.  The Turquoise Dragon's tail ends with a series of flexible tendrils akin to a jellyfish, which are only a shade more pale than the vanes.  "
+						},
+						{
+							"subheading" : "Anatomy",
+							"subcontent" : "Turquoise Dragons are anatomically similar to sharks in a number of ways.  Firstly, their scales are much smaller than those of other dragons, being a series of tightly packed sharp dermal denticles rather than large layered plates.  This results in skin that appears smooth, but can tear open unprotected flesh should it rub against it with force.  Their bones are also far more flexible due to high levels of cartilage composition.  This allows the Turquoise Dragon to much more easily shrug of bludgeoning impacts, but makes it harder for them to maintain sustained flight over long distances.  While their wings are powerful, they are best suited for short bursts of flight and aquatic navigation; the flexibility of their skeleton makes endurance flight require far more effort.  Turquoise Dragons also have a series of ever replenishing teeth that move forward as they grow.  While this process is similar to that which sharks undergo, the functionality of the Dragon's jaws are more akin to a large constrictor snake.  The smaller teeth that have yet to move forward serve as one way skewers, preventing anything in the Dragon's mouth from sliding out once it's been latched onto.  <br><br>Lastly, Turquoise Dragons have a set of robust gills, although not in the typical sense.  The ivory colored membranes, underbelly, and tail vanes of the Turquoise Dragon serve to pull oxygen from the surrounding water at an alarming rate.  Turquoise Dragons have remarkable endurance when underwater, which is likely due to their heightened ability to satisfy their cardiovascular system.  While the tail vanes of a Turquoise Dragon do serve as gills in some sense (and the most robust of the Dragon's gills at that), they also serve another purpose; they are visually and functionally similar to a jellyfish's stingers, containing a series of neurotoxins that inflict an immobilizing surge of pain.  While the toxins employed are not among the most powerful when compared to jellyfish, the effect of the tail is sufficient to partially paralyze or numb an area roughly one tenth of the Dragon's size.  The duration of this effect varies based on the Dragon's age, with Hatchlings and Juveniles only inflicting it for a few seconds, while the sting from Wyrms can linger for days.  "
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Food Chain",
+							"subcontent" : "The oceans are filled with predators capable of holding their own and even hunting all but the largest Tuquoise Dragons.  Hatchlings hunt fish while doing their best to avoid predators.  Juvenile Turquoise Dragons are especially aggressive hunters, preferring to hunt small predators and frequently attacking things as large or larger than they are.  They sometimes succeed by using their psychic blast and tail stingers to gain an advantage, but lose just as often.  Turquoise Dragons have no issue with fleeing a fight, becoming even more adept at escaping than they are at hunting.  Once the Dragon is an Adult, it is capable of hunting all but the greatest sharks with ease.  At this age, they clash with similarly sized foes less often, but still actively go after orcas and dire squids when they can.  Adult Dragons are still wary of large lurking threats, such as sperm whales and dire sharks.  By the time the Dragon is a Wyrm, they have very very few natural predators remaining.  Only the greatest aquatic monsters such as the Kraken or Leviathan could make a Turquoise Wyrm flee in a one on one encounter.  "
+						},
+						{
+							"subheading" : "Habitat",
+							"subcontent" : "Turquoise Dragons can be found in temperate waters throughout the world. Their preferred habitats are deep oceans relatively near islands and coasts, but they will settle for territory that is far from land if they must.  They prefer to avoid the most tropical and arctic waters of the world, but can just as easily make their home in such climates if necessary.  Turquoise Dragons love dwelling in and near underwater ruins and abandoned ships, though they will also inhabit caverns if such caves are deep enough for them to swim through.  "
+						},
+						{
+							"subheading" : "Lair",
+							"subcontent" : "When a Turquoise Dragon seeks a lair, it selects a crevice or cave to begin working with.  The Dragon then finds and breaks off select pieces of coral from multiple places and colors to bring back to their lair.  Using their natural psychic abilities, the Dragon can easily influence and control the microorganisms that live within the coral.  Under the Dragon's guidance and control, they reform their coral structures and hew away the stone to create magnificent structures for the lair.  As a result, Tuquoise Dragon lairs end up appearing as opulent palaces formed entirely of coral.  The largest known Turquoise Dragon lair was discovered off the coast of Westcrown, and was originally thought to be an abandoned city for merpeople.  "
+						}
+					]
+				},
+				{
+					"heading" : "Behavior",
+					"sublibrary" : [
+						{
+							"subheading" : "Hunting",
+							"subcontent" : "Turquoise Dragons are solitary creatures, though they do sometimes band together to form larger lairs. A single Turquoise Dragon has no problem defending its territory from all comers, but many smaller creatures have been known to prey upon one another as well. They may also attack humans, elves, dwarves, and other draconic creatures that enter their territories uninvited.  "
+						},
+						{
+							"subheading" : "Defense",
+							"subcontent" : "In combat, Turquoise Dragons are fierce fighters, using their powerful wings to propel themselves into the air and rain down attacks upon their foes. While in flight, they can strike with their tails, which are capable of cutting through most materials and slaying even heavily armored foes.  Their claws can tear apart stone, wood, and flesh alike.  When fighting on land, Turquoise Dragons will often use their long necks to swing around and launch themselves at their opponents.  They use their mental powers to great effect in battle, blasting their enemies psychically before launching a physical assault.  "
+						},
+						{
+							"subheading" : "Personality",
+							"subcontent" : ".  "
+						}
+					]
+				},
+				{
+					"heading" : "Society",
+					"sublibrary" : [
+						{
+							"subheading" : "Individual",
+							"subcontent" : ".  "
+						},
+						{
+							"subheading" : "Intraspeciary",
+							"subcontent" : "Turquoise Dragons are highly intelligent and cunning, able to communicate with other dragons through telepathy. Because of this ability, Turquoise Dragons tend to be solitary creatures, preferring to avoid contact with others whenever possible.  "
+						},
+						{
+							"subheading" : "Intercultural",
+							"subcontent" : "They have no trouble keeping secrets, even when dealing with powerful individuals such as kings or queens.  "
+						}
+					]
+				}
+			]
+		},
+		{
+			"entry_name" : "Alabaster Dragon",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+					"img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/4/41/Gringotts_Dragon_%2828462847187%29.jpg",
+					"img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Gringotts_Dragon_(28462847187).jpg",
+					"img_linked" : "https://cdnb.artstation.com/p/assets/images/images/032/538/925/large/miguel-regodon-harkness-pzo2102-adult-white-dragon-copia.jpg?1606753023",
+					"img_linked_source" : "https://www.artstation.com/artwork/v2yNmO",
+					"species" : "Quasidraconicus Arctica"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+						{
+							"subheading" : "Category",
+							"subcontent" : "Dragon"
+						},
+						{
+							"subheading" : "Type",
+							"subcontent" : "Quasiprimal"
+						}
+					]
+				},
+				{
+					"heading" : "Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Planescape",
+							"subcontent" : "Eifrost"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Lawful Evil"
+						},
+						{
+							"subheading" : "Values",
+							"subcontent" : "Knowledge, Preservation"
+						}
+					]
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Breath Weapon",
+							"subcontent" : "Ice"
+						},
+						{
+							"subheading" : "Horns",
+							"subcontent" : "Rearward Frill"
+						},
+						{
+							"subheading" : "Wing Type",
+							"subcontent" : "Scalloped (Feathered)"
+						},
+						{
+							"subheading" : "Coloration",
+							"subcontent" : "Stark White"
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Habitat",
+							"subcontent" : "Arctic Tundra"
+						},
+						{
+							"subheading" : "Prey",
+							"subcontent" : "Arctic fauna; yetis, polar bears, mammoths, seals"
+						}
+					]
+				},
+				{
+					"heading" : "Life Cycle",
+					"sublibrary" : [
+						{
+							"subheading" : "Gestation",
+							"subcontent" : "7 years"
+						},
+						{
+							"subheading" : "Hatchling",
+							"subcontent" : "7-14 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/032/780/806/large/miguel-regodon-harkness-pzo2102-young-white-dragon.jpg?1607450409'>Juvenile</a>",
+							"subcontent" : "14-140 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/538/925/large/miguel-regodon-harkness-pzo2102-adult-white-dragon-copia.jpg?1606753023'>Adult</a>",
+							"subcontent" : "140-1400 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/023/017/185/large/miguel-regodon-harkness-pzo2102-ancient-white-dragon-final-2.jpg?1577731622'>Wyrm</a>",
+							"subcontent" : "1400+ years"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "Alabaster Dragons are arguably the most sadistic of the dragons.  They enslave mortals on occasion, but never retain them for long.  The brutally cold temperatures inside an Alabaster Dragons lair makes certain of that.  Alabaster Dragons find great joy in watching their subjects slowly freeze to death, adorning their lair with frozen statues and inset displays of their defeated foes and prior minions encased in ice.  "
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Appearance",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Anatomy",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Food Chain",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Habitat",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Lair",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Behavior",
+					"sublibrary" : [
+						{
+							"subheading" : "Hunting",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Defense",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Personality",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Society",
+					"sublibrary" : [
+						{
+							"subheading" : "Individual",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Intraspeciary",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Intercultural",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"entry_name" : "Umbral Dragon",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+					"img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/6/6b/Easy_origami_dragon_for_beginners-_how_to_paint_a_dragon_for_beginners.jpg",
+					"img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Easy_origami_dragon_for_beginners-_how_to_paint_a_dragon_for_beginners.jpg",
+					"img_linked" : "https://cdnb.artstation.com/p/assets/images/images/032/538/917/large/miguel-regodon-harkness-pzo2102-adult-black-dragon-copia.jpg?1606753006",
+					"img_linked_source" : "https://www.artstation.com/artwork/v2yNmO",
+					"species" : "Quasidraconicus Penumbria"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+						{
+							"subheading" : "Category",
+							"subcontent" : "Dragon"
+						},
+						{
+							"subheading" : "Type",
+							"subcontent" : "Quasiprimal"
+						}
+					]
+				},
+				{
+					"heading" : "Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Planescape",
+							"subcontent" : "Shadowfell"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "True Neutral"
+						},
+						{
+							"subheading" : "Values",
+							"subcontent" : "Mysteries"
+						}
+					]
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Breath Weapon",
+							"subcontent" : "Necrotic"
+						},
+						{
+							"subheading" : "Horns",
+							"subcontent" : "Rearward Crown"
+						},
+						{
+							"subheading" : "Wing Type",
+							"subcontent" : "Conventional (Bat-like)"
+						},
+						{
+							"subheading" : "Coloration",
+							"subcontent" : "Shimmering Ebony"
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Habitat",
+							"subcontent" : "Abandoned Urban Environments"
+						},
+						{
+							"subheading" : "Prey",
+							"subcontent" : "Urban fauna; rats, alligators, horses, people"
+						}
+					]
+				},
+				{
+					"heading" : "Life Cycle",
+					"sublibrary" : [
+						{
+							"subheading" : "Gestation",
+							"subcontent" : "7 years"
+						},
+						{
+							"subheading" : "Hatchling",
+							"subcontent" : "7-14 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/780/787/large/miguel-regodon-harkness-pzo2102-young-black-dragon.jpg?1607450383'>Juvenile</a>",
+							"subcontent" : "14-140 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/538/917/large/miguel-regodon-harkness-pzo2102-adult-black-dragon-copia.jpg?1606753006'>Adult</a>",
+							"subcontent" : "140-1400 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/023/017/143/large/miguel-regodon-harkness-pzo2102-ancient-black-dragon-final-2.jpg?1577731609'>Wyrm</a>",
+							"subcontent" : "1400+ years"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "Umbral Dragons are detached and rationale, only showing or acting on emotion in exceptionally rare circumstances.  Their motivations are largely unknown, and they are often found meddling with mortal affairs from the inside.  It is not uncommon for an Umbral Dragon to set two things that are at odds with each other in motion, leaving many confused about their true motivations.  "
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Appearance",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Anatomy",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Food Chain",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Habitat",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Lair",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Behavior",
+					"sublibrary" : [
+						{
+							"subheading" : "Hunting",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Defense",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Personality",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Society",
+					"sublibrary" : [
+						{
+							"subheading" : "Individual",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Intraspeciary",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Intercultural",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"entry_name" : "Stygian Dragon",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+					"img_rehosted" : "https://www.maxpixel.net/static/photo/1x/Couch-Dragon-Composing-Fire-Sofa-Fantasy-5463104.jpg",
+					"img_rehosted_source" : "https://www.maxpixel.net/Couch-Dragon-Composing-Fire-Sofa-Fantasy-5463104",
+					"img_linked" : "https://cdnb.artstation.com/p/assets/images/images/036/867/155/large/miguel-regodon-harkness-pzo2104-adult-magma-dragon.jpg?1618851035",
+					"img_linked_source" : "https://www.artstation.com/artwork/9malJq",
+					"species" : "Quasidraconicus Basaltia"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+						{
+							"subheading" : "Category",
+							"subcontent" : "Dragon"
+						},
+						{
+							"subheading" : "Type",
+							"subcontent" : "Quasiprimal"
+						}
+					]
+				},
+				{
+					"heading" : "Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Planescape",
+							"subcontent" : "Vulken"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Chaotic Evil"
+						},
+						{
+							"subheading" : "Values",
+							"subcontent" : "Agency"
+						}
+					]
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Breath Weapon",
+							"subcontent" : "Acid"
+						},
+						{
+							"subheading" : "Horns",
+							"subcontent" : "Rearward Crown"
+						},
+						{
+							"subheading" : "Wing Type",
+							"subcontent" : "Conventional (Bat-like)"
+						},
+						{
+							"subheading" : "Coloration",
+							"subcontent" : "Deep Obsidian"
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Habitat",
+							"subcontent" : "Volcanic terrain; Mountains and Caverns"
+						},
+						{
+							"subheading" : "Prey",
+							"subcontent" : "Any non aquatic fauna"
+						}
+					]
+				},
+				{
+					"heading" : "Life Cycle",
+					"sublibrary" : [
+						{
+							"subheading" : "Gestation",
+							"subcontent" : "7 years"
+						},
+						{
+							"subheading" : "Hatchling",
+							"subcontent" : "7-14 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/036/970/211/large/miguel-regodon-harkness-pzo2104-young-magma-dragon.jpg?1619111379'>Juvenile</a>",
+							"subcontent" : "14-140 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/036/867/155/large/miguel-regodon-harkness-pzo2104-adult-magma-dragon.jpg?1618851035'>Adult</a>",
+							"subcontent" : "140-1400 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/036/783/273/large/miguel-regodon-harkness-pzo2104-ancient-magma-dragon.jpg?1618593691'>Wyrm</a>",
+							"subcontent" : "1400+ years"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "Stygian Dragons are often mistaken for demons, both in their appearance and behaviors.  They are famously unpredictable, resentful of authority structures that they are not at the top of, and creatively cruel.  Many of them enslave demons and mortals alike, along with any other hapless being that might be unfortunate enough to meet them.  They often adorn their lairs with unique expressions of suffering, often including custom made mechanisms or living testaments.  Stygian Dragons are widely considered the most undesireable, and for good reason.  "
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Appearance",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Anatomy",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Food Chain",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Habitat",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Lair",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Behavior",
+					"sublibrary" : [
+						{
+							"subheading" : "Hunting",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Defense",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Personality",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Society",
+					"sublibrary" : [
+						{
+							"subheading" : "Individual",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Intraspeciary",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Intercultural",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"entry_name" : "Viridian Dragon",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+					"img_rehosted" : "https://www.maxpixel.net/static/photo/1x/Monster-Reptile-Monsters-Dragon-Dragoon-Dragons-3462724.jpg",
+					"img_rehosted_source" : "https://www.maxpixel.net/Monster-Reptile-Monsters-Dragon-Dragoon-Dragons-3462724",
+					"img_linked" : "https://cdna.artstation.com/p/assets/images/images/032/538/922/large/miguel-regodon-harkness-pzo2102-adult-green-dragon-copia.jpg?1606753014",
+					"img_linked_source" : "https://www.artstation.com/artwork/v2yNmO",
+					"species" : "Quasidraconicus Verdaria"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+						{
+							"subheading" : "Category",
+							"subcontent" : "Dragon"
+						},
+						{
+							"subheading" : "Type",
+							"subcontent" : "Quasiprimal"
+						}
+					]
+				},
+				{
+					"heading" : "Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Planescape",
+							"subcontent" : "Feywilds"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "True Neutral"
+						},
+						{
+							"subheading" : "Values",
+							"subcontent" : "Sustainability"
+						}
+					]
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Breath Weapon",
+							"subcontent" : "Poison"
+						},
+						{
+							"subheading" : "Horns",
+							"subcontent" : "Snout Singular"
+						},
+						{
+							"subheading" : "Wing Type",
+							"subcontent" : "Conventional (Bat-like)"
+						},
+						{
+							"subheading" : "Coloration",
+							"subcontent" : "Emerald Green"
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Habitat",
+							"subcontent" : "Swamps and Forests"
+						},
+						{
+							"subheading" : "Prey",
+							"subcontent" : "Forest fauna; deer, cattle, wolves, rabbits"
+						}
+					]
+				},
+				{
+					"heading" : "Life Cycle",
+					"sublibrary" : [
+						{
+							"subheading" : "Gestation",
+							"subcontent" : "7 years"
+						},
+						{
+							"subheading" : "Hatchling",
+							"subcontent" : "7-14 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/780/797/large/miguel-regodon-harkness-pzo2102-young-green-dragon.jpg?1607450400'>Juvenile</a>",
+							"subcontent" : "14-140 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/032/538/922/large/miguel-regodon-harkness-pzo2102-adult-green-dragon-copia.jpg?1606753014'>Adult</a>",
+							"subcontent" : "140-1400 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/023/017/173/large/miguel-regodon-harkness-pzo2102-ancient-green-dragon-final-2.jpg?1577731617'>Wyrm</a>",
+							"subcontent" : "1400+ years"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "Viridian Dragons are revered by those who value nature, and are often incorporated in pagan religions.  Viridian Dragons keep to themselves and guard their chosen territory with relentless cunning and brutality.  They have been commonly known to allow nomads passage through their territory, and even allow hunters to stalk their territory if they are deemed worthy and respectful of the nature around them.  In many ways, Viridian Dragons are literal guardians of nature itself, behaving as ethical stewards of their land while living off of it.  Stories of Viridian Dragons that have saved herds of deer from raging dire crocodiles or feral therianthropes are not uncommon, with the dragon leaving the herd intact afterwards in most cases.  Their fearsome appearance and large menacing horn often provokes conflict with those who are unfamiliar with their nature, especially mercenaries or soldiers who are unknowingly trespassing.  "
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Appearance",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Anatomy",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Food Chain",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Habitat",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Lair",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Behavior",
+					"sublibrary" : [
+						{
+							"subheading" : "Hunting",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Defense",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Personality",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Society",
+					"sublibrary" : [
+						{
+							"subheading" : "Individual",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Intraspeciary",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Intercultural",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"entry_name" : "Cobalt Dragon",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+					"img_rehosted" : "https://openclipart.org/image/800px/319787",
+					"img_rehosted_source" : "https://openclipart.org/detail/319787/blue-tribal-dragon-on-black-background",
+					"img_linked" : "https://cdnb.artstation.com/p/assets/images/images/032/538/919/large/miguel-regodon-harkness-pzo2102-adult-blue-dragon-copia.jpg?1606753010",
+					"img_linked_source" : "https://www.artstation.com/artwork/v2yNmO",
+					"species" : "Allodraconicus Caelaria"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+						{
+							"subheading" : "Category",
+							"subcontent" : "Dragon"
+						},
+						{
+							"subheading" : "Type",
+							"subcontent" : "Metallic"
+						}
+					]
+				},
+				{
+					"heading" : "Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Planescape",
+							"subcontent" : "Caelar"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Neutral Good"
+						},
+						{
+							"subheading" : "Values",
+							"subcontent" : "Knowledge"
+						}
+					]
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Breath Weapon",
+							"subcontent" : "Lightning"
+						},
+						{
+							"subheading" : "Horns",
+							"subcontent" : "Rearward Binary"
+						},
+						{
+							"subheading" : "Wing Type",
+							"subcontent" : "Conventional (Bat-like)"
+						},
+						{
+							"subheading" : "Coloration",
+							"subcontent" : "Steel Blue"
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Habitat",
+							"subcontent" : "Plateaus and Mountaintops"
+						},
+						{
+							"subheading" : "Prey",
+							"subcontent" : "Mountain and Prairie fauna; deer, elk, horses"
+						}
+					]
+				},
+				{
+					"heading" : "Life Cycle",
+					"sublibrary" : [
+						{
+							"subheading" : "Gestation",
+							"subcontent" : "10 years"
+						},
+						{
+							"subheading" : "Hatchling",
+							"subcontent" : "0-20 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/032/780/792/large/miguel-regodon-harkness-pzo2102-young-blue-dragon.jpg?1607450392'>Juvenile</a>",
+							"subcontent" : "20-200 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/538/919/large/miguel-regodon-harkness-pzo2102-adult-blue-dragon-copia.jpg?1606753010'>Adult</a>",
+							"subcontent" : "200-2000 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/023/017/165/large/miguel-regodon-harkness-pzo2102-ancient-blue-dragon-final-2.jpg?1577731613'>Wyrm</a>",
+							"subcontent" : "2000+ years"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "Cobalt Dragons are masters of knowledge and secrets, commonly revered in academic symbolism.  They often lend aid to nations and organizations known to possess large libraries, humbling requesting access in return for their services.  The lairs of Cobalt Dragons are the envy of learned mages across all lands, containing tomes acquired and meticulously maintained across thousands of years in some cases.  Many Cobalt Dragons are knowledgeable mages themselves, but they typically abhor the thought of using magic for violence.  "
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Appearance",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Anatomy",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Food Chain",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Habitat",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Lair",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Behavior",
+					"sublibrary" : [
+						{
+							"subheading" : "Hunting",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Defense",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Personality",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Society",
+					"sublibrary" : [
+						{
+							"subheading" : "Individual",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Intraspeciary",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Intercultural",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"entry_name" : "Gold Dragon",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+					"img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/7/7b/Dragon-Linda_BlackWin24_Jansson.jpg",
+					"img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Dragon-Linda_BlackWin24_Jansson.jpg",
+					"img_linked" : "https://cdnb.artstation.com/p/assets/images/images/032/571/931/large/miguel-regodon-harkness-pzo2102-adult-gold-dragon.jpg?1606837456",
+					"img_linked_source" : "https://www.artstation.com/artwork/xJ2Yo1",
+					"species" : "Allodraconicus Ignaria"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+						{
+							"subheading" : "Category",
+							"subcontent" : "Dragon"
+						},
+						{
+							"subheading" : "Type",
+							"subcontent" : "Metallic"
+						}
+					]
+				},
+				{
+					"heading" : "Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Planescape",
+							"subcontent" : "Ignar"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Neutral Good"
+						},
+						{
+							"subheading" : "Values",
+							"subcontent" : "Power"
+						}
+					]
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Breath Weapon",
+							"subcontent" : "Fire"
+						},
+						{
+							"subheading" : "Horns",
+							"subcontent" : "Rearward Binary"
+						},
+						{
+							"subheading" : "Wing Type",
+							"subcontent" : "Conventional (Bird-like)"
+						},
+						{
+							"subheading" : "Coloration",
+							"subcontent" : "Shimmering Bullion"
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Habitat",
+							"subcontent" : "Scorching Deserts and Savanha Prairies"
+						},
+						{
+							"subheading" : "Prey",
+							"subcontent" : "Savanha and Desert fauna; camels, bison, gazelles, elephants"
+						}
+					]
+				},
+				{
+					"heading" : "Life Cycle",
+					"sublibrary" : [
+						{
+							"subheading" : "Gestation",
+							"subcontent" : "10 years"
+						},
+						{
+							"subheading" : "Hatchling",
+							"subcontent" : "0-20 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/841/275/large/miguel-regodon-harkness-pzo2102-young-gold-dragon.jpg?1607619239'>Juvenile</a>",
+							"subcontent" : "20-200 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/571/931/large/miguel-regodon-harkness-pzo2102-adult-gold-dragon.jpg?1606837456'>Adult</a>",
+							"subcontent" : "200-2000 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/023/017/689/large/miguel-regodon-harkness-pzo2102-ancient-gold-dragon-final-2.jpg?1577732638'>Wyrm</a>",
+							"subcontent" : "2000+ years"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "Gold Dragons are often seen as the Kings of Dragons, and heavily associated with regality and nobility.  Gold Dragons are known for swift and vengeful retribution when an act of cruelty or barbarism is committed in their presence.  This extends across the entirety of their territory, sometimes creating small micro-societies within their territory that are governed only by the local dragon's justice.  "
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Appearance",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Anatomy",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Food Chain",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Habitat",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Lair",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Behavior",
+					"sublibrary" : [
+						{
+							"subheading" : "Hunting",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Defense",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Personality",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Society",
+					"sublibrary" : [
+						{
+							"subheading" : "Individual",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Intraspeciary",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Intercultural",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"entry_name" : "Copper Dragon",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+					"img_rehosted" : "",
+					"img_rehosted_source" : "",
+					"img_linked" : "https://cdnb.artstation.com/p/assets/images/images/032/571/925/large/miguel-regodon-harkness-pzo2102-adult-copper-dragon.jpg?1606837452",
+					"img_linked_source" : "https://www.artstation.com/artwork/xJ2Yo1",
+					"species" : "Allodraconicus Terralia"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+						{
+							"subheading" : "Category",
+							"subcontent" : "Dragon"
+						},
+						{
+							"subheading" : "Type",
+							"subcontent" : "Metallic"
+						}
+					]
+				},
+				{
+					"heading" : "Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Planescape",
+							"subcontent" : "Terral"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Neutral Good"
+						},
+						{
+							"subheading" : "Values",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Breath Weapon",
+							"subcontent" : "Thunder"
+						},
+						{
+							"subheading" : "Horns",
+							"subcontent" : "Rearward Crown"
+						},
+						{
+							"subheading" : "Wing Type",
+							"subcontent" : "Conventional (Bat-like)"
+						},
+						{
+							"subheading" : "Coloration",
+							"subcontent" : "Rich Orange"
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Habitat",
+							"subcontent" : "Deep Underground"
+						},
+						{
+							"subheading" : "Prey",
+							"subcontent" : "Subterranean fauna; worms, spiders, insects"
+						}
+					]
+				},
+				{
+					"heading" : "Life Cycle",
+					"sublibrary" : [
+						{
+							"subheading" : "Gestation",
+							"subcontent" : "10 years"
+						},
+						{
+							"subheading" : "Hatchling",
+							"subcontent" : "0-20 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/841/273/large/miguel-regodon-harkness-pzo2102-young-copper-dragon.jpg?1607619235'>Juvenile</a>",
+							"subcontent" : "20-200 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/571/925/large/miguel-regodon-harkness-pzo2102-adult-copper-dragon.jpg?1606837452'>Adult</a>",
+							"subcontent" : "200-2000 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/023/017/688/large/miguel-regodon-harkness-pzo2102-ancient-copper-dragon-final-2.jpg?1577732636'>Wyrm</a>",
+							"subcontent" : "2000+ years"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "Copper Dragons are the least interested in mortal affairs of the metallic dragons, only intervening when the most catastrophic of events or injustices occur.  They keep to themselves in underground lairs, often collecting historical remnants of nations they have interacted with so as to preserve pieces of their culture.  While bored by the grand machinations of mortals, Copper Dragons are known to possess a deep longing for intimate and challenging conversation.  The mortals who do happen across Copper Dragons, both in their lair and elsewhere, are either dismissed as irrelevant and spoken with as briefly as possible to obtain the desired information, or, obsessively analyzed, questioned, and challenged in a civil battle of words and wits.  "
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Appearance",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Anatomy",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Food Chain",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Habitat",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Lair",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Behavior",
+					"sublibrary" : [
+						{
+							"subheading" : "Hunting",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Defense",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Personality",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Society",
+					"sublibrary" : [
+						{
+							"subheading" : "Individual",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Intraspeciary",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Intercultural",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"entry_name" : "Bronze Dragon",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+					"img_rehosted" : "https://freesvg.org/img/1526744332.png",
+					"img_rehosted_source" : "https://freesvg.org/1526744332",
+					"img_linked" : "https://cdna.artstation.com/p/assets/images/images/032/571/910/large/miguel-regodon-harkness-pzo2102-adult-bronce-dragon.jpg?1606837442",
+					"img_linked_source" : "https://www.artstation.com/artwork/xJ2Yo1",
+					"species" : "Allodraconicus Aquaria"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+						{
+							"subheading" : "Category",
+							"subcontent" : "Dragon"
+						},
+						{
+							"subheading" : "Type",
+							"subcontent" : "Metallic"
+						}
+					]
+				},
+				{
+					"heading" : "Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Planescape",
+							"subcontent" : "Aquar"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Neutral Good"
+						},
+						{
+							"subheading" : "Values",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Breath Weapon",
+							"subcontent" : "Psychic"
+						},
+						{
+							"subheading" : "Horns",
+							"subcontent" : "Rearward Gills"
+						},
+						{
+							"subheading" : "Wing Type",
+							"subcontent" : "Conventional (Bat-like)"
+						},
+						{
+							"subheading" : "Coloration",
+							"subcontent" : "Pale Brown and Sea Green"
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Habitat",
+							"subcontent" : "Deep Oceans"
+						},
+						{
+							"subheading" : "Prey",
+							"subcontent" : "Aquatic and Coastal faunu; fish, whales, bison"
+						}
+					]
+				},
+				{
+					"heading" : "Life Cycle",
+					"sublibrary" : [
+						{
+							"subheading" : "Gestation",
+							"subcontent" : "10 years"
+						},
+						{
+							"subheading" : "Hatchling",
+							"subcontent" : "0-20 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/032/841/270/large/miguel-regodon-harkness-pzo2102-young-bronce-dragon.jpg?1607619231'>Juvenile</a>",
+							"subcontent" : "20-200 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/032/571/910/large/miguel-regodon-harkness-pzo2102-adult-bronce-dragon.jpg?1606837442'>Adult</a>",
+							"subcontent" : "200-2000 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/023/017/687/large/miguel-regodon-harkness-pzo2102-ancient-bronce-dragon-final-2.jpg?1577732634'>Wyrm</a>",
+							"subcontent" : "2000+ years"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "Bronze Dragons are extremely financially inclined and logistically focused.  They find a great deal of joy in tracking cargo shipments and reviewing warehouse stock levels.  Bronze Dragons usually procure treasure from sunken vessels and return it to the rigthful owner with fees for their service removed, allowing them to amass small fortunes that they then use to invest in seafaring cargo shipment companies.  You would be hard pressed to find a mercantile coster with seafaring vessels that doesn't have the financial backing of a Bronze Dragon.  While Bronze Dragons do value civility and order as any Metallic Dragon would, they hold a remarkably potent resentment for pirates.  Gold Dragons are widely considered the most brutal and vengeful of the Metallic Dragons, but accounts of Bronze Dragons razing pirate vessels certainly makes them a competitor for that heading.  "
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Appearance",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Anatomy",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Food Chain",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Habitat",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Lair",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Behavior",
+					"sublibrary" : [
+						{
+							"subheading" : "Hunting",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Defense",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Personality",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Society",
+					"sublibrary" : [
+						{
+							"subheading" : "Individual",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Intraspeciary",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Intercultural",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"entry_name" : "Silver Dragon",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+					"img_rehosted" : "https://cdn.pixabay.com/photo/2020/10/22/08/51/dragon-5675326_960_720.png",
+					"img_rehosted_source" : "https://pixabay.com/illustrations/dragon-statue-sculpture-decorative-5675326/",
+					"img_linked" : "https://cdnb.artstation.com/p/assets/images/images/032/571/937/large/miguel-regodon-harkness-pzo2102-adult-silver-dragon.jpg?1606837462",
+					"img_linked_source" : "https://www.artstation.com/artwork/xJ2Yo1",
+					"species" : "Allodraconicus Artica"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+						{
+							"subheading" : "Category",
+							"subcontent" : "Dragon"
+						},
+						{
+							"subheading" : "Type",
+							"subcontent" : "Metallic"
+						}
+					]
+				},
+				{
+					"heading" : "Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Planescape",
+							"subcontent" : "Eifrost"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Lawful Good"
+						},
+						{
+							"subheading" : "Values",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Breath Weapon",
+							"subcontent" : "Ice"
+						},
+						{
+							"subheading" : "Horns",
+							"subcontent" : "Rearward Binary"
+						},
+						{
+							"subheading" : "Wing Type",
+							"subcontent" : "Scalloped (Feathered)"
+						},
+						{
+							"subheading" : "Coloration",
+							"subcontent" : "Gleaming Chrome"
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Habitat",
+							"subcontent" : "Arctic Tundra"
+						},
+						{
+							"subheading" : "Prey",
+							"subcontent" : "Arctic fauna; yetis, polar bears, mammoths, seals"
+						}
+					]
+				},
+				{
+					"heading" : "Life Cycle",
+					"sublibrary" : [
+						{
+							"subheading" : "Gestation",
+							"subcontent" : "10 years"
+						},
+						{
+							"subheading" : "Hatchling",
+							"subcontent" : "0-20 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/841/279/large/miguel-regodon-harkness-pzo2102-young-silver-dragon.jpg?1607619243'>Juvenile</a>",
+							"subcontent" : "20-200 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/032/571/937/large/miguel-regodon-harkness-pzo2102-adult-silver-dragon.jpg?1606837462'>Adult</a>",
+							"subcontent" : "200-2000 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/023/017/691/large/miguel-regodon-harkness-pzo2102-ancient-silver-dragon-final-2.jpg?1577732640'>Wyrm</a>",
+							"subcontent" : "2000+ years"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "Silver Dragons are the most interested in mortal affairs of all the dragons.  They often seek to offer council to rulers in government and judges in courts of law.  Silver Dragons utterly despise those who corrupt the legal system, having been known to publicly execute government officials who fail to uphold the oath they took.  Their lairs are often adorned with documents and organizational symbols, such as house crests or the statue that presided over a courthouse.  The treasure they value most of all are legislative documents from nations past, often spending hours poring over them and coming up with new ideas to present to the nobles they advise.  "
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Appearance",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Anatomy",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Food Chain",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Habitat",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Lair",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Behavior",
+					"sublibrary" : [
+						{
+							"subheading" : "Hunting",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Defense",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Personality",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Society",
+					"sublibrary" : [
+						{
+							"subheading" : "Individual",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Intraspeciary",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Intercultural",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"entry_name" : "Brass Dragon",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+					"img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/9/92/Dragon_by_Henry_Justice_Ford.jpg",
+					"img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Dragon_by_Henry_Justice_Ford.jpg",
+					"img_linked" : "https://cdna.artstation.com/p/assets/images/images/032/571/920/large/miguel-regodon-harkness-pzo2102-adult-brass-dragon.jpg?1606837447",
+					"img_linked_source" : "https://www.artstation.com/artwork/xJ2Yo1",
+					"species" : "Allodraconicus Basaltia"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+						{
+							"subheading" : "Category",
+							"subcontent" : "Dragon"
+						},
+						{
+							"subheading" : "Type",
+							"subcontent" : "Metallic"
+						}
+					]
+				},
+				{
+					"heading" : "Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Planescape",
+							"subcontent" : "Vulken"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Chaotic Good"
+						},
+						{
+							"subheading" : "Values",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Breath Weapon",
+							"subcontent" : "Acid"
+						},
+						{
+							"subheading" : "Horns",
+							"subcontent" : "Rearward Crown"
+						},
+						{
+							"subheading" : "Wing Type",
+							"subcontent" : "Scalloped (Feathered)"
+						},
+						{
+							"subheading" : "Coloration",
+							"subcontent" : "Faded Amber"
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Habitat",
+							"subcontent" : "Volcanic terrain; Mountains and Caverns"
+						},
+						{
+							"subheading" : "Prey",
+							"subcontent" : "Any non aquatic fauna"
+						}
+					]
+				},
+				{
+					"heading" : "Life Cycle",
+					"sublibrary" : [
+						{
+							"subheading" : "Gestation",
+							"subcontent" : "10 years"
+						},
+						{
+							"subheading" : "Hatchling",
+							"subcontent" : "0-20 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/032/841/268/large/miguel-regodon-harkness-pzo2102-young-brass-dragon.jpg?1607619228'>Juvenile</a>",
+							"subcontent" : "20-200 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/032/571/920/large/miguel-regodon-harkness-pzo2102-adult-brass-dragon.jpg?1606837447'>Adult</a>",
+							"subcontent" : "200-2000 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/023/017/684/large/miguel-regodon-harkness-pzo2102-ancient-brass-dragon-final-2.jpg?1577732632'>Wyrm</a>",
+							"subcontent" : "2000+ years"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "Brass Dragons are the most eccentric of the Metallic Dragons by a considerable margin.  They often insert themselves in mortal societies with a series of rotating interests, the most stable of which being art.  Brass Dragons fill their lairs with the most unique and potent works of art they can find, often treasuring their newest pieces most dearly.  They constantly redecorate and cycle through their collection to adorn their lair in different combinations from year to year, sometimes forgetting about pieces they own that are buried in the back of their storage chambers.  There have been relics from cultures thousands of years old found in Brass Dragon hoards, and they are just as prone to give it away as they are to defend it with their lives.  As unreliable as Brass Dragons may be, any city fortunate enough to find a Brass Dragon setting up permanent residence within its walls is sure to find itself much wealthier as it becomes a central hub of culture and expression.  "
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Appearance",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Anatomy",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Food Chain",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Habitat",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Lair",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Behavior",
+					"sublibrary" : [
+						{
+							"subheading" : "Hunting",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Defense",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Personality",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Society",
+					"sublibrary" : [
+						{
+							"subheading" : "Individual",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Intraspeciary",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Intercultural",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"entry_name" : "Dracofiend",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+					"img_rehosted" : "",
+					"img_rehosted_source" : "",
+					"img_linked" : "https://cdnb.artstation.com/p/assets/images/images/038/863/747/large/miguel-regodon-harkness-imperial-dragon-sovereign-adult.jpg?1624292613",
+					"img_linked_source" : "https://www.artstation.com/artwork/8e3lAm",
+					"species" : "Deiadraconicus Basaltia"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+						{
+							"subheading" : "Category",
+							"subcontent" : "Dragon"
+						},
+						{
+							"subheading" : "Type",
+							"subcontent" : "Deodragon"
+						}
+					]
+				},
+				{
+					"heading" : "Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Planescape",
+							"subcontent" : "Vulken"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Chaotic Neutral"
+						},
+						{
+							"subheading" : "Values",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Breath Weapon",
+							"subcontent" : "Acid/Fire"
+						},
+						{
+							"subheading" : "Horns",
+							"subcontent" : "Rearward Crown"
+						},
+						{
+							"subheading" : "Wing Type",
+							"subcontent" : "Absent"
+						},
+						{
+							"subheading" : "Coloration",
+							"subcontent" : "Brilliant Bullion"
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Habitat",
+							"subcontent" : "Volcanic terrain; Mountains and Caverns"
+						},
+						{
+							"subheading" : "Prey",
+							"subcontent" : "Any non aquatic fauna"
+						}
+					]
+				},
+				{
+					"heading" : "Life Cycle",
+					"sublibrary" : [
+						{
+							"subheading" : "Gestation",
+							"subcontent" : "1 years"
+						},
+						{
+							"subheading" : "Hatchling",
+							"subcontent" : "0-1 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/038/965/627/large/miguel-regodon-harkness-imperial-dragon-sovereign-young.jpg?1624555741'>Juvenile</a>",
+							"subcontent" : "1-10 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/038/863/747/large/miguel-regodon-harkness-imperial-dragon-sovereign-adult.jpg?1624292613'>Adult</a>",
+							"subcontent" : "10-100 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/038/752/608/large/miguel-regodon-harkness-imperial-dragon-sovereign-ancient.jpg?1623952542'>Wyrm</a>",
+							"subcontent" : "100+ years"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "The Dracofiend is the embodiment of Chaos, and supervises the proceedings that occur within Vulken.  The Dracofiend answers directly to Gondarin, with each new entity that takes up the mantle studying a form of art prodigiously.  Some of the most priceless and works in existence were created by the Dracofiend of their time.  "
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Appearance",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Anatomy",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Food Chain",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Habitat",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Lair",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Behavior",
+					"sublibrary" : [
+						{
+							"subheading" : "Hunting",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Defense",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Personality",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Society",
+					"sublibrary" : [
+						{
+							"subheading" : "Individual",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Intraspeciary",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Intercultural",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"entry_name" : "Dracowisp",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+					"img_rehosted" : "",
+					"img_rehosted_source" : "",
+					"img_linked" : "https://cdnb.artstation.com/p/assets/images/images/038/863/741/large/miguel-regodon-harkness-imperial-dragon-sky-adult.jpg?1624292607",
+					"img_linked_source" : "https://www.artstation.com/artwork/8e3lAm",
+					"species" : "Deiadraconicus Arctica"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+						{
+							"subheading" : "Category",
+							"subcontent" : "Dragon"
+						},
+						{
+							"subheading" : "Type",
+							"subcontent" : "Deodragon"
+						}
+					]
+				},
+				{
+					"heading" : "Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Planescape",
+							"subcontent" : "Eifrost"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Lawful Neutral"
+						},
+						{
+							"subheading" : "Values",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Breath Weapon",
+							"subcontent" : "Ice/Psychic"
+						},
+						{
+							"subheading" : "Horns",
+							"subcontent" : "Upward Branching"
+						},
+						{
+							"subheading" : "Wing Type",
+							"subcontent" : "Absent"
+						},
+						{
+							"subheading" : "Coloration",
+							"subcontent" : "Translucent Indigo"
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Habitat",
+							"subcontent" : "Arctic Tundra"
+						},
+						{
+							"subheading" : "Prey",
+							"subcontent" : "Arctic fauna; yetis, polar bears, mammoths, seals"
+						}
+					]
+				},
+				{
+					"heading" : "Life Cycle",
+					"sublibrary" : [
+						{
+							"subheading" : "Gestation",
+							"subcontent" : "1 years"
+						},
+						{
+							"subheading" : "Hatchling",
+							"subcontent" : "0-1 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/038/965/625/large/miguel-regodon-harkness-imperial-dragon-sky-young.jpg?1624555737'>Juvenile</a>",
+							"subcontent" : "1-10 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/038/863/741/large/miguel-regodon-harkness-imperial-dragon-sky-adult.jpg?1624292607'>Adult</a>",
+							"subcontent" : "10-100 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/038/752/605/large/miguel-regodon-harkness-imperial-dragon-sky-ancient.jpg?1623952538'>Wyrm</a>",
+							"subcontent" : "100+ years"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "<i><b>*under development*</b></i>"
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Appearance",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Anatomy",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Food Chain",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Habitat",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Lair",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Behavior",
+					"sublibrary" : [
+						{
+							"subheading" : "Hunting",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Defense",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Personality",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Society",
+					"sublibrary" : [
+						{
+							"subheading" : "Individual",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Intraspeciary",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Intercultural",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"entry_name" : "Dracoshade",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+					"img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/6/6c/Qing_Dynasty_Dragon.png",
+					"img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Qing_Dynasty_Dragon.png",
+					"img_linked" : "https://cdna.artstation.com/p/assets/images/images/038/863/752/large/miguel-regodon-harkness-imperial-dragon-underworld-adult.jpg?1624292617",
+					"img_linked_source" : "https://www.artstation.com/artwork/8e3lAm",
+					"species" : "Deiadraconicus Penumbria"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+						{
+							"subheading" : "Category",
+							"subcontent" : "Dragon"
+						},
+						{
+							"subheading" : "Type",
+							"subcontent" : "Deodragon"
+						}
+					]
+				},
+				{
+					"heading" : "Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Planescape",
+							"subcontent" : "Shadowfell"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Neutral Evil"
+						},
+						{
+							"subheading" : "Values",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Breath Weapon",
+							"subcontent" : "Necrotic/Lightning"
+						},
+						{
+							"subheading" : "Horns",
+							"subcontent" : "Rearward Binary"
+						},
+						{
+							"subheading" : "Wing Type",
+							"subcontent" : "Absent"
+						},
+						{
+							"subheading" : "Coloration",
+							"subcontent" : "Prismatic Magenta"
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Habitat",
+							"subcontent" : "Abandoned Urban Environments"
+						},
+						{
+							"subheading" : "Prey",
+							"subcontent" : "Urban fauna; rats, alligators, horses, people"
+						}
+					]
+				},
+				{
+					"heading" : "Life Cycle",
+					"sublibrary" : [
+						{
+							"subheading" : "Gestation",
+							"subcontent" : "1 years"
+						},
+						{
+							"subheading" : "Hatchling",
+							"subcontent" : "0-1 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/038/965/629/large/miguel-regodon-harkness-imperial-dragon-underworld-young.jpg?1624555745'>Juvenile</a>",
+							"subcontent" : "1-10 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/038/863/752/large/miguel-regodon-harkness-imperial-dragon-underworld-adult.jpg?1624292617'>Adult</a>",
+							"subcontent" : "10-100 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/038/752/612/large/miguel-regodon-harkness-imperial-dragon-underworld-ancient.jpg?1623952546'>Wyrm</a>",
+							"subcontent" : "100+ years"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "<i><b>*under development*</b></i>"
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Appearance",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Anatomy",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Food Chain",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Habitat",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Lair",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Behavior",
+					"sublibrary" : [
+						{
+							"subheading" : "Hunting",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Defense",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Personality",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Society",
+					"sublibrary" : [
+						{
+							"subheading" : "Individual",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Intraspeciary",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Intercultural",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"entry_name" : "Dracofey",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+					"img_rehosted" : "",
+					"img_rehosted_source" : "",
+					"img_linked" : "https://cdnb.artstation.com/p/assets/images/images/038/863/731/large/miguel-regodon-harkness-imperial-dragon-forest-adult.jpg?1624292598",
+					"img_linked_source" : "https://www.artstation.com/artwork/8e3lAm",
+					"species" : "Deiadraconicus Verdaria"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+						{
+							"subheading" : "Category",
+							"subcontent" : "Dragon"
+						},
+						{
+							"subheading" : "Type",
+							"subcontent" : "Deodragon"
+						}
+					]
+				},
+				{
+					"heading" : "Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Planescape",
+							"subcontent" : "Feywilds"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Neutral Good"
+						},
+						{
+							"subheading" : "Values",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Breath Weapon",
+							"subcontent" : "Poison/Thunder"
+						},
+						{
+							"subheading" : "Horns",
+							"subcontent" : "Upward Branching"
+						},
+						{
+							"subheading" : "Wing Type",
+							"subcontent" : "Absent"
+						},
+						{
+							"subheading" : "Coloration",
+							"subcontent" : "Forest Jade"
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Habitat",
+							"subcontent" : "Swamps and Forests"
+						},
+						{
+							"subheading" : "Prey",
+							"subcontent" : "Forest fauna; deer, cattle, wolves, rabbits"
+						}
+					]
+				},
+				{
+					"heading" : "Life Cycle",
+					"sublibrary" : [
+						{
+							"subheading" : "Gestation",
+							"subcontent" : "1 years"
+						},
+						{
+							"subheading" : "Hatchling",
+							"subcontent" : "0-1 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/038/965/620/large/miguel-regodon-harkness-imperial-dragon-forest-young.jpg?1624555729'>Juvenile</a>",
+							"subcontent" : "1-10 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/038/863/731/large/miguel-regodon-harkness-imperial-dragon-forest-adult.jpg?1624292598'>Adult</a>",
+							"subcontent" : "10-100 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/038/752/598/large/miguel-regodon-harkness-imperial-dragon-forest-ancient.jpg?1623952529'>Wyrm</a>",
+							"subcontent" : "100+ years"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "<i><b>*under development*</b></i>"
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Appearance",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Anatomy",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Food Chain",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Habitat",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Lair",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Behavior",
+					"sublibrary" : [
+						{
+							"subheading" : "Hunting",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Defense",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Personality",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Society",
+					"sublibrary" : [
+						{
+							"subheading" : "Individual",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Intraspeciary",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Intercultural",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"entry_name" : "Sea Serpent",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+					"img_rehosted" : "https://upload.wikimedia.org/wikipedia/commons/2/2d/Sea_Serpent_after_Owen_1741.png",
+					"img_rehosted_source" : "https://commons.wikimedia.org/wiki/File:Sea_Serpent_after_Owen_1741.png",
+					"img_linked" : "https://i.imgur.com/DqynsBd.jpeg",
+					"img_linked_source" : "https://imgur.com/gallery/0kCSMwl",
+					"species" : "Drakkenia Anguilliformes"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+						{
+							"subheading" : "Category",
+							"subcontent" : "Dragon"
+						},
+						{
+							"subheading" : "Type",
+							"subcontent" : "Draconid"
+						}
+					]
+				},
+				{
+					"heading" : "Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Planescape",
+							"subcontent" : "Material"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Chaotic Evil"
+						},
+						{
+							"subheading" : "Values",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Breath Weapon",
+							"subcontent" : "Absent"
+						},
+						{
+							"subheading" : "Horns",
+							"subcontent" : "Rearward Crown"
+						},
+						{
+							"subheading" : "Wing Type",
+							"subcontent" : "Absent"
+						},
+						{
+							"subheading" : "Coloration",
+							"subcontent" : "Deep Indigo"
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Habitat",
+							"subcontent" : "Deep Oceans"
+						},
+						{
+							"subheading" : "Prey",
+							"subcontent" : "Aquatic and Coastal faunu; fish, whales, bison"
+						}
+					]
+				},
+				{
+					"heading" : "Life Cycle",
+					"sublibrary" : [
+						{
+							"subheading" : "Gestation",
+							"subcontent" : "1 years"
+						},
+						{
+							"subheading" : "Hatchling",
+							"subcontent" : "0-1 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/038/965/623/large/miguel-regodon-harkness-imperial-dragon-sea-young.jpg?1624555733'>Juvenile</a>",
+							"subcontent" : "1-10 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/038/863/737/large/miguel-regodon-harkness-imperial-dragon-sea-adult.jpg?1624292603'>Adult</a>",
+							"subcontent" : "10-100 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/038/752/603/large/miguel-regodon-harkness-imperial-dragon-sea-ancient.jpg?1623952534'>Wyrm</a>",
+							"subcontent" : "100+ years"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "<i><b>*under development*</b></i>"
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Appearance",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Anatomy",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Food Chain",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Habitat",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Lair",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Behavior",
+					"sublibrary" : [
+						{
+							"subheading" : "Hunting",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Defense",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Personality",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Society",
+					"sublibrary" : [
+						{
+							"subheading" : "Individual",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Intraspeciary",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Intercultural",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"entry_name" : "Drakken",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+					"img_rehosted" : "",
+					"img_rehosted_source" : "",
+					"img_linked" : "https://cdna.artstation.com/p/assets/images/images/036/867/158/large/miguel-regodon-harkness-pzo902104-adult-umbra-dragon.jpg?1618851039",
+					"img_linked_source" : "https://www.artstation.com/artwork/9malJq",
+					"species" : "Drakkenia Archaica"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+						{
+							"subheading" : "Category",
+							"subcontent" : "Dragon"
+						},
+						{
+							"subheading" : "Type",
+							"subcontent" : "Draconid"
+						}
+					]
+				},
+				{
+					"heading" : "Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Planescape",
+							"subcontent" : "Material"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Chaotic Evil"
+						},
+						{
+							"subheading" : "Values",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Breath Weapon",
+							"subcontent" : "Absent"
+						},
+						{
+							"subheading" : "Horns",
+							"subcontent" : "Rearward Binary"
+						},
+						{
+							"subheading" : "Wing Type",
+							"subcontent" : "Conventional (Bat-like)"
+						},
+						{
+							"subheading" : "Coloration",
+							"subcontent" : "Matte Ebony"
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Habitat",
+							"subcontent" : "Abandoned Urban Environments"
+						},
+						{
+							"subheading" : "Prey",
+							"subcontent" : "Urban fauna; rats, alligators, horses, people"
+						}
+					]
+				},
+				{
+					"heading" : "Life Cycle",
+					"sublibrary" : [
+						{
+							"subheading" : "Gestation",
+							"subcontent" : "1 years"
+						},
+						{
+							"subheading" : "Hatchling",
+							"subcontent" : "0-1 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdnb.artstation.com/p/assets/images/images/036/970/215/large/miguel-regodon-harkness-pzo902104-young-umbra-dragon.jpg?1619111383'>Juvenile</a>",
+							"subcontent" : "1-10 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/036/867/158/large/miguel-regodon-harkness-pzo902104-adult-umbra-dragon.jpg?1618851039'>Adult</a>",
+							"subcontent" : "10-100 years"
+						},
+						{
+							"subheading" : "<a target='blank' href='https://cdna.artstation.com/p/assets/images/images/036/783/276/large/miguel-regodon-harkness-pzo902104-ancient-umbra-dragon.jpg?1618593695'>Wyrm</a>",
+							"subcontent" : "100+ years"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "Drakkens are little more than six limbed wyverns, but seem to have retained a great deal of cunning that their draconid cousins do not.  "
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Appearance",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Anatomy",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Food Chain",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Habitat",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Lair",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Behavior",
+					"sublibrary" : [
+						{
+							"subheading" : "Hunting",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Defense",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Personality",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Society",
+					"sublibrary" : [
+						{
+							"subheading" : "Individual",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Intraspeciary",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Intercultural",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"entry_name" : "Wyvern",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+					"img_rehosted" : "",
+					"img_rehosted_source" : "",
+					"img_linked" : "",
+					"img_linked_source" : "",
+					"species" : "Drakkenia Chiroptera"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+						{
+							"subheading" : "Category",
+							"subcontent" : "Dragon"
+						},
+						{
+							"subheading" : "Type",
+							"subcontent" : "Draconid"
+						}
+					]
+				},
+				{
+					"heading" : "Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Planescape",
+							"subcontent" : "Material"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Neutral"
+						},
+						{
+							"subheading" : "Values",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Breath Weapon",
+							"subcontent" : "Absent"
+						},
+						{
+							"subheading" : "Horns",
+							"subcontent" : "Rearward Binary"
+						},
+						{
+							"subheading" : "Wing Type",
+							"subcontent" : "Conventional (Bat-like)"
+						},
+						{
+							"subheading" : "Coloration",
+							"subcontent" : "Dull Brown"
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Habitat",
+							"subcontent" : "Plateaus and Valleys"
+						},
+						{
+							"subheading" : "Prey",
+							"subcontent" : "Prairie fauna; antelope, rabbit"
+						}
+					]
+				},
+				{
+					"heading" : "Life Cycle",
+					"sublibrary" : [
+						{
+							"subheading" : "Gestation",
+							"subcontent" : "1 years"
+						},
+						{
+							"subheading" : "Hatchling",
+							"subcontent" : "0-1 years"
+						},
+						{
+							"subheading" : "<a target='blank' href=''>Juvenile</a>",
+							"subcontent" : "1-10 years"
+						},
+						{
+							"subheading" : "<a target='blank' href=''>Adult</a>",
+							"subcontent" : "10-100 years"
+						},
+						{
+							"subheading" : "<a target='blank' href=''>Wyrm</a>",
+							"subcontent" : "100+ years"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "<i><b>*under development*</b></i>"
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Appearance",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Anatomy",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Food Chain",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Habitat",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Lair",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Behavior",
+					"sublibrary" : [
+						{
+							"subheading" : "Hunting",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Defense",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Personality",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Society",
+					"sublibrary" : [
+						{
+							"subheading" : "Individual",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Intraspeciary",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Intercultural",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"entry_name" : "Drake",
+			"title_library" : [
+			],
+			"attribute_library" : [
+				{
+					"img_rehosted" : "",
+					"img_rehosted_source" : "",
+					"img_linked" : "",
+					"img_linked_source" : "",
+					"species" : "Drakkenia Lacertilia"
+				},
+				{
+					"heading" : "General Information",
+					"sublibrary" : [
+						{
+							"subheading" : "Category",
+							"subcontent" : "Dragon"
+						},
+						{
+							"subheading" : "Type",
+							"subcontent" : "Draconid"
+						}
+					]
+				},
+				{
+					"heading" : "Associations",
+					"sublibrary" : [
+						{
+							"subheading" : "Planescape",
+							"subcontent" : "Material"
+						},
+						{
+							"subheading" : "Alignment",
+							"subcontent" : "Neutral"
+						},
+						{
+							"subheading" : "Values",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Breath Weapon",
+							"subcontent" : "Absent"
+						},
+						{
+							"subheading" : "Horns",
+							"subcontent" : "Rearward Binary"
+						},
+						{
+							"subheading" : "Wing Type",
+							"subcontent" : "Absent"
+						},
+						{
+							"subheading" : "Coloration",
+							"subcontent" : "Varied"
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Habitat",
+							"subcontent" : "Varied"
+						},
+						{
+							"subheading" : "Prey",
+							"subcontent" : "Varied"
+						}
+					]
+				},
+				{
+					"heading" : "Life Cycle",
+					"sublibrary" : [
+						{
+							"subheading" : "Gestation",
+							"subcontent" : "1 years"
+						},
+						{
+							"subheading" : "Hatchling",
+							"subcontent" : "0-1 years"
+						},
+						{
+							"subheading" : "<a target='blank' href=''>Juvenile</a>",
+							"subcontent" : "1-10 years"
+						},
+						{
+							"subheading" : "<a target='blank' href=''>Adult</a>",
+							"subcontent" : "10-100 years"
+						},
+						{
+							"subheading" : "<a target='blank' href=''>Wyrm</a>",
+							"subcontent" : "100+ years"
+						}
+					]
+				}
+			],
+			"description_library" : [
+				{
+					"overview" : "<i><b>*under development*</b></i>"
+				},
+				{
+					"heading" : "Physiology",
+					"sublibrary" : [
+						{
+							"subheading" : "Appearance",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Anatomy",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Ecology",
+					"sublibrary" : [
+						{
+							"subheading" : "Food Chain",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Habitat",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Lair",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Behavior",
+					"sublibrary" : [
+						{
+							"subheading" : "Hunting",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Defense",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Personality",
+							"subcontent" : ""
+						}
+					]
+				},
+				{
+					"heading" : "Society",
+					"sublibrary" : [
+						{
+							"subheading" : "Individual",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Intraspeciary",
+							"subcontent" : ""
+						},
+						{
+							"subheading" : "Intercultural",
+							"subcontent" : ""
+						}
+					]
+				}
+			]
+		}
+	]
+}
