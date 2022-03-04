@@ -240,7 +240,7 @@ body, #page-title-table tr th, #page-title-table th, #page-title-table tr td, #p
 
 /* The off white chunk of the page that holds the entry page nav table in a fixed position, along with a placeholder for other html elements to float aroundand the table within */
 #page-navlist-section, #page-navlist-table {
-  width: 10vw;
+  width: auto;
   min-width: 135px; 
 }
 #page-navlist-section {
