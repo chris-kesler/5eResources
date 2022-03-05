@@ -34,6 +34,35 @@
 					]
 				},
 				{
+					"heading" : "Demographics",
+					"sublibrary" : [
+						{
+							"subheading" : "Greater Majorities (+25%)",
+							"subcontent" : "Humans, Dwarves"
+						},
+						{
+							"subheading" : "Nominal Majorities (15% - 25%)",
+							"subcontent" : "Halflings, Gnomes, Half-Dwarves"
+						},
+						{
+							"subheading" : "Lesser Majorities (10% - 15%)",
+							"subcontent" : "Elves"
+						},
+						{
+							"subheading" : "Greater Minorities (8% - 10%)",
+							"subcontent" : "Tieflings"
+						},
+						{
+							"subheading" : "Nominal Minorities (2% - 8%)",
+							"subcontent" : "Hobgoblins, Orcs, Genasi, Goliaths, Vedalken"
+						},
+						{
+							"subheading" : "Lesser Minorities (- 2%)",
+							"subcontent" : "Lizardfolk, Dragonborn, Kobolds, Aarakocra, Owlin, Leonin, Tabaxi, Tortles, Loxodons, Minotaurs, Centaurs, Triton"
+						}
+					]
+				},
+				{
 					"heading" : "Government",
 					"sublibrary" : [
 						{
@@ -47,6 +76,35 @@
 						{
 							"subheading" : "Political System",
 							"subcontent" : "Feudalism"
+						}
+					]
+				},
+				{
+					"heading" : "Factions",
+					"sublibrary" : [
+						{
+							"subheading" : "Political Contingents",
+							"subcontent" : "Saberhearts of Lassadria, <br>The Elves' Reprisal"
+						},
+						{
+							"subheading" : "Religious Orders",
+							"subcontent" : "The Green Wardens"
+						},
+						{
+							"subheading" : "Occult Followings",
+							"subcontent" : "The Acclaimers"
+						},
+						{
+							"subheading" : "Commercial Guilds",
+							"subcontent" : "Hammerdeep's Champions, <br>Artisans' Guild"
+						},
+						{
+							"subheading" : "Criminal Guilds",
+							"subcontent" : "The Grey Flock"
+						},
+						{
+							"subheading" : "Terrorist Organizations",
+							"subcontent" : "The Underclan"
 						}
 					]
 				},
@@ -145,6 +203,44 @@
 						{
 							"subheading" : "Lesser Minorities (- 2%)",
 							"subcontent" : "The rarest of the races in Hammerdeep are more bestial, including Lizardfolk, Dragonborn, Kobolds, Aarakocra, Owlin, Leonin, Tabaxi, Tortles, Loxodons, Minotaurs, Centaurs, and Triton.  The people that comprise this demographic are an incredibly small portion of the population, making trends among their behavior difficult to observe.  While none of them are outright mistreated due to their species (with the occassional exception), they often face a massive cultural barrier since most of them are not native to Hammerdeep.  The people of Hammerdeep are cautious of outsiders, and the smallest of the minority groups are often newly immigrated to the city.  As a result, these microminorities are faced with proving their own trustworthiness in many cases.  While not terribly difficult to do, it does lead to frustration with the abstract system at large in some individuals that can lead to a life of crime.  "
+						}
+					]
+				},
+				{
+					"heading" : "Factions",
+					"content" : "There are many factions in Hammerdeep, although some are less than officially recognized by Hammerdeep's leadership.  ",
+					"sublibrary" : [
+						{
+							"subheading" : "Artisans' Guild",
+							"subcontent" : "The Artisans' Guild is comprised of morking class tradesmiths who organize their efforts to help prevent external influence on the market, not unlike a union of self employed workers.  "
+						},
+						{
+							"subheading" : "Hammerdeep's Champions",
+							"subcontent" : "Hammerdeep's Champions are proven adventurers and heroes that the leaders of Hammerdeep rely on in times of crisis.  They are gathered and summoned only when facing a threat the conventional guards or military cannot handle.  "
+						},
+						{
+							"subheading" : "Saberhearts of Lassadria",
+							"subcontent" : "The Saberhearts of Lassadria are an order of knights and mages dedicated to preserving law and order civil societies.  They focus their efforts on minimizing corrupt legislative clutter and distributing power among representatives, only resorting to tyrannical force in the most extreme situations.  "
+						},
+						{
+							"subheading" : "The Acclaimers",
+							"subcontent" : "The Acclaimers are mysterious group of zealots that have a knack for locating and acquiring pagan texts and artifacts.  Most of their operations are incredibly discrete, leaving little known about them other than their distinctive black and gold hoods.  "
+						},
+						{
+							"subheading" : "The Elves' Reprisal",
+							"subcontent" : "The Elves' Reprisal is a political contingent focused on altering the cultural and legislative landscape in Hammerdeep so that long lived races are less displaced in the market.  Their message has mostly fallen on deaf ears, leading to some violence in the past, but nowhere near enough to categorize this faction as a terrorsit organization.  "
+						},
+						{
+							"subheading" : "The Green Wardens",
+							"subcontent" : "The Green Wardens are a group of religious outlanders and healres dedicated to preserving nature and life.  They are highly passive in their attempts to convert people, choosing to let actions rather than sermons deliver their message.  "
+						},
+						{
+							"subheading" : "The Grey Flock",
+							"subcontent" : "The Grey Flock is a highly efficient criminal guild, with very few illegal activities happening in Hammerdeep without their approval.  Their leader, the Grey Owl, is rumored to be among the most formiddable people in the city.  "
+						},
+						{
+							"subheading" : "The Underclan",
+							"subcontent" : "The Underclan is a gang of therianthropes embracing their darkest nature under the guidance of their leader, 'The Redeemer'.  They keep to the sewers primarily, but have been increasing their activities as of late.  It won't be long before the guard cannot afford to ignore them.  "
 						}
 					]
 				}
