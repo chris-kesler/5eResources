@@ -174,7 +174,17 @@
 			],
 			"description_library" : [
 				{
-					"overview" : "The City of Hammerdeep is one of the largest and wealthiest in Myrmidos.  It stands out as a city rife with artistic expression, metallurgic innovation, factional tension, and seemingly endless opportunities.  "
+					"overview" : "The City of Hammerdeep (مدينة هامرديب) is one of the largest and wealthiest in Myrmidos.  It stands out as a city rife with artistic expression, metallurgic innovation, factional tension, and seemingly endless opportunities.  "
+				},
+				{
+					"heading" : "Historical Publications",
+					"content" : "Hammerdeep has a rich and complex history, both in the distant past and immediate present.  The Hindsight Chronicle (دی ہندسائٹ کرانیکل) is a famous newspaper in Hammerdeep, owned and operated by an Elven woman named Nuovis Magcyne (نوویس میگسین).  She has been working as a reporter and journalist in Hammerdeep for over four hundred years, and many people consider her the default source for information on modern events.  Her paper, the Hindsight Chronicle (translates to The Chronicle of Recall) is created solely by her, but is duplicated and distributed via magical means by her employees.  Several relevant publications are listed below to detail an overview of Hammerdeep's history.  ",
+					"sublibrary" : [
+						{
+							"subheading" : "Troll Attacks - Kythorn 3rd, 1329",
+							"subcontent" : "<i>The number of troll sightings has been steadily increasing over the past decade, leading some including myself to wonder what might be causing such a trend in the Hutam, the Ruins of the Lost Dwarves (حطام الأقزام المفقودين) below our city.  Are the trolls growing in numbers?  Have they run out of prey to hunt down below?  Are they being driven out by a larger, more dangerous threat?  Durnan, the well known and feared barkeep at the Yawning Portal had this to say about last night's troll attack, <br><br>'It's a pain, especially since they like turning up right around dusk when every damn body is here trying to have a drink.  They always tear the place up a bit and some of the patrons get hurt every now and then.  Maybe it's bad for business, maybe that kind of excitement is what draws people here.  Either way, I'm just glad that two of my customers pitched in and helped kill the blasted thing.  Never met a troll I can't handle, but I'm getting older and it's nice to have some backup.'  When asked about what might be causing the increase in sightings, Durnan had this to say 'Hadn't noticed honestly.  Trolls are dumb brutes, they don't strategize.  If they are getting bolder, it's probably cause there are more of them than there used to be.  Maybe it's time to get a good posse together to drive the last of em out of Hammerdeep, pitchforks and all.'  <br><br>While driving the trolls out for good might seem a tempting proposition, I'm typically wary of enraged crowds.  It is far too easy to let things get out of hand when one is possessed by the fury of the mob.  Regardless of what might be causing these troll attacks, patrons at the Yawning Portal can rest assured that Durnan the barkeep will be able to slay any monsters that enter his tavern; just be sure to sit by a far wall or corner.  <br><br>May you greet the next dawn with a smile,<br>-Nuovis Magcyne (نوویس میگسین)</i>"
+						}
+					]
 				},
 				{
 					"heading" : "Demographics",
