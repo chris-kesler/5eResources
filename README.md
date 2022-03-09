@@ -1,6 +1,5 @@
 <html>
-<h2><a target='blank' href="https://github.com/christian-kesler/knowones-website-of-everything">KnowOne's Website Of Everything on GitHub</a></h2>
-<hr>
+<h2 id="page-title-path"><a href='/eportfolio.html'>Christian Kesler's B.Sc. of Computer Science Capstone ePortfolio</a> > <a target='blank' href="https://github.com/christian-kesler/knowones-website-of-everything">KnowOne's Website Of Everything (GitHub)</a></h2>
 <p>
 The artifact I have chosen to showcase my Database capabilities is KnowOne'sWebsiteOfEverything.com, which is a website containing styled directories and pages that populate data based on centralized JSON files with sortable and filterable table entries.  This artifact serves to showcase my competency with the JavaScript programming language, Microsoft Visual Studio Code, the HTML and CSS styling markup languages, web development principles, and observation of programming best practices such as naming conventions and comment etiquette.  While JavaScript is an arguably easy language to learn and use, the data centralization techniques used are far less elementary.  The ability to centralize data in a concise manner so as not to repeat yourself when making changes to content is a skill I deem notably worthy of showcase in a portfolio.  While this assignment is focused on the database aspect of this project, I am also including it in my portfolio as an example of my web development skills.  I intend to pursue a career in software engineering and web development, and this project showcases a combination of skills relevant to both that makes it the centerpiece of my portfolio.  The power of having a live website that can be linked to a prospective employer without needing to run anything from GitHub is likely of considerable value as well.  
 </p>
@@ -11,8 +10,12 @@ The artifact I have chosen to showcase my Database capabilities is KnowOne'sWebs
 This project was developed by me in my spare time using self taught HTML, CSS, and Javascript skills.  The project files include various webpages that read data from JSON files and populate the content within.  I developed this website in order to have a searchable presence online and to showcase my web development skills.  I quickly became irritated by manually changing the same information across multiple pages, so I began constructing scripts that would pull relevant data from JSON files.  I managed to condense everything to a point where dozens of webpages with different content when viewed from a browser are actually identical in terms of the HTML and Javascript code within the file.  
 <br><br>
 
-The script within pulls information from the JSON file based on the name of the file page, meaning I can copy the HTML file and rename it in order to create entirely different entries.  Attributes for the same item that are displayed on multiple pages do not need to be modified more than once; changing the JSON file will update the attribute in all places that it exists across the site.  At some point in the future, I might consider converting to SQL rather than JSON.  A demonstration of this project's functionality can be viewed here:  <a target='blank' href="https://youtu.be/r4HEfxFY7iU">CS Showcase: HTML, CSS, Javascript (KnowOne's Website of Everything)</a>
+The script within pulls information from the JSON file based on the name of the file page, meaning I can copy the HTML file and rename it in order to create entirely different entries.  Attributes for the same item that are displayed on multiple pages do not need to be modified more than once; changing the JSON file will update the attribute in all places that it exists across the site.  At some point in the future, I might consider converting to SQL rather than JSON.  A demonstration of this project's functionality can be viewed below.
 </p>
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/r4HEfxFY7iU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
 
 <h4>Enhancement Progress</h4>
 <p>
@@ -157,6 +160,12 @@ A great many of the images used in this project come from <a target='blank' href
 <li>
 Some of the content within Caped Crusaders was created and shared by acquaintances met on Discord, and links to their original work are included when applicable.  
 </li>
+<li>
+Some of the written content within the Myrmidos Wiki and potentially elsewhere was generated using <a target='blank' href='https://novelai.net/'>NovelAI</a>, which is an adaptive algorithm that generates additional text based on an input sample.  I often input a summary of a given entry, allowed the program to add to it, and continued submitting the program's own changes back to it.  As a result, it can write a fair portion of a given page's content, such as the Turquoise Dragon's page description for example.  
+</li>
+<li>
+Keeping up with my repository was made much easier by following the changes as they were published to Discord.  This tutorial <a href="https://gist.github.com/jagrosh/5b1761213e33fc5b54ec7f6379034a22">here</a> goes over setting up a webhook for a specific channel.
+</li>              
 </ul>
 
 </html>
