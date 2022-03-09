@@ -1,167 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-US-Compatible" content="e-edge">
-    <title>KnowOne's Website of Everything</title>
-    <link rel="icon" href="/resources/images/OwlOfMinerva_ModifiedLogo.png">
-    <link rel="stylesheet" href="/caped-crusaders-style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
-    <script>
-      
-      // A function that populates the list entries
-      $(function readJSON() {
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-US-Compatible" content="e-edge">
+	<title>KnowOne's Website of Everything</title>
+	<link rel="icon" href="/resources/images/OwlOfMinerva_ModifiedLogo.png">
+	<link rel="stylesheet" href="/caped-crusaders-style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+	<script>
+		
+		// A function that populates the list entries
+		$(function readJSON() {
 
-        // Reading the name of this file
-        var page = window.location.pathname.split("/").pop();
+		// Reading the name of this file
+		var page = window.location.pathname.split("/").pop();
 
-        // Setting variables based on file name
-        var title = "---";
-        var entry_type = "---"
-        if (page == "spells.html") {
-          var title = "Spells";
-          var entry_type = "School";
-        } else if (page == "superpowers.html") {
-          var title = "Superpowers";
-          var entry_type = "Science";
-        } else if (page == "technologies.html") {
-          var title = "Technologies";
-          var entry_type = "Type";
-        }
+		// Setting variables based on file name
+		var title = "---";
+		var entry_type = "---"
+		if (page == "spells.html") {
+			var title = "Spells";
+			var entry_type = "School";
+		} else if (page == "superpowers.html") {
+			var title = "Superpowers";
+			var entry_type = "Science";
+		} else if (page == "technologies.html") {
+			var title = "Technologies";
+			var entry_type = "Type";
+		}
 
-        // Populating the Include Filters using the script to allow for dynamic changes in the future
-        document.getElementById("include-filters").innerHTML = 
-          "<input type='text' id='directory-page-dynamic-table-query-inputInclude0' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Name. . .'>" + 
-          "<input type='text' id='directory-page-dynamic-table-query-inputInclude1' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Level. . .'>" + 
-          "<input type='text' id='directory-page-dynamic-table-query-inputInclude2' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by " + entry_type + ". . .'>" + 
-          "<input type='text' id='directory-page-dynamic-table-query-inputInclude3' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Casting Time. . .'>" + 
-          "<input type='text' id='directory-page-dynamic-table-query-inputInclude4' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Range/Area. . .'>" + 
-          "<input type='text' id='directory-page-dynamic-table-query-inputInclude5' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Components. . .'>" + 
-          "<input type='text' id='directory-page-dynamic-table-query-inputInclude6' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Duration. . .'>" + 
-          "<input type='text' id='directory-page-dynamic-table-query-inputInclude7' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Attack/Save. . .'>" + 
-          "<input type='text' id='directory-page-dynamic-table-query-inputInclude8' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Damage/Effect. . .'>" + 
-          "<input type='text' id='directory-page-dynamic-table-query-inputInclude9' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Overchargeable. . .'>" + 
-          "<input type='text' id='directory-page-dynamic-table-query-inputInclude10' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Classes. . .'>" + 
-          "<input type='text' id='directory-page-dynamic-table-query-inputInclude11' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Source. . .'>";
+		// Populating the Include Filters using the script to allow for dynamic changes in the future
+		document.getElementById("include-filters").innerHTML = 
+			"<input type='text' id='directory-page-dynamic-table-query-inputInclude0' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Name. . .'>" + 
+			"<input type='text' id='directory-page-dynamic-table-query-inputInclude1' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Level. . .'>" + 
+			"<input type='text' id='directory-page-dynamic-table-query-inputInclude2' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by " + entry_type + ". . .'>" + 
+			"<input type='text' id='directory-page-dynamic-table-query-inputInclude3' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Casting Time. . .'>" + 
+			"<input type='text' id='directory-page-dynamic-table-query-inputInclude4' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Range/Area. . .'>" + 
+			"<input type='text' id='directory-page-dynamic-table-query-inputInclude5' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Components. . .'>" + 
+			"<input type='text' id='directory-page-dynamic-table-query-inputInclude6' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Duration. . .'>" + 
+			"<input type='text' id='directory-page-dynamic-table-query-inputInclude7' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Attack/Save. . .'>" + 
+			"<input type='text' id='directory-page-dynamic-table-query-inputInclude8' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Damage/Effect. . .'>" + 
+			"<input type='text' id='directory-page-dynamic-table-query-inputInclude9' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Overchargeable. . .'>" + 
+			"<input type='text' id='directory-page-dynamic-table-query-inputInclude10' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Classes. . .'>" + 
+			"<input type='text' id='directory-page-dynamic-table-query-inputInclude11' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Include by Source. . .'>";
 
-        // Populating the Exclude Filters 
-        document.getElementById("exclude-filters").innerHTML = 
-          "<input type='text' id='directory-page-dynamic-table-query-inputExclude0' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Name. . .'>" + 
-          "<input type='text' id='directory-page-dynamic-table-query-inputExclude1' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Level. . .'>" + 
-          "<input type='text' id='directory-page-dynamic-table-query-inputExclude2' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by School. . .'>" + 
-          "<input type='text' id='directory-page-dynamic-table-query-inputExclude3' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Casting Time. . .'>" + 
-          "<input type='text' id='directory-page-dynamic-table-query-inputExclude4' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Range/Area. . .'>" + 
-          "<input type='text' id='directory-page-dynamic-table-query-inputExclude5' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Components. . .'>" + 
-          "<input type='text' id='directory-page-dynamic-table-query-inputExclude6' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Duration. . .'>" + 
-          "<input type='text' id='directory-page-dynamic-table-query-inputExclude7' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Attack/Save. . .'>" + 
-          "<input type='text' id='directory-page-dynamic-table-query-inputExclude8' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Damage/Effect. . .'>" + 
-          "<input type='text' id='directory-page-dynamic-table-query-inputExclude9' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Overchargeable. . .'>" + 
-          "<input type='text' id='directory-page-dynamic-table-query-inputExclude10' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Classes. . .'>" + 
-          "<input type='text' id='directory-page-dynamic-table-query-inputExclude11' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Source. . .'>";
+		// Populating the Exclude Filters 
+		document.getElementById("exclude-filters").innerHTML = 
+			"<input type='text' id='directory-page-dynamic-table-query-inputExclude0' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Name. . .'>" + 
+			"<input type='text' id='directory-page-dynamic-table-query-inputExclude1' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Level. . .'>" + 
+			"<input type='text' id='directory-page-dynamic-table-query-inputExclude2' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by School. . .'>" + 
+			"<input type='text' id='directory-page-dynamic-table-query-inputExclude3' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Casting Time. . .'>" + 
+			"<input type='text' id='directory-page-dynamic-table-query-inputExclude4' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Range/Area. . .'>" + 
+			"<input type='text' id='directory-page-dynamic-table-query-inputExclude5' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Components. . .'>" + 
+			"<input type='text' id='directory-page-dynamic-table-query-inputExclude6' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Duration. . .'>" + 
+			"<input type='text' id='directory-page-dynamic-table-query-inputExclude7' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Attack/Save. . .'>" + 
+			"<input type='text' id='directory-page-dynamic-table-query-inputExclude8' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Damage/Effect. . .'>" + 
+			"<input type='text' id='directory-page-dynamic-table-query-inputExclude9' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Overchargeable. . .'>" + 
+			"<input type='text' id='directory-page-dynamic-table-query-inputExclude10' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Classes. . .'>" + 
+			"<input type='text' id='directory-page-dynamic-table-query-inputExclude11' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Source. . .'>";
 
-        // Populating table header, which includes buttons to sort the entries in ascending and descending order based on column selected
-        document.getElementById("directory-page-dynamic-table-header").innerHTML = 
-          "<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(0)'>Name</button></th>" + 
-          "<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(1)'>Level</button></th>" + 
-          "<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(2)'>" + entry_type + "</button></th>" + 
-          "<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(3)'>Casting Time</button></th>" + 
-          "<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(4)'>Range/Area</button></th>" + 
-          "<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(5)'>Components</button></th>" + 
-          "<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(6)'>Duration</button></th>" + 
-          "<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(7)'>Attack/Save</button></th>" + 
-          "<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(8)'>Damage/Effect</button></th>" + 
-          "<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(9)'>Overchargeable</button></th>" + 
-          "<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(10)'>Classes</button></th>" + 
-          "<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(11)'>Source</button></th>";
-          
-        // Reading data from our JSON file
-        $.getJSON('spells.json', function(data) {
+		// Populating table header, which includes buttons to sort the entries in ascending and descending order based on column selected
+		document.getElementById("directory-page-dynamic-table-header").innerHTML = 
+			"<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(0)'>Name</button></th>" + 
+			"<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(1)'>Level</button></th>" + 
+			"<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(2)'>" + entry_type + "</button></th>" + 
+			"<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(3)'>Casting Time</button></th>" + 
+			"<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(4)'>Range/Area</button></th>" + 
+			"<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(5)'>Components</button></th>" + 
+			"<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(6)'>Duration</button></th>" + 
+			"<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(7)'>Attack/Save</button></th>" + 
+			"<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(8)'>Damage/Effect</button></th>" + 
+			"<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(9)'>Overchargeable</button></th>" + 
+			"<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(10)'>Classes</button></th>" + 
+			"<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(11)'>Source</button></th>";
+			
+		// Reading data from our JSON file
+		$.getJSON('spells.json', function(data) {
 
-          // Looping through the JSON data 
-          $.each(data.entries, function(i, f) {
+			// Looping through the JSON data 
+			$.each(data.entries, function(i, f) {
 
-            // Initializing a default credit and author variable then reading its true value based on a subset within the JSON file
-            type_credit = "---";
-            $.each(data.type, function(x, y) {
-              if (f.type_str == y.type_name) {
-                type_credit = y.type_credit;
-              }
-            });
-            author_credit = "---";
-            $.each(data.author, function(x, y) {
-              if (f.source_str == y.author_name) {
-                author_credit = y.author_credit;
-                content_source = y.content_source;
-              }
-            });
+				// Initializing a default credit and author variable then reading its true value based on a subset within the JSON file
+				type_credit = "---";
+				$.each(data.type, function(x, y) {
+				if (f.type_str == y.type_name) {
+					type_credit = y.type_credit;
+				}
+				});
+				author_credit = "---";
+				$.each(data.author, function(x, y) {
+				if (f.source_str == y.author_name) {
+					author_credit = y.author_credit;
+					content_source = y.content_source;
+				}
+				});
 
-            // Setting a boolean string based on the item attribute
-            if (f.overcharge_str != undefined) {
-              overchargeable = "True";
-            } else {
-              overchargeable = "False";
-            }
+				// Setting a boolean string based on the item attribute
+				if (f.overcharge_str != undefined) {
+				overchargeable = "True";
+				} else {
+				overchargeable = "False";
+				}
 
-            // Checking for Material Components and displaying the material component description
-            if (f.components_vsm_str.includes("M") && f.components_description_str != undefined) {
+				// Checking for Material Components and displaying the material component description
+				if (f.components_vsm_str.includes("M") && f.components_description_str != undefined) {
 
-                // If materials have a cost, we strip that out and concatenate it to the vsm string with parentheses
-                if (f.components_description_str.replace(/\D/g,'') > 0) {
-                  components_vsm = f.components_vsm_str + "   (" + f.components_description_str.replace(/\D/g,'') + ")";
+					// If materials have a cost, we strip that out and concatenate it to the vsm string with parentheses
+					if (f.components_description_str.replace(/\D/g,'') > 0) {
+						components_vsm = f.components_vsm_str + "   (" + f.components_description_str.replace(/\D/g,'') + ")";
 
-                // If not, we leave the vsm string alone and pull the data
-                } else {
-                  components_vsm = f.components_vsm_str;
-                }
+					// If not, we leave the vsm string alone and pull the data
+					} else {
+						components_vsm = f.components_vsm_str;
+					}
 
-                // If materials are consumed, we include an asterisk to reflect that in the vsm string
-                if (f.components_description_str.includes("consume")) {
-                components_vsm = components_vsm + "*";
-              
-                // If materials aren't consumed, we do nothing
-                } else {}
+					// If materials are consumed, we include an asterisk to reflect that in the vsm string
+					if (f.components_description_str.includes("consume")) {
+					components_vsm = components_vsm + "*";
+				
+					// If materials aren't consumed, we do nothing
+					} else {}
 
-                
-              // If there are no material components, we leave the vsm string alone
-              } else {
-                components_vsm = f.components_vsm_str;
-              }
+					
+				// If there are no material components, we leave the vsm string alone
+				} else {
+					components_vsm = f.components_vsm_str;
+				}
 
-            // Defining the table row that contains each entry in the table
-            var table_row = "<tr>" 
-              + "<td><a href='spells/" + f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html' target='_blank'>" + f.name_str + "</a></td>" 
-              + "<td>" + f.level_str + "</td>" 
-              + "<td>" + "<img class='directory-page-dynamic-table-entry-image' src=/resources/images/" + f.type_str + ".png><br>" + f.type_str + "</td>" 
-              + "<td>" + f.casting_time_str + "</td>" 
-              + "<td>" + f.range_area_str + "</td>" 
-              + "<td>" + components_vsm + "</td>" 
-              + "<td>" + f.duration_str + "</td>" 
-              + "<td>" + f.attack_save_str + "</td>" 
-              + "<td>" + f.damage_effect_str + "</td>" 
-              + "<td>" + overchargeable + "</td>" 
-              + "<td>" + f.class_str + "</td>" 
-              + "<td><a target='blank' href='" + content_source + "'>" + f.source_str + "</a></td>" 
-              + "</tr>"
+				// Defining the table row that contains each entry in the table
+				var table_row = "<tr>" 
+				+ "<td><a href='spells/" + f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html' target='_blank'>" + f.name_str + "</a></td>" 
+				+ "<td>" + f.level_str + "</td>" 
+				+ "<td>" + "<img class='directory-page-dynamic-table-entry-image' src=/resources/images/" + f.type_str + ".png><br>" + f.type_str + "</td>" 
+				+ "<td>" + f.casting_time_str + "</td>" 
+				+ "<td>" + f.range_area_str + "</td>" 
+				+ "<td>" + components_vsm + "</td>" 
+				+ "<td>" + f.duration_str + "</td>" 
+				+ "<td>" + f.attack_save_str + "</td>" 
+				+ "<td>" + f.damage_effect_str + "</td>" 
+				+ "<td>" + overchargeable + "</td>" 
+				+ "<td>" + f.class_str + "</td>" 
+				+ "<td><a target='blank' href='" + content_source + "'>" + f.source_str + "</a></td>" 
+				+ "</tr>"
 
-            // Adding the row to the table
-            $(table_row).appendTo("#directory-page-dynamic-table-content tbody");
-          });
-        });
-      });
-      
-      // A function that capitalizes the first letter of each word in a string
-      function titleCase(str) {
-        var split_string = str.toLowerCase().split(' ');
-        for (var i = 0; i < split_string.length; i++) {
-          split_string[i] = split_string[i].charAt(0).toUpperCase() + split_string[i].substring(1);     
-        }
-        return split_string.join(' '); 
-      }
+				// Adding the row to the table
+				$(table_row).appendTo("#directory-page-dynamic-table-content tbody");
+			});
+		});
+		});
+		
+		// A function that capitalizes the first letter of each word in a string
+		function titleCase(str) {
+		var split_string = str.toLowerCase().split(' ');
+		for (var i = 0; i < split_string.length; i++) {
+			split_string[i] = split_string[i].charAt(0).toUpperCase() + split_string[i].substring(1);     
+		}
+		return split_string.join(' '); 
+		}
 
 
-      // The function that populates all page data into preset elements
-      $(function populatePageData() {
+		// The function that populates all page data into preset elements
+		$(function populatePageData() {
 
 
 // =========================================================================================
@@ -169,7 +169,7 @@
 // 
 // The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
 // =========================================================================================
-        $("#import-header").load("/resources/pages/import-header.html");
+		$("#import-header").load("/resources/pages/import-header.html");
 
 
 // =========================================================================================
@@ -178,50 +178,50 @@
 // The page TITLE can include a table of details for spells or monster statblocks
 // If title_library does not have a table_row library, the table of details is hidden and only the TITLE path is populated
 // =========================================================================================
-        
-        // Reading the name of this file
-        var page_array = window.location.pathname.split("/");
-        var page_array_length = page_array.length;
+		
+		// Reading the name of this file
+		var page_array = window.location.pathname.split("/");
+		var page_array_length = page_array.length;
 
-        if (page_array.length == 5) {
-          var page_title = page_array.pop();
-          var page_category = page_array.pop();
-          var page_directory = page_array.pop();
-          var page_subsite = page_array.pop();
-          var page_site = page_array.pop();
-        } else if (page_array.length == 4) {
-          var page_title = page_array.pop();
-          var page_directory = page_array.pop();
-          var page_subsite = page_array.pop();
-          var page_site = page_array.pop();
-        } else if (page_array.length == 3) {
-          var page_title = page_array.pop();
-          var page_subsite = page_array.pop();
-          var page_site = page_array.pop();
-        } else if (page_array.length == 2) {
-          var page_title = page_array.pop();
-          var page_site = page_array.pop();
-        } else if (page_array.length == 1) {
-          var page_title = page_array.pop();
-        } 
+		if (page_array.length == 5) {
+			var page_title = page_array.pop();
+			var page_category = page_array.pop();
+			var page_directory = page_array.pop();
+			var page_subsite = page_array.pop();
+			var page_site = page_array.pop();
+		} else if (page_array.length == 4) {
+			var page_title = page_array.pop();
+			var page_directory = page_array.pop();
+			var page_subsite = page_array.pop();
+			var page_site = page_array.pop();
+		} else if (page_array.length == 3) {
+			var page_title = page_array.pop();
+			var page_subsite = page_array.pop();
+			var page_site = page_array.pop();
+		} else if (page_array.length == 2) {
+			var page_title = page_array.pop();
+			var page_site = page_array.pop();
+		} else if (page_array.length == 1) {
+			var page_title = page_array.pop();
+		} 
 
-        var titleCompleted = false;
-        if (page_subsite != undefined) {
-          document.getElementById("page-title-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
-        } else {
-          document.getElementById("page-title-path").innerHTML = titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
-          titleCompleted = true;
-        }
-        if (page_directory != undefined && !titleCompleted) {
-          document.getElementById("page-title-path").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
-        }
-        if (page_category != undefined && !titleCompleted) {
-          document.getElementById("page-title-path").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + "/" + page_category + ".html'>" + titleCase(page_category.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
-        }
-        if (page_title != undefined && !titleCompleted) {
-          document.getElementById("page-title-path").innerHTML += " > " + titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
-          titleCompleted = true;
-        }
+		var titleCompleted = false;
+		if (page_subsite != undefined) {
+			document.getElementById("page-title-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+		} else {
+			document.getElementById("page-title-path").innerHTML = titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
+			titleCompleted = true;
+		}
+		if (page_directory != undefined && !titleCompleted) {
+			document.getElementById("page-title-path").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+		}
+		if (page_category != undefined && !titleCompleted) {
+			document.getElementById("page-title-path").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + "/" + page_category + ".html'>" + titleCase(page_category.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+		}
+		if (page_title != undefined && !titleCompleted) {
+			document.getElementById("page-title-path").innerHTML += " > " + titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
+			titleCompleted = true;
+		}
 
 
 // =========================================================================================
@@ -229,281 +229,281 @@
 // 
 // The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
 // =========================================================================================
-        $("#import-footer").load("/resources/pages/import-footer.html");
-      });
-    </script>
-  </head>
+		$("#import-footer").load("/resources/pages/import-footer.html");
+		});
+	</script>
+</head>
 
-  <body>
-    <!-- 
-      A div for the page BACKGROUND -->
-    <div id="page-background-div">
-      <!-- 
-        A div for the page HEADER -->
-      <div id="import-header"></div>
-      <!-- 
-        A section for the page CONTENT -->
-      <section class="page-content-section">
-        <!-- 
-          A table for the page TITLE -->
-        <table id="page-title-table"><thead><tr><td colspan="6"><h2 id="page-title-path"></h2></td></tr></thead><tbody></tbody></table>   
-        <hr>
-        <h3>Include Filters</h3>
+<body>
+	<!-- 
+		A div for the page BACKGROUND -->
+	<div id="page-background-div">
+		<!-- 
+		A div for the page HEADER -->
+		<div id="import-header"></div>
+		<!-- 
+		A section for the page CONTENT -->
+		<section class="page-content-section">
+		<!-- 
+			A table for the page TITLE -->
+		<table id="page-title-table"><thead><tr><td colspan="6"><h2 id="page-title-path"></h2></td></tr></thead><tbody></tbody></table>   
+		<hr>
+		<h3>Include Filters</h3>
 
-        <!-- The include filters are a series of text boxes that can be filled to hide elements that do not contain the string entered within the designated attribute  -->
-        <p id="include-filters"></p>
-        <hr>
+		<!-- The include filters are a series of text boxes that can be filled to hide elements that do not contain the string entered within the designated attribute  -->
+		<p id="include-filters"></p>
+		<hr>
 
-        <!-- A heading to clarify the filter functionality -->
-        <h3>Exclude Filters</h3>
+		<!-- A heading to clarify the filter functionality -->
+		<h3>Exclude Filters</h3>
 
-        <!-- The exclude filters are a series of text boxes that can be filled to hide elements that do contain the string entered within the designated attribute  -->
-        <p id="exclude-filters"></p>
-        <hr> 
+		<!-- The exclude filters are a series of text boxes that can be filled to hide elements that do contain the string entered within the designated attribute  -->
+		<p id="exclude-filters"></p>
+		<hr> 
 
-        <!-- This is the table that contains the entries being filtered -->
-        <h3>Sortable Entries</h3>
-        <table id="directory-page-dynamic-table-content">
-          
-          <!-- The buttons that designate the column data and serve as the header can be clicked to sort the entries in ascending or descending order -->
-          <thead class="header" id="directory-page-dynamic-table-header"></thead>
+		<!-- This is the table that contains the entries being filtered -->
+		<h3>Sortable Entries</h3>
+		<table id="directory-page-dynamic-table-content">
+			
+			<!-- The buttons that designate the column data and serve as the header can be clicked to sort the entries in ascending or descending order -->
+			<thead class="header" id="directory-page-dynamic-table-header"></thead>
 
-          <!-- The empty table body, which is populated from a JSON file using the above script  -->
-          <tbody></tbody>
-        </table>
+			<!-- The empty table body, which is populated from a JSON file using the above script  -->
+			<tbody></tbody>
+		</table>
 
-      </section>
-      <!-- 
-        A div for the page FOOTER -->
-      <footer id="import-footer"></footer>
-    </div>
-  </body>
+		</section>
+		<!-- 
+		A div for the page FOOTER -->
+		<footer id="import-footer"></footer>
+	</div>
+</body>
 </html>
-  
+
 <script>
-  // This function updates the filter table dynamically as input is entered in the filter boxes
-  function FilterTableFunction() {
+// This function updates the filter table dynamically as input is entered in the filter boxes
+function FilterTableFunction() {
 
-    // Declaring variables to be used in the filter function
-    var table, tr, i; 
-    var tdZero, tdOne, tdTwo, tdThree, tdFour, tdFive, tdSix, tdSeven, tdEight, tdNine, tdTen, tdEleven, tdTwelve;  
-    var txtValueZero, txtValueOne, txtValueTwo, txtValueThree, txtValueFour, txtValueFive, txtValueSix, txtValueSeven, txtValueEight, txtValueNine, txtValueTen, txtValueEleven, txtValueTwelve, txtValueThirteen;
+	// Declaring variables to be used in the filter function
+	var table, tr, i; 
+	var tdZero, tdOne, tdTwo, tdThree, tdFour, tdFive, tdSix, tdSeven, tdEight, tdNine, tdTen, tdEleven, tdTwelve;  
+	var txtValueZero, txtValueOne, txtValueTwo, txtValueThree, txtValueFour, txtValueFive, txtValueSix, txtValueSeven, txtValueEight, txtValueNine, txtValueTen, txtValueEleven, txtValueTwelve, txtValueThirteen;
 
-    // Defining filter variables based on the text present in the input boxes
-    var inputIncludeZero = document.getElementById("directory-page-dynamic-table-query-inputInclude0");
-    var inputIncludeOne = document.getElementById("directory-page-dynamic-table-query-inputInclude1");
-    var inputIncludeTwo = document.getElementById("directory-page-dynamic-table-query-inputInclude2");
-    var inputIncludeThree = document.getElementById("directory-page-dynamic-table-query-inputInclude3");
-    var inputIncludeFour = document.getElementById("directory-page-dynamic-table-query-inputInclude4");
-    var inputIncludeFive = document.getElementById("directory-page-dynamic-table-query-inputInclude5");
-    var inputIncludeSix = document.getElementById("directory-page-dynamic-table-query-inputInclude6");
-    var inputIncludeSeven = document.getElementById("directory-page-dynamic-table-query-inputInclude7");
-    var inputIncludeEight = document.getElementById("directory-page-dynamic-table-query-inputInclude8");
-    var inputIncludeNine = document.getElementById("directory-page-dynamic-table-query-inputInclude9");
-    var inputIncludeTen = document.getElementById("directory-page-dynamic-table-query-inputInclude10");
-    var inputIncludeEleven = document.getElementById("directory-page-dynamic-table-query-inputInclude11");
+	// Defining filter variables based on the text present in the input boxes
+	var inputIncludeZero = document.getElementById("directory-page-dynamic-table-query-inputInclude0");
+	var inputIncludeOne = document.getElementById("directory-page-dynamic-table-query-inputInclude1");
+	var inputIncludeTwo = document.getElementById("directory-page-dynamic-table-query-inputInclude2");
+	var inputIncludeThree = document.getElementById("directory-page-dynamic-table-query-inputInclude3");
+	var inputIncludeFour = document.getElementById("directory-page-dynamic-table-query-inputInclude4");
+	var inputIncludeFive = document.getElementById("directory-page-dynamic-table-query-inputInclude5");
+	var inputIncludeSix = document.getElementById("directory-page-dynamic-table-query-inputInclude6");
+	var inputIncludeSeven = document.getElementById("directory-page-dynamic-table-query-inputInclude7");
+	var inputIncludeEight = document.getElementById("directory-page-dynamic-table-query-inputInclude8");
+	var inputIncludeNine = document.getElementById("directory-page-dynamic-table-query-inputInclude9");
+	var inputIncludeTen = document.getElementById("directory-page-dynamic-table-query-inputInclude10");
+	var inputIncludeEleven = document.getElementById("directory-page-dynamic-table-query-inputInclude11");
 
-    var inputExcludeZero = document.getElementById("directory-page-dynamic-table-query-inputExclude0");
-    var inputExcludeOne = document.getElementById("directory-page-dynamic-table-query-inputExclude1");
-    var inputExcludeTwo = document.getElementById("directory-page-dynamic-table-query-inputExclude2");
-    var inputExcludeThree = document.getElementById("directory-page-dynamic-table-query-inputExclude3");
-    var inputExcludeFour = document.getElementById("directory-page-dynamic-table-query-inputExclude4");
-    var inputExcludeFive = document.getElementById("directory-page-dynamic-table-query-inputExclude5");
-    var inputExcludeSix = document.getElementById("directory-page-dynamic-table-query-inputExclude6");
-    var inputExcludeSeven = document.getElementById("directory-page-dynamic-table-query-inputExclude7");
-    var inputExcludeEight = document.getElementById("directory-page-dynamic-table-query-inputExclude8");
-    var inputExcludeNine = document.getElementById("directory-page-dynamic-table-query-inputExclude9");
-    var inputExcludeTen = document.getElementById("directory-page-dynamic-table-query-inputExclude10");
-    var inputExcludeEleven = document.getElementById("directory-page-dynamic-table-query-inputExclude11");
+	var inputExcludeZero = document.getElementById("directory-page-dynamic-table-query-inputExclude0");
+	var inputExcludeOne = document.getElementById("directory-page-dynamic-table-query-inputExclude1");
+	var inputExcludeTwo = document.getElementById("directory-page-dynamic-table-query-inputExclude2");
+	var inputExcludeThree = document.getElementById("directory-page-dynamic-table-query-inputExclude3");
+	var inputExcludeFour = document.getElementById("directory-page-dynamic-table-query-inputExclude4");
+	var inputExcludeFive = document.getElementById("directory-page-dynamic-table-query-inputExclude5");
+	var inputExcludeSix = document.getElementById("directory-page-dynamic-table-query-inputExclude6");
+	var inputExcludeSeven = document.getElementById("directory-page-dynamic-table-query-inputExclude7");
+	var inputExcludeEight = document.getElementById("directory-page-dynamic-table-query-inputExclude8");
+	var inputExcludeNine = document.getElementById("directory-page-dynamic-table-query-inputExclude9");
+	var inputExcludeTen = document.getElementById("directory-page-dynamic-table-query-inputExclude10");
+	var inputExcludeEleven = document.getElementById("directory-page-dynamic-table-query-inputExclude11");
 
-    // Reformatting the data to uppercase to make handling comparisons easier
-    var filterIncludeZero = inputIncludeZero.value.toUpperCase();
-    var filterIncludeOne = inputIncludeOne.value.toUpperCase();
-    var filterIncludeTwo = inputIncludeTwo.value.toUpperCase();
-    var filterIncludeThree = inputIncludeThree.value.toUpperCase();
-    var filterIncludeFour = inputIncludeFour.value.toUpperCase();
-    var filterIncludeFive = inputIncludeFive.value.toUpperCase();
-    var filterIncludeSix = inputIncludeSix.value.toUpperCase();
-    var filterIncludeSeven = inputIncludeSeven.value.toUpperCase();
-    var filterIncludeEight = inputIncludeEight.value.toUpperCase();
-    var filterIncludeNine = inputIncludeNine.value.toUpperCase();
-    var filterIncludeTen = inputIncludeTen.value.toUpperCase();
-    var filterIncludeEleven = inputIncludeEleven.value.toUpperCase();
+	// Reformatting the data to uppercase to make handling comparisons easier
+	var filterIncludeZero = inputIncludeZero.value.toUpperCase();
+	var filterIncludeOne = inputIncludeOne.value.toUpperCase();
+	var filterIncludeTwo = inputIncludeTwo.value.toUpperCase();
+	var filterIncludeThree = inputIncludeThree.value.toUpperCase();
+	var filterIncludeFour = inputIncludeFour.value.toUpperCase();
+	var filterIncludeFive = inputIncludeFive.value.toUpperCase();
+	var filterIncludeSix = inputIncludeSix.value.toUpperCase();
+	var filterIncludeSeven = inputIncludeSeven.value.toUpperCase();
+	var filterIncludeEight = inputIncludeEight.value.toUpperCase();
+	var filterIncludeNine = inputIncludeNine.value.toUpperCase();
+	var filterIncludeTen = inputIncludeTen.value.toUpperCase();
+	var filterIncludeEleven = inputIncludeEleven.value.toUpperCase();
 
-    var filterExcludeZero = inputExcludeZero.value.toUpperCase();
-    var filterExcludeOne = inputExcludeOne.value.toUpperCase();
-    var filterExcludeTwo = inputExcludeTwo.value.toUpperCase();
-    var filterExcludeThree = inputExcludeThree.value.toUpperCase();
-    var filterExcludeFour = inputExcludeFour.value.toUpperCase();
-    var filterExcludeFive = inputExcludeFive.value.toUpperCase();
-    var filterExcludeSix = inputExcludeSix.value.toUpperCase();
-    var filterExcludeSeven = inputExcludeSeven.value.toUpperCase();
-    var filterExcludeEight = inputExcludeEight.value.toUpperCase();
-    var filterExcludeNine = inputExcludeNine.value.toUpperCase();
-    var filterExcludeTen = inputExcludeTen.value.toUpperCase();
-    var filterExcludeEleven = inputExcludeEleven.value.toUpperCase();
+	var filterExcludeZero = inputExcludeZero.value.toUpperCase();
+	var filterExcludeOne = inputExcludeOne.value.toUpperCase();
+	var filterExcludeTwo = inputExcludeTwo.value.toUpperCase();
+	var filterExcludeThree = inputExcludeThree.value.toUpperCase();
+	var filterExcludeFour = inputExcludeFour.value.toUpperCase();
+	var filterExcludeFive = inputExcludeFive.value.toUpperCase();
+	var filterExcludeSix = inputExcludeSix.value.toUpperCase();
+	var filterExcludeSeven = inputExcludeSeven.value.toUpperCase();
+	var filterExcludeEight = inputExcludeEight.value.toUpperCase();
+	var filterExcludeNine = inputExcludeNine.value.toUpperCase();
+	var filterExcludeTen = inputExcludeTen.value.toUpperCase();
+	var filterExcludeEleven = inputExcludeEleven.value.toUpperCase();
 
-    // Reading the table element and all table rows within
-    table = document.getElementById("directory-page-dynamic-table-content");
-    tr = table.getElementsByTagName("tr");
-  
-    // Looping through all table rows and hiding those who don't match the search query
-    for (i = 0; i < tr.length; i++) {
-      tdZero = tr[i].getElementsByTagName("td")[0];
-      tdOne = tr[i].getElementsByTagName("td")[1];
-      tdTwo = tr[i].getElementsByTagName("td")[2];
-      tdThree = tr[i].getElementsByTagName("td")[3];
-      tdFour = tr[i].getElementsByTagName("td")[4];
-      tdFive = tr[i].getElementsByTagName("td")[5];
-      tdSix = tr[i].getElementsByTagName("td")[6];
-      tdSeven = tr[i].getElementsByTagName("td")[7];
-      tdEight = tr[i].getElementsByTagName("td")[8];
-      tdNine = tr[i].getElementsByTagName("td")[9];
-      tdTen = tr[i].getElementsByTagName("td")[10];
-      tdEleven = tr[i].getElementsByTagName("td")[11];
+	// Reading the table element and all table rows within
+	table = document.getElementById("directory-page-dynamic-table-content");
+	tr = table.getElementsByTagName("tr");
 
-      // Ensuring the entry exists before attempting additional processes
-      if (tdZero) {
-        txtValueZero = tdZero.textContent || tdZero.innerText;
-        txtValueOne = tdOne.textContent || tdOne.innerText;
-        txtValueTwo = tdTwo.textContent || tdTwo.innerText;
-        txtValueThree = tdThree.textContent || tdThree.innerText;
-        txtValueFour = tdFour.textContent || tdFour.innerText;
-        txtValueFive = tdFive.textContent || tdFive.innerText;
-        txtValueSix = tdSix.textContent || tdSix.innerText;
-        txtValueSeven = tdSeven.textContent || tdSeven.innerText;
-        txtValueEight = tdEight.textContent || tdEight.innerText;
-        txtValueNine = tdNine.textContent || tdNine.innerText;
-        txtValueTen = tdTen.textContent || tdTen.innerText;
-        txtValueEleven = tdEleven.textContent || tdEleven.innerText;
+	// Looping through all table rows and hiding those who don't match the search query
+	for (i = 0; i < tr.length; i++) {
+		tdZero = tr[i].getElementsByTagName("td")[0];
+		tdOne = tr[i].getElementsByTagName("td")[1];
+		tdTwo = tr[i].getElementsByTagName("td")[2];
+		tdThree = tr[i].getElementsByTagName("td")[3];
+		tdFour = tr[i].getElementsByTagName("td")[4];
+		tdFive = tr[i].getElementsByTagName("td")[5];
+		tdSix = tr[i].getElementsByTagName("td")[6];
+		tdSeven = tr[i].getElementsByTagName("td")[7];
+		tdEight = tr[i].getElementsByTagName("td")[8];
+		tdNine = tr[i].getElementsByTagName("td")[9];
+		tdTen = tr[i].getElementsByTagName("td")[10];
+		tdEleven = tr[i].getElementsByTagName("td")[11];
 
-        // Hiding elements that do not match the include filter input
-        if (txtValueZero.toUpperCase().indexOf(filterIncludeZero) == -1) {
-          tr[i].style.display = "none";
-        } else if (txtValueOne.toUpperCase().indexOf(filterIncludeOne) == -1) {
-          tr[i].style.display = "none";
-        } else if (txtValueTwo.toUpperCase().indexOf(filterIncludeTwo) == -1) {
-          tr[i].style.display = "none";
-        } else if (txtValueThree.toUpperCase().indexOf(filterIncludeThree) == -1) {
-          tr[i].style.display = "none";
-        } else if (txtValueFour.toUpperCase().indexOf(filterIncludeFour) == -1) {
-          tr[i].style.display = "none";
-        } else if (txtValueFive.toUpperCase().indexOf(filterIncludeFive) == -1) {
-          tr[i].style.display = "none";
-        } else if (txtValueSix.toUpperCase().indexOf(filterIncludeSix) == -1) {
-          tr[i].style.display = "none";
-        } else if (txtValueSeven.toUpperCase().indexOf(filterIncludeSeven) == -1) {
-          tr[i].style.display = "none";
-        } else if (txtValueEight.toUpperCase().indexOf(filterIncludeEight) == -1) {
-          tr[i].style.display = "none";
-        } else if (txtValueNine.toUpperCase().indexOf(filterIncludeNine) == -1) {
-          tr[i].style.display = "none";
-        } else if (txtValueTen.toUpperCase().indexOf(filterIncludeTen) == -1) {
-          tr[i].style.display = "none";
-        } else if (txtValueEleven.toUpperCase().indexOf(filterIncludeEleven) == -1) {
-          tr[i].style.display = "none";
-        } 
-        
-        // Hiding elements that do match the exclude filter input
-        else if (txtValueZero.toUpperCase().indexOf(filterExcludeZero) > -1 && filterExcludeZero != '') {
-          tr[i].style.display = "none";
-        } else if (txtValueOne.toUpperCase().indexOf(filterExcludeOne) > -1 && filterExcludeOne != '') {
-          tr[i].style.display = "none";
-        } else if (txtValueTwo.toUpperCase().indexOf(filterExcludeTwo) > -1 && filterExcludeTwo != '') {
-          tr[i].style.display = "none";
-        } else if (txtValueThree.toUpperCase().indexOf(filterExcludeThree) > -1 && filterExcludeThree != '') {
-          tr[i].style.display = "none";
-        } else if (txtValueFour.toUpperCase().indexOf(filterExcludeFour) > -1 && filterExcludeFour != '') {
-          tr[i].style.display = "none";
-        } else if (txtValueFive.toUpperCase().indexOf(filterExcludeFive) > -1 && filterExcludeFive != '') {
-          tr[i].style.display = "none";
-        } else if (txtValueSix.toUpperCase().indexOf(filterExcludeSix) > -1 && filterExcludeSix != '') {
-          tr[i].style.display = "none";
-        } else if (txtValueSeven.toUpperCase().indexOf(filterExcludeSeven) > -1 && filterExcludeSeven != '') {
-          tr[i].style.display = "none";
-        } else if (txtValueEight.toUpperCase().indexOf(filterExcludeEight) > -1 && filterExcludeEight != '') {
-          tr[i].style.display = "none";
-        } else if (txtValueNine.toUpperCase().indexOf(filterExcludeNine) > -1 && filterExcludeNine != '') {
-          tr[i].style.display = "none";
-        } else if (txtValueTen.toUpperCase().indexOf(filterExcludeTen) > -1 && filterExcludeTen != '') {
-          tr[i].style.display = "none";
-        } else if (txtValueEleven.toUpperCase().indexOf(filterExcludeEleven) > -1 && filterExcludeEleven != '') {
-          tr[i].style.display = "none";
-        } else {
-          tr[i].style.display = "";
-        }
-      }
-    }
-  }
+		// Ensuring the entry exists before attempting additional processes
+		if (tdZero) {
+		txtValueZero = tdZero.textContent || tdZero.innerText;
+		txtValueOne = tdOne.textContent || tdOne.innerText;
+		txtValueTwo = tdTwo.textContent || tdTwo.innerText;
+		txtValueThree = tdThree.textContent || tdThree.innerText;
+		txtValueFour = tdFour.textContent || tdFour.innerText;
+		txtValueFive = tdFive.textContent || tdFive.innerText;
+		txtValueSix = tdSix.textContent || tdSix.innerText;
+		txtValueSeven = tdSeven.textContent || tdSeven.innerText;
+		txtValueEight = tdEight.textContent || tdEight.innerText;
+		txtValueNine = tdNine.textContent || tdNine.innerText;
+		txtValueTen = tdTen.textContent || tdTen.innerText;
+		txtValueEleven = tdEleven.textContent || tdEleven.innerText;
 
-  // This function sorts the entries in ascending or descending order based on the column selected and number of clicks applied
-  function sortTable(n) {
+		// Hiding elements that do not match the include filter input
+		if (txtValueZero.toUpperCase().indexOf(filterIncludeZero) == -1) {
+			tr[i].style.display = "none";
+		} else if (txtValueOne.toUpperCase().indexOf(filterIncludeOne) == -1) {
+			tr[i].style.display = "none";
+		} else if (txtValueTwo.toUpperCase().indexOf(filterIncludeTwo) == -1) {
+			tr[i].style.display = "none";
+		} else if (txtValueThree.toUpperCase().indexOf(filterIncludeThree) == -1) {
+			tr[i].style.display = "none";
+		} else if (txtValueFour.toUpperCase().indexOf(filterIncludeFour) == -1) {
+			tr[i].style.display = "none";
+		} else if (txtValueFive.toUpperCase().indexOf(filterIncludeFive) == -1) {
+			tr[i].style.display = "none";
+		} else if (txtValueSix.toUpperCase().indexOf(filterIncludeSix) == -1) {
+			tr[i].style.display = "none";
+		} else if (txtValueSeven.toUpperCase().indexOf(filterIncludeSeven) == -1) {
+			tr[i].style.display = "none";
+		} else if (txtValueEight.toUpperCase().indexOf(filterIncludeEight) == -1) {
+			tr[i].style.display = "none";
+		} else if (txtValueNine.toUpperCase().indexOf(filterIncludeNine) == -1) {
+			tr[i].style.display = "none";
+		} else if (txtValueTen.toUpperCase().indexOf(filterIncludeTen) == -1) {
+			tr[i].style.display = "none";
+		} else if (txtValueEleven.toUpperCase().indexOf(filterIncludeEleven) == -1) {
+			tr[i].style.display = "none";
+		} 
+		
+		// Hiding elements that do match the exclude filter input
+		else if (txtValueZero.toUpperCase().indexOf(filterExcludeZero) > -1 && filterExcludeZero != '') {
+			tr[i].style.display = "none";
+		} else if (txtValueOne.toUpperCase().indexOf(filterExcludeOne) > -1 && filterExcludeOne != '') {
+			tr[i].style.display = "none";
+		} else if (txtValueTwo.toUpperCase().indexOf(filterExcludeTwo) > -1 && filterExcludeTwo != '') {
+			tr[i].style.display = "none";
+		} else if (txtValueThree.toUpperCase().indexOf(filterExcludeThree) > -1 && filterExcludeThree != '') {
+			tr[i].style.display = "none";
+		} else if (txtValueFour.toUpperCase().indexOf(filterExcludeFour) > -1 && filterExcludeFour != '') {
+			tr[i].style.display = "none";
+		} else if (txtValueFive.toUpperCase().indexOf(filterExcludeFive) > -1 && filterExcludeFive != '') {
+			tr[i].style.display = "none";
+		} else if (txtValueSix.toUpperCase().indexOf(filterExcludeSix) > -1 && filterExcludeSix != '') {
+			tr[i].style.display = "none";
+		} else if (txtValueSeven.toUpperCase().indexOf(filterExcludeSeven) > -1 && filterExcludeSeven != '') {
+			tr[i].style.display = "none";
+		} else if (txtValueEight.toUpperCase().indexOf(filterExcludeEight) > -1 && filterExcludeEight != '') {
+			tr[i].style.display = "none";
+		} else if (txtValueNine.toUpperCase().indexOf(filterExcludeNine) > -1 && filterExcludeNine != '') {
+			tr[i].style.display = "none";
+		} else if (txtValueTen.toUpperCase().indexOf(filterExcludeTen) > -1 && filterExcludeTen != '') {
+			tr[i].style.display = "none";
+		} else if (txtValueEleven.toUpperCase().indexOf(filterExcludeEleven) > -1 && filterExcludeEleven != '') {
+			tr[i].style.display = "none";
+		} else {
+			tr[i].style.display = "";
+		}
+		}
+	}
+}
 
-    // Defining variables to be used
-    var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-    table = document.getElementById("directory-page-dynamic-table-content");
-    switching = true;
+// This function sorts the entries in ascending or descending order based on the column selected and number of clicks applied
+function sortTable(n) {
 
-    // Set the sorting direction to ascending:
-    dir = "asc";
-    // A loop that will continue until no switching has been done
-    while (switching) {
+	// Defining variables to be used
+	var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+	table = document.getElementById("directory-page-dynamic-table-content");
+	switching = true;
 
-      // Switching is not complete
-      switching = false;
-      rows = table.rows;
+	// Set the sorting direction to ascending:
+	dir = "asc";
+	// A loop that will continue until no switching has been done
+	while (switching) {
 
-      // Loop through all table rows besides the header
-      for (i = 1; i < (rows.length - 1); i++) {
+		// Switching is not complete
+		switching = false;
+		rows = table.rows;
 
-        // Ensure that switching is false
-        shouldSwitch = false;
+		// Loop through all table rows besides the header
+		for (i = 1; i < (rows.length - 1); i++) {
 
-        // Reading two elements to compare from this row and the following row
-        x = rows[i].getElementsByTagName("TD")[n];
-        y = rows[i + 1].getElementsByTagName("TD")[n];
+		// Ensure that switching is false
+		shouldSwitch = false;
 
-        // Checking whether we are comparing string characters or converting to integers
-        if (/\d/.test(parseInt(x.innerHTML.toLowerCase().replace(/\D/g,'')))) {
-          var xcompare = parseInt(x.innerHTML.toLowerCase().replace(/\D/g,''));
-          var ycompare = parseInt(y.innerHTML.toLowerCase().replace(/\D/g,''));
-        } else {
-          var xcompare = x.innerHTML.toLowerCase();
-          var ycompare = y.innerHTML.toLowerCase();
-        }
+		// Reading two elements to compare from this row and the following row
+		x = rows[i].getElementsByTagName("TD")[n];
+		y = rows[i + 1].getElementsByTagName("TD")[n];
 
-        // Perform comparisons and switch entries based on direction of sort
-        if (dir == "asc") {
-          
-          // If comparison returns true, entries should be switched
-          if (xcompare > ycompare) {
-            shouldSwitch = true;
-            break;
-          }
-        } else if (dir == "desc") {
-          
-          // If comparison returns true, entries should be switched
-          if (xcompare < ycompare) {
-            shouldSwitch = true;
-            break;
-          }
-        }
-      }
+		// Checking whether we are comparing string characters or converting to integers
+		if (/\d/.test(parseInt(x.innerHTML.toLowerCase().replace(/\D/g,'')))) {
+			var xcompare = parseInt(x.innerHTML.toLowerCase().replace(/\D/g,''));
+			var ycompare = parseInt(y.innerHTML.toLowerCase().replace(/\D/g,''));
+		} else {
+			var xcompare = x.innerHTML.toLowerCase();
+			var ycompare = y.innerHTML.toLowerCase();
+		}
 
-      // After breaking from the previous loop, we check to see if this entry is marked for switching
-      if (shouldSwitch) {
-        
-        // Performing the switch, setting switching to true, and incrementing the switch counter
-        rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-        switching = true;
-        switchcount ++;
-      } else {
-        // If no switching has been done AND the direction is "asc", set the direction to "desc" and run the while loop again.
-        if (switchcount == 0 && dir == "asc") {
-          dir = "desc";
-          switching = true;
-        }
-      }
-    }
-  }
+		// Perform comparisons and switch entries based on direction of sort
+		if (dir == "asc") {
+			
+			// If comparison returns true, entries should be switched
+			if (xcompare > ycompare) {
+				shouldSwitch = true;
+				break;
+			}
+		} else if (dir == "desc") {
+			
+			// If comparison returns true, entries should be switched
+			if (xcompare < ycompare) {
+				shouldSwitch = true;
+				break;
+			}
+		}
+		}
+
+		// After breaking from the previous loop, we check to see if this entry is marked for switching
+		if (shouldSwitch) {
+		
+		// Performing the switch, setting switching to true, and incrementing the switch counter
+		rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+		switching = true;
+		switchcount ++;
+		} else {
+		// If no switching has been done AND the direction is "asc", set the direction to "desc" and run the while loop again.
+		if (switchcount == 0 && dir == "asc") {
+			dir = "desc";
+			switching = true;
+		}
+		}
+	}
+}
 </script>
