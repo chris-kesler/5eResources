@@ -44,33 +44,130 @@
         $("#import-footer").load("/resources/pages/import-footer.html");
       });
 
-      const getMonster = (id) => {
+      const getResults = (id) => {
       fetch(`https://www.dnd5eapi.co/api/${id}`)
         .then(response => response.json())
         .then((data) => {
-          const monster = {
+          const result = {
             name: data.name,
-            size: data.size,
-            armor_class: data.armor_class
-          }
+            level: data.level,
+            casting_time: data.casting_time,
+            range: data.range,
+            components: data.components,
+            source: data.url,
+            duration: data.duration,
+            school: data.school.name,
+            attack_type: data.attack_type,
+            damage_effect: data.damage
+          }       
 
-        
-      document.getElementById("dnd-api-element").innerHTML = `
-      <p id="name">${monster.name}</p>
-      <p id="name">${monster.size}</p>
-      <p id="name">${monster.armor_class}</p>
-      <p id="name">${monster.name}</p>
-      <p id="name">${monster.name}</p>
-      <p id="name">${monster.name}</p>
-      <p id="name">${monster.name}</p>
+      tableRow = `
+      <tr>
+        <th>
+          Name
+        </th>
+        <th>
+          Level
+        </th>
+        <th>
+          Casting Time
+        </th>
+        <th>
+          Range/Area
+        </th>
+        <th>
+          Components
+        </th>
+      </tr>`
+      $(tableRow).appendTo("#page-title-table-wide tbody");
 
-      `;  
-        
+      tableRow = `
+      <tr>
+        <td>
+          ${result.name}
+        </td>
+        <td>
+          ${result.level}
+        </td>
+        <td>
+          ${result.casting_time}
+        </td>
+        <td>
+          ${result.range}
+        </td>
+        <td>
+          ${result.components}
+        </td>
+      </tr>`
+      $(tableRow).appendTo("#page-title-table-wide tbody");
+
+      tableRow = `
+      <tr>
+        <th>
+          Source
+        </th>
+        <th>
+          Duration
+        </th>
+        <th>
+          School
+        </th>
+        <th>
+          Attack/Save
+        </th>
+        <th>
+          Damage/Effect
+        </th>
+      </tr>`
+      $(tableRow).appendTo("#page-title-table-wide tbody");
+
+      if(data.damage != undefined) {
+        tableRow = `
+        <tr>
+          <td>
+            ${result.source}
+          </td>
+          <td>
+            ${result.duration}
+          </td>
+          <td>
+            ${result.school}
+          </td>
+          <td>
+            ${result.attack_type}
+          </td>
+          <td>
+            ${result.damage_effect.damage_type.name}
+          </td>
+        </tr>`
+        $(tableRow).appendTo("#page-title-table-wide tbody");
+      } else {
+        tableRow = `
+        <tr>
+          <td>
+            ${result.source}
+          </td>
+          <td>
+            ${result.duration}
+          </td>
+          <td>
+            ${result.school}
+          </td>
+          <td>
+            ${result.attack_type}
+          </td>
+          <td>
+            undefined
+          </td>
+        </tr>`
+        $(tableRow).appendTo("#page-title-table-wide tbody");
+      }
+
       });  
       }
 
 
-      getMonster("monsters/adult-black-dragon/");
+      getResults("spells/acid-arrow");
     </script>
   </head>  
 

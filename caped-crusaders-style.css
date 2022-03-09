@@ -142,7 +142,7 @@ button {
 
 
 /* A condensed off black color style group for dark text elements */
-body, #page-title-table tr th, #page-title-table th, #page-title-table tr td, #page-title-table td, .level-table tr th, .level-table th, .level-table tr td, .level-table td, .cc-build-selections-table tr th, .cc-build-selections-table tr td, .cc-build-selections-table td:nth-child(1) {
+body, #page-title-table tr th, #page-title-table th, #page-title-table tr td, #page-title-table td, #page-title-table-wide tr th, #page-title-table-wide th, #page-title-table-wide tr td, #page-title-table-wide td,.level-table tr th, .level-table th, .level-table tr td, .level-table td, .cc-build-selections-table tr th, .cc-build-selections-table tr td, .cc-build-selections-table td:nth-child(1) {
   color: rgb(25,25,25);
 }
 
