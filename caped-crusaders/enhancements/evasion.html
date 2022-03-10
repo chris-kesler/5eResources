@@ -53,10 +53,10 @@
         $.getJSON(`../${power_source_plural.toLowerCase()}.json`, function(data) {
 
           // Reading the name of this file
-          var page_array = window.location.pathname.split("/");
-          var page_title = page_array.pop();
-          var page_directory = page_array.pop();
-          var page_subsite = page_array.pop();
+          var path_array = window.location.pathname.split("/");
+          var page_title = path_array.pop();
+          var page_directory = path_array.pop();
+          var page_subsite = path_array.pop();
 
 
           // Looping through the JSON data 

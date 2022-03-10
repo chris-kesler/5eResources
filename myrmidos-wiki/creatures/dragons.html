@@ -12,10 +12,16 @@
     <link rel="icon" href="/resources/images/OwlOfMinerva_ModifiedLogo.png">
     <link rel="stylesheet" href="/caped-crusaders-style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Importing local Javascript functions -->
+    <script type="text/javascript" src="/resources/scripts/function-titleCase.js"></script>
+
 		<!-- Populating the page Header and Footer -->
 		<script type="text/javascript" src="/resources/scripts/load-header-footer.js"></script>
-		<!-- Populating the page Title based on file name and path -->
-		<script type="text/javascript" src="/resources/scripts/load-page-title.js"></script>
+
+		<!-- Populating the Title directories and name based on file name and file path -->
+    <script type="text/javascript" src="/resources/scripts/load-title-directories.js"></script>
+		<script type="text/javascript" src="/resources/scripts/load-title-name.js"></script>
   </head>  
 
 
@@ -42,16 +48,16 @@
           </td></tr>
 
           <tr><td>
-            <button class="page-list-entry-button" onclick="location.href='dragons/azure-dragon.html'">Azure Dragon</button>
+            <button class="page-list-entry-button" onclick="location.href='dragons/entry-page.html?name=azure-dragon'">Azure Dragon</button>
           </td></tr>
           <tr><td>
-            <button class="page-list-entry-button" onclick="location.href='dragons/crimson-dragon.html'">Crimson Dragon</button>
+            <button class="page-list-entry-button" onclick="location.href='dragons/entry-page.html?name=crimson-dragon'">Crimson Dragon</button>
           </td></tr>
           <tr><td>
-            <button class="page-list-entry-button" onclick="location.href='dragons/gemstone-dragon.html'">Gemstone Dragon</button>
+            <button class="page-list-entry-button" onclick="location.href='dragons/entry-page.html?name=gemstone-dragon'">Gemstone Dragon</button>
           </td></tr>
           <tr><td>
-            <button class="page-list-entry-button" onclick="location.href='dragons/turquoise-dragon.html'">Turquoise Dragon</button>
+            <button class="page-list-entry-button" onclick="location.href='dragons/entry-page.html?name=turquoise-dragon'">Turquoise Dragon</button>
           </td></tr>
 
           <!-- Quasiprimal Dragons -->
@@ -60,16 +66,16 @@
           </td></tr>
 
           <tr><td>
-            <button class="page-list-entry-button" onclick="location.href='dragons/alabaster-dragon.html'">Alabaster Dragon</button>
+            <button class="page-list-entry-button" onclick="location.href='dragons/entry-page.html?name=alabaster-dragon'">Alabaster Dragon</button>
           </td></tr>
           <tr><td>
-            <button class="page-list-entry-button" onclick="location.href='dragons/umbral-dragon.html'">Umbral Dragon</button>
+            <button class="page-list-entry-button" onclick="location.href='dragons/entry-page.html?name=umbral-dragon'">Umbral Dragon</button>
           </td></tr>
           <tr><td>
-            <button class="page-list-entry-button" onclick="location.href='dragons/stygian-dragon.html'">Stygian Dragon</button>
+            <button class="page-list-entry-button" onclick="location.href='dragons/entry-page.html?name=stygian-dragon'">Stygian Dragon</button>
           </td></tr>
           <tr><td>
-            <button class="page-list-entry-button" onclick="location.href='dragons/viridian-dragon.html'">Viridian Dragon</button>
+            <button class="page-list-entry-button" onclick="location.href='dragons/entry-page.html?name=viridian-dragon'">Viridian Dragon</button>
           </td></tr>
 
           <!-- Metallic Dragons -->
@@ -78,22 +84,22 @@
           </td></tr>
 
           <tr><td>
-            <button class="page-list-entry-button" onclick="location.href='dragons/cobalt-dragon.html'">Cobalt Dragon</button>
+            <button class="page-list-entry-button" onclick="location.href='dragons/entry-page.html?name=cobalt-dragon'">Cobalt Dragon</button>
           </td></tr>
           <tr><td>
-            <button class="page-list-entry-button" onclick="location.href='dragons/gold-dragon.html'">Gold Dragon</button>
+            <button class="page-list-entry-button" onclick="location.href='dragons/entry-page.html?name=gold-dragon'">Gold Dragon</button>
           </td></tr>
           <tr><td>
-            <button class="page-list-entry-button" onclick="location.href='dragons/copper-dragon.html'">Copper Dragon</button>
+            <button class="page-list-entry-button" onclick="location.href='dragons/entry-page.html?name=copper-dragon'">Copper Dragon</button>
           </td></tr>
           <tr><td>
-            <button class="page-list-entry-button" onclick="location.href='dragons/bronze-dragon.html'">Bronze Dragon</button>
+            <button class="page-list-entry-button" onclick="location.href='dragons/entry-page.html?name=bronze-dragon'">Bronze Dragon</button>
           </td></tr>
           <tr><td>
-            <button class="page-list-entry-button" onclick="location.href='dragons/silver-dragon.html'">Silver Dragon</button>
+            <button class="page-list-entry-button" onclick="location.href='dragons/entry-page.html?name=silver-dragon'">Silver Dragon</button>
           </td></tr>
           <tr><td>
-            <button class="page-list-entry-button" onclick="location.href='dragons/brass-dragon.html'">Brass Dragon</button>
+            <button class="page-list-entry-button" onclick="location.href='dragons/entry-page.html?name=brass-dragon'">Brass Dragon</button>
           </td></tr>
 
           <!-- Deodragons -->
@@ -102,16 +108,16 @@
           </td></tr>
 
           <tr><td>
-            <button class="page-list-entry-button" onclick="location.href='dragons/dracowisp.html'">Dracowisp</button>
+            <button class="page-list-entry-button" onclick="location.href='dragons/entry-page.html?name=dracowisp'">Dracowisp</button>
           </td></tr>
           <tr><td>
-            <button class="page-list-entry-button" onclick="location.href='dragons/dracoshade.html'">Dracoshade</button>
+            <button class="page-list-entry-button" onclick="location.href='dragons/entry-page.html?name=dracoshade'">Dracoshade</button>
           </td></tr>
           <tr><td>
-            <button class="page-list-entry-button" onclick="location.href='dragons/dracofiend.html'">Dracofiend</button>
+            <button class="page-list-entry-button" onclick="location.href='dragons/entry-page.html?name=dracofiend'">Dracofiend</button>
           </td></tr>
           <tr><td>
-            <button class="page-list-entry-button" onclick="location.href='dragons/dracofey.html'">Dracofey</button>
+            <button class="page-list-entry-button" onclick="location.href='dragons/entry-page.html?name=dracofey'">Dracofey</button>
           </td></tr>              
 
           <!-- Draconids -->
@@ -120,16 +126,16 @@
           </td></tr>
 
           <tr><td>
-            <button class="page-list-entry-button" onclick="location.href='dragons/drake.html'">Drake</button>
+            <button class="page-list-entry-button" onclick="location.href='dragons/entry-page.html?name=drake'">Drake</button>
           </td></tr>
           <tr><td>
-            <button class="page-list-entry-button" onclick="location.href='dragons/wyvern.html'">Wyvern</button>
+            <button class="page-list-entry-button" onclick="location.href='dragons/entry-page.html?name=wyvern'">Wyvern</button>
           </td></tr>
           <tr><td>
-            <button class="page-list-entry-button" onclick="location.href='dragons/sea-serpent.html'">Sea Serpent</button>
+            <button class="page-list-entry-button" onclick="location.href='dragons/entry-page.html?name=sea-serpent'">Sea Serpent</button>
           </td></tr>
           <tr><td>
-            <button class="page-list-entry-button" onclick="location.href='dragons/drakken.html'">Drakken</button>
+            <button class="page-list-entry-button" onclick="location.href='dragons/entry-page.html?name=drakken'">Drakken</button>
           </td></tr>
           
         </table>

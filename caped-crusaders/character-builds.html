@@ -51,29 +51,29 @@
 // =========================================================================================
         
         // Reading the name of this file
-        var page_array = window.location.pathname.split("/");
-        var page_array_length = page_array.length;
+        var path_array = window.location.pathname.split("/");
+        var path_array_length = path_array.length;
 
-        if (page_array.length == 5) {
-          var page_title = page_array.pop();
-          var page_category = page_array.pop();
-          var page_directory = page_array.pop();
-          var page_subsite = page_array.pop();
-          var page_site = page_array.pop();
-        } else if (page_array.length == 4) {
-          var page_title = page_array.pop();
-          var page_directory = page_array.pop();
-          var page_subsite = page_array.pop();
-          var page_site = page_array.pop();
-        } else if (page_array.length == 3) {
-          var page_title = page_array.pop();
-          var page_subsite = page_array.pop();
-          var page_site = page_array.pop();
-        } else if (page_array.length == 2) {
-          var page_title = page_array.pop();
-          var page_site = page_array.pop();
-        } else if (page_array.length == 1) {
-          var page_title = page_array.pop();
+        if (path_array.length == 5) {
+          var page_title = path_array.pop();
+          var page_category = path_array.pop();
+          var page_directory = path_array.pop();
+          var page_subsite = path_array.pop();
+          var page_site = path_array.pop();
+        } else if (path_array.length == 4) {
+          var page_title = path_array.pop();
+          var page_directory = path_array.pop();
+          var page_subsite = path_array.pop();
+          var page_site = path_array.pop();
+        } else if (path_array.length == 3) {
+          var page_title = path_array.pop();
+          var page_subsite = path_array.pop();
+          var page_site = path_array.pop();
+        } else if (path_array.length == 2) {
+          var page_title = path_array.pop();
+          var page_site = path_array.pop();
+        } else if (path_array.length == 1) {
+          var page_title = path_array.pop();
         } 
 
         var titleCompleted = false;
