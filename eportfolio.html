@@ -12,38 +12,7 @@
     <link rel="icon" href="/resources/images/OwlOfMinerva_ModifiedLogo.png">
     <link rel="stylesheet" href="/caped-crusaders-style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-
-      // A function that capitalizes the first letter of each word in a string
-      function titleCase(str) {
-        var split_string = str.toLowerCase().split(' ');
-        for (var i = 0; i < split_string.length; i++) {
-          split_string[i] = split_string[i].charAt(0).toUpperCase() + split_string[i].substring(1);     
-        }
-        return split_string.join(' '); 
-      }
-
-
-      // The function that populates all page data into preset elements
-      $(function populatePageData() {
-
-
-// =========================================================================================
-// Populating the page HEADER
-// 
-// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
-// =========================================================================================
-        $("#import-header").load("/resources/pages/import-header.html");
-
-
-// =========================================================================================
-// Populating the page FOOTER
-// 
-// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
-// =========================================================================================
-        $("#import-footer").load("/resources/pages/import-footer.html");
-      });
-    </script>
+    <script type="text/javascript" src="/resources/scripts/load-header-footer.js"></script>
   </head>  
 
 
