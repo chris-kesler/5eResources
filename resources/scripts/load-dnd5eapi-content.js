@@ -1,120 +1,166 @@
 
-// The function that populates all page data into preset elements
-$(function populatePageData() {
+page_args = readArgs();
 
+// document.getElementById('page-title-path').innerHTML = page_args;
+const getResults = (id) => {
+	// document.getElementById('page-title-path').innerHTML = `https://www.dnd5eapi.co${id}`;
 
-	var path_array = window.location.pathname.split("/");
-
-	// Reading data from our JSON file
-	$.getJSON(`/${path_array[1]}/${path_array[2]}.json`, function(data) {
-
-		// Looping through the JSON data 
-		$.each(data.entries, function(i, f) {
-
-			page_args = readArgs();
-
-			// Finding the entry that matches this file's args
-			if (f.entry_name.toLowerCase().replace(/\s/g, '-').replace("'", "") == page_args) {
-
-				// If Title Library Exists
-				if (f.title_library != undefined) {
-					for (var x = 0; f.title_library.length > x; x++) {
-						if (f.title_library[x].table_row != undefined) {
-							var table_row1 = "<tr>";
-							var table_row2 = "<tr>";
-							for (var y = 0; f.title_library[x].table_row.length > y; y++) {
-								if (f.title_library[x].table_row[y].heading != undefined && f.title_library[x].table_row[y].content != undefined && f.title_library[x].table_row[y].heading !== "" && f.title_library[x].table_row[y].content !== "") {
-									table_row1 += "<th style='width: 15vw'>" + f.title_library[x].table_row[y].heading + "</th>";
-									table_row2 += "<td style='width: 15vw'>" + f.title_library[x].table_row[y].content + "</td>";
-								}
-							}
-							table_row += "</tr>";
-							if (!table_row1.includes("<tr></tr>") && !table_row2.includes("<tr></tr>")) {
-								$(table_row1).appendTo("#page-title-table tbody");
-								$(table_row2).appendTo("#page-title-table tbody");
-							}
-						}
-					}
-				}
+	fetch(`https://www.dnd5eapi.co${id}`)
+		.then(response => response.json())
+		.then((data) => {
+			const result = {
+				index: data.index,
+				name: data.name,
+				level: data.level,
+				school: data.school.name,
+				casting_time: data.casting_time,
+				range: data.range,
+				components: data.components,
+				duration: data.duration,
+				attack: data.attack_type,
+				save: data.dc,
+				damage: data.damage,
+				higher_level: data.higher_level,
+				classes: data.classes,
+				desc: data.desc,
+				material: data.material
+			}
 
 
 // =========================================================================================
-// Populating the page ATTRIBUTES
-// 
-// The ATTRIBUTES table can include a table of details for wiki entries such as monsters or planescapes
-// If attribute_library does not have a additional entries, the table of details is hidden and only the ATTRIBUTE image is populated
+// Populating the page TITLE table
 // =========================================================================================
 
-				// If Attribute Library Exists
-				if (f.attribute_library != undefined) {
-					if (f.attribute_library[0] != undefined) {
-						
-						// Table Row #1:  Rehosted Art
-						if (f.attribute_library[0].img_rehosted != undefined && f.attribute_library[0].img_rehosted_source != undefined && f.attribute_library[0].img_rehosted !== "" && f.attribute_library[0].img_rehosted_source !== "") {
-							var table_row = "<tr><th colspan='2'><img id='page-attributes-table-image' alt='" + f.entry_name + "' target='blank' src='" + f.attribute_library[0].img_rehosted + "' onclick='window.open(`" + f.attribute_library[0].img_rehosted_source + "`)' style='display:block'></th></tr>";
-						} else {
-							var table_row = "<tr><th colspan='2'><img id='page-attributes-table-image' alt='" + f.entry_name + "' target='blank' src='/resources/images/WikiPlaceholder.png' onclick='window.open(this.src)'></th></tr>";
-						}
-						$(table_row).appendTo("#page-attributes-table tbody");
-						
+			var table_row = `
+			<tr>
+				<th>
+					Name
+				</th>
+				<th>
+					Level
+				</th>
+				<th>
+					Casting Time
+				</th>
+				<th>
+					Range/Area
+				</th>
+				<th>
+					Components
+				</th>
+			</tr>
+			`
+			$(table_row).appendTo("#page-title-table tbody");
 
-						// Table Row #2:  Linked Art
-						if (f.attribute_library[0].img_linked != undefined && f.attribute_library[0].img_linked_source != undefined && f.attribute_library[0].img_linked !== "" && f.attribute_library[0].img_linked_source !== "") { 
-							var table_row = "<tr><th colspan='2'><i><a href='" + f.attribute_library[0].img_linked + "' target='_blank'>Additional Art</a> and <a href='" + f.attribute_library[0].img_linked_source + "' target='blank'>(source)</a></i></th></tr>";
-						} else {
-							var table_row = "<tr><th colspan='2'><i>No Additional Art Available</a></i></th></tr>";
-						}
-						$(table_row).appendTo("#page-attributes-table tbody");
+			table_row = `
+			<tr>
+				<td>
+					${result.name}
+				</td>
+				<td>
+					${result.level}
+				</td>
+				<td>
+					${result.casting_time}
+				</td>
+				<td>
+					${result.range}
+				</td>
+				<td>
+					${result.components}
+				</td>
+			</tr>
+			`
+			$(table_row).appendTo("#page-title-table tbody");
 
+			table_row = `
+			<tr>
+				<th>
+					Source
+				</th>
+				<th>
+					Duration
+				</th>
+				<th>
+					School
+				</th>
+				<th>
+					Attack/Save
+				</th>
+				<th>
+					Damage/Effect
+				</th>
+			</tr>
+			`
+			$(table_row).appendTo("#page-title-table tbody");
 
-						// If the library contains data for a wiki wtyle table
-						if (f.attribute_library[1] != undefined) {
-							
-							// Table Row #3:  Entry Name
-							var table_row = "<tr><th colspan='2'>" + f.entry_name + "</th></tr>";
-							$(table_row).appendTo("#page-attributes-table tbody");
+			if(result.damage_effect != undefined) {
+				table_row = `
+				<tr>
+					<td>
+						${result.source}
+					</td>
+					<td>
+						${result.duration}
+					</td>
+					<td>
+						${result.school}
+					</td>
+					<td>
+						${result.attack}
+					</td>
+					<td>
+						${result.damage_effect.damage_type.name}
+					</td>
+				</tr>
+				`
+				$(table_row).appendTo("#page-title-table tbody");
+			} else {
+				table_row = `
+				<tr>
+					<td>
+						${result.source}
+					</td>
+					<td>
+						${result.duration}
+					</td>
+					<td>
+						${result.school}
+					</td>
+					<td>
+						${result.attack}
+					</td>
+					<td>
+						undefined
+					</td>
+				</tr>
+				`
+				$(table_row).appendTo("#page-title-table tbody");
+			}
 
-							// Table Row #4:  Species 
-							if (f.attribute_library[0].species != undefined && f.attribute_library[0].species !== "") {
-								var table_row = "<tr><th colspan='2'>(" + f.attribute_library[0].species + ")</th></tr>";
-							} else {
-								var table_row = "<tr><th colspan='2'>(Unknown Species)</th></tr>";
-							}
-							$(table_row).appendTo("#page-attributes-table tbody");
-
-
-							// Table Row(s) #5-n:  Attribute Details
-							for (var z = 0; f.attribute_library.length > z; z++) {
-								if (f.attribute_library[z].heading != undefined && f.attribute_library[z].sublibrary !== "") {
-									var table_row = "<tr><th colspan='2'>" + f.attribute_library[z].heading + "</th></tr>";
-									$(table_row).appendTo("#page-attributes-table tbody");
-									for (var y = 0; f.attribute_library[z].sublibrary.length > y; y++) {
-										if (f.attribute_library[z].sublibrary[y].subheading != undefined && f.attribute_library[z].sublibrary[y].subcontent != undefined && f.attribute_library[z].sublibrary[y].subheading !== "" && f.attribute_library[z].sublibrary[y].subcontent !== "") {
-											var table_row = "<tr><td>" + f.attribute_library[z].sublibrary[y].subheading + "</td><td>" + f.attribute_library[z].sublibrary[y].subcontent + "</td></tr>";
-											$(table_row).appendTo("#page-attributes-table tbody");
-										}
-									}
-								}
-							}
-						} 
-					} else {
-						// Table Row #1:  Rehosted Art
-						var table_row = "<tr><th colspan='2'><img id='page-attributes-table-image' alt='" + f.entry_name + "' target='blank' src='/resources/images/WikiPlaceholder.png' onclick='window.open(this.src)'></th></tr>";
-						$(table_row).appendTo("#page-attributes-table tbody");
-						
-						// Table Row #2:  Linked Art
-						var table_row = "<tr><th colspan='2'><i>No Additional Art Available</a></i></th></tr>";
-						$(table_row).appendTo("#page-attributes-table tbody");
-					}
-				} else {
-					// Table Row #1:  Rehosted Art
-					var table_row = "<tr><th colspan='2'><img id='page-attributes-table-image' alt='" + f.entry_name + "' target='blank' src='/resources/images/WikiPlaceholder.png' onclick='window.open(this.src)'></th></tr>";
-					$(table_row).appendTo("#page-attributes-table tbody");
+// =========================================================================================
+// Populating the page ATTRIBUTES table
+// =========================================================================================
+			// Table Row #1:  Rehosted Art
+			table_row = `
+				<tr>
+					<th colspan='2'>
+						<img id='page-attributes-table-image' alt='${result.name}' target='blank' src='/resources/images/${result.school}.png' style='display:block'>
+					</th>
+				</tr>
+			`
+			$(table_row).appendTo("#page-attributes-table tbody");
 					
-					// Table Row #2:  Linked Art
-					var table_row = "<tr><th colspan='2'><i>No Additional Art Available</a></i></th></tr>";
-					$(table_row).appendTo("#page-attributes-table tbody");
-				}
+
+			// Table Row #2:  Linked Art
+			table_row = `
+				<tr>
+					<th colspan='2'>
+						<i>${result.school} <a href='' target='blank'>(image source)</a></i>
+					</th>
+				</tr>
+			`
+			$(table_row).appendTo("#page-attributes-table tbody");
 
 
 // =========================================================================================
@@ -125,67 +171,72 @@ $(function populatePageData() {
 // =========================================================================================
 
 				// Populating the page title in the floating nav table
-				var table_row = "<tr><th><a href='#page-title-table'>" + f.entry_name + "</a></th></tr>";
+				var table_row = `<tr><th><a href='#page-title-table'>${result.name}</a></th></tr>`
 				$(table_row).appendTo("#page-navlist-table tbody");
 
-				// If Description Library Exists
-				if (f.description_library != undefined) {
 
-					// Populating Description Overview underneath title table with no heading
-					if (f.description_library[0].overview != undefined && f.description_library[0].overview !== "") {
-						document.getElementById("page-description-div").innerHTML = "<p>" + f.description_library[0].overview + "</p>";
-					}
+				headingsArray = ["Flavor Description", "Standard Mechanics", "Overcharge Mechanics", "Material Components"];
 
-					// Looping through all Library entries
-					for (var x = 0; f.description_library.length > x; x++) {
+				for (let i = 0; i < headingsArray.length; i++) {
+					document.getElementById("page-description-div").innerHTML += "<div id='" + headingsArray[i].toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h3>" + headingsArray[i] + ": </h3></div>";
 
-						// Determining if Heading should be shown
-						if (f.description_library[x].content != undefined && f.description_library[x].content !== "") {
-							var showHeading = true;
-						} else if (f.description_library[x].sublibrary != undefined) {
-							for (var w = 0; f.description_library[x].sublibrary.length > w; w++) {
-								if (f.description_library[x].sublibrary[w].subheading != undefined && f.description_library[x].sublibrary[w].subcontent != undefined && f.description_library[x].sublibrary[w].subheading !== "" && f.description_library[x].sublibrary[w].subcontent !== "") {
-									var showHeading = true;
-								}
-							}
-						} else {
-							var showHeading = false;
-						}
+					table_row = `
+						<tr>
+							<td>
+								<a style='margin-left: 10px' href='#${headingsArray[i].toLowerCase().replace(/\s/g, '-').replace(`'`, ``)}'>${headingsArray[i]}</a>
+							</td>
+						</tr>
+					`
+					$(table_row).appendTo("#page-navlist-table tbody");
 
-						// Populating Heading
-						if (f.description_library[x].heading != undefined && f.description_library[x].heading !== "" && showHeading) {
-							document.getElementById("page-description-div").innerHTML += "<div id='" + f.description_library[x].heading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h3>" + f.description_library[x].heading + "</h3></div>";
+					if (i == 1) {
+						document.getElementById("page-description-div").innerHTML += `<p>${result.desc[0]}</p>`
+					} else if (i == 2) {
+						document.getElementById("page-description-div").innerHTML += `<p>${result.desc[1]}</p>`
+					} else if (i == 3) {
+					document.getElementById("page-description-div").innerHTML += `<p>${result.material}</p>`
 
-							// Populating the page heading in the floating nav table
-							var table_row = "<tr><td><a style='margin-left: 10px' href='#" + f.description_library[x].heading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'>" + f.description_library[x].heading + "</a></td></tr>";
-							$(table_row).appendTo("#page-navlist-table tbody");
-
-							// Populating Heading Content
-							if (f.description_library[x].content != undefined && f.description_library[x].content !== "") {
-								document.getElementById("page-description-div").innerHTML += "<p>" + f.description_library[x].content + "</p>";
-							}
-
-							// If Sublibrary Exists
-							if (f.description_library[x].sublibrary != undefined) {
-
-								// Looping through all Sublibrary entries
-								for (var w = 0; f.description_library[x].sublibrary.length > w; w++) {
-
-									// Populating Subheading and Subcontent
-									if (f.description_library[x].sublibrary[w].subheading != undefined && f.description_library[x].sublibrary[w].subcontent != undefined && f.description_library[x].sublibrary[w].subheading !== "" && f.description_library[x].sublibrary[w].subcontent !== "") {
-										document.getElementById("page-description-div").innerHTML += "<div id='" + f.description_library[x].sublibrary[w].subheading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h4>&#8226;  " + f.description_library[x].sublibrary[w].subheading + "</h4></div><p>" + f.description_library[x].sublibrary[w].subcontent + "</p>";
-
-										// Populating the page heading in the floating nav table
-										var table_row = "<tr><td><a style='margin-left: 20px' href='#" + f.description_library[x].sublibrary[w].subheading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'>&#8226;  " + f.description_library[x].sublibrary[w].subheading + "</a></td></tr>";
-										$(table_row).appendTo("#page-navlist-table tbody");
-
-									}
-								}
-							}
-						}
-					}
 				}
-			}
+
+
+				}
+
+				
+	// 						// Populating the page heading in the floating nav table
+
+	// 						// Populating Heading Content
+	// 						if (f.description_library[x].content != undefined && f.description_library[x].content !== "") {
+	// 							document.getElementById("page-description-div").innerHTML += "<p>" + f.description_library[x].content + "</p>";
+	// 						}
+
+	// 						// If Sublibrary Exists
+	// 						if (f.description_library[x].sublibrary != undefined) {
+
+	// 							// Looping through all Sublibrary entries
+	// 							for (var w = 0; f.description_library[x].sublibrary.length > w; w++) {
+
+	// 								// Populating Subheading and Subcontent
+	// 								if (f.description_library[x].sublibrary[w].subheading != undefined && f.description_library[x].sublibrary[w].subcontent != undefined && f.description_library[x].sublibrary[w].subheading !== "" && f.description_library[x].sublibrary[w].subcontent !== "") {
+	// 									document.getElementById("page-description-div").innerHTML += "<div id='" + f.description_library[x].sublibrary[w].subheading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h4>&#8226;  " + f.description_library[x].sublibrary[w].subheading + "</h4></div><p>" + f.description_library[x].sublibrary[w].subcontent + "</p>";
+
+	// 									// Populating the page heading in the floating nav table
+	// 									var table_row = "<tr><td><a style='margin-left: 20px' href='#" + f.description_library[x].sublibrary[w].subheading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'>&#8226;  " + f.description_library[x].sublibrary[w].subheading + "</a></td></tr>";
+	// 									$(table_row).appendTo("#page-navlist-table tbody");
+
+	// 								}
+	// 							}
+	// 						}
+	// 					}
+	// 				}
+	// 			}
+	// 		}
+	// 	});
+	// });
+
 		});
-	});
-});
+	
+}
+
+getResults(`/api/spells/${page_args}`);
+
+
