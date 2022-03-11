@@ -223,7 +223,7 @@ body, #page-title-table tr th, #page-title-table th, #page-title-table tr td, #p
 .page-content-section {
   border: 2px solid rgb(100,100,100);
   box-sizing: border-box;
-  overflow: hidden;
+  overflow-wrap: break-word;
   margin-left: 5vw; 
   margin-right: 5vw;
   margin-top: 25px;
@@ -556,19 +556,18 @@ The buttons used to navigate and organize the classes within caped crusaders
 An overview table for caped crusaders entry pages 
 */
 #page-title-table {
-  width: 60vw;
+  width: 65%;
 }
 #page-title-table-wide {
   width: 100%;
 }
 #page-title-table, #page-title-table-wide, .level-table {
-  overflow: visible;
   margin: 0px;
   margin-bottom: 15px;
-  overflow: auto;
-  border: 1px solid rgb(50,50,50);
+  overflow-x: scroll;
+  border: 0px solid rgb(50,50,50);
   border-collapse: collapse;
-  float: left;
+  display: inline-block;
 }
 #page-title-table thead tr td, #page-title-table-wide thead tr td, .level-table thead tr td{
   border: 0px hidden aqua;
@@ -692,7 +691,7 @@ A small table to hold the entry page image and author credit
   float: right;
   overflow: auto;
   border-collapse: collapse;
-  width: 25vw;
+  width: 30%;
   padding: 0px;
   margin: 0px;
   margin-right: -10px;
