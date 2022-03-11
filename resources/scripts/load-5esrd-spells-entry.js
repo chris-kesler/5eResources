@@ -94,49 +94,56 @@ const getResults = (id) => {
 			`
 			$(table_row).appendTo("#page-title-table tbody");
 
-			if(result.damage_effect != undefined) {
-				table_row = `
-				<tr>
+			table_row = `
+			<tr>
+				<td>
+					www.dnd5eapi.co
+				</td>
+				<td>
+					${result.duration}
+				</td>
+				<td>
+					${result.school}
+				</td>
+			`
+			if(result.attack == undefined && result.save != undefined) {
+
+				table_row += `
 					<td>
-						${result.source}
+						${result.save.dc_type.name}
 					</td>
-					<td>
-						${result.duration}
-					</td>
-					<td>
-						${result.school}
-					</td>
-					<td>
-						${result.attack}
-					</td>
-					<td>
-						${result.damage_effect.damage_type.name}
-					</td>
-				</tr>
 				`
-				$(table_row).appendTo("#page-title-table tbody");
+			} else if (result.attack != undefined && result.save == undefined) {
+
+				table_row += `
+					<td>
+						${titleCase(result.attack)}
+					</td>
+				`
 			} else {
-				table_row = `
-				<tr>
+				table_row += `
 					<td>
-						${result.source}
+						NA
 					</td>
+				`
+			}
+			
+			if(result.damage != undefined) {
+				table_row += `
 					<td>
-						${result.duration}
-					</td>
-					<td>
-						${result.school}
-					</td>
-					<td>
-						${result.attack}
-					</td>
-					<td>
-						undefined
+						${result.damage.damage_type.name}
 					</td>
 				</tr>
 				`
-				$(table_row).appendTo("#page-title-table tbody");
+			} else {
+				table_row += `
+					<td>
+						NA
+					</td>
+				</tr>
+				`
 			}
+			$(table_row).appendTo("#page-title-table tbody");
 
 // =========================================================================================
 // Populating the page ATTRIBUTES table
@@ -156,7 +163,7 @@ const getResults = (id) => {
 			table_row = `
 				<tr>
 					<th colspan='2'>
-						<i>${result.school} <a href='' target='blank'>(image source)</a></i>
+						<i>${result.school} <a href='https://www.deviantart.com/dryoshiyahu/art/Schools-of-Magic-811154835' target='_blank'>(image source)</a></i>
 					</th>
 				</tr>
 			`
@@ -175,7 +182,7 @@ const getResults = (id) => {
 				$(table_row).appendTo("#page-navlist-table tbody");
 
 
-				headingsArray = ["Flavor Description", "Standard Mechanics", "Overcharge Mechanics", "Material Components"];
+				headingsArray = ["Standard Mechanics", "Upcast Mechanics", "Material Components"];
 
 				for (let i = 0; i < headingsArray.length; i++) {
 					document.getElementById("page-description-div").innerHTML += "<div id='" + headingsArray[i].toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h3>" + headingsArray[i] + ": </h3></div>";
@@ -189,49 +196,23 @@ const getResults = (id) => {
 					`
 					$(table_row).appendTo("#page-navlist-table tbody");
 
-					if (i == 1) {
+					if (i == 0) {
 						document.getElementById("page-description-div").innerHTML += `<p>${result.desc[0]}</p>`
+					} else if (i == 1) {
+						if (result.desc[1] == undefined && result.level == 0) {
+							document.getElementById("page-description-div").innerHTML += `<p>(This cantrip does not scale with your character level)</p>`
+						} else if (result.desc[1] == undefined && result.level > 0) {
+							document.getElementById("page-description-div").innerHTML += `<p>(This spell does not function differently if cast using a higher level spell slot)</p>`
+						} else {
+							document.getElementById("page-description-div").innerHTML += `<p>${result.desc[1]}</p>`
+						}
 					} else if (i == 2) {
-						document.getElementById("page-description-div").innerHTML += `<p>${result.desc[1]}</p>`
-					} else if (i == 3) {
 					document.getElementById("page-description-div").innerHTML += `<p>${result.material}</p>`
 
 				}
 
 
 				}
-
-				
-	// 						// Populating the page heading in the floating nav table
-
-	// 						// Populating Heading Content
-	// 						if (f.description_library[x].content != undefined && f.description_library[x].content !== "") {
-	// 							document.getElementById("page-description-div").innerHTML += "<p>" + f.description_library[x].content + "</p>";
-	// 						}
-
-	// 						// If Sublibrary Exists
-	// 						if (f.description_library[x].sublibrary != undefined) {
-
-	// 							// Looping through all Sublibrary entries
-	// 							for (var w = 0; f.description_library[x].sublibrary.length > w; w++) {
-
-	// 								// Populating Subheading and Subcontent
-	// 								if (f.description_library[x].sublibrary[w].subheading != undefined && f.description_library[x].sublibrary[w].subcontent != undefined && f.description_library[x].sublibrary[w].subheading !== "" && f.description_library[x].sublibrary[w].subcontent !== "") {
-	// 									document.getElementById("page-description-div").innerHTML += "<div id='" + f.description_library[x].sublibrary[w].subheading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h4>&#8226;  " + f.description_library[x].sublibrary[w].subheading + "</h4></div><p>" + f.description_library[x].sublibrary[w].subcontent + "</p>";
-
-	// 									// Populating the page heading in the floating nav table
-	// 									var table_row = "<tr><td><a style='margin-left: 20px' href='#" + f.description_library[x].sublibrary[w].subheading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'>&#8226;  " + f.description_library[x].sublibrary[w].subheading + "</a></td></tr>";
-	// 									$(table_row).appendTo("#page-navlist-table tbody");
-
-	// 								}
-	// 							}
-	// 						}
-	// 					}
-	// 				}
-	// 			}
-	// 		}
-	// 	});
-	// });
 
 		});
 	
