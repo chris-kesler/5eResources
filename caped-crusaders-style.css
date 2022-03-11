@@ -552,7 +552,10 @@ The buttons used to navigate and organize the classes within caped crusaders
 .page-list-table {
   float: right;
   height: auto;
-  width: 25vw;
+  max-width: 75vw;
+  width: 860px;
+  display: inline-block;
+  overflow: auto;
   border-radius: 15px;
 }
 
