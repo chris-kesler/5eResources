@@ -1,10 +1,8 @@
-
+// Reading the page Arguments
 page_args = readArgs();
 
-// document.getElementById('page-title-path').innerHTML = page_args;
+// The function that pulls data from the dnd5e api
 const getResults = (id) => {
-	// document.getElementById('page-title-path').innerHTML = `https://www.dnd5eapi.co${id}`;
-
 	fetch(`https://www.dnd5eapi.co${id}`)
 		.then(response => response.json())
 		.then((data) => {
@@ -23,6 +21,7 @@ const getResults = (id) => {
 				higher_level: data.higher_level,
 				classes: data.classes,
 				desc: data.desc,
+				higher_level: data.higher_level,
 				material: data.material
 			}
 
@@ -31,6 +30,7 @@ const getResults = (id) => {
 // Populating the page TITLE table
 // =========================================================================================
 
+			// Table Row #1: Labels
 			var table_row = `
 			<tr>
 				<th>
@@ -52,6 +52,7 @@ const getResults = (id) => {
 			`
 			$(table_row).appendTo("#page-title-table tbody");
 
+			// Table Row #2: Values
 			table_row = `
 			<tr>
 				<td>
@@ -73,6 +74,7 @@ const getResults = (id) => {
 			`
 			$(table_row).appendTo("#page-title-table tbody");
 
+			// Table Row #3: Labels
 			table_row = `
 			<tr>
 				<th>
@@ -94,6 +96,7 @@ const getResults = (id) => {
 			`
 			$(table_row).appendTo("#page-title-table tbody");
 
+			// Table Row #4: Values
 			table_row = `
 			<tr>
 				<td>
@@ -148,7 +151,7 @@ const getResults = (id) => {
 // =========================================================================================
 // Populating the page ATTRIBUTES table
 // =========================================================================================
-			// Table Row #1:  Rehosted Art
+			// Table Row #1: Rehosted Art
 			table_row = `
 				<tr>
 					<th colspan='2'>
@@ -159,7 +162,7 @@ const getResults = (id) => {
 			$(table_row).appendTo("#page-attributes-table tbody");
 					
 
-			// Table Row #2:  Linked Art
+			// Table Row #2: Linked Art
 			table_row = `
 				<tr>
 					<th colspan='2'>
@@ -173,7 +176,7 @@ const getResults = (id) => {
 // =========================================================================================
 // Populating the page DESCRIPTION and NAVLIST
 // 
-// The DESCRIPTION div can any number of headings and paragraphs
+// The DESCRIPTION div can hold any number of headings and paragraphs
 // The NAVLIST is updated with links to the DESCRIPTION headings as they are populated
 // =========================================================================================
 
@@ -185,37 +188,52 @@ const getResults = (id) => {
 				headingsArray = ["Standard Mechanics", "Upcast Mechanics", "Material Components"];
 
 				for (let i = 0; i < headingsArray.length; i++) {
-					document.getElementById("page-description-div").innerHTML += "<div id='" + headingsArray[i].toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h3>" + headingsArray[i] + ": </h3></div>";
-
-					table_row = `
-						<tr>
-							<td>
-								<a style='margin-left: 10px' href='#${headingsArray[i].toLowerCase().replace(/\s/g, '-').replace(`'`, ``)}'>${headingsArray[i]}</a>
-							</td>
-						</tr>
-					`
-					$(table_row).appendTo("#page-navlist-table tbody");
 
 					if (i == 0) {
-						document.getElementById("page-description-div").innerHTML += `<p>${result.desc[0]}</p>`
-					} else if (i == 1) {
-						if (result.desc[1] == undefined && result.level == 0) {
-							document.getElementById("page-description-div").innerHTML += `<p>(This cantrip does not scale with your character level)</p>`
-						} else if (result.desc[1] == undefined && result.level > 0) {
-							document.getElementById("page-description-div").innerHTML += `<p>(This spell does not function differently if cast using a higher level spell slot)</p>`
-						} else {
-							document.getElementById("page-description-div").innerHTML += `<p>${result.desc[1]}</p>`
+						document.getElementById("page-description-div").innerHTML += "<div id='" + headingsArray[i].toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h3>" + headingsArray[i] + ": </h3></div>";
+
+						table_row = `
+							<tr>
+								<td>
+									<a style='margin-left: 10px' href='#${headingsArray[i].toLowerCase().replace(/\s/g, '-').replace(`'`, ``)}'>${headingsArray[i]}</a>
+								</td>
+							</tr>
+						`
+						$(table_row).appendTo("#page-navlist-table tbody");
+
+						for (let z = 0; z < result.desc.length; z++) {
+							document.getElementById("page-description-div").innerHTML += `<p>${result.desc[z]}</p>`;
 						}
-					} else if (i == 2) {
-					document.getElementById("page-description-div").innerHTML += `<p>${result.material}</p>`
 
+					} else if (i == 1 && !jQuery.isEmptyObject(result.higher_level)) {
+						document.getElementById("page-description-div").innerHTML += "<div id='" + headingsArray[i].toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h3>" + headingsArray[i] + ": </h3></div>";
+
+						table_row = `
+							<tr>
+								<td>
+									<a style='margin-left: 10px' href='#${headingsArray[i].toLowerCase().replace(/\s/g, '-').replace(`'`, ``)}'>${headingsArray[i]}</a>
+								</td>
+							</tr>
+						`
+						$(table_row).appendTo("#page-navlist-table tbody");
+
+						document.getElementById("page-description-div").innerHTML += `<p>${result.higher_level}</p>`;
+					} else if (i == 2 && result.material != undefined) {
+						document.getElementById("page-description-div").innerHTML += "<div id='" + headingsArray[i].toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h3>" + headingsArray[i] + ": </h3></div>";
+
+						table_row = `
+							<tr>
+								<td>
+									<a style='margin-left: 10px' href='#${headingsArray[i].toLowerCase().replace(/\s/g, '-').replace(`'`, ``)}'>${headingsArray[i]}</a>
+								</td>
+							</tr>
+						`
+						$(table_row).appendTo("#page-navlist-table tbody");
+
+						document.getElementById("page-description-div").innerHTML += `<p>${result.material}</p>`
+					}
 				}
-
-
-				}
-
 		});
-	
 }
 
 getResults(`/api/spells/${page_args}`);
