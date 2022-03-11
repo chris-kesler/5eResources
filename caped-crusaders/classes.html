@@ -12,9 +12,16 @@
 		<link rel="icon" href="/resources/images/OwlOfMinerva_ModifiedLogo.png">
 		<link rel="stylesheet" href="/caped-crusaders-style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<!-- Importing local Javascript functions -->
+		<script type="text/javascript" src="/resources/scripts/function-titleCase.js"></script>
+		<script type="text/javascript" src="/resources/scripts/function-hideShowNavList.js"></script>
+		<script type="text/javascript" src="/resources/scripts/function-readArgs.js"></script>
+
 		<!-- Populating the page Header and Footer -->
 		<script type="text/javascript" src="/resources/scripts/load-header-footer.js"></script>
-		<!-- Populating the page Title based on file name and path -->
+
+		<!-- Populating the Title directories and name based on file name and file path -->
+		<script type="text/javascript" src="/resources/scripts/load-title-directories.js"></script>
 		<script type="text/javascript" src="/resources/scripts/load-title-name.js"></script>
 
 		<script>
@@ -27,7 +34,7 @@
 					var path = window.location.pathname;
 					var page = path.split("/").pop();
 					$.each(data.entries, function(i, f) {
-						document.getElementById(`class-button-${i}`).setAttribute("onclick", "location.href='classes/class.html?name=" + f.name_str.toLowerCase() + "'");
+						document.getElementById(`class-button-${i}`).setAttribute("onclick", "location.href='classes/entry-page.html?name=" + f.name_str.toLowerCase() + "'");
 						document.getElementById(`class-button-${i}`).innerHTML = "<section class='cc-class-button-content-ceiling'><img class='cc-class-image-small' src='/resources/images/" + f.name_str + ".png' alt='" + f.name_str + " Image'><h3>" + f.name_str + "</h3><hr>" + f.description_short_str + "</section><section class='cc-class-button-content-floor'><i><b>Hit Die:</b>  d" + f.hit_die_int + "<br><b>Primary Ability:</b>  " + f.primary_ability + "<br><b>Saves:</b>  " + f.proficiencies_saves + "</section>";
 					});
 				});
