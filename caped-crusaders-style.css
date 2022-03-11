@@ -561,10 +561,13 @@ An overview table for caped crusaders entry pages
 #page-title-table-wide {
   width: 100%;
 }
+.level-table {
+  width: 75vw;
+}
 #page-title-table, #page-title-table-wide, .level-table {
   margin: 0px;
   margin-bottom: 15px;
-  overflow-x: scroll;
+  overflow-x: auto;
   border: 0px solid rgb(50,50,50);
   border-collapse: collapse;
   display: inline-block;
@@ -574,6 +577,9 @@ An overview table for caped crusaders entry pages
   border-bottom: 1px solid rgb(50,50,50);
   background: transparent;
   background-color: transparent;
+}
+#page-title-table-wide thead tr td {
+  width: 80vw;
 }
 #page-title-table th, #page-title-table-wide th, #page-title-table td, #page-title-table-wide td, .level-table th, .level-table td {
   padding: 8px;
