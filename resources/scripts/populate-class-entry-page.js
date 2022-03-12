@@ -68,7 +68,7 @@ $(function populatePageData() {
 					}
 					var table_row = "<tr>" + "<td>" + (i+1) + "</td>" + "<td>" + prof + "</td>" + "<td>" + links + "</td>" + "<td>" + sustainables + "</td>" + "<td>" + consumables_known + "</td>" + "<td>" + consumables_points + "</td>" + "<td>" + consumables_max + "</td>" + "</tr>"
 					j = j + 2;
-					$(table_row).appendTo("#level-table tbody");
+					$(table_row).appendTo("#populated-details-table tbody");
 					if ((i+1) == 4 || (i+1) == 8 || (i+1) == 12 || (i+1) == 16) {
 						prof++;
 					}
@@ -78,7 +78,7 @@ $(function populatePageData() {
 					else {
 						document.getElementById("populated-title-table-features").innerHTML += "<hr><h3 id='" 
 						+ f.class_feats[i].name_str.replace(/\s+/g, '') + "'>" 
-						+ f.class_feats[i].name_str + "</h3><h4><i><b><a href='#level-table'>" + f.name_str 
+						+ f.class_feats[i].name_str + "</h3><h4><i><b><a href='#populated-details-table'>" + f.name_str 
 						+ "</a>:</b>  level " + f.class_feats[i].level + "</i></h4><p>" 
 						+ f.class_feats[i].mechanics_str + "</p>";
 					}

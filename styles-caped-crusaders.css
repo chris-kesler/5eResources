@@ -19,7 +19,7 @@
 ||==========================================================================================
  */
 
-	#populated-title-table, .level-table {
+	#populated-title-table, .populated-details-table {
 		display: inline-block;
 		margin: 0;
 		border-collapse: collapse;
@@ -27,29 +27,29 @@
 		max-width: 88vw;
 		border: 0px solid rgb(50,50,50);
 	}
-	#populated-title-table thead tr td, .level-table thead tr td{
+	#populated-title-table thead tr td, .populated-details-table thead tr td{
 		background-color: transparent;
 		width: 88vw;
 		border-color: transparent;
 		border-bottom: 2px solid rgb(50,50,50);
 	}
-	.level-table thead tr td {
+	.populated-details-table thead tr td {
 		padding: 0px;
 	}
-	.level-table tr th, .level-table th, .level-table tr td, .level-table td {
+	.populated-details-table tr th, .populated-details-table th, .populated-details-table tr td, .populated-details-table td {
 		color: rgb(25,25,25);
 	}
-	#populated-title-table th, #populated-title-table td, .level-table th, .level-table td {
+	#populated-title-table th, #populated-title-table td, .populated-details-table th, .populated-details-table td {
 		padding: 8px;
 		vertical-align: top;
 		border: 1px solid rgb(50,50,50);
 	}
-	#populated-title-table tr th, #populated-title-table th, .level-table tr th, .level-table th {
+	#populated-title-table tr th, #populated-title-table th, .populated-details-table tr th, .populated-details-table th {
 		background-color: rgb(150,150,150);
 		font-size: medium;
 		text-align: left;
 	}
-	#populated-title-table tr td, #populated-title-table  td, .level-table tr td, .level-table td {
+	#populated-title-table tr td, #populated-title-table  td, .populated-details-table tr td, .populated-details-table td {
 		background-color: rgb(200,200,200);
 		font-size: medium;
 		text-align: left;
@@ -260,7 +260,7 @@
 #blended-description-div {
 	background-color: blue;
 }
-	.level-table {
+	.populated-details-table {
 		background-color: cyan;
 	}
 #populated-footer-div {

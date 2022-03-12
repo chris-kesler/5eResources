@@ -332,7 +332,7 @@
                 
                 // Populating the Level Table with a new row for each level
                 var table_row = "<tr><td>" + (i+1) + "</td><td>" + class_subclass + "</td><td>" + hit_points + " / " + (i+1) + "d" + hit_die + "</td><td>" + features + "</td><td>" + strength_score_str + " / " + strength_save_str + "</td><td>" + dexterity_score_str + " / " + dexterity_save_str + "</td><td>" + constitution_score_str + " / " + constitution_save_str + "</td><td>" + intelligence_score_str + " / " + intelligence_save_str + "</td><td>" + wisdom_score_str + " / " + wisdom_save_str + "</td><td>" + charisma_score_str + " / " + charisma_save_str + "</td><td>" + armor_class + "</td></tr>";
-                $(table_row).appendTo("#build-level-table tbody");
+                $(table_row).appendTo("#build-populated-details-table tbody");
                 
                 // Increasing the Proficiency Bonus variable upon reaching certain level milestones
                 if ((i+1) == 4 || (i+1) == 8 || (i+1) == 12 || (i+1) == 16) {
@@ -384,7 +384,7 @@
               <h3>Level Table</h3>
               <p id="build-level-overview">We'll take features based on the following table to initiate and progress through our build.  </p>
 
-              <table id="build-level-table" class="populated-title-table">
+              <table id="build-populated-details-table" class="populated-title-table">
                 <thead>
                   <th style="width: 5vw">Level</th>
                   <th style="width: 10vw">Class/Subclass</th>

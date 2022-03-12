@@ -142,7 +142,7 @@ button {
 
 
 /* A condensed off black color style group for dark text elements */
-body, #populated-title-table tr th, #populated-title-table th, #populated-title-table tr td, #populated-title-table td, #populated-title-table tr th, #populated-title-table th, #populated-title-table tr td, #populated-title-table td, .level-table tr th, .level-table th, .level-table tr td, .level-table td, .cc-build-selections-table tr th, .cc-build-selections-table tr td, .cc-build-selections-table td:nth-child(1) {
+body, #populated-title-table tr th, #populated-title-table th, #populated-title-table tr td, #populated-title-table td, #populated-title-table tr th, #populated-title-table th, #populated-title-table tr td, #populated-title-table td, .populated-details-table tr th, .populated-details-table th, .populated-details-table tr td, .populated-details-table td, .cc-build-selections-table tr th, .cc-build-selections-table tr td, .cc-build-selections-table td:nth-child(1) {
 	color: rgb(25,25,25);
 }
 
@@ -558,10 +558,10 @@ The buttons used to navigate and organize the classes within caped crusaders
 /* 
 An overview table for caped crusaders entry pages 
 */
-/*.level-table {
+/*.populated-details-table {
 	width: 75vw;
 }
-#populated-title-table, .level-table {
+#populated-title-table, .populated-details-table {
 	width: 100%;
 	margin: 0;
 	margin-bottom: 15px;
@@ -569,7 +569,7 @@ An overview table for caped crusaders entry pages
 	border: 0px solid rgb(50,50,50);
 	border-collapse: collapse;
 }
-#populated-title-table thead tr td, .level-table thead tr td{
+#populated-title-table thead tr td, .populated-details-table thead tr td{
 	border: 0px hidden aqua;
 	background: transparent;
 	background-color: transparent;
@@ -577,17 +577,17 @@ An overview table for caped crusaders entry pages
 #populated-title-table thead tr td {
 	width: 80vw;
 }
-#populated-title-table th, #populated-title-table td, .level-table th, .level-table td {
+#populated-title-table th, #populated-title-table td, .populated-details-table th, .populated-details-table td {
 	padding: 8px;
 	vertical-align: top;
 	border: 1px solid rgb(50,50,50);
 }
-#populated-title-table tr th, #populated-title-table th, .level-table tr th, .level-table th {
+#populated-title-table tr th, #populated-title-table th, .populated-details-table tr th, .populated-details-table th {
 	background-color: rgb(150,150,150);
 	font-size: medium;
 	text-align: left;
 }
-#populated-title-table tr td, #populated-title-table  td, .level-table tr td, .level-table td {
+#populated-title-table tr td, #populated-title-table  td, .populated-details-table tr td, .populated-details-table td {
 	background-color: rgb(200,200,200);
 	font-size: medium;
 	text-align: left; 

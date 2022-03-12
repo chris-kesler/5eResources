@@ -32,7 +32,7 @@ const getResults = (id) => {
 								<a href='5e-srd-spells/entry-page.html?name=${result.index}' target='_blank'>${result.name}</a>
 							</td>
 							<td>
-								Level: ${result.level}
+								${result.level}
 							</td>
 							<td>
 								<img class='directory-page-dynamic-table-entry-image' src=/resources/images/${result.school}.png><br>

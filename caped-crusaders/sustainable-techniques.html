@@ -1,19 +1,16 @@
 <!--
 || =========================================================================================
-|| This is a DYNAMIC page
+|| This is a DYNAMIC INDEX page
 ||
 || The HEADER and FOOTER are POPULATED elements found across the site
-|| The CONTENT element is FIXED and is found across the site
+|| The CONTENT element is DYNAMIC
 || The BACKGROUND element is FIXED across the subsite
-|| The TITLE, INDEX, and DESCRIPTION elements are FIXED for this page
+|| The TITLE is POPULATED for this page
 || ========================================================================================= 
 -->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-US-Compatible" content="e-edge">
 		<title>KnowOne's Website of Everything</title>
 		<link rel="icon" href="/resources/images/OwlOfMinerva_ModifiedLogo.png">
 		<link rel="stylesheet" href="/styles-common.css">
@@ -38,8 +35,49 @@
 		<script type="text/javascript" src="/resources/scripts/function-filterDynamicTable.js"></script>
 
 		<!-- Populating Dynamic Table -->
-		<script type="text/javascript" src="/resources/scripts/load-5esrd-spells-directory.js"></script>
-		<script type="text/javascript" src="/resources/scripts/load-dynamic-filters-consumables.js"></script>
+		<script type="text/javascript" src="/resources/scripts/load-dynamic-filters-sustainables.js"></script>
+		<script>
+			$(function readJSON() {
+
+				// Reading data from our JSON file
+				$.getJSON('techniques.json', function(data) {
+
+					// Looping through the JSON data 
+					$.each(data.entries, function(i, f) {
+
+						// Initializing a default credit and author variable then reading its true value based on a subset within the JSON file
+						type_credit = "---";
+						$.each(data.type, function(x, y) {
+							if (f.type_str == y.type_name) {
+								type_credit = y.type_credit;
+							}
+						});
+						author_credit = "---";
+						$.each(data.author, function(x, y) {
+							if (f.source_str == y.author_name) {
+								author_credit = y.author_credit;
+								content_source = y.content_source;
+							}
+						});
+
+			
+						// Defining the table row that contains each entry in the table
+						var table_row = "<tr>" 
+							+ "<td><a href='sustainable-techniques/entry-page.html?name=" + f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") + "' target='_blank'>" + f.name_str + "</a></td>" 
+							+ "<td>" + f.level_str + "</td>" 
+							+ "<td>" + "<img class='directory-page-dynamic-table-entry-image' src=/resources/images/" + f.type_str + ".png><br>" + f.type_str + "</td>" 
+							+ "<td>" + f.attack_save_str + "</td>" 
+							+ "<td>" + f.damage_effect_str + "</td>" 
+							+ "<td>" + f.class_str + "</td>" 
+							+ "<td><a target='blank' href='" + content_source + "'>" + f.source_str + "</a></td>" 
+							+ "</tr>"
+
+						// Adding the row to the table
+						$(table_row).appendTo("#dynamic-index-table tbody");
+					});
+				});
+			});
+		</script>
 
 	</head>
 	<body>

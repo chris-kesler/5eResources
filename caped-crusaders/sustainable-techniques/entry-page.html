@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- =========================================================================================
+	This is an ENTRY page.  It contains HEADER, BACKGROUND, CONTENT, and FOOTER elements that are standard across the site.
+	It also contains TITLE, ATTRIBUTES, NAVLIST, and DESCRIPTION elements that are uniquely handled as an ENTRY page.
+	The ENTRY page script reads the file path and discerns the following:  /<subsite>/<directory>/<page_name><page_args>
+	The data is populated from a JSON file that is titled <directory>.JSON and stored within the <subsite> folder
+	The data is populated from an entry within that JSON file if the entry_name attribute matches the <page_args>
+========================================================================================= -->
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-US-Compatible" content="e-edge">
+		<title>KnowOne's Website of Everything</title>
+		<link rel="icon" href="/resources/images/OwlOfMinerva_ModifiedLogo.png">
+		<link rel="stylesheet" href="/styles-common.css">
+		<link rel="stylesheet" href="/styles-caped-crusaders.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		
+		<!-- Importing local Javascript functions -->
+		<script type="text/javascript" src="/resources/scripts/function-titleCase.js"></script>
+		<script type="text/javascript" src="/resources/scripts/function-hideShowNavList.js"></script>
+		
+		<script type="text/javascript" src="/resources/scripts/function-readArgs.js"></script>
+
+		<!-- Populating the page Header and Footer -->
+		<script type="text/javascript" src="/resources/scripts/load-header-footer.js"></script>
+
+		<!-- Populating the Title directories and name based on file name and file path -->
+		<script type="text/javascript" src="/resources/scripts/load-title-directories.js"></script>
+		<script type="text/javascript" src="/resources/scripts/load-title-name.js"></script>
+
+		<script>
+			$(function readJSON() {
+				document.getElementById("populated-title-table-thead").innerHTML = page_args;
+
+				// Reading data from our JSON file
+				$.getJSON(`../sustainable-techniques.json`, function(data) {
+
+					// Looping through the JSON data 
+					$.each(data.entries, function(i, f) {
+
+						// Finding the entry that matches this file
+						if (f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") == page_args) {
+
+							// Looping through the author array in the JSON file to populate variables for links and credit
+							$.each(data.author, function(x, y) {
+								if (f.source_str == y.author_name) {
+									author_credit = y.author_credit;
+									content_source = y.content_source;
+								}
+							});
+
+							// Looping through the type array in the JSON file to populate variables for type and credit
+							$.each(data.type, function(x, y) {
+								if (f.type_str == y.type_name) {
+									document.getElementById("page-image-credit").innerHTML = y.type_credit;
+								}
+							});
+
+							// Populating the name of the page
+							if (content_source != undefined){
+								document.getElementById("populated-title-table-thead").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > <a target='blank' href='" + content_source + "'>" + titleCase(page_title.replace('-', ' ').replace('.html', '')) + " (source)</a>";
+							} else {
+								document.getElementById("populated-title-table-thead").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > " + titleCase(page_title.replace('-', ' ').replace('.html', ''));
+
+							}
+
+
+							// Populating the page image
+							document.getElementById("page-image").src = "/resources/images/" + f.type_str.replace(/\s/g, '') + ".png";
+
+							
+							// Populating the page description based on flavor, mechanics, overcharge, and components
+							if (f.flavor_str != undefined) {
+								document.getElementById("blended-description-div").innerHTML += "<b>Flavor Description:</b>  <i>" + f.flavor_str + "</i><br><br>";
+							}
+							if (f.mechanics_str != undefined) {
+								document.getElementById("blended-description-div").innerHTML += "<b>Standard Mechanics:</b>  " + f.mechanics_str + "<br><br>";
+							}
+
+							
+							// Defining and populating the first row of the page table
+							var table_row1 = "<tr><th style='width: 15vw'>Level</th><th style='width: 15vw'>School</th><th style='width: 15vw'>Attack/Save</th><th style='width: 15vw'>Damage/Effect</th></tr>"
+							$(table_row1).appendTo("#populated-title-table tbody");
+
+							// Defining and populating the second row of the page table
+							var table_row2 = "<tr>" 
+								+ "<td>" + f.level_str + " level " + power_source + "</td>" 
+								+ "<td>" + f.type_str + "</td>" 
+								+ "<td>" + f.attack_save_str + "</td>" 
+								+ "<td>" + f.damage_effect_str + "</td>" 
+								+ "</tr>"
+							$(table_row2).appendTo("#populated-title-table tbody");
+						}
+					});
+				});
+			});
+		</script>
+	</head>
+
+
+	<body>
+		<!-- A div for the page BACKGROUND -->
+		<div id="fixed-background-div-caped-crusaders">
+
+			<!-- A div for the page HEADER -->
+			<div id="populated-header-div"></div>
+
+			<!-- A series of element for the page NAVLIST -->
+			<section id="page-navlist-section"><table id="page-navlist-table"><tbody></tbody></table></section>
+			<button id='page-navlist-button' onclick='hideShowNavList()'>&#60; &#60;</button>
+
+			<!-- A section for the page CONTENT -->
+			<section class="fixed-content-section">
+
+				<!-- A table for the page TITLE -->
+				<table id="populated-title-table"><thead><tr><td colspan="5"><h2 id="populated-title-table-thead"></h2></td></tr></thead><tbody></tbody></table>
+
+				<!-- A table for the page ATTRIBUTES -->
+				<table id="page-attributes-table"><tbody></tbody></table>
+
+				<!-- A div for the page DESCRIPTION -->
+				<div id="blended-description-div"></div>
+				<hr class="fixed-content-hr">
+			</section>
+			
+			<!-- A div for the page FOOTER -->
+			<div id="populated-footer-div"></div>
+		</div>
+	</body>
+</html>
