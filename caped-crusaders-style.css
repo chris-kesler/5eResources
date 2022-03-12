@@ -74,7 +74,7 @@ p {
 
 p:before {
 	content: "";
-	width: 28vw;
+	width: 10vw;
 	display: block;
 	overflow: hidden;
 	/* For Demonstration */
@@ -142,7 +142,7 @@ button {
 
 
 /* A condensed off black color style group for dark text elements */
-body, #page-title-table tr th, #page-title-table th, #page-title-table tr td, #page-title-table td, #page-title-table-wide tr th, #page-title-table-wide th, #page-title-table-wide tr td, #page-title-table-wide td,.level-table tr th, .level-table th, .level-table tr td, .level-table td, .cc-build-selections-table tr th, .cc-build-selections-table tr td, .cc-build-selections-table td:nth-child(1) {
+body, #page-title-table tr th, #page-title-table th, #page-title-table tr td, #page-title-table td, #page-title-table tr th, #page-title-table th, #page-title-table tr td, #page-title-table td,.level-table tr th, .level-table th, .level-table tr td, .level-table td, .cc-build-selections-table tr th, .cc-build-selections-table tr td, .cc-build-selections-table td:nth-child(1) {
 	color: rgb(25,25,25);
 }
 
@@ -558,43 +558,37 @@ The buttons used to navigate and organize the classes within caped crusaders
 /* 
 An overview table for caped crusaders entry pages 
 */
-#page-title-table {
-	width: 65%;
-}
-#page-title-table-wide {
-	width: 100%;
-}
 .level-table {
 	width: 75vw;
 }
-#page-title-table, #page-title-table-wide, .level-table {
-	margin: 0px;
+#page-title-table, .level-table {
+	width: 100%;
+	margin: 1vw;
 	margin-bottom: 15px;
 	overflow-x: auto;
 	border: 0px solid rgb(50,50,50);
 	border-collapse: collapse;
-	display: inline-block;
 }
-#page-title-table thead tr td, #page-title-table-wide thead tr td, .level-table thead tr td{
+#page-title-table thead tr td, .level-table thead tr td{
 	border: 0px hidden aqua;
 	border-bottom: 1px solid rgb(50,50,50);
 	background: transparent;
 	background-color: transparent;
 }
-#page-title-table-wide thead tr td {
+#page-title-table thead tr td {
 	width: 80vw;
 }
-#page-title-table th, #page-title-table-wide th, #page-title-table td, #page-title-table-wide td, .level-table th, .level-table td {
+#page-title-table th, #page-title-table td, .level-table th, .level-table td {
 	padding: 8px;
 	vertical-align: top;
 	border: 1px solid rgb(50,50,50);
 }
-#page-title-table tr th, #page-title-table-wide tr th, #page-title-table th, #page-title-table-wide th, .level-table tr th, .level-table th {
+#page-title-table tr th, #page-title-table th, .level-table tr th, .level-table th {
 	background-color: rgb(150,150,150);
 	font-size: medium;
 	text-align: left;
 }
-#page-title-table tr td, #page-title-table-wide tr td, #page-title-table  td, #page-title-table-wide td, .level-table tr td, .level-table td {
+#page-title-table tr td, #page-title-table  td, .level-table tr td, .level-table td {
 	background-color: rgb(200,200,200);
 	font-size: medium;
 	text-align: left;
@@ -828,7 +822,7 @@ The dynamic table
 .page-content-section {
 	background-color: orange;
 }
-#page-title-table, #page-title-table-wide {
+#page-title-table, #page-title-table {
 	background-color: yellow;
 }
 .page-list-table {
