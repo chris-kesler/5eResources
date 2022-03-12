@@ -82,9 +82,9 @@
 
               // Populating the name of the page
               if (content_source != undefined){
-                document.getElementById("page-title-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > <a target='blank' href='" + content_source + "'>" + titleCase(page_title.replace('-', ' ').replace('.html', '')) + " (source)</a>";
+                document.getElementById("populated-title-table-thead").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > <a target='blank' href='" + content_source + "'>" + titleCase(page_title.replace('-', ' ').replace('.html', '')) + " (source)</a>";
               } else {
-                document.getElementById("page-title-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > " + titleCase(page_title.replace('-', ' ').replace('.html', ''));
+                document.getElementById("populated-title-table-thead").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > " + titleCase(page_title.replace('-', ' ').replace('.html', ''));
 
               }
 
@@ -95,16 +95,16 @@
               
               // Populating the page description based on flavor, mechanics, overcharge, and components
               if (f.flavor_str != undefined) {
-                document.getElementById("page-description-div").innerHTML += "<b>Flavor Description:</b>  <i>" + f.flavor_str + "</i><br><br>";
+                document.getElementById("blended-description-div").innerHTML += "<b>Flavor Description:</b>  <i>" + f.flavor_str + "</i><br><br>";
               }
               if (f.mechanics_str != undefined) {
-                document.getElementById("page-description-div").innerHTML += "<b>Standard Mechanics:</b>  " + f.mechanics_str + "<br><br>";
+                document.getElementById("blended-description-div").innerHTML += "<b>Standard Mechanics:</b>  " + f.mechanics_str + "<br><br>";
               }
 
               
               // Defining and populating the first row of the page table
               var table_row1 = "<tr><th style='width: 15vw'>Level</th><th style='width: 15vw'>School</th><th style='width: 15vw'>Attack/Save</th><th style='width: 15vw'>Damage/Effect</th></tr>"
-              $(table_row1).appendTo("#page-title-table tbody");
+              $(table_row1).appendTo("#populated-title-table tbody");
 
               // Defining and populating the second row of the page table
               var table_row2 = "<tr>" 
@@ -113,7 +113,7 @@
                 + "<td>" + f.attack_save_str + "</td>" 
                 + "<td>" + f.damage_effect_str + "</td>" 
                 + "</tr>"
-              $(table_row2).appendTo("#page-title-table tbody");
+              $(table_row2).appendTo("#populated-title-table tbody");
             }
           });
         });
@@ -130,21 +130,21 @@
       <div class="common-page-header">
 
         <!-- Importing the header -->
-        <div id="import-header"></div>
+        <div id="populated-header-div"></div>
 
       </div>
         
       <!-- A transparent div to build everything else on top of -->
-      <div class="common-page-content-section-transparent">
+      <div class="common-fixed-content-section-transparent">
 
         <!-- An off white chunk of the page that holds content -->
-        <section class="page-content-section">
+        <section class="fixed-content-section">
 
           <!-- A table to hold the page overview information -->
-          <table id="page-title-table">
+          <table id="populated-title-table">
 
             <!-- The title of the page content, including the source as a link -->
-            <thead><tr><td colspan="6"><h2 id="page-title-path"></h2></td></tr></thead>
+            <thead><tr><td colspan="6"><h2 id="populated-title-table-thead"></h2></td></tr></thead>
             <tbody></tbody>
           </table>
 
@@ -156,12 +156,12 @@
 
 
           <!-- A paragraph to hold the page content and descriptions -->
-          <p id="page-description-div"></p>
+          <p id="blended-description-div"></p>
         </section>
       </div>
 
       <!-- Importing the footer -->
-      <footer id="import-footer"></footer>
+      <div id="populated-footer-div"></div>
     </div>
   </body>
 </html>
@@ -169,8 +169,8 @@
 <script type="text/javascript">
   $(function () {
 
-    $("#import-header").load("/resources/pages/import-header.html");
-    $("#import-footer").load("/resources/pages/import-footer.html");
+    $("#populated-header-div").load("/resources/pages/populated-header-div.html");
+    $("#populated-footer-div").load("/resources/pages/populated-footer-div.html");
 
 });
 </script><!DOCTYPE html>
@@ -191,10 +191,10 @@
           var page = path.split("/").pop();
           $.each(data.technique, function(i, f) {
             if (f.page_url == page) {
-              document.getElementById("page-title-path").innerHTML = "Caped Crusaders: Techniques > " + f.name_str;
-              document.getElementById("common-page-content-section-title").innerHTML = f.name_str;
-              document.getElementById("page-description-div-flavor").innerHTML = "<b>Flavor Description:</b>  <i>" + f.flavor_str + "</i>";
-              document.getElementById("page-description-div-mechanics").innerHTML = "<b>Standard Mechanics:</b>  " + f.mechanics_str;
+              document.getElementById("populated-title-table-thead").innerHTML = "Caped Crusaders: Techniques > " + f.name_str;
+              document.getElementById("common-fixed-content-section-title").innerHTML = f.name_str;
+              document.getElementById("blended-description-div-flavor").innerHTML = "<b>Flavor Description:</b>  <i>" + f.flavor_str + "</i>";
+              document.getElementById("blended-description-div-mechanics").innerHTML = "<b>Standard Mechanics:</b>  " + f.mechanics_str;
               document.getElementById("casting-page-image").src = f.associated_school_img;
               var table_row1 = "<tr><th style='width: 20vw'>Level</th><th style='width: 20vw'>School</th><th style='width: 20vw'>Damage/Effect</th></tr>"
               $(table_row1).appendTo("#TechTable tbody");
@@ -215,29 +215,29 @@
   <body>
     <div id="page-background-div"> 
       <div class="common-page-header">
-        <div id="import-header"></div>
-          <h1 id="page-title-path"></h1>
+        <div id="populated-header-div"></div>
+          <h1 id="populated-title-table-thead"></h1>
           <hr>
       </div>
         
 
-      <div class="common-page-content-section-transparent">
-            <section class="page-content-section">
+      <div class="common-fixed-content-section-transparent">
+            <section class="fixed-content-section">
               <button id="common-page-back-button" onclick="location.href='../techniques.html'">Out to Techniques</button>
-              <h2 id="common-page-content-section-title"></h2>
+              <h2 id="common-fixed-content-section-title"></h2>
               <hr>
 
 <table id="entry-page-image-table">
                 <tr><td><img id="page-image" alt="Page Image"></td></tr>
                 <tr><td><h4 id="page-image-credit">Image Credit</h4></td></tr>
               </table>
-              <table id="TechTable" class="page-title-table">
+              <table id="TechTable" class="populated-title-table">
                 <tbody></tbody>
               </table>
               <hr>
-              <p id="page-description-div-flavor">
+              <p id="blended-description-div-flavor">
               </p>
-              <p id="page-description-div-mechanics">
+              <p id="blended-description-div-mechanics">
               </p>
               
             </section>
@@ -245,7 +245,7 @@
         </div>
       </div>
 
-      <footer id="import-footer"></footer>
+      <div id="populated-footer-div"></div>
 
     </div>
 
@@ -255,8 +255,8 @@
 <script type="text/javascript">
   $(function () {
 
-    $("#import-header").load("/resources/pages/import-header.html");
-    $("#import-footer").load("/resources/pages/import-footer.html");
+    $("#populated-header-div").load("/resources/pages/populated-header-div.html");
+    $("#populated-footer-div").load("/resources/pages/populated-footer-div.html");
 
 });
 </script>

@@ -1,22 +1,24 @@
+<!-- 
+	=========================================================================================
+	This is a DIRECTORY page
+	
+	The HEADER and FOOTER are POPULATED elements found across the site
+	The CONTENT element is FIXED and is found across the site
+	The BACKGROUND element is FIXED across the subsite
+	The TITLE, INDEX, and DESCRIPTION elements are FIXED for this page
+	========================================================================================= 
+-->
 <!DOCTYPE html>
-<!-- =========================================================================================
-	This is a DIRECTORY page.  It contains HEADER, BACKGROUND, CONTENT, and FOOTER elements that are standard across the site.
-	It also contains TITLE, PAGE LIST, and DESCRIPTION elements that are unique and static as a DIRECTORY page.
-========================================================================================= -->
 <html lang="en">
 	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-US-Compatible" content="e-edge">
 		<title>KnowOne's Website of Everything</title>
 		<link rel="icon" href="/resources/images/OwlOfMinerva_ModifiedLogo.png">
-		<link rel="stylesheet" href="/caped-crusaders-style.css">
+		<link rel="stylesheet" href="/styles-directory.css">
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		
 		<!-- Importing local Javascript functions -->
 		<script type="text/javascript" src="/resources/scripts/function-titleCase.js"></script>
-		<script type="text/javascript" src="/resources/scripts/function-hideShowNavList.js"></script>
-		
 		<script type="text/javascript" src="/resources/scripts/function-readArgs.js"></script>
 
 		<!-- Populating the page Header and Footer -->
@@ -25,28 +27,27 @@
 		<!-- Populating the Title directories and name based on file name and file path -->
 		<script type="text/javascript" src="/resources/scripts/load-title-directories.js"></script>
 		<script type="text/javascript" src="/resources/scripts/load-title-name.js"></script>
-
 	</head>
 
 
 	<body>
 		
 		<!-- A div for the page BACKGROUND -->
-		<div id="page-background-div-caped-crusaders">
+		<div id="fixed-background-div-caped-crusaders">
 
 			<!-- A div for the page HEADER -->
-			<div id="import-header"></div>
+			<div id="populated-header-div"></div>
 
 			<!-- A section for the page CONTENT -->
-			<section class="page-content-section">
+			<section class="fixed-content-section">
 
 				<!-- A table for the page TITLE -->
-				<table id="page-title-table"><thead><tr><td colspan="6"><h2 id="page-title-path"></h2></td></tr></thead><tbody></tbody></table>
+				<table id="populated-title-table"><thead><tr><td colspan="6"><h2 id="populated-title-table-thead"></h2></td></tr></thead><tbody></tbody></table>
 				
-				<!-- A table for the PAGE LIST -->
-				<table class="page-list-table">
+				<!-- A table for the page INDEX -->
+				<table class="fixed-index-table">
 					<tr><td>
-						<button class="page-list-directory-button" onclick="location.href='caped-crusaders/classes.html'">Classes</button>
+						<button class="fixed-index-table-directory-button" onclick="location.href='caped-crusaders/classes.html'">Classes</button>
 					</td></tr>
 
 					<!-- <td>
@@ -54,7 +55,7 @@
 					</td></tr> -->
 
 					<tr><td>
-						<button class="page-list-directory-button" onclick="location.href='caped-crusaders/5e-srd-spells.html'">5e Srd Spells</button>
+						<button class="fixed-index-table-directory-button" onclick="location.href='caped-crusaders/5e-srd-spells.html'">5e Srd Spells</button>
 					</td></tr>
 
 					<!-- <tr><td>
@@ -74,59 +75,59 @@
 					</td></tr> -->
 
 					<tr><td>
-						<button class="page-list-directory-button" onclick="location.href='caped-crusaders/technologies.html'">Technologies</button>
+						<button class="fixed-index-table-directory-button" onclick="location.href='caped-crusaders/technologies.html'">Technologies</button>
 					</td></tr>
 
 
 					<!-- <tr><td>
-						<button class="page-list-directory-button" onclick="location.href='caped-crusaders/'">Backgrounds</button>
+						<button class="fixed-index-table-directory-button" onclick="location.href='caped-crusaders/'">Backgrounds</button>
 					</td></tr>
 					<tr><td>
-						<button class="page-list-directory-button" onclick="location.href='caped-crusaders/'">Items</button>
+						<button class="fixed-index-table-directory-button" onclick="location.href='caped-crusaders/'">Items</button>
 					</td></tr> 
 					<tr><td>
-						<button class="page-list-directory-button" onclick="location.href='caped-crusaders/Category_Spells/Spells.html'">Spells</button>
+						<button class="fixed-index-table-directory-button" onclick="location.href='caped-crusaders/Category_Spells/Spells.html'">Spells</button>
 					</td></tr>
 					<tr><td>
-						<button class="page-list-directory-button" onclick="location.href='caped-crusaders/'">Psionics</button>
+						<button class="fixed-index-table-directory-button" onclick="location.href='caped-crusaders/'">Psionics</button>
 					</td></tr>
 					<tr><td>
-						<button class="page-list-directory-button" onclick="location.href='caped-crusaders/'">Adventures</button>
+						<button class="fixed-index-table-directory-button" onclick="location.href='caped-crusaders/'">Adventures</button>
 					</td></tr>
 					<tr><td>
-						<button class="page-list-directory-button" onclick="location.href='caped-crusaders/'">Books</button>
+						<button class="fixed-index-table-directory-button" onclick="location.href='caped-crusaders/'">Books</button>
 					</td></tr>
 					<tr><td>
-						<button class="page-list-directory-button" onclick="location.href='caped-crusaders/'">Quick Reference</button>
+						<button class="fixed-index-table-directory-button" onclick="location.href='caped-crusaders/'">Quick Reference</button>
 					</td></tr>
 					<tr><td>
-						<button class="page-list-directory-button" onclick="location.href='caped-crusaders/'">Conditions</button>
+						<button class="fixed-index-table-directory-button" onclick="location.href='caped-crusaders/'">Conditions</button>
 					</td></tr>
 					<tr><td>
-						<button class="page-list-directory-button" onclick="location.href='caped-crusaders/'">Bestiary</button>
+						<button class="fixed-index-table-directory-button" onclick="location.href='caped-crusaders/'">Bestiary</button>
 					</td></tr>
 					<tr><td>
-						<button class="page-list-directory-button" onclick="location.href='caped-crusaders/'">DM Screen</button>
+						<button class="fixed-index-table-directory-button" onclick="location.href='caped-crusaders/'">DM Screen</button>
 					</td></tr>
 					<tr><td>
-						<button class="page-list-directory-button" onclick="location.href='caped-crusaders/'">Loot Generator</button>
+						<button class="fixed-index-table-directory-button" onclick="location.href='caped-crusaders/'">Loot Generator</button>
 					</td></tr>
 					<tr><td>
-						<button class="page-list-directory-button" onclick="location.href='caped-crusaders/'">CR Calculator</button>
+						<button class="fixed-index-table-directory-button" onclick="location.href='caped-crusaders/'">CR Calculator</button>
 					</td></tr> -->
 				</table>
-				<!-- 
-					A div for the page DESCRIPTION -->
-				<div id="page-description-div">
+
+				<!-- A div for the page DESCRIPTION -->
+				<div id="blended-description-div">
 					<p>
 						This subsite details my own personal ttrpg system called Caped Crusaders.  The intent of this system is to allow maximum versatility.  Each class relies on one of three main sources of ability:  Powers (Superpowers / Enhancements), Tech (Technologies / Techniques), and Magic (Spells / Boons).
 					</p>
 				</div>
-				<hr class="stretcher-bar">
+				<hr class="fixed-content-hr">
 			</section>
-			<!-- 
-				A div for the page FOOTER -->
-			<footer id="import-footer"></footer>
+
+			<!-- A div for the page FOOTER -->
+			<div id="populated-footer-div"></div>
 		</div>
 	</body>
 </html>

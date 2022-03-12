@@ -13,20 +13,20 @@
   <body>
     <div id="page-background-div"> 
       <div class="common-page-header">
-        <div id="import-header"></div>
+        <div id="populated-header-div"></div>
 
           <h1>Game Journal:  The Cube</h1>
           <hr>
       </div>
         
       
-      <div class="common-page-content-section-transparent">
+      <div class="common-fixed-content-section-transparent">
           
 
 
 
 
-            <section class="page-content-section">
+            <section class="fixed-content-section">
                 <button id="common-page-back-button" onclick="location.href='../minecraft-bedrock.html'">Out to Minecraft</button>
                 <h3>The Meta</h3>
                 <hr>
@@ -37,7 +37,7 @@
                 </p>
             </section>
 
-            <section class="page-content-section">
+            <section class="fixed-content-section">
                 <section class="WikiContent">
                                     
                   <p style="text-align: left;">
@@ -90,7 +90,7 @@
 
       </div>
 
-      <footer id="import-footer"></footer>
+      <div id="populated-footer-div"></div>
     </div>
   </body>
 </html>
@@ -98,8 +98,8 @@
 <script type="text/javascript">
   $(function () {
 
-    $("#import-header").load("/resources/pages/import-header.html");
-    $("#import-footer").load("/resources/pages/import-footer.html");
+    $("#populated-header-div").load("/resources/pages/populated-header-div.html");
+    $("#populated-footer-div").load("/resources/pages/populated-footer-div.html");
 
 });
 </script>

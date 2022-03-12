@@ -33,7 +33,7 @@
 // 
 // The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
 // =========================================================================================
-        $("#import-header").load("/resources/pages/import-header.html");
+        $("#populated-header-div").load("/resources/pages/populated-header-div.html");
 
 
 // =========================================================================================
@@ -41,7 +41,7 @@
 // 
 // The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
 // =========================================================================================
-        $("#import-footer").load("/resources/pages/import-footer.html");
+        $("#populated-footer-div").load("/resources/pages/populated-footer-div.html");
       });
     </script>
   </head>  
@@ -52,23 +52,23 @@
     <div id="page-background-div-homepage">
       <!-- 
         A div for the page HEADER -->
-      <div id="import-header"></div>
+      <div id="populated-header-div"></div>
       <!-- 
         A section for the page CONTENT -->
-      <section class="page-content-section">
+      <section class="fixed-content-section">
         <!-- 
           A table for the page TITLE -->
-        <table id="page-title-table"><thead><tr><td colspan="6"><h2 id="page-title-path">Error 404!  That page can't be found!</h2></td></tr></thead><tbody></tbody></table>   
+        <table id="populated-title-table"><thead><tr><td colspan="6"><h2 id="populated-title-table-thead">Error 404!  That page can't be found!</h2></td></tr></thead><tbody></tbody></table>   
         <!-- 
           A table for the PAGE LIST -->
-        <table class="page-list-table">
+        <table class="fixed-index-table">
           <tr><td>
-            <button class="page-list-directory-button" onclick="history.back()">Back to Previous Page</button>
+            <button class="fixed-index-table-directory-button" onclick="history.back()">Back to Previous Page</button>
           </td></tr>
         </table>
         <!-- 
           A div for the page DESCRIPTION -->
-        <div id="page-description-div">
+        <div id="blended-description-div">
 
           <p><b>
             Looks like the page you are after is still under development, or might not exist at all.  
@@ -83,7 +83,7 @@
       </section>
       <!-- 
         A div for the page FOOTER -->
-      <footer id="import-footer"></footer>
+      <div id="populated-footer-div"></div>
     </div>
   </body>
 </script>

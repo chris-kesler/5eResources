@@ -70,7 +70,7 @@
 // 
 // The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
 // =========================================================================================
-				$("#import-header").load("/resources/pages/import-header.html");
+				$("#populated-header-div").load("/resources/pages/populated-header-div.html");
 
 
 // =========================================================================================
@@ -107,15 +107,15 @@
 				} 
 
 				if (page_subsite != undefined) {
-					document.getElementById("page-title-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+					document.getElementById("populated-title-table-thead").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
 				} else {
-					document.getElementById("page-title-path").innerHTML = titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
+					document.getElementById("populated-title-table-thead").innerHTML = titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
 				}
 				if (page_directory != undefined) {
-					document.getElementById("page-title-path").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+					document.getElementById("populated-title-table-thead").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
 				}
 				if (page_category != undefined) {
-					document.getElementById("page-title-path").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + "/" + page_category + ".html'>" + titleCase(page_category.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+					document.getElementById("populated-title-table-thead").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + "/" + page_category + ".html'>" + titleCase(page_category.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
 				}
 
 				// Reading data from our JSON file
@@ -128,9 +128,9 @@
 						if (f.entry_name.toLowerCase().replaceAll(/\s/g, '-').replaceAll("'", "") + ".html" == page_title) {
 
 							if (f.content_source != undefined && f.content_source !== ""){
-								document.getElementById("page-title-path").innerHTML += " > <a target='blank' href='" + f.content_source + "'>" + titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', '')) + " (source)</a>";
+								document.getElementById("populated-title-table-thead").innerHTML += " > <a target='blank' href='" + f.content_source + "'>" + titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', '')) + " (source)</a>";
 							} else {
-								document.getElementById("page-title-path").innerHTML += " > " + titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
+								document.getElementById("populated-title-table-thead").innerHTML += " > " + titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
 							}
 
 							// If Title Library Exists
@@ -147,8 +147,8 @@
 										}
 										table_row += "</tr>";
 										if (!table_row1.includes("<tr></tr>") && !table_row2.includes("<tr></tr>")) {
-											$(table_row1).appendTo("#page-title-table tbody");
-											$(table_row2).appendTo("#page-title-table tbody");
+											$(table_row1).appendTo("#populated-title-table tbody");
+											$(table_row2).appendTo("#populated-title-table tbody");
 										}
 									}
 								}
@@ -242,7 +242,7 @@
 // =========================================================================================
 
 							// Populating the page title in the floating nav table
-							var table_row = "<tr><th><a href='#page-title-table'>" + f.entry_name + "</a></th></tr>";
+							var table_row = "<tr><th><a href='#populated-title-table'>" + f.entry_name + "</a></th></tr>";
 							$(table_row).appendTo("#page-navlist-table tbody");
 
 							// If Description Library Exists
@@ -250,7 +250,7 @@
 
 								// Populating Description Overview underneath title table with no heading
 								if (f.description_library[0].overview != undefined && f.description_library[0].overview !== "") {
-									document.getElementById("page-description-div").innerHTML = "<p>" + f.description_library[0].overview + "</p>";
+									document.getElementById("blended-description-div").innerHTML = "<p>" + f.description_library[0].overview + "</p>";
 								}
 
 								// Looping through all Library entries
@@ -271,7 +271,7 @@
 
 									// Populating Heading
 									if (f.description_library[x].heading != undefined && f.description_library[x].heading !== "" && showHeading) {
-										document.getElementById("page-description-div").innerHTML += "<div id='" + f.description_library[x].heading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h3>" + f.description_library[x].heading + "</h3></div>";
+										document.getElementById("blended-description-div").innerHTML += "<div id='" + f.description_library[x].heading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h3>" + f.description_library[x].heading + "</h3></div>";
 
 										// Populating the page heading in the floating nav table
 										var table_row = "<tr><td><a style='margin-left: 10px' href='#" + f.description_library[x].heading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'>" + f.description_library[x].heading + "</a></td></tr>";
@@ -279,7 +279,7 @@
 
 										// Populating Heading Content
 										if (f.description_library[x].content != undefined && f.description_library[x].content !== "") {
-											document.getElementById("page-description-div").innerHTML += "<p>" + f.description_library[x].content + "</p>";
+											document.getElementById("blended-description-div").innerHTML += "<p>" + f.description_library[x].content + "</p>";
 										}
 
 										// If Sublibrary Exists
@@ -290,7 +290,7 @@
 
 												// Populating Subheading and Subcontent
 												if (f.description_library[x].sublibrary[w].subheading != undefined && f.description_library[x].sublibrary[w].subcontent != undefined && f.description_library[x].sublibrary[w].subheading !== "" && f.description_library[x].sublibrary[w].subcontent !== "") {
-													document.getElementById("page-description-div").innerHTML += "<div id='" + f.description_library[x].sublibrary[w].subheading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h4>&#8226;  " + f.description_library[x].sublibrary[w].subheading + "</h4></div><p>" + f.description_library[x].sublibrary[w].subcontent + "</p>";
+													document.getElementById("blended-description-div").innerHTML += "<div id='" + f.description_library[x].sublibrary[w].subheading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h4>&#8226;  " + f.description_library[x].sublibrary[w].subheading + "</h4></div><p>" + f.description_library[x].sublibrary[w].subcontent + "</p>";
 
 													// Populating the page heading in the floating nav table
 													var table_row = "<tr><td><a style='margin-left: 20px' href='#" + f.description_library[x].sublibrary[w].subheading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'>&#8226;  " + f.description_library[x].sublibrary[w].subheading + "</a></td></tr>";
@@ -312,5 +312,5 @@
 // 
 // The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
 // =========================================================================================
-				$("#import-footer").load("/resources/pages/import-footer.html");
+				$("#populated-footer-div").load("/resources/pages/populated-footer-div.html");
 			});

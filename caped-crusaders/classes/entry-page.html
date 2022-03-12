@@ -28,7 +28,7 @@
 
 					var temp = parameters[0].split("=");
 					page_args = unescape(temp[1]);
-					// document.getElementById("page-title-path").innerHTML = page_args;
+					// document.getElementById("populated-title-table-thead").innerHTML = page_args;
 				});
 
 				$(function populatePageData() {
@@ -44,7 +44,7 @@
 							document.getElementById("class-page-image").src = "/resources/images/" + f.name_str + ".png";
 							document.getElementById("class-page-image").alt = f.class_img_credit;
 							document.getElementById("page-image-credit").innerHTML = f.class_img_credit;
-							document.getElementById("class-page-description-div").innerHTML = f.description_long_str;
+							document.getElementById("class-blended-description-div").innerHTML = f.description_long_str;
 							document.getElementById("class-features-intro").innerHTML = "As a "  + f.name_str + ", you gain the following Class Features.";
 							document.getElementById("hit-dice").innerHTML = "<b>Hit Dice:</b>  1d" + f.hit_die_int + " per " + f.name_str + " level";
 							document.getElementById("hit-points-at-1st-level").innerHTML = "<b>Hit Points at 1st level:</b>  " + f.hit_die_int + " your Constitution modifier";
@@ -61,7 +61,7 @@
 							document.getElementById("equipment-tools").innerHTML = "<b>Tools:</b>  " + f.equipment_tools;
 							document.getElementById("equipment-packs").innerHTML = "<b>Packs:</b>  " + f.equipment_packs;
 							document.getElementById("starting-wealth").innerHTML = "<td>" + f.name_str + "</td><td>" + f.equipment_variant + "</td>";
-							document.getElementById("page-title-table-title").innerHTML = "The " + f.name_str + " Table";
+							document.getElementById("populated-title-table-title").innerHTML = "The " + f.name_str + " Table";
 							var prof = 2;
 							let j = 0;
 							for (let i = 0; i < 20; i++) {
@@ -99,9 +99,9 @@
 								}
 							}
 							for (let i = 0; i < f.class_feats.length; i++) {
-								if (document.getElementById("page-title-table-features").innerHTML.indexOf(f.class_feats[i].name_str) > 0) {} 
+								if (document.getElementById("populated-title-table-features").innerHTML.indexOf(f.class_feats[i].name_str) > 0) {} 
 								else {
-									document.getElementById("page-title-table-features").innerHTML += "<hr><h3 id='" 
+									document.getElementById("populated-title-table-features").innerHTML += "<hr><h3 id='" 
 									+ f.class_feats[i].name_str.replace(/\s+/g, '') + "'>" 
 									+ f.class_feats[i].name_str + "</h3><h4><i><b><a href='#level-table'>" + f.name_str 
 									+ "</a>:</b>  level " + f.class_feats[i].level + "</i></h4><p>" 
@@ -166,22 +166,22 @@
 	<body>
 		<!-- 
 			A div for the page BACKGROUND -->
-		<div id="page-background-div-caped-crusaders">
+		<div id="fixed-background-div-caped-crusaders">
 			<!-- 
 				A div for the page HEADER -->
-			<div id="import-header"></div>
+			<div id="populated-header-div"></div>
 			<!-- 
 				A section for the page CONTENT -->
-			<section class="page-content-section">
+			<section class="fixed-content-section">
 				<!-- 
 					A table for the page TITLE -->
-				<table id="page-title-table"><thead><tr><td colspan="6"><h2 id="page-title-path"></h2></td></tr></thead><tbody></tbody></table>   
+				<table id="populated-title-table"><thead><tr><td colspan="6"><h2 id="populated-title-table-thead"></h2></td></tr></thead><tbody></tbody></table>   
 
 				<table id="entry-page-image-table">
 					<tr><td><img id="class-page-image" class="cc-class-image-large" alt="Class Image"></td></tr>
 					<tr><td><h4 id="page-image-credit">Image Credit</h4></td></tr>
 				</table>
-				<p id="class-page-description-div"></p>
+				<p id="class-blended-description-div"></p>
 				
 				<hr>
 				<h3>Class Features</h3>
@@ -230,7 +230,7 @@
 				</div>
 												
 				<hr>
-				<h3 id="page-title-table-title"></h3>
+				<h3 id="populated-title-table-title"></h3>
 				<table id="level-table" class="level-table">
 					<thead>
 						<th style="width: 5vw">Level</th>
@@ -244,12 +244,12 @@
 					<tbody></tbody>
 				</table>
 
-				<div id="page-title-table-features">
+				<div id="populated-title-table-features">
 					<body></body>
 				</div>
 			</section>
 			
-			<section class="page-content-section">
+			<section class="fixed-content-section">
 				<h2 id="subclass-magic-name"></h2>
 				<table id="entry-page-image-table">
 					<tr><td><img class="cc-subclass-image-large" alt="Magic Subclass" id="subclass-magic-image"></img></td></tr>
@@ -259,7 +259,7 @@
 				<div id="subclass-magic-feats"></div>
 			</section>
 
-			<section class="page-content-section">
+			<section class="fixed-content-section">
 				<h2 id="subclass-power-name"></h2>
 				<table id="entry-page-image-table">
 					<tr><td><img class="cc-subclass-image-large" alt="Power Subclass" id="subclass-power-image"></img></td></tr>
@@ -269,7 +269,7 @@
 				<div id="subclass-power-feats"></div>
 			</section>
 
-			<section class="page-content-section">
+			<section class="fixed-content-section">
 				<h2 id="subclass-tech-name"></h2>
 				<table id="entry-page-image-table">
 					<tr><td><img class="cc-subclass-image-large" alt="Tech Subclass" id="subclass-tech-image"></td></tr>
@@ -280,7 +280,7 @@
 			</section>
 			<!-- 
 				A div for the page FOOTER -->
-			<footer id="import-footer"></footer>
+			<div id="populated-footer-div"></div>
 		</div>
 	</body>
 </html>

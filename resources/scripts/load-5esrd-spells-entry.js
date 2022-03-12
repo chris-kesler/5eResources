@@ -50,7 +50,7 @@ const getResults = (id) => {
 				</th>
 			</tr>
 			`
-			$(table_row).appendTo("#page-title-table tbody");
+			$(table_row).appendTo("#populated-title-table tbody");
 
 			// Table Row #2: Values
 			table_row = `
@@ -72,7 +72,7 @@ const getResults = (id) => {
 				</td>
 			</tr>
 			`
-			$(table_row).appendTo("#page-title-table tbody");
+			$(table_row).appendTo("#populated-title-table tbody");
 
 			// Table Row #3: Labels
 			table_row = `
@@ -94,7 +94,7 @@ const getResults = (id) => {
 				</th>
 			</tr>
 			`
-			$(table_row).appendTo("#page-title-table tbody");
+			$(table_row).appendTo("#populated-title-table tbody");
 
 			// Table Row #4: Values
 			table_row = `
@@ -146,7 +146,7 @@ const getResults = (id) => {
 				</tr>
 				`
 			}
-			$(table_row).appendTo("#page-title-table tbody");
+			$(table_row).appendTo("#populated-title-table tbody");
 
 // =========================================================================================
 // Populating the page ATTRIBUTES table
@@ -181,7 +181,7 @@ const getResults = (id) => {
 // =========================================================================================
 
 				// Populating the page title in the floating nav table
-				var table_row = `<tr><th><a href='#page-title-table'>${result.name}</a></th></tr>`
+				var table_row = `<tr><th><a href='#populated-title-table'>${result.name}</a></th></tr>`
 				$(table_row).appendTo("#page-navlist-table tbody");
 
 
@@ -190,7 +190,7 @@ const getResults = (id) => {
 				for (let i = 0; i < headingsArray.length; i++) {
 
 					if (i == 0) {
-						document.getElementById("page-description-div").innerHTML += "<div id='" + headingsArray[i].toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h3>" + headingsArray[i] + ": </h3></div>";
+						document.getElementById("blended-description-div").innerHTML += "<div id='" + headingsArray[i].toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h3>" + headingsArray[i] + ": </h3></div>";
 
 						table_row = `
 							<tr>
@@ -202,11 +202,11 @@ const getResults = (id) => {
 						$(table_row).appendTo("#page-navlist-table tbody");
 
 						for (let z = 0; z < result.desc.length; z++) {
-							document.getElementById("page-description-div").innerHTML += `<p>${result.desc[z]}</p>`;
+							document.getElementById("blended-description-div").innerHTML += `<p>${result.desc[z]}</p>`;
 						}
 
 					} else if (i == 1 && !jQuery.isEmptyObject(result.higher_level)) {
-						document.getElementById("page-description-div").innerHTML += "<div id='" + headingsArray[i].toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h3>" + headingsArray[i] + ": </h3></div>";
+						document.getElementById("blended-description-div").innerHTML += "<div id='" + headingsArray[i].toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h3>" + headingsArray[i] + ": </h3></div>";
 
 						table_row = `
 							<tr>
@@ -217,9 +217,9 @@ const getResults = (id) => {
 						`
 						$(table_row).appendTo("#page-navlist-table tbody");
 
-						document.getElementById("page-description-div").innerHTML += `<p>${result.higher_level}</p>`;
+						document.getElementById("blended-description-div").innerHTML += `<p>${result.higher_level}</p>`;
 					} else if (i == 2 && result.material != undefined) {
-						document.getElementById("page-description-div").innerHTML += "<div id='" + headingsArray[i].toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h3>" + headingsArray[i] + ": </h3></div>";
+						document.getElementById("blended-description-div").innerHTML += "<div id='" + headingsArray[i].toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h3>" + headingsArray[i] + ": </h3></div>";
 
 						table_row = `
 							<tr>
@@ -230,7 +230,7 @@ const getResults = (id) => {
 						`
 						$(table_row).appendTo("#page-navlist-table tbody");
 
-						document.getElementById("page-description-div").innerHTML += `<p>${result.material}</p>`
+						document.getElementById("blended-description-div").innerHTML += `<p>${result.material}</p>`
 					}
 				}
 		});

@@ -10,8 +10,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
     <script>
       $(function importContent() {
-        $("#import-header").load("/resources/pages/import-header.html");
-        $("#import-footer").load("/resources/pages/import-footer.html");
+        $("#populated-header-div").load("/resources/pages/populated-header-div.html");
+        $("#populated-footer-div").load("/resources/pages/populated-footer-div.html");
       });
       $(function readCharacter() {
         var characters = [];
@@ -22,7 +22,7 @@
             if (f.page_url == page) {
 
               // Populating basic page data and overview
-              document.getElementById("class-page-title-path").innerHTML = "Caped Crusaders: Classes > " + f.name_str;
+              document.getElementById("class-populated-title-table-thead").innerHTML = "Caped Crusaders: Classes > " + f.name_str;
               document.getElementById("cc-class-image").src = "/resources/images/" + f.class_str + ".png";
               document.getElementById("cc-class-image").alt = f.class_img_credit;
               document.getElementById("cc-subclass-image").src = "/resources/images/" + f.class_str + "-" + f.subclass_str + ".png";
@@ -349,11 +349,11 @@
   <body>
     <div id="page-background-div"> 
 
-      <div class="common-page-header"><div id="import-header"></div><h1 id="class-page-title-path"></h1><hr></div>
+      <div class="common-page-header"><div id="populated-header-div"></div><h1 id="class-populated-title-table-thead"></h1><hr></div>
 
-      <div class="common-page-content-section-transparent">
+      <div class="common-fixed-content-section-transparent">
 
-            <section class="page-content-section">
+            <section class="fixed-content-section">
               <button id="common-page-back-button" onclick="location.href='../character-builds.html'">Out to Character Builds</button>
               <h2>Overview</h2>
               <hr>
@@ -365,7 +365,7 @@
               <hr>
               <h3>Build Setup</h3>
               <p id="build-setup-overview">We'll take the following setup prior to our class levels.  </p>
-              <table class="page-title-table" id="build-setup-table">
+              <table class="populated-title-table" id="build-setup-table">
                 <thead>
                   <th>Race</th>
                   <th>Background</th>
@@ -384,7 +384,7 @@
               <h3>Level Table</h3>
               <p id="build-level-overview">We'll take features based on the following table to initiate and progress through our build.  </p>
 
-              <table id="build-level-table" class="page-title-table">
+              <table id="build-level-table" class="populated-title-table">
                 <thead>
                   <th style="width: 5vw">Level</th>
                   <th style="width: 10vw">Class/Subclass</th>
@@ -413,7 +413,7 @@
         </div>
       </div>
 
-      <footer id="import-footer"></footer>
+      <div id="populated-footer-div"></div>
 
     </div>
   </body>

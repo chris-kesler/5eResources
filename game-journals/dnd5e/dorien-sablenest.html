@@ -13,25 +13,25 @@
   <body>
     <div id="page-background-div"> 
       <div class="common-page-header">
-        <div id="import-header"></div>
+        <div id="populated-header-div"></div>
 
           <h1>Game Journal:  Dorien Sablenest</h1>
           <hr>
       </div>
         
       
-      <div class="common-page-content-section-transparent">
+      <div class="common-fixed-content-section-transparent">
           
 
 
 
 
-            <section class="page-content-section">
+            <section class="fixed-content-section">
                 <button id="common-page-back-button" onclick="location.href='../dnd5e.html'">Out to D&D</button>
                 <h2>Overview</h2>
                 <hr>
 
-                <!-- <table class="page-list-table">
+                <!-- <table class="fixed-index-table">
                     <tr><td>
                         <button class="page-list-entry-button" onclick="location.href='/character-builds/artificer-warmagic.html'">Arcana Cleric</button>
                     </td></tr>
@@ -110,7 +110,7 @@
 
       </div>
 
-      <footer id="import-footer"></footer>
+      <div id="populated-footer-div"></div>
     </div>
   </body>
 </html>
@@ -118,8 +118,8 @@
 <script type="text/javascript">
   $(function () {
 
-    $("#import-header").load("/resources/pages/import-header.html");
-    $("#import-footer").load("/resources/pages/import-footer.html");
+    $("#populated-header-div").load("/resources/pages/populated-header-div.html");
+    $("#populated-footer-div").load("/resources/pages/populated-footer-div.html");
 
 });
 </script>

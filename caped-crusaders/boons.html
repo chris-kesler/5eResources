@@ -71,7 +71,7 @@
 // 
 // The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
 // =========================================================================================
-				$("#import-header").load("/resources/pages/import-header.html");
+				$("#populated-header-div").load("/resources/pages/populated-header-div.html");
 
 
 // =========================================================================================
@@ -109,19 +109,19 @@
 
 				var titleCompleted = false;
 				if (page_subsite != undefined) {
-					document.getElementById("page-title-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+					document.getElementById("populated-title-table-thead").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
 				} else {
-					document.getElementById("page-title-path").innerHTML = titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
+					document.getElementById("populated-title-table-thead").innerHTML = titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
 					titleCompleted = true;
 				}
 				if (page_directory != undefined && !titleCompleted) {
-					document.getElementById("page-title-path").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+					document.getElementById("populated-title-table-thead").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
 				}
 				if (page_category != undefined && !titleCompleted) {
-					document.getElementById("page-title-path").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + "/" + page_category + ".html'>" + titleCase(page_category.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+					document.getElementById("populated-title-table-thead").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + "/" + page_category + ".html'>" + titleCase(page_category.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
 				}
 				if (page_title != undefined && !titleCompleted) {
-					document.getElementById("page-title-path").innerHTML += " > " + titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
+					document.getElementById("populated-title-table-thead").innerHTML += " > " + titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
 					titleCompleted = true;
 				}
 
@@ -131,7 +131,7 @@
 // 
 // The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
 // =========================================================================================
-				$("#import-footer").load("/resources/pages/import-footer.html");
+				$("#populated-footer-div").load("/resources/pages/populated-footer-div.html");
 			});
 		</script>
 	</head>
@@ -143,13 +143,13 @@
 		<div id="page-background-div">
 			<!-- 
 				A div for the page HEADER -->
-			<div id="import-header"></div>
+			<div id="populated-header-div"></div>
 			<!-- 
 				A section for the page CONTENT -->
-			<section class="page-content-section">
+			<section class="fixed-content-section">
 				<!-- 
 					A table for the page TITLE -->
-				<table id="page-title-table"><thead><tr><td colspan="6"><h2 id="page-title-path"></h2></td></tr></thead><tbody></tbody></table>   
+				<table id="populated-title-table"><thead><tr><td colspan="6"><h2 id="populated-title-table-thead"></h2></td></tr></thead><tbody></tbody></table>   
 				<hr>
 				<h3>Include Filters</h3>
 
@@ -211,7 +211,7 @@
 			</section>
 			<!-- 
 				A div for the page FOOTER -->
-			<footer id="import-footer"></footer>
+			<div id="populated-footer-div"></div>
 		</div>
 	</body>
 </html>

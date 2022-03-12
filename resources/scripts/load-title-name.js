@@ -12,11 +12,11 @@ $(function populatePageTitle() {
 	page_args = readArgs();
 	
 	if (page_name !== "entry-page.html") {
-		document.getElementById("page-title-path").innerHTML += titleCase(page_name.replaceAll('-', ' ').replaceAll('.html', ''));
+		document.getElementById("populated-title-table-thead").innerHTML += titleCase(page_name.replaceAll('-', ' ').replaceAll('.html', ''));
 	} else if (page_name === "entry-page.html" && page_args != undefined) {
-		document.getElementById("page-title-path").innerHTML += titleCase(page_args.replaceAll('-', ' ').replaceAll('.html', ''));
+		document.getElementById("populated-title-table-thead").innerHTML += titleCase(page_args.replaceAll('-', ' ').replaceAll('.html', ''));
 	} else {
-		document.getElementById("page-title-path").innerHTML += "Hmm, can't seem to read the filename for some reason";
+		document.getElementById("populated-title-table-thead").innerHTML += "Hmm, can't seem to read the filename for some reason";
 
 	}
 });

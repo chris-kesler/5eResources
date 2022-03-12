@@ -226,7 +226,7 @@ const getResults = (id) => {
 
 function CallApiSearchEngine() {
 	var query = document.getElementById('5e-srd-api-searchbox').value;
-	// document.getElementById('page-description-div').innerHTML = query;
+	// document.getElementById('blended-description-div').innerHTML = query;
 	$('#directory-page-dynamic-table-content tr').remove();
 	getResults(`/api/spells/?name=${query}`);
 }

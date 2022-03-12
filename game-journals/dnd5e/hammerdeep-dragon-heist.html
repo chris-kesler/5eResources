@@ -33,7 +33,7 @@
 // 
 // The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
 // =========================================================================================
-		$("#import-header").load("/resources/pages/import-header.html");
+		$("#populated-header-div").load("/resources/pages/populated-header-div.html");
 
 
 // =========================================================================================
@@ -71,19 +71,19 @@
 
 		var titleCompleted = false;
 		if (page_subsite != undefined) {
-			document.getElementById("page-title-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+			document.getElementById("populated-title-table-thead").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
 		} else {
-			document.getElementById("page-title-path").innerHTML = titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
+			document.getElementById("populated-title-table-thead").innerHTML = titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
 			titleCompleted = true;
 		}
 		if (page_directory != undefined && !titleCompleted) {
-			document.getElementById("page-title-path").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+			document.getElementById("populated-title-table-thead").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
 		}
 		if (page_category != undefined && !titleCompleted) {
-			document.getElementById("page-title-path").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + "/" + page_category + ".html'>" + titleCase(page_category.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+			document.getElementById("populated-title-table-thead").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + "/" + page_category + ".html'>" + titleCase(page_category.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
 		}
 		if (page_title != undefined && !titleCompleted) {
-			document.getElementById("page-title-path").innerHTML += " > " + titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
+			document.getElementById("populated-title-table-thead").innerHTML += " > " + titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
 			titleCompleted = true;
 		}
 
@@ -93,7 +93,7 @@
 // 
 // The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
 // =========================================================================================
-		$("#import-footer").load("/resources/pages/import-footer.html");
+		$("#populated-footer-div").load("/resources/pages/populated-footer-div.html");
 		});
 	</script>
 	</head>	
@@ -105,16 +105,16 @@
 	<div id="page-background-div-game-journals">
 		<!-- 
 			A div for the page HEADER -->
-		<div id="import-header"></div>
+		<div id="populated-header-div"></div>
 		<!-- 
 			A section for the page CONTENT -->
-		<section class="page-content-section">
+		<section class="fixed-content-section">
 		<!-- 
 			A table for the page TITLE -->
-		<table id="page-title-table"><thead><tr><td colspan="6"><h2 id="page-title-path"></h2></td></tr></thead><tbody></tbody></table>	 
+		<table id="populated-title-table"><thead><tr><td colspan="6"><h2 id="populated-title-table-thead"></h2></td></tr></thead><tbody></tbody></table>	 
 		<!-- 
 			A div for the page DESCRIPTION -->
-		<div id="page-description-div">
+		<div id="blended-description-div">
 			<p>
 				These are the Episode recordings of a D&D game I am currently running called "Hammerdeep Dragon Heist".  It is set in the city of <a href='/myrmidos-wiki/locations/hammerdeep.html'>Hammerdeep</a>, which is a homebrewed variant of Waterdeep.  I am the Game Master, Steel Anjel is playing Tanda, and Nub is playing Lex.  
 			</p>
@@ -132,7 +132,7 @@
 		</section>
 		<!-- 
 			A div for the page FOOTER -->
-		<footer id="import-footer"></footer>
+		<div id="populated-footer-div"></div>
 	</div>
 	</body>
 </html>
