@@ -233,7 +233,7 @@ body, #page-title-table tr th, #page-title-table th, #page-title-table tr td, #p
 	margin-top: 2vw;
 	margin-bottom: 2vw;
 
-	padding: 2vw;
+	padding: 1vw;
 }
 
 /* The off white chunk of the page that holds the entry page nav table in a fixed position, along with a placeholder for other html elements to float aroundand the table within */
@@ -563,7 +563,7 @@ An overview table for caped crusaders entry pages
 }
 #page-title-table, .level-table {
 	width: 100%;
-	margin: 1vw;
+	margin: 0;
 	margin-bottom: 15px;
 	overflow-x: auto;
 	border: 0px solid rgb(50,50,50);
@@ -813,10 +813,14 @@ The dynamic table
 	font-weight: bold;
 }
 
-
+.stretcher-bar {
+	width: 100%;
+	visibility: hidden;
+}
 
 /* Colored stylings for development */
-#import-header {
+
+/* #import-header {
 	background-color: red;
 }
 .page-content-section {
@@ -833,4 +837,6 @@ The dynamic table
 }
 #import-footer {
 	background-color: purple;
-}
+} */
+
+
