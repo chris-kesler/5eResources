@@ -818,3 +818,25 @@ The dynamic table
 	font-size: small;
 	font-weight: bold;
 }
+
+
+
+/* Colored stylings for development */
+#import-header {
+	background-color: red;
+}
+.page-content-section {
+	background-color: orange;
+}
+#page-title-table, #page-title-table-wide {
+	background-color: yellow;
+}
+.page-list-table {
+	background-color: green;
+}
+#page-description-div {
+	background-color: blue;
+}
+#import-footer {
+	background-color: purple;
+}
