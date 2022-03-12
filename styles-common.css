@@ -142,7 +142,7 @@ button {
 
 
 /* A condensed off black color style group for dark text elements */
-body, #populated-title-table tr th, #populated-title-table th, #populated-title-table tr td, #populated-title-table td, #populated-title-table tr th, #populated-title-table th, #populated-title-table tr td, #populated-title-table td,.level-table tr th, .level-table th, .level-table tr td, .level-table td, .cc-build-selections-table tr th, .cc-build-selections-table tr td, .cc-build-selections-table td:nth-child(1) {
+body, #populated-title-table tr th, #populated-title-table th, #populated-title-table tr td, #populated-title-table td, #populated-title-table tr th, #populated-title-table th, #populated-title-table tr td, #populated-title-table td, .level-table tr th, .level-table th, .level-table tr td, .level-table td, .cc-build-selections-table tr th, .cc-build-selections-table tr td, .cc-build-selections-table td:nth-child(1) {
 	color: rgb(25,25,25);
 }
 
@@ -461,7 +461,7 @@ The buttons used to navigate and organize the classes within caped crusaders
 	margin: 5px;
 	background-color: rgb(175, 175, 175);
 	padding: 0px;
-	border-radius: 7px;
+	border-radius: 25px;
 	border-style: hidden;
 	font-size: medium;
 	display: block;

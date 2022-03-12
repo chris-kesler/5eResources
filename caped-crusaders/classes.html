@@ -1,74 +1,53 @@
+<!--
+|| =========================================================================================
+|| This is a DIRECTORY page
+||
+|| The HEADER and FOOTER are POPULATED elements found across the site
+|| The CONTENT element is FIXED and is found across the site
+|| The BACKGROUND element is FIXED across the subsite
+|| The TITLE, INDEX, and DESCRIPTION elements are FIXED for this page
+|| ========================================================================================= 
+-->
 <!DOCTYPE html>
-<!-- =========================================================================================
-	This is a DIRECTORY page.  It contains HEADER, BACKGROUND, CONTENT, and FOOTER elements that are standard across the site.
-	It also contains TITLE, PAGE LIST, and DESCRIPTION elements that are unique and static as a DIRECTORY page.
-========================================================================================= -->
 <html lang="en">
 	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-US-Compatible" content="e-edge">
 		<title>KnowOne's Website of Everything</title>
 		<link rel="icon" href="/resources/images/OwlOfMinerva_ModifiedLogo.png">
-		<link rel="stylesheet" href="/caped-crusaders-style.css">
+		<link rel="stylesheet" href="/styles-common.css">
+		<link rel="stylesheet" href="/styles-caped-crusaders.css">
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		
 		<!-- Importing local Javascript functions -->
 		<script type="text/javascript" src="/resources/scripts/function-titleCase.js"></script>
-		<script type="text/javascript" src="/resources/scripts/function-hideShowNavList.js"></script>
 		<script type="text/javascript" src="/resources/scripts/function-readArgs.js"></script>
 
-		<!-- Populating the page Header and Footer -->
+		<!-- Populating the page HEADER and FOOTER -->
 		<script type="text/javascript" src="/resources/scripts/load-header-footer.js"></script>
 
-		<!-- Populating the Title directories and name based on file name and file path -->
+		<!-- Populating the TITLE directories and name based on file name and file path -->
 		<script type="text/javascript" src="/resources/scripts/load-title-directories.js"></script>
 		<script type="text/javascript" src="/resources/scripts/load-title-name.js"></script>
 
-		<script>
-			
-
-			// A function that populates the page buttons and data within
-			$(function readClass() {
-				var classes = [];
-				$.getJSON('classes.json', function(data) {
-					var path = window.location.pathname;
-					var page = path.split("/").pop();
-					$.each(data.entries, function(i, f) {
-						document.getElementById(`class-button-${i}`).setAttribute("onclick", "location.href='classes/entry-page.html?name=" + f.name_str.toLowerCase() + "'");
-						document.getElementById(`class-button-${i}`).innerHTML = "<section class='cc-class-button-content-ceiling'><img class='cc-class-image-small' src='/resources/images/" + f.name_str + ".png' alt='" + f.name_str + " Image'><h3>" + f.name_str + "</h3><hr>" + f.description_short_str + "</section><section class='cc-class-button-content-floor'><i><b>Hit Die:</b>  d" + f.hit_die_int + "<br><b>Primary Ability:</b>  " + f.primary_ability + "<br><b>Saves:</b>  " + f.proficiencies_saves + "</section>";
-					});
-				});
-			});
-
-			// A function that capitalizes the first letter of each word in a string
-			function titleCase(str) {
-				var split_string = str.toLowerCase().split(' ');
-				for (var i = 0; i < split_string.length; i++) {
-					split_string[i] = split_string[i].charAt(0).toUpperCase() + split_string[i].substring(1);     
-				}
-				return split_string.join(' '); 
-			}
-
-		</script>
-	</head>  
-
-
+		<!-- Populating INDEX table -->
+		<script type="text/javascript" src="/resources/scripts/populate-index-table-caped-crusaders-classes.js"></script>
+	</head>
 	<body>
-		<!-- 
-			A div for the page BACKGROUND -->
+		
+		<!-- A div for the page BACKGROUND -->
 		<div id="fixed-background-div-caped-crusaders">
-			<!-- 
-				A div for the page HEADER -->
+
+			<!-- A div for the page HEADER -->
 			<div id="populated-header-div"></div>
-			<!-- 
-				A section for the page CONTENT -->
+
+			<!-- A section for the page CONTENT -->
 			<section class="fixed-content-section">
-				<!-- 
-					A table for the page TITLE -->
+
+				<!-- A table for the page TITLE -->
 				<table id="populated-title-table"><thead><tr><td colspan="6"><h2 id="populated-title-table-thead"></h2></td></tr></thead><tbody></tbody></table>
-				<!-- 
-					A table for the PAGE LIST -->
-				<table class="fixed-index-table">
+				
+				<!-- A table for the page INDEX -->
+				<table class="populated-index-table">
 					<tr><td>
 						<button id="class-button-4" class="cc-class-button-magic"></button>
 					</td>
@@ -106,9 +85,9 @@
 						<button id="class-button-3" class="cc-class-button-tech"></button>
 					</td></tr>
 				</table>
-				<!-- 
-					A div for the page DESCRIPTION -->
-				<div id="blended-description-div">
+
+				<!-- A div for the page DESCRIPTION -->
+				<div id="fixed-description-div">
 					<p>
 						A Class is a bounded set of mechanics that represent player character abilities.  The classes are placed into categories based on the source of their power.  There are twelve classes in total, with four classes in each category.  The categories are Tech, Powers, and Magic.  
 						<br><br>
@@ -125,8 +104,8 @@
 				</div>
 				<hr class="fixed-content-hr">
 			</section>
-			<!-- 
-				A div for the page FOOTER -->
+
+			<!-- A div for the page FOOTER -->
 			<div id="populated-footer-div"></div>
 		</div>
 	</body>
