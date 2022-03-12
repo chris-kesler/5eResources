@@ -553,6 +553,7 @@ The buttons used to navigate and organize the classes within caped crusaders
 	display: flex;
 	overflow: auto;
 	border-radius: 15px;
+	margin-left: 1vw;
 }
 
 /* 
