@@ -115,7 +115,7 @@ const getResults = (id) => {
 							</td>
 						</tr>
 						`
-						$(table_row).appendTo("#directory-page-dynamic-table-content tbody");
+						$(table_row).appendTo("#dynamic-index-table tbody");
 
 
 						// tableRow = `
@@ -136,7 +136,7 @@ const getResults = (id) => {
 						// 	Components
 						// 	</th>
 						// </tr>`
-						// $(tableRow).appendTo("#directory-page-dynamic-table-content tbody");
+						// $(tableRow).appendTo("#dynamic-index-table tbody");
 
 						// tableRow = `
 						// <tr>
@@ -156,7 +156,7 @@ const getResults = (id) => {
 						// 	${result.components}
 						// 	</td>
 						// </tr>`
-						// $(tableRow).appendTo("#directory-page-dynamic-table-content tbody");
+						// $(tableRow).appendTo("#dynamic-index-table tbody");
 
 						// tableRow = `
 						// <tr>
@@ -176,7 +176,7 @@ const getResults = (id) => {
 						// 	Damage/Effect
 						// 	</th>
 						// </tr>`
-						// $(tableRow).appendTo("#directory-page-dynamic-table-content tbody");
+						// $(tableRow).appendTo("#dynamic-index-table tbody");
 
 						// if(result.damage_effect != undefined) {
 						// 	tableRow = `
@@ -197,7 +197,7 @@ const getResults = (id) => {
 						// 		${result.damage_effect.damage_type.name}
 						// 	</td>
 						// 	</tr><tr><td><td></tr>`
-						// 	$(tableRow).appendTo("#directory-page-dynamic-table-content tbody");
+						// 	$(tableRow).appendTo("#dynamic-index-table tbody");
 						// } else {
 						// 	tableRow = `
 						// 	<tr>
@@ -217,7 +217,7 @@ const getResults = (id) => {
 						// 		undefined
 						// 	</td>
 						// 	</tr><tr class='empty-row'><td><td></tr>`
-						// 	$(tableRow).appendTo("#directory-page-dynamic-table-content tbody");
+						// 	$(tableRow).appendTo("#dynamic-index-table tbody");
 						// }
 					});
 			});
@@ -227,7 +227,7 @@ const getResults = (id) => {
 function CallApiSearchEngine() {
 	var query = document.getElementById('5e-srd-api-searchbox').value;
 	// document.getElementById('blended-description-div').innerHTML = query;
-	$('#directory-page-dynamic-table-content tr').remove();
+	$('#dynamic-index-table tr').remove();
 	getResults(`/api/spells/?name=${query}`);
 }
 

@@ -12,7 +12,7 @@
       $(function readJSON() {
 
         // Reading data from our JSON file
-        $.getJSON('enhancements.json', function(data) {
+        $.getJSON('techniques.json', function(data) {
 
           // Looping through the JSON data 
           $.each(data.entries, function(i, f) {
@@ -35,7 +35,7 @@
       
             // Defining the table row that contains each entry in the table
             var table_row = "<tr>" 
-              + "<td><a href='enhancements/" + f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html' target='_blank'>" + f.name_str + "</a></td>" 
+              + "<td><a href='techniques/" + f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html' target='_blank'>" + f.name_str + "</a></td>" 
               + "<td>" + f.level_str + "</td>" 
               + "<td>" + "<img class='directory-page-dynamic-table-entry-image' src=/resources/images/" + f.type_str + ".png><br>" + f.type_str + "</td>" 
               + "<td>" + f.attack_save_str + "</td>" 
@@ -45,7 +45,7 @@
               + "</tr>"
 
             // Adding the row to the table
-            $(table_row).appendTo("#directory-page-dynamic-table-content tbody");
+            $(table_row).appendTo("#dynamic-index-table tbody");
           });
         });
       });
@@ -58,7 +58,7 @@
       <div class="common-page-header">
         <div id="populated-header-div"></div>
 
-          <h1>Caped Crusaders:  Enhancements</h1>
+          <h1>Caped Crusaders:  Techniques</h1>
           <hr>
       </div>
         
@@ -107,7 +107,7 @@
               <input type="text" id="directory-page-dynamic-table-query-inputExclude12" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Races. . .">
               <input type="text" id="directory-page-dynamic-table-query-inputExclude13" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Classes. . ."> -->
                             
-              <table id="directory-page-dynamic-table-content">
+              <table id="dynamic-index-table">
                 <thead class="header">
                   <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(0)">Name</button></th>
                   <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(1)">Level</button></th>
@@ -225,7 +225,7 @@
     // filterExcludeTwelve = inputExcludeTwelve.value.toUpperCase();
     // filterExcludeThirteen = inputExcludeThirteen.value.toUpperCase();
 
-    table = document.getElementById("directory-page-dynamic-table-content");
+    table = document.getElementById("dynamic-index-table");
     tr = table.getElementsByTagName("tr");
   
     // Loop through all table rows, and hide those who don't match the search query
@@ -337,71 +337,71 @@
   // This function sorts the entries in ascending or descending order based on the column selected and number of clicks applied
   function sortTable(n) {
 
-  // Defining variables to be used
-  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("directory-page-dynamic-table-content");
-  switching = true;
+    // Defining variables to be used
+    var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+    table = document.getElementById("dynamic-index-table");
+    switching = true;
 
-  // Set the sorting direction to ascending:
-  dir = "asc";
-  // A loop that will continue until no switching has been done
-  while (switching) {
+    // Set the sorting direction to ascending:
+    dir = "asc";
+    // A loop that will continue until no switching has been done
+    while (switching) {
 
-    // Switching is not complete
-    switching = false;
-    rows = table.rows;
+      // Switching is not complete
+      switching = false;
+      rows = table.rows;
 
-    // Loop through all table rows besides the header
-    for (i = 1; i < (rows.length - 1); i++) {
+      // Loop through all table rows besides the header
+      for (i = 1; i < (rows.length - 1); i++) {
 
-      // Ensure that switching is false
-      shouldSwitch = false;
+        // Ensure that switching is false
+        shouldSwitch = false;
 
-      // Reading two elements to compare from this row and the following row
-      x = rows[i].getElementsByTagName("TD")[n];
-      y = rows[i + 1].getElementsByTagName("TD")[n];
+        // Reading two elements to compare from this row and the following row
+        x = rows[i].getElementsByTagName("TD")[n];
+        y = rows[i + 1].getElementsByTagName("TD")[n];
 
-      // Checking whether we are comparing string characters or converting to integers
-      if (/\d/.test(parseInt(x.innerHTML.toLowerCase().replace(/\D/g,'')))) {
-        var xcompare = parseInt(x.innerHTML.toLowerCase().replace(/\D/g,''));
-        var ycompare = parseInt(y.innerHTML.toLowerCase().replace(/\D/g,''));
-      } else {
-        var xcompare = x.innerHTML.toLowerCase();
-        var ycompare = y.innerHTML.toLowerCase();
+        // Checking whether we are comparing string characters or converting to integers
+        if (/\d/.test(parseInt(x.innerHTML.toLowerCase().replace(/\D/g,'')))) {
+          var xcompare = parseInt(x.innerHTML.toLowerCase().replace(/\D/g,''));
+          var ycompare = parseInt(y.innerHTML.toLowerCase().replace(/\D/g,''));
+        } else {
+          var xcompare = x.innerHTML.toLowerCase();
+          var ycompare = y.innerHTML.toLowerCase();
+        }
+
+        // Perform comparisons and switch entries based on direction of sort
+        if (dir == "asc") {
+          
+          // If comparison returns true, entries should be switched
+          if (xcompare > ycompare) {
+            shouldSwitch = true;
+            break;
+          }
+        } else if (dir == "desc") {
+          
+          // If comparison returns true, entries should be switched
+          if (xcompare < ycompare) {
+            shouldSwitch = true;
+            break;
+          }
+        }
       }
 
-      // Perform comparisons and switch entries based on direction of sort
-      if (dir == "asc") {
+      // After breaking from the previous loop, we check to see if this entry is marked for switching
+      if (shouldSwitch) {
         
-        // If comparison returns true, entries should be switched
-        if (xcompare > ycompare) {
-          shouldSwitch = true;
-          break;
-        }
-      } else if (dir == "desc") {
-        
-        // If comparison returns true, entries should be switched
-        if (xcompare < ycompare) {
-          shouldSwitch = true;
-          break;
-        }
-      }
-    }
-
-    // After breaking from the previous loop, we check to see if this entry is marked for switching
-    if (shouldSwitch) {
-      
-      // Performing the switch, setting switching to true, and incrementing the switch counter
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      // If no switching has been done AND the direction is "asc", set the direction to "desc" and run the while loop again.
-      if (switchcount == 0 && dir == "asc") {
-        dir = "desc";
+        // Performing the switch, setting switching to true, and incrementing the switch counter
+        rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
         switching = true;
+        switchcount ++;
+      } else {
+        // If no switching has been done AND the direction is "asc", set the direction to "desc" and run the while loop again.
+        if (switchcount == 0 && dir == "asc") {
+          dir = "desc";
+          switching = true;
+        }
       }
     }
   }
-}
-</script>
+  </script>

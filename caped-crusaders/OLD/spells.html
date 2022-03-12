@@ -145,7 +145,7 @@
 				+ "</tr>"
 
 				// Adding the row to the table
-				$(table_row).appendTo("#directory-page-dynamic-table-content tbody");
+				$(table_row).appendTo("#dynamic-index-table tbody");
 			});
 		});
 		});
@@ -263,7 +263,7 @@
 
 		<!-- This is the table that contains the entries being filtered -->
 		<h3>Sortable Entries</h3>
-		<table id="directory-page-dynamic-table-content">
+		<table id="dynamic-index-table">
 			
 			<!-- The buttons that designate the column data and serve as the header can be clicked to sort the entries in ascending or descending order -->
 			<thead class="header" id="directory-page-dynamic-table-header"></thead>
@@ -344,7 +344,7 @@ function FilterTableFunction() {
 	var filterExcludeEleven = inputExcludeEleven.value.toUpperCase();
 
 	// Reading the table element and all table rows within
-	table = document.getElementById("directory-page-dynamic-table-content");
+	table = document.getElementById("dynamic-index-table");
 	tr = table.getElementsByTagName("tr");
 
 	// Looping through all table rows and hiding those who don't match the search query
@@ -441,7 +441,7 @@ function sortTable(n) {
 
 	// Defining variables to be used
 	var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-	table = document.getElementById("directory-page-dynamic-table-content");
+	table = document.getElementById("dynamic-index-table");
 	switching = true;
 
 	// Set the sorting direction to ascending:

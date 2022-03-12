@@ -3,7 +3,7 @@ function sortTable(n) {
 
 	// Defining variables to be used
 	var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-	table = document.getElementById("directory-page-dynamic-table-content");
+	table = document.getElementById("dynamic-index-table");
 	switching = true;
 
 	// Set the sorting direction to ascending:

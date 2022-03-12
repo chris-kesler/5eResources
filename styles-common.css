@@ -72,7 +72,7 @@ p {
 	min-width: 20vw;
 }
 
-p:before {
+p:before, h1:before, h2:before, h3:before {
 	content: "";
 	width: 10vw;
 	display: block;
@@ -222,14 +222,13 @@ body, #populated-title-table tr th, #populated-title-table th, #populated-title-
 /* The off white chunk of the page that holds content */
 .fixed-content-section {
 	height: auto;
-	width: 90vw;
+	width: 92vw;
 
-	border: 0.2vw solid rgb(100,100,100);
 	box-sizing: border-box;
 	overflow-wrap: break-word;
 
-	margin-left: 5vw; 
-	margin-right: 5vw;
+	margin-left: 4vw; 
+	margin-right: 4vw;
 	margin-top: 2vw;
 	margin-bottom: 2vw;
 
@@ -559,7 +558,7 @@ The buttons used to navigate and organize the classes within caped crusaders
 /* 
 An overview table for caped crusaders entry pages 
 */
-.level-table {
+/*.level-table {
 	width: 75vw;
 }
 #populated-title-table, .level-table {
@@ -591,8 +590,8 @@ An overview table for caped crusaders entry pages
 #populated-title-table tr td, #populated-title-table  td, .level-table tr td, .level-table td {
 	background-color: rgb(200,200,200);
 	font-size: medium;
-	text-align: left;
-}
+	text-align: left; 
+} */
 
 /* 
 A table that details the character build decisions made at each level 
@@ -689,7 +688,7 @@ A small table to hold the entry page image and author credit
 }
 
 /* An overview table used frequently throughout the site */
-#page-attributes-table {
+/* #page-attributes-table {
 	display: block;
 	float: right;
 	overflow: auto;
@@ -752,7 +751,7 @@ A small table to hold the entry page image and author credit
 	overflow: hidden;
 	margin: -5%;
 	margin-bottom: -1%;
-}
+} */
 
 
 
@@ -777,27 +776,27 @@ A small table to hold the entry page image and author credit
 /* 
 The dynamic table  
 */
-#directory-page-dynamic-table-content {
+#dynamic-index-table {
 	border-collapse: collapse; 
 	width: 100%; 
 	border: 1px solid rgb(97, 97, 97); 
 	overflow: scroll;
 	display: inline-block;
 }
-#directory-page-dynamic-table-content th, #directory-page-dynamic-table-content tr td {
+#dynamic-index-table th, #dynamic-index-table tr td {
 	text-align: left;
 	padding: 5px; 
 	min-width: 175px;
 	color: black;
 	border: 1px solid black;
 }
-#directory-page-dynamic-table-content th {
+#dynamic-index-table th {
 	background-color: rgb(150,150,150);
 }
-#directory-page-dynamic-table-content tr {
+#dynamic-index-table tr {
 	border-bottom: 1px solid rgb(61, 61, 61);
 }
-#directory-page-dynamic-table-content tr {
+#dynamic-index-table tr {
 	background-color: rgb(200,200,200);
 }
 

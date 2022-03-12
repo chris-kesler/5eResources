@@ -778,27 +778,27 @@ A small table to hold the entry page image and author credit
 /* 
 The dynamic table  
 */
-#directory-page-dynamic-table-content {
+#dynamic-index-table {
 	border-collapse: collapse; 
 	width: 100%; 
 	border: 1px solid rgb(97, 97, 97); 
 	overflow: scroll;
 	display: inline-block;
 }
-#directory-page-dynamic-table-content th, #directory-page-dynamic-table-content tr td {
+#dynamic-index-table th, #dynamic-index-table tr td {
 	text-align: left;
 	padding: 5px; 
 	min-width: 175px;
 	color: black;
 	border: 1px solid black;
 }
-#directory-page-dynamic-table-content th {
+#dynamic-index-table th {
 	background-color: rgb(150,150,150);
 }
-#directory-page-dynamic-table-content tr {
+#dynamic-index-table tr {
 	border-bottom: 1px solid rgb(61, 61, 61);
 }
-#directory-page-dynamic-table-content tr {
+#dynamic-index-table tr {
 	background-color: rgb(200,200,200);
 }
 

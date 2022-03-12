@@ -115,7 +115,7 @@ const getResults = (id) => {
 							</td>
 						</tr>
 						`
-						$(table_row).appendTo("#directory-page-dynamic-table-content tbody");
+						$(table_row).appendTo("#dynamic-index-table tbody");
 					});
 			});
 		});
@@ -124,7 +124,7 @@ const getResults = (id) => {
 function CallApiSearchEngine() {
 	var query = document.getElementById('5e-srd-api-searchbox').value;
 	// document.getElementById('blended-description-div').innerHTML = query;
-	$('#directory-page-dynamic-table-content tr').remove();
+	$('#dynamic-index-table tr').remove();
 	getResults(`/api/spells/?name=${query}`);
 }
 

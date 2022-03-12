@@ -94,7 +94,7 @@
 					+ "</tr>"
 
 				// Adding the row to the table
-				$(table_row).appendTo("#directory-page-dynamic-table-content tbody");
+				$(table_row).appendTo("#dynamic-index-table tbody");
 			});
 		});
 	});
@@ -156,7 +156,7 @@
 						<!-- <input type="text" id="directory-page-dynamic-table-query-inputExclude12" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Races. . .">
 						<input type="text" id="directory-page-dynamic-table-query-inputExclude13" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Classes. . ."> -->
 													
-						<table id="directory-page-dynamic-table-content">
+						<table id="dynamic-index-table">
 							<thead class="header">
 								<th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(0)">Name</button></th>
 								<th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(1)">Level</button></th>
@@ -260,7 +260,7 @@
 		// filterExcludeTwelve = inputExcludeTwelve.value.toUpperCase();
 		// filterExcludeThirteen = inputExcludeThirteen.value.toUpperCase();
 
-		table = document.getElementById("directory-page-dynamic-table-content");
+		table = document.getElementById("dynamic-index-table");
 		tr = table.getElementsByTagName("tr");
 	
 		// Loop through all table rows, and hide those who don't match the search query
@@ -374,7 +374,7 @@
 
 		// Defining variables to be used
 		var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-		table = document.getElementById("directory-page-dynamic-table-content");
+		table = document.getElementById("dynamic-index-table");
 		switching = true;
 
 		// Set the sorting direction to ascending:

@@ -22,18 +22,26 @@
 	#populated-title-table {
 		border-bottom: 2px solid rgb(50,50,50);
 	}
-
-	.level-table tr th, .level-table th, .level-table tr td, .level-table td {
-		color: rgb(25,25,25);
-	}
 	#populated-title-table, .level-table {
-		width: 100%;
 		display: inline-block;
 		margin: 0;
 		border-collapse: collapse;
+		overflow: auto;
+		max-width: 88vw;
+		border: 0px solid rgb(50,50,50);
+	}
+	#populated-title-table thead tr td, .level-table thead tr td{
+		background-color: transparent;
+		width: 88vw;
+		border-color: transparent;
+		border-bottom: 2px solid rgb(50,50,50);
 	}
 	.level-table thead tr td {
 		padding: 0px;
+		border: 0;
+	}
+	.level-table tr th, .level-table th, .level-table tr td, .level-table td {
+		color: rgb(25,25,25);
 	}
 	#populated-title-table th, #populated-title-table td, .level-table th, .level-table td {
 		padding: 8px;
@@ -158,6 +166,79 @@
 		font-weight: bold;
 	}
 
+/* 
+||==========================================================================================
+|| POPULATED page ATTRIBUTE table
+||==========================================================================================
+ */
+
+	/* An overview table used frequently throughout the site */
+#page-attributes-table {
+	display: block;
+	float: right;
+	overflow: auto;
+	border-collapse: collapse;
+	width: 100%;
+	max-width: 384px;
+	padding: 0px;
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 10px;
+	border: 5px solid rgb(150,150,150);
+	border-radius: 32px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: rgb(200, 200, 200);
+}
+#page-attributes-table tr:first-child th {
+	object-fit: cover;
+	overflow: hidden;
+}
+#page-attributes-table th, #page-attributes-table td {
+	width: 100vw;
+	max-width: auto;
+	padding: 10px;
+	vertical-align: top;
+}
+#page-attributes-table tr th {
+	background-color: rgb(200,200,200);
+	color: rgb(58,58,58);
+	font-size: small;
+}
+#page-attributes-table tr td {
+	background-color: rgb(225,225,225);
+	color: rgb(58,58,58);
+	font-size: small;
+	text-align: left;
+}
+#page-attributes-table tr:nth-child(2) th, #page-attributes-table tr:nth-child(1) th {
+	color: rgb(58,58,58);
+	padding: 2px;
+	border-top: 0px;
+	font-size: smaller;
+	text-align: center;
+}
+#page-attributes-table tr:nth-child(2) th {
+	border-top: 2px solid rgb(175,175,175);
+}
+#page-attributes-table tr:nth-child(3) th, #page-attributes-table tr:nth-child(4) th {
+	background-color: rgb(100,100,100);
+	color: rgb(25,25,25);
+	font-size: large;
+}
+#page-attributes-table tr:nth-child(4) th {
+	padding-top: 0px;
+	font-size: small;
+}
+#page-attributes-table-image {
+	width: 110%;
+	height: auto; 
+	display: block;
+	overflow: hidden;
+	margin: -5%;
+	margin-bottom: -1%;
+}
+
 
 /* 
 ||==========================================================================================
@@ -165,12 +246,27 @@
 ||==========================================================================================
  */
 
+/* #populated-header-div {
+	background-color: red;
+}
+.fixed-content-section {
+	background-color: orange;
+}
+#populated-title-table {
+	background-color: yellow;
+}
 .fixed-index-table {
 	background-color: green;
 }
-/* #populated-title-table {
-	background-color: brown;
-} */
-/* .level-table {
-	background-color: blueviolet;
+	#page-attributes-table {
+		background-color: seagreen;
+	}
+#blended-description-div {
+	background-color: blue;
+}
+	.level-table {
+		background-color: cyan;
+	}
+#populated-footer-div {
+	background-color: purple;
 } */
