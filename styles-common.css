@@ -572,7 +572,6 @@ An overview table for caped crusaders entry pages
 }
 #populated-title-table thead tr td, .level-table thead tr td{
 	border: 0px hidden aqua;
-	border-bottom: 1px solid rgb(50,50,50);
 	background: transparent;
 	background-color: transparent;
 }
