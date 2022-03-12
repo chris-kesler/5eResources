@@ -19,9 +19,6 @@
 ||==========================================================================================
  */
 
-	#populated-title-table {
-		border-bottom: 2px solid rgb(50,50,50);
-	}
 	#populated-title-table, .level-table {
 		display: inline-block;
 		margin: 0;
@@ -38,7 +35,6 @@
 	}
 	.level-table thead tr td {
 		padding: 0px;
-		border: 0;
 	}
 	.level-table tr th, .level-table th, .level-table tr td, .level-table td {
 		color: rgb(25,25,25);
