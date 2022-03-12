@@ -6,120 +6,120 @@
 
 /* The default background color and general text settings */
 body {
-  background: rgb(219,219,224);
-  font-family: sans-serif;
-  margin: 0px;
-  padding: 0px;
-  overflow: visible;
+	background: rgb(219,219,224);
+	font-family: sans-serif;
+	margin: 0px;
+	padding: 0px;
+	overflow: visible;
 }
 
 /* The generic span used most often in game journals */
 span {
-  display: block;
-  position: bottom;
-  margin-right: 10px;
+	display: block;
+	position: bottom;
+	margin-right: 10px;
 }
 
 /* Level one headings, only seen in the header as the home button and the page title */
 h1 {
-  font-size: x-large;
-  color: rgb(225, 225, 225);
+	font-size: x-large;
+	color: rgb(225, 225, 225);
 
 }
 
 /* Headings that are not in the header */
 h2, h3, h4 {
-  font-weight: bolder;
-  color: rgb(25,25,25);
+	font-weight: bolder;
+	color: rgb(25,25,25);
 
 }
 
 /* Level two headings, only used for the first heading outside of the header, usually consists of "Overview" */
 h2 {
-  font-size: x-large;
+	font-size: x-large;
 
 }
 
 /* Level three headings */
 h3 {
-  font-size: larger;
-  margin-left: 10px;
+	font-size: larger;
+	margin-left: 10px;
 }
 
 /* Level four headings */
 h4 {
-  font-size: medium;
-  font-style: italic;
-  margin-left: 10px;
+	font-size: medium;
+	font-style: italic;
+	margin-left: 10px;
 
 }
 
 /* The generic horizontal line break */
 hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid rgb(0,0,0);
-  margin: 1em 0;
-  padding: 0;
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid rgb(0,0,0);
+	margin: 1em 0;
+	padding: 0;
 }
 
 /* The generic text wrapper across the site */
 p {
-  color: rgb(25,25,25);
-  margin-left: 25px;
-  margin: 15px;
-  min-width: 20vw;
+	color: rgb(25,25,25);
+	margin-left: 25px;
+	margin: 15px;
+	min-width: 20vw;
 }
 
 p:before {
-  content: "";
-  width: 28vw;
-  display: block;
-  overflow: hidden;
-  /* For Demonstration */
-  /* border: 1px solid green; */
+	content: "";
+	width: 28vw;
+	display: block;
+	overflow: hidden;
+	/* For Demonstration */
+	/* border: 1px solid green; */
 }
 
 /* All buttons will show cursor by default */
 button {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 /* All sections white and rounded by default */
 section {
-  background-color: rgb(255,255,255);
-  border-radius: 10px;
-  max-width: 90vw;
+	background-color: rgb(255,255,255);
+	border-radius: 10px;
+	max-width: 90vw;
 }
 
 /* All divs bound by viewport */
 div {
-  max-width: 100vw;
+	max-width: 100vw;
 }
 
 /* All tables bound by viewport */
 table {
-  max-width: 100vw;
+	max-width: 100vw;
 }
 
 /* 
 Styling for the hyperlinks 
 */
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 a:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 /* A frame limit for the youtube embeds */
 iframe {
-  max-width: 80vw;
+	max-width: 80vw;
 }
 
 button {
-  background-size: cover;
+	background-size: cover;
 }
 
 
@@ -132,23 +132,23 @@ button {
 
 /* A condensed dark grey background color style group for the header and footer elements */
 #import-header, .import-header-home-button, .import-header-nav-button, #common-page-back-button, .page-list-table, #import-footer, .page-footer-button {
-  background-color: rgb(54,57,63);
+	background-color: rgb(54,57,63);
 }
 
 /* A condensed dark grey border color style group for the header elements */
 .import-header-home-button, .import-header-nav-button, .page-list-entry-button, #common-page-back-button, .page-footer-button, .directory-page-dynamic-table-sort-button {
-  border-color: rgb(54,57,63);
+	border-color: rgb(54,57,63);
 }
 
 
 /* A condensed off black color style group for dark text elements */
 body, #page-title-table tr th, #page-title-table th, #page-title-table tr td, #page-title-table td, #page-title-table-wide tr th, #page-title-table-wide th, #page-title-table-wide tr td, #page-title-table-wide td,.level-table tr th, .level-table th, .level-table tr td, .level-table td, .cc-build-selections-table tr th, .cc-build-selections-table tr td, .cc-build-selections-table td:nth-child(1) {
-  color: rgb(25,25,25);
+	color: rgb(25,25,25);
 }
 
 /* A condensed off white color style group for light text elements or backgrounds */
 .import-header-nav-button, #import-header, button a, td, th {
-  color: rgb(219,219,224);
+	color: rgb(219,219,224);
 }
 
 
@@ -168,123 +168,121 @@ body, #page-title-table tr th, #page-title-table th, #page-title-table tr td, #p
 
 /* The header where site title and page title are displayed, and where sitewide navigation begins */
 #import-header {
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
-  flex-direction: row;
-  text-align: center;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	flex-direction: row;
+	text-align: center;
 }
 
 /* The background container div that all other HTML elements rest inside (or on top) of */
 #page-background-div, #page-background-div-caped-crusaders, #page-background-div-myrmidos-wiki, #page-background-div-game-journals, #page-background-div-eportfolio, #page-background-div-homepage {
-  overflow-x: hidden;
-  position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 80vh;
-  overflow: visible;
-  background-repeat: repeat-y;
-  background-size: 100% 100%;
-  padding: 0px;
-  padding-bottom: 25vh;
-  background-attachment: fixed;
+	overflow-x: hidden;
+	position: relative;
+	width: 100%;
+	height: auto;
+	min-height: 80vh;
+	overflow: visible;
+	background-repeat: repeat-y;
+	background-size: 100% 100%;
+	padding: 0px;
+	padding-bottom: 25vh;
+	background-attachment: fixed;
 }
 #page-background-div-caped-crusaders {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Taichung_sunset_skyline_2019.jpg/1200px-Taichung_sunset_skyline_2019.jpg?20200526005223");
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Taichung_sunset_skyline_2019.jpg/1200px-Taichung_sunset_skyline_2019.jpg?20200526005223");
 }
 #page-background-div-game-journals {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e6/Conways_game_of_life_breeder_animation.gif?20140304220345");
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e6/Conways_game_of_life_breeder_animation.gif?20140304220345");
 }
 #page-background-div-myrmidos-wiki {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Maurice_Prendergast_-_Fantasy_-_Google_Art_Project.jpg/1200px-Maurice_Prendergast_-_Fantasy_-_Google_Art_Project.jpg?20130108152852");
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Maurice_Prendergast_-_Fantasy_-_Google_Art_Project.jpg/1200px-Maurice_Prendergast_-_Fantasy_-_Google_Art_Project.jpg?20130108152852");
 }
 #page-background-div-eportfolio {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Cloudscape_Over_the_Philippine_Sea.jpg/1199px-Cloudscape_Over_the_Philippine_Sea.jpg?20161117110401");
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Cloudscape_Over_the_Philippine_Sea.jpg/1199px-Cloudscape_Over_the_Philippine_Sea.jpg?20161117110401");
 }
 #page-background-div-homepage {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/A_New_View_of_the_Tarantula_Nebula.jpg/1166px-A_New_View_of_the_Tarantula_Nebula.jpg?20120423153745");
-  background-position: 3%;
-  background-size: 106% 100%;
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/A_New_View_of_the_Tarantula_Nebula.jpg/1166px-A_New_View_of_the_Tarantula_Nebula.jpg?20120423153745");
+	background-position: 3%;
+	background-size: 106% 100%;
 }
 
 
 
 /* The div that holds the actual page content */
 .common-page-content-section-transparent {
-  background-image: url("/resources/images/Transparent.png");
-  position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 135VH;
-  overflow: visible;
+	background-image: url("/resources/images/Transparent.png");
+	position: relative;
+	width: 100%;
+	height: auto;
+	min-height: 135VH;
+	overflow: visible;
 }
 
 /* The off white chunk of the page that holds content */
 .page-content-section {
-  border: 2px solid rgb(100,100,100);
-  box-sizing: border-box;
-  overflow-wrap: break-word;
-  margin-left: 5vw; 
-  margin-right: 5vw;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  padding: 15px;
-  padding-left: 25px;
-  padding-right: 25px;
-  height: auto;
-  min-height: 42vh;    
-  min-width: 265px;
-  max-width: 90vw; 
-  width: auto;
+	height: auto;
+	width: 90vw;
+
+	border: 0.2vw solid rgb(100,100,100);
+	box-sizing: border-box;
+	overflow-wrap: break-word;
+
+	margin-left: 5vw; 
+	margin-right: 5vw;
+	margin-top: 2vw;
+	margin-bottom: 2vw;
+
+	padding: 2vw;
 }
 
 /* The off white chunk of the page that holds the entry page nav table in a fixed position, along with a placeholder for other html elements to float aroundand the table within */
 #page-navlist-section, #page-navlist-table {
-  width: auto;
-  min-width: 135px; 
+	width: auto;
+	min-width: 135px; 
 }
 #page-navlist-section {
-  position: fixed;
-  right: 0;
-  margin-right: -280px;
-  margin-top: -100px;
-  z-index: 5;
-  width: 250px;
-  min-height: 100px;
+	position: fixed;
+	right: 0;
+	margin-right: -280px;
+	margin-top: -100px;
+	z-index: 5;
+	width: 250px;
+	min-height: 100px;
 
-  padding: 10px;
+	padding: 10px;
 
-  visibility: visible;
+	visibility: visible;
 
-  height: auto;
-  border: 5px solid rgb(100,100,100);
-  background-color: rgb(200,200,200);
+	height: auto;
+	border: 5px solid rgb(100,100,100);
+	background-color: rgb(200,200,200);
 }
 #page-navlist-table th {
-  border-bottom: 1px dotted grey;
-  text-align: left;
+	border-bottom: 1px dotted grey;
+	text-align: left;
 }
 
 /* The fixed button that hides and unhides the nav table */
 #page-navlist-button {
-  position: fixed;
-  right: 0;
-  margin-right: 0px;
-  margin-top: -13.5px;
-  z-index: 11;
+	position: fixed;
+	right: 0;
+	margin-right: 0px;
+	margin-top: -13.5px;
+	z-index: 11;
 
-  width: 50px;
-  
-  color: aqua;
-  background-color: rgb(100,100,100);
-  
-  border: 1px solid rgb(125,125,125);
-  border-right: 0px;
-  border-radius: 5px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
+	width: 50px;
+	
+	color: aqua;
+	background-color: rgb(100,100,100);
+	
+	border: 1px solid rgb(125,125,125);
+	border-right: 0px;
+	border-radius: 5px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
 }
-  
+	
 /* 
 ||==========================================================================================
 || Footer elements  
@@ -293,46 +291,46 @@ body, #page-title-table tr th, #page-title-table th, #page-title-table tr td, #p
 
 /* The actual footer element to be imported into other pages */
 #import-footer {
-  padding: 0px;
-  margin: 0px;
-  position: absolute;
-  z-index: 10;
-  bottom: 0;
-  width: 100%;
-  height: 150px;
-  overflow-x: hidden;
+	padding: 0px;
+	margin: 0px;
+	position: absolute;
+	z-index: 10;
+	bottom: 0;
+	width: 100%;
+	height: 150px;
+	overflow-x: hidden;
 }
 /* The icons that serve as links to other sites within the footer */
 .common-page-footer-icon {
-  height: 40px;
-  max-height: 5vw;
-  width: 40px;
-  max-width: 5vw;
+	height: 40px;
+	max-height: 5vw;
+	width: 40px;
+	max-width: 5vw;
 }
 
 /* The buttons that holds the icons and link to other sites */
 .page-footer-button {
-  margin-top: 15px;
-  margin-bottom: 10px;
-  margin-left: 0.5vw;
-  margin-right: 0.5vw;
-  height: 80px;
-  max-height: 8vw;
-  width: 80px;
-  max-width: 8vw;
-  border-radius: 40px;
-  border-style: dashed;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	margin-left: 0.5vw;
+	margin-right: 0.5vw;
+	height: 80px;
+	max-height: 8vw;
+	width: 80px;
+	max-width: 8vw;
+	border-radius: 40px;
+	border-style: dashed;
 }
 
 .page-footer-button:hover {
-  border-color: aqua;
+	border-color: aqua;
 }
 
 .footer-attribution-button {
-  text-decoration: underline;
-  font-weight: bold;
-  border: 1px solid rgb(54,57,63);
-  background-color: rgb(54,57,63);
+	text-decoration: underline;
+	font-weight: bold;
+	border: 1px solid rgb(54,57,63);
+	background-color: rgb(54,57,63);
 }
 
 
@@ -345,153 +343,153 @@ body, #page-title-table tr th, #page-title-table th, #page-title-table tr td, #p
 
 /* The topmost center button that takes us back to the homepage from anywhere on the site */
 .import-header-home-button {
-  width: 600px;
-  max-width: 100%;
-  border-style: dotted;
+	width: 600px;
+	max-width: 100%;
+	border-style: dotted;
 }
 
 /* The site navigation buttons that line the header */
 .import-header-nav-button {
-  width: 10vw;
-  min-width: 65px;
-  height: 50px;
-  border-style: dotted;
+	width: 10vw;
+	min-width: 65px;
+	height: 50px;
+	border-style: dotted;
 }
 
 /* On hovering over the header buttons, set the border to a visible off white */
 .import-header-home-button:hover, .import-header-nav-button:hover {
-  border-color: rgb(219,219,224);
-  border-radius: 10px;
+	border-color: rgb(219,219,224);
+	border-radius: 10px;
 }
 
 /* A button present on nearly every page that navigates out in the file structure */
 #common-page-back-button {
-  position: relative;
-  width: 175px;
-  height: 50px;
-  border-style: solid;
-  font-size: small;
-  color: aqua;
-  float: right;
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 50px;
+	position: relative;
+	width: 175px;
+	height: 50px;
+	border-style: solid;
+	font-size: small;
+	color: aqua;
+	float: right;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 50px;
 }
 
 /* A button to navigate the website file structure from the page content, signifying a directory page */
 .page-list-directory-button {
-  width: 24vw;
-  min-width: 150px;
-  max-width: 80vw;
-  height: auto;
-  min-height: 55px;
-  margin: 0.5vw;
-  border-radius: 20px;
-  background-color: rgb(175, 175, 175);
-  border: 2px solid aqua;
-  font-size: large;
-  font-weight: bold;
+	width: 24vw;
+	min-width: 150px;
+	max-width: 80vw;
+	height: auto;
+	min-height: 55px;
+	margin: 0.5vw;
+	border-radius: 20px;
+	background-color: rgb(175, 175, 175);
+	border: 2px solid aqua;
+	font-size: large;
+	font-weight: bold;
 }
 
 /* A button to navigate the website file structure from the page content, signifying an entry page */
 .page-list-entry-button {
-  width: 24vw;
-  min-width: 150px;
-  max-width: 80vw;
-  height: auto;
-  min-height: 45px;
-  margin: 0.5vw;
-  border-radius: 10px;
-  background-color: rgb(200, 200, 200);
-  border: 2px solid aqua;
-  font-size: medium;
-  font-weight: bold;
+	width: 24vw;
+	min-width: 150px;
+	max-width: 80vw;
+	height: auto;
+	min-height: 45px;
+	margin: 0.5vw;
+	border-radius: 10px;
+	background-color: rgb(200, 200, 200);
+	border: 2px solid aqua;
+	font-size: medium;
+	font-weight: bold;
 }
 
 /* The school of magic buttons */
 .directory-page-nav-button-magic-school {
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-  border: 0px;
-  margin: 3px;
-  padding: 0px;
-  background-color: rgb(189,188,173);
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	border: 0px;
+	margin: 3px;
+	padding: 0px;
+	background-color: rgb(189,188,173);
 }
 
 /* 
 The plane buttons 
 */
 .directory-page-nav-button-plane-quasi, .directory-page-nav-button-plane-primal, .directory-page-nav-button-plane-material {
-  padding: 10px;
-  background-color: rgb(175, 175, 175);
-  border-style: solid;
-  font-size: larger;
-  font-weight: 900;
-  -webkit-text-stroke: 0.5px whitesmoke;
-  text-align: center;
-  display: block;
-  position: relative;
-  image-resolution: 5dpi;
+	padding: 10px;
+	background-color: rgb(175, 175, 175);
+	border-style: solid;
+	font-size: larger;
+	font-weight: 900;
+	-webkit-text-stroke: 0.5px whitesmoke;
+	text-align: center;
+	display: block;
+	position: relative;
+	image-resolution: 5dpi;
 }
 .directory-page-nav-button-plane-quasi {
-  width: 150px;
-  height: 150px;
-  border-radius: 75px;
-  margin: 35px;
+	width: 150px;
+	height: 150px;
+	border-radius: 75px;
+	margin: 35px;
 }
 .directory-page-nav-button-plane-primal {
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-  margin: 10px;
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	margin: 10px;
 }
 .directory-page-nav-button-plane-material {
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
-  margin: 60px;
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	margin: 60px;
 }
 
 /* 
 The buttons used to navigate and organize the classes within caped crusaders 
 */
 .cc-class-button-tech, .cc-class-button-power, .cc-class-button-magic, .cc-class-button-generic {
-  width: 200px;
-  height: auto;
-  margin: 5px;
-  background-color: rgb(175, 175, 175);
-  padding: 0px;
-  border-radius: 7px;
-  border-style: hidden;
-  font-size: medium;
-  display: block;
-  position: relative;
+	width: 200px;
+	height: auto;
+	margin: 5px;
+	background-color: rgb(175, 175, 175);
+	padding: 0px;
+	border-radius: 7px;
+	border-style: hidden;
+	font-size: medium;
+	display: block;
+	position: relative;
 }
 .cc-class-button-generic {
-  height: 35px;
+	height: 35px;
 }
 .cc-class-button-content-ceiling, .cc-class-button-content-floor {
-  background-color: rgb(175, 175, 175);
-  margin: 0px;
-  padding: 10px;
-  text-align: left;
+	background-color: rgb(175, 175, 175);
+	margin: 0px;
+	padding: 10px;
+	text-align: left;
 }
 .cc-class-button-content-ceiling {
-  min-height: 175px;
+	min-height: 175px;
 }
 .cc-class-button-tech {
-  color: rgb(50, 50, 125);
+	color: rgb(50, 50, 125);
 }
 .cc-class-button-power {
-  color: rgb(125, 50, 50);
+	color: rgb(125, 50, 50);
 }
 .cc-class-button-magic {
-  color: rgb(125, 125, 50);
+	color: rgb(125, 125, 50);
 }
 .cc-class-button-generic {
-  color: rgb(25, 25, 25);
+	color: rgb(25, 25, 25);
 }
 
 
@@ -504,38 +502,38 @@ The buttons used to navigate and organize the classes within caped crusaders
 
 /* A text wrapped image to be inserted into the page description */
 .common-page-content-section-image-left {
-  width: 200px;
-  float: left;
-  padding: 0px;
-  padding-right: 15px;
+	width: 200px;
+	float: left;
+	padding: 0px;
+	padding-right: 15px;
 }
 
 /* A text wrapped image to be inserted into the page description */
 .common-page-content-section-image-right {
-  width: 200px;
-  float: right;
-  padding: 0px;
-  padding-left: 15px;
+	width: 200px;
+	float: right;
+	padding: 0px;
+	padding-left: 15px;
 }
 
 /* Small images for use within buttons or dynamic table entries */
 .directory-page-dynamic-table-entry-image, .cc-class-image-small {
-  width: 50px;
-  float: right;
+	width: 50px;
+	float: right;
 }
 
 /* Medium images used to signify the class and subclass employed by character builds */
 .cc-class-image-medium, .cc-subclass-image-medium {
-  width: 100px;
-  float: right;
-  border: 4px solid rgb(100,100,100);
-  border-radius: 16px;
-  margin: 2px;
+	width: 100px;
+	float: right;
+	border: 4px solid rgb(100,100,100);
+	border-radius: 16px;
+	margin: 2px;
 }
 
 /* Large images to be used for entry pages */
 #page-image, .cc-class-image-large, .cc-subclass-image-large {
-  width: 100%;
+	width: 100%;
 }
 
 
@@ -548,218 +546,218 @@ The buttons used to navigate and organize the classes within caped crusaders
 
 /* A table to hold the various navigation buttons present in the page regardless of button styling */
 .page-list-table {
-  float: right;
-  height: auto;
-  width: auto;
-  max-width: 75vw;
-  display: flex;
-  overflow: auto;
-  border-radius: 15px;
+	float: right;
+	height: auto;
+	width: auto;
+	max-width: 75vw;
+	display: flex;
+	overflow: auto;
+	border-radius: 15px;
 }
 
 /* 
 An overview table for caped crusaders entry pages 
 */
 #page-title-table {
-  width: 65%;
+	width: 65%;
 }
 #page-title-table-wide {
-  width: 100%;
+	width: 100%;
 }
 .level-table {
-  width: 75vw;
+	width: 75vw;
 }
 #page-title-table, #page-title-table-wide, .level-table {
-  margin: 0px;
-  margin-bottom: 15px;
-  overflow-x: auto;
-  border: 0px solid rgb(50,50,50);
-  border-collapse: collapse;
-  display: inline-block;
+	margin: 0px;
+	margin-bottom: 15px;
+	overflow-x: auto;
+	border: 0px solid rgb(50,50,50);
+	border-collapse: collapse;
+	display: inline-block;
 }
 #page-title-table thead tr td, #page-title-table-wide thead tr td, .level-table thead tr td{
-  border: 0px hidden aqua;
-  border-bottom: 1px solid rgb(50,50,50);
-  background: transparent;
-  background-color: transparent;
+	border: 0px hidden aqua;
+	border-bottom: 1px solid rgb(50,50,50);
+	background: transparent;
+	background-color: transparent;
 }
 #page-title-table-wide thead tr td {
-  width: 80vw;
+	width: 80vw;
 }
 #page-title-table th, #page-title-table-wide th, #page-title-table td, #page-title-table-wide td, .level-table th, .level-table td {
-  padding: 8px;
-  vertical-align: top;
-  border: 1px solid rgb(50,50,50);
+	padding: 8px;
+	vertical-align: top;
+	border: 1px solid rgb(50,50,50);
 }
 #page-title-table tr th, #page-title-table-wide tr th, #page-title-table th, #page-title-table-wide th, .level-table tr th, .level-table th {
-  background-color: rgb(150,150,150);
-  font-size: medium;
-  text-align: left;
+	background-color: rgb(150,150,150);
+	font-size: medium;
+	text-align: left;
 }
 #page-title-table tr td, #page-title-table-wide tr td, #page-title-table  td, #page-title-table-wide td, .level-table tr td, .level-table td {
-  background-color: rgb(200,200,200);
-  font-size: medium;
-  text-align: left;
+	background-color: rgb(200,200,200);
+	font-size: medium;
+	text-align: left;
 }
 
 /* 
 A table that details the character build decisions made at each level 
 */
 .cc-build-selections-table {
-  display: inline-table;
-  width: 35vw;
-  margin: 10px;
-  margin-right: 0px;
-  margin-left: 10px;
-  overflow: auto;
-  border: 1px solid rgb(50,50,50);
-  border-collapse: collapse;
-  float: right;
+	display: inline-table;
+	width: 35vw;
+	margin: 10px;
+	margin-right: 0px;
+	margin-left: 10px;
+	overflow: auto;
+	border: 1px solid rgb(50,50,50);
+	border-collapse: collapse;
+	float: right;
 }
 .cc-build-selections-table th, .cc-build-selections-table td {
-  width: auto;
-  padding: 7px;
-  vertical-align: top;
-  background-color: aqua;
-  border: 1px solid rgb(50,50,50);
+	width: auto;
+	padding: 7px;
+	vertical-align: top;
+	background-color: aqua;
+	border: 1px solid rgb(50,50,50);
 }
 .cc-build-selections-table tr th {
-  background-color: rgb(125, 125, 125);
-  font-size: large;
-  text-align: center;
+	background-color: rgb(125, 125, 125);
+	font-size: large;
+	text-align: center;
 }
 .cc-build-selections-table tr td {
-  background-color: rgb(225, 225, 225);
-  font-size: small;
-  text-align: left;
+	background-color: rgb(225, 225, 225);
+	font-size: small;
+	text-align: left;
 }
 .cc-build-selections-table td:nth-child(1) {
-  background-color: rgb(175, 175, 175);
-  font-size: small;
-  text-align: center;
-  width: 7vw;
+	background-color: rgb(175, 175, 175);
+	font-size: small;
+	text-align: center;
+	width: 7vw;
 }
 
 /* 
 An overview table for the wiki entry pages, old and needs to be updated or removed entirely
 */
 .wiki-attributes-overview-table {
-  display: block;
-  width: auto;
-  margin: 10px;
-  margin-right: 0px;
-  margin-left: 0px;
-  overflow: auto;
-  border: 1px solid rgb(189,188,173);
-  border-collapse: collapse;
-  float: center;
+	display: block;
+	width: auto;
+	margin: 10px;
+	margin-right: 0px;
+	margin-left: 0px;
+	overflow: auto;
+	border: 1px solid rgb(189,188,173);
+	border-collapse: collapse;
+	float: center;
 }
 .wiki-attributes-overview-table th, .wiki-attributes-overview-table td {
-  width: auto;
-  padding: 7px;
-  vertical-align: top;
-  border: 1px solid rgb(189,188,173);
+	width: auto;
+	padding: 7px;
+	vertical-align: top;
+	border: 1px solid rgb(189,188,173);
 }
 .wiki-attributes-overview-table tr th {
-  background-color: rgb(223,222,207);
-  color: rgb(58,58,58);
-  font-size: small;
-  text-align: left;
+	background-color: rgb(223,222,207);
+	color: rgb(58,58,58);
+	font-size: small;
+	text-align: left;
 }
 .wiki-attributes-overview-table tr td {
-  background-color: rgb(251,251,251);
-  color: rgb(58,58,58);
-  font-size: small;
-  text-align: left;
+	background-color: rgb(251,251,251);
+	color: rgb(58,58,58);
+	font-size: small;
+	text-align: left;
 }
 
 /* 
 A small table to hold the entry page image and author credit 
 */
 #entry-page-image-table {
-  float: right;
-  width: 25vw;
-  max-width: 25vw;
-  margin: 0px;
-  margin-right: -10px;
-  margin-left: 10px;
-  border: 7px solid rgb(150,150,150);
-  border-radius: 32px;
-  background-color: rgb(200, 200, 200);
+	float: right;
+	width: 25vw;
+	max-width: 25vw;
+	margin: 0px;
+	margin-right: -10px;
+	margin-left: 10px;
+	border: 7px solid rgb(150,150,150);
+	border-radius: 32px;
+	background-color: rgb(200, 200, 200);
 }
 #entry-page-image-table tr:nth-child(2) td {
-  color: rgb(58,58,58);
-  padding: 2px;
-  border-top: 0px;
-  font-size: smaller;
-  text-align: center;
-  border-top: 2px solid rgb(175,175,175);
+	color: rgb(58,58,58);
+	padding: 2px;
+	border-top: 0px;
+	font-size: smaller;
+	text-align: center;
+	border-top: 2px solid rgb(175,175,175);
 }
 
 /* An overview table used frequently throughout the site */
 #page-attributes-table {
-  display: block;
-  float: right;
-  overflow: auto;
-  border-collapse: collapse;
-  width: 30%;
-  padding: 0px;
-  margin: 0px;
-  margin-right: -10px;
-  margin-left: 10px;
-  border: 5px solid rgb(150,150,150);
-  border-radius: 32px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  background-color: rgb(200, 200, 200);
+	display: block;
+	float: right;
+	overflow: auto;
+	border-collapse: collapse;
+	width: 30%;
+	padding: 0px;
+	margin: 0px;
+	margin-right: -10px;
+	margin-left: 10px;
+	border: 5px solid rgb(150,150,150);
+	border-radius: 32px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: rgb(200, 200, 200);
 }
 #page-attributes-table tr:first-child th {
-  object-fit: cover;
-  overflow: hidden;
+	object-fit: cover;
+	overflow: hidden;
 }
 #page-attributes-table th, #page-attributes-table td {
-  width: 25vw;
-  max-width: auto;
-  padding: 10px;
-  vertical-align: top;
+	width: 25vw;
+	max-width: auto;
+	padding: 10px;
+	vertical-align: top;
 }
 #page-attributes-table tr th {
-  background-color: rgb(200,200,200);
-  color: rgb(58,58,58);
-  font-size: small;
+	background-color: rgb(200,200,200);
+	color: rgb(58,58,58);
+	font-size: small;
 }
 #page-attributes-table tr td {
-  background-color: rgb(225,225,225);
-  color: rgb(58,58,58);
-  font-size: small;
-  text-align: left;
+	background-color: rgb(225,225,225);
+	color: rgb(58,58,58);
+	font-size: small;
+	text-align: left;
 }
 #page-attributes-table tr:nth-child(2) th, #page-attributes-table tr:nth-child(1) th {
-  color: rgb(58,58,58);
-  padding: 2px;
-  border-top: 0px;
-  font-size: smaller;
-  text-align: center;
+	color: rgb(58,58,58);
+	padding: 2px;
+	border-top: 0px;
+	font-size: smaller;
+	text-align: center;
 }
 #page-attributes-table tr:nth-child(2) th {
-  border-top: 2px solid rgb(175,175,175);
+	border-top: 2px solid rgb(175,175,175);
 }
 #page-attributes-table tr:nth-child(3) th, #page-attributes-table tr:nth-child(4) th {
-  background-color: rgb(100,100,100);
-  color: rgb(25,25,25);
-  font-size: large;
+	background-color: rgb(100,100,100);
+	color: rgb(25,25,25);
+	font-size: large;
 }
 #page-attributes-table tr:nth-child(4) th {
-  padding-top: 0px;
-  font-size: small;
+	padding-top: 0px;
+	font-size: small;
 }
 #page-attributes-table-image {
-  width: 110%;
-  height: auto; 
-  display: block;
-  overflow: hidden;
-  margin: -5%;
-  margin-bottom: -1%;
+	width: 110%;
+	height: auto; 
+	display: block;
+	overflow: hidden;
+	margin: -5%;
+	margin-bottom: -1%;
 }
 
 
@@ -772,51 +770,51 @@ A small table to hold the entry page image and author credit
 
 /* The input box that reads filter queries */
 .directory-page-dynamic-table-query-input {
-  background-image: url('/css/searchicon.png'); 
-  background-position: 10px 12px; 
-  background-repeat: no-repeat; 
-  width: auto; 
-  padding: 10px; 
-  border: 2px solid rgb(63, 62, 62); 
-  border-radius: 5px;
-  margin-bottom: 12px; 
+	background-image: url('/css/searchicon.png'); 
+	background-position: 10px 12px; 
+	background-repeat: no-repeat; 
+	width: auto; 
+	padding: 10px; 
+	border: 2px solid rgb(63, 62, 62); 
+	border-radius: 5px;
+	margin-bottom: 12px; 
 }
 
 /* 
 The dynamic table  
 */
 #directory-page-dynamic-table-content {
-  border-collapse: collapse; 
-  width: 100%; 
-  border: 1px solid rgb(97, 97, 97); 
-  overflow: scroll;
-  display: inline-block;
+	border-collapse: collapse; 
+	width: 100%; 
+	border: 1px solid rgb(97, 97, 97); 
+	overflow: scroll;
+	display: inline-block;
 }
 #directory-page-dynamic-table-content th, #directory-page-dynamic-table-content tr td {
-  text-align: left;
-  padding: 5px; 
-  min-width: 175px;
-  color: black;
-  border: 1px solid black;
+	text-align: left;
+	padding: 5px; 
+	min-width: 175px;
+	color: black;
+	border: 1px solid black;
 }
 #directory-page-dynamic-table-content th {
-  background-color: rgb(150,150,150);
+	background-color: rgb(150,150,150);
 }
 #directory-page-dynamic-table-content tr {
-  border-bottom: 1px solid rgb(61, 61, 61);
+	border-bottom: 1px solid rgb(61, 61, 61);
 }
 #directory-page-dynamic-table-content tr {
-  background-color: rgb(200,200,200);
+	background-color: rgb(200,200,200);
 }
 
 /* The buttons that contain the column header, which can be clicked to sort the dynamic table by that column */
 .directory-page-dynamic-table-sort-button {
-  width: auto;
-  height: auto;
-  margin: 0px;
-  border-radius: 7px;
-  background-color: rgb(175, 175, 175);
-  border-style: solid;
-  font-size: small;
-  font-weight: bold;
+	width: auto;
+	height: auto;
+	margin: 0px;
+	border-radius: 7px;
+	background-color: rgb(175, 175, 175);
+	border-style: solid;
+	font-size: small;
+	font-weight: bold;
 }
