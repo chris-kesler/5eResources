@@ -32,10 +32,10 @@
 
 		<script>
 			$(function readJSON() {
-				document.getElementById("populated-title-table-thead").innerHTML = page_args;
 
 				// Reading data from our JSON file
 				$.getJSON(`../sustainable-techniques.json`, function(data) {
+
 
 					// Looping through the JSON data 
 					$.each(data.entries, function(i, f) {
@@ -43,40 +43,38 @@
 						// Finding the entry that matches this file
 						if (f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") == page_args) {
 
-							// Looping through the author array in the JSON file to populate variables for links and credit
-							$.each(data.author, function(x, y) {
-								if (f.source_str == y.author_name) {
-									author_credit = y.author_credit;
-									content_source = y.content_source;
-								}
-							});
+// =========================================================================================
+// Populating the page ATTRIBUTES table
+// =========================================================================================
+							// Table Row #1: Rehosted Art
+							table_row = `
+								<tr>
+									<th colspan='2'>
+										<img id='page-attributes-table-image' alt='Type Image' target='blank' src='/resources/images/${f.type_str.replace(/\s/g, '')}.png' style='display:block'>
+									</th>
+								</tr>
+							`
+							$(table_row).appendTo("#page-attributes-table tbody");
+									
 
-							// Looping through the type array in the JSON file to populate variables for type and credit
-							$.each(data.type, function(x, y) {
-								if (f.type_str == y.type_name) {
-									document.getElementById("page-image-credit").innerHTML = y.type_credit;
-								}
-							});
+							// Table Row #2: Linked Art
+							table_row = `
+								<tr>
+									<th colspan='2'>
+										<i>${f.type_str} <a href='https://thenounproject.com/' target='_blank'>(image source)</a></i>
+									</th>
+								</tr>
+							`
+							$(table_row).appendTo("#page-attributes-table tbody");
 
-							// Populating the name of the page
-							if (content_source != undefined){
-								document.getElementById("populated-title-table-thead").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > <a target='blank' href='" + content_source + "'>" + titleCase(page_title.replace('-', ' ').replace('.html', '')) + " (source)</a>";
-							} else {
-								document.getElementById("populated-title-table-thead").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > " + titleCase(page_title.replace('-', ' ').replace('.html', ''));
-
-							}
-
-
-							// Populating the page image
-							document.getElementById("page-image").src = "/resources/images/" + f.type_str.replace(/\s/g, '') + ".png";
 
 							
 							// Populating the page description based on flavor, mechanics, overcharge, and components
 							if (f.flavor_str != undefined) {
-								document.getElementById("blended-description-div").innerHTML += "<b>Flavor Description:</b>  <i>" + f.flavor_str + "</i><br><br>";
+								document.getElementById("populated-description-div").innerHTML += "<b>Flavor Description:</b>  <i>" + f.flavor_str + "</i><br><br>";
 							}
 							if (f.mechanics_str != undefined) {
-								document.getElementById("blended-description-div").innerHTML += "<b>Standard Mechanics:</b>  " + f.mechanics_str + "<br><br>";
+								document.getElementById("populated-description-div").innerHTML += "<b>Standard Mechanics:</b>  " + f.mechanics_str + "<br><br>";
 							}
 
 							
@@ -86,7 +84,7 @@
 
 							// Defining and populating the second row of the page table
 							var table_row2 = "<tr>" 
-								+ "<td>" + f.level_str + " level " + power_source + "</td>" 
+								+ "<td>" + f.level_str + " level Sustainable</td>" 
 								+ "<td>" + f.type_str + "</td>" 
 								+ "<td>" + f.attack_save_str + "</td>" 
 								+ "<td>" + f.damage_effect_str + "</td>" 
@@ -121,7 +119,7 @@
 				<table id="page-attributes-table"><tbody></tbody></table>
 
 				<!-- A div for the page DESCRIPTION -->
-				<div id="blended-description-div"></div>
+				<div id="populated-description-div"></div>
 				<hr class="fixed-content-hr">
 			</section>
 			
