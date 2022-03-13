@@ -9,10 +9,63 @@
 		font-family: 'Courier New', Courier, monospace;
 		margin: 0%;
 		padding: 0%;
+	}
 
+	button {
+		font-family: 'Courier New', Courier, monospace;
+	}
+
+	.populated-description-div p {
+		white-space: nowrap;
 	}
 
 
+	.cc-class-button-tech, .cc-class-button-power, .cc-class-button-magic, .cc-class-button-generic {
+		width: 250px;
+		height: 300px;
+		margin: 5px;
+		background-color: rgb(175, 175, 175);
+		padding: 0px;
+		border-radius: 25px;
+		font-size: medium;
+		position: relative;
+	}
+	.cc-class-button-generic {
+		height: 35px;
+	}
+	.cc-class-button-content-ceiling, .cc-class-button-content-floor {
+		background-color: rgb(175, 175, 175);
+		margin: 0px;
+		padding: 10px;
+		text-align: left;
+	}
+	.cc-class-button-content-ceiling {
+		height: 175px;
+	}
+	.cc-class-button-content-floor {
+		bottom: 0;
+	}
+	.cc-class-button-tech {
+		color: rgb(50, 50, 125);
+		border: 5px solid rgb(50, 50, 125);
+
+	}
+	.cc-class-button-power {
+		color: rgb(125, 50, 50);
+		border: 5px solid rgb(125, 50, 50);
+
+	}
+	.cc-class-button-magic {
+		color: rgb(125, 125, 50);
+		border: 5px solid rgb(125, 125, 50);
+
+	}
+	.cc-class-button-generic {
+		color: rgb(25, 25, 25);
+		border: 2px solid pink;
+
+	}
+	
 /* 
 ||==========================================================================================
 || POPULATED ATTRIBUTE tables and elements (used in ENTRY pages)

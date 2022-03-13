@@ -74,7 +74,7 @@ p {
 
 p:before, h1:before, h2:before, h3:before {
 	content: "";
-	width: 10vw;
+	width: 125px;
 	display: block;
 	overflow: hidden;
 	/* For Demonstration */
@@ -454,7 +454,7 @@ The plane buttons
 /* 
 The buttons used to navigate and organize the classes within caped crusaders 
 */
-.cc-class-button-tech, .cc-class-button-power, .cc-class-button-magic, .cc-class-button-generic {
+/* .cc-class-button-tech, .cc-class-button-power, .cc-class-button-magic, .cc-class-button-generic {
 	width: 200px;
 	height: auto;
 	margin: 5px;
@@ -489,7 +489,7 @@ The buttons used to navigate and organize the classes within caped crusaders
 }
 .cc-class-button-generic {
 	color: rgb(25, 25, 25);
-}
+} */
 
 
 
