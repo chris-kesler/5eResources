@@ -392,6 +392,13 @@ body, #common-populated-title tr th, #common-populated-title th, #common-populat
 	font-weight: bold;
 }
 
+.page-list-category {
+	width: 24vw;
+	min-width: 150px;
+	max-width: 80vw;
+	color: antiquewhite;
+}
+
 /* A button to navigate the website file structure from the page content, signifying an entry page */
 .page-list-entry-button {
 	width: 24vw;
