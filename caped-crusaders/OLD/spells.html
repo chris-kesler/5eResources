@@ -61,7 +61,7 @@
 			"<input type='text' id='directory-page-dynamic-table-query-inputExclude11' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Source. . .'>";
 
 		// Populating table header, which includes buttons to sort the entries in ascending and descending order based on column selected
-		document.getElementById("directory-page-dynamic-table-header").innerHTML = 
+		document.getElementById("cc-dynamic-index-thead").innerHTML = 
 			"<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(0)'>Name</button></th>" + 
 			"<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(1)'>Level</button></th>" + 
 			"<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(2)'>" + entry_type + "</button></th>" + 
@@ -145,7 +145,7 @@
 				+ "</tr>"
 
 				// Adding the row to the table
-				$(table_row).appendTo("#dynamic-index-table tbody");
+				$(table_row).appendTo("#cc-dynamic-index tbody");
 			});
 		});
 		});
@@ -169,7 +169,7 @@
 // 
 // The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
 // =========================================================================================
-		$("#populated-header-div").load("/resources/pages/populated-header-div.html");
+		$("#common-populated-header").load("/resources/pages/common-populated-header.html");
 
 
 // =========================================================================================
@@ -207,19 +207,19 @@
 
 		var titleCompleted = false;
 		if (page_subsite != undefined) {
-			document.getElementById("populated-title-table-thead").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+			document.getElementById("common-populated-title-thead").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
 		} else {
-			document.getElementById("populated-title-table-thead").innerHTML = titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
+			document.getElementById("common-populated-title-thead").innerHTML = titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
 			titleCompleted = true;
 		}
 		if (page_directory != undefined && !titleCompleted) {
-			document.getElementById("populated-title-table-thead").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+			document.getElementById("common-populated-title-thead").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
 		}
 		if (page_category != undefined && !titleCompleted) {
-			document.getElementById("populated-title-table-thead").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + "/" + page_category + ".html'>" + titleCase(page_category.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+			document.getElementById("common-populated-title-thead").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + "/" + page_category + ".html'>" + titleCase(page_category.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
 		}
 		if (page_title != undefined && !titleCompleted) {
-			document.getElementById("populated-title-table-thead").innerHTML += " > " + titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
+			document.getElementById("common-populated-title-thead").innerHTML += " > " + titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
 			titleCompleted = true;
 		}
 
@@ -229,7 +229,7 @@
 // 
 // The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
 // =========================================================================================
-		$("#populated-footer-div").load("/resources/pages/populated-footer-div.html");
+		$("#common-populated-footer").load("/resources/pages/common-populated-footer.html");
 		});
 	</script>
 </head>
@@ -240,13 +240,13 @@
 	<div id="page-background-div">
 		<!-- 
 		A div for the page HEADER -->
-		<div id="populated-header-div"></div>
+		<div id="common-populated-header"></div>
 		<!-- 
 		A section for the page CONTENT -->
-		<section class="fixed-content-section">
+		<section class="common-fixed-content">
 		<!-- 
 			A table for the page TITLE -->
-		<table id="populated-title-table"><thead><tr><td colspan="6"><h2 id="populated-title-table-thead"></h2></td></tr></thead><tbody></tbody></table>   
+		<table id="common-populated-title"><thead><tr><td colspan="6"><h2 id="common-populated-title-thead"></h2></td></tr></thead><tbody></tbody></table>   
 		<hr>
 		<h3>Include Filters</h3>
 
@@ -263,10 +263,10 @@
 
 		<!-- This is the table that contains the entries being filtered -->
 		<h3>Sortable Entries</h3>
-		<table id="dynamic-index-table">
+		<table id="cc-dynamic-index">
 			
 			<!-- The buttons that designate the column data and serve as the header can be clicked to sort the entries in ascending or descending order -->
-			<thead class="header" id="directory-page-dynamic-table-header"></thead>
+			<thead class="header" id="cc-dynamic-index-thead"></thead>
 
 			<!-- The empty table body, which is populated from a JSON file using the above script  -->
 			<tbody></tbody>
@@ -275,7 +275,7 @@
 		</section>
 		<!-- 
 		A div for the page FOOTER -->
-		<div id="populated-footer-div"></div>
+		<div id="common-populated-footer"></div>
 	</div>
 </body>
 </html>
@@ -344,7 +344,7 @@ function FilterTableFunction() {
 	var filterExcludeEleven = inputExcludeEleven.value.toUpperCase();
 
 	// Reading the table element and all table rows within
-	table = document.getElementById("dynamic-index-table");
+	table = document.getElementById("cc-dynamic-index");
 	tr = table.getElementsByTagName("tr");
 
 	// Looping through all table rows and hiding those who don't match the search query
@@ -441,7 +441,7 @@ function sortTable(n) {
 
 	// Defining variables to be used
 	var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-	table = document.getElementById("dynamic-index-table");
+	table = document.getElementById("cc-dynamic-index");
 	switching = true;
 
 	// Set the sorting direction to ascending:

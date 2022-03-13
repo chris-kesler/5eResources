@@ -30,8 +30,8 @@ $(function populatePageData() {
 							}
 							table_row += "</tr>";
 							if (!table_row1.includes("<tr></tr>") && !table_row2.includes("<tr></tr>")) {
-								$(table_row1).appendTo("#populated-title-table tbody");
-								$(table_row2).appendTo("#populated-title-table tbody");
+								$(table_row1).appendTo("#common-populated-title tbody");
+								$(table_row2).appendTo("#common-populated-title tbody");
 							}
 						}
 					}
@@ -51,11 +51,11 @@ $(function populatePageData() {
 						
 						// Table Row #1:  Rehosted Art
 						if (f.attribute_library[0].img_rehosted != undefined && f.attribute_library[0].img_rehosted_source != undefined && f.attribute_library[0].img_rehosted !== "" && f.attribute_library[0].img_rehosted_source !== "") {
-							var table_row = "<tr><th colspan='2'><img id='page-attributes-table-image' alt='" + f.entry_name + "' target='blank' src='" + f.attribute_library[0].img_rehosted + "' onclick='window.open(`" + f.attribute_library[0].img_rehosted_source + "`)' style='display:block'></th></tr>";
+							var table_row = "<tr><th colspan='2'><img id='cc-populated-attributes-image' alt='" + f.entry_name + "' target='blank' src='" + f.attribute_library[0].img_rehosted + "' onclick='window.open(`" + f.attribute_library[0].img_rehosted_source + "`)' style='display:block'></th></tr>";
 						} else {
-							var table_row = "<tr><th colspan='2'><img id='page-attributes-table-image' alt='" + f.entry_name + "' target='blank' src='/resources/images/WikiPlaceholder.png' onclick='window.open(this.src)'></th></tr>";
+							var table_row = "<tr><th colspan='2'><img id='cc-populated-attributes-image' alt='" + f.entry_name + "' target='blank' src='/resources/images/WikiPlaceholder.png' onclick='window.open(this.src)'></th></tr>";
 						}
-						$(table_row).appendTo("#page-attributes-table tbody");
+						$(table_row).appendTo("#cc-populated-attributes tbody");
 						
 
 						// Table Row #2:  Linked Art
@@ -64,7 +64,7 @@ $(function populatePageData() {
 						} else {
 							var table_row = "<tr><th colspan='2'><i>No Additional Art Available</a></i></th></tr>";
 						}
-						$(table_row).appendTo("#page-attributes-table tbody");
+						$(table_row).appendTo("#cc-populated-attributes tbody");
 
 
 						// If the library contains data for a wiki wtyle table
@@ -72,7 +72,7 @@ $(function populatePageData() {
 							
 							// Table Row #3:  Entry Name
 							var table_row = "<tr><th colspan='2'>" + f.entry_name + "</th></tr>";
-							$(table_row).appendTo("#page-attributes-table tbody");
+							$(table_row).appendTo("#cc-populated-attributes tbody");
 
 							// Table Row #4:  Species 
 							if (f.attribute_library[0].species != undefined && f.attribute_library[0].species !== "") {
@@ -80,18 +80,18 @@ $(function populatePageData() {
 							} else {
 								var table_row = "<tr><th colspan='2'>(Unknown Species)</th></tr>";
 							}
-							$(table_row).appendTo("#page-attributes-table tbody");
+							$(table_row).appendTo("#cc-populated-attributes tbody");
 
 
 							// Table Row(s) #5-n:  Attribute Details
 							for (var z = 0; f.attribute_library.length > z; z++) {
 								if (f.attribute_library[z].heading != undefined && f.attribute_library[z].sublibrary !== "") {
 									var table_row = "<tr><th colspan='2'>" + f.attribute_library[z].heading + "</th></tr>";
-									$(table_row).appendTo("#page-attributes-table tbody");
+									$(table_row).appendTo("#cc-populated-attributes tbody");
 									for (var y = 0; f.attribute_library[z].sublibrary.length > y; y++) {
 										if (f.attribute_library[z].sublibrary[y].subheading != undefined && f.attribute_library[z].sublibrary[y].subcontent != undefined && f.attribute_library[z].sublibrary[y].subheading !== "" && f.attribute_library[z].sublibrary[y].subcontent !== "") {
 											var table_row = "<tr><td>" + f.attribute_library[z].sublibrary[y].subheading + "</td><td>" + f.attribute_library[z].sublibrary[y].subcontent + "</td></tr>";
-											$(table_row).appendTo("#page-attributes-table tbody");
+											$(table_row).appendTo("#cc-populated-attributes tbody");
 										}
 									}
 								}
@@ -99,21 +99,21 @@ $(function populatePageData() {
 						} 
 					} else {
 						// Table Row #1:  Rehosted Art
-						var table_row = "<tr><th colspan='2'><img id='page-attributes-table-image' alt='" + f.entry_name + "' target='blank' src='/resources/images/WikiPlaceholder.png' onclick='window.open(this.src)'></th></tr>";
-						$(table_row).appendTo("#page-attributes-table tbody");
+						var table_row = "<tr><th colspan='2'><img id='cc-populated-attributes-image' alt='" + f.entry_name + "' target='blank' src='/resources/images/WikiPlaceholder.png' onclick='window.open(this.src)'></th></tr>";
+						$(table_row).appendTo("#cc-populated-attributes tbody");
 						
 						// Table Row #2:  Linked Art
 						var table_row = "<tr><th colspan='2'><i>No Additional Art Available</a></i></th></tr>";
-						$(table_row).appendTo("#page-attributes-table tbody");
+						$(table_row).appendTo("#cc-populated-attributes tbody");
 					}
 				} else {
 					// Table Row #1:  Rehosted Art
-					var table_row = "<tr><th colspan='2'><img id='page-attributes-table-image' alt='" + f.entry_name + "' target='blank' src='/resources/images/WikiPlaceholder.png' onclick='window.open(this.src)'></th></tr>";
-					$(table_row).appendTo("#page-attributes-table tbody");
+					var table_row = "<tr><th colspan='2'><img id='cc-populated-attributes-image' alt='" + f.entry_name + "' target='blank' src='/resources/images/WikiPlaceholder.png' onclick='window.open(this.src)'></th></tr>";
+					$(table_row).appendTo("#cc-populated-attributes tbody");
 					
 					// Table Row #2:  Linked Art
 					var table_row = "<tr><th colspan='2'><i>No Additional Art Available</a></i></th></tr>";
-					$(table_row).appendTo("#page-attributes-table tbody");
+					$(table_row).appendTo("#cc-populated-attributes tbody");
 				}
 
 
@@ -125,15 +125,15 @@ $(function populatePageData() {
 // =========================================================================================
 
 				// Populating the page title in the floating nav table
-				var table_row = "<tr><th><a href='#populated-title-table'>" + f.entry_name + "</a></th></tr>";
-				$(table_row).appendTo("#page-navlist-table tbody");
+				var table_row = "<tr><th><a href='#common-populated-title'>" + f.entry_name + "</a></th></tr>";
+				$(table_row).appendTo("#common-populated-navlist-table tbody");
 
 				// If Description Library Exists
 				if (f.description_library != undefined) {
 
 					// Populating Description Overview underneath title table with no heading
 					if (f.description_library[0].overview != undefined && f.description_library[0].overview !== "") {
-						document.getElementById("blended-description-div").innerHTML = "<p>" + f.description_library[0].overview + "</p>";
+						document.getElementById("common-fixed-description").innerHTML = "<p>" + f.description_library[0].overview + "</p>";
 					}
 
 					// Looping through all Library entries
@@ -154,15 +154,15 @@ $(function populatePageData() {
 
 						// Populating Heading
 						if (f.description_library[x].heading != undefined && f.description_library[x].heading !== "" && showHeading) {
-							document.getElementById("blended-description-div").innerHTML += "<div id='" + f.description_library[x].heading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h3>" + f.description_library[x].heading + "</h3></div>";
+							document.getElementById("common-fixed-description").innerHTML += "<div id='" + f.description_library[x].heading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h3>" + f.description_library[x].heading + "</h3></div>";
 
 							// Populating the page heading in the floating nav table
 							var table_row = "<tr><td><a style='margin-left: 10px' href='#" + f.description_library[x].heading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'>" + f.description_library[x].heading + "</a></td></tr>";
-							$(table_row).appendTo("#page-navlist-table tbody");
+							$(table_row).appendTo("#common-populated-navlist-table tbody");
 
 							// Populating Heading Content
 							if (f.description_library[x].content != undefined && f.description_library[x].content !== "") {
-								document.getElementById("blended-description-div").innerHTML += "<p>" + f.description_library[x].content + "</p>";
+								document.getElementById("common-fixed-description").innerHTML += "<p>" + f.description_library[x].content + "</p>";
 							}
 
 							// If Sublibrary Exists
@@ -173,11 +173,11 @@ $(function populatePageData() {
 
 									// Populating Subheading and Subcontent
 									if (f.description_library[x].sublibrary[w].subheading != undefined && f.description_library[x].sublibrary[w].subcontent != undefined && f.description_library[x].sublibrary[w].subheading !== "" && f.description_library[x].sublibrary[w].subcontent !== "") {
-										document.getElementById("blended-description-div").innerHTML += "<div id='" + f.description_library[x].sublibrary[w].subheading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h4>&#8226;  " + f.description_library[x].sublibrary[w].subheading + "</h4></div><p>" + f.description_library[x].sublibrary[w].subcontent + "</p>";
+										document.getElementById("common-fixed-description").innerHTML += "<div id='" + f.description_library[x].sublibrary[w].subheading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h4>&#8226;  " + f.description_library[x].sublibrary[w].subheading + "</h4></div><p>" + f.description_library[x].sublibrary[w].subcontent + "</p>";
 
 										// Populating the page heading in the floating nav table
 										var table_row = "<tr><td><a style='margin-left: 20px' href='#" + f.description_library[x].sublibrary[w].subheading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'>&#8226;  " + f.description_library[x].sublibrary[w].subheading + "</a></td></tr>";
-										$(table_row).appendTo("#page-navlist-table tbody");
+										$(table_row).appendTo("#common-populated-navlist-table tbody");
 
 									}
 								}

@@ -33,7 +33,7 @@
 // 
 // The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
 // =========================================================================================
-        $("#populated-header-div").load("/resources/pages/populated-header-div.html");
+        $("#common-populated-header").load("/resources/pages/common-populated-header.html");
 
 
 // =========================================================================================
@@ -41,7 +41,7 @@
 // 
 // The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
 // =========================================================================================
-        $("#populated-footer-div").load("/resources/pages/populated-footer-div.html");
+        $("#common-populated-footer").load("/resources/pages/common-populated-footer.html");
       });
     </script>
   </head>  
@@ -52,23 +52,23 @@
     <div id="page-background-div-homepage">
       <!-- 
         A div for the page HEADER -->
-      <div id="populated-header-div"></div>
+      <div id="common-populated-header"></div>
       <!-- 
         A section for the page CONTENT -->
-      <section class="fixed-content-section">
+      <section class="common-fixed-content">
         <!-- 
           A table for the page TITLE -->
-        <table id="populated-title-table"><thead><tr><td colspan="6"><h2 id="populated-title-table-thead">Error 404!  That page can't be found!</h2></td></tr></thead><tbody></tbody></table>   
+        <table id="common-populated-title"><thead><tr><td colspan="6"><h2 id="common-populated-title-thead">Error 404!  That page can't be found!</h2></td></tr></thead><tbody></tbody></table>   
         <!-- 
           A table for the PAGE LIST -->
-        <table class="fixed-index-table">
+        <table class="cc-fixed-index">
           <tr><td>
-            <button class="fixed-index-table-directory-button" onclick="history.back()">Back to Previous Page</button>
+            <button class="cc-fixed-index-directory-button" onclick="history.back()">Back to Previous Page</button>
           </td></tr>
         </table>
         <!-- 
           A div for the page DESCRIPTION -->
-        <div id="blended-description-div">
+        <div id="common-fixed-description">
 
           <p><b>
             Looks like the page you are after is still under development, or might not exist at all.  
@@ -83,7 +83,7 @@
       </section>
       <!-- 
         A div for the page FOOTER -->
-      <div id="populated-footer-div"></div>
+      <div id="common-populated-footer"></div>
     </div>
   </body>
 </script>

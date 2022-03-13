@@ -1,11 +1,14 @@
 <!--
 || =========================================================================================
-|| This is a DIRECTORY page
+|| This is a FIXED DIRECTORY page, which contains the following elements:
 ||
-|| The HEADER and FOOTER are POPULATED elements found across the site
-|| The CONTENT element is FIXED and is found across the site
-|| The BACKGROUND element is FIXED across the subsite
-|| The TITLE, INDEX, and DESCRIPTION elements are FIXED for this page
+|| FIXED BACKGROUND - Standard across the subsite
+|| POPULATED HEADER - Standard across the site
+|| FIXED CONTENT - Standard across the site
+|| POPULATED TITLE - Standard across the subsite
+|| POPULATED INDEX - Unique to this page
+|| FIXED DESCRIPTION - Unique to this page
+|| POPULATED FOOTER - Standard across the site
 || ========================================================================================= 
 -->
 <!DOCTYPE html>
@@ -16,16 +19,18 @@
 		<link rel="stylesheet" href="/styles-common.css">
 		<link rel="stylesheet" href="/styles-caped-crusaders.css">
 
+		<!-- Importing jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		
 		<!-- Importing local Javascript functions -->
 		<script type="text/javascript" src="/resources/scripts/function-titleCase.js"></script>
+		<script type="text/javascript" src="/resources/scripts/function-hideShowNavList.js"></script>
 		<script type="text/javascript" src="/resources/scripts/function-readArgs.js"></script>
 
-		<!-- Populating the page HEADER and FOOTER -->
+		<!-- Populating the Header and Footer elements -->
 		<script type="text/javascript" src="/resources/scripts/load-header-footer.js"></script>
 
-		<!-- Populating the TITLE directories and name based on file name and file path -->
+		<!-- Populating the Title element based on file name and file path -->
 		<script type="text/javascript" src="/resources/scripts/load-title-directories.js"></script>
 		<script type="text/javascript" src="/resources/scripts/load-title-name.js"></script>
 
@@ -34,60 +39,60 @@
 	</head>
 	<body>
 		
-		<!-- A div for the page BACKGROUND -->
-		<div id="fixed-background-div-caped-crusaders">
+		<!-- FIXED BACKGROUND -->
+		<div id="cc-fixed-background">
 
-			<!-- A div for the page HEADER -->
-			<div id="populated-header-div"></div>
+			<!-- POPULATED HEADER -->
+			<div id="common-populated-header"></div>
 
-			<!-- A section for the page CONTENT -->
-			<section class="fixed-content-section">
+			<!-- FIXED CONTENT -->
+			<section class="common-fixed-content">
 
-				<!-- A table for the page TITLE -->
-				<table id="populated-title-table"><thead><tr><td colspan="6"><h2 id="populated-title-table-thead"></h2></td></tr></thead><tbody></tbody></table>
+				<!-- POPULATED TITLE -->
+				<table id="common-populated-title"><thead><tr><td colspan="6"><h2 id="common-populated-title-thead"></h2></td></tr></thead><tbody></tbody></table>
 				
-				<!-- A table for the page INDEX -->
-				<table class="populated-index-table">
+				<!-- POPULATED INDEX -->
+				<table class="cc-populated-index">
 					<tr><td>
-						<button id="class-button-4" class="cc-class-button-magic"></button>
+						<button id="class-button-4" class="cc-populated-index-button-magic"></button>
 					</td>
 					<td>
-						<button id="class-button-5" class="cc-class-button-magic"></button>
+						<button id="class-button-5" class="cc-populated-index-button-magic"></button>
 					</td>
 					<td>
-						<button id="class-button-6" class="cc-class-button-magic"></button>
+						<button id="class-button-6" class="cc-populated-index-button-magic"></button>
 					</td>
 					<td>
-						<button id="class-button-7" class="cc-class-button-magic"></button>
+						<button id="class-button-7" class="cc-populated-index-button-magic"></button>
 					</td></tr>
 					<tr><td>
-						<button id="class-button-8" class="cc-class-button-power"></button>
+						<button id="class-button-8" class="cc-populated-index-button-power"></button>
 					</td>
 					<td>
-						<button id="class-button-9" class="cc-class-button-power"></button>
+						<button id="class-button-9" class="cc-populated-index-button-power"></button>
 					</td>
 					<td>
-						<button id="class-button-10" class="cc-class-button-power"></button>
+						<button id="class-button-10" class="cc-populated-index-button-power"></button>
 					</td>
 					<td>
-						<button id="class-button-11" class="cc-class-button-power"></button>
+						<button id="class-button-11" class="cc-populated-index-button-power"></button>
 					</td></tr>
 					<tr><td>
-						<button id="class-button-0" class="cc-class-button-tech"></button>
+						<button id="class-button-0" class="cc-populated-index-button-tech"></button>
 					</td>
 					<td>
-						<button id="class-button-1" class="cc-class-button-tech"></button>
+						<button id="class-button-1" class="cc-populated-index-button-tech"></button>
 					</td>
 					<td>
-						<button id="class-button-2" class="cc-class-button-tech"></button>
+						<button id="class-button-2" class="cc-populated-index-button-tech"></button>
 					</td>
 					<td>
-						<button id="class-button-3" class="cc-class-button-tech"></button>
+						<button id="class-button-3" class="cc-populated-index-button-tech"></button>
 					</td></tr>
 				</table>
 
-				<!-- A div for the page DESCRIPTION -->
-				<div id="fixed-description-div">
+				<!-- FIXED DESCRIPTION -->
+				<div id="common-fixed-description">
 					<p>
 						A Class is a bounded set of mechanics that represent player character abilities.  The classes are placed into categories based on the source of their power.  There are twelve classes in total, with four classes in each category.  The categories are Tech, Powers, and Magic.  
 						<br><br>
@@ -102,11 +107,11 @@
 						The mechanics within Caped Crusaders can often be described or flavored in various ways, but some flavor is provided as a guideline to rely on if you don't want to describe everything and to set implicit boundaries regarding what flavor might be too outlandish.  
 					</p>
 				</div>
-				<hr class="fixed-content-hr">
+				<hr class="common-fixed-content-anchor">
 			</section>
 
-			<!-- A div for the page FOOTER -->
-			<div id="populated-footer-div"></div>
+			<!-- POPULATED FOOTER -->
+			<div id="common-populated-footer"></div>
 		</div>
 	</body>
 </html>

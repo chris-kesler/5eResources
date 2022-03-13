@@ -1,4 +1,4 @@
 $(function loadHeaderFooter() {
-	$("#populated-header-div").load("/resources/pages/populated-header-div.html");
-	$("#populated-footer-div").load("/resources/pages/populated-footer-div.html");
+	$("#common-populated-header").load("/resources/pages/common-populated-header.html");
+	$("#common-populated-footer").load("/resources/pages/common-populated-footer.html");
 });

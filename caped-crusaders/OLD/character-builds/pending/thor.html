@@ -9,89 +9,20 @@
     <link rel="stylesheet" href="/caped-crusaders-style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
     <script>
-
-      // A function that capitalizes the first letter of each word in a string
-      function titleCase(str) {
-        var split_string = str.toLowerCase().split(' ');
-        for (var i = 0; i < split_string.length; i++) {
-          split_string[i] = split_string[i].charAt(0).toUpperCase() + split_string[i].substring(1);     
-        }
-        return split_string.join(' '); 
-      }
-
-      // The function that populates all page data into preset elements
-      $(function populatePageData() {
-
-
-// =========================================================================================
-// Populating the page HEADER
-// 
-// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
-// =========================================================================================
-        $("#populated-header-div").load("/resources/pages/populated-header-div.html");
-
-
-// =========================================================================================
-// Populating the page TITLE
-// 
-// The page TITLE can include a table of details for spells or monster statblocks
-// If title_library does not have a table_row library, the table of details is hidden and only the TITLE path is populated
-// =========================================================================================
-        
-        // Reading the name of this file
-        var path_array = window.location.pathname.split("/");
-        var path_array_length = path_array.length;
-
-        if (path_array.length == 5) {
-          var page_title = path_array.pop();
-          var page_category = path_array.pop();
-          var page_directory = path_array.pop();
-          var page_subsite = path_array.pop();
-          var page_site = path_array.pop();
-        } else if (path_array.length == 4) {
-          var page_title = path_array.pop();
-          var page_directory = path_array.pop();
-          var page_subsite = path_array.pop();
-          var page_site = path_array.pop();
-        } else if (path_array.length == 3) {
-          var page_title = path_array.pop();
-          var page_subsite = path_array.pop();
-          var page_site = path_array.pop();
-        } else if (path_array.length == 2) {
-          var page_title = path_array.pop();
-          var page_site = path_array.pop();
-        } else if (path_array.length == 1) {
-          var page_title = path_array.pop();
-        } 
-
-        if (page_subsite != undefined) {
-          document.getElementById("populated-title-table-thead").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
-        } else {
-          document.getElementById("populated-title-table-thead").innerHTML = titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
-        }
-        if (page_directory != undefined) {
-          document.getElementById("populated-title-table-thead").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
-        }
-        if (page_category != undefined) {
-          document.getElementById("populated-title-table-thead").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + "/" + page_category + ".html'>" + titleCase(page_category.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
-        }
-
-        // Reading data from our JSON file
-        // $.getJSON(`/` + page_subsite + `/` + page_directory + `.json`, function(data) {
-        $.getJSON(`/caped-crusaders/character-builds.json`, function(data) {
-
-
-          // Looping through the JSON data 
-          $.each(data.entries, function(i, f) {
-            if (f.page_url == page_title) {
-
-              if (f.content_source != undefined && f.content_source !== ""){
-                document.getElementById("populated-title-table-thead").innerHTML += " > <a target='blank' href='" + f.content_source + "'>" + f.name_str + " (source)</a>";
-              } else {
-                document.getElementById("populated-title-table-thead").innerHTML += " > " + f.name_str;
-              }
+      $(function importContent() {
+        $("#common-populated-header").load("/resources/pages/common-populated-header.html");
+        $("#common-populated-footer").load("/resources/pages/common-populated-footer.html");
+      });
+      $(function readCharacter() {
+        var characters = [];
+        $.getJSON('../character-builds.json', function(data) {
+          var path = window.location.pathname;
+          var page = path.split("/").pop();
+          $.each(data.character, function(i, f) {
+            if (f.page_url == page) {
 
               // Populating basic page data and overview
+              document.getElementById("class-common-populated-title-thead").innerHTML = "Caped Crusaders: Classes > " + f.name_str;
               document.getElementById("cc-class-image").src = "/resources/images/" + f.class_str + ".png";
               document.getElementById("cc-class-image").alt = f.class_img_credit;
               document.getElementById("cc-subclass-image").src = "/resources/images/" + f.class_str + "-" + f.subclass_str + ".png";
@@ -238,7 +169,6 @@
               var intelligence_save_bool = false;
               var wisdom_save_bool = false;
               var charisma_save_bool = false;
-              var armor_class = "---";
 
               // Looping through the class levels 
               for (let i = 0; i < 20; i++) {
@@ -264,7 +194,9 @@
                 // Populating Armor Class updates
                 if (f.level_guide[i].ac_update != undefined) {
                   armor_class = f.level_guide[i].ac_update;
-                } 
+                } else if (f.level_guide[i].ac_update == undefined){
+                  armor_class = "---"
+                }
 
                 // Populating Strength score and save updates
                 {
@@ -300,6 +232,7 @@
                   }
                 }
                 
+
                 // Populating Dexterity score and save updates
                 {
                   // Checking for ability score update
@@ -334,6 +267,7 @@
                   }
                 }
                 
+
                 // Populating Constitution score and save updates
                 {
                   // Checking for ability score update
@@ -367,7 +301,8 @@
                     }
                   }
                 }
-                                
+                
+                
                 // Populating Intelligence score and save updates
                 {
                   // Checking for ability score update
@@ -402,6 +337,7 @@
                   }
                 }
                 
+
                 // Populating Wisdom score and save updates
                 {
                   // Checking for ability score update
@@ -436,6 +372,7 @@
                   }
                 }
                 
+
                 // Populating Charisma score and save updates
                 {
                   // Checking for ability score update
@@ -470,167 +407,170 @@
                   }
                 }
                 
-                // Populating Sustainables with data or default
-                if (f.level_guide[i].sustainables != undefined) {
-                  sustainable_selections = f.level_guide[i].sustainables;
-                  sustainable_selections_parsed = sustainable_selections.split(", ");
-                  sustainable_selections_links = "";
-                  for (let k = 0; k < sustainable_selections_parsed.length; k++) {
-                    sustainable_selections_link = sustainable_selections_parsed[k].toLowerCase();
-                    sustainable_selections_link = sustainable_selections_link.replace('-', '');
-                    sustainable_selections_link = sustainable_selections_link.replace('+', '');
-                    sustainable_selections_link = sustainable_selections_link.replace(/\s/g, '-');
-                    sustainable_selections_link = "<a target='blank' href='/caped-crusaders/" + sustainable_source + "/" + sustainable_selections_link + ".html'>" + sustainable_selections_parsed[k] + "</a>";
-                    if (sustainable_selections_links.includes("href")){
-                      sustainable_selections_links += ", " + sustainable_selections_link;
-                    } else {
-                      sustainable_selections_links = sustainable_selections_link;
-                    }
-                  }
-                } else if (f.level_guide[i].sustainables == undefined) {
-                  sustainable_selections_links = "---";
-                }
-                
-                // Populating Cantrips with data or default
-                if (f.level_guide[i].cantrips != undefined) {
-                  cantrip_selections = f.level_guide[i].cantrips;
-                  cantrip_selections_parsed = cantrip_selections.split(", ");
-                  cantrip_selections_links = "";
-                  for (let k = 0; k < cantrip_selections_parsed.length; k++) {
-                    cantrip_selections_link = cantrip_selections_parsed[k].toLowerCase();
-                    cantrip_selections_link = cantrip_selections_link.replace('-', '');
-                    cantrip_selections_link = cantrip_selections_link.replace('+', '');
-                    cantrip_selections_link = cantrip_selections_link.replace(/\s/g, '-');
-                    cantrip_selections_link = "<a target='blank' href='/caped-crusaders/" + consumable_source + "/" + cantrip_selections_link + ".html'>" + cantrip_selections_parsed[k] + "</a>";
-                    if (cantrip_selections_links.includes("href")){
-                      cantrip_selections_links += ", " + cantrip_selections_link;
-                    } else {
-                      cantrip_selections_links = cantrip_selections_link;
-                    }
-                  }
-                } else if (f.level_guide[i].cantrips == undefined) {
-                  cantrip_selections_links = "---";
-                }
 
-                // Populating Consumables with data or default
-                if (f.level_guide[i].consumables != undefined) {
-                  consumable_selections = f.level_guide[i].consumables;
-                  consumable_selections_parsed = consumable_selections.split(", ");
-                  consumable_selections_links = "";
-                  for (let k = 0; k < consumable_selections_parsed.length; k++) {
-                    consumable_selections_link = consumable_selections_parsed[k].toLowerCase();
-                    consumable_selections_link = consumable_selections_link.replace('-', '');
-                    consumable_selections_link = consumable_selections_link.replace('+', '');
-                    consumable_selections_link = consumable_selections_link.replace(/\s/g, '-');
-                    consumable_selections_link = "<a target='blank' href='/caped-crusaders/" + consumable_source + "/" + consumable_selections_link + ".html'>" + consumable_selections_parsed[k] + "</a>";
-                    if (consumable_selections_links.includes("href")){
-                      consumable_selections_links += ", " + consumable_selections_link;
-                    } else {
-                      consumable_selections_links = consumable_selections_link;
-                    }
-                  }
-                } else if (f.level_guide[i].consumables == undefined) {
-                  consumable_selections_links = "---";
-                }
 
-                // Populating Walkthrough by Level text and Selections tables
-                if (f.level_guide[i].walkthrough != undefined) {
-                  document.getElementById("build-walkthrough-by-level").innerHTML += "<hr><table id='cc-build-selections-table-" + (i+1) + "' class='cc-build-selections-table'><thead><th style='width: 15vw' colspan='2'>" + class_subclass + ", lvl " + (i+1) + "</th></thead><tbody><tr><td>Sustainables</td><td>" + sustainable_selections_links + "</td></tr><tr><td>Cantrips</td><td>" + cantrip_selections_links + "</td></tr><tr><td>Consumables</td><td>" + consumable_selections_links + "</td></tr></tbody></table>" + "<h4>Level: " + (i+1) + "</h4><p>" + f.level_guide[i].walkthrough + "</p>";
+
+                // Looping through each item within the level_guide dictionary
+                for (let k = 0; k < f.level_guide.length; k++) {
+
+                  // Populating Sustainables with data or default
+                  if (f.level_guide[k].sustainables != undefined && f.level_guide[k].level == (i+1)) {
+                    sustainable_selections = f.level_guide[k].sustainables;
+                    sustainable_selections_parsed = sustainable_selections.split(", ");
+                    sustainable_selections_links = "";
+                    for (let k = 0; k < sustainable_selections_parsed.length; k++) {
+                      sustainable_selections_link = sustainable_selections_parsed[k].toLowerCase();
+                      sustainable_selections_link = sustainable_selections_link.replace('-', '');
+                      sustainable_selections_link = sustainable_selections_link.replace('+', '');
+                      sustainable_selections_link = sustainable_selections_link.replace(/\s/g, '-');
+                      sustainable_selections_link = "<a target='blank' href='/caped-crusaders/" + sustainable_source + "/" + sustainable_selections_link + ".html'>" + sustainable_selections_parsed[k] + "</a>";
+                      if (sustainable_selections_links.includes("href")){
+                        sustainable_selections_links += ", " + sustainable_selections_link;
+                      } else {
+                        sustainable_selections_links = sustainable_selections_link;
+                      }
+                    }
+                  } else if (f.level_guide[k].sustainables == undefined && f.level_guide[k].level == (i+1)) {
+                    sustainable_selections_links = "---";
+                  }
+                  
+                  // Populating Cantrips with data or default
+                  if (f.level_guide[k].cantrips != undefined && f.level_guide[k].level == (i+1)) {
+                    cantrip_selections = f.level_guide[k].cantrips;
+                    cantrip_selections_parsed = cantrip_selections.split(", ");
+                    cantrip_selections_links = "";
+                    for (let k = 0; k < cantrip_selections_parsed.length; k++) {
+                      cantrip_selections_link = cantrip_selections_parsed[k].toLowerCase();
+                      cantrip_selections_link = cantrip_selections_link.replace('-', '');
+                      cantrip_selections_link = cantrip_selections_link.replace('+', '');
+                      cantrip_selections_link = cantrip_selections_link.replace(/\s/g, '-');
+                      cantrip_selections_link = "<a target='blank' href='/caped-crusaders/" + consumable_source + "/" + cantrip_selections_link + ".html'>" + cantrip_selections_parsed[k] + "</a>";
+                      if (cantrip_selections_links.includes("href")){
+                        cantrip_selections_links += ", " + cantrip_selections_link;
+                      } else {
+                        cantrip_selections_links = cantrip_selections_link;
+                      }
+                    }
+                  } else if (f.level_guide[k].cantrips == undefined && f.level_guide[k].level == (i+1)) {
+                    cantrip_selections_links = "---";
+                  }
+
+                  // Populating Consumables with data or default
+                  if (f.level_guide[k].consumables != undefined && f.level_guide[k].level == (i+1)) {
+                    consumable_selections = f.level_guide[k].consumables;
+                    consumable_selections_parsed = consumable_selections.split(", ");
+                    consumable_selections_links = "";
+                    for (let k = 0; k < consumable_selections_parsed.length; k++) {
+                      consumable_selections_link = consumable_selections_parsed[k].toLowerCase();
+                      consumable_selections_link = consumable_selections_link.replace('-', '');
+                      consumable_selections_link = consumable_selections_link.replace('+', '');
+                      consumable_selections_link = consumable_selections_link.replace(/\s/g, '-');
+                      consumable_selections_link = "<a target='blank' href='/caped-crusaders/" + consumable_source + "/" + consumable_selections_link + ".html'>" + consumable_selections_parsed[k] + "</a>";
+                      if (consumable_selections_links.includes("href")){
+                        consumable_selections_links += ", " + consumable_selections_link;
+                      } else {
+                        consumable_selections_links = consumable_selections_link;
+                      }
+                    }
+                  } else if (f.level_guide[k].consumables == undefined && f.level_guide[k].level == (i+1)) {
+                    consumable_selections_links = "---";
+                  }
+
+                  // Populating Walkthrough by Level text and Selections tables
+                  if (f.level_guide[k].walkthrough != undefined && f.level_guide[k].level == (i+1)) {
+                    document.getElementById("build-walkthrough-by-level").innerHTML += "<hr><table id='cc-build-selections-table-" + (i+1) + "' class='cc-build-selections-table'><thead><th style='width: 15vw' colspan='2'>" + class_subclass + ", lvl " + (i+1) + "</th></thead><tbody><tr><td>Sustainables</td><td>" + sustainable_selections_links + "</td></tr><tr><td>Cantrips</td><td>" + cantrip_selections_links + "</td></tr><tr><td>Consumables</td><td>" + consumable_selections_links + "</td></tr></tbody></table>" + "<h3>Level: " + (i+1) + "</h3>" + f.level_guide[k].walkthrough;
+                  }
                 }
                 
-                // Populating the Level Table with a new row for each level
-                var table_row = "<tr><td>" + (i+1) + "</td><td>" + class_subclass + "</td><td>" + hit_points + " / " + (i+1) + "d" + hit_die + "</td><td>" + features + "</td><td>" + strength_score_str + " / " + strength_save_str + "</td><td>" + dexterity_score_str + " / " + dexterity_save_str + "</td><td>" + constitution_score_str + " / " + constitution_save_str + "</td><td>" + intelligence_score_str + " / " + intelligence_save_str + "</td><td>" + wisdom_score_str + " / " + wisdom_save_str + "</td><td>" + charisma_score_str + " / " + charisma_save_str + "</td><td>" + armor_class + "</td></tr>";
-                $(table_row).appendTo("#build-populated-details-table tbody");
+                  
                 
-                // Increasing the Proficiency Bonus variable upon reaching certain level milestones
-                if ((i+1) == 4 || (i+1) == 8 || (i+1) == 12 || (i+1) == 16) {
-                  proficiency_bonus_int++;
-                }
+              // Populating the Level Table with a new row for each level
+              var table_row = "<tr><td>" + (i+1) + "</td><td>" + class_subclass + "</td><td>" + hit_points + " / " + (i+1) + "d" + hit_die + "</td><td>" + features + "</td><td>" + strength_score_str + " / " + strength_save_str + "</td><td>" + dexterity_score_str + " / " + dexterity_save_str + "</td><td>" + constitution_score_str + " / " + constitution_save_str + "</td><td>" + intelligence_score_str + " / " + intelligence_save_str + "</td><td>" + wisdom_score_str + " / " + wisdom_save_str + "</td><td>" + charisma_score_str + " / " + charisma_save_str + "</td><td>" + armor_class + "</td></tr>";
+              $(table_row).appendTo("#build-populated-details-table tbody");
+              
+              // Increasing the Proficiency Bonus variable upon reaching certain level milestones
+              if ((i+1) == 4 || (i+1) == 8 || (i+1) == 12 || (i+1) == 16) {
+                proficiency_bonus_int++;
               }
+            }
             }
           });
         });
-
-
-// =========================================================================================
-// Populating the page FOOTER
-// 
-// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
-// =========================================================================================
-        $("#populated-footer-div").load("/resources/pages/populated-footer-div.html");
       });
-
     </script>
   </head>
 
   <body>
-    <!-- 
-      A div for the page BACKGROUND -->
-    <div id="page-background-div">
-      <!-- 
-        A div for the page HEADER -->
-      <div id="populated-header-div"></div>
-      <!-- 
-        A section for the page CONTENT -->
-      <section class="fixed-content-section">
-        <!-- 
-          A table for the page TITLE -->
-        <table id="populated-title-table"><thead><tr><td colspan="6"><h2 id="populated-title-table-thead"></h2></td></tr></thead><tbody></tbody></table>   
+    <div id="page-background-div"> 
 
-        <center>--CHARACTER BUILDS ONLY GO TO LEVEL 10 UNTIL FURTHER NOTICE--</center>
-        <img id="cc-subclass-image" class="cc-class-image-medium" alt="Class Image">
-        <img id="cc-class-image" class="cc-class-image-medium" alt="Class Image">
-        <p id="build-description"></p>
+      <div class="common-page-header"><div id="common-populated-header"></div><h1 id="class-common-populated-title-thead"></h1><hr></div>
 
-        <hr>
-        <h3>Build Setup</h3>
-        <p id="build-setup-overview">We'll take the following setup prior to our class levels.  </p>
-        <table class="populated-details-table" id="build-setup-table">
-          <thead>
-            <th>Race</th>
-            <th>Background</th>
-            <th>STR</th>
-            <th>DEX</th>
-            <th>CON</th>
-            <th>INT</th>
-            <th>WIS</th>
-            <th>CHA</th>
-            <th>Starting Equipment</th>
-          </thead>
-          <tbody></tbody>
-        </table>
-                
-        <hr>
-        <h3>Level Table</h3>
-        <p id="build-level-overview">We'll take features based on the following table to initiate and progress through our build.  </p>
+      <div class="common-common-fixed-content-transparent">
 
-        <table id="build-populated-details-table" class="populated-details-table">
-          <thead>
-            <th style="width: 5vw">Level</th>
-            <th style="width: 10vw">Class/Subclass</th>
-            <th style="width: 10vw">Hit Points/Dice</th>
-            <th style="width: 30vw">Features</th>
-            <th style="width: 5vw">Str/Save</th>
-            <th style="width: 5vw">Dex/Save</th>
-            <th style="width: 5vw">Con/Save</th>
-            <th style="width: 5vw">Int/Save</th>
-            <th style="width: 5vw">Wis/Save</th>
-            <th style="width: 5vw">Cha/Save</th>
-            <th style="width: 5vw">AC</th>
-          </thead>
-          <tbody></tbody>
-        </table>
+            <section class="common-fixed-content">
+              <button id="common-page-back-button" onclick="location.href='../character-builds.html'">Out to Character Builds</button>
+              <h2>Overview</h2>
+              <hr>
+              <center>--CHARACTER BUILDS ONLY GO TO LEVEL 10 UNTIL FURTHER NOTICE--</center>
+              <img id="cc-subclass-image" class="cc-class-image-medium" alt="Class Image">
+              <img id="cc-class-image" class="cc-class-image-medium" alt="Class Image">
+              <p id="build-description"></p>
 
-        <hr>
-        <h3>Build Walkthrough</h3>
-        <p id="build-walkthrough-overview">We'll take features based on the following tables to initiate and progress through our build.  </p>
+              <hr>
+              <h3>Build Setup</h3>
+              <p id="build-setup-overview">We'll take the following setup prior to our class levels.  </p>
+              <table class="common-populated-title" id="build-setup-table">
+                <thead>
+                  <th>Race</th>
+                  <th>Background</th>
+                  <th>STR</th>
+                  <th>DEX</th>
+                  <th>CON</th>
+                  <th>INT</th>
+                  <th>WIS</th>
+                  <th>CHA</th>
+                  <th>Starting Equipment</th>
+                </thead>
+                <tbody></tbody>
+              </table>
+                      
+              <hr>
+              <h3>Level Table</h3>
+              <p id="build-level-overview">We'll take features based on the following table to initiate and progress through our build.  </p>
 
-        <div id="build-walkthrough-by-level"></div>
+              <table id="build-populated-details-table" class="common-populated-title">
+                <thead>
+                  <th style="width: 5vw">Level</th>
+                  <th style="width: 10vw">Class/Subclass</th>
+                  <th style="width: 10vw">Hit Points/Dice</th>
+                  <th style="width: 30vw">Features</th>
+                  <th style="width: 5vw">Str/Save</th>
+                  <th style="width: 5vw">Dex/Save</th>
+                  <th style="width: 5vw">Con/Save</th>
+                  <th style="width: 5vw">Int/Save</th>
+                  <th style="width: 5vw">Wis/Save</th>
+                  <th style="width: 5vw">Cha/Save</th>
+                  <th style="width: 5vw">AC</th>
+                </thead>
+                <tbody></tbody>
+              </table>
 
-      </section>
-      <!-- 
-        A div for the page FOOTER -->
-      <div id="populated-footer-div"></div>
+              <hr>
+              <h3>Build Walkthrough</h3>
+              <p id="build-walkthrough-overview">We'll take features based on the following table to initiate and progress through our build.  </p>
+
+              <div id="build-walkthrough-by-level"></div>
+
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+      <div id="common-populated-footer"></div>
+
     </div>
   </body>
+  
 </html>
+

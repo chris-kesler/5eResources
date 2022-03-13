@@ -61,7 +61,7 @@ function FilterTableFunction() {
 	var filterExcludeEleven = inputExcludeEleven.value.toUpperCase();
 
 	// Reading the table element and all table rows within
-	table = document.getElementById("dynamic-index-table");
+	table = document.getElementById("cc-dynamic-index");
 	tr = table.getElementsByTagName("tr");
 
 	// Looping through all table rows and hiding those who don't match the search query

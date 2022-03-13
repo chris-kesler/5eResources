@@ -17,9 +17,9 @@
           $.each(data.npc, function(i, f) {
             data_page = f.name.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html";
             if (data_page == page) {
-              document.getElementById("populated-title-table-thead").innerHTML = "Myrmidos:  NPCs > " + f.name;
-              document.getElementById("common-fixed-content-section-title").innerHTML = f.name;
-              document.getElementById("blended-description-div").innerHTML = f.description;
+              document.getElementById("common-populated-title-thead").innerHTML = "Myrmidos:  NPCs > " + f.name;
+              document.getElementById("common-common-fixed-content-title").innerHTML = f.name;
+              document.getElementById("common-fixed-description").innerHTML = f.description;
               document.getElementById("page-image").src = f.image_weblink;
               image_source = f.image_sourcelink;
               image_alt = f.name;
@@ -50,16 +50,16 @@
   <body>
     <div id="page-background-div-myrmidos-wiki"> 
       <div class="common-page-header">
-        <div id="populated-header-div"></div>
-          <h1 id="populated-title-table-thead"></h1>
+        <div id="common-populated-header"></div>
+          <h1 id="common-populated-title-thead"></h1>
           <hr>
       </div>
         
 
-      <div class="common-fixed-content-section-transparent">
-            <section class="fixed-content-section">
+      <div class="common-common-fixed-content-transparent">
+            <section class="common-fixed-content">
               <button id="common-page-back-button" onclick="location.href='../npcs.html'">Out to npcs</button>
-              <h2 id="common-fixed-content-section-title"></h2>
+              <h2 id="common-common-fixed-content-title"></h2>
               <hr>
 
               <!-- A table to hold the page image and credit to author -->
@@ -68,11 +68,11 @@
                 <tr><td><h4 id="page-image-credit">Image Credit</h4></td></tr>
               </table>
 
-              <table id="TechTable" class="populated-title-table">
+              <table id="TechTable" class="common-populated-title">
                 <tbody></tbody>
               </table>
               <hr>
-              <p id="blended-description-div">
+              <p id="common-fixed-description">
               </p>
               
             </section>
@@ -80,7 +80,7 @@
         </div>
       </div>
 
-      <div id="populated-footer-div"></div>
+      <div id="common-populated-footer"></div>
 
     </div>
 
@@ -90,8 +90,8 @@
 <script type="text/javascript">
   $(function () {
 
-    $("#populated-header-div").load("/resources/pages/populated-header-div.html");
-    $("#populated-footer-div").load("/resources/pages/populated-footer-div.html");
+    $("#common-populated-header").load("/resources/pages/common-populated-header.html");
+    $("#common-populated-footer").load("/resources/pages/common-populated-footer.html");
 
 });
 </script>

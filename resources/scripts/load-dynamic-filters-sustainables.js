@@ -39,7 +39,7 @@ $(function readJSON() {
 		"<input type='text' id='directory-page-dynamic-table-query-inputExclude11' class='directory-page-dynamic-table-query-input' onkeyup='FilterTableFunction()' placeholder='Exclude by Source. . .'>";
 
 	// Populating table header, which includes buttons to sort the entries in ascending and descending order based on column selected
-	document.getElementById("directory-page-dynamic-table-header").innerHTML = 
+	document.getElementById("cc-dynamic-index-thead").innerHTML = 
 		"<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(0)'>Name</button></th>" + 
 		"<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(1)'>Level</button></th>" + 
 		"<th><button class='directory-page-dynamic-table-sort-button' onclick='sortTable(2)'>" + entry_type + "</button></th>" + 

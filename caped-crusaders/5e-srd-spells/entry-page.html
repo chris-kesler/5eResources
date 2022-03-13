@@ -1,67 +1,70 @@
+<!--
+|| =========================================================================================
+|| This is a POPULATED ENTRY page, which contains the following elements:
+||
+|| FIXED BACKGROUND - Standard across the subsite
+|| POPULATED HEADER - Standard across the site
+|| POPULATED NAVLIST - Standard across the site
+|| FIXED CONTENT - Standard across the site
+|| POPULATED TITLE - Standard across the subsite
+|| POPULATED ATTRIBUTES - Standard across the subsite
+|| POPULATED DESCRIPTION - Standard across the subsite
+|| POPULATED FOOTER - Standard across the site
+|| ========================================================================================= 
+-->
 <!DOCTYPE html>
-<!-- =========================================================================================
-	This is an ENTRY page.  It contains HEADER, BACKGROUND, CONTENT, and FOOTER elements that are standard across the site.
-	It also contains TITLE, ATTRIBUTES, NAVLIST, and DESCRIPTION elements that are uniquely handled as an ENTRY page.
-	The ENTRY page script reads the file path and discerns the following:  /<subsite>/<directory>/<page_name><page_args>
-	The data is populated from a JSON file that is titled <directory>.JSON and stored within the <subsite> folder
-	The data is populated from an entry within that JSON file if the entry_name attribute matches the <page_args>
-========================================================================================= -->
 <html lang="en">
 	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-US-Compatible" content="e-edge">
 		<title>KnowOne's Website of Everything</title>
 		<link rel="icon" href="/resources/images/OwlOfMinerva_ModifiedLogo.png">
 		<link rel="stylesheet" href="/styles-common.css">
 		<link rel="stylesheet" href="/styles-caped-crusaders.css">
+
+		<!-- Importing jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		
 		<!-- Importing local Javascript functions -->
 		<script type="text/javascript" src="/resources/scripts/function-titleCase.js"></script>
 		<script type="text/javascript" src="/resources/scripts/function-hideShowNavList.js"></script>
-		
 		<script type="text/javascript" src="/resources/scripts/function-readArgs.js"></script>
 
-		<!-- Populating the page Header and Footer -->
+		<!-- Populating the Header and Footer elements -->
 		<script type="text/javascript" src="/resources/scripts/load-header-footer.js"></script>
 
-		<!-- Populating the Title directories and name based on file name and file path -->
+		<!-- Populating the Title element based on file name and file path -->
 		<script type="text/javascript" src="/resources/scripts/load-title-directories.js"></script>
 		<script type="text/javascript" src="/resources/scripts/load-title-name.js"></script>
 
 		<!-- Populating the page Title table, Attributes table, Description element, and Navlist element from JSON data -->
 		<script type="text/javascript" src="/resources/scripts/load-5esrd-spells-entry.js"></script>
 	</head>
-
-
 	<body>
-		<!-- A div for the page BACKGROUND -->
-		<div id="fixed-background-div-caped-crusaders">
+		<!-- FIXED BACKGROUND -->
+		<div id="cc-fixed-background">
 
-			<!-- A div for the page HEADER -->
-			<div id="populated-header-div"></div>
+			<!-- POPULATED HEADER -->
+			<div id="common-populated-header"></div>
 
-			<!-- A series of element for the page NAVLIST -->
-			<section id="page-navlist-section"><table id="page-navlist-table"><tbody></tbody></table></section>
-			<button id='page-navlist-button' onclick='hideShowNavList()'>&#60; &#60;</button>
+			<!-- POPULATED NAVLIST -->
+			<section id="common-populated-navlist"><table id="common-populated-navlist-table"><tbody></tbody></table></section>
+			<button id='common-populated-navlist-button' onclick='hideShowNavList()'>&#60; &#60;</button>
 
-			<!-- A section for the page CONTENT -->
-			<section class="fixed-content-section">
+			<!-- FIXED CONTENT -->
+			<section class="common-fixed-content">
 
-				<!-- A table for the page TITLE -->
-				<table id="populated-title-table"><thead><tr><td colspan="5"><h2 id="populated-title-table-thead"></h2></td></tr></thead><tbody></tbody></table>
+				<!-- POPULATED TITLE -->
+				<table id="common-populated-title"><thead><tr><td colspan="5"><h2 id="common-populated-title-thead"></h2></td></tr></thead><tbody></tbody></table>
 
-				<!-- A table for the page ATTRIBUTES -->
-				<table id="page-attributes-table"><tbody></tbody></table>
+				<!-- POPULATED ATTRIBUTES -->
+				<table id="cc-populated-attributes"><tbody></tbody></table>
 
-				<!-- A div for the page DESCRIPTION -->
-				<div id="blended-description-div"></div>
-				<hr class="fixed-content-hr">
+				<!-- POPULATED DESCRIPTION -->
+				<div id="common-populated-description"></div>
+				<hr class="common-fixed-content-anchor">
 			</section>
 			
-			<!-- A div for the page FOOTER -->
-			<div id="populated-footer-div"></div>
+			<!-- POPULATED FOOTER -->
+			<div id="common-populated-footer"></div>
 		</div>
 	</body>
 </html>

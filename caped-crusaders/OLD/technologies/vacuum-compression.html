@@ -82,9 +82,9 @@
 
               // Populating the name of the page
               if (content_source != undefined){
-                document.getElementById("populated-title-table-thead").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > <a target='blank' href='" + content_source + "'>" + titleCase(page_title.replace('-', ' ').replace('.html', '')) + " (source)</a>";
+                document.getElementById("common-populated-title-thead").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > <a target='blank' href='" + content_source + "'>" + titleCase(page_title.replace('-', ' ').replace('.html', '')) + " (source)</a>";
               } else {
-                document.getElementById("populated-title-table-thead").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > " + titleCase(page_title.replace('-', ' ').replace('.html', ''));
+                document.getElementById("common-populated-title-thead").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > " + titleCase(page_title.replace('-', ' ').replace('.html', ''));
 
               }
 
@@ -95,18 +95,18 @@
               
               // Populating the page description based on flavor, mechanics, overcharge, and components
               if (f.flavor_str != undefined) {
-                document.getElementById("blended-description-div").innerHTML += "<p><b>Flavor Description:</b>  <i>" + f.flavor_str + "</i></p>";
+                document.getElementById("common-fixed-description").innerHTML += "<p><b>Flavor Description:</b>  <i>" + f.flavor_str + "</i></p>";
               }
               if (f.mechanics_str != undefined) {
-                document.getElementById("blended-description-div").innerHTML += "<p><b>Standard Mechanics:</b>  " + f.mechanics_str + "</p>";
+                document.getElementById("common-fixed-description").innerHTML += "<p><b>Standard Mechanics:</b>  " + f.mechanics_str + "</p>";
               }
               if (f.overcharge_str != undefined) {
-                document.getElementById("blended-description-div").innerHTML += "<p><b>Overcharge Mechanics:</b>  " + f.overcharge_str + "</p>";
+                document.getElementById("common-fixed-description").innerHTML += "<p><b>Overcharge Mechanics:</b>  " + f.overcharge_str + "</p>";
               }
 
               // Checking for Material Components and displaying the material component description
               if (f.components_vsm_str.includes("M") && f.components_description_str != undefined) {
-                document.getElementById("blended-description-div").innerHTML += "<p><b>Material Components:</b>  <i>(" + f.components_description_str + ")</i></p>";
+                document.getElementById("common-fixed-description").innerHTML += "<p><b>Material Components:</b>  <i>(" + f.components_description_str + ")</i></p>";
 
                 // If materials have a cost, we strip that out and concatenate it to the vsm string with parentheses
                 if (f.components_description_str.replace(/\D/g,'') > 0) {
@@ -130,7 +130,7 @@
               
               // Defining and populating the first row of the page table
               var table_row1 = "<tr><th style='width: 15vw'>Level</th><th style='width: 15vw'>Casting Time</th><th style='width: 15vw'>Range/Area</th><th style='width: 15vw'>Components</th></tr>"
-              $(table_row1).appendTo("#populated-title-table tbody");
+              $(table_row1).appendTo("#common-populated-title tbody");
 
               // Defining and populating the second row of the page table
               var table_row2 = "<tr>" 
@@ -139,11 +139,11 @@
                 + "<td>" + f.range_area_str + "</td>" 
                 + "<td>" + components_vsm + "</td>" 
                 + "</tr>"
-              $(table_row2).appendTo("#populated-title-table tbody");
+              $(table_row2).appendTo("#common-populated-title tbody");
 
               // Defining and populating the second row of the page table
               var table_row3 = "<tr><th>Duration</th><th>School</th><th>Attack/Save</th><th>Damage/Effect</th></tr>";
-              $(table_row3).appendTo("#populated-title-table tbody");
+              $(table_row3).appendTo("#common-populated-title tbody");
               
               // Defining and populating the second row of the page table
               var table_row4 = "<tr>"
@@ -152,7 +152,7 @@
                 + "<td>" + f.attack_save_str + "</td>" 
                 + "<td>" + f.damage_effect_str + "</td>" 
                 + "</tr>"
-              $(table_row4).appendTo("#populated-title-table tbody");
+              $(table_row4).appendTo("#common-populated-title tbody");
             }
           });
         });
@@ -164,23 +164,23 @@
   <body>
     <!-- 
       A div for the page BACKGROUND -->
-    <div id="fixed-background-div-caped-crusaders">
+    <div id="cc-fixed-background">
       <!-- 
         A div for the page HEADER -->
-      <div id="populated-header-div"></div>
+      <div id="common-populated-header"></div>
       <!-- 
         A series of element for the page NAVLIST -->
-      <section style="display: none;" id="page-navlist-section"><table id="page-navlist-table"><tbody></tbody></table></section>
-      <button style="display: none;" id='page-navlist-button' onclick='hideShowNavList()'>&#60; &#60;</button>
+      <section style="display: none;" id="common-populated-navlist"><table id="common-populated-navlist-table"><tbody></tbody></table></section>
+      <button style="display: none;" id='common-populated-navlist-button' onclick='hideShowNavList()'>&#60; &#60;</button>
       <!-- 
         A section for the page CONTENT -->
-      <section class="fixed-content-section">
+      <section class="common-fixed-content">
         <!-- 
           A table for the page TITLE -->
-        <table id="populated-title-table"><thead><tr><td colspan="6"><h2 id="populated-title-table-thead"></h2></td></tr></thead><tbody></tbody></table>           
+        <table id="common-populated-title"><thead><tr><td colspan="6"><h2 id="common-populated-title-thead"></h2></td></tr></thead><tbody></tbody></table>           
         <!-- 
           A table for the page ATTRIBUTES -->
-          <table id="page-attributes-table">
+          <table id="cc-populated-attributes">
             <thead>
               <tr><th><img id="page-image" alt="Page Image"></th></tr>
             </thead>
@@ -190,11 +190,11 @@
           </table>
         <!-- 
           A div for the page DESCRIPTION -->
-        <div id="blended-description-div"></div>
+        <div id="common-fixed-description"></div>
       </section>
       <!-- 
         A div for the page FOOTER -->
-      <div id="populated-footer-div"></div>
+      <div id="common-populated-footer"></div>
     </div>
   </body>
 </html>
@@ -202,8 +202,8 @@
 <script type="text/javascript">
   $(function () {
 
-    $("#populated-header-div").load("/resources/pages/populated-header-div.html");
-    $("#populated-footer-div").load("/resources/pages/populated-footer-div.html");
+    $("#common-populated-header").load("/resources/pages/common-populated-header.html");
+    $("#common-populated-footer").load("/resources/pages/common-populated-footer.html");
 
 });
 </script>

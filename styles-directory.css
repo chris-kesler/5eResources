@@ -131,23 +131,23 @@ button {
 */
 
 /* A condensed dark grey background color style group for the header and footer elements */
-#populated-header-div, .populated-header-div-home-button, .populated-header-div-nav-button, #common-page-back-button, .fixed-index-table, #populated-footer-div, .page-footer-button {
+#common-populated-header, .common-populated-header-home-button, .common-populated-header-nav-button, #common-page-back-button, .cc-fixed-index, #common-populated-footer, .page-footer-button {
 	background-color: rgb(54,57,63);
 }
 
 /* A condensed dark grey border color style group for the header elements */
-.populated-header-div-home-button, .populated-header-div-nav-button, .page-list-entry-button, #common-page-back-button, .page-footer-button, .directory-page-dynamic-table-sort-button {
+.common-populated-header-home-button, .common-populated-header-nav-button, .page-list-entry-button, #common-page-back-button, .page-footer-button, .directory-page-dynamic-table-sort-button {
 	border-color: rgb(54,57,63);
 }
 
 
 /* A condensed off black color style group for dark text elements */
-body, #populated-title-table tr th, #populated-title-table th, #populated-title-table tr td, #populated-title-table td, #populated-title-table tr th, #populated-title-table th, #populated-title-table tr td, #populated-title-table td,.populated-details-table tr th, .populated-details-table th, .populated-details-table tr td, .populated-details-table td, .cc-build-selections-table tr th, .cc-build-selections-table tr td, .cc-build-selections-table td:nth-child(1) {
+body, #common-populated-title tr th, #common-populated-title th, #common-populated-title tr td, #common-populated-title td, #common-populated-title tr th, #common-populated-title th, #common-populated-title tr td, #common-populated-title td,.populated-details-table tr th, .populated-details-table th, .populated-details-table tr td, .populated-details-table td, .cc-build-selections-table tr th, .cc-build-selections-table tr td, .cc-build-selections-table td:nth-child(1) {
 	color: rgb(25,25,25);
 }
 
 /* A condensed off white color style group for light text elements or backgrounds */
-.populated-header-div-nav-button, #populated-header-div, button a, td, th {
+.common-populated-header-nav-button, #common-populated-header, button a, td, th {
 	color: rgb(219,219,224);
 }
 
@@ -167,7 +167,7 @@ body, #populated-title-table tr th, #populated-title-table th, #populated-title-
 */
 
 /* The header where site title and page title are displayed, and where sitewide navigation begins */
-#populated-header-div {
+#common-populated-header {
 	width: 100%;
 	margin: 0px;
 	padding: 0px;
@@ -176,7 +176,7 @@ body, #populated-title-table tr th, #populated-title-table th, #populated-title-
 }
 
 /* The background container div that all other HTML elements rest inside (or on top) of */
-#page-background-div, #fixed-background-div-caped-crusaders, #page-background-div-myrmidos-wiki, #page-background-div-game-journals, #page-background-div-eportfolio, #page-background-div-homepage {
+#page-background-div, #cc-fixed-background, #page-background-div-myrmidos-wiki, #page-background-div-game-journals, #page-background-div-eportfolio, #page-background-div-homepage {
 	overflow-x: hidden;
 	position: relative;
 	width: 100%;
@@ -189,7 +189,7 @@ body, #populated-title-table tr th, #populated-title-table th, #populated-title-
 	padding-bottom: 25vh;
 	background-attachment: fixed;
 }
-#fixed-background-div-caped-crusaders {
+#cc-fixed-background {
 	background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Taichung_sunset_skyline_2019.jpg/1200px-Taichung_sunset_skyline_2019.jpg?20200526005223");
 }
 #page-background-div-game-journals {
@@ -210,7 +210,7 @@ body, #populated-title-table tr th, #populated-title-table th, #populated-title-
 
 
 /* The div that holds the actual page content */
-.common-fixed-content-section-transparent {
+.common-common-fixed-content-transparent {
 	background-image: url("/resources/images/Transparent.png");
 	position: relative;
 	width: 100%;
@@ -220,7 +220,7 @@ body, #populated-title-table tr th, #populated-title-table th, #populated-title-
 }
 
 /* The off white chunk of the page that holds content */
-.fixed-content-section {
+.common-fixed-content {
 	height: auto;
 	width: 90vw;
 
@@ -237,11 +237,11 @@ body, #populated-title-table tr th, #populated-title-table th, #populated-title-
 }
 
 /* The off white chunk of the page that holds the entry page nav table in a fixed position, along with a placeholder for other html elements to float aroundand the table within */
-#page-navlist-section, #page-navlist-table {
+#common-populated-navlist, #common-populated-navlist-table {
 	width: auto;
 	min-width: 135px; 
 }
-#page-navlist-section {
+#common-populated-navlist {
 	position: fixed;
 	right: 0;
 	margin-right: -280px;
@@ -258,13 +258,13 @@ body, #populated-title-table tr th, #populated-title-table th, #populated-title-
 	border: 5px solid rgb(100,100,100);
 	background-color: rgb(200,200,200);
 }
-#page-navlist-table th {
+#common-populated-navlist-table th {
 	border-bottom: 1px dotted grey;
 	text-align: left;
 }
 
 /* The fixed button that hides and unhides the nav table */
-#page-navlist-button {
+#common-populated-navlist-button {
 	position: fixed;
 	right: 0;
 	margin-right: 0px;
@@ -290,7 +290,7 @@ body, #populated-title-table tr th, #populated-title-table th, #populated-title-
 */
 
 /* The actual footer element to be imported into other pages */
-#populated-footer-div {
+#common-populated-footer {
 	padding: 0px;
 	margin: 0px;
 	position: absolute;
@@ -342,14 +342,14 @@ body, #populated-title-table tr th, #populated-title-table th, #populated-title-
 */
 
 /* The topmost center button that takes us back to the homepage from anywhere on the site */
-.populated-header-div-home-button {
+.common-populated-header-home-button {
 	width: 600px;
 	max-width: 100%;
 	border-style: dotted;
 }
 
 /* The site navigation buttons that line the header */
-.populated-header-div-nav-button {
+.common-populated-header-nav-button {
 	width: 10vw;
 	min-width: 65px;
 	height: 50px;
@@ -357,7 +357,7 @@ body, #populated-title-table tr th, #populated-title-table th, #populated-title-
 }
 
 /* On hovering over the header buttons, set the border to a visible off white */
-.populated-header-div-home-button:hover, .populated-header-div-nav-button:hover {
+.common-populated-header-home-button:hover, .common-populated-header-nav-button:hover {
 	border-color: rgb(219,219,224);
 	border-radius: 10px;
 }
@@ -378,7 +378,7 @@ body, #populated-title-table tr th, #populated-title-table th, #populated-title-
 }
 
 /* A button to navigate the website file structure from the page content, signifying a directory page */
-.fixed-index-table-directory-button {
+.cc-fixed-index-directory-button {
 	width: 24vw;
 	min-width: 150px;
 	max-width: 80vw;
@@ -455,7 +455,7 @@ The plane buttons
 /* 
 The buttons used to navigate and organize the classes within caped crusaders 
 */
-.cc-class-button-tech, .cc-class-button-power, .cc-class-button-magic, .cc-class-button-generic {
+.cc-populated-index-button-tech, .cc-populated-index-button-power, .cc-populated-index-button-magic, .cc-populated-index-button-generic {
 	width: 200px;
 	height: auto;
 	margin: 5px;
@@ -467,28 +467,28 @@ The buttons used to navigate and organize the classes within caped crusaders
 	display: block;
 	position: relative;
 }
-.cc-class-button-generic {
+.cc-populated-index-button-generic {
 	height: 35px;
 }
-.cc-class-button-content-ceiling, .cc-class-button-content-floor {
+.cc-populated-index-button-content-ceiling, .cc-populated-index-button-content-floor {
 	background-color: rgb(175, 175, 175);
 	margin: 0px;
 	padding: 10px;
 	text-align: left;
 }
-.cc-class-button-content-ceiling {
+.cc-populated-index-button-content-ceiling {
 	min-height: 175px;
 }
-.cc-class-button-tech {
+.cc-populated-index-button-tech {
 	color: rgb(50, 50, 125);
 }
-.cc-class-button-power {
+.cc-populated-index-button-power {
 	color: rgb(125, 50, 50);
 }
-.cc-class-button-magic {
+.cc-populated-index-button-magic {
 	color: rgb(125, 125, 50);
 }
-.cc-class-button-generic {
+.cc-populated-index-button-generic {
 	color: rgb(25, 25, 25);
 }
 
@@ -501,7 +501,7 @@ The buttons used to navigate and organize the classes within caped crusaders
 */
 
 /* A text wrapped image to be inserted into the page description */
-.common-fixed-content-section-image-left {
+.common-common-fixed-content-image-left {
 	width: 200px;
 	float: left;
 	padding: 0px;
@@ -509,7 +509,7 @@ The buttons used to navigate and organize the classes within caped crusaders
 }
 
 /* A text wrapped image to be inserted into the page description */
-.common-fixed-content-section-image-right {
+.common-common-fixed-content-image-right {
 	width: 200px;
 	float: right;
 	padding: 0px;
@@ -545,7 +545,7 @@ The buttons used to navigate and organize the classes within caped crusaders
 */
 
 /* A table to hold the various navigation buttons present in the page regardless of button styling */
-.fixed-index-table {
+.cc-fixed-index {
 	float: right;
 	height: auto;
 	width: auto;
@@ -562,7 +562,7 @@ An overview table for caped crusaders entry pages
 .populated-details-table {
 	width: 75vw;
 }
-#populated-title-table, .populated-details-table {
+#common-populated-title, .populated-details-table {
 	width: 100%;
 	margin: 0;
 	margin-bottom: 15px;
@@ -570,26 +570,26 @@ An overview table for caped crusaders entry pages
 	border: 0px solid rgb(50,50,50);
 	border-collapse: collapse;
 }
-#populated-title-table thead tr td, .populated-details-table thead tr td{
+#common-populated-title thead tr td, .populated-details-table thead tr td{
 	border: 0px hidden aqua;
 	border-bottom: 1px solid rgb(50,50,50);
 	background: transparent;
 	background-color: transparent;
 }
-#populated-title-table thead tr td {
+#common-populated-title thead tr td {
 	width: 80vw;
 }
-#populated-title-table th, #populated-title-table td, .populated-details-table th, .populated-details-table td {
+#common-populated-title th, #common-populated-title td, .populated-details-table th, .populated-details-table td {
 	padding: 8px;
 	vertical-align: top;
 	border: 1px solid rgb(50,50,50);
 }
-#populated-title-table tr th, #populated-title-table th, .populated-details-table tr th, .populated-details-table th {
+#common-populated-title tr th, #common-populated-title th, .populated-details-table tr th, .populated-details-table th {
 	background-color: rgb(150,150,150);
 	font-size: medium;
 	text-align: left;
 }
-#populated-title-table tr td, #populated-title-table  td, .populated-details-table tr td, .populated-details-table td {
+#common-populated-title tr td, #common-populated-title  td, .populated-details-table tr td, .populated-details-table td {
 	background-color: rgb(200,200,200);
 	font-size: medium;
 	text-align: left;
@@ -690,7 +690,7 @@ A small table to hold the entry page image and author credit
 }
 
 /* An overview table used frequently throughout the site */
-#page-attributes-table {
+#cc-populated-attributes {
 	display: block;
 	float: right;
 	overflow: auto;
@@ -706,47 +706,47 @@ A small table to hold the entry page image and author credit
 	border-bottom-right-radius: 5px;
 	background-color: rgb(200, 200, 200);
 }
-#page-attributes-table tr:first-child th {
+#cc-populated-attributes tr:first-child th {
 	object-fit: cover;
 	overflow: hidden;
 }
-#page-attributes-table th, #page-attributes-table td {
+#cc-populated-attributes th, #cc-populated-attributes td {
 	width: 25vw;
 	max-width: auto;
 	padding: 10px;
 	vertical-align: top;
 }
-#page-attributes-table tr th {
+#cc-populated-attributes tr th {
 	background-color: rgb(200,200,200);
 	color: rgb(58,58,58);
 	font-size: small;
 }
-#page-attributes-table tr td {
+#cc-populated-attributes tr td {
 	background-color: rgb(225,225,225);
 	color: rgb(58,58,58);
 	font-size: small;
 	text-align: left;
 }
-#page-attributes-table tr:nth-child(2) th, #page-attributes-table tr:nth-child(1) th {
+#cc-populated-attributes tr:nth-child(2) th, #cc-populated-attributes tr:nth-child(1) th {
 	color: rgb(58,58,58);
 	padding: 2px;
 	border-top: 0px;
 	font-size: smaller;
 	text-align: center;
 }
-#page-attributes-table tr:nth-child(2) th {
+#cc-populated-attributes tr:nth-child(2) th {
 	border-top: 2px solid rgb(175,175,175);
 }
-#page-attributes-table tr:nth-child(3) th, #page-attributes-table tr:nth-child(4) th {
+#cc-populated-attributes tr:nth-child(3) th, #cc-populated-attributes tr:nth-child(4) th {
 	background-color: rgb(100,100,100);
 	color: rgb(25,25,25);
 	font-size: large;
 }
-#page-attributes-table tr:nth-child(4) th {
+#cc-populated-attributes tr:nth-child(4) th {
 	padding-top: 0px;
 	font-size: small;
 }
-#page-attributes-table-image {
+#cc-populated-attributes-image {
 	width: 110%;
 	height: auto; 
 	display: block;
@@ -778,27 +778,27 @@ A small table to hold the entry page image and author credit
 /* 
 The dynamic table  
 */
-#dynamic-index-table {
+#cc-dynamic-index {
 	border-collapse: collapse; 
 	width: 100%; 
 	border: 1px solid rgb(97, 97, 97); 
 	overflow: scroll;
 	display: inline-block;
 }
-#dynamic-index-table th, #dynamic-index-table tr td {
+#cc-dynamic-index th, #cc-dynamic-index tr td {
 	text-align: left;
 	padding: 5px; 
 	min-width: 175px;
 	color: black;
 	border: 1px solid black;
 }
-#dynamic-index-table th {
+#cc-dynamic-index th {
 	background-color: rgb(150,150,150);
 }
-#dynamic-index-table tr {
+#cc-dynamic-index tr {
 	border-bottom: 1px solid rgb(61, 61, 61);
 }
-#dynamic-index-table tr {
+#cc-dynamic-index tr {
 	background-color: rgb(200,200,200);
 }
 
@@ -814,29 +814,29 @@ The dynamic table
 	font-weight: bold;
 }
 
-.fixed-content-hr {
+.common-fixed-content-anchor {
 	width: 100%;
 	visibility: hidden;
 }
 
 /* Colored stylings for development */
 
-/* #populated-header-div {
+/* #common-populated-header {
 	background-color: red;
 }
-.fixed-content-section {
+.common-fixed-content {
 	background-color: orange;
 }
-#populated-title-table, #populated-title-table {
+#common-populated-title, #common-populated-title {
 	background-color: yellow;
 }
-.fixed-index-table {
+.cc-fixed-index {
 	background-color: green;
 }
-#blended-description-div {
+#common-fixed-description {
 	background-color: blue;
 }
-#populated-footer-div {
+#common-populated-footer {
 	background-color: purple;
 } */
 

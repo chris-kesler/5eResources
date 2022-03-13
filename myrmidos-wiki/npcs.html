@@ -64,7 +64,7 @@
               + "<td>" + location + "</td>" 
               + "<td>" + faction + "</td>" 
               + "</tr>"
-            $(table_row).appendTo("#dynamic-index-table tbody");
+            $(table_row).appendTo("#cc-dynamic-index tbody");
           });
         });
       });
@@ -75,20 +75,20 @@
   <body>
     <div id="page-background-div-myrmidos-wiki"> 
       <div class="common-page-header">
-        <div id="populated-header-div"></div>
+        <div id="common-populated-header"></div>
 
           <h1>Myrmidos:  NPCs</h1>
           <hr>
       </div>
         
       
-      <div class="common-fixed-content-section-transparent">
+      <div class="common-common-fixed-content-transparent">
           
 
 
 
 
-            <section class="fixed-content-section">
+            <section class="common-fixed-content">
               <button id="common-page-back-button" onclick="location.href='../myrmidos-wiki.html'">Out to Myrmidos Wiki</button>
               <h3>Include Filters</h3>
               <hr>
@@ -126,7 +126,7 @@
               <input type="text" id="directory-page-dynamic-table-query-inputExclude12" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by . . .">
               <input type="text" id="directory-page-dynamic-table-query-inputExclude13" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by . . ."> -->
                             
-              <table id="dynamic-index-table">
+              <table id="cc-dynamic-index">
                 <thead class="header">
                   <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(0)">Name</button></th>
                   <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(1)">Alias</button></th>
@@ -153,7 +153,7 @@
 
       </div>
 
-      <div id="populated-footer-div"></div>
+      <div id="common-populated-footer"></div>
     </div>
   </body>
 </html>
@@ -161,8 +161,8 @@
 <script type="text/javascript">
   $(function () {
 
-    $("#populated-header-div").load("/resources/pages/populated-header-div.html");
-    $("#populated-footer-div").load("/resources/pages/populated-footer-div.html");
+    $("#common-populated-header").load("/resources/pages/common-populated-header.html");
+    $("#common-populated-footer").load("/resources/pages/common-populated-footer.html");
 
 });
 </script>
@@ -244,7 +244,7 @@
     // filterExcludeTwelve = inputExcludeTwelve.value.toUpperCase();
     // filterExcludeThirteen = inputExcludeThirteen.value.toUpperCase();
 
-    table = document.getElementById("dynamic-index-table");
+    table = document.getElementById("cc-dynamic-index");
     tr = table.getElementsByTagName("tr");
   
     // Loop through all table rows, and hide those who don't match the search query
@@ -358,7 +358,7 @@
 
     // Defining variables to be used
     var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-    table = document.getElementById("dynamic-index-table");
+    table = document.getElementById("cc-dynamic-index");
     switching = true;
 
     // Set the sorting direction to ascending:

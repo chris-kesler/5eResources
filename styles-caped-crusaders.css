@@ -20,7 +20,7 @@
 	}
 
 
-	.cc-class-button-tech, .cc-class-button-power, .cc-class-button-magic, .cc-class-button-generic {
+	.cc-populated-index-button-tech, .cc-populated-index-button-power, .cc-populated-index-button-magic, .cc-populated-index-button-generic {
 		width: 250px;
 		height: 300px;
 		margin: 5px;
@@ -30,37 +30,37 @@
 		font-size: medium;
 		position: relative;
 	}
-	.cc-class-button-generic {
+	.cc-populated-index-button-generic {
 		height: 35px;
 	}
-	.cc-class-button-content-ceiling, .cc-class-button-content-floor {
+	.cc-populated-index-button-content-ceiling, .cc-populated-index-button-content-floor {
 		background-color: rgb(175, 175, 175);
 		margin: 0px;
 		padding: 10px;
 		text-align: left;
 	}
-	.cc-class-button-content-ceiling {
+	.cc-populated-index-button-content-ceiling {
 		height: 175px;
 	}
-	.cc-class-button-content-floor {
+	.cc-populated-index-button-content-floor {
 		bottom: 0;
 	}
-	.cc-class-button-tech {
+	.cc-populated-index-button-tech {
 		color: rgb(50, 50, 125);
 		border: 5px solid rgb(50, 50, 125);
 
 	}
-	.cc-class-button-power {
+	.cc-populated-index-button-power {
 		color: rgb(125, 50, 50);
 		border: 5px solid rgb(125, 50, 50);
 
 	}
-	.cc-class-button-magic {
+	.cc-populated-index-button-magic {
 		color: rgb(125, 125, 50);
 		border: 5px solid rgb(125, 125, 50);
 
 	}
-	.cc-class-button-generic {
+	.cc-populated-index-button-generic {
 		color: rgb(25, 25, 25);
 		border: 2px solid pink;
 
@@ -72,7 +72,7 @@
 ||==========================================================================================
  */
 
-	#populated-title-table, .populated-details-table {
+	#common-populated-title, .populated-details-table {
 		display: inline-block;
 		margin: 0;
 		border-collapse: collapse;
@@ -80,7 +80,7 @@
 		max-width: 88vw;
 		border: 0px solid rgb(50,50,50);
 	}
-	#populated-title-table thead tr td, .populated-details-table thead tr td{
+	#common-populated-title thead tr td, .populated-details-table thead tr td{
 		background-color: transparent;
 		width: 88vw;
 		border-color: transparent;
@@ -92,17 +92,17 @@
 	.populated-details-table tr th, .populated-details-table th, .populated-details-table tr td, .populated-details-table td {
 		color: rgb(25,25,25);
 	}
-	#populated-title-table th, #populated-title-table td, .populated-details-table th, .populated-details-table td {
+	#common-populated-title th, #common-populated-title td, .populated-details-table th, .populated-details-table td {
 		padding: 8px;
 		vertical-align: top;
 		border: 1px solid rgb(50,50,50);
 	}
-	#populated-title-table tr th, #populated-title-table th, .populated-details-table tr th, .populated-details-table th {
+	#common-populated-title tr th, #common-populated-title th, .populated-details-table tr th, .populated-details-table th {
 		background-color: rgb(150,150,150);
 		font-size: medium;
 		text-align: left;
 	}
-	#populated-title-table tr td, #populated-title-table  td, .populated-details-table tr td, .populated-details-table td {
+	#common-populated-title tr td, #common-populated-title  td, .populated-details-table tr td, .populated-details-table td {
 		background-color: rgb(200,200,200);
 		font-size: medium;
 		text-align: left;
@@ -186,7 +186,7 @@
 ||==========================================================================================
  */
 	/* A table to hold the various navigation buttons present in the page regardless of button styling */
-	.fixed-index-table, .populated-index-table {
+	.cc-fixed-index, .cc-populated-index {
 		background-color: rgb(50, 50, 50);
 		float: right;
 		height: auto;
@@ -198,7 +198,7 @@
 		margin-left: 1%;
 	}
 	/* A button to navigate the website file structure from the page content, signifying a directory page */
-	.fixed-index-table-directory-button {
+	.cc-fixed-index-directory-button {
 		width: 24vw;
 		min-width: 150px;
 		max-width: 80vw;
@@ -222,7 +222,7 @@
  */
 
 	/* An overview table used frequently throughout the site */
-#page-attributes-table {
+#cc-populated-attributes {
 	display: block;
 	float: right;
 	overflow: auto;
@@ -239,47 +239,47 @@
 	border-bottom-right-radius: 5px;
 	background-color: rgb(200, 200, 200);
 }
-#page-attributes-table tr:first-child th {
+#cc-populated-attributes tr:first-child th {
 	object-fit: cover;
 	overflow: hidden;
 }
-#page-attributes-table th, #page-attributes-table td {
+#cc-populated-attributes th, #cc-populated-attributes td {
 	width: 100vw;
 	max-width: auto;
 	padding: 10px;
 	vertical-align: top;
 }
-#page-attributes-table tr th {
+#cc-populated-attributes tr th {
 	background-color: rgb(200,200,200);
 	color: rgb(58,58,58);
 	font-size: small;
 }
-#page-attributes-table tr td {
+#cc-populated-attributes tr td {
 	background-color: rgb(225,225,225);
 	color: rgb(58,58,58);
 	font-size: small;
 	text-align: left;
 }
-#page-attributes-table tr:nth-child(2) th, #page-attributes-table tr:nth-child(1) th {
+#cc-populated-attributes tr:nth-child(2) th, #cc-populated-attributes tr:nth-child(1) th {
 	color: rgb(58,58,58);
 	padding: 2px;
 	border-top: 0px;
 	font-size: smaller;
 	text-align: center;
 }
-#page-attributes-table tr:nth-child(2) th {
+#cc-populated-attributes tr:nth-child(2) th {
 	border-top: 2px solid rgb(175,175,175);
 }
-#page-attributes-table tr:nth-child(3) th, #page-attributes-table tr:nth-child(4) th {
+#cc-populated-attributes tr:nth-child(3) th, #cc-populated-attributes tr:nth-child(4) th {
 	background-color: rgb(100,100,100);
 	color: rgb(25,25,25);
 	font-size: large;
 }
-#page-attributes-table tr:nth-child(4) th {
+#cc-populated-attributes tr:nth-child(4) th {
 	padding-top: 0px;
 	font-size: small;
 }
-#page-attributes-table-image {
+#cc-populated-attributes-image {
 	width: 110%;
 	height: auto; 
 	display: block;
@@ -295,27 +295,27 @@
 ||==========================================================================================
  */
 
-/* #populated-header-div {
+/* #common-populated-header {
 	background-color: red;
 }
-.fixed-content-section {
+.common-fixed-content {
 	background-color: orange;
 }
-#populated-title-table {
+#common-populated-title {
 	background-color: yellow;
 }
-.fixed-index-table {
+.cc-fixed-index {
 	background-color: green;
 }
-	#page-attributes-table {
+	#cc-populated-attributes {
 		background-color: seagreen;
 	}
-#blended-description-div {
+#common-fixed-description {
 	background-color: blue;
 }
 	.populated-details-table {
 		background-color: cyan;
 	}
-#populated-footer-div {
+#common-populated-footer {
 	background-color: purple;
 } */
