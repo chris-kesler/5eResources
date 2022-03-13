@@ -32,7 +32,7 @@ const getResults = (id) => {
 								<a href='5e-srd-spells/entry-page.html?name=${result.index}' target='_blank'>${result.name}</a>
 							</td>
 							<td>
-								Level: ${result.level}
+								${result.level}
 							</td>
 							<td>
 								<img class='directory-page-dynamic-table-entry-image' src=/resources/images/${result.school}.png><br>
@@ -115,7 +115,7 @@ const getResults = (id) => {
 							</td>
 						</tr>
 						`
-						$(table_row).appendTo("#directory-page-dynamic-table-content tbody");
+						$(table_row).appendTo("#cc-dynamic-index tbody");
 					});
 			});
 		});
@@ -123,8 +123,8 @@ const getResults = (id) => {
 
 function CallApiSearchEngine() {
 	var query = document.getElementById('5e-srd-api-searchbox').value;
-	// document.getElementById('page-description-div').innerHTML = query;
-	$('#directory-page-dynamic-table-content tr').remove();
+	// document.getElementById('common-fixed-description').innerHTML = query;
+	$('#cc-dynamic-index tr').remove();
 	getResults(`/api/spells/?name=${query}`);
 }
 

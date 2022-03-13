@@ -33,7 +33,7 @@
 // 
 // The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
 // =========================================================================================
-        $("#import-header").load("/resources/pages/import-header.html");
+        $("#common-populated-header").load("/resources/pages/common-populated-header.html");
 
 
 // =========================================================================================
@@ -41,7 +41,7 @@
 // 
 // The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
 // =========================================================================================
-        $("#import-footer").load("/resources/pages/import-footer.html");
+        $("#common-populated-footer").load("/resources/pages/common-populated-footer.html");
       });
     </script>
   </head>  
@@ -52,23 +52,23 @@
     <div id="page-background-div-homepage">
       <!-- 
         A div for the page HEADER -->
-      <div id="import-header"></div>
+      <div id="common-populated-header"></div>
       <!-- 
         A section for the page CONTENT -->
-      <section class="page-content-section">
+      <section class="common-fixed-content">
         <!-- 
           A table for the page TITLE -->
-        <table id="page-title-table"><thead><tr><td colspan="6"><h2 id="page-title-path">Error 404!  That page can't be found!</h2></td></tr></thead><tbody></tbody></table>   
+        <table id="common-populated-title"><thead><tr><td colspan="6"><h2 id="common-populated-title-thead">Error 404!  That page can't be found!</h2></td></tr></thead><tbody></tbody></table>   
         <!-- 
           A table for the PAGE LIST -->
-        <table class="page-list-table">
+        <table class="cc-fixed-index">
           <tr><td>
-            <button class="page-list-directory-button" onclick="history.back()">Back to Previous Page</button>
+            <button class="cc-fixed-index-directory-button" onclick="history.back()">Back to Previous Page</button>
           </td></tr>
         </table>
         <!-- 
           A div for the page DESCRIPTION -->
-        <div id="page-description-div">
+        <div id="common-fixed-description">
 
           <p><b>
             Looks like the page you are after is still under development, or might not exist at all.  
@@ -80,10 +80,11 @@
             If you can't be bothered to wait around for me to finish the site alone and would like to contribute to this site in some way, feel free to reach out on GitHub or Discord.  
           </p>
         </div>
-      </section>
+				<hr class="common-fixed-content-anchor">
+			</section>
       <!-- 
         A div for the page FOOTER -->
-      <footer id="import-footer"></footer>
+      <div id="common-populated-footer"></div>
     </div>
   </body>
 </script>

@@ -33,7 +33,7 @@
 // 
 // The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
 // =========================================================================================
-        $("#import-header").load("/resources/pages/import-header.html");
+        $("#common-populated-header").load("/resources/pages/common-populated-header.html");
 
 
 // =========================================================================================
@@ -71,19 +71,19 @@
 
         var titleCompleted = false;
         if (page_subsite != undefined) {
-          document.getElementById("page-title-path").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+          document.getElementById("common-populated-title-thead").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
         } else {
-          document.getElementById("page-title-path").innerHTML = titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
+          document.getElementById("common-populated-title-thead").innerHTML = titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
           titleCompleted = true;
         }
         if (page_directory != undefined && !titleCompleted) {
-          document.getElementById("page-title-path").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+          document.getElementById("common-populated-title-thead").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
         }
         if (page_category != undefined && !titleCompleted) {
-          document.getElementById("page-title-path").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + "/" + page_category + ".html'>" + titleCase(page_category.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+          document.getElementById("common-populated-title-thead").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + "/" + page_category + ".html'>" + titleCase(page_category.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
         }
         if (page_title != undefined && !titleCompleted) {
-          document.getElementById("page-title-path").innerHTML += " > " + titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
+          document.getElementById("common-populated-title-thead").innerHTML += " > " + titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
           titleCompleted = true;
         }
 
@@ -93,7 +93,7 @@
 // 
 // The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
 // =========================================================================================
-        $("#import-footer").load("/resources/pages/import-footer.html");
+        $("#common-populated-footer").load("/resources/pages/common-populated-footer.html");
         $(".magic-schools-buttons").load("/resources/pages/magic-schools-buttons.html");
       });
     </script>
@@ -106,28 +106,29 @@
     <div id="page-background-div-myrmidos-wiki">
       <!-- 
         A div for the page HEADER -->
-      <div id="import-header"></div>
+      <div id="common-populated-header"></div>
       <!-- 
         A section for the page CONTENT -->
-      <section class="page-content-section">
+      <section class="common-fixed-content">
         <!-- 
           A table for the page TITLE -->
-        <table id="page-title-table"><thead><tr><td colspan="6"><h2 id="page-title-path"></h2></td></tr></thead><tbody></tbody></table>   
+        <table id="common-populated-title"><thead><tr><td colspan="6"><h2 id="common-populated-title-thead"></h2></td></tr></thead><tbody></tbody></table>   
         <!-- 
           A div for the PAGES -->
           <div class="magic-schools-buttons" style="float: right;"></div>
 
         <!-- 
           A div for the page DESCRIPTION -->
-        <div id="page-description-div">
+        <div id="common-fixed-description">
           <p>
             The Schools of Magic categorize the various magical effects thta can be produced through spellcasting based on the plane of origin for the effect, which also happens to nicely categorize the spells based on the type of effect produced.  Abjuration spells come from the Plane of Water fro example, and almost exclusively negate or ward against phenomena, magical or otherwise.  
           </p>
         </div>
-      </section>
+				<hr class="common-fixed-content-anchor">
+			</section>
       <!-- 
         A div for the page FOOTER -->
-      <footer id="import-footer"></footer>
+      <div id="common-populated-footer"></div>
     </div>
   </body>
 </html>

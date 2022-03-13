@@ -115,7 +115,7 @@ const getResults = (id) => {
 							</td>
 						</tr>
 						`
-						$(table_row).appendTo("#directory-page-dynamic-table-content tbody");
+						$(table_row).appendTo("#cc-dynamic-index tbody");
 
 
 						// tableRow = `
@@ -136,7 +136,7 @@ const getResults = (id) => {
 						// 	Components
 						// 	</th>
 						// </tr>`
-						// $(tableRow).appendTo("#directory-page-dynamic-table-content tbody");
+						// $(tableRow).appendTo("#cc-dynamic-index tbody");
 
 						// tableRow = `
 						// <tr>
@@ -156,7 +156,7 @@ const getResults = (id) => {
 						// 	${result.components}
 						// 	</td>
 						// </tr>`
-						// $(tableRow).appendTo("#directory-page-dynamic-table-content tbody");
+						// $(tableRow).appendTo("#cc-dynamic-index tbody");
 
 						// tableRow = `
 						// <tr>
@@ -176,7 +176,7 @@ const getResults = (id) => {
 						// 	Damage/Effect
 						// 	</th>
 						// </tr>`
-						// $(tableRow).appendTo("#directory-page-dynamic-table-content tbody");
+						// $(tableRow).appendTo("#cc-dynamic-index tbody");
 
 						// if(result.damage_effect != undefined) {
 						// 	tableRow = `
@@ -197,7 +197,7 @@ const getResults = (id) => {
 						// 		${result.damage_effect.damage_type.name}
 						// 	</td>
 						// 	</tr><tr><td><td></tr>`
-						// 	$(tableRow).appendTo("#directory-page-dynamic-table-content tbody");
+						// 	$(tableRow).appendTo("#cc-dynamic-index tbody");
 						// } else {
 						// 	tableRow = `
 						// 	<tr>
@@ -217,7 +217,7 @@ const getResults = (id) => {
 						// 		undefined
 						// 	</td>
 						// 	</tr><tr class='empty-row'><td><td></tr>`
-						// 	$(tableRow).appendTo("#directory-page-dynamic-table-content tbody");
+						// 	$(tableRow).appendTo("#cc-dynamic-index tbody");
 						// }
 					});
 			});
@@ -226,8 +226,8 @@ const getResults = (id) => {
 
 function CallApiSearchEngine() {
 	var query = document.getElementById('5e-srd-api-searchbox').value;
-	// document.getElementById('page-description-div').innerHTML = query;
-	$('#directory-page-dynamic-table-content tr').remove();
+	// document.getElementById('common-fixed-description').innerHTML = query;
+	$('#cc-dynamic-index tr').remove();
 	getResults(`/api/spells/?name=${query}`);
 }
 

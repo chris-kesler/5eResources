@@ -1,187 +1,61 @@
+<!--
+|| =========================================================================================
+|| This is a POPULATED ENTRY page, which contains the following elements:
+||
+|| FIXED BACKGROUND - Standard across the subsite
+|| POPULATED HEADER - Standard across the site
+|| FIXED CONTENT - Standard across the site
+|| POPULATED TITLE - Standard across the subsite
+|| POPULATED Misc - Unique to this page
+|| POPULATED DESCRIPTION - Standard across the subsite
+|| POPULATED FOOTER - Standard across the site
+|| ========================================================================================= 
+-->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-US-Compatible" content="e-edge">
 		<title>KnowOne's Website of Everything</title>
 		<link rel="icon" href="/resources/images/OwlOfMinerva_ModifiedLogo.png">
-		<link rel="stylesheet" href="/caped-crusaders-style.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<link rel="stylesheet" href="/styles-common.css">
+		<link rel="stylesheet" href="/caped-crusaders/styles-caped-crusaders.css">
 
+		<!-- Importing jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		
 		<!-- Importing local Javascript functions -->
 		<script type="text/javascript" src="/resources/scripts/function-titleCase.js"></script>
 		<script type="text/javascript" src="/resources/scripts/function-hideShowNavList.js"></script>
 		<script type="text/javascript" src="/resources/scripts/function-readArgs.js"></script>
 
-		<!-- Populating the page Header and Footer -->
+		<!-- Populating the Header and Footer elements -->
 		<script type="text/javascript" src="/resources/scripts/load-header-footer.js"></script>
 
-		<!-- Populating the Title directories and name based on file name and file path -->
+		<!-- Populating the Title element based on file name and file path -->
 		<script type="text/javascript" src="/resources/scripts/load-title-directories.js"></script>
 		<script type="text/javascript" src="/resources/scripts/load-title-name.js"></script>
-		
-		<script>
 
-			$(function processUser() {
-					var parameters = location.search.substring(1).split("&");
-
-					var temp = parameters[0].split("=");
-					page_args = unescape(temp[1]);
-					// document.getElementById("page-title-path").innerHTML = page_args;
-				});
-
-				$(function populatePageData() {
-
-
-				// Reading data from our JSON file
-				$.getJSON(`/caped-crusaders/classes.json`, function(data) {
-
-					// Looping through the JSON data 
-					$.each(data.entries, function(i, f) {
-						if (f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") == page_args) {
-
-							document.getElementById("class-page-image").src = "/resources/images/" + f.name_str + ".png";
-							document.getElementById("class-page-image").alt = f.class_img_credit;
-							document.getElementById("page-image-credit").innerHTML = f.class_img_credit;
-							document.getElementById("class-page-description-div").innerHTML = f.description_long_str;
-							document.getElementById("class-features-intro").innerHTML = "As a "  + f.name_str + ", you gain the following Class Features.";
-							document.getElementById("hit-dice").innerHTML = "<b>Hit Dice:</b>  1d" + f.hit_die_int + " per " + f.name_str + " level";
-							document.getElementById("hit-points-at-1st-level").innerHTML = "<b>Hit Points at 1st level:</b>  " + f.hit_die_int + " your Constitution modifier";
-							document.getElementById("hit-points-at-higher-levels").innerHTML = "<b>Hit Points at higher levels:</b>  1d" + f.hit_die_int + " (or " + f.hit_die_average_int + ") + your Constitution modifier per " + f.name_str + " level after 1st";
-
-							document.getElementById("proficiencies-armor").innerHTML = "<b>Armor:</b>  " + f.proficiencies_armor;
-							document.getElementById("proficiencies-weapons").innerHTML = "<b>Weapons:</b>  " + f.proficiencies_weapons;
-							document.getElementById("proficiencies-tools").innerHTML = "<b>Tools:</b>  " + f.proficiencies_tools;
-							document.getElementById("proficiencies-saving-throws").innerHTML = "<b>Saving Throws:</b>  " + f.proficiencies_saves;
-							document.getElementById("proficiencies-skills").innerHTML = "<b>Skills:</b>  " + f.proficiencies_skills;
-
-							document.getElementById("equipment-armor").innerHTML = "<b>Armor:</b>  " + f.equipment_armor;
-							document.getElementById("equipment-weapons").innerHTML = "<b>Weapons:</b>  " + f.equipment_weapons;
-							document.getElementById("equipment-tools").innerHTML = "<b>Tools:</b>  " + f.equipment_tools;
-							document.getElementById("equipment-packs").innerHTML = "<b>Packs:</b>  " + f.equipment_packs;
-							document.getElementById("starting-wealth").innerHTML = "<td>" + f.name_str + "</td><td>" + f.equipment_variant + "</td>";
-							document.getElementById("page-title-table-title").innerHTML = "The " + f.name_str + " Table";
-							var prof = 2;
-							let j = 0;
-							for (let i = 0; i < 20; i++) {
-								var links = "---";
-								for (let k = 0; k < f.class_feats.length; k++) {
-									if (f.class_feats[k].level == (i+1)) {
-										if (links.includes("href")) {
-											links += ", <a href='#" + f.class_feats[k].name_str.replace(/\s+/g, '') + "'>" 
-											+ f.class_feats[k].name_str + "</a>";  
-										} else {
-											links = "<a href='#" + f.class_feats[k].name_str.replace(/\s+/g, '') + "'>" 
-											+ f.class_feats[k].name_str + "</a>";
-										}
-									} 
-								}
-								if ( (i+2)/f.sustainables_known_denominator < 0.35 ) {
-									var sustainables = "---";
-								} else {
-									var sustainables = Math.ceil((i+2)/f.sustainables_known_denominator);
-								}
-								if ( (i+1)/f.consumables_max_per_level_denominator < 0.3 ) {
-									var consumables_known = "---";
-									var consumables_points = "---";
-									var consumables_max = "---";
-								} else {
-									var consumables_known = Math.ceil((i+1)*f.consumables_known_per_level);
-									var consumables_points = Math.ceil((i+1)*f.consumables_points_per_level);
-									var consumables_max = Math.min(Math.ceil((i+1)/f.consumables_max_per_level_denominator), 9)
-								}
-								var table_row = "<tr>" + "<td>" + (i+1) + "</td>" + "<td>" + prof + "</td>" + "<td>" + links + "</td>" + "<td>" + sustainables + "</td>" + "<td>" + consumables_known + "</td>" + "<td>" + consumables_points + "</td>" + "<td>" + consumables_max + "</td>" + "</tr>"
-								j = j + 2;
-								$(table_row).appendTo("#level-table tbody");
-								if ((i+1) == 4 || (i+1) == 8 || (i+1) == 12 || (i+1) == 16) {
-									prof++;
-								}
-							}
-							for (let i = 0; i < f.class_feats.length; i++) {
-								if (document.getElementById("page-title-table-features").innerHTML.indexOf(f.class_feats[i].name_str) > 0) {} 
-								else {
-									document.getElementById("page-title-table-features").innerHTML += "<hr><h3 id='" 
-									+ f.class_feats[i].name_str.replace(/\s+/g, '') + "'>" 
-									+ f.class_feats[i].name_str + "</h3><h4><i><b><a href='#level-table'>" + f.name_str 
-									+ "</a>:</b>  level " + f.class_feats[i].level + "</i></h4><p>" 
-									+ f.class_feats[i].mechanics_str + "</p>";
-								}
-							}
-							// Subclasses
-							document.getElementById("subclass-tech-name").innerHTML = "Subclass:  The " + f.subclass_tech_name;
-							document.getElementById("subclass-tech-image").src = "/resources/images/" + f.name_str + "-" + f.subclass_tech_name + ".png";
-							document.getElementById("subclass-tech-image").alt = f.subclass_tech_img_credit;
-							document.getElementById("subclass-tech-image-credit").innerHTML = f.subclass_tech_img_credit;
-							document.getElementById("subclass-tech-description").innerHTML = f.subclass_tech_description;
-							for (let i = 0; i < f.subclass_tech_feats.length; i++) {
-								if (document.getElementById("subclass-tech-feats").innerHTML.indexOf(f.subclass_tech_feats[i].name_str) > 0) {} 
-								else {
-									document.getElementById("subclass-tech-feats").innerHTML += "<hr><h3 id='" 
-									+ f.subclass_tech_feats[i].name_str.replace(/\s+/g, '') + "'>" 
-									+ f.subclass_tech_feats[i].name_str + "</h3><h4><i><b><a href='#subclass-tech-name'>" + f.subclass_tech_name 
-									+ "</a>:</b>  level " + f.subclass_tech_feats[i].level + "</i></h4><p>" 
-									+ f.subclass_tech_feats[i].mechanics_str + "</p>";
-								}
-							}
-							document.getElementById("subclass-power-name").innerHTML = "Subclass:  The " + f.subclass_power_name;
-							document.getElementById("subclass-power-image").src = "/resources/images/" + f.name_str + "-" + f.subclass_power_name + ".png";
-							document.getElementById("subclass-power-image").alt = f.subclass_power_img_credit;
-							document.getElementById("subclass-power-image-credit").innerHTML = f.subclass_power_img_credit;
-							document.getElementById("subclass-power-description").innerHTML = f.subclass_power_description;
-							for (let i = 0; i < f.subclass_power_feats.length; i++) {
-								if (document.getElementById("subclass-power-feats").innerHTML.indexOf(f.subclass_power_feats[i].name_str) > 0) {} 
-								else {
-									document.getElementById("subclass-power-feats").innerHTML += "<hr><h3 id='" 
-									+ f.subclass_power_feats[i].name_str.replace(/\s+/g, '') + "'>" 
-									+ f.subclass_power_feats[i].name_str + "</h3><h4><i><b><a href='#subclass-power-name'>" + f.subclass_power_name 
-									+ "</a>:</b>  level " + f.subclass_power_feats[i].level + "</i></h4><p>" 
-									+ f.subclass_power_feats[i].mechanics_str + "</p>";
-								}
-							}
-							document.getElementById("subclass-magic-name").innerHTML = "Subclass:  The " + f.subclass_magic_name;
-							document.getElementById("subclass-magic-image").src = "/resources/images/" + f.name_str + "-" + f.subclass_magic_name + ".png";
-							document.getElementById("subclass-magic-image").alt = f.subclass_magic_img_credit;
-							document.getElementById("subclass-magic-image-credit").innerHTML = f.subclass_magic_img_credit;
-							document.getElementById("subclass-magic-description").innerHTML = f.subclass_magic_description;
-							for (let i = 0; i < f.subclass_magic_feats.length; i++) {
-								if (document.getElementById("subclass-magic-feats").innerHTML.indexOf(f.subclass_magic_feats[i].name_str) > 0) {} 
-								else {
-									document.getElementById("subclass-magic-feats").innerHTML += "<hr><h3 id='" 
-									+ f.subclass_magic_feats[i].name_str.replace(/\s+/g, '') + "'>" 
-									+ f.subclass_magic_feats[i].name_str + "</h3><h4><i><b><a href='#subclass-magic-name'>" + f.subclass_magic_name 
-									+ "</a>:</b>  level " + f.subclass_magic_feats[i].level + "</i></h4><p>" 
-									+ f.subclass_magic_feats[i].mechanics_str + "</p>";
-								}
-							}
-						}
-					});
-				});
-			});
-
-		</script>
+		<!-- Populating all page data -->
+		<script type="text/javascript" src="/resources/scripts/populate-class-entry-page.js"></script>
 	</head>
-
-
 	<body>
-		<!-- 
-			A div for the page BACKGROUND -->
-		<div id="page-background-div-caped-crusaders">
-			<!-- 
-				A div for the page HEADER -->
-			<div id="import-header"></div>
-			<!-- 
-				A section for the page CONTENT -->
-			<section class="page-content-section">
-				<!-- 
-					A table for the page TITLE -->
-				<table id="page-title-table"><thead><tr><td colspan="6"><h2 id="page-title-path"></h2></td></tr></thead><tbody></tbody></table>   
+		
+		<!-- FIXED BACKGROUND -->
+		<div id="cc-fixed-background">
 
-				<table id="entry-page-image-table">
+			<!-- POPULATED HEADER -->
+			<div id="common-populated-header"></div>
+
+			<!-- FIXED CONTENT -->
+			<section class="common-fixed-content">
+
+				<!-- POPULATED TITLE -->
+				<table id="common-populated-title"><thead><tr><td colspan="6"><h2 id="common-populated-title-thead"></h2></td></tr></thead><tbody></tbody></table>   
+
+				<table id="populated-attributes-table">
 					<tr><td><img id="class-page-image" class="cc-class-image-large" alt="Class Image"></td></tr>
 					<tr><td><h4 id="page-image-credit">Image Credit</h4></td></tr>
 				</table>
-				<p id="class-page-description-div"></p>
+				<p id="class-common-fixed-description"></p>
 				
 				<hr>
 				<h3>Class Features</h3>
@@ -211,9 +85,14 @@
 					<li id="equipment-packs"></li>
 				</ul>
 				<hr>
-				<h3>Variant Equipment: Starting Wealth</h3>
-				<table class="level-table" style="float: right;">
+				<table class="populated-details-table">
 					<thead>
+						<tr>
+							<td colspan="2" style="width: 100%;">
+								<h3>Variant Equipment: Starting Wealth</h3>
+							</td>
+						</tr>
+
 						<tr>
 							<th>Class</th>
 							<th>Wealth</th>
@@ -223,16 +102,19 @@
 						<tr id="starting-wealth"></tr>
 					</tbody>
 				</table>
-				<div style="min-height: 75px;">
-					<p>
-						Rather than acquiring the equipment granted by your class and background, you can elect to purchase your starting gear.  If you do so, you receive no equipment from your class and background, and instead roll for your starting wealth using the criteria to the right:  
-					</p>
-				</div>
-												
+				<p>
+					Rather than acquiring the equipment granted by your class and background, you can elect to purchase your starting gear.  If you do so, you receive no equipment from your class and background, and instead roll for your starting wealth using the criteria to the right:  
+				</p>
 				<hr>
-				<h3 id="page-title-table-title"></h3>
-				<table id="level-table" class="level-table">
+				<table id="populated-details-table" class="populated-details-table">
 					<thead>
+						<tr>
+							<td colspan="7" style="width: 100%;">
+								<h3 id="common-populated-title-title"></h3>
+							</td>
+						</tr>
+
+
 						<th style="width: 5vw">Level</th>
 						<th style="width: 10vw">Proficiency Bonus</th>
 						<th style="width: 30vw">Features</th>
@@ -244,43 +126,47 @@
 					<tbody></tbody>
 				</table>
 
-				<div id="page-title-table-features">
+				<div id="common-populated-title-features">
 					<body></body>
 				</div>
+				<hr class="common-fixed-content-anchor">
 			</section>
 			
-			<section class="page-content-section">
+			<section class="common-fixed-content">
 				<h2 id="subclass-magic-name"></h2>
-				<table id="entry-page-image-table">
+				<table id="populated-attributes-table">
 					<tr><td><img class="cc-subclass-image-large" alt="Magic Subclass" id="subclass-magic-image"></img></td></tr>
 					<tr><td><h4 id="subclass-magic-image-credit">Image Credit</h4></td></tr>
 				</table>
 				<p id="subclass-magic-description"></p>
 				<div id="subclass-magic-feats"></div>
+				<hr class="common-fixed-content-anchor">
 			</section>
 
-			<section class="page-content-section">
+			<section class="common-fixed-content">
 				<h2 id="subclass-power-name"></h2>
-				<table id="entry-page-image-table">
+				<table id="populated-attributes-table">
 					<tr><td><img class="cc-subclass-image-large" alt="Power Subclass" id="subclass-power-image"></img></td></tr>
 					<tr><td><h4 id="subclass-power-image-credit">Image Credit</h4></td></tr>
 				</table>
 				<p id="subclass-power-description"></p>
 				<div id="subclass-power-feats"></div>
+				<hr class="common-fixed-content-anchor">
 			</section>
 
-			<section class="page-content-section">
+			<section class="common-fixed-content">
 				<h2 id="subclass-tech-name"></h2>
-				<table id="entry-page-image-table">
+				<table id="populated-attributes-table">
 					<tr><td><img class="cc-subclass-image-large" alt="Tech Subclass" id="subclass-tech-image"></td></tr>
 					<tr><td><h4 id="subclass-tech-image-credit">Image Credit</h4></td></tr>
 				</table>
 				<p id="subclass-tech-description"></p>
 				<div id="subclass-tech-feats"></div>
+				<hr class="common-fixed-content-anchor">
 			</section>
-			<!-- 
-				A div for the page FOOTER -->
-			<footer id="import-footer"></footer>
+
+			<!-- POPULATED FOOTER -->
+			<div id="common-populated-footer"></div>
 		</div>
 	</body>
 </html>

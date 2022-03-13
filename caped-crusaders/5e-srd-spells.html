@@ -1,48 +1,59 @@
+<!--
+|| =========================================================================================
+|| This is a DYNAMIC DIRECTORY page, which contains the following elements:
+||
+|| FIXED BACKGROUND - Standard across the subsite
+|| POPULATED HEADER - Standard across the site
+|| FIXED CONTENT - Standard across the site
+|| POPULATED TITLE - Standard across the subsite
+|| DYNAMIC INDEX - Standard across the subsite
+|| POPULATED FOOTER - Standard across the site
+|| ========================================================================================= 
+-->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-US-Compatible" content="e-edge">
 		<title>KnowOne's Website of Everything</title>
 		<link rel="icon" href="/resources/images/OwlOfMinerva_ModifiedLogo.png">
-		<link rel="stylesheet" href="/caped-crusaders-style.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<link rel="stylesheet" href="/styles-common.css">
+		<link rel="stylesheet" href="/caped-crusaders/styles-caped-crusaders.css">
 
-		<!-- Misc Javascript functions -->
+		<!-- Importing jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		
+		<!-- Importing local Javascript functions -->
 		<script type="text/javascript" src="/resources/scripts/function-titleCase.js"></script>
 		<script type="text/javascript" src="/resources/scripts/function-hideShowNavList.js"></script>
 		<script type="text/javascript" src="/resources/scripts/function-readArgs.js"></script>
 
-		<!-- Importing Header and Footer -->
+		<!-- Populating the Header and Footer elements -->
 		<script type="text/javascript" src="/resources/scripts/load-header-footer.js"></script>
 
-		<!-- Populating Title Table -->
+		<!-- Populating the Title element based on file name and file path -->
 		<script type="text/javascript" src="/resources/scripts/load-title-directories.js"></script>
 		<script type="text/javascript" src="/resources/scripts/load-title-name.js"></script>
 
-		<!-- Dynamic Table functions -->
+		<!-- Importing Dynamic Index functions -->
 		<script type="text/javascript" src="/resources/scripts/function-sortDynamicTable.js"></script>
 		<script type="text/javascript" src="/resources/scripts/function-filterDynamicTable.js"></script>
 
-		<!-- Populating Dynamic Table -->
+		<!-- Populating Dynamic Index -->
 		<script type="text/javascript" src="/resources/scripts/load-5esrd-spells-directory.js"></script>
 		<script type="text/javascript" src="/resources/scripts/load-dynamic-filters-consumables.js"></script>
-
 	</head>
 	<body>
 
-		<!-- A div for the page BACKGROUND -->
-		<div id="page-background-div-caped-crusaders">
+		<!-- FIXED BACKGROUND -->
+		<div id="cc-fixed-background">
 			
-			<!-- A div for the page HEADER -->
-			<div id="import-header"></div>
+			<!-- POPULATED HEADER -->
+			<div id="common-populated-header"></div>
 			
-			<!-- A section for the page CONTENT -->
-			<section class="page-content-section">
+			<!-- FIXED CONTENT -->
+			<section class="common-fixed-content">
 			
-				<!-- A table for the page TITLE -->
-				<table id="page-title-table-wide"><thead><tr><td colspan="6"><h2 id="page-title-path"></h2></td></tr></thead><tbody>
+				<!-- POPULATED TITLE -->
+				<table id="common-populated-title"><thead><tr><td colspan="6"><h2 id="common-populated-title-thead"></h2></td></tr></thead><tbody>
 					<tr>
 						<td>
 							<!-- The include filters are a series of text boxes that can be filled to hide elements that do not contain the string entered within the designated attribute  -->
@@ -58,25 +69,21 @@
 						</td>
 					</tr>
 				</tbody></table>
-				
-				<!-- A div for the page DESCRIPTION -->
-				<div id="page-description-div">
+			
+				<!-- DYNAMIC INDEX -->
+				<h3>Sortable Entries</h3>
+				<table id="cc-dynamic-index">
+					
+					<!-- The buttons that designate the column data and serve as the header can be clicked to sort the entries in ascending or descending order -->
+					<thead class="header" id="cc-dynamic-index-thead"></thead>
 
-					<!-- This is the dynamic table that contains the entries being filtered -->
-					<h3>Sortable Entries</h3>
-					<table id="directory-page-dynamic-table-content">
-						
-						<!-- The buttons that designate the column data and serve as the header can be clicked to sort the entries in ascending or descending order -->
-						<thead class="header" id="directory-page-dynamic-table-header"></thead>
-
-						<!-- The empty table body -->
-						<tbody></tbody>
-					</table>
-				</div>
+					<!-- The empty table body -->
+					<tbody></tbody>
+				</table>
 			</section>
 			
-			<!-- A div for the page FOOTER -->
-			<footer id="import-footer"></footer>
+			<!-- POPULATED FOOTER -->
+			<div id="common-populated-footer"></div>
 		</div>
 	</body>
 </html>

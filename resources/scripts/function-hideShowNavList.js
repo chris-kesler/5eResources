@@ -9,22 +9,22 @@ function hideShowNavList() {
 	var shown = '280px';
 
 	// If the NAVLIST is already shown (which it will not be by default upon loading the page)
-	if (document.getElementById('page-navlist-button').style.marginRight.includes(shown)) {
+	if (document.getElementById('common-populated-navlist-button').style.marginRight.includes(shown)) {
 
 		// Set NAVLIST margins to the right and update button characters 
-		document.getElementById('page-navlist-button').style.marginRight = hidden;
-		document.getElementById('page-navlist-section').style.marginRight = '-280px';
-		document.getElementById('page-navlist-button').innerHTML = '&#60; &#60;';
+		document.getElementById('common-populated-navlist-button').style.marginRight = hidden;
+		document.getElementById('common-populated-navlist').style.marginRight = '-280px';
+		document.getElementById('common-populated-navlist-button').innerHTML = '&#60; &#60;';
 
 		// Animate NAVLIST elements from their Shown position to their recently updated Hidden position
-		document.getElementById("page-navlist-section").animate([
+		document.getElementById("common-populated-navlist").animate([
 			{ transform: 'translateX(-280px)' },
 			{ transform: 'translateX(0px)' }
 		], {
 			duration: 750,
 			iterations: 1
 		});
-		document.getElementById("page-navlist-button").animate([
+		document.getElementById("common-populated-navlist-button").animate([
 			{ transform: 'translateX(-280px)' },
 			{ transform: 'translateX(0px)' }
 		], {
@@ -34,19 +34,19 @@ function hideShowNavList() {
 	} else {
 
 		// Set NAVLIST margins to the lefft and update button characters
-		document.getElementById('page-navlist-button').style.marginRight = shown;
-		document.getElementById('page-navlist-section').style.marginRight = '0px';
-		document.getElementById('page-navlist-button').innerHTML = '&#62; &#62;';
+		document.getElementById('common-populated-navlist-button').style.marginRight = shown;
+		document.getElementById('common-populated-navlist').style.marginRight = '0px';
+		document.getElementById('common-populated-navlist-button').innerHTML = '&#62; &#62;';
 
 		// Animate NAVLIST elements from their Hidden position to their recently updated Shown position
-		document.getElementById("page-navlist-section").animate([
+		document.getElementById("common-populated-navlist").animate([
 			{ transform: 'translateX(280px)' },
 			{ transform: 'translateX(0px)' }
 		], {
 			duration: 750,
 			iterations: 1
 		});
-		document.getElementById("page-navlist-button").animate([
+		document.getElementById("common-populated-navlist-button").animate([
 			{ transform: 'translateX(280px)' },
 			{ transform: 'translateX(0px)' }
 		], {

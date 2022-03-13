@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-US-Compatible" content="e-edge">
+    <title>KnowOne's Website of Everything</title>
+    <link rel="icon" href="/resources/images/OwlOfMinerva_ModifiedLogo.png">
+    <link rel="stylesheet" href="/caped-crusaders-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+    <script>
+      function titleCase(str) {
+        var splitStr = str.toLowerCase().split(' ');
+        for (var i = 0; i < splitStr.length; i++) {
+            // You do not need to check if i is larger than splitStr length, as your for does that for you
+            // Assign it back to the array
+            splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);     
+        }
+        // Directly return the joined string
+        return splitStr.join(' '); 
+      }
+
+      $(function readJSON() {
+
+        // Defining variables that are used to read the correct JSON file and distinguish which type page we are on
+        if (window.location.pathname.includes("spells")) {
+          var power_source = "Spell";
+          power_source_plural = power_source + "s";
+        }
+        else if (window.location.pathname.includes("superpowers")) {
+          var power_source = "Superpower";
+          power_source_plural = power_source + "s";
+        }
+        else if (window.location.pathname.includes("technologies")) {
+          var power_source = "Technology";
+          power_source_plural = "Technologies";
+        }
+        else if (window.location.pathname.includes("boons")) {
+          var power_source = "Boon";
+          power_source_plural = power_source + "s";
+        }
+        else if (window.location.pathname.includes("enhancements")) {
+          var power_source = "Enhancement";
+          power_source_plural = power_source + "s";
+        }
+        else if (window.location.pathname.includes("techniques")) {
+          var power_source = "Technique";
+          power_source_plural = power_source + "s";
+        }
+        
+
+        // Reading data from our JSON file
+        $.getJSON(`../${power_source_plural.toLowerCase()}.json`, function(data) {
+
+          // Reading the name of this file
+          var path_array = window.location.pathname.split("/");
+          var page_title = path_array.pop();
+          var page_directory = path_array.pop();
+          var page_subsite = path_array.pop();
+
+
+          // Looping through the JSON data 
+          $.each(data.entries, function(i, f) {
+
+            // Finding the entry that matches this file
+            if (f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") + ".html" == page_title) {
+
+              // Looping through the author array in the JSON file to populate variables for links and credit
+              $.each(data.author, function(x, y) {
+                if (f.source_str == y.author_name) {
+                  author_credit = y.author_credit;
+                  content_source = y.content_source;
+                }
+              });
+
+              // Looping through the type array in the JSON file to populate variables for type and credit
+              $.each(data.type, function(x, y) {
+                if (f.type_str == y.type_name) {
+                  document.getElementById("page-image-credit").innerHTML = y.type_credit;
+                }
+              });
+
+              // Populating the name of the page
+              if (content_source != undefined){
+                document.getElementById("common-populated-title-thead").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > <a target='blank' href='" + content_source + "'>" + titleCase(page_title.replace('-', ' ').replace('.html', '')) + " (source)</a>";
+              } else {
+                document.getElementById("common-populated-title-thead").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > " + titleCase(page_title.replace('-', ' ').replace('.html', ''));
+
+              }
+
+
+              // Populating the page image
+              document.getElementById("page-image").src = "/resources/images/" + f.type_str.replace(/\s/g, '') + ".png";
+
+              
+              // Populating the page description based on flavor, mechanics, overcharge, and components
+              if (f.flavor_str != undefined) {
+                document.getElementById("common-fixed-description").innerHTML += "<b>Flavor Description:</b>  <i>" + f.flavor_str + "</i><br><br>";
+              }
+              if (f.mechanics_str != undefined) {
+                document.getElementById("common-fixed-description").innerHTML += "<b>Standard Mechanics:</b>  " + f.mechanics_str + "<br><br>";
+              }
+              if (f.overcharge_str != undefined) {
+                document.getElementById("common-fixed-description").innerHTML += "<b>Overcharge Mechanics:</b>  " + f.overcharge_str + "<br><br>";
+              }
+
+              // Checking for Material Components and displaying the material component description
+              if (f.components_vsm_str.includes("M") && f.components_description_str != undefined) {
+                document.getElementById("common-fixed-description").innerHTML += "<b>Material Components:</b>  <i>(" + f.components_description_str + ")</i>";
+
+                // If materials have a cost, we strip that out and concatenate it to the vsm string with parentheses
+                if (f.components_description_str.replace(/\D/g,'') > 0) {
+                  components_vsm = f.components_vsm_str + "   (" + f.components_description_str.replace(/\D/g,'') + ")";
+
+                // If not, we leave the vsm string alone and pull the data
+                } else {
+                  components_vsm = f.components_vsm_str;
+                }
+
+                // If materials are consumed, we include an asterisk to reflect that in the vsm string
+                if (f.components_description_str.includes("consume")) {
+                  components_vsm = components_vsm + "*";
+                } 
+
+              // If there are no material components, we leave the vsm string alone
+              } else {
+                components_vsm = f.components_vsm_str;
+              }
+
+              
+              // Defining and populating the first row of the page table
+              var table_row1 = "<tr><th style='width: 15vw'>Level</th><th style='width: 15vw'>Casting Time</th><th style='width: 15vw'>Range/Area</th><th style='width: 15vw'>Components</th></tr>"
+              $(table_row1).appendTo("#common-populated-title tbody");
+
+              // Defining and populating the second row of the page table
+              var table_row2 = "<tr>" 
+                + "<td>" + f.level_str + "</td>" 
+                + "<td>" + f.casting_time_str + "</td>" 
+                + "<td>" + f.range_area_str + "</td>" 
+                + "<td>" + components_vsm + "</td>" 
+                + "</tr>"
+              $(table_row2).appendTo("#common-populated-title tbody");
+
+              // Defining and populating the second row of the page table
+              var table_row3 = "<tr><th>Duration</th><th>School</th><th>Attack/Save</th><th>Damage/Effect</th></tr>";
+              $(table_row3).appendTo("#common-populated-title tbody");
+              
+              // Defining and populating the second row of the page table
+              var table_row4 = "<tr>"
+                + "<td>" + f.duration_str + "</td>" 
+                + "<td>" + f.type_str + "</td>" 
+                + "<td>" + f.attack_save_str + "</td>" 
+                + "<td>" + f.damage_effect_str + "</td>" 
+                + "</tr>"
+              $(table_row4).appendTo("#common-populated-title tbody");
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+
+
+  <body>
+    <!-- The fixed background div -->
+    <div id="page-background-div"> 
+
+      <!-- A div to hold our header -->
+      <div class="common-page-header">
+
+        <!-- Importing the header -->
+        <div id="common-populated-header"></div>
+
+      </div>
+        
+      <!-- A transparent div to build everything else on top of -->
+      <div class="common-common-fixed-content-transparent">
+
+        <!-- An off white chunk of the page that holds content -->
+        <section class="common-fixed-content">
+
+          <!-- A table to hold the page overview information -->
+          <table id="common-populated-title">
+
+            <!-- The title of the page content, including the source as a link -->
+            <thead><tr><td colspan="6"><h2 id="common-populated-title-thead"></h2></td></tr></thead>
+            <tbody></tbody>
+          </table>
+
+          <!-- A table to hold the page image and credit to author -->
+          <table id="entry-page-image-table">
+            <tr><td><img id="page-image" alt="Page Image"></td></tr>
+            <tr><td><h4 id="page-image-credit">Image Credit</h4></td></tr>
+          </table>
+
+
+          <!-- A paragraph to hold the page content and descriptions -->
+          <p id="common-fixed-description"></p>
+        </section>
+      </div>
+
+      <!-- Importing the footer -->
+      <div id="common-populated-footer"></div>
+    </div>
+  </body>
+</html>
+
+<script type="text/javascript">
+  $(function () {
+
+    $("#common-populated-header").load("/resources/pages/common-populated-header.html");
+    $(".import-page-footer").load("/resources/pages/import-page-footer.html");
+
+});
+</script>

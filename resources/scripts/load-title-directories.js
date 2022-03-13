@@ -10,7 +10,7 @@ $(function loadTitleDirectories() {
 	var filepath = "";
 	for (let i = 1; i < path_array.length - 1; i++) {
 		filepath += "/" + path_array[i];
-		document.getElementById("page-title-path").innerHTML += "<a href='" + filepath + ".html'>" + titleCase(path_array[i].replaceAll('-', ' ').replace('.html', '')) + "</a> > ";
+		document.getElementById("common-populated-title-thead").innerHTML += "<a href='" + filepath + ".html'>" + titleCase(path_array[i].replaceAll('-', ' ').replace('.html', '')) + "</a> > ";
 	}
 
 });
