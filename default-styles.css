@@ -176,7 +176,7 @@ body, #common-populated-title tr th, #common-populated-title th, #common-populat
 }
 
 /* The background container div that all other HTML elements rest inside (or on top) of */
-#page-background-div, #cc-fixed-background, #page-background-div-myrmidos-wiki, #page-background-div-game-journals, #page-background-div-eportfolio, #page-background-div-homepage {
+#page-background-div, #cc-fixed-background, #page-background-div-myrmidos-wiki, #gj-fixed-background, #page-background-div-eportfolio, #page-background-div-homepage {
 	overflow-x: hidden;
 	position: relative;
 	width: 100%;
@@ -192,7 +192,7 @@ body, #common-populated-title tr th, #common-populated-title th, #common-populat
 #cc-fixed-background {
 	background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Taichung_sunset_skyline_2019.jpg/1200px-Taichung_sunset_skyline_2019.jpg?20200526005223");
 }
-#page-background-div-game-journals {
+#gj-fixed-background {
 	background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e6/Conways_game_of_life_breeder_animation.gif?20140304220345");
 }
 #page-background-div-myrmidos-wiki {

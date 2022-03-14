@@ -1,0 +1,432 @@
+/* 
+||==========================================================================================
+|| changes to all elements of a generic kind
+||==========================================================================================
+ */
+	/* The default background color and general text settings */
+	body {
+		background: rgb(219,219,224);
+		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		margin: 0%;
+		padding: 0%;
+	}
+
+	button {
+		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	}
+
+	.populated-description-div p {
+		white-space: nowrap;
+	}
+
+
+	.gj-populated-index-button-tech, .gj-populated-index-button-power, .gj-populated-index-button-magic, .gj-populated-index-button-generic {
+		width: 250px;
+		height: 300px;
+		margin: 5px;
+		background-color: rgb(175, 175, 175);
+		padding: 0px;
+		border-radius: 25px;
+		font-size: medium;
+		position: relative;
+	}
+	.gj-populated-index-button-generic {
+		height: 35px;
+	}
+	.gj-populated-index-button-content-ceiling, .gj-populated-index-button-content-floor {
+		background-color: rgb(175, 175, 175);
+		margin: 0px;
+		padding: 10px;
+		text-align: left;
+	}
+	.gj-populated-index-button-content-ceiling {
+		height: 175px;
+	}
+	.gj-populated-index-button-content-floor {
+		bottom: 0;
+	}
+	.gj-populated-index-button-tech {
+		color: rgb(50, 50, 125);
+		border: 5px solid rgb(50, 50, 125);
+
+	}
+	.gj-populated-index-button-power {
+		color: rgb(125, 50, 50);
+		border: 5px solid rgb(125, 50, 50);
+
+	}
+	.gj-populated-index-button-magic {
+		color: rgb(125, 125, 50);
+		border: 5px solid rgb(125, 125, 50);
+
+	}
+	.gj-populated-index-button-generic {
+		color: rgb(25, 25, 25);
+		border: 2px solid pink;
+
+	}
+	
+/* 
+||==========================================================================================
+|| POPULATED ATTRIBUTE tables and elements (used in ENTRY pages)
+||==========================================================================================
+ */
+
+	#common-populated-title, .populated-details-table {
+		display: inline-block;
+		margin: 0;
+		border-collapse: collapse;
+		overflow: auto;
+		max-width: 88vw;
+		border: 0px solid rgb(50,50,50);
+	}
+	#common-populated-title thead tr td, .populated-details-table thead tr td{
+		background-color: transparent;
+		width: 88vw;
+		border-color: transparent;
+		border-bottom: 2px solid rgb(50,50,50);
+	}
+	.populated-details-table thead tr td {
+		padding: 0px;
+	}
+	.populated-details-table tr th, .populated-details-table th, .populated-details-table tr td, .populated-details-table td {
+		color: rgb(25,25,25);
+	}
+	#common-populated-title th, #common-populated-title td, .populated-details-table th, .populated-details-table td {
+		padding: 8px;
+		vertical-align: top;
+		border: 1px solid rgb(50,50,50);
+	}
+	#common-populated-title tr th, #common-populated-title th, .populated-details-table tr th, .populated-details-table th {
+		background-color: rgb(150,150,150);
+		font-size: medium;
+		text-align: left;
+	}
+	#common-populated-title tr td, #common-populated-title  td, .populated-details-table tr td, .populated-details-table td {
+		background-color: rgb(200,200,200);
+		font-size: medium;
+		text-align: left;
+	}
+
+/* The off white chunk of the page that holds content */
+.gj-fixed-content {
+	height: auto;
+	width: 92vw;
+
+	box-sizing: border-box;
+	overflow-wrap: break-word;
+
+	margin-left: 4vw; 
+	margin-right: 4vw;
+	margin-top: 2vw;
+	margin-bottom: 2vw;
+
+	background-color: rgb(175, 250, 175);
+	padding: 1vw;
+}
+
+/* A button to navigate the website file structure from the page content, signifying a directory page */
+.gj-fixed-index-directory-button {
+	width: 24vw;
+	min-width: 150px;
+	max-width: 80vw;
+	height: auto;
+	min-height: 55px;
+	margin: 0.5vw;
+	border-radius: 20px;
+	background-color: rgb(175, 175, 175);
+	border: 2px solid aqua;
+	font-size: large;
+	font-weight: bold;
+}
+
+/* A button to navigate the website file structure from the page content, signifying an entry page */
+.gj-fixed-index-entry-button {
+	width: 24vw;
+	min-width: 150px;
+	max-width: 80vw;
+	height: auto;
+	min-height: 45px;
+	margin: 0.5vw;
+	border-radius: 10px;
+	background-color: rgb(250, 209, 209);
+	border: 2px solid greenyellow;
+	font-size: medium;
+	font-weight: bold;
+}
+
+.gj-fixed-index-category {
+	width: 24vw;
+	min-width: 150px;
+	max-width: 80vw;
+	color: antiquewhite;
+}
+
+/* 
+||==========================================================================================
+|| POPULATED ATTRIBUTE tables and elements (used in ENTRY pages)
+||==========================================================================================
+ */
+	/* An overview table used frequently throughout the site */
+	#populated-attributes-table {
+		display: block;
+		float: right;
+		overflow: auto;
+		border-collapse: collapse;
+		width: 100%;
+		max-width: 400px;
+		padding: 0px;
+		margin: 0px;
+		margin-right: 0px;
+		margin-left: 10px;
+		border: 5px solid rgb(150,150,150);
+		border-radius: 32px;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+		background-color: rgb(200, 200, 200);
+	}
+	#populated-attributes-table tr:first-child th {
+		object-fit: cover;
+		overflow: hidden;
+	}
+	#populated-attributes-table th, #populated-attributes-table td {
+		padding: 10px;
+		vertical-align: top;
+	}
+	#populated-attributes-table tr th {
+		background-color: rgb(200,200,200);
+		color: rgb(58,58,58);
+		font-size: small;
+	}
+	#populated-attributes-table tr td {
+		background-color: rgb(225,225,225);
+		color: rgb(58,58,58);
+		font-size: small;
+		text-align: left;
+	}
+	#populated-attributes-table tr:nth-child(2) th, #populated-attributes-table tr:nth-child(1) th {
+		color: rgb(58,58,58);
+		padding: 2px;
+		border-top: 0px;
+		font-size: smaller;
+		text-align: center;
+	}
+	#populated-attributes-table tr:nth-child(2) th {
+		border-top: 2px solid rgb(175,175,175);
+	}
+	#populated-attributes-table tr:nth-child(3) th, #populated-attributes-table tr:nth-child(4) th {
+		background-color: rgb(100,100,100);
+		color: rgb(25,25,25);
+		font-size: large;
+	}
+	#populated-attributes-table tr:nth-child(4) th {
+		padding-top: 0px;
+		font-size: small;
+	}
+	#populated-attributes-table-image {
+		width: 110%;
+		height: auto; 
+		display: block;
+		overflow: hidden;
+		margin: -5%;
+		margin-bottom: -1%;
+	}
+
+
+/* 
+||==========================================================================================
+|| FIXED and POPULATED INDEX table and buttons (used in DIRECTORY pages)
+||==========================================================================================
+ */
+	/* A table to hold the various navigation buttons present in the page regardless of button styling */
+	.gj-fixed-index, .gj-populated-index {
+		background-color: rgb(50, 50, 50);
+		float: right;
+		height: auto;
+		width: auto;
+		max-width: 99%;
+		display: flex;
+		overflow: auto;
+		border-radius: 20px;
+		margin-left: 1%;
+	}
+	/* A button to navigate the website file structure from the page content, signifying a directory page */
+	.gj-fixed-index-directory-button {
+		width: 24vw;
+		min-width: 150px;
+		max-width: 80vw;
+
+		height: auto;
+		min-height: 55px;
+		
+		margin: 0.5vw;
+		border-radius: 20px;
+		background-color: rgb(150, 150, 150);
+		border: 2px solid greenyellow;
+		
+		font-size: large;
+		font-weight: bold;
+	}
+
+/* 
+||==========================================================================================
+|| POPULATED page ATTRIBUTE table
+||==========================================================================================
+ */
+
+	/* An overview table used frequently throughout the site */
+#gj-populated-attributes {
+	display: block;
+	float: right;
+	overflow: auto;
+	border-collapse: collapse;
+	width: 100%;
+	max-width: 384px;
+	padding: 0px;
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 10px;
+	border: 5px solid rgb(150,150,150);
+	border-radius: 32px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: rgb(200, 200, 200);
+}
+#gj-populated-attributes tr:first-child th {
+	object-fit: cover;
+	overflow: hidden;
+}
+#gj-populated-attributes th, #gj-populated-attributes td {
+	width: 100vw;
+	max-width: auto;
+	padding: 10px;
+	vertical-align: top;
+}
+#gj-populated-attributes tr th {
+	background-color: rgb(200,200,200);
+	color: rgb(58,58,58);
+	font-size: small;
+}
+#gj-populated-attributes tr td {
+	background-color: rgb(225,225,225);
+	color: rgb(58,58,58);
+	font-size: small;
+	text-align: left;
+}
+#gj-populated-attributes tr:nth-child(2) th, #gj-populated-attributes tr:nth-child(1) th {
+	color: rgb(58,58,58);
+	padding: 2px;
+	border-top: 0px;
+	font-size: smaller;
+	text-align: center;
+}
+#gj-populated-attributes tr:nth-child(2) th {
+	border-top: 2px solid rgb(175,175,175);
+}
+#gj-populated-attributes tr:nth-child(3) th, #gj-populated-attributes tr:nth-child(4) th {
+	background-color: rgb(100,100,100);
+	color: rgb(25,25,25);
+	font-size: large;
+}
+#gj-populated-attributes tr:nth-child(4) th {
+	padding-top: 0px;
+	font-size: small;
+}
+#gj-populated-attributes-image {
+	width: 110%;
+	height: auto; 
+	display: block;
+	overflow: hidden;
+	margin: -5%;
+	margin-bottom: -1%;
+}
+
+
+/* 
+||==========================================================================================
+|| subsite color palette styles
+||==========================================================================================
+ */
+
+/* Primary color */
+#common-populated-header, .common-populated-header-nav-button, .common-populated-header-home-button, #common-populated-footer, .page-footer-button {
+	background-color: #191A19;
+	border-color: #191A19;
+}
+
+/* Secondary color */
+.gj-fixed-index-entry-button {
+	border-color: #1E5128;
+}
+.gj-fixed-index-directory-button {
+	background-color: #1E5128;
+}
+
+
+/* Tertiary color */
+.gj-fixed-index-directory-button {
+	width: 24vw;
+	min-width: 150px;
+	max-width: 80vw;
+
+	height: auto;
+	min-height: 55px;
+	
+	margin: 0.5vw;
+	border-radius: 20px;
+	border: 2px solid #4E9F3D;
+	
+	font-size: large;
+	font-weight: bold;
+}
+.gj-fixed-index-entry-button {
+	background-color: #4E9F3D;
+}
+
+/* Accent color */
+.gj-fixed-content {
+	height: auto;
+	width: 92vw;
+
+	box-sizing: border-box;
+	overflow-wrap: break-word;
+
+	margin-left: 4vw; 
+	margin-right: 4vw;
+	margin-top: 2vw;
+	margin-bottom: 2vw;
+
+	background-color: #D8E9A8;
+	padding: 1vw;
+}
+
+
+
+
+/* 
+||==========================================================================================
+|| color coded backgrounds for development purposes
+||==========================================================================================
+ */
+
+/* .common-fixed-content {
+	background-color: orange;
+}
+#common-populated-title {
+	background-color: yellow;
+}
+.gj-fixed-index {
+	background-color: green;
+}
+	#gj-populated-attributes {
+		background-color: seagreen;
+	}
+#common-fixed-description {
+	background-color: blue;
+}
+	.populated-details-table {
+		background-color: cyan;
+	}
+#common-populated-footer {
+	background-color: purple;
+} */
