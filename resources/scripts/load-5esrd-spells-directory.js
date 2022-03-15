@@ -35,7 +35,7 @@ const getResults = (id) => {
 								${result.level}
 							</td>
 							<td>
-								<img class='directory-page-dynamic-table-entry-image' src=/resources/images/${result.school}.png><br>
+								<img class='dynamic-index-image' src=/resources/images/${result.school}.png><br>
 								${result.school}
 							</td>
 							<td>
@@ -115,7 +115,7 @@ const getResults = (id) => {
 							</td>
 						</tr>
 						`
-						$(table_row).appendTo("#cc-dynamic-index tbody");
+						$(table_row).appendTo("#dynamic-index tbody");
 					});
 			});
 		});
@@ -123,8 +123,8 @@ const getResults = (id) => {
 
 function CallApiSearchEngine() {
 	var query = document.getElementById('5e-srd-api-searchbox').value;
-	// document.getElementById('common-fixed-description').innerHTML = query;
-	$('#cc-dynamic-index tr').remove();
+	// document.getElementById('fixed-description').innerHTML = query;
+	$('#dynamic-index tr').remove();
 	getResults(`/api/spells/?name=${query}`);
 }
 

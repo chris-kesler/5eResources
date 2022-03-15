@@ -10,8 +10,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
     <script>
       $(function importContent() {
-        $("#common-populated-header").load("/resources/pages/common-populated-header.html");
-        $("#common-populated-footer").load("/resources/pages/common-populated-footer.html");
+        $("#populated-header").load("/resources/pages/populated-header.html");
+        $("#populated-footer").load("/resources/pages/populated-footer.html");
       });
       $(function readCharacter() {
         var characters = [];
@@ -22,11 +22,11 @@
             if (f.page_url == page) {
 
               // Populating basic page data and overview
-              document.getElementById("class-common-populated-title-thead").innerHTML = "Caped Crusaders: Classes > " + f.name_str;
-              document.getElementById("cc-class-image").src = "/resources/images/" + f.class_str + ".png";
-              document.getElementById("cc-class-image").alt = f.class_img_credit;
-              document.getElementById("cc-subclass-image").src = "/resources/images/" + f.class_str + "-" + f.subclass_str + ".png";
-              document.getElementById("cc-subclass-image").alt = f.class_img_credit;
+              document.getElementById("class-populated-title-thead").innerHTML = "Caped Crusaders: Classes > " + f.name_str;
+              document.getElementById("class-image").src = "/resources/images/" + f.class_str + ".png";
+              document.getElementById("class-image").alt = f.class_img_credit;
+              document.getElementById("subclass-image").src = "/resources/images/" + f.class_str + "-" + f.subclass_str + ".png";
+              document.getElementById("subclass-image").alt = f.class_img_credit;
               document.getElementById("build-description").innerHTML = f.build_overview;
 
               // Populating the Build Setup Table with a single row
@@ -325,7 +325,7 @@
 
                     // Populating Walkthrough by Level text and Selections tables
                     if (f.level_guide[k].walkthrough != undefined && f.level_guide[k].level == (i+1)) {
-                      document.getElementById("build-walkthrough-by-level").innerHTML += "<hr><table id='cc-build-selections-table-" + (i+1) + "' class='cc-build-selections-table'><thead><th style='width: 15vw' colspan='2'>" + class_subclass + ", lvl " + (i+1) + "</th></thead><tbody><tr><td>Sustainables</td><td>" + sustainable_selections_link + "</td></tr><tr><td>Cantrips</td><td>" + cantrip_selections_link + "</td></tr><tr><td>Consumables</td><td>" + consumable_selections_link + "</td></tr></tbody></table>" + "<h3>Level: " + (i+1) + "</h3>" + f.level_guide[k].walkthrough;
+                      document.getElementById("build-walkthrough-by-level").innerHTML += "<hr><table id='build-selections-table-" + (i+1) + "' class='build-selections-table'><thead><th style='width: 15vw' colspan='2'>" + class_subclass + ", lvl " + (i+1) + "</th></thead><tbody><tr><td>Sustainables</td><td>" + sustainable_selections_link + "</td></tr><tr><td>Cantrips</td><td>" + cantrip_selections_link + "</td></tr><tr><td>Consumables</td><td>" + consumable_selections_link + "</td></tr></tbody></table>" + "<h3>Level: " + (i+1) + "</h3>" + f.level_guide[k].walkthrough;
                     }
                   }
                 }
@@ -347,25 +347,25 @@
   </head>
 
   <body>
-    <div id="page-background-div"> 
+    <div id="fixed-background"> 
 
-      <div class="common-page-header"><div id="common-populated-header"></div><h1 id="class-common-populated-title-thead"></h1><hr></div>
+      <div class="page-header"><div id="populated-header"></div><h1 id="class-populated-title-thead"></h1><hr></div>
 
-      <div class="common-common-fixed-content-transparent">
+      <div class="fixed-content-transparent">
 
-            <section class="common-fixed-content">
-              <button id="common-page-back-button" onclick="location.href='../character-builds.html'">Out to Character Builds</button>
+            <section class="fixed-content">
+              <button id="page-back-button" onclick="location.href='../character-builds.html'">Out to Character Builds</button>
               <h2>Overview</h2>
               <hr>
               <center>--CHARACTER BUILDS ONLY GO TO LEVEL 10 UNTIL FURTHER NOTICE--</center>
-              <img id="cc-subclass-image" class="cc-class-image-medium" alt="Class Image">
-              <img id="cc-class-image" class="cc-class-image-medium" alt="Class Image">
+              <img id="subclass-image" class="class-image-medium" alt="Class Image">
+              <img id="class-image" class="class-image-medium" alt="Class Image">
               <p id="build-description"></p>
 
               <hr>
               <h3>Build Setup</h3>
               <p id="build-setup-overview">We'll take the following setup prior to our class levels.  </p>
-              <table class="common-populated-title" id="build-setup-table">
+              <table class="populated-title" id="build-setup-table">
                 <thead>
                   <th>Race</th>
                   <th>Background</th>
@@ -384,7 +384,7 @@
               <h3>Level Table</h3>
               <p id="build-level-overview">We'll take features based on the following table to initiate and progress through our build.  </p>
 
-              <table id="build-populated-details-table" class="common-populated-title">
+              <table id="build-populated-details-table" class="populated-title">
                 <thead>
                   <th style="width: 5vw">Level</th>
                   <th style="width: 10vw">Class/Subclass</th>
@@ -413,7 +413,7 @@
         </div>
       </div>
 
-      <div id="common-populated-footer"></div>
+      <div id="populated-footer"></div>
 
     </div>
   </body>

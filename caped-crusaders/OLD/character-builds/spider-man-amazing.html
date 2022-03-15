@@ -28,7 +28,7 @@
 // 
 // The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
 // =========================================================================================
-        $("#common-populated-header").load("/resources/pages/common-populated-header.html");
+        $("#populated-header").load("/resources/pages/populated-header.html");
 
 
 // =========================================================================================
@@ -65,15 +65,15 @@
         } 
 
         if (page_subsite != undefined) {
-          document.getElementById("common-populated-title-thead").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+          document.getElementById("populated-title-thead").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
         } else {
-          document.getElementById("common-populated-title-thead").innerHTML = titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
+          document.getElementById("populated-title-thead").innerHTML = titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
         }
         if (page_directory != undefined) {
-          document.getElementById("common-populated-title-thead").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+          document.getElementById("populated-title-thead").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
         }
         if (page_category != undefined) {
-          document.getElementById("common-populated-title-thead").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + "/" + page_category + ".html'>" + titleCase(page_category.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
+          document.getElementById("populated-title-thead").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + "/" + page_category + ".html'>" + titleCase(page_category.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
         }
 
         // Reading data from our JSON file
@@ -86,16 +86,16 @@
             if (f.page_url == page_title) {
 
               if (f.content_source != undefined && f.content_source !== ""){
-                document.getElementById("common-populated-title-thead").innerHTML += " > <a target='blank' href='" + f.content_source + "'>" + f.name_str + " (source)</a>";
+                document.getElementById("populated-title-thead").innerHTML += " > <a target='blank' href='" + f.content_source + "'>" + f.name_str + " (source)</a>";
               } else {
-                document.getElementById("common-populated-title-thead").innerHTML += " > " + f.name_str;
+                document.getElementById("populated-title-thead").innerHTML += " > " + f.name_str;
               }
 
               // Populating basic page data and overview
-              document.getElementById("cc-class-image").src = "/resources/images/" + f.class_str + ".png";
-              document.getElementById("cc-class-image").alt = f.class_img_credit;
-              document.getElementById("cc-subclass-image").src = "/resources/images/" + f.class_str + "-" + f.subclass_str + ".png";
-              document.getElementById("cc-subclass-image").alt = f.class_img_credit;
+              document.getElementById("class-image").src = "/resources/images/" + f.class_str + ".png";
+              document.getElementById("class-image").alt = f.class_img_credit;
+              document.getElementById("subclass-image").src = "/resources/images/" + f.class_str + "-" + f.subclass_str + ".png";
+              document.getElementById("subclass-image").alt = f.class_img_credit;
               document.getElementById("build-description").innerHTML = f.build_overview;
 
               // Populating the Build Setup Table with a single row
@@ -535,7 +535,7 @@
 
                 // Populating Walkthrough by Level text and Selections tables
                 if (f.level_guide[i].walkthrough != undefined) {
-                  document.getElementById("build-walkthrough-by-level").innerHTML += "<hr><table id='cc-build-selections-table-" + (i+1) + "' class='cc-build-selections-table'><thead><th style='width: 15vw' colspan='2'>" + class_subclass + ", lvl " + (i+1) + "</th></thead><tbody><tr><td>Sustainables</td><td>" + sustainable_selections_links + "</td></tr><tr><td>Cantrips</td><td>" + cantrip_selections_links + "</td></tr><tr><td>Consumables</td><td>" + consumable_selections_links + "</td></tr></tbody></table>" + "<h4>Level: " + (i+1) + "</h4><p>" + f.level_guide[i].walkthrough + "</p>";
+                  document.getElementById("build-walkthrough-by-level").innerHTML += "<hr><table id='build-selections-table-" + (i+1) + "' class='build-selections-table'><thead><th style='width: 15vw' colspan='2'>" + class_subclass + ", lvl " + (i+1) + "</th></thead><tbody><tr><td>Sustainables</td><td>" + sustainable_selections_links + "</td></tr><tr><td>Cantrips</td><td>" + cantrip_selections_links + "</td></tr><tr><td>Consumables</td><td>" + consumable_selections_links + "</td></tr></tbody></table>" + "<h4>Level: " + (i+1) + "</h4><p>" + f.level_guide[i].walkthrough + "</p>";
                 }
                 
                 // Populating the Level Table with a new row for each level
@@ -557,7 +557,7 @@
 // 
 // The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
 // =========================================================================================
-        $("#common-populated-footer").load("/resources/pages/common-populated-footer.html");
+        $("#populated-footer").load("/resources/pages/populated-footer.html");
       });
 
     </script>
@@ -566,20 +566,20 @@
   <body>
     <!-- 
       A div for the page BACKGROUND -->
-    <div id="page-background-div">
+    <div id="fixed-background">
       <!-- 
         A div for the page HEADER -->
-      <div id="common-populated-header"></div>
+      <div id="populated-header"></div>
       <!-- 
         A section for the page CONTENT -->
-      <section class="common-fixed-content">
+      <section class="fixed-content">
         <!-- 
           A table for the page TITLE -->
-        <table id="common-populated-title"><thead><tr><td colspan="6"><h2 id="common-populated-title-thead"></h2></td></tr></thead><tbody></tbody></table>   
+        <table id="populated-title"><thead><tr><td colspan="6"><h2 id="populated-title-thead"></h2></td></tr></thead><tbody></tbody></table>   
 
         <center>--CHARACTER BUILDS ONLY GO TO LEVEL 10 UNTIL FURTHER NOTICE--</center>
-        <img id="cc-subclass-image" class="cc-class-image-medium" alt="Class Image">
-        <img id="cc-class-image" class="cc-class-image-medium" alt="Class Image">
+        <img id="subclass-image" class="class-image-medium" alt="Class Image">
+        <img id="class-image" class="class-image-medium" alt="Class Image">
         <p id="build-description"></p>
 
         <hr>
@@ -630,7 +630,7 @@
       </section>
       <!-- 
         A div for the page FOOTER -->
-      <div id="common-populated-footer"></div>
+      <div id="populated-footer"></div>
     </div>
   </body>
 </html>

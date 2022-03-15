@@ -20,32 +20,32 @@ It also contains TITLE, PAGE LIST, and DESCRIPTION elements that are unique and 
 	<body>
 		<!-- 
 			A div for the page BACKGROUND -->
-		<div id="page-background-div-eportfolio">
+		<div id="fixed-background">
 			<!-- 
 			A div for the page HEADER -->
-			<div id="common-populated-header"></div>
+			<div id="populated-header"></div>
 			<!-- 
 			A section for the page CONTENT -->
-			<section class="common-fixed-content">
+			<section class="fixed-content">
 				<!-- 
 					A table for the page TITLE -->
-				<table id="common-populated-title"><thead><tr><td colspan="6"><h2 id="common-populated-title-thead"><a href='/eportfolio.html'>Christian Kesler's B.Sc. of Computer Science Capstone ePortfolio</a> > API Practice Page</h2></td></tr></thead><tbody></tbody></table>   
+				<table id="populated-title"><thead><tr><td colspan="6"><h2 id="populated-title-thead"><a href='/eportfolio.html'>Christian Kesler's B.Sc. of Computer Science Capstone ePortfolio</a> > API Practice Page</h2></td></tr></thead><tbody></tbody></table>   
 
-				<input type='text' id='5e-srd-api-searchbox' class='directory-page-dynamic-table-query-input' placeholder='Search the 5E SRD API for Spells. . .'>
+				<input type='text' id='5e-srd-api-searchbox' class='dynamic-index-input' placeholder='Search the 5E SRD API for Spells. . .'>
 
 				<button onclick="CallApiSearchEngine()">Perform Search</button>
 
 				<!-- 
 					A div for the page DESCRIPTION -->
-				<div id="common-fixed-description">
+				<div id="fixed-description">
 						<div id="dnd-api-element"></div>
 				</div>
 
 				<!-- This is the table that contains the entries being filtered -->
 				<h3>API Search Engine Results</h3>
-				<table id="cc-dynamic-index">
+				<table id="dynamic-index">
 					<!-- The buttons that designate the column data and serve as the header can be clicked to sort the entries in ascending or descending order -->
-					<thead class="header" id="cc-dynamic-index-thead"></thead>
+					<thead class="header" id="dynamic-index-thead"></thead>
 
 					<!-- The empty table body, which is populated from a JSON file using the above script  -->
 					<tbody></tbody>
@@ -54,7 +54,7 @@ It also contains TITLE, PAGE LIST, and DESCRIPTION elements that are unique and 
 			</section>
 			<!-- 
 			A div for the page FOOTER -->
-			<div id="common-populated-footer"></div>
+			<div id="populated-footer"></div>
 		</div>
 	</body>
 </html>

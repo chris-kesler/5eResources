@@ -3,7 +3,7 @@ $(function processUser() {
 
 	var temp = parameters[0].split("=");
 	page_args = unescape(temp[1]);
-	// document.getElementById("common-populated-title-thead").innerHTML = page_args;
+	// document.getElementById("populated-title-thead").innerHTML = page_args;
 });
 
 $(function populatePageData() {
@@ -19,7 +19,7 @@ $(function populatePageData() {
 				document.getElementById("class-page-image").src = "/resources/images/" + f.name_str + ".png";
 				document.getElementById("class-page-image").alt = f.class_img_credit;
 				document.getElementById("page-image-credit").innerHTML = f.class_img_credit;
-				document.getElementById("class-common-fixed-description").innerHTML = f.description_long_str;
+				document.getElementById("class-fixed-description").innerHTML = f.description_long_str;
 				document.getElementById("class-features-intro").innerHTML = "As a "  + f.name_str + ", you gain the following Class Features.";
 				document.getElementById("hit-dice").innerHTML = "<b>Hit Dice:</b>  1d" + f.hit_die_int + " per " + f.name_str + " level";
 				document.getElementById("hit-points-at-1st-level").innerHTML = "<b>Hit Points at 1st level:</b>  " + f.hit_die_int + " your Constitution modifier";
@@ -36,7 +36,7 @@ $(function populatePageData() {
 				document.getElementById("equipment-tools").innerHTML = "<b>Tools:</b>  " + f.equipment_tools;
 				document.getElementById("equipment-packs").innerHTML = "<b>Packs:</b>  " + f.equipment_packs;
 				document.getElementById("starting-wealth").innerHTML = "<td>" + f.name_str + "</td><td>" + f.equipment_variant + "</td>";
-				document.getElementById("common-populated-title-title").innerHTML = "The " + f.name_str + " Table";
+				document.getElementById("populated-title-title").innerHTML = "The " + f.name_str + " Table";
 				var prof = 2;
 				let j = 0;
 				for (let i = 0; i < 20; i++) {
@@ -74,9 +74,9 @@ $(function populatePageData() {
 					}
 				}
 				for (let i = 0; i < f.class_feats.length; i++) {
-					if (document.getElementById("common-populated-title-features").innerHTML.indexOf(f.class_feats[i].name_str) > 0) {} 
+					if (document.getElementById("populated-title-features").innerHTML.indexOf(f.class_feats[i].name_str) > 0) {} 
 					else {
-						document.getElementById("common-populated-title-features").innerHTML += "<hr><h3 id='" 
+						document.getElementById("populated-title-features").innerHTML += "<hr><h3 id='" 
 						+ f.class_feats[i].name_str.replace(/\s+/g, '') + "'>" 
 						+ f.class_feats[i].name_str + "</h3><h4><i><b><a href='#populated-details-table'>" + f.name_str 
 						+ "</a>:</b>  level " + f.class_feats[i].level + "</i></h4><p>" 

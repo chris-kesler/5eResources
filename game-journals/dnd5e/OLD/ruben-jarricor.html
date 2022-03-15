@@ -11,29 +11,29 @@
 
 
   <body>
-    <div id="page-background-div"> 
-      <div class="common-page-header">
-        <div id="common-populated-header"></div>
+    <div id="fixed-background"> 
+      <div class="page-header">
+        <div id="populated-header"></div>
 
           <h1>Game Journal:  Ruben Jarricor</h1>
           <hr>
       </div>
         
       
-      <div class="common-common-fixed-content-transparent">
+      <div class="fixed-content-transparent">
           
 
 
 
 
-            <section class="common-fixed-content">
-                <button id="common-page-back-button" onclick="location.href='../dnd5e.html'">Out to D&D</button>
+            <section class="fixed-content">
+                <button id="page-back-button" onclick="location.href='../dnd5e.html'">Out to D&D</button>
                 <h2>Overview</h2>
                 <hr>
 
-                <table class="cc-fixed-index">
+                <table class="fixed-index">
                     <tr><td>
-                        <button class="page-list-entry-button" onclick="location.href='/character-builds/artificer-warmagic.html'">Artificer + War Magic</button>
+                        <button class="fixed-index-button-entry" onclick="location.href='/character-builds/artificer-warmagic.html'">Artificer + War Magic</button>
                     </td></tr>
                 </table>
 
@@ -102,7 +102,7 @@
                     </i></span>
                 </p>
 
-                <table class="cc-populated-attributes">
+                <table class="populated-attributes">
                     <tr>
                         <th colspan="2">Session Overview</th>
                     </tr>
@@ -223,7 +223,7 @@
 
       </div>
 
-      <div id="common-populated-footer"></div>
+      <div id="populated-footer"></div>
     </div>
   </body>
 </html>
@@ -231,8 +231,8 @@
 <script type="text/javascript">
   $(function () {
 
-    $("#common-populated-header").load("/resources/pages/common-populated-header.html");
-    $("#common-populated-footer").load("/resources/pages/common-populated-footer.html");
+    $("#populated-header").load("/resources/pages/populated-header.html");
+    $("#populated-footer").load("/resources/pages/populated-footer.html");
 
 });
 </script>

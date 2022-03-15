@@ -82,9 +82,9 @@
 
               // Populating the name of the page
               if (content_source != undefined){
-                document.getElementById("common-populated-title-thead").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > <a target='blank' href='" + content_source + "'>" + titleCase(page_title.replace('-', ' ').replace('.html', '')) + " (source)</a>";
+                document.getElementById("populated-title-thead").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > <a target='blank' href='" + content_source + "'>" + titleCase(page_title.replace('-', ' ').replace('.html', '')) + " (source)</a>";
               } else {
-                document.getElementById("common-populated-title-thead").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > " + titleCase(page_title.replace('-', ' ').replace('.html', ''));
+                document.getElementById("populated-title-thead").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replace('-', ' ').replace('.html', '')) + "</a> > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replace('-', ' ').replace('.html', '')) + "</a> > " + titleCase(page_title.replace('-', ' ').replace('.html', ''));
 
               }
 
@@ -95,16 +95,16 @@
               
               // Populating the page description based on flavor, mechanics, overcharge, and components
               if (f.flavor_str != undefined) {
-                document.getElementById("common-fixed-description").innerHTML += "<b>Flavor Description:</b>  <i>" + f.flavor_str + "</i><br><br>";
+                document.getElementById("fixed-description").innerHTML += "<b>Flavor Description:</b>  <i>" + f.flavor_str + "</i><br><br>";
               }
               if (f.mechanics_str != undefined) {
-                document.getElementById("common-fixed-description").innerHTML += "<b>Standard Mechanics:</b>  " + f.mechanics_str + "<br><br>";
+                document.getElementById("fixed-description").innerHTML += "<b>Standard Mechanics:</b>  " + f.mechanics_str + "<br><br>";
               }
 
               
               // Defining and populating the first row of the page table
               var table_row1 = "<tr><th style='width: 15vw'>Level</th><th style='width: 15vw'>School</th><th style='width: 15vw'>Attack/Save</th><th style='width: 15vw'>Damage/Effect</th></tr>"
-              $(table_row1).appendTo("#common-populated-title tbody");
+              $(table_row1).appendTo("#populated-title tbody");
 
               // Defining and populating the second row of the page table
               var table_row2 = "<tr>" 
@@ -113,7 +113,7 @@
                 + "<td>" + f.attack_save_str + "</td>" 
                 + "<td>" + f.damage_effect_str + "</td>" 
                 + "</tr>"
-              $(table_row2).appendTo("#common-populated-title tbody");
+              $(table_row2).appendTo("#populated-title tbody");
             }
           });
         });
@@ -124,27 +124,27 @@
 
   <body>
     <!-- The fixed background div -->
-    <div id="page-background-div"> 
+    <div id="fixed-background"> 
 
       <!-- A div to hold our header -->
-      <div class="common-page-header">
+      <div class="page-header">
 
         <!-- Importing the header -->
-        <div id="common-populated-header"></div>
+        <div id="populated-header"></div>
 
       </div>
         
       <!-- A transparent div to build everything else on top of -->
-      <div class="common-common-fixed-content-transparent">
+      <div class="fixed-content-transparent">
 
         <!-- An off white chunk of the page that holds content -->
-        <section class="common-fixed-content">
+        <section class="fixed-content">
 
           <!-- A table to hold the page overview information -->
-          <table id="common-populated-title">
+          <table id="populated-title">
 
             <!-- The title of the page content, including the source as a link -->
-            <thead><tr><td colspan="6"><h2 id="common-populated-title-thead"></h2></td></tr></thead>
+            <thead><tr><td colspan="6"><h2 id="populated-title-thead"></h2></td></tr></thead>
             <tbody></tbody>
           </table>
 
@@ -156,12 +156,12 @@
 
 
           <!-- A paragraph to hold the page content and descriptions -->
-          <p id="common-fixed-description"></p>
+          <p id="fixed-description"></p>
         </section>
       </div>
 
       <!-- Importing the footer -->
-      <div id="common-populated-footer"></div>
+      <div id="populated-footer"></div>
     </div>
   </body>
 </html>
@@ -169,8 +169,8 @@
 <script type="text/javascript">
   $(function () {
 
-    $("#common-populated-header").load("/resources/pages/common-populated-header.html");
-    $("#common-populated-footer").load("/resources/pages/common-populated-footer.html");
+    $("#populated-header").load("/resources/pages/populated-header.html");
+    $("#populated-footer").load("/resources/pages/populated-footer.html");
 
 });
 </script>

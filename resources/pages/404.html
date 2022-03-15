@@ -33,7 +33,7 @@
 // 
 // The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
 // =========================================================================================
-        $("#common-populated-header").load("/resources/pages/common-populated-header.html");
+        $("#populated-header").load("/resources/pages/populated-header.html");
 
 
 // =========================================================================================
@@ -41,7 +41,7 @@
 // 
 // The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
 // =========================================================================================
-        $("#common-populated-footer").load("/resources/pages/common-populated-footer.html");
+        $("#populated-footer").load("/resources/pages/populated-footer.html");
       });
     </script>
   </head>  
@@ -49,26 +49,26 @@
   <body>
     <!-- 
       A div for the page BACKGROUND -->
-    <div id="page-background-div-homepage">
+    <div id="fixed-background">
       <!-- 
         A div for the page HEADER -->
-      <div id="common-populated-header"></div>
+      <div id="populated-header"></div>
       <!-- 
         A section for the page CONTENT -->
-      <section class="common-fixed-content">
+      <section class="fixed-content">
         <!-- 
           A table for the page TITLE -->
-        <table id="common-populated-title"><thead><tr><td colspan="6"><h2 id="common-populated-title-thead">Error 404!  That page can't be found!</h2></td></tr></thead><tbody></tbody></table>   
+        <table id="populated-title"><thead><tr><td colspan="6"><h2 id="populated-title-thead">Error 404!  That page can't be found!</h2></td></tr></thead><tbody></tbody></table>   
         <!-- 
           A table for the PAGE LIST -->
-        <table class="cc-fixed-index">
+        <table class="fixed-index">
           <tr><td>
-            <button class="cc-fixed-index-directory-button" onclick="history.back()">Back to Previous Page</button>
+            <button class="fixed-index-button-directory" onclick="history.back()">Back to Previous Page</button>
           </td></tr>
         </table>
         <!-- 
           A div for the page DESCRIPTION -->
-        <div id="common-fixed-description">
+        <div id="fixed-description">
 
           <p><b>
             Looks like the page you are after is still under development, or might not exist at all.  
@@ -80,11 +80,11 @@
             If you can't be bothered to wait around for me to finish the site alone and would like to contribute to this site in some way, feel free to reach out on GitHub or Discord.  
           </p>
         </div>
-				<hr class="common-fixed-content-anchor">
+				<hr class="fixed-content-anchor">
 			</section>
       <!-- 
         A div for the page FOOTER -->
-      <div id="common-populated-footer"></div>
+      <div id="populated-footer"></div>
     </div>
   </body>
 </script>

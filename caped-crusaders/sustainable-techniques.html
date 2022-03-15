@@ -21,7 +21,7 @@
 		<link rel="icon" href="/resources/images/OwlOfMinerva_ModifiedLogo.png">
 
 		<!-- Importing styles -->
-		<link rel="stylesheet" href="/styles-common.css">
+		<link rel="stylesheet" href="/default-styles.css">
 		<link rel="stylesheet" href="/caped-crusaders/styles-caped-crusaders.css">
 
 		<!-- Importing jQuery -->
@@ -74,7 +74,7 @@
 						var table_row = "<tr>" 
 							+ "<td><a href='sustainable-techniques/entry-page.html?name=" + f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") + "' target='_blank'>" + f.name_str + "</a></td>" 
 							+ "<td>" + f.level_str + "</td>" 
-							+ "<td>" + "<img class='directory-page-dynamic-table-entry-image' src=/resources/images/" + f.type_str + ".png><br>" + f.type_str + "</td>" 
+							+ "<td>" + "<img class='dynamic-index-image' src=/resources/images/" + f.type_str + ".png><br>" + f.type_str + "</td>" 
 							+ "<td>" + f.attack_save_str + "</td>" 
 							+ "<td>" + f.damage_effect_str + "</td>" 
 							+ "<td>" + f.class_str + "</td>" 
@@ -82,7 +82,7 @@
 							+ "</tr>"
 
 						// Adding the row to the table
-						$(table_row).appendTo("#cc-dynamic-index tbody");
+						$(table_row).appendTo("#dynamic-index tbody");
 					});
 				});
 			});
@@ -91,16 +91,16 @@
 	<body>
 
 		<!-- FIXED BACKGROUND -->
-		<div id="cc-fixed-background">
+		<div id="fixed-background">
 			
 			<!-- POPULATED HEADER -->
-			<div id="common-populated-header"></div>
+			<div id="populated-header"></div>
 			
 			<!-- FIXED CONTENT -->
-			<section class="common-fixed-content">
+			<section class="fixed-content">
 			
 				<!-- POPULATED TITLE -->
-				<table id="common-populated-title"><thead><tr><td colspan="6"><h2 id="common-populated-title-thead"></h2></td></tr></thead><tbody>
+				<table id="populated-title"><thead><tr><td colspan="6"><h2 id="populated-title-thead"></h2></td></tr></thead><tbody>
 					<tr>
 						<td>
 							<!-- The include filters are a series of text boxes that can be filled to hide elements that do not contain the string entered within the designated attribute  -->
@@ -119,10 +119,10 @@
 				
 				<!-- DYNAMIC INDEX -->
 				<h3>Sortable Entries</h3>
-				<table id="cc-dynamic-index">
+				<table id="dynamic-index">
 					
 					<!-- The buttons that designate the column data and serve as the header can be clicked to sort the entries in ascending or descending order -->
-					<thead class="header" id="cc-dynamic-index-thead"></thead>
+					<thead class="header" id="dynamic-index-thead"></thead>
 
 					<!-- The empty table body -->
 					<tbody></tbody>
@@ -130,7 +130,7 @@
 			</section>
 			
 			<!-- POPULATED FOOTER -->
-			<div id="common-populated-footer"></div>
+			<div id="populated-footer"></div>
 		</div>
 	</body>
 </html>

@@ -50,7 +50,7 @@ const getResults = (id) => {
 				</th>
 			</tr>
 			`
-			$(table_row).appendTo("#common-populated-title tbody");
+			$(table_row).appendTo("#populated-title tbody");
 
 			// Table Row #2: Values
 			table_row = `
@@ -72,7 +72,7 @@ const getResults = (id) => {
 				</td>
 			</tr>
 			`
-			$(table_row).appendTo("#common-populated-title tbody");
+			$(table_row).appendTo("#populated-title tbody");
 
 			// Table Row #3: Labels
 			table_row = `
@@ -94,7 +94,7 @@ const getResults = (id) => {
 				</th>
 			</tr>
 			`
-			$(table_row).appendTo("#common-populated-title tbody");
+			$(table_row).appendTo("#populated-title tbody");
 
 			// Table Row #4: Values
 			table_row = `
@@ -146,7 +146,7 @@ const getResults = (id) => {
 				</tr>
 				`
 			}
-			$(table_row).appendTo("#common-populated-title tbody");
+			$(table_row).appendTo("#populated-title tbody");
 
 // =========================================================================================
 // Populating the page ATTRIBUTES table
@@ -155,11 +155,11 @@ const getResults = (id) => {
 			table_row = `
 				<tr>
 					<th colspan='2'>
-						<img id='cc-populated-attributes-image' alt='${result.name}' target='blank' src='/resources/images/${result.school}.png' style='display:block'>
+						<img id='populated-attributes-image' alt='${result.name}' target='blank' src='/resources/images/${result.school}.png' style='display:block'>
 					</th>
 				</tr>
 			`
-			$(table_row).appendTo("#cc-populated-attributes tbody");
+			$(table_row).appendTo("#populated-attributes tbody");
 					
 
 			// Table Row #2: Linked Art
@@ -170,7 +170,7 @@ const getResults = (id) => {
 					</th>
 				</tr>
 			`
-			$(table_row).appendTo("#cc-populated-attributes tbody");
+			$(table_row).appendTo("#populated-attributes tbody");
 
 
 // =========================================================================================
@@ -181,8 +181,8 @@ const getResults = (id) => {
 // =========================================================================================
 
 				// Populating the page title in the floating nav table
-				var table_row = `<tr><th><a href='#common-populated-title'>${result.name}</a></th></tr>`
-				$(table_row).appendTo("#common-populated-navlist-table tbody");
+				var table_row = `<tr><th><a href='#populated-title'>${result.name}</a></th></tr>`
+				$(table_row).appendTo("#populated-navlist-table tbody");
 
 
 				headingsArray = ["Standard Mechanics", "Upcast Mechanics", "Material Components"];
@@ -190,7 +190,7 @@ const getResults = (id) => {
 				for (let i = 0; i < headingsArray.length; i++) {
 
 					if (i == 0) {
-						document.getElementById("common-populated-description").innerHTML += "<div id='" + headingsArray[i].toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h3>" + headingsArray[i] + ": </h3></div>";
+						document.getElementById("populated-description").innerHTML += "<div id='" + headingsArray[i].toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h3>" + headingsArray[i] + ": </h3></div>";
 
 						table_row = `
 							<tr>
@@ -199,14 +199,14 @@ const getResults = (id) => {
 								</td>
 							</tr>
 						`
-						$(table_row).appendTo("#common-populated-navlist-table tbody");
+						$(table_row).appendTo("#populated-navlist-table tbody");
 
 						for (let z = 0; z < result.desc.length; z++) {
-							document.getElementById("common-populated-description").innerHTML += `<p>${result.desc[z]}</p>`;
+							document.getElementById("populated-description").innerHTML += `<p>${result.desc[z]}</p>`;
 						}
 
 					} else if (i == 1 && !jQuery.isEmptyObject(result.higher_level)) {
-						document.getElementById("common-populated-description").innerHTML += "<div id='" + headingsArray[i].toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h3>" + headingsArray[i] + ": </h3></div>";
+						document.getElementById("populated-description").innerHTML += "<div id='" + headingsArray[i].toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h3>" + headingsArray[i] + ": </h3></div>";
 
 						table_row = `
 							<tr>
@@ -215,11 +215,11 @@ const getResults = (id) => {
 								</td>
 							</tr>
 						`
-						$(table_row).appendTo("#common-populated-navlist-table tbody");
+						$(table_row).appendTo("#populated-navlist-table tbody");
 
-						document.getElementById("common-populated-description").innerHTML += `<p>${result.higher_level}</p>`;
+						document.getElementById("populated-description").innerHTML += `<p>${result.higher_level}</p>`;
 					} else if (i == 2 && result.material != undefined) {
-						document.getElementById("common-populated-description").innerHTML += "<div id='" + headingsArray[i].toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h3>" + headingsArray[i] + ": </h3></div>";
+						document.getElementById("populated-description").innerHTML += "<div id='" + headingsArray[i].toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h3>" + headingsArray[i] + ": </h3></div>";
 
 						table_row = `
 							<tr>
@@ -228,9 +228,9 @@ const getResults = (id) => {
 								</td>
 							</tr>
 						`
-						$(table_row).appendTo("#common-populated-navlist-table tbody");
+						$(table_row).appendTo("#populated-navlist-table tbody");
 
-						document.getElementById("common-populated-description").innerHTML += `<p>${result.material}</p>`
+						document.getElementById("populated-description").innerHTML += `<p>${result.material}</p>`
 					}
 				}
 		});

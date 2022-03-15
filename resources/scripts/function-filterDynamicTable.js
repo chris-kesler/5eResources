@@ -7,31 +7,31 @@ function FilterTableFunction() {
 	var txtValueZero, txtValueOne, txtValueTwo, txtValueThree, txtValueFour, txtValueFive, txtValueSix, txtValueSeven, txtValueEight, txtValueNine, txtValueTen, txtValueEleven, txtValueTwelve, txtValueThirteen;
 
 	// Defining filter variables based on the text present in the input boxes
-	var inputIncludeZero = document.getElementById("directory-page-dynamic-table-query-inputInclude0");
-	var inputIncludeOne = document.getElementById("directory-page-dynamic-table-query-inputInclude1");
-	var inputIncludeTwo = document.getElementById("directory-page-dynamic-table-query-inputInclude2");
-	var inputIncludeThree = document.getElementById("directory-page-dynamic-table-query-inputInclude3");
-	var inputIncludeFour = document.getElementById("directory-page-dynamic-table-query-inputInclude4");
-	var inputIncludeFive = document.getElementById("directory-page-dynamic-table-query-inputInclude5");
-	var inputIncludeSix = document.getElementById("directory-page-dynamic-table-query-inputInclude6");
-	var inputIncludeSeven = document.getElementById("directory-page-dynamic-table-query-inputInclude7");
-	var inputIncludeEight = document.getElementById("directory-page-dynamic-table-query-inputInclude8");
-	var inputIncludeNine = document.getElementById("directory-page-dynamic-table-query-inputInclude9");
-	var inputIncludeTen = document.getElementById("directory-page-dynamic-table-query-inputInclude10");
-	var inputIncludeEleven = document.getElementById("directory-page-dynamic-table-query-inputInclude11");
+	var inputIncludeZero = document.getElementById("dynamic-index-inputInclude0");
+	var inputIncludeOne = document.getElementById("dynamic-index-inputInclude1");
+	var inputIncludeTwo = document.getElementById("dynamic-index-inputInclude2");
+	var inputIncludeThree = document.getElementById("dynamic-index-inputInclude3");
+	var inputIncludeFour = document.getElementById("dynamic-index-inputInclude4");
+	var inputIncludeFive = document.getElementById("dynamic-index-inputInclude5");
+	var inputIncludeSix = document.getElementById("dynamic-index-inputInclude6");
+	var inputIncludeSeven = document.getElementById("dynamic-index-inputInclude7");
+	var inputIncludeEight = document.getElementById("dynamic-index-inputInclude8");
+	var inputIncludeNine = document.getElementById("dynamic-index-inputInclude9");
+	var inputIncludeTen = document.getElementById("dynamic-index-inputInclude10");
+	var inputIncludeEleven = document.getElementById("dynamic-index-inputInclude11");
 
-	var inputExcludeZero = document.getElementById("directory-page-dynamic-table-query-inputExclude0");
-	var inputExcludeOne = document.getElementById("directory-page-dynamic-table-query-inputExclude1");
-	var inputExcludeTwo = document.getElementById("directory-page-dynamic-table-query-inputExclude2");
-	var inputExcludeThree = document.getElementById("directory-page-dynamic-table-query-inputExclude3");
-	var inputExcludeFour = document.getElementById("directory-page-dynamic-table-query-inputExclude4");
-	var inputExcludeFive = document.getElementById("directory-page-dynamic-table-query-inputExclude5");
-	var inputExcludeSix = document.getElementById("directory-page-dynamic-table-query-inputExclude6");
-	var inputExcludeSeven = document.getElementById("directory-page-dynamic-table-query-inputExclude7");
-	var inputExcludeEight = document.getElementById("directory-page-dynamic-table-query-inputExclude8");
-	var inputExcludeNine = document.getElementById("directory-page-dynamic-table-query-inputExclude9");
-	var inputExcludeTen = document.getElementById("directory-page-dynamic-table-query-inputExclude10");
-	var inputExcludeEleven = document.getElementById("directory-page-dynamic-table-query-inputExclude11");
+	var inputExcludeZero = document.getElementById("dynamic-index-inputExclude0");
+	var inputExcludeOne = document.getElementById("dynamic-index-inputExclude1");
+	var inputExcludeTwo = document.getElementById("dynamic-index-inputExclude2");
+	var inputExcludeThree = document.getElementById("dynamic-index-inputExclude3");
+	var inputExcludeFour = document.getElementById("dynamic-index-inputExclude4");
+	var inputExcludeFive = document.getElementById("dynamic-index-inputExclude5");
+	var inputExcludeSix = document.getElementById("dynamic-index-inputExclude6");
+	var inputExcludeSeven = document.getElementById("dynamic-index-inputExclude7");
+	var inputExcludeEight = document.getElementById("dynamic-index-inputExclude8");
+	var inputExcludeNine = document.getElementById("dynamic-index-inputExclude9");
+	var inputExcludeTen = document.getElementById("dynamic-index-inputExclude10");
+	var inputExcludeEleven = document.getElementById("dynamic-index-inputExclude11");
 
 	// Reformatting the data to uppercase to make handling comparisons easier
 	var filterIncludeZero = inputIncludeZero.value.toUpperCase();
@@ -61,7 +61,7 @@ function FilterTableFunction() {
 	var filterExcludeEleven = inputExcludeEleven.value.toUpperCase();
 
 	// Reading the table element and all table rows within
-	table = document.getElementById("cc-dynamic-index");
+	table = document.getElementById("dynamic-index");
 	tr = table.getElementsByTagName("tr");
 
 	// Looping through all table rows and hiding those who don't match the search query

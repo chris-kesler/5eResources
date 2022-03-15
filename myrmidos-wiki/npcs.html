@@ -64,7 +64,7 @@
               + "<td>" + location + "</td>" 
               + "<td>" + faction + "</td>" 
               + "</tr>"
-            $(table_row).appendTo("#cc-dynamic-index tbody");
+            $(table_row).appendTo("#dynamic-index tbody");
           });
         });
       });
@@ -73,75 +73,75 @@
 
 
   <body>
-    <div id="page-background-div-myrmidos-wiki"> 
-      <div class="common-page-header">
-        <div id="common-populated-header"></div>
+    <div id="fixed-background"> 
+      <div class="page-header">
+        <div id="populated-header"></div>
 
           <h1>Myrmidos:  NPCs</h1>
           <hr>
       </div>
         
       
-      <div class="common-common-fixed-content-transparent">
+      <div class="fixed-content-transparent">
           
 
 
 
 
-            <section class="common-fixed-content">
-              <button id="common-page-back-button" onclick="location.href='../myrmidos-wiki.html'">Out to Myrmidos Wiki</button>
+            <section class="fixed-content">
+              <button id="page-back-button" onclick="location.href='../myrmidos-wiki.html'">Out to Myrmidos Wiki</button>
               <h3>Include Filters</h3>
               <hr>
 
-              <input type="text" id="directory-page-dynamic-table-query-inputInclude0" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Name. . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputInclude1" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Alias. . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputInclude2" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Title. . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputInclude3" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Profession. . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputInclude4" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Race. . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputInclude5" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Location. . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputInclude6" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by Faction. . .">
-              <!-- <input type="text" id="directory-page-dynamic-table-query-inputInclude7" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by . . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputInclude8" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by . . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputInclude9" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by . . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputInclude10" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by . . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputInclude11" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by . . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputInclude12" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by . . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputInclude13" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Include by . . ."> -->
+              <input type="text" id="dynamic-index-inputInclude0" class="dynamic-index-input" onkeyup="FilterTableFunction()" placeholder="Include by Name. . .">
+              <input type="text" id="dynamic-index-inputInclude1" class="dynamic-index-input" onkeyup="FilterTableFunction()" placeholder="Include by Alias. . .">
+              <input type="text" id="dynamic-index-inputInclude2" class="dynamic-index-input" onkeyup="FilterTableFunction()" placeholder="Include by Title. . .">
+              <input type="text" id="dynamic-index-inputInclude3" class="dynamic-index-input" onkeyup="FilterTableFunction()" placeholder="Include by Profession. . .">
+              <input type="text" id="dynamic-index-inputInclude4" class="dynamic-index-input" onkeyup="FilterTableFunction()" placeholder="Include by Race. . .">
+              <input type="text" id="dynamic-index-inputInclude5" class="dynamic-index-input" onkeyup="FilterTableFunction()" placeholder="Include by Location. . .">
+              <input type="text" id="dynamic-index-inputInclude6" class="dynamic-index-input" onkeyup="FilterTableFunction()" placeholder="Include by Faction. . .">
+              <!-- <input type="text" id="dynamic-index-inputInclude7" class="dynamic-index-input" onkeyup="FilterTableFunction()" placeholder="Include by . . .">
+              <input type="text" id="dynamic-index-inputInclude8" class="dynamic-index-input" onkeyup="FilterTableFunction()" placeholder="Include by . . .">
+              <input type="text" id="dynamic-index-inputInclude9" class="dynamic-index-input" onkeyup="FilterTableFunction()" placeholder="Include by . . .">
+              <input type="text" id="dynamic-index-inputInclude10" class="dynamic-index-input" onkeyup="FilterTableFunction()" placeholder="Include by . . .">
+              <input type="text" id="dynamic-index-inputInclude11" class="dynamic-index-input" onkeyup="FilterTableFunction()" placeholder="Include by . . .">
+              <input type="text" id="dynamic-index-inputInclude12" class="dynamic-index-input" onkeyup="FilterTableFunction()" placeholder="Include by . . .">
+              <input type="text" id="dynamic-index-inputInclude13" class="dynamic-index-input" onkeyup="FilterTableFunction()" placeholder="Include by . . ."> -->
 
               <h3>Exclude Filters</h3>
               <hr>
 
-              <input type="text" id="directory-page-dynamic-table-query-inputExclude0" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Name. . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputExclude1" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Alias. . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputExclude2" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Title. . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputExclude3" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Profession. . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputExclude4" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Race. . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputExclude5" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Location. . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputExclude6" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Faction. . .">
-              <!-- <input type="text" id="directory-page-dynamic-table-query-inputExclude7" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by . . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputExclude8" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by . . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputExclude9" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by . . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputExclude10" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by . . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputExclude11" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by . . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputExclude12" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by . . .">
-              <input type="text" id="directory-page-dynamic-table-query-inputExclude13" class="directory-page-dynamic-table-query-input" onkeyup="FilterTableFunction()" placeholder="Exclude by . . ."> -->
+              <input type="text" id="dynamic-index-inputExclude0" class="dynamic-index-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Name. . .">
+              <input type="text" id="dynamic-index-inputExclude1" class="dynamic-index-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Alias. . .">
+              <input type="text" id="dynamic-index-inputExclude2" class="dynamic-index-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Title. . .">
+              <input type="text" id="dynamic-index-inputExclude3" class="dynamic-index-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Profession. . .">
+              <input type="text" id="dynamic-index-inputExclude4" class="dynamic-index-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Race. . .">
+              <input type="text" id="dynamic-index-inputExclude5" class="dynamic-index-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Location. . .">
+              <input type="text" id="dynamic-index-inputExclude6" class="dynamic-index-input" onkeyup="FilterTableFunction()" placeholder="Exclude by Faction. . .">
+              <!-- <input type="text" id="dynamic-index-inputExclude7" class="dynamic-index-input" onkeyup="FilterTableFunction()" placeholder="Exclude by . . .">
+              <input type="text" id="dynamic-index-inputExclude8" class="dynamic-index-input" onkeyup="FilterTableFunction()" placeholder="Exclude by . . .">
+              <input type="text" id="dynamic-index-inputExclude9" class="dynamic-index-input" onkeyup="FilterTableFunction()" placeholder="Exclude by . . .">
+              <input type="text" id="dynamic-index-inputExclude10" class="dynamic-index-input" onkeyup="FilterTableFunction()" placeholder="Exclude by . . .">
+              <input type="text" id="dynamic-index-inputExclude11" class="dynamic-index-input" onkeyup="FilterTableFunction()" placeholder="Exclude by . . .">
+              <input type="text" id="dynamic-index-inputExclude12" class="dynamic-index-input" onkeyup="FilterTableFunction()" placeholder="Exclude by . . .">
+              <input type="text" id="dynamic-index-inputExclude13" class="dynamic-index-input" onkeyup="FilterTableFunction()" placeholder="Exclude by . . ."> -->
                             
-              <table id="cc-dynamic-index">
+              <table id="dynamic-index">
                 <thead class="header">
-                  <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(0)">Name</button></th>
-                  <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(1)">Alias</button></th>
-                  <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(2)">Title</button></th>
-                  <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(3)">Profession</button></th>
-                  <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(4)">Race</button></th>
-                  <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(5)">Location</button></th>
-                  <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(6)">Faction</button></th>
-                  <!-- <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(7)">Damage/Effect</button></th>
-                  <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(8)">Classes</button></th>
-                  <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(9)">Subclasses</button></th>
-                  <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(10)">Feats</button></th>
-                  <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(11)">Backgrounds</button></th>
-                  <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(12)">Races</button></th>
-                  <th><button class="directory-page-dynamic-table-sort-button" onclick="sortTable(13)">Source</button></th> -->
+                  <th><button class="dynamic-index-button-sort" onclick="sortTable(0)">Name</button></th>
+                  <th><button class="dynamic-index-button-sort" onclick="sortTable(1)">Alias</button></th>
+                  <th><button class="dynamic-index-button-sort" onclick="sortTable(2)">Title</button></th>
+                  <th><button class="dynamic-index-button-sort" onclick="sortTable(3)">Profession</button></th>
+                  <th><button class="dynamic-index-button-sort" onclick="sortTable(4)">Race</button></th>
+                  <th><button class="dynamic-index-button-sort" onclick="sortTable(5)">Location</button></th>
+                  <th><button class="dynamic-index-button-sort" onclick="sortTable(6)">Faction</button></th>
+                  <!-- <th><button class="dynamic-index-button-sort" onclick="sortTable(7)">Damage/Effect</button></th>
+                  <th><button class="dynamic-index-button-sort" onclick="sortTable(8)">Classes</button></th>
+                  <th><button class="dynamic-index-button-sort" onclick="sortTable(9)">Subclasses</button></th>
+                  <th><button class="dynamic-index-button-sort" onclick="sortTable(10)">Feats</button></th>
+                  <th><button class="dynamic-index-button-sort" onclick="sortTable(11)">Backgrounds</button></th>
+                  <th><button class="dynamic-index-button-sort" onclick="sortTable(12)">Races</button></th>
+                  <th><button class="dynamic-index-button-sort" onclick="sortTable(13)">Source</button></th> -->
                 </thead>
                 <tbody>
 
@@ -153,7 +153,7 @@
 
       </div>
 
-      <div id="common-populated-footer"></div>
+      <div id="populated-footer"></div>
     </div>
   </body>
 </html>
@@ -161,8 +161,8 @@
 <script type="text/javascript">
   $(function () {
 
-    $("#common-populated-header").load("/resources/pages/common-populated-header.html");
-    $("#common-populated-footer").load("/resources/pages/common-populated-footer.html");
+    $("#populated-header").load("/resources/pages/populated-header.html");
+    $("#populated-footer").load("/resources/pages/populated-footer.html");
 
 });
 </script>
@@ -183,35 +183,35 @@
     var tdZero, tdOne, tdTwo, tdThree, tdFour, tdFive, tdSix, tdSeven, tdEight, tdNine, tdTen, tdEleven, tdTwelve;  
     var txtValueZero, txtValueOne, txtValueTwo, txtValueThree, txtValueFour, txtValueFive, txtValueSix, txtValueSeven, txtValueEight, txtValueNine, txtValueTen, txtValueEleven, txtValueTwelve, txtValueThirteen;
 
-    inputIncludeZero = document.getElementById("directory-page-dynamic-table-query-inputInclude0");
-    inputIncludeOne = document.getElementById("directory-page-dynamic-table-query-inputInclude1");
-    inputIncludeTwo = document.getElementById("directory-page-dynamic-table-query-inputInclude2");
-    inputIncludeThree = document.getElementById("directory-page-dynamic-table-query-inputInclude3");
-    inputIncludeFour = document.getElementById("directory-page-dynamic-table-query-inputInclude4");
-    inputIncludeFive = document.getElementById("directory-page-dynamic-table-query-inputInclude5");
-    inputIncludeSix = document.getElementById("directory-page-dynamic-table-query-inputInclude6");
-    // inputIncludeSeven = document.getElementById("directory-page-dynamic-table-query-inputInclude7");
-    // inputIncludeEight = document.getElementById("directory-page-dynamic-table-query-inputInclude8");
-    // inputIncludeNine = document.getElementById("directory-page-dynamic-table-query-inputInclude9");
-    // inputIncludeTen = document.getElementById("directory-page-dynamic-table-query-inputInclude10");
-    // inputIncludeEleven = document.getElementById("directory-page-dynamic-table-query-inputInclude11");
-    // inputIncludeTwelve = document.getElementById("directory-page-dynamic-table-query-inputInclude12");
-    // inputIncludeThirteen = document.getElementById("directory-page-dynamic-table-query-inputInclude13");
+    inputIncludeZero = document.getElementById("dynamic-index-inputInclude0");
+    inputIncludeOne = document.getElementById("dynamic-index-inputInclude1");
+    inputIncludeTwo = document.getElementById("dynamic-index-inputInclude2");
+    inputIncludeThree = document.getElementById("dynamic-index-inputInclude3");
+    inputIncludeFour = document.getElementById("dynamic-index-inputInclude4");
+    inputIncludeFive = document.getElementById("dynamic-index-inputInclude5");
+    inputIncludeSix = document.getElementById("dynamic-index-inputInclude6");
+    // inputIncludeSeven = document.getElementById("dynamic-index-inputInclude7");
+    // inputIncludeEight = document.getElementById("dynamic-index-inputInclude8");
+    // inputIncludeNine = document.getElementById("dynamic-index-inputInclude9");
+    // inputIncludeTen = document.getElementById("dynamic-index-inputInclude10");
+    // inputIncludeEleven = document.getElementById("dynamic-index-inputInclude11");
+    // inputIncludeTwelve = document.getElementById("dynamic-index-inputInclude12");
+    // inputIncludeThirteen = document.getElementById("dynamic-index-inputInclude13");
 
-    inputExcludeZero = document.getElementById("directory-page-dynamic-table-query-inputExclude0");
-    inputExcludeOne = document.getElementById("directory-page-dynamic-table-query-inputExclude1");
-    inputExcludeTwo = document.getElementById("directory-page-dynamic-table-query-inputExclude2");
-    inputExcludeThree = document.getElementById("directory-page-dynamic-table-query-inputExclude3");
-    inputExcludeFour = document.getElementById("directory-page-dynamic-table-query-inputExclude4");
-    inputExcludeFive = document.getElementById("directory-page-dynamic-table-query-inputExclude5");
-    inputExcludeSix = document.getElementById("directory-page-dynamic-table-query-inputExclude6");
-    // inputExcludeSeven = document.getElementById("directory-page-dynamic-table-query-inputExclude7");
-    // inputExcludeEight = document.getElementById("directory-page-dynamic-table-query-inputExclude8");
-    // inputExcludeNine = document.getElementById("directory-page-dynamic-table-query-inputExclude9");
-    // inputExcludeTen = document.getElementById("directory-page-dynamic-table-query-inputExclude10");
-    // inputExcludeEleven = document.getElementById("directory-page-dynamic-table-query-inputExclude11");
-    // inputExcludeTwelve = document.getElementById("directory-page-dynamic-table-query-inputExclude12");
-    // inputExcludeThirteen = document.getElementById("directory-page-dynamic-table-query-inputExclude13");
+    inputExcludeZero = document.getElementById("dynamic-index-inputExclude0");
+    inputExcludeOne = document.getElementById("dynamic-index-inputExclude1");
+    inputExcludeTwo = document.getElementById("dynamic-index-inputExclude2");
+    inputExcludeThree = document.getElementById("dynamic-index-inputExclude3");
+    inputExcludeFour = document.getElementById("dynamic-index-inputExclude4");
+    inputExcludeFive = document.getElementById("dynamic-index-inputExclude5");
+    inputExcludeSix = document.getElementById("dynamic-index-inputExclude6");
+    // inputExcludeSeven = document.getElementById("dynamic-index-inputExclude7");
+    // inputExcludeEight = document.getElementById("dynamic-index-inputExclude8");
+    // inputExcludeNine = document.getElementById("dynamic-index-inputExclude9");
+    // inputExcludeTen = document.getElementById("dynamic-index-inputExclude10");
+    // inputExcludeEleven = document.getElementById("dynamic-index-inputExclude11");
+    // inputExcludeTwelve = document.getElementById("dynamic-index-inputExclude12");
+    // inputExcludeThirteen = document.getElementById("dynamic-index-inputExclude13");
 
 
     filterIncludeZero = inputIncludeZero.value.toUpperCase();
@@ -244,7 +244,7 @@
     // filterExcludeTwelve = inputExcludeTwelve.value.toUpperCase();
     // filterExcludeThirteen = inputExcludeThirteen.value.toUpperCase();
 
-    table = document.getElementById("cc-dynamic-index");
+    table = document.getElementById("dynamic-index");
     tr = table.getElementsByTagName("tr");
   
     // Loop through all table rows, and hide those who don't match the search query
@@ -358,7 +358,7 @@
 
     // Defining variables to be used
     var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-    table = document.getElementById("cc-dynamic-index");
+    table = document.getElementById("dynamic-index");
     switching = true;
 
     // Set the sorting direction to ascending:

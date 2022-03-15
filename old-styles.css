@@ -72,9 +72,9 @@ p {
 	min-width: 20vw;
 }
 
-p:before, h1:before, h2:before, h3:before {
+p:before {
 	content: "";
-	width: 125px;
+	width: 10vw;
 	display: block;
 	overflow: hidden;
 	/* For Demonstration */
@@ -131,23 +131,23 @@ button {
 */
 
 /* A condensed dark grey background color style group for the header and footer elements */
-#common-populated-header, .common-populated-header-home-button, .common-populated-header-nav-button, #common-page-back-button, .cc-fixed-index, #common-populated-footer, .page-footer-button {
+#populated-header, .populated-header-button-home, .populated-header-button-subsite, #page-back-button, .fixed-index, #populated-footer, .page-footer-button {
 	background-color: rgb(54,57,63);
 }
 
 /* A condensed dark grey border color style group for the header elements */
-.common-populated-header-home-button, .common-populated-header-nav-button, .page-list-entry-button, #common-page-back-button, .page-footer-button, .directory-page-dynamic-table-sort-button {
+.populated-header-button-home, .populated-header-button-subsite, .fixed-index-button-entry, #page-back-button, .page-footer-button, .dynamic-index-button-sort {
 	border-color: rgb(54,57,63);
 }
 
 
 /* A condensed off black color style group for dark text elements */
-body, #common-populated-title tr th, #common-populated-title th, #common-populated-title tr td, #common-populated-title td, #common-populated-title tr th, #common-populated-title th, #common-populated-title tr td, #common-populated-title td, .populated-details-table tr th, .populated-details-table th, .populated-details-table tr td, .populated-details-table td, .cc-build-selections-table tr th, .cc-build-selections-table tr td, .cc-build-selections-table td:nth-child(1) {
+body, #populated-title tr th, #populated-title th, #populated-title tr td, #populated-title td, #populated-title tr th, #populated-title th, #populated-title tr td, #populated-title td,.populated-details-table tr th, .populated-details-table th, .populated-details-table tr td, .populated-details-table td, .build-selections-table tr th, .build-selections-table tr td, .build-selections-table td:nth-child(1) {
 	color: rgb(25,25,25);
 }
 
 /* A condensed off white color style group for light text elements or backgrounds */
-.common-populated-header-nav-button, #common-populated-header, button a, td, th {
+.populated-header-button-subsite, #populated-header, button a, td, th {
 	color: rgb(219,219,224);
 }
 
@@ -167,7 +167,7 @@ body, #common-populated-title tr th, #common-populated-title th, #common-populat
 */
 
 /* The header where site title and page title are displayed, and where sitewide navigation begins */
-#common-populated-header {
+#populated-header {
 	width: 100%;
 	margin: 0px;
 	padding: 0px;
@@ -176,7 +176,7 @@ body, #common-populated-title tr th, #common-populated-title th, #common-populat
 }
 
 /* The background container div that all other HTML elements rest inside (or on top) of */
-#page-background-div, #cc-fixed-background, #page-background-div-myrmidos-wiki, #gj-fixed-background, #page-background-div-eportfolio, #page-background-div-homepage {
+#fixed-background, #fixed-background, #fixed-background, #fixed-background, #fixed-background, #fixed-background {
 	overflow-x: hidden;
 	position: relative;
 	width: 100%;
@@ -189,19 +189,19 @@ body, #common-populated-title tr th, #common-populated-title th, #common-populat
 	padding-bottom: 25vh;
 	background-attachment: fixed;
 }
-#cc-fixed-background {
+#fixed-background {
 	background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Taichung_sunset_skyline_2019.jpg/1200px-Taichung_sunset_skyline_2019.jpg?20200526005223");
 }
-#gj-fixed-background {
+#fixed-background {
 	background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e6/Conways_game_of_life_breeder_animation.gif?20140304220345");
 }
-#page-background-div-myrmidos-wiki {
+#fixed-background {
 	background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Maurice_Prendergast_-_Fantasy_-_Google_Art_Project.jpg/1200px-Maurice_Prendergast_-_Fantasy_-_Google_Art_Project.jpg?20130108152852");
 }
-#page-background-div-eportfolio {
+#fixed-background {
 	background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Cloudscape_Over_the_Philippine_Sea.jpg/1199px-Cloudscape_Over_the_Philippine_Sea.jpg?20161117110401");
 }
-#page-background-div-homepage {
+#fixed-background {
 	background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/A_New_View_of_the_Tarantula_Nebula.jpg/1166px-A_New_View_of_the_Tarantula_Nebula.jpg?20120423153745");
 	background-position: 3%;
 	background-size: 106% 100%;
@@ -210,7 +210,7 @@ body, #common-populated-title tr th, #common-populated-title th, #common-populat
 
 
 /* The div that holds the actual page content */
-.common-common-fixed-content-transparent {
+.fixed-content-transparent {
 	background-image: url("/resources/images/Transparent.png");
 	position: relative;
 	width: 100%;
@@ -220,15 +220,16 @@ body, #common-populated-title tr th, #common-populated-title th, #common-populat
 }
 
 /* The off white chunk of the page that holds content */
-.common-fixed-content {
+.fixed-content {
 	height: auto;
-	width: 92vw;
+	width: 90vw;
 
+	border: 0.2vw solid rgb(100,100,100);
 	box-sizing: border-box;
 	overflow-wrap: break-word;
 
-	margin-left: 4vw; 
-	margin-right: 4vw;
+	margin-left: 5vw; 
+	margin-right: 5vw;
 	margin-top: 2vw;
 	margin-bottom: 2vw;
 
@@ -236,11 +237,11 @@ body, #common-populated-title tr th, #common-populated-title th, #common-populat
 }
 
 /* The off white chunk of the page that holds the entry page nav table in a fixed position, along with a placeholder for other html elements to float aroundand the table within */
-#common-populated-navlist, #common-populated-navlist-table {
+#populated-navlist, #populated-navlist-table {
 	width: auto;
 	min-width: 135px; 
 }
-#common-populated-navlist {
+#populated-navlist {
 	position: fixed;
 	right: 0;
 	margin-right: -280px;
@@ -257,13 +258,13 @@ body, #common-populated-title tr th, #common-populated-title th, #common-populat
 	border: 5px solid rgb(100,100,100);
 	background-color: rgb(200,200,200);
 }
-#common-populated-navlist-table th {
+#populated-navlist-table th {
 	border-bottom: 1px dotted grey;
 	text-align: left;
 }
 
 /* The fixed button that hides and unhides the nav table */
-#common-populated-navlist-button {
+#populated-navlist-button {
 	position: fixed;
 	right: 0;
 	margin-right: 0px;
@@ -289,7 +290,7 @@ body, #common-populated-title tr th, #common-populated-title th, #common-populat
 */
 
 /* The actual footer element to be imported into other pages */
-#common-populated-footer {
+#populated-footer {
 	padding: 0px;
 	margin: 0px;
 	position: absolute;
@@ -300,7 +301,7 @@ body, #common-populated-title tr th, #common-populated-title th, #common-populat
 	overflow-x: hidden;
 }
 /* The icons that serve as links to other sites within the footer */
-.common-page-footer-icon {
+.page-footer-icon {
 	height: 40px;
 	max-height: 5vw;
 	width: 40px;
@@ -341,14 +342,14 @@ body, #common-populated-title tr th, #common-populated-title th, #common-populat
 */
 
 /* The topmost center button that takes us back to the homepage from anywhere on the site */
-.common-populated-header-home-button {
+.populated-header-button-home {
 	width: 600px;
 	max-width: 100%;
 	border-style: dotted;
 }
 
 /* The site navigation buttons that line the header */
-.common-populated-header-nav-button {
+.populated-header-button-subsite {
 	width: 10vw;
 	min-width: 65px;
 	height: 50px;
@@ -356,13 +357,13 @@ body, #common-populated-title tr th, #common-populated-title th, #common-populat
 }
 
 /* On hovering over the header buttons, set the border to a visible off white */
-.common-populated-header-home-button:hover, .common-populated-header-nav-button:hover {
+.populated-header-button-home:hover, .populated-header-button-subsite:hover {
 	border-color: rgb(219,219,224);
 	border-radius: 10px;
 }
 
 /* A button present on nearly every page that navigates out in the file structure */
-#common-page-back-button {
+#page-back-button {
 	position: relative;
 	width: 175px;
 	height: 50px;
@@ -377,7 +378,7 @@ body, #common-populated-title tr th, #common-populated-title th, #common-populat
 }
 
 /* A button to navigate the website file structure from the page content, signifying a directory page */
-.cc-fixed-index-directory-button {
+.fixed-index-button-directory {
 	width: 24vw;
 	min-width: 150px;
 	max-width: 80vw;
@@ -391,8 +392,15 @@ body, #common-populated-title tr th, #common-populated-title th, #common-populat
 	font-weight: bold;
 }
 
+.page-list-category {
+	width: 24vw;
+	min-width: 150px;
+	max-width: 80vw;
+	color: antiquewhite;
+}
+
 /* A button to navigate the website file structure from the page content, signifying an entry page */
-.page-list-entry-button {
+.fixed-index-button-entry {
 	width: 24vw;
 	min-width: 150px;
 	max-width: 80vw;
@@ -454,42 +462,42 @@ The plane buttons
 /* 
 The buttons used to navigate and organize the classes within caped crusaders 
 */
-/* .cc-populated-index-button-tech, .cc-populated-index-button-power, .cc-populated-index-button-magic, .cc-populated-index-button-generic {
+.populated-index-button-tech, .populated-index-button-power, .populated-index-button-magic, .populated-index-button-generic {
 	width: 200px;
 	height: auto;
 	margin: 5px;
 	background-color: rgb(175, 175, 175);
 	padding: 0px;
-	border-radius: 25px;
+	border-radius: 7px;
 	border-style: hidden;
 	font-size: medium;
 	display: block;
 	position: relative;
 }
-.cc-populated-index-button-generic {
+.populated-index-button-generic {
 	height: 35px;
 }
-.cc-populated-index-button-content-ceiling, .cc-populated-index-button-content-floor {
+.populated-index-button-content-ceiling, .populated-index-button-content-floor {
 	background-color: rgb(175, 175, 175);
 	margin: 0px;
 	padding: 10px;
 	text-align: left;
 }
-.cc-populated-index-button-content-ceiling {
+.populated-index-button-content-ceiling {
 	min-height: 175px;
 }
-.cc-populated-index-button-tech {
+.populated-index-button-tech {
 	color: rgb(50, 50, 125);
 }
-.cc-populated-index-button-power {
+.populated-index-button-power {
 	color: rgb(125, 50, 50);
 }
-.cc-populated-index-button-magic {
+.populated-index-button-magic {
 	color: rgb(125, 125, 50);
 }
-.cc-populated-index-button-generic {
+.populated-index-button-generic {
 	color: rgb(25, 25, 25);
-} */
+}
 
 
 
@@ -500,7 +508,7 @@ The buttons used to navigate and organize the classes within caped crusaders
 */
 
 /* A text wrapped image to be inserted into the page description */
-.common-common-fixed-content-image-left {
+.fixed-content-image-left {
 	width: 200px;
 	float: left;
 	padding: 0px;
@@ -508,7 +516,7 @@ The buttons used to navigate and organize the classes within caped crusaders
 }
 
 /* A text wrapped image to be inserted into the page description */
-.common-common-fixed-content-image-right {
+.fixed-content-image-right {
 	width: 200px;
 	float: right;
 	padding: 0px;
@@ -516,13 +524,13 @@ The buttons used to navigate and organize the classes within caped crusaders
 }
 
 /* Small images for use within buttons or dynamic table entries */
-.directory-page-dynamic-table-entry-image, .cc-class-image-small {
+.dynamic-index-image, .class-image-small {
 	width: 50px;
 	float: right;
 }
 
 /* Medium images used to signify the class and subclass employed by character builds */
-.cc-class-image-medium, .cc-subclass-image-medium {
+.class-image-medium, .subclass-image-medium {
 	width: 100px;
 	float: right;
 	border: 4px solid rgb(100,100,100);
@@ -531,7 +539,7 @@ The buttons used to navigate and organize the classes within caped crusaders
 }
 
 /* Large images to be used for entry pages */
-#page-image, .cc-class-image-large, .cc-subclass-image-large {
+#page-image, .class-image-large, .subclass-image-large {
 	width: 100%;
 }
 
@@ -544,7 +552,7 @@ The buttons used to navigate and organize the classes within caped crusaders
 */
 
 /* A table to hold the various navigation buttons present in the page regardless of button styling */
-.cc-fixed-index {
+.fixed-index {
 	float: right;
 	height: auto;
 	width: auto;
@@ -558,10 +566,10 @@ The buttons used to navigate and organize the classes within caped crusaders
 /* 
 An overview table for caped crusaders entry pages 
 */
-/*.populated-details-table {
+.populated-details-table {
 	width: 75vw;
 }
-#common-populated-title, .populated-details-table {
+#populated-title, .populated-details-table {
 	width: 100%;
 	margin: 0;
 	margin-bottom: 15px;
@@ -569,34 +577,35 @@ An overview table for caped crusaders entry pages
 	border: 0px solid rgb(50,50,50);
 	border-collapse: collapse;
 }
-#common-populated-title thead tr td, .populated-details-table thead tr td{
+#populated-title thead tr td, .populated-details-table thead tr td{
 	border: 0px hidden aqua;
+	border-bottom: 1px solid rgb(50,50,50);
 	background: transparent;
 	background-color: transparent;
 }
-#common-populated-title thead tr td {
+#populated-title thead tr td {
 	width: 80vw;
 }
-#common-populated-title th, #common-populated-title td, .populated-details-table th, .populated-details-table td {
+#populated-title th, #populated-title td, .populated-details-table th, .populated-details-table td {
 	padding: 8px;
 	vertical-align: top;
 	border: 1px solid rgb(50,50,50);
 }
-#common-populated-title tr th, #common-populated-title th, .populated-details-table tr th, .populated-details-table th {
+#populated-title tr th, #populated-title th, .populated-details-table tr th, .populated-details-table th {
 	background-color: rgb(150,150,150);
 	font-size: medium;
 	text-align: left;
 }
-#common-populated-title tr td, #common-populated-title  td, .populated-details-table tr td, .populated-details-table td {
+#populated-title tr td, #populated-title  td, .populated-details-table tr td, .populated-details-table td {
 	background-color: rgb(200,200,200);
 	font-size: medium;
-	text-align: left; 
-} */
+	text-align: left;
+}
 
 /* 
 A table that details the character build decisions made at each level 
 */
-.cc-build-selections-table {
+.build-selections-table {
 	display: inline-table;
 	width: 35vw;
 	margin: 10px;
@@ -607,24 +616,24 @@ A table that details the character build decisions made at each level
 	border-collapse: collapse;
 	float: right;
 }
-.cc-build-selections-table th, .cc-build-selections-table td {
+.build-selections-table th, .build-selections-table td {
 	width: auto;
 	padding: 7px;
 	vertical-align: top;
 	background-color: aqua;
 	border: 1px solid rgb(50,50,50);
 }
-.cc-build-selections-table tr th {
+.build-selections-table tr th {
 	background-color: rgb(125, 125, 125);
 	font-size: large;
 	text-align: center;
 }
-.cc-build-selections-table tr td {
+.build-selections-table tr td {
 	background-color: rgb(225, 225, 225);
 	font-size: small;
 	text-align: left;
 }
-.cc-build-selections-table td:nth-child(1) {
+.build-selections-table td:nth-child(1) {
 	background-color: rgb(175, 175, 175);
 	font-size: small;
 	text-align: center;
@@ -688,7 +697,7 @@ A small table to hold the entry page image and author credit
 }
 
 /* An overview table used frequently throughout the site */
-/* #cc-populated-attributes {
+#populated-attributes {
 	display: block;
 	float: right;
 	overflow: auto;
@@ -704,54 +713,54 @@ A small table to hold the entry page image and author credit
 	border-bottom-right-radius: 5px;
 	background-color: rgb(200, 200, 200);
 }
-#cc-populated-attributes tr:first-child th {
+#populated-attributes tr:first-child th {
 	object-fit: cover;
 	overflow: hidden;
 }
-#cc-populated-attributes th, #cc-populated-attributes td {
+#populated-attributes th, #populated-attributes td {
 	width: 25vw;
 	max-width: auto;
 	padding: 10px;
 	vertical-align: top;
 }
-#cc-populated-attributes tr th {
+#populated-attributes tr th {
 	background-color: rgb(200,200,200);
 	color: rgb(58,58,58);
 	font-size: small;
 }
-#cc-populated-attributes tr td {
+#populated-attributes tr td {
 	background-color: rgb(225,225,225);
 	color: rgb(58,58,58);
 	font-size: small;
 	text-align: left;
 }
-#cc-populated-attributes tr:nth-child(2) th, #cc-populated-attributes tr:nth-child(1) th {
+#populated-attributes tr:nth-child(2) th, #populated-attributes tr:nth-child(1) th {
 	color: rgb(58,58,58);
 	padding: 2px;
 	border-top: 0px;
 	font-size: smaller;
 	text-align: center;
 }
-#cc-populated-attributes tr:nth-child(2) th {
+#populated-attributes tr:nth-child(2) th {
 	border-top: 2px solid rgb(175,175,175);
 }
-#cc-populated-attributes tr:nth-child(3) th, #cc-populated-attributes tr:nth-child(4) th {
+#populated-attributes tr:nth-child(3) th, #populated-attributes tr:nth-child(4) th {
 	background-color: rgb(100,100,100);
 	color: rgb(25,25,25);
 	font-size: large;
 }
-#cc-populated-attributes tr:nth-child(4) th {
+#populated-attributes tr:nth-child(4) th {
 	padding-top: 0px;
 	font-size: small;
 }
-#cc-populated-attributes-image {
+#populated-attributes-image {
 	width: 110%;
 	height: auto; 
 	display: block;
 	overflow: hidden;
 	margin: -5%;
 	margin-bottom: -1%;
-} */
+}
 
 
 
@@ -762,7 +771,7 @@ A small table to hold the entry page image and author credit
 */
 
 /* The input box that reads filter queries */
-.directory-page-dynamic-table-query-input {
+.dynamic-index-input {
 	background-image: url('/css/searchicon.png'); 
 	background-position: 10px 12px; 
 	background-repeat: no-repeat; 
@@ -776,32 +785,32 @@ A small table to hold the entry page image and author credit
 /* 
 The dynamic table  
 */
-#cc-dynamic-index {
+#dynamic-index {
 	border-collapse: collapse; 
 	width: 100%; 
 	border: 1px solid rgb(97, 97, 97); 
 	overflow: scroll;
 	display: inline-block;
 }
-#cc-dynamic-index th, #cc-dynamic-index tr td {
+#dynamic-index th, #dynamic-index tr td {
 	text-align: left;
 	padding: 5px; 
 	min-width: 175px;
 	color: black;
 	border: 1px solid black;
 }
-#cc-dynamic-index th {
+#dynamic-index th {
 	background-color: rgb(150,150,150);
 }
-#cc-dynamic-index tr {
+#dynamic-index tr {
 	border-bottom: 1px solid rgb(61, 61, 61);
 }
-#cc-dynamic-index tr {
+#dynamic-index tr {
 	background-color: rgb(200,200,200);
 }
 
 /* The buttons that contain the column header, which can be clicked to sort the dynamic table by that column */
-.directory-page-dynamic-table-sort-button {
+.dynamic-index-button-sort {
 	width: auto;
 	height: auto;
 	margin: 0px;
@@ -812,29 +821,29 @@ The dynamic table
 	font-weight: bold;
 }
 
-.common-fixed-content-anchor {
+.fixed-content-anchor {
 	width: 100%;
 	visibility: hidden;
 }
 
 /* Colored stylings for development */
 
-/* #common-populated-header {
+/* #populated-header {
 	background-color: red;
 }
-.common-fixed-content {
+.fixed-content {
 	background-color: orange;
 }
-#common-populated-title, #common-populated-title {
+#populated-title, #populated-title {
 	background-color: yellow;
 }
-.cc-fixed-index {
+.fixed-index {
 	background-color: green;
 }
-#common-fixed-description {
+#fixed-description {
 	background-color: blue;
 }
-#common-populated-footer {
+#populated-footer {
 	background-color: purple;
 } */
 
