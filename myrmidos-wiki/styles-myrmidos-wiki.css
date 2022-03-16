@@ -18,11 +18,11 @@
 
 	/* The default background color and general text settings */
 	body {
-		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		font-family: cursive;
 	}
 
 	button {
-		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		font-family: cursive;
 	}
 	
 	
@@ -33,7 +33,7 @@
  */
 
 	#fixed-background {
-		background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e6/Conways_game_of_life_breeder_animation.gif?20140304220345");
+		background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Maurice_Prendergast_-_Fantasy_-_Google_Art_Project.jpg/1200px-Maurice_Prendergast_-_Fantasy_-_Google_Art_Project.jpg?20130108152852");
 	}
 
 
@@ -45,34 +45,34 @@
 
 	/* Primary color */
 	#populated-header, .populated-header-button-subsite, .populated-header-button-home, #populated-footer, .page-footer-button {
-		background-color: #191A19;
-		border-color: #191A19;
+		background-color: #362706;
+		border-color: #362706;
 	}
 
 	/* Secondary color */
 	.fixed-index-button-entry {
-		border-color: #1E5128;
+		border-color: #464E2E;
 	}
 	.fixed-index-button-directory {
-		background-color: #1E5128;
+		background-color: #464E2E;
 	}
 
 
 	/* Tertiary color */
 	.fixed-index-button-directory {
-		border: 2px solid #4E9F3D;
+		border: 2px solid #ACB992;
 	}
 	.fixed-index-button-entry {
-		background-color: #4E9F3D;
+		background-color: #ACB992;
 	}
 
 	/* Accent color */
 	.fixed-content {
-		background-color: #D8E9A8;
+		background-color: #E9E5D6;
 	}
 	#populated-header, .populated-header-button-home, .populated-header-button-subsite, .populated-header-button-home-text, .fixed-index-category, .populated-footer-credit {
-		color: #D8E9A8;
+		color: #E9E5D6;
 	}
 	.page-footer-button:hover {
-		border-color: #D8E9A8;
+		border-color: #E9E5D6;
 	}

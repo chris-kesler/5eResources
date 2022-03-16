@@ -133,7 +133,7 @@ $(function populatePageData() {
 
 					// Populating Description Overview underneath title table with no heading
 					if (f.description_library[0].overview != undefined && f.description_library[0].overview !== "") {
-						document.getElementById("fixed-description").innerHTML = "<p>" + f.description_library[0].overview + "</p>";
+						document.getElementById("populated-description").innerHTML = "<p>" + f.description_library[0].overview + "</p>";
 					}
 
 					// Looping through all Library entries
@@ -154,7 +154,7 @@ $(function populatePageData() {
 
 						// Populating Heading
 						if (f.description_library[x].heading != undefined && f.description_library[x].heading !== "" && showHeading) {
-							document.getElementById("fixed-description").innerHTML += "<div id='" + f.description_library[x].heading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h3>" + f.description_library[x].heading + "</h3></div>";
+							document.getElementById("populated-description").innerHTML += "<div id='" + f.description_library[x].heading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h3>" + f.description_library[x].heading + "</h3></div>";
 
 							// Populating the page heading in the floating nav table
 							var table_row = "<tr><td><a style='margin-left: 10px' href='#" + f.description_library[x].heading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'>" + f.description_library[x].heading + "</a></td></tr>";
@@ -162,7 +162,7 @@ $(function populatePageData() {
 
 							// Populating Heading Content
 							if (f.description_library[x].content != undefined && f.description_library[x].content !== "") {
-								document.getElementById("fixed-description").innerHTML += "<p>" + f.description_library[x].content + "</p>";
+								document.getElementById("populated-description").innerHTML += "<p>" + f.description_library[x].content + "</p>";
 							}
 
 							// If Sublibrary Exists
@@ -173,7 +173,7 @@ $(function populatePageData() {
 
 									// Populating Subheading and Subcontent
 									if (f.description_library[x].sublibrary[w].subheading != undefined && f.description_library[x].sublibrary[w].subcontent != undefined && f.description_library[x].sublibrary[w].subheading !== "" && f.description_library[x].sublibrary[w].subcontent !== "") {
-										document.getElementById("fixed-description").innerHTML += "<div id='" + f.description_library[x].sublibrary[w].subheading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h4>&#8226;  " + f.description_library[x].sublibrary[w].subheading + "</h4></div><p>" + f.description_library[x].sublibrary[w].subcontent + "</p>";
+										document.getElementById("populated-description").innerHTML += "<div id='" + f.description_library[x].sublibrary[w].subheading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h4>&#8226;  " + f.description_library[x].sublibrary[w].subheading + "</h4></div><p>" + f.description_library[x].sublibrary[w].subcontent + "</p>";
 
 										// Populating the page heading in the floating nav table
 										var table_row = "<tr><td><a style='margin-left: 20px' href='#" + f.description_library[x].sublibrary[w].subheading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'>&#8226;  " + f.description_library[x].sublibrary[w].subheading + "</a></td></tr>";

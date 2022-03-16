@@ -435,7 +435,13 @@
 		font-weight: bold;
 	}
 
-
+	.page-list-category {
+		width: 24vw;
+		min-width: 150px;
+		max-width: 80vw;
+		color: antiquewhite;
+	}
+	
 	
 /* 
 ||==========================================================================================
@@ -537,6 +543,7 @@
 		color: rgb(58,58,58);
 		font-size: small;
 		text-align: left;
+		width: 50%;
 	}
 	#populated-attributes tr:nth-child(2) th, #populated-attributes tr:nth-child(1) th {
 		color: rgb(58,58,58);

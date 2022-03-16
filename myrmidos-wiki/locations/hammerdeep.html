@@ -1,96 +1,52 @@
+<!--
+|| =========================================================================================
+|| This is a POPULATED ENTRY page, which contains the following elements:
+||
+|| FIXED BACKGROUND - Standard across the subsite
+|| POPULATED HEADER - Standard across the site
+|| POPULATED NAVLIST - Standard across the site
+|| FIXED CONTENT - Standard across the site
+|| POPULATED TITLE - Standard across the subsite
+|| POPULATED ATTRIBUTES - Standard across the subsite
+|| POPULATED DESCRIPTION - Standard across the subsite
+|| POPULATED FOOTER - Standard across the site
+|| ========================================================================================= 
+-->
 <!DOCTYPE html>
-<!-- =========================================================================================
-  This is an ENTRY page.  It contains HEADER, BACKGROUND, CONTENT, and FOOTER elements that are standard across the site.
-  It also contains TITLE, ATTRIBUTES, NAVLIST, and DESCRIPTION elements that are uniquely handled as an ENTRY page.
-  The ENTRY page script reads the file path and discerns the following:  /<subsite>/<directory>/<page_name>
-  The data is populated from a JSON file that is titled <directory>.JSON and stored within the <subsite> folder
-  The data is populated from an entry within that JSON file if the entry_name attribute matches the <page_name>
- ========================================================================================= -->
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-US-Compatible" content="e-edge">
-    <title>KnowOne's Website of Everything</title>
-    <link rel="icon" href="/resources/images/OwlOfMinerva_ModifiedLogo.png">
-    <link rel="stylesheet" href="/default-styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+	<head>
+		<!-- Ensuring format and font-size is consistent across devices -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Defining subsite tab data -->
+		<title>KWoE: Caped Crusaders</title>
+		<link rel="icon" href="/resources/images/OwlOfMinerva_ModifiedLogo.png">
+
+		<!-- Importing styles -->
+		<link rel="stylesheet" href="/default-styles.css">
+		<link rel="stylesheet" href="/myrmidos-wiki/styles-myrmidos-wiki.css">
+
+		<!-- Importing jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		
+		<!-- Importing local Javascript functions -->
+		<script type="text/javascript" src="/resources/scripts/function-titleCase.js"></script>
+		<script type="text/javascript" src="/resources/scripts/function-hideShowNavList.js"></script>
+		<script type="text/javascript" src="/resources/scripts/function-readArgs.js"></script>
+
+		<!-- Populating the Header and Footer elements -->
+		<script type="text/javascript" src="/resources/scripts/load-header-footer.js"></script>
+
+		<!-- Populating the Title element based on file name and file path -->
+		<script type="text/javascript" src="/resources/scripts/load-title-directories.js"></script>
+		<script type="text/javascript" src="/resources/scripts/load-title-name.js"></script>
+
+		<!-- Populating the page Title table, Attributes table, Description element, and Navlist element from JSON data -->
     <script>
-
-      // A function that capitalizes the first letter of each word in a string
-      function titleCase(str) {
-        var split_string = str.toLowerCase().split(' ');
-        for (var i = 0; i < split_string.length; i++) {
-          split_string[i] = split_string[i].charAt(0).toUpperCase() + split_string[i].substring(1);     
-        }
-        return split_string.join(' '); 
-      }
-
-      // The function that Hides and Shows the Navlist
-      function hideShowNavList() {
-        var hidden = '0px';
-        var shown = '280px';
-
-        // If the NAVLIST is already shown (which it will not be by default upon loading the page)
-        if (document.getElementById('populated-navlist-button').style.marginRight.includes(shown)) {
-
-          // Set NAVLIST margins to the right and update button characters 
-          document.getElementById('populated-navlist-button').style.marginRight = hidden;
-          document.getElementById('populated-navlist').style.marginRight = '-280px';
-          document.getElementById('populated-navlist-button').innerHTML = '&#60; &#60;';
-
-          // Animate NAVLIST elements from their Shown position to their recently updated Hidden position
-          document.getElementById("populated-navlist").animate([
-            { transform: 'translateX(-280px)' },
-            { transform: 'translateX(0px)' }
-          ], {
-            duration: 750,
-            iterations: 1
-          });
-          document.getElementById("populated-navlist-button").animate([
-            { transform: 'translateX(-280px)' },
-            { transform: 'translateX(0px)' }
-          ], {
-            duration: 750,
-            iterations: 1
-          });
-        } else {
-
-          // Set NAVLIST margins to the lefft and update button characters
-          document.getElementById('populated-navlist-button').style.marginRight = shown;
-          document.getElementById('populated-navlist').style.marginRight = '0px';
-          document.getElementById('populated-navlist-button').innerHTML = '&#62; &#62;';
-
-          // Animate NAVLIST elements from their Hidden position to their recently updated Shown position
-          document.getElementById("populated-navlist").animate([
-            { transform: 'translateX(280px)' },
-            { transform: 'translateX(0px)' }
-          ], {
-            duration: 750,
-            iterations: 1
-          });
-          document.getElementById("populated-navlist-button").animate([
-            { transform: 'translateX(280px)' },
-            { transform: 'translateX(0px)' }
-          ], {
-            duration: 750,
-            iterations: 1
-          });
-        }
-      }
 
 
       // The function that populates all page data into preset elements
       $(function populatePageData() {
-
-
-// =========================================================================================
-// Populating the page HEADER
-// 
-// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
-// =========================================================================================
-        $("#populated-header").load("/resources/pages/populated-header.html");
-
 
 // =========================================================================================
 // Populating the page TITLE
@@ -269,7 +225,7 @@
 
                 // Populating Description Overview underneath title table with no heading
                 if (f.description_library[0].overview != undefined && f.description_library[0].overview !== "") {
-                  document.getElementById("fixed-description").innerHTML = "<p>" + f.description_library[0].overview + "</p>";
+                  document.getElementById("populated-description").innerHTML = "<p>" + f.description_library[0].overview + "</p>";
                 }
 
                 // Looping through all Library entries
@@ -290,7 +246,7 @@
 
                   // Populating Heading
                   if (f.description_library[x].heading != undefined && f.description_library[x].heading !== "" && showHeading) {
-                    document.getElementById("fixed-description").innerHTML += "<div id='" + f.description_library[x].heading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h3>" + f.description_library[x].heading + "</h3></div>";
+                    document.getElementById("populated-description").innerHTML += "<div id='" + f.description_library[x].heading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h3>" + f.description_library[x].heading + "</h3></div>";
 
                     // Populating the page heading in the floating nav table
                     var table_row = "<tr><td><a style='margin-left: 10px' href='#" + f.description_library[x].heading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'>" + f.description_library[x].heading + "</a></td></tr>";
@@ -298,7 +254,7 @@
 
                     // Populating Heading Content
                     if (f.description_library[x].content != undefined && f.description_library[x].content !== "") {
-                      document.getElementById("fixed-description").innerHTML += "<p>" + f.description_library[x].content + "</p>";
+                      document.getElementById("populated-description").innerHTML += "<p>" + f.description_library[x].content + "</p>";
                     }
 
                     // If Sublibrary Exists
@@ -309,7 +265,7 @@
 
                         // Populating Subheading and Subcontent
                         if (f.description_library[x].sublibrary[w].subheading != undefined && f.description_library[x].sublibrary[w].subcontent != undefined && f.description_library[x].sublibrary[w].subheading !== "" && f.description_library[x].sublibrary[w].subcontent !== "") {
-                          document.getElementById("fixed-description").innerHTML += "<div id='" + f.description_library[x].sublibrary[w].subheading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h4>&#8226;  " + f.description_library[x].sublibrary[w].subheading + "</h4></div><p>" + f.description_library[x].sublibrary[w].subcontent + "</p>";
+                          document.getElementById("populated-description").innerHTML += "<div id='" + f.description_library[x].sublibrary[w].subheading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'><h4>&#8226;  " + f.description_library[x].sublibrary[w].subheading + "</h4></div><p>" + f.description_library[x].sublibrary[w].subcontent + "</p>";
 
                           // Populating the page heading in the floating nav table
                           var table_row = "<tr><td><a style='margin-left: 20px' href='#" + f.description_library[x].sublibrary[w].subheading.toLowerCase().replace(/\s/g, '-').replace(`'`, ``) + "'>&#8226;  " + f.description_library[x].sublibrary[w].subheading + "</a></td></tr>";
@@ -324,47 +280,36 @@
             }
           });
         });
-
-
-// =========================================================================================
-// Populating the page FOOTER
-// 
-// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
-// =========================================================================================
-        $("#populated-footer").load("/resources/pages/populated-footer.html");
       });
     </script>
-  </head>
+	</head>
+	<body>
+		<!-- FIXED BACKGROUND -->
+		<div id="fixed-background">
 
+			<!-- POPULATED HEADER -->
+			<div id="populated-header"></div>
 
-  <body>
-    <!-- 
-      A div for the page BACKGROUND -->
-    <div id="fixed-background">
-      <!-- 
-        A div for the page HEADER -->
-      <div id="populated-header"></div>
-      <!-- 
-        A series of element for the page NAVLIST -->
-      <section id="populated-navlist"><table id="populated-navlist-table"><tbody></tbody></table></section>
-      <button id='populated-navlist-button' onclick='hideShowNavList()'>&#60; &#60;</button>
-      <!-- 
-        A section for the page CONTENT -->
-      <section class="fixed-content">
-        <!-- 
-          A table for the page TITLE -->
-        <table id="populated-title"><thead><tr><td colspan="6"><h2 id="populated-title-thead"></h2></td></tr></thead><tbody></tbody></table>   
-        <!-- 
-          A table for the page ATTRIBUTES -->
-        <table id="populated-attributes"><tbody></tbody></table>
-        <!-- 
-          A div for the page DESCRIPTION -->
-        <div id="fixed-description"></div>
+			<!-- POPULATED NAVLIST -->
+			<section id="populated-navlist"><table id="populated-navlist-table"><tbody></tbody></table></section>
+			<button id='populated-navlist-button' onclick='hideShowNavList()'>&#60; &#60;</button>
+
+			<!-- FIXED CONTENT -->
+			<section class="fixed-content">
+
+				<!-- POPULATED TITLE -->
+				<table id="populated-title"><thead><tr><td colspan="5"><h2 id="populated-title-thead"></h2></td></tr></thead><tbody></tbody></table>
+
+				<!-- POPULATED ATTRIBUTES -->
+				<table id="populated-attributes"><tbody></tbody></table>
+
+				<!-- POPULATED DESCRIPTION -->
+				<div id="populated-description"></div>
 				<hr class="fixed-content-anchor">
 			</section>
-      <!-- 
-        A div for the page FOOTER -->
-      <div id="populated-footer"></div>
-    </div>
-  </body>
+			
+			<!-- POPULATED FOOTER -->
+			<div id="populated-footer"></div>
+		</div>
+	</body>
 </html>

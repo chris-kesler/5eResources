@@ -1,134 +1,77 @@
+<!--
+|| =========================================================================================
+|| This is a FIXED ENTRY page, which contains the following elements:
+||
+|| FIXED BACKGROUND - Standard across the subsite
+|| POPULATED HEADER - Standard across the site
+|| FIXED CONTENT - Standard across the subsite
+|| POPULATED TITLE - Standard across the subsite
+|| FIXED DESCRIPTION - Unique to this page
+|| POPULATED FOOTER - Standard across the site
+|| ========================================================================================= 
+-->
 <!DOCTYPE html>
-<!-- =========================================================================================
-  This is a DIRECTORY page.  It contains HEADER, BACKGROUND, CONTENT, and FOOTER elements that are standard across the site.
-  It also contains TITLE, PAGE LIST, and DESCRIPTION elements that are unique and static as a DIRECTORY page.
-========================================================================================= -->
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-US-Compatible" content="e-edge">
-    <title>KnowOne's Website of Everything</title>
-    <link rel="icon" href="/resources/images/OwlOfMinerva_ModifiedLogo.png">
-    <link rel="stylesheet" href="/default-styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
+	<head>
+		<!-- Ensuring format and font-size is consistent across devices -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      // A function that capitalizes the first letter of each word in a string
-      function titleCase(str) {
-        var split_string = str.toLowerCase().split(' ');
-        for (var i = 0; i < split_string.length; i++) {
-          split_string[i] = split_string[i].charAt(0).toUpperCase() + split_string[i].substring(1);     
-        }
-        return split_string.join(' '); 
-      }
+		<!-- Defining subsite tab data -->
+		<title>KWoE: Caped Crusaders</title>
+		<link rel="icon" href="/resources/images/OwlOfMinerva_ModifiedLogo.png">
 
+		<!-- Importing styles -->
+		<link rel="stylesheet" href="/default-styles.css">
+		<link rel="stylesheet" href="/myrmidos-wiki/styles-myrmidos-wiki.css">
 
-      // The function that populates all page data into preset elements
-      $(function populatePageData() {
+		<!-- Importing jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		
+		<!-- Importing local Javascript functions -->
+		<script type="text/javascript" src="/resources/scripts/function-titleCase.js"></script>
+		<script type="text/javascript" src="/resources/scripts/function-hideShowNavList.js"></script>
+		<script type="text/javascript" src="/resources/scripts/function-readArgs.js"></script>
 
+		<!-- Populating the Header and Footer elements -->
+		<script type="text/javascript" src="/resources/scripts/load-header-footer.js"></script>
 
-// =========================================================================================
-// Populating the page HEADER
-// 
-// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
-// =========================================================================================
-        $("#populated-header").load("/resources/pages/populated-header.html");
+		<!-- Populating the Title element based on file name and file path -->
+		<script type="text/javascript" src="/resources/scripts/load-title-directories.js"></script>
+		<script type="text/javascript" src="/resources/scripts/load-title-name.js"></script>
+		<script>
+			$(function populatePageData() {
+				$(".magic-schools-buttons").load("/resources/pages/magic-schools-buttons.html");
+			});
+		</script>
+	</head>
+	<body>
+		
+		<!-- FIXED BACKGROUND -->
+		<div id="fixed-background">
 
+			<!-- POPULATED HEADER -->
+			<div id="populated-header"></div>
 
-// =========================================================================================
-// Populating the page TITLE
-// 
-// The page TITLE can include a table of details for spells or monster statblocks
-// If title_library does not have a table_row library, the table of details is hidden and only the TITLE path is populated
-// =========================================================================================
-        
-        // Reading the name of this file
-        var path_array = window.location.pathname.split("/");
-        var path_array_length = path_array.length;
+			<!-- FIXED CONTENT -->
+			<section class="fixed-content">
 
-        if (path_array.length == 5) {
-          var page_title = path_array.pop();
-          var page_category = path_array.pop();
-          var page_directory = path_array.pop();
-          var page_subsite = path_array.pop();
-          var page_site = path_array.pop();
-        } else if (path_array.length == 4) {
-          var page_title = path_array.pop();
-          var page_directory = path_array.pop();
-          var page_subsite = path_array.pop();
-          var page_site = path_array.pop();
-        } else if (path_array.length == 3) {
-          var page_title = path_array.pop();
-          var page_subsite = path_array.pop();
-          var page_site = path_array.pop();
-        } else if (path_array.length == 2) {
-          var page_title = path_array.pop();
-          var page_site = path_array.pop();
-        } else if (path_array.length == 1) {
-          var page_title = path_array.pop();
-        } 
+				<!-- POPULATED TITLE -->
+				<table id="populated-title"><thead><tr><td colspan="6"><h2 id="populated-title-thead"></h2></td></tr></thead><tbody></tbody></table>
 
-        var titleCompleted = false;
-        if (page_subsite != undefined) {
-          document.getElementById("populated-title-thead").innerHTML = "<a href='/" + page_subsite + ".html'>" + titleCase(page_subsite.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
-        } else {
-          document.getElementById("populated-title-thead").innerHTML = titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
-          titleCompleted = true;
-        }
-        if (page_directory != undefined && !titleCompleted) {
-          document.getElementById("populated-title-thead").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + ".html'>" + titleCase(page_directory.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
-        }
-        if (page_category != undefined && !titleCompleted) {
-          document.getElementById("populated-title-thead").innerHTML += " > <a href='/" + page_subsite + "/" + page_directory + "/" + page_category + ".html'>" + titleCase(page_category.replaceAll('-', ' ').replaceAll('.html', '')) + "</a>";
-        }
-        if (page_title != undefined && !titleCompleted) {
-          document.getElementById("populated-title-thead").innerHTML += " > " + titleCase(page_title.replaceAll('-', ' ').replaceAll('.html', ''));
-          titleCompleted = true;
-        }
+				<!-- POPULATED INDEX -->
+				<div class="magic-schools-buttons" style="float: right;"></div>
 
-
-// =========================================================================================
-// Populating the page FOOTER
-// 
-// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
-// =========================================================================================
-        $("#populated-footer").load("/resources/pages/populated-footer.html");
-        $(".magic-schools-buttons").load("/resources/pages/magic-schools-buttons.html");
-      });
-    </script>
-  </head>  
-
-
-  <body>
-    <!-- 
-      A div for the page BACKGROUND -->
-    <div id="fixed-background">
-      <!-- 
-        A div for the page HEADER -->
-      <div id="populated-header"></div>
-      <!-- 
-        A section for the page CONTENT -->
-      <section class="fixed-content">
-        <!-- 
-          A table for the page TITLE -->
-        <table id="populated-title"><thead><tr><td colspan="6"><h2 id="populated-title-thead"></h2></td></tr></thead><tbody></tbody></table>   
-        <!-- 
-          A div for the PAGES -->
-          <div class="magic-schools-buttons" style="float: right;"></div>
-
-        <!-- 
-          A div for the page DESCRIPTION -->
-        <div id="fixed-description">
-          <p>
-            The Schools of Magic categorize the various magical effects thta can be produced through spellcasting based on the plane of origin for the effect, which also happens to nicely categorize the spells based on the type of effect produced.  Abjuration spells come from the Plane of Water fro example, and almost exclusively negate or ward against phenomena, magical or otherwise.  
-          </p>
-        </div>
+				<!-- FIXED DESCRIPTION -->
+				<div id="fixed-description">
+					<p>
+						The Schools of Magic categorize the various magical effects thta can be produced through spellcasting based on the plane of origin for the effect, which also happens to nicely categorize the spells based on the type of effect produced.  Abjuration spells come from the Plane of Water fro example, and almost exclusively negate or ward against phenomena, magical or otherwise.  
+					</p>
+				</div>
 				<hr class="fixed-content-anchor">
 			</section>
-      <!-- 
-        A div for the page FOOTER -->
-      <div id="populated-footer"></div>
-    </div>
-  </body>
+
+			<!-- POPULATED FOOTER -->
+			<div id="populated-footer"></div>
+		</div>
+	</body>
 </html>

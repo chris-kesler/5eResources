@@ -1,16 +1,31 @@
+<!--
+|| =========================================================================================
+|| This is a FIXED DIRECTORY page, which contains the following elements:
+||
+|| FIXED BACKGROUND - Standard across the subsite
+|| POPULATED HEADER - Standard across the site
+|| FIXED CONTENT - Standard across the subsite
+|| POPULATED TITLE - Standard across the subsite
+|| FIXED INDEX - Unique to this page
+|| FIXED DESCRIPTION - Unique to this page
+|| POPULATED FOOTER - Standard across the site
+|| ========================================================================================= 
+-->
 <!DOCTYPE html>
-<!-- =========================================================================================
-	This is a DIRECTORY page.  It contains HEADER, BACKGROUND, CONTENT, and FOOTER elements that are standard across the site.
-	It also contains TITLE, PAGE LIST, and DESCRIPTION elements that are unique and static as a DIRECTORY page.
-========================================================================================= -->
 <html lang="en">
 	<head>
-		<meta charset="UTF-8">
+		<!-- Ensuring format and font-size is consistent across devices -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-US-Compatible" content="e-edge">
-		<title>KnowOne's Website of Everything</title>
+
+		<!-- Defining subsite tab data -->
+		<title>KWoE: Caped Crusaders</title>
 		<link rel="icon" href="/resources/images/OwlOfMinerva_ModifiedLogo.png">
+
+		<!-- Importing styles -->
 		<link rel="stylesheet" href="/default-styles.css">
+		<link rel="stylesheet" href="/myrmidos-wiki/styles-myrmidos-wiki.css">
+
+		<!-- Importing jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		
 		<!-- Importing local Javascript functions -->
@@ -18,31 +33,28 @@
 		<script type="text/javascript" src="/resources/scripts/function-hideShowNavList.js"></script>
 		<script type="text/javascript" src="/resources/scripts/function-readArgs.js"></script>
 
-		<!-- Populating the page Header and Footer -->
+		<!-- Populating the Header and Footer elements -->
 		<script type="text/javascript" src="/resources/scripts/load-header-footer.js"></script>
 
-		<!-- Populating the Title directories and name based on file name and file path -->
+		<!-- Populating the Title element based on file name and file path -->
 		<script type="text/javascript" src="/resources/scripts/load-title-directories.js"></script>
 		<script type="text/javascript" src="/resources/scripts/load-title-name.js"></script>
-
 	</head>
-
-
 	<body>
-		<!-- 
-			A div for the page BACKGROUND -->
+		
+		<!-- FIXED BACKGROUND -->
 		<div id="fixed-background">
-			<!-- 
-				A div for the page HEADER -->
+
+			<!-- POPULATED HEADER -->
 			<div id="populated-header"></div>
-			<!-- 
-				A section for the page CONTENT -->
+
+			<!-- FIXED CONTENT -->
 			<section class="fixed-content">
-				<!-- 
-					A table for the page TITLE -->
-				<table id="populated-title"><thead><tr><td colspan="6"><h2 id="populated-title-thead"></h2></td></tr></thead><tbody></tbody></table>   
-				<!-- 
-					A table for the PAGE LIST -->
+
+				<!-- POPULATED TITLE -->
+				<table id="populated-title"><thead><tr><td colspan="6"><h2 id="populated-title-thead"></h2></td></tr></thead><tbody></tbody></table>
+				
+				<!-- FIXED INDEX -->
 				<table class="fixed-index">
 					<tr><td>
 						<button class="fixed-index-button-directory" onclick="location.href='myrmidos-wiki/planescapes.html'">Planescapes</button>
@@ -69,21 +81,21 @@
 						<button class="fixed-index-button-directory" onclick="location.href='myrmidos-wiki/npcs.html'">NPCs</button>
 					</td></tr> -->
 				</table>
-				<!-- 
-					A div for the page DESCRIPTION -->
+
+				<!-- FIXED DESCRIPTION -->
 				<div id="fixed-description">
 					<p>
 						The world of Myrmidos is a rather messy mashup of multiple genres.  It includes two distinct eras; a modern day Earth with a notable number of superheroes and supervillains, and a medieval fantasy setting that draws heavily from the Forgotten Realms.  Magic used to reign supreme, which is where many of the world mythologies came from.  However, mankind proved too immature as a species to wield magic, and so the knowledge of spellcasting was purged from Myrmidos by the Gehrdali, the oldest order of elves and original masters of magic.  
-					<br><br>
+						<br><br>
 						Thousands of years later in the present, humans are creating their own sources of power through technology, and learning to wield it.  This technology sometimes leads to accidents that create superpowered individuals, benevolent or otherwise.  Rogue visitors from other worlds are increasing in frequency, possessing abilities inherent in their species that make them demigods on Myrmidos.  
-					<br><br>
+						<br><br>
 						In light of the ever increasing amount of volatility, several members of the Gehrdali have decided to test human capacity for power by allowing a select few human mages to be trained.  The advancement of technology, prominence of superpowers, and resurgence of magic makes Myrmidos a chaotic and exciting place with an uncertain--but magnificent--future.    
 					</p>
-				</div>
+				  </div>
 				<hr class="fixed-content-anchor">
 			</section>
-			<!-- 
-				A div for the page FOOTER -->
+
+			<!-- POPULATED FOOTER -->
 			<div id="populated-footer"></div>
 		</div>
 	</body>

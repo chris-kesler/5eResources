@@ -1,31 +1,46 @@
+<!--
+|| =========================================================================================
+|| This is a FIXED DIRECTORY page, which contains the following elements:
+||
+|| FIXED BACKGROUND - Standard across the subsite
+|| POPULATED HEADER - Standard across the site
+|| FIXED CONTENT - Standard across the subsite
+|| POPULATED TITLE - Standard across the subsite
+|| POPULATED INDEX - Unique to this page
+|| FIXED DESCRIPTION - Unique to this page
+|| POPULATED FOOTER - Standard across the site
+|| ========================================================================================= 
+-->
 <!DOCTYPE html>
-<!-- =========================================================================================
-	This is a DIRECTORY page.  It contains HEADER, BACKGROUND, CONTENT, and FOOTER elements that are standard across the site.
-	It also contains TITLE, PAGE LIST, and DESCRIPTION elements that are unique and static as a DIRECTORY page.
-========================================================================================= -->
 <html lang="en">
 	<head>
-		<meta charset="UTF-8">
+		<!-- Ensuring format and font-size is consistent across devices -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-US-Compatible" content="e-edge">
-		<title>KnowOne's Website of Everything</title>
+
+		<!-- Defining subsite tab data -->
+		<title>KWoE: Caped Crusaders</title>
 		<link rel="icon" href="/resources/images/OwlOfMinerva_ModifiedLogo.png">
+
+		<!-- Importing styles -->
 		<link rel="stylesheet" href="/default-styles.css">
+		<link rel="stylesheet" href="/myrmidos-wiki/styles-myrmidos-wiki.css">
+
+		<!-- Importing jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		
 		<!-- Importing local Javascript functions -->
 		<script type="text/javascript" src="/resources/scripts/function-titleCase.js"></script>
 		<script type="text/javascript" src="/resources/scripts/function-hideShowNavList.js"></script>
 		<script type="text/javascript" src="/resources/scripts/function-readArgs.js"></script>
 
-		<!-- Populating the page Header and Footer -->
+		<!-- Populating the Header and Footer elements -->
 		<script type="text/javascript" src="/resources/scripts/load-header-footer.js"></script>
 
-		<!-- Populating the Title directories and name based on file name and file path -->
+		<!-- Populating the Title element based on file name and file path -->
 		<script type="text/javascript" src="/resources/scripts/load-title-directories.js"></script>
 		<script type="text/javascript" src="/resources/scripts/load-title-name.js"></script>
 
 		<script>
-
 // =========================================================================================
 // Populating the page button backgrounds
 // =========================================================================================
@@ -118,64 +133,63 @@
 				});
 			});
 		</script>
-	</head>  
 
-
+	</head>
 	<body>
-		<!-- 
-			A div for the page BACKGROUND -->
+		
+		<!-- FIXED BACKGROUND -->
 		<div id="fixed-background">
-			<!-- 
-				A div for the page HEADER -->
+
+			<!-- POPULATED HEADER -->
 			<div id="populated-header"></div>
-			<!-- 
-				A section for the page CONTENT -->
+
+			<!-- FIXED CONTENT -->
 			<section class="fixed-content">
-				<!-- 
-					A table for the page TITLE -->
-				<table id="populated-title"><thead><tr><td colspan="6"><h2 id="populated-title-thead"></h2></td></tr></thead><tbody></tbody></table>   
-				<!-- 
-					A table for the PAGE LIST -->
-					<table id='planes-button-table' class="fixed-index">
-						<tr>
-							<td>
-								<button id="nw" class='directory-page-nav-button-plane-quasi' style='background-image: url(/resources/images/shadowfell.jpg);'></button>
-							</td>
-							<td>
-								<button id="n" class='directory-page-nav-button-plane-primal'></button>
-							</td>
-							<td>
-								<button id="ne" class='directory-page-nav-button-plane-quasi'></button>
-							</td>
-						</tr>
 
-						<tr>
-							<td>
-								<button id="w" class='directory-page-nav-button-plane-primal'></button>
-							</td>
-							<td>
-								<button id="c" class='directory-page-nav-button-plane-quasi'></button>
-							</td>
-							<td>
-								<button id="e" class='directory-page-nav-button-plane-primal'></button>
-							</td>
-						</tr>
+				<!-- POPULATED TITLE -->
+				<table id="populated-title"><thead><tr><td colspan="6"><h2 id="populated-title-thead"></h2></td></tr></thead><tbody></tbody></table>
+				
+				<!-- POPULATED INDEX -->
+				<table id='planes-button-table' class="fixed-index">
+					<tr>
+						<td>
+							<button id="nw" class='directory-page-nav-button-plane-quasi' style='background-image: url(/resources/images/shadowfell.jpg);'></button>
+						</td>
+						<td>
+							<button id="n" class='directory-page-nav-button-plane-primal'></button>
+						</td>
+						<td>
+							<button id="ne" class='directory-page-nav-button-plane-quasi'></button>
+						</td>
+					</tr>
 
-						<tr>
-							<td>
-								<button id="sw" class='directory-page-nav-button-plane-quasi'></button>
-							</td>
-							<td>
-								<button id="s" class='directory-page-nav-button-plane-primal'></button>
-							</td>
-							<td>
-								<button id="se" class='directory-page-nav-button-plane-quasi'></button>
-							</td>
-						</tr>
-					</table>
-				<!-- 
-					A div for the page DESCRIPTION -->
-				<div id="fixed-description" >
+					<tr>
+						<td>
+							<button id="w" class='directory-page-nav-button-plane-primal'></button>
+						</td>
+						<td>
+							<button id="c" class='directory-page-nav-button-plane-quasi'></button>
+						</td>
+						<td>
+							<button id="e" class='directory-page-nav-button-plane-primal'></button>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<button id="sw" class='directory-page-nav-button-plane-quasi'></button>
+						</td>
+						<td>
+							<button id="s" class='directory-page-nav-button-plane-primal'></button>
+						</td>
+						<td>
+							<button id="se" class='directory-page-nav-button-plane-quasi'></button>
+						</td>
+					</tr>
+				</table>
+
+				<!-- FIXED DESCRIPTION -->
+				<div id="fixed-description">
 					<p>
 						The Planescapes are the various metaphysical realities that the universe is comprised of.  Each plane exists on a different branch or frequency of the wave function that defines reality, remaining entirely distinct and separate from each other in with the exception of the borders.  The overlap created by two primal Planescapes becomes a quasi plane, being significantly smaller due to the lesser degree of commonality.  The overlap created by all four primal Planescapes becomes the universe as we know it, being made up of mostly empty space since very very little contact between such repellant forces can be tolerated.  
 					</p>
@@ -183,10 +197,10 @@
 						The other Planescapes can be traveled to by magical means, and have inhabitants of their own, much like the material plane.  These Planescapes contain an environment dominated by a particular type of matter that extends--for all practical applications--infinitely.  
 					</p>
 				</div>
-				<hr style="width: 80vw; visibility: hidden;">
+				<hr class="fixed-content-anchor">
 			</section>
-			<!-- 
-				A div for the page FOOTER -->
+
+			<!-- POPULATED FOOTER -->
 			<div id="populated-footer"></div>
 		</div>
 	</body>

@@ -1,73 +1,86 @@
+<!--
+|| =========================================================================================
+|| This is a FIXED DIRECTORY page, which contains the following elements:
+||
+|| FIXED BACKGROUND - Standard across the subsite
+|| POPULATED HEADER - Standard across the site
+|| FIXED CONTENT - Standard across the subsite
+|| POPULATED TITLE - Standard across the subsite
+|| FIXED INDEX - Unique to this page
+|| FIXED DESCRIPTION - Unique to this page
+|| POPULATED FOOTER - Standard across the site
+|| ========================================================================================= 
+-->
 <!DOCTYPE html>
-<!-- =========================================================================================
-  This is a DIRECTORY page.  It contains HEADER, BACKGROUND, CONTENT, and FOOTER elements that are standard across the site.
-  It also contains TITLE, PAGE LIST, and DESCRIPTION elements that are unique and static as a DIRECTORY page.
-========================================================================================= -->
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-US-Compatible" content="e-edge">
-    <title>KnowOne's Website of Everything</title>
-    <link rel="icon" href="/resources/images/OwlOfMinerva_ModifiedLogo.png">
-    <link rel="stylesheet" href="/default-styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<head>
+		<!-- Ensuring format and font-size is consistent across devices -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Defining subsite tab data -->
+		<title>KWoE: Caped Crusaders</title>
+		<link rel="icon" href="/resources/images/OwlOfMinerva_ModifiedLogo.png">
+
+		<!-- Importing styles -->
+		<link rel="stylesheet" href="/default-styles.css">
+		<link rel="stylesheet" href="/myrmidos-wiki/styles-myrmidos-wiki.css">
+
+		<!-- Importing jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		
 		<!-- Importing local Javascript functions -->
 		<script type="text/javascript" src="/resources/scripts/function-titleCase.js"></script>
 		<script type="text/javascript" src="/resources/scripts/function-hideShowNavList.js"></script>
 		<script type="text/javascript" src="/resources/scripts/function-readArgs.js"></script>
 
-		<!-- Populating the page Header and Footer -->
+		<!-- Populating the Header and Footer elements -->
 		<script type="text/javascript" src="/resources/scripts/load-header-footer.js"></script>
 
-		<!-- Populating the Title directories and name based on file name and file path -->
+		<!-- Populating the Title element based on file name and file path -->
 		<script type="text/javascript" src="/resources/scripts/load-title-directories.js"></script>
 		<script type="text/javascript" src="/resources/scripts/load-title-name.js"></script>
-  </head>  
+	</head>
+	<body>
+		
+		<!-- FIXED BACKGROUND -->
+		<div id="fixed-background">
 
+			<!-- POPULATED HEADER -->
+			<div id="populated-header"></div>
 
-  <body>
-    <!-- 
-      A div for the page BACKGROUND -->
-    <div id="fixed-background">
-      <!-- 
-        A div for the page HEADER -->
-      <div id="populated-header"></div>
-      <!-- 
-        A section for the page CONTENT -->
-      <section class="fixed-content">
-        <!-- 
-          A table for the page TITLE -->
-        <table id="populated-title"><thead><tr><td colspan="6"><h2 id="populated-title-thead"></h2></td></tr></thead><tbody></tbody></table>   
-        <!-- 
-          A table for the PAGE LIST -->
-          <table class="fixed-index">
-            <tr><td>
-              <button class="fixed-index-button-directory" onclick="location.href='magic/arcane-magic.html'">Arcane Magic</button>
-            </td></tr>
-            <tr><td>
-              <button class="fixed-index-button-directory" onclick="location.href='magic/divine-magic.html'">Divine Magic</button>
-            </td></tr>
-            <tr><td>
-              <button class="fixed-index-button-directory" onclick="location.href='magic/innate-magic.html'">Innate Magic</button>
-            </td></tr>
-            <tr><td>
-              <button class="fixed-index-button-directory" onclick="location.href='magic/schools-of-magic.html'">Schools of Magic</button>
-            </td></tr>
-          </table>
+			<!-- FIXED CONTENT -->
+			<section class="fixed-content">
 
-        <!-- 
-          A div for the page DESCRIPTION -->
-        <div id="fixed-description">
-          <p>
-            Magic is a powerful and volatile practice that involves invoking energy from another plane of existence to produce a desired effect.  There are three basic types of magic, each differing in the point of origin for the magic itself and the nature of casting required.  Arcane Magic is achieved through study, and involves plucking on the strands of another plane that are already present in the world.  Divine Magic is granted by another being, with the caster serving as an intermediary to harness and direct the magical energy.  Innate Magic involves a being who has a physiological connection to the other Planescapes invoking that connection, much like a muscle, and requires the least academic knowledge to cast.  
-          </p>
-        </div>
+				<!-- POPULATED TITLE -->
+				<table id="populated-title"><thead><tr><td colspan="6"><h2 id="populated-title-thead"></h2></td></tr></thead><tbody></tbody></table>
+				
+				<!-- FIXED INDEX -->
+				<table class="fixed-index">
+					<tr><td>
+						<button class="fixed-index-button-directory" onclick="location.href='magic/arcane-magic.html'">Arcane Magic</button>
+					</td></tr>
+					<tr><td>
+						<button class="fixed-index-button-directory" onclick="location.href='magic/divine-magic.html'">Divine Magic</button>
+					</td></tr>
+					<tr><td>
+						<button class="fixed-index-button-directory" onclick="location.href='magic/innate-magic.html'">Innate Magic</button>
+					</td></tr>
+					<tr><td>
+						<button class="fixed-index-button-directory" onclick="location.href='magic/schools-of-magic.html'">Schools of Magic</button>
+					</td></tr>
+						</table>
+
+				<!-- FIXED DESCRIPTION -->
+				<div id="fixed-description">
+					<p>
+						Magic is a powerful and volatile practice that involves invoking energy from another plane of existence to produce a desired effect.  There are three basic types of magic, each differing in the point of origin for the magic itself and the nature of casting required.  Arcane Magic is achieved through study, and involves plucking on the strands of another plane that are already present in the world.  Divine Magic is granted by another being, with the caster serving as an intermediary to harness and direct the magical energy.  Innate Magic involves a being who has a physiological connection to the other Planescapes invoking that connection, much like a muscle, and requires the least academic knowledge to cast.  
+					</p>
+				</div>
 				<hr class="fixed-content-anchor">
 			</section>
-      <!-- 
-        A div for the page FOOTER -->
-      <div id="populated-footer"></div>
-    </div>
-  </body>
+
+			<!-- POPULATED FOOTER -->
+			<div id="populated-footer"></div>
+		</div>
+	</body>
 </html>
