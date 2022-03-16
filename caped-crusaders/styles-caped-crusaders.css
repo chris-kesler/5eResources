@@ -1,24 +1,90 @@
-/* 
+/* || =========================================================================================
+|| Table of Contents:
+||
+|| - Font styling
+|| - Background styling
+|| - Color Palette styling
+|| - Custom subsite elements
+|| ========================================================================================= 
+ */
+
+
+
+ /* 
 ||==========================================================================================
-|| changes to all elements of a generic kind
+|| Font styling
 ||==========================================================================================
  */
+
 	/* The default background color and general text settings */
 	body {
-		background: rgb(219,219,224);
 		font-family: 'Courier New', Courier, monospace;
-		margin: 0%;
-		padding: 0%;
 	}
 
 	button {
 		font-family: 'Courier New', Courier, monospace;
 	}
+	
+	
+/* 
+||==========================================================================================
+|| BACKGROUND styling
+||==========================================================================================
+ */
 
-	.populated-description-div p {
-		white-space: nowrap;
+	#fixed-background {
+		background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Taichung_sunset_skyline_2019.jpg/1200px-Taichung_sunset_skyline_2019.jpg?20200526005223");
 	}
 
+
+/* 
+||==========================================================================================
+|| Color Palette styles
+||==========================================================================================
+ */
+
+	/* Primary color */
+	#populated-header, .populated-header-button-subsite, .populated-header-button-home, #populated-footer, .page-footer-button {
+		background-color: #151515;
+		border-color: #151515;
+	}
+
+
+	/* Secondary color */
+	.fixed-index-button-entry {
+		border-color: #301B3F;
+	}
+	.fixed-index-button-directory {
+		background-color: #301B3F;
+	}
+
+
+	/* Tertiary color */
+	.fixed-index-button-directory {
+		border: 2px solid #3C415C;
+	}
+	.fixed-index-button-entry {
+		background-color: #3C415C;
+	}
+
+
+	/* Accent color */
+	.fixed-content {
+		background-color: #B4A5A5;
+	}
+	#populated-header, .populated-header-button-home, .populated-header-button-subsite, .populated-header-button-home-text, .fixed-index-category, .populated-footer-credit {
+		color: #B4A5A5;
+	}
+	.page-footer-button:hover {
+		border-color: #B4A5A5;
+	}
+	
+	
+/* 
+||==========================================================================================
+|| - Custom subsite elements
+||==========================================================================================
+ */
 
 	.populated-index-button-tech, .populated-index-button-power, .populated-index-button-magic, .populated-index-button-generic {
 		width: 250px;
@@ -65,257 +131,3 @@
 		border: 2px solid pink;
 
 	}
-	
-/* 
-||==========================================================================================
-|| POPULATED ATTRIBUTE tables and elements (used in ENTRY pages)
-||==========================================================================================
- */
-
-	#populated-title, .populated-details-table {
-		display: inline-block;
-		margin: 0;
-		border-collapse: collapse;
-		overflow: auto;
-		max-width: 88vw;
-		border: 0px solid rgb(50,50,50);
-	}
-	#populated-title thead tr td, .populated-details-table thead tr td{
-		background-color: transparent;
-		width: 88vw;
-		border-color: transparent;
-		border-bottom: 2px solid rgb(50,50,50);
-	}
-	.populated-details-table thead tr td {
-		padding: 0px;
-	}
-	.populated-details-table tr th, .populated-details-table th, .populated-details-table tr td, .populated-details-table td {
-		color: rgb(25,25,25);
-	}
-	#populated-title th, #populated-title td, .populated-details-table th, .populated-details-table td {
-		padding: 8px;
-		vertical-align: top;
-		border: 1px solid rgb(50,50,50);
-	}
-	#populated-title tr th, #populated-title th, .populated-details-table tr th, .populated-details-table th {
-		background-color: rgb(150,150,150);
-		font-size: medium;
-		text-align: left;
-	}
-	#populated-title tr td, #populated-title  td, .populated-details-table tr td, .populated-details-table td {
-		background-color: rgb(200,200,200);
-		font-size: medium;
-		text-align: left;
-	}
-
-
-/* 
-||==========================================================================================
-|| POPULATED ATTRIBUTE tables and elements (used in ENTRY pages)
-||==========================================================================================
- */
-	/* An overview table used frequently throughout the site */
-	#populated-attributes {
-		display: block;
-		float: right;
-		overflow: auto;
-		border-collapse: collapse;
-		width: 100%;
-		max-width: 400px;
-		padding: 0px;
-		margin: 0px;
-		margin-right: 0px;
-		margin-left: 10px;
-		border: 5px solid rgb(150,150,150);
-		border-radius: 32px;
-		border-bottom-left-radius: 5px;
-		border-bottom-right-radius: 5px;
-		background-color: rgb(200, 200, 200);
-	}
-	#populated-attributes tr:first-child th {
-		object-fit: cover;
-		overflow: hidden;
-	}
-	#populated-attributes th, #populated-attributes td {
-		padding: 10px;
-		vertical-align: top;
-	}
-	#populated-attributes tr th {
-		background-color: rgb(200,200,200);
-		color: rgb(58,58,58);
-		font-size: small;
-	}
-	#populated-attributes tr td {
-		background-color: rgb(225,225,225);
-		color: rgb(58,58,58);
-		font-size: small;
-		text-align: left;
-	}
-	#populated-attributes tr:nth-child(2) th, #populated-attributes tr:nth-child(1) th {
-		color: rgb(58,58,58);
-		padding: 2px;
-		border-top: 0px;
-		font-size: smaller;
-		text-align: center;
-	}
-	#populated-attributes tr:nth-child(2) th {
-		border-top: 2px solid rgb(175,175,175);
-	}
-	#populated-attributes tr:nth-child(3) th, #populated-attributes tr:nth-child(4) th {
-		background-color: rgb(100,100,100);
-		color: rgb(25,25,25);
-		font-size: large;
-	}
-	#populated-attributes tr:nth-child(4) th {
-		padding-top: 0px;
-		font-size: small;
-	}
-	#populated-attributes-image {
-		width: 110%;
-		height: auto; 
-		display: block;
-		overflow: hidden;
-		margin: -5%;
-		margin-bottom: -1%;
-	}
-
-
-/* 
-||==========================================================================================
-|| FIXED and POPULATED INDEX table and buttons (used in DIRECTORY pages)
-||==========================================================================================
- */
-	/* A table to hold the various navigation buttons present in the page regardless of button styling */
-	.fixed-index, .populated-index {
-		background-color: rgb(50, 50, 50);
-		float: right;
-		height: auto;
-		width: auto;
-		max-width: 99%;
-		display: flex;
-		overflow: auto;
-		border-radius: 20px;
-		margin-left: 1%;
-	}
-	/* A button to navigate the website file structure from the page content, signifying a directory page */
-	.fixed-index-button-directory {
-		width: 24vw;
-		min-width: 150px;
-		max-width: 80vw;
-
-		height: auto;
-		min-height: 55px;
-		
-		margin: 0.5vw;
-		border-radius: 20px;
-		background-color: rgb(150, 150, 150);
-		border: 2px solid pink;
-		
-		font-size: large;
-		font-weight: bold;
-	}
-
-/* 
-||==========================================================================================
-|| POPULATED page ATTRIBUTE table
-||==========================================================================================
- */
-
-	/* An overview table used frequently throughout the site */
-#populated-attributes {
-	display: block;
-	float: right;
-	overflow: auto;
-	border-collapse: collapse;
-	width: 100%;
-	max-width: 384px;
-	padding: 0px;
-	margin: 0px;
-	margin-top: 10px;
-	margin-left: 10px;
-	border: 5px solid rgb(150,150,150);
-	border-radius: 32px;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
-	background-color: rgb(200, 200, 200);
-}
-#populated-attributes tr:first-child th {
-	object-fit: cover;
-	overflow: hidden;
-}
-#populated-attributes th, #populated-attributes td {
-	width: 100vw;
-	max-width: auto;
-	padding: 10px;
-	vertical-align: top;
-}
-#populated-attributes tr th {
-	background-color: rgb(200,200,200);
-	color: rgb(58,58,58);
-	font-size: small;
-}
-#populated-attributes tr td {
-	background-color: rgb(225,225,225);
-	color: rgb(58,58,58);
-	font-size: small;
-	text-align: left;
-}
-#populated-attributes tr:nth-child(2) th, #populated-attributes tr:nth-child(1) th {
-	color: rgb(58,58,58);
-	padding: 2px;
-	border-top: 0px;
-	font-size: smaller;
-	text-align: center;
-}
-#populated-attributes tr:nth-child(2) th {
-	border-top: 2px solid rgb(175,175,175);
-}
-#populated-attributes tr:nth-child(3) th, #populated-attributes tr:nth-child(4) th {
-	background-color: rgb(100,100,100);
-	color: rgb(25,25,25);
-	font-size: large;
-}
-#populated-attributes tr:nth-child(4) th {
-	padding-top: 0px;
-	font-size: small;
-}
-#populated-attributes-image {
-	width: 110%;
-	height: auto; 
-	display: block;
-	overflow: hidden;
-	margin: -5%;
-	margin-bottom: -1%;
-}
-
-
-/* 
-||==========================================================================================
-|| color coded backgrounds for development purposes
-||==========================================================================================
- */
-
-/* #populated-header {
-	background-color: red;
-}
-.fixed-content {
-	background-color: orange;
-}
-#populated-title {
-	background-color: yellow;
-}
-.fixed-index {
-	background-color: green;
-}
-	#populated-attributes {
-		background-color: seagreen;
-	}
-#fixed-description {
-	background-color: blue;
-}
-	.populated-details-table {
-		background-color: cyan;
-	}
-#populated-footer {
-	background-color: purple;
-} */

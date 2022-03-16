@@ -1,4 +1,16 @@
-/* 
+/* || =========================================================================================
+|| Table of Contents:
+||
+|| - Font styling
+|| - Background styling
+|| - Color Palette styling
+|| - Custom subsite elements
+|| ========================================================================================= 
+ */
+
+
+
+ /* 
 ||==========================================================================================
 || Font styling
 ||==========================================================================================
@@ -13,6 +25,7 @@
 		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	}
 	
+	
 /* 
 ||==========================================================================================
 || BACKGROUND styling
@@ -22,6 +35,7 @@
 	#fixed-background {
 		background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e6/Conways_game_of_life_breeder_animation.gif?20140304220345");
 	}
+
 
 /* 
 ||==========================================================================================
@@ -56,12 +70,9 @@
 	.fixed-content {
 		background-color: #D8E9A8;
 	}
-	#populated-header, .populated-header-button-home, .populated-header-button-subsite, .populated-header-button-home-text {
+	#populated-header, .populated-header-button-home, .populated-header-button-subsite, .populated-header-button-home-text, .fixed-index-category {
 		color: #D8E9A8;
 	}
 	.page-footer-button:hover {
 		border-color: #D8E9A8;
-	}
-	.fixed-index-category {
-		color: #D8E9A8;
 	}

@@ -13,6 +13,7 @@
 || - POPULATED ATTRIBUTES styling
 || - FIXED and POPULATED DESCRIPTION styling
 || - POPULATED FOOTER styling
+|| - Miscellaneous styles
 || ========================================================================================= 
  */
 
@@ -658,6 +659,10 @@
 	/* The border that animates when moused over */
 	.page-footer-button:hover {
 		border-color: aqua;
+	}
+
+	.populated-footer-credit {
+		max-width: 55vw;
 	}
 
 
