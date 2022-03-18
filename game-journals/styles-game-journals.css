@@ -45,34 +45,34 @@
 
 	/* Primary color */
 	#populated-header, .populated-header-button-subsite, .populated-header-button-home, #populated-footer, .page-footer-button {
-		background-color: #191A19;
-		border-color: #191A19;
+		background-color: #7E370C;
+		border-color: #7E370C;
 	}
 
 	/* Secondary color */
 	.fixed-index-button-entry {
-		border-color: #1E5128;
+		border-color: #B05E27;
 	}
 	.fixed-index-button-directory {
-		background-color: #1E5128;
+		background-color: #B05E27;
 	}
 
 
 	/* Tertiary color */
 	.fixed-index-button-directory {
-		border: 2px solid #4E9F3D;
+		border: 2px solid #D49D42;
 	}
 	.fixed-index-button-entry {
-		background-color: #4E9F3D;
+		background-color: #D49D42;
 	}
 
 	/* Accent color */
 	.fixed-content {
-		background-color: #D8E9A8;
+		background-color: #FFCE45;
 	}
 	#populated-header, .populated-header-button-home, .populated-header-button-subsite, .populated-header-button-home-text, .fixed-index-category, .populated-footer-credit {
-		color: #D8E9A8;
+		color: #FFCE45;
 	}
 	.page-footer-button:hover {
-		border-color: #D8E9A8;
+		border-color: #FFCE45;
 	}

@@ -45,26 +45,26 @@
 
 	/* Primary color */
 	#populated-header, .populated-header-button-subsite, .populated-header-button-home, #populated-footer, .page-footer-button {
-		background-color: #151515;
-		border-color: #151515;
+		background-color: #291b33;
+		border-color: #291b33;
 	}
 
 
 	/* Secondary color */
 	.fixed-index-button-entry {
-		border-color: #301B3F;
+		border-color: #3C415C;
 	}
 	.fixed-index-button-directory {
-		background-color: #301B3F;
+		background-color: #3C415C;
 	}
 
 
 	/* Tertiary color */
 	.fixed-index-button-directory {
-		border: 2px solid #3C415C;
+		border: 2px solid #270082;
 	}
 	.fixed-index-button-entry {
-		background-color: #3C415C;
+		background-color: #270082;
 	}
 
 
