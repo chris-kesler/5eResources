@@ -1,241 +1,233 @@
+<!--
+|| =========================================================================================
+|| This is a FIXED DIRECTORY page, which contains the following elements:
+||
+|| FIXED BACKGROUND - Standard across the subsite
+|| POPULATED HEADER - Standard across the site
+|| FIXED CONTENT - Standard across the subsite
+|| POPULATED TITLE - Standard across the subsite
+|| FIXED DESCRIPTION - Unique to this page
+|| POPULATED FOOTER - Standard across the site
+|| ========================================================================================= 
+-->
 <!DOCTYPE html>
-<!-- =========================================================================================
-  This is a DIRECTORY page.  It contains HEADER, BACKGROUND, CONTENT, and FOOTER elements that are standard across the site.
-  It also contains TITLE, PAGE LIST, and DESCRIPTION elements that are unique and static as a DIRECTORY page.
-========================================================================================= -->
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-US-Compatible" content="e-edge">
-    <title>KnowOne's Website of Everything</title>
-    <link rel="icon" href="/resources/images/OwlOfMinerva_ModifiedLogo.png">
-    <link rel="stylesheet" href="/default-styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
+	<head>
+		<!-- Ensuring format and font-size is consistent across devices -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      // A function that capitalizes the first letter of each word in a string
-      function titleCase(str) {
-        var split_string = str.toLowerCase().split(' ');
-        for (var i = 0; i < split_string.length; i++) {
-          split_string[i] = split_string[i].charAt(0).toUpperCase() + split_string[i].substring(1);     
-        }
-        return split_string.join(' '); 
-      }
+		<!-- Defining subsite tab data -->
+		<title>KWoE: Caped Crusaders</title>
+		<link rel="icon" href="/resources/images/OwlOfMinerva_ModifiedLogo.png">
 
+		<!-- Importing styles -->
+		<link rel="stylesheet" href="/default-styles.css">
+		<link rel="stylesheet" href="/eportfolio/styles-eportfolio.css">
 
-      // The function that populates all page data into preset elements
-      $(function populatePageData() {
+		<!-- Importing jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		
+		<!-- Importing local Javascript functions -->
+		<script type="text/javascript" src="/resources/scripts/function-titleCase.js"></script>
+		<script type="text/javascript" src="/resources/scripts/function-hideShowNavList.js"></script>
+		<script type="text/javascript" src="/resources/scripts/function-readArgs.js"></script>
 
+		<!-- Populating the Header and Footer elements -->
+		<script type="text/javascript" src="/resources/scripts/load-header-footer.js"></script>
 
-// =========================================================================================
-// Populating the page HEADER
-// 
-// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
-// =========================================================================================
-        $("#populated-header").load("/resources/pages/populated-header.html");
+		<!-- Populating the Title element based on file name and file path -->
+		<!-- <script type="text/javascript" src="/resources/scripts/load-title-directories.js"></script>
+		<script type="text/javascript" src="/resources/scripts/load-title-name.js"></script> -->
+	</head>
+	<body>
+		
+		<!-- FIXED BACKGROUND -->
+		<div id="fixed-background">
 
+			<!-- POPULATED HEADER -->
+			<div id="populated-header"></div>
 
-// =========================================================================================
-// Populating the page FOOTER
-// 
-// The page HEADER, BACKGROUND, CONTENT, and FOOTER are static
-// =========================================================================================
-        $("#populated-footer").load("/resources/pages/populated-footer.html");
-      });
-    </script>
-  </head>  
+			<!-- FIXED CONTENT -->
+			<section class="fixed-content">
 
+				<!-- POPULATED TITLE -->t
+				<table id="populated-title"><thead><tr><td colspan="6"><h2><a href='../eportfolio.html'>Christian Kesler's B.Sc. of Computer Science Capstone ePortfolio</a> > <a target='blank' href="https://github.com/christian-kesler/knowones-website-of-everything">KnowOne's Website Of Everything (GitHub)</a></h2></td></tr></thead><tbody></tbody></table>
 
-  <body>
-    <!-- 
-      A div for the page BACKGROUND -->
-    <div id="fixed-background">
-      <!-- 
-        A div for the page HEADER -->
-      <div id="populated-header"></div>
-      <!-- 
-        A section for the page CONTENT -->
-      <section class="fixed-content">
-        <!-- 
-          A table for the page TITLE -->
-        <table id="populated-title"><thead><tr><td colspan="6"><h2 id="populated-title-thead"><a href='https://knowoneswebsiteofeverything.com/eportfolio.html'>Christian Kesler's B.Sc. of Computer Science Capstone ePortfolio</a> > <a target='blank' href="https://github.com/christian-kesler/knowones-website-of-everything">KnowOne's Website Of Everything (GitHub)</a></h2></td></tr></thead><tbody></tbody></table>   
-        <!-- 
-          A div for the page DESCRIPTION -->
-        <div id="fixed-description">
-          <p>
-            The artifact I have chosen to showcase my Database capabilities is KnowOne'sWebsiteOfEverything.com, which is a website containing styled directories and pages that populate data based on centralized JSON files with sortable and filterable table entries.  This artifact serves to showcase my competency with the JavaScript programming language, Microsoft Visual Studio Code, the HTML and CSS styling markup languages, web development principles, and observation of programming best practices such as naming conventions and comment etiquette.  While JavaScript is an arguably easy language to learn and use, the data centralization techniques used are far less elementary.  The ability to centralize data in a concise manner so as not to repeat yourself when making changes to content is a skill I deem notably worthy of showcase in a portfolio.  While this assignment is focused on the database aspect of this project, I am also including it in my portfolio as an example of my web development skills.  I intend to pursue a career in software engineering and web development, and this project showcases a combination of skills relevant to both that makes it the centerpiece of my portfolio.  The power of having a live website that can be linked to a prospective employer without needing to run anything from GitHub is likely of considerable value as well.  
-          </p>
+				<!-- FIXED DESCRIPTION -->
+				<div id="fixed-description">
+					<p>
+						The artifact I have chosen to showcase my Database capabilities is KnowOne'sWebsiteOfEverything.com, which is a website containing styled directories and pages that populate data based on centralized JSON files with sortable and filterable table entries.  This artifact serves to showcase my competency with the JavaScript programming language, Microsoft Visual Studio Code, the HTML and CSS styling markup languages, web development principles, and observation of programming best practices such as naming conventions and comment etiquette.  While JavaScript is an arguably easy language to learn and use, the data centralization techniques used are far less elementary.  The ability to centralize data in a concise manner so as not to repeat yourself when making changes to content is a skill I deem notably worthy of showcase in a portfolio.  While this assignment is focused on the database aspect of this project, I am also including it in my portfolio as an example of my web development skills.  I intend to pursue a career in software engineering and web development, and this project showcases a combination of skills relevant to both that makes it the centerpiece of my portfolio.  The power of having a live website that can be linked to a prospective employer without needing to run anything from GitHub is likely of considerable value as well.  
+					</p>
 
-          <hr>
-          <h3>Description</h3>
-          <p>
-            This project was developed by me in my spare time using self taught HTML, CSS, and Javascript skills.  The project files include various webpages that read data from JSON files and populate the content within.  I developed this website in order to have a searchable presence online and to showcase my web development skills.  I quickly became irritated by manually changing the same information across multiple pages, so I began constructing scripts that would pull relevant data from JSON files.  I managed to condense everything to a point where dozens of webpages with different content when viewed from a browser are actually identical in terms of the HTML and Javascript code within the file.  
-            <br><br>
+					<hr>
+					<h3>Description</h3>
+					<p>
+						This project was developed by me in my spare time using self taught HTML, CSS, and Javascript skills.  The project files include various webpages that read data from JSON files and populate the content within.  I developed this website in order to have a searchable presence online and to showcase my web development skills.  I quickly became irritated by manually changing the same information across multiple pages, so I began constructing scripts that would pull relevant data from JSON files.  I managed to condense everything to a point where dozens of webpages with different content when viewed from a browser are actually identical in terms of the HTML and Javascript code within the file.  
+						<br><br>
 
-            The script within pulls information from the JSON file based on the name of the file page, meaning I can copy the HTML file and rename it in order to create entirely different entries.  Attributes for the same item that are displayed on multiple pages do not need to be modified more than once; changing the JSON file will update the attribute in all places that it exists across the site.  At some point in the future, I might consider converting to SQL rather than JSON.  A demonstration of this project's functionality can be viewed below.
-          </p>
+						The script within pulls information from the JSON file based on the name of the file page, meaning I can copy the HTML file and rename it in order to create entirely different entries.  Attributes for the same item that are displayed on multiple pages do not need to be modified more than once; changing the JSON file will update the attribute in all places that it exists across the site.  At some point in the future, I might consider converting to SQL rather than JSON.  A demonstration of this project's functionality can be viewed below.
+					</p>
 
-          <center>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/r4HEfxFY7iU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </center>
+					<center>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/r4HEfxFY7iU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</center>
 
-          <h4>Enhancement Progress</h4>
-          <p>
-            As with my other artifacts, the first element of this project that I tended to was the comment etiquette.  I failed to include proper comments throughout the HTML, CSS, and JavaScript elements.  I began by creating a generic page layout with appropriate comments describing each element, then applying that generic layout to all of my content pages.  The generic layout was then utilized and populated with a more comprehensive and adaptive JavaScript function, which I filled with descriptive comments as I refactored it.  There were quite a few loops that were implemented correctly and variables that were entirely unnecessary.  While the page loading speed wasn't impacted in a manner that can be noticed by the naked eye, the code is far easier to understand and modify now that improvements have been made.  All too often I found myself breaking the entire function and loading a blank page after making a seemingly small change to the script, only to find that it caused a series of issues elsewhere in the function.  I hope to continue improving these JavaScript function in the future, but they are in a state that I am proud to showcase as of now.  
-          </p>
+					<h4>Enhancement Progress</h4>
+					<p>
+						As with my other artifacts, the first element of this project that I tended to was the comment etiquette.  I failed to include proper comments throughout the HTML, CSS, and JavaScript elements.  I began by creating a generic page layout with appropriate comments describing each element, then applying that generic layout to all of my content pages.  The generic layout was then utilized and populated with a more comprehensive and adaptive JavaScript function, which I filled with descriptive comments as I refactored it.  There were quite a few loops that were implemented correctly and variables that were entirely unnecessary.  While the page loading speed wasn't impacted in a manner that can be noticed by the naked eye, the code is far easier to understand and modify now that improvements have been made.  All too often I found myself breaking the entire function and loading a blank page after making a seemingly small change to the script, only to find that it caused a series of issues elsewhere in the function.  I hope to continue improving these JavaScript function in the future, but they are in a state that I am proud to showcase as of now.  
+					</p>
 
-          <h4>Enhancement Reflection</h4>
-          <p>
-            While enhancing this artifact, I noticed that my filter table functionality is incredibly unstable and needs massive amounts of refactoring.  The script is bulky and difficult to modify, and the functionality is less than ideal even though it functions as expected flawlessly.  I also noticed that my CSS file is incredibly dense, potentially having a great deal of redundant content within it.  I am also still in the process of converting my old classes and ids from camelcase to lowercase with hyphens instead of spaces, whatever that naming convention may be called.  Otherwise, I didn't necessarily realize anything new upon revisiting this artifact since I have been working on it intimately nearly every day for the last four months.  I am constantly learning new ways to improve my website, and I do get the occasional revelation, but those are far less dramatic than the insight I gained from revisiting my other artifacts.  
-          </p>
+					<h4>Enhancement Reflection</h4>
+					<p>
+						While enhancing this artifact, I noticed that my filter table functionality is incredibly unstable and needs massive amounts of refactoring.  The script is bulky and difficult to modify, and the functionality is less than ideal even though it functions as expected flawlessly.  I also noticed that my CSS file is incredibly dense, potentially having a great deal of redundant content within it.  I am also still in the process of converting my old classes and ids from camelcase to lowercase with hyphens instead of spaces, whatever that naming convention may be called.  Otherwise, I didn't necessarily realize anything new upon revisiting this artifact since I have been working on it intimately nearly every day for the last four months.  I am constantly learning new ways to improve my website, and I do get the occasional revelation, but those are far less dramatic than the insight I gained from revisiting my other artifacts.  
+					</p>
 
-          <hr>
-          <h3>Getting Started</h3>
-          <h4>Dependencies</h4>
-          <ul>
-            <li>
-              Windows 10* || <a target='blank' href='https://www.microsoft.com/en-us/software-download/windows10'>Link to Download Windows</a>
-            </li>
-            <li>
-              Visual Studio Code || <a target='blank' href='https://code.visualstudio.com/download'>Link to Download Visual Studio Code</a>
-            </li>
-            <li>
-              Visual Studio Code Extension:  Live Server by Ritwick Dey || <a target='blank' href='https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer'>Link to Live Server Extension</a>
-            </li>
-          </ul>
-          <p><i>*potentially not required, but it is what I used and therefore know for certain that it works</i></p>
+					<hr>
+					<h3>Getting Started</h3>
+					<h4>Dependencies</h4>
+					<ul>
+						<li>
+							Windows 10* || <a target='blank' href='https://www.microsoft.com/en-us/software-download/windows10'>Link to Download Windows</a>
+						</li>
+						<li>
+							Visual Studio Code || <a target='blank' href='https://code.visualstudio.com/download'>Link to Download Visual Studio Code</a>
+						</li>
+						<li>
+							Visual Studio Code Extension:  Live Server by Ritwick Dey || <a target='blank' href='https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer'>Link to Live Server Extension</a>
+						</li>
+					</ul>
+					<p><i>*potentially not required, but it is what I used and therefore know for certain that it works</i></p>
 
-          <h4>Installing</h4>
-          <ul>
-            <li>
-              Install the Live Server Extension to Visual Studio Code via the Extensions tab within VSC || <a target='blank' href='https://www.youtube.com/watch?v=_wue59ldqMg&ab_channel=TechStacker'>How to Set Up a Local Live Server in Visual Studio Code (quickly)</a>
-            </li>
-            <li>
-              Download the Project Files from the Project Repository on GitHub || <a target='blank' href='https://github.com/christian-kesler/knowones-website-of-everything'>Link to Repository</a>
-            </li>
-            <li>
-              Cloning the Repository via Git is ideal, but downloading a zip and extracting it will also work || <a target='blank' href='https://git-scm.com/downloads'>Link to Download Git</a>
-            </li>
-          </ul>
+					<h4>Installing</h4>
+					<ul>
+						<li>
+							Install the Live Server Extension to Visual Studio Code via the Extensions tab within VSC || <a target='blank' href='https://www.youtube.com/watch?v=_wue59ldqMg&ab_channel=TechStacker'>How to Set Up a Local Live Server in Visual Studio Code (quickly)</a>
+						</li>
+						<li>
+							Download the Project Files from the Project Repository on GitHub || <a target='blank' href='https://github.com/christian-kesler/knowones-website-of-everything'>Link to Repository</a>
+						</li>
+						<li>
+							Cloning the Repository via Git is ideal, but downloading a zip and extracting it will also work || <a target='blank' href='https://git-scm.com/downloads'>Link to Download Git</a>
+						</li>
+					</ul>
 
-          <h4>Execution</h4>
-          <ul>
-            <li>You can create a new project in Visual Studio Code using existing project files, create an empty project and move the project files into the new directory, manually, or create an empty project and clone directly to that folder using Git</li>
-            <li>Navigate to the main project directory while in Visual Studio Code</li>
-            <li>Right click on the index.html page and select "Open with Liver Server"</li>
-            <li>Begin navigating the site as though it were a typical website
-              <ul>
-                <li>For example, you can navigate to "ePortfolio" in the top right of the Header, then select the "Dynamic Filter Table: JSON Database (Javascript)" page to be taken to a locally hosted version of the exact page you are reading right now</li>
-              </ul>
-            </li>
-          </ul>
+					<h4>Execution</h4>
+					<ul>
+						<li>You can create a new project in Visual Studio Code using existing project files, create an empty project and move the project files into the new directory, manually, or create an empty project and clone directly to that folder using Git</li>
+						<li>Navigate to the main project directory while in Visual Studio Code</li>
+						<li>Right click on the index.html page and select "Open with Liver Server"</li>
+						<li>Begin navigating the site as though it were a typical website
+							<ul>
+								<li>For example, you can navigate to "ePortfolio" in the top right of the Header, then select the "Dynamic Filter Table: JSON Database (Javascript)" page to be taken to a locally hosted version of the exact page you are reading right now</li>
+							</ul>
+						</li>
+					</ul>
 
-          <h4>Help and Resources</h4>
-          <p>
-            Most of the issues I ran into with this program involve Javascript and JSON technicalities, specifically the inability to receive error messages when a script doesn't want to work within an HTML page.  When first starting out, I had no idea how to use HTML or CSS since my university program never covered them in any detail.  This turned out to be just fine since they are relatively easy to learn compared to the other programming languages and principles.  I used the following tutorials to get a grasp of the fundamentals, both in HTML, CSS, Javascript, and JSON.  
-            <ul>
-              <li>
-                <a target='blank' href='https://www.youtube.com/watch?v=PlxWf493en4&ab_channel=freeCodeCamp.org'>HTML Tutorial - How to Make a Super Simple Website</a>
-              </li>
-              <li>
-                <a target='blank' href='https://www.youtube.com/watch?v=GpOO5iKzOmY&ab_channel=freeCodeCamp.org'>Learn JSON - Full Crash Course for Beginners</a>
-              </li>
-            </ul>
-          </p>
-          
-          <hr>
-          <h3>Project Details</h3>
+					<h4>Help and Resources</h4>
+					<p>
+						Most of the issues I ran into with this program involve Javascript and JSON technicalities, specifically the inability to receive error messages when a script doesn't want to work within an HTML page.  When first starting out, I had no idea how to use HTML or CSS since my university program never covered them in any detail.  This turned out to be just fine since they are relatively easy to learn compared to the other programming languages and principles.  I used the following tutorials to get a grasp of the fundamentals, both in HTML, CSS, Javascript, and JSON.  
+						<ul>
+							<li>
+								<a target='blank' href='https://www.youtube.com/watch?v=PlxWf493en4&ab_channel=freeCodeCamp.org'>HTML Tutorial - How to Make a Super Simple Website</a>
+							</li>
+							<li>
+								<a target='blank' href='https://www.youtube.com/watch?v=GpOO5iKzOmY&ab_channel=freeCodeCamp.org'>Learn JSON - Full Crash Course for Beginners</a>
+							</li>
+						</ul>
+					</p>
+					
+					<hr>
+					<h3>Project Details</h3>
 
-          <h4>Authors</h4>
-          <p>
-            Christian Kesler (a.k.a. KnowOne), who can be found on <a target='blank' href='https://github.com/christian-kesler'>GitHub</a> and <a target='blank' href='https://www.linkedin.com/in/christian-kesler/'>LinkedIn</a>.  
-          </p>
+					<h4>Authors</h4>
+					<p>
+						Christian Kesler (a.k.a. KnowOne), who can be found on <a target='blank' href='https://github.com/christian-kesler'>GitHub</a> and <a target='blank' href='https://www.linkedin.com/in/christian-kesler/'>LinkedIn</a>.  
+					</p>
 
-          <h4>Version History</h4>
-          <p>
-            In truth, this project is still in constant development.  While I have subscribed to a hosting service so this website can remain live all the time, I still have a great deal of work to do before I consider it completed.  I have been making small tweaks and adjustments for months now, and intend to continue doing so before I am completely satisfied.  That being said, I have retroactively located several key points in the lifespan of this project for the sake of version history.  They are described as follows.
-          </p>
-          <ul>
-            <li>
-              v1.0.0
-              <ul>
-                <li>
-                  Initial Release 
-                </li>
-                <li>
-                  While I would like to publish this release, I was using images downloaded from the internet without proper credit or usage rights at the time.  This was always acceptable for personal use in the past, but is sorely inappropriate for this project.  Since this project could be considered commercial if I gain employment based on the content within, I converted my image use practices to those that are entirely compliant with full commercial use to the best of my knowledge.  This involves images that have been purchased with permission for commercial use, images under the Creative Commons License that are rehosted with author and source credit, and images I have no rights to that are only linked without any rehosting.  Given this, I do not think it appropriate to package and release the initial stages of this project prior to legal image use conversion.  
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a target='blank' href='https://github.com/christian-kesler/knowones-website-of-everything/releases/tag/v1.1.0'>v1.1.0</a>
-              <ul>
-                <li>
-                  <a target='blank' href='https://github.com/christian-kesler/knowones-website-of-everything/releases/tag/v1.1.0'>Image Licensing Update</a>
-                </li>
-                <li>
-                  This version of the project is the first remotely showcase ready iteration that used proper image credit and licensing.
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a target='blank' href='https://github.com/christian-kesler/knowones-website-of-everything/releases/tag/v1.2.0'>v1.2.0</a>
-              <ul>
-                <li>
-                  <a target='blank' href='https://github.com/christian-kesler/knowones-website-of-everything/releases/tag/v1.2.0'>Caped Crusaders Prerelease</a>
-                </li>
-                <li>
-                  The first draft of content for the Caped Crusaders 5th Edition variant system, including a series of classes and subclasses. It also includes a list of spell items drawn from the 5E SRD and third party homebrew creations with source links included.  
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a target='blank' href='https://github.com/christian-kesler/knowones-website-of-everything/releases/tag/v1.3.0'>v1.3.0</a>
-              <ul>
-                <li>
-                  <a target='blank' href='https://github.com/christian-kesler/knowones-website-of-everything/releases/tag/v1.3.0'>ePortfolio Release</a>
-                </li>
-                <li>
-                  While there is a great deal to continue improving, this release involves a polished version of the existing functionality and an ePortfolio showcasing my accomplishments in Computer Science.  
-                </li>
-              </ul>
-            </li>
+					<h4>Version History</h4>
+					<p>
+						In truth, this project is still in constant development.  While I have subscribed to a hosting service so this website can remain live all the time, I still have a great deal of work to do before I consider it completed.  I have been making small tweaks and adjustments for months now, and intend to continue doing so before I am completely satisfied.  That being said, I have retroactively located several key points in the lifespan of this project for the sake of version history.  They are described as follows.
+					</p>
+					<ul>
+						<li>
+							v1.0.0
+							<ul>
+								<li>
+									Initial Release 
+								</li>
+								<li>
+									While I would like to publish this release, I was using images downloaded from the internet without proper credit or usage rights at the time.  This was always acceptable for personal use in the past, but is sorely inappropriate for this project.  Since this project could be considered commercial if I gain employment based on the content within, I converted my image use practices to those that are entirely compliant with full commercial use to the best of my knowledge.  This involves images that have been purchased with permission for commercial use, images under the Creative Commons License that are rehosted with author and source credit, and images I have no rights to that are only linked without any rehosting.  Given this, I do not think it appropriate to package and release the initial stages of this project prior to legal image use conversion.  
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a target='blank' href='https://github.com/christian-kesler/knowones-website-of-everything/releases/tag/v1.1.0'>v1.1.0</a>
+							<ul>
+								<li>
+									<a target='blank' href='https://github.com/christian-kesler/knowones-website-of-everything/releases/tag/v1.1.0'>Image Licensing Update</a>
+								</li>
+								<li>
+									This version of the project is the first remotely showcase ready iteration that used proper image credit and licensing.
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a target='blank' href='https://github.com/christian-kesler/knowones-website-of-everything/releases/tag/v1.2.0'>v1.2.0</a>
+							<ul>
+								<li>
+									<a target='blank' href='https://github.com/christian-kesler/knowones-website-of-everything/releases/tag/v1.2.0'>Caped Crusaders Prerelease</a>
+								</li>
+								<li>
+									The first draft of content for the Caped Crusaders 5th Edition variant system, including a series of classes and subclasses. It also includes a list of spell items drawn from the 5E SRD and third party homebrew creations with source links included.  
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a target='blank' href='https://github.com/christian-kesler/knowones-website-of-everything/releases/tag/v1.3.0'>v1.3.0</a>
+							<ul>
+								<li>
+									<a target='blank' href='https://github.com/christian-kesler/knowones-website-of-everything/releases/tag/v1.3.0'>ePortfolio Release</a>
+								</li>
+								<li>
+									While there is a great deal to continue improving, this release involves a polished version of the existing functionality and an ePortfolio showcasing my accomplishments in Computer Science.  
+								</li>
+							</ul>
+						</li>
 
-          </ul>
+					</ul>
 
-          <h4>License</h4>
-          <p>
-            This project is licensed under the default license for GitHub repositories, which can be read about here:  <a target='blank' href='https://choosealicense.com/no-permission/'>No License, GitHub</a>
-          </p>
+					<h4>License</h4>
+					<p>
+						This project is licensed under the default license for GitHub repositories, which can be read about here:  <a target='blank' href='https://choosealicense.com/no-permission/'>No License, GitHub</a>
+					</p>
 
-          <h4>Acknowledgements</h4>
-          <p>
-            Inspiration, code snippets, etc.
-          </p>
-          <ul>
-            <li>
-              My experiences with <a target='blank' href='https://company.wizards.com/en'>Wizards of the Coast's</a> table top roleplaying game <a target='blank' href='https://dnd.wizards.com/'>Dungeons and Dragons 5th Edition</a> inspired a great deal of my wiki content, variant system mechanics, and even the name of this project (which takes after two 5e sourcebooks:  <a target='blank' href='https://dnd.wizards.com/products/xanathars-guide-everything'>Xanathar's Guide to Everything</a> and <a target='blank' href='https://dnd.wizards.com/products/tabletop-games/rpg-products/tashas-cauldron-everything'>Tasha's Cauldron of Everything</a>)
-            </li>
-            <li>
-              A great many of the images used in this project come from <a target='blank' href='https://commons.wikimedia.org/wiki/Main_Page'>Wikimedia Commons</a> and <a target='blank' href='https://thenounproject.com/'>The Noun Project</a>.  Both of these sites contain a myriad of fantastic images free for use under the Creative Commons License.  
-            </li>
-            <li>
-              Some of the content within Caped Crusaders was created and shared by acquaintances met on Discord, and links to their original work are included when applicable.  
-            </li>
-            <li>
-              Some of the written content within the Myrmidos Wiki and potentially elsewhere was generated using <a target='blank' href='https://novelai.net/'>NovelAI</a>, which is an adaptive algorithm that generates additional text based on an input sample.  I often input a summary of a given entry, allowed the program to add to it, and continued submitting the program's own changes back to it.  As a result, it can write a fair portion of a given page's content, such as the Turquoise Dragon's page description for example.  
-            </li>
-            <li>
-              Keeping up with my repository was made much easier by following the changes as they were published to Discord.  This tutorial <a href="https://gist.github.com/jagrosh/5b1761213e33fc5b54ec7f6379034a22">here</a> goes over setting up a webhook for a specific channel.
-            </li>              
-          </ul>
-        </div>
+					<h4>Acknowledgements</h4>
+					<p>
+						Inspiration, code snippets, etc.
+					</p>
+					<ul>
+						<li>
+							My experiences with <a target='blank' href='https://company.wizards.com/en'>Wizards of the Coast's</a> table top roleplaying game <a target='blank' href='https://dnd.wizards.com/'>Dungeons and Dragons 5th Edition</a> inspired a great deal of my wiki content, variant system mechanics, and even the name of this project (which takes after two 5e sourcebooks:  <a target='blank' href='https://dnd.wizards.com/products/xanathars-guide-everything'>Xanathar's Guide to Everything</a> and <a target='blank' href='https://dnd.wizards.com/products/tabletop-games/rpg-products/tashas-cauldron-everything'>Tasha's Cauldron of Everything</a>)
+						</li>
+						<li>
+							A great many of the images used in this project come from <a target='blank' href='https://commons.wikimedia.org/wiki/Main_Page'>Wikimedia Commons</a> and <a target='blank' href='https://thenounproject.com/'>The Noun Project</a>.  Both of these sites contain a myriad of fantastic images free for use under the Creative Commons License.  
+						</li>
+						<li>
+							Some of the content within Caped Crusaders was created and shared by acquaintances met on Discord, and links to their original work are included when applicable.  
+						</li>
+						<li>
+							Some of the written content within the Myrmidos Wiki and potentially elsewhere was generated using <a target='blank' href='https://novelai.net/'>NovelAI</a>, which is an adaptive algorithm that generates additional text based on an input sample.  I often input a summary of a given entry, allowed the program to add to it, and continued submitting the program's own changes back to it.  As a result, it can write a fair portion of a given page's content, such as the Turquoise Dragon's page description for example.  
+						</li>
+						<li>
+							Keeping up with my repository was made much easier by following the changes as they were published to Discord.  This tutorial <a href="https://gist.github.com/jagrosh/5b1761213e33fc5b54ec7f6379034a22">here</a> goes over setting up a webhook for a specific channel.
+						</li>              
+					</ul>
+				</div>
 				<hr class="fixed-content-anchor">
 			</section>
-      <!-- 
-        A div for the page FOOTER -->
-      <div id="populated-footer"></div>
-    </div>
-  </body>
+
+			<!-- POPULATED FOOTER -->
+			<div id="populated-footer"></div>
+		</div>
+	</body>
 </html>

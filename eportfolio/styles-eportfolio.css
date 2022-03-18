@@ -1,0 +1,133 @@
+/* || =========================================================================================
+|| Table of Contents:
+||
+|| - Font styling
+|| - Background styling
+|| - Color Palette styling
+|| - Custom subsite elements
+|| ========================================================================================= 
+ */
+
+
+
+ /* 
+||==========================================================================================
+|| Font styling
+||==========================================================================================
+ */
+
+	/* The default background color and general text settings */
+	body {
+		font-family: 'Times New Roman', serif;
+	}
+
+	button {
+		font-family: 'Times New Roman', serif;
+	}
+	
+	
+/* 
+||==========================================================================================
+|| BACKGROUND styling
+||==========================================================================================
+ */
+
+	#fixed-background {
+		background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Cloudscape_Over_the_Philippine_Sea.jpg/1199px-Cloudscape_Over_the_Philippine_Sea.jpg?20161117110401");
+	}
+
+
+/* 
+||==========================================================================================
+|| Color Palette styles
+||==========================================================================================
+ */
+
+	/* Primary color */
+	#populated-header, .populated-header-button-subsite, .populated-header-button-home, #populated-footer, .page-footer-button {
+		background-color: #1A374D;
+		border-color: #1A374D;
+	}
+
+
+	/* Secondary color */
+	.fixed-index-button-entry {
+		border-color: #406882;
+	}
+	.fixed-index-button-directory {
+		background-color: #406882;
+	}
+
+
+	/* Tertiary color */
+	.fixed-index-button-directory {
+		border: 2px solid #95D1CC;
+	}
+	.fixed-index-button-entry {
+		background-color: #95D1CC;
+	}
+
+
+	/* Accent color */
+	.fixed-content {
+		background-color: #F6F2D4;
+	}
+	#populated-header, .populated-header-button-home, .populated-header-button-subsite, .populated-header-button-home-text, .fixed-index-category, .populated-footer-credit {
+		color: #F6F2D4;
+	}
+	.page-footer-button:hover {
+		border-color: #F6F2D4;
+	}
+	
+	
+/* 
+||==========================================================================================
+|| - Custom subsite elements
+||==========================================================================================
+ */
+
+	.populated-index-button-tech, .populated-index-button-power, .populated-index-button-magic, .populated-index-button-generic {
+		width: 250px;
+		height: 300px;
+		margin: 5px;
+		background-color: rgb(175, 175, 175);
+		padding: 0px;
+		border-radius: 25px;
+		font-size: medium;
+		position: relative;
+	}
+	.populated-index-button-generic {
+		height: 35px;
+	}
+	.populated-index-button-content-ceiling, .populated-index-button-content-floor {
+		background-color: rgb(175, 175, 175);
+		margin: 0px;
+		padding: 10px;
+		text-align: left;
+	}
+	.populated-index-button-content-ceiling {
+		height: 175px;
+	}
+	.populated-index-button-content-floor {
+		bottom: 0;
+	}
+	.populated-index-button-tech {
+		color: rgb(50, 50, 125);
+		border: 5px solid rgb(50, 50, 125);
+
+	}
+	.populated-index-button-power {
+		color: rgb(125, 50, 50);
+		border: 5px solid rgb(125, 50, 50);
+
+	}
+	.populated-index-button-magic {
+		color: rgb(125, 125, 50);
+		border: 5px solid rgb(125, 125, 50);
+
+	}
+	.populated-index-button-generic {
+		color: rgb(25, 25, 25);
+		border: 2px solid pink;
+
+	}
