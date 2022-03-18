@@ -160,8 +160,11 @@ Some of the content within Caped Crusaders was created and shared by acquaintanc
 Some of the written content within the Myrmidos Wiki and potentially elsewhere was generated using <a target='blank' href='https://novelai.net/'>NovelAI</a>, which is an adaptive algorithm that generates additional text based on an input sample.  I often input a summary of a given entry, allowed the program to add to it, and continued submitting the program's own changes back to it.  As a result, it can write a fair portion of a given page's content, such as the Turquoise Dragon's page description for example.  
 </li>
 <li>
-Keeping up with my repository was made much easier by following the changes as they were published to Discord.  This tutorial <a href="https://gist.github.com/jagrosh/5b1761213e33fc5b54ec7f6379034a22">here</a> goes over setting up a webhook for a specific channel.
-</li>              
+Keeping up with my repository was made much easier by following the changes as they were published to Discord.  This tutorial <a target='blank' href="https://gist.github.com/jagrosh/5b1761213e33fc5b54ec7f6379034a22">here</a> goes over setting up a webhook for a specific channel.
+</li>
+<li>
+My eye for color schemes is sorely lacking, especially when looking at the vastness that is the color wheel.  For my subsite styling, I utilized this website called <a target='blank' href="https://colorhunt.co/palettes">Color Hunt</a> to find cool color schemes and make each subsite feel unique.
+</li>
 </ul>
 
 </html>
