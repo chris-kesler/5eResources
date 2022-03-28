@@ -565,7 +565,8 @@
 		font-size: small;
 	}
 	#populated-attributes-image {
-		width: 110%;
+		max-width: 110%;
+		width: 100vw;
 		height: auto; 
 		display: block;
 		overflow: hidden;

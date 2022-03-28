@@ -1,0 +1,140 @@
+<!--
+|| =========================================================================================
+|| This is a POPULATED ENTRY page, which contains the following elements:
+||
+|| FIXED BACKGROUND - Standard across the subsite
+|| POPULATED HEADER - Standard across the site
+|| POPULATED NAVLIST - Standard across the site
+|| FIXED CONTENT - Standard across the site
+|| POPULATED TITLE - Standard across the subsite
+|| POPULATED ATTRIBUTES - Standard across the subsite
+|| POPULATED DESCRIPTION - Standard across the subsite
+|| POPULATED FOOTER - Standard across the site
+|| ========================================================================================= 
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Ensuring format and font-size is consistent across devices -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Defining subsite tab data -->
+		<title>KWoE: Caped Crusaders</title>
+		<link rel="icon" href="/resources/images/OwlOfMinerva_ModifiedLogo.png">
+
+		<!-- Importing styles -->
+		<link rel="stylesheet" href="/default-styles.css">
+		<link rel="stylesheet" href="/caped-crusaders/styles-caped-crusaders.css">
+
+		<!-- Importing jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		
+		<!-- Importing local Javascript functions -->
+		<script type="text/javascript" src="/resources/scripts/function-titleCase.js"></script>
+		<script type="text/javascript" src="/resources/scripts/function-hideShowNavList.js"></script>
+		<script type="text/javascript" src="/resources/scripts/function-readArgs.js"></script>
+
+		<!-- Populating the Header and Footer elements -->
+		<script type="text/javascript" src="/resources/scripts/load-header-footer.js"></script>
+
+		<!-- Populating the Title element based on file name and file path -->
+		<script type="text/javascript" src="/resources/scripts/load-title-directories.js"></script>
+		<script type="text/javascript" src="/resources/scripts/load-title-name.js"></script>
+
+		<!-- Populating the page Title table, Attributes table, Description element, and Navlist element from JSON data -->
+		<script>
+			$(function readJSON() {
+
+				// Reading data from our JSON file
+				$.getJSON(`../sustainable-boons.json`, function(data) {
+
+
+					// Looping through the JSON data 
+					$.each(data.entries, function(i, f) {
+
+						// Finding the entry that matches this file
+						if (f.name_str.toLowerCase().replace(/\s/g, '-').replace("'", "") == page_args) {
+
+// =========================================================================================
+// Populating the page ATTRIBUTES table
+// =========================================================================================
+							// Table Row #1: Rehosted Art
+							table_row = `
+								<tr>
+									<th colspan='2'>
+										<img id='populated-attributes-image' alt='Type Image' target='blank' src='/resources/images/${f.type_str.replace(/\s/g, '')}.png' style='display:block'>
+									</th>
+								</tr>
+							`
+							$(table_row).appendTo("#populated-attributes tbody");
+									
+
+							// Table Row #2: Linked Art
+							table_row = `
+								<tr>
+									<th colspan='2'>
+										<i>${f.type_str} <a href='https://thenounproject.com/' target='_blank'>(image source)</a></i>
+									</th>
+								</tr>
+							`
+							$(table_row).appendTo("#populated-attributes tbody");
+
+
+							
+							// Populating the page description based on flavor, mechanics, overcharge, and components
+							if (f.flavor_str != undefined) {
+								document.getElementById("populated-description").innerHTML += "<p><b>Flavor Description:</b>  <i>" + f.flavor_str + "</i></p>";
+							}
+							if (f.mechanics_str != undefined) {
+								document.getElementById("populated-description").innerHTML += "<p><b>Standard Mechanics:</b>  " + f.mechanics_str + "</p>";
+							}
+
+							
+							// Defining and populating the first row of the page table
+							var table_row1 = "<tr><th style='width: 15vw'>Level</th><th style='width: 15vw'>School</th><th style='width: 15vw'>Attack/Save</th><th style='width: 15vw'>Damage/Effect</th></tr>"
+							$(table_row1).appendTo("#populated-title tbody");
+
+							// Defining and populating the second row of the page table
+							var table_row2 = "<tr>" 
+								+ "<td>" + f.level_str + " level Sustainable</td>" 
+								+ "<td>" + f.type_str + "</td>" 
+								+ "<td>" + f.attack_save_str + "</td>" 
+								+ "<td>" + f.damage_effect_str + "</td>" 
+								+ "</tr>"
+							$(table_row2).appendTo("#populated-title tbody");
+						}
+					});
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<!-- FIXED BACKGROUND -->
+		<div id="fixed-background">
+
+			<!-- POPULATED HEADER -->
+			<div id="populated-header"></div>
+
+			<!-- POPULATED NAVLIST -->
+			<section id="populated-navlist"><table id="populated-navlist-table"><tbody></tbody></table></section>
+			<button id='populated-navlist-button' onclick='hideShowNavList()'>&#60; &#60;</button>
+
+			<!-- FIXED CONTENT -->
+			<section class="fixed-content">
+
+				<!-- POPULATED TITLE -->
+				<table id="populated-title"><thead><tr><td colspan="5"><h2 id="populated-title-thead"></h2></td></tr></thead><tbody></tbody></table>
+
+				<!-- POPULATED ATTRIBUTES -->
+				<table id="populated-attributes"><tbody></tbody></table>
+
+				<!-- POPULATED DESCRIPTION -->
+				<div id="populated-description"></div>
+				<hr class="fixed-content-anchor">
+			</section>
+			
+			<!-- POPULATED FOOTER -->
+			<div id="populated-footer"></div>
+		</div>
+	</body>
+</html>
